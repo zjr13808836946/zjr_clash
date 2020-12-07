@@ -5,172 +5,532 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇭🇰 香港1→TG@baipiaojiedian, server: 13.75.65.36, port: 80, type: vmess, uuid: c259d157-c65d-4444-91a7-6aa49ae2019d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.75.65.36}}
-  - {name: 🇭🇰 香港2→TG@baipiaojiedian, server: 124.244.186.121, port: 443, type: vmess, uuid: b707c9e6-3a61-4f0b-8844-9a398cfadfb7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /add76314/, ws-headers: {Host: centos.fuchau.xyz}}
-  - {name: 🇯🇵 日本1→TG@baipiaojiedian, server: 52.194.248.249, port: 13848, type: vmess, uuid: e3e3150b-ce47-489c-83f9-52a12d952aa5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /dwn, ws-headers: {Host: 52.194.248.249}}
-  - {name: 🇯🇵 日本2→TG@baipiaojiedian, server: 45.32.53.152, port: 443, type: vmess, uuid: 2139d006-302a-11eb-a507-56000313e3b2, alterId: 46, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /GtEgY609/, ws-headers: {Host: xibun.cf}}
-  - {name: 🇯🇵 日本3→TG@baipiaojiedian, server: 132.145.115.125, port: 443, type: vmess, uuid: 6b38627b-a045-4d79-95c8-e505073dd12d, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /0361125/, ws-headers: {Host: j.199301.xyz}}
-  - {name: 🇯🇵 日本4→TG@baipiaojiedian, server: xibun.cf, port: 443, type: vmess, uuid: 2139d006-302a-11eb-a507-56000313e3b2, alterId: 46, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /GtEgY609/, ws-headers: {Host: xibun.cf}}
   - {name: 🇰🇷 韩国1→TG@baipiaojiedian, server: 3.34.98.55, port: 80, type: vmess, uuid: f5a8b2fb-f749-3f7e-947a-86e91ffedd08, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 3.34.98.55}}
   - {name: 🇰🇷 韩国2→TG@baipiaojiedian, server: 13.124.2.32, port: 80, type: vmess, uuid: f5a8b2fb-f749-3f7e-947a-86e91ffedd08, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 13.124.2.32}}
-  - {name: 🇷🇺 俄罗斯1→TG@baipiaojiedian, server: 176.32.35.236, port: 35295, type: vmess, uuid: f4c67eba-80ba-4cf9-ae5a-719f7700a8a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇷🇺 俄罗斯2→TG@baipiaojiedian, server: 46.29.163.142, port: 21174, type: vmess, uuid: 2c62cde9-a01f-47eb-a3ef-3ca4873eb2a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇷🇺 俄罗斯3→TG@baipiaojiedian, server: 46.17.44.107, port: 21758, type: vmess, uuid: acd37a64-5147-4717-9693-04beae9a201c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇷🇺 俄罗斯4→TG@baipiaojiedian, server: 46.17.45.174, port: 47307, type: vmess, uuid: 6523e57e-8761-4742-9d06-aa3231202193, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 新加坡1→TG@baipiaojiedian, server: 207.148.68.110, port: 30973, type: vmess, uuid: 0c1a9067-d4be-4150-9386-6c7474adc27a, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡2→TG@baipiaojiedian, server: 8.210.3.133, port: 56647, type: vmess, uuid: c2181184-e487-4b37-a029-f61d90523950, alterId: 233, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇺🇲 美国1→TG@baipiaojiedian, server: 13.248.209.186, port: 1000, type: vmess, uuid: 786d1602-3cc9-405f-87c7-446c84cd92a8, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇺🇲 美国2→TG@baipiaojiedian, server: rntwo.laoban666.xyz, port: 443, type: vmess, uuid: 114f5786-a8a0-446a-a32f-446893480560, alterId: 10, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /27353486f3a1d4f/, ws-headers: {Host: rntwo.laoban666.xyz}}
+  - {name: TG（@baipiaojiedian）_1192, server: 173.237.207.25, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: TG（@baipiaojiedian）_1194, server: 172.93.153.150, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: TG（@baipiaojiedian）_1296, server: 63.141.248.179, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: TG（@baipiaojiedian）_1306, server: 167.88.61.2, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: TG（@baipiaojiedian）_1307, server: 143.244.57.114, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: TG（@baipiaojiedian）_1314, server: 45.55.2.232, port: 14293, type: ss, cipher: aes-256-cfb, password: 2170f8}
+  - {name: TG（@baipiaojiedian）_1399, server: 193.122.98.231, port: 1025, type: ss, cipher: aes-256-cfb, password: DSdN6X9mSdN1(}
+  - {name: TG（@baipiaojiedian）_1405, server: 104.244.208.37, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: TG（@baipiaojiedian）_1408, server: 194.36.111.102, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: TG（@baipiaojiedian）_837 |35.56Mb, server: 45.87.213.7, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇦🇺 tg@vpnpool-AU-Canberra-Azure, server: 20.37.240.253, port: 233, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: au03-1-5epaq.233cloud-node.com}}
+  - {name: 🇦🇺 tg@vpnpool-AU-Sydney-AWS-nf, server: 13.211.202.115, port: 233, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: au06-1-4cu9t.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf, server: 99.83.195.146, port: 23300, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 2, server: 99.83.195.146, port: 23301, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 3, server: 99.83.195.146, port: 23302, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf, server: 99.83.195.146, port: 23320, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf 2, server: 99.83.195.146, port: 23322, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf, server: 99.83.195.146, port: 23332, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 2, server: 99.83.195.146, port: 23333, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 3, server: 99.83.195.146, port: 23334, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 4, server: 99.83.195.146, port: 23335, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 5, server: 99.83.195.146, port: 23336, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 6, server: 99.83.195.146, port: 23337, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 7, server: 99.83.195.146, port: 23338, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 8, server: 99.83.195.146, port: 23340, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf, server: 99.83.195.146, port: 23348, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 2, server: 99.83.195.146, port: 23351, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 3, server: 99.83.195.146, port: 23352, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 4, server: 99.83.195.146, port: 23353, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 5, server: 99.83.195.146, port: 23354, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 6, server: 99.83.195.146, port: 23355, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf, server: 99.83.195.146, port: 23365, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 2, server: 99.83.195.146, port: 23366, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 3, server: 99.83.195.146, port: 23368, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 4, server: 99.83.195.146, port: 23369, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU, server: 99.83.195.146, port: 23385, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 2, server: 99.83.195.146, port: 23386, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 3, server: 99.83.195.146, port: 23399, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 4, server: 99.83.195.146, port: 23305, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf, server: 99.83.195.146, port: 23388, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 2, server: 99.83.195.146, port: 23391, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB, server: 99.83.195.146, port: 23393, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 2, server: 99.83.195.146, port: 23394, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 4, server: 75.2.35.52, port: 23300, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 5, server: 75.2.35.52, port: 23301, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 6, server: 75.2.35.52, port: 23302, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 3, server: 75.2.35.52, port: 23388, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 3, server: 75.2.35.52, port: 23394, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇸🇬 tg@vpnpool-广州移动-SG-nf, server: 120.232.96.101, port: 23317, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: gzyd-wecnm.233cloud-node.com}}
+  - {name: 🇯🇵 tg@vpnpool-广州移动-JP-nf, server: 120.232.96.101, port: 23332, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: gzyd-wecnm.233cloud-node.com}}
+  - {name: 🇦🇺 tg@vpnpool-广州移动-AU, server: 120.232.96.101, port: 23386, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: gzyd-wecnm.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-广州移动-US-nf, server: 120.232.96.101, port: 23388, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: gzyd-wecnm.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-广州移动-US-nf 2, server: 120.232.96.101, port: 23389, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: gzyd-wecnm.233cloud-node.com}}
+  - {name: 🇺🇲 tg@vpnpool-广州移动-US-nf 3, server: 120.232.96.101, port: 23390, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: gzyd-wecnm.233cloud-node.com}}
+  - {name: 🇭🇰 tg@vpnpool-HK-香港-HKT-nf, server: 112.120.247.167, port: 233, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun, ws-headers: {Host: hk01-1-pl8ue.233cloud-node.com}}
+  - {name: 🇭🇰 tg@vpnpool-无锡移动-香港-nf, server: 112.25.91.31, port: 80, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: hk02.sytplay.com}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 香港1→TG@baipiaojiedian
-      - 🇭🇰 香港2→TG@baipiaojiedian
-      - 🇯🇵 日本1→TG@baipiaojiedian
-      - 🇯🇵 日本2→TG@baipiaojiedian
-      - 🇯🇵 日本3→TG@baipiaojiedian
-      - 🇯🇵 日本4→TG@baipiaojiedian
       - 🇰🇷 韩国1→TG@baipiaojiedian
       - 🇰🇷 韩国2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯1→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯3→TG@baipiaojiedian
       - 🇷🇺 俄罗斯4→TG@baipiaojiedian
       - 🇸🇬 新加坡1→TG@baipiaojiedian
-      - 🇸🇬 新加坡2→TG@baipiaojiedian
       - 🇺🇲 美国1→TG@baipiaojiedian
-      - 🇺🇲 美国2→TG@baipiaojiedian
+      - TG（@baipiaojiedian）_1192
+      - TG（@baipiaojiedian）_1194
+      - TG（@baipiaojiedian）_1296
+      - TG（@baipiaojiedian）_1306
+      - TG（@baipiaojiedian）_1307
+      - TG（@baipiaojiedian）_1314
+      - TG（@baipiaojiedian）_1399
+      - TG（@baipiaojiedian）_1405
+      - TG（@baipiaojiedian）_1408
+      - TG（@baipiaojiedian）_837 |35.56Mb
+      - 🇦🇺 tg@vpnpool-AU-Canberra-Azure
+      - 🇦🇺 tg@vpnpool-AU-Sydney-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 3
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 3
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 4
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 5
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 6
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 7
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 8
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 2
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 3
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 4
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 5
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 6
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 2
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 3
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 4
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 2
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 3
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 5
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 6
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 3
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 3
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 🇯🇵 tg@vpnpool-广州移动-JP-nf
+      - 🇦🇺 tg@vpnpool-广州移动-AU
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 2
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 3
+      - 🇭🇰 tg@vpnpool-HK-香港-HKT-nf
+      - 🇭🇰 tg@vpnpool-无锡移动-香港-nf
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 香港1→TG@baipiaojiedian
-      - 🇭🇰 香港2→TG@baipiaojiedian
-      - 🇯🇵 日本1→TG@baipiaojiedian
-      - 🇯🇵 日本2→TG@baipiaojiedian
-      - 🇯🇵 日本3→TG@baipiaojiedian
-      - 🇯🇵 日本4→TG@baipiaojiedian
       - 🇰🇷 韩国1→TG@baipiaojiedian
       - 🇰🇷 韩国2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯1→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯3→TG@baipiaojiedian
       - 🇷🇺 俄罗斯4→TG@baipiaojiedian
       - 🇸🇬 新加坡1→TG@baipiaojiedian
-      - 🇸🇬 新加坡2→TG@baipiaojiedian
       - 🇺🇲 美国1→TG@baipiaojiedian
-      - 🇺🇲 美国2→TG@baipiaojiedian
+      - TG（@baipiaojiedian）_1192
+      - TG（@baipiaojiedian）_1194
+      - TG（@baipiaojiedian）_1296
+      - TG（@baipiaojiedian）_1306
+      - TG（@baipiaojiedian）_1307
+      - TG（@baipiaojiedian）_1314
+      - TG（@baipiaojiedian）_1399
+      - TG（@baipiaojiedian）_1405
+      - TG（@baipiaojiedian）_1408
+      - TG（@baipiaojiedian）_837 |35.56Mb
+      - 🇦🇺 tg@vpnpool-AU-Canberra-Azure
+      - 🇦🇺 tg@vpnpool-AU-Sydney-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 3
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 3
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 4
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 5
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 6
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 7
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 8
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 2
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 3
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 4
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 5
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 6
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 2
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 3
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 4
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 2
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 3
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 5
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 6
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 3
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 3
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 🇯🇵 tg@vpnpool-广州移动-JP-nf
+      - 🇦🇺 tg@vpnpool-广州移动-AU
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 2
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 3
+      - 🇭🇰 tg@vpnpool-HK-香港-HKT-nf
+      - 🇭🇰 tg@vpnpool-无锡移动-香港-nf
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 香港1→TG@baipiaojiedian
-      - 🇭🇰 香港2→TG@baipiaojiedian
-      - 🇯🇵 日本1→TG@baipiaojiedian
-      - 🇯🇵 日本2→TG@baipiaojiedian
-      - 🇯🇵 日本3→TG@baipiaojiedian
-      - 🇯🇵 日本4→TG@baipiaojiedian
       - 🇰🇷 韩国1→TG@baipiaojiedian
       - 🇰🇷 韩国2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯1→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯3→TG@baipiaojiedian
       - 🇷🇺 俄罗斯4→TG@baipiaojiedian
       - 🇸🇬 新加坡1→TG@baipiaojiedian
-      - 🇸🇬 新加坡2→TG@baipiaojiedian
       - 🇺🇲 美国1→TG@baipiaojiedian
-      - 🇺🇲 美国2→TG@baipiaojiedian
+      - TG（@baipiaojiedian）_1192
+      - TG（@baipiaojiedian）_1194
+      - TG（@baipiaojiedian）_1296
+      - TG（@baipiaojiedian）_1306
+      - TG（@baipiaojiedian）_1307
+      - TG（@baipiaojiedian）_1314
+      - TG（@baipiaojiedian）_1399
+      - TG（@baipiaojiedian）_1405
+      - TG（@baipiaojiedian）_1408
+      - TG（@baipiaojiedian）_837 |35.56Mb
+      - 🇦🇺 tg@vpnpool-AU-Canberra-Azure
+      - 🇦🇺 tg@vpnpool-AU-Sydney-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 3
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 3
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 4
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 5
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 6
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 7
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 8
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 2
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 3
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 4
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 5
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 6
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 2
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 3
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 4
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 2
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 3
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 5
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 6
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 3
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 3
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 🇯🇵 tg@vpnpool-广州移动-JP-nf
+      - 🇦🇺 tg@vpnpool-广州移动-AU
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 2
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 3
+      - 🇭🇰 tg@vpnpool-HK-香港-HKT-nf
+      - 🇭🇰 tg@vpnpool-无锡移动-香港-nf
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港1→TG@baipiaojiedian
-      - 🇭🇰 香港2→TG@baipiaojiedian
-      - 🇯🇵 日本1→TG@baipiaojiedian
-      - 🇯🇵 日本2→TG@baipiaojiedian
-      - 🇯🇵 日本3→TG@baipiaojiedian
-      - 🇯🇵 日本4→TG@baipiaojiedian
       - 🇰🇷 韩国1→TG@baipiaojiedian
       - 🇰🇷 韩国2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯1→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯3→TG@baipiaojiedian
       - 🇷🇺 俄罗斯4→TG@baipiaojiedian
       - 🇸🇬 新加坡1→TG@baipiaojiedian
-      - 🇸🇬 新加坡2→TG@baipiaojiedian
       - 🇺🇲 美国1→TG@baipiaojiedian
-      - 🇺🇲 美国2→TG@baipiaojiedian
+      - TG（@baipiaojiedian）_1192
+      - TG（@baipiaojiedian）_1194
+      - TG（@baipiaojiedian）_1296
+      - TG（@baipiaojiedian）_1306
+      - TG（@baipiaojiedian）_1307
+      - TG（@baipiaojiedian）_1314
+      - TG（@baipiaojiedian）_1399
+      - TG（@baipiaojiedian）_1405
+      - TG（@baipiaojiedian）_1408
+      - TG（@baipiaojiedian）_837 |35.56Mb
+      - 🇦🇺 tg@vpnpool-AU-Canberra-Azure
+      - 🇦🇺 tg@vpnpool-AU-Sydney-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 3
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 3
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 4
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 5
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 6
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 7
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 8
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 2
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 3
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 4
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 5
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 6
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 2
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 3
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 4
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 2
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 3
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 5
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 6
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 3
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 3
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 🇯🇵 tg@vpnpool-广州移动-JP-nf
+      - 🇦🇺 tg@vpnpool-广州移动-AU
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 2
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 3
+      - 🇭🇰 tg@vpnpool-HK-香港-HKT-nf
+      - 🇭🇰 tg@vpnpool-无锡移动-香港-nf
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 香港1→TG@baipiaojiedian
-      - 🇭🇰 香港2→TG@baipiaojiedian
-      - 🇯🇵 日本1→TG@baipiaojiedian
-      - 🇯🇵 日本2→TG@baipiaojiedian
-      - 🇯🇵 日本3→TG@baipiaojiedian
-      - 🇯🇵 日本4→TG@baipiaojiedian
       - 🇰🇷 韩国1→TG@baipiaojiedian
       - 🇰🇷 韩国2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯1→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯3→TG@baipiaojiedian
       - 🇷🇺 俄罗斯4→TG@baipiaojiedian
       - 🇸🇬 新加坡1→TG@baipiaojiedian
-      - 🇸🇬 新加坡2→TG@baipiaojiedian
       - 🇺🇲 美国1→TG@baipiaojiedian
-      - 🇺🇲 美国2→TG@baipiaojiedian
+      - TG（@baipiaojiedian）_1192
+      - TG（@baipiaojiedian）_1194
+      - TG（@baipiaojiedian）_1296
+      - TG（@baipiaojiedian）_1306
+      - TG（@baipiaojiedian）_1307
+      - TG（@baipiaojiedian）_1314
+      - TG（@baipiaojiedian）_1399
+      - TG（@baipiaojiedian）_1405
+      - TG（@baipiaojiedian）_1408
+      - TG（@baipiaojiedian）_837 |35.56Mb
+      - 🇦🇺 tg@vpnpool-AU-Canberra-Azure
+      - 🇦🇺 tg@vpnpool-AU-Sydney-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 3
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 3
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 4
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 5
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 6
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 7
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 8
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 2
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 3
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 4
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 5
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 6
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 2
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 3
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 4
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 2
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 3
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 5
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 6
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 3
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 3
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 🇯🇵 tg@vpnpool-广州移动-JP-nf
+      - 🇦🇺 tg@vpnpool-广州移动-AU
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 2
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 3
+      - 🇭🇰 tg@vpnpool-HK-香港-HKT-nf
+      - 🇭🇰 tg@vpnpool-无锡移动-香港-nf
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港1→TG@baipiaojiedian
-      - 🇭🇰 香港2→TG@baipiaojiedian
-      - 🇯🇵 日本1→TG@baipiaojiedian
-      - 🇯🇵 日本2→TG@baipiaojiedian
-      - 🇯🇵 日本3→TG@baipiaojiedian
-      - 🇯🇵 日本4→TG@baipiaojiedian
       - 🇰🇷 韩国1→TG@baipiaojiedian
       - 🇰🇷 韩国2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯1→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯3→TG@baipiaojiedian
       - 🇷🇺 俄罗斯4→TG@baipiaojiedian
       - 🇸🇬 新加坡1→TG@baipiaojiedian
-      - 🇸🇬 新加坡2→TG@baipiaojiedian
       - 🇺🇲 美国1→TG@baipiaojiedian
-      - 🇺🇲 美国2→TG@baipiaojiedian
+      - TG（@baipiaojiedian）_1192
+      - TG（@baipiaojiedian）_1194
+      - TG（@baipiaojiedian）_1296
+      - TG（@baipiaojiedian）_1306
+      - TG（@baipiaojiedian）_1307
+      - TG（@baipiaojiedian）_1314
+      - TG（@baipiaojiedian）_1399
+      - TG（@baipiaojiedian）_1405
+      - TG（@baipiaojiedian）_1408
+      - TG（@baipiaojiedian）_837 |35.56Mb
+      - 🇦🇺 tg@vpnpool-AU-Canberra-Azure
+      - 🇦🇺 tg@vpnpool-AU-Sydney-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 3
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 3
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 4
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 5
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 6
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 7
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 8
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 2
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 3
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 4
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 5
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 6
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 2
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 3
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 4
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 2
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 3
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 5
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 6
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 3
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 3
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 🇯🇵 tg@vpnpool-广州移动-JP-nf
+      - 🇦🇺 tg@vpnpool-广州移动-AU
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 2
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 3
+      - 🇭🇰 tg@vpnpool-HK-香港-HKT-nf
+      - 🇭🇰 tg@vpnpool-无锡移动-香港-nf
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港1→TG@baipiaojiedian
-      - 🇭🇰 香港2→TG@baipiaojiedian
-      - 🇯🇵 日本1→TG@baipiaojiedian
-      - 🇯🇵 日本2→TG@baipiaojiedian
-      - 🇯🇵 日本3→TG@baipiaojiedian
-      - 🇯🇵 日本4→TG@baipiaojiedian
       - 🇰🇷 韩国1→TG@baipiaojiedian
       - 🇰🇷 韩国2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯1→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯3→TG@baipiaojiedian
       - 🇷🇺 俄罗斯4→TG@baipiaojiedian
       - 🇸🇬 新加坡1→TG@baipiaojiedian
-      - 🇸🇬 新加坡2→TG@baipiaojiedian
       - 🇺🇲 美国1→TG@baipiaojiedian
-      - 🇺🇲 美国2→TG@baipiaojiedian
+      - TG（@baipiaojiedian）_1192
+      - TG（@baipiaojiedian）_1194
+      - TG（@baipiaojiedian）_1296
+      - TG（@baipiaojiedian）_1306
+      - TG（@baipiaojiedian）_1307
+      - TG（@baipiaojiedian）_1314
+      - TG（@baipiaojiedian）_1399
+      - TG（@baipiaojiedian）_1405
+      - TG（@baipiaojiedian）_1408
+      - TG（@baipiaojiedian）_837 |35.56Mb
+      - 🇦🇺 tg@vpnpool-AU-Canberra-Azure
+      - 🇦🇺 tg@vpnpool-AU-Sydney-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 3
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 3
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 4
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 5
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 6
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 7
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 8
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 2
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 3
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 4
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 5
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 6
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 2
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 3
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 4
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 2
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 3
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 5
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 6
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 3
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 3
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 🇯🇵 tg@vpnpool-广州移动-JP-nf
+      - 🇦🇺 tg@vpnpool-广州移动-AU
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 2
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 3
+      - 🇭🇰 tg@vpnpool-HK-香港-HKT-nf
+      - 🇭🇰 tg@vpnpool-无锡移动-香港-nf
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -193,22 +553,67 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港1→TG@baipiaojiedian
-      - 🇭🇰 香港2→TG@baipiaojiedian
-      - 🇯🇵 日本1→TG@baipiaojiedian
-      - 🇯🇵 日本2→TG@baipiaojiedian
-      - 🇯🇵 日本3→TG@baipiaojiedian
-      - 🇯🇵 日本4→TG@baipiaojiedian
       - 🇰🇷 韩国1→TG@baipiaojiedian
       - 🇰🇷 韩国2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯1→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯2→TG@baipiaojiedian
-      - 🇷🇺 俄罗斯3→TG@baipiaojiedian
       - 🇷🇺 俄罗斯4→TG@baipiaojiedian
       - 🇸🇬 新加坡1→TG@baipiaojiedian
-      - 🇸🇬 新加坡2→TG@baipiaojiedian
       - 🇺🇲 美国1→TG@baipiaojiedian
-      - 🇺🇲 美国2→TG@baipiaojiedian
+      - TG（@baipiaojiedian）_1192
+      - TG（@baipiaojiedian）_1194
+      - TG（@baipiaojiedian）_1296
+      - TG（@baipiaojiedian）_1306
+      - TG（@baipiaojiedian）_1307
+      - TG（@baipiaojiedian）_1314
+      - TG（@baipiaojiedian）_1399
+      - TG（@baipiaojiedian）_1405
+      - TG（@baipiaojiedian）_1408
+      - TG（@baipiaojiedian）_837 |35.56Mb
+      - 🇦🇺 tg@vpnpool-AU-Canberra-Azure
+      - 🇦🇺 tg@vpnpool-AU-Sydney-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 3
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 2
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 3
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 4
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 5
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 6
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 7
+      - 🇯🇵 tg@vpnpool-US-Seattle-AWS-JP-nf 8
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 2
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 3
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 4
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 5
+      - 🇰🇷 tg@vpnpool-US-Seattle-AWS-KR-nf 6
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 2
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 3
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf 4
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 2
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 3
+      - 🇦🇺 tg@vpnpool-US-Seattle-AWS-AU 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 2
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 4
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 5
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-台湾-nf 6
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-nf 3
+      - 🇺🇲 tg@vpnpool-US-Seattle-AWS-GB 3
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 🇯🇵 tg@vpnpool-广州移动-JP-nf
+      - 🇦🇺 tg@vpnpool-广州移动-AU
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 2
+      - 🇺🇲 tg@vpnpool-广州移动-US-nf 3
+      - 🇭🇰 tg@vpnpool-HK-香港-HKT-nf
+      - 🇭🇰 tg@vpnpool-无锡移动-香港-nf
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
