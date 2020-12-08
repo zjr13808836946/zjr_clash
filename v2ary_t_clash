@@ -5,164 +5,220 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇭🇰 V1-香港 AWS 02 超高速 1x, server: l1-aws-hk-02.mugun.xyz, port: 443, type: vmess, uuid: 648231d9-eb2d-3517-978a-d3dfbebb5955, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mugua, ws-headers: {Host: l1-aws-hk-02.mugun.xyz}}
-  - {name: 🇸🇬 V4-中转3360|广东-新加坡(新)|x2.5|V2ray, server: xgd-02.ddns-only.xyz, port: 13360, type: vmess, uuid: 38820643-acf3-3509-be2a-18a9cceb6c76, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: xgd-02.ddns-only.xyz}}
-  - {name: 🇸🇬 V4-中转3364|广东-新加坡(新)|x2.5|V2ray, server: xgd-02.ddns-only.xyz, port: 13364, type: vmess, uuid: 38820643-acf3-3509-be2a-18a9cceb6c76, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: xgd-02.ddns-only.xyz}}
-  - {name: 🇬🇧 英国 43_欢迎订阅Youtube顺丰资源, server: 217.138.222.43, port: 36811, type: ss, cipher: aes-256-gcm, password: UhV73M9rmGqDfKh3Xtd4USHp}
-  - {name: 🇫🇷 185.246.211.67:40093＃逍遥观世界@ xiaoyao_1234--法国, server: 185.246.211.67, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇰🇷 V1-韩国 AWS 04 Netflix 1x, server: l1-aws-kr-04.mugun.xyz, port: 443, type: vmess, uuid: 5453d090-7493-3791-8fc4-c941d397040d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mugua, ws-headers: {Host: l1-aws-kr-04.mugun.xyz}}
-  - {name: 🇰🇷 V1-韩国 AWS 05 Netflix 1x, server: l1-aws-kr-05.mugun.xyz, port: 443, type: vmess, uuid: 648231d9-eb2d-3517-978a-d3dfbebb5955, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mugua, ws-headers: {Host: l1-aws-kr-05.mugun.xyz}}
-  - {name: 🇯🇵 V1-日本 AWS 04 Netflix 1x, server: l1-aws-jp-04.mugun.xyz, port: 1080, type: vmess, uuid: 648231d9-eb2d-3517-978a-d3dfbebb5955, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mugua, ws-headers: {Host: l1-aws-jp-04.mugun.xyz}}
-  - {name: 🇭🇰 V1-香港 AWS 03 超高速 1x, server: l1-aws-hk-03.mugun.xyz, port: 1080, type: vmess, uuid: 648231d9-eb2d-3517-978a-d3dfbebb5955, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mugua, ws-headers: {Host: l1-aws-hk-03.mugun.xyz}}
-  - {name: 🇭🇰 V4-香港3394|Azure|x1.0|V2ray, server: 52.184.31.71, port: 58888, type: vmess, uuid: 38820643-acf3-3509-be2a-18a9cceb6c76, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 52.184.31.71}}
-  - {name: 🇺🇲 US_2179 | 8.84Mb, server: www.zhanan06.xyz, port: 443, type: trojan, password: 7F7VaqzQvNzH7GDw, sni: www.zhanan06.xyz, skip-cert-verify: false}
-  - {name: 欢迎订阅Youtube顺丰资源15, server: 89.187.169.119, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇮🇹 95.174.64.69:40093＃逍遥观世界@ xiaoyao_1234--意大利, server: 95.174.64.69, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇭🇰 V4-中转972|山东-香港HKT|解锁|x2.0|V2ray, server: shandong01.vq1021.site, port: 17316, type: vmess, uuid: 38820643-acf3-3509-be2a-18a9cceb6c76, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: shandong01.vq1021.site}}
+  - {name: 🇭🇰 香港 VR30 CDN 1.3x, server: gzcu.snode.top, port: 80, type: vmess, uuid: 7a5608fb-36f2-3938-8965-1c658289f4bb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /thestsd2, ws-headers: {Host: n3.zz321.cn}}
+  - {name: 🇭🇰 香港 VR31 CDN 1.3x, server: gzcu.snode.top, port: 80, type: vmess, uuid: 7a5608fb-36f2-3938-8965-1c658289f4bb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hsuhns3, ws-headers: {Host: n3.zz321.cn}}
+  - {name: 🇭🇰 香港 VR32 CDN 1.3x, server: gzcu.snode.top, port: 80, type: vmess, uuid: 7a5608fb-36f2-3938-8965-1c658289f4bb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hsuhns4, ws-headers: {Host: n3.zz321.cn}}
+  - {name: 123, server: 52.81.63.75, port: 30013, type: vmess, uuid: 3abd83c7-8bcd-442f-9ae9-7bb6a3587492, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf, server: 99.83.195.146, port: 23320, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf, server: 99.83.195.146, port: 23369, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: global-yuqjx.233cloud-node.com}}
+  - {name: 🇸🇬 tg@vpnpool-广州移动-SG-nf, server: 120.232.96.101, port: 23317, type: vmess, uuid: 98b5e76a-8b36-3089-b3da-33fbc1337186, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray/233yun.xyz, ws-headers: {Host: gzyd-wecnm.233cloud-node.com}}
+  - {name: 121, server: 120.232.43.152, port: 30003, type: vmess, uuid: 71afeb41-7dde-320f-85cc-ca1977d77de7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t2.yt004.xyz}}
+  - {name: 欢迎订阅Youtube顺丰资源10, server: 198.8.80.85, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 欢迎订阅Youtube顺丰资源14, server: 37.120.217.179, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
   - {name: 45.12.223.197:40093＃逍遥观世界@ xiaoyao_1234 ---挪威, server: 45.12.223.197, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 185.76.8.215:40093＃逍遥观世界@ xiaoyao_1234 ---斯洛伐克, server: 185.76.8.215, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇺🇲 bn-chanll-Austria 🇦🇹 15, server: 89.187.168.44, port: 35272, type: ss, cipher: aes-256-gcm, password: 8w7h6ZUj865AYpfkZfpBA2rk}
+  - {name: 🇺🇲 bn-chanll-United States-dal 🇺🇸 3, server: 212.102.40.81, port: 35272, type: ss, cipher: aes-256-gcm, password: 8w7h6ZUj865AYpfkZfpBA2rk}
+  - {name: 139, server: 45.87.212.211, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 175, server: 184.170.243.195, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 181, server: 207.246.109.208, port: 9249, type: ss, cipher: aes-256-gcm, password: ewdMxk8J38KP}
+  - {name: 🇯🇵 JP_993, server: chinahright.ml, port: 443, type: trojan, password: 59b8270c-c4e5-403d-bcf1-4ff13f3a9b1a, sni: chinahright.ml, skip-cert-verify: false}
+  - {name: 68, server: www.zhanan08.online, port: 443, type: trojan, password: H9Y8SbUIQevXF52E, sni: www.zhanan08.online, skip-cert-verify: false}
+  - {name: 76, server: www.zhanan03.site, port: 443, type: trojan, password: pS9uZqLABS0qtJbN, sni: www.zhanan03.site, skip-cert-verify: false}
+  - {name: 113, server: www.zx11.bid, port: 443, type: trojan, password: 5iKwJeZQLjIfRyI3, sni: www.zx11.bid, skip-cert-verify: false}
+  - {name: 115, server: www.zhanan09.icu, port: 443, type: trojan, password: eBBSZMvMev2kruqI, sni: www.zhanan09.icu, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 V1-香港 AWS 02 超高速 1x
-      - 🇸🇬 V4-中转3360|广东-新加坡(新)|x2.5|V2ray
-      - 🇸🇬 V4-中转3364|广东-新加坡(新)|x2.5|V2ray
-      - 🇬🇧 英国 43_欢迎订阅Youtube顺丰资源
-      - 🇫🇷 185.246.211.67:40093＃逍遥观世界@ xiaoyao_1234--法国
-      - 🇰🇷 V1-韩国 AWS 04 Netflix 1x
-      - 🇰🇷 V1-韩国 AWS 05 Netflix 1x
-      - 🇯🇵 V1-日本 AWS 04 Netflix 1x
-      - 🇭🇰 V1-香港 AWS 03 超高速 1x
-      - 🇭🇰 V4-香港3394|Azure|x1.0|V2ray
-      - 🇺🇲 US_2179 | 8.84Mb
-      - 欢迎订阅Youtube顺丰资源15
-      - 🇮🇹 95.174.64.69:40093＃逍遥观世界@ xiaoyao_1234--意大利
+      - 🇭🇰 V4-中转972|山东-香港HKT|解锁|x2.0|V2ray
+      - 🇭🇰 香港 VR30 CDN 1.3x
+      - 🇭🇰 香港 VR31 CDN 1.3x
+      - 🇭🇰 香港 VR32 CDN 1.3x
+      - 123
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 121
+      - 欢迎订阅Youtube顺丰资源10
+      - 欢迎订阅Youtube顺丰资源14
       - 45.12.223.197:40093＃逍遥观世界@ xiaoyao_1234 ---挪威
-      - 185.76.8.215:40093＃逍遥观世界@ xiaoyao_1234 ---斯洛伐克
+      - 🇺🇲 bn-chanll-Austria 🇦🇹 15
+      - 🇺🇲 bn-chanll-United States-dal 🇺🇸 3
+      - 139
+      - 175
+      - 181
+      - 🇯🇵 JP_993
+      - 68
+      - 76
+      - 113
+      - 115
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 V1-香港 AWS 02 超高速 1x
-      - 🇸🇬 V4-中转3360|广东-新加坡(新)|x2.5|V2ray
-      - 🇸🇬 V4-中转3364|广东-新加坡(新)|x2.5|V2ray
-      - 🇬🇧 英国 43_欢迎订阅Youtube顺丰资源
-      - 🇫🇷 185.246.211.67:40093＃逍遥观世界@ xiaoyao_1234--法国
-      - 🇰🇷 V1-韩国 AWS 04 Netflix 1x
-      - 🇰🇷 V1-韩国 AWS 05 Netflix 1x
-      - 🇯🇵 V1-日本 AWS 04 Netflix 1x
-      - 🇭🇰 V1-香港 AWS 03 超高速 1x
-      - 🇭🇰 V4-香港3394|Azure|x1.0|V2ray
-      - 🇺🇲 US_2179 | 8.84Mb
-      - 欢迎订阅Youtube顺丰资源15
-      - 🇮🇹 95.174.64.69:40093＃逍遥观世界@ xiaoyao_1234--意大利
+      - 🇭🇰 V4-中转972|山东-香港HKT|解锁|x2.0|V2ray
+      - 🇭🇰 香港 VR30 CDN 1.3x
+      - 🇭🇰 香港 VR31 CDN 1.3x
+      - 🇭🇰 香港 VR32 CDN 1.3x
+      - 123
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 121
+      - 欢迎订阅Youtube顺丰资源10
+      - 欢迎订阅Youtube顺丰资源14
       - 45.12.223.197:40093＃逍遥观世界@ xiaoyao_1234 ---挪威
-      - 185.76.8.215:40093＃逍遥观世界@ xiaoyao_1234 ---斯洛伐克
+      - 🇺🇲 bn-chanll-Austria 🇦🇹 15
+      - 🇺🇲 bn-chanll-United States-dal 🇺🇸 3
+      - 139
+      - 175
+      - 181
+      - 🇯🇵 JP_993
+      - 68
+      - 76
+      - 113
+      - 115
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 V1-香港 AWS 02 超高速 1x
-      - 🇸🇬 V4-中转3360|广东-新加坡(新)|x2.5|V2ray
-      - 🇸🇬 V4-中转3364|广东-新加坡(新)|x2.5|V2ray
-      - 🇬🇧 英国 43_欢迎订阅Youtube顺丰资源
-      - 🇫🇷 185.246.211.67:40093＃逍遥观世界@ xiaoyao_1234--法国
-      - 🇰🇷 V1-韩国 AWS 04 Netflix 1x
-      - 🇰🇷 V1-韩国 AWS 05 Netflix 1x
-      - 🇯🇵 V1-日本 AWS 04 Netflix 1x
-      - 🇭🇰 V1-香港 AWS 03 超高速 1x
-      - 🇭🇰 V4-香港3394|Azure|x1.0|V2ray
-      - 🇺🇲 US_2179 | 8.84Mb
-      - 欢迎订阅Youtube顺丰资源15
-      - 🇮🇹 95.174.64.69:40093＃逍遥观世界@ xiaoyao_1234--意大利
+      - 🇭🇰 V4-中转972|山东-香港HKT|解锁|x2.0|V2ray
+      - 🇭🇰 香港 VR30 CDN 1.3x
+      - 🇭🇰 香港 VR31 CDN 1.3x
+      - 🇭🇰 香港 VR32 CDN 1.3x
+      - 123
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 121
+      - 欢迎订阅Youtube顺丰资源10
+      - 欢迎订阅Youtube顺丰资源14
       - 45.12.223.197:40093＃逍遥观世界@ xiaoyao_1234 ---挪威
-      - 185.76.8.215:40093＃逍遥观世界@ xiaoyao_1234 ---斯洛伐克
+      - 🇺🇲 bn-chanll-Austria 🇦🇹 15
+      - 🇺🇲 bn-chanll-United States-dal 🇺🇸 3
+      - 139
+      - 175
+      - 181
+      - 🇯🇵 JP_993
+      - 68
+      - 76
+      - 113
+      - 115
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 V1-香港 AWS 02 超高速 1x
-      - 🇸🇬 V4-中转3360|广东-新加坡(新)|x2.5|V2ray
-      - 🇸🇬 V4-中转3364|广东-新加坡(新)|x2.5|V2ray
-      - 🇬🇧 英国 43_欢迎订阅Youtube顺丰资源
-      - 🇫🇷 185.246.211.67:40093＃逍遥观世界@ xiaoyao_1234--法国
-      - 🇰🇷 V1-韩国 AWS 04 Netflix 1x
-      - 🇰🇷 V1-韩国 AWS 05 Netflix 1x
-      - 🇯🇵 V1-日本 AWS 04 Netflix 1x
-      - 🇭🇰 V1-香港 AWS 03 超高速 1x
-      - 🇭🇰 V4-香港3394|Azure|x1.0|V2ray
-      - 🇺🇲 US_2179 | 8.84Mb
-      - 欢迎订阅Youtube顺丰资源15
-      - 🇮🇹 95.174.64.69:40093＃逍遥观世界@ xiaoyao_1234--意大利
+      - 🇭🇰 V4-中转972|山东-香港HKT|解锁|x2.0|V2ray
+      - 🇭🇰 香港 VR30 CDN 1.3x
+      - 🇭🇰 香港 VR31 CDN 1.3x
+      - 🇭🇰 香港 VR32 CDN 1.3x
+      - 123
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 121
+      - 欢迎订阅Youtube顺丰资源10
+      - 欢迎订阅Youtube顺丰资源14
       - 45.12.223.197:40093＃逍遥观世界@ xiaoyao_1234 ---挪威
-      - 185.76.8.215:40093＃逍遥观世界@ xiaoyao_1234 ---斯洛伐克
+      - 🇺🇲 bn-chanll-Austria 🇦🇹 15
+      - 🇺🇲 bn-chanll-United States-dal 🇺🇸 3
+      - 139
+      - 175
+      - 181
+      - 🇯🇵 JP_993
+      - 68
+      - 76
+      - 113
+      - 115
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 V1-香港 AWS 02 超高速 1x
-      - 🇸🇬 V4-中转3360|广东-新加坡(新)|x2.5|V2ray
-      - 🇸🇬 V4-中转3364|广东-新加坡(新)|x2.5|V2ray
-      - 🇬🇧 英国 43_欢迎订阅Youtube顺丰资源
-      - 🇫🇷 185.246.211.67:40093＃逍遥观世界@ xiaoyao_1234--法国
-      - 🇰🇷 V1-韩国 AWS 04 Netflix 1x
-      - 🇰🇷 V1-韩国 AWS 05 Netflix 1x
-      - 🇯🇵 V1-日本 AWS 04 Netflix 1x
-      - 🇭🇰 V1-香港 AWS 03 超高速 1x
-      - 🇭🇰 V4-香港3394|Azure|x1.0|V2ray
-      - 🇺🇲 US_2179 | 8.84Mb
-      - 欢迎订阅Youtube顺丰资源15
-      - 🇮🇹 95.174.64.69:40093＃逍遥观世界@ xiaoyao_1234--意大利
+      - 🇭🇰 V4-中转972|山东-香港HKT|解锁|x2.0|V2ray
+      - 🇭🇰 香港 VR30 CDN 1.3x
+      - 🇭🇰 香港 VR31 CDN 1.3x
+      - 🇭🇰 香港 VR32 CDN 1.3x
+      - 123
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 121
+      - 欢迎订阅Youtube顺丰资源10
+      - 欢迎订阅Youtube顺丰资源14
       - 45.12.223.197:40093＃逍遥观世界@ xiaoyao_1234 ---挪威
-      - 185.76.8.215:40093＃逍遥观世界@ xiaoyao_1234 ---斯洛伐克
+      - 🇺🇲 bn-chanll-Austria 🇦🇹 15
+      - 🇺🇲 bn-chanll-United States-dal 🇺🇸 3
+      - 139
+      - 175
+      - 181
+      - 🇯🇵 JP_993
+      - 68
+      - 76
+      - 113
+      - 115
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 V1-香港 AWS 02 超高速 1x
-      - 🇸🇬 V4-中转3360|广东-新加坡(新)|x2.5|V2ray
-      - 🇸🇬 V4-中转3364|广东-新加坡(新)|x2.5|V2ray
-      - 🇬🇧 英国 43_欢迎订阅Youtube顺丰资源
-      - 🇫🇷 185.246.211.67:40093＃逍遥观世界@ xiaoyao_1234--法国
-      - 🇰🇷 V1-韩国 AWS 04 Netflix 1x
-      - 🇰🇷 V1-韩国 AWS 05 Netflix 1x
-      - 🇯🇵 V1-日本 AWS 04 Netflix 1x
-      - 🇭🇰 V1-香港 AWS 03 超高速 1x
-      - 🇭🇰 V4-香港3394|Azure|x1.0|V2ray
-      - 🇺🇲 US_2179 | 8.84Mb
-      - 欢迎订阅Youtube顺丰资源15
-      - 🇮🇹 95.174.64.69:40093＃逍遥观世界@ xiaoyao_1234--意大利
+      - 🇭🇰 V4-中转972|山东-香港HKT|解锁|x2.0|V2ray
+      - 🇭🇰 香港 VR30 CDN 1.3x
+      - 🇭🇰 香港 VR31 CDN 1.3x
+      - 🇭🇰 香港 VR32 CDN 1.3x
+      - 123
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 121
+      - 欢迎订阅Youtube顺丰资源10
+      - 欢迎订阅Youtube顺丰资源14
       - 45.12.223.197:40093＃逍遥观世界@ xiaoyao_1234 ---挪威
-      - 185.76.8.215:40093＃逍遥观世界@ xiaoyao_1234 ---斯洛伐克
+      - 🇺🇲 bn-chanll-Austria 🇦🇹 15
+      - 🇺🇲 bn-chanll-United States-dal 🇺🇸 3
+      - 139
+      - 175
+      - 181
+      - 🇯🇵 JP_993
+      - 68
+      - 76
+      - 113
+      - 115
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 V1-香港 AWS 02 超高速 1x
-      - 🇸🇬 V4-中转3360|广东-新加坡(新)|x2.5|V2ray
-      - 🇸🇬 V4-中转3364|广东-新加坡(新)|x2.5|V2ray
-      - 🇬🇧 英国 43_欢迎订阅Youtube顺丰资源
-      - 🇫🇷 185.246.211.67:40093＃逍遥观世界@ xiaoyao_1234--法国
-      - 🇰🇷 V1-韩国 AWS 04 Netflix 1x
-      - 🇰🇷 V1-韩国 AWS 05 Netflix 1x
-      - 🇯🇵 V1-日本 AWS 04 Netflix 1x
-      - 🇭🇰 V1-香港 AWS 03 超高速 1x
-      - 🇭🇰 V4-香港3394|Azure|x1.0|V2ray
-      - 🇺🇲 US_2179 | 8.84Mb
-      - 欢迎订阅Youtube顺丰资源15
-      - 🇮🇹 95.174.64.69:40093＃逍遥观世界@ xiaoyao_1234--意大利
+      - 🇭🇰 V4-中转972|山东-香港HKT|解锁|x2.0|V2ray
+      - 🇭🇰 香港 VR30 CDN 1.3x
+      - 🇭🇰 香港 VR31 CDN 1.3x
+      - 🇭🇰 香港 VR32 CDN 1.3x
+      - 123
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 121
+      - 欢迎订阅Youtube顺丰资源10
+      - 欢迎订阅Youtube顺丰资源14
       - 45.12.223.197:40093＃逍遥观世界@ xiaoyao_1234 ---挪威
-      - 185.76.8.215:40093＃逍遥观世界@ xiaoyao_1234 ---斯洛伐克
+      - 🇺🇲 bn-chanll-Austria 🇦🇹 15
+      - 🇺🇲 bn-chanll-United States-dal 🇺🇸 3
+      - 139
+      - 175
+      - 181
+      - 🇯🇵 JP_993
+      - 68
+      - 76
+      - 113
+      - 115
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -185,21 +241,28 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 V1-香港 AWS 02 超高速 1x
-      - 🇸🇬 V4-中转3360|广东-新加坡(新)|x2.5|V2ray
-      - 🇸🇬 V4-中转3364|广东-新加坡(新)|x2.5|V2ray
-      - 🇬🇧 英国 43_欢迎订阅Youtube顺丰资源
-      - 🇫🇷 185.246.211.67:40093＃逍遥观世界@ xiaoyao_1234--法国
-      - 🇰🇷 V1-韩国 AWS 04 Netflix 1x
-      - 🇰🇷 V1-韩国 AWS 05 Netflix 1x
-      - 🇯🇵 V1-日本 AWS 04 Netflix 1x
-      - 🇭🇰 V1-香港 AWS 03 超高速 1x
-      - 🇭🇰 V4-香港3394|Azure|x1.0|V2ray
-      - 🇺🇲 US_2179 | 8.84Mb
-      - 欢迎订阅Youtube顺丰资源15
-      - 🇮🇹 95.174.64.69:40093＃逍遥观世界@ xiaoyao_1234--意大利
+      - 🇭🇰 V4-中转972|山东-香港HKT|解锁|x2.0|V2ray
+      - 🇭🇰 香港 VR30 CDN 1.3x
+      - 🇭🇰 香港 VR31 CDN 1.3x
+      - 🇭🇰 香港 VR32 CDN 1.3x
+      - 123
+      - 🇸🇬 tg@vpnpool-US-Seattle-AWS-SG-nf
+      - 🇭🇰 tg@vpnpool-US-Seattle-AWS-香港-nf
+      - 🇸🇬 tg@vpnpool-广州移动-SG-nf
+      - 121
+      - 欢迎订阅Youtube顺丰资源10
+      - 欢迎订阅Youtube顺丰资源14
       - 45.12.223.197:40093＃逍遥观世界@ xiaoyao_1234 ---挪威
-      - 185.76.8.215:40093＃逍遥观世界@ xiaoyao_1234 ---斯洛伐克
+      - 🇺🇲 bn-chanll-Austria 🇦🇹 15
+      - 🇺🇲 bn-chanll-United States-dal 🇺🇸 3
+      - 139
+      - 175
+      - 181
+      - 🇯🇵 JP_993
+      - 68
+      - 76
+      - 113
+      - 115
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
