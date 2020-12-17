@@ -5,212 +5,172 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 亲, server: 75.2.90.239, port: 41024, type: vmess, uuid: c904349a-8a50-4479-e3e0-62f67732b4ff, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /admin, ws-headers: {Host: 75.2.90.239}}
-  - {name: jp, server: 75.2.31.166, port: 48607, type: vmess, uuid: 410a4341-1872-4109-ecba-da8302dc3d70, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 75.2.31.166}}
-  - {name: 31, server: www.huang4545.space, port: 443, type: trojan, password: Bghf8CaTkRC3Oa75, sni: www.huang4545.space, skip-cert-verify: false}
-  - {name: 110, server: 45.89.173.203, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz, server: s272.snode.xyz, port: 443, type: vmess, uuid: fd4668b8-45d3-32f1-b5b8-195aa0d407c3, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /panel, ws-headers: {Host: s272.snode.xyz}}
-  - {name: 🇫🇷 流暢雲 香港|直连|HK 01 FREE, server: aws.hk01a.bbenew.com, port: 443, type: vmess, uuid: 263f943d-ba69-325c-a7ef-5a31decd4924, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: aws.hk01a.bbenew.com}}
-  - {name: 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30, server: 156.146.33.79, port: 36811, type: ss, cipher: aes-256-gcm, password: UhV73M9rmGqDfKh3Xtd4USHp}
-  - {name: 🇸🇬 新加坡-电信移动入口, server: cn1.miaonode.cf, port: 60019, type: vmess, uuid: a25a3738-c25f-39b4-a857-2c52ac8477dc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: vali-dns.cp31.ott.cibntv.net}}
-  - {name: 🇸🇬 新加坡-联通移动入口, server: cn2.miaonode.cf, port: 60020, type: vmess, uuid: a25a3738-c25f-39b4-a857-2c52ac8477dc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: vali-dns.cp31.ott.cibntv.net}}
-  - {name: 🇯🇵 日本-联通移动入口, server: cn2.miaonode.cf, port: 60022, type: vmess, uuid: a25a3738-c25f-39b4-a857-2c52ac8477dc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: vali-dns.cp31.ott.cibntv.net}}
-  - {name: 🇰🇷 韩国-电信移动入口, server: cn1.miaonode.cf, port: 60017, type: vmess, uuid: a25a3738-c25f-39b4-a857-2c52ac8477dc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: vali-dns.cp31.ott.cibntv.net}}
-  - {name: 🇰🇷 韩国-联通移动入口, server: cn2.miaonode.cf, port: 60018, type: vmess, uuid: a25a3738-c25f-39b4-a857-2c52ac8477dc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: vali-dns.cp31.ott.cibntv.net}}
-  - {name: 🇭🇰 香港-电信移动入口, server: cn1.miaonode.cf, port: 60009, type: vmess, uuid: a25a3738-c25f-39b4-a857-2c52ac8477dc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: vali-dns.cp31.ott.cibntv.net}}
-  - {name: 🇭🇰 香港-联通移动入口, server: cn2.miaonode.cf, port: 60010, type: vmess, uuid: a25a3738-c25f-39b4-a857-2c52ac8477dc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: vali-dns.cp31.ott.cibntv.net}}
-  - {name: 🇭🇰 香港直连1, server: hk1.miaonode.cf, port: 80, type: vmess, uuid: a25a3738-c25f-39b4-a857-2c52ac8477dc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: vali-dns.cp31.ott.cibntv.net}}
-  - {name: 🇺🇲 +US_1559, server: 66.115.147.74, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇺🇲 +US_1695, server: 84.17.41.71, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
   - {name: 🇯🇵 日本2_2021/01/25, server: chinahright.ml, port: 443, type: trojan, password: 5991331f-5d17-4733-8435-a5bc4315a705, sni: chinahright.ml, skip-cert-verify: false}
   - {name: 🇭🇰 香港(欢迎订阅Youtube破解资源君), server: www.zhanan13.bid, port: 443, type: trojan, password: 0hTvU0v7FBMgG2Lw, sni: www.zhanan13.bid, skip-cert-verify: false}
   - {name: 🇺🇲 US_2026, server: fuckxijinping.ga, port: 443, type: trojan, password: 60cddc6a-ed2d-4ab6-b630-cbfda7b8eaf0, sni: fuckxijinping.ga, skip-cert-verify: false}
   - {name: 🇺🇲 US_2028, server: fuckxijinping.cf, port: 443, type: trojan, password: ec6b7016-88c4-426d-8d5e-9f60c83ed898, sni: fuckxijinping.cf, skip-cert-verify: false}
+  - {name: 31, server: www.huang4545.space, port: 443, type: trojan, password: Bghf8CaTkRC3Oa75, sni: www.huang4545.space, skip-cert-verify: false}
+  - {name: 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30, server: 156.146.33.79, port: 36811, type: ss, cipher: aes-256-gcm, password: UhV73M9rmGqDfKh3Xtd4USHp}
+  - {name: 🇺🇲 +US_1559, server: 66.115.147.74, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇺🇲 +US_1695, server: 84.17.41.71, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 110, server: 45.89.173.203, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz, server: s272.snode.xyz, port: 443, type: vmess, uuid: fd4668b8-45d3-32f1-b5b8-195aa0d407c3, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /panel, ws-headers: {Host: s272.snode.xyz}}
+  - {name: 🇫🇷 流暢雲 香港|直连|HK 01 FREE, server: aws.hk01a.bbenew.com, port: 443, type: vmess, uuid: 263f943d-ba69-325c-a7ef-5a31decd4924, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: aws.hk01a.bbenew.com}}
+  - {name: 亲, server: 75.2.90.239, port: 41024, type: vmess, uuid: c904349a-8a50-4479-e3e0-62f67732b4ff, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /admin, ws-headers: {Host: 75.2.90.239}}
+  - {name: jp, server: 75.2.31.166, port: 48607, type: vmess, uuid: 410a4341-1872-4109-ecba-da8302dc3d70, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 75.2.31.166}}
+  - {name: 🇭🇰 香港 5|Azure|v2ray节点| 不限速, server: az5.ohss.icu, port: 8888, type: vmess, uuid: e3922cbd-18ce-3597-b1b2-4a0a3173f434, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.bing.com}}
+  - {name: 🇺🇲 US_1967, server: sweet-snowflake-e785.zjun0211.workers.dev, port: 443, type: vmess, uuid: ef3c6aa0-e5f2-4332-bad8-17c0438dfaa3, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: sweet-snowflake-e785.zjun0211.workers.dev}}
+  - {name: 🇺🇲 US_2003, server: littlesur.ml, port: 443, type: vmess, uuid: 9559f144-3c52-11eb-a62b-560003191f2e, alterId: 6, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /Gn2drwBb/, ws-headers: {Host: littlesur.ml}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 亲
-      - jp
-      - 31
-      - 110
-      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
-      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
-      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
-      - 🇸🇬 新加坡-电信移动入口
-      - 🇸🇬 新加坡-联通移动入口
-      - 🇯🇵 日本-联通移动入口
-      - 🇰🇷 韩国-电信移动入口
-      - 🇰🇷 韩国-联通移动入口
-      - 🇭🇰 香港-电信移动入口
-      - 🇭🇰 香港-联通移动入口
-      - 🇭🇰 香港直连1
-      - 🇺🇲 +US_1559
-      - 🇺🇲 +US_1695
       - 🇯🇵 日本2_2021/01/25
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君)
       - 🇺🇲 US_2026
       - 🇺🇲 US_2028
+      - 31
+      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
+      - 🇺🇲 +US_1559
+      - 🇺🇲 +US_1695
+      - 110
+      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
+      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
+      - 亲
+      - jp
+      - 🇭🇰 香港 5|Azure|v2ray节点| 不限速
+      - 🇺🇲 US_1967
+      - 🇺🇲 US_2003
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 亲
-      - jp
-      - 31
-      - 110
-      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
-      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
-      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
-      - 🇸🇬 新加坡-电信移动入口
-      - 🇸🇬 新加坡-联通移动入口
-      - 🇯🇵 日本-联通移动入口
-      - 🇰🇷 韩国-电信移动入口
-      - 🇰🇷 韩国-联通移动入口
-      - 🇭🇰 香港-电信移动入口
-      - 🇭🇰 香港-联通移动入口
-      - 🇭🇰 香港直连1
-      - 🇺🇲 +US_1559
-      - 🇺🇲 +US_1695
       - 🇯🇵 日本2_2021/01/25
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君)
       - 🇺🇲 US_2026
       - 🇺🇲 US_2028
+      - 31
+      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
+      - 🇺🇲 +US_1559
+      - 🇺🇲 +US_1695
+      - 110
+      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
+      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
+      - 亲
+      - jp
+      - 🇭🇰 香港 5|Azure|v2ray节点| 不限速
+      - 🇺🇲 US_1967
+      - 🇺🇲 US_2003
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亲
-      - jp
-      - 31
-      - 110
-      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
-      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
-      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
-      - 🇸🇬 新加坡-电信移动入口
-      - 🇸🇬 新加坡-联通移动入口
-      - 🇯🇵 日本-联通移动入口
-      - 🇰🇷 韩国-电信移动入口
-      - 🇰🇷 韩国-联通移动入口
-      - 🇭🇰 香港-电信移动入口
-      - 🇭🇰 香港-联通移动入口
-      - 🇭🇰 香港直连1
-      - 🇺🇲 +US_1559
-      - 🇺🇲 +US_1695
       - 🇯🇵 日本2_2021/01/25
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君)
       - 🇺🇲 US_2026
       - 🇺🇲 US_2028
+      - 31
+      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
+      - 🇺🇲 +US_1559
+      - 🇺🇲 +US_1695
+      - 110
+      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
+      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
+      - 亲
+      - jp
+      - 🇭🇰 香港 5|Azure|v2ray节点| 不限速
+      - 🇺🇲 US_1967
+      - 🇺🇲 US_2003
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 亲
-      - jp
-      - 31
-      - 110
-      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
-      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
-      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
-      - 🇸🇬 新加坡-电信移动入口
-      - 🇸🇬 新加坡-联通移动入口
-      - 🇯🇵 日本-联通移动入口
-      - 🇰🇷 韩国-电信移动入口
-      - 🇰🇷 韩国-联通移动入口
-      - 🇭🇰 香港-电信移动入口
-      - 🇭🇰 香港-联通移动入口
-      - 🇭🇰 香港直连1
-      - 🇺🇲 +US_1559
-      - 🇺🇲 +US_1695
       - 🇯🇵 日本2_2021/01/25
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君)
       - 🇺🇲 US_2026
       - 🇺🇲 US_2028
+      - 31
+      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
+      - 🇺🇲 +US_1559
+      - 🇺🇲 +US_1695
+      - 110
+      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
+      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
+      - 亲
+      - jp
+      - 🇭🇰 香港 5|Azure|v2ray节点| 不限速
+      - 🇺🇲 US_1967
+      - 🇺🇲 US_2003
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 亲
-      - jp
-      - 31
-      - 110
-      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
-      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
-      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
-      - 🇸🇬 新加坡-电信移动入口
-      - 🇸🇬 新加坡-联通移动入口
-      - 🇯🇵 日本-联通移动入口
-      - 🇰🇷 韩国-电信移动入口
-      - 🇰🇷 韩国-联通移动入口
-      - 🇭🇰 香港-电信移动入口
-      - 🇭🇰 香港-联通移动入口
-      - 🇭🇰 香港直连1
-      - 🇺🇲 +US_1559
-      - 🇺🇲 +US_1695
       - 🇯🇵 日本2_2021/01/25
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君)
       - 🇺🇲 US_2026
       - 🇺🇲 US_2028
+      - 31
+      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
+      - 🇺🇲 +US_1559
+      - 🇺🇲 +US_1695
+      - 110
+      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
+      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
+      - 亲
+      - jp
+      - 🇭🇰 香港 5|Azure|v2ray节点| 不限速
+      - 🇺🇲 US_1967
+      - 🇺🇲 US_2003
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 亲
-      - jp
-      - 31
-      - 110
-      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
-      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
-      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
-      - 🇸🇬 新加坡-电信移动入口
-      - 🇸🇬 新加坡-联通移动入口
-      - 🇯🇵 日本-联通移动入口
-      - 🇰🇷 韩国-电信移动入口
-      - 🇰🇷 韩国-联通移动入口
-      - 🇭🇰 香港-电信移动入口
-      - 🇭🇰 香港-联通移动入口
-      - 🇭🇰 香港直连1
-      - 🇺🇲 +US_1559
-      - 🇺🇲 +US_1695
       - 🇯🇵 日本2_2021/01/25
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君)
       - 🇺🇲 US_2026
       - 🇺🇲 US_2028
+      - 31
+      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
+      - 🇺🇲 +US_1559
+      - 🇺🇲 +US_1695
+      - 110
+      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
+      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
+      - 亲
+      - jp
+      - 🇭🇰 香港 5|Azure|v2ray节点| 不限速
+      - 🇺🇲 US_1967
+      - 🇺🇲 US_2003
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亲
-      - jp
-      - 31
-      - 110
-      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
-      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
-      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
-      - 🇸🇬 新加坡-电信移动入口
-      - 🇸🇬 新加坡-联通移动入口
-      - 🇯🇵 日本-联通移动入口
-      - 🇰🇷 韩国-电信移动入口
-      - 🇰🇷 韩国-联通移动入口
-      - 🇭🇰 香港-电信移动入口
-      - 🇭🇰 香港-联通移动入口
-      - 🇭🇰 香港直连1
-      - 🇺🇲 +US_1559
-      - 🇺🇲 +US_1695
       - 🇯🇵 日本2_2021/01/25
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君)
       - 🇺🇲 US_2026
       - 🇺🇲 US_2028
+      - 31
+      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
+      - 🇺🇲 +US_1559
+      - 🇺🇲 +US_1695
+      - 110
+      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
+      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
+      - 亲
+      - jp
+      - 🇭🇰 香港 5|Azure|v2ray节点| 不限速
+      - 🇺🇲 US_1967
+      - 🇺🇲 US_2003
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -233,27 +193,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亲
-      - jp
-      - 31
-      - 110
-      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
-      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
-      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
-      - 🇸🇬 新加坡-电信移动入口
-      - 🇸🇬 新加坡-联通移动入口
-      - 🇯🇵 日本-联通移动入口
-      - 🇰🇷 韩国-电信移动入口
-      - 🇰🇷 韩国-联通移动入口
-      - 🇭🇰 香港-电信移动入口
-      - 🇭🇰 香港-联通移动入口
-      - 🇭🇰 香港直连1
-      - 🇺🇲 +US_1559
-      - 🇺🇲 +US_1695
       - 🇯🇵 日本2_2021/01/25
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君)
       - 🇺🇲 US_2026
       - 🇺🇲 US_2028
+      - 31
+      - 🇩🇪 bn-chanll-Germany-fra 🇩🇪 30
+      - 🇺🇲 +US_1559
+      - 🇺🇲 +US_1695
+      - 110
+      - 🇭🇰 香港 网飞#272|倍率1.2|等级2|在线12人|460G|v2.freeyes.xyz
+      - 🇫🇷 流暢雲 香港|直连|HK 01 FREE
+      - 亲
+      - jp
+      - 🇭🇰 香港 5|Azure|v2ray节点| 不限速
+      - 🇺🇲 US_1967
+      - 🇺🇲 US_2003
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
