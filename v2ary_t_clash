@@ -5,189 +5,149 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇯🇵 日本li11—CU, server: cscu.akkk.xyz, port: 20114, type: vmess, uuid: ea1cd03f-9c9d-358f-af21-915023ba8938, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: li11.jianghe1.top}}
-  - {name: 🇯🇵 日本li12—CU, server: cscu.akkk.xyz, port: 20115, type: vmess, uuid: ea1cd03f-9c9d-358f-af21-915023ba8938, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: li12.jianghe1.top}}
-  - {name: 🇯🇵 日本li13—CU, server: cscu.akkk.xyz, port: 20116, type: vmess, uuid: ea1cd03f-9c9d-358f-af21-915023ba8938, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: li13.jianghe1.top}}
-  - {name: 🇯🇵 日本li14—CU, server: cscu.akkk.xyz, port: 20117, type: vmess, uuid: ea1cd03f-9c9d-358f-af21-915023ba8938, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: li14.jianghe1.top}}
-  - {name: 🇸🇬 新加坡 2, server: yuenet.soulclub.buzz, port: 20052, type: vmess, uuid: 9c9d9ae1-5d6f-4d99-9afc-0e70e2074ede, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /evil, ws-headers: {Host: sj.soulclub.buzz}}
-  - {name: 🇸🇬 新加坡 3, server: yuenet.soulclub.buzz, port: 20051, type: vmess, uuid: 8ed9439f-9368-4e44-9bba-37611ffaafe1, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /evil, ws-headers: {Host: sj.soulclub.buzz}}
-  - {name: 🇭🇰 香港, server: azhk1.soulclub.buzz, port: 50000, type: vmess, uuid: 8ed9439f-9368-4e44-9bba-37611ffaafe1, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /evil, ws-headers: {Host: azhk1.soulclub.buzz}}
-  - {name: 🇸🇬 新加坡 5, server: yuenet.soulclub.buzz, port: 20053, type: vmess, uuid: 9c9d9ae1-5d6f-4d99-9afc-0e70e2074ede, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /evil, ws-headers: {Host: sj.soulclub.buzz}}
   - {name: 🇭🇰 VIP1 长沙-香港 AWS 1x, server: cscu1.qspssf.top, port: 14105, type: vmess, uuid: cf535eda-0b37-3d06-9935-c7b55a9feeec, alterId: 3, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: awsxbwa.v2store.xyz}}
-  - {name: 🇭🇰 HK-HKT-01(1), server: hka.cloudv2.top, port: 443, type: vmess, uuid: 09F07B80-A029-091E-FC91-02E39B6359BA, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: hka.cloudv2.top}}
-  - {name: 🇨🇳 TW-Hinet(1), server: twa.cloudv2.top, port: 8884, type: vmess, uuid: 09F07B80-A029-091E-FC91-02E39B6359BA, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: ★★★免费变动|公告查看, server: v2-twn-001.xiaoxiaobujidao.xyz, port: 80, type: vmess, uuid: afdc5773-66af-3465-99b7-dcc80a97490d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /xiaodao, ws-headers: {Host: v2-twn-001.xiaoxiaobujidao.xyz}}
-  - {name: 🇯🇵 JP_1809 |41.02Mb, server: xibun.cf, port: 443, type: trojan, password: 15dcc117-26f9-4264-bd9c-ac6b9a6f4739, sni: xibun.cf, skip-cert-verify: false}
   - {name: 🇰🇷 KR_1845 |15.69Mb, server: xibun.ga, port: 443, type: trojan, password: b5467f6e-8df6-4ccb-adcb-b9f52b4075e9, sni: xibun.ga, skip-cert-verify: false}
   - {name: 🇰🇷 KR_1846 |19.76Mb, server: fuckxijinping.ga, port: 443, type: trojan, password: 7568772c-7466-498d-be12-fcf45ee77347, sni: fuckxijinping.ga, skip-cert-verify: false}
-  - {name: 🇰🇷 KR_1847 |16.55Mb, server: fuckxijinping.cf, port: 443, type: trojan, password: 3981d63d-3a37-40c7-aaf8-097e80dfbe1d, sni: fuckxijinping.cf, skip-cert-verify: false}
   - {name: 🇰🇷 KR_1848 |19.13Mb, server: chinahright.ml, port: 443, type: trojan, password: acc4b832-de31-4259-bd7c-10a144fce241, sni: chinahright.ml, skip-cert-verify: false}
-  - {name: 🇰🇷 KR_1849 |11.77Mb, server: fuckxiaofenhong.gq, port: 443, type: trojan, password: 42b9d641-b3e5-4ae9-948f-89f1ad03d293, sni: fuckxiaofenhong.gq, skip-cert-verify: false}
+  - {name: 🇸🇬 V1-新加坡AWS 07 AGA加速 1.0x, server: v1-aws-sg-07.tudog.me, port: 80, type: vmess, uuid: 733d1aa0-2634-3350-9159-de4a82aac8b1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /tudog, ws-headers: {Host: v1-aws-sg-07.tudog.me}}
+  - {name: 🇳🇱 NL_1765, server: 185.224.249.203, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+  - {name: 🇺🇲 US_2516, server: 173.208.202.61, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇺🇲 US_2530, server: 45.89.173.205, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇸🇬 新加坡Ⅲ VIP3 三倍结算 专线节点 广州电信, server: gz1-yd.subwlkj.link, port: 40033, type: vmess, uuid: cf535eda-0b37-3d06-9935-c7b55a9feeec, alterId: 3, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: xjplina.t4let.pw}}
+  - {name: 🇭🇰 VIP1 长沙-香港 AWS 1x 2, server: cscu1.qspssf.top, port: 14105, type: vmess, uuid: cf535eda-0b37-3d06-9935-c7b55a9feeec, alterId: 3, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: awsxbwa.v2store.xyz}}
+  - {name: 🇭🇰 ✡香香港009x03.0, server: v2-hk-009.xiaoxiaobujidao.xyz, port: 23340, type: vmess, uuid: afdc5773-66af-3465-99b7-dcc80a97490d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /xiaodao, ws-headers: {Host: v2-hk-009.cccccc.cc}}
+  - {name: ZZ_3022, server: 34.80.235.121, port: 443, type: vmess, uuid: 2bcb9ccf-32a2-4bed-acf9-870471128d9f, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /b89ee74a2/, ws-headers: {Host: gghk.cdrcn.tk}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵 日本li11—CU
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇸🇬 新加坡 2
-      - 🇸🇬 新加坡 3
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡 5
       - 🇭🇰 VIP1 长沙-香港 AWS 1x
-      - 🇭🇰 HK-HKT-01(1)
-      - 🇨🇳 TW-Hinet(1)
       - ★★★免费变动|公告查看
-      - 🇯🇵 JP_1809 |41.02Mb
       - 🇰🇷 KR_1845 |15.69Mb
       - 🇰🇷 KR_1846 |19.76Mb
-      - 🇰🇷 KR_1847 |16.55Mb
       - 🇰🇷 KR_1848 |19.13Mb
-      - 🇰🇷 KR_1849 |11.77Mb
+      - 🇸🇬 V1-新加坡AWS 07 AGA加速 1.0x
+      - 🇳🇱 NL_1765
+      - 🇺🇲 US_2516
+      - 🇺🇲 US_2530
+      - 🇸🇬 新加坡Ⅲ VIP3 三倍结算 专线节点 广州电信
+      - 🇭🇰 VIP1 长沙-香港 AWS 1x 2
+      - 🇭🇰 ✡香香港009x03.0
+      - ZZ_3022
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本li11—CU
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇸🇬 新加坡 2
-      - 🇸🇬 新加坡 3
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡 5
       - 🇭🇰 VIP1 长沙-香港 AWS 1x
-      - 🇭🇰 HK-HKT-01(1)
-      - 🇨🇳 TW-Hinet(1)
       - ★★★免费变动|公告查看
-      - 🇯🇵 JP_1809 |41.02Mb
       - 🇰🇷 KR_1845 |15.69Mb
       - 🇰🇷 KR_1846 |19.76Mb
-      - 🇰🇷 KR_1847 |16.55Mb
       - 🇰🇷 KR_1848 |19.13Mb
-      - 🇰🇷 KR_1849 |11.77Mb
+      - 🇸🇬 V1-新加坡AWS 07 AGA加速 1.0x
+      - 🇳🇱 NL_1765
+      - 🇺🇲 US_2516
+      - 🇺🇲 US_2530
+      - 🇸🇬 新加坡Ⅲ VIP3 三倍结算 专线节点 广州电信
+      - 🇭🇰 VIP1 长沙-香港 AWS 1x 2
+      - 🇭🇰 ✡香香港009x03.0
+      - ZZ_3022
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本li11—CU
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇸🇬 新加坡 2
-      - 🇸🇬 新加坡 3
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡 5
       - 🇭🇰 VIP1 长沙-香港 AWS 1x
-      - 🇭🇰 HK-HKT-01(1)
-      - 🇨🇳 TW-Hinet(1)
       - ★★★免费变动|公告查看
-      - 🇯🇵 JP_1809 |41.02Mb
       - 🇰🇷 KR_1845 |15.69Mb
       - 🇰🇷 KR_1846 |19.76Mb
-      - 🇰🇷 KR_1847 |16.55Mb
       - 🇰🇷 KR_1848 |19.13Mb
-      - 🇰🇷 KR_1849 |11.77Mb
+      - 🇸🇬 V1-新加坡AWS 07 AGA加速 1.0x
+      - 🇳🇱 NL_1765
+      - 🇺🇲 US_2516
+      - 🇺🇲 US_2530
+      - 🇸🇬 新加坡Ⅲ VIP3 三倍结算 专线节点 广州电信
+      - 🇭🇰 VIP1 长沙-香港 AWS 1x 2
+      - 🇭🇰 ✡香香港009x03.0
+      - ZZ_3022
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本li11—CU
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇸🇬 新加坡 2
-      - 🇸🇬 新加坡 3
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡 5
       - 🇭🇰 VIP1 长沙-香港 AWS 1x
-      - 🇭🇰 HK-HKT-01(1)
-      - 🇨🇳 TW-Hinet(1)
       - ★★★免费变动|公告查看
-      - 🇯🇵 JP_1809 |41.02Mb
       - 🇰🇷 KR_1845 |15.69Mb
       - 🇰🇷 KR_1846 |19.76Mb
-      - 🇰🇷 KR_1847 |16.55Mb
       - 🇰🇷 KR_1848 |19.13Mb
-      - 🇰🇷 KR_1849 |11.77Mb
+      - 🇸🇬 V1-新加坡AWS 07 AGA加速 1.0x
+      - 🇳🇱 NL_1765
+      - 🇺🇲 US_2516
+      - 🇺🇲 US_2530
+      - 🇸🇬 新加坡Ⅲ VIP3 三倍结算 专线节点 广州电信
+      - 🇭🇰 VIP1 长沙-香港 AWS 1x 2
+      - 🇭🇰 ✡香香港009x03.0
+      - ZZ_3022
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇯🇵 日本li11—CU
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇸🇬 新加坡 2
-      - 🇸🇬 新加坡 3
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡 5
       - 🇭🇰 VIP1 长沙-香港 AWS 1x
-      - 🇭🇰 HK-HKT-01(1)
-      - 🇨🇳 TW-Hinet(1)
       - ★★★免费变动|公告查看
-      - 🇯🇵 JP_1809 |41.02Mb
       - 🇰🇷 KR_1845 |15.69Mb
       - 🇰🇷 KR_1846 |19.76Mb
-      - 🇰🇷 KR_1847 |16.55Mb
       - 🇰🇷 KR_1848 |19.13Mb
-      - 🇰🇷 KR_1849 |11.77Mb
+      - 🇸🇬 V1-新加坡AWS 07 AGA加速 1.0x
+      - 🇳🇱 NL_1765
+      - 🇺🇲 US_2516
+      - 🇺🇲 US_2530
+      - 🇸🇬 新加坡Ⅲ VIP3 三倍结算 专线节点 广州电信
+      - 🇭🇰 VIP1 长沙-香港 AWS 1x 2
+      - 🇭🇰 ✡香香港009x03.0
+      - ZZ_3022
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本li11—CU
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇸🇬 新加坡 2
-      - 🇸🇬 新加坡 3
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡 5
       - 🇭🇰 VIP1 长沙-香港 AWS 1x
-      - 🇭🇰 HK-HKT-01(1)
-      - 🇨🇳 TW-Hinet(1)
       - ★★★免费变动|公告查看
-      - 🇯🇵 JP_1809 |41.02Mb
       - 🇰🇷 KR_1845 |15.69Mb
       - 🇰🇷 KR_1846 |19.76Mb
-      - 🇰🇷 KR_1847 |16.55Mb
       - 🇰🇷 KR_1848 |19.13Mb
-      - 🇰🇷 KR_1849 |11.77Mb
+      - 🇸🇬 V1-新加坡AWS 07 AGA加速 1.0x
+      - 🇳🇱 NL_1765
+      - 🇺🇲 US_2516
+      - 🇺🇲 US_2530
+      - 🇸🇬 新加坡Ⅲ VIP3 三倍结算 专线节点 广州电信
+      - 🇭🇰 VIP1 长沙-香港 AWS 1x 2
+      - 🇭🇰 ✡香香港009x03.0
+      - ZZ_3022
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本li11—CU
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇸🇬 新加坡 2
-      - 🇸🇬 新加坡 3
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡 5
       - 🇭🇰 VIP1 长沙-香港 AWS 1x
-      - 🇭🇰 HK-HKT-01(1)
-      - 🇨🇳 TW-Hinet(1)
       - ★★★免费变动|公告查看
-      - 🇯🇵 JP_1809 |41.02Mb
       - 🇰🇷 KR_1845 |15.69Mb
       - 🇰🇷 KR_1846 |19.76Mb
-      - 🇰🇷 KR_1847 |16.55Mb
       - 🇰🇷 KR_1848 |19.13Mb
-      - 🇰🇷 KR_1849 |11.77Mb
+      - 🇸🇬 V1-新加坡AWS 07 AGA加速 1.0x
+      - 🇳🇱 NL_1765
+      - 🇺🇲 US_2516
+      - 🇺🇲 US_2530
+      - 🇸🇬 新加坡Ⅲ VIP3 三倍结算 专线节点 广州电信
+      - 🇭🇰 VIP1 长沙-香港 AWS 1x 2
+      - 🇭🇰 ✡香香港009x03.0
+      - ZZ_3022
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -210,24 +170,19 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本li11—CU
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇸🇬 新加坡 2
-      - 🇸🇬 新加坡 3
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡 5
       - 🇭🇰 VIP1 长沙-香港 AWS 1x
-      - 🇭🇰 HK-HKT-01(1)
-      - 🇨🇳 TW-Hinet(1)
       - ★★★免费变动|公告查看
-      - 🇯🇵 JP_1809 |41.02Mb
       - 🇰🇷 KR_1845 |15.69Mb
       - 🇰🇷 KR_1846 |19.76Mb
-      - 🇰🇷 KR_1847 |16.55Mb
       - 🇰🇷 KR_1848 |19.13Mb
-      - 🇰🇷 KR_1849 |11.77Mb
+      - 🇸🇬 V1-新加坡AWS 07 AGA加速 1.0x
+      - 🇳🇱 NL_1765
+      - 🇺🇲 US_2516
+      - 🇺🇲 US_2530
+      - 🇸🇬 新加坡Ⅲ VIP3 三倍结算 专线节点 广州电信
+      - 🇭🇰 VIP1 长沙-香港 AWS 1x 2
+      - 🇭🇰 ✡香香港009x03.0
+      - ZZ_3022
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
