@@ -5,445 +5,245 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇺🇲 US_2516, server: 173.208.202.61, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: ZZ_3022, server: 34.80.235.121, port: 443, type: vmess, uuid: 2bcb9ccf-32a2-4bed-acf9-870471128d9f, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /b89ee74a2/, ws-headers: {Host: gghk.cdrcn.tk}}
-  - {name: 🇸🇬 3节点更新 https://bit.ly/3h18eE7, server: hkaga.aowucloud.xyz, port: 443, type: trojan, password: fuli, sni: hkaga.aowucloud.xyz, skip-cert-verify: false}
   - {name: "🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x", server: 76.223.62.67, port: 20031, type: vmess, uuid: ea179548-39b8-3c82-a0ec-4e6bdd60da21, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: awshk1.xxatf.top}}
-  - {name: 🇭🇰 香港 2, server: aea4e933cdb6310fe.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: d3fa8ea7-bbda-4be9-8736-96d17270dfcc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: aea4e933cdb6310fe.awsglobalaccelerator.com}}
-  - {name: 🇭🇰 香港 6, server: a86c5a8f3e3f3caf9.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: d3fa8ea7-bbda-4be9-8736-96d17270dfcc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: a86c5a8f3e3f3caf9.awsglobalaccelerator.com}}
   - {name: 🇭🇰 香港 8, server: aa0cc445ddab5c14f.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: d3fa8ea7-bbda-4be9-8736-96d17270dfcc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: aa0cc445ddab5c14f.awsglobalaccelerator.com}}
   - {name: 🇭🇰 香港 9, server: a87b2a3804f5e6234.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: d3fa8ea7-bbda-4be9-8736-96d17270dfcc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: a87b2a3804f5e6234.awsglobalaccelerator.com}}
   - {name: "🇯🇵 V1日本A[2.0]长沙专线-Tokyo-NF", server: jpc5269.azzico.space, port: 11562, type: vmess, uuid: 68413849-95e0-3036-8343-9f9ae50d9804, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: jpc5269.azzico.pw}}
-  - {name: 🇸🇬 V1-新加坡AWS 16 AGA加速 1.0x, server: v1-aws-sg-16.tudog.me, port: 80, type: vmess, uuid: 733d1aa0-2634-3350-9159-de4a82aac8b1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /tudog, ws-headers: {Host: v1-aws-sg-16.tudog.me}}
   - {name: 🇭🇰 V1-香港AWS 01 AGA加速 1.0x, server: v1-aws-hk-01.tudog.me, port: 80, type: vmess, uuid: 733d1aa0-2634-3350-9159-de4a82aac8b1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /tudog, ws-headers: {Host: v1-aws-hk-01.tudog.me}}
   - {name: 🇭🇰 V1-香港AWS 02 AGA加速 1.0x, server: v1-aws-hk-02.tudog.me, port: 80, type: vmess, uuid: 733d1aa0-2634-3350-9159-de4a82aac8b1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /tudog, ws-headers: {Host: v1-aws-hk-02.tudog.me}}
-  - {name: "🇸🇬 V1新加坡A[2.0]广州-SGP", server: sg1322.azzico.space, port: 11558, type: vmess, uuid: cb5bd099-50be-3102-84c8-30e34171d56a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: sg1322.azzico.pw}}
-  - {name: "🇭🇰 V1香港B[2.0] 广州专线-HKT-NF", server: hk2198.azzico.space, port: 11577, type: vmess, uuid: cb5bd099-50be-3102-84c8-30e34171d56a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: hkpro2197.azzico.pw}}
-  - {name: "🇯🇵 V3日本A[0.5]长沙专线-Tokyo-NF", server: jppro1818.azzico.space, port: 10566, type: vmess, uuid: cb5bd099-50be-3102-84c8-30e34171d56a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: jppro1818.azzico.pw}}
-  - {name: "🇯🇵 V3日本B[2.0]长沙专线-Tokyo-NF", server: jppro1323.azzico.space, port: 12550, type: vmess, uuid: cb5bd099-50be-3102-84c8-30e34171d56a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: jpb1818.azzico.pw}}
-  - {name: "🇸🇬 V3沪新专线A[2.0]SGP", server: sgpro1322.azzico.space, port: 11559, type: vmess, uuid: cb5bd099-50be-3102-84c8-30e34171d56a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: sgpro1322.azzico.pw}}
-  - {name: "🇦🇺 V3澳大利亚AUS[2.0]悉尼-Linode", server: aus1721.azzico.space, port: 11571, type: vmess, uuid: cb5bd099-50be-3102-84c8-30e34171d56a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: aus1721.azzico.pw}}
-  - {name: "🇭🇰 V3香港A[2.0]广州专线-HGC-NF", server: hkpro1370.azzico.space, port: 11557, type: vmess, uuid: cb5bd099-50be-3102-84c8-30e34171d56a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: hkpro1370.azzico.pw}}
-  - {name: "🇭🇰 V3香港B[2.0]广州专线-HGC-NF", server: hkpro2033.azzico.space, port: 11568, type: vmess, uuid: cb5bd099-50be-3102-84c8-30e34171d56a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: hkpro2032.azzico.pw}}
-  - {name: "🇭🇰 V3香港C[0.5]江门专线-HKBN-NF", server: hkpro1382.azzico.space, port: 11580, type: vmess, uuid: cb5bd099-50be-3102-84c8-30e34171d56a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: hkpro1381.azzico.pw}}
-  - {name: "🇭🇰 V3香港E[2.0]江门专线-HGC-NF", server: hkpro2122.azzico.space, port: 11556, type: vmess, uuid: cb5bd099-50be-3102-84c8-30e34171d56a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: hkpro2122.azzico.pw}}
-  - {name: "🇭🇰 广港专线-HKBN-HK-广州入 [2.0]", server: hkpro1381.azzico.space, port: 11578, type: vmess, uuid: cb5bd099-50be-3102-84c8-30e34171d56a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: hkpro1381.azzico.pw}}
-  - {name: "🇭🇰 广港专线-HKBN-HK-江门入 [2.0]", server: hkpro1382.azzico.space, port: 11579, type: vmess, uuid: cb5bd099-50be-3102-84c8-30e34171d56a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: hkpro1381.azzico.pw}}
-  - {name: "🇭🇰 广港专线-HKT-HK-广州入 [2.0]", server: hkpro2197.azzico.space, port: 11574, type: vmess, uuid: cb5bd099-50be-3102-84c8-30e34171d56a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: hkpro2197.azzico.pw}}
-  - {name: 🇭🇰 V1-香港AWS 03 AGA加速 1.0x, server: v1-aws-hk-03.tudog.me, port: 80, type: vmess, uuid: 22187cfd-ebeb-39ff-8596-0574a1389ec9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /tudog, ws-headers: {Host: v1-aws-hk-03.tudog.me}}
   - {name: 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 2, server: v1-aws-hk-02.tudog.me, port: 80, type: vmess, uuid: 6f89037b-b0ba-3d3e-9d80-585a9fbc357c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /tudog, ws-headers: {Host: v1-aws-hk-02.tudog.me}}
-  - {name: 🇭🇰 V1-香港AWS 03 AGA加速 1.0x 2, server: v1-aws-hk-03.tudog.me, port: 80, type: vmess, uuid: 6f89037b-b0ba-3d3e-9d80-585a9fbc357c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /tudog, ws-headers: {Host: v1-aws-hk-03.tudog.me}}
+  - {name: 🇭🇰 V1-香港AWS 03 AGA加速 1.0x, server: v1-aws-hk-03.tudog.me, port: 80, type: vmess, uuid: 6f89037b-b0ba-3d3e-9d80-585a9fbc357c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /tudog, ws-headers: {Host: v1-aws-hk-03.tudog.me}}
   - {name: 🇭🇰 V1-香港AWS 04 AGA加速 1.0x, server: v1-aws-hk-04.tudog.me, port: 80, type: vmess, uuid: 6f89037b-b0ba-3d3e-9d80-585a9fbc357c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /tudog, ws-headers: {Host: v1-aws-hk-04.tudog.me}}
-  - {name: "🇭🇰 广港专线-HGC-HK-江门入 [2.0]", server: hkpro1653.azzico.space, port: 11561, type: vmess, uuid: cb5bd099-50be-3102-84c8-30e34171d56a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: hkpro1653.azzico.pw}}
   - {name: 🇰🇷 韩国#376|倍率1.8|等级1|在线9人|566G|v2.freeyes.xyz|公益节点, server: s376.snode.xyz, port: 443, type: vmess, uuid: f0ab7a7f-0cae-36ad-b8c9-ff11cb469bec, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /panel, ws-headers: {Host: s376.snode.xyz}}
-  - {name: 🇭🇰 V2ray免费节点丨香港丨AGA丨电信丨EC2-10, server: 35.uuuu.guru, port: 60035, type: vmess, uuid: 96180253-a182-3b70-991d-2f24183f4ae3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇸🇬 [vip①]新加坡丨AGA丨电信丨L9", server: 27.uuuu.guru, port: 60027, type: vmess, uuid: 96180253-a182-3b70-991d-2f24183f4ae3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇸🇬 [vip①]新加坡丨广移中继丨D3", server: 12.uuuu.guru, port: 60012, type: vmess, uuid: 96180253-a182-3b70-991d-2f24183f4ae3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇸🇬 [vip①]新加坡丨广移中继丨D4", server: 13.uuuu.guru, port: 60013, type: vmess, uuid: 96180253-a182-3b70-991d-2f24183f4ae3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇭🇰 [vip①]香港丨AGA丨电信丨EC2-8", server: 33.uuuu.guru, port: 60033, type: vmess, uuid: 96180253-a182-3b70-991d-2f24183f4ae3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 V1-香港AWS 01 AGA加速 1.0x 2, server: v1-aws-hk-01.tudog.me, port: 80, type: vmess, uuid: 733d1aa0-2634-3350-9159-de4a82aac8b1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /tudog, ws-headers: {Host: v1-aws-hk-01.tudog.me}}
   - {name: 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 3, server: v1-aws-hk-02.tudog.me, port: 80, type: vmess, uuid: 733d1aa0-2634-3350-9159-de4a82aac8b1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /tudog, ws-headers: {Host: v1-aws-hk-02.tudog.me}}
   - {name: 🇸🇬 新加坡 2, server: sg1322.azzico.space, port: 11558, type: vmess, uuid: 68413849-95e0-3036-8343-9f9ae50d9804, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: sg1322.azzico.pw}}
   - {name: 🇭🇰 香港 28, server: hk2197.azzico.space, port: 11576, type: vmess, uuid: 68413849-95e0-3036-8343-9f9ae50d9804, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: hkpro2197.azzico.pw}}
-  - {name: "🇭🇰 [V2] 香港 4", server: gz.52node.xyz, port: 28029, type: vmess, uuid: b82e025c-e5d5-3002-9a04-21d7846637dd, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: hk.jd.com}}
-  - {name: 🇯🇵 日本li12—CU, server: cscu.akkk.xyz, port: 20115, type: vmess, uuid: 114c732b-0c7c-3cb9-94ce-3576e792f866, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: li12.jianghe1.top}}
-  - {name: 🇯🇵 日本li13—CU, server: cscu.akkk.xyz, port: 20116, type: vmess, uuid: 114c732b-0c7c-3cb9-94ce-3576e792f866, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: li13.jianghe1.top}}
-  - {name: 🇯🇵 日本li14—CU, server: cscu.akkk.xyz, port: 20117, type: vmess, uuid: 114c732b-0c7c-3cb9-94ce-3576e792f866, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: li14.jianghe1.top}}
-  - {name: 🇭🇰 香港aws1—CM, server: gm.xxatf.top, port: 21011, type: vmess, uuid: 114c732b-0c7c-3cb9-94ce-3576e792f866, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: lijp11.xxatf.top}}
-  - {name: "🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x 2", server: 76.223.62.67, port: 20031, type: vmess, uuid: 114c732b-0c7c-3cb9-94ce-3576e792f866, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: awshk1.xxatf.top}}
-  - {name: 🇺🇲 US_3651 |24.97Mb, server: fuckxijinping.ga, port: 443, type: trojan, password: 8b299b03-e012-48e3-b6e8-94f325afe99e, sni: fuckxijinping.ga, skip-cert-verify: false}
   - {name: 🇺🇲 US_3653 |22.65Mb, server: xibun.ga, port: 443, type: trojan, password: dc38e8e5-ed8c-4e7e-b7b4-74a9ab7d7bd4, sni: xibun.ga, skip-cert-verify: false}
   - {name: 🇺🇲 US_3657 |24.76Mb, server: fuckxiaofenhong.gq, port: 443, type: trojan, password: e3d8ab5d-e19d-4cb7-8f91-ce26fc499429, sni: fuckxiaofenhong.gq, skip-cert-verify: false}
   - {name: 🇺🇲 US_3658 |22.96Mb, server: fuckxijinping.cf, port: 443, type: trojan, password: c45cfe84-57f1-4f17-83ae-b6740e645830, sni: fuckxijinping.cf, skip-cert-verify: false}
+  - {name: 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom, server: a86c5a8f3e3f3caf9.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: ee05b0bb-14d1-4673-b2e4-35af15d7249b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: a86c5a8f3e3f3caf9.awsglobalaccelerator.com}}
+  - {name: 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A04 - Direct - ChinaTelecom/ChinaUnicom, server: a87b2a3804f5e6234.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: ee05b0bb-14d1-4673-b2e4-35af15d7249b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: a87b2a3804f5e6234.awsglobalaccelerator.com}}
+  - {name: "🇯🇵 ⒊V2RAY [vip1]电信-中转-日本", server: v111.mxv2ssr.xyz, port: 41111, type: vmess, uuid: d8aee840-68cf-3a8a-8cef-60f984260083, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇸🇬 ⒋V2RAY [vip1]广移-中转-新加坡", server: v112.mxv2ssr.xyz, port: 41112, type: vmess, uuid: d8aee840-68cf-3a8a-8cef-60f984260083, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: v112.mxv2ssr.xyz}}
+  - {name: "🇯🇵 ⒍V2RAY [vip1]广移-中转-日本", server: v114.mxv2ssr.xyz, port: 41114, type: vmess, uuid: d8aee840-68cf-3a8a-8cef-60f984260083, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: v114.mxv2ssr.xyz}}
+  - {name: "🇨🇳 ⒐V2RAY [vip1]上海CN2-中转-台湾Hinet-原生IP|Netflix", server: v118.mxv2ssr.xyz, port: 41118, type: vmess, uuid: d8aee840-68cf-3a8a-8cef-60f984260083, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 星链公益|新加坡01, server: free-sg01.starlink.cyou, port: 8077, type: vmess, uuid: 44399881-df91-402d-8c83-5b7e65e95de7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: free-sg01.starlink.cyou}}
+  - {name: 🇺🇲 US_2769, server: 89.187.187.147, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇲 US_2516
-      - ZZ_3022
-      - 🇸🇬 3节点更新 https://bit.ly/3h18eE7
       - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 6
       - 🇭🇰 香港 8
       - 🇭🇰 香港 9
       - 🇯🇵 V1日本A[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V1-新加坡AWS 16 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x
-      - 🇸🇬 V1新加坡A[2.0]广州-SGP
-      - 🇭🇰 V1香港B[2.0] 广州专线-HKT-NF
-      - 🇯🇵 V3日本A[0.5]长沙专线-Tokyo-NF
-      - 🇯🇵 V3日本B[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V3沪新专线A[2.0]SGP
-      - 🇦🇺 V3澳大利亚AUS[2.0]悉尼-Linode
-      - 🇭🇰 V3香港A[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港B[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港C[0.5]江门专线-HKBN-NF
-      - 🇭🇰 V3香港E[2.0]江门专线-HGC-NF
-      - 🇭🇰 广港专线-HKBN-HK-广州入 [2.0]
-      - 🇭🇰 广港专线-HKBN-HK-江门入 [2.0]
-      - 🇭🇰 广港专线-HKT-HK-广州入 [2.0]
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 2
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x 2
+      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 04 AGA加速 1.0x
-      - 🇭🇰 广港专线-HGC-HK-江门入 [2.0]
       - 🇰🇷 韩国#376|倍率1.8|等级1|在线9人|566G|v2.freeyes.xyz|公益节点
-      - 🇭🇰 V2ray免费节点丨香港丨AGA丨电信丨EC2-10
-      - 🇸🇬 [vip①]新加坡丨AGA丨电信丨L9
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D3
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D4
-      - 🇭🇰 [vip①]香港丨AGA丨电信丨EC2-8
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x 2
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 3
       - 🇸🇬 新加坡 2
       - 🇭🇰 香港 28
-      - 🇭🇰 [V2] 香港 4
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇭🇰 香港aws1—CM
-      - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x 2
-      - 🇺🇲 US_3651 |24.97Mb
       - 🇺🇲 US_3653 |22.65Mb
       - 🇺🇲 US_3657 |24.76Mb
       - 🇺🇲 US_3658 |22.96Mb
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A04 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇯🇵 ⒊V2RAY [vip1]电信-中转-日本
+      - 🇸🇬 ⒋V2RAY [vip1]广移-中转-新加坡
+      - 🇯🇵 ⒍V2RAY [vip1]广移-中转-日本
+      - 🇨🇳 ⒐V2RAY [vip1]上海CN2-中转-台湾Hinet-原生IP|Netflix
+      - 🇸🇬 星链公益|新加坡01
+      - 🇺🇲 US_2769
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇲 US_2516
-      - ZZ_3022
-      - 🇸🇬 3节点更新 https://bit.ly/3h18eE7
       - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 6
       - 🇭🇰 香港 8
       - 🇭🇰 香港 9
       - 🇯🇵 V1日本A[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V1-新加坡AWS 16 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x
-      - 🇸🇬 V1新加坡A[2.0]广州-SGP
-      - 🇭🇰 V1香港B[2.0] 广州专线-HKT-NF
-      - 🇯🇵 V3日本A[0.5]长沙专线-Tokyo-NF
-      - 🇯🇵 V3日本B[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V3沪新专线A[2.0]SGP
-      - 🇦🇺 V3澳大利亚AUS[2.0]悉尼-Linode
-      - 🇭🇰 V3香港A[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港B[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港C[0.5]江门专线-HKBN-NF
-      - 🇭🇰 V3香港E[2.0]江门专线-HGC-NF
-      - 🇭🇰 广港专线-HKBN-HK-广州入 [2.0]
-      - 🇭🇰 广港专线-HKBN-HK-江门入 [2.0]
-      - 🇭🇰 广港专线-HKT-HK-广州入 [2.0]
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 2
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x 2
+      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 04 AGA加速 1.0x
-      - 🇭🇰 广港专线-HGC-HK-江门入 [2.0]
       - 🇰🇷 韩国#376|倍率1.8|等级1|在线9人|566G|v2.freeyes.xyz|公益节点
-      - 🇭🇰 V2ray免费节点丨香港丨AGA丨电信丨EC2-10
-      - 🇸🇬 [vip①]新加坡丨AGA丨电信丨L9
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D3
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D4
-      - 🇭🇰 [vip①]香港丨AGA丨电信丨EC2-8
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x 2
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 3
       - 🇸🇬 新加坡 2
       - 🇭🇰 香港 28
-      - 🇭🇰 [V2] 香港 4
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇭🇰 香港aws1—CM
-      - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x 2
-      - 🇺🇲 US_3651 |24.97Mb
       - 🇺🇲 US_3653 |22.65Mb
       - 🇺🇲 US_3657 |24.76Mb
       - 🇺🇲 US_3658 |22.96Mb
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A04 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇯🇵 ⒊V2RAY [vip1]电信-中转-日本
+      - 🇸🇬 ⒋V2RAY [vip1]广移-中转-新加坡
+      - 🇯🇵 ⒍V2RAY [vip1]广移-中转-日本
+      - 🇨🇳 ⒐V2RAY [vip1]上海CN2-中转-台湾Hinet-原生IP|Netflix
+      - 🇸🇬 星链公益|新加坡01
+      - 🇺🇲 US_2769
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇲 US_2516
-      - ZZ_3022
-      - 🇸🇬 3节点更新 https://bit.ly/3h18eE7
       - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 6
       - 🇭🇰 香港 8
       - 🇭🇰 香港 9
       - 🇯🇵 V1日本A[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V1-新加坡AWS 16 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x
-      - 🇸🇬 V1新加坡A[2.0]广州-SGP
-      - 🇭🇰 V1香港B[2.0] 广州专线-HKT-NF
-      - 🇯🇵 V3日本A[0.5]长沙专线-Tokyo-NF
-      - 🇯🇵 V3日本B[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V3沪新专线A[2.0]SGP
-      - 🇦🇺 V3澳大利亚AUS[2.0]悉尼-Linode
-      - 🇭🇰 V3香港A[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港B[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港C[0.5]江门专线-HKBN-NF
-      - 🇭🇰 V3香港E[2.0]江门专线-HGC-NF
-      - 🇭🇰 广港专线-HKBN-HK-广州入 [2.0]
-      - 🇭🇰 广港专线-HKBN-HK-江门入 [2.0]
-      - 🇭🇰 广港专线-HKT-HK-广州入 [2.0]
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 2
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x 2
+      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 04 AGA加速 1.0x
-      - 🇭🇰 广港专线-HGC-HK-江门入 [2.0]
       - 🇰🇷 韩国#376|倍率1.8|等级1|在线9人|566G|v2.freeyes.xyz|公益节点
-      - 🇭🇰 V2ray免费节点丨香港丨AGA丨电信丨EC2-10
-      - 🇸🇬 [vip①]新加坡丨AGA丨电信丨L9
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D3
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D4
-      - 🇭🇰 [vip①]香港丨AGA丨电信丨EC2-8
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x 2
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 3
       - 🇸🇬 新加坡 2
       - 🇭🇰 香港 28
-      - 🇭🇰 [V2] 香港 4
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇭🇰 香港aws1—CM
-      - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x 2
-      - 🇺🇲 US_3651 |24.97Mb
       - 🇺🇲 US_3653 |22.65Mb
       - 🇺🇲 US_3657 |24.76Mb
       - 🇺🇲 US_3658 |22.96Mb
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A04 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇯🇵 ⒊V2RAY [vip1]电信-中转-日本
+      - 🇸🇬 ⒋V2RAY [vip1]广移-中转-新加坡
+      - 🇯🇵 ⒍V2RAY [vip1]广移-中转-日本
+      - 🇨🇳 ⒐V2RAY [vip1]上海CN2-中转-台湾Hinet-原生IP|Netflix
+      - 🇸🇬 星链公益|新加坡01
+      - 🇺🇲 US_2769
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇲 US_2516
-      - ZZ_3022
-      - 🇸🇬 3节点更新 https://bit.ly/3h18eE7
       - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 6
       - 🇭🇰 香港 8
       - 🇭🇰 香港 9
       - 🇯🇵 V1日本A[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V1-新加坡AWS 16 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x
-      - 🇸🇬 V1新加坡A[2.0]广州-SGP
-      - 🇭🇰 V1香港B[2.0] 广州专线-HKT-NF
-      - 🇯🇵 V3日本A[0.5]长沙专线-Tokyo-NF
-      - 🇯🇵 V3日本B[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V3沪新专线A[2.0]SGP
-      - 🇦🇺 V3澳大利亚AUS[2.0]悉尼-Linode
-      - 🇭🇰 V3香港A[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港B[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港C[0.5]江门专线-HKBN-NF
-      - 🇭🇰 V3香港E[2.0]江门专线-HGC-NF
-      - 🇭🇰 广港专线-HKBN-HK-广州入 [2.0]
-      - 🇭🇰 广港专线-HKBN-HK-江门入 [2.0]
-      - 🇭🇰 广港专线-HKT-HK-广州入 [2.0]
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 2
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x 2
+      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 04 AGA加速 1.0x
-      - 🇭🇰 广港专线-HGC-HK-江门入 [2.0]
       - 🇰🇷 韩国#376|倍率1.8|等级1|在线9人|566G|v2.freeyes.xyz|公益节点
-      - 🇭🇰 V2ray免费节点丨香港丨AGA丨电信丨EC2-10
-      - 🇸🇬 [vip①]新加坡丨AGA丨电信丨L9
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D3
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D4
-      - 🇭🇰 [vip①]香港丨AGA丨电信丨EC2-8
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x 2
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 3
       - 🇸🇬 新加坡 2
       - 🇭🇰 香港 28
-      - 🇭🇰 [V2] 香港 4
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇭🇰 香港aws1—CM
-      - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x 2
-      - 🇺🇲 US_3651 |24.97Mb
       - 🇺🇲 US_3653 |22.65Mb
       - 🇺🇲 US_3657 |24.76Mb
       - 🇺🇲 US_3658 |22.96Mb
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A04 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇯🇵 ⒊V2RAY [vip1]电信-中转-日本
+      - 🇸🇬 ⒋V2RAY [vip1]广移-中转-新加坡
+      - 🇯🇵 ⒍V2RAY [vip1]广移-中转-日本
+      - 🇨🇳 ⒐V2RAY [vip1]上海CN2-中转-台湾Hinet-原生IP|Netflix
+      - 🇸🇬 星链公益|新加坡01
+      - 🇺🇲 US_2769
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇲 US_2516
-      - ZZ_3022
-      - 🇸🇬 3节点更新 https://bit.ly/3h18eE7
       - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 6
       - 🇭🇰 香港 8
       - 🇭🇰 香港 9
       - 🇯🇵 V1日本A[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V1-新加坡AWS 16 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x
-      - 🇸🇬 V1新加坡A[2.0]广州-SGP
-      - 🇭🇰 V1香港B[2.0] 广州专线-HKT-NF
-      - 🇯🇵 V3日本A[0.5]长沙专线-Tokyo-NF
-      - 🇯🇵 V3日本B[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V3沪新专线A[2.0]SGP
-      - 🇦🇺 V3澳大利亚AUS[2.0]悉尼-Linode
-      - 🇭🇰 V3香港A[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港B[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港C[0.5]江门专线-HKBN-NF
-      - 🇭🇰 V3香港E[2.0]江门专线-HGC-NF
-      - 🇭🇰 广港专线-HKBN-HK-广州入 [2.0]
-      - 🇭🇰 广港专线-HKBN-HK-江门入 [2.0]
-      - 🇭🇰 广港专线-HKT-HK-广州入 [2.0]
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 2
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x 2
+      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 04 AGA加速 1.0x
-      - 🇭🇰 广港专线-HGC-HK-江门入 [2.0]
       - 🇰🇷 韩国#376|倍率1.8|等级1|在线9人|566G|v2.freeyes.xyz|公益节点
-      - 🇭🇰 V2ray免费节点丨香港丨AGA丨电信丨EC2-10
-      - 🇸🇬 [vip①]新加坡丨AGA丨电信丨L9
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D3
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D4
-      - 🇭🇰 [vip①]香港丨AGA丨电信丨EC2-8
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x 2
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 3
       - 🇸🇬 新加坡 2
       - 🇭🇰 香港 28
-      - 🇭🇰 [V2] 香港 4
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇭🇰 香港aws1—CM
-      - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x 2
-      - 🇺🇲 US_3651 |24.97Mb
       - 🇺🇲 US_3653 |22.65Mb
       - 🇺🇲 US_3657 |24.76Mb
       - 🇺🇲 US_3658 |22.96Mb
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A04 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇯🇵 ⒊V2RAY [vip1]电信-中转-日本
+      - 🇸🇬 ⒋V2RAY [vip1]广移-中转-新加坡
+      - 🇯🇵 ⒍V2RAY [vip1]广移-中转-日本
+      - 🇨🇳 ⒐V2RAY [vip1]上海CN2-中转-台湾Hinet-原生IP|Netflix
+      - 🇸🇬 星链公益|新加坡01
+      - 🇺🇲 US_2769
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇲 US_2516
-      - ZZ_3022
-      - 🇸🇬 3节点更新 https://bit.ly/3h18eE7
       - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 6
       - 🇭🇰 香港 8
       - 🇭🇰 香港 9
       - 🇯🇵 V1日本A[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V1-新加坡AWS 16 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x
-      - 🇸🇬 V1新加坡A[2.0]广州-SGP
-      - 🇭🇰 V1香港B[2.0] 广州专线-HKT-NF
-      - 🇯🇵 V3日本A[0.5]长沙专线-Tokyo-NF
-      - 🇯🇵 V3日本B[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V3沪新专线A[2.0]SGP
-      - 🇦🇺 V3澳大利亚AUS[2.0]悉尼-Linode
-      - 🇭🇰 V3香港A[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港B[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港C[0.5]江门专线-HKBN-NF
-      - 🇭🇰 V3香港E[2.0]江门专线-HGC-NF
-      - 🇭🇰 广港专线-HKBN-HK-广州入 [2.0]
-      - 🇭🇰 广港专线-HKBN-HK-江门入 [2.0]
-      - 🇭🇰 广港专线-HKT-HK-广州入 [2.0]
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 2
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x 2
+      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 04 AGA加速 1.0x
-      - 🇭🇰 广港专线-HGC-HK-江门入 [2.0]
       - 🇰🇷 韩国#376|倍率1.8|等级1|在线9人|566G|v2.freeyes.xyz|公益节点
-      - 🇭🇰 V2ray免费节点丨香港丨AGA丨电信丨EC2-10
-      - 🇸🇬 [vip①]新加坡丨AGA丨电信丨L9
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D3
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D4
-      - 🇭🇰 [vip①]香港丨AGA丨电信丨EC2-8
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x 2
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 3
       - 🇸🇬 新加坡 2
       - 🇭🇰 香港 28
-      - 🇭🇰 [V2] 香港 4
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇭🇰 香港aws1—CM
-      - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x 2
-      - 🇺🇲 US_3651 |24.97Mb
       - 🇺🇲 US_3653 |22.65Mb
       - 🇺🇲 US_3657 |24.76Mb
       - 🇺🇲 US_3658 |22.96Mb
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A04 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇯🇵 ⒊V2RAY [vip1]电信-中转-日本
+      - 🇸🇬 ⒋V2RAY [vip1]广移-中转-新加坡
+      - 🇯🇵 ⒍V2RAY [vip1]广移-中转-日本
+      - 🇨🇳 ⒐V2RAY [vip1]上海CN2-中转-台湾Hinet-原生IP|Netflix
+      - 🇸🇬 星链公益|新加坡01
+      - 🇺🇲 US_2769
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇲 US_2516
-      - ZZ_3022
-      - 🇸🇬 3节点更新 https://bit.ly/3h18eE7
       - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 6
       - 🇭🇰 香港 8
       - 🇭🇰 香港 9
       - 🇯🇵 V1日本A[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V1-新加坡AWS 16 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x
-      - 🇸🇬 V1新加坡A[2.0]广州-SGP
-      - 🇭🇰 V1香港B[2.0] 广州专线-HKT-NF
-      - 🇯🇵 V3日本A[0.5]长沙专线-Tokyo-NF
-      - 🇯🇵 V3日本B[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V3沪新专线A[2.0]SGP
-      - 🇦🇺 V3澳大利亚AUS[2.0]悉尼-Linode
-      - 🇭🇰 V3香港A[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港B[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港C[0.5]江门专线-HKBN-NF
-      - 🇭🇰 V3香港E[2.0]江门专线-HGC-NF
-      - 🇭🇰 广港专线-HKBN-HK-广州入 [2.0]
-      - 🇭🇰 广港专线-HKBN-HK-江门入 [2.0]
-      - 🇭🇰 广港专线-HKT-HK-广州入 [2.0]
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 2
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x 2
+      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 04 AGA加速 1.0x
-      - 🇭🇰 广港专线-HGC-HK-江门入 [2.0]
       - 🇰🇷 韩国#376|倍率1.8|等级1|在线9人|566G|v2.freeyes.xyz|公益节点
-      - 🇭🇰 V2ray免费节点丨香港丨AGA丨电信丨EC2-10
-      - 🇸🇬 [vip①]新加坡丨AGA丨电信丨L9
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D3
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D4
-      - 🇭🇰 [vip①]香港丨AGA丨电信丨EC2-8
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x 2
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 3
       - 🇸🇬 新加坡 2
       - 🇭🇰 香港 28
-      - 🇭🇰 [V2] 香港 4
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇭🇰 香港aws1—CM
-      - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x 2
-      - 🇺🇲 US_3651 |24.97Mb
       - 🇺🇲 US_3653 |22.65Mb
       - 🇺🇲 US_3657 |24.76Mb
       - 🇺🇲 US_3658 |22.96Mb
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A04 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇯🇵 ⒊V2RAY [vip1]电信-中转-日本
+      - 🇸🇬 ⒋V2RAY [vip1]广移-中转-新加坡
+      - 🇯🇵 ⒍V2RAY [vip1]广移-中转-日本
+      - 🇨🇳 ⒐V2RAY [vip1]上海CN2-中转-台湾Hinet-原生IP|Netflix
+      - 🇸🇬 星链公益|新加坡01
+      - 🇺🇲 US_2769
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -466,56 +266,31 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇲 US_2516
-      - ZZ_3022
-      - 🇸🇬 3节点更新 https://bit.ly/3h18eE7
       - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 6
       - 🇭🇰 香港 8
       - 🇭🇰 香港 9
       - 🇯🇵 V1日本A[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V1-新加坡AWS 16 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x
-      - 🇸🇬 V1新加坡A[2.0]广州-SGP
-      - 🇭🇰 V1香港B[2.0] 广州专线-HKT-NF
-      - 🇯🇵 V3日本A[0.5]长沙专线-Tokyo-NF
-      - 🇯🇵 V3日本B[2.0]长沙专线-Tokyo-NF
-      - 🇸🇬 V3沪新专线A[2.0]SGP
-      - 🇦🇺 V3澳大利亚AUS[2.0]悉尼-Linode
-      - 🇭🇰 V3香港A[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港B[2.0]广州专线-HGC-NF
-      - 🇭🇰 V3香港C[0.5]江门专线-HKBN-NF
-      - 🇭🇰 V3香港E[2.0]江门专线-HGC-NF
-      - 🇭🇰 广港专线-HKBN-HK-广州入 [2.0]
-      - 🇭🇰 广港专线-HKBN-HK-江门入 [2.0]
-      - 🇭🇰 广港专线-HKT-HK-广州入 [2.0]
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 2
-      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x 2
+      - 🇭🇰 V1-香港AWS 03 AGA加速 1.0x
       - 🇭🇰 V1-香港AWS 04 AGA加速 1.0x
-      - 🇭🇰 广港专线-HGC-HK-江门入 [2.0]
       - 🇰🇷 韩国#376|倍率1.8|等级1|在线9人|566G|v2.freeyes.xyz|公益节点
-      - 🇭🇰 V2ray免费节点丨香港丨AGA丨电信丨EC2-10
-      - 🇸🇬 [vip①]新加坡丨AGA丨电信丨L9
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D3
-      - 🇸🇬 [vip①]新加坡丨广移中继丨D4
-      - 🇭🇰 [vip①]香港丨AGA丨电信丨EC2-8
       - 🇭🇰 V1-香港AWS 01 AGA加速 1.0x 2
       - 🇭🇰 V1-香港AWS 02 AGA加速 1.0x 3
       - 🇸🇬 新加坡 2
       - 🇭🇰 香港 28
-      - 🇭🇰 [V2] 香港 4
-      - 🇯🇵 日本li12—CU
-      - 🇯🇵 日本li13—CU
-      - 🇯🇵 日本li14—CU
-      - 🇭🇰 香港aws1—CM
-      - 🏳️‍🌈 ️‍🌈 香港aws1—CT[大流量下载]x0.02x 2
-      - 🇺🇲 US_3651 |24.97Mb
       - 🇺🇲 US_3653 |22.65Mb
       - 🇺🇲 US_3657 |24.76Mb
       - 🇺🇲 US_3658 |22.96Mb
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A04 - Direct - ChinaTelecom/ChinaUnicom
+      - 🇯🇵 ⒊V2RAY [vip1]电信-中转-日本
+      - 🇸🇬 ⒋V2RAY [vip1]广移-中转-新加坡
+      - 🇯🇵 ⒍V2RAY [vip1]广移-中转-日本
+      - 🇨🇳 ⒐V2RAY [vip1]上海CN2-中转-台湾Hinet-原生IP|Netflix
+      - 🇸🇬 星链公益|新加坡01
+      - 🇺🇲 US_2769
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
