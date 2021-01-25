@@ -5,405 +5,101 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇯🇵 JP_902, server: 141.164.47.159, port: 3129, type: ssr, cipher: aes-128-ctr, password: wgyxx1234, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇯🇵 JP_909, server: 141.164.42.175, port: 3129, type: ssr, cipher: aes-128-ctr, password: wgyxx1234, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
   - {name: 港10, server: hk10-gray.dukou.info, port: 8010, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
-  - {name: 🇯🇵 Japan-proxypool.turinglabs.net, server: 141.164.42.175, port: 3129, type: ssr, cipher: aes-128-ctr, password: wgyxx1234, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇯🇵 Japan-proxypool.turinglabs.net 2, server: 141.164.47.159, port: 3129, type: ssr, cipher: aes-128-ctr, password: wgyxx1234, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇰🇷 South Korea-proxypool.turinglabs.net, server: 3.34.183.87, port: 3244, type: ssr, cipher: aes-256-cfb, password: !<str> 3244, protocol: auth_sha1_v4, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: 🇨🇳 中国-台湾IEPL Hinet固接  D01, server: tw11.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾IEPL Hinet固接  D02, server: tw12.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾IEPL Hinet固接  D03, server: tw13.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾IEPL Hinet固接  D04, server: tw14.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾IEPL Hinet固接  D05, server: tw15.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾IEPL Hinet固接  D06, server: tw16.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾IEPL Hinet固接 D07, server: tw17.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾IEPL Hinet固接 D08, server: tw18.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾IEPL Hinet固接 D09, server: tw19.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾IEPL Hinet固接 D10, server: tw20.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾IEPL Hinet固接 D11, server: tw21.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾IEPL Hinet固接 D12, server: tw22.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾宜兰 IPLC D01, server: tw01.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾宜兰 IPLC D02, server: tw02.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾宜兰 IPLC D05, server: tw05.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾宜兰 IPLC D06, server: tw06.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾宜兰 IPLC D07, server: tw07.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾宜兰 IPLC D08, server: tw08.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾宜兰 IPLC D09, server: tw09.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 中国-台湾宜兰 IPLC D10, server: tw10.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇭🇰 中国-香港 IEPL Equinix HK2 D 02 1Gbps Netflix HBO TVB, server: hk02.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇭🇰 中国-香港 IEPL Equinix HK2 D 07 1Gbps Netflix HBO TVB, server: hk07.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇭🇰 中国-香港 IEPL Equinix HK2 D 08 1Gbps Netflix HBO TVB, server: hk08.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇭🇰 中国-香港 IEPL Equinix HK2 D 09 1Gbps Netflix HBO TVB, server: hk09.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇭🇰 中国-香港 IPLC Equinix HK2 D 04 1Gbps Netflix HBO TVB, server: sg04.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇭🇰 中国-香港 IPLC Equinix HK2 D 08 1Gbps Netflix HBO TVB, server: sg08.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇭🇰 中国-香港 IPLC Equinix HK2 D 11 1Gbps Netflix HBO TVB, server: sg11.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇭🇰 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 D01, server: hg01.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D03, server: hkt03.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D07, server: hkt07.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇰🇷 中国-韩国 IPLC D01 Netflix, server: kr01.clashcloud.tech, port: 58618, type: ssr, cipher: rc4-md5, password: li2prd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇯🇵 JP_1500, server: 141.164.42.175, port: 3129, type: ssr, cipher: aes-128-ctr, password: wgyxx1234, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇯🇵 JP_1503, server: 141.164.47.159, port: 3129, type: ssr, cipher: aes-128-ctr, password: wgyxx1234, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇳🇱 NL_1776, server: 185.186.245.44, port: 8097, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
-  - {name: 🇸🇬 「小彩虹」新加坡01：原生丨亚马逊, server: 76.223.56.61, port: 47408, type: ss, cipher: rc4-md5, password: duulL3}
-  - {name: 🇸🇬 「小彩虹」新加坡02：AWS直连丨100M, server: 13.229.57.202, port: 47408, type: ss, cipher: rc4-md5, password: duulL3}
-  - {name: 🇯🇵 「小彩虹」日本01：原生丨亚马逊, server: 99.83.129.144, port: 47408, type: ss, cipher: rc4-md5, password: duulL3}
-  - {name: 🇯🇵 「小彩虹」日本02：AWS直连丨100M, server: 13.113.252.119, port: 47408, type: ss, cipher: rc4-md5, password: duulL3}
-  - {name: 🇺🇲 「小彩虹」美国-4k测试线（亚马逊原生）, server: 99.83.187.47, port: 47408, type: ss, cipher: rc4-md5, password: duulL3}
+  - {name: 🇷🇺 俄罗斯01-3 NF 广州移动, server: GZYD-WECNM.233cloud-node.com, port: 23380, type: ssr, cipher: chacha20-ietf, password: n5SvoOw3bD3jL36a, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 920:K86335z, obfs-param: c9c0e920.update.microsoft.com}
+  - {name: 🇷🇺 俄罗斯01-4 NF Global, server: Global-YUQJX.233cloud-node.com, port: 23380, type: ssr, cipher: chacha20-ietf, password: n5SvoOw3bD3jL36a, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 920:K86335z, obfs-param: c9c0e920.update.microsoft.com}
+  - {name: 🇸🇬 新加坡01-2 长沙联通, server: CSLT-BBM85.233cloud-node.com, port: 23316, type: ssr, cipher: chacha20-ietf, password: n5SvoOw3bD3jL36a, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 920:K86335z, obfs-param: c9c0e920.update.microsoft.com}
+  - {name: 🇰🇷 韩国01-1 直连, server: KR01-1-OI0IX.233cloud-node.com, port: 80, type: ssr, cipher: chacha20-ietf, password: n5SvoOw3bD3jL36a, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 920:K86335z, obfs-param: c9c0e920.update.microsoft.com}
+  - {name: 🇭🇰 香港02-2 长沙联通, server: CSLT-BBM85.233cloud-node.com, port: 23368, type: ssr, cipher: chacha20-ietf, password: n5SvoOw3bD3jL36a, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 920:K86335z, obfs-param: c9c0e920.update.microsoft.com}
+  - {name: 🇭🇰 香港02-4 Global, server: Global-YUQJX.233cloud-node.com, port: 23368, type: ssr, cipher: chacha20-ietf, password: n5SvoOw3bD3jL36a, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 920:K86335z, obfs-param: c9c0e920.update.microsoft.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵 JP_902
-      - 🇯🇵 JP_909
       - 港10
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇯🇵 Japan-proxypool.turinglabs.net 2
-      - 🇰🇷 South Korea-proxypool.turinglabs.net
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D01
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D02
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D03
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D04
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D05
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D06
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D07
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D08
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D09
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D10
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D11
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D12
-      - 🇨🇳 中国-台湾宜兰 IPLC D01
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇨🇳 中国-台湾宜兰 IPLC D05
-      - 🇨🇳 中国-台湾宜兰 IPLC D06
-      - 🇨🇳 中国-台湾宜兰 IPLC D07
-      - 🇨🇳 中国-台湾宜兰 IPLC D08
-      - 🇨🇳 中国-台湾宜兰 IPLC D09
-      - 🇨🇳 中国-台湾宜兰 IPLC D10
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 02 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 07 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 09 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 04 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 11 1Gbps Netflix HBO TVB
-      - 🇭🇰 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 D01
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D07
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 JP_1500
-      - 🇯🇵 JP_1503
-      - 🇳🇱 NL_1776
-      - 🇸🇬 「小彩虹」新加坡01：原生丨亚马逊
-      - 🇸🇬 「小彩虹」新加坡02：AWS直连丨100M
-      - 🇯🇵 「小彩虹」日本01：原生丨亚马逊
-      - 🇯🇵 「小彩虹」日本02：AWS直连丨100M
-      - 🇺🇲 「小彩虹」美国-4k测试线（亚马逊原生）
+      - 🇷🇺 俄罗斯01-3 NF 广州移动
+      - 🇷🇺 俄罗斯01-4 NF Global
+      - 🇸🇬 新加坡01-2 长沙联通
+      - 🇰🇷 韩国01-1 直连
+      - 🇭🇰 香港02-2 长沙联通
+      - 🇭🇰 香港02-4 Global
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 JP_902
-      - 🇯🇵 JP_909
       - 港10
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇯🇵 Japan-proxypool.turinglabs.net 2
-      - 🇰🇷 South Korea-proxypool.turinglabs.net
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D01
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D02
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D03
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D04
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D05
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D06
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D07
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D08
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D09
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D10
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D11
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D12
-      - 🇨🇳 中国-台湾宜兰 IPLC D01
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇨🇳 中国-台湾宜兰 IPLC D05
-      - 🇨🇳 中国-台湾宜兰 IPLC D06
-      - 🇨🇳 中国-台湾宜兰 IPLC D07
-      - 🇨🇳 中国-台湾宜兰 IPLC D08
-      - 🇨🇳 中国-台湾宜兰 IPLC D09
-      - 🇨🇳 中国-台湾宜兰 IPLC D10
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 02 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 07 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 09 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 04 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 11 1Gbps Netflix HBO TVB
-      - 🇭🇰 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 D01
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D07
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 JP_1500
-      - 🇯🇵 JP_1503
-      - 🇳🇱 NL_1776
-      - 🇸🇬 「小彩虹」新加坡01：原生丨亚马逊
-      - 🇸🇬 「小彩虹」新加坡02：AWS直连丨100M
-      - 🇯🇵 「小彩虹」日本01：原生丨亚马逊
-      - 🇯🇵 「小彩虹」日本02：AWS直连丨100M
-      - 🇺🇲 「小彩虹」美国-4k测试线（亚马逊原生）
+      - 🇷🇺 俄罗斯01-3 NF 广州移动
+      - 🇷🇺 俄罗斯01-4 NF Global
+      - 🇸🇬 新加坡01-2 长沙联通
+      - 🇰🇷 韩国01-1 直连
+      - 🇭🇰 香港02-2 长沙联通
+      - 🇭🇰 香港02-4 Global
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 JP_902
-      - 🇯🇵 JP_909
       - 港10
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇯🇵 Japan-proxypool.turinglabs.net 2
-      - 🇰🇷 South Korea-proxypool.turinglabs.net
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D01
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D02
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D03
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D04
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D05
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D06
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D07
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D08
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D09
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D10
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D11
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D12
-      - 🇨🇳 中国-台湾宜兰 IPLC D01
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇨🇳 中国-台湾宜兰 IPLC D05
-      - 🇨🇳 中国-台湾宜兰 IPLC D06
-      - 🇨🇳 中国-台湾宜兰 IPLC D07
-      - 🇨🇳 中国-台湾宜兰 IPLC D08
-      - 🇨🇳 中国-台湾宜兰 IPLC D09
-      - 🇨🇳 中国-台湾宜兰 IPLC D10
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 02 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 07 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 09 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 04 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 11 1Gbps Netflix HBO TVB
-      - 🇭🇰 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 D01
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D07
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 JP_1500
-      - 🇯🇵 JP_1503
-      - 🇳🇱 NL_1776
-      - 🇸🇬 「小彩虹」新加坡01：原生丨亚马逊
-      - 🇸🇬 「小彩虹」新加坡02：AWS直连丨100M
-      - 🇯🇵 「小彩虹」日本01：原生丨亚马逊
-      - 🇯🇵 「小彩虹」日本02：AWS直连丨100M
-      - 🇺🇲 「小彩虹」美国-4k测试线（亚马逊原生）
+      - 🇷🇺 俄罗斯01-3 NF 广州移动
+      - 🇷🇺 俄罗斯01-4 NF Global
+      - 🇸🇬 新加坡01-2 长沙联通
+      - 🇰🇷 韩国01-1 直连
+      - 🇭🇰 香港02-2 长沙联通
+      - 🇭🇰 香港02-4 Global
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 JP_902
-      - 🇯🇵 JP_909
       - 港10
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇯🇵 Japan-proxypool.turinglabs.net 2
-      - 🇰🇷 South Korea-proxypool.turinglabs.net
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D01
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D02
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D03
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D04
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D05
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D06
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D07
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D08
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D09
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D10
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D11
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D12
-      - 🇨🇳 中国-台湾宜兰 IPLC D01
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇨🇳 中国-台湾宜兰 IPLC D05
-      - 🇨🇳 中国-台湾宜兰 IPLC D06
-      - 🇨🇳 中国-台湾宜兰 IPLC D07
-      - 🇨🇳 中国-台湾宜兰 IPLC D08
-      - 🇨🇳 中国-台湾宜兰 IPLC D09
-      - 🇨🇳 中国-台湾宜兰 IPLC D10
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 02 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 07 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 09 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 04 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 11 1Gbps Netflix HBO TVB
-      - 🇭🇰 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 D01
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D07
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 JP_1500
-      - 🇯🇵 JP_1503
-      - 🇳🇱 NL_1776
-      - 🇸🇬 「小彩虹」新加坡01：原生丨亚马逊
-      - 🇸🇬 「小彩虹」新加坡02：AWS直连丨100M
-      - 🇯🇵 「小彩虹」日本01：原生丨亚马逊
-      - 🇯🇵 「小彩虹」日本02：AWS直连丨100M
-      - 🇺🇲 「小彩虹」美国-4k测试线（亚马逊原生）
+      - 🇷🇺 俄罗斯01-3 NF 广州移动
+      - 🇷🇺 俄罗斯01-4 NF Global
+      - 🇸🇬 新加坡01-2 长沙联通
+      - 🇰🇷 韩国01-1 直连
+      - 🇭🇰 香港02-2 长沙联通
+      - 🇭🇰 香港02-4 Global
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇯🇵 JP_902
-      - 🇯🇵 JP_909
       - 港10
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇯🇵 Japan-proxypool.turinglabs.net 2
-      - 🇰🇷 South Korea-proxypool.turinglabs.net
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D01
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D02
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D03
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D04
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D05
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D06
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D07
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D08
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D09
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D10
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D11
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D12
-      - 🇨🇳 中国-台湾宜兰 IPLC D01
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇨🇳 中国-台湾宜兰 IPLC D05
-      - 🇨🇳 中国-台湾宜兰 IPLC D06
-      - 🇨🇳 中国-台湾宜兰 IPLC D07
-      - 🇨🇳 中国-台湾宜兰 IPLC D08
-      - 🇨🇳 中国-台湾宜兰 IPLC D09
-      - 🇨🇳 中国-台湾宜兰 IPLC D10
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 02 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 07 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 09 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 04 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 11 1Gbps Netflix HBO TVB
-      - 🇭🇰 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 D01
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D07
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 JP_1500
-      - 🇯🇵 JP_1503
-      - 🇳🇱 NL_1776
-      - 🇸🇬 「小彩虹」新加坡01：原生丨亚马逊
-      - 🇸🇬 「小彩虹」新加坡02：AWS直连丨100M
-      - 🇯🇵 「小彩虹」日本01：原生丨亚马逊
-      - 🇯🇵 「小彩虹」日本02：AWS直连丨100M
-      - 🇺🇲 「小彩虹」美国-4k测试线（亚马逊原生）
+      - 🇷🇺 俄罗斯01-3 NF 广州移动
+      - 🇷🇺 俄罗斯01-4 NF Global
+      - 🇸🇬 新加坡01-2 长沙联通
+      - 🇰🇷 韩国01-1 直连
+      - 🇭🇰 香港02-2 长沙联通
+      - 🇭🇰 香港02-4 Global
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 JP_902
-      - 🇯🇵 JP_909
       - 港10
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇯🇵 Japan-proxypool.turinglabs.net 2
-      - 🇰🇷 South Korea-proxypool.turinglabs.net
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D01
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D02
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D03
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D04
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D05
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D06
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D07
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D08
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D09
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D10
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D11
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D12
-      - 🇨🇳 中国-台湾宜兰 IPLC D01
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇨🇳 中国-台湾宜兰 IPLC D05
-      - 🇨🇳 中国-台湾宜兰 IPLC D06
-      - 🇨🇳 中国-台湾宜兰 IPLC D07
-      - 🇨🇳 中国-台湾宜兰 IPLC D08
-      - 🇨🇳 中国-台湾宜兰 IPLC D09
-      - 🇨🇳 中国-台湾宜兰 IPLC D10
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 02 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 07 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 09 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 04 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 11 1Gbps Netflix HBO TVB
-      - 🇭🇰 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 D01
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D07
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 JP_1500
-      - 🇯🇵 JP_1503
-      - 🇳🇱 NL_1776
-      - 🇸🇬 「小彩虹」新加坡01：原生丨亚马逊
-      - 🇸🇬 「小彩虹」新加坡02：AWS直连丨100M
-      - 🇯🇵 「小彩虹」日本01：原生丨亚马逊
-      - 🇯🇵 「小彩虹」日本02：AWS直连丨100M
-      - 🇺🇲 「小彩虹」美国-4k测试线（亚马逊原生）
+      - 🇷🇺 俄罗斯01-3 NF 广州移动
+      - 🇷🇺 俄罗斯01-4 NF Global
+      - 🇸🇬 新加坡01-2 长沙联通
+      - 🇰🇷 韩国01-1 直连
+      - 🇭🇰 香港02-2 长沙联通
+      - 🇭🇰 香港02-4 Global
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 JP_902
-      - 🇯🇵 JP_909
       - 港10
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇯🇵 Japan-proxypool.turinglabs.net 2
-      - 🇰🇷 South Korea-proxypool.turinglabs.net
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D01
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D02
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D03
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D04
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D05
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D06
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D07
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D08
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D09
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D10
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D11
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D12
-      - 🇨🇳 中国-台湾宜兰 IPLC D01
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇨🇳 中国-台湾宜兰 IPLC D05
-      - 🇨🇳 中国-台湾宜兰 IPLC D06
-      - 🇨🇳 中国-台湾宜兰 IPLC D07
-      - 🇨🇳 中国-台湾宜兰 IPLC D08
-      - 🇨🇳 中国-台湾宜兰 IPLC D09
-      - 🇨🇳 中国-台湾宜兰 IPLC D10
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 02 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 07 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 09 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 04 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 11 1Gbps Netflix HBO TVB
-      - 🇭🇰 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 D01
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D07
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 JP_1500
-      - 🇯🇵 JP_1503
-      - 🇳🇱 NL_1776
-      - 🇸🇬 「小彩虹」新加坡01：原生丨亚马逊
-      - 🇸🇬 「小彩虹」新加坡02：AWS直连丨100M
-      - 🇯🇵 「小彩虹」日本01：原生丨亚马逊
-      - 🇯🇵 「小彩虹」日本02：AWS直连丨100M
-      - 🇺🇲 「小彩虹」美国-4k测试线（亚马逊原生）
+      - 🇷🇺 俄罗斯01-3 NF 广州移动
+      - 🇷🇺 俄罗斯01-4 NF Global
+      - 🇸🇬 新加坡01-2 长沙联通
+      - 🇰🇷 韩国01-1 直连
+      - 🇭🇰 香港02-2 长沙联通
+      - 🇭🇰 香港02-4 Global
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -426,51 +122,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 JP_902
-      - 🇯🇵 JP_909
       - 港10
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇯🇵 Japan-proxypool.turinglabs.net 2
-      - 🇰🇷 South Korea-proxypool.turinglabs.net
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D01
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D02
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D03
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D04
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D05
-      - 🇨🇳 中国-台湾IEPL Hinet固接  D06
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D07
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D08
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D09
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D10
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D11
-      - 🇨🇳 中国-台湾IEPL Hinet固接 D12
-      - 🇨🇳 中国-台湾宜兰 IPLC D01
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇨🇳 中国-台湾宜兰 IPLC D05
-      - 🇨🇳 中国-台湾宜兰 IPLC D06
-      - 🇨🇳 中国-台湾宜兰 IPLC D07
-      - 🇨🇳 中国-台湾宜兰 IPLC D08
-      - 🇨🇳 中国-台湾宜兰 IPLC D09
-      - 🇨🇳 中国-台湾宜兰 IPLC D10
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 02 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 07 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IEPL Equinix HK2 D 09 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 04 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 08 1Gbps Netflix HBO TVB
-      - 🇭🇰 中国-香港 IPLC Equinix HK2 D 11 1Gbps Netflix HBO TVB
-      - 🇭🇰 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 D01
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D07
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 JP_1500
-      - 🇯🇵 JP_1503
-      - 🇳🇱 NL_1776
-      - 🇸🇬 「小彩虹」新加坡01：原生丨亚马逊
-      - 🇸🇬 「小彩虹」新加坡02：AWS直连丨100M
-      - 🇯🇵 「小彩虹」日本01：原生丨亚马逊
-      - 🇯🇵 「小彩虹」日本02：AWS直连丨100M
-      - 🇺🇲 「小彩虹」美国-4k测试线（亚马逊原生）
+      - 🇷🇺 俄罗斯01-3 NF 广州移动
+      - 🇷🇺 俄罗斯01-4 NF Global
+      - 🇸🇬 新加坡01-2 长沙联通
+      - 🇰🇷 韩国01-1 直连
+      - 🇭🇰 香港02-2 长沙联通
+      - 🇭🇰 香港02-4 Global
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
