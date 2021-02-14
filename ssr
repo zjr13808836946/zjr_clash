@@ -3,17 +3,33 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: 127.0.0.1:9090
+external-controller: :9090
 proxies:
   - {name: 港10, server: hk10-gray.dukou.info, port: 8010, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
-  - {name: 4, server: 117.28.243.241, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
-  - {name: 5, server: 120.241.154.4, port: 59403, type: ss, cipher: aes-256-cfb, password: xiaolu}
-  - {name: 6, server: 120.241.154.4, port: 12435, type: ss, cipher: aes-256-cfb, password: !<str> 8866}
-  - {name: Z04, server: 117.28.243.241, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
   - {name: Z43, server: 45.12.206.156, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY}
-  - {name: 🇯🇵 Japan-proxypool.turinglabs.net, server: 207.148.91.93, port: 3129, type: ssr, cipher: aes-128-ctr, password: wgyxx1234, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇺🇲 United States-proxypool.turinglabs.net, server: 65.49.203.92, port: 1394, type: ssr, cipher: aes-256-cfb, password: Mazijun@2020, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇺🇲 United States-proxypool.turinglabs.net 2, server: 108.61.218.86, port: 3130, type: ssr, cipher: aes-128-ctr, password: wgyxx1234, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: 台1_|NF|动画疯, server: tw-cn-hk-relay-1-97861a.dukou.info, port: 5001, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 坡01_|NF, server: sg-cn-hk-relay-1-767f45.dukou.info, port: 9001, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 坡02_|NF, server: sg-cn-hk-relay-2-54bc52.dukou.info, port: 9002, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 坡03_NF, server: sg-cn-hk-relay-3-dd4440.dukou.info, port: 9003, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 坡04_|NF, server: sg-cn-hk-relay-4-40e978.dukou.info, port: 9004, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 坡05_|NF, server: sg-cn-hk-relay-5-51f087.dukou.info, port: 9005, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 坡06, server: sg-cn-relay-6-689145.dukou.info, port: 9006, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 坡07, server: sg-cn-relay-7-74812.dukou.info, port: 9007, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 坡08, server: sg-cn-relay-8-14852.dukou.info, port: 9008, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 日05, server: shanghai-router1-892412-jp5.dukou.info, port: 6005, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 日07, server: jp-shanghai-ss-07.dukou.info, port: 6007, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 日08, server: jp-shanghai-ss-08.dukou.info, port: 6008, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 港03_|NF, server: hk-route-12369-3.dukou.info, port: 8003, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 港04_|NF, server: shanghai-router2-hk4-5478.dukou.info, port: 8004, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 港05_|NF|TVB, server: shanghai-router2-hk5-5478.dukou.info, port: 8005, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 港06_|NF|TVB, server: hk-route-12369-6.dukou.info, port: 8006, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 港07, server: hk-route2-azure-hk7.dukou.info, port: 8007, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 港08, server: hk-route2-azure-hk8.dukou.info, port: 8008, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 港09, server: hk-route-12369-9.dukou.info, port: 8009, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 港10 2, server: hk10-gray.dukou.info, port: 8010, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 港13, server: hk-cnrelay-13-138465.dukou.info, port: 8013, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 港14, server: hk-cnrelay-14-142345.dukou.info, port: 8014, type: ssr, cipher: chacha20-ietf, password: 8AE8hg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10018:l6Xy36, obfs-param: 3ede210018.itunes.apple.com}
+  - {name: 🇨🇳 CN_871 |76.88Mb, server: gd.zihua.cool, port: 12435, type: ss, cipher: aes-256-cfb, password: !<str> 8866}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -21,14 +37,30 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 港10
-      - 4
-      - 5
-      - 6
-      - Z04
       - Z43
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net 2
+      - 台1_|NF|动画疯
+      - 坡01_|NF
+      - 坡02_|NF
+      - 坡03_NF
+      - 坡04_|NF
+      - 坡05_|NF
+      - 坡06
+      - 坡07
+      - 坡08
+      - 日05
+      - 日07
+      - 日08
+      - 港03_|NF
+      - 港04_|NF
+      - 港05_|NF|TVB
+      - 港06_|NF|TVB
+      - 港07
+      - 港08
+      - 港09
+      - 港10 2
+      - 港13
+      - 港14
+      - 🇨🇳 CN_871 |76.88Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -36,14 +68,30 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 港10
-      - 4
-      - 5
-      - 6
-      - Z04
       - Z43
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net 2
+      - 台1_|NF|动画疯
+      - 坡01_|NF
+      - 坡02_|NF
+      - 坡03_NF
+      - 坡04_|NF
+      - 坡05_|NF
+      - 坡06
+      - 坡07
+      - 坡08
+      - 日05
+      - 日07
+      - 日08
+      - 港03_|NF
+      - 港04_|NF
+      - 港05_|NF|TVB
+      - 港06_|NF|TVB
+      - 港07
+      - 港08
+      - 港09
+      - 港10 2
+      - 港13
+      - 港14
+      - 🇨🇳 CN_871 |76.88Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -51,56 +99,120 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 港10
-      - 4
-      - 5
-      - 6
-      - Z04
       - Z43
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net 2
+      - 台1_|NF|动画疯
+      - 坡01_|NF
+      - 坡02_|NF
+      - 坡03_NF
+      - 坡04_|NF
+      - 坡05_|NF
+      - 坡06
+      - 坡07
+      - 坡08
+      - 日05
+      - 日07
+      - 日08
+      - 港03_|NF
+      - 港04_|NF
+      - 港05_|NF|TVB
+      - 港06_|NF|TVB
+      - 港07
+      - 港08
+      - 港09
+      - 港10 2
+      - 港13
+      - 港14
+      - 🇨🇳 CN_871 |76.88Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 港10
-      - 4
-      - 5
-      - 6
-      - Z04
       - Z43
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net 2
+      - 台1_|NF|动画疯
+      - 坡01_|NF
+      - 坡02_|NF
+      - 坡03_NF
+      - 坡04_|NF
+      - 坡05_|NF
+      - 坡06
+      - 坡07
+      - 坡08
+      - 日05
+      - 日07
+      - 日08
+      - 港03_|NF
+      - 港04_|NF
+      - 港05_|NF|TVB
+      - 港06_|NF|TVB
+      - 港07
+      - 港08
+      - 港09
+      - 港10 2
+      - 港13
+      - 港14
+      - 🇨🇳 CN_871 |76.88Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 港10
-      - 4
-      - 5
-      - 6
-      - Z04
       - Z43
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net 2
+      - 台1_|NF|动画疯
+      - 坡01_|NF
+      - 坡02_|NF
+      - 坡03_NF
+      - 坡04_|NF
+      - 坡05_|NF
+      - 坡06
+      - 坡07
+      - 坡08
+      - 日05
+      - 日07
+      - 日08
+      - 港03_|NF
+      - 港04_|NF
+      - 港05_|NF|TVB
+      - 港06_|NF|TVB
+      - 港07
+      - 港08
+      - 港09
+      - 港10 2
+      - 港13
+      - 港14
+      - 🇨🇳 CN_871 |76.88Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 港10
-      - 4
-      - 5
-      - 6
-      - Z04
       - Z43
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net 2
+      - 台1_|NF|动画疯
+      - 坡01_|NF
+      - 坡02_|NF
+      - 坡03_NF
+      - 坡04_|NF
+      - 坡05_|NF
+      - 坡06
+      - 坡07
+      - 坡08
+      - 日05
+      - 日07
+      - 日08
+      - 港03_|NF
+      - 港04_|NF
+      - 港05_|NF|TVB
+      - 港06_|NF|TVB
+      - 港07
+      - 港08
+      - 港09
+      - 港10 2
+      - 港13
+      - 港14
+      - 🇨🇳 CN_871 |76.88Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -108,14 +220,30 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 港10
-      - 4
-      - 5
-      - 6
-      - Z04
       - Z43
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net 2
+      - 台1_|NF|动画疯
+      - 坡01_|NF
+      - 坡02_|NF
+      - 坡03_NF
+      - 坡04_|NF
+      - 坡05_|NF
+      - 坡06
+      - 坡07
+      - 坡08
+      - 日05
+      - 日07
+      - 日08
+      - 港03_|NF
+      - 港04_|NF
+      - 港05_|NF|TVB
+      - 港06_|NF|TVB
+      - 港07
+      - 港08
+      - 港09
+      - 港10 2
+      - 港13
+      - 港14
+      - 🇨🇳 CN_871 |76.88Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -139,14 +267,30 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 港10
-      - 4
-      - 5
-      - 6
-      - Z04
       - Z43
-      - 🇯🇵 Japan-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net
-      - 🇺🇲 United States-proxypool.turinglabs.net 2
+      - 台1_|NF|动画疯
+      - 坡01_|NF
+      - 坡02_|NF
+      - 坡03_NF
+      - 坡04_|NF
+      - 坡05_|NF
+      - 坡06
+      - 坡07
+      - 坡08
+      - 日05
+      - 日07
+      - 日08
+      - 港03_|NF
+      - 港04_|NF
+      - 港05_|NF|TVB
+      - 港06_|NF|TVB
+      - 港07
+      - 港08
+      - 港09
+      - 港10 2
+      - 港13
+      - 港14
+      - 🇨🇳 CN_871 |76.88Mb
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
