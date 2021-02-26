@@ -5,18 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 74.207.254.106¡proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D, server: 74.207.254.106, port: 8097, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
-  - {name: 🇺🇸 74.207.254.106£proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D, server: 74.207.254.106, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
-  - {name: 🇨🇳 hinet.rdns.linkhproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud, server: hinet.rdns.link, port: 50024, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16060:93FNfo, obfs-param: f1e4016060.software-download.microsoft.com}
-  - {name: 🇨🇳 hinet.rdns.linkjproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud, server: hinet.rdns.link, port: 50026, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16060:93FNfo, obfs-param: f1e4016060.software-download.microsoft.com}
-  - {name: 🇨🇳 hinet.rdns.linkkproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud, server: hinet.rdns.link, port: 50027, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16066:mBmu8l, obfs-param: 6763716066.software-download.microsoft.com}
-  - {name: 🇨🇳 hinet.rdns.linkmproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud, server: hinet.rdns.link, port: 50029, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16066:mBmu8l, obfs-param: 6763716066.software-download.microsoft.com}
+  - {name: 1, server: 74.207.254.106, port: 8097, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
+  - {name: 2, server: 74.207.254.106, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
+  - {name: 3, server: hinet.rdns.link, port: 50024, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16060:93FNfo, obfs-param: f1e4016060.software-download.microsoft.com}
+  - {name: 4, server: hinet.rdns.link, port: 50026, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16060:93FNfo, obfs-param: f1e4016060.software-download.microsoft.com}
+  - {name: 5, server: hinet.rdns.link, port: 50027, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16066:mBmu8l, obfs-param: 6763716066.software-download.microsoft.com}
+  - {name: 6, server: hinet.rdns.link, port: 50029, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16066:mBmu8l, obfs-param: 6763716066.software-download.microsoft.com}
   - {name: 🇺🇸 美国 AGA│免费节点(洛杉矶1PSYCHZ), server: vhk30.q88q.ml, port: 15163, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:r5toahm6aan, obfs-param: 6626d623.baidu.com}
   - {name: 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ), server: vhk31.q88q.ml, port: 15164, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:r5toahm6aan, obfs-param: 6626d623.baidu.com}
   - {name: 🇬🇧 英国 AGA│免费节点, server: deaga.q88q.gq, port: 15162, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:r5toahm6aan, obfs-param: 6626d623.baidu.com}
@@ -27,18 +21,12 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 74.207.254.106¡proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇺🇸 74.207.254.106£proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇨🇳 hinet.rdns.linkhproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkjproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkkproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkmproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
       - 🇺🇸 美国 AGA│免费节点(洛杉矶1PSYCHZ)
       - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
       - 🇬🇧 英国 AGA│免费节点
@@ -49,18 +37,12 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 74.207.254.106¡proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇺🇸 74.207.254.106£proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇨🇳 hinet.rdns.linkhproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkjproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkkproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkmproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
       - 🇺🇸 美国 AGA│免费节点(洛杉矶1PSYCHZ)
       - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
       - 🇬🇧 英国 AGA│免费节点
@@ -71,18 +53,12 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 74.207.254.106¡proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇺🇸 74.207.254.106£proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇨🇳 hinet.rdns.linkhproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkjproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkkproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkmproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
       - 🇺🇸 美国 AGA│免费节点(洛杉矶1PSYCHZ)
       - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
       - 🇬🇧 英国 AGA│免费节点
@@ -92,18 +68,12 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 74.207.254.106¡proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇺🇸 74.207.254.106£proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇨🇳 hinet.rdns.linkhproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkjproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkkproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkmproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
       - 🇺🇸 美国 AGA│免费节点(洛杉矶1PSYCHZ)
       - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
       - 🇬🇧 英国 AGA│免费节点
@@ -113,18 +83,12 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 74.207.254.106¡proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇺🇸 74.207.254.106£proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇨🇳 hinet.rdns.linkhproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkjproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkkproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkmproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
       - 🇺🇸 美国 AGA│免费节点(洛杉矶1PSYCHZ)
       - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
       - 🇬🇧 英国 AGA│免费节点
@@ -134,18 +98,12 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 74.207.254.106¡proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇺🇸 74.207.254.106£proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇨🇳 hinet.rdns.linkhproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkjproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkkproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkmproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
       - 🇺🇸 美国 AGA│免费节点(洛杉矶1PSYCHZ)
       - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
       - 🇬🇧 英国 AGA│免费节点
@@ -156,18 +114,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 74.207.254.106¡proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇺🇸 74.207.254.106£proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇨🇳 hinet.rdns.linkhproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkjproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkkproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkmproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
       - 🇺🇸 美国 AGA│免费节点(洛杉矶1PSYCHZ)
       - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
       - 🇬🇧 英国 AGA│免费节点
@@ -194,18 +146,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 74.207.254.106¡proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇺🇸 74.207.254.106£proxypoolss.herokuapp.com
-��originaes-256-cfbeIW0Dnk69454e6nSwuspv9DmS201tQ0D
-      - 🇨🇳 hinet.rdns.linkhproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkjproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkkproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
-      - 🇨🇳 hinet.rdns.linkmproxypoolss.herokuapp.com
-��auth_aes128_md5aes-256-cfbGetfree.Cloud
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
       - 🇺🇸 美国 AGA│免费节点(洛杉矶1PSYCHZ)
       - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
       - 🇬🇧 英国 AGA│免费节点
