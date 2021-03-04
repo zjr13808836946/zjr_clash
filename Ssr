@@ -5,109 +5,157 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ), server: vhk31.q88q.ml, port: 15164, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:r5toahm6aan, obfs-param: 6626d623.baidu.com}
-  - {name: 🇭🇰 香港 AGA│免费节点(HKBN2 1Gbps), server: vhk31.q88q.ml, port: 15163, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:r5toahm6aan, obfs-param: 6626d623.baidu.com}
   - {name: 10, server: 120.232.214.4, port: 10631, type: ssr, cipher: aes-256-ctr, password: fastmore, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17706:zyFSJG, obfs-param: 9b74617706.zhaoj.in��}
-  - {name: 20, server: 185.167.116.145, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ}
   - {name: 63, server: cn2.flushingx.com, port: 1487, type: ss, cipher: rc4-md5, password: !<str> 7611866184}
   - {name: 🇨🇳 台湾 01, server: 42.157.196.104, port: 10216, type: ssr, cipher: aes-256-cfb, password: vCmp8ALih6, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 84650:6JEyu1VQFz, obfs-param: ajax.microsoft.com}
   - {name: 🇭🇰 香港 02, server: dg-hk-node02.linkthink.app, port: 12995, type: ssr, cipher: aes-256-cfb, password: e5opjuLDEQ, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 84650:6JEyu1VQFz, obfs-param: ajax.microsoft.com}
   - {name: 🇭🇰 香港 03, server: 42.157.196.103, port: 10341, type: ssr, cipher: aes-256-cfb, password: Yk4UdrOyQg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 84650:6JEyu1VQFz, obfs-param: ajax.microsoft.com}
+  - {name: 🇨🇳 CN_550, server: hn-cm.qbdu.xyz, port: 52224, type: ssr, cipher: chacha20-ietf, password: Aa120120120, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 3318:9nWMBd, obfs-param: cdimage.debian.org}
+  - {name: 🇨🇳 CN_552, server: gz-cm.qbdu.xyz, port: 30013, type: ssr, cipher: chacha20-ietf, password: Aa120120120, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 3318:9nWMBd, obfs-param: cdimage.debian.org}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_547 | 4.42Mb, server: shcu.cnhost.xyz, port: 10693, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1727:QtvsOk, obfs-param: .microsoft.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb, server: 120.232.214.4, port: 10631, type: ssr, cipher: aes-256-ctr, password: fastmore, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17706:zyFSJG, obfs-param: 9b74617706.zhaoj.in}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb, server: v2cm01.puffvip.com, port: 1059, type: ssr, cipher: chacha20-ietf, password: Paofu, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 39606:g2bf4f02c7, obfs-param: f211c39606.microsoft.com}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_545 | 9.17Mb, server: cn2.flushingx.com, port: 1487, type: ss, cipher: rc4-md5, password: !<str> 7611866184}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb, server: gz.q88q.gq, port: 15006, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:r5toahm6aan, obfs-param: 6626d623.baidu.com}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb, server: 36.133.178.183, port: 11017, type: ssr, cipher: chacha20-ietf, password: RubQVY, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14608:FqUQxV, obfs-param: 2cea814608.XIAOgou}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb, server: p4.22332e.com, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
-      - 🇭🇰 香港 AGA│免费节点(HKBN2 1Gbps)
       - 10
-      - 20
       - 63
       - 🇨🇳 台湾 01
       - 🇭🇰 香港 02
       - 🇭🇰 香港 03
+      - 🇨🇳 CN_550
+      - 🇨🇳 CN_552
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_547 | 4.42Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_545 | 9.17Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
-      - 🇭🇰 香港 AGA│免费节点(HKBN2 1Gbps)
       - 10
-      - 20
       - 63
       - 🇨🇳 台湾 01
       - 🇭🇰 香港 02
       - 🇭🇰 香港 03
+      - 🇨🇳 CN_550
+      - 🇨🇳 CN_552
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_547 | 4.42Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_545 | 9.17Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
-      - 🇭🇰 香港 AGA│免费节点(HKBN2 1Gbps)
       - 10
-      - 20
       - 63
       - 🇨🇳 台湾 01
       - 🇭🇰 香港 02
       - 🇭🇰 香港 03
+      - 🇨🇳 CN_550
+      - 🇨🇳 CN_552
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_547 | 4.42Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_545 | 9.17Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
-      - 🇭🇰 香港 AGA│免费节点(HKBN2 1Gbps)
       - 10
-      - 20
       - 63
       - 🇨🇳 台湾 01
       - 🇭🇰 香港 02
       - 🇭🇰 香港 03
+      - 🇨🇳 CN_550
+      - 🇨🇳 CN_552
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_547 | 4.42Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_545 | 9.17Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
-      - 🇭🇰 香港 AGA│免费节点(HKBN2 1Gbps)
       - 10
-      - 20
       - 63
       - 🇨🇳 台湾 01
       - 🇭🇰 香港 02
       - 🇭🇰 香港 03
+      - 🇨🇳 CN_550
+      - 🇨🇳 CN_552
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_547 | 4.42Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_545 | 9.17Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
-      - 🇭🇰 香港 AGA│免费节点(HKBN2 1Gbps)
       - 10
-      - 20
       - 63
       - 🇨🇳 台湾 01
       - 🇭🇰 香港 02
       - 🇭🇰 香港 03
+      - 🇨🇳 CN_550
+      - 🇨🇳 CN_552
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_547 | 4.42Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_545 | 9.17Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
-      - 🇭🇰 香港 AGA│免费节点(HKBN2 1Gbps)
       - 10
-      - 20
       - 63
       - 🇨🇳 台湾 01
       - 🇭🇰 香港 02
       - 🇭🇰 香港 03
+      - 🇨🇳 CN_550
+      - 🇨🇳 CN_552
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_547 | 4.42Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_545 | 9.17Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,14 +178,20 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 AGA│免费节点(洛杉矶2PSYCHZ)
-      - 🇭🇰 香港 AGA│免费节点(HKBN2 1Gbps)
       - 10
-      - 20
       - 63
       - 🇨🇳 台湾 01
       - 🇭🇰 香港 02
       - 🇭🇰 香港 03
+      - 🇨🇳 CN_550
+      - 🇨🇳 CN_552
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_547 | 4.42Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_545 | 9.17Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
