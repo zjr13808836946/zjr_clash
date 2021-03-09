@@ -5,157 +5,181 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 🇺🇸 US_66.42Mb, server: pro-us1-3.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-3.sstr-api.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps, server: a46a5468362dd28b7.awsglobalaccelerator.com, port: 8082, type: vmess, uuid: d8632752-6b35-3db5-bc89-7080c331cf57, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /aga1, ws-headers: {Host: hk1.freeman.xyz}}
+  - {name: 🇭🇰 HongKong-A-Azure-1000Mbps, server: hk1.freeperson.xyz, port: 8082, type: vmess, uuid: d8632752-6b35-3db5-bc89-7080c331cf57, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /azhk1, ws-headers: {Host: hk1.freeman.xyz}}
+  - {name: 🇭🇰 HongKong-B-Azure-1000Mbps, server: hk2.freeperson.xyz, port: 8082, type: vmess, uuid: d8632752-6b35-3db5-bc89-7080c331cf57, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /azhk2, ws-headers: {Host: hk1.freeman.xyz}}
+  - {name: 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04, server: transite-shcn2-04.iplc188.com, port: 10011, type: vmess, uuid: b8e4da8c-ddff-442e-a248-93da7642bae7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 IPLC-V113-4x-广新, server: sgiplcv1.maoxiong.icu, port: 11536, type: vmess, uuid: 3f648109-f9b0-34aa-a848-551e3ef1f746, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: sgiplcv1.maoxiong.icu}}
   - {name: 🇺🇸 US_71.17Mb, server: pro-us1-1.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-1.sstr-api.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12, server: sha-n8-p33.t5.work, port: 10001, type: vmess, uuid: 438c239b-8764-42e3-81a0-7620c3af7f7f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇺🇸 US_71.06Mb, server: pro-us1-2.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-2.sstr-api.xyz, skip-cert-verify: false}
   - {name: 🇺🇸 US_70.63Mb, server: pro-us1-4.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-4.sstr-api.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389, server: hk05.101justice.xyz, port: 443, type: vmess, uuid: bb3cdfc2-ae9e-4405-ab14-c83bd1d221c2, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /test, ws-headers: {Host: hk05.101justice.xyz}}
-  - {name: 🇩🇪 德国(欢迎订阅Youtube破解资源君), server: 217.138.222.51, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇸🇬 US->🇸🇬SG_221, server: 75.2.82.197, port: 80, type: vmess, uuid: a12234e2-06fd-4fc3-ab44-c0cb3910dfc8, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 75.2.82.197}}
-  - {name: 🇸🇬 CN->🇸🇬SG_88, server: 120.232.96.45, port: 20007, type: vmess, uuid: 03349423-6f1b-3e98-9d48-3eb8d3b082b0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.232.96.45}}
-  - {name: 顺丰资源YouTube, server: 120.232.182.20, port: 11313, type: vmess, uuid: dcde3df9-7218-497d-ae0c-f7f8bb1f94b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: m.iqiyi.com}}
-  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb, server: transite-shcn2-01.iplc188.com, port: 10012, type: vmess, uuid: 0c421643-6047-4ae9-b71d-80dcdaa827be, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb, server: transite-shcn2-01.iplc188.com, port: 10011, type: vmess, uuid: 0c421643-6047-4ae9-b71d-80dcdaa827be, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 电信联通-香港10, server: hk03.ronghuafugui.xyz, port: 443, type: vmess, uuid: 46fc1154-1374-4438-a485-43356d2c60fb, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /test, ws-headers: {Host: hk03.ronghuafugui.xyz}}
-  - {name: 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom, server: a86c5a8f3e3f3caf9.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: c07a189e-b969-4af6-86f1-3c4adb4e099a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: a86c5a8f3e3f3caf9.awsglobalaccelerator.com}}
-  - {name: 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2, server: a86c5a8f3e3f3caf9.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: 86d588ed-ae59-4d51-b375-ddf24f304a1d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: a86c5a8f3e3f3caf9.awsglobalaccelerator.com}}
-  - {name: JP_22.82Mb, server: 139.226.163.144, port: 10001, type: vmess, uuid: 0c421643-6047-4ae9-b71d-80dcdaa827be, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb, server: p653-n2-sha.t5.work, port: 10001, type: vmess, uuid: 0c421643-6047-4ae9-b71d-80dcdaa827be, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99, server: fuckxijinping.cf, port: 443, type: trojan, password: 355148e3-45c6-4af5-ab32-3e533839325d, sni: fuckxijinping.cf, skip-cert-verify: false}
+  - {name: 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99, server: trotro.ml, port: 443, type: trojan, password: 530e1804-6724-480b-b525-fb4c4237dff9, sni: trotro.ml, skip-cert-verify: false}
+  - {name: 66.115.147.92:33992, server: 66.115.147.92, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2, server: transite-shcn2-04.iplc188.com, port: 10011, type: vmess, uuid: 8796624d-3b26-4647-93c7-88885c5b1a45, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04, server: transite-shcn2-04.iplc188.com, port: 10012, type: vmess, uuid: 8796624d-3b26-4647-93c7-88885c5b1a45, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3, server: transite-shcn2-04.iplc188.com, port: 10011, type: vmess, uuid: e8994f01-b5cc-47b9-80aa-0680c84d3c94, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -178,20 +202,23 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
