@@ -5,60 +5,32 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 🇺🇸 US_66.42Mb, server: pro-us1-3.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-3.sstr-api.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps, server: a46a5468362dd28b7.awsglobalaccelerator.com, port: 8082, type: vmess, uuid: d8632752-6b35-3db5-bc89-7080c331cf57, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /aga1, ws-headers: {Host: hk1.freeman.xyz}}
+  - {name: 🇭🇰 HongKong-A-Azure-1000Mbps, server: hk1.freeperson.xyz, port: 8082, type: vmess, uuid: d8632752-6b35-3db5-bc89-7080c331cf57, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /azhk1, ws-headers: {Host: hk1.freeman.xyz}}
+  - {name: 🇭🇰 HongKong-B-Azure-1000Mbps, server: hk2.freeperson.xyz, port: 8082, type: vmess, uuid: d8632752-6b35-3db5-bc89-7080c331cf57, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /azhk2, ws-headers: {Host: hk1.freeman.xyz}}
+  - {name: 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04, server: transite-shcn2-04.iplc188.com, port: 10011, type: vmess, uuid: b8e4da8c-ddff-442e-a248-93da7642bae7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 IPLC-V113-4x-广新, server: sgiplcv1.maoxiong.icu, port: 11536, type: vmess, uuid: 3f648109-f9b0-34aa-a848-551e3ef1f746, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: sgiplcv1.maoxiong.icu}}
   - {name: 🇺🇸 US_71.17Mb, server: pro-us1-1.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-1.sstr-api.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12, server: sha-n8-p33.t5.work, port: 10001, type: vmess, uuid: 438c239b-8764-42e3-81a0-7620c3af7f7f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇺🇸 US_71.06Mb, server: pro-us1-2.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-2.sstr-api.xyz, skip-cert-verify: false}
   - {name: 🇺🇸 US_70.63Mb, server: pro-us1-4.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-4.sstr-api.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389, server: hk05.101justice.xyz, port: 443, type: vmess, uuid: bb3cdfc2-ae9e-4405-ab14-c83bd1d221c2, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /test, ws-headers: {Host: hk05.101justice.xyz}}
-  - {name: 🇩🇪 德国(欢迎订阅Youtube破解资源君), server: 217.138.222.51, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇸🇬 US->🇸🇬SG_221, server: 75.2.82.197, port: 80, type: vmess, uuid: a12234e2-06fd-4fc3-ab44-c0cb3910dfc8, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 75.2.82.197}}
-  - {name: 🇸🇬 CN->🇸🇬SG_88, server: 120.232.96.45, port: 20007, type: vmess, uuid: 03349423-6f1b-3e98-9d48-3eb8d3b082b0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.232.96.45}}
-  - {name: 顺丰资源YouTube, server: 120.232.182.20, port: 11313, type: vmess, uuid: dcde3df9-7218-497d-ae0c-f7f8bb1f94b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: m.iqiyi.com}}
-  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb, server: transite-shcn2-01.iplc188.com, port: 10012, type: vmess, uuid: 0c421643-6047-4ae9-b71d-80dcdaa827be, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb, server: transite-shcn2-01.iplc188.com, port: 10011, type: vmess, uuid: 0c421643-6047-4ae9-b71d-80dcdaa827be, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 电信联通-香港10, server: hk03.ronghuafugui.xyz, port: 443, type: vmess, uuid: 46fc1154-1374-4438-a485-43356d2c60fb, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /test, ws-headers: {Host: hk03.ronghuafugui.xyz}}
-  - {name: 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom, server: a86c5a8f3e3f3caf9.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: c07a189e-b969-4af6-86f1-3c4adb4e099a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: a86c5a8f3e3f3caf9.awsglobalaccelerator.com}}
-  - {name: 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2, server: a86c5a8f3e3f3caf9.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: 86d588ed-ae59-4d51-b375-ddf24f304a1d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: a86c5a8f3e3f3caf9.awsglobalaccelerator.com}}
-  - {name: JP_22.82Mb, server: 139.226.163.144, port: 10001, type: vmess, uuid: 0c421643-6047-4ae9-b71d-80dcdaa827be, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 10, server: 120.232.214.4, port: 10631, type: ssr, cipher: aes-256-ctr, password: fastmore, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17706:zyFSJG, obfs-param: 9b74617706.zhaoj.in��}
-  - {name: 63, server: cn2.flushingx.com, port: 1487, type: ss, cipher: rc4-md5, password: !<str> 7611866184}
-  - {name: 🇨🇳 台湾 01, server: 42.157.196.104, port: 10216, type: ssr, cipher: aes-256-cfb, password: vCmp8ALih6, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 84650:6JEyu1VQFz, obfs-param: ajax.microsoft.com}
-  - {name: 🇭🇰 香港 02, server: dg-hk-node02.linkthink.app, port: 12995, type: ssr, cipher: aes-256-cfb, password: e5opjuLDEQ, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 84650:6JEyu1VQFz, obfs-param: ajax.microsoft.com}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb, server: p653-n2-sha.t5.work, port: 10001, type: vmess, uuid: 0c421643-6047-4ae9-b71d-80dcdaa827be, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99, server: fuckxijinping.cf, port: 443, type: trojan, password: 355148e3-45c6-4af5-ab32-3e533839325d, sni: fuckxijinping.cf, skip-cert-verify: false}
+  - {name: 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99, server: trotro.ml, port: 443, type: trojan, password: 530e1804-6724-480b-b525-fb4c4237dff9, sni: trotro.ml, skip-cert-verify: false}
+  - {name: 66.115.147.92:33992, server: 66.115.147.92, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2, server: transite-shcn2-04.iplc188.com, port: 10011, type: vmess, uuid: 8796624d-3b26-4647-93c7-88885c5b1a45, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04, server: transite-shcn2-04.iplc188.com, port: 10012, type: vmess, uuid: 8796624d-3b26-4647-93c7-88885c5b1a45, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3, server: transite-shcn2-04.iplc188.com, port: 10011, type: vmess, uuid: e8994f01-b5cc-47b9-80aa-0680c84d3c94, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 香港 03, server: 42.157.196.103, port: 10341, type: ssr, cipher: aes-256-cfb, password: Yk4UdrOyQg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 84650:6JEyu1VQFz, obfs-param: ajax.microsoft.com}
-  - {name: 🇨🇳 CN_550, server: hn-cm.qbdu.xyz, port: 52224, type: ssr, cipher: chacha20-ietf, password: Aa120120120, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 3318:9nWMBd, obfs-param: cdimage.debian.org}
   - {name: 🇨🇳 CN_552, server: gz-cm.qbdu.xyz, port: 30013, type: ssr, cipher: chacha20-ietf, password: Aa120120120, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 3318:9nWMBd, obfs-param: cdimage.debian.org}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb, server: 120.232.214.4, port: 10631, type: ssr, cipher: aes-256-ctr, password: fastmore, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17706:zyFSJG, obfs-param: 9b74617706.zhaoj.in}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb, server: v2cm01.puffvip.com, port: 1059, type: ssr, cipher: chacha20-ietf, password: Paofu, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 39606:g2bf4f02c7, obfs-param: f211c39606.microsoft.com}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb, server: gz.q88q.gq, port: 15006, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:r5toahm6aan, obfs-param: 6626d623.baidu.com}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb, server: 36.133.178.183, port: 11017, type: ssr, cipher: chacha20-ietf, password: RubQVY, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14608:FqUQxV, obfs-param: 2cea814608.XIAOgou}
-  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb, server: p4.22332e.com, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
-  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_73 |14.49Mb, server: p4.22332e.com, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
-  - {name: 🇨🇳 CN->🇨🇳CN_02, server: 139.227.20.130, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN->🇨🇳CN_05, server: 139.227.20.130, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN->🇨🇳CN_06, server: 139.227.20.130, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN->🇨🇳CN_07, server: 139.227.20.130, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN->🇨🇳CN_08, server: 139.227.20.130, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
   - {name: 🇨🇳 CN->🇨🇳CN_09, server: 139.227.21.214, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN->🇨🇳CN_10, server: 139.227.21.214, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
   - {name: 🇨🇳 CN->🇨🇳CN_11, server: 139.227.21.214, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
   - {name: 🇨🇳 CN->🇮🇳IN_57, server: 120.232.173.7, port: 10693, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 5522:iB2FwI, obfs-param: .microsoft.com}
-  - {name: 🇨🇳 CN->🇮🇹IT_58, server: 120.232.214.4, port: 10631, type: ssr, cipher: aes-256-ctr, password: fastmore, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17706:zyFSJG, obfs-param: 9b74617706.zhaoj.in}
-  - {name: 🇨🇳 CN->🇰🇷KR_65, server: 120.232.214.171, port: 1054, type: ssr, cipher: chacha20-ietf, password: Paofu, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 39606:g2bf4f02c7, obfs-param: f211c39606.microsoft.com}
-  - {name: 🇨🇳 CN->🇹🇼TW_171, server: 121.12.172.56, port: 32101, type: ssr, cipher: aes-256-cfb, password: adsl.cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 759:jFR2DE, obfs-param: 5f569759.software-download.microsoft.com}
-  - {name: 🇨🇳 CN->🇹🇼TW_173, server: 120.232.214.171, port: 1059, type: ssr, cipher: chacha20-ietf, password: Paofu, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 39606:g2bf4f02c7, obfs-param: f211c39606.microsoft.com}
-  - {name: 🇭🇰 CN->🇭🇰HK_24, server: 120.232.214.163, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
-  - {name: 🇭🇰 CN->🇭🇰HK_25, server: 120.232.214.163, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
-  - {name: 🇭🇰 CN->🇭🇰HK_30, server: 120.232.214.171, port: 1051, type: ssr, cipher: chacha20-ietf, password: Paofu, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 39606:g2bf4f02c7, obfs-param: f211c39606.microsoft.com}
-  - {name: 🇭🇰 CN->🇭🇰HK_40, server: 139.226.21.62, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
   - {name: 🇭🇰 CN->🇭🇰HK_41, server: 139.226.21.62, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
   - {name: 🇭🇰 CN->🇭🇰HK_44, server: 139.227.21.214, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
   - {name: 🇭🇰 CN->🇭🇰HK_55, server: 223.166.139.133, port: 47000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
-  - {name: 🇸🇬 CN->🇸🇬SG_83, server: 139.227.20.130, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
-  - {name: 🇸🇬 CN->🇸🇬SG_84, server: 139.227.20.130, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
-  - {name: 🇸🇬 CN->🇸🇬SG_95, server: 139.227.20.130, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
   - {name: 🇸🇬 CN->🇸🇬SG_96, server: 139.227.20.130, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
-  - {name: 🇺🇸 CN->🇺🇸US_178, server: 139.226.20.159, port: 40000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
-  - {name: 🇺🇸 CN->🇺🇸US_180, server: 139.226.20.159, port: 42000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
-  - {name: P加加 - TG客服群:https://t.me/pjjone, server: sk02.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
   - {name: "🇭🇰 [CT/CM]香港 01", server: hzrelaycu.procncon.xyz, port: 1016, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
   - {name: "🇭🇰 [CT/CM]香港 02", server: shcu002online.proconcn.xyz, port: 1017, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
   - {name: "🇭🇰 [CT/CM]香港 03", server: hzrelaycu.procncon.xyz, port: 1018, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
@@ -70,97 +42,55 @@ proxies:
   - {name: "🇭🇰 [CT/CM]香港 10", server: shcu002online.proconcn.xyz, port: 1019, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
   - {name: "🇭🇰 [CT/CM]香港 11", server: shsuconpro.procncon.xyz, port: 1021, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
   - {name: "🇭🇰 [CT/CM]香港 12", server: shsuconpro.procncon.xyz, port: 1023, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
-  - {name: "🇭🇰 [vip1]⑤香港NTT 1000M｜×1x｜限速100M - 52233 单端口", server: 33.wgong.xyz, port: 52233, type: ssr, cipher: rc4-md5, password: MfKymR, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 23703:wtStn5, obfs-param: 8506923703.microsoft.com}
-  - {name: 🏳️‍🌈 可用流量:72.23GB 有效期:2121-02-11, server: us04.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇨🇳 台湾01, server: tw01.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇨🇳 台湾02, server: tw02.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇨🇳 台湾03, server: tw03.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇨🇳 台湾04, server: tw04.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇸🇬 新加坡01, server: sg01.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇸🇬 新加坡02, server: sg02.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇸🇬 新加坡03, server: sg03.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇸🇬 新加坡04, server: sg04.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇸🇬 新加坡A 微软 2.5x, server: shazwtt.procncon.xyz, port: 1034, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
   - {name: 🇸🇬 新加坡B 微软 2.5x, server: shazwtt.procncon.xyz, port: 1035, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
-  - {name: 🇯🇵 日本 Azure A 2.5x, server: shazwtt.procncon.xyz, port: 1031, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
-  - {name: 🇯🇵 日本 Azure B 2.5x, server: shazwtt.procncon.xyz, port: 1032, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
-  - {name: 🇯🇵 日本01, server: jp01.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇯🇵 日本02, server: jp02.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇯🇵 日本03, server: jp03.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇺🇸 美国 优化 -5 3.5, server: shusa.proconcn.xyz, port: 549, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
-  - {name: 🇺🇸 美国 优化 -6 3.5, server: shusa.proconcn.xyz, port: 550, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
-  - {name: 🇺🇸 美国 优化 -7 3.5, server: shusa.proconcn.xyz, port: 551, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
-  - {name: 🇺🇸 美国 优化 -9 3.5, server: shusa.proconcn.xyz, port: 553, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
-  - {name: 🇺🇸 美国01, server: us01.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇺🇸 美国02, server: us02.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇺🇸 美国03, server: us03.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
-  - {name: 🇬🇧 英国 iplayer B, server: relaypro.procncon.xyz, port: 605, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
-  - {name: 🇰🇷 韩国, server: shazwtt.procncon.xyz, port: 1036, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
-  - {name: 🇰🇷 韩国03, server: sk03.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 41806702:10d2c0aa-a31e-46d9-9a00-7672b78b2bad, obfs-param: ""}
   - {name: 🇭🇰 香港04-测试, server: 42.157.196.104, port: 20218, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 99056:D2x7S1b8yp, obfs-param: ajax.microsoft.com}
-  - {name: 🇭🇰 香港动态 HKT A, server: csdynhkt.proconcn.xyz, port: 550, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
-  - {name: 🇭🇰 香港动态 HKT B, server: csdynhkt.proconcn.xyz, port: 551, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
-  - {name: 🇭🇰 香港动态 HKT C, server: csdynhkt.proconcn.xyz, port: 552, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16457:qwer, obfs-param: cdn.sharepointonline.com}
+  - {name: 🇭🇰 *国内中转*HK|广州移动-香港AWS_0002, server: z0002.security-cloudfront-cdn.com, port: 23816, type: ssr, cipher: aes-256-cfb, password: c0CNenwGwnoraG2F, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003, server: z0003.security-cloudfront-cdn.com, port: 23816, type: ssr, cipher: aes-256-cfb, password: c0CNenwGwnoraG2F, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003 2, server: z0003.security-cloudfront-cdn.com, port: 24182, type: ssr, cipher: aes-256-cfb, password: v8OqbgazOVzMyvQl, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇨🇳 *国内中转*TW|三网优化-台北_0022, server: z0022.security-cloudfront-cdn.com, port: 23816, type: ssr, cipher: aes-256-cfb, password: c0CNenwGwnoraG2F, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇨🇳 *国内中转*TW|三网优化-台北_0022 2, server: z0022.security-cloudfront-cdn.com, port: 24182, type: ssr, cipher: aes-256-cfb, password: v8OqbgazOVzMyvQl, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012, server: z0012.security-cloudfront-cdn.com, port: 23816, type: ssr, cipher: aes-256-cfb, password: c0CNenwGwnoraG2F, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012 2, server: z0012.security-cloudfront-cdn.com, port: 24182, type: ssr, cipher: aes-256-cfb, password: v8OqbgazOVzMyvQl, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇺🇸 *国内中转*US|联通-洛杉矶_0021, server: z0021.security-cloudfront-cdn.com, port: 23816, type: ssr, cipher: aes-256-cfb, password: c0CNenwGwnoraG2F, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇺🇸 *国内中转*US|联通-洛杉矶_0021 2, server: z0021.security-cloudfront-cdn.com, port: 24182, type: ssr, cipher: aes-256-cfb, password: v8OqbgazOVzMyvQl, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇯🇵 【推荐】IPLC中转*上海-东京专线_41, server: z00041.security-cloudfront-cdn.com, port: 23816, type: ssr, cipher: aes-256-cfb, password: c0CNenwGwnoraG2F, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇯🇵 【推荐】IPLC中转*上海-东京专线_41 2, server: z00041.security-cloudfront-cdn.com, port: 24182, type: ssr, cipher: aes-256-cfb, password: v8OqbgazOVzMyvQl, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇭🇰 【推荐】IPLC中转*上海-香港专线1_01, server: z00001.security-cloudfront-cdn.com, port: 23816, type: ssr, cipher: aes-256-cfb, password: c0CNenwGwnoraG2F, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇨🇳 普通|TW|Taichung1_5911, server: z59001.security-cloudfront-cdn.com, port: 23816, type: ssr, cipher: aes-256-cfb, password: c0CNenwGwnoraG2F, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇨🇳 普通|TW|Taichung1_5911 2, server: z59001.security-cloudfront-cdn.com, port: 24182, type: ssr, cipher: aes-256-cfb, password: v8OqbgazOVzMyvQl, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇨🇳 普通|TW|Taichung2_5912, server: z5912.security-cloudfront-cdn.com, port: 23816, type: ssr, cipher: aes-256-cfb, password: c0CNenwGwnoraG2F, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
-      - 10
-      - 63
-      - 🇨🇳 台湾 01
-      - 🇭🇰 香港 02
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
       - 🇭🇰 香港 03
-      - 🇨🇳 CN_550
       - 🇨🇳 CN_552
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_73 |14.49Mb
-      - 🇨🇳 CN->🇨🇳CN_02
-      - 🇨🇳 CN->🇨🇳CN_05
-      - 🇨🇳 CN->🇨🇳CN_06
-      - 🇨🇳 CN->🇨🇳CN_07
-      - 🇨🇳 CN->🇨🇳CN_08
       - 🇨🇳 CN->🇨🇳CN_09
-      - 🇨🇳 CN->🇨🇳CN_10
       - 🇨🇳 CN->🇨🇳CN_11
       - 🇨🇳 CN->🇮🇳IN_57
-      - 🇨🇳 CN->🇮🇹IT_58
-      - 🇨🇳 CN->🇰🇷KR_65
-      - 🇨🇳 CN->🇹🇼TW_171
-      - 🇨🇳 CN->🇹🇼TW_173
-      - 🇭🇰 CN->🇭🇰HK_24
-      - 🇭🇰 CN->🇭🇰HK_25
-      - 🇭🇰 CN->🇭🇰HK_30
-      - 🇭🇰 CN->🇭🇰HK_40
       - 🇭🇰 CN->🇭🇰HK_41
       - 🇭🇰 CN->🇭🇰HK_44
       - 🇭🇰 CN->🇭🇰HK_55
-      - 🇸🇬 CN->🇸🇬SG_83
-      - 🇸🇬 CN->🇸🇬SG_84
-      - 🇸🇬 CN->🇸🇬SG_95
       - 🇸🇬 CN->🇸🇬SG_96
-      - 🇺🇸 CN->🇺🇸US_178
-      - 🇺🇸 CN->🇺🇸US_180
-      - P加加 - TG客服群:https://t.me/pjjone
       - 🇭🇰 [CT/CM]香港 01
       - 🇭🇰 [CT/CM]香港 02
       - 🇭🇰 [CT/CM]香港 03
@@ -172,97 +102,55 @@ proxy-groups:
       - 🇭🇰 [CT/CM]香港 10
       - 🇭🇰 [CT/CM]香港 11
       - 🇭🇰 [CT/CM]香港 12
-      - 🇭🇰 [vip1]⑤香港NTT 1000M｜×1x｜限速100M - 52233 单端口
-      - 🏳️‍🌈 可用流量:72.23GB 有效期:2121-02-11
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡02
-      - 🇸🇬 新加坡03
-      - 🇸🇬 新加坡04
-      - 🇸🇬 新加坡A 微软 2.5x
       - 🇸🇬 新加坡B 微软 2.5x
-      - 🇯🇵 日本 Azure A 2.5x
-      - 🇯🇵 日本 Azure B 2.5x
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇺🇸 美国 优化 -5 3.5
-      - 🇺🇸 美国 优化 -6 3.5
-      - 🇺🇸 美国 优化 -7 3.5
-      - 🇺🇸 美国 优化 -9 3.5
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国03
-      - 🇬🇧 英国 iplayer B
-      - 🇰🇷 韩国
-      - 🇰🇷 韩国03
       - 🇭🇰 香港04-测试
-      - 🇭🇰 香港动态 HKT A
-      - 🇭🇰 香港动态 HKT B
-      - 🇭🇰 香港动态 HKT C
+      - 🇭🇰 *国内中转*HK|广州移动-香港AWS_0002
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003 2
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022 2
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012 2
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021 2
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41 2
+      - 🇭🇰 【推荐】IPLC中转*上海-香港专线1_01
+      - 🇨🇳 普通|TW|Taichung1_5911
+      - 🇨🇳 普通|TW|Taichung1_5911 2
+      - 🇨🇳 普通|TW|Taichung2_5912
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
-      - 10
-      - 63
-      - 🇨🇳 台湾 01
-      - 🇭🇰 香港 02
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
       - 🇭🇰 香港 03
-      - 🇨🇳 CN_550
       - 🇨🇳 CN_552
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_73 |14.49Mb
-      - 🇨🇳 CN->🇨🇳CN_02
-      - 🇨🇳 CN->🇨🇳CN_05
-      - 🇨🇳 CN->🇨🇳CN_06
-      - 🇨🇳 CN->🇨🇳CN_07
-      - 🇨🇳 CN->🇨🇳CN_08
       - 🇨🇳 CN->🇨🇳CN_09
-      - 🇨🇳 CN->🇨🇳CN_10
       - 🇨🇳 CN->🇨🇳CN_11
       - 🇨🇳 CN->🇮🇳IN_57
-      - 🇨🇳 CN->🇮🇹IT_58
-      - 🇨🇳 CN->🇰🇷KR_65
-      - 🇨🇳 CN->🇹🇼TW_171
-      - 🇨🇳 CN->🇹🇼TW_173
-      - 🇭🇰 CN->🇭🇰HK_24
-      - 🇭🇰 CN->🇭🇰HK_25
-      - 🇭🇰 CN->🇭🇰HK_30
-      - 🇭🇰 CN->🇭🇰HK_40
       - 🇭🇰 CN->🇭🇰HK_41
       - 🇭🇰 CN->🇭🇰HK_44
       - 🇭🇰 CN->🇭🇰HK_55
-      - 🇸🇬 CN->🇸🇬SG_83
-      - 🇸🇬 CN->🇸🇬SG_84
-      - 🇸🇬 CN->🇸🇬SG_95
       - 🇸🇬 CN->🇸🇬SG_96
-      - 🇺🇸 CN->🇺🇸US_178
-      - 🇺🇸 CN->🇺🇸US_180
-      - P加加 - TG客服群:https://t.me/pjjone
       - 🇭🇰 [CT/CM]香港 01
       - 🇭🇰 [CT/CM]香港 02
       - 🇭🇰 [CT/CM]香港 03
@@ -274,97 +162,55 @@ proxy-groups:
       - 🇭🇰 [CT/CM]香港 10
       - 🇭🇰 [CT/CM]香港 11
       - 🇭🇰 [CT/CM]香港 12
-      - 🇭🇰 [vip1]⑤香港NTT 1000M｜×1x｜限速100M - 52233 单端口
-      - 🏳️‍🌈 可用流量:72.23GB 有效期:2121-02-11
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡02
-      - 🇸🇬 新加坡03
-      - 🇸🇬 新加坡04
-      - 🇸🇬 新加坡A 微软 2.5x
       - 🇸🇬 新加坡B 微软 2.5x
-      - 🇯🇵 日本 Azure A 2.5x
-      - 🇯🇵 日本 Azure B 2.5x
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇺🇸 美国 优化 -5 3.5
-      - 🇺🇸 美国 优化 -6 3.5
-      - 🇺🇸 美国 优化 -7 3.5
-      - 🇺🇸 美国 优化 -9 3.5
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国03
-      - 🇬🇧 英国 iplayer B
-      - 🇰🇷 韩国
-      - 🇰🇷 韩国03
       - 🇭🇰 香港04-测试
-      - 🇭🇰 香港动态 HKT A
-      - 🇭🇰 香港动态 HKT B
-      - 🇭🇰 香港动态 HKT C
+      - 🇭🇰 *国内中转*HK|广州移动-香港AWS_0002
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003 2
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022 2
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012 2
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021 2
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41 2
+      - 🇭🇰 【推荐】IPLC中转*上海-香港专线1_01
+      - 🇨🇳 普通|TW|Taichung1_5911
+      - 🇨🇳 普通|TW|Taichung1_5911 2
+      - 🇨🇳 普通|TW|Taichung2_5912
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
-      - 10
-      - 63
-      - 🇨🇳 台湾 01
-      - 🇭🇰 香港 02
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
       - 🇭🇰 香港 03
-      - 🇨🇳 CN_550
       - 🇨🇳 CN_552
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_73 |14.49Mb
-      - 🇨🇳 CN->🇨🇳CN_02
-      - 🇨🇳 CN->🇨🇳CN_05
-      - 🇨🇳 CN->🇨🇳CN_06
-      - 🇨🇳 CN->🇨🇳CN_07
-      - 🇨🇳 CN->🇨🇳CN_08
       - 🇨🇳 CN->🇨🇳CN_09
-      - 🇨🇳 CN->🇨🇳CN_10
       - 🇨🇳 CN->🇨🇳CN_11
       - 🇨🇳 CN->🇮🇳IN_57
-      - 🇨🇳 CN->🇮🇹IT_58
-      - 🇨🇳 CN->🇰🇷KR_65
-      - 🇨🇳 CN->🇹🇼TW_171
-      - 🇨🇳 CN->🇹🇼TW_173
-      - 🇭🇰 CN->🇭🇰HK_24
-      - 🇭🇰 CN->🇭🇰HK_25
-      - 🇭🇰 CN->🇭🇰HK_30
-      - 🇭🇰 CN->🇭🇰HK_40
       - 🇭🇰 CN->🇭🇰HK_41
       - 🇭🇰 CN->🇭🇰HK_44
       - 🇭🇰 CN->🇭🇰HK_55
-      - 🇸🇬 CN->🇸🇬SG_83
-      - 🇸🇬 CN->🇸🇬SG_84
-      - 🇸🇬 CN->🇸🇬SG_95
       - 🇸🇬 CN->🇸🇬SG_96
-      - 🇺🇸 CN->🇺🇸US_178
-      - 🇺🇸 CN->🇺🇸US_180
-      - P加加 - TG客服群:https://t.me/pjjone
       - 🇭🇰 [CT/CM]香港 01
       - 🇭🇰 [CT/CM]香港 02
       - 🇭🇰 [CT/CM]香港 03
@@ -376,96 +222,54 @@ proxy-groups:
       - 🇭🇰 [CT/CM]香港 10
       - 🇭🇰 [CT/CM]香港 11
       - 🇭🇰 [CT/CM]香港 12
-      - 🇭🇰 [vip1]⑤香港NTT 1000M｜×1x｜限速100M - 52233 单端口
-      - 🏳️‍🌈 可用流量:72.23GB 有效期:2121-02-11
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡02
-      - 🇸🇬 新加坡03
-      - 🇸🇬 新加坡04
-      - 🇸🇬 新加坡A 微软 2.5x
       - 🇸🇬 新加坡B 微软 2.5x
-      - 🇯🇵 日本 Azure A 2.5x
-      - 🇯🇵 日本 Azure B 2.5x
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇺🇸 美国 优化 -5 3.5
-      - 🇺🇸 美国 优化 -6 3.5
-      - 🇺🇸 美国 优化 -7 3.5
-      - 🇺🇸 美国 优化 -9 3.5
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国03
-      - 🇬🇧 英国 iplayer B
-      - 🇰🇷 韩国
-      - 🇰🇷 韩国03
       - 🇭🇰 香港04-测试
-      - 🇭🇰 香港动态 HKT A
-      - 🇭🇰 香港动态 HKT B
-      - 🇭🇰 香港动态 HKT C
+      - 🇭🇰 *国内中转*HK|广州移动-香港AWS_0002
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003 2
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022 2
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012 2
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021 2
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41 2
+      - 🇭🇰 【推荐】IPLC中转*上海-香港专线1_01
+      - 🇨🇳 普通|TW|Taichung1_5911
+      - 🇨🇳 普通|TW|Taichung1_5911 2
+      - 🇨🇳 普通|TW|Taichung2_5912
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
-      - 10
-      - 63
-      - 🇨🇳 台湾 01
-      - 🇭🇰 香港 02
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
       - 🇭🇰 香港 03
-      - 🇨🇳 CN_550
       - 🇨🇳 CN_552
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_73 |14.49Mb
-      - 🇨🇳 CN->🇨🇳CN_02
-      - 🇨🇳 CN->🇨🇳CN_05
-      - 🇨🇳 CN->🇨🇳CN_06
-      - 🇨🇳 CN->🇨🇳CN_07
-      - 🇨🇳 CN->🇨🇳CN_08
       - 🇨🇳 CN->🇨🇳CN_09
-      - 🇨🇳 CN->🇨🇳CN_10
       - 🇨🇳 CN->🇨🇳CN_11
       - 🇨🇳 CN->🇮🇳IN_57
-      - 🇨🇳 CN->🇮🇹IT_58
-      - 🇨🇳 CN->🇰🇷KR_65
-      - 🇨🇳 CN->🇹🇼TW_171
-      - 🇨🇳 CN->🇹🇼TW_173
-      - 🇭🇰 CN->🇭🇰HK_24
-      - 🇭🇰 CN->🇭🇰HK_25
-      - 🇭🇰 CN->🇭🇰HK_30
-      - 🇭🇰 CN->🇭🇰HK_40
       - 🇭🇰 CN->🇭🇰HK_41
       - 🇭🇰 CN->🇭🇰HK_44
       - 🇭🇰 CN->🇭🇰HK_55
-      - 🇸🇬 CN->🇸🇬SG_83
-      - 🇸🇬 CN->🇸🇬SG_84
-      - 🇸🇬 CN->🇸🇬SG_95
       - 🇸🇬 CN->🇸🇬SG_96
-      - 🇺🇸 CN->🇺🇸US_178
-      - 🇺🇸 CN->🇺🇸US_180
-      - P加加 - TG客服群:https://t.me/pjjone
       - 🇭🇰 [CT/CM]香港 01
       - 🇭🇰 [CT/CM]香港 02
       - 🇭🇰 [CT/CM]香港 03
@@ -477,96 +281,54 @@ proxy-groups:
       - 🇭🇰 [CT/CM]香港 10
       - 🇭🇰 [CT/CM]香港 11
       - 🇭🇰 [CT/CM]香港 12
-      - 🇭🇰 [vip1]⑤香港NTT 1000M｜×1x｜限速100M - 52233 单端口
-      - 🏳️‍🌈 可用流量:72.23GB 有效期:2121-02-11
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡02
-      - 🇸🇬 新加坡03
-      - 🇸🇬 新加坡04
-      - 🇸🇬 新加坡A 微软 2.5x
       - 🇸🇬 新加坡B 微软 2.5x
-      - 🇯🇵 日本 Azure A 2.5x
-      - 🇯🇵 日本 Azure B 2.5x
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇺🇸 美国 优化 -5 3.5
-      - 🇺🇸 美国 优化 -6 3.5
-      - 🇺🇸 美国 优化 -7 3.5
-      - 🇺🇸 美国 优化 -9 3.5
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国03
-      - 🇬🇧 英国 iplayer B
-      - 🇰🇷 韩国
-      - 🇰🇷 韩国03
       - 🇭🇰 香港04-测试
-      - 🇭🇰 香港动态 HKT A
-      - 🇭🇰 香港动态 HKT B
-      - 🇭🇰 香港动态 HKT C
+      - 🇭🇰 *国内中转*HK|广州移动-香港AWS_0002
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003 2
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022 2
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012 2
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021 2
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41 2
+      - 🇭🇰 【推荐】IPLC中转*上海-香港专线1_01
+      - 🇨🇳 普通|TW|Taichung1_5911
+      - 🇨🇳 普通|TW|Taichung1_5911 2
+      - 🇨🇳 普通|TW|Taichung2_5912
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
-      - 10
-      - 63
-      - 🇨🇳 台湾 01
-      - 🇭🇰 香港 02
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
       - 🇭🇰 香港 03
-      - 🇨🇳 CN_550
       - 🇨🇳 CN_552
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_73 |14.49Mb
-      - 🇨🇳 CN->🇨🇳CN_02
-      - 🇨🇳 CN->🇨🇳CN_05
-      - 🇨🇳 CN->🇨🇳CN_06
-      - 🇨🇳 CN->🇨🇳CN_07
-      - 🇨🇳 CN->🇨🇳CN_08
       - 🇨🇳 CN->🇨🇳CN_09
-      - 🇨🇳 CN->🇨🇳CN_10
       - 🇨🇳 CN->🇨🇳CN_11
       - 🇨🇳 CN->🇮🇳IN_57
-      - 🇨🇳 CN->🇮🇹IT_58
-      - 🇨🇳 CN->🇰🇷KR_65
-      - 🇨🇳 CN->🇹🇼TW_171
-      - 🇨🇳 CN->🇹🇼TW_173
-      - 🇭🇰 CN->🇭🇰HK_24
-      - 🇭🇰 CN->🇭🇰HK_25
-      - 🇭🇰 CN->🇭🇰HK_30
-      - 🇭🇰 CN->🇭🇰HK_40
       - 🇭🇰 CN->🇭🇰HK_41
       - 🇭🇰 CN->🇭🇰HK_44
       - 🇭🇰 CN->🇭🇰HK_55
-      - 🇸🇬 CN->🇸🇬SG_83
-      - 🇸🇬 CN->🇸🇬SG_84
-      - 🇸🇬 CN->🇸🇬SG_95
       - 🇸🇬 CN->🇸🇬SG_96
-      - 🇺🇸 CN->🇺🇸US_178
-      - 🇺🇸 CN->🇺🇸US_180
-      - P加加 - TG客服群:https://t.me/pjjone
       - 🇭🇰 [CT/CM]香港 01
       - 🇭🇰 [CT/CM]香港 02
       - 🇭🇰 [CT/CM]香港 03
@@ -578,96 +340,54 @@ proxy-groups:
       - 🇭🇰 [CT/CM]香港 10
       - 🇭🇰 [CT/CM]香港 11
       - 🇭🇰 [CT/CM]香港 12
-      - 🇭🇰 [vip1]⑤香港NTT 1000M｜×1x｜限速100M - 52233 单端口
-      - 🏳️‍🌈 可用流量:72.23GB 有效期:2121-02-11
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡02
-      - 🇸🇬 新加坡03
-      - 🇸🇬 新加坡04
-      - 🇸🇬 新加坡A 微软 2.5x
       - 🇸🇬 新加坡B 微软 2.5x
-      - 🇯🇵 日本 Azure A 2.5x
-      - 🇯🇵 日本 Azure B 2.5x
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇺🇸 美国 优化 -5 3.5
-      - 🇺🇸 美国 优化 -6 3.5
-      - 🇺🇸 美国 优化 -7 3.5
-      - 🇺🇸 美国 优化 -9 3.5
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国03
-      - 🇬🇧 英国 iplayer B
-      - 🇰🇷 韩国
-      - 🇰🇷 韩国03
       - 🇭🇰 香港04-测试
-      - 🇭🇰 香港动态 HKT A
-      - 🇭🇰 香港动态 HKT B
-      - 🇭🇰 香港动态 HKT C
+      - 🇭🇰 *国内中转*HK|广州移动-香港AWS_0002
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003 2
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022 2
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012 2
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021 2
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41 2
+      - 🇭🇰 【推荐】IPLC中转*上海-香港专线1_01
+      - 🇨🇳 普通|TW|Taichung1_5911
+      - 🇨🇳 普通|TW|Taichung1_5911 2
+      - 🇨🇳 普通|TW|Taichung2_5912
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
-      - 10
-      - 63
-      - 🇨🇳 台湾 01
-      - 🇭🇰 香港 02
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
       - 🇭🇰 香港 03
-      - 🇨🇳 CN_550
       - 🇨🇳 CN_552
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_73 |14.49Mb
-      - 🇨🇳 CN->🇨🇳CN_02
-      - 🇨🇳 CN->🇨🇳CN_05
-      - 🇨🇳 CN->🇨🇳CN_06
-      - 🇨🇳 CN->🇨🇳CN_07
-      - 🇨🇳 CN->🇨🇳CN_08
       - 🇨🇳 CN->🇨🇳CN_09
-      - 🇨🇳 CN->🇨🇳CN_10
       - 🇨🇳 CN->🇨🇳CN_11
       - 🇨🇳 CN->🇮🇳IN_57
-      - 🇨🇳 CN->🇮🇹IT_58
-      - 🇨🇳 CN->🇰🇷KR_65
-      - 🇨🇳 CN->🇹🇼TW_171
-      - 🇨🇳 CN->🇹🇼TW_173
-      - 🇭🇰 CN->🇭🇰HK_24
-      - 🇭🇰 CN->🇭🇰HK_25
-      - 🇭🇰 CN->🇭🇰HK_30
-      - 🇭🇰 CN->🇭🇰HK_40
       - 🇭🇰 CN->🇭🇰HK_41
       - 🇭🇰 CN->🇭🇰HK_44
       - 🇭🇰 CN->🇭🇰HK_55
-      - 🇸🇬 CN->🇸🇬SG_83
-      - 🇸🇬 CN->🇸🇬SG_84
-      - 🇸🇬 CN->🇸🇬SG_95
       - 🇸🇬 CN->🇸🇬SG_96
-      - 🇺🇸 CN->🇺🇸US_178
-      - 🇺🇸 CN->🇺🇸US_180
-      - P加加 - TG客服群:https://t.me/pjjone
       - 🇭🇰 [CT/CM]香港 01
       - 🇭🇰 [CT/CM]香港 02
       - 🇭🇰 [CT/CM]香港 03
@@ -679,97 +399,55 @@ proxy-groups:
       - 🇭🇰 [CT/CM]香港 10
       - 🇭🇰 [CT/CM]香港 11
       - 🇭🇰 [CT/CM]香港 12
-      - 🇭🇰 [vip1]⑤香港NTT 1000M｜×1x｜限速100M - 52233 单端口
-      - 🏳️‍🌈 可用流量:72.23GB 有效期:2121-02-11
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡02
-      - 🇸🇬 新加坡03
-      - 🇸🇬 新加坡04
-      - 🇸🇬 新加坡A 微软 2.5x
       - 🇸🇬 新加坡B 微软 2.5x
-      - 🇯🇵 日本 Azure A 2.5x
-      - 🇯🇵 日本 Azure B 2.5x
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇺🇸 美国 优化 -5 3.5
-      - 🇺🇸 美国 优化 -6 3.5
-      - 🇺🇸 美国 优化 -7 3.5
-      - 🇺🇸 美国 优化 -9 3.5
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国03
-      - 🇬🇧 英国 iplayer B
-      - 🇰🇷 韩国
-      - 🇰🇷 韩国03
       - 🇭🇰 香港04-测试
-      - 🇭🇰 香港动态 HKT A
-      - 🇭🇰 香港动态 HKT B
-      - 🇭🇰 香港动态 HKT C
+      - 🇭🇰 *国内中转*HK|广州移动-香港AWS_0002
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003 2
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022 2
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012 2
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021 2
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41 2
+      - 🇭🇰 【推荐】IPLC中转*上海-香港专线1_01
+      - 🇨🇳 普通|TW|Taichung1_5911
+      - 🇨🇳 普通|TW|Taichung1_5911 2
+      - 🇨🇳 普通|TW|Taichung2_5912
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
-      - 10
-      - 63
-      - 🇨🇳 台湾 01
-      - 🇭🇰 香港 02
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
       - 🇭🇰 香港 03
-      - 🇨🇳 CN_550
       - 🇨🇳 CN_552
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_73 |14.49Mb
-      - 🇨🇳 CN->🇨🇳CN_02
-      - 🇨🇳 CN->🇨🇳CN_05
-      - 🇨🇳 CN->🇨🇳CN_06
-      - 🇨🇳 CN->🇨🇳CN_07
-      - 🇨🇳 CN->🇨🇳CN_08
       - 🇨🇳 CN->🇨🇳CN_09
-      - 🇨🇳 CN->🇨🇳CN_10
       - 🇨🇳 CN->🇨🇳CN_11
       - 🇨🇳 CN->🇮🇳IN_57
-      - 🇨🇳 CN->🇮🇹IT_58
-      - 🇨🇳 CN->🇰🇷KR_65
-      - 🇨🇳 CN->🇹🇼TW_171
-      - 🇨🇳 CN->🇹🇼TW_173
-      - 🇭🇰 CN->🇭🇰HK_24
-      - 🇭🇰 CN->🇭🇰HK_25
-      - 🇭🇰 CN->🇭🇰HK_30
-      - 🇭🇰 CN->🇭🇰HK_40
       - 🇭🇰 CN->🇭🇰HK_41
       - 🇭🇰 CN->🇭🇰HK_44
       - 🇭🇰 CN->🇭🇰HK_55
-      - 🇸🇬 CN->🇸🇬SG_83
-      - 🇸🇬 CN->🇸🇬SG_84
-      - 🇸🇬 CN->🇸🇬SG_95
       - 🇸🇬 CN->🇸🇬SG_96
-      - 🇺🇸 CN->🇺🇸US_178
-      - 🇺🇸 CN->🇺🇸US_180
-      - P加加 - TG客服群:https://t.me/pjjone
       - 🇭🇰 [CT/CM]香港 01
       - 🇭🇰 [CT/CM]香港 02
       - 🇭🇰 [CT/CM]香港 03
@@ -781,37 +459,23 @@ proxy-groups:
       - 🇭🇰 [CT/CM]香港 10
       - 🇭🇰 [CT/CM]香港 11
       - 🇭🇰 [CT/CM]香港 12
-      - 🇭🇰 [vip1]⑤香港NTT 1000M｜×1x｜限速100M - 52233 单端口
-      - 🏳️‍🌈 可用流量:72.23GB 有效期:2121-02-11
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡02
-      - 🇸🇬 新加坡03
-      - 🇸🇬 新加坡04
-      - 🇸🇬 新加坡A 微软 2.5x
       - 🇸🇬 新加坡B 微软 2.5x
-      - 🇯🇵 日本 Azure A 2.5x
-      - 🇯🇵 日本 Azure B 2.5x
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇺🇸 美国 优化 -5 3.5
-      - 🇺🇸 美国 优化 -6 3.5
-      - 🇺🇸 美国 优化 -7 3.5
-      - 🇺🇸 美国 优化 -9 3.5
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国03
-      - 🇬🇧 英国 iplayer B
-      - 🇰🇷 韩国
-      - 🇰🇷 韩国03
       - 🇭🇰 香港04-测试
-      - 🇭🇰 香港动态 HKT A
-      - 🇭🇰 香港动态 HKT B
-      - 🇭🇰 香港动态 HKT C
+      - 🇭🇰 *国内中转*HK|广州移动-香港AWS_0002
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003 2
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022 2
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012 2
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021 2
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41 2
+      - 🇭🇰 【推荐】IPLC中转*上海-香港专线1_01
+      - 🇨🇳 普通|TW|Taichung1_5911
+      - 🇨🇳 普通|TW|Taichung1_5911 2
+      - 🇨🇳 普通|TW|Taichung2_5912
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -834,60 +498,32 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇺🇸 US_66.42Mb
+      - 🇭🇰 HongKong-A-Anycast-AWS-2000Mbps
+      - 🇭🇰 HongKong-A-Azure-1000Mbps
+      - 🇭🇰 HongKong-B-Azure-1000Mbps
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04
+      - 🇸🇬 IPLC-V113-4x-广新
       - 🇺🇸 US_71.17Mb
+      - 🇭🇰 【备用】中转*IPLC*上海-香港*CN2-GIA12
       - 🇺🇸 US_71.06Mb
       - 🇺🇸 US_70.63Mb
-      - 🇺🇸 Relay_🇺🇸US-🇭🇰HK_389
-      - 🇩🇪 德国(欢迎订阅Youtube破解资源君)
-      - 🇸🇬 US->🇸🇬SG_221
-      - 🇸🇬 CN->🇸🇬SG_88
-      - 顺丰资源YouTube
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_668 |31.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |24.82Mb
-      - 🇭🇰 电信联通-香港10
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom
-      - 🇭🇰 Amazon Web Services - AWS Global Accelerator - Hong Kong - A02 - Direct - ChinaTelecom/ChinaUnicom 2
-      - JP_22.82Mb
-      - 10
-      - 63
-      - 🇨🇳 台湾 01
-      - 🇭🇰 香港 02
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_679 | 2.66Mb
+      - 🇸🇬 翻墙会_seoul_3_自费  节点更新：电报频道：https://t.me/cnhumanright99
+      - 🇰🇷 翻墙会_韩国3_自费 电报频道：：https://t.me/cnhumanright99
+      - 66.115.147.92:33992
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 2
+      - 🇸🇬 【推荐】中转*IPLC*上海-新加坡*CN2-GIA04
+      - 🇭🇰 【推荐】中转*IPLC*上海-香港*CN2-GIA04 3
       - 🇭🇰 香港 03
-      - 🇨🇳 CN_550
       - 🇨🇳 CN_552
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇹IT_542 | 8.80Mb
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_544 |15.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_555 |106.08Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_556 |24.84Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_558 |14.40Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_73 |14.49Mb
-      - 🇨🇳 CN->🇨🇳CN_02
-      - 🇨🇳 CN->🇨🇳CN_05
-      - 🇨🇳 CN->🇨🇳CN_06
-      - 🇨🇳 CN->🇨🇳CN_07
-      - 🇨🇳 CN->🇨🇳CN_08
       - 🇨🇳 CN->🇨🇳CN_09
-      - 🇨🇳 CN->🇨🇳CN_10
       - 🇨🇳 CN->🇨🇳CN_11
       - 🇨🇳 CN->🇮🇳IN_57
-      - 🇨🇳 CN->🇮🇹IT_58
-      - 🇨🇳 CN->🇰🇷KR_65
-      - 🇨🇳 CN->🇹🇼TW_171
-      - 🇨🇳 CN->🇹🇼TW_173
-      - 🇭🇰 CN->🇭🇰HK_24
-      - 🇭🇰 CN->🇭🇰HK_25
-      - 🇭🇰 CN->🇭🇰HK_30
-      - 🇭🇰 CN->🇭🇰HK_40
       - 🇭🇰 CN->🇭🇰HK_41
       - 🇭🇰 CN->🇭🇰HK_44
       - 🇭🇰 CN->🇭🇰HK_55
-      - 🇸🇬 CN->🇸🇬SG_83
-      - 🇸🇬 CN->🇸🇬SG_84
-      - 🇸🇬 CN->🇸🇬SG_95
       - 🇸🇬 CN->🇸🇬SG_96
-      - 🇺🇸 CN->🇺🇸US_178
-      - 🇺🇸 CN->🇺🇸US_180
-      - P加加 - TG客服群:https://t.me/pjjone
       - 🇭🇰 [CT/CM]香港 01
       - 🇭🇰 [CT/CM]香港 02
       - 🇭🇰 [CT/CM]香港 03
@@ -899,37 +535,23 @@ proxy-groups:
       - 🇭🇰 [CT/CM]香港 10
       - 🇭🇰 [CT/CM]香港 11
       - 🇭🇰 [CT/CM]香港 12
-      - 🇭🇰 [vip1]⑤香港NTT 1000M｜×1x｜限速100M - 52233 单端口
-      - 🏳️‍🌈 可用流量:72.23GB 有效期:2121-02-11
-      - 🇨🇳 台湾01
-      - 🇨🇳 台湾02
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾04
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡02
-      - 🇸🇬 新加坡03
-      - 🇸🇬 新加坡04
-      - 🇸🇬 新加坡A 微软 2.5x
       - 🇸🇬 新加坡B 微软 2.5x
-      - 🇯🇵 日本 Azure A 2.5x
-      - 🇯🇵 日本 Azure B 2.5x
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇺🇸 美国 优化 -5 3.5
-      - 🇺🇸 美国 优化 -6 3.5
-      - 🇺🇸 美国 优化 -7 3.5
-      - 🇺🇸 美国 优化 -9 3.5
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国03
-      - 🇬🇧 英国 iplayer B
-      - 🇰🇷 韩国
-      - 🇰🇷 韩国03
       - 🇭🇰 香港04-测试
-      - 🇭🇰 香港动态 HKT A
-      - 🇭🇰 香港动态 HKT B
-      - 🇭🇰 香港动态 HKT C
+      - 🇭🇰 *国内中转*HK|广州移动-香港AWS_0002
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003 2
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022
+      - 🇨🇳 *国内中转*TW|三网优化-台北_0022 2
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012
+      - 🇺🇸 *国内中转*US|上海联通-洛杉矶_0012 2
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
+      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021 2
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41
+      - 🇯🇵 【推荐】IPLC中转*上海-东京专线_41 2
+      - 🇭🇰 【推荐】IPLC中转*上海-香港专线1_01
+      - 🇨🇳 普通|TW|Taichung1_5911
+      - 🇨🇳 普通|TW|Taichung1_5911 2
+      - 🇨🇳 普通|TW|Taichung2_5912
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
