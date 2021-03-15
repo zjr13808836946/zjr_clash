@@ -5,125 +5,100 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 US_32, server: a73750147ca66fd23.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: dd8e4c7f-3650-4922-9cc2-b9b9e5f87641, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /WebSocket, ws-headers: {Host: a73750147ca66fd23.awsglobalaccelerator.com}}
   - {name: 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5, server: pro-us1-3.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-3.sstr-api.xyz, skip-cert-verify: false}
   - {name: 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5, server: pro-us1-4.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-4.sstr-api.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 联通移动-日本9, server: jp05.ronghuafugui.xyz, port: 443, type: vmess, uuid: dcb626df-1a50-4dcf-9c5c-c36bf1d10812, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /test, ws-headers: {Host: jp05.ronghuafugui.xyz}}
-  - {name: 🇰🇷 三网优化-韩国17, server: kr03.fajiazhifu.buzz, port: 443, type: vmess, uuid: dcb626df-1a50-4dcf-9c5c-c36bf1d10812, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /test, ws-headers: {Host: kr03.fajiazhifu.buzz}}
-  - {name: 🇭🇰 电信联通-香港1, server: hk05.101justice.xyz, port: 443, type: vmess, uuid: dcb626df-1a50-4dcf-9c5c-c36bf1d10812, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /test, ws-headers: {Host: hk05.101justice.xyz}}
-  - {name: 🇨🇳 CN_156 | 6.61Mb, server: p653-n2-sha.t5.work, port: 10001, type: vmess, uuid: 204f41ff-117d-46ae-85cd-4edf7f7bee4d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 JK1-V4-沪新微软云01|v2ray, server: jike1-shlt.ddns-only.xyz, port: 31501, type: vmess, uuid: aa0b2d1b-f2b0-3f3c-b244-f04b975b768d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azsg01.ddns-only.xyz}}
-  - {name: 🏳️‍🌈 JK1-V4-湖新LINODE02|v2ray|1.5x流量, server: jike1-hnlt.ddns-only.xyz, port: 31569, type: vmess, uuid: aa0b2d1b-f2b0-3f3c-b244-f04b975b768d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-linode10.ddns-only.xyz}}
-  - {name: "", server: az.wodetaylor.ga, port: 24526, type: vmess, uuid: 67fcf683-0b26-4e3e-e7a8-71cdda6cbf7f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: az.wodetaylor.ga}}
+  - {name: 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7, server: 104.22.3.3, port: 443, type: vmess, uuid: 401a8bf9-bf6d-4138-a71a-d18259e74faf, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /The-Great-Awakening_vws, ws-headers: {Host: cloudflare2020.ml}}
+  - {name: 🇺🇸 美国, server: pro-us1-2.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-2.sstr-api.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本, server: trojan.yangxifang.tk, port: 443, type: trojan, password: hPqAIpjl, sni: trojan.yangxifang.tk, skip-cert-verify: false}
+  - {name: JP_470 |58.90Mb, server: 45.87.213.3, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇺🇸 US_796 |28.75Mb, server: 212.102.44.83, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 US_32
       - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
       - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇯🇵 联通移动-日本9
-      - 🇰🇷 三网优化-韩国17
-      - 🇭🇰 电信联通-香港1
-      - 🇨🇳 CN_156 | 6.61Mb
-      - 🇸🇬 JK1-V4-沪新微软云01|v2ray
-      - 🏳️‍🌈 JK1-V4-湖新LINODE02|v2ray|1.5x流量
-      - ""
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
-      - 🇺🇸 US_32
       - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
       - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇯🇵 联通移动-日本9
-      - 🇰🇷 三网优化-韩国17
-      - 🇭🇰 电信联通-香港1
-      - 🇨🇳 CN_156 | 6.61Mb
-      - 🇸🇬 JK1-V4-沪新微软云01|v2ray
-      - 🏳️‍🌈 JK1-V4-湖新LINODE02|v2ray|1.5x流量
-      - ""
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 US_32
       - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
       - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇯🇵 联通移动-日本9
-      - 🇰🇷 三网优化-韩国17
-      - 🇭🇰 电信联通-香港1
-      - 🇨🇳 CN_156 | 6.61Mb
-      - 🇸🇬 JK1-V4-沪新微软云01|v2ray
-      - 🏳️‍🌈 JK1-V4-湖新LINODE02|v2ray|1.5x流量
-      - ""
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 US_32
       - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
       - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇯🇵 联通移动-日本9
-      - 🇰🇷 三网优化-韩国17
-      - 🇭🇰 电信联通-香港1
-      - 🇨🇳 CN_156 | 6.61Mb
-      - 🇸🇬 JK1-V4-沪新微软云01|v2ray
-      - 🏳️‍🌈 JK1-V4-湖新LINODE02|v2ray|1.5x流量
-      - ""
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 US_32
       - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
       - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇯🇵 联通移动-日本9
-      - 🇰🇷 三网优化-韩国17
-      - 🇭🇰 电信联通-香港1
-      - 🇨🇳 CN_156 | 6.61Mb
-      - 🇸🇬 JK1-V4-沪新微软云01|v2ray
-      - 🏳️‍🌈 JK1-V4-湖新LINODE02|v2ray|1.5x流量
-      - ""
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 US_32
       - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
       - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇯🇵 联通移动-日本9
-      - 🇰🇷 三网优化-韩国17
-      - 🇭🇰 电信联通-香港1
-      - 🇨🇳 CN_156 | 6.61Mb
-      - 🇸🇬 JK1-V4-沪新微软云01|v2ray
-      - 🏳️‍🌈 JK1-V4-湖新LINODE02|v2ray|1.5x流量
-      - ""
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 US_32
       - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
       - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇯🇵 联通移动-日本9
-      - 🇰🇷 三网优化-韩国17
-      - 🇭🇰 电信联通-香港1
-      - 🇨🇳 CN_156 | 6.61Mb
-      - 🇸🇬 JK1-V4-沪新微软云01|v2ray
-      - 🏳️‍🌈 JK1-V4-湖新LINODE02|v2ray|1.5x流量
-      - ""
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -146,16 +121,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 US_32
       - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
       - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇯🇵 联通移动-日本9
-      - 🇰🇷 三网优化-韩国17
-      - 🇭🇰 电信联通-香港1
-      - 🇨🇳 CN_156 | 6.61Mb
-      - 🇸🇬 JK1-V4-沪新微软云01|v2ray
-      - 🏳️‍🌈 JK1-V4-湖新LINODE02|v2ray|1.5x流量
-      - ""
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
