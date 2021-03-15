@@ -5,18 +5,15 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 US_32, server: a73750147ca66fd23.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: dd8e4c7f-3650-4922-9cc2-b9b9e5f87641, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /WebSocket, ws-headers: {Host: a73750147ca66fd23.awsglobalaccelerator.com}}
-  - {name: 🇭🇰 v5【.主力】香港amazon-负载均衡, server: gzcm.wodetaylor.ga, port: 22356, type: vmess, uuid: d14ee195-80f6-3b04-b9f5-3ca4d43b06c7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.microsoft.com}}
-  - {name: 🇭🇰 v5【主力-cn2】香港-NF-禁止下载, server: shcn2.wodetaylor.ga, port: 11025, type: vmess, uuid: d14ee195-80f6-3b04-b9f5-3ca4d43b06c7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.sina.com.cn}}
-  - {name: 🇭🇰 v4【aga】香港亚马逊-02, server: wzcu.wodetaylor.ga, port: 11010, type: vmess, uuid: d14ee195-80f6-3b04-b9f5-3ca4d43b06c7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.microsoft.com}}
-  - {name: 🇭🇰 v4【主力】香港家宽hkbn-NF, server: gzcm.wodetaylor.ga, port: 51363, type: vmess, uuid: d14ee195-80f6-3b04-b9f5-3ca4d43b06c7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: hkbn.webredirect.org}}
-  - {name: 🇸🇬 v3【主力】新加坡amazon, server: fscm.wodetaylor.ga, port: 10875, type: vmess, uuid: d14ee195-80f6-3b04-b9f5-3ca4d43b06c7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}}
-  - {name: 🇸🇬 v3【主力】新加坡原生-NF, server: gzcm3.wodetaylor.ga, port: 45115, type: vmess, uuid: d14ee195-80f6-3b04-b9f5-3ca4d43b06c7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}}
-  - {name: 🇭🇰 v3【主力】香港300m-NF, server: cscu.wodetaylor.ga, port: 28666, type: vmess, uuid: d14ee195-80f6-3b04-b9f5-3ca4d43b06c7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.sina.com.cn}}
-  - {name: 🇭🇰 v3【主力】香港G口-01, server: fscm.wodetaylor.ga, port: 10874, type: vmess, uuid: d14ee195-80f6-3b04-b9f5-3ca4d43b06c7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.sina.com}}
+  - {name: 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5, server: pro-us1-3.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-3.sstr-api.xyz, skip-cert-verify: false}
+  - {name: 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5, server: pro-us1-4.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-4.sstr-api.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7, server: 104.22.3.3, port: 443, type: vmess, uuid: 401a8bf9-bf6d-4138-a71a-d18259e74faf, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /The-Great-Awakening_vws, ws-headers: {Host: cloudflare2020.ml}}
+  - {name: 🇺🇸 美国, server: pro-us1-2.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-2.sstr-api.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本, server: trojan.yangxifang.tk, port: 443, type: trojan, password: hPqAIpjl, sni: trojan.yangxifang.tk, skip-cert-verify: false}
+  - {name: JP_470 |58.90Mb, server: 45.87.213.3, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇺🇸 US_796 |28.75Mb, server: 212.102.44.83, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
   - {name: 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003, server: z0003.security-cloudfront-cdn.com, port: 23816, type: ssr, cipher: aes-256-cfb, password: c0CNenwGwnoraG2F, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
   - {name: 🇨🇳 *国内中转*TW|三网优化-台北_0022, server: z0022.security-cloudfront-cdn.com, port: 23816, type: ssr, cipher: aes-256-cfb, password: c0CNenwGwnoraG2F, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇺🇸 *国内中转*US|联通-洛杉矶_0021, server: z0021.security-cloudfront-cdn.com, port: 23816, type: ssr, cipher: aes-256-cfb, password: c0CNenwGwnoraG2F, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.cloudfront.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
   - {name: JP 11 HN x1.0, server: hn-1.tianhang.pro, port: 16233, type: ssr, cipher: rc4-md5, password: yXnMe6, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1141:cRNdAu, obfs-param: 5e65e1141.microsoft.com}
   - {name: JP 25 HN x1.0, server: hn-1.tianhang.pro, port: 16231, type: ssr, cipher: rc4-md5, password: yXnMe6, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1141:cRNdAu, obfs-param: 5e65e1141.microsoft.com}
   - {name: JP 32 GD x1.0, server: jm-1.tianhang.pro, port: 16311, type: ssr, cipher: rc4-md5, password: yXnMe6, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1141:cRNdAu, obfs-param: 5e65e1141.microsoft.com}
@@ -27,7 +24,6 @@ proxies:
   - {name: 🇭🇰 香港 03, server: 42.157.196.103, port: 10341, type: ssr, cipher: aes-256-cfb, password: Yk4UdrOyQg, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 84650:6JEyu1VQFz, obfs-param: ajax.microsoft.com}
   - {name: 🇭🇰 香港04-测试, server: 42.157.196.104, port: 20218, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 99056:D2x7S1b8yp, obfs-param: ajax.microsoft.com}
   - {name: 🇨🇳 TW 21 GD x1.0 *, server: jm-1.tianhang.pro, port: 16313, type: ssr, cipher: rc4-md5, password: yXnMe6, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1141:cRNdAu, obfs-param: 5e65e1141.microsoft.com}
-  - {name: 🇭🇰 CN->🇭🇰HK_33, server: 139.226.21.62, port: 10000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
   - {name: 🇭🇰 CN->🇭🇰HK_36, server: 139.226.21.62, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
   - {name: "🇭🇰 HK 12 HN x0.5 #", server: hn-1.tianhang.pro, port: 28807, type: ssr, cipher: rc4-md5, password: yXnMe6, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1141:cRNdAu, obfs-param: 5e65e1141.microsoft.com}
   - {name: "🇭🇰 HK 13 HN x1.0 #", server: hn-1.tianhang.pro, port: 16221, type: ssr, cipher: rc4-md5, password: yXnMe6, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1141:cRNdAu, obfs-param: 5e65e1141.microsoft.com}
@@ -38,30 +34,29 @@ proxies:
   - {name: 🇷🇺 RU 22 HN x0.5, server: hn-1.tianhang.pro, port: 16215, type: ssr, cipher: rc4-md5, password: yXnMe6, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1141:cRNdAu, obfs-param: 5e65e1141.microsoft.com}
   - {name: 🇸🇬 CN->🇸🇬SG_79, server: 120.232.214.163, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
   - {name: 🇸🇬 SG 22 HN x1.0, server: hn-1.tianhang.pro, port: 16331, type: ssr, cipher: rc4-md5, password: yXnMe6, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1141:cRNdAu, obfs-param: 5e65e1141.microsoft.com}
-  - {name: 🇺🇸 US 11 HN x1.0 *, server: hn-1.tianhang.pro, port: 16201, type: ssr, cipher: rc4-md5, password: yXnMe6, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1141:cRNdAu, obfs-param: 5e65e1141.microsoft.com}
   - {name: 🇺🇸 US 12 JM x1.0 *, server: jm-1.tianhang.pro, port: 16323, type: ssr, cipher: rc4-md5, password: yXnMe6, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1141:cRNdAu, obfs-param: 5e65e1141.microsoft.com}
   - {name: 🇺🇸 US 21 HN x1.0 *, server: hn-1.tianhang.pro, port: 16203, type: ssr, cipher: rc4-md5, password: yXnMe6, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1141:cRNdAu, obfs-param: 5e65e1141.microsoft.com}
   - {name: 🇺🇸 US 22 HN x1.0 *, server: hn-1.tianhang.pro, port: 16205, type: ssr, cipher: rc4-md5, password: yXnMe6, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1141:cRNdAu, obfs-param: 5e65e1141.microsoft.com}
   - {name: 🇺🇸 US 23 JM x1.0 *, server: jm-1.tianhang.pro, port: 16325, type: ssr, cipher: rc4-md5, password: yXnMe6, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1141:cRNdAu, obfs-param: 5e65e1141.microsoft.com}
   - {name: 🇺🇸 US 24 JM x1.0 *, server: jm-1.tianhang.pro, port: 16327, type: ssr, cipher: rc4-md5, password: yXnMe6, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1141:cRNdAu, obfs-param: 5e65e1141.microsoft.com}
+  - {name: 🇨🇳 CN_171 |29.44Mb, server: 36.133.178.183, port: 11016, type: ssr, cipher: chacha20-ietf, password: RubQVY, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14608:FqUQxV, obfs-param: 2cea814608.XIAOgou}
+  - {name: 🇨🇳 CN_173, server: zz.q88q.gq, port: 12163, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:r5toahm6aan, obfs-param: 6626d623.baidu.com}
+  - {name: 🇺🇸 US_770 | 9.97Mb, server: hucloud.tk, port: 1394, type: ssr, cipher: aes-256-cfb, password: Mazijun@2020, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 US_32
-      - 🇭🇰 v5【.主力】香港amazon-负载均衡
-      - 🇭🇰 v5【主力-cn2】香港-NF-禁止下载
-      - 🇭🇰 v4【aga】香港亚马逊-02
-      - 🇭🇰 v4【主力】香港家宽hkbn-NF
-      - 🇸🇬 v3【主力】新加坡amazon
-      - 🇸🇬 v3【主力】新加坡原生-NF
-      - 🇭🇰 v3【主力】香港300m-NF
-      - 🇭🇰 v3【主力】香港G口-01
+      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
+      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
       - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
       - 🇨🇳 *国内中转*TW|三网优化-台北_0022
-      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
       - JP 11 HN x1.0
       - JP 25 HN x1.0
       - JP 32 GD x1.0
@@ -72,7 +67,6 @@ proxy-groups:
       - 🇭🇰 香港 03
       - 🇭🇰 香港04-测试
       - 🇨🇳 TW 21 GD x1.0 *
-      - 🇭🇰 CN->🇭🇰HK_33
       - 🇭🇰 CN->🇭🇰HK_36
       - "🇭🇰 HK 12 HN x0.5 #"
       - "🇭🇰 HK 13 HN x1.0 #"
@@ -83,30 +77,28 @@ proxy-groups:
       - 🇷🇺 RU 22 HN x0.5
       - 🇸🇬 CN->🇸🇬SG_79
       - 🇸🇬 SG 22 HN x1.0
-      - 🇺🇸 US 11 HN x1.0 *
       - 🇺🇸 US 12 JM x1.0 *
       - 🇺🇸 US 21 HN x1.0 *
       - 🇺🇸 US 22 HN x1.0 *
       - 🇺🇸 US 23 JM x1.0 *
       - 🇺🇸 US 24 JM x1.0 *
+      - 🇨🇳 CN_171 |29.44Mb
+      - 🇨🇳 CN_173
+      - 🇺🇸 US_770 | 9.97Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
-      - 🇺🇸 US_32
-      - 🇭🇰 v5【.主力】香港amazon-负载均衡
-      - 🇭🇰 v5【主力-cn2】香港-NF-禁止下载
-      - 🇭🇰 v4【aga】香港亚马逊-02
-      - 🇭🇰 v4【主力】香港家宽hkbn-NF
-      - 🇸🇬 v3【主力】新加坡amazon
-      - 🇸🇬 v3【主力】新加坡原生-NF
-      - 🇭🇰 v3【主力】香港300m-NF
-      - 🇭🇰 v3【主力】香港G口-01
+      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
+      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
       - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
       - 🇨🇳 *国内中转*TW|三网优化-台北_0022
-      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
       - JP 11 HN x1.0
       - JP 25 HN x1.0
       - JP 32 GD x1.0
@@ -117,7 +109,6 @@ proxy-groups:
       - 🇭🇰 香港 03
       - 🇭🇰 香港04-测试
       - 🇨🇳 TW 21 GD x1.0 *
-      - 🇭🇰 CN->🇭🇰HK_33
       - 🇭🇰 CN->🇭🇰HK_36
       - "🇭🇰 HK 12 HN x0.5 #"
       - "🇭🇰 HK 13 HN x1.0 #"
@@ -128,30 +119,29 @@ proxy-groups:
       - 🇷🇺 RU 22 HN x0.5
       - 🇸🇬 CN->🇸🇬SG_79
       - 🇸🇬 SG 22 HN x1.0
-      - 🇺🇸 US 11 HN x1.0 *
       - 🇺🇸 US 12 JM x1.0 *
       - 🇺🇸 US 21 HN x1.0 *
       - 🇺🇸 US 22 HN x1.0 *
       - 🇺🇸 US 23 JM x1.0 *
       - 🇺🇸 US 24 JM x1.0 *
+      - 🇨🇳 CN_171 |29.44Mb
+      - 🇨🇳 CN_173
+      - 🇺🇸 US_770 | 9.97Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 US_32
-      - 🇭🇰 v5【.主力】香港amazon-负载均衡
-      - 🇭🇰 v5【主力-cn2】香港-NF-禁止下载
-      - 🇭🇰 v4【aga】香港亚马逊-02
-      - 🇭🇰 v4【主力】香港家宽hkbn-NF
-      - 🇸🇬 v3【主力】新加坡amazon
-      - 🇸🇬 v3【主力】新加坡原生-NF
-      - 🇭🇰 v3【主力】香港300m-NF
-      - 🇭🇰 v3【主力】香港G口-01
+      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
+      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
       - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
       - 🇨🇳 *国内中转*TW|三网优化-台北_0022
-      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
       - JP 11 HN x1.0
       - JP 25 HN x1.0
       - JP 32 GD x1.0
@@ -162,7 +152,6 @@ proxy-groups:
       - 🇭🇰 香港 03
       - 🇭🇰 香港04-测试
       - 🇨🇳 TW 21 GD x1.0 *
-      - 🇭🇰 CN->🇭🇰HK_33
       - 🇭🇰 CN->🇭🇰HK_36
       - "🇭🇰 HK 12 HN x0.5 #"
       - "🇭🇰 HK 13 HN x1.0 #"
@@ -173,29 +162,28 @@ proxy-groups:
       - 🇷🇺 RU 22 HN x0.5
       - 🇸🇬 CN->🇸🇬SG_79
       - 🇸🇬 SG 22 HN x1.0
-      - 🇺🇸 US 11 HN x1.0 *
       - 🇺🇸 US 12 JM x1.0 *
       - 🇺🇸 US 21 HN x1.0 *
       - 🇺🇸 US 22 HN x1.0 *
       - 🇺🇸 US 23 JM x1.0 *
       - 🇺🇸 US 24 JM x1.0 *
+      - 🇨🇳 CN_171 |29.44Mb
+      - 🇨🇳 CN_173
+      - 🇺🇸 US_770 | 9.97Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 US_32
-      - 🇭🇰 v5【.主力】香港amazon-负载均衡
-      - 🇭🇰 v5【主力-cn2】香港-NF-禁止下载
-      - 🇭🇰 v4【aga】香港亚马逊-02
-      - 🇭🇰 v4【主力】香港家宽hkbn-NF
-      - 🇸🇬 v3【主力】新加坡amazon
-      - 🇸🇬 v3【主力】新加坡原生-NF
-      - 🇭🇰 v3【主力】香港300m-NF
-      - 🇭🇰 v3【主力】香港G口-01
+      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
+      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
       - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
       - 🇨🇳 *国内中转*TW|三网优化-台北_0022
-      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
       - JP 11 HN x1.0
       - JP 25 HN x1.0
       - JP 32 GD x1.0
@@ -206,7 +194,6 @@ proxy-groups:
       - 🇭🇰 香港 03
       - 🇭🇰 香港04-测试
       - 🇨🇳 TW 21 GD x1.0 *
-      - 🇭🇰 CN->🇭🇰HK_33
       - 🇭🇰 CN->🇭🇰HK_36
       - "🇭🇰 HK 12 HN x0.5 #"
       - "🇭🇰 HK 13 HN x1.0 #"
@@ -217,29 +204,28 @@ proxy-groups:
       - 🇷🇺 RU 22 HN x0.5
       - 🇸🇬 CN->🇸🇬SG_79
       - 🇸🇬 SG 22 HN x1.0
-      - 🇺🇸 US 11 HN x1.0 *
       - 🇺🇸 US 12 JM x1.0 *
       - 🇺🇸 US 21 HN x1.0 *
       - 🇺🇸 US 22 HN x1.0 *
       - 🇺🇸 US 23 JM x1.0 *
       - 🇺🇸 US 24 JM x1.0 *
+      - 🇨🇳 CN_171 |29.44Mb
+      - 🇨🇳 CN_173
+      - 🇺🇸 US_770 | 9.97Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 US_32
-      - 🇭🇰 v5【.主力】香港amazon-负载均衡
-      - 🇭🇰 v5【主力-cn2】香港-NF-禁止下载
-      - 🇭🇰 v4【aga】香港亚马逊-02
-      - 🇭🇰 v4【主力】香港家宽hkbn-NF
-      - 🇸🇬 v3【主力】新加坡amazon
-      - 🇸🇬 v3【主力】新加坡原生-NF
-      - 🇭🇰 v3【主力】香港300m-NF
-      - 🇭🇰 v3【主力】香港G口-01
+      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
+      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
       - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
       - 🇨🇳 *国内中转*TW|三网优化-台北_0022
-      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
       - JP 11 HN x1.0
       - JP 25 HN x1.0
       - JP 32 GD x1.0
@@ -250,7 +236,6 @@ proxy-groups:
       - 🇭🇰 香港 03
       - 🇭🇰 香港04-测试
       - 🇨🇳 TW 21 GD x1.0 *
-      - 🇭🇰 CN->🇭🇰HK_33
       - 🇭🇰 CN->🇭🇰HK_36
       - "🇭🇰 HK 12 HN x0.5 #"
       - "🇭🇰 HK 13 HN x1.0 #"
@@ -261,29 +246,28 @@ proxy-groups:
       - 🇷🇺 RU 22 HN x0.5
       - 🇸🇬 CN->🇸🇬SG_79
       - 🇸🇬 SG 22 HN x1.0
-      - 🇺🇸 US 11 HN x1.0 *
       - 🇺🇸 US 12 JM x1.0 *
       - 🇺🇸 US 21 HN x1.0 *
       - 🇺🇸 US 22 HN x1.0 *
       - 🇺🇸 US 23 JM x1.0 *
       - 🇺🇸 US 24 JM x1.0 *
+      - 🇨🇳 CN_171 |29.44Mb
+      - 🇨🇳 CN_173
+      - 🇺🇸 US_770 | 9.97Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 US_32
-      - 🇭🇰 v5【.主力】香港amazon-负载均衡
-      - 🇭🇰 v5【主力-cn2】香港-NF-禁止下载
-      - 🇭🇰 v4【aga】香港亚马逊-02
-      - 🇭🇰 v4【主力】香港家宽hkbn-NF
-      - 🇸🇬 v3【主力】新加坡amazon
-      - 🇸🇬 v3【主力】新加坡原生-NF
-      - 🇭🇰 v3【主力】香港300m-NF
-      - 🇭🇰 v3【主力】香港G口-01
+      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
+      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
       - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
       - 🇨🇳 *国内中转*TW|三网优化-台北_0022
-      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
       - JP 11 HN x1.0
       - JP 25 HN x1.0
       - JP 32 GD x1.0
@@ -294,7 +278,6 @@ proxy-groups:
       - 🇭🇰 香港 03
       - 🇭🇰 香港04-测试
       - 🇨🇳 TW 21 GD x1.0 *
-      - 🇭🇰 CN->🇭🇰HK_33
       - 🇭🇰 CN->🇭🇰HK_36
       - "🇭🇰 HK 12 HN x0.5 #"
       - "🇭🇰 HK 13 HN x1.0 #"
@@ -305,30 +288,29 @@ proxy-groups:
       - 🇷🇺 RU 22 HN x0.5
       - 🇸🇬 CN->🇸🇬SG_79
       - 🇸🇬 SG 22 HN x1.0
-      - 🇺🇸 US 11 HN x1.0 *
       - 🇺🇸 US 12 JM x1.0 *
       - 🇺🇸 US 21 HN x1.0 *
       - 🇺🇸 US 22 HN x1.0 *
       - 🇺🇸 US 23 JM x1.0 *
       - 🇺🇸 US 24 JM x1.0 *
+      - 🇨🇳 CN_171 |29.44Mb
+      - 🇨🇳 CN_173
+      - 🇺🇸 US_770 | 9.97Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 US_32
-      - 🇭🇰 v5【.主力】香港amazon-负载均衡
-      - 🇭🇰 v5【主力-cn2】香港-NF-禁止下载
-      - 🇭🇰 v4【aga】香港亚马逊-02
-      - 🇭🇰 v4【主力】香港家宽hkbn-NF
-      - 🇸🇬 v3【主力】新加坡amazon
-      - 🇸🇬 v3【主力】新加坡原生-NF
-      - 🇭🇰 v3【主力】香港300m-NF
-      - 🇭🇰 v3【主力】香港G口-01
+      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
+      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
       - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
       - 🇨🇳 *国内中转*TW|三网优化-台北_0022
-      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
       - JP 11 HN x1.0
       - JP 25 HN x1.0
       - JP 32 GD x1.0
@@ -339,7 +321,6 @@ proxy-groups:
       - 🇭🇰 香港 03
       - 🇭🇰 香港04-测试
       - 🇨🇳 TW 21 GD x1.0 *
-      - 🇭🇰 CN->🇭🇰HK_33
       - 🇭🇰 CN->🇭🇰HK_36
       - "🇭🇰 HK 12 HN x0.5 #"
       - "🇭🇰 HK 13 HN x1.0 #"
@@ -350,12 +331,14 @@ proxy-groups:
       - 🇷🇺 RU 22 HN x0.5
       - 🇸🇬 CN->🇸🇬SG_79
       - 🇸🇬 SG 22 HN x1.0
-      - 🇺🇸 US 11 HN x1.0 *
       - 🇺🇸 US 12 JM x1.0 *
       - 🇺🇸 US 21 HN x1.0 *
       - 🇺🇸 US 22 HN x1.0 *
       - 🇺🇸 US 23 JM x1.0 *
       - 🇺🇸 US 24 JM x1.0 *
+      - 🇨🇳 CN_171 |29.44Mb
+      - 🇨🇳 CN_173
+      - 🇺🇸 US_770 | 9.97Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -378,18 +361,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 US_32
-      - 🇭🇰 v5【.主力】香港amazon-负载均衡
-      - 🇭🇰 v5【主力-cn2】香港-NF-禁止下载
-      - 🇭🇰 v4【aga】香港亚马逊-02
-      - 🇭🇰 v4【主力】香港家宽hkbn-NF
-      - 🇸🇬 v3【主力】新加坡amazon
-      - 🇸🇬 v3【主力】新加坡原生-NF
-      - 🇭🇰 v3【主力】香港300m-NF
-      - 🇭🇰 v3【主力】香港G口-01
+      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
+      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
+      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - JP_470 |58.90Mb
+      - 🇺🇸 US_796 |28.75Mb
       - 🇸🇬 *国内中转*SG|广州移动-新加坡AWS_0003
       - 🇨🇳 *国内中转*TW|三网优化-台北_0022
-      - 🇺🇸 *国内中转*US|联通-洛杉矶_0021
       - JP 11 HN x1.0
       - JP 25 HN x1.0
       - JP 32 GD x1.0
@@ -400,7 +380,6 @@ proxy-groups:
       - 🇭🇰 香港 03
       - 🇭🇰 香港04-测试
       - 🇨🇳 TW 21 GD x1.0 *
-      - 🇭🇰 CN->🇭🇰HK_33
       - 🇭🇰 CN->🇭🇰HK_36
       - "🇭🇰 HK 12 HN x0.5 #"
       - "🇭🇰 HK 13 HN x1.0 #"
@@ -411,12 +390,14 @@ proxy-groups:
       - 🇷🇺 RU 22 HN x0.5
       - 🇸🇬 CN->🇸🇬SG_79
       - 🇸🇬 SG 22 HN x1.0
-      - 🇺🇸 US 11 HN x1.0 *
       - 🇺🇸 US 12 JM x1.0 *
       - 🇺🇸 US 21 HN x1.0 *
       - 🇺🇸 US 22 HN x1.0 *
       - 🇺🇸 US 23 JM x1.0 *
       - 🇺🇸 US 24 JM x1.0 *
+      - 🇨🇳 CN_171 |29.44Mb
+      - 🇨🇳 CN_173
+      - 🇺🇸 US_770 | 9.97Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
