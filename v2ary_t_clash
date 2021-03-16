@@ -5,100 +5,116 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5, server: pro-us1-3.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-3.sstr-api.xyz, skip-cert-verify: false}
-  - {name: 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5, server: pro-us1-4.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-4.sstr-api.xyz, skip-cert-verify: false}
-  - {name: 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7, server: 104.22.3.3, port: 443, type: vmess, uuid: 401a8bf9-bf6d-4138-a71a-d18259e74faf, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /The-Great-Awakening_vws, ws-headers: {Host: cloudflare2020.ml}}
-  - {name: 🇺🇸 美国, server: pro-us1-2.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-2.sstr-api.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 日本, server: trojan.yangxifang.tk, port: 443, type: trojan, password: hPqAIpjl, sni: trojan.yangxifang.tk, skip-cert-verify: false}
+  - {name: 🇭🇰 香港31|@×2|三网直连, server: azt.justanode.cyou, port: 443, type: trojan, password: 18162628-8205-41ae-8e92-da5505f4bacf, sni: azt.justanode.cyou, skip-cert-verify: false}
+  - {name: 🇭🇰 电信联通-香港1, server: hk05.101justice.xyz, port: 443, type: vmess, uuid: 46fc1154-1374-4438-a485-43356d2c60fb, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /test, ws-headers: {Host: hk05.101justice.xyz}}
+  - {name: 🇭🇰 电信联通-香港3, server: hk315.fans8.xyz, port: 443, type: vmess, uuid: 46fc1154-1374-4438-a485-43356d2c60fb, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /test, ws-headers: {Host: hk315.fans8.xyz}}
+  - {name: 🇭🇰 电信联通-香港10, server: hk03.ronghuafugui.xyz, port: 443, type: vmess, uuid: 46fc1154-1374-4438-a485-43356d2c60fb, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /test, ws-headers: {Host: hk03.ronghuafugui.xyz}}
+  - {name: 🇭🇰 香港A | 中转, server: gdyd2.ddns.tjiasu.xyz, port: 11443, type: vmess, uuid: e4d7d020-14cd-41c4-950c-9b28f4438025, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/shop, ws-headers: {Host: hkv2-1.ddns.tjiasu.xyz}}
+  - {name: 🇯🇵 日本A | 中转, server: gdyd.ddns.tjiasu.xyz, port: 14443, type: vmess, uuid: e4d7d020-14cd-41c4-950c-9b28f4438025, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/v2/home, ws-headers: {Host: v2.ddns.tjiasu.xyz}}
+  - {name: 🇯🇵 日本A | 中转B, server: xzlt.ddns.tjiasu.xyz, port: 30185, type: vmess, uuid: e4d7d020-14cd-41c4-950c-9b28f4438025, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/v2/home, ws-headers: {Host: v2.ddns.tjiasu.xyz}}
+  - {name: 🇸🇬 新加坡A | 中转B, server: xzlt.ddns.tjiasu.xyz, port: 1443, type: vmess, uuid: e4d7d020-14cd-41c4-950c-9b28f4438025, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/sg, ws-headers: {Host: sgav2.ddns.tjiasu.xyz}}
   - {name: JP_470 |58.90Mb, server: 45.87.213.3, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇺🇸 US_796 |28.75Mb, server: 212.102.44.83, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
-      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
-      - 🇺🇸 美国
-      - 🇯🇵 日本
+      - 🇭🇰 香港31|@×2|三网直连
+      - 🇭🇰 电信联通-香港1
+      - 🇭🇰 电信联通-香港3
+      - 🇭🇰 电信联通-香港10
+      - 🇭🇰 香港A | 中转
+      - 🇯🇵 日本A | 中转
+      - 🇯🇵 日本A | 中转B
+      - 🇸🇬 新加坡A | 中转B
       - JP_470 |58.90Mb
-      - 🇺🇸 US_796 |28.75Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
-      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
-      - 🇺🇸 美国
-      - 🇯🇵 日本
+      - 🇭🇰 香港31|@×2|三网直连
+      - 🇭🇰 电信联通-香港1
+      - 🇭🇰 电信联通-香港3
+      - 🇭🇰 电信联通-香港10
+      - 🇭🇰 香港A | 中转
+      - 🇯🇵 日本A | 中转
+      - 🇯🇵 日本A | 中转B
+      - 🇸🇬 新加坡A | 中转B
       - JP_470 |58.90Mb
-      - 🇺🇸 US_796 |28.75Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
-      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
-      - 🇺🇸 美国
-      - 🇯🇵 日本
+      - 🇭🇰 香港31|@×2|三网直连
+      - 🇭🇰 电信联通-香港1
+      - 🇭🇰 电信联通-香港3
+      - 🇭🇰 电信联通-香港10
+      - 🇭🇰 香港A | 中转
+      - 🇯🇵 日本A | 中转
+      - 🇯🇵 日本A | 中转B
+      - 🇸🇬 新加坡A | 中转B
       - JP_470 |58.90Mb
-      - 🇺🇸 US_796 |28.75Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
-      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
-      - 🇺🇸 美国
-      - 🇯🇵 日本
+      - 🇭🇰 香港31|@×2|三网直连
+      - 🇭🇰 电信联通-香港1
+      - 🇭🇰 电信联通-香港3
+      - 🇭🇰 电信联通-香港10
+      - 🇭🇰 香港A | 中转
+      - 🇯🇵 日本A | 中转
+      - 🇯🇵 日本A | 中转B
+      - 🇸🇬 新加坡A | 中转B
       - JP_470 |58.90Mb
-      - 🇺🇸 US_796 |28.75Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
-      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
-      - 🇺🇸 美国
-      - 🇯🇵 日本
+      - 🇭🇰 香港31|@×2|三网直连
+      - 🇭🇰 电信联通-香港1
+      - 🇭🇰 电信联通-香港3
+      - 🇭🇰 电信联通-香港10
+      - 🇭🇰 香港A | 中转
+      - 🇯🇵 日本A | 中转
+      - 🇯🇵 日本A | 中转B
+      - 🇸🇬 新加坡A | 中转B
       - JP_470 |58.90Mb
-      - 🇺🇸 US_796 |28.75Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
-      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
-      - 🇺🇸 美国
-      - 🇯🇵 日本
+      - 🇭🇰 香港31|@×2|三网直连
+      - 🇭🇰 电信联通-香港1
+      - 🇭🇰 电信联通-香港3
+      - 🇭🇰 电信联通-香港10
+      - 🇭🇰 香港A | 中转
+      - 🇯🇵 日本A | 中转
+      - 🇯🇵 日本A | 中转B
+      - 🇸🇬 新加坡A | 中转B
       - JP_470 |58.90Mb
-      - 🇺🇸 US_796 |28.75Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
-      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
-      - 🇺🇸 美国
-      - 🇯🇵 日本
+      - 🇭🇰 香港31|@×2|三网直连
+      - 🇭🇰 电信联通-香港1
+      - 🇭🇰 电信联通-香港3
+      - 🇭🇰 电信联通-香港10
+      - 🇭🇰 香港A | 中转
+      - 🇯🇵 日本A | 中转
+      - 🇯🇵 日本A | 中转B
+      - 🇸🇬 新加坡A | 中转B
       - JP_470 |58.90Mb
-      - 🇺🇸 US_796 |28.75Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -121,13 +137,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🏳️‍🌈 美国-PRO-US1-3-流量倍率:0.5
-      - 🏳️‍🌈 美国-PRO-US1-4-流量倍率:0.5
-      - 🇸🇬 us-14@1Gbps节点更新 https://bit.ly/3h18eE7
-      - 🇺🇸 美国
-      - 🇯🇵 日本
+      - 🇭🇰 香港31|@×2|三网直连
+      - 🇭🇰 电信联通-香港1
+      - 🇭🇰 电信联通-香港3
+      - 🇭🇰 电信联通-香港10
+      - 🇭🇰 香港A | 中转
+      - 🇯🇵 日本A | 中转
+      - 🇯🇵 日本A | 中转B
+      - 🇸🇬 新加坡A | 中转B
       - JP_470 |58.90Mb
-      - 🇺🇸 US_796 |28.75Mb
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
