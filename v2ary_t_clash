@@ -5,149 +5,109 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: RO_596 |16.28Mb, server: 194.110.115.251, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: DE_208 |30.05Mb, server: pro-us1-3.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-3.sstr-api.xyz, skip-cert-verify: false}
   - {name: 🇭🇰 香港A | 中转, server: gdyd2.ddns.tjiasu.xyz, port: 11443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/shop, ws-headers: {Host: hkv2-1.ddns.tjiasu.xyz}}
-  - {name: DK_222 |24.79Mb, server: 37.120.194.99, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: RO_578 |14.21Mb, server: 193.29.107.101, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: "🇺🇸 Pool_????US_127", server: 143.244.57.106, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇸🇬 节点更新 https://bit.ly/3h18eE7, server: 37.120.194.165, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb, server: 183.gczm.blackhole02.site, port: 312, type: vmess, uuid: d0a47c8a-90e9-40ad-b977-ac686058849f, alterId: 3, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 183.gczm.blackhole02.site}}
-  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb, server: jm-cm01.haoye.cf, port: 21011, type: vmess, uuid: 043516b4-9768-4bc5-b37d-632db1e40959, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: jm-cm01.haoye.cf}}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb, server: cncn2.blackhole02.site, port: 401, type: vmess, uuid: d0a47c8a-90e9-40ad-b977-ac686058849f, alterId: 3, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cncn2.blackhole02.site}}
-  - {name: 🇭🇰 Relay_🇭🇰HK |20.59Mb, server: hkdr-az-1.xtspeeder001.xyz, port: 8080, type: vmess, uuid: 01f0d16e-835c-3284-9feb-19341ef3d6c2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /speedtest, ws-headers: {Host: hkdr-az-1.xtspeeder001.xyz}}
-  - {name: 🇭🇰 Relay_🇭🇰HK |23.57Mb, server: hkdr-az-2.xtspeeder001.xyz, port: 8080, type: vmess, uuid: 01f0d16e-835c-3284-9feb-19341ef3d6c2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /speedtest, ws-headers: {Host: hkdr-az-2.xtspeeder001.xyz}}
-  - {name: 🇭🇰 Relay_🇭🇰HK |24.07Mb, server: hkdr-hkbn-l1.xtspeeder001.xyz, port: 8888, type: vmess, uuid: 01f0d16e-835c-3284-9feb-19341ef3d6c2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hkdr-hkbn-l1.xtspeeder001.xyz}}
+  - {name: 🇨🇳 update:download.china666.ml/v2, server: shanghai-cn2-01.ddns-only.xyz, port: 13389, type: vmess, uuid: 0bafb8f9-6629-3405-b948-6ed51a36dc8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: shanghai-cn2-01.ddns-only.xyz}}
+  - {name: 35, server: 89.187.168.51, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 50, server: 2.58.46.3, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇸🇬 节点更新 https://bit.ly/3h18eE7, server: 217.138.222.53, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇸🇬 节点更新 https://bit.ly/3h18eE7 2, server: p653-n2-sha.t5.work, port: 10003, type: vmess, uuid: 31136449-df29-4ed4-95a6-56f11161a7b0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 节点更新 https://bit.ly/3h18eE7 3, server: cn1.relay.iplc.pro, port: 52002, type: vmess, uuid: eb862777-237c-4cd3-a278-a2a358f2ea40, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 节点更新 https://bit.ly/3h18eE7 4, server: 37.120.221.5, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
       - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 35
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 2
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 3
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
       - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 35
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 2
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 3
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 4
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
       - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 35
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 2
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 3
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
       - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 35
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 2
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 3
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 4
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
       - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 35
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 2
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 3
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
       - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 35
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 2
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 3
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 4
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
       - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 35
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 2
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 3
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -170,19 +130,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
       - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 35
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 2
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 3
+      - 🇸🇬 节点更新 https://bit.ly/3h18eE7 4
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
