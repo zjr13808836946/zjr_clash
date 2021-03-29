@@ -5,453 +5,133 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: RO_596 |16.28Mb, server: 194.110.115.251, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: DE_208 |30.05Mb, server: pro-us1-3.sstr-api.xyz, port: 443, type: trojan, password: W3ADSjTHjxN3Nt28WC, sni: pro-us1-3.sstr-api.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港A | 中转, server: gdyd2.ddns.tjiasu.xyz, port: 11443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/shop, ws-headers: {Host: hkv2-1.ddns.tjiasu.xyz}}
-  - {name: DK_222 |24.79Mb, server: 37.120.194.99, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: RO_578 |14.21Mb, server: 193.29.107.101, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: "🇺🇸 Pool_????US_127", server: 143.244.57.106, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇸🇬 节点更新 https://bit.ly/3h18eE7, server: 37.120.194.165, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb, server: 183.gczm.blackhole02.site, port: 312, type: vmess, uuid: d0a47c8a-90e9-40ad-b977-ac686058849f, alterId: 3, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 183.gczm.blackhole02.site}}
-  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb, server: jm-cm01.haoye.cf, port: 21011, type: vmess, uuid: 043516b4-9768-4bc5-b37d-632db1e40959, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: jm-cm01.haoye.cf}}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb, server: cncn2.blackhole02.site, port: 401, type: vmess, uuid: d0a47c8a-90e9-40ad-b977-ac686058849f, alterId: 3, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cncn2.blackhole02.site}}
-  - {name: 🇭🇰 Relay_🇭🇰HK |20.59Mb, server: hkdr-az-1.xtspeeder001.xyz, port: 8080, type: vmess, uuid: 01f0d16e-835c-3284-9feb-19341ef3d6c2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /speedtest, ws-headers: {Host: hkdr-az-1.xtspeeder001.xyz}}
-  - {name: 🇭🇰 Relay_🇭🇰HK |23.57Mb, server: hkdr-az-2.xtspeeder001.xyz, port: 8080, type: vmess, uuid: 01f0d16e-835c-3284-9feb-19341ef3d6c2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /speedtest, ws-headers: {Host: hkdr-az-2.xtspeeder001.xyz}}
-  - {name: 🇭🇰 Relay_🇭🇰HK |24.07Mb, server: hkdr-hkbn-l1.xtspeeder001.xyz, port: 8888, type: vmess, uuid: 01f0d16e-835c-3284-9feb-19341ef3d6c2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hkdr-hkbn-l1.xtspeeder001.xyz}}
-  - {name: 103.117.103.40, server: 103.117.103.40, port: 60000, type: ssr, cipher: none, password: banana007, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 update:download.china666.ml/v2, server: shanghai-cn2-01.ddns-only.xyz, port: 13389, type: vmess, uuid: 0bafb8f9-6629-3405-b948-6ed51a36dc8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: shanghai-cn2-01.ddns-only.xyz}}
+  - {name: 50, server: 2.58.46.3, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇸🇬 节点更新 https://bit.ly/3h18eE7, server: 217.138.222.53, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇫🇷 法国A | 直连, server: 15.236.122.194, port: 11130, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/fra1, ws-headers: {Host: fra1.ddns.tjiasu.xyz}}
+  - {name: 91.206.168.19:39772, server: 91.206.168.19, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇭🇰 香港B | 中转B, server: gdyd2.ddns.tjiasu.xyz, port: 11443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/www, ws-headers: {Host: hkv2.ddns.tjiasu.xyz}}
+  - {name: 🇰🇷 韩国B | 中转, server: xzlt.ddns.tjiasu.xyz, port: 11443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/krb, ws-headers: {Host: krbc2.ddns.tjiasu.xyz}}
+  - {name: 🇯🇵 日本A | 中转B, server: xzlt.ddns.tjiasu.xyz, port: 11443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/v2/home, ws-headers: {Host: jpac.ddns.tjiasu.xyz}}
   - {name: 116.163.10.28, server: 116.163.10.28, port: 56000, type: ssr, cipher: none, password: sealnet+305, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
   - {name: 120.240.86.31, server: 120.240.86.31, port: 60088, type: ssr, cipher: none, password: banana007, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_565 |16.18Mb, server: shallaz.proconcn.xyz, port: 1032, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_567 | 9.57Mb, server: shallaz.proconcn.xyz, port: 1031, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_615 | 6.69Mb, server: shallaz.proconcn.xyz, port: 1031, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_617 | 3.72Mb, server: shallaz.proconcn.xyz, port: 1032, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_555 |10.68Mb, server: cstwrelay.onlineto.xyz, port: 553, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_556 |17.05Mb, server: cstwrelay.onlineto.xyz, port: 551, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_560 | 8.04Mb, server: cstwrelay.onlineto.xyz, port: 549, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_563 |11.02Mb, server: cstwrelay.onlineto.xyz, port: 548, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_612 |10.52Mb, server: cstwrelay.onlineto.xyz, port: 549, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_623 |10.62Mb, server: cstwrelay.onlineto.xyz, port: 553, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_624 |10.47Mb, server: cstwrelay.onlineto.xyz, port: 551, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_576 |24.05Mb, server: cusouthcmhk.procncon.xyz, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_577 |18.33Mb, server: shcris02stand.proconcn.xyz, port: 545, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 | 6.54Mb, server: cncusouth.procncon.xyz, port: 540, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 |11.20Mb, server: shcris02stand.proconcn.xyz, port: 547, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_579 | 9.22Mb, server: shonlinesandcu02.proconcn.xyz, port: 547, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_580 |23.89Mb, server: cusouthcmhk.procncon.xyz, port: 542, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_581 | 6.36Mb, server: cncusouth.procncon.xyz, port: 541, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_582 | 7.30Mb, server: shonlinesandcu03.proconcn.xyz, port: 549, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_583 | 2.49Mb, server: shonlinesandcu03.proconcn.xyz, port: 550, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_584 | 4.95Mb, server: shcris02stand.proconcn.xyz, port: 546, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_585 | 7.99Mb, server: shonlinesandcu02.proconcn.xyz, port: 552, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_586 | 6.56Mb, server: shonlinesandcu02.proconcn.xyz, port: 553, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_587 |11.75Mb, server: shonlinecu.proconcn.xyz, port: 537, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_588 |11.12Mb, server: csdynhkt.proconcn.xyz, port: 552, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_589 |10.95Mb, server: cncusouth.procncon.xyz, port: 540, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_590 |11.39Mb, server: csdynhkt.proconcn.xyz, port: 550, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_592 | 3.35Mb, server: cncusouth.procncon.xyz, port: 553, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_594 | 7.77Mb, server: shcris02stand.proconcn.xyz, port: 547, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_595 | 7.43Mb, server: shcris02stand.proconcn.xyz, port: 545, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_512, server: 120.232.214.163, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 243793:KoOblq, obfs-param: download.windowsupdate.com}
-  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_574 |12.42Mb, server: shallaz.proconcn.xyz, port: 1034, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_570 |17.56Mb, server: usastandard2.proconcn.xyz, port: 554, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_610 |18.14Mb, server: usastandard2.proconcn.xyz, port: 555, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
-  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_616 | 5.56Mb, server: shallaz.proconcn.xyz, port: 555, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32182:Taessica076222, obfs-param: ""}
+  - {name: Openwrt, server: fzjzy.f3322.net, port: 8088, type: ssr, cipher: chacha20, password: m, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
-      - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
-      - 103.117.103.40
+      - 🇫🇷 法国A | 直连
+      - 91.206.168.19:39772
+      - 🇭🇰 香港B | 中转B
+      - 🇰🇷 韩国B | 中转
+      - 🇯🇵 日本A | 中转B
       - 116.163.10.28
       - 120.240.86.31
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_565 |16.18Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_567 | 9.57Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_615 | 6.69Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_617 | 3.72Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_555 |10.68Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_556 |17.05Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_560 | 8.04Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_563 |11.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_612 |10.52Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_623 |10.62Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_624 |10.47Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_576 |24.05Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_577 |18.33Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 | 6.54Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 |11.20Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_579 | 9.22Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_580 |23.89Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_581 | 6.36Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_582 | 7.30Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_583 | 2.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_584 | 4.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_585 | 7.99Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_586 | 6.56Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_587 |11.75Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_588 |11.12Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_589 |10.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_590 |11.39Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_592 | 3.35Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_594 | 7.77Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_595 | 7.43Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_512
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_574 |12.42Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_570 |17.56Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_610 |18.14Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_616 | 5.56Mb
+      - Openwrt
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
-      - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
-      - 103.117.103.40
+      - 🇫🇷 法国A | 直连
+      - 91.206.168.19:39772
+      - 🇭🇰 香港B | 中转B
+      - 🇰🇷 韩国B | 中转
+      - 🇯🇵 日本A | 中转B
       - 116.163.10.28
       - 120.240.86.31
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_565 |16.18Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_567 | 9.57Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_615 | 6.69Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_617 | 3.72Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_555 |10.68Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_556 |17.05Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_560 | 8.04Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_563 |11.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_612 |10.52Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_623 |10.62Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_624 |10.47Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_576 |24.05Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_577 |18.33Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 | 6.54Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 |11.20Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_579 | 9.22Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_580 |23.89Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_581 | 6.36Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_582 | 7.30Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_583 | 2.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_584 | 4.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_585 | 7.99Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_586 | 6.56Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_587 |11.75Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_588 |11.12Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_589 |10.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_590 |11.39Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_592 | 3.35Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_594 | 7.77Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_595 | 7.43Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_512
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_574 |12.42Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_570 |17.56Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_610 |18.14Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_616 | 5.56Mb
+      - Openwrt
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
-      - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
-      - 103.117.103.40
+      - 🇫🇷 法国A | 直连
+      - 91.206.168.19:39772
+      - 🇭🇰 香港B | 中转B
+      - 🇰🇷 韩国B | 中转
+      - 🇯🇵 日本A | 中转B
       - 116.163.10.28
       - 120.240.86.31
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_565 |16.18Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_567 | 9.57Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_615 | 6.69Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_617 | 3.72Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_555 |10.68Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_556 |17.05Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_560 | 8.04Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_563 |11.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_612 |10.52Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_623 |10.62Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_624 |10.47Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_576 |24.05Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_577 |18.33Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 | 6.54Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 |11.20Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_579 | 9.22Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_580 |23.89Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_581 | 6.36Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_582 | 7.30Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_583 | 2.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_584 | 4.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_585 | 7.99Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_586 | 6.56Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_587 |11.75Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_588 |11.12Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_589 |10.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_590 |11.39Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_592 | 3.35Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_594 | 7.77Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_595 | 7.43Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_512
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_574 |12.42Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_570 |17.56Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_610 |18.14Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_616 | 5.56Mb
+      - Openwrt
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
-      - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
-      - 103.117.103.40
+      - 🇫🇷 法国A | 直连
+      - 91.206.168.19:39772
+      - 🇭🇰 香港B | 中转B
+      - 🇰🇷 韩国B | 中转
+      - 🇯🇵 日本A | 中转B
       - 116.163.10.28
       - 120.240.86.31
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_565 |16.18Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_567 | 9.57Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_615 | 6.69Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_617 | 3.72Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_555 |10.68Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_556 |17.05Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_560 | 8.04Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_563 |11.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_612 |10.52Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_623 |10.62Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_624 |10.47Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_576 |24.05Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_577 |18.33Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 | 6.54Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 |11.20Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_579 | 9.22Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_580 |23.89Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_581 | 6.36Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_582 | 7.30Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_583 | 2.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_584 | 4.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_585 | 7.99Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_586 | 6.56Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_587 |11.75Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_588 |11.12Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_589 |10.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_590 |11.39Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_592 | 3.35Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_594 | 7.77Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_595 | 7.43Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_512
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_574 |12.42Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_570 |17.56Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_610 |18.14Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_616 | 5.56Mb
+      - Openwrt
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
-      - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
-      - 103.117.103.40
+      - 🇫🇷 法国A | 直连
+      - 91.206.168.19:39772
+      - 🇭🇰 香港B | 中转B
+      - 🇰🇷 韩国B | 中转
+      - 🇯🇵 日本A | 中转B
       - 116.163.10.28
       - 120.240.86.31
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_565 |16.18Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_567 | 9.57Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_615 | 6.69Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_617 | 3.72Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_555 |10.68Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_556 |17.05Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_560 | 8.04Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_563 |11.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_612 |10.52Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_623 |10.62Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_624 |10.47Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_576 |24.05Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_577 |18.33Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 | 6.54Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 |11.20Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_579 | 9.22Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_580 |23.89Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_581 | 6.36Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_582 | 7.30Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_583 | 2.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_584 | 4.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_585 | 7.99Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_586 | 6.56Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_587 |11.75Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_588 |11.12Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_589 |10.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_590 |11.39Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_592 | 3.35Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_594 | 7.77Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_595 | 7.43Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_512
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_574 |12.42Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_570 |17.56Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_610 |18.14Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_616 | 5.56Mb
+      - Openwrt
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
-      - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
-      - 103.117.103.40
+      - 🇫🇷 法国A | 直连
+      - 91.206.168.19:39772
+      - 🇭🇰 香港B | 中转B
+      - 🇰🇷 韩国B | 中转
+      - 🇯🇵 日本A | 中转B
       - 116.163.10.28
       - 120.240.86.31
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_565 |16.18Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_567 | 9.57Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_615 | 6.69Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_617 | 3.72Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_555 |10.68Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_556 |17.05Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_560 | 8.04Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_563 |11.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_612 |10.52Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_623 |10.62Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_624 |10.47Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_576 |24.05Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_577 |18.33Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 | 6.54Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 |11.20Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_579 | 9.22Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_580 |23.89Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_581 | 6.36Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_582 | 7.30Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_583 | 2.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_584 | 4.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_585 | 7.99Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_586 | 6.56Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_587 |11.75Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_588 |11.12Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_589 |10.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_590 |11.39Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_592 | 3.35Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_594 | 7.77Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_595 | 7.43Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_512
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_574 |12.42Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_570 |17.56Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_610 |18.14Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_616 | 5.56Mb
+      - Openwrt
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
-      - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
-      - 103.117.103.40
+      - 🇫🇷 法国A | 直连
+      - 91.206.168.19:39772
+      - 🇭🇰 香港B | 中转B
+      - 🇰🇷 韩国B | 中转
+      - 🇯🇵 日本A | 中转B
       - 116.163.10.28
       - 120.240.86.31
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_565 |16.18Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_567 | 9.57Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_615 | 6.69Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_617 | 3.72Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_555 |10.68Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_556 |17.05Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_560 | 8.04Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_563 |11.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_612 |10.52Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_623 |10.62Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_624 |10.47Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_576 |24.05Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_577 |18.33Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 | 6.54Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 |11.20Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_579 | 9.22Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_580 |23.89Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_581 | 6.36Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_582 | 7.30Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_583 | 2.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_584 | 4.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_585 | 7.99Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_586 | 6.56Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_587 |11.75Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_588 |11.12Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_589 |10.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_590 |11.39Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_592 | 3.35Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_594 | 7.77Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_595 | 7.43Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_512
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_574 |12.42Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_570 |17.56Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_610 |18.14Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_616 | 5.56Mb
+      - Openwrt
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -474,57 +154,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RO_596 |16.28Mb
-      - DE_208 |30.05Mb
-      - 🇭🇰 香港A | 中转
-      - DK_222 |24.79Mb
-      - RO_578 |14.21Mb
-      - 🇺🇸 Pool_????US_127
+      - 🇨🇳 update:download.china666.ml/v2
+      - 50
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_633 |11.08Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_634 | 8.79Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_645 |19.87Mb
-      - 🇭🇰 Relay_🇭🇰HK |20.59Mb
-      - 🇭🇰 Relay_🇭🇰HK |23.57Mb
-      - 🇭🇰 Relay_🇭🇰HK |24.07Mb
-      - 103.117.103.40
+      - 🇫🇷 法国A | 直连
+      - 91.206.168.19:39772
+      - 🇭🇰 香港B | 中转B
+      - 🇰🇷 韩国B | 中转
+      - 🇯🇵 日本A | 中转B
       - 116.163.10.28
       - 120.240.86.31
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_565 |16.18Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_567 | 9.57Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_615 | 6.69Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_617 | 3.72Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_555 |10.68Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_556 |17.05Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_560 | 8.04Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_563 |11.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_612 |10.52Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_623 |10.62Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_624 |10.47Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_576 |24.05Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_577 |18.33Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 | 6.54Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_578 |11.20Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_579 | 9.22Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_580 |23.89Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_581 | 6.36Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_582 | 7.30Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_583 | 2.49Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_584 | 4.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_585 | 7.99Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_586 | 6.56Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_587 |11.75Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_588 |11.12Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_589 |10.95Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_590 |11.39Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_592 | 3.35Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_594 | 7.77Mb
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_595 | 7.43Mb
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_512
-      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_574 |12.42Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_570 |17.56Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_610 |18.14Mb
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_616 | 5.56Mb
+      - Openwrt
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
