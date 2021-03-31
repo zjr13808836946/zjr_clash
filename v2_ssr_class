@@ -5,133 +5,261 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 update:download.china666.ml/v2, server: shanghai-cn2-01.ddns-only.xyz, port: 13389, type: vmess, uuid: 0bafb8f9-6629-3405-b948-6ed51a36dc8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: shanghai-cn2-01.ddns-only.xyz}}
-  - {name: 50, server: 2.58.46.3, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇸🇬 节点更新 https://bit.ly/3h18eE7, server: 217.138.222.53, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇫🇷 法国A | 直连, server: 15.236.122.194, port: 11130, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/fra1, ws-headers: {Host: fra1.ddns.tjiasu.xyz}}
-  - {name: 91.206.168.19:39772, server: 91.206.168.19, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇭🇰 香港B | 中转B, server: gdyd2.ddns.tjiasu.xyz, port: 11443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/www, ws-headers: {Host: hkv2.ddns.tjiasu.xyz}}
-  - {name: 🇰🇷 韩国B | 中转, server: xzlt.ddns.tjiasu.xyz, port: 11443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/krb, ws-headers: {Host: krbc2.ddns.tjiasu.xyz}}
   - {name: 🇯🇵 日本A | 中转B, server: xzlt.ddns.tjiasu.xyz, port: 11443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/v2/home, ws-headers: {Host: jpac.ddns.tjiasu.xyz}}
-  - {name: 116.163.10.28, server: 116.163.10.28, port: 56000, type: ssr, cipher: none, password: sealnet+305, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 120.240.86.31, server: 120.240.86.31, port: 60088, type: ssr, cipher: none, password: banana007, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: Openwrt, server: fzjzy.f3322.net, port: 8088, type: ssr, cipher: chacha20, password: m, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: FR_1355 |21.86Mb, server: 45.89.174.93, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇺🇸 US_3065 |15.96Mb, server: 104.200.131.233, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇨🇳 update:download.china666.ml/v2, server: shanghai-cn2-01.ddns-only.xyz, port: 13389, type: vmess, uuid: 0bafb8f9-6629-3405-b948-6ed51a36dc8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: shanghai-cn2-01.ddns-only.xyz}}
+  - {name: 35, server: 89.187.168.51, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇸🇬 节点更新 https://bit.ly/3h18eE7, server: cn1.relay.iplc.pro, port: 52002, type: vmess, uuid: eb862777-237c-4cd3-a278-a2a358f2ea40, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇫🇷 法国A | 直连, server: 15.236.122.194, port: 11130, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/fra1, ws-headers: {Host: fra1.ddns.tjiasu.xyz}}
+  - {name: 🇷🇺 俄罗斯A | 中转, server: xzlt2.ddns.tjiasu.xyz, port: 11443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/rua3, ws-headers: {Host: rua3.ddns.tjiasu.xyz}}
+  - {name: 🇰🇷 韩国B | 中转, server: xzlt.ddns.tjiasu.xyz, port: 11443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/krb, ws-headers: {Host: krbc2.ddns.tjiasu.xyz}}
+  - {name: 🇷🇴 罗马尼亚(欢迎订阅Youtube破解资源君), server: 193.29.107.99, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇸🇬 United States-12@1Gbps节点更新 https://bit.ly/3h18eE7, server: 104.20.130.175, port: 443, type: vmess, uuid: a9cd126a-7c05-41af-ad0e-a185eabc89c8, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /The-Great-Awakening_vws, ws-headers: {Host: vincent-jackson.cf}}
+  - {name: 🇨🇳 HINET台湾, server: trojan-hinet-203.66.168.143.internet-cloudflare-accelerate.tk, port: 443, type: trojan, password: a624073b-6dee-4a8c-8dc5-20ed664d42fc, sni: trojan-hinet-203.66.168.143.internet-cloudflare-accelerate.tk, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-CN2-2x, server: shcu114514.qwqcloud.cyou, port: 11430, type: vmess, uuid: 08ae223d-574a-33d2-8fb9-ed6c71452506, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: shcu114514.qwqcloud.cyou}}
+  - {name: 🇭🇰 香港-原生-2x, server: shcu114514.qwqcloud.cyou, port: 11431, type: vmess, uuid: 08ae223d-574a-33d2-8fb9-ed6c71452506, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: shcu114514.qwqcloud.cyou}}
+  - {name: 🇭🇰 香港-深港-游戏-7x, server: szhkiepl.qwqcloud.cyou, port: 11172, type: vmess, uuid: 08ae223d-574a-33d2-8fb9-ed6c71452506, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: szhkiepl.qwqcloud.cyou}}
+  - {name: 🇭🇰 A3|香港01-流媒体all-广移中继|UDP, server: hkt.zs.xueyun.pw, port: 11066, type: ssr, cipher: chacha20-ietf, password: xy6mPnphbfiZcQxY, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4097:325435, obfs-param: d7e784097.microsoft.com}
+  - {name: 🇯🇵 A4|日本01-Netflix-徐州中继, server: jp.db4.xueyun.pw, port: 12046, type: ssr, cipher: chacha20-ietf, password: xy6mPnphbfiZcQxY, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4097:325435, obfs-param: d7e784097.microsoft.com}
+  - {name: "🇮🇳 中继 冷门-印度 C6 [广州移动]", server: n3ro-in-c2.wbd6paidb2zys6pw.node.cyou, port: 5086, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
+  - {name: "🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]", server: n3ro-in-c2.wbd6paidb2zys6pw.node.cyou, port: 5082, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
+  - {name: "🇸🇬 中继 新加坡 C1 [广州移动]", server: n3ro-in-c1.nh4f5x7al5edsjhm.node.cyou, port: 5341, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
+  - {name: "🇸🇬 中继 新加坡 C2 [广州移动]", server: n3ro-in-c2.wbd6paidb2zys6pw.node.cyou, port: 5342, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
+  - {name: "🇸🇬 中继 新加坡 C3 [广州移动]", server: n3ro-in-c3.ycznfajdetayximt.node.cyou, port: 5343, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
+  - {name: "🇸🇬 中继 新加坡 C5 [广州移动]", server: n3ro-in-c5.wnd67847stpfj87t.node.cyou, port: 5341, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
+  - {name: "🇺🇸 中继 美国 C3 [广州移动]", server: n3ro-in-c3.ycznfajdetayximt.node.cyou, port: 5333, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
+  - {name: "🇰🇷 中继 韩国 C2 [广州移动]", server: n3ro-in-c3.ycznfajdetayximt.node.cyou, port: 5362, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
+  - {name: "🇭🇰 中继 香港 C1 [广州移动]", server: n3ro-in-c1.nh4f5x7al5edsjhm.node.cyou, port: 5311, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
+  - {name: "🇭🇰 中继 香港 C6 [广州移动]", server: n3ro-in-c5.wnd67847stpfj87t.node.cyou, port: 5316, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇯🇵 日本A | 中转B
+      - FR_1355 |21.86Mb
+      - 🇺🇸 US_3065 |15.96Mb
       - 🇨🇳 update:download.china666.ml/v2
-      - 50
+      - 35
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
       - 🇫🇷 法国A | 直连
-      - 91.206.168.19:39772
-      - 🇭🇰 香港B | 中转B
+      - 🇷🇺 俄罗斯A | 中转
       - 🇰🇷 韩国B | 中转
-      - 🇯🇵 日本A | 中转B
-      - 116.163.10.28
-      - 120.240.86.31
-      - Openwrt
+      - 🇷🇴 罗马尼亚(欢迎订阅Youtube破解资源君)
+      - 🇸🇬 United States-12@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇨🇳 HINET台湾
+      - 🇭🇰 香港-CN2-2x
+      - 🇭🇰 香港-原生-2x
+      - 🇭🇰 香港-深港-游戏-7x
+      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
+      - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
+      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C1 [广州移动]
+      - 🇸🇬 中继 新加坡 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C3 [广州移动]
+      - 🇸🇬 中继 新加坡 C5 [广州移动]
+      - 🇺🇸 中继 美国 C3 [广州移动]
+      - 🇰🇷 中继 韩国 C2 [广州移动]
+      - 🇭🇰 中继 香港 C1 [广州移动]
+      - 🇭🇰 中继 香港 C6 [广州移动]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇯🇵 日本A | 中转B
+      - FR_1355 |21.86Mb
+      - 🇺🇸 US_3065 |15.96Mb
       - 🇨🇳 update:download.china666.ml/v2
-      - 50
+      - 35
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
       - 🇫🇷 法国A | 直连
-      - 91.206.168.19:39772
-      - 🇭🇰 香港B | 中转B
+      - 🇷🇺 俄罗斯A | 中转
       - 🇰🇷 韩国B | 中转
-      - 🇯🇵 日本A | 中转B
-      - 116.163.10.28
-      - 120.240.86.31
-      - Openwrt
+      - 🇷🇴 罗马尼亚(欢迎订阅Youtube破解资源君)
+      - 🇸🇬 United States-12@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇨🇳 HINET台湾
+      - 🇭🇰 香港-CN2-2x
+      - 🇭🇰 香港-原生-2x
+      - 🇭🇰 香港-深港-游戏-7x
+      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
+      - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
+      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C1 [广州移动]
+      - 🇸🇬 中继 新加坡 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C3 [广州移动]
+      - 🇸🇬 中继 新加坡 C5 [广州移动]
+      - 🇺🇸 中继 美国 C3 [广州移动]
+      - 🇰🇷 中继 韩国 C2 [广州移动]
+      - 🇭🇰 中继 香港 C1 [广州移动]
+      - 🇭🇰 中继 香港 C6 [广州移动]
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇯🇵 日本A | 中转B
+      - FR_1355 |21.86Mb
+      - 🇺🇸 US_3065 |15.96Mb
       - 🇨🇳 update:download.china666.ml/v2
-      - 50
+      - 35
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
       - 🇫🇷 法国A | 直连
-      - 91.206.168.19:39772
-      - 🇭🇰 香港B | 中转B
+      - 🇷🇺 俄罗斯A | 中转
       - 🇰🇷 韩国B | 中转
-      - 🇯🇵 日本A | 中转B
-      - 116.163.10.28
-      - 120.240.86.31
-      - Openwrt
+      - 🇷🇴 罗马尼亚(欢迎订阅Youtube破解资源君)
+      - 🇸🇬 United States-12@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇨🇳 HINET台湾
+      - 🇭🇰 香港-CN2-2x
+      - 🇭🇰 香港-原生-2x
+      - 🇭🇰 香港-深港-游戏-7x
+      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
+      - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
+      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C1 [广州移动]
+      - 🇸🇬 中继 新加坡 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C3 [广州移动]
+      - 🇸🇬 中继 新加坡 C5 [广州移动]
+      - 🇺🇸 中继 美国 C3 [广州移动]
+      - 🇰🇷 中继 韩国 C2 [广州移动]
+      - 🇭🇰 中继 香港 C1 [广州移动]
+      - 🇭🇰 中继 香港 C6 [广州移动]
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇯🇵 日本A | 中转B
+      - FR_1355 |21.86Mb
+      - 🇺🇸 US_3065 |15.96Mb
       - 🇨🇳 update:download.china666.ml/v2
-      - 50
+      - 35
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
       - 🇫🇷 法国A | 直连
-      - 91.206.168.19:39772
-      - 🇭🇰 香港B | 中转B
+      - 🇷🇺 俄罗斯A | 中转
       - 🇰🇷 韩国B | 中转
-      - 🇯🇵 日本A | 中转B
-      - 116.163.10.28
-      - 120.240.86.31
-      - Openwrt
+      - 🇷🇴 罗马尼亚(欢迎订阅Youtube破解资源君)
+      - 🇸🇬 United States-12@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇨🇳 HINET台湾
+      - 🇭🇰 香港-CN2-2x
+      - 🇭🇰 香港-原生-2x
+      - 🇭🇰 香港-深港-游戏-7x
+      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
+      - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
+      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C1 [广州移动]
+      - 🇸🇬 中继 新加坡 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C3 [广州移动]
+      - 🇸🇬 中继 新加坡 C5 [广州移动]
+      - 🇺🇸 中继 美国 C3 [广州移动]
+      - 🇰🇷 中继 韩国 C2 [广州移动]
+      - 🇭🇰 中继 香港 C1 [广州移动]
+      - 🇭🇰 中继 香港 C6 [广州移动]
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇯🇵 日本A | 中转B
+      - FR_1355 |21.86Mb
+      - 🇺🇸 US_3065 |15.96Mb
       - 🇨🇳 update:download.china666.ml/v2
-      - 50
+      - 35
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
       - 🇫🇷 法国A | 直连
-      - 91.206.168.19:39772
-      - 🇭🇰 香港B | 中转B
+      - 🇷🇺 俄罗斯A | 中转
       - 🇰🇷 韩国B | 中转
-      - 🇯🇵 日本A | 中转B
-      - 116.163.10.28
-      - 120.240.86.31
-      - Openwrt
+      - 🇷🇴 罗马尼亚(欢迎订阅Youtube破解资源君)
+      - 🇸🇬 United States-12@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇨🇳 HINET台湾
+      - 🇭🇰 香港-CN2-2x
+      - 🇭🇰 香港-原生-2x
+      - 🇭🇰 香港-深港-游戏-7x
+      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
+      - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
+      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C1 [广州移动]
+      - 🇸🇬 中继 新加坡 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C3 [广州移动]
+      - 🇸🇬 中继 新加坡 C5 [广州移动]
+      - 🇺🇸 中继 美国 C3 [广州移动]
+      - 🇰🇷 中继 韩国 C2 [广州移动]
+      - 🇭🇰 中继 香港 C1 [广州移动]
+      - 🇭🇰 中继 香港 C6 [广州移动]
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇯🇵 日本A | 中转B
+      - FR_1355 |21.86Mb
+      - 🇺🇸 US_3065 |15.96Mb
       - 🇨🇳 update:download.china666.ml/v2
-      - 50
+      - 35
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
       - 🇫🇷 法国A | 直连
-      - 91.206.168.19:39772
-      - 🇭🇰 香港B | 中转B
+      - 🇷🇺 俄罗斯A | 中转
       - 🇰🇷 韩国B | 中转
-      - 🇯🇵 日本A | 中转B
-      - 116.163.10.28
-      - 120.240.86.31
-      - Openwrt
+      - 🇷🇴 罗马尼亚(欢迎订阅Youtube破解资源君)
+      - 🇸🇬 United States-12@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇨🇳 HINET台湾
+      - 🇭🇰 香港-CN2-2x
+      - 🇭🇰 香港-原生-2x
+      - 🇭🇰 香港-深港-游戏-7x
+      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
+      - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
+      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C1 [广州移动]
+      - 🇸🇬 中继 新加坡 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C3 [广州移动]
+      - 🇸🇬 中继 新加坡 C5 [广州移动]
+      - 🇺🇸 中继 美国 C3 [广州移动]
+      - 🇰🇷 中继 韩国 C2 [广州移动]
+      - 🇭🇰 中继 香港 C1 [广州移动]
+      - 🇭🇰 中继 香港 C6 [广州移动]
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇯🇵 日本A | 中转B
+      - FR_1355 |21.86Mb
+      - 🇺🇸 US_3065 |15.96Mb
       - 🇨🇳 update:download.china666.ml/v2
-      - 50
+      - 35
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
       - 🇫🇷 法国A | 直连
-      - 91.206.168.19:39772
-      - 🇭🇰 香港B | 中转B
+      - 🇷🇺 俄罗斯A | 中转
       - 🇰🇷 韩国B | 中转
-      - 🇯🇵 日本A | 中转B
-      - 116.163.10.28
-      - 120.240.86.31
-      - Openwrt
+      - 🇷🇴 罗马尼亚(欢迎订阅Youtube破解资源君)
+      - 🇸🇬 United States-12@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇨🇳 HINET台湾
+      - 🇭🇰 香港-CN2-2x
+      - 🇭🇰 香港-原生-2x
+      - 🇭🇰 香港-深港-游戏-7x
+      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
+      - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
+      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C1 [广州移动]
+      - 🇸🇬 中继 新加坡 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C3 [广州移动]
+      - 🇸🇬 中继 新加坡 C5 [广州移动]
+      - 🇺🇸 中继 美国 C3 [广州移动]
+      - 🇰🇷 中继 韩国 C2 [广州移动]
+      - 🇭🇰 中继 香港 C1 [广州移动]
+      - 🇭🇰 中继 香港 C6 [广州移动]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -154,17 +282,33 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇯🇵 日本A | 中转B
+      - FR_1355 |21.86Mb
+      - 🇺🇸 US_3065 |15.96Mb
       - 🇨🇳 update:download.china666.ml/v2
-      - 50
+      - 35
       - 🇸🇬 节点更新 https://bit.ly/3h18eE7
       - 🇫🇷 法国A | 直连
-      - 91.206.168.19:39772
-      - 🇭🇰 香港B | 中转B
+      - 🇷🇺 俄罗斯A | 中转
       - 🇰🇷 韩国B | 中转
-      - 🇯🇵 日本A | 中转B
-      - 116.163.10.28
-      - 120.240.86.31
-      - Openwrt
+      - 🇷🇴 罗马尼亚(欢迎订阅Youtube破解资源君)
+      - 🇸🇬 United States-12@1Gbps节点更新 https://bit.ly/3h18eE7
+      - 🇨🇳 HINET台湾
+      - 🇭🇰 香港-CN2-2x
+      - 🇭🇰 香港-原生-2x
+      - 🇭🇰 香港-深港-游戏-7x
+      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
+      - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
+      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C1 [广州移动]
+      - 🇸🇬 中继 新加坡 C2 [广州移动]
+      - 🇸🇬 中继 新加坡 C3 [广州移动]
+      - 🇸🇬 中继 新加坡 C5 [广州移动]
+      - 🇺🇸 中继 美国 C3 [广州移动]
+      - 🇰🇷 中继 韩国 C2 [广州移动]
+      - 🇭🇰 中继 香港 C1 [广州移动]
+      - 🇭🇰 中继 香港 C6 [广州移动]
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
