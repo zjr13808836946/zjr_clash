@@ -7,16 +7,6 @@ external-controller: :9090
 proxies:
   - {name: 🇭🇰 A3|香港01-流媒体all-广移中继|UDP, server: hkt.zs.xueyun.pw, port: 11066, type: ssr, cipher: chacha20-ietf, password: xy6mPnphbfiZcQxY, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4097:325435, obfs-param: d7e784097.microsoft.com}
   - {name: 🇯🇵 A4|日本01-Netflix-徐州中继, server: jp.db4.xueyun.pw, port: 12046, type: ssr, cipher: chacha20-ietf, password: xy6mPnphbfiZcQxY, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4097:325435, obfs-param: d7e784097.microsoft.com}
-  - {name: "🇮🇳 中继 冷门-印度 C6 [广州移动]", server: n3ro-in-c2.wbd6paidb2zys6pw.node.cyou, port: 5086, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
-  - {name: "🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]", server: n3ro-in-c2.wbd6paidb2zys6pw.node.cyou, port: 5082, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
-  - {name: "🇸🇬 中继 新加坡 C1 [广州移动]", server: n3ro-in-c1.nh4f5x7al5edsjhm.node.cyou, port: 5341, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
-  - {name: "🇸🇬 中继 新加坡 C2 [广州移动]", server: n3ro-in-c2.wbd6paidb2zys6pw.node.cyou, port: 5342, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
-  - {name: "🇸🇬 中继 新加坡 C3 [广州移动]", server: n3ro-in-c3.ycznfajdetayximt.node.cyou, port: 5343, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
-  - {name: "🇸🇬 中继 新加坡 C5 [广州移动]", server: n3ro-in-c5.wnd67847stpfj87t.node.cyou, port: 5341, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
-  - {name: "🇺🇸 中继 美国 C3 [广州移动]", server: n3ro-in-c3.ycznfajdetayximt.node.cyou, port: 5333, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
-  - {name: "🇰🇷 中继 韩国 C2 [广州移动]", server: n3ro-in-c3.ycznfajdetayximt.node.cyou, port: 5362, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
-  - {name: "🇭🇰 中继 香港 C1 [广州移动]", server: n3ro-in-c1.nh4f5x7al5edsjhm.node.cyou, port: 5311, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
-  - {name: "🇭🇰 中继 香港 C6 [广州移动]", server: n3ro-in-c5.wnd67847stpfj87t.node.cyou, port: 5316, type: ssr, cipher: chacha20-ietf, password: 7CRAZe4cKJygUo3W, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 150746:wrpYED, obfs-param: e662e150746.apple.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -25,16 +15,6 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
-      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C1 [广州移动]
-      - 🇸🇬 中继 新加坡 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C3 [广州移动]
-      - 🇸🇬 中继 新加坡 C5 [广州移动]
-      - 🇺🇸 中继 美国 C3 [广州移动]
-      - 🇰🇷 中继 韩国 C2 [广州移动]
-      - 🇭🇰 中继 香港 C1 [广州移动]
-      - 🇭🇰 中继 香港 C6 [广州移动]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -43,16 +23,6 @@ proxy-groups:
     proxies:
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
-      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C1 [广州移动]
-      - 🇸🇬 中继 新加坡 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C3 [广州移动]
-      - 🇸🇬 中继 新加坡 C5 [广州移动]
-      - 🇺🇸 中继 美国 C3 [广州移动]
-      - 🇰🇷 中继 韩国 C2 [广州移动]
-      - 🇭🇰 中继 香港 C1 [广州移动]
-      - 🇭🇰 中继 香港 C6 [广州移动]
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -61,16 +31,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
-      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C1 [广州移动]
-      - 🇸🇬 中继 新加坡 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C3 [广州移动]
-      - 🇸🇬 中继 新加坡 C5 [广州移动]
-      - 🇺🇸 中继 美国 C3 [广州移动]
-      - 🇰🇷 中继 韩国 C2 [广州移动]
-      - 🇭🇰 中继 香港 C1 [广州移动]
-      - 🇭🇰 中继 香港 C6 [广州移动]
   - name: 📲 电报信息
     type: select
     proxies:
@@ -78,16 +38,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
-      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C1 [广州移动]
-      - 🇸🇬 中继 新加坡 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C3 [广州移动]
-      - 🇸🇬 中继 新加坡 C5 [广州移动]
-      - 🇺🇸 中继 美国 C3 [广州移动]
-      - 🇰🇷 中继 韩国 C2 [广州移动]
-      - 🇭🇰 中继 香港 C1 [广州移动]
-      - 🇭🇰 中继 香港 C6 [广州移动]
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -95,16 +45,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
-      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C1 [广州移动]
-      - 🇸🇬 中继 新加坡 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C3 [广州移动]
-      - 🇸🇬 中继 新加坡 C5 [广州移动]
-      - 🇺🇸 中继 美国 C3 [广州移动]
-      - 🇰🇷 中继 韩国 C2 [广州移动]
-      - 🇭🇰 中继 香港 C1 [广州移动]
-      - 🇭🇰 中继 香港 C6 [广州移动]
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -112,16 +52,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
-      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C1 [广州移动]
-      - 🇸🇬 中继 新加坡 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C3 [广州移动]
-      - 🇸🇬 中继 新加坡 C5 [广州移动]
-      - 🇺🇸 中继 美国 C3 [广州移动]
-      - 🇰🇷 中继 韩国 C2 [广州移动]
-      - 🇭🇰 中继 香港 C1 [广州移动]
-      - 🇭🇰 中继 香港 C6 [广州移动]
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -130,16 +60,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
-      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C1 [广州移动]
-      - 🇸🇬 中继 新加坡 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C3 [广州移动]
-      - 🇸🇬 中继 新加坡 C5 [广州移动]
-      - 🇺🇸 中继 美国 C3 [广州移动]
-      - 🇰🇷 中继 韩国 C2 [广州移动]
-      - 🇭🇰 中继 香港 C1 [广州移动]
-      - 🇭🇰 中继 香港 C6 [广州移动]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,16 +84,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇮🇳 中继 冷门-印度 C6 [广州移动]
-      - 🇦🇺 中继 冷门-澳大利亚 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C1 [广州移动]
-      - 🇸🇬 中继 新加坡 C2 [广州移动]
-      - 🇸🇬 中继 新加坡 C3 [广州移动]
-      - 🇸🇬 中继 新加坡 C5 [广州移动]
-      - 🇺🇸 中继 美国 C3 [广州移动]
-      - 🇰🇷 中继 韩国 C2 [广州移动]
-      - 🇭🇰 中继 香港 C1 [广州移动]
-      - 🇭🇰 中继 香港 C6 [广州移动]
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
