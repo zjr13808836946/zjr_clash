@@ -7,6 +7,9 @@ external-controller: :9090
 proxies:
   - {name: 🇭🇰 A3|香港01-流媒体all-广移中继|UDP, server: hkt.zs.xueyun.pw, port: 11066, type: ssr, cipher: chacha20-ietf, password: xy6mPnphbfiZcQxY, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4097:325435, obfs-param: d7e784097.microsoft.com}
   - {name: 🇯🇵 A4|日本01-Netflix-徐州中继, server: jp.db4.xueyun.pw, port: 12046, type: ssr, cipher: chacha20-ietf, password: xy6mPnphbfiZcQxY, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4097:325435, obfs-param: d7e784097.microsoft.com}
+  - {name: "🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口", server: 29.wgong.xyz, port: 52229, type: ssr, cipher: rc4-md5, password: MfKymR, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 24898:MylnFB, obfs-param: a711b24898.microsoft.com}
+  - {name: "🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口", server: 30.wgong.xyz, port: 52230, type: ssr, cipher: rc4-md5, password: MfKymR, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 24898:MylnFB, obfs-param: a711b24898.microsoft.com}
+  - {name: "🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口", server: 111.wgong.xyz, port: 52211, type: ssr, cipher: rc4-md5, password: MfKymR, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 24898:MylnFB, obfs-param: a711b24898.microsoft.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -15,6 +18,9 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
+      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
+      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -23,6 +29,9 @@ proxy-groups:
     proxies:
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
+      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
+      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -31,6 +40,9 @@ proxy-groups:
       - 🎯 全球直连
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
+      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
+      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
   - name: 📲 电报信息
     type: select
     proxies:
@@ -38,6 +50,9 @@ proxy-groups:
       - 🎯 全球直连
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
+      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
+      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -45,6 +60,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
+      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
+      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -52,6 +70,9 @@ proxy-groups:
       - 🎯 全球直连
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
+      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
+      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -60,6 +81,9 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
+      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
+      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,6 +108,9 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
       - 🇯🇵 A4|日本01-Netflix-徐州中继
+      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
+      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
+      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
