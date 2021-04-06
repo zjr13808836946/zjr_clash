@@ -5,261 +5,341 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 香港-CN2-2x, server: shcu114514.qwqcloud.cyou, port: 11430, type: vmess, uuid: 08ae223d-574a-33d2-8fb9-ed6c71452506, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: shcu114514.qwqcloud.cyou}}
-  - {name: "🇨🇳 [vip1]︱V2ray︱①台湾Hinet原生节点 600M｜×1x｜限速100M", server: 116.wgong.xyz, port: 52216, type: vmess, uuid: ed28271b-b5cd-3b55-ab28-f2ad5bfcdb0c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇨🇳 [vip1]︱V2ray︱②台湾Hinet原生节点 600M｜×1x｜限速100M", server: 117.wgong.xyz, port: 52217, type: vmess, uuid: ed28271b-b5cd-3b55-ab28-f2ad5bfcdb0c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M", server: 118.wgong.xyz, port: 52218, type: vmess, uuid: ed28271b-b5cd-3b55-ab28-f2ad5bfcdb0c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇨🇳 [vip1]︱V2ray︱④台湾 1000M｜×1x｜限速100M", server: 119.wgong.xyz, port: 52219, type: vmess, uuid: ed28271b-b5cd-3b55-ab28-f2ad5bfcdb0c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇨🇳 [vip1]︱V2ray︱⑩台湾Hinet原生节点 600M｜×1x｜限速100M", server: 133.wgong.xyz, port: 52333, type: vmess, uuid: ed28271b-b5cd-3b55-ab28-f2ad5bfcdb0c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: c8, server: trojan-hinet-203.66.168.143.internet-cloudflare-accelerate.tk, port: 443, type: trojan, password: a624073b-6dee-4a8c-8dc5-20ed664d42fc, sni: trojan-hinet-203.66.168.143.internet-cloudflare-accelerate.tk, skip-cert-verify: false}
-  - {name: 🇩🇰 丹麦(吹水闲聊群) 16, server: 37.120.221.5, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 36, server: 164.90.234.85, port: 18492, type: ss, cipher: chacha20-ietf-poly1305, password: fdRAl4scWDTg}
-  - {name: 37, server: 178.62.253.150, port: 11541, type: ss, cipher: chacha20-ietf-poly1305, password: jNd5a6C0jXMf}
-  - {name: 88, server: 89.187.168.56, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇰🇷 韩国A | 中转, server: xzlt.ddns.tjiasu.xyz, port: 11443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/v2/home, ws-headers: {Host: krv2.ddns.tjiasu.xyz}}
   - {name: 🇰🇷 韩国A | 直连, server: krv2.ddns.tjiasu.xyz, port: 443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/v2/home, ws-headers: {Host: krv2.ddns.tjiasu.xyz}}
-  - {name: 🇭🇰 香港-原生-2x, server: shcu114514.qwqcloud.cyou, port: 11431, type: vmess, uuid: 08ae223d-574a-33d2-8fb9-ed6c71452506, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: shcu114514.qwqcloud.cyou}}
-  - {name: 🇯🇵 日本-CN2-2x, server: shcu114514.qwqcloud.cyou, port: 11432, type: vmess, uuid: 08ae223d-574a-33d2-8fb9-ed6c71452506, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: shcu114514.qwqcloud.cyou}}
-  - {name: 🇭🇰 香港-普通-1x, server: soolos.com, port: 58802, type: vmess, uuid: 08ae223d-574a-33d2-8fb9-ed6c71452506, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: soolos.com}}
-  - {name: 🇸🇬 节点更新 https://bit.ly/3h18eE7, server: cn1.relay.iplc.pro, port: 52002, type: vmess, uuid: eb862777-237c-4cd3-a278-a2a358f2ea40, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国B | 中转, server: xzlt.ddns.tjiasu.xyz, port: 11443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/krb, ws-headers: {Host: krbc2.ddns.tjiasu.xyz}}
   - {name: 🇸🇬 新加坡A | 中转B, server: xzlt.ddns.tjiasu.xyz, port: 11443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/sg, ws-headers: {Host: sgav2.ddns.tjiasu.xyz}}
-  - {name: 🇸🇬 新加坡 v2ray Netflix, server: sg.tiktok.page, port: 443, type: vmess, uuid: db50efdd-8678-35ae-923d-a031bcfaf99c, alterId: 16, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: sg.tiktok.page}}
-  - {name: 🇰🇷 【Lv.2】韩国 --> 香港, server: 132.226.18.95, port: 10016, type: vmess, uuid: cc719e4f-1b68-4af7-820d-26a5bbed44f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 132.226.18.95}}
-  - {name: 🇰🇷 【Lv.2】韩国 --> 台湾, server: 132.226.18.95, port: 10012, type: vmess, uuid: cc719e4f-1b68-4af7-820d-26a5bbed44f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 132.226.18.95}}
-  - {name: 🇰🇷 【Lv.2】韩国 --> 新加坡 | 负载均衡, server: 132.226.18.95, port: 10017, type: vmess, uuid: cc719e4f-1b68-4af7-820d-26a5bbed44f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 132.226.18.95}}
-  - {name: 🇭🇰 A3|香港01-流媒体all-广移中继|UDP, server: hkt.zs.xueyun.pw, port: 11066, type: ssr, cipher: chacha20-ietf, password: xy6mPnphbfiZcQxY, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4097:325435, obfs-param: d7e784097.microsoft.com}
-  - {name: 🇯🇵 A4|日本01-Netflix-徐州中继, server: jp.db4.xueyun.pw, port: 12046, type: ssr, cipher: chacha20-ietf, password: xy6mPnphbfiZcQxY, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4097:325435, obfs-param: d7e784097.microsoft.com}
-  - {name: "🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口", server: 29.wgong.xyz, port: 52229, type: ssr, cipher: rc4-md5, password: MfKymR, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 24898:MylnFB, obfs-param: a711b24898.microsoft.com}
-  - {name: "🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口", server: 30.wgong.xyz, port: 52230, type: ssr, cipher: rc4-md5, password: MfKymR, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 24898:MylnFB, obfs-param: a711b24898.microsoft.com}
-  - {name: "🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口", server: 111.wgong.xyz, port: 52211, type: ssr, cipher: rc4-md5, password: MfKymR, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 24898:MylnFB, obfs-param: a711b24898.microsoft.com}
+  - {name: 🇺🇸 US_4220 |33.47Mb, server: 89.187.187.76, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇨🇳 【Lv.1】台湾1 | 移动直连, server: hinet.ddns.mgnb.cf, port: 12345, type: vmess, uuid: 84638de7-8cd6-423e-b68c-b860bb4d67e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hinet.ddns.mgnb.cf}}
+  - {name: 🇨🇳 【Lv.1】台湾2 | 移动直连, server: 210.61.46.174, port: 443, type: vmess, uuid: 84638de7-8cd6-423e-b68c-b860bb4d67e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 210.61.46.174}}
+  - {name: 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动, server: 120.232.41.61, port: 14202, type: vmess, uuid: 84638de7-8cd6-423e-b68c-b860bb4d67e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.232.41.61}}
+  - {name: 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动, server: 120.232.41.61, port: 14203, type: vmess, uuid: 84638de7-8cd6-423e-b68c-b860bb4d67e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.232.41.61}}
+  - {name: 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通, server: 116.162.102.202, port: 14200, type: vmess, uuid: 84638de7-8cd6-423e-b68c-b860bb4d67e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
+  - {name: 🇭🇰 【Lv.1】香港 | 电信直连, server: a57cecdf45b3f785b.awsglobalaccelerator.com, port: 443, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: a57cecdf45b3f785b.awsglobalaccelerator.com}}
+  - {name: 🇨🇳 【Lv.1】台湾2 | 移动直连 2, server: 210.61.46.174, port: 443, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 210.61.46.174}}
+  - {name: 🇯🇵 【Lv.2】🇯🇵日本 | 广州移动, server: 120.232.41.61, port: 14200, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.232.41.61}}
+  - {name: 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2, server: 120.232.41.61, port: 14202, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.232.41.61}}
+  - {name: 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动 2, server: 120.232.41.61, port: 14203, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.232.41.61}}
+  - {name: 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动, server: 120.232.41.61, port: 14204, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.232.41.61}}
+  - {name: 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2, server: 116.162.102.202, port: 14200, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
+  - {name: 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通, server: 116.162.102.202, port: 14202, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
+  - {name: CM->AGA->AU【4K无缓冲】, server: v2.linn.ink, port: 22800, type: vmess, uuid: 91f497a1-26b8-4214-af1d-3f31649582f8, alterId: 100, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 CM->AGA->SG【4K无缓冲】, server: v2.linn.ink, port: 22900, type: vmess, uuid: 91f497a1-26b8-4214-af1d-3f31649582f8, alterId: 100, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: Relay_🇪🇪EE-🇯🇵JP_773 |21.59Mb, server: os2-2.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-2.sstr-api.xyz, skip-cert-verify: false}
+  - {name: 🇺🇸 Relay_🇩🇪DE-🇺🇸US_654 |36.59Mb, server: fm1-3.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: fm1-3.sstr-api.xyz, skip-cert-verify: false}
+  - {name: Relay_🇪🇪EE-🇯🇵JP_780 |28.71Mb, server: ty2-7.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: ty2-7.sstr-api.xyz, skip-cert-verify: false}
+  - {name: Relay_🇪🇪EE-🇯🇵JP_781 |24.36Mb, server: os2-6.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-6.sstr-api.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2113 |10.26Mb, server: s179.snodes.xyz, port: 443, type: vmess, uuid: dd0d7541-f892-388a-a0d3-15d15c173daf, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /panel, ws-headers: {Host: s179.snodes.xyz}}
+  - {name: 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2124 |11.00Mb, server: s291.snodes.xyz, port: 80, type: vmess, uuid: dd0d7541-f892-388a-a0d3-15d15c173daf, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /panel, ws-headers: {Host: s291.snodes.xyz}}
+  - {name: 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2130 | 3.26Mb, server: s134.snodes.xyz, port: 80, type: vmess, uuid: dd0d7541-f892-388a-a0d3-15d15c173daf, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /panel, ws-headers: {Host: s134.snodes.xyz}}
+  - {name: 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2131 |18.74Mb, server: s118.snodes.xyz, port: 443, type: vmess, uuid: dd0d7541-f892-388a-a0d3-15d15c173daf, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /panel, ws-headers: {Host: s118.snodes.xyz}}
+  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_2935 |60.08Mb, server: us.tcpbbr.net, port: 443, type: vmess, uuid: 73a4ff1c-85c8-11ea-82ef-f23c9164ca5d, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_2939 |12.76Mb, server: s202.snodes.xyz, port: 80, type: vmess, uuid: dd0d7541-f892-388a-a0d3-15d15c173daf, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /panel, ws-headers: {Host: s202.snodes.xyz}}
+  - {name: JP_2485 |24.58Mb, server: hakurei1.tsutsu.top, port: 443, type: vmess, uuid: 5e385be8-a451-4d21-a2ef-f24010ece637, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /tsutsu, ws-headers: {Host: hakurei1.tsutsu.top}}
+  - {name: 🇯🇵 日本0 | 广移, server: 120.232.43.92, port: 7788, type: vmess, uuid: 4a7d8a73-e03d-32a5-b574-fade9f8f7188, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /uslijpsa, ws-headers: {Host: microsoft.com}}
+  - {name: 🇰🇷 韩国 | 广移, server: 120.232.43.92, port: 55552, type: vmess, uuid: 4a7d8a73-e03d-32a5-b574-fade9f8f7188, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vukr, ws-headers: {Host: microsoft.com}}
+  - {name: 🇨🇳 ssr台湾, server: guangdong-gugu.ddns-only.xyz, port: 13300, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 256395:aSnXeX, obfs-param: 4634a256395.microsoft.com}
+  - {name: 🇨🇳 ssr台湾 2, server: guangdong-gugu.ddns-only.xyz, port: 13302, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 256395:aSnXeX, obfs-param: 4634a256395.microsoft.com}
+  - {name: 🇸🇬 ssr新加坡, server: linode-zy.ddns-only.xyz, port: 13351, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 256395:aSnXeX, obfs-param: 4634a256395.microsoft.com}
+  - {name: 🇯🇵 ssr日本, server: xgd-01.ddns-only.xyz, port: 13090, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 256395:aSnXeX, obfs-param: 4634a256395.microsoft.com}
+  - {name: 🇭🇰 ssr香港HKT, server: guangdong05.ddns-only.xyz, port: 13489, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 256395:aSnXeX, obfs-param: 4634a256395.microsoft.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 香港-CN2-2x
-      - 🇨🇳 [vip1]︱V2ray︱①台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱②台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱④台湾 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱⑩台湾Hinet原生节点 600M｜×1x｜限速100M
-      - c8
-      - 🇩🇰 丹麦(吹水闲聊群) 16
-      - 36
-      - 37
-      - 88
-      - 🇰🇷 韩国A | 中转
       - 🇰🇷 韩国A | 直连
-      - 🇭🇰 香港-原生-2x
-      - 🇯🇵 日本-CN2-2x
-      - 🇭🇰 香港-普通-1x
-      - 🇸🇬 节点更新 https://bit.ly/3h18eE7
+      - 🇰🇷 韩国B | 中转
       - 🇸🇬 新加坡A | 中转B
-      - 🇸🇬 新加坡 v2ray Netflix
-      - 🇰🇷 【Lv.2】韩国 --> 香港
-      - 🇰🇷 【Lv.2】韩国 --> 台湾
-      - 🇰🇷 【Lv.2】韩国 --> 新加坡 | 负载均衡
-      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
-      - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
-      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
-      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
+      - 🇺🇸 US_4220 |33.47Mb
+      - 🇨🇳 【Lv.1】台湾1 | 移动直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
+      - 🇭🇰 【Lv.1】香港 | 电信直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连 2
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动 2
+      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - CM->AGA->AU【4K无缓冲】
+      - 🇸🇬 CM->AGA->SG【4K无缓冲】
+      - Relay_🇪🇪EE-🇯🇵JP_773 |21.59Mb
+      - 🇺🇸 Relay_🇩🇪DE-🇺🇸US_654 |36.59Mb
+      - Relay_🇪🇪EE-🇯🇵JP_780 |28.71Mb
+      - Relay_🇪🇪EE-🇯🇵JP_781 |24.36Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2113 |10.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2124 |11.00Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2130 | 3.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2131 |18.74Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2935 |60.08Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2939 |12.76Mb
+      - JP_2485 |24.58Mb
+      - 🇯🇵 日本0 | 广移
+      - 🇰🇷 韩国 | 广移
+      - 🇨🇳 ssr台湾
+      - 🇨🇳 ssr台湾 2
+      - 🇸🇬 ssr新加坡
+      - 🇯🇵 ssr日本
+      - 🇭🇰 ssr香港HKT
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港-CN2-2x
-      - 🇨🇳 [vip1]︱V2ray︱①台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱②台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱④台湾 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱⑩台湾Hinet原生节点 600M｜×1x｜限速100M
-      - c8
-      - 🇩🇰 丹麦(吹水闲聊群) 16
-      - 36
-      - 37
-      - 88
-      - 🇰🇷 韩国A | 中转
       - 🇰🇷 韩国A | 直连
-      - 🇭🇰 香港-原生-2x
-      - 🇯🇵 日本-CN2-2x
-      - 🇭🇰 香港-普通-1x
-      - 🇸🇬 节点更新 https://bit.ly/3h18eE7
+      - 🇰🇷 韩国B | 中转
       - 🇸🇬 新加坡A | 中转B
-      - 🇸🇬 新加坡 v2ray Netflix
-      - 🇰🇷 【Lv.2】韩国 --> 香港
-      - 🇰🇷 【Lv.2】韩国 --> 台湾
-      - 🇰🇷 【Lv.2】韩国 --> 新加坡 | 负载均衡
-      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
-      - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
-      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
-      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
+      - 🇺🇸 US_4220 |33.47Mb
+      - 🇨🇳 【Lv.1】台湾1 | 移动直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
+      - 🇭🇰 【Lv.1】香港 | 电信直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连 2
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动 2
+      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - CM->AGA->AU【4K无缓冲】
+      - 🇸🇬 CM->AGA->SG【4K无缓冲】
+      - Relay_🇪🇪EE-🇯🇵JP_773 |21.59Mb
+      - 🇺🇸 Relay_🇩🇪DE-🇺🇸US_654 |36.59Mb
+      - Relay_🇪🇪EE-🇯🇵JP_780 |28.71Mb
+      - Relay_🇪🇪EE-🇯🇵JP_781 |24.36Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2113 |10.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2124 |11.00Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2130 | 3.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2131 |18.74Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2935 |60.08Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2939 |12.76Mb
+      - JP_2485 |24.58Mb
+      - 🇯🇵 日本0 | 广移
+      - 🇰🇷 韩国 | 广移
+      - 🇨🇳 ssr台湾
+      - 🇨🇳 ssr台湾 2
+      - 🇸🇬 ssr新加坡
+      - 🇯🇵 ssr日本
+      - 🇭🇰 ssr香港HKT
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 香港-CN2-2x
-      - 🇨🇳 [vip1]︱V2ray︱①台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱②台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱④台湾 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱⑩台湾Hinet原生节点 600M｜×1x｜限速100M
-      - c8
-      - 🇩🇰 丹麦(吹水闲聊群) 16
-      - 36
-      - 37
-      - 88
-      - 🇰🇷 韩国A | 中转
       - 🇰🇷 韩国A | 直连
-      - 🇭🇰 香港-原生-2x
-      - 🇯🇵 日本-CN2-2x
-      - 🇭🇰 香港-普通-1x
-      - 🇸🇬 节点更新 https://bit.ly/3h18eE7
+      - 🇰🇷 韩国B | 中转
       - 🇸🇬 新加坡A | 中转B
-      - 🇸🇬 新加坡 v2ray Netflix
-      - 🇰🇷 【Lv.2】韩国 --> 香港
-      - 🇰🇷 【Lv.2】韩国 --> 台湾
-      - 🇰🇷 【Lv.2】韩国 --> 新加坡 | 负载均衡
-      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
-      - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
-      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
-      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
+      - 🇺🇸 US_4220 |33.47Mb
+      - 🇨🇳 【Lv.1】台湾1 | 移动直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
+      - 🇭🇰 【Lv.1】香港 | 电信直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连 2
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动 2
+      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - CM->AGA->AU【4K无缓冲】
+      - 🇸🇬 CM->AGA->SG【4K无缓冲】
+      - Relay_🇪🇪EE-🇯🇵JP_773 |21.59Mb
+      - 🇺🇸 Relay_🇩🇪DE-🇺🇸US_654 |36.59Mb
+      - Relay_🇪🇪EE-🇯🇵JP_780 |28.71Mb
+      - Relay_🇪🇪EE-🇯🇵JP_781 |24.36Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2113 |10.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2124 |11.00Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2130 | 3.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2131 |18.74Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2935 |60.08Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2939 |12.76Mb
+      - JP_2485 |24.58Mb
+      - 🇯🇵 日本0 | 广移
+      - 🇰🇷 韩国 | 广移
+      - 🇨🇳 ssr台湾
+      - 🇨🇳 ssr台湾 2
+      - 🇸🇬 ssr新加坡
+      - 🇯🇵 ssr日本
+      - 🇭🇰 ssr香港HKT
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港-CN2-2x
-      - 🇨🇳 [vip1]︱V2ray︱①台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱②台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱④台湾 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱⑩台湾Hinet原生节点 600M｜×1x｜限速100M
-      - c8
-      - 🇩🇰 丹麦(吹水闲聊群) 16
-      - 36
-      - 37
-      - 88
-      - 🇰🇷 韩国A | 中转
       - 🇰🇷 韩国A | 直连
-      - 🇭🇰 香港-原生-2x
-      - 🇯🇵 日本-CN2-2x
-      - 🇭🇰 香港-普通-1x
-      - 🇸🇬 节点更新 https://bit.ly/3h18eE7
+      - 🇰🇷 韩国B | 中转
       - 🇸🇬 新加坡A | 中转B
-      - 🇸🇬 新加坡 v2ray Netflix
-      - 🇰🇷 【Lv.2】韩国 --> 香港
-      - 🇰🇷 【Lv.2】韩国 --> 台湾
-      - 🇰🇷 【Lv.2】韩国 --> 新加坡 | 负载均衡
-      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
-      - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
-      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
-      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
+      - 🇺🇸 US_4220 |33.47Mb
+      - 🇨🇳 【Lv.1】台湾1 | 移动直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
+      - 🇭🇰 【Lv.1】香港 | 电信直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连 2
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动 2
+      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - CM->AGA->AU【4K无缓冲】
+      - 🇸🇬 CM->AGA->SG【4K无缓冲】
+      - Relay_🇪🇪EE-🇯🇵JP_773 |21.59Mb
+      - 🇺🇸 Relay_🇩🇪DE-🇺🇸US_654 |36.59Mb
+      - Relay_🇪🇪EE-🇯🇵JP_780 |28.71Mb
+      - Relay_🇪🇪EE-🇯🇵JP_781 |24.36Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2113 |10.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2124 |11.00Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2130 | 3.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2131 |18.74Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2935 |60.08Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2939 |12.76Mb
+      - JP_2485 |24.58Mb
+      - 🇯🇵 日本0 | 广移
+      - 🇰🇷 韩国 | 广移
+      - 🇨🇳 ssr台湾
+      - 🇨🇳 ssr台湾 2
+      - 🇸🇬 ssr新加坡
+      - 🇯🇵 ssr日本
+      - 🇭🇰 ssr香港HKT
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 香港-CN2-2x
-      - 🇨🇳 [vip1]︱V2ray︱①台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱②台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱④台湾 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱⑩台湾Hinet原生节点 600M｜×1x｜限速100M
-      - c8
-      - 🇩🇰 丹麦(吹水闲聊群) 16
-      - 36
-      - 37
-      - 88
-      - 🇰🇷 韩国A | 中转
       - 🇰🇷 韩国A | 直连
-      - 🇭🇰 香港-原生-2x
-      - 🇯🇵 日本-CN2-2x
-      - 🇭🇰 香港-普通-1x
-      - 🇸🇬 节点更新 https://bit.ly/3h18eE7
+      - 🇰🇷 韩国B | 中转
       - 🇸🇬 新加坡A | 中转B
-      - 🇸🇬 新加坡 v2ray Netflix
-      - 🇰🇷 【Lv.2】韩国 --> 香港
-      - 🇰🇷 【Lv.2】韩国 --> 台湾
-      - 🇰🇷 【Lv.2】韩国 --> 新加坡 | 负载均衡
-      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
-      - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
-      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
-      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
+      - 🇺🇸 US_4220 |33.47Mb
+      - 🇨🇳 【Lv.1】台湾1 | 移动直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
+      - 🇭🇰 【Lv.1】香港 | 电信直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连 2
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动 2
+      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - CM->AGA->AU【4K无缓冲】
+      - 🇸🇬 CM->AGA->SG【4K无缓冲】
+      - Relay_🇪🇪EE-🇯🇵JP_773 |21.59Mb
+      - 🇺🇸 Relay_🇩🇪DE-🇺🇸US_654 |36.59Mb
+      - Relay_🇪🇪EE-🇯🇵JP_780 |28.71Mb
+      - Relay_🇪🇪EE-🇯🇵JP_781 |24.36Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2113 |10.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2124 |11.00Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2130 | 3.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2131 |18.74Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2935 |60.08Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2939 |12.76Mb
+      - JP_2485 |24.58Mb
+      - 🇯🇵 日本0 | 广移
+      - 🇰🇷 韩国 | 广移
+      - 🇨🇳 ssr台湾
+      - 🇨🇳 ssr台湾 2
+      - 🇸🇬 ssr新加坡
+      - 🇯🇵 ssr日本
+      - 🇭🇰 ssr香港HKT
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港-CN2-2x
-      - 🇨🇳 [vip1]︱V2ray︱①台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱②台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱④台湾 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱⑩台湾Hinet原生节点 600M｜×1x｜限速100M
-      - c8
-      - 🇩🇰 丹麦(吹水闲聊群) 16
-      - 36
-      - 37
-      - 88
-      - 🇰🇷 韩国A | 中转
       - 🇰🇷 韩国A | 直连
-      - 🇭🇰 香港-原生-2x
-      - 🇯🇵 日本-CN2-2x
-      - 🇭🇰 香港-普通-1x
-      - 🇸🇬 节点更新 https://bit.ly/3h18eE7
+      - 🇰🇷 韩国B | 中转
       - 🇸🇬 新加坡A | 中转B
-      - 🇸🇬 新加坡 v2ray Netflix
-      - 🇰🇷 【Lv.2】韩国 --> 香港
-      - 🇰🇷 【Lv.2】韩国 --> 台湾
-      - 🇰🇷 【Lv.2】韩国 --> 新加坡 | 负载均衡
-      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
-      - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
-      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
-      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
+      - 🇺🇸 US_4220 |33.47Mb
+      - 🇨🇳 【Lv.1】台湾1 | 移动直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
+      - 🇭🇰 【Lv.1】香港 | 电信直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连 2
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动 2
+      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - CM->AGA->AU【4K无缓冲】
+      - 🇸🇬 CM->AGA->SG【4K无缓冲】
+      - Relay_🇪🇪EE-🇯🇵JP_773 |21.59Mb
+      - 🇺🇸 Relay_🇩🇪DE-🇺🇸US_654 |36.59Mb
+      - Relay_🇪🇪EE-🇯🇵JP_780 |28.71Mb
+      - Relay_🇪🇪EE-🇯🇵JP_781 |24.36Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2113 |10.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2124 |11.00Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2130 | 3.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2131 |18.74Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2935 |60.08Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2939 |12.76Mb
+      - JP_2485 |24.58Mb
+      - 🇯🇵 日本0 | 广移
+      - 🇰🇷 韩国 | 广移
+      - 🇨🇳 ssr台湾
+      - 🇨🇳 ssr台湾 2
+      - 🇸🇬 ssr新加坡
+      - 🇯🇵 ssr日本
+      - 🇭🇰 ssr香港HKT
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港-CN2-2x
-      - 🇨🇳 [vip1]︱V2ray︱①台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱②台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱④台湾 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱⑩台湾Hinet原生节点 600M｜×1x｜限速100M
-      - c8
-      - 🇩🇰 丹麦(吹水闲聊群) 16
-      - 36
-      - 37
-      - 88
-      - 🇰🇷 韩国A | 中转
       - 🇰🇷 韩国A | 直连
-      - 🇭🇰 香港-原生-2x
-      - 🇯🇵 日本-CN2-2x
-      - 🇭🇰 香港-普通-1x
-      - 🇸🇬 节点更新 https://bit.ly/3h18eE7
+      - 🇰🇷 韩国B | 中转
       - 🇸🇬 新加坡A | 中转B
-      - 🇸🇬 新加坡 v2ray Netflix
-      - 🇰🇷 【Lv.2】韩国 --> 香港
-      - 🇰🇷 【Lv.2】韩国 --> 台湾
-      - 🇰🇷 【Lv.2】韩国 --> 新加坡 | 负载均衡
-      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
-      - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
-      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
-      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
+      - 🇺🇸 US_4220 |33.47Mb
+      - 🇨🇳 【Lv.1】台湾1 | 移动直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
+      - 🇭🇰 【Lv.1】香港 | 电信直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连 2
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动 2
+      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - CM->AGA->AU【4K无缓冲】
+      - 🇸🇬 CM->AGA->SG【4K无缓冲】
+      - Relay_🇪🇪EE-🇯🇵JP_773 |21.59Mb
+      - 🇺🇸 Relay_🇩🇪DE-🇺🇸US_654 |36.59Mb
+      - Relay_🇪🇪EE-🇯🇵JP_780 |28.71Mb
+      - Relay_🇪🇪EE-🇯🇵JP_781 |24.36Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2113 |10.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2124 |11.00Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2130 | 3.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2131 |18.74Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2935 |60.08Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2939 |12.76Mb
+      - JP_2485 |24.58Mb
+      - 🇯🇵 日本0 | 广移
+      - 🇰🇷 韩国 | 广移
+      - 🇨🇳 ssr台湾
+      - 🇨🇳 ssr台湾 2
+      - 🇸🇬 ssr新加坡
+      - 🇯🇵 ssr日本
+      - 🇭🇰 ssr香港HKT
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -282,33 +362,43 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港-CN2-2x
-      - 🇨🇳 [vip1]︱V2ray︱①台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱②台湾Hinet原生节点 600M｜×1x｜限速100M
-      - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱④台湾 1000M｜×1x｜限速100M
-      - 🇨🇳 [vip1]︱V2ray︱⑩台湾Hinet原生节点 600M｜×1x｜限速100M
-      - c8
-      - 🇩🇰 丹麦(吹水闲聊群) 16
-      - 36
-      - 37
-      - 88
-      - 🇰🇷 韩国A | 中转
       - 🇰🇷 韩国A | 直连
-      - 🇭🇰 香港-原生-2x
-      - 🇯🇵 日本-CN2-2x
-      - 🇭🇰 香港-普通-1x
-      - 🇸🇬 节点更新 https://bit.ly/3h18eE7
+      - 🇰🇷 韩国B | 中转
       - 🇸🇬 新加坡A | 中转B
-      - 🇸🇬 新加坡 v2ray Netflix
-      - 🇰🇷 【Lv.2】韩国 --> 香港
-      - 🇰🇷 【Lv.2】韩国 --> 台湾
-      - 🇰🇷 【Lv.2】韩国 --> 新加坡 | 负载均衡
-      - 🇭🇰 A3|香港01-流媒体all-广移中继|UDP
-      - 🇯🇵 A4|日本01-Netflix-徐州中继
-      - 🇭🇰 [vip1]①香港 1000M｜×1x｜限速100M - 52229 单端口
-      - 🇨🇳 [vip1]②台湾Hinet原生节点 600M｜×1x｜限速100M - 52230 单端口
-      - 🇭🇰 [vip1]⑦香港 1000M｜×1x｜限速100M - 52211 单端口
+      - 🇺🇸 US_4220 |33.47Mb
+      - 🇨🇳 【Lv.1】台湾1 | 移动直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
+      - 🇭🇰 【Lv.1】香港 | 电信直连
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连 2
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 广州移动 2
+      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - CM->AGA->AU【4K无缓冲】
+      - 🇸🇬 CM->AGA->SG【4K无缓冲】
+      - Relay_🇪🇪EE-🇯🇵JP_773 |21.59Mb
+      - 🇺🇸 Relay_🇩🇪DE-🇺🇸US_654 |36.59Mb
+      - Relay_🇪🇪EE-🇯🇵JP_780 |28.71Mb
+      - Relay_🇪🇪EE-🇯🇵JP_781 |24.36Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2113 |10.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2124 |11.00Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2130 | 3.26Mb
+      - 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_2131 |18.74Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2935 |60.08Mb
+      - 🇺🇸 Relay_🇺🇸US-🇺🇸US_2939 |12.76Mb
+      - JP_2485 |24.58Mb
+      - 🇯🇵 日本0 | 广移
+      - 🇰🇷 韩国 | 广移
+      - 🇨🇳 ssr台湾
+      - 🇨🇳 ssr台湾 2
+      - 🇸🇬 ssr新加坡
+      - 🇯🇵 ssr日本
+      - 🇭🇰 ssr香港HKT
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
