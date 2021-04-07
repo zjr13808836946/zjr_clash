@@ -10,6 +10,8 @@ proxies:
   - {name: 🇸🇬 ssr新加坡, server: linode-zy.ddns-only.xyz, port: 13351, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 256395:aSnXeX, obfs-param: 4634a256395.microsoft.com}
   - {name: 🇯🇵 ssr日本, server: xgd-01.ddns-only.xyz, port: 13090, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 256395:aSnXeX, obfs-param: 4634a256395.microsoft.com}
   - {name: 🇭🇰 ssr香港HKT, server: guangdong05.ddns-only.xyz, port: 13489, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 256395:aSnXeX, obfs-param: 4634a256395.microsoft.com}
+  - {name: 🇭🇰 香港02, server: dg-hk-node02.linkthink.app, port: 12031, type: ssr, cipher: aes-256-cfb, password: e5opjuLDEQ, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 124438:PZgUR9AyqE, obfs-param: ajax.microsoft.com}
+  - {name: 🇭🇰 香港04, server: 42.157.196.104, port: 20981, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 124438:PZgUR9AyqE, obfs-param: ajax.microsoft.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -21,6 +23,8 @@ proxy-groups:
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
+      - 🇭🇰 香港02
+      - 🇭🇰 香港04
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -32,6 +36,8 @@ proxy-groups:
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
+      - 🇭🇰 香港02
+      - 🇭🇰 香港04
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -43,6 +49,8 @@ proxy-groups:
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
+      - 🇭🇰 香港02
+      - 🇭🇰 香港04
   - name: 📲 电报信息
     type: select
     proxies:
@@ -53,6 +61,8 @@ proxy-groups:
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
+      - 🇭🇰 香港02
+      - 🇭🇰 香港04
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -63,6 +73,8 @@ proxy-groups:
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
+      - 🇭🇰 香港02
+      - 🇭🇰 香港04
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -73,6 +85,8 @@ proxy-groups:
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
+      - 🇭🇰 香港02
+      - 🇭🇰 香港04
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -84,6 +98,8 @@ proxy-groups:
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
+      - 🇭🇰 香港02
+      - 🇭🇰 香港04
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -111,6 +127,8 @@ proxy-groups:
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
+      - 🇭🇰 香港02
+      - 🇭🇰 香港04
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
