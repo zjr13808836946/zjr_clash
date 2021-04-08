@@ -5,341 +5,205 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "🇯🇵 [V1] 日本 02", server: cscu1.franxx.cloud, port: 20001, type: vmess, uuid: aa45ec03-52bf-38cf-bc67-bf347b87ece5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: "🇭🇰 [V1] 香港 03", server: 162.247.5.102, port: 443, type: vmess, uuid: aa45ec03-52bf-38cf-bc67-bf347b87ece5, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /franxx, ws-headers: {Host: d117k1l9smbboc.cloudfront.net}}
-  - {name: "🇸🇬 [V1] 新加坡 02", server: gzcm1.franxx.cloud, port: 20006, type: vmess, uuid: aa45ec03-52bf-38cf-bc67-bf347b87ece5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 AGA->SG, server: aga.linn.ink, port: 22900, type: vmess, uuid: 91f497a1-26b8-4214-af1d-3f31649582f8, alterId: 100, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾 A-01 *原生 | x1, server: gzydv.sttcloud.xyz, port: 30003, type: vmess, uuid: 3708a719-e402-38d8-9a58-06a6c09945c6, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ka, ws-headers: {Host: gzydv.sttcloud.xyz}}
-  - {name: 🇨🇳 TW, server: 139.227.160.144, port: 10004, type: vmess, uuid: 55659d9f-8d1c-43cb-81c7-023b04c53759, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: m5.mogu66.com:208, server: 120.232.41.6, port: 208, type: ss, cipher: aes-128-gcm, password: Iclfj2cij}
-  - {name: 🇺🇸 AGA->US, server: aga.linn.ink, port: 22600, type: vmess, uuid: 91f497a1-26b8-4214-af1d-3f31649582f8, alterId: 100, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_4952 |16.53Mb, server: 99.83.249.22, port: 32315, type: vmess, uuid: 450474f7-9727-4879-950e-3a5a920875e6, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 A-02 *NF | x1, server: gzydn1.sttcloud.xyz, port: 20571, type: vmess, uuid: 3708a719-e402-38d8-9a58-06a6c09945c6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hka, ws-headers: {Host: gzydn1.sttcloud.xyz}}
-  - {name: 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动, server: 120.232.41.61, port: 14204, type: vmess, uuid: 84638de7-8cd6-423e-b68c-b860bb4d67e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.232.41.61}}
-  - {name: 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通, server: 116.162.102.202, port: 14202, type: vmess, uuid: 84638de7-8cd6-423e-b68c-b860bb4d67e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
-  - {name: 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通, server: 116.162.102.202, port: 14200, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
-  - {name: 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2, server: 116.162.102.202, port: 14202, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
-  - {name: 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通, server: 116.162.102.202, port: 14204, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
   - {name: 🇨🇳 TW_103.152.151.5：38747, server: 103.152.151.5, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
-  - {name: 🇺🇸 US_4972 |17.96Mb, server: 99.83.249.22, port: 32315, type: vmess, uuid: 450474f7-9727-4879-950e-3a5a920875e6, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 【Lv.1】台湾2 | 移动直连, server: 210.61.46.174, port: 443, type: vmess, uuid: 84638de7-8cd6-423e-b68c-b860bb4d67e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 210.61.46.174}}
+  - {name: 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动, server: 120.232.41.61, port: 14202, type: vmess, uuid: 84638de7-8cd6-423e-b68c-b860bb4d67e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.232.41.61}}
+  - {name: 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2, server: 120.232.41.61, port: 14202, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.232.41.61}}
+  - {name: 🇨🇳 TW_103.152.151.3：35294, server: 103.152.151.3, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
   - {name: 🇨🇳 ssr台湾, server: guangdong-gugu.ddns-only.xyz, port: 13300, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 256395:aSnXeX, obfs-param: 4634a256395.microsoft.com}
   - {name: 🇨🇳 ssr台湾 2, server: guangdong-gugu.ddns-only.xyz, port: 13302, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 256395:aSnXeX, obfs-param: 4634a256395.microsoft.com}
   - {name: 🇸🇬 ssr新加坡, server: linode-zy.ddns-only.xyz, port: 13351, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 256395:aSnXeX, obfs-param: 4634a256395.microsoft.com}
   - {name: 🇯🇵 ssr日本, server: xgd-01.ddns-only.xyz, port: 13090, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 256395:aSnXeX, obfs-param: 4634a256395.microsoft.com}
   - {name: 🇭🇰 ssr香港HKT, server: guangdong05.ddns-only.xyz, port: 13489, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 256395:aSnXeX, obfs-param: 4634a256395.microsoft.com}
   - {name: 🇭🇰 香港02, server: dg-hk-node02.linkthink.app, port: 12031, type: ssr, cipher: aes-256-cfb, password: e5opjuLDEQ, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 124438:PZgUR9AyqE, obfs-param: ajax.microsoft.com}
-  - {name: 🇭🇰 香港04, server: 42.157.196.104, port: 20981, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 124438:PZgUR9AyqE, obfs-param: ajax.microsoft.com}
-  - {name: 🇨🇳 台湾-BS023*, server: 125.46.39.22, port: 10000, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
   - {name: 🇨🇳 台湾-BS024*, server: 125.46.39.22, port: 10001, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
   - {name: 🇨🇳 台湾-BS026*, server: 125.46.39.22, port: 10004, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
   - {name: 🇸🇬 新加坡-BS151^+, server: cn1.sczssr.xyz, port: 10012, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
-  - {name: 🇯🇵 日本-BS032^+, server: 161.189.112.167, port: 10002, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
-  - {name: 🇯🇵 日本-BS034^+, server: 161.189.112.167, port: 10001, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
   - {name: 🇯🇵 日本-BS035^+, server: 161.189.112.167, port: 11060, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
   - {name: 🇯🇵 日本-BS131^+, server: cn1.sczssr.xyz, port: 10011, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
-  - {name: 🇯🇵 日本-BS332^+, server: 52.81.225.33, port: 10002, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
-  - {name: 🇯🇵 日本-BS334^+, server: 52.81.225.33, port: 10001, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
   - {name: 🇯🇵 日本-BS335^+, server: 52.81.225.33, port: 11060, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
   - {name: 🇭🇰 香港-BS012^+, server: 161.189.112.167, port: 10003, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
-  - {name: 🇭🇰 香港-BS311^+, server: 52.81.225.33, port: 10003, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵 [V1] 日本 02
       - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
-      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
       - 🇨🇳 TW_103.152.151.5：38747
-      - 🇺🇸 US_4972 |17.96Mb
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 TW_103.152.151.3：35294
       - 🇨🇳 ssr台湾
       - 🇨🇳 ssr台湾 2
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
       - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 台湾-BS023*
       - 🇨🇳 台湾-BS024*
       - 🇨🇳 台湾-BS026*
       - 🇸🇬 新加坡-BS151^+
-      - 🇯🇵 日本-BS032^+
-      - 🇯🇵 日本-BS034^+
       - 🇯🇵 日本-BS035^+
       - 🇯🇵 日本-BS131^+
-      - 🇯🇵 日本-BS332^+
-      - 🇯🇵 日本-BS334^+
       - 🇯🇵 日本-BS335^+
       - 🇭🇰 香港-BS012^+
-      - 🇭🇰 香港-BS311^+
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 [V1] 日本 02
       - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
-      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
       - 🇨🇳 TW_103.152.151.5：38747
-      - 🇺🇸 US_4972 |17.96Mb
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 TW_103.152.151.3：35294
       - 🇨🇳 ssr台湾
       - 🇨🇳 ssr台湾 2
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
       - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 台湾-BS023*
       - 🇨🇳 台湾-BS024*
       - 🇨🇳 台湾-BS026*
       - 🇸🇬 新加坡-BS151^+
-      - 🇯🇵 日本-BS032^+
-      - 🇯🇵 日本-BS034^+
       - 🇯🇵 日本-BS035^+
       - 🇯🇵 日本-BS131^+
-      - 🇯🇵 日本-BS332^+
-      - 🇯🇵 日本-BS334^+
       - 🇯🇵 日本-BS335^+
       - 🇭🇰 香港-BS012^+
-      - 🇭🇰 香港-BS311^+
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 [V1] 日本 02
       - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
-      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
       - 🇨🇳 TW_103.152.151.5：38747
-      - 🇺🇸 US_4972 |17.96Mb
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 TW_103.152.151.3：35294
       - 🇨🇳 ssr台湾
       - 🇨🇳 ssr台湾 2
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
       - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 台湾-BS023*
       - 🇨🇳 台湾-BS024*
       - 🇨🇳 台湾-BS026*
       - 🇸🇬 新加坡-BS151^+
-      - 🇯🇵 日本-BS032^+
-      - 🇯🇵 日本-BS034^+
       - 🇯🇵 日本-BS035^+
       - 🇯🇵 日本-BS131^+
-      - 🇯🇵 日本-BS332^+
-      - 🇯🇵 日本-BS334^+
       - 🇯🇵 日本-BS335^+
       - 🇭🇰 香港-BS012^+
-      - 🇭🇰 香港-BS311^+
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 [V1] 日本 02
       - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
-      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
       - 🇨🇳 TW_103.152.151.5：38747
-      - 🇺🇸 US_4972 |17.96Mb
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 TW_103.152.151.3：35294
       - 🇨🇳 ssr台湾
       - 🇨🇳 ssr台湾 2
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
       - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 台湾-BS023*
       - 🇨🇳 台湾-BS024*
       - 🇨🇳 台湾-BS026*
       - 🇸🇬 新加坡-BS151^+
-      - 🇯🇵 日本-BS032^+
-      - 🇯🇵 日本-BS034^+
       - 🇯🇵 日本-BS035^+
       - 🇯🇵 日本-BS131^+
-      - 🇯🇵 日本-BS332^+
-      - 🇯🇵 日本-BS334^+
       - 🇯🇵 日本-BS335^+
       - 🇭🇰 香港-BS012^+
-      - 🇭🇰 香港-BS311^+
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇯🇵 [V1] 日本 02
       - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
-      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
       - 🇨🇳 TW_103.152.151.5：38747
-      - 🇺🇸 US_4972 |17.96Mb
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 TW_103.152.151.3：35294
       - 🇨🇳 ssr台湾
       - 🇨🇳 ssr台湾 2
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
       - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 台湾-BS023*
       - 🇨🇳 台湾-BS024*
       - 🇨🇳 台湾-BS026*
       - 🇸🇬 新加坡-BS151^+
-      - 🇯🇵 日本-BS032^+
-      - 🇯🇵 日本-BS034^+
       - 🇯🇵 日本-BS035^+
       - 🇯🇵 日本-BS131^+
-      - 🇯🇵 日本-BS332^+
-      - 🇯🇵 日本-BS334^+
       - 🇯🇵 日本-BS335^+
       - 🇭🇰 香港-BS012^+
-      - 🇭🇰 香港-BS311^+
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 [V1] 日本 02
       - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
-      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
       - 🇨🇳 TW_103.152.151.5：38747
-      - 🇺🇸 US_4972 |17.96Mb
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 TW_103.152.151.3：35294
       - 🇨🇳 ssr台湾
       - 🇨🇳 ssr台湾 2
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
       - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 台湾-BS023*
       - 🇨🇳 台湾-BS024*
       - 🇨🇳 台湾-BS026*
       - 🇸🇬 新加坡-BS151^+
-      - 🇯🇵 日本-BS032^+
-      - 🇯🇵 日本-BS034^+
       - 🇯🇵 日本-BS035^+
       - 🇯🇵 日本-BS131^+
-      - 🇯🇵 日本-BS332^+
-      - 🇯🇵 日本-BS334^+
       - 🇯🇵 日本-BS335^+
       - 🇭🇰 香港-BS012^+
-      - 🇭🇰 香港-BS311^+
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 [V1] 日本 02
       - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
-      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
       - 🇨🇳 TW_103.152.151.5：38747
-      - 🇺🇸 US_4972 |17.96Mb
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 TW_103.152.151.3：35294
       - 🇨🇳 ssr台湾
       - 🇨🇳 ssr台湾 2
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
       - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 台湾-BS023*
       - 🇨🇳 台湾-BS024*
       - 🇨🇳 台湾-BS026*
       - 🇸🇬 新加坡-BS151^+
-      - 🇯🇵 日本-BS032^+
-      - 🇯🇵 日本-BS034^+
       - 🇯🇵 日本-BS035^+
       - 🇯🇵 日本-BS131^+
-      - 🇯🇵 日本-BS332^+
-      - 🇯🇵 日本-BS334^+
       - 🇯🇵 日本-BS335^+
       - 🇭🇰 香港-BS012^+
-      - 🇭🇰 香港-BS311^+
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -362,43 +226,26 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 [V1] 日本 02
       - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
-      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
       - 🇨🇳 TW_103.152.151.5：38747
-      - 🇺🇸 US_4972 |17.96Mb
+      - 🇨🇳 【Lv.1】台湾2 | 移动直连
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动 2
+      - 🇨🇳 TW_103.152.151.3：35294
       - 🇨🇳 ssr台湾
       - 🇨🇳 ssr台湾 2
       - 🇸🇬 ssr新加坡
       - 🇯🇵 ssr日本
       - 🇭🇰 ssr香港HKT
       - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 台湾-BS023*
       - 🇨🇳 台湾-BS024*
       - 🇨🇳 台湾-BS026*
       - 🇸🇬 新加坡-BS151^+
-      - 🇯🇵 日本-BS032^+
-      - 🇯🇵 日本-BS034^+
       - 🇯🇵 日本-BS035^+
       - 🇯🇵 日本-BS131^+
-      - 🇯🇵 日本-BS332^+
-      - 🇯🇵 日本-BS334^+
       - 🇯🇵 日本-BS335^+
       - 🇭🇰 香港-BS012^+
-      - 🇭🇰 香港-BS311^+
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
