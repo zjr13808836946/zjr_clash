@@ -5,181 +5,173 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "🇯🇵 [V1] 日本 02", server: cscu1.franxx.cloud, port: 20001, type: vmess, uuid: aa45ec03-52bf-38cf-bc67-bf347b87ece5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇭🇰 [V1] 香港 03", server: 162.247.5.102, port: 443, type: vmess, uuid: aa45ec03-52bf-38cf-bc67-bf347b87ece5, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /franxx, ws-headers: {Host: d117k1l9smbboc.cloudfront.net}}
-  - {name: "🇸🇬 [V1] 新加坡 02", server: gzcm1.franxx.cloud, port: 20006, type: vmess, uuid: aa45ec03-52bf-38cf-bc67-bf347b87ece5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 AGA->SG, server: aga.linn.ink, port: 22900, type: vmess, uuid: 91f497a1-26b8-4214-af1d-3f31649582f8, alterId: 100, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾 A-01 *原生 | x1, server: gzydv.sttcloud.xyz, port: 30003, type: vmess, uuid: 3708a719-e402-38d8-9a58-06a6c09945c6, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ka, ws-headers: {Host: gzydv.sttcloud.xyz}}
-  - {name: 🇨🇳 TW, server: 139.227.160.144, port: 10004, type: vmess, uuid: 55659d9f-8d1c-43cb-81c7-023b04c53759, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: m5.mogu66.com:208, server: 120.232.41.6, port: 208, type: ss, cipher: aes-128-gcm, password: Iclfj2cij}
-  - {name: 🇺🇸 AGA->US, server: aga.linn.ink, port: 22600, type: vmess, uuid: 91f497a1-26b8-4214-af1d-3f31649582f8, alterId: 100, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_4952 |16.53Mb, server: 99.83.249.22, port: 32315, type: vmess, uuid: 450474f7-9727-4879-950e-3a5a920875e6, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 A-02 *NF | x1, server: gzydn1.sttcloud.xyz, port: 20571, type: vmess, uuid: 3708a719-e402-38d8-9a58-06a6c09945c6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hka, ws-headers: {Host: gzydn1.sttcloud.xyz}}
-  - {name: 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动, server: 120.232.41.61, port: 14204, type: vmess, uuid: 84638de7-8cd6-423e-b68c-b860bb4d67e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.232.41.61}}
-  - {name: 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通, server: 116.162.102.202, port: 14202, type: vmess, uuid: 84638de7-8cd6-423e-b68c-b860bb4d67e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
-  - {name: 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通, server: 116.162.102.202, port: 14200, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
-  - {name: 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2, server: 116.162.102.202, port: 14202, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
-  - {name: 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通, server: 116.162.102.202, port: 14204, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
-  - {name: 🇨🇳 TW_103.152.151.5：38747, server: 103.152.151.5, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: 🇸🇬 【Lv.2】🇸🇬新加坡 | 广州移动, server: 120.232.41.61, port: 14206, type: vmess, uuid: a406a243-6494-4bba-bd17-11113d704bf8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.232.41.61}}
+  - {name: 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通, server: 116.162.102.202, port: 14200, type: vmess, uuid: a406a243-6494-4bba-bd17-11113d704bf8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
+  - {name: 🇨🇳 【Lv.2】🇹🇼台湾② | 湖南联通, server: 116.162.102.202, port: 14203, type: vmess, uuid: a406a243-6494-4bba-bd17-11113d704bf8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
+  - {name: 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通, server: 116.162.102.202, port: 14204, type: vmess, uuid: a406a243-6494-4bba-bd17-11113d704bf8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
+  - {name: 🇸🇬 【Lv.2】🇸🇬新加坡 | 湖南联通, server: 116.162.102.202, port: 14206, type: vmess, uuid: a406a243-6494-4bba-bd17-11113d704bf8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
+  - {name: 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动, server: 120.232.41.61, port: 14202, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 120.232.41.61}}
+  - {name: 🇨🇳 TW_103.152.151.3：35294, server: 103.152.151.3, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: "🇯🇵 [V1] 日本 02", server: cscu1.franxx.cloud, port: 20001, type: vmess, uuid: aa45ec03-52bf-38cf-bc67-bf347b87ece5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2, server: 116.162.102.202, port: 14200, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
+  - {name: 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通, server: 116.162.102.202, port: 14202, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
   - {name: 🇺🇸 US_4972 |17.96Mb, server: 99.83.249.22, port: 32315, type: vmess, uuid: 450474f7-9727-4879-950e-3a5a920875e6, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: AGA->KR, server: aga.linn.ink, port: 22100, type: vmess, uuid: 91f497a1-26b8-4214-af1d-3f31649582f8, alterId: 100, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: CM->AGA->KR, server: v2.linn.ink, port: 22100, type: vmess, uuid: 91f497a1-26b8-4214-af1d-3f31649582f8, alterId: 100, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 【Lv.2】🇹🇼台湾 | 湖南联通, server: 116.162.102.202, port: 14203, type: vmess, uuid: b4f1e84b-4d6a-4bd0-b5ec-5c8a24483467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 116.162.102.202}}
+  - {name: 🇺🇸 US_4972 |17.96Mb 2, server: 99.83.249.22, port: 32315, type: vmess, uuid: 450474f7-9727-4879-950e-3a5a920875e6, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵 [V1] 日本 02
-      - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 广州移动
       - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾② | 湖南联通
       - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
-      - 🇨🇳 TW_103.152.151.5：38747
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 湖南联通
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 TW_103.152.151.3：35294
+      - 🇯🇵 [V1] 日本 02
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
       - 🇺🇸 US_4972 |17.96Mb
+      - AGA->KR
+      - CM->AGA->KR
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 湖南联通
+      - 🇺🇸 US_4972 |17.96Mb 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 [V1] 日本 02
-      - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 广州移动
       - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾② | 湖南联通
       - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
-      - 🇨🇳 TW_103.152.151.5：38747
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 湖南联通
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 TW_103.152.151.3：35294
+      - 🇯🇵 [V1] 日本 02
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
       - 🇺🇸 US_4972 |17.96Mb
+      - AGA->KR
+      - CM->AGA->KR
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 湖南联通
+      - 🇺🇸 US_4972 |17.96Mb 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 [V1] 日本 02
-      - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 广州移动
       - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾② | 湖南联通
       - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
-      - 🇨🇳 TW_103.152.151.5：38747
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 湖南联通
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 TW_103.152.151.3：35294
+      - 🇯🇵 [V1] 日本 02
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
       - 🇺🇸 US_4972 |17.96Mb
+      - AGA->KR
+      - CM->AGA->KR
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 湖南联通
+      - 🇺🇸 US_4972 |17.96Mb 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 [V1] 日本 02
-      - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 广州移动
       - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾② | 湖南联通
       - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
-      - 🇨🇳 TW_103.152.151.5：38747
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 湖南联通
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 TW_103.152.151.3：35294
+      - 🇯🇵 [V1] 日本 02
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
       - 🇺🇸 US_4972 |17.96Mb
+      - AGA->KR
+      - CM->AGA->KR
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 湖南联通
+      - 🇺🇸 US_4972 |17.96Mb 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇯🇵 [V1] 日本 02
-      - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 广州移动
       - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾② | 湖南联通
       - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
-      - 🇨🇳 TW_103.152.151.5：38747
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 湖南联通
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 TW_103.152.151.3：35294
+      - 🇯🇵 [V1] 日本 02
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
       - 🇺🇸 US_4972 |17.96Mb
+      - AGA->KR
+      - CM->AGA->KR
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 湖南联通
+      - 🇺🇸 US_4972 |17.96Mb 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 [V1] 日本 02
-      - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 广州移动
       - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾② | 湖南联通
       - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
-      - 🇨🇳 TW_103.152.151.5：38747
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 湖南联通
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 TW_103.152.151.3：35294
+      - 🇯🇵 [V1] 日本 02
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
       - 🇺🇸 US_4972 |17.96Mb
+      - AGA->KR
+      - CM->AGA->KR
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 湖南联通
+      - 🇺🇸 US_4972 |17.96Mb 2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 [V1] 日本 02
-      - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 广州移动
       - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾② | 湖南联通
       - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
-      - 🇨🇳 TW_103.152.151.5：38747
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 湖南联通
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 TW_103.152.151.3：35294
+      - 🇯🇵 [V1] 日本 02
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
       - 🇺🇸 US_4972 |17.96Mb
+      - AGA->KR
+      - CM->AGA->KR
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 湖南联通
+      - 🇺🇸 US_4972 |17.96Mb 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -202,23 +194,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 [V1] 日本 02
-      - 🇭🇰 [V1] 香港 03
-      - 🇸🇬 [V1] 新加坡 02
-      - 🇸🇬 AGA->SG
-      - 🇨🇳 台湾 A-01 *原生 | x1
-      - 🇨🇳 TW
       - m5.mogu66.com:208
-      - 🇺🇸 AGA->US
-      - 🇺🇸 US_4952 |16.53Mb
-      - 🇭🇰 香港 A-02 *NF | x1
-      - 🇰🇷 【Lv.2】🇰🇷韩国 | 广州移动
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 广州移动
       - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通
-      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通 2
+      - 🇨🇳 【Lv.2】🇹🇼台湾② | 湖南联通
       - 🇰🇷 【Lv.2】🇰🇷韩国 | 湖南联通
-      - 🇨🇳 TW_103.152.151.5：38747
+      - 🇸🇬 【Lv.2】🇸🇬新加坡 | 湖南联通
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 广州移动
+      - 🇨🇳 TW_103.152.151.3：35294
+      - 🇯🇵 [V1] 日本 02
+      - 🇯🇵 【Lv.2】🇯🇵日本 | 湖南联通 2
+      - 🇭🇰 【Lv.2】🇭🇰香港 | 湖南联通
       - 🇺🇸 US_4972 |17.96Mb
+      - AGA->KR
+      - CM->AGA->KR
+      - 🇨🇳 【Lv.2】🇹🇼台湾 | 湖南联通
+      - 🇺🇸 US_4972 |17.96Mb 2
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
