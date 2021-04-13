@@ -5,205 +5,349 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: m5.mogu66.com:208, server: 120.232.41.6, port: 208, type: ss, cipher: aes-128-gcm, password: Iclfj2cij}
-  - {name: bgp1.gemgems.net:18513, server: bgp1.gemgems.net, port: 18513, type: ss, cipher: aes-256-gcm, password: ipZAmyss2mPB}
   - {name: bgp1.gemgems.net:9300, server: bgp1.gemgems.net, port: 9300, type: ss, cipher: aes-256-gcm, password: 3wf6HllIYs0d}
-  - {name: 23.239.2.128:14482, server: 23.239.2.128, port: 14482, type: ss, cipher: aes-256-gcm, password: b738FrNLXhB0}
-  - {name: 185.172.114.77:11286, server: 185.172.114.77, port: 11286, type: ss, cipher: aes-256-gcm, password: aonz4mHWhmet}
-  - {name: 185.160.24.199:14301, server: 185.160.24.199, port: 14301, type: ss, cipher: aes-256-gcm, password: WWtYTj7GzW9c}
-  - {name: bgp4.gemgems.net:10289, server: bgp4.gemgems.net, port: 10289, type: ss, cipher: aes-256-gcm, password: plAC8oF2SpMh}
   - {name: bgp4.gemgems.net:12431, server: bgp4.gemgems.net, port: 12431, type: ss, cipher: aes-256-gcm, password: RIjuZSqiiXP4}
-  - {name: bgp4.gemgems.net:10760, server: bgp4.gemgems.net, port: 10760, type: ss, cipher: aes-256-gcm, password: kmaWmvE8fWdP}
   - {name: 🇨🇳 TW_103.152.151.19：33992, server: 103.152.151.19, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: "🇸🇬 [Lite] SG 01 *DNS", server: a8b53a5706c2d1995.awsglobalaccelerator.com, port: 44444, type: vmess, uuid: 8557a42f-5f60-432c-8c66-330c6ae88e45, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: a8b53a5706c2d1995.awsglobalaccelerator.com}}
-  - {name: "🇸🇬 [Pro] SG 04", server: 76.223.87.245, port: 40004, type: vmess, uuid: 8557a42f-5f60-432c-8c66-330c6ae88e45, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 76.223.87.245}}
-  - {name: "🇸🇬 [Pro] SG 08", server: 112.13.205.144, port: 20001, type: vmess, uuid: 8557a42f-5f60-432c-8c66-330c6ae88e45, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 112.13.205.144}}
-  - {name: "🇭🇰 [Pro] HK 02", server: jm.mfjlb.top, port: 20032, type: vmess, uuid: 8557a42f-5f60-432c-8c66-330c6ae88e45, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: jm.mfjlb.top}}
-  - {name: "🇭🇰 [Pro] HK 07", server: 183.236.57.115, port: 44444, type: vmess, uuid: 8557a42f-5f60-432c-8c66-330c6ae88e45, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 183.236.57.115}}
-  - {name: "🇭🇰 [Pro] HK 09", server: 112.13.205.144, port: 20003, type: vmess, uuid: 8557a42f-5f60-432c-8c66-330c6ae88e45, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 112.13.205.144}}
-  - {name: "[Pro] JP 07", server: cslt.mfjlb.top, port: 55021, type: vmess, uuid: 8557a42f-5f60-432c-8c66-330c6ae88e45, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cslt.mfjlb.top}}
-  - {name: "🇭🇰 [Lite] HK 03", server: hk.agafk.xyz, port: 10005, type: vmess, uuid: 8557a42f-5f60-432c-8c66-330c6ae88e45, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk.agafk.xyz}}
-  - {name: "[Lite] JP 01", server: 183.232.56.80, port: 10286, type: vmess, uuid: 8557a42f-5f60-432c-8c66-330c6ae88e45, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 183.232.56.80}}
-  - {name: 🇨🇳 CN->KR【下载专用】, server: kr.linn.ink, port: 22100, type: vmess, uuid: 91f497a1-26b8-4214-af1d-3f31649582f8, alterId: 100, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK2(IPLC) - 深港国际专线, server: cn1.relay.iplc.pro, port: 52001, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK3(IPLC) - 深港国际专线, server: cn1.relay.iplc.pro, port: 52002, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK5(IPLC) - 深港国际专线, server: cn1.relay.iplc.pro, port: 52012, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 JP1(IPLC) - 深日国际专线, server: cn1.relay.iplc.pro, port: 52005, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 JP2(IPLC) - 深日国际专线, server: cn1.relay.iplc.pro, port: 52006, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK5(IPLC) - 沪港国际专线, server: cn2.relay.iplc.pro, port: 52012, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 JP1(IPLC) - 沪日国际专线, server: cn2.relay.iplc.pro, port: 52005, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK2(Direct) - 香港直连专线, server: hk2.direct.iplc.pro, port: 52000, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK3(Direct) - 香港直连专线, server: hk3.direct.iplc.pro, port: 52000, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK4(Direct) - 香港直连专线, server: hk4.direct.iplc.pro, port: 52000, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 https://www.mattkaydiary.com|Best!Transit*Shanghai-HK*CN2-GIA04, server: transite-shcn2-04.iplc188.com, port: 10011, type: vmess, uuid: 62ad9ff6-84b2-49f1-9f0f-43a7dad92210, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 https://www.mattkaydiary.com|Best!Transit*Shanghai-Singapore*CN2-GIA04, server: transite-shcn2-04.iplc188.com, port: 10012, type: vmess, uuid: 62ad9ff6-84b2-49f1-9f0f-43a7dad92210, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03, server: gzcm03.iplc188.com, port: 10012, type: vmess, uuid: 62ad9ff6-84b2-49f1-9f0f-43a7dad92210, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 https://www.mattkaydiary.com|HK-香港, server: 183.236.57.157, port: 39023, type: vmess, uuid: 0386674d-aa32-35b3-b6b1-cb67eef0434e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 https://www.mattkaydiary.com|TW-台湾, server: 183.236.57.157, port: 39022, type: vmess, uuid: 0386674d-aa32-35b3-b6b1-cb67eef0434e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK2(IPLC) - 深港国际专线 2, server: cn1.relay.iplc.pro, port: 52001, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK3(IPLC) - 深港国际专线 2, server: cn1.relay.iplc.pro, port: 52002, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 JP2(IPLC) - 深日国际专线 2, server: cn1.relay.iplc.pro, port: 52006, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 JP2(IPLC) - 沪日国际专线, server: cn2.relay.iplc.pro, port: 52006, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK2(Direct) - 香港直连专线 2, server: hk2.direct.iplc.pro, port: 52000, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK3(Direct) - 香港直连专线 2, server: hk3.direct.iplc.pro, port: 52000, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK4(Direct) - 香港直连专线 2, server: hk4.direct.iplc.pro, port: 52000, type: vmess, uuid: 01e66457-331e-4610-8a30-126f26a2bfea, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: bgp4.gemgems.net:10760, server: bgp4.gemgems.net, port: 10760, type: ss, cipher: aes-256-gcm, password: kmaWmvE8fWdP}
+  - {name: bgp1.gemgems.net:9123, server: bgp1.gemgems.net, port: 9123, type: ss, cipher: aes-256-gcm, password: ei0UmSE2sO76}
+  - {name: bgp3.gemgems.net:9657, server: bgp3.gemgems.net, port: 9657, type: ss, cipher: aes-256-gcm, password: 4StvDXMGOxmi}
+  - {name: 🇭🇰 https://www.mattkaydiary.com|Backup!Transit*Shanghai-HK*CN2-GIA11, server: p653-n2-sha.t5.work, port: 10001, type: vmess, uuid: 62ad9ff6-84b2-49f1-9f0f-43a7dad92210, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 CN_743, server: global-canton-sg-01.mugun.xyz, port: 60018, type: vmess, uuid: fc345b49-b6bf-3268-8be9-bfce6da92543, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: global-canton-sg-01.mugun.xyz}}
+  - {name: 🇨🇳 CN_747, server: global-canton-sg-01.mugun.xyz, port: 60020, type: vmess, uuid: fc345b49-b6bf-3268-8be9-bfce6da92543, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: global-canton-sg-01.mugun.xyz}}
+  - {name: 🇨🇳 CN_764, server: global-canton-sg-01.mugun.xyz, port: 60022, type: vmess, uuid: fc345b49-b6bf-3268-8be9-bfce6da92543, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: global-canton-sg-01.mugun.xyz}}
+  - {name: 🇨🇳 CN_766, server: global-canton-sg-01.mugun.xyz, port: 60023, type: vmess, uuid: fc345b49-b6bf-3268-8be9-bfce6da92543, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: global-canton-sg-01.mugun.xyz}}
+  - {name: 🇨🇳 CN_767, server: global-canton-hk-a-01.mugun.xyz, port: 2006, type: vmess, uuid: fc345b49-b6bf-3268-8be9-bfce6da92543, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: global-canton-hk-a-01.mugun.xyz}}
+  - {name: 🇨🇳 CN_792, server: global-canton-hk-a-01.mugun.xyz, port: 2088, type: vmess, uuid: fc345b49-b6bf-3268-8be9-bfce6da92543, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: global-canton-hk-a-01.mugun.xyz}}
+  - {name: 🇨🇳 CN_796, server: global-canton-hk-a-01.mugun.xyz, port: 60008, type: vmess, uuid: fc345b49-b6bf-3268-8be9-bfce6da92543, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: global-canton-hk-a-01.mugun.xyz}}
+  - {name: 🇨🇳 CN_798, server: global-canton-jp-01.mugun.xyz, port: 2004, type: vmess, uuid: fc345b49-b6bf-3268-8be9-bfce6da92543, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: global-canton-jp-01.mugun.xyz}}
+  - {name: 🇨🇳 CN_799, server: global-canton-jp-01.mugun.xyz, port: 2005, type: vmess, uuid: fc345b49-b6bf-3268-8be9-bfce6da92543, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: global-canton-jp-01.mugun.xyz}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - m5.mogu66.com:208
-      - bgp1.gemgems.net:18513
       - bgp1.gemgems.net:9300
-      - 23.239.2.128:14482
-      - 185.172.114.77:11286
-      - 185.160.24.199:14301
-      - bgp4.gemgems.net:10289
       - bgp4.gemgems.net:12431
-      - bgp4.gemgems.net:10760
       - 🇨🇳 TW_103.152.151.19：33992
-      - 🇸🇬 [Lite] SG 01 *DNS
-      - 🇸🇬 [Pro] SG 04
-      - 🇸🇬 [Pro] SG 08
-      - 🇭🇰 [Pro] HK 02
-      - 🇭🇰 [Pro] HK 07
-      - 🇭🇰 [Pro] HK 09
-      - "[Pro] JP 07"
-      - 🇭🇰 [Lite] HK 03
-      - "[Lite] JP 01"
-      - 🇨🇳 CN->KR【下载专用】
+      - 🇭🇰 HK2(IPLC) - 深港国际专线
+      - 🇭🇰 HK3(IPLC) - 深港国际专线
+      - 🇭🇰 HK5(IPLC) - 深港国际专线
+      - 🇯🇵 JP1(IPLC) - 深日国际专线
+      - 🇯🇵 JP2(IPLC) - 深日国际专线
+      - 🇭🇰 HK5(IPLC) - 沪港国际专线
+      - 🇯🇵 JP1(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线
+      - 🇭🇰 HK3(Direct) - 香港直连专线
+      - 🇭🇰 HK4(Direct) - 香港直连专线
+      - 🇭🇰 https://www.mattkaydiary.com|Best!Transit*Shanghai-HK*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Best!Transit*Shanghai-Singapore*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
+      - 🇭🇰 https://www.mattkaydiary.com|HK-香港
+      - 🇨🇳 https://www.mattkaydiary.com|TW-台湾
+      - 🇭🇰 HK2(IPLC) - 深港国际专线 2
+      - 🇭🇰 HK3(IPLC) - 深港国际专线 2
+      - 🇯🇵 JP2(IPLC) - 深日国际专线 2
+      - 🇯🇵 JP2(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线 2
+      - 🇭🇰 HK3(Direct) - 香港直连专线 2
+      - 🇭🇰 HK4(Direct) - 香港直连专线 2
+      - bgp4.gemgems.net:10760
+      - bgp1.gemgems.net:9123
+      - bgp3.gemgems.net:9657
+      - 🇭🇰 https://www.mattkaydiary.com|Backup!Transit*Shanghai-HK*CN2-GIA11
+      - 🇨🇳 CN_743
+      - 🇨🇳 CN_747
+      - 🇨🇳 CN_764
+      - 🇨🇳 CN_766
+      - 🇨🇳 CN_767
+      - 🇨🇳 CN_792
+      - 🇨🇳 CN_796
+      - 🇨🇳 CN_798
+      - 🇨🇳 CN_799
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - m5.mogu66.com:208
-      - bgp1.gemgems.net:18513
       - bgp1.gemgems.net:9300
-      - 23.239.2.128:14482
-      - 185.172.114.77:11286
-      - 185.160.24.199:14301
-      - bgp4.gemgems.net:10289
       - bgp4.gemgems.net:12431
-      - bgp4.gemgems.net:10760
       - 🇨🇳 TW_103.152.151.19：33992
-      - 🇸🇬 [Lite] SG 01 *DNS
-      - 🇸🇬 [Pro] SG 04
-      - 🇸🇬 [Pro] SG 08
-      - 🇭🇰 [Pro] HK 02
-      - 🇭🇰 [Pro] HK 07
-      - 🇭🇰 [Pro] HK 09
-      - "[Pro] JP 07"
-      - 🇭🇰 [Lite] HK 03
-      - "[Lite] JP 01"
-      - 🇨🇳 CN->KR【下载专用】
+      - 🇭🇰 HK2(IPLC) - 深港国际专线
+      - 🇭🇰 HK3(IPLC) - 深港国际专线
+      - 🇭🇰 HK5(IPLC) - 深港国际专线
+      - 🇯🇵 JP1(IPLC) - 深日国际专线
+      - 🇯🇵 JP2(IPLC) - 深日国际专线
+      - 🇭🇰 HK5(IPLC) - 沪港国际专线
+      - 🇯🇵 JP1(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线
+      - 🇭🇰 HK3(Direct) - 香港直连专线
+      - 🇭🇰 HK4(Direct) - 香港直连专线
+      - 🇭🇰 https://www.mattkaydiary.com|Best!Transit*Shanghai-HK*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Best!Transit*Shanghai-Singapore*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
+      - 🇭🇰 https://www.mattkaydiary.com|HK-香港
+      - 🇨🇳 https://www.mattkaydiary.com|TW-台湾
+      - 🇭🇰 HK2(IPLC) - 深港国际专线 2
+      - 🇭🇰 HK3(IPLC) - 深港国际专线 2
+      - 🇯🇵 JP2(IPLC) - 深日国际专线 2
+      - 🇯🇵 JP2(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线 2
+      - 🇭🇰 HK3(Direct) - 香港直连专线 2
+      - 🇭🇰 HK4(Direct) - 香港直连专线 2
+      - bgp4.gemgems.net:10760
+      - bgp1.gemgems.net:9123
+      - bgp3.gemgems.net:9657
+      - 🇭🇰 https://www.mattkaydiary.com|Backup!Transit*Shanghai-HK*CN2-GIA11
+      - 🇨🇳 CN_743
+      - 🇨🇳 CN_747
+      - 🇨🇳 CN_764
+      - 🇨🇳 CN_766
+      - 🇨🇳 CN_767
+      - 🇨🇳 CN_792
+      - 🇨🇳 CN_796
+      - 🇨🇳 CN_798
+      - 🇨🇳 CN_799
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - m5.mogu66.com:208
-      - bgp1.gemgems.net:18513
       - bgp1.gemgems.net:9300
-      - 23.239.2.128:14482
-      - 185.172.114.77:11286
-      - 185.160.24.199:14301
-      - bgp4.gemgems.net:10289
       - bgp4.gemgems.net:12431
-      - bgp4.gemgems.net:10760
       - 🇨🇳 TW_103.152.151.19：33992
-      - 🇸🇬 [Lite] SG 01 *DNS
-      - 🇸🇬 [Pro] SG 04
-      - 🇸🇬 [Pro] SG 08
-      - 🇭🇰 [Pro] HK 02
-      - 🇭🇰 [Pro] HK 07
-      - 🇭🇰 [Pro] HK 09
-      - "[Pro] JP 07"
-      - 🇭🇰 [Lite] HK 03
-      - "[Lite] JP 01"
-      - 🇨🇳 CN->KR【下载专用】
+      - 🇭🇰 HK2(IPLC) - 深港国际专线
+      - 🇭🇰 HK3(IPLC) - 深港国际专线
+      - 🇭🇰 HK5(IPLC) - 深港国际专线
+      - 🇯🇵 JP1(IPLC) - 深日国际专线
+      - 🇯🇵 JP2(IPLC) - 深日国际专线
+      - 🇭🇰 HK5(IPLC) - 沪港国际专线
+      - 🇯🇵 JP1(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线
+      - 🇭🇰 HK3(Direct) - 香港直连专线
+      - 🇭🇰 HK4(Direct) - 香港直连专线
+      - 🇭🇰 https://www.mattkaydiary.com|Best!Transit*Shanghai-HK*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Best!Transit*Shanghai-Singapore*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
+      - 🇭🇰 https://www.mattkaydiary.com|HK-香港
+      - 🇨🇳 https://www.mattkaydiary.com|TW-台湾
+      - 🇭🇰 HK2(IPLC) - 深港国际专线 2
+      - 🇭🇰 HK3(IPLC) - 深港国际专线 2
+      - 🇯🇵 JP2(IPLC) - 深日国际专线 2
+      - 🇯🇵 JP2(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线 2
+      - 🇭🇰 HK3(Direct) - 香港直连专线 2
+      - 🇭🇰 HK4(Direct) - 香港直连专线 2
+      - bgp4.gemgems.net:10760
+      - bgp1.gemgems.net:9123
+      - bgp3.gemgems.net:9657
+      - 🇭🇰 https://www.mattkaydiary.com|Backup!Transit*Shanghai-HK*CN2-GIA11
+      - 🇨🇳 CN_743
+      - 🇨🇳 CN_747
+      - 🇨🇳 CN_764
+      - 🇨🇳 CN_766
+      - 🇨🇳 CN_767
+      - 🇨🇳 CN_792
+      - 🇨🇳 CN_796
+      - 🇨🇳 CN_798
+      - 🇨🇳 CN_799
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - m5.mogu66.com:208
-      - bgp1.gemgems.net:18513
       - bgp1.gemgems.net:9300
-      - 23.239.2.128:14482
-      - 185.172.114.77:11286
-      - 185.160.24.199:14301
-      - bgp4.gemgems.net:10289
       - bgp4.gemgems.net:12431
-      - bgp4.gemgems.net:10760
       - 🇨🇳 TW_103.152.151.19：33992
-      - 🇸🇬 [Lite] SG 01 *DNS
-      - 🇸🇬 [Pro] SG 04
-      - 🇸🇬 [Pro] SG 08
-      - 🇭🇰 [Pro] HK 02
-      - 🇭🇰 [Pro] HK 07
-      - 🇭🇰 [Pro] HK 09
-      - "[Pro] JP 07"
-      - 🇭🇰 [Lite] HK 03
-      - "[Lite] JP 01"
-      - 🇨🇳 CN->KR【下载专用】
+      - 🇭🇰 HK2(IPLC) - 深港国际专线
+      - 🇭🇰 HK3(IPLC) - 深港国际专线
+      - 🇭🇰 HK5(IPLC) - 深港国际专线
+      - 🇯🇵 JP1(IPLC) - 深日国际专线
+      - 🇯🇵 JP2(IPLC) - 深日国际专线
+      - 🇭🇰 HK5(IPLC) - 沪港国际专线
+      - 🇯🇵 JP1(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线
+      - 🇭🇰 HK3(Direct) - 香港直连专线
+      - 🇭🇰 HK4(Direct) - 香港直连专线
+      - 🇭🇰 https://www.mattkaydiary.com|Best!Transit*Shanghai-HK*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Best!Transit*Shanghai-Singapore*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
+      - 🇭🇰 https://www.mattkaydiary.com|HK-香港
+      - 🇨🇳 https://www.mattkaydiary.com|TW-台湾
+      - 🇭🇰 HK2(IPLC) - 深港国际专线 2
+      - 🇭🇰 HK3(IPLC) - 深港国际专线 2
+      - 🇯🇵 JP2(IPLC) - 深日国际专线 2
+      - 🇯🇵 JP2(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线 2
+      - 🇭🇰 HK3(Direct) - 香港直连专线 2
+      - 🇭🇰 HK4(Direct) - 香港直连专线 2
+      - bgp4.gemgems.net:10760
+      - bgp1.gemgems.net:9123
+      - bgp3.gemgems.net:9657
+      - 🇭🇰 https://www.mattkaydiary.com|Backup!Transit*Shanghai-HK*CN2-GIA11
+      - 🇨🇳 CN_743
+      - 🇨🇳 CN_747
+      - 🇨🇳 CN_764
+      - 🇨🇳 CN_766
+      - 🇨🇳 CN_767
+      - 🇨🇳 CN_792
+      - 🇨🇳 CN_796
+      - 🇨🇳 CN_798
+      - 🇨🇳 CN_799
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - m5.mogu66.com:208
-      - bgp1.gemgems.net:18513
       - bgp1.gemgems.net:9300
-      - 23.239.2.128:14482
-      - 185.172.114.77:11286
-      - 185.160.24.199:14301
-      - bgp4.gemgems.net:10289
       - bgp4.gemgems.net:12431
-      - bgp4.gemgems.net:10760
       - 🇨🇳 TW_103.152.151.19：33992
-      - 🇸🇬 [Lite] SG 01 *DNS
-      - 🇸🇬 [Pro] SG 04
-      - 🇸🇬 [Pro] SG 08
-      - 🇭🇰 [Pro] HK 02
-      - 🇭🇰 [Pro] HK 07
-      - 🇭🇰 [Pro] HK 09
-      - "[Pro] JP 07"
-      - 🇭🇰 [Lite] HK 03
-      - "[Lite] JP 01"
-      - 🇨🇳 CN->KR【下载专用】
+      - 🇭🇰 HK2(IPLC) - 深港国际专线
+      - 🇭🇰 HK3(IPLC) - 深港国际专线
+      - 🇭🇰 HK5(IPLC) - 深港国际专线
+      - 🇯🇵 JP1(IPLC) - 深日国际专线
+      - 🇯🇵 JP2(IPLC) - 深日国际专线
+      - 🇭🇰 HK5(IPLC) - 沪港国际专线
+      - 🇯🇵 JP1(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线
+      - 🇭🇰 HK3(Direct) - 香港直连专线
+      - 🇭🇰 HK4(Direct) - 香港直连专线
+      - 🇭🇰 https://www.mattkaydiary.com|Best!Transit*Shanghai-HK*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Best!Transit*Shanghai-Singapore*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
+      - 🇭🇰 https://www.mattkaydiary.com|HK-香港
+      - 🇨🇳 https://www.mattkaydiary.com|TW-台湾
+      - 🇭🇰 HK2(IPLC) - 深港国际专线 2
+      - 🇭🇰 HK3(IPLC) - 深港国际专线 2
+      - 🇯🇵 JP2(IPLC) - 深日国际专线 2
+      - 🇯🇵 JP2(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线 2
+      - 🇭🇰 HK3(Direct) - 香港直连专线 2
+      - 🇭🇰 HK4(Direct) - 香港直连专线 2
+      - bgp4.gemgems.net:10760
+      - bgp1.gemgems.net:9123
+      - bgp3.gemgems.net:9657
+      - 🇭🇰 https://www.mattkaydiary.com|Backup!Transit*Shanghai-HK*CN2-GIA11
+      - 🇨🇳 CN_743
+      - 🇨🇳 CN_747
+      - 🇨🇳 CN_764
+      - 🇨🇳 CN_766
+      - 🇨🇳 CN_767
+      - 🇨🇳 CN_792
+      - 🇨🇳 CN_796
+      - 🇨🇳 CN_798
+      - 🇨🇳 CN_799
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - m5.mogu66.com:208
-      - bgp1.gemgems.net:18513
       - bgp1.gemgems.net:9300
-      - 23.239.2.128:14482
-      - 185.172.114.77:11286
-      - 185.160.24.199:14301
-      - bgp4.gemgems.net:10289
       - bgp4.gemgems.net:12431
-      - bgp4.gemgems.net:10760
       - 🇨🇳 TW_103.152.151.19：33992
-      - 🇸🇬 [Lite] SG 01 *DNS
-      - 🇸🇬 [Pro] SG 04
-      - 🇸🇬 [Pro] SG 08
-      - 🇭🇰 [Pro] HK 02
-      - 🇭🇰 [Pro] HK 07
-      - 🇭🇰 [Pro] HK 09
-      - "[Pro] JP 07"
-      - 🇭🇰 [Lite] HK 03
-      - "[Lite] JP 01"
-      - 🇨🇳 CN->KR【下载专用】
+      - 🇭🇰 HK2(IPLC) - 深港国际专线
+      - 🇭🇰 HK3(IPLC) - 深港国际专线
+      - 🇭🇰 HK5(IPLC) - 深港国际专线
+      - 🇯🇵 JP1(IPLC) - 深日国际专线
+      - 🇯🇵 JP2(IPLC) - 深日国际专线
+      - 🇭🇰 HK5(IPLC) - 沪港国际专线
+      - 🇯🇵 JP1(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线
+      - 🇭🇰 HK3(Direct) - 香港直连专线
+      - 🇭🇰 HK4(Direct) - 香港直连专线
+      - 🇭🇰 https://www.mattkaydiary.com|Best!Transit*Shanghai-HK*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Best!Transit*Shanghai-Singapore*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
+      - 🇭🇰 https://www.mattkaydiary.com|HK-香港
+      - 🇨🇳 https://www.mattkaydiary.com|TW-台湾
+      - 🇭🇰 HK2(IPLC) - 深港国际专线 2
+      - 🇭🇰 HK3(IPLC) - 深港国际专线 2
+      - 🇯🇵 JP2(IPLC) - 深日国际专线 2
+      - 🇯🇵 JP2(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线 2
+      - 🇭🇰 HK3(Direct) - 香港直连专线 2
+      - 🇭🇰 HK4(Direct) - 香港直连专线 2
+      - bgp4.gemgems.net:10760
+      - bgp1.gemgems.net:9123
+      - bgp3.gemgems.net:9657
+      - 🇭🇰 https://www.mattkaydiary.com|Backup!Transit*Shanghai-HK*CN2-GIA11
+      - 🇨🇳 CN_743
+      - 🇨🇳 CN_747
+      - 🇨🇳 CN_764
+      - 🇨🇳 CN_766
+      - 🇨🇳 CN_767
+      - 🇨🇳 CN_792
+      - 🇨🇳 CN_796
+      - 🇨🇳 CN_798
+      - 🇨🇳 CN_799
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - m5.mogu66.com:208
-      - bgp1.gemgems.net:18513
       - bgp1.gemgems.net:9300
-      - 23.239.2.128:14482
-      - 185.172.114.77:11286
-      - 185.160.24.199:14301
-      - bgp4.gemgems.net:10289
       - bgp4.gemgems.net:12431
-      - bgp4.gemgems.net:10760
       - 🇨🇳 TW_103.152.151.19：33992
-      - 🇸🇬 [Lite] SG 01 *DNS
-      - 🇸🇬 [Pro] SG 04
-      - 🇸🇬 [Pro] SG 08
-      - 🇭🇰 [Pro] HK 02
-      - 🇭🇰 [Pro] HK 07
-      - 🇭🇰 [Pro] HK 09
-      - "[Pro] JP 07"
-      - 🇭🇰 [Lite] HK 03
-      - "[Lite] JP 01"
-      - 🇨🇳 CN->KR【下载专用】
+      - 🇭🇰 HK2(IPLC) - 深港国际专线
+      - 🇭🇰 HK3(IPLC) - 深港国际专线
+      - 🇭🇰 HK5(IPLC) - 深港国际专线
+      - 🇯🇵 JP1(IPLC) - 深日国际专线
+      - 🇯🇵 JP2(IPLC) - 深日国际专线
+      - 🇭🇰 HK5(IPLC) - 沪港国际专线
+      - 🇯🇵 JP1(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线
+      - 🇭🇰 HK3(Direct) - 香港直连专线
+      - 🇭🇰 HK4(Direct) - 香港直连专线
+      - 🇭🇰 https://www.mattkaydiary.com|Best!Transit*Shanghai-HK*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Best!Transit*Shanghai-Singapore*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
+      - 🇭🇰 https://www.mattkaydiary.com|HK-香港
+      - 🇨🇳 https://www.mattkaydiary.com|TW-台湾
+      - 🇭🇰 HK2(IPLC) - 深港国际专线 2
+      - 🇭🇰 HK3(IPLC) - 深港国际专线 2
+      - 🇯🇵 JP2(IPLC) - 深日国际专线 2
+      - 🇯🇵 JP2(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线 2
+      - 🇭🇰 HK3(Direct) - 香港直连专线 2
+      - 🇭🇰 HK4(Direct) - 香港直连专线 2
+      - bgp4.gemgems.net:10760
+      - bgp1.gemgems.net:9123
+      - bgp3.gemgems.net:9657
+      - 🇭🇰 https://www.mattkaydiary.com|Backup!Transit*Shanghai-HK*CN2-GIA11
+      - 🇨🇳 CN_743
+      - 🇨🇳 CN_747
+      - 🇨🇳 CN_764
+      - 🇨🇳 CN_766
+      - 🇨🇳 CN_767
+      - 🇨🇳 CN_792
+      - 🇨🇳 CN_796
+      - 🇨🇳 CN_798
+      - 🇨🇳 CN_799
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -226,26 +370,44 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - m5.mogu66.com:208
-      - bgp1.gemgems.net:18513
       - bgp1.gemgems.net:9300
-      - 23.239.2.128:14482
-      - 185.172.114.77:11286
-      - 185.160.24.199:14301
-      - bgp4.gemgems.net:10289
       - bgp4.gemgems.net:12431
-      - bgp4.gemgems.net:10760
       - 🇨🇳 TW_103.152.151.19：33992
-      - 🇸🇬 [Lite] SG 01 *DNS
-      - 🇸🇬 [Pro] SG 04
-      - 🇸🇬 [Pro] SG 08
-      - 🇭🇰 [Pro] HK 02
-      - 🇭🇰 [Pro] HK 07
-      - 🇭🇰 [Pro] HK 09
-      - "[Pro] JP 07"
-      - 🇭🇰 [Lite] HK 03
-      - "[Lite] JP 01"
-      - 🇨🇳 CN->KR【下载专用】
+      - 🇭🇰 HK2(IPLC) - 深港国际专线
+      - 🇭🇰 HK3(IPLC) - 深港国际专线
+      - 🇭🇰 HK5(IPLC) - 深港国际专线
+      - 🇯🇵 JP1(IPLC) - 深日国际专线
+      - 🇯🇵 JP2(IPLC) - 深日国际专线
+      - 🇭🇰 HK5(IPLC) - 沪港国际专线
+      - 🇯🇵 JP1(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线
+      - 🇭🇰 HK3(Direct) - 香港直连专线
+      - 🇭🇰 HK4(Direct) - 香港直连专线
+      - 🇭🇰 https://www.mattkaydiary.com|Best!Transit*Shanghai-HK*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Best!Transit*Shanghai-Singapore*CN2-GIA04
+      - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
+      - 🇭🇰 https://www.mattkaydiary.com|HK-香港
+      - 🇨🇳 https://www.mattkaydiary.com|TW-台湾
+      - 🇭🇰 HK2(IPLC) - 深港国际专线 2
+      - 🇭🇰 HK3(IPLC) - 深港国际专线 2
+      - 🇯🇵 JP2(IPLC) - 深日国际专线 2
+      - 🇯🇵 JP2(IPLC) - 沪日国际专线
+      - 🇭🇰 HK2(Direct) - 香港直连专线 2
+      - 🇭🇰 HK3(Direct) - 香港直连专线 2
+      - 🇭🇰 HK4(Direct) - 香港直连专线 2
+      - bgp4.gemgems.net:10760
+      - bgp1.gemgems.net:9123
+      - bgp3.gemgems.net:9657
+      - 🇭🇰 https://www.mattkaydiary.com|Backup!Transit*Shanghai-HK*CN2-GIA11
+      - 🇨🇳 CN_743
+      - 🇨🇳 CN_747
+      - 🇨🇳 CN_764
+      - 🇨🇳 CN_766
+      - 🇨🇳 CN_767
+      - 🇨🇳 CN_792
+      - 🇨🇳 CN_796
+      - 🇨🇳 CN_798
+      - 🇨🇳 CN_799
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
