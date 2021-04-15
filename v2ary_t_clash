@@ -11,10 +11,12 @@ proxies:
   - {name: 🇭🇰 https://www.mattkaydiary.com|Low Latency!Transit*Guangzhou-HK03, server: gzcm03.iplc188.com, port: 10001, type: vmess, uuid: 62ad9ff6-84b2-49f1-9f0f-43a7dad92210, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03, server: gzcm03.iplc188.com, port: 10002, type: vmess, uuid: 62ad9ff6-84b2-49f1-9f0f-43a7dad92210, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 Sn 新加坡, server: 13.248.186.225, port: 4441, type: vmess, uuid: f70e2c94-9b32-3467-bd8d-0e82983b9349, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: bgp3.gemgems.net:14301, server: bgp3.gemgems.net, port: 14301, type: ss, cipher: aes-256-gcm, password: WWtYTj7GzW9c}
-  - {name: 🇫🇮 adi|0325 - 芬兰, server: 194.110.115.75, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: bgp1.gemgems.net:9123, server: bgp1.gemgems.net, port: 9123, type: ss, cipher: aes-256-gcm, password: ei0UmSE2sO76}
-  - {name: c1s2.jamjams.net:30181, server: c1s2.jamjams.net, port: 30181, type: ss, cipher: aes-256-gcm, password: Zh2NBJm5hW}
+  - {name: 🇨🇳 CN_77, server: 58.32.7.116, port: 9123, type: ss, cipher: aes-256-gcm, password: ei0UmSE2sO76}
+  - {name: 🇨🇳 CN_78, server: 58.32.7.116, port: 9300, type: ss, cipher: aes-256-gcm, password: 3wf6HllIYs0d}
+  - {name: 🇨🇳 CN_79, server: 58.32.7.116, port: 18513, type: ss, cipher: aes-256-gcm, password: ipZAmyss2mPB}
+  - {name: 🇭🇰 HK_156, server: 203.218.253.53, port: 9300, type: ss, cipher: aes-256-gcm, password: 3wf6HllIYs0d}
+  - {name: 🇭🇰 HK_157, server: 203.218.253.133, port: 9123, type: ss, cipher: aes-256-gcm, password: ei0UmSE2sO76}
+  - {name: 🇭🇰 HK_158, server: 203.218.254.94, port: 18513, type: ss, cipher: aes-256-gcm, password: ipZAmyss2mPB}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -27,10 +29,12 @@ proxy-groups:
       - 🇭🇰 https://www.mattkaydiary.com|Low Latency!Transit*Guangzhou-HK03
       - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
       - 🇸🇬 Sn 新加坡
-      - bgp3.gemgems.net:14301
-      - 🇫🇮 adi|0325 - 芬兰
-      - bgp1.gemgems.net:9123
-      - c1s2.jamjams.net:30181
+      - 🇨🇳 CN_77
+      - 🇨🇳 CN_78
+      - 🇨🇳 CN_79
+      - 🇭🇰 HK_156
+      - 🇭🇰 HK_157
+      - 🇭🇰 HK_158
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -43,10 +47,12 @@ proxy-groups:
       - 🇭🇰 https://www.mattkaydiary.com|Low Latency!Transit*Guangzhou-HK03
       - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
       - 🇸🇬 Sn 新加坡
-      - bgp3.gemgems.net:14301
-      - 🇫🇮 adi|0325 - 芬兰
-      - bgp1.gemgems.net:9123
-      - c1s2.jamjams.net:30181
+      - 🇨🇳 CN_77
+      - 🇨🇳 CN_78
+      - 🇨🇳 CN_79
+      - 🇭🇰 HK_156
+      - 🇭🇰 HK_157
+      - 🇭🇰 HK_158
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -59,10 +65,12 @@ proxy-groups:
       - 🇭🇰 https://www.mattkaydiary.com|Low Latency!Transit*Guangzhou-HK03
       - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
       - 🇸🇬 Sn 新加坡
-      - bgp3.gemgems.net:14301
-      - 🇫🇮 adi|0325 - 芬兰
-      - bgp1.gemgems.net:9123
-      - c1s2.jamjams.net:30181
+      - 🇨🇳 CN_77
+      - 🇨🇳 CN_78
+      - 🇨🇳 CN_79
+      - 🇭🇰 HK_156
+      - 🇭🇰 HK_157
+      - 🇭🇰 HK_158
   - name: 📲 电报信息
     type: select
     proxies:
@@ -74,10 +82,12 @@ proxy-groups:
       - 🇭🇰 https://www.mattkaydiary.com|Low Latency!Transit*Guangzhou-HK03
       - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
       - 🇸🇬 Sn 新加坡
-      - bgp3.gemgems.net:14301
-      - 🇫🇮 adi|0325 - 芬兰
-      - bgp1.gemgems.net:9123
-      - c1s2.jamjams.net:30181
+      - 🇨🇳 CN_77
+      - 🇨🇳 CN_78
+      - 🇨🇳 CN_79
+      - 🇭🇰 HK_156
+      - 🇭🇰 HK_157
+      - 🇭🇰 HK_158
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -89,10 +99,12 @@ proxy-groups:
       - 🇭🇰 https://www.mattkaydiary.com|Low Latency!Transit*Guangzhou-HK03
       - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
       - 🇸🇬 Sn 新加坡
-      - bgp3.gemgems.net:14301
-      - 🇫🇮 adi|0325 - 芬兰
-      - bgp1.gemgems.net:9123
-      - c1s2.jamjams.net:30181
+      - 🇨🇳 CN_77
+      - 🇨🇳 CN_78
+      - 🇨🇳 CN_79
+      - 🇭🇰 HK_156
+      - 🇭🇰 HK_157
+      - 🇭🇰 HK_158
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -104,10 +116,12 @@ proxy-groups:
       - 🇭🇰 https://www.mattkaydiary.com|Low Latency!Transit*Guangzhou-HK03
       - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
       - 🇸🇬 Sn 新加坡
-      - bgp3.gemgems.net:14301
-      - 🇫🇮 adi|0325 - 芬兰
-      - bgp1.gemgems.net:9123
-      - c1s2.jamjams.net:30181
+      - 🇨🇳 CN_77
+      - 🇨🇳 CN_78
+      - 🇨🇳 CN_79
+      - 🇭🇰 HK_156
+      - 🇭🇰 HK_157
+      - 🇭🇰 HK_158
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -120,10 +134,12 @@ proxy-groups:
       - 🇭🇰 https://www.mattkaydiary.com|Low Latency!Transit*Guangzhou-HK03
       - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
       - 🇸🇬 Sn 新加坡
-      - bgp3.gemgems.net:14301
-      - 🇫🇮 adi|0325 - 芬兰
-      - bgp1.gemgems.net:9123
-      - c1s2.jamjams.net:30181
+      - 🇨🇳 CN_77
+      - 🇨🇳 CN_78
+      - 🇨🇳 CN_79
+      - 🇭🇰 HK_156
+      - 🇭🇰 HK_157
+      - 🇭🇰 HK_158
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -152,10 +168,12 @@ proxy-groups:
       - 🇭🇰 https://www.mattkaydiary.com|Low Latency!Transit*Guangzhou-HK03
       - 🇸🇬 https://www.mattkaydiary.com|Transit*Guangzhou-Singapore03
       - 🇸🇬 Sn 新加坡
-      - bgp3.gemgems.net:14301
-      - 🇫🇮 adi|0325 - 芬兰
-      - bgp1.gemgems.net:9123
-      - c1s2.jamjams.net:30181
+      - 🇨🇳 CN_77
+      - 🇨🇳 CN_78
+      - 🇨🇳 CN_79
+      - 🇭🇰 HK_156
+      - 🇭🇰 HK_157
+      - 🇭🇰 HK_158
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
