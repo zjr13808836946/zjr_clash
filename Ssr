@@ -9,6 +9,8 @@ proxies:
   - {name: 🇭🇰 disco 香港2, server: dg-hk-node02.linkthink.app, port: 12031, type: ssr, cipher: aes-256-cfb, password: e5opjuLDEQ, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 124438:PZgUR9AyqE, obfs-param: ajax.microsoft.com}
   - {name: 🇭🇰 香港02, server: dg-hk-node02.linkthink.app, port: 12031, type: ssr, cipher: aes-256-cfb, password: e5opjuLDEQ, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 124438:PZgUR9AyqE, obfs-param: ajax.microsoft.com}
   - {name: 🇭🇰 香港04, server: 42.157.196.104, port: 20981, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 124438:PZgUR9AyqE, obfs-param: ajax.microsoft.com}
+  - {name: 🇨🇳 CN_407, server: 117.28.243.253, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
+  - {name: 🇨🇳 CN_447, server: 117.28.243.171, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -19,6 +21,8 @@ proxy-groups:
       - 🇭🇰 disco 香港2
       - 🇭🇰 香港02
       - 🇭🇰 香港04
+      - 🇨🇳 CN_407
+      - 🇨🇳 CN_447
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -29,6 +33,8 @@ proxy-groups:
       - 🇭🇰 disco 香港2
       - 🇭🇰 香港02
       - 🇭🇰 香港04
+      - 🇨🇳 CN_407
+      - 🇨🇳 CN_447
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -39,6 +45,8 @@ proxy-groups:
       - 🇭🇰 disco 香港2
       - 🇭🇰 香港02
       - 🇭🇰 香港04
+      - 🇨🇳 CN_407
+      - 🇨🇳 CN_447
   - name: 📲 电报信息
     type: select
     proxies:
@@ -48,6 +56,8 @@ proxy-groups:
       - 🇭🇰 disco 香港2
       - 🇭🇰 香港02
       - 🇭🇰 香港04
+      - 🇨🇳 CN_407
+      - 🇨🇳 CN_447
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -57,6 +67,8 @@ proxy-groups:
       - 🇭🇰 disco 香港2
       - 🇭🇰 香港02
       - 🇭🇰 香港04
+      - 🇨🇳 CN_407
+      - 🇨🇳 CN_447
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -66,6 +78,8 @@ proxy-groups:
       - 🇭🇰 disco 香港2
       - 🇭🇰 香港02
       - 🇭🇰 香港04
+      - 🇨🇳 CN_407
+      - 🇨🇳 CN_447
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -76,6 +90,8 @@ proxy-groups:
       - 🇭🇰 disco 香港2
       - 🇭🇰 香港02
       - 🇭🇰 香港04
+      - 🇨🇳 CN_407
+      - 🇨🇳 CN_447
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -102,6 +118,8 @@ proxy-groups:
       - 🇭🇰 disco 香港2
       - 🇭🇰 香港02
       - 🇭🇰 香港04
+      - 🇨🇳 CN_407
+      - 🇨🇳 CN_447
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
