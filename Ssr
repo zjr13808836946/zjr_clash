@@ -5,11 +5,23 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: "CA,", server: 54.248.181.34, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: "JP, 2", server: 13.231.173.43, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: "JP, 3", server: 3.36.56.133, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: "KR,", server: 52.79.105.9, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 美国IT7 洛杉矶8, server: 176.122.166.159, port: 666, type: ss, cipher: aes-256-cfb, password: bwhskrskr01}
+  - {name: "🇨🇳 TW,", server: 13.209.16.34, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: "🇭🇰 HK, 2", server: 54.148.110.237, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇯🇵 日本 东京 AWS1, server: 13.231.173.43, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇯🇵 日本 东京都 AWS, server: 18.183.77.208, port: 444, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇷🇺 美国 俄勒冈州AWS2, server: 52.34.165.6, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇷🇺 美国 俄勒冈州AWS3, server: 34.217.68.45, port: 444, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: "🇺🇸 US,", server: 176.122.166.159, port: 666, type: ss, cipher: aes-256-cfb, password: bwhskrskr01}
+  - {name: "🇺🇸 US, 4", server: 97.64.26.63, port: 446, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
+  - {name: "🇺🇸 US, 5", server: 52.199.0.3, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 美国IT7 洛杉矶7, server: 95.169.4.174, port: 672, type: ss, cipher: aes-256-cfb, password: bwhskrskr01}
+  - {name: 🇺🇸 美国IT7 洛杉矶8 2, server: 176.122.166.159, port: 666, type: ss, cipher: aes-256-cfb, password: bwhskrskr01}
   - {name: 🇯🇵 日本-BS131^+, server: cn1.sczssr.xyz, port: 10011, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
-  - {name: 🇭🇰 disco 香港2, server: dg-hk-node02.linkthink.app, port: 12031, type: ssr, cipher: aes-256-cfb, password: e5opjuLDEQ, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 124438:PZgUR9AyqE, obfs-param: ajax.microsoft.com}
-  - {name: 🇭🇰 香港02, server: dg-hk-node02.linkthink.app, port: 12031, type: ssr, cipher: aes-256-cfb, password: e5opjuLDEQ, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 124438:PZgUR9AyqE, obfs-param: ajax.microsoft.com}
-  - {name: 🇭🇰 香港04, server: 42.157.196.104, port: 20981, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 124438:PZgUR9AyqE, obfs-param: ajax.microsoft.com}
-  - {name: 🇨🇳 CN_407, server: 117.28.243.253, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
   - {name: 🇨🇳 CN_447, server: 117.28.243.171, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
 proxy-groups:
   - name: 🚀 节点选择
@@ -17,11 +29,23 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - CA,
+      - JP, 2
+      - JP, 3
+      - KR,
+      - 🇺🇸 美国IT7 洛杉矶8
+      - 🇨🇳 TW,
+      - 🇭🇰 HK, 2
+      - 🇯🇵 日本 东京 AWS1
+      - 🇯🇵 日本 东京都 AWS
+      - 🇷🇺 美国 俄勒冈州AWS2
+      - 🇷🇺 美国 俄勒冈州AWS3
+      - 🇺🇸 US,
+      - 🇺🇸 US, 4
+      - 🇺🇸 US, 5
+      - 🇺🇸 美国IT7 洛杉矶7
+      - 🇺🇸 美国IT7 洛杉矶8 2
       - 🇯🇵 日本-BS131^+
-      - 🇭🇰 disco 香港2
-      - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 CN_407
       - 🇨🇳 CN_447
   - name: ♻️ 自动选择
     type: url-test
@@ -29,11 +53,23 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - CA,
+      - JP, 2
+      - JP, 3
+      - KR,
+      - 🇺🇸 美国IT7 洛杉矶8
+      - 🇨🇳 TW,
+      - 🇭🇰 HK, 2
+      - 🇯🇵 日本 东京 AWS1
+      - 🇯🇵 日本 东京都 AWS
+      - 🇷🇺 美国 俄勒冈州AWS2
+      - 🇷🇺 美国 俄勒冈州AWS3
+      - 🇺🇸 US,
+      - 🇺🇸 US, 4
+      - 🇺🇸 US, 5
+      - 🇺🇸 美国IT7 洛杉矶7
+      - 🇺🇸 美国IT7 洛杉矶8 2
       - 🇯🇵 日本-BS131^+
-      - 🇭🇰 disco 香港2
-      - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 CN_407
       - 🇨🇳 CN_447
   - name: 🌍 国外媒体
     type: select
@@ -41,44 +77,92 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CA,
+      - JP, 2
+      - JP, 3
+      - KR,
+      - 🇺🇸 美国IT7 洛杉矶8
+      - 🇨🇳 TW,
+      - 🇭🇰 HK, 2
+      - 🇯🇵 日本 东京 AWS1
+      - 🇯🇵 日本 东京都 AWS
+      - 🇷🇺 美国 俄勒冈州AWS2
+      - 🇷🇺 美国 俄勒冈州AWS3
+      - 🇺🇸 US,
+      - 🇺🇸 US, 4
+      - 🇺🇸 US, 5
+      - 🇺🇸 美国IT7 洛杉矶7
+      - 🇺🇸 美国IT7 洛杉矶8 2
       - 🇯🇵 日本-BS131^+
-      - 🇭🇰 disco 香港2
-      - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 CN_407
       - 🇨🇳 CN_447
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - CA,
+      - JP, 2
+      - JP, 3
+      - KR,
+      - 🇺🇸 美国IT7 洛杉矶8
+      - 🇨🇳 TW,
+      - 🇭🇰 HK, 2
+      - 🇯🇵 日本 东京 AWS1
+      - 🇯🇵 日本 东京都 AWS
+      - 🇷🇺 美国 俄勒冈州AWS2
+      - 🇷🇺 美国 俄勒冈州AWS3
+      - 🇺🇸 US,
+      - 🇺🇸 US, 4
+      - 🇺🇸 US, 5
+      - 🇺🇸 美国IT7 洛杉矶7
+      - 🇺🇸 美国IT7 洛杉矶8 2
       - 🇯🇵 日本-BS131^+
-      - 🇭🇰 disco 香港2
-      - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 CN_407
       - 🇨🇳 CN_447
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - CA,
+      - JP, 2
+      - JP, 3
+      - KR,
+      - 🇺🇸 美国IT7 洛杉矶8
+      - 🇨🇳 TW,
+      - 🇭🇰 HK, 2
+      - 🇯🇵 日本 东京 AWS1
+      - 🇯🇵 日本 东京都 AWS
+      - 🇷🇺 美国 俄勒冈州AWS2
+      - 🇷🇺 美国 俄勒冈州AWS3
+      - 🇺🇸 US,
+      - 🇺🇸 US, 4
+      - 🇺🇸 US, 5
+      - 🇺🇸 美国IT7 洛杉矶7
+      - 🇺🇸 美国IT7 洛杉矶8 2
       - 🇯🇵 日本-BS131^+
-      - 🇭🇰 disco 香港2
-      - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 CN_407
       - 🇨🇳 CN_447
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - CA,
+      - JP, 2
+      - JP, 3
+      - KR,
+      - 🇺🇸 美国IT7 洛杉矶8
+      - 🇨🇳 TW,
+      - 🇭🇰 HK, 2
+      - 🇯🇵 日本 东京 AWS1
+      - 🇯🇵 日本 东京都 AWS
+      - 🇷🇺 美国 俄勒冈州AWS2
+      - 🇷🇺 美国 俄勒冈州AWS3
+      - 🇺🇸 US,
+      - 🇺🇸 US, 4
+      - 🇺🇸 US, 5
+      - 🇺🇸 美国IT7 洛杉矶7
+      - 🇺🇸 美国IT7 洛杉矶8 2
       - 🇯🇵 日本-BS131^+
-      - 🇭🇰 disco 香港2
-      - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 CN_407
       - 🇨🇳 CN_447
   - name: 📢 谷歌FCM
     type: select
@@ -86,11 +170,23 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CA,
+      - JP, 2
+      - JP, 3
+      - KR,
+      - 🇺🇸 美国IT7 洛杉矶8
+      - 🇨🇳 TW,
+      - 🇭🇰 HK, 2
+      - 🇯🇵 日本 东京 AWS1
+      - 🇯🇵 日本 东京都 AWS
+      - 🇷🇺 美国 俄勒冈州AWS2
+      - 🇷🇺 美国 俄勒冈州AWS3
+      - 🇺🇸 US,
+      - 🇺🇸 US, 4
+      - 🇺🇸 US, 5
+      - 🇺🇸 美国IT7 洛杉矶7
+      - 🇺🇸 美国IT7 洛杉矶8 2
       - 🇯🇵 日本-BS131^+
-      - 🇭🇰 disco 香港2
-      - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 CN_407
       - 🇨🇳 CN_447
   - name: 🎯 全球直连
     type: select
@@ -114,11 +210,23 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CA,
+      - JP, 2
+      - JP, 3
+      - KR,
+      - 🇺🇸 美国IT7 洛杉矶8
+      - 🇨🇳 TW,
+      - 🇭🇰 HK, 2
+      - 🇯🇵 日本 东京 AWS1
+      - 🇯🇵 日本 东京都 AWS
+      - 🇷🇺 美国 俄勒冈州AWS2
+      - 🇷🇺 美国 俄勒冈州AWS3
+      - 🇺🇸 US,
+      - 🇺🇸 US, 4
+      - 🇺🇸 US, 5
+      - 🇺🇸 美国IT7 洛杉矶7
+      - 🇺🇸 美国IT7 洛杉矶8 2
       - 🇯🇵 日本-BS131^+
-      - 🇭🇰 disco 香港2
-      - 🇭🇰 香港02
-      - 🇭🇰 香港04
-      - 🇨🇳 CN_407
       - 🇨🇳 CN_447
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
