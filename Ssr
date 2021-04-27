@@ -5,189 +5,789 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "CA,", server: 54.248.181.34, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "JP, 2", server: 13.231.173.43, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "JP, 3", server: 3.36.56.133, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "KR,", server: 52.79.105.9, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇺🇸 美国IT7 洛杉矶8, server: 176.122.166.159, port: 666, type: ss, cipher: aes-256-cfb, password: bwhskrskr01}
-  - {name: "🇨🇳 TW,", server: 13.209.16.34, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇭🇰 HK, 2", server: 54.148.110.237, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇯🇵 日本 东京 AWS1, server: 13.231.173.43, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇯🇵 日本 东京都 AWS, server: 18.183.77.208, port: 444, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇷🇺 美国 俄勒冈州AWS2, server: 52.34.165.6, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇷🇺 美国 俄勒冈州AWS3, server: 34.217.68.45, port: 444, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇺🇸 US,", server: 176.122.166.159, port: 666, type: ss, cipher: aes-256-cfb, password: bwhskrskr01}
-  - {name: "🇺🇸 US, 4", server: 97.64.26.63, port: 446, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
-  - {name: "🇺🇸 US, 5", server: 52.199.0.3, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇺🇸 美国IT7 洛杉矶7, server: 95.169.4.174, port: 672, type: ss, cipher: aes-256-cfb, password: bwhskrskr01}
-  - {name: 🇺🇸 美国IT7 洛杉矶8 2, server: 176.122.166.159, port: 666, type: ss, cipher: aes-256-cfb, password: bwhskrskr01}
-  - {name: 🇯🇵 日本-BS131^+, server: cn1.sczssr.xyz, port: 10011, type: ssr, cipher: chacha20-ietf, password: shushenM, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1279:WzyU1p, obfs-param: 7c3df1279.zhaoj.in}
-  - {name: 🇨🇳 CN_447, server: 117.28.243.171, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
+  - {name: 🇨🇳 *Ultimate|广台|01, server: advanced-cm-3.host-sub.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇨🇳 *Ultimate|广台|02, server: advanced-cm-3.host-sub.com, port: 3035, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇸🇬 *Ultimate|广新|01, server: advanced-cm-3.host-sub.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇸🇬 *Ultimate|广新|02, server: advanced-cm-3.host-sub.com, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇯🇵 *Ultimate|广日|01, server: advanced-cm-3.host-sub.com, port: 4500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇯🇵 *Ultimate|广日|02, server: advanced-cm-3.host-sub.com, port: 4501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|广港|01, server: advanced-cm-3.host-sub.com, port: 3500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|广港|02, server: advanced-cm-3.host-sub.com, port: 3501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|广港|03, server: advanced-cm-3.host-sub.com, port: 3502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|广港|04, server: advanced-cm-3.host-sub.com, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|广港|05, server: advanced-cm-3.host-sub.com, port: 3504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|广港|06, server: advanced-cm-3.host-sub.com, port: 3505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|广港|07, server: advanced-cm-3.host-sub.com, port: 3506, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|广港|08, server: advanced-cm-3.host-sub.com, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|广港|09, server: advanced-cm-3.host-sub.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|广港|10, server: advanced-cm-3.host-sub.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇺🇸 *Ultimate|广美|01, server: advanced-cm-3.host-sub.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇺🇸 *Ultimate|广美|02, server: advanced-cm-3.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇰🇷 *Ultimate|广韩|01, server: advanced-cm-3.host-sub.com, port: 7500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇰🇷 *Ultimate|广韩|02, server: advanced-cm-3.host-sub.com, port: 7501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇨🇳 *Ultimate|沪台|01, server: ultimate-ct-1.host-sub.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇨🇳 *Ultimate|沪台|02, server: ultimate-ct-1.host-sub.com, port: 3035, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇸🇬 *Ultimate|沪新|01, server: ultimate-ct-1.host-sub.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇸🇬 *Ultimate|沪新|02, server: ultimate-ct-1.host-sub.com, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇯🇵 *Ultimate|沪日|01, server: ultimate-ct-1.host-sub.com, port: 4500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇯🇵 *Ultimate|沪日|02, server: ultimate-ct-1.host-sub.com, port: 4501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|沪港|01, server: ultimate-ct-1.host-sub.com, port: 3500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|沪港|02, server: ultimate-ct-1.host-sub.com, port: 3501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|沪港|03, server: ultimate-ct-1.host-sub.com, port: 3502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|沪港|04, server: ultimate-ct-1.host-sub.com, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|沪港|05, server: ultimate-ct-1.host-sub.com, port: 3504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|沪港|06, server: ultimate-ct-1.host-sub.com, port: 3505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|沪港|07, server: ultimate-ct-1.host-sub.com, port: 3506, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|沪港|08, server: ultimate-ct-1.host-sub.com, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|沪港|09, server: ultimate-ct-1.host-sub.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|沪港|10, server: ultimate-ct-1.host-sub.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇺🇸 *Ultimate|沪美|01, server: ultimate-ct-1.host-sub.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇺🇸 *Ultimate|沪美|02, server: ultimate-ct-1.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇰🇷 *Ultimate|沪韩|01, server: ultimate-ct-1.host-sub.com, port: 7500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇰🇷 *Ultimate|沪韩|02, server: ultimate-ct-1.host-sub.com, port: 7501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇨🇳 Advanced|广台|01, server: advanced-cm-1.host-sub.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇨🇳 Advanced|广台|02, server: advanced-cm-1.host-sub.com, port: 3035, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇸🇬 Advanced|广新|01, server: advanced-cm-2.host-sub.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇸🇬 Advanced|广新|02, server: advanced-cm-2.host-sub.com, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇯🇵 Advanced|广日|01, server: advanced-cm-2.host-sub.com, port: 4500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇯🇵 Advanced|广日|02, server: advanced-cm-2.host-sub.com, port: 4501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Advanced|广港|01, server: advanced-cm-1.host-sub.com, port: 3500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Advanced|广港|02, server: advanced-cm-1.host-sub.com, port: 3501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Advanced|广港|03, server: advanced-cm-1.host-sub.com, port: 3502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Advanced|广港|04, server: advanced-cm-1.host-sub.com, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Advanced|广港|05, server: advanced-cm-1.host-sub.com, port: 3504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Advanced|广港|06, server: advanced-cm-1.host-sub.com, port: 3505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Advanced|广港|07, server: advanced-cm-1.host-sub.com, port: 3506, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Advanced|广港|08, server: advanced-cm-1.host-sub.com, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Advanced|广港|09, server: advanced-cm-1.host-sub.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Advanced|广港|10, server: advanced-cm-1.host-sub.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇺🇸 Advanced|广美|01, server: advanced-cm-2.host-sub.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇺🇸 Advanced|广美|02, server: advanced-cm-2.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇰🇷 Advanced|广韩|01, server: advanced-cm-2.host-sub.com, port: 7500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇰🇷 Advanced|广韩|02, server: advanced-cm-2.host-sub.com, port: 7501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇨🇳 Basic|广台|01, server: cmrelay-basic-1.host-sub.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇨🇳 Basic|广台|02, server: cmrelay-basic-1.host-sub.com, port: 3035, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇸🇬 Basic|广新|01, server: cmrelay-basic-2.host-sub.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇸🇬 Basic|广新|02, server: cmrelay-basic-2.host-sub.com, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇸🇬 Basic|广新|03, server: cmrelay-basic-2.host-sub.com, port: 6502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇸🇬 Basic|广新|04, server: cmrelay-basic-2.host-sub.com, port: 6503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇸🇬 Basic|广新|05, server: cmrelay-basic-2.host-sub.com, port: 6504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇸🇬 Basic|广新|06, server: cmrelay-basic-2.host-sub.com, port: 6505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇯🇵 Basic|广日|01, server: cmrelay-basic-2.host-sub.com, port: 4500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇯🇵 Basic|广日|02, server: cmrelay-basic-2.host-sub.com, port: 4501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇯🇵 Basic|广日|03, server: cmrelay-basic-2.host-sub.com, port: 4502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇯🇵 Basic|广日|04, server: cmrelay-basic-2.host-sub.com, port: 4503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇯🇵 Basic|广日|05, server: cmrelay-basic-2.host-sub.com, port: 4504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇯🇵 Basic|广日|06, server: cmrelay-basic-2.host-sub.com, port: 4505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Basic|广港|01, server: cmrelay-basic-1.host-sub.com, port: 3500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Basic|广港|02, server: cmrelay-basic-1.host-sub.com, port: 3501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Basic|广港|03, server: cmrelay-basic-1.host-sub.com, port: 3502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Basic|广港|04, server: cmrelay-basic-1.host-sub.com, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Basic|广港|05, server: cmrelay-basic-1.host-sub.com, port: 3504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Basic|广港|06, server: cmrelay-basic-1.host-sub.com, port: 3505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Basic|广港|07, server: cmrelay-basic-1.host-sub.com, port: 3506, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Basic|广港|08, server: cmrelay-basic-1.host-sub.com, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Basic|广港|09, server: cmrelay-basic-1.host-sub.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇭🇰 Basic|广港|10, server: cmrelay-basic-1.host-sub.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇺🇸 Basic|广美|01, server: cmrelay-basic-2.host-sub.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇺🇸 Basic|广美|02, server: cmrelay-basic-2.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇺🇸 Basic|广美|03, server: cmrelay-basic-2.host-sub.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇺🇸 Basic|广美|04, server: cmrelay-basic-2.host-sub.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇺🇸 Basic|广美|05, server: cmrelay-basic-2.host-sub.com, port: 5504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇺🇸 Basic|广美|06, server: cmrelay-basic-2.host-sub.com, port: 5505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇰🇷 Basic|广韩|01, server: cmrelay-basic-2.host-sub.com, port: 7500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🇰🇷 Basic|广韩|02, server: cmrelay-basic-2.host-sub.com, port: 7501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
+  - {name: 🏳️‍🌈 Renew|应急续费使用, server: hkhktrenew.host-sub.com, port: 1063, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 159801:uhWxfQ, obfs-param: 5669f159801.microsoft.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CA,
-      - JP, 2
-      - JP, 3
-      - KR,
-      - 🇺🇸 美国IT7 洛杉矶8
-      - 🇨🇳 TW,
-      - 🇭🇰 HK, 2
-      - 🇯🇵 日本 东京 AWS1
-      - 🇯🇵 日本 东京都 AWS
-      - 🇷🇺 美国 俄勒冈州AWS2
-      - 🇷🇺 美国 俄勒冈州AWS3
-      - 🇺🇸 US,
-      - 🇺🇸 US, 4
-      - 🇺🇸 US, 5
-      - 🇺🇸 美国IT7 洛杉矶7
-      - 🇺🇸 美国IT7 洛杉矶8 2
-      - 🇯🇵 日本-BS131^+
-      - 🇨🇳 CN_447
+      - 🇨🇳 *Ultimate|广台|01
+      - 🇨🇳 *Ultimate|广台|02
+      - 🇸🇬 *Ultimate|广新|01
+      - 🇸🇬 *Ultimate|广新|02
+      - 🇯🇵 *Ultimate|广日|01
+      - 🇯🇵 *Ultimate|广日|02
+      - 🇭🇰 *Ultimate|广港|01
+      - 🇭🇰 *Ultimate|广港|02
+      - 🇭🇰 *Ultimate|广港|03
+      - 🇭🇰 *Ultimate|广港|04
+      - 🇭🇰 *Ultimate|广港|05
+      - 🇭🇰 *Ultimate|广港|06
+      - 🇭🇰 *Ultimate|广港|07
+      - 🇭🇰 *Ultimate|广港|08
+      - 🇭🇰 *Ultimate|广港|09
+      - 🇭🇰 *Ultimate|广港|10
+      - 🇺🇸 *Ultimate|广美|01
+      - 🇺🇸 *Ultimate|广美|02
+      - 🇰🇷 *Ultimate|广韩|01
+      - 🇰🇷 *Ultimate|广韩|02
+      - 🇨🇳 *Ultimate|沪台|01
+      - 🇨🇳 *Ultimate|沪台|02
+      - 🇸🇬 *Ultimate|沪新|01
+      - 🇸🇬 *Ultimate|沪新|02
+      - 🇯🇵 *Ultimate|沪日|01
+      - 🇯🇵 *Ultimate|沪日|02
+      - 🇭🇰 *Ultimate|沪港|01
+      - 🇭🇰 *Ultimate|沪港|02
+      - 🇭🇰 *Ultimate|沪港|03
+      - 🇭🇰 *Ultimate|沪港|04
+      - 🇭🇰 *Ultimate|沪港|05
+      - 🇭🇰 *Ultimate|沪港|06
+      - 🇭🇰 *Ultimate|沪港|07
+      - 🇭🇰 *Ultimate|沪港|08
+      - 🇭🇰 *Ultimate|沪港|09
+      - 🇭🇰 *Ultimate|沪港|10
+      - 🇺🇸 *Ultimate|沪美|01
+      - 🇺🇸 *Ultimate|沪美|02
+      - 🇰🇷 *Ultimate|沪韩|01
+      - 🇰🇷 *Ultimate|沪韩|02
+      - 🇨🇳 Advanced|广台|01
+      - 🇨🇳 Advanced|广台|02
+      - 🇸🇬 Advanced|广新|01
+      - 🇸🇬 Advanced|广新|02
+      - 🇯🇵 Advanced|广日|01
+      - 🇯🇵 Advanced|广日|02
+      - 🇭🇰 Advanced|广港|01
+      - 🇭🇰 Advanced|广港|02
+      - 🇭🇰 Advanced|广港|03
+      - 🇭🇰 Advanced|广港|04
+      - 🇭🇰 Advanced|广港|05
+      - 🇭🇰 Advanced|广港|06
+      - 🇭🇰 Advanced|广港|07
+      - 🇭🇰 Advanced|广港|08
+      - 🇭🇰 Advanced|广港|09
+      - 🇭🇰 Advanced|广港|10
+      - 🇺🇸 Advanced|广美|01
+      - 🇺🇸 Advanced|广美|02
+      - 🇰🇷 Advanced|广韩|01
+      - 🇰🇷 Advanced|广韩|02
+      - 🇨🇳 Basic|广台|01
+      - 🇨🇳 Basic|广台|02
+      - 🇸🇬 Basic|广新|01
+      - 🇸🇬 Basic|广新|02
+      - 🇸🇬 Basic|广新|03
+      - 🇸🇬 Basic|广新|04
+      - 🇸🇬 Basic|广新|05
+      - 🇸🇬 Basic|广新|06
+      - 🇯🇵 Basic|广日|01
+      - 🇯🇵 Basic|广日|02
+      - 🇯🇵 Basic|广日|03
+      - 🇯🇵 Basic|广日|04
+      - 🇯🇵 Basic|广日|05
+      - 🇯🇵 Basic|广日|06
+      - 🇭🇰 Basic|广港|01
+      - 🇭🇰 Basic|广港|02
+      - 🇭🇰 Basic|广港|03
+      - 🇭🇰 Basic|广港|04
+      - 🇭🇰 Basic|广港|05
+      - 🇭🇰 Basic|广港|06
+      - 🇭🇰 Basic|广港|07
+      - 🇭🇰 Basic|广港|08
+      - 🇭🇰 Basic|广港|09
+      - 🇭🇰 Basic|广港|10
+      - 🇺🇸 Basic|广美|01
+      - 🇺🇸 Basic|广美|02
+      - 🇺🇸 Basic|广美|03
+      - 🇺🇸 Basic|广美|04
+      - 🇺🇸 Basic|广美|05
+      - 🇺🇸 Basic|广美|06
+      - 🇰🇷 Basic|广韩|01
+      - 🇰🇷 Basic|广韩|02
+      - 🏳️‍🌈 Renew|应急续费使用
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - CA,
-      - JP, 2
-      - JP, 3
-      - KR,
-      - 🇺🇸 美国IT7 洛杉矶8
-      - 🇨🇳 TW,
-      - 🇭🇰 HK, 2
-      - 🇯🇵 日本 东京 AWS1
-      - 🇯🇵 日本 东京都 AWS
-      - 🇷🇺 美国 俄勒冈州AWS2
-      - 🇷🇺 美国 俄勒冈州AWS3
-      - 🇺🇸 US,
-      - 🇺🇸 US, 4
-      - 🇺🇸 US, 5
-      - 🇺🇸 美国IT7 洛杉矶7
-      - 🇺🇸 美国IT7 洛杉矶8 2
-      - 🇯🇵 日本-BS131^+
-      - 🇨🇳 CN_447
+      - 🇨🇳 *Ultimate|广台|01
+      - 🇨🇳 *Ultimate|广台|02
+      - 🇸🇬 *Ultimate|广新|01
+      - 🇸🇬 *Ultimate|广新|02
+      - 🇯🇵 *Ultimate|广日|01
+      - 🇯🇵 *Ultimate|广日|02
+      - 🇭🇰 *Ultimate|广港|01
+      - 🇭🇰 *Ultimate|广港|02
+      - 🇭🇰 *Ultimate|广港|03
+      - 🇭🇰 *Ultimate|广港|04
+      - 🇭🇰 *Ultimate|广港|05
+      - 🇭🇰 *Ultimate|广港|06
+      - 🇭🇰 *Ultimate|广港|07
+      - 🇭🇰 *Ultimate|广港|08
+      - 🇭🇰 *Ultimate|广港|09
+      - 🇭🇰 *Ultimate|广港|10
+      - 🇺🇸 *Ultimate|广美|01
+      - 🇺🇸 *Ultimate|广美|02
+      - 🇰🇷 *Ultimate|广韩|01
+      - 🇰🇷 *Ultimate|广韩|02
+      - 🇨🇳 *Ultimate|沪台|01
+      - 🇨🇳 *Ultimate|沪台|02
+      - 🇸🇬 *Ultimate|沪新|01
+      - 🇸🇬 *Ultimate|沪新|02
+      - 🇯🇵 *Ultimate|沪日|01
+      - 🇯🇵 *Ultimate|沪日|02
+      - 🇭🇰 *Ultimate|沪港|01
+      - 🇭🇰 *Ultimate|沪港|02
+      - 🇭🇰 *Ultimate|沪港|03
+      - 🇭🇰 *Ultimate|沪港|04
+      - 🇭🇰 *Ultimate|沪港|05
+      - 🇭🇰 *Ultimate|沪港|06
+      - 🇭🇰 *Ultimate|沪港|07
+      - 🇭🇰 *Ultimate|沪港|08
+      - 🇭🇰 *Ultimate|沪港|09
+      - 🇭🇰 *Ultimate|沪港|10
+      - 🇺🇸 *Ultimate|沪美|01
+      - 🇺🇸 *Ultimate|沪美|02
+      - 🇰🇷 *Ultimate|沪韩|01
+      - 🇰🇷 *Ultimate|沪韩|02
+      - 🇨🇳 Advanced|广台|01
+      - 🇨🇳 Advanced|广台|02
+      - 🇸🇬 Advanced|广新|01
+      - 🇸🇬 Advanced|广新|02
+      - 🇯🇵 Advanced|广日|01
+      - 🇯🇵 Advanced|广日|02
+      - 🇭🇰 Advanced|广港|01
+      - 🇭🇰 Advanced|广港|02
+      - 🇭🇰 Advanced|广港|03
+      - 🇭🇰 Advanced|广港|04
+      - 🇭🇰 Advanced|广港|05
+      - 🇭🇰 Advanced|广港|06
+      - 🇭🇰 Advanced|广港|07
+      - 🇭🇰 Advanced|广港|08
+      - 🇭🇰 Advanced|广港|09
+      - 🇭🇰 Advanced|广港|10
+      - 🇺🇸 Advanced|广美|01
+      - 🇺🇸 Advanced|广美|02
+      - 🇰🇷 Advanced|广韩|01
+      - 🇰🇷 Advanced|广韩|02
+      - 🇨🇳 Basic|广台|01
+      - 🇨🇳 Basic|广台|02
+      - 🇸🇬 Basic|广新|01
+      - 🇸🇬 Basic|广新|02
+      - 🇸🇬 Basic|广新|03
+      - 🇸🇬 Basic|广新|04
+      - 🇸🇬 Basic|广新|05
+      - 🇸🇬 Basic|广新|06
+      - 🇯🇵 Basic|广日|01
+      - 🇯🇵 Basic|广日|02
+      - 🇯🇵 Basic|广日|03
+      - 🇯🇵 Basic|广日|04
+      - 🇯🇵 Basic|广日|05
+      - 🇯🇵 Basic|广日|06
+      - 🇭🇰 Basic|广港|01
+      - 🇭🇰 Basic|广港|02
+      - 🇭🇰 Basic|广港|03
+      - 🇭🇰 Basic|广港|04
+      - 🇭🇰 Basic|广港|05
+      - 🇭🇰 Basic|广港|06
+      - 🇭🇰 Basic|广港|07
+      - 🇭🇰 Basic|广港|08
+      - 🇭🇰 Basic|广港|09
+      - 🇭🇰 Basic|广港|10
+      - 🇺🇸 Basic|广美|01
+      - 🇺🇸 Basic|广美|02
+      - 🇺🇸 Basic|广美|03
+      - 🇺🇸 Basic|广美|04
+      - 🇺🇸 Basic|广美|05
+      - 🇺🇸 Basic|广美|06
+      - 🇰🇷 Basic|广韩|01
+      - 🇰🇷 Basic|广韩|02
+      - 🏳️‍🌈 Renew|应急续费使用
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA,
-      - JP, 2
-      - JP, 3
-      - KR,
-      - 🇺🇸 美国IT7 洛杉矶8
-      - 🇨🇳 TW,
-      - 🇭🇰 HK, 2
-      - 🇯🇵 日本 东京 AWS1
-      - 🇯🇵 日本 东京都 AWS
-      - 🇷🇺 美国 俄勒冈州AWS2
-      - 🇷🇺 美国 俄勒冈州AWS3
-      - 🇺🇸 US,
-      - 🇺🇸 US, 4
-      - 🇺🇸 US, 5
-      - 🇺🇸 美国IT7 洛杉矶7
-      - 🇺🇸 美国IT7 洛杉矶8 2
-      - 🇯🇵 日本-BS131^+
-      - 🇨🇳 CN_447
+      - 🇨🇳 *Ultimate|广台|01
+      - 🇨🇳 *Ultimate|广台|02
+      - 🇸🇬 *Ultimate|广新|01
+      - 🇸🇬 *Ultimate|广新|02
+      - 🇯🇵 *Ultimate|广日|01
+      - 🇯🇵 *Ultimate|广日|02
+      - 🇭🇰 *Ultimate|广港|01
+      - 🇭🇰 *Ultimate|广港|02
+      - 🇭🇰 *Ultimate|广港|03
+      - 🇭🇰 *Ultimate|广港|04
+      - 🇭🇰 *Ultimate|广港|05
+      - 🇭🇰 *Ultimate|广港|06
+      - 🇭🇰 *Ultimate|广港|07
+      - 🇭🇰 *Ultimate|广港|08
+      - 🇭🇰 *Ultimate|广港|09
+      - 🇭🇰 *Ultimate|广港|10
+      - 🇺🇸 *Ultimate|广美|01
+      - 🇺🇸 *Ultimate|广美|02
+      - 🇰🇷 *Ultimate|广韩|01
+      - 🇰🇷 *Ultimate|广韩|02
+      - 🇨🇳 *Ultimate|沪台|01
+      - 🇨🇳 *Ultimate|沪台|02
+      - 🇸🇬 *Ultimate|沪新|01
+      - 🇸🇬 *Ultimate|沪新|02
+      - 🇯🇵 *Ultimate|沪日|01
+      - 🇯🇵 *Ultimate|沪日|02
+      - 🇭🇰 *Ultimate|沪港|01
+      - 🇭🇰 *Ultimate|沪港|02
+      - 🇭🇰 *Ultimate|沪港|03
+      - 🇭🇰 *Ultimate|沪港|04
+      - 🇭🇰 *Ultimate|沪港|05
+      - 🇭🇰 *Ultimate|沪港|06
+      - 🇭🇰 *Ultimate|沪港|07
+      - 🇭🇰 *Ultimate|沪港|08
+      - 🇭🇰 *Ultimate|沪港|09
+      - 🇭🇰 *Ultimate|沪港|10
+      - 🇺🇸 *Ultimate|沪美|01
+      - 🇺🇸 *Ultimate|沪美|02
+      - 🇰🇷 *Ultimate|沪韩|01
+      - 🇰🇷 *Ultimate|沪韩|02
+      - 🇨🇳 Advanced|广台|01
+      - 🇨🇳 Advanced|广台|02
+      - 🇸🇬 Advanced|广新|01
+      - 🇸🇬 Advanced|广新|02
+      - 🇯🇵 Advanced|广日|01
+      - 🇯🇵 Advanced|广日|02
+      - 🇭🇰 Advanced|广港|01
+      - 🇭🇰 Advanced|广港|02
+      - 🇭🇰 Advanced|广港|03
+      - 🇭🇰 Advanced|广港|04
+      - 🇭🇰 Advanced|广港|05
+      - 🇭🇰 Advanced|广港|06
+      - 🇭🇰 Advanced|广港|07
+      - 🇭🇰 Advanced|广港|08
+      - 🇭🇰 Advanced|广港|09
+      - 🇭🇰 Advanced|广港|10
+      - 🇺🇸 Advanced|广美|01
+      - 🇺🇸 Advanced|广美|02
+      - 🇰🇷 Advanced|广韩|01
+      - 🇰🇷 Advanced|广韩|02
+      - 🇨🇳 Basic|广台|01
+      - 🇨🇳 Basic|广台|02
+      - 🇸🇬 Basic|广新|01
+      - 🇸🇬 Basic|广新|02
+      - 🇸🇬 Basic|广新|03
+      - 🇸🇬 Basic|广新|04
+      - 🇸🇬 Basic|广新|05
+      - 🇸🇬 Basic|广新|06
+      - 🇯🇵 Basic|广日|01
+      - 🇯🇵 Basic|广日|02
+      - 🇯🇵 Basic|广日|03
+      - 🇯🇵 Basic|广日|04
+      - 🇯🇵 Basic|广日|05
+      - 🇯🇵 Basic|广日|06
+      - 🇭🇰 Basic|广港|01
+      - 🇭🇰 Basic|广港|02
+      - 🇭🇰 Basic|广港|03
+      - 🇭🇰 Basic|广港|04
+      - 🇭🇰 Basic|广港|05
+      - 🇭🇰 Basic|广港|06
+      - 🇭🇰 Basic|广港|07
+      - 🇭🇰 Basic|广港|08
+      - 🇭🇰 Basic|广港|09
+      - 🇭🇰 Basic|广港|10
+      - 🇺🇸 Basic|广美|01
+      - 🇺🇸 Basic|广美|02
+      - 🇺🇸 Basic|广美|03
+      - 🇺🇸 Basic|广美|04
+      - 🇺🇸 Basic|广美|05
+      - 🇺🇸 Basic|广美|06
+      - 🇰🇷 Basic|广韩|01
+      - 🇰🇷 Basic|广韩|02
+      - 🏳️‍🌈 Renew|应急续费使用
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA,
-      - JP, 2
-      - JP, 3
-      - KR,
-      - 🇺🇸 美国IT7 洛杉矶8
-      - 🇨🇳 TW,
-      - 🇭🇰 HK, 2
-      - 🇯🇵 日本 东京 AWS1
-      - 🇯🇵 日本 东京都 AWS
-      - 🇷🇺 美国 俄勒冈州AWS2
-      - 🇷🇺 美国 俄勒冈州AWS3
-      - 🇺🇸 US,
-      - 🇺🇸 US, 4
-      - 🇺🇸 US, 5
-      - 🇺🇸 美国IT7 洛杉矶7
-      - 🇺🇸 美国IT7 洛杉矶8 2
-      - 🇯🇵 日本-BS131^+
-      - 🇨🇳 CN_447
+      - 🇨🇳 *Ultimate|广台|01
+      - 🇨🇳 *Ultimate|广台|02
+      - 🇸🇬 *Ultimate|广新|01
+      - 🇸🇬 *Ultimate|广新|02
+      - 🇯🇵 *Ultimate|广日|01
+      - 🇯🇵 *Ultimate|广日|02
+      - 🇭🇰 *Ultimate|广港|01
+      - 🇭🇰 *Ultimate|广港|02
+      - 🇭🇰 *Ultimate|广港|03
+      - 🇭🇰 *Ultimate|广港|04
+      - 🇭🇰 *Ultimate|广港|05
+      - 🇭🇰 *Ultimate|广港|06
+      - 🇭🇰 *Ultimate|广港|07
+      - 🇭🇰 *Ultimate|广港|08
+      - 🇭🇰 *Ultimate|广港|09
+      - 🇭🇰 *Ultimate|广港|10
+      - 🇺🇸 *Ultimate|广美|01
+      - 🇺🇸 *Ultimate|广美|02
+      - 🇰🇷 *Ultimate|广韩|01
+      - 🇰🇷 *Ultimate|广韩|02
+      - 🇨🇳 *Ultimate|沪台|01
+      - 🇨🇳 *Ultimate|沪台|02
+      - 🇸🇬 *Ultimate|沪新|01
+      - 🇸🇬 *Ultimate|沪新|02
+      - 🇯🇵 *Ultimate|沪日|01
+      - 🇯🇵 *Ultimate|沪日|02
+      - 🇭🇰 *Ultimate|沪港|01
+      - 🇭🇰 *Ultimate|沪港|02
+      - 🇭🇰 *Ultimate|沪港|03
+      - 🇭🇰 *Ultimate|沪港|04
+      - 🇭🇰 *Ultimate|沪港|05
+      - 🇭🇰 *Ultimate|沪港|06
+      - 🇭🇰 *Ultimate|沪港|07
+      - 🇭🇰 *Ultimate|沪港|08
+      - 🇭🇰 *Ultimate|沪港|09
+      - 🇭🇰 *Ultimate|沪港|10
+      - 🇺🇸 *Ultimate|沪美|01
+      - 🇺🇸 *Ultimate|沪美|02
+      - 🇰🇷 *Ultimate|沪韩|01
+      - 🇰🇷 *Ultimate|沪韩|02
+      - 🇨🇳 Advanced|广台|01
+      - 🇨🇳 Advanced|广台|02
+      - 🇸🇬 Advanced|广新|01
+      - 🇸🇬 Advanced|广新|02
+      - 🇯🇵 Advanced|广日|01
+      - 🇯🇵 Advanced|广日|02
+      - 🇭🇰 Advanced|广港|01
+      - 🇭🇰 Advanced|广港|02
+      - 🇭🇰 Advanced|广港|03
+      - 🇭🇰 Advanced|广港|04
+      - 🇭🇰 Advanced|广港|05
+      - 🇭🇰 Advanced|广港|06
+      - 🇭🇰 Advanced|广港|07
+      - 🇭🇰 Advanced|广港|08
+      - 🇭🇰 Advanced|广港|09
+      - 🇭🇰 Advanced|广港|10
+      - 🇺🇸 Advanced|广美|01
+      - 🇺🇸 Advanced|广美|02
+      - 🇰🇷 Advanced|广韩|01
+      - 🇰🇷 Advanced|广韩|02
+      - 🇨🇳 Basic|广台|01
+      - 🇨🇳 Basic|广台|02
+      - 🇸🇬 Basic|广新|01
+      - 🇸🇬 Basic|广新|02
+      - 🇸🇬 Basic|广新|03
+      - 🇸🇬 Basic|广新|04
+      - 🇸🇬 Basic|广新|05
+      - 🇸🇬 Basic|广新|06
+      - 🇯🇵 Basic|广日|01
+      - 🇯🇵 Basic|广日|02
+      - 🇯🇵 Basic|广日|03
+      - 🇯🇵 Basic|广日|04
+      - 🇯🇵 Basic|广日|05
+      - 🇯🇵 Basic|广日|06
+      - 🇭🇰 Basic|广港|01
+      - 🇭🇰 Basic|广港|02
+      - 🇭🇰 Basic|广港|03
+      - 🇭🇰 Basic|广港|04
+      - 🇭🇰 Basic|广港|05
+      - 🇭🇰 Basic|广港|06
+      - 🇭🇰 Basic|广港|07
+      - 🇭🇰 Basic|广港|08
+      - 🇭🇰 Basic|广港|09
+      - 🇭🇰 Basic|广港|10
+      - 🇺🇸 Basic|广美|01
+      - 🇺🇸 Basic|广美|02
+      - 🇺🇸 Basic|广美|03
+      - 🇺🇸 Basic|广美|04
+      - 🇺🇸 Basic|广美|05
+      - 🇺🇸 Basic|广美|06
+      - 🇰🇷 Basic|广韩|01
+      - 🇰🇷 Basic|广韩|02
+      - 🏳️‍🌈 Renew|应急续费使用
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - CA,
-      - JP, 2
-      - JP, 3
-      - KR,
-      - 🇺🇸 美国IT7 洛杉矶8
-      - 🇨🇳 TW,
-      - 🇭🇰 HK, 2
-      - 🇯🇵 日本 东京 AWS1
-      - 🇯🇵 日本 东京都 AWS
-      - 🇷🇺 美国 俄勒冈州AWS2
-      - 🇷🇺 美国 俄勒冈州AWS3
-      - 🇺🇸 US,
-      - 🇺🇸 US, 4
-      - 🇺🇸 US, 5
-      - 🇺🇸 美国IT7 洛杉矶7
-      - 🇺🇸 美国IT7 洛杉矶8 2
-      - 🇯🇵 日本-BS131^+
-      - 🇨🇳 CN_447
+      - 🇨🇳 *Ultimate|广台|01
+      - 🇨🇳 *Ultimate|广台|02
+      - 🇸🇬 *Ultimate|广新|01
+      - 🇸🇬 *Ultimate|广新|02
+      - 🇯🇵 *Ultimate|广日|01
+      - 🇯🇵 *Ultimate|广日|02
+      - 🇭🇰 *Ultimate|广港|01
+      - 🇭🇰 *Ultimate|广港|02
+      - 🇭🇰 *Ultimate|广港|03
+      - 🇭🇰 *Ultimate|广港|04
+      - 🇭🇰 *Ultimate|广港|05
+      - 🇭🇰 *Ultimate|广港|06
+      - 🇭🇰 *Ultimate|广港|07
+      - 🇭🇰 *Ultimate|广港|08
+      - 🇭🇰 *Ultimate|广港|09
+      - 🇭🇰 *Ultimate|广港|10
+      - 🇺🇸 *Ultimate|广美|01
+      - 🇺🇸 *Ultimate|广美|02
+      - 🇰🇷 *Ultimate|广韩|01
+      - 🇰🇷 *Ultimate|广韩|02
+      - 🇨🇳 *Ultimate|沪台|01
+      - 🇨🇳 *Ultimate|沪台|02
+      - 🇸🇬 *Ultimate|沪新|01
+      - 🇸🇬 *Ultimate|沪新|02
+      - 🇯🇵 *Ultimate|沪日|01
+      - 🇯🇵 *Ultimate|沪日|02
+      - 🇭🇰 *Ultimate|沪港|01
+      - 🇭🇰 *Ultimate|沪港|02
+      - 🇭🇰 *Ultimate|沪港|03
+      - 🇭🇰 *Ultimate|沪港|04
+      - 🇭🇰 *Ultimate|沪港|05
+      - 🇭🇰 *Ultimate|沪港|06
+      - 🇭🇰 *Ultimate|沪港|07
+      - 🇭🇰 *Ultimate|沪港|08
+      - 🇭🇰 *Ultimate|沪港|09
+      - 🇭🇰 *Ultimate|沪港|10
+      - 🇺🇸 *Ultimate|沪美|01
+      - 🇺🇸 *Ultimate|沪美|02
+      - 🇰🇷 *Ultimate|沪韩|01
+      - 🇰🇷 *Ultimate|沪韩|02
+      - 🇨🇳 Advanced|广台|01
+      - 🇨🇳 Advanced|广台|02
+      - 🇸🇬 Advanced|广新|01
+      - 🇸🇬 Advanced|广新|02
+      - 🇯🇵 Advanced|广日|01
+      - 🇯🇵 Advanced|广日|02
+      - 🇭🇰 Advanced|广港|01
+      - 🇭🇰 Advanced|广港|02
+      - 🇭🇰 Advanced|广港|03
+      - 🇭🇰 Advanced|广港|04
+      - 🇭🇰 Advanced|广港|05
+      - 🇭🇰 Advanced|广港|06
+      - 🇭🇰 Advanced|广港|07
+      - 🇭🇰 Advanced|广港|08
+      - 🇭🇰 Advanced|广港|09
+      - 🇭🇰 Advanced|广港|10
+      - 🇺🇸 Advanced|广美|01
+      - 🇺🇸 Advanced|广美|02
+      - 🇰🇷 Advanced|广韩|01
+      - 🇰🇷 Advanced|广韩|02
+      - 🇨🇳 Basic|广台|01
+      - 🇨🇳 Basic|广台|02
+      - 🇸🇬 Basic|广新|01
+      - 🇸🇬 Basic|广新|02
+      - 🇸🇬 Basic|广新|03
+      - 🇸🇬 Basic|广新|04
+      - 🇸🇬 Basic|广新|05
+      - 🇸🇬 Basic|广新|06
+      - 🇯🇵 Basic|广日|01
+      - 🇯🇵 Basic|广日|02
+      - 🇯🇵 Basic|广日|03
+      - 🇯🇵 Basic|广日|04
+      - 🇯🇵 Basic|广日|05
+      - 🇯🇵 Basic|广日|06
+      - 🇭🇰 Basic|广港|01
+      - 🇭🇰 Basic|广港|02
+      - 🇭🇰 Basic|广港|03
+      - 🇭🇰 Basic|广港|04
+      - 🇭🇰 Basic|广港|05
+      - 🇭🇰 Basic|广港|06
+      - 🇭🇰 Basic|广港|07
+      - 🇭🇰 Basic|广港|08
+      - 🇭🇰 Basic|广港|09
+      - 🇭🇰 Basic|广港|10
+      - 🇺🇸 Basic|广美|01
+      - 🇺🇸 Basic|广美|02
+      - 🇺🇸 Basic|广美|03
+      - 🇺🇸 Basic|广美|04
+      - 🇺🇸 Basic|广美|05
+      - 🇺🇸 Basic|广美|06
+      - 🇰🇷 Basic|广韩|01
+      - 🇰🇷 Basic|广韩|02
+      - 🏳️‍🌈 Renew|应急续费使用
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA,
-      - JP, 2
-      - JP, 3
-      - KR,
-      - 🇺🇸 美国IT7 洛杉矶8
-      - 🇨🇳 TW,
-      - 🇭🇰 HK, 2
-      - 🇯🇵 日本 东京 AWS1
-      - 🇯🇵 日本 东京都 AWS
-      - 🇷🇺 美国 俄勒冈州AWS2
-      - 🇷🇺 美国 俄勒冈州AWS3
-      - 🇺🇸 US,
-      - 🇺🇸 US, 4
-      - 🇺🇸 US, 5
-      - 🇺🇸 美国IT7 洛杉矶7
-      - 🇺🇸 美国IT7 洛杉矶8 2
-      - 🇯🇵 日本-BS131^+
-      - 🇨🇳 CN_447
+      - 🇨🇳 *Ultimate|广台|01
+      - 🇨🇳 *Ultimate|广台|02
+      - 🇸🇬 *Ultimate|广新|01
+      - 🇸🇬 *Ultimate|广新|02
+      - 🇯🇵 *Ultimate|广日|01
+      - 🇯🇵 *Ultimate|广日|02
+      - 🇭🇰 *Ultimate|广港|01
+      - 🇭🇰 *Ultimate|广港|02
+      - 🇭🇰 *Ultimate|广港|03
+      - 🇭🇰 *Ultimate|广港|04
+      - 🇭🇰 *Ultimate|广港|05
+      - 🇭🇰 *Ultimate|广港|06
+      - 🇭🇰 *Ultimate|广港|07
+      - 🇭🇰 *Ultimate|广港|08
+      - 🇭🇰 *Ultimate|广港|09
+      - 🇭🇰 *Ultimate|广港|10
+      - 🇺🇸 *Ultimate|广美|01
+      - 🇺🇸 *Ultimate|广美|02
+      - 🇰🇷 *Ultimate|广韩|01
+      - 🇰🇷 *Ultimate|广韩|02
+      - 🇨🇳 *Ultimate|沪台|01
+      - 🇨🇳 *Ultimate|沪台|02
+      - 🇸🇬 *Ultimate|沪新|01
+      - 🇸🇬 *Ultimate|沪新|02
+      - 🇯🇵 *Ultimate|沪日|01
+      - 🇯🇵 *Ultimate|沪日|02
+      - 🇭🇰 *Ultimate|沪港|01
+      - 🇭🇰 *Ultimate|沪港|02
+      - 🇭🇰 *Ultimate|沪港|03
+      - 🇭🇰 *Ultimate|沪港|04
+      - 🇭🇰 *Ultimate|沪港|05
+      - 🇭🇰 *Ultimate|沪港|06
+      - 🇭🇰 *Ultimate|沪港|07
+      - 🇭🇰 *Ultimate|沪港|08
+      - 🇭🇰 *Ultimate|沪港|09
+      - 🇭🇰 *Ultimate|沪港|10
+      - 🇺🇸 *Ultimate|沪美|01
+      - 🇺🇸 *Ultimate|沪美|02
+      - 🇰🇷 *Ultimate|沪韩|01
+      - 🇰🇷 *Ultimate|沪韩|02
+      - 🇨🇳 Advanced|广台|01
+      - 🇨🇳 Advanced|广台|02
+      - 🇸🇬 Advanced|广新|01
+      - 🇸🇬 Advanced|广新|02
+      - 🇯🇵 Advanced|广日|01
+      - 🇯🇵 Advanced|广日|02
+      - 🇭🇰 Advanced|广港|01
+      - 🇭🇰 Advanced|广港|02
+      - 🇭🇰 Advanced|广港|03
+      - 🇭🇰 Advanced|广港|04
+      - 🇭🇰 Advanced|广港|05
+      - 🇭🇰 Advanced|广港|06
+      - 🇭🇰 Advanced|广港|07
+      - 🇭🇰 Advanced|广港|08
+      - 🇭🇰 Advanced|广港|09
+      - 🇭🇰 Advanced|广港|10
+      - 🇺🇸 Advanced|广美|01
+      - 🇺🇸 Advanced|广美|02
+      - 🇰🇷 Advanced|广韩|01
+      - 🇰🇷 Advanced|广韩|02
+      - 🇨🇳 Basic|广台|01
+      - 🇨🇳 Basic|广台|02
+      - 🇸🇬 Basic|广新|01
+      - 🇸🇬 Basic|广新|02
+      - 🇸🇬 Basic|广新|03
+      - 🇸🇬 Basic|广新|04
+      - 🇸🇬 Basic|广新|05
+      - 🇸🇬 Basic|广新|06
+      - 🇯🇵 Basic|广日|01
+      - 🇯🇵 Basic|广日|02
+      - 🇯🇵 Basic|广日|03
+      - 🇯🇵 Basic|广日|04
+      - 🇯🇵 Basic|广日|05
+      - 🇯🇵 Basic|广日|06
+      - 🇭🇰 Basic|广港|01
+      - 🇭🇰 Basic|广港|02
+      - 🇭🇰 Basic|广港|03
+      - 🇭🇰 Basic|广港|04
+      - 🇭🇰 Basic|广港|05
+      - 🇭🇰 Basic|广港|06
+      - 🇭🇰 Basic|广港|07
+      - 🇭🇰 Basic|广港|08
+      - 🇭🇰 Basic|广港|09
+      - 🇭🇰 Basic|广港|10
+      - 🇺🇸 Basic|广美|01
+      - 🇺🇸 Basic|广美|02
+      - 🇺🇸 Basic|广美|03
+      - 🇺🇸 Basic|广美|04
+      - 🇺🇸 Basic|广美|05
+      - 🇺🇸 Basic|广美|06
+      - 🇰🇷 Basic|广韩|01
+      - 🇰🇷 Basic|广韩|02
+      - 🏳️‍🌈 Renew|应急续费使用
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA,
-      - JP, 2
-      - JP, 3
-      - KR,
-      - 🇺🇸 美国IT7 洛杉矶8
-      - 🇨🇳 TW,
-      - 🇭🇰 HK, 2
-      - 🇯🇵 日本 东京 AWS1
-      - 🇯🇵 日本 东京都 AWS
-      - 🇷🇺 美国 俄勒冈州AWS2
-      - 🇷🇺 美国 俄勒冈州AWS3
-      - 🇺🇸 US,
-      - 🇺🇸 US, 4
-      - 🇺🇸 US, 5
-      - 🇺🇸 美国IT7 洛杉矶7
-      - 🇺🇸 美国IT7 洛杉矶8 2
-      - 🇯🇵 日本-BS131^+
-      - 🇨🇳 CN_447
+      - 🇨🇳 *Ultimate|广台|01
+      - 🇨🇳 *Ultimate|广台|02
+      - 🇸🇬 *Ultimate|广新|01
+      - 🇸🇬 *Ultimate|广新|02
+      - 🇯🇵 *Ultimate|广日|01
+      - 🇯🇵 *Ultimate|广日|02
+      - 🇭🇰 *Ultimate|广港|01
+      - 🇭🇰 *Ultimate|广港|02
+      - 🇭🇰 *Ultimate|广港|03
+      - 🇭🇰 *Ultimate|广港|04
+      - 🇭🇰 *Ultimate|广港|05
+      - 🇭🇰 *Ultimate|广港|06
+      - 🇭🇰 *Ultimate|广港|07
+      - 🇭🇰 *Ultimate|广港|08
+      - 🇭🇰 *Ultimate|广港|09
+      - 🇭🇰 *Ultimate|广港|10
+      - 🇺🇸 *Ultimate|广美|01
+      - 🇺🇸 *Ultimate|广美|02
+      - 🇰🇷 *Ultimate|广韩|01
+      - 🇰🇷 *Ultimate|广韩|02
+      - 🇨🇳 *Ultimate|沪台|01
+      - 🇨🇳 *Ultimate|沪台|02
+      - 🇸🇬 *Ultimate|沪新|01
+      - 🇸🇬 *Ultimate|沪新|02
+      - 🇯🇵 *Ultimate|沪日|01
+      - 🇯🇵 *Ultimate|沪日|02
+      - 🇭🇰 *Ultimate|沪港|01
+      - 🇭🇰 *Ultimate|沪港|02
+      - 🇭🇰 *Ultimate|沪港|03
+      - 🇭🇰 *Ultimate|沪港|04
+      - 🇭🇰 *Ultimate|沪港|05
+      - 🇭🇰 *Ultimate|沪港|06
+      - 🇭🇰 *Ultimate|沪港|07
+      - 🇭🇰 *Ultimate|沪港|08
+      - 🇭🇰 *Ultimate|沪港|09
+      - 🇭🇰 *Ultimate|沪港|10
+      - 🇺🇸 *Ultimate|沪美|01
+      - 🇺🇸 *Ultimate|沪美|02
+      - 🇰🇷 *Ultimate|沪韩|01
+      - 🇰🇷 *Ultimate|沪韩|02
+      - 🇨🇳 Advanced|广台|01
+      - 🇨🇳 Advanced|广台|02
+      - 🇸🇬 Advanced|广新|01
+      - 🇸🇬 Advanced|广新|02
+      - 🇯🇵 Advanced|广日|01
+      - 🇯🇵 Advanced|广日|02
+      - 🇭🇰 Advanced|广港|01
+      - 🇭🇰 Advanced|广港|02
+      - 🇭🇰 Advanced|广港|03
+      - 🇭🇰 Advanced|广港|04
+      - 🇭🇰 Advanced|广港|05
+      - 🇭🇰 Advanced|广港|06
+      - 🇭🇰 Advanced|广港|07
+      - 🇭🇰 Advanced|广港|08
+      - 🇭🇰 Advanced|广港|09
+      - 🇭🇰 Advanced|广港|10
+      - 🇺🇸 Advanced|广美|01
+      - 🇺🇸 Advanced|广美|02
+      - 🇰🇷 Advanced|广韩|01
+      - 🇰🇷 Advanced|广韩|02
+      - 🇨🇳 Basic|广台|01
+      - 🇨🇳 Basic|广台|02
+      - 🇸🇬 Basic|广新|01
+      - 🇸🇬 Basic|广新|02
+      - 🇸🇬 Basic|广新|03
+      - 🇸🇬 Basic|广新|04
+      - 🇸🇬 Basic|广新|05
+      - 🇸🇬 Basic|广新|06
+      - 🇯🇵 Basic|广日|01
+      - 🇯🇵 Basic|广日|02
+      - 🇯🇵 Basic|广日|03
+      - 🇯🇵 Basic|广日|04
+      - 🇯🇵 Basic|广日|05
+      - 🇯🇵 Basic|广日|06
+      - 🇭🇰 Basic|广港|01
+      - 🇭🇰 Basic|广港|02
+      - 🇭🇰 Basic|广港|03
+      - 🇭🇰 Basic|广港|04
+      - 🇭🇰 Basic|广港|05
+      - 🇭🇰 Basic|广港|06
+      - 🇭🇰 Basic|广港|07
+      - 🇭🇰 Basic|广港|08
+      - 🇭🇰 Basic|广港|09
+      - 🇭🇰 Basic|广港|10
+      - 🇺🇸 Basic|广美|01
+      - 🇺🇸 Basic|广美|02
+      - 🇺🇸 Basic|广美|03
+      - 🇺🇸 Basic|广美|04
+      - 🇺🇸 Basic|广美|05
+      - 🇺🇸 Basic|广美|06
+      - 🇰🇷 Basic|广韩|01
+      - 🇰🇷 Basic|广韩|02
+      - 🏳️‍🌈 Renew|应急续费使用
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -210,24 +810,99 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA,
-      - JP, 2
-      - JP, 3
-      - KR,
-      - 🇺🇸 美国IT7 洛杉矶8
-      - 🇨🇳 TW,
-      - 🇭🇰 HK, 2
-      - 🇯🇵 日本 东京 AWS1
-      - 🇯🇵 日本 东京都 AWS
-      - 🇷🇺 美国 俄勒冈州AWS2
-      - 🇷🇺 美国 俄勒冈州AWS3
-      - 🇺🇸 US,
-      - 🇺🇸 US, 4
-      - 🇺🇸 US, 5
-      - 🇺🇸 美国IT7 洛杉矶7
-      - 🇺🇸 美国IT7 洛杉矶8 2
-      - 🇯🇵 日本-BS131^+
-      - 🇨🇳 CN_447
+      - 🇨🇳 *Ultimate|广台|01
+      - 🇨🇳 *Ultimate|广台|02
+      - 🇸🇬 *Ultimate|广新|01
+      - 🇸🇬 *Ultimate|广新|02
+      - 🇯🇵 *Ultimate|广日|01
+      - 🇯🇵 *Ultimate|广日|02
+      - 🇭🇰 *Ultimate|广港|01
+      - 🇭🇰 *Ultimate|广港|02
+      - 🇭🇰 *Ultimate|广港|03
+      - 🇭🇰 *Ultimate|广港|04
+      - 🇭🇰 *Ultimate|广港|05
+      - 🇭🇰 *Ultimate|广港|06
+      - 🇭🇰 *Ultimate|广港|07
+      - 🇭🇰 *Ultimate|广港|08
+      - 🇭🇰 *Ultimate|广港|09
+      - 🇭🇰 *Ultimate|广港|10
+      - 🇺🇸 *Ultimate|广美|01
+      - 🇺🇸 *Ultimate|广美|02
+      - 🇰🇷 *Ultimate|广韩|01
+      - 🇰🇷 *Ultimate|广韩|02
+      - 🇨🇳 *Ultimate|沪台|01
+      - 🇨🇳 *Ultimate|沪台|02
+      - 🇸🇬 *Ultimate|沪新|01
+      - 🇸🇬 *Ultimate|沪新|02
+      - 🇯🇵 *Ultimate|沪日|01
+      - 🇯🇵 *Ultimate|沪日|02
+      - 🇭🇰 *Ultimate|沪港|01
+      - 🇭🇰 *Ultimate|沪港|02
+      - 🇭🇰 *Ultimate|沪港|03
+      - 🇭🇰 *Ultimate|沪港|04
+      - 🇭🇰 *Ultimate|沪港|05
+      - 🇭🇰 *Ultimate|沪港|06
+      - 🇭🇰 *Ultimate|沪港|07
+      - 🇭🇰 *Ultimate|沪港|08
+      - 🇭🇰 *Ultimate|沪港|09
+      - 🇭🇰 *Ultimate|沪港|10
+      - 🇺🇸 *Ultimate|沪美|01
+      - 🇺🇸 *Ultimate|沪美|02
+      - 🇰🇷 *Ultimate|沪韩|01
+      - 🇰🇷 *Ultimate|沪韩|02
+      - 🇨🇳 Advanced|广台|01
+      - 🇨🇳 Advanced|广台|02
+      - 🇸🇬 Advanced|广新|01
+      - 🇸🇬 Advanced|广新|02
+      - 🇯🇵 Advanced|广日|01
+      - 🇯🇵 Advanced|广日|02
+      - 🇭🇰 Advanced|广港|01
+      - 🇭🇰 Advanced|广港|02
+      - 🇭🇰 Advanced|广港|03
+      - 🇭🇰 Advanced|广港|04
+      - 🇭🇰 Advanced|广港|05
+      - 🇭🇰 Advanced|广港|06
+      - 🇭🇰 Advanced|广港|07
+      - 🇭🇰 Advanced|广港|08
+      - 🇭🇰 Advanced|广港|09
+      - 🇭🇰 Advanced|广港|10
+      - 🇺🇸 Advanced|广美|01
+      - 🇺🇸 Advanced|广美|02
+      - 🇰🇷 Advanced|广韩|01
+      - 🇰🇷 Advanced|广韩|02
+      - 🇨🇳 Basic|广台|01
+      - 🇨🇳 Basic|广台|02
+      - 🇸🇬 Basic|广新|01
+      - 🇸🇬 Basic|广新|02
+      - 🇸🇬 Basic|广新|03
+      - 🇸🇬 Basic|广新|04
+      - 🇸🇬 Basic|广新|05
+      - 🇸🇬 Basic|广新|06
+      - 🇯🇵 Basic|广日|01
+      - 🇯🇵 Basic|广日|02
+      - 🇯🇵 Basic|广日|03
+      - 🇯🇵 Basic|广日|04
+      - 🇯🇵 Basic|广日|05
+      - 🇯🇵 Basic|广日|06
+      - 🇭🇰 Basic|广港|01
+      - 🇭🇰 Basic|广港|02
+      - 🇭🇰 Basic|广港|03
+      - 🇭🇰 Basic|广港|04
+      - 🇭🇰 Basic|广港|05
+      - 🇭🇰 Basic|广港|06
+      - 🇭🇰 Basic|广港|07
+      - 🇭🇰 Basic|广港|08
+      - 🇭🇰 Basic|广港|09
+      - 🇭🇰 Basic|广港|10
+      - 🇺🇸 Basic|广美|01
+      - 🇺🇸 Basic|广美|02
+      - 🇺🇸 Basic|广美|03
+      - 🇺🇸 Basic|广美|04
+      - 🇺🇸 Basic|广美|05
+      - 🇺🇸 Basic|广美|06
+      - 🇰🇷 Basic|广韩|01
+      - 🇰🇷 Basic|广韩|02
+      - 🏳️‍🌈 Renew|应急续费使用
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
