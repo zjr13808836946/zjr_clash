@@ -6,22 +6,9 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 🇭🇰 F-香港-00, server: qexw.nssl.cf, port: 443, type: vmess, uuid: 4e7cbfaa-7e66-3e34-adcb-125bc37f8112, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dl, ws-headers: {Host: qexw.nssl.cf}}
-  - {name: 🇨🇳 中转*广州移动-台北*03, server: 183.236.57.52, port: 10003, type: vmess, uuid: 0276a810-7c86-4cdf-9874-0bf64e3e3015, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【低延迟】中转*广州移动-香港*03, server: 183.236.57.52, port: 10001, type: vmess, uuid: 0276a810-7c86-4cdf-9874-0bf64e3e3015, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【低延迟】中转*广州移动-香港*03 2, server: 183.236.57.52, port: 10001, type: vmess, uuid: 28747a76-6c4e-43d3-abc0-718c5d56a14c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 中转*广州移动-新加坡*03, server: 183.236.57.52, port: 10002, type: vmess, uuid: 28747a76-6c4e-43d3-abc0-718c5d56a14c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 中转*广州移动-台北*03 2, server: 183.236.57.52, port: 10003, type: vmess, uuid: 28747a76-6c4e-43d3-abc0-718c5d56a14c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【低延迟】中转*广州移动-香港*03 3, server: 183.236.57.52, port: 10001, type: vmess, uuid: a14c4d64-3f62-499a-9a76-c73751f5502c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 中转*广州移动-新加坡*03 2, server: 183.236.57.52, port: 10002, type: vmess, uuid: a14c4d64-3f62-499a-9a76-c73751f5502c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 中转*广州移动-台北*03 3, server: 183.236.57.52, port: 10003, type: vmess, uuid: a14c4d64-3f62-499a-9a76-c73751f5502c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【低延迟】中转*广州移动-香港*03 4, server: 183.236.57.52, port: 10001, type: vmess, uuid: e15839ec-20bc-4da4-ada1-1acb802695e7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 中转*广州移动-新加坡*03 3, server: 183.236.57.52, port: 10002, type: vmess, uuid: e15839ec-20bc-4da4-ada1-1acb802695e7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 中转*广州移动-台北*03 4, server: 183.236.57.52, port: 10003, type: vmess, uuid: e15839ec-20bc-4da4-ada1-1acb802695e7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【低延迟】中转*广州移动-香港*01, server: 183.236.57.18, port: 10001, type: vmess, uuid: c56f60e8-1321-4d6a-9ee4-dbb1955ab537, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 中转*广州移动-台北*01, server: 183.236.57.18, port: 10003, type: vmess, uuid: c56f60e8-1321-4d6a-9ee4-dbb1955ab537, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 V1 | 香港01 | AZ直连2Gbps | x1.0, server: v1.hk01.cocorouter.com, port: 18005, type: vmess, uuid: 190777a2-df34-337e-9f86-39a2eb20d661, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: v1.hk01.cocorouter.com}}
-  - {name: 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0, server: v1.hk02.cocorouter.com, port: 18006, type: vmess, uuid: 190777a2-df34-337e-9f86-39a2eb20d661, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: v1.hk02.cocorouter.com}}
-  - {name: 🇭🇰 V1 | 香港04 | AZ直连2Gbps | x1.0, server: v1.hk04.cocorouter.com, port: 18008, type: vmess, uuid: 190777a2-df34-337e-9f86-39a2eb20d661, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: v1.hk04.cocorouter.com}}
+  - {name: 🇸🇬 新加坡01〖直连|0.5x〗A组, server: az-sg-a.txwd.xyz, port: 33331, type: vmess, uuid: 3d107736-5674-359e-bacb-72aee6b07bdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mcwy-sg, ws-headers: {Host: az-sg-a.txwd.xyz}}
+  - {name: 🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0, server: v1.sg01.cocorouter.com, port: 18010, type: vmess, uuid: 190777a2-df34-337e-9f86-39a2eb20d661, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: v1.sg01.cocorouter.com}}
+  - {name: 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0, server: v1.hk05.cocorouter.com, port: 18009, type: vmess, uuid: 190777a2-df34-337e-9f86-39a2eb20d661, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: v1.hk05.cocorouter.com}}
   - {name: 🇭🇰 HK05-高速节点, server: xin.cthgo.me, port: 10001, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xin.cthgo.me}}
   - {name: TH03-高速节点, server: xin.cthgo.me, port: 6812, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xin.cthgo.me}}
   - {name: 🇭🇰 HK03-高速节点, server: xin.cthgo.me, port: 10096, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xin.cthgo.me}}
@@ -30,69 +17,33 @@ proxies:
   - {name: KR02-高速节点, server: xin.cthgo.me, port: 2012, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xin.cthgo.me}}
   - {name: PH03-高速节点, server: xin.cthgo.me, port: 5466, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xin.cthgo.me}}
   - {name: TH05-高速节点, server: xin.cthgo.me, port: 6814, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xin.cthgo.me}}
-  - {name: PH02-高速节点, server: xin.cthgo.me, port: 5465, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xin.cthgo.me}}
-  - {name: TH04-高速节点, server: xin.cthgo.me, port: 6813, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xin.cthgo.me}}
-  - {name: TH02-高速节点, server: xin.cthgo.me, port: 6811, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xin.cthgo.me}}
-  - {name: 🇭🇰 HK07-高速节点, server: xin.cthgo.me, port: 10011, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xin.cthgo.me}}
+  - {name: ★白嫖联盟★----8, server: xin.cthgo.me, port: 2012, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xin.cthgo.me}}
+  - {name: ★白嫖联盟★----9, server: xin.cthgo.me, port: 5467, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xin.cthgo.me}}
+  - {name: ★白嫖联盟★----10, server: xin.cthgo.me, port: 10011, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xin.cthgo.me}}
+  - {name: ★白嫖联盟★----11, server: xin.cthgo.me, port: 5466, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xin.cthgo.me}}
+  - {name: ★白嫖联盟★----13, server: xg2.cthgo.me, port: 80, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xg2.cthgo.me}}
+  - {name: ★白嫖联盟★----14, server: xg2.cthgo.me, port: 10093, type: vmess, uuid: 4a71f295-d190-4b2f-8d56-b27413d9d9f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xg2.cthgo.me}}
+  - {name: 🇸🇬 V1 | 新加坡02 | AZ直连2Gbps | x1.0, server: 13v1sg02.airlanding.xyz, port: 18011, type: vmess, uuid: 2f1c301b-49a1-35a7-bc2a-e0e620ae9812, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: 13v1sg02.airlanding.xyz}}
+  - {name: 🇯🇵 V1 | 日本01 | AZ直连2Gbps | x1.0, server: 05v1jp01.airlanding.xyz, port: 18003, type: vmess, uuid: 2f1c301b-49a1-35a7-bc2a-e0e620ae9812, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: 05v1jp01.airlanding.xyz}}
+  - {name: 🇯🇵 V1 | 日本02 | AZ直连2Gbps | x1.0, server: 06v1jp02.airlanding.xyz, port: 18004, type: vmess, uuid: 2f1c301b-49a1-35a7-bc2a-e0e620ae9812, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: 06v1jp02.airlanding.xyz}}
+  - {name: 🇰🇷 V1 | 韩国01 | AZ直连2Gbps | x1.0, server: 03v1kr01.airlanding.xyz, port: 18001, type: vmess, uuid: 2f1c301b-49a1-35a7-bc2a-e0e620ae9812, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: 03v1kr01.airlanding.xyz}}
+  - {name: 🇰🇷 V1 | 韩国02 | AZ直连2Gbps | x1.0, server: 04v1kr02.airlanding.xyz, port: 18002, type: vmess, uuid: 2f1c301b-49a1-35a7-bc2a-e0e620ae9812, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: 04v1kr02.airlanding.xyz}}
+  - {name: 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0, server: 08v1hk02.airlanding.xyz, port: 18006, type: vmess, uuid: 2f1c301b-49a1-35a7-bc2a-e0e620ae9812, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: 08v1hk02.airlanding.xyz}}
+  - {name: 🇭🇰 V1 | 香港03 | AZ直连2Gbps | x1.0, server: 09v1hk03.airlanding.xyz, port: 18007, type: vmess, uuid: 2f1c301b-49a1-35a7-bc2a-e0e620ae9812, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: 09v1hk03.airlanding.xyz}}
+  - {name: 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0 2, server: 11v1hk05.airlanding.xyz, port: 18009, type: vmess, uuid: 2f1c301b-49a1-35a7-bc2a-e0e620ae9812, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: 11v1hk05.airlanding.xyz}}
   - {name: 🇭🇰 【Tunnel_N】香港 普通 1 - Azure, server: nn8.boom.party, port: 47000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 60816:vergil, obfs-param: download.windowsupdate.com}
   - {name: 🇸🇬 新加坡-J, server: nkb.boom.party, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 223178:RUOPvI, obfs-param: download.windowsupdate.com}
-  - {name: 🇸🇬 新加坡-K, server: nkc.boom.party, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 223178:RUOPvI, obfs-param: download.windowsupdate.com}
   - {name: 🇺🇸 美国 广州│免费节点(洛杉矶1), server: gz.q88q.gq, port: 12168, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:jnypde02c0c, obfs-param: 61bb6623.baidu.com}
   - {name: 🇭🇰 香港-AK, server: nn8.boom.party, port: 47000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 223178:RUOPvI, obfs-param: download.windowsupdate.com}
   - {name: 🇨🇳 【Tunnel_A】台湾  VIP 1 - 中华电信, server: n04.boom.party, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 223178:RUOPvI, obfs-param: download.windowsupdate.com}
   - {name: 🇸🇬 【Tunnel_K】新加坡 普通 4 - DO, server: nkb.boom.party, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 223178:RUOPvI, obfs-param: download.windowsupdate.com}
-  - {name: 🇸🇬 【Tunnel_K】新加坡 普通 5 - DO, server: nkc.boom.party, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 223178:RUOPvI, obfs-param: download.windowsupdate.com}
   - {name: 🇭🇰 【Tunnel_N】香港 普通 1 - Azure 2, server: nn8.boom.party, port: 47000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 223178:RUOPvI, obfs-param: download.windowsupdate.com}
   - {name: 翻墙党1, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
   - {name: 翻墙党2, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
-  - {name: 翻墙党3, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
   - {name: 翻墙党4, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
-  - {name: 🇨🇦 加拿大1, server: 52.192.209.178, port: 447, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇨🇦 加拿大5, server: 52.194.247.205, port: 446, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇨🇦 加拿大7, server: 13.114.255.203, port: 444, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇨🇳 台湾1, server: 54.179.249.239, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇨🇳 台湾11, server: 18.183.194.107, port: 446, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇨🇳 台湾13, server: 54.249.169.150, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇨🇳 台湾9, server: 18.139.111.201, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇭🇰 香港9, server: 18.141.173.199, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇯🇵 日本16, server: 3.36.56.133, port: 444, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇯🇵 日本18, server: 3.36.99.146, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇯🇵 日本5, server: 54.199.250.211, port: 444, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇯🇵 日本6, server: 13.212.234.204, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇰🇷 韩国2, server: 3.35.140.53, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031, server: z0031.security-cloudfront-cdn.com, port: 29374, type: ssr, cipher: aes-256-cfb, password: oqzgxhSwwl0f0bdo, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 2, server: z0031.security-cloudfront-cdn.com, port: 32127, type: ssr, cipher: aes-256-cfb, password: H8hUuyQxqFX24QEd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 3, server: z0031.security-cloudfront-cdn.com, port: 36510, type: ssr, cipher: aes-256-cfb, password: qj0TMZaQYAdA1xfs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 4, server: z0031.security-cloudfront-cdn.com, port: 46397, type: ssr, cipher: aes-256-cfb, password: nqwBs8GxBgXxtUxf, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 5, server: z0031.security-cloudfront-cdn.com, port: 27356, type: ssr, cipher: aes-256-cfb, password: lc9TOLD2L3zY9T1T, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇺🇸 *国内中转*US|上海联通-香港HKT_0012, server: z0012.security-cloudfront-cdn.com, port: 29374, type: ssr, cipher: aes-256-cfb, password: oqzgxhSwwl0f0bdo, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 2, server: z0012.security-cloudfront-cdn.com, port: 32127, type: ssr, cipher: aes-256-cfb, password: H8hUuyQxqFX24QEd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 3, server: z0012.security-cloudfront-cdn.com, port: 36510, type: ssr, cipher: aes-256-cfb, password: qj0TMZaQYAdA1xfs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 4, server: z0012.security-cloudfront-cdn.com, port: 46397, type: ssr, cipher: aes-256-cfb, password: nqwBs8GxBgXxtUxf, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 5, server: z0012.security-cloudfront-cdn.com, port: 27356, type: ssr, cipher: aes-256-cfb, password: lc9TOLD2L3zY9T1T, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇺🇸 *国内中转*US|广州移动-香港移动_0004, server: z0004.security-cloudfront-cdn.com, port: 29374, type: ssr, cipher: aes-256-cfb, password: oqzgxhSwwl0f0bdo, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇺🇸 *国内中转*US|广州移动-香港移动_0004 2, server: z0004.security-cloudfront-cdn.com, port: 32127, type: ssr, cipher: aes-256-cfb, password: H8hUuyQxqFX24QEd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇺🇸 *国内中转*US|广州移动-香港移动_0004 3, server: z0004.security-cloudfront-cdn.com, port: 36510, type: ssr, cipher: aes-256-cfb, password: qj0TMZaQYAdA1xfs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇺🇸 *国内中转*US|广州移动-香港移动_0004 4, server: z0004.security-cloudfront-cdn.com, port: 46397, type: ssr, cipher: aes-256-cfb, password: nqwBs8GxBgXxtUxf, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇺🇸 *国内中转*US|广州移动-香港移动_0004 5, server: z0004.security-cloudfront-cdn.com, port: 27356, type: ssr, cipher: aes-256-cfb, password: lc9TOLD2L3zY9T1T, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇺🇸 *国内中转*US|移动云广州-香港_0001, server: z0001.security-cloudfront-cdn.com, port: 29374, type: ssr, cipher: aes-256-cfb, password: oqzgxhSwwl0f0bdo, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇺🇸 *国内中转*US|移动云广州-香港_0001 2, server: z0001.security-cloudfront-cdn.com, port: 32127, type: ssr, cipher: aes-256-cfb, password: H8hUuyQxqFX24QEd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇺🇸 *国内中转*US|移动云广州-香港_0001 3, server: z0001.security-cloudfront-cdn.com, port: 36510, type: ssr, cipher: aes-256-cfb, password: qj0TMZaQYAdA1xfs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇭🇰 【推荐】IPLC专线上海-香港一_01, server: z00001.security-cloudfront-cdn.com, port: 29374, type: ssr, cipher: aes-256-cfb, password: oqzgxhSwwl0f0bdo, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇭🇰 【推荐】IPLC专线上海-香港一_01 2, server: z00001.security-cloudfront-cdn.com, port: 32127, type: ssr, cipher: aes-256-cfb, password: H8hUuyQxqFX24QEd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇭🇰 【推荐】IPLC专线上海-香港一_01 3, server: z00001.security-cloudfront-cdn.com, port: 36510, type: ssr, cipher: aes-256-cfb, password: qj0TMZaQYAdA1xfs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇭🇰 【推荐】IPLC专线上海-香港一_01 4, server: z00001.security-cloudfront-cdn.com, port: 46397, type: ssr, cipher: aes-256-cfb, password: nqwBs8GxBgXxtUxf, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇭🇰 【推荐】IPLC专线上海-香港一_01 5, server: z00001.security-cloudfront-cdn.com, port: 27356, type: ssr, cipher: aes-256-cfb, password: lc9TOLD2L3zY9T1T, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇭🇰 【推荐】IPLC专线上海-香港二_11, server: z00011.security-cloudfront-cdn.com, port: 29374, type: ssr, cipher: aes-256-cfb, password: oqzgxhSwwl0f0bdo, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇭🇰 【推荐】IPLC专线上海-香港二_11 2, server: z00011.security-cloudfront-cdn.com, port: 46397, type: ssr, cipher: aes-256-cfb, password: nqwBs8GxBgXxtUxf, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇭🇰 【推荐】IPLC专线上海-香港二_12, server: z00012.security-cloudfront-cdn.com, port: 32127, type: ssr, cipher: aes-256-cfb, password: H8hUuyQxqFX24QEd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇭🇰 【推荐】IPLC专线上海-香港二_12 2, server: z00012.security-cloudfront-cdn.com, port: 36510, type: ssr, cipher: aes-256-cfb, password: qj0TMZaQYAdA1xfs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇭🇰 【推荐】IPLC专线上海-香港二_12 3, server: z00012.security-cloudfront-cdn.com, port: 27356, type: ssr, cipher: aes-256-cfb, password: lc9TOLD2L3zY9T1T, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇯🇵 【推荐】IPLC专线广州-东京_41, server: z00041.security-cloudfront-cdn.com, port: 29374, type: ssr, cipher: aes-256-cfb, password: oqzgxhSwwl0f0bdo, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇯🇵 【推荐】IPLC专线广州-东京_41 2, server: z00041.security-cloudfront-cdn.com, port: 32127, type: ssr, cipher: aes-256-cfb, password: H8hUuyQxqFX24QEd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇯🇵 【推荐】IPLC专线广州-东京_41 3, server: z00041.security-cloudfront-cdn.com, port: 36510, type: ssr, cipher: aes-256-cfb, password: qj0TMZaQYAdA1xfs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇯🇵 【推荐】IPLC专线广州-东京_41 4, server: z00041.security-cloudfront-cdn.com, port: 46397, type: ssr, cipher: aes-256-cfb, password: nqwBs8GxBgXxtUxf, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 🇯🇵 【推荐】IPLC专线广州-东京_41 5, server: z00041.security-cloudfront-cdn.com, port: 27356, type: ssr, cipher: aes-256-cfb, password: lc9TOLD2L3zY9T1T, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -100,22 +51,9 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇭🇰 F-香港-00
-      - 🇨🇳 中转*广州移动-台北*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 2
-      - 🇸🇬 中转*广州移动-新加坡*03
-      - 🇨🇳 中转*广州移动-台北*03 2
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 3
-      - 🇸🇬 中转*广州移动-新加坡*03 2
-      - 🇨🇳 中转*广州移动-台北*03 3
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 4
-      - 🇸🇬 中转*广州移动-新加坡*03 3
-      - 🇨🇳 中转*广州移动-台北*03 4
-      - 🇭🇰 【低延迟】中转*广州移动-香港*01
-      - 🇨🇳 中转*广州移动-台北*01
-      - 🇭🇰 V1 | 香港01 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港04 | AZ直连2Gbps | x1.0
+      - 🇸🇬 新加坡01〖直连|0.5x〗A组
+      - 🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0
       - 🇭🇰 HK05-高速节点
       - TH03-高速节点
       - 🇭🇰 HK03-高速节点
@@ -124,69 +62,33 @@ proxy-groups:
       - KR02-高速节点
       - PH03-高速节点
       - TH05-高速节点
-      - PH02-高速节点
-      - TH04-高速节点
-      - TH02-高速节点
-      - 🇭🇰 HK07-高速节点
+      - ★白嫖联盟★----8
+      - ★白嫖联盟★----9
+      - ★白嫖联盟★----10
+      - ★白嫖联盟★----11
+      - ★白嫖联盟★----13
+      - ★白嫖联盟★----14
+      - 🇸🇬 V1 | 新加坡02 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本01 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本02 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国01 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港03 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0 2
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure
       - 🇸🇬 新加坡-J
-      - 🇸🇬 新加坡-K
       - 🇺🇸 美国 广州│免费节点(洛杉矶1)
       - 🇭🇰 香港-AK
       - 🇨🇳 【Tunnel_A】台湾  VIP 1 - 中华电信
       - 🇸🇬 【Tunnel_K】新加坡 普通 4 - DO
-      - 🇸🇬 【Tunnel_K】新加坡 普通 5 - DO
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure 2
       - 翻墙党1
       - 翻墙党2
-      - 翻墙党3
       - 翻墙党4
-      - 🇨🇦 加拿大1
-      - 🇨🇦 加拿大5
-      - 🇨🇦 加拿大7
       - 🇨🇳 台湾1
-      - 🇨🇳 台湾11
-      - 🇨🇳 台湾13
-      - 🇨🇳 台湾9
       - 🇭🇰 香港9
-      - 🇯🇵 日本16
-      - 🇯🇵 日本18
-      - 🇯🇵 日本5
       - 🇯🇵 日本6
-      - 🇰🇷 韩国2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 3
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 4
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 5
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 2
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 3
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 4
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 5
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 2
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 3
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 4
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 5
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 2
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 4
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 5
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 2
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 4
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -194,22 +96,9 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇭🇰 F-香港-00
-      - 🇨🇳 中转*广州移动-台北*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 2
-      - 🇸🇬 中转*广州移动-新加坡*03
-      - 🇨🇳 中转*广州移动-台北*03 2
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 3
-      - 🇸🇬 中转*广州移动-新加坡*03 2
-      - 🇨🇳 中转*广州移动-台北*03 3
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 4
-      - 🇸🇬 中转*广州移动-新加坡*03 3
-      - 🇨🇳 中转*广州移动-台北*03 4
-      - 🇭🇰 【低延迟】中转*广州移动-香港*01
-      - 🇨🇳 中转*广州移动-台北*01
-      - 🇭🇰 V1 | 香港01 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港04 | AZ直连2Gbps | x1.0
+      - 🇸🇬 新加坡01〖直连|0.5x〗A组
+      - 🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0
       - 🇭🇰 HK05-高速节点
       - TH03-高速节点
       - 🇭🇰 HK03-高速节点
@@ -218,69 +107,33 @@ proxy-groups:
       - KR02-高速节点
       - PH03-高速节点
       - TH05-高速节点
-      - PH02-高速节点
-      - TH04-高速节点
-      - TH02-高速节点
-      - 🇭🇰 HK07-高速节点
+      - ★白嫖联盟★----8
+      - ★白嫖联盟★----9
+      - ★白嫖联盟★----10
+      - ★白嫖联盟★----11
+      - ★白嫖联盟★----13
+      - ★白嫖联盟★----14
+      - 🇸🇬 V1 | 新加坡02 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本01 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本02 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国01 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港03 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0 2
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure
       - 🇸🇬 新加坡-J
-      - 🇸🇬 新加坡-K
       - 🇺🇸 美国 广州│免费节点(洛杉矶1)
       - 🇭🇰 香港-AK
       - 🇨🇳 【Tunnel_A】台湾  VIP 1 - 中华电信
       - 🇸🇬 【Tunnel_K】新加坡 普通 4 - DO
-      - 🇸🇬 【Tunnel_K】新加坡 普通 5 - DO
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure 2
       - 翻墙党1
       - 翻墙党2
-      - 翻墙党3
       - 翻墙党4
-      - 🇨🇦 加拿大1
-      - 🇨🇦 加拿大5
-      - 🇨🇦 加拿大7
       - 🇨🇳 台湾1
-      - 🇨🇳 台湾11
-      - 🇨🇳 台湾13
-      - 🇨🇳 台湾9
       - 🇭🇰 香港9
-      - 🇯🇵 日本16
-      - 🇯🇵 日本18
-      - 🇯🇵 日本5
       - 🇯🇵 日本6
-      - 🇰🇷 韩国2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 3
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 4
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 5
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 2
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 3
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 4
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 5
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 2
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 3
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 4
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 5
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 2
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 4
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 5
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 2
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 4
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 5
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -288,22 +141,9 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇭🇰 F-香港-00
-      - 🇨🇳 中转*广州移动-台北*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 2
-      - 🇸🇬 中转*广州移动-新加坡*03
-      - 🇨🇳 中转*广州移动-台北*03 2
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 3
-      - 🇸🇬 中转*广州移动-新加坡*03 2
-      - 🇨🇳 中转*广州移动-台北*03 3
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 4
-      - 🇸🇬 中转*广州移动-新加坡*03 3
-      - 🇨🇳 中转*广州移动-台北*03 4
-      - 🇭🇰 【低延迟】中转*广州移动-香港*01
-      - 🇨🇳 中转*广州移动-台北*01
-      - 🇭🇰 V1 | 香港01 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港04 | AZ直连2Gbps | x1.0
+      - 🇸🇬 新加坡01〖直连|0.5x〗A组
+      - 🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0
       - 🇭🇰 HK05-高速节点
       - TH03-高速节点
       - 🇭🇰 HK03-高速节点
@@ -312,91 +152,42 @@ proxy-groups:
       - KR02-高速节点
       - PH03-高速节点
       - TH05-高速节点
-      - PH02-高速节点
-      - TH04-高速节点
-      - TH02-高速节点
-      - 🇭🇰 HK07-高速节点
+      - ★白嫖联盟★----8
+      - ★白嫖联盟★----9
+      - ★白嫖联盟★----10
+      - ★白嫖联盟★----11
+      - ★白嫖联盟★----13
+      - ★白嫖联盟★----14
+      - 🇸🇬 V1 | 新加坡02 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本01 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本02 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国01 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港03 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0 2
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure
       - 🇸🇬 新加坡-J
-      - 🇸🇬 新加坡-K
       - 🇺🇸 美国 广州│免费节点(洛杉矶1)
       - 🇭🇰 香港-AK
       - 🇨🇳 【Tunnel_A】台湾  VIP 1 - 中华电信
       - 🇸🇬 【Tunnel_K】新加坡 普通 4 - DO
-      - 🇸🇬 【Tunnel_K】新加坡 普通 5 - DO
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure 2
       - 翻墙党1
       - 翻墙党2
-      - 翻墙党3
       - 翻墙党4
-      - 🇨🇦 加拿大1
-      - 🇨🇦 加拿大5
-      - 🇨🇦 加拿大7
       - 🇨🇳 台湾1
-      - 🇨🇳 台湾11
-      - 🇨🇳 台湾13
-      - 🇨🇳 台湾9
       - 🇭🇰 香港9
-      - 🇯🇵 日本16
-      - 🇯🇵 日本18
-      - 🇯🇵 日本5
       - 🇯🇵 日本6
-      - 🇰🇷 韩国2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 3
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 4
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 5
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 2
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 3
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 4
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 5
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 2
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 3
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 4
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 5
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 2
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 4
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 5
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 2
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 4
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇭🇰 F-香港-00
-      - 🇨🇳 中转*广州移动-台北*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 2
-      - 🇸🇬 中转*广州移动-新加坡*03
-      - 🇨🇳 中转*广州移动-台北*03 2
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 3
-      - 🇸🇬 中转*广州移动-新加坡*03 2
-      - 🇨🇳 中转*广州移动-台北*03 3
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 4
-      - 🇸🇬 中转*广州移动-新加坡*03 3
-      - 🇨🇳 中转*广州移动-台北*03 4
-      - 🇭🇰 【低延迟】中转*广州移动-香港*01
-      - 🇨🇳 中转*广州移动-台北*01
-      - 🇭🇰 V1 | 香港01 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港04 | AZ直连2Gbps | x1.0
+      - 🇸🇬 新加坡01〖直连|0.5x〗A组
+      - 🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0
       - 🇭🇰 HK05-高速节点
       - TH03-高速节点
       - 🇭🇰 HK03-高速节点
@@ -405,91 +196,42 @@ proxy-groups:
       - KR02-高速节点
       - PH03-高速节点
       - TH05-高速节点
-      - PH02-高速节点
-      - TH04-高速节点
-      - TH02-高速节点
-      - 🇭🇰 HK07-高速节点
+      - ★白嫖联盟★----8
+      - ★白嫖联盟★----9
+      - ★白嫖联盟★----10
+      - ★白嫖联盟★----11
+      - ★白嫖联盟★----13
+      - ★白嫖联盟★----14
+      - 🇸🇬 V1 | 新加坡02 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本01 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本02 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国01 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港03 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0 2
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure
       - 🇸🇬 新加坡-J
-      - 🇸🇬 新加坡-K
       - 🇺🇸 美国 广州│免费节点(洛杉矶1)
       - 🇭🇰 香港-AK
       - 🇨🇳 【Tunnel_A】台湾  VIP 1 - 中华电信
       - 🇸🇬 【Tunnel_K】新加坡 普通 4 - DO
-      - 🇸🇬 【Tunnel_K】新加坡 普通 5 - DO
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure 2
       - 翻墙党1
       - 翻墙党2
-      - 翻墙党3
       - 翻墙党4
-      - 🇨🇦 加拿大1
-      - 🇨🇦 加拿大5
-      - 🇨🇦 加拿大7
       - 🇨🇳 台湾1
-      - 🇨🇳 台湾11
-      - 🇨🇳 台湾13
-      - 🇨🇳 台湾9
       - 🇭🇰 香港9
-      - 🇯🇵 日本16
-      - 🇯🇵 日本18
-      - 🇯🇵 日本5
       - 🇯🇵 日本6
-      - 🇰🇷 韩国2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 3
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 4
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 5
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 2
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 3
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 4
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 5
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 2
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 3
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 4
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 5
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 2
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 4
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 5
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 2
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 4
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 5
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🇭🇰 F-香港-00
-      - 🇨🇳 中转*广州移动-台北*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 2
-      - 🇸🇬 中转*广州移动-新加坡*03
-      - 🇨🇳 中转*广州移动-台北*03 2
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 3
-      - 🇸🇬 中转*广州移动-新加坡*03 2
-      - 🇨🇳 中转*广州移动-台北*03 3
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 4
-      - 🇸🇬 中转*广州移动-新加坡*03 3
-      - 🇨🇳 中转*广州移动-台北*03 4
-      - 🇭🇰 【低延迟】中转*广州移动-香港*01
-      - 🇨🇳 中转*广州移动-台北*01
-      - 🇭🇰 V1 | 香港01 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港04 | AZ直连2Gbps | x1.0
+      - 🇸🇬 新加坡01〖直连|0.5x〗A组
+      - 🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0
       - 🇭🇰 HK05-高速节点
       - TH03-高速节点
       - 🇭🇰 HK03-高速节点
@@ -498,91 +240,42 @@ proxy-groups:
       - KR02-高速节点
       - PH03-高速节点
       - TH05-高速节点
-      - PH02-高速节点
-      - TH04-高速节点
-      - TH02-高速节点
-      - 🇭🇰 HK07-高速节点
+      - ★白嫖联盟★----8
+      - ★白嫖联盟★----9
+      - ★白嫖联盟★----10
+      - ★白嫖联盟★----11
+      - ★白嫖联盟★----13
+      - ★白嫖联盟★----14
+      - 🇸🇬 V1 | 新加坡02 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本01 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本02 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国01 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港03 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0 2
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure
       - 🇸🇬 新加坡-J
-      - 🇸🇬 新加坡-K
       - 🇺🇸 美国 广州│免费节点(洛杉矶1)
       - 🇭🇰 香港-AK
       - 🇨🇳 【Tunnel_A】台湾  VIP 1 - 中华电信
       - 🇸🇬 【Tunnel_K】新加坡 普通 4 - DO
-      - 🇸🇬 【Tunnel_K】新加坡 普通 5 - DO
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure 2
       - 翻墙党1
       - 翻墙党2
-      - 翻墙党3
       - 翻墙党4
-      - 🇨🇦 加拿大1
-      - 🇨🇦 加拿大5
-      - 🇨🇦 加拿大7
       - 🇨🇳 台湾1
-      - 🇨🇳 台湾11
-      - 🇨🇳 台湾13
-      - 🇨🇳 台湾9
       - 🇭🇰 香港9
-      - 🇯🇵 日本16
-      - 🇯🇵 日本18
-      - 🇯🇵 日本5
       - 🇯🇵 日本6
-      - 🇰🇷 韩国2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 3
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 4
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 5
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 2
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 3
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 4
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 5
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 2
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 3
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 4
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 5
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 2
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 4
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 5
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 2
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 4
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇭🇰 F-香港-00
-      - 🇨🇳 中转*广州移动-台北*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 2
-      - 🇸🇬 中转*广州移动-新加坡*03
-      - 🇨🇳 中转*广州移动-台北*03 2
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 3
-      - 🇸🇬 中转*广州移动-新加坡*03 2
-      - 🇨🇳 中转*广州移动-台北*03 3
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 4
-      - 🇸🇬 中转*广州移动-新加坡*03 3
-      - 🇨🇳 中转*广州移动-台北*03 4
-      - 🇭🇰 【低延迟】中转*广州移动-香港*01
-      - 🇨🇳 中转*广州移动-台北*01
-      - 🇭🇰 V1 | 香港01 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港04 | AZ直连2Gbps | x1.0
+      - 🇸🇬 新加坡01〖直连|0.5x〗A组
+      - 🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0
       - 🇭🇰 HK05-高速节点
       - TH03-高速节点
       - 🇭🇰 HK03-高速节点
@@ -591,69 +284,33 @@ proxy-groups:
       - KR02-高速节点
       - PH03-高速节点
       - TH05-高速节点
-      - PH02-高速节点
-      - TH04-高速节点
-      - TH02-高速节点
-      - 🇭🇰 HK07-高速节点
+      - ★白嫖联盟★----8
+      - ★白嫖联盟★----9
+      - ★白嫖联盟★----10
+      - ★白嫖联盟★----11
+      - ★白嫖联盟★----13
+      - ★白嫖联盟★----14
+      - 🇸🇬 V1 | 新加坡02 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本01 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本02 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国01 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港03 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0 2
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure
       - 🇸🇬 新加坡-J
-      - 🇸🇬 新加坡-K
       - 🇺🇸 美国 广州│免费节点(洛杉矶1)
       - 🇭🇰 香港-AK
       - 🇨🇳 【Tunnel_A】台湾  VIP 1 - 中华电信
       - 🇸🇬 【Tunnel_K】新加坡 普通 4 - DO
-      - 🇸🇬 【Tunnel_K】新加坡 普通 5 - DO
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure 2
       - 翻墙党1
       - 翻墙党2
-      - 翻墙党3
       - 翻墙党4
-      - 🇨🇦 加拿大1
-      - 🇨🇦 加拿大5
-      - 🇨🇦 加拿大7
       - 🇨🇳 台湾1
-      - 🇨🇳 台湾11
-      - 🇨🇳 台湾13
-      - 🇨🇳 台湾9
       - 🇭🇰 香港9
-      - 🇯🇵 日本16
-      - 🇯🇵 日本18
-      - 🇯🇵 日本5
       - 🇯🇵 日本6
-      - 🇰🇷 韩国2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 3
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 4
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 5
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 2
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 3
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 4
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 5
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 2
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 3
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 4
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 5
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 2
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 4
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 5
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 2
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 4
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 5
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -661,22 +318,9 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇭🇰 F-香港-00
-      - 🇨🇳 中转*广州移动-台北*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 2
-      - 🇸🇬 中转*广州移动-新加坡*03
-      - 🇨🇳 中转*广州移动-台北*03 2
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 3
-      - 🇸🇬 中转*广州移动-新加坡*03 2
-      - 🇨🇳 中转*广州移动-台北*03 3
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 4
-      - 🇸🇬 中转*广州移动-新加坡*03 3
-      - 🇨🇳 中转*广州移动-台北*03 4
-      - 🇭🇰 【低延迟】中转*广州移动-香港*01
-      - 🇨🇳 中转*广州移动-台北*01
-      - 🇭🇰 V1 | 香港01 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港04 | AZ直连2Gbps | x1.0
+      - 🇸🇬 新加坡01〖直连|0.5x〗A组
+      - 🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0
       - 🇭🇰 HK05-高速节点
       - TH03-高速节点
       - 🇭🇰 HK03-高速节点
@@ -685,69 +329,33 @@ proxy-groups:
       - KR02-高速节点
       - PH03-高速节点
       - TH05-高速节点
-      - PH02-高速节点
-      - TH04-高速节点
-      - TH02-高速节点
-      - 🇭🇰 HK07-高速节点
+      - ★白嫖联盟★----8
+      - ★白嫖联盟★----9
+      - ★白嫖联盟★----10
+      - ★白嫖联盟★----11
+      - ★白嫖联盟★----13
+      - ★白嫖联盟★----14
+      - 🇸🇬 V1 | 新加坡02 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本01 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本02 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国01 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港03 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0 2
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure
       - 🇸🇬 新加坡-J
-      - 🇸🇬 新加坡-K
       - 🇺🇸 美国 广州│免费节点(洛杉矶1)
       - 🇭🇰 香港-AK
       - 🇨🇳 【Tunnel_A】台湾  VIP 1 - 中华电信
       - 🇸🇬 【Tunnel_K】新加坡 普通 4 - DO
-      - 🇸🇬 【Tunnel_K】新加坡 普通 5 - DO
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure 2
       - 翻墙党1
       - 翻墙党2
-      - 翻墙党3
       - 翻墙党4
-      - 🇨🇦 加拿大1
-      - 🇨🇦 加拿大5
-      - 🇨🇦 加拿大7
       - 🇨🇳 台湾1
-      - 🇨🇳 台湾11
-      - 🇨🇳 台湾13
-      - 🇨🇳 台湾9
       - 🇭🇰 香港9
-      - 🇯🇵 日本16
-      - 🇯🇵 日本18
-      - 🇯🇵 日本5
       - 🇯🇵 日本6
-      - 🇰🇷 韩国2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 3
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 4
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 5
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 2
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 3
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 4
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 5
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 2
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 3
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 4
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 5
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 2
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 4
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 5
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 2
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 4
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -771,22 +379,9 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇭🇰 F-香港-00
-      - 🇨🇳 中转*广州移动-台北*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 2
-      - 🇸🇬 中转*广州移动-新加坡*03
-      - 🇨🇳 中转*广州移动-台北*03 2
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 3
-      - 🇸🇬 中转*广州移动-新加坡*03 2
-      - 🇨🇳 中转*广州移动-台北*03 3
-      - 🇭🇰 【低延迟】中转*广州移动-香港*03 4
-      - 🇸🇬 中转*广州移动-新加坡*03 3
-      - 🇨🇳 中转*广州移动-台北*03 4
-      - 🇭🇰 【低延迟】中转*广州移动-香港*01
-      - 🇨🇳 中转*广州移动-台北*01
-      - 🇭🇰 V1 | 香港01 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
-      - 🇭🇰 V1 | 香港04 | AZ直连2Gbps | x1.0
+      - 🇸🇬 新加坡01〖直连|0.5x〗A组
+      - 🇸🇬 V1 | 新加坡01 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0
       - 🇭🇰 HK05-高速节点
       - TH03-高速节点
       - 🇭🇰 HK03-高速节点
@@ -795,69 +390,33 @@ proxy-groups:
       - KR02-高速节点
       - PH03-高速节点
       - TH05-高速节点
-      - PH02-高速节点
-      - TH04-高速节点
-      - TH02-高速节点
-      - 🇭🇰 HK07-高速节点
+      - ★白嫖联盟★----8
+      - ★白嫖联盟★----9
+      - ★白嫖联盟★----10
+      - ★白嫖联盟★----11
+      - ★白嫖联盟★----13
+      - ★白嫖联盟★----14
+      - 🇸🇬 V1 | 新加坡02 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本01 | AZ直连2Gbps | x1.0
+      - 🇯🇵 V1 | 日本02 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国01 | AZ直连2Gbps | x1.0
+      - 🇰🇷 V1 | 韩国02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港02 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港03 | AZ直连2Gbps | x1.0
+      - 🇭🇰 V1 | 香港05 | AZ直连2Gbps | x1.0 2
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure
       - 🇸🇬 新加坡-J
-      - 🇸🇬 新加坡-K
       - 🇺🇸 美国 广州│免费节点(洛杉矶1)
       - 🇭🇰 香港-AK
       - 🇨🇳 【Tunnel_A】台湾  VIP 1 - 中华电信
       - 🇸🇬 【Tunnel_K】新加坡 普通 4 - DO
-      - 🇸🇬 【Tunnel_K】新加坡 普通 5 - DO
       - 🇭🇰 【Tunnel_N】香港 普通 1 - Azure 2
       - 翻墙党1
       - 翻墙党2
-      - 翻墙党3
       - 翻墙党4
-      - 🇨🇦 加拿大1
-      - 🇨🇦 加拿大5
-      - 🇨🇦 加拿大7
       - 🇨🇳 台湾1
-      - 🇨🇳 台湾11
-      - 🇨🇳 台湾13
-      - 🇨🇳 台湾9
       - 🇭🇰 香港9
-      - 🇯🇵 日本16
-      - 🇯🇵 日本18
-      - 🇯🇵 日本5
       - 🇯🇵 日本6
-      - 🇰🇷 韩国2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 2
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 3
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 4
-      - 🇭🇰 *国内中转*HK|西南电信-香港HKT_0031 5
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 2
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 3
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 4
-      - 🇺🇸 *国内中转*US|上海联通-香港HKT_0012 5
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 2
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 3
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 4
-      - 🇺🇸 *国内中转*US|广州移动-香港移动_0004 5
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 2
-      - 🇺🇸 *国内中转*US|移动云广州-香港_0001 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 3
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 4
-      - 🇭🇰 【推荐】IPLC专线上海-香港一_01 5
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_11 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 2
-      - 🇭🇰 【推荐】IPLC专线上海-香港二_12 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 2
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 3
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 4
-      - 🇯🇵 【推荐】IPLC专线广州-东京_41 5
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
