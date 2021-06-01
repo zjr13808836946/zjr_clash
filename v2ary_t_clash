@@ -104,10 +104,7 @@ proxy-groups:
       - 🇭🇰 香港B 三网直连 2
       - 🇭🇰 香港D 三网直连 2
   - name: 📲 电报消息
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -120,10 +117,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 🎙 Discord
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -136,10 +130,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 🧩 各家Emby体验服
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
@@ -147,11 +138,21 @@ proxy-groups:
       - 🚀 节点选择
       - 🚀 手动切换
       - DIRECT
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🇺🇲 美国节点
+      - 🏳️‍🌈 其他节点
+      - 🚀 节点选择
+      - 🚀 手动切换
+      - DIRECT
   - name: 🎥 奈飞视频
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🎥 奈飞节点
       - 🇸🇬 狮城节点
@@ -165,10 +166,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 📺 niconico
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇯🇵 日本节点
       - 🇭🇰 香港节点
@@ -181,20 +179,14 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 📺 巴哈姆特
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇹🇼 台湾节点
       - 🚀 节点选择
       - 🚀 手动切换
       - DIRECT
   - name: 🦄 迪士尼
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -254,10 +246,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🚀 手动切换
   - name: 📦 DuBox
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -348,10 +337,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🚀 手动切换
   - name: 🎶 网易音乐
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
@@ -377,7 +363,7 @@ proxy-groups:
       - 🏳️‍🌈 其他节点
       - DIRECT
   - name: 🇭🇰 香港节点
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -394,14 +380,14 @@ proxy-groups:
       - 🇭🇰 香港B 三网直连 2
       - 🇭🇰 香港D 三网直连 2
   - name: 🇹🇼 台湾节点
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
       - 🇨🇳 台湾02〖中继|原生〗A组
   - name: 🇸🇬 狮城节点
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -411,7 +397,7 @@ proxy-groups:
       - 🇸🇬 新加坡01 | 中转AZ x0.5
       - 🇸🇬 新加坡 2（MisakaNo 自由之梦福利节点）
   - name: 🇯🇵 日本节点
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -423,14 +409,14 @@ proxy-groups:
       - 🇯🇵 JPN 🇯🇵 Tokyo 15
       - 🇯🇵 日本 1G高速 B 3
   - name: 🇰🇷 韩国节点
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
       - 🇰🇷 V1 | 韩国02 | AZ直连2Gbps | x1.0
   - name: 🇺🇲 美国节点
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -438,7 +424,7 @@ proxy-groups:
       - 🇺🇸 Relay_🇺🇸 US-🇭🇰HK_3880
       - 🇺🇸 US（感谢关注youtube：8度科技）
   - name: 🏳️‍🌈 其他节点
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
