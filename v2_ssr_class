@@ -133,7 +133,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 手动切换
-      - 🔯 故障转移
+      - 🔮 负载均衡
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
       - 🇸🇬 狮城节点
@@ -268,8 +268,8 @@ proxy-groups:
       - 🇰🇷 Basic|广韩|01
       - 🇰🇷 Basic|广韩|02
       - 🏳️‍🌈 Renew|应急续费使用
-  - name: 🔯 故障转移
-    type: fallback
+  - name: 🔮 负载均衡
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -398,7 +398,10 @@ proxy-groups:
       - 🇰🇷 Basic|广韩|02
       - 🏳️‍🌈 Renew|应急续费使用
   - name: 📲 电报消息
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -411,7 +414,10 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 🎙 Discord
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -424,29 +430,22 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 🧩 各家Emby体验服
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
-      - 🚀 节点选择
-      - 🚀 手动切换
-      - DIRECT
-  - name: 📹 油管视频
-    type: select
-    proxies:
-      - 🇭🇰 香港节点
-      - 🇹🇼 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
-      - 🇺🇲 美国节点
-      - 🏳️‍🌈 其他节点
       - 🚀 节点选择
       - 🚀 手动切换
       - DIRECT
   - name: 🎥 奈飞视频
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🎥 奈飞节点
       - 🇸🇬 狮城节点
@@ -460,7 +459,10 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 📺 niconico
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇯🇵 日本节点
       - 🇭🇰 香港节点
@@ -473,14 +475,20 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 📺 巴哈姆特
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇹🇼 台湾节点
       - 🚀 节点选择
       - 🚀 手动切换
       - DIRECT
   - name: 🦄 迪士尼
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -540,7 +548,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🚀 手动切换
   - name: 📦 DuBox
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -631,7 +642,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🚀 手动切换
   - name: 🎶 网易音乐
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - DIRECT
       - 🚀 节点选择
@@ -647,7 +661,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🚀 手动切换
-      - 🔯 故障转移
+      - 🔮 负载均衡
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
       - 🇸🇬 狮城节点
@@ -656,28 +670,8 @@ proxy-groups:
       - 🇺🇲 美国节点
       - 🏳️‍🌈 其他节点
       - DIRECT
-  - name: 🛑 广告拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🍃 应用净化
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🆎 AdBlock
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🛡️ 隐私防护
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
   - name: 🇭🇰 香港节点
-    type: fallback
+    type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -733,7 +727,7 @@ proxy-groups:
       - 🇭🇰 Basic|广港|09
       - 🇭🇰 Basic|广港|10
   - name: 🇹🇼 台湾节点
-    type: fallback
+    type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -749,7 +743,7 @@ proxy-groups:
       - 🇨🇳 Basic|广台|01
       - 🇨🇳 Basic|广台|02
   - name: 🇸🇬 狮城节点
-    type: fallback
+    type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -762,7 +756,7 @@ proxy-groups:
       - 🇸🇬 AZ-新加坡1
       - 🇸🇬 AZ-新加坡2
   - name: 🇯🇵 日本节点
-    type: fallback
+    type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -780,7 +774,7 @@ proxy-groups:
       - 🇯🇵 Basic|广日|05
       - 🇯🇵 Basic|广日|06
   - name: 🇰🇷 韩国节点
-    type: fallback
+    type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -797,7 +791,7 @@ proxy-groups:
       - 🇰🇷 Basic|广韩|01
       - 🇰🇷 Basic|广韩|02
   - name: 🇺🇲 美国节点
-    type: fallback
+    type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -815,7 +809,7 @@ proxy-groups:
       - 🇺🇲 Basic|广美|05
       - 🇺🇲 Basic|广美|06
   - name: 🏳️‍🌈 其他节点
-    type: fallback
+    type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
