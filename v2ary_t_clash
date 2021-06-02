@@ -443,10 +443,7 @@ proxy-groups:
       - 🇺🇲 (已坚挺2天)美国【分享来自Youtube不良林】 3
       - 🇺🇲 美国【分享来自Youtube不良林】 2
   - name: 📲 电报消息
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -459,10 +456,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 🎙 Discord
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -475,10 +469,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 🧩 各家Emby体验服
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
@@ -486,11 +477,21 @@ proxy-groups:
       - 🚀 节点选择
       - 🚀 手动切换
       - DIRECT
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🇺🇲 美国节点
+      - 🏳️‍🌈 其他节点
+      - 🚀 节点选择
+      - 🚀 手动切换
+      - DIRECT
   - name: 🎥 奈飞视频
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🎥 奈飞节点
       - 🇸🇬 狮城节点
@@ -504,10 +505,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 📺 niconico
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇯🇵 日本节点
       - 🇭🇰 香港节点
@@ -520,20 +518,14 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 📺 巴哈姆特
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇹🇼 台湾节点
       - 🚀 节点选择
       - 🚀 手动切换
       - DIRECT
   - name: 🦄 迪士尼
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -593,10 +585,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🚀 手动切换
   - name: 📦 DuBox
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -687,10 +676,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🚀 手动切换
   - name: 🎶 网易音乐
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇺🇲 洛杉矶(解锁流媒体) 53端口
       - 🇷🇺 电信gia俄罗斯(解锁流媒体)
@@ -719,7 +705,10 @@ proxy-groups:
       - 🏳️‍🌈 其他节点
       - DIRECT
   - name: 🇭🇰 香港节点
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇭🇰 F-香港-09
       - 🇭🇰 F-香港-02
@@ -752,7 +741,10 @@ proxy-groups:
       - 🇭🇰 香港03 中继B | NF 2
       - 🇭🇰 香港03 中继C | NF 2
   - name: 🇹🇼 台湾节点
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇨🇳 台湾01〖中继|原生〗A组
       - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_3420
@@ -766,7 +758,10 @@ proxy-groups:
       - 🇨🇳 台湾02 中继D | NF 2
       - 🇨🇳 台湾02 中继E | NF 2
   - name: 🇸🇬 狮城节点
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇸🇬 Z新加坡
       - 🇸🇬 Z新加坡 2
@@ -785,7 +780,10 @@ proxy-groups:
       - 🇸🇬 新加坡04 中继E | NF 2
       - 🇯🇵 新加坡11 AWS直连 | 80端口 | 今日头条免流 2
   - name: 🇯🇵 日本节点
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇯🇵 日本JP-1
       - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_2359
@@ -821,7 +819,10 @@ proxy-groups:
       - 🇯🇵 日本03 中继D | NF 2
       - 🇯🇵 日本03 中继E | NF 2
   - name: 🇰🇷 韩国节点
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇰🇷 KR_2404
       - 🇰🇷 韩国11 AWS直连 | 80端口 | 微博免流
@@ -831,7 +832,10 @@ proxy-groups:
       - 🇰🇷 韩国01 中继D | x1.5
       - 🇰🇷 韩国11 AWS直连 | 80端口 | 微博免流 2
   - name: 🇺🇲 美国节点
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇺🇲 D美国 ION-洛杉矶(极速)-1
       - 🇺🇲 D美国 ION-洛杉矶(极速)-5
@@ -854,7 +858,10 @@ proxy-groups:
       - 🇺🇲 (已坚挺2天)美国【分享来自Youtube不良林】 3
       - 🇺🇲 美国【分享来自Youtube不良林】 2
   - name: 🏳️‍🌈 其他节点
-    type: select
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - B下载使用【下载专用】节点
       - 🇳🇱 荷兰 3
