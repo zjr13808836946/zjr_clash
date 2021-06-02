@@ -3,34 +3,35 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: :9090
+external-controller: 127.0.0.1:9090
 proxies:
   - {name: 🇭🇰 F-香港-00, server: qexw.nssl.cf, port: 443, type: vmess, uuid: 4e7cbfaa-7e66-3e34-adcb-125bc37f8112, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dl, ws-headers: {Host: qexw.nssl.cf}}
   - {name: 🇭🇰 F-香港-01, server: qexw.91vita.shop, port: 443, type: vmess, uuid: 4e7cbfaa-7e66-3e34-adcb-125bc37f8112, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dl, ws-headers: {Host: qexw.91vita.shop}}
   - {name: 🇰🇷 V1 | 韩国02 | AZ直连2Gbps | x1.0, server: v1.kr02.cocorouter.com, port: 18002, type: vmess, uuid: 190777a2-df34-337e-9f86-39a2eb20d661, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: v1.kr02.cocorouter.com}}
-  - {name: 🇺🇸 wulabing_usip.hkvultr.xyz, server: usip.hkvultr.xyz, port: 443, type: vmess, uuid: ed5c9485-f4d0-4667-a0c7-79691d189e03, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /77cd59ace1/, ws-headers: {Host: usip.hkvultr.xyz}}
-  - {name: 🇺🇸 US（感谢关注youtube：8度科技）, server: 16.162.103.87, port: 889, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /public, ws-headers: {Host: 16.162.103.87}}
+  - {name: 🇨🇳 台湾01〖中继|原生〗A组, server: a-eepngq11.txwd.xyz, port: 44944, type: vmess, uuid: 3d107736-5674-359e-bacb-72aee6b07bdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /tw-a, ws-headers: {Host: a-eepngq11.txwd.xyz}}
   - {name: "🇸🇬 [Lv.1] 新加坡B | 中转", server: hzyd.ddns.tjiasu.xyz, port: 443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/pianist, ws-headers: {Host: pianist.ddns.tjiasu.xyz}}
   - {name: "🇸🇬 [Lv.1] 新加坡C | 临时节点", server: container-service-1.1p141cdo9m8vm.ap-southeast-1.cs.amazonlightsail.com, port: 443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/ddns, ws-headers: {Host: container-service-1.1p141cdo9m8vm.ap-southeast-1.cs.amazonlightsail.com}}
   - {name: 🇭🇰 香港A 三网直连, server: vip345.xyz, port: 39006, type: vmess, uuid: 0df7d5b0-a3ea-325a-b0a6-35596b2af6eb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /xgr, ws-headers: {Host: vip345.xyz}}
   - {name: 🇭🇰 香港B 三网直连, server: vip345.xyz, port: 39007, type: vmess, uuid: 0df7d5b0-a3ea-325a-b0a6-35596b2af6eb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /xgr, ws-headers: {Host: vip345.xyz}}
-  - {name: 🇭🇰 香港D 三网直连, server: vip345.xyz, port: 39009, type: vmess, uuid: 0df7d5b0-a3ea-325a-b0a6-35596b2af6eb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /xgr, ws-headers: {Host: vip345.xyz}}
-  - {name: 🇰🇷 韩国azure_tg@freevpn8, server: kr-3.yingfu9883163.xyz, port: 35033, type: vmess, uuid: 695a555e-0fe9-4006-eb94-c87f1949c2fa, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: kr-3.yingfu9883163.xyz}}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君), server: 16.162.33.111, port: 889, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /public, ws-headers: {Host: github.com}}
+  - {name: 🇸🇬 新加坡 2（MisakaNo 自由之梦福利节点）, server: 54.169.101.136, port: 48623, type: vmess, uuid: 404b831b-ff94-4793-b433-34c5b48dc73e, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 新加坡 2, server: 54.169.101.136, port: 48623, type: vmess, uuid: 404b831b-ff94-4793-b433-34c5b48dc73e, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 新加坡 2 2, server: 54.169.101.136, port: 48623, type: vmess, uuid: 404b831b-ff94-4793-b433-34c5b48dc73e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 AZ-香港2, server: 13.75.118.199, port: 80, type: vmess, uuid: 02044f08-bcb4-4556-a769-d7567067dd75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 AZ-香港4, server: 23.97.76.124, port: 80, type: vmess, uuid: 02044f08-bcb4-4556-a769-d7567067dd75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇰🇷 AZ-韩国1, server: 20.194.104.70, port: 80, type: vmess, uuid: 02044f08-bcb4-4556-a769-d7567067dd75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇰🇷 AZ-韩国2, server: 20.194.105.82, port: 80, type: vmess, uuid: 02044f08-bcb4-4556-a769-d7567067dd75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 AZ-新加坡1, server: 40.65.191.137, port: 80, type: vmess, uuid: 02044f08-bcb4-4556-a769-d7567067dd75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 AZ-新加坡2, server: 52.187.36.42, port: 80, type: vmess, uuid: 02044f08-bcb4-4556-a769-d7567067dd75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 AWS-香港-5, server: 16.162.86.29, port: 80, type: vmess, uuid: 02044f08-bcb4-4556-a769-d7567067dd75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 AWS-香港-3, server: 16.162.44.48, port: 80, type: vmess, uuid: 02044f08-bcb4-4556-a769-d7567067dd75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 gcp-host-hk, server: 34.96.138.160, port: 80, type: vmess, uuid: 619dccfb-0e3d-4847-9699-d0b01ea19321, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 34.96.138.160}}
   - {name: 🇭🇰 gcp-http-hk, server: 34.96.190.72, port: 80, type: vmess, uuid: 807099bb-128b-47c4-d9ab-5e286d64875e, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇨🇳 gcp-http-tw443, server: 35.194.210.47, port: 443, type: vmess, uuid: ed260362-cd88-42e4-8738-50ad60b6105c, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_797, server: 52.81.99.89, port: 8002, type: vmess, uuid: c8c92c4d-8e6f-4f24-a857-76fa2ecaaa16, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 52.81.99.89}}
+  - {name: 🇨🇳 gcp-http-tw80, server: 35.194.210.47, port: 80, type: vmess, uuid: 2935be3e-6c3a-4c7f-d747-a529c1539802, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_800, server: yisrae.v2server.xyz, port: 55005, type: vmess, uuid: 9ddd304d-c513-47b2-a04b-73a3b1c69970, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 US_4612, server: 16.162.105.211, port: 80, type: vmess, uuid: 5e3078ff-3676-3041-a5e3-4602bd3bc532, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /public, ws-headers: {Host: 16.162.105.211}}
+  - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_3420, server: vtwonet-tw-b.qjnodeip.xyz, port: 8300, type: vmess, uuid: 9FC4D03F-A81A-DB13-8547-7F25B4E290A0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: ShareCentre, server: 54.255.134.80, port: 54171, type: vmess, uuid: eb56f21c-4185-4858-af43-bc85f662de6f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港azure_tg@freevpn8, server: vip345.xyz, port: 39006, type: vmess, uuid: 49955b62-27c7-3734-bc6b-1c60c0ab0059, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /xgr, ws-headers: {Host: vip345.xyz}}
+  - {name: 🇭🇰 【直连】HKG/香港 A - 4, server: 04.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 46d20e55-97a8-4d1e-a25e-ad12bf87ac3a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 04.HKG.ASIA.BIGAIRPORT.NET}}
+  - {name: 🇭🇰 【直连】HKG/香港 C - 1, server: 16.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 46d20e55-97a8-4d1e-a25e-ad12bf87ac3a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 16.HKG.ASIA.BIGAIRPORT.NET}}
   - {name: 翻墙党1, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
   - {name: 翻墙党2, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
   - {name: 翻墙党4, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
@@ -50,8 +51,8 @@ proxies:
   - {name: 🇭🇰 *Ultimate|广港|08, server: advanced-cm-3.host-sub.com, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|广港|09, server: advanced-cm-3.host-sub.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|广港|10, server: advanced-cm-3.host-sub.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
-  - {name: 🇺🇸 *Ultimate|广美|01, server: advanced-cm-3.host-sub.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
-  - {name: 🇺🇸 *Ultimate|广美|02, server: advanced-cm-3.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇺🇲 *Ultimate|广美|01, server: advanced-cm-3.host-sub.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇺🇲 *Ultimate|广美|02, server: advanced-cm-3.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇰🇷 *Ultimate|广韩|01, server: advanced-cm-3.host-sub.com, port: 7500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇰🇷 *Ultimate|广韩|02, server: advanced-cm-3.host-sub.com, port: 7501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇨🇳 *Ultimate|沪台|01, server: ultimate-ct-1.host-sub.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
@@ -70,8 +71,8 @@ proxies:
   - {name: 🇭🇰 *Ultimate|沪港|08, server: ultimate-ct-1.host-sub.com, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|沪港|09, server: ultimate-ct-1.host-sub.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|沪港|10, server: ultimate-ct-1.host-sub.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
-  - {name: 🇺🇸 *Ultimate|沪美|01, server: ultimate-ct-1.host-sub.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
-  - {name: 🇺🇸 *Ultimate|沪美|02, server: ultimate-ct-1.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇺🇲 *Ultimate|沪美|01, server: ultimate-ct-1.host-sub.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇺🇲 *Ultimate|沪美|02, server: ultimate-ct-1.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇰🇷 *Ultimate|沪韩|01, server: ultimate-ct-1.host-sub.com, port: 7500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇰🇷 *Ultimate|沪韩|02, server: ultimate-ct-1.host-sub.com, port: 7501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇨🇳 Advanced|广台|01, server: advanced-cm-1.host-sub.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
@@ -90,8 +91,8 @@ proxies:
   - {name: 🇭🇰 Advanced|广港|08, server: advanced-cm-1.host-sub.com, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 Advanced|广港|09, server: advanced-cm-1.host-sub.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 Advanced|广港|10, server: advanced-cm-1.host-sub.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
-  - {name: 🇺🇸 Advanced|广美|01, server: advanced-cm-2.host-sub.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
-  - {name: 🇺🇸 Advanced|广美|02, server: advanced-cm-2.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇺🇲 Advanced|广美|01, server: advanced-cm-2.host-sub.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇺🇲 Advanced|广美|02, server: advanced-cm-2.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇰🇷 Advanced|广韩|01, server: advanced-cm-2.host-sub.com, port: 7500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇰🇷 Advanced|广韩|02, server: advanced-cm-2.host-sub.com, port: 7501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇨🇳 Basic|广台|01, server: cmrelay-basic-1.host-sub.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
@@ -118,12 +119,12 @@ proxies:
   - {name: 🇭🇰 Basic|广港|08, server: cmrelay-basic-1.host-sub.com, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 Basic|广港|09, server: cmrelay-basic-1.host-sub.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 Basic|广港|10, server: cmrelay-basic-1.host-sub.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
-  - {name: 🇺🇸 Basic|广美|01, server: cmrelay-basic-2.host-sub.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
-  - {name: 🇺🇸 Basic|广美|02, server: cmrelay-basic-2.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
-  - {name: 🇺🇸 Basic|广美|03, server: cmrelay-basic-2.host-sub.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
-  - {name: 🇺🇸 Basic|广美|04, server: cmrelay-basic-2.host-sub.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
-  - {name: 🇺🇸 Basic|广美|05, server: cmrelay-basic-2.host-sub.com, port: 5504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
-  - {name: 🇺🇸 Basic|广美|06, server: cmrelay-basic-2.host-sub.com, port: 5505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇺🇲 Basic|广美|01, server: cmrelay-basic-2.host-sub.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇺🇲 Basic|广美|02, server: cmrelay-basic-2.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇺🇲 Basic|广美|03, server: cmrelay-basic-2.host-sub.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇺🇲 Basic|广美|04, server: cmrelay-basic-2.host-sub.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇺🇲 Basic|广美|05, server: cmrelay-basic-2.host-sub.com, port: 5504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇺🇲 Basic|广美|06, server: cmrelay-basic-2.host-sub.com, port: 5505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇰🇷 Basic|广韩|01, server: cmrelay-basic-2.host-sub.com, port: 7500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇰🇷 Basic|广韩|02, server: cmrelay-basic-2.host-sub.com, port: 7501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🏳️‍🌈 Renew|应急续费使用, server: hkhktrenew.host-sub.com, port: 1063, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
@@ -132,7 +133,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 手动切换
-      - 🔮 负载均衡
+      - 🔯 故障转移
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
       - 🇸🇬 狮城节点
@@ -147,29 +148,30 @@ proxy-groups:
       - 🇭🇰 F-香港-00
       - 🇭🇰 F-香港-01
       - 🇰🇷 V1 | 韩国02 | AZ直连2Gbps | x1.0
-      - 🇺🇸 wulabing_usip.hkvultr.xyz
-      - 🇺🇸 US（感谢关注youtube：8度科技）
+      - 🇨🇳 台湾01〖中继|原生〗A组
       - 🇸🇬 [Lv.1] 新加坡B | 中转
       - 🇸🇬 [Lv.1] 新加坡C | 临时节点
       - 🇭🇰 香港A 三网直连
       - 🇭🇰 香港B 三网直连
-      - 🇭🇰 香港D 三网直连
-      - 🇰🇷 韩国azure_tg@freevpn8
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
+      - 🇸🇬 新加坡 2（MisakaNo 自由之梦福利节点）
       - 🇸🇬 新加坡 2
       - 🇸🇬 新加坡 2 2
       - 🇭🇰 AZ-香港2
-      - 🇭🇰 AZ-香港4
+      - 🇰🇷 AZ-韩国1
       - 🇰🇷 AZ-韩国2
       - 🇸🇬 AZ-新加坡1
       - 🇸🇬 AZ-新加坡2
-      - 🇭🇰 AWS-香港-5
+      - 🇭🇰 AWS-香港-3
       - 🇭🇰 gcp-host-hk
       - 🇭🇰 gcp-http-hk
       - 🇨🇳 gcp-http-tw443
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_797
+      - 🇨🇳 gcp-http-tw80
       - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_800
-      - 🇺🇸 US_4612
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_3420
+      - ShareCentre
+      - 🇭🇰 香港azure_tg@freevpn8
+      - 🇭🇰 【直连】HKG/香港 A - 4
+      - 🇭🇰 【直连】HKG/香港 C - 1
       - 翻墙党1
       - 翻墙党2
       - 翻墙党4
@@ -189,8 +191,8 @@ proxy-groups:
       - 🇭🇰 *Ultimate|广港|08
       - 🇭🇰 *Ultimate|广港|09
       - 🇭🇰 *Ultimate|广港|10
-      - 🇺🇸 *Ultimate|广美|01
-      - 🇺🇸 *Ultimate|广美|02
+      - 🇺🇲 *Ultimate|广美|01
+      - 🇺🇲 *Ultimate|广美|02
       - 🇰🇷 *Ultimate|广韩|01
       - 🇰🇷 *Ultimate|广韩|02
       - 🇨🇳 *Ultimate|沪台|01
@@ -209,8 +211,8 @@ proxy-groups:
       - 🇭🇰 *Ultimate|沪港|08
       - 🇭🇰 *Ultimate|沪港|09
       - 🇭🇰 *Ultimate|沪港|10
-      - 🇺🇸 *Ultimate|沪美|01
-      - 🇺🇸 *Ultimate|沪美|02
+      - 🇺🇲 *Ultimate|沪美|01
+      - 🇺🇲 *Ultimate|沪美|02
       - 🇰🇷 *Ultimate|沪韩|01
       - 🇰🇷 *Ultimate|沪韩|02
       - 🇨🇳 Advanced|广台|01
@@ -229,8 +231,8 @@ proxy-groups:
       - 🇭🇰 Advanced|广港|08
       - 🇭🇰 Advanced|广港|09
       - 🇭🇰 Advanced|广港|10
-      - 🇺🇸 Advanced|广美|01
-      - 🇺🇸 Advanced|广美|02
+      - 🇺🇲 Advanced|广美|01
+      - 🇺🇲 Advanced|广美|02
       - 🇰🇷 Advanced|广韩|01
       - 🇰🇷 Advanced|广韩|02
       - 🇨🇳 Basic|广台|01
@@ -257,17 +259,17 @@ proxy-groups:
       - 🇭🇰 Basic|广港|08
       - 🇭🇰 Basic|广港|09
       - 🇭🇰 Basic|广港|10
-      - 🇺🇸 Basic|广美|01
-      - 🇺🇸 Basic|广美|02
-      - 🇺🇸 Basic|广美|03
-      - 🇺🇸 Basic|广美|04
-      - 🇺🇸 Basic|广美|05
-      - 🇺🇸 Basic|广美|06
+      - 🇺🇲 Basic|广美|01
+      - 🇺🇲 Basic|广美|02
+      - 🇺🇲 Basic|广美|03
+      - 🇺🇲 Basic|广美|04
+      - 🇺🇲 Basic|广美|05
+      - 🇺🇲 Basic|广美|06
       - 🇰🇷 Basic|广韩|01
       - 🇰🇷 Basic|广韩|02
       - 🏳️‍🌈 Renew|应急续费使用
-  - name: 🔮 负载均衡
-    type: load-balance
+  - name: 🔯 故障转移
+    type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -275,29 +277,30 @@ proxy-groups:
       - 🇭🇰 F-香港-00
       - 🇭🇰 F-香港-01
       - 🇰🇷 V1 | 韩国02 | AZ直连2Gbps | x1.0
-      - 🇺🇸 wulabing_usip.hkvultr.xyz
-      - 🇺🇸 US（感谢关注youtube：8度科技）
+      - 🇨🇳 台湾01〖中继|原生〗A组
       - 🇸🇬 [Lv.1] 新加坡B | 中转
       - 🇸🇬 [Lv.1] 新加坡C | 临时节点
       - 🇭🇰 香港A 三网直连
       - 🇭🇰 香港B 三网直连
-      - 🇭🇰 香港D 三网直连
-      - 🇰🇷 韩国azure_tg@freevpn8
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
+      - 🇸🇬 新加坡 2（MisakaNo 自由之梦福利节点）
       - 🇸🇬 新加坡 2
       - 🇸🇬 新加坡 2 2
       - 🇭🇰 AZ-香港2
-      - 🇭🇰 AZ-香港4
+      - 🇰🇷 AZ-韩国1
       - 🇰🇷 AZ-韩国2
       - 🇸🇬 AZ-新加坡1
       - 🇸🇬 AZ-新加坡2
-      - 🇭🇰 AWS-香港-5
+      - 🇭🇰 AWS-香港-3
       - 🇭🇰 gcp-host-hk
       - 🇭🇰 gcp-http-hk
       - 🇨🇳 gcp-http-tw443
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_797
+      - 🇨🇳 gcp-http-tw80
       - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_800
-      - 🇺🇸 US_4612
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_3420
+      - ShareCentre
+      - 🇭🇰 香港azure_tg@freevpn8
+      - 🇭🇰 【直连】HKG/香港 A - 4
+      - 🇭🇰 【直连】HKG/香港 C - 1
       - 翻墙党1
       - 翻墙党2
       - 翻墙党4
@@ -317,8 +320,8 @@ proxy-groups:
       - 🇭🇰 *Ultimate|广港|08
       - 🇭🇰 *Ultimate|广港|09
       - 🇭🇰 *Ultimate|广港|10
-      - 🇺🇸 *Ultimate|广美|01
-      - 🇺🇸 *Ultimate|广美|02
+      - 🇺🇲 *Ultimate|广美|01
+      - 🇺🇲 *Ultimate|广美|02
       - 🇰🇷 *Ultimate|广韩|01
       - 🇰🇷 *Ultimate|广韩|02
       - 🇨🇳 *Ultimate|沪台|01
@@ -337,8 +340,8 @@ proxy-groups:
       - 🇭🇰 *Ultimate|沪港|08
       - 🇭🇰 *Ultimate|沪港|09
       - 🇭🇰 *Ultimate|沪港|10
-      - 🇺🇸 *Ultimate|沪美|01
-      - 🇺🇸 *Ultimate|沪美|02
+      - 🇺🇲 *Ultimate|沪美|01
+      - 🇺🇲 *Ultimate|沪美|02
       - 🇰🇷 *Ultimate|沪韩|01
       - 🇰🇷 *Ultimate|沪韩|02
       - 🇨🇳 Advanced|广台|01
@@ -357,8 +360,8 @@ proxy-groups:
       - 🇭🇰 Advanced|广港|08
       - 🇭🇰 Advanced|广港|09
       - 🇭🇰 Advanced|广港|10
-      - 🇺🇸 Advanced|广美|01
-      - 🇺🇸 Advanced|广美|02
+      - 🇺🇲 Advanced|广美|01
+      - 🇺🇲 Advanced|广美|02
       - 🇰🇷 Advanced|广韩|01
       - 🇰🇷 Advanced|广韩|02
       - 🇨🇳 Basic|广台|01
@@ -385,20 +388,17 @@ proxy-groups:
       - 🇭🇰 Basic|广港|08
       - 🇭🇰 Basic|广港|09
       - 🇭🇰 Basic|广港|10
-      - 🇺🇸 Basic|广美|01
-      - 🇺🇸 Basic|广美|02
-      - 🇺🇸 Basic|广美|03
-      - 🇺🇸 Basic|广美|04
-      - 🇺🇸 Basic|广美|05
-      - 🇺🇸 Basic|广美|06
+      - 🇺🇲 Basic|广美|01
+      - 🇺🇲 Basic|广美|02
+      - 🇺🇲 Basic|广美|03
+      - 🇺🇲 Basic|广美|04
+      - 🇺🇲 Basic|广美|05
+      - 🇺🇲 Basic|广美|06
       - 🇰🇷 Basic|广韩|01
       - 🇰🇷 Basic|广韩|02
       - 🏳️‍🌈 Renew|应急续费使用
   - name: 📲 电报消息
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -411,10 +411,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 🎙 Discord
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -427,10 +424,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 🧩 各家Emby体验服
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇸🇬 狮城节点
@@ -438,11 +432,21 @@ proxy-groups:
       - 🚀 节点选择
       - 🚀 手动切换
       - DIRECT
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🇺🇲 美国节点
+      - 🏳️‍🌈 其他节点
+      - 🚀 节点选择
+      - 🚀 手动切换
+      - DIRECT
   - name: 🎥 奈飞视频
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🎥 奈飞节点
       - 🇸🇬 狮城节点
@@ -456,10 +460,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 📺 niconico
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇯🇵 日本节点
       - 🇭🇰 香港节点
@@ -472,20 +473,14 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 📺 巴哈姆特
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇹🇼 台湾节点
       - 🚀 节点选择
       - 🚀 手动切换
       - DIRECT
   - name: 🦄 迪士尼
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -545,10 +540,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🚀 手动切换
   - name: 📦 DuBox
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
@@ -639,10 +631,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🚀 手动切换
   - name: 🎶 网易音乐
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
@@ -658,7 +647,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🚀 手动切换
-      - 🔮 负载均衡
+      - 🔯 故障转移
       - 🇭🇰 香港节点
       - 🇹🇼 台湾节点
       - 🇸🇬 狮城节点
@@ -667,18 +656,42 @@ proxy-groups:
       - 🇺🇲 美国节点
       - 🏳️‍🌈 其他节点
       - DIRECT
-  - name: 🇭🇰 香港节点
+  - name: 🛑 广告拦截
     type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🆎 AdBlock
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🛡️ 隐私防护
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🇭🇰 香港节点
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇭🇰 F-香港-00
       - 🇭🇰 F-香港-01
       - 🇭🇰 香港A 三网直连
       - 🇭🇰 香港B 三网直连
-      - 🇭🇰 香港D 三网直连
       - 🇭🇰 AZ-香港2
-      - 🇭🇰 AZ-香港4
-      - 🇭🇰 AWS-香港-5
+      - 🇭🇰 AWS-香港-3
       - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_800
+      - 🇭🇰 香港azure_tg@freevpn8
+      - 🇭🇰 【直连】HKG/香港 A - 4
+      - 🇭🇰 【直连】HKG/香港 C - 1
       - 🇭🇰 *Ultimate|广港|01
       - 🇭🇰 *Ultimate|广港|02
       - 🇭🇰 *Ultimate|广港|03
@@ -720,8 +733,13 @@ proxy-groups:
       - 🇭🇰 Basic|广港|09
       - 🇭🇰 Basic|广港|10
   - name: 🇹🇼 台湾节点
-    type: select
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
+      - 🇨🇳 台湾01〖中继|原生〗A组
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_3420
       - 🇨🇳 *Ultimate|广台|01
       - 🇨🇳 *Ultimate|广台|02
       - 🇨🇳 *Ultimate|沪台|01
@@ -731,18 +749,24 @@ proxy-groups:
       - 🇨🇳 Basic|广台|01
       - 🇨🇳 Basic|广台|02
   - name: 🇸🇬 狮城节点
-    type: select
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇸🇬 [Lv.1] 新加坡B | 中转
       - 🇸🇬 [Lv.1] 新加坡C | 临时节点
+      - 🇸🇬 新加坡 2（MisakaNo 自由之梦福利节点）
       - 🇸🇬 新加坡 2
       - 🇸🇬 新加坡 2 2
       - 🇸🇬 AZ-新加坡1
       - 🇸🇬 AZ-新加坡2
   - name: 🇯🇵 日本节点
-    type: select
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
-      - 🇨🇳 Relay_🇨🇳CN-🇯🇵JP_797
       - 🇯🇵 *Ultimate|广日|01
       - 🇯🇵 *Ultimate|广日|02
       - 🇯🇵 *Ultimate|沪日|01
@@ -756,10 +780,13 @@ proxy-groups:
       - 🇯🇵 Basic|广日|05
       - 🇯🇵 Basic|广日|06
   - name: 🇰🇷 韩国节点
-    type: select
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
       - 🇰🇷 V1 | 韩国02 | AZ直连2Gbps | x1.0
-      - 🇰🇷 韩国azure_tg@freevpn8
+      - 🇰🇷 AZ-韩国1
       - 🇰🇷 AZ-韩国2
       - 🇰🇷 *Ultimate|广韩|01
       - 🇰🇷 *Ultimate|广韩|02
@@ -770,30 +797,34 @@ proxy-groups:
       - 🇰🇷 Basic|广韩|01
       - 🇰🇷 Basic|广韩|02
   - name: 🇺🇲 美国节点
-    type: select
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
-      - 🇺🇸 US（感谢关注youtube：8度科技）
-      - 🇺🇸 US_4612
-      - 🇺🇸 *Ultimate|广美|01
-      - 🇺🇸 *Ultimate|广美|02
-      - 🇺🇸 *Ultimate|沪美|01
-      - 🇺🇸 *Ultimate|沪美|02
-      - 🇺🇸 Advanced|广美|01
-      - 🇺🇸 Advanced|广美|02
-      - 🇺🇸 Basic|广美|01
-      - 🇺🇸 Basic|广美|02
-      - 🇺🇸 Basic|广美|03
-      - 🇺🇸 Basic|广美|04
-      - 🇺🇸 Basic|广美|05
-      - 🇺🇸 Basic|广美|06
+      - 🇺🇲 *Ultimate|广美|01
+      - 🇺🇲 *Ultimate|广美|02
+      - 🇺🇲 *Ultimate|沪美|01
+      - 🇺🇲 *Ultimate|沪美|02
+      - 🇺🇲 Advanced|广美|01
+      - 🇺🇲 Advanced|广美|02
+      - 🇺🇲 Basic|广美|01
+      - 🇺🇲 Basic|广美|02
+      - 🇺🇲 Basic|广美|03
+      - 🇺🇲 Basic|广美|04
+      - 🇺🇲 Basic|广美|05
+      - 🇺🇲 Basic|广美|06
   - name: 🏳️‍🌈 其他节点
-    type: select
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
-      - 🇺🇸 wulabing_usip.hkvultr.xyz
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
       - 🇭🇰 gcp-host-hk
       - 🇭🇰 gcp-http-hk
       - 🇨🇳 gcp-http-tw443
+      - 🇨🇳 gcp-http-tw80
+      - ShareCentre
       - 翻墙党1
       - 翻墙党2
       - 翻墙党4
