@@ -5,30 +5,20 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
+  - {name: 🇨🇳 台湾01〖中继|原生〗A组, server: a-eepngq11.txwd.xyz, port: 44944, type: vmess, uuid: 3d107736-5674-359e-bacb-72aee6b07bdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /tw-a, ws-headers: {Host: a-eepngq11.txwd.xyz}}
   - {name: "🇸🇬 [Lv.1] 新加坡B | 中转", server: hzyd.ddns.tjiasu.xyz, port: 443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/pianist, ws-headers: {Host: pianist.ddns.tjiasu.xyz}}
-  - {name: 🇭🇰 gcp-http-hk, server: 34.96.190.72, port: 80, type: vmess, uuid: 807099bb-128b-47c4-d9ab-5e286d64875e, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇨🇳 gcp-http-tw443, server: 35.194.210.47, port: 443, type: vmess, uuid: ed260362-cd88-42e4-8738-50ad60b6105c, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇨🇳 gcp-http-tw80, server: 35.194.210.47, port: 80, type: vmess, uuid: 2935be3e-6c3a-4c7f-d747-a529c1539802, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_3420, server: vtwonet-tw-b.qjnodeip.xyz, port: 8300, type: vmess, uuid: 9FC4D03F-A81A-DB13-8547-7F25B4E290A0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 F-香港-01 2, server: qexw.91vita.shop, port: 443, type: vmess, uuid: d9d856e2-d1c6-340a-a45a-6fb5a8513156, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dl, ws-headers: {Host: qexw.91vita.shop}}
   - {name: 🇭🇰 F-香港-00 2, server: qexw.nssl.cf, port: 443, type: vmess, uuid: d9d856e2-d1c6-340a-a45a-6fb5a8513156, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dl, ws-headers: {Host: qexw.nssl.cf}}
   - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |11.37Mb, server: m5.mogu66.com, port: 204, type: ss, cipher: aes-128-gcm, password: 7oosgzlD}
-  - {name: 🇰🇷 t.me/CloudLink101_韩国-4G带宽-三网推荐, server: kr-2.june628.ml, port: 37104, type: vmess, uuid: e709f578-702c-480e-cc64-4e3f4218a920, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /By:June-@CloudLinkGroup, ws-headers: {Host: kr-2.june628.ml}}
-  - {name: 🇨🇳 TW03丨IEPL专线丨1Gbps, server: cthtw02.ddnsfree.com, port: 16882, type: vmess, uuid: 1417c1a6-ce0f-46dc-b369-24ba01499fa9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cthtw02.ddnsfree.com}}
-  - {name: 🇭🇰 HK03丨IEPL专线丨2Gbps, server: cth.kozow.com, port: 10011, type: vmess, uuid: 1417c1a6-ce0f-46dc-b369-24ba01499fa9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cth.kozow.com}}
-  - {name: 🇰🇷 KR02丨IEPL专线丨2Gbps, server: cth.kozow.com, port: 6783, type: vmess, uuid: 1417c1a6-ce0f-46dc-b369-24ba01499fa9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cth.kozow.com}}
-  - {name: 🇭🇰 香港04, server: 65.52.164.219, port: 10005, type: trojan, password: bb7fbc2f-bc62-4845-b874-db45d05ddd56, skip-cert-verify: false}
-  - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_3525, server: vtwonet-tw-b.qjnodeip.xyz, port: 8300, type: vmess, uuid: 9FC4D03F-A81A-DB13-8547-7F25B4E290A0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡01 | 中转AZ x0.5, server: 65.52.164.219, port: 10010, type: vmess, uuid: bb7fbc2f-bc62-4845-b874-db45d05ddd56, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: sg1.xxl123.fun}}
-  - {name: 🇭🇰 香港01, server: 65.52.164.219, port: 10000, type: trojan, password: bb7fbc2f-bc62-4845-b874-db45d05ddd56, skip-cert-verify: false}
-  - {name: 🇯🇵 日本02 | 中转AZ x0.5, server: 65.52.164.219, port: 10009, type: vmess, uuid: bb7fbc2f-bc62-4845-b874-db45d05ddd56, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: jp2.xxl123.fun}}
   - {name: 🇨🇳 杭州联通, server: 43.240.206.227, port: 3389, type: trojan, password: ba4fedf8c217c146, skip-cert-verify: false}
-  - {name: 🇨🇳 广州移动, server: 120.236.197.205, port: 3389, type: trojan, password: ba4fedf8c217c146, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾(原生), server: tw3.mooncloud.top, port: 8080, type: vmess, uuid: 00a356fc-71c7-4837-85ef-66a074a39530, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: tw3.mooncloud.top}}
-  - {name: 网址：t.xxl123.fun | TG：t.me/flyXXL12345, server: 141.164.36.44, port: 80, type: vmess, uuid: 79fb4d2f-9632-4fb3-9851-72cc77b2b4e4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /Live, ws-headers: {Host: pull.free.video.10010.com}}
-  - {name: 🇰🇷 韩国01 | 中转AZ x0.5, server: 65.52.164.219, port: 10003, type: vmess, uuid: 79fb4d2f-9632-4fb3-9851-72cc77b2b4e4, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: kr1.xxl123.fun}}
-  - {name: 🇸🇬 新加坡01 | 中转AZ x0.5 2, server: 65.52.164.219, port: 10010, type: vmess, uuid: 79fb4d2f-9632-4fb3-9851-72cc77b2b4e4, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: sg1.xxl123.fun}}
-  - {name: 🇸🇬 新加坡04 | 中转AZ x0.5, server: 65.52.164.219, port: 10008, type: vmess, uuid: 79fb4d2f-9632-4fb3-9851-72cc77b2b4e4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: 65.52.164.219}}
+  - {name: 🇸🇬 新加坡01 | 中转AZ x0.5, server: 65.52.164.219, port: 10010, type: vmess, uuid: 79fb4d2f-9632-4fb3-9851-72cc77b2b4e4, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: sg1.xxl123.fun}}
+  - {name: 🇭🇰 HK（感谢关注youtube：8度科技）, server: hk-b.x.qjnodeip.xyz, port: 8311, type: vmess, uuid: fd0d1853-31cb-322a-f5ab-96e9f3359fb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 【中转】JPN/日本 A - 宁波电信, server: 115.231.187.1, port: 80, type: vmess, uuid: 674e3dbe-6834-4999-99e1-0e5a220fb39f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 006.cdn.8x.cx.hit.edu.cn}}
+  - {name: 🇯🇵 【中转】JPN/日本 A - 西安电信, server: 117.34.14.1, port: 80, type: vmess, uuid: 674e3dbe-6834-4999-99e1-0e5a220fb39f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 006.cdn.8x.cx.hit.edu.cn}}
+  - {name: 🇯🇵 【中转】JPN/日本 A - 江苏移动, server: 112.25.91.1, port: 80, type: vmess, uuid: 674e3dbe-6834-4999-99e1-0e5a220fb39f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 006.cdn.8x.cx.hit.edu.cn}}
+  - {name: 🇨🇳 【中转】TWN/台湾 A - 河北联通, server: 61.182.136.1, port: 80, type: vmess, uuid: 674e3dbe-6834-4999-99e1-0e5a220fb39f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 004.cdn.8x.cx.hit.edu.cn}}
+  - {name: 🇨🇳 【中转】TWN/台湾 A - 重庆联通, server: 113.207.102.1, port: 80, type: vmess, uuid: 674e3dbe-6834-4999-99e1-0e5a220fb39f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 004.cdn.8x.cx.hit.edu.cn}}
   - {name: 🇨🇳 *Ultimate|广台|01, server: advanced-cm-3.host-sub.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇨🇳 *Ultimate|沪台|01, server: ultimate-ct-1.host-sub.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇨🇳 *Ultimate|沪台|02, server: ultimate-ct-1.host-sub.com, port: 3035, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
@@ -37,10 +27,14 @@ proxies:
   - {name: 🇨🇳 Basic|广台|01, server: cmrelay-basic-1.host-sub.com, port: 3025, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇨🇳 Basic|广台|02, server: cmrelay-basic-1.host-sub.com, port: 3035, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_724 | 2.49Mb, server: guangdong-gugu.ddns-only.xyz, port: 13304, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 141323:jjN0uv, obfs-param: b5c5b141323.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|广港|01, server: advanced-cm-3.host-sub.com, port: 3500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|广港|02, server: advanced-cm-3.host-sub.com, port: 3501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|广港|03, server: advanced-cm-3.host-sub.com, port: 3502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|广港|04, server: advanced-cm-3.host-sub.com, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|广港|05, server: advanced-cm-3.host-sub.com, port: 3504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|广港|06, server: advanced-cm-3.host-sub.com, port: 3505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|广港|07, server: advanced-cm-3.host-sub.com, port: 3506, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|广港|08, server: advanced-cm-3.host-sub.com, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|广港|09, server: advanced-cm-3.host-sub.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|广港|10, server: advanced-cm-3.host-sub.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|沪港|01, server: ultimate-ct-1.host-sub.com, port: 3500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
@@ -48,24 +42,34 @@ proxies:
   - {name: 🇭🇰 *Ultimate|沪港|03, server: ultimate-ct-1.host-sub.com, port: 3502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|沪港|04, server: ultimate-ct-1.host-sub.com, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|沪港|05, server: ultimate-ct-1.host-sub.com, port: 3504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|沪港|06, server: ultimate-ct-1.host-sub.com, port: 3505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|沪港|07, server: ultimate-ct-1.host-sub.com, port: 3506, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇭🇰 *Ultimate|沪港|08, server: ultimate-ct-1.host-sub.com, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|沪港|09, server: ultimate-ct-1.host-sub.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 *Ultimate|沪港|10, server: ultimate-ct-1.host-sub.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇭🇰 Advanced|广港|01, server: advanced-cm-1.host-sub.com, port: 3500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 Advanced|广港|02, server: advanced-cm-1.host-sub.com, port: 3501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 Advanced|广港|03, server: advanced-cm-1.host-sub.com, port: 3502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇭🇰 Advanced|广港|04, server: advanced-cm-1.host-sub.com, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇭🇰 Advanced|广港|05, server: advanced-cm-1.host-sub.com, port: 3504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 Advanced|广港|06, server: advanced-cm-1.host-sub.com, port: 3505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 Advanced|广港|08, server: advanced-cm-1.host-sub.com, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 Advanced|广港|10, server: advanced-cm-1.host-sub.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇭🇰 Basic|广港|01, server: cmrelay-basic-1.host-sub.com, port: 3500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇭🇰 Basic|广港|04, server: cmrelay-basic-1.host-sub.com, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 Basic|广港|05, server: cmrelay-basic-1.host-sub.com, port: 3504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 Basic|广港|10, server: cmrelay-basic-1.host-sub.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_697 |10.83Mb, server: guangdong05.ddns-only.xyz, port: 13488, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 141323:jjN0uv, obfs-param: b5c5b141323.microsoft.com}
   - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_726 |11.40Mb, server: guangdong05.ddns-only.xyz, port: 13494, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 141323:jjN0uv, obfs-param: b5c5b141323.microsoft.com}
   - {name: 🇭🇰 香港 02, server: dg-hk-node02.linkthink.app, port: 12164, type: ssr, cipher: aes-256-cfb, password: e5opjuLDEQ, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 145237:9Fu0cisYev, obfs-param: ""}
   - {name: 🇭🇰 香港04-测试, server: 42.157.196.104, port: 20461, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 157511:pAMJKtqm7N, obfs-param: ajax.microsoft.com}
+  - {name: 🇭🇰 香港04-测试 2, server: 42.157.196.104, port: 20515, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 157513:QPcIT9qS4K, obfs-param: ajax.microsoft.com}
   - {name: 🇭🇰 香港04-测试 3, server: 42.157.196.104, port: 20889, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 145237:9Fu0cisYev, obfs-param: ""}
   - {name: 🇭🇰 香港04-测试 4, server: 42.157.196.104, port: 20059, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 157510:XVBxeqoOWJ, obfs-param: ajax.microsoft.com}
   - {name: 🇯🇵 *Ultimate|广日|01, server: advanced-cm-3.host-sub.com, port: 4500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇯🇵 *Ultimate|广日|02, server: advanced-cm-3.host-sub.com, port: 4501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇯🇵 *Ultimate|沪日|01, server: ultimate-ct-1.host-sub.com, port: 4500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇯🇵 *Ultimate|沪日|02, server: ultimate-ct-1.host-sub.com, port: 4501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇯🇵 Advanced|广日|01, server: advanced-cm-2.host-sub.com, port: 4500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇯🇵 Advanced|广日|02, server: advanced-cm-2.host-sub.com, port: 4501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇯🇵 Basic|广日|01, server: cmrelay-basic-2.host-sub.com, port: 4500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
@@ -76,6 +80,8 @@ proxies:
   - {name: 🇯🇵 Basic|广日|06, server: cmrelay-basic-2.host-sub.com, port: 4505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇰🇷 *Ultimate|广韩|01, server: advanced-cm-3.host-sub.com, port: 7500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇰🇷 *Ultimate|广韩|02, server: advanced-cm-3.host-sub.com, port: 7501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇰🇷 *Ultimate|沪韩|01, server: ultimate-ct-1.host-sub.com, port: 7500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇰🇷 *Ultimate|沪韩|02, server: ultimate-ct-1.host-sub.com, port: 7501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇰🇷 Advanced|广韩|01, server: advanced-cm-2.host-sub.com, port: 7500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇰🇷 Advanced|广韩|02, server: advanced-cm-2.host-sub.com, port: 7501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇰🇷 Basic|广韩|01, server: cmrelay-basic-2.host-sub.com, port: 7500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
@@ -83,6 +89,7 @@ proxies:
   - {name: 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_682 | 4.70Mb, server: shanghai02.ddns-only.xyz, port: 13210, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 141323:jjN0uv, obfs-param: b5c5b141323.microsoft.com}
   - {name: 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_684 | 5.60Mb, server: guangdong-gugu.ddns-only.xyz, port: 13105, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 141323:jjN0uv, obfs-param: b5c5b141323.microsoft.com}
   - {name: 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_688 | 7.06Mb, server: shanghai02.ddns-only.xyz, port: 13207, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 141323:jjN0uv, obfs-param: b5c5b141323.microsoft.com}
+  - {name: 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_689 | 4.75Mb, server: shanghai02.ddns-only.xyz, port: 13216, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 141323:jjN0uv, obfs-param: b5c5b141323.microsoft.com}
   - {name: 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_690 | 5.75Mb, server: shanghai02.ddns-only.xyz, port: 13212, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 141323:jjN0uv, obfs-param: b5c5b141323.microsoft.com}
   - {name: 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_694 | 6.98Mb, server: shanghai02.ddns-only.xyz, port: 13203, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 141323:jjN0uv, obfs-param: b5c5b141323.microsoft.com}
   - {name: 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_696 | 6.52Mb, server: shanghai02.ddns-only.xyz, port: 13218, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 141323:jjN0uv, obfs-param: b5c5b141323.microsoft.com}
@@ -90,6 +97,8 @@ proxies:
   - {name: 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_712 | 5.06Mb, server: guangdong-gugu.ddns-only.xyz, port: 32441, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 141323:jjN0uv, obfs-param: b5c5b141323.microsoft.com}
   - {name: 🇸🇬 *Ultimate|广新|01, server: advanced-cm-3.host-sub.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇸🇬 *Ultimate|广新|02, server: advanced-cm-3.host-sub.com, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇸🇬 *Ultimate|沪新|01, server: ultimate-ct-1.host-sub.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇸🇬 *Ultimate|沪新|02, server: ultimate-ct-1.host-sub.com, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇸🇬 Advanced|广新|01, server: advanced-cm-2.host-sub.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇸🇬 Advanced|广新|02, server: advanced-cm-2.host-sub.com, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇸🇬 Basic|广新|01, server: cmrelay-basic-2.host-sub.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
@@ -97,24 +106,15 @@ proxies:
   - {name: 🇸🇬 Basic|广新|03, server: cmrelay-basic-2.host-sub.com, port: 6502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇸🇬 Basic|广新|04, server: cmrelay-basic-2.host-sub.com, port: 6503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇸🇬 Basic|广新|05, server: cmrelay-basic-2.host-sub.com, port: 6504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇸🇬 Basic|广新|06, server: cmrelay-basic-2.host-sub.com, port: 6505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇺🇲 *Ultimate|广美|01, server: advanced-cm-3.host-sub.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇺🇲 *Ultimate|广美|02, server: advanced-cm-3.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇺🇲 *Ultimate|沪美|01, server: ultimate-ct-1.host-sub.com, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
+  - {name: 🇺🇲 *Ultimate|沪美|02, server: ultimate-ct-1.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇺🇲 Advanced|广美|02, server: advanced-cm-2.host-sub.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇺🇲 Basic|广美|03, server: cmrelay-basic-2.host-sub.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
   - {name: 🇺🇲 Basic|广美|05, server: cmrelay-basic-2.host-sub.com, port: 5504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_790 |11.26Mb, server: cn01.fengyecloud.me, port: 5700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 30728:nSTbwm, obfs-param: ""}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_813, server: 117.28.243.187, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
-  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_820, server: gz.q88q.gq, port: 12168, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:jnypde02c0c, obfs-param: ""}
-  - {name: ssr04, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
-  - {name: ssr05, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
-  - {name: ssr06, server: 221.228.99.36, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
-  - {name: 🇯🇵 日本01, server: jp01.pjj.life, port: 12334, type: ssr, cipher: aes-128-cfb, password: pjj.one, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 43188084:978c043d-9b50-44e1-8235-765faa5897b8, obfs-param: ""}
-  - {name: 翻墙党1, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
-  - {name: 翻墙党2, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
-  - {name: 翻墙党4, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
-  - {name: 🇨🇳 台湾 | IPLC專線 | VIP3 2, server: x.ooxc.cc, port: 35021, type: ss, cipher: chacha20, password: xwhales.123}
-  - {name: 🇭🇰 香港 02 2, server: dg-hk-node02.linkthink.app, port: 12164, type: ssr, cipher: aes-256-cfb, password: e5opjuLDEQ, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 145237:9Fu0cisYev, obfs-param: ""}
-  - {name: 🇭🇰 香港04-测试 2, server: 42.157.196.104, port: 20889, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 145237:9Fu0cisYev, obfs-param: ""}
+  - {name: 🏳️‍🌈 ️‍🌈 ️‍🌈 Renew|应急续费使用, server: hkhktrenew.host-sub.com, port: 1063, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 28419:123zx456., obfs-param: fdf4f28419.microsoft.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -132,30 +132,20 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
+      - 🇨🇳 台湾01〖中继|原生〗A组
       - 🇸🇬 [Lv.1] 新加坡B | 中转
-      - 🇭🇰 gcp-http-hk
       - 🇨🇳 gcp-http-tw443
       - 🇨🇳 gcp-http-tw80
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_3420
-      - 🇭🇰 F-香港-01 2
       - 🇭🇰 F-香港-00 2
       - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |11.37Mb
-      - 🇰🇷 t.me/CloudLink101_韩国-4G带宽-三网推荐
-      - 🇨🇳 TW03丨IEPL专线丨1Gbps
-      - 🇭🇰 HK03丨IEPL专线丨2Gbps
-      - 🇰🇷 KR02丨IEPL专线丨2Gbps
-      - 🇭🇰 香港04
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_3525
-      - 🇸🇬 新加坡01 | 中转AZ x0.5
-      - 🇭🇰 香港01
-      - 🇯🇵 日本02 | 中转AZ x0.5
       - 🇨🇳 杭州联通
-      - 🇨🇳 广州移动
-      - 🇨🇳 台湾(原生)
-      - 网址：t.xxl123.fun | TG：t.me/flyXXL12345
-      - 🇰🇷 韩国01 | 中转AZ x0.5
-      - 🇸🇬 新加坡01 | 中转AZ x0.5 2
-      - 🇸🇬 新加坡04 | 中转AZ x0.5
+      - 🇸🇬 新加坡01 | 中转AZ x0.5
+      - 🇭🇰 HK（感谢关注youtube：8度科技）
+      - 🇯🇵 【中转】JPN/日本 A - 宁波电信
+      - 🇯🇵 【中转】JPN/日本 A - 西安电信
+      - 🇯🇵 【中转】JPN/日本 A - 江苏移动
+      - 🇨🇳 【中转】TWN/台湾 A - 河北联通
+      - 🇨🇳 【中转】TWN/台湾 A - 重庆联通
       - 🇨🇳 *Ultimate|广台|01
       - 🇨🇳 *Ultimate|沪台|01
       - 🇨🇳 *Ultimate|沪台|02
@@ -164,10 +154,14 @@ proxy-groups:
       - 🇨🇳 Basic|广台|01
       - 🇨🇳 Basic|广台|02
       - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_724 | 2.49Mb
+      - 🇭🇰 *Ultimate|广港|01
+      - 🇭🇰 *Ultimate|广港|02
       - 🇭🇰 *Ultimate|广港|03
       - 🇭🇰 *Ultimate|广港|04
       - 🇭🇰 *Ultimate|广港|05
       - 🇭🇰 *Ultimate|广港|06
+      - 🇭🇰 *Ultimate|广港|07
+      - 🇭🇰 *Ultimate|广港|08
       - 🇭🇰 *Ultimate|广港|09
       - 🇭🇰 *Ultimate|广港|10
       - 🇭🇰 *Ultimate|沪港|01
@@ -175,24 +169,34 @@ proxy-groups:
       - 🇭🇰 *Ultimate|沪港|03
       - 🇭🇰 *Ultimate|沪港|04
       - 🇭🇰 *Ultimate|沪港|05
+      - 🇭🇰 *Ultimate|沪港|06
       - 🇭🇰 *Ultimate|沪港|07
+      - 🇭🇰 *Ultimate|沪港|08
       - 🇭🇰 *Ultimate|沪港|09
       - 🇭🇰 *Ultimate|沪港|10
+      - 🇭🇰 Advanced|广港|01
       - 🇭🇰 Advanced|广港|02
       - 🇭🇰 Advanced|广港|03
+      - 🇭🇰 Advanced|广港|04
+      - 🇭🇰 Advanced|广港|05
       - 🇭🇰 Advanced|广港|06
       - 🇭🇰 Advanced|广港|08
       - 🇭🇰 Advanced|广港|10
+      - 🇭🇰 Basic|广港|01
+      - 🇭🇰 Basic|广港|04
       - 🇭🇰 Basic|广港|05
       - 🇭🇰 Basic|广港|10
       - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_697 |10.83Mb
       - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_726 |11.40Mb
       - 🇭🇰 香港 02
       - 🇭🇰 香港04-测试
+      - 🇭🇰 香港04-测试 2
       - 🇭🇰 香港04-测试 3
       - 🇭🇰 香港04-测试 4
       - 🇯🇵 *Ultimate|广日|01
       - 🇯🇵 *Ultimate|广日|02
+      - 🇯🇵 *Ultimate|沪日|01
+      - 🇯🇵 *Ultimate|沪日|02
       - 🇯🇵 Advanced|广日|01
       - 🇯🇵 Advanced|广日|02
       - 🇯🇵 Basic|广日|01
@@ -203,6 +207,8 @@ proxy-groups:
       - 🇯🇵 Basic|广日|06
       - 🇰🇷 *Ultimate|广韩|01
       - 🇰🇷 *Ultimate|广韩|02
+      - 🇰🇷 *Ultimate|沪韩|01
+      - 🇰🇷 *Ultimate|沪韩|02
       - 🇰🇷 Advanced|广韩|01
       - 🇰🇷 Advanced|广韩|02
       - 🇰🇷 Basic|广韩|01
@@ -210,6 +216,7 @@ proxy-groups:
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_682 | 4.70Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_684 | 5.60Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_688 | 7.06Mb
+      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_689 | 4.75Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_690 | 5.75Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_694 | 6.98Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_696 | 6.52Mb
@@ -217,6 +224,8 @@ proxy-groups:
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_712 | 5.06Mb
       - 🇸🇬 *Ultimate|广新|01
       - 🇸🇬 *Ultimate|广新|02
+      - 🇸🇬 *Ultimate|沪新|01
+      - 🇸🇬 *Ultimate|沪新|02
       - 🇸🇬 Advanced|广新|01
       - 🇸🇬 Advanced|广新|02
       - 🇸🇬 Basic|广新|01
@@ -224,54 +233,35 @@ proxy-groups:
       - 🇸🇬 Basic|广新|03
       - 🇸🇬 Basic|广新|04
       - 🇸🇬 Basic|广新|05
+      - 🇸🇬 Basic|广新|06
       - 🇺🇲 *Ultimate|广美|01
       - 🇺🇲 *Ultimate|广美|02
+      - 🇺🇲 *Ultimate|沪美|01
+      - 🇺🇲 *Ultimate|沪美|02
       - 🇺🇲 Advanced|广美|02
       - 🇺🇲 Basic|广美|03
       - 🇺🇲 Basic|广美|05
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_790 |11.26Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_813
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_820
-      - ssr04
-      - ssr05
-      - ssr06
-      - 🇯🇵 日本01
-      - 翻墙党1
-      - 翻墙党2
-      - 翻墙党4
-      - 🇨🇳 台湾 | IPLC專線 | VIP3 2
-      - 🇭🇰 香港 02 2
-      - 🇭🇰 香港04-测试 2
+      - 🏳️‍🌈 ️‍🌈 ️‍🌈 Renew|应急续费使用
   - name: 🔮 负载均衡
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇨🇳 台湾01〖中继|原生〗A组
       - 🇸🇬 [Lv.1] 新加坡B | 中转
-      - 🇭🇰 gcp-http-hk
       - 🇨🇳 gcp-http-tw443
       - 🇨🇳 gcp-http-tw80
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_3420
-      - 🇭🇰 F-香港-01 2
       - 🇭🇰 F-香港-00 2
       - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |11.37Mb
-      - 🇰🇷 t.me/CloudLink101_韩国-4G带宽-三网推荐
-      - 🇨🇳 TW03丨IEPL专线丨1Gbps
-      - 🇭🇰 HK03丨IEPL专线丨2Gbps
-      - 🇰🇷 KR02丨IEPL专线丨2Gbps
-      - 🇭🇰 香港04
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_3525
-      - 🇸🇬 新加坡01 | 中转AZ x0.5
-      - 🇭🇰 香港01
-      - 🇯🇵 日本02 | 中转AZ x0.5
       - 🇨🇳 杭州联通
-      - 🇨🇳 广州移动
-      - 🇨🇳 台湾(原生)
-      - 网址：t.xxl123.fun | TG：t.me/flyXXL12345
-      - 🇰🇷 韩国01 | 中转AZ x0.5
-      - 🇸🇬 新加坡01 | 中转AZ x0.5 2
-      - 🇸🇬 新加坡04 | 中转AZ x0.5
+      - 🇸🇬 新加坡01 | 中转AZ x0.5
+      - 🇭🇰 HK（感谢关注youtube：8度科技）
+      - 🇯🇵 【中转】JPN/日本 A - 宁波电信
+      - 🇯🇵 【中转】JPN/日本 A - 西安电信
+      - 🇯🇵 【中转】JPN/日本 A - 江苏移动
+      - 🇨🇳 【中转】TWN/台湾 A - 河北联通
+      - 🇨🇳 【中转】TWN/台湾 A - 重庆联通
       - 🇨🇳 *Ultimate|广台|01
       - 🇨🇳 *Ultimate|沪台|01
       - 🇨🇳 *Ultimate|沪台|02
@@ -280,10 +270,14 @@ proxy-groups:
       - 🇨🇳 Basic|广台|01
       - 🇨🇳 Basic|广台|02
       - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_724 | 2.49Mb
+      - 🇭🇰 *Ultimate|广港|01
+      - 🇭🇰 *Ultimate|广港|02
       - 🇭🇰 *Ultimate|广港|03
       - 🇭🇰 *Ultimate|广港|04
       - 🇭🇰 *Ultimate|广港|05
       - 🇭🇰 *Ultimate|广港|06
+      - 🇭🇰 *Ultimate|广港|07
+      - 🇭🇰 *Ultimate|广港|08
       - 🇭🇰 *Ultimate|广港|09
       - 🇭🇰 *Ultimate|广港|10
       - 🇭🇰 *Ultimate|沪港|01
@@ -291,24 +285,34 @@ proxy-groups:
       - 🇭🇰 *Ultimate|沪港|03
       - 🇭🇰 *Ultimate|沪港|04
       - 🇭🇰 *Ultimate|沪港|05
+      - 🇭🇰 *Ultimate|沪港|06
       - 🇭🇰 *Ultimate|沪港|07
+      - 🇭🇰 *Ultimate|沪港|08
       - 🇭🇰 *Ultimate|沪港|09
       - 🇭🇰 *Ultimate|沪港|10
+      - 🇭🇰 Advanced|广港|01
       - 🇭🇰 Advanced|广港|02
       - 🇭🇰 Advanced|广港|03
+      - 🇭🇰 Advanced|广港|04
+      - 🇭🇰 Advanced|广港|05
       - 🇭🇰 Advanced|广港|06
       - 🇭🇰 Advanced|广港|08
       - 🇭🇰 Advanced|广港|10
+      - 🇭🇰 Basic|广港|01
+      - 🇭🇰 Basic|广港|04
       - 🇭🇰 Basic|广港|05
       - 🇭🇰 Basic|广港|10
       - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_697 |10.83Mb
       - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_726 |11.40Mb
       - 🇭🇰 香港 02
       - 🇭🇰 香港04-测试
+      - 🇭🇰 香港04-测试 2
       - 🇭🇰 香港04-测试 3
       - 🇭🇰 香港04-测试 4
       - 🇯🇵 *Ultimate|广日|01
       - 🇯🇵 *Ultimate|广日|02
+      - 🇯🇵 *Ultimate|沪日|01
+      - 🇯🇵 *Ultimate|沪日|02
       - 🇯🇵 Advanced|广日|01
       - 🇯🇵 Advanced|广日|02
       - 🇯🇵 Basic|广日|01
@@ -319,6 +323,8 @@ proxy-groups:
       - 🇯🇵 Basic|广日|06
       - 🇰🇷 *Ultimate|广韩|01
       - 🇰🇷 *Ultimate|广韩|02
+      - 🇰🇷 *Ultimate|沪韩|01
+      - 🇰🇷 *Ultimate|沪韩|02
       - 🇰🇷 Advanced|广韩|01
       - 🇰🇷 Advanced|广韩|02
       - 🇰🇷 Basic|广韩|01
@@ -326,6 +332,7 @@ proxy-groups:
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_682 | 4.70Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_684 | 5.60Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_688 | 7.06Mb
+      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_689 | 4.75Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_690 | 5.75Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_694 | 6.98Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_696 | 6.52Mb
@@ -333,6 +340,8 @@ proxy-groups:
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_712 | 5.06Mb
       - 🇸🇬 *Ultimate|广新|01
       - 🇸🇬 *Ultimate|广新|02
+      - 🇸🇬 *Ultimate|沪新|01
+      - 🇸🇬 *Ultimate|沪新|02
       - 🇸🇬 Advanced|广新|01
       - 🇸🇬 Advanced|广新|02
       - 🇸🇬 Basic|广新|01
@@ -340,24 +349,15 @@ proxy-groups:
       - 🇸🇬 Basic|广新|03
       - 🇸🇬 Basic|广新|04
       - 🇸🇬 Basic|广新|05
+      - 🇸🇬 Basic|广新|06
       - 🇺🇲 *Ultimate|广美|01
       - 🇺🇲 *Ultimate|广美|02
+      - 🇺🇲 *Ultimate|沪美|01
+      - 🇺🇲 *Ultimate|沪美|02
       - 🇺🇲 Advanced|广美|02
       - 🇺🇲 Basic|广美|03
       - 🇺🇲 Basic|广美|05
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_790 |11.26Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_813
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_820
-      - ssr04
-      - ssr05
-      - ssr06
-      - 🇯🇵 日本01
-      - 翻墙党1
-      - 翻墙党2
-      - 翻墙党4
-      - 🇨🇳 台湾 | IPLC專線 | VIP3 2
-      - 🇭🇰 香港 02 2
-      - 🇭🇰 香港04-测试 2
+      - 🏳️‍🌈 ️‍🌈 ️‍🌈 Renew|应急续费使用
   - name: 📲 电报消息
     type: select
     proxies:
@@ -539,7 +539,33 @@ proxy-groups:
       - 🏳️‍🌈 其他节点
       - 🚀 节点选择
       - 🚀 手动切换
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🇺🇲 美国节点
+      - 🏳️‍🌈 其他节点
+      - 🚀 节点选择
+      - 🚀 手动切换
   - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🇺🇲 美国节点
+      - 🏳️‍🌈 其他节点
+      - 🚀 节点选择
+      - 🚀 手动切换
+  - name: 🪔 Nvidia服务
     type: select
     proxies:
       - DIRECT
@@ -623,16 +649,17 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 F-香港-01 2
       - 🇭🇰 F-香港-00 2
       - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_678 |11.37Mb
-      - 🇭🇰 HK03丨IEPL专线丨2Gbps
-      - 🇭🇰 香港04
-      - 🇭🇰 香港01
+      - 🇭🇰 HK（感谢关注youtube：8度科技）
+      - 🇭🇰 *Ultimate|广港|01
+      - 🇭🇰 *Ultimate|广港|02
       - 🇭🇰 *Ultimate|广港|03
       - 🇭🇰 *Ultimate|广港|04
       - 🇭🇰 *Ultimate|广港|05
       - 🇭🇰 *Ultimate|广港|06
+      - 🇭🇰 *Ultimate|广港|07
+      - 🇭🇰 *Ultimate|广港|08
       - 🇭🇰 *Ultimate|广港|09
       - 🇭🇰 *Ultimate|广港|10
       - 🇭🇰 *Ultimate|沪港|01
@@ -640,34 +667,39 @@ proxy-groups:
       - 🇭🇰 *Ultimate|沪港|03
       - 🇭🇰 *Ultimate|沪港|04
       - 🇭🇰 *Ultimate|沪港|05
+      - 🇭🇰 *Ultimate|沪港|06
       - 🇭🇰 *Ultimate|沪港|07
+      - 🇭🇰 *Ultimate|沪港|08
       - 🇭🇰 *Ultimate|沪港|09
       - 🇭🇰 *Ultimate|沪港|10
+      - 🇭🇰 Advanced|广港|01
       - 🇭🇰 Advanced|广港|02
       - 🇭🇰 Advanced|广港|03
+      - 🇭🇰 Advanced|广港|04
+      - 🇭🇰 Advanced|广港|05
       - 🇭🇰 Advanced|广港|06
       - 🇭🇰 Advanced|广港|08
       - 🇭🇰 Advanced|广港|10
+      - 🇭🇰 Basic|广港|01
+      - 🇭🇰 Basic|广港|04
       - 🇭🇰 Basic|广港|05
       - 🇭🇰 Basic|广港|10
       - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_697 |10.83Mb
       - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_726 |11.40Mb
       - 🇭🇰 香港 02
       - 🇭🇰 香港04-测试
+      - 🇭🇰 香港04-测试 2
       - 🇭🇰 香港04-测试 3
       - 🇭🇰 香港04-测试 4
-      - 🇭🇰 香港 02 2
-      - 🇭🇰 香港04-测试 2
   - name: 🇹🇼 台湾节点
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_3420
-      - 🇨🇳 TW03丨IEPL专线丨1Gbps
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_3525
-      - 🇨🇳 台湾(原生)
+      - 🇨🇳 台湾01〖中继|原生〗A组
+      - 🇨🇳 【中转】TWN/台湾 A - 河北联通
+      - 🇨🇳 【中转】TWN/台湾 A - 重庆联通
       - 🇨🇳 *Ultimate|广台|01
       - 🇨🇳 *Ultimate|沪台|01
       - 🇨🇳 *Ultimate|沪台|02
@@ -676,9 +708,6 @@ proxy-groups:
       - 🇨🇳 Basic|广台|01
       - 🇨🇳 Basic|广台|02
       - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_724 | 2.49Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_790 |11.26Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_813
-      - 🇨🇳 台湾 | IPLC專線 | VIP3 2
   - name: 🇸🇬 狮城节点
     type: load-balance
     url: http://www.gstatic.com/generate_204
@@ -687,17 +716,19 @@ proxy-groups:
     proxies:
       - 🇸🇬 [Lv.1] 新加坡B | 中转
       - 🇸🇬 新加坡01 | 中转AZ x0.5
-      - 🇸🇬 新加坡01 | 中转AZ x0.5 2
-      - 🇸🇬 新加坡04 | 中转AZ x0.5
   - name: 🇯🇵 日本节点
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本02 | 中转AZ x0.5
+      - 🇯🇵 【中转】JPN/日本 A - 宁波电信
+      - 🇯🇵 【中转】JPN/日本 A - 西安电信
+      - 🇯🇵 【中转】JPN/日本 A - 江苏移动
       - 🇯🇵 *Ultimate|广日|01
       - 🇯🇵 *Ultimate|广日|02
+      - 🇯🇵 *Ultimate|沪日|01
+      - 🇯🇵 *Ultimate|沪日|02
       - 🇯🇵 Advanced|广日|01
       - 🇯🇵 Advanced|广日|02
       - 🇯🇵 Basic|广日|01
@@ -706,18 +737,16 @@ proxy-groups:
       - 🇯🇵 Basic|广日|04
       - 🇯🇵 Basic|广日|05
       - 🇯🇵 Basic|广日|06
-      - 🇯🇵 日本01
   - name: 🇰🇷 韩国节点
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 t.me/CloudLink101_韩国-4G带宽-三网推荐
-      - 🇰🇷 KR02丨IEPL专线丨2Gbps
-      - 🇰🇷 韩国01 | 中转AZ x0.5
       - 🇰🇷 *Ultimate|广韩|01
       - 🇰🇷 *Ultimate|广韩|02
+      - 🇰🇷 *Ultimate|沪韩|01
+      - 🇰🇷 *Ultimate|沪韩|02
       - 🇰🇷 Advanced|广韩|01
       - 🇰🇷 Advanced|广韩|02
       - 🇰🇷 Basic|广韩|01
@@ -730,25 +759,24 @@ proxy-groups:
     proxies:
       - 🇺🇲 *Ultimate|广美|01
       - 🇺🇲 *Ultimate|广美|02
+      - 🇺🇲 *Ultimate|沪美|01
+      - 🇺🇲 *Ultimate|沪美|02
       - 🇺🇲 Advanced|广美|02
       - 🇺🇲 Basic|广美|03
       - 🇺🇲 Basic|广美|05
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_820
   - name: 🏳️‍🌈 其他节点
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 gcp-http-hk
       - 🇨🇳 gcp-http-tw443
       - 🇨🇳 gcp-http-tw80
       - 🇨🇳 杭州联通
-      - 🇨🇳 广州移动
-      - 网址：t.xxl123.fun | TG：t.me/flyXXL12345
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_682 | 4.70Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_684 | 5.60Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_688 | 7.06Mb
+      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_689 | 4.75Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_690 | 5.75Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_694 | 6.98Mb
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_696 | 6.52Mb
@@ -756,6 +784,8 @@ proxy-groups:
       - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_712 | 5.06Mb
       - 🇸🇬 *Ultimate|广新|01
       - 🇸🇬 *Ultimate|广新|02
+      - 🇸🇬 *Ultimate|沪新|01
+      - 🇸🇬 *Ultimate|沪新|02
       - 🇸🇬 Advanced|广新|01
       - 🇸🇬 Advanced|广新|02
       - 🇸🇬 Basic|广新|01
@@ -763,12 +793,8 @@ proxy-groups:
       - 🇸🇬 Basic|广新|03
       - 🇸🇬 Basic|广新|04
       - 🇸🇬 Basic|广新|05
-      - ssr04
-      - ssr05
-      - ssr06
-      - 翻墙党1
-      - 翻墙党2
-      - 翻墙党4
+      - 🇸🇬 Basic|广新|06
+      - 🏳️‍🌈 ️‍🌈 ️‍🌈 Renew|应急续费使用
   - name: 🎥 奈飞节点
     type: select
     proxies:
