@@ -67,10 +67,6 @@ proxies:
   - {name: 🇭🇰 香港1 奈飞, server: gdcm-1.onescloud.top, port: 50005, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 18430:8nFGrf, obfs-param: 4b9f018430.microsoft.com}
   - {name: 🇭🇰 香港2 奈飞, server: node1.onescloud.top, port: 50000, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 18430:8nFGrf, obfs-param: 4b9f018430.microsoft.com}
   - {name: KR_478, server: 52.231.159.123, port: 22222, type: ssr, cipher: aes-128-ctr, password: !<str> 123456, protocol: auth_sha1_v4, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇹🇼 台湾 | IPLC專線 | VIP3 2, server: x.ooxc.cc, port: 35021, type: ss, cipher: chacha20, password: xwhales.123}
-  - {name: "🇭🇰 HK, Kowloon", server: 13.229.251.247, port: 444, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇺🇸 US, Dallas", server: 172.96.204.193, port: 675, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
-  - {name: "🇺🇸 US, Los Angeles", server: 172.96.214.140, port: 675, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
 proxy-groups:
   - name: 🎯 总模式
     type: select
@@ -148,10 +144,6 @@ proxy-groups:
       - 🇭🇰 香港1 奈飞
       - 🇭🇰 香港2 奈飞
       - KR_478
-      - 🇹🇼 台湾 | IPLC專線 | VIP3 2
-      - 🇭🇰 HK, Kowloon
-      - 🇺🇸 US, Dallas
-      - 🇺🇸 US, Los Angeles
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -219,10 +211,6 @@ proxy-groups:
       - 🇭🇰 香港1 奈飞
       - 🇭🇰 香港2 奈飞
       - KR_478
-      - 🇹🇼 台湾 | IPLC專線 | VIP3 2
-      - 🇭🇰 HK, Kowloon
-      - 🇺🇸 US, Dallas
-      - 🇺🇸 US, Los Angeles
   - name: 🔮 负载均衡
     type: load-balance
     url: http://www.gstatic.com/generate_204
@@ -290,10 +278,6 @@ proxy-groups:
       - 🇭🇰 香港1 奈飞
       - 🇭🇰 香港2 奈飞
       - KR_478
-      - 🇹🇼 台湾 | IPLC專線 | VIP3 2
-      - 🇭🇰 HK, Kowloon
-      - 🇺🇸 US, Dallas
-      - 🇺🇸 US, Los Angeles
   - name: 🚀 节点选择
     type: select
     proxies:
@@ -359,10 +343,6 @@ proxy-groups:
       - 🇭🇰 香港1 奈飞
       - 🇭🇰 香港2 奈飞
       - KR_478
-      - 🇹🇼 台湾 | IPLC專線 | VIP3 2
-      - 🇭🇰 HK, Kowloon
-      - 🇺🇸 US, Dallas
-      - 🇺🇸 US, Los Angeles
   - name: ▶ YouTube
     type: select
     proxies:
@@ -439,15 +419,10 @@ proxy-groups:
       - 🇭🇰 香港1 奈飞
       - 🇭🇰 香港2 奈飞
       - KR_478
-      - 🇹🇼 台湾 | IPLC專線 | VIP3 2
-      - 🇭🇰 HK, Kowloon
-      - 🇺🇸 US, Dallas
-      - 🇺🇸 US, Los Angeles
       - DIRECT
   - name: 📺 巴哈姆特
     type: select
     proxies:
-      - 🇹🇼 台湾 | IPLC專線 | VIP3 2
       - 🚀 节点选择
       - DIRECT
   - name: 📺 哔哩哔哩
@@ -481,8 +456,6 @@ proxy-groups:
       - 🇭🇰 HK.广州香港-1.移动.300M.NF
       - 🇭🇰 香港1 奈飞
       - 🇭🇰 香港2 奈飞
-      - 🇹🇼 台湾 | IPLC專線 | VIP3 2
-      - 🇭🇰 HK, Kowloon
       - 🚀 节点选择
   - name: 📺 爱奇艺
     type: select
@@ -515,8 +488,6 @@ proxy-groups:
       - 🇭🇰 HK.广州香港-1.移动.300M.NF
       - 🇭🇰 香港1 奈飞
       - 🇭🇰 香港2 奈飞
-      - 🇹🇼 台湾 | IPLC專線 | VIP3 2
-      - 🇭🇰 HK, Kowloon
       - 🚀 节点选择
   - name: ⛩ 日韩媒体
     type: select
@@ -580,8 +551,6 @@ proxy-groups:
       - 🇭🇰 HK.广州香港-1.移动.300M.NF
       - 🇭🇰 香港1 奈飞
       - 🇭🇰 香港2 奈飞
-      - 🇹🇼 台湾 | IPLC專線 | VIP3 2
-      - 🇭🇰 HK, Kowloon
       - 🚀 节点选择
       - DIRECT
   - name: 📡 Emby公益服
