@@ -3,151 +3,111 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: 127.0.0.1:9090
+external-controller: :9090
 proxies:
-  - {name: 🇯🇵 日本1, server: 112.91.251.4, port: 50120, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: 102797:YO1IqM, obfsparam: ""}
-  - {name: 🇯🇵 日本10, server: 112.91.251.4, port: 50129, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: 102797:YO1IqM, obfsparam: ""}
-  - {name: 🇯🇵 日本11, server: 112.91.251.4, port: 50130, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: 102797:YO1IqM, obfsparam: ""}
-  - {name: 🇯🇵 日本12, server: 112.91.251.4, port: 50131, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: 102797:YO1IqM, obfsparam: ""}
-  - {name: 🇯🇵 日本13, server: 112.91.251.4, port: 50132, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: 102797:YO1IqM, obfsparam: ""}
-  - {name: 🇯🇵 日本2, server: 112.91.251.4, port: 50121, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: 102797:YO1IqM, obfsparam: ""}
-  - {name: 🇯🇵 日本3, server: 112.91.251.4, port: 50122, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: 102797:YO1IqM, obfsparam: ""}
-  - {name: 🇯🇵 日本4, server: 112.91.251.4, port: 50123, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: 102797:YO1IqM, obfsparam: ""}
-  - {name: 🇯🇵 日本5, server: 112.91.251.4, port: 50124, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: 102797:YO1IqM, obfsparam: ""}
-  - {name: 🇯🇵 日本6, server: 112.91.251.4, port: 50125, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: 102797:YO1IqM, obfsparam: ""}
-  - {name: 🇯🇵 日本7, server: 112.91.251.4, port: 50126, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: 102797:YO1IqM, obfsparam: ""}
-  - {name: 🇯🇵 日本8, server: 112.91.251.4, port: 50127, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: 102797:YO1IqM, obfsparam: ""}
-  - {name: 🇯🇵 日本9, server: 112.91.251.4, port: 50128, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocolparam: 102797:YO1IqM, obfsparam: ""}
+  - {name: 🇭🇰 HK.广州香港-1.移动.300M.NF, server: gdcm-1.onescloud.top, port: 20015, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 18430:8nFGrf, obfs-param: 4b9f018430.microsoft.com}
+  - {name: 🇭🇰 香港1 奈飞, server: gdcm-1.onescloud.top, port: 50005, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 18430:8nFGrf, obfs-param: 4b9f018430.microsoft.com}
+  - {name: 🇭🇰 香港04-测试 4, server: 42.157.196.104, port: 20059, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 157510:XVBxeqoOWJ, obfs-param: ajax.microsoft.com}
+  - {name: 🇭🇰 香港04-测试, server: 42.157.196.104, port: 20461, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 157511:pAMJKtqm7N, obfs-param: ajax.microsoft.com}
+  - {name: 🇭🇰 香港04-测试 3, server: 42.157.196.104, port: 20889, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 145237:9Fu0cisYev, obfs-param: ""}
+  - {name: 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服, server: gdcm-1.onescloud.top, port: 20012, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 18430:8nFGrf, obfs-param: 4b9f018430.microsoft.com}
+  - {name: 🇭🇰 香港2 奈飞, server: node1.onescloud.top, port: 50000, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 18430:8nFGrf, obfs-param: 4b9f018430.microsoft.com}
+  - {name: 可定制节点最低5元起, server: 206.189.47.81, port: 2333, type: ssr, cipher: aes-128-ctr, password: doub.io, protocol: auth_sha1_v4, obfs: plain, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵 日本1
-      - 🇯🇵 日本10
-      - 🇯🇵 日本11
-      - 🇯🇵 日本12
-      - 🇯🇵 日本13
-      - 🇯🇵 日本2
-      - 🇯🇵 日本3
-      - 🇯🇵 日本4
-      - 🇯🇵 日本5
-      - 🇯🇵 日本6
-      - 🇯🇵 日本7
-      - 🇯🇵 日本8
-      - 🇯🇵 日本9
+      - 🇭🇰 HK.广州香港-1.移动.300M.NF
+      - 🇭🇰 香港1 奈飞
+      - 🇭🇰 香港04-测试 4
+      - 🇭🇰 香港04-测试
+      - 🇭🇰 香港04-测试 3
+      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
+      - 🇭🇰 香港2 奈飞
+      - 可定制节点最低5元起
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本1
-      - 🇯🇵 日本10
-      - 🇯🇵 日本11
-      - 🇯🇵 日本12
-      - 🇯🇵 日本13
-      - 🇯🇵 日本2
-      - 🇯🇵 日本3
-      - 🇯🇵 日本4
-      - 🇯🇵 日本5
-      - 🇯🇵 日本6
-      - 🇯🇵 日本7
-      - 🇯🇵 日本8
-      - 🇯🇵 日本9
+      - 🇭🇰 HK.广州香港-1.移动.300M.NF
+      - 🇭🇰 香港1 奈飞
+      - 🇭🇰 香港04-测试 4
+      - 🇭🇰 香港04-测试
+      - 🇭🇰 香港04-测试 3
+      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
+      - 🇭🇰 香港2 奈飞
+      - 可定制节点最低5元起
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本1
-      - 🇯🇵 日本10
-      - 🇯🇵 日本11
-      - 🇯🇵 日本12
-      - 🇯🇵 日本13
-      - 🇯🇵 日本2
-      - 🇯🇵 日本3
-      - 🇯🇵 日本4
-      - 🇯🇵 日本5
-      - 🇯🇵 日本6
-      - 🇯🇵 日本7
-      - 🇯🇵 日本8
-      - 🇯🇵 日本9
+      - 🇭🇰 HK.广州香港-1.移动.300M.NF
+      - 🇭🇰 香港1 奈飞
+      - 🇭🇰 香港04-测试 4
+      - 🇭🇰 香港04-测试
+      - 🇭🇰 香港04-测试 3
+      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
+      - 🇭🇰 香港2 奈飞
+      - 可定制节点最低5元起
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本1
-      - 🇯🇵 日本10
-      - 🇯🇵 日本11
-      - 🇯🇵 日本12
-      - 🇯🇵 日本13
-      - 🇯🇵 日本2
-      - 🇯🇵 日本3
-      - 🇯🇵 日本4
-      - 🇯🇵 日本5
-      - 🇯🇵 日本6
-      - 🇯🇵 日本7
-      - 🇯🇵 日本8
-      - 🇯🇵 日本9
+      - 🇭🇰 HK.广州香港-1.移动.300M.NF
+      - 🇭🇰 香港1 奈飞
+      - 🇭🇰 香港04-测试 4
+      - 🇭🇰 香港04-测试
+      - 🇭🇰 香港04-测试 3
+      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
+      - 🇭🇰 香港2 奈飞
+      - 可定制节点最低5元起
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇯🇵 日本1
-      - 🇯🇵 日本10
-      - 🇯🇵 日本11
-      - 🇯🇵 日本12
-      - 🇯🇵 日本13
-      - 🇯🇵 日本2
-      - 🇯🇵 日本3
-      - 🇯🇵 日本4
-      - 🇯🇵 日本5
-      - 🇯🇵 日本6
-      - 🇯🇵 日本7
-      - 🇯🇵 日本8
-      - 🇯🇵 日本9
+      - 🇭🇰 HK.广州香港-1.移动.300M.NF
+      - 🇭🇰 香港1 奈飞
+      - 🇭🇰 香港04-测试 4
+      - 🇭🇰 香港04-测试
+      - 🇭🇰 香港04-测试 3
+      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
+      - 🇭🇰 香港2 奈飞
+      - 可定制节点最低5元起
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本1
-      - 🇯🇵 日本10
-      - 🇯🇵 日本11
-      - 🇯🇵 日本12
-      - 🇯🇵 日本13
-      - 🇯🇵 日本2
-      - 🇯🇵 日本3
-      - 🇯🇵 日本4
-      - 🇯🇵 日本5
-      - 🇯🇵 日本6
-      - 🇯🇵 日本7
-      - 🇯🇵 日本8
-      - 🇯🇵 日本9
+      - 🇭🇰 HK.广州香港-1.移动.300M.NF
+      - 🇭🇰 香港1 奈飞
+      - 🇭🇰 香港04-测试 4
+      - 🇭🇰 香港04-测试
+      - 🇭🇰 香港04-测试 3
+      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
+      - 🇭🇰 香港2 奈飞
+      - 可定制节点最低5元起
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本1
-      - 🇯🇵 日本10
-      - 🇯🇵 日本11
-      - 🇯🇵 日本12
-      - 🇯🇵 日本13
-      - 🇯🇵 日本2
-      - 🇯🇵 日本3
-      - 🇯🇵 日本4
-      - 🇯🇵 日本5
-      - 🇯🇵 日本6
-      - 🇯🇵 日本7
-      - 🇯🇵 日本8
-      - 🇯🇵 日本9
+      - 🇭🇰 HK.广州香港-1.移动.300M.NF
+      - 🇭🇰 香港1 奈飞
+      - 🇭🇰 香港04-测试 4
+      - 🇭🇰 香港04-测试
+      - 🇭🇰 香港04-测试 3
+      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
+      - 🇭🇰 香港2 奈飞
+      - 可定制节点最低5元起
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -170,19 +130,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本1
-      - 🇯🇵 日本10
-      - 🇯🇵 日本11
-      - 🇯🇵 日本12
-      - 🇯🇵 日本13
-      - 🇯🇵 日本2
-      - 🇯🇵 日本3
-      - 🇯🇵 日本4
-      - 🇯🇵 日本5
-      - 🇯🇵 日本6
-      - 🇯🇵 日本7
-      - 🇯🇵 日本8
-      - 🇯🇵 日本9
+      - 🇭🇰 HK.广州香港-1.移动.300M.NF
+      - 🇭🇰 香港1 奈飞
+      - 🇭🇰 香港04-测试 4
+      - 🇭🇰 香港04-测试
+      - 🇭🇰 香港04-测试 3
+      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
+      - 🇭🇰 香港2 奈飞
+      - 可定制节点最低5元起
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
