@@ -6,22 +6,94 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 🇭🇰 香港1-流媒体, server: HK1.SUDULIU.COM, port: 443, type: vmess, uuid: 1fcbf8ee-a6cb-4547-a6a7-b98bff3780f6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: HK1.SUDULIU.COM}}
+  - {name: 🇺🇸 中转-美国-3-流媒体解锁, server: 162.159.211.4, port: 80, type: vmess, uuid: 1fcbf8ee-a6cb-4547-a6a7-b98bff3780f6, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /sometimesnaive, ws-headers: {Host: snowy-wind-cc12.suduliu.workers.dev}}
   - {name: 移动专用-测试-×2.5, server: cmyh.ddns.566366.xyz, port: 190, type: vmess, uuid: a5331506-c4ae-3cdd-8759-f952492b4ebd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /wmsxwd, ws-headers: {Host: cmyh.ddns.566366.xyz}}
-  - {name: "🇭🇰 [直连] 香港3 aws 电信不可用", server: 16.162.34.56, port: 8888, type: vmess, uuid: 2f60927f-14b0-463f-9d11-a375512730bf, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 16.162.34.56}}
-  - {name: 🇨🇳 CN_123, server: 183.236.97.32, port: 28015, type: vmess, uuid: 963be7e4-4aa9-36dd-903d-4e29be571801, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cat-iplc, ws-headers: {Host: 183.236.97.32}}
-  - {name: 🇯🇵 日本03, server: jp03.xyttk.vip, port: 80, type: vmess, uuid: 11cc512e-da27-4962-9a16-99321cbec94c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
-  - {name: 🇺🇸 馃嚭馃嚫 US_6409 |60.21Mb, server: 3.36.76.192, port: 31812, type: vmess, uuid: a1371d43-f0fe-43cf-b826-d900a1c8de49, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港, server: 183.236.97.32, port: 28015, type: vmess, uuid: 963be7e4-4aa9-36dd-903d-4e29be571801, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cat-iplc, ws-headers: {Host: 183.236.97.32}}
-  - {name: 🇸🇬 新加坡, server: 52.77.107.43, port: 41003, type: vmess, uuid: 68e8e8d0-8198-4993-96d1-7322cae0e90c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 52.77.107.43}}
-  - {name: 🇭🇰 HK.广州香港-1.移动.300M.NF, server: gdcm-1.onescloud.top, port: 20015, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 18430:8nFGrf, obfs-param: 4b9f018430.microsoft.com}
-  - {name: 🇭🇰 香港1 奈飞, server: gdcm-1.onescloud.top, port: 50005, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 18430:8nFGrf, obfs-param: 4b9f018430.microsoft.com}
-  - {name: 🇭🇰 香港04-测试 4, server: 42.157.196.104, port: 20059, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 157510:XVBxeqoOWJ, obfs-param: ajax.microsoft.com}
-  - {name: 🇭🇰 香港04-测试, server: 42.157.196.104, port: 20461, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 157511:pAMJKtqm7N, obfs-param: ajax.microsoft.com}
-  - {name: 🇭🇰 香港04-测试 3, server: 42.157.196.104, port: 20889, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 145237:9Fu0cisYev, obfs-param: ""}
-  - {name: 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服, server: gdcm-1.onescloud.top, port: 20012, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 18430:8nFGrf, obfs-param: 4b9f018430.microsoft.com}
-  - {name: 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_712 | 5.06Mb, server: guangdong-gugu.ddns-only.xyz, port: 32441, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 141323:jjN0uv, obfs-param: b5c5b141323.microsoft.com}
-  - {name: 🇭🇰 香港2 奈飞, server: node1.onescloud.top, port: 50000, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 18430:8nFGrf, obfs-param: 4b9f018430.microsoft.com}
-  - {name: 可定制节点最低5元起, server: 206.189.47.81, port: 2333, type: ssr, cipher: aes-128-ctr, password: doub.io, protocol: auth_sha1_v4, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇭🇰 vip-香港5, server: hk7.xyttk.vip, port: 80, type: vmess, uuid: 11cc512e-da27-4962-9a16-99321cbec94c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk7.xyttk.vip}}
+  - {name: 🇺🇸 A0美国-洛杉矶-长沙联通隧道中转, server: bv.ajdios.ga, port: 25600, type: vmess, uuid: 4e7cbfaa-7e66-3e34-adcb-125bc37f8112, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /dl, ws-headers: {Host: bv.ajdios.ga}}
+  - {name: 🇺🇸 A1美国 ION-洛杉矶-广移隧道中转-01, server: gy.woshilaogou.com, port: 10001, type: vmess, uuid: 4e7cbfaa-7e66-3e34-adcb-125bc37f8112, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /adobe, ws-headers: {Host: gy.woshilaogou.com}}
+  - {name: A特殊时期用这个节点, server: 67.198.205.186, port: 10550, type: vmess, uuid: 4e7cbfaa-7e66-3e34-adcb-125bc37f8112, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /dl, ws-headers: {Host: download.windowsupdate.com}}
+  - {name: 🇭🇰 F-香港-03, server: 202.81.231.179, port: 10550, type: vmess, uuid: 4e7cbfaa-7e66-3e34-adcb-125bc37f8112, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /dl, ws-headers: {Host: download.windowsupdate.com}}
+  - {name: 🇭🇰 V1-IPLC-377|深圳-香港|解锁|4x|V2ray, server: yy-jz-iplc-02.ddns-only.xyz, port: 20377, type: vmess, uuid: 9a8829d9-3a76-32cd-9d11-ba5e725b186f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /yy666666, ws-headers: {Host: yy-jz-iplc-02.ddns-only.xyz}}
+  - {name: 🇸🇬 V1-IPLC-473|深圳-新加坡|解锁流|4x|V2ray, server: yy-jz-iplc-02.ddns-only.xyz, port: 20473, type: vmess, uuid: 9a8829d9-3a76-32cd-9d11-ba5e725b186f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /yy666666, ws-headers: {Host: yy-jz-iplc-02.ddns-only.xyz}}
+  - {name: 🇨🇳 V1-中转487|江西CN2-台湾|解锁流|2x|V2ray, server: sy-jx-cn2.ddns-only.xyz, port: 20487, type: vmess, uuid: 9a8829d9-3a76-32cd-9d11-ba5e725b186f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /yy666666, ws-headers: {Host: sy-jx-cn2.ddns-only.xyz}}
+  - {name: 🇨🇳 V2-中转437|上海CN2-台湾|解锁流|2x|V2ray, server: yy-jz-cn2-02.ddns-only.xyz, port: 20437, type: vmess, uuid: 9a8829d9-3a76-32cd-9d11-ba5e725b186f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /yy666666, ws-headers: {Host: yy-jz-cn2-02.ddns-only.xyz}}
+  - {name: 🇭🇰 V3-中转313|广港-香港|解锁流|1.5x|V2ray, server: youyun-gd-xg-01.ddns-only.xyz, port: 20313, type: vmess, uuid: 9a8829d9-3a76-32cd-9d11-ba5e725b186f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /yy666666, ws-headers: {Host: youyun-gd-xg-01.ddns-only.xyz}}
+  - {name: 🇭🇰 V3-中转411|广东-香港|解锁流|1.5x|V2ray, server: youyun-gd-02.ddns-only.xyz, port: 20411, type: vmess, uuid: 9a8829d9-3a76-32cd-9d11-ba5e725b186f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /yy666666, ws-headers: {Host: youyun-gd-02.ddns-only.xyz}}
+  - {name: 🇯🇵 V3-中转497|广港-日本软银|解锁|x1.5|V2ray, server: youyun-gd-xg-01.ddns-only.xyz, port: 20497, type: vmess, uuid: 9a8829d9-3a76-32cd-9d11-ba5e725b186f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /yy666666, ws-headers: {Host: youyun-gd-xg-01.ddns-only.xyz}}
+  - {name: 🇯🇵 V3-中转515|中港-日本M|解锁|x1.5|V2ray, server: zhonggang-sy01.ddns-only.xyz, port: 20515, type: vmess, uuid: 9a8829d9-3a76-32cd-9d11-ba5e725b186f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /yy666666, ws-headers: {Host: zhonggang-sy01.ddns-only.xyz}}
+  - {name: 🇸🇬 V4-中转257|新广东-台湾|解锁流|1.2x|V2ray, server: youyun-gd-01.ddns-only.xyz, port: 28679, type: vmess, uuid: 9a8829d9-3a76-32cd-9d11-ba5e725b186f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /yy666666, ws-headers: {Host: youyun-gd-01.ddns-only.xyz}}
+  - {name: 🇸🇬 V4-中转453|新广东B-香港HKT|解锁流|1.5x|V2ray, server: youyun-gd-02.ddns-only.xyz, port: 20453, type: vmess, uuid: 9a8829d9-3a76-32cd-9d11-ba5e725b186f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /yy666666, ws-headers: {Host: youyun-gd-02.ddns-only.xyz}}
+  - {name: 🇯🇵 V4-中转516|中港-日本M|解锁|x1.5|V2ray, server: zhonggang-sy01.ddns-only.xyz, port: 20516, type: vmess, uuid: 9a8829d9-3a76-32cd-9d11-ba5e725b186f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /yy666666, ws-headers: {Host: zhonggang-sy01.ddns-only.xyz}}
+  - {name: 🇯🇵 V4-中转517|中港-日本M|解锁|x1.5|V2ray, server: zhonggang-sy01.ddns-only.xyz, port: 20517, type: vmess, uuid: 9a8829d9-3a76-32cd-9d11-ba5e725b186f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /yy666666, ws-headers: {Host: zhonggang-sy01.ddns-only.xyz}}
+  - {name: 🇭🇰 V4-香港417|Azure|1x|V2ray, server: azure-n12.ddns-only.xyz, port: 12580, type: vmess, uuid: 9a8829d9-3a76-32cd-9d11-ba5e725b186f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /yy666666, ws-headers: {Host: azure-n12.ddns-only.xyz}}
+  - {name: 🇺🇸 US-Las Vegas@vpnhat, server: 79.110.53.203, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 US-San Francisco@vpnhat, server: 185.124.240.153, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 US-San Francisco@vpnhat 2, server: 23.81.181.7, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 US-San Francisco@vpnhat 3, server: 23.81.178.219, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 US-San Francisco@vpnhat 4, server: 23.81.179.82, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: "🇺🇸 [SS] 美国 01 #Media", server: zs2.cm.unicorn-api.icu, port: 19906, type: ss, cipher: chacha20-ietf-poly1305, password: a5cbfa15-3d43-4c0f-bb85-9876410d6154}
+  - {name: "🇭🇰 [Trojan]香港 03 #Media", server: zs1.cm.unicorn-api.icu, port: 22223, type: trojan, password: a5cbfa15-3d43-4c0f-bb85-9876410d6154, sni: zs1.cm.unicorn-api.icu, skip-cert-verify: false}
+  - {name: "🇭🇰 香港 01 #Media", server: zs1.cm.unicorn-api.icu, port: 10000, type: vmess, uuid: a5cbfa15-3d43-4c0f-bb85-9876410d6154, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: ys.mihoyo.com}}
+  - {name: "🇭🇰 香港 06 #Media", server: zs1.cm.unicorn-api.icu, port: 20001, type: vmess, uuid: a5cbfa15-3d43-4c0f-bb85-9876410d6154, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: ys.mihoyo.com}}
+  - {name: 🇭🇰 香港01, server: hk01.xyttk.vip, port: 80, type: vmess, uuid: fabeaf7d-bc25-4a04-b648-35868c65ead2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk01.xyttk.vip}}
+  - {name: 🇭🇰 V1|香港03|负载均衡|AIA隧道, server: magic.88host.buzz, port: 18007, type: vmess, uuid: 0a09c11b-53b6-3d34-baba-9d3fa585554a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: magic.88host.buzz}}
+  - {name: 🇭🇰 V1|香港04|负载均衡|AIA隧道, server: magic.88host.buzz, port: 18008, type: vmess, uuid: 0a09c11b-53b6-3d34-baba-9d3fa585554a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: magic.88host.buzz}}
+  - {name: 🇭🇰 V1|香港05|负载均衡|AIA隧道, server: magic.88host.buzz, port: 18009, type: vmess, uuid: 0a09c11b-53b6-3d34-baba-9d3fa585554a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: magic.88host.buzz}}
+  - {name: 🇭🇰 V1|香港06|负载均衡|AIA隧道, server: magic.88host.buzz, port: 18010, type: vmess, uuid: 0a09c11b-53b6-3d34-baba-9d3fa585554a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: magic.88host.buzz}}
+  - {name: 🇫🇷 6.20法国, server: zz.akjf3.com, port: 39229, type: vmess, uuid: 41865d1a-1c4a-3e92-88d1-e3352dba3ded, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /sn, ws-headers: {Host: zz.akjf3.com}}
+  - {name: 🇬🇧 6.20英国01, server: zz.akjf3.com, port: 39230, type: vmess, uuid: 41865d1a-1c4a-3e92-88d1-e3352dba3ded, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /sn, ws-headers: {Host: zz.akjf3.com}}
+  - {name: 🇬🇧 6.20英国02, server: zz.akjf3.com, port: 39231, type: vmess, uuid: 41865d1a-1c4a-3e92-88d1-e3352dba3ded, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /sn, ws-headers: {Host: zz.akjf3.com}}
+  - {name: 🇯🇵 日本03, server: jp2.zz12.xyz, port: 24000, type: vmess, uuid: 41865d1a-1c4a-3e92-88d1-e3352dba3ded, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: jp2.zz12.xyz}}
+  - {name: 🇺🇸 美国01 原生, server: zz.akjf3.com, port: 39214, type: vmess, uuid: 41865d1a-1c4a-3e92-88d1-e3352dba3ded, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /sn, ws-headers: {Host: zz.akjf3.com}}
+  - {name: 🇺🇸 美国02 原生, server: zz.akjf3.com, port: 39215, type: vmess, uuid: 41865d1a-1c4a-3e92-88d1-e3352dba3ded, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /sn, ws-headers: {Host: zz.akjf3.com}}
+  - {name: 🇬🇧 英国01, server: zz.akjf3.com, port: 39207, type: vmess, uuid: 41865d1a-1c4a-3e92-88d1-e3352dba3ded, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /sn, ws-headers: {Host: zz.akjf3.com}}
+  - {name: 🇪🇸 西班牙02, server: zz.akjf3.com, port: 39212, type: vmess, uuid: 41865d1a-1c4a-3e92-88d1-e3352dba3ded, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /sn, ws-headers: {Host: zz.akjf3.com}}
+  - {name: 🇰🇷 韩国01, server: kr.akjf3.com, port: 25000, type: vmess, uuid: 41865d1a-1c4a-3e92-88d1-e3352dba3ded, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: kr.akjf3.com}}
+  - {name: 🇭🇰 香港04, server: 4.yunshuedu.cloud, port: 24000, type: vmess, uuid: 41865d1a-1c4a-3e92-88d1-e3352dba3ded, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: 4.yunshuedu.cloud}}
+  - {name: ②V2中转节点, server: cn.linn.ink, port: 30030, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇭🇰 [VIP] HK 2 香港Azure | 流媒体", server: 41-a.xxft-node.xyz, port: 61165, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇭🇰 [VIP] HK 3 香港Azure | 流媒体", server: 41-a.xxft-node.xyz, port: 61120, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇭🇰 [VIP] HK 4 香港Azure | 流媒体", server: 41-a.xxft-node.xyz, port: 61121, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇭🇰 [VIP] HK 5 香港EC2 | 中转", server: 34-a.xxft-node.xyz, port: 51341, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇭🇰 [VIP] HK 6 香港EC2 | 中转", server: 33-a.xxft-node.xyz, port: 51009, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇭🇰 [VIP] HK X 香港EC2-Azure | 中转", server: a.xxft-node.xyz, port: 39613, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇭🇰 [VIP] HK-9▲香港Azure | 中转", server: 42-e.xxft-node.xyz, port: 18612, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇯🇵 [VIP] JP-7▲日本EC2 | 直连", server: hk.a.xxft-node.xyz, port: 39770, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇯🇵 [VIP] JP-8▲日本EC2 | 直连", server: hk.a.xxft-node.xyz, port: 39772, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇰🇷 [VIP] KR-3▲韩国EC2 | 中转", server: 41-a.xxft-node.xyz, port: 52210, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇰🇷 [VIP] KR-6▲韩国EC2 | 流媒体", server: 41-a.xxft-node.xyz, port: 53538, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇷🇺 [VIP] RU-4▲俄罗斯 | NF", server: 41-a.xxft-node.xyz, port: 52892, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇸🇬 [VIP] SG 1 新加坡Azure | 流媒体", server: 41-a.xxft-node.xyz, port: 61560, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇸🇬 [VIP] SG 2 新加坡Azure | 流媒体", server: 41-a.xxft-node.xyz, port: 61590, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇸🇬 [VIP] SG 3 新加坡Azure | 流媒体", server: 41-a.xxft-node.xyz, port: 31590, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇸🇬 [VIP] SG 6 新加坡EC2 | 中转", server: 41-a.xxft-node.xyz, port: 26330, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇸🇬 [VIP] SG 7 新加坡EC2 | 中转", server: 41-a.xxft-node.xyz, port: 61130, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: "🇺🇸 [VIP] US-3▲美国Azure | 中转", server: a.xxft-node.xyz, port: 52923, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: 🇭🇰 公益节点 香港1, server: 18.162.40.207, port: 36005, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: 🇭🇰 公益节点 香港3 VIP体验节点  x3.0, server: hk.a.xxft-node.xyz, port: 32600, type: vmess, uuid: 94b73074-3f35-3493-a45d-c19e370c7e5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-cn, ws-headers: {Host: microsoft.com}}
+  - {name: 🇺🇸 美国7中转 | 免费节点 t.me/mftizi, server: usf7.uuv2.co.uk, port: 10020, type: vmess, uuid: 2d3df23d-4ae8-42b0-9a9a-62b82bd6d9b1, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: us7.xxl123.fun}}
+  - {name: 🇭🇰 V3-中转3181|沪港-香港|解锁|x1.5, server: sy-gg-02.ddns-only.xyz, port: 13181, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
+  - {name: 🇷🇺 V3-中转3227|上海联通-俄罗斯|x0.4, server: shanghai02.ddns-only.xyz, port: 13227, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
+  - {name: 🇭🇰 【LowEnd】香港 普通 1 - Azure 0.3x, server: nd1.boom.party, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 317710:dTpVEM, obfs-param: download.windowsupdate.com}
+  - {name: 🇸🇬 【Tunnel_A】新加坡 普通 1 - AWS, server: ntemp15.boom.party, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 317710:dTpVEM, obfs-param: download.windowsupdate.com}
+  - {name: 🇭🇰 【Tunnel_A】香港 普通 A - Azure, server: ntemp10.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 317710:dTpVEM, obfs-param: download.windowsupdate.com}
+  - {name: 🇭🇰 【Tunnel_B】香港  VIP C - Azure, server: n43.boom.party, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 317710:dTpVEM, obfs-param: download.windowsupdate.com}
+  - {name: 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x, server: n62.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 317710:dTpVEM, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN_29, server: 221.228.99.37, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
+  - {name: 🇭🇰 V2-中转3189|沪港-香港HKT|解锁|x1.2, server: sy-gg-02.ddns-only.xyz, port: 13189, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
+  - {name: 🇷🇺 V2-中转3232|上海联通-俄罗斯|x0.3, server: shanghai02.ddns-only.xyz, port: 13232, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
+  - {name: 🇭🇰 V2-中转3260|沪港-香港HKBN|解锁|x1.0, server: sy-gg-02.ddns-only.xyz, port: 13260, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
+  - {name: 🇭🇰 V2-中转3261|广东-香港HKBN|解锁|x1.0, server: guangdong01.ddns-only.xyz, port: 13261, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
+  - {name: 🇭🇰 V2-中转3444|广东-香港HGC|解锁|x1.5, server: guangdong01.ddns-only.xyz, port: 13444, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
+  - {name: 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5, server: guangdong01.ddns-only.xyz, port: 13445, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
+  - {name: 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5, server: guangdong01.ddns-only.xyz, port: 13446, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
+  - {name: 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5, server: guangdong01.ddns-only.xyz, port: 13447, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
+  - {name: 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5, server: guangdong01.ddns-only.xyz, port: 13448, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
+  - {name: 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5, server: guangdong01.ddns-only.xyz, port: 13449, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
+  - {name: 🇨🇳 江苏省无锡市电信 7, server: 221.228.99.37, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
+  - {name: 🇨🇳 CN_10 |14.69Mb, server: 221.228.99.37, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
+  - {name: 🇨🇳 CN_25, server: 221.228.99.37, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
+  - {name: 🇨🇳 CN_997, server: 221.228.99.37, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -29,22 +101,94 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇭🇰 香港1-流媒体
+      - 🇺🇸 中转-美国-3-流媒体解锁
       - 移动专用-测试-×2.5
-      - 🇭🇰 [直连] 香港3 aws 电信不可用
-      - 🇨🇳 CN_123
+      - 🇭🇰 vip-香港5
+      - 🇺🇸 A0美国-洛杉矶-长沙联通隧道中转
+      - 🇺🇸 A1美国 ION-洛杉矶-广移隧道中转-01
+      - A特殊时期用这个节点
+      - 🇭🇰 F-香港-03
+      - 🇭🇰 V1-IPLC-377|深圳-香港|解锁|4x|V2ray
+      - 🇸🇬 V1-IPLC-473|深圳-新加坡|解锁流|4x|V2ray
+      - 🇨🇳 V1-中转487|江西CN2-台湾|解锁流|2x|V2ray
+      - 🇨🇳 V2-中转437|上海CN2-台湾|解锁流|2x|V2ray
+      - 🇭🇰 V3-中转313|广港-香港|解锁流|1.5x|V2ray
+      - 🇭🇰 V3-中转411|广东-香港|解锁流|1.5x|V2ray
+      - 🇯🇵 V3-中转497|广港-日本软银|解锁|x1.5|V2ray
+      - 🇯🇵 V3-中转515|中港-日本M|解锁|x1.5|V2ray
+      - 🇸🇬 V4-中转257|新广东-台湾|解锁流|1.2x|V2ray
+      - 🇸🇬 V4-中转453|新广东B-香港HKT|解锁流|1.5x|V2ray
+      - 🇯🇵 V4-中转516|中港-日本M|解锁|x1.5|V2ray
+      - 🇯🇵 V4-中转517|中港-日本M|解锁|x1.5|V2ray
+      - 🇭🇰 V4-香港417|Azure|1x|V2ray
+      - 🇺🇸 US-Las Vegas@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat 2
+      - 🇺🇸 US-San Francisco@vpnhat 3
+      - 🇺🇸 US-San Francisco@vpnhat 4
+      - "🇺🇸 [SS] 美国 01 #Media"
+      - "🇭🇰 [Trojan]香港 03 #Media"
+      - "🇭🇰 香港 01 #Media"
+      - "🇭🇰 香港 06 #Media"
+      - 🇭🇰 香港01
+      - 🇭🇰 V1|香港03|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港04|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港05|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港06|负载均衡|AIA隧道
+      - 🇫🇷 6.20法国
+      - 🇬🇧 6.20英国01
+      - 🇬🇧 6.20英国02
       - 🇯🇵 日本03
-      - 🇺🇸 馃嚭馃嚫 US_6409 |60.21Mb
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡
-      - 🇭🇰 HK.广州香港-1.移动.300M.NF
-      - 🇭🇰 香港1 奈飞
-      - 🇭🇰 香港04-测试 4
-      - 🇭🇰 香港04-测试
-      - 🇭🇰 香港04-测试 3
-      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
-      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_712 | 5.06Mb
-      - 🇭🇰 香港2 奈飞
-      - 可定制节点最低5元起
+      - 🇺🇸 美国01 原生
+      - 🇺🇸 美国02 原生
+      - 🇬🇧 英国01
+      - 🇪🇸 西班牙02
+      - 🇰🇷 韩国01
+      - 🇭🇰 香港04
+      - ②V2中转节点
+      - 🇭🇰 [VIP] HK 2 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 3 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 4 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 5 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK 6 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK X 香港EC2-Azure | 中转
+      - 🇭🇰 [VIP] HK-9▲香港Azure | 中转
+      - 🇯🇵 [VIP] JP-7▲日本EC2 | 直连
+      - 🇯🇵 [VIP] JP-8▲日本EC2 | 直连
+      - 🇰🇷 [VIP] KR-3▲韩国EC2 | 中转
+      - 🇰🇷 [VIP] KR-6▲韩国EC2 | 流媒体
+      - 🇷🇺 [VIP] RU-4▲俄罗斯 | NF
+      - 🇸🇬 [VIP] SG 1 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 2 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 3 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 6 新加坡EC2 | 中转
+      - 🇸🇬 [VIP] SG 7 新加坡EC2 | 中转
+      - 🇺🇸 [VIP] US-3▲美国Azure | 中转
+      - 🇭🇰 公益节点 香港1
+      - 🇭🇰 公益节点 香港3 VIP体验节点  x3.0
+      - 🇺🇸 美国7中转 | 免费节点 t.me/mftizi
+      - 🇭🇰 V3-中转3181|沪港-香港|解锁|x1.5
+      - 🇷🇺 V3-中转3227|上海联通-俄罗斯|x0.4
+      - 🇭🇰 【LowEnd】香港 普通 1 - Azure 0.3x
+      - 🇸🇬 【Tunnel_A】新加坡 普通 1 - AWS
+      - 🇭🇰 【Tunnel_A】香港 普通 A - Azure
+      - 🇭🇰 【Tunnel_B】香港  VIP C - Azure
+      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
+      - 🇨🇳 CN_29
+      - 🇭🇰 V2-中转3189|沪港-香港HKT|解锁|x1.2
+      - 🇷🇺 V2-中转3232|上海联通-俄罗斯|x0.3
+      - 🇭🇰 V2-中转3260|沪港-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3261|广东-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3444|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
+      - 🇨🇳 江苏省无锡市电信 7
+      - 🇨🇳 CN_10 |14.69Mb
+      - 🇨🇳 CN_25
+      - 🇨🇳 CN_997
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -52,22 +196,94 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇭🇰 香港1-流媒体
+      - 🇺🇸 中转-美国-3-流媒体解锁
       - 移动专用-测试-×2.5
-      - 🇭🇰 [直连] 香港3 aws 电信不可用
-      - 🇨🇳 CN_123
+      - 🇭🇰 vip-香港5
+      - 🇺🇸 A0美国-洛杉矶-长沙联通隧道中转
+      - 🇺🇸 A1美国 ION-洛杉矶-广移隧道中转-01
+      - A特殊时期用这个节点
+      - 🇭🇰 F-香港-03
+      - 🇭🇰 V1-IPLC-377|深圳-香港|解锁|4x|V2ray
+      - 🇸🇬 V1-IPLC-473|深圳-新加坡|解锁流|4x|V2ray
+      - 🇨🇳 V1-中转487|江西CN2-台湾|解锁流|2x|V2ray
+      - 🇨🇳 V2-中转437|上海CN2-台湾|解锁流|2x|V2ray
+      - 🇭🇰 V3-中转313|广港-香港|解锁流|1.5x|V2ray
+      - 🇭🇰 V3-中转411|广东-香港|解锁流|1.5x|V2ray
+      - 🇯🇵 V3-中转497|广港-日本软银|解锁|x1.5|V2ray
+      - 🇯🇵 V3-中转515|中港-日本M|解锁|x1.5|V2ray
+      - 🇸🇬 V4-中转257|新广东-台湾|解锁流|1.2x|V2ray
+      - 🇸🇬 V4-中转453|新广东B-香港HKT|解锁流|1.5x|V2ray
+      - 🇯🇵 V4-中转516|中港-日本M|解锁|x1.5|V2ray
+      - 🇯🇵 V4-中转517|中港-日本M|解锁|x1.5|V2ray
+      - 🇭🇰 V4-香港417|Azure|1x|V2ray
+      - 🇺🇸 US-Las Vegas@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat 2
+      - 🇺🇸 US-San Francisco@vpnhat 3
+      - 🇺🇸 US-San Francisco@vpnhat 4
+      - "🇺🇸 [SS] 美国 01 #Media"
+      - "🇭🇰 [Trojan]香港 03 #Media"
+      - "🇭🇰 香港 01 #Media"
+      - "🇭🇰 香港 06 #Media"
+      - 🇭🇰 香港01
+      - 🇭🇰 V1|香港03|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港04|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港05|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港06|负载均衡|AIA隧道
+      - 🇫🇷 6.20法国
+      - 🇬🇧 6.20英国01
+      - 🇬🇧 6.20英国02
       - 🇯🇵 日本03
-      - 🇺🇸 馃嚭馃嚫 US_6409 |60.21Mb
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡
-      - 🇭🇰 HK.广州香港-1.移动.300M.NF
-      - 🇭🇰 香港1 奈飞
-      - 🇭🇰 香港04-测试 4
-      - 🇭🇰 香港04-测试
-      - 🇭🇰 香港04-测试 3
-      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
-      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_712 | 5.06Mb
-      - 🇭🇰 香港2 奈飞
-      - 可定制节点最低5元起
+      - 🇺🇸 美国01 原生
+      - 🇺🇸 美国02 原生
+      - 🇬🇧 英国01
+      - 🇪🇸 西班牙02
+      - 🇰🇷 韩国01
+      - 🇭🇰 香港04
+      - ②V2中转节点
+      - 🇭🇰 [VIP] HK 2 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 3 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 4 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 5 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK 6 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK X 香港EC2-Azure | 中转
+      - 🇭🇰 [VIP] HK-9▲香港Azure | 中转
+      - 🇯🇵 [VIP] JP-7▲日本EC2 | 直连
+      - 🇯🇵 [VIP] JP-8▲日本EC2 | 直连
+      - 🇰🇷 [VIP] KR-3▲韩国EC2 | 中转
+      - 🇰🇷 [VIP] KR-6▲韩国EC2 | 流媒体
+      - 🇷🇺 [VIP] RU-4▲俄罗斯 | NF
+      - 🇸🇬 [VIP] SG 1 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 2 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 3 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 6 新加坡EC2 | 中转
+      - 🇸🇬 [VIP] SG 7 新加坡EC2 | 中转
+      - 🇺🇸 [VIP] US-3▲美国Azure | 中转
+      - 🇭🇰 公益节点 香港1
+      - 🇭🇰 公益节点 香港3 VIP体验节点  x3.0
+      - 🇺🇸 美国7中转 | 免费节点 t.me/mftizi
+      - 🇭🇰 V3-中转3181|沪港-香港|解锁|x1.5
+      - 🇷🇺 V3-中转3227|上海联通-俄罗斯|x0.4
+      - 🇭🇰 【LowEnd】香港 普通 1 - Azure 0.3x
+      - 🇸🇬 【Tunnel_A】新加坡 普通 1 - AWS
+      - 🇭🇰 【Tunnel_A】香港 普通 A - Azure
+      - 🇭🇰 【Tunnel_B】香港  VIP C - Azure
+      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
+      - 🇨🇳 CN_29
+      - 🇭🇰 V2-中转3189|沪港-香港HKT|解锁|x1.2
+      - 🇷🇺 V2-中转3232|上海联通-俄罗斯|x0.3
+      - 🇭🇰 V2-中转3260|沪港-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3261|广东-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3444|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
+      - 🇨🇳 江苏省无锡市电信 7
+      - 🇨🇳 CN_10 |14.69Mb
+      - 🇨🇳 CN_25
+      - 🇨🇳 CN_997
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -75,88 +291,376 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇭🇰 香港1-流媒体
+      - 🇺🇸 中转-美国-3-流媒体解锁
       - 移动专用-测试-×2.5
-      - 🇭🇰 [直连] 香港3 aws 电信不可用
-      - 🇨🇳 CN_123
+      - 🇭🇰 vip-香港5
+      - 🇺🇸 A0美国-洛杉矶-长沙联通隧道中转
+      - 🇺🇸 A1美国 ION-洛杉矶-广移隧道中转-01
+      - A特殊时期用这个节点
+      - 🇭🇰 F-香港-03
+      - 🇭🇰 V1-IPLC-377|深圳-香港|解锁|4x|V2ray
+      - 🇸🇬 V1-IPLC-473|深圳-新加坡|解锁流|4x|V2ray
+      - 🇨🇳 V1-中转487|江西CN2-台湾|解锁流|2x|V2ray
+      - 🇨🇳 V2-中转437|上海CN2-台湾|解锁流|2x|V2ray
+      - 🇭🇰 V3-中转313|广港-香港|解锁流|1.5x|V2ray
+      - 🇭🇰 V3-中转411|广东-香港|解锁流|1.5x|V2ray
+      - 🇯🇵 V3-中转497|广港-日本软银|解锁|x1.5|V2ray
+      - 🇯🇵 V3-中转515|中港-日本M|解锁|x1.5|V2ray
+      - 🇸🇬 V4-中转257|新广东-台湾|解锁流|1.2x|V2ray
+      - 🇸🇬 V4-中转453|新广东B-香港HKT|解锁流|1.5x|V2ray
+      - 🇯🇵 V4-中转516|中港-日本M|解锁|x1.5|V2ray
+      - 🇯🇵 V4-中转517|中港-日本M|解锁|x1.5|V2ray
+      - 🇭🇰 V4-香港417|Azure|1x|V2ray
+      - 🇺🇸 US-Las Vegas@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat 2
+      - 🇺🇸 US-San Francisco@vpnhat 3
+      - 🇺🇸 US-San Francisco@vpnhat 4
+      - "🇺🇸 [SS] 美国 01 #Media"
+      - "🇭🇰 [Trojan]香港 03 #Media"
+      - "🇭🇰 香港 01 #Media"
+      - "🇭🇰 香港 06 #Media"
+      - 🇭🇰 香港01
+      - 🇭🇰 V1|香港03|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港04|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港05|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港06|负载均衡|AIA隧道
+      - 🇫🇷 6.20法国
+      - 🇬🇧 6.20英国01
+      - 🇬🇧 6.20英国02
       - 🇯🇵 日本03
-      - 🇺🇸 馃嚭馃嚫 US_6409 |60.21Mb
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡
-      - 🇭🇰 HK.广州香港-1.移动.300M.NF
-      - 🇭🇰 香港1 奈飞
-      - 🇭🇰 香港04-测试 4
-      - 🇭🇰 香港04-测试
-      - 🇭🇰 香港04-测试 3
-      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
-      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_712 | 5.06Mb
-      - 🇭🇰 香港2 奈飞
-      - 可定制节点最低5元起
+      - 🇺🇸 美国01 原生
+      - 🇺🇸 美国02 原生
+      - 🇬🇧 英国01
+      - 🇪🇸 西班牙02
+      - 🇰🇷 韩国01
+      - 🇭🇰 香港04
+      - ②V2中转节点
+      - 🇭🇰 [VIP] HK 2 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 3 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 4 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 5 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK 6 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK X 香港EC2-Azure | 中转
+      - 🇭🇰 [VIP] HK-9▲香港Azure | 中转
+      - 🇯🇵 [VIP] JP-7▲日本EC2 | 直连
+      - 🇯🇵 [VIP] JP-8▲日本EC2 | 直连
+      - 🇰🇷 [VIP] KR-3▲韩国EC2 | 中转
+      - 🇰🇷 [VIP] KR-6▲韩国EC2 | 流媒体
+      - 🇷🇺 [VIP] RU-4▲俄罗斯 | NF
+      - 🇸🇬 [VIP] SG 1 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 2 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 3 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 6 新加坡EC2 | 中转
+      - 🇸🇬 [VIP] SG 7 新加坡EC2 | 中转
+      - 🇺🇸 [VIP] US-3▲美国Azure | 中转
+      - 🇭🇰 公益节点 香港1
+      - 🇭🇰 公益节点 香港3 VIP体验节点  x3.0
+      - 🇺🇸 美国7中转 | 免费节点 t.me/mftizi
+      - 🇭🇰 V3-中转3181|沪港-香港|解锁|x1.5
+      - 🇷🇺 V3-中转3227|上海联通-俄罗斯|x0.4
+      - 🇭🇰 【LowEnd】香港 普通 1 - Azure 0.3x
+      - 🇸🇬 【Tunnel_A】新加坡 普通 1 - AWS
+      - 🇭🇰 【Tunnel_A】香港 普通 A - Azure
+      - 🇭🇰 【Tunnel_B】香港  VIP C - Azure
+      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
+      - 🇨🇳 CN_29
+      - 🇭🇰 V2-中转3189|沪港-香港HKT|解锁|x1.2
+      - 🇷🇺 V2-中转3232|上海联通-俄罗斯|x0.3
+      - 🇭🇰 V2-中转3260|沪港-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3261|广东-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3444|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
+      - 🇨🇳 江苏省无锡市电信 7
+      - 🇨🇳 CN_10 |14.69Mb
+      - 🇨🇳 CN_25
+      - 🇨🇳 CN_997
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇭🇰 香港1-流媒体
+      - 🇺🇸 中转-美国-3-流媒体解锁
       - 移动专用-测试-×2.5
-      - 🇭🇰 [直连] 香港3 aws 电信不可用
-      - 🇨🇳 CN_123
+      - 🇭🇰 vip-香港5
+      - 🇺🇸 A0美国-洛杉矶-长沙联通隧道中转
+      - 🇺🇸 A1美国 ION-洛杉矶-广移隧道中转-01
+      - A特殊时期用这个节点
+      - 🇭🇰 F-香港-03
+      - 🇭🇰 V1-IPLC-377|深圳-香港|解锁|4x|V2ray
+      - 🇸🇬 V1-IPLC-473|深圳-新加坡|解锁流|4x|V2ray
+      - 🇨🇳 V1-中转487|江西CN2-台湾|解锁流|2x|V2ray
+      - 🇨🇳 V2-中转437|上海CN2-台湾|解锁流|2x|V2ray
+      - 🇭🇰 V3-中转313|广港-香港|解锁流|1.5x|V2ray
+      - 🇭🇰 V3-中转411|广东-香港|解锁流|1.5x|V2ray
+      - 🇯🇵 V3-中转497|广港-日本软银|解锁|x1.5|V2ray
+      - 🇯🇵 V3-中转515|中港-日本M|解锁|x1.5|V2ray
+      - 🇸🇬 V4-中转257|新广东-台湾|解锁流|1.2x|V2ray
+      - 🇸🇬 V4-中转453|新广东B-香港HKT|解锁流|1.5x|V2ray
+      - 🇯🇵 V4-中转516|中港-日本M|解锁|x1.5|V2ray
+      - 🇯🇵 V4-中转517|中港-日本M|解锁|x1.5|V2ray
+      - 🇭🇰 V4-香港417|Azure|1x|V2ray
+      - 🇺🇸 US-Las Vegas@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat 2
+      - 🇺🇸 US-San Francisco@vpnhat 3
+      - 🇺🇸 US-San Francisco@vpnhat 4
+      - "🇺🇸 [SS] 美国 01 #Media"
+      - "🇭🇰 [Trojan]香港 03 #Media"
+      - "🇭🇰 香港 01 #Media"
+      - "🇭🇰 香港 06 #Media"
+      - 🇭🇰 香港01
+      - 🇭🇰 V1|香港03|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港04|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港05|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港06|负载均衡|AIA隧道
+      - 🇫🇷 6.20法国
+      - 🇬🇧 6.20英国01
+      - 🇬🇧 6.20英国02
       - 🇯🇵 日本03
-      - 🇺🇸 馃嚭馃嚫 US_6409 |60.21Mb
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡
-      - 🇭🇰 HK.广州香港-1.移动.300M.NF
-      - 🇭🇰 香港1 奈飞
-      - 🇭🇰 香港04-测试 4
-      - 🇭🇰 香港04-测试
-      - 🇭🇰 香港04-测试 3
-      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
-      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_712 | 5.06Mb
-      - 🇭🇰 香港2 奈飞
-      - 可定制节点最低5元起
+      - 🇺🇸 美国01 原生
+      - 🇺🇸 美国02 原生
+      - 🇬🇧 英国01
+      - 🇪🇸 西班牙02
+      - 🇰🇷 韩国01
+      - 🇭🇰 香港04
+      - ②V2中转节点
+      - 🇭🇰 [VIP] HK 2 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 3 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 4 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 5 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK 6 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK X 香港EC2-Azure | 中转
+      - 🇭🇰 [VIP] HK-9▲香港Azure | 中转
+      - 🇯🇵 [VIP] JP-7▲日本EC2 | 直连
+      - 🇯🇵 [VIP] JP-8▲日本EC2 | 直连
+      - 🇰🇷 [VIP] KR-3▲韩国EC2 | 中转
+      - 🇰🇷 [VIP] KR-6▲韩国EC2 | 流媒体
+      - 🇷🇺 [VIP] RU-4▲俄罗斯 | NF
+      - 🇸🇬 [VIP] SG 1 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 2 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 3 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 6 新加坡EC2 | 中转
+      - 🇸🇬 [VIP] SG 7 新加坡EC2 | 中转
+      - 🇺🇸 [VIP] US-3▲美国Azure | 中转
+      - 🇭🇰 公益节点 香港1
+      - 🇭🇰 公益节点 香港3 VIP体验节点  x3.0
+      - 🇺🇸 美国7中转 | 免费节点 t.me/mftizi
+      - 🇭🇰 V3-中转3181|沪港-香港|解锁|x1.5
+      - 🇷🇺 V3-中转3227|上海联通-俄罗斯|x0.4
+      - 🇭🇰 【LowEnd】香港 普通 1 - Azure 0.3x
+      - 🇸🇬 【Tunnel_A】新加坡 普通 1 - AWS
+      - 🇭🇰 【Tunnel_A】香港 普通 A - Azure
+      - 🇭🇰 【Tunnel_B】香港  VIP C - Azure
+      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
+      - 🇨🇳 CN_29
+      - 🇭🇰 V2-中转3189|沪港-香港HKT|解锁|x1.2
+      - 🇷🇺 V2-中转3232|上海联通-俄罗斯|x0.3
+      - 🇭🇰 V2-中转3260|沪港-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3261|广东-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3444|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
+      - 🇨🇳 江苏省无锡市电信 7
+      - 🇨🇳 CN_10 |14.69Mb
+      - 🇨🇳 CN_25
+      - 🇨🇳 CN_997
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🇭🇰 香港1-流媒体
+      - 🇺🇸 中转-美国-3-流媒体解锁
       - 移动专用-测试-×2.5
-      - 🇭🇰 [直连] 香港3 aws 电信不可用
-      - 🇨🇳 CN_123
+      - 🇭🇰 vip-香港5
+      - 🇺🇸 A0美国-洛杉矶-长沙联通隧道中转
+      - 🇺🇸 A1美国 ION-洛杉矶-广移隧道中转-01
+      - A特殊时期用这个节点
+      - 🇭🇰 F-香港-03
+      - 🇭🇰 V1-IPLC-377|深圳-香港|解锁|4x|V2ray
+      - 🇸🇬 V1-IPLC-473|深圳-新加坡|解锁流|4x|V2ray
+      - 🇨🇳 V1-中转487|江西CN2-台湾|解锁流|2x|V2ray
+      - 🇨🇳 V2-中转437|上海CN2-台湾|解锁流|2x|V2ray
+      - 🇭🇰 V3-中转313|广港-香港|解锁流|1.5x|V2ray
+      - 🇭🇰 V3-中转411|广东-香港|解锁流|1.5x|V2ray
+      - 🇯🇵 V3-中转497|广港-日本软银|解锁|x1.5|V2ray
+      - 🇯🇵 V3-中转515|中港-日本M|解锁|x1.5|V2ray
+      - 🇸🇬 V4-中转257|新广东-台湾|解锁流|1.2x|V2ray
+      - 🇸🇬 V4-中转453|新广东B-香港HKT|解锁流|1.5x|V2ray
+      - 🇯🇵 V4-中转516|中港-日本M|解锁|x1.5|V2ray
+      - 🇯🇵 V4-中转517|中港-日本M|解锁|x1.5|V2ray
+      - 🇭🇰 V4-香港417|Azure|1x|V2ray
+      - 🇺🇸 US-Las Vegas@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat 2
+      - 🇺🇸 US-San Francisco@vpnhat 3
+      - 🇺🇸 US-San Francisco@vpnhat 4
+      - "🇺🇸 [SS] 美国 01 #Media"
+      - "🇭🇰 [Trojan]香港 03 #Media"
+      - "🇭🇰 香港 01 #Media"
+      - "🇭🇰 香港 06 #Media"
+      - 🇭🇰 香港01
+      - 🇭🇰 V1|香港03|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港04|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港05|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港06|负载均衡|AIA隧道
+      - 🇫🇷 6.20法国
+      - 🇬🇧 6.20英国01
+      - 🇬🇧 6.20英国02
       - 🇯🇵 日本03
-      - 🇺🇸 馃嚭馃嚫 US_6409 |60.21Mb
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡
-      - 🇭🇰 HK.广州香港-1.移动.300M.NF
-      - 🇭🇰 香港1 奈飞
-      - 🇭🇰 香港04-测试 4
-      - 🇭🇰 香港04-测试
-      - 🇭🇰 香港04-测试 3
-      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
-      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_712 | 5.06Mb
-      - 🇭🇰 香港2 奈飞
-      - 可定制节点最低5元起
+      - 🇺🇸 美国01 原生
+      - 🇺🇸 美国02 原生
+      - 🇬🇧 英国01
+      - 🇪🇸 西班牙02
+      - 🇰🇷 韩国01
+      - 🇭🇰 香港04
+      - ②V2中转节点
+      - 🇭🇰 [VIP] HK 2 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 3 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 4 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 5 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK 6 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK X 香港EC2-Azure | 中转
+      - 🇭🇰 [VIP] HK-9▲香港Azure | 中转
+      - 🇯🇵 [VIP] JP-7▲日本EC2 | 直连
+      - 🇯🇵 [VIP] JP-8▲日本EC2 | 直连
+      - 🇰🇷 [VIP] KR-3▲韩国EC2 | 中转
+      - 🇰🇷 [VIP] KR-6▲韩国EC2 | 流媒体
+      - 🇷🇺 [VIP] RU-4▲俄罗斯 | NF
+      - 🇸🇬 [VIP] SG 1 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 2 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 3 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 6 新加坡EC2 | 中转
+      - 🇸🇬 [VIP] SG 7 新加坡EC2 | 中转
+      - 🇺🇸 [VIP] US-3▲美国Azure | 中转
+      - 🇭🇰 公益节点 香港1
+      - 🇭🇰 公益节点 香港3 VIP体验节点  x3.0
+      - 🇺🇸 美国7中转 | 免费节点 t.me/mftizi
+      - 🇭🇰 V3-中转3181|沪港-香港|解锁|x1.5
+      - 🇷🇺 V3-中转3227|上海联通-俄罗斯|x0.4
+      - 🇭🇰 【LowEnd】香港 普通 1 - Azure 0.3x
+      - 🇸🇬 【Tunnel_A】新加坡 普通 1 - AWS
+      - 🇭🇰 【Tunnel_A】香港 普通 A - Azure
+      - 🇭🇰 【Tunnel_B】香港  VIP C - Azure
+      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
+      - 🇨🇳 CN_29
+      - 🇭🇰 V2-中转3189|沪港-香港HKT|解锁|x1.2
+      - 🇷🇺 V2-中转3232|上海联通-俄罗斯|x0.3
+      - 🇭🇰 V2-中转3260|沪港-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3261|广东-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3444|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
+      - 🇨🇳 江苏省无锡市电信 7
+      - 🇨🇳 CN_10 |14.69Mb
+      - 🇨🇳 CN_25
+      - 🇨🇳 CN_997
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇭🇰 香港1-流媒体
+      - 🇺🇸 中转-美国-3-流媒体解锁
       - 移动专用-测试-×2.5
-      - 🇭🇰 [直连] 香港3 aws 电信不可用
-      - 🇨🇳 CN_123
+      - 🇭🇰 vip-香港5
+      - 🇺🇸 A0美国-洛杉矶-长沙联通隧道中转
+      - 🇺🇸 A1美国 ION-洛杉矶-广移隧道中转-01
+      - A特殊时期用这个节点
+      - 🇭🇰 F-香港-03
+      - 🇭🇰 V1-IPLC-377|深圳-香港|解锁|4x|V2ray
+      - 🇸🇬 V1-IPLC-473|深圳-新加坡|解锁流|4x|V2ray
+      - 🇨🇳 V1-中转487|江西CN2-台湾|解锁流|2x|V2ray
+      - 🇨🇳 V2-中转437|上海CN2-台湾|解锁流|2x|V2ray
+      - 🇭🇰 V3-中转313|广港-香港|解锁流|1.5x|V2ray
+      - 🇭🇰 V3-中转411|广东-香港|解锁流|1.5x|V2ray
+      - 🇯🇵 V3-中转497|广港-日本软银|解锁|x1.5|V2ray
+      - 🇯🇵 V3-中转515|中港-日本M|解锁|x1.5|V2ray
+      - 🇸🇬 V4-中转257|新广东-台湾|解锁流|1.2x|V2ray
+      - 🇸🇬 V4-中转453|新广东B-香港HKT|解锁流|1.5x|V2ray
+      - 🇯🇵 V4-中转516|中港-日本M|解锁|x1.5|V2ray
+      - 🇯🇵 V4-中转517|中港-日本M|解锁|x1.5|V2ray
+      - 🇭🇰 V4-香港417|Azure|1x|V2ray
+      - 🇺🇸 US-Las Vegas@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat 2
+      - 🇺🇸 US-San Francisco@vpnhat 3
+      - 🇺🇸 US-San Francisco@vpnhat 4
+      - "🇺🇸 [SS] 美国 01 #Media"
+      - "🇭🇰 [Trojan]香港 03 #Media"
+      - "🇭🇰 香港 01 #Media"
+      - "🇭🇰 香港 06 #Media"
+      - 🇭🇰 香港01
+      - 🇭🇰 V1|香港03|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港04|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港05|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港06|负载均衡|AIA隧道
+      - 🇫🇷 6.20法国
+      - 🇬🇧 6.20英国01
+      - 🇬🇧 6.20英国02
       - 🇯🇵 日本03
-      - 🇺🇸 馃嚭馃嚫 US_6409 |60.21Mb
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡
-      - 🇭🇰 HK.广州香港-1.移动.300M.NF
-      - 🇭🇰 香港1 奈飞
-      - 🇭🇰 香港04-测试 4
-      - 🇭🇰 香港04-测试
-      - 🇭🇰 香港04-测试 3
-      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
-      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_712 | 5.06Mb
-      - 🇭🇰 香港2 奈飞
-      - 可定制节点最低5元起
+      - 🇺🇸 美国01 原生
+      - 🇺🇸 美国02 原生
+      - 🇬🇧 英国01
+      - 🇪🇸 西班牙02
+      - 🇰🇷 韩国01
+      - 🇭🇰 香港04
+      - ②V2中转节点
+      - 🇭🇰 [VIP] HK 2 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 3 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 4 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 5 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK 6 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK X 香港EC2-Azure | 中转
+      - 🇭🇰 [VIP] HK-9▲香港Azure | 中转
+      - 🇯🇵 [VIP] JP-7▲日本EC2 | 直连
+      - 🇯🇵 [VIP] JP-8▲日本EC2 | 直连
+      - 🇰🇷 [VIP] KR-3▲韩国EC2 | 中转
+      - 🇰🇷 [VIP] KR-6▲韩国EC2 | 流媒体
+      - 🇷🇺 [VIP] RU-4▲俄罗斯 | NF
+      - 🇸🇬 [VIP] SG 1 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 2 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 3 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 6 新加坡EC2 | 中转
+      - 🇸🇬 [VIP] SG 7 新加坡EC2 | 中转
+      - 🇺🇸 [VIP] US-3▲美国Azure | 中转
+      - 🇭🇰 公益节点 香港1
+      - 🇭🇰 公益节点 香港3 VIP体验节点  x3.0
+      - 🇺🇸 美国7中转 | 免费节点 t.me/mftizi
+      - 🇭🇰 V3-中转3181|沪港-香港|解锁|x1.5
+      - 🇷🇺 V3-中转3227|上海联通-俄罗斯|x0.4
+      - 🇭🇰 【LowEnd】香港 普通 1 - Azure 0.3x
+      - 🇸🇬 【Tunnel_A】新加坡 普通 1 - AWS
+      - 🇭🇰 【Tunnel_A】香港 普通 A - Azure
+      - 🇭🇰 【Tunnel_B】香港  VIP C - Azure
+      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
+      - 🇨🇳 CN_29
+      - 🇭🇰 V2-中转3189|沪港-香港HKT|解锁|x1.2
+      - 🇷🇺 V2-中转3232|上海联通-俄罗斯|x0.3
+      - 🇭🇰 V2-中转3260|沪港-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3261|广东-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3444|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
+      - 🇨🇳 江苏省无锡市电信 7
+      - 🇨🇳 CN_10 |14.69Mb
+      - 🇨🇳 CN_25
+      - 🇨🇳 CN_997
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -164,22 +668,94 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇭🇰 香港1-流媒体
+      - 🇺🇸 中转-美国-3-流媒体解锁
       - 移动专用-测试-×2.5
-      - 🇭🇰 [直连] 香港3 aws 电信不可用
-      - 🇨🇳 CN_123
+      - 🇭🇰 vip-香港5
+      - 🇺🇸 A0美国-洛杉矶-长沙联通隧道中转
+      - 🇺🇸 A1美国 ION-洛杉矶-广移隧道中转-01
+      - A特殊时期用这个节点
+      - 🇭🇰 F-香港-03
+      - 🇭🇰 V1-IPLC-377|深圳-香港|解锁|4x|V2ray
+      - 🇸🇬 V1-IPLC-473|深圳-新加坡|解锁流|4x|V2ray
+      - 🇨🇳 V1-中转487|江西CN2-台湾|解锁流|2x|V2ray
+      - 🇨🇳 V2-中转437|上海CN2-台湾|解锁流|2x|V2ray
+      - 🇭🇰 V3-中转313|广港-香港|解锁流|1.5x|V2ray
+      - 🇭🇰 V3-中转411|广东-香港|解锁流|1.5x|V2ray
+      - 🇯🇵 V3-中转497|广港-日本软银|解锁|x1.5|V2ray
+      - 🇯🇵 V3-中转515|中港-日本M|解锁|x1.5|V2ray
+      - 🇸🇬 V4-中转257|新广东-台湾|解锁流|1.2x|V2ray
+      - 🇸🇬 V4-中转453|新广东B-香港HKT|解锁流|1.5x|V2ray
+      - 🇯🇵 V4-中转516|中港-日本M|解锁|x1.5|V2ray
+      - 🇯🇵 V4-中转517|中港-日本M|解锁|x1.5|V2ray
+      - 🇭🇰 V4-香港417|Azure|1x|V2ray
+      - 🇺🇸 US-Las Vegas@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat 2
+      - 🇺🇸 US-San Francisco@vpnhat 3
+      - 🇺🇸 US-San Francisco@vpnhat 4
+      - "🇺🇸 [SS] 美国 01 #Media"
+      - "🇭🇰 [Trojan]香港 03 #Media"
+      - "🇭🇰 香港 01 #Media"
+      - "🇭🇰 香港 06 #Media"
+      - 🇭🇰 香港01
+      - 🇭🇰 V1|香港03|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港04|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港05|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港06|负载均衡|AIA隧道
+      - 🇫🇷 6.20法国
+      - 🇬🇧 6.20英国01
+      - 🇬🇧 6.20英国02
       - 🇯🇵 日本03
-      - 🇺🇸 馃嚭馃嚫 US_6409 |60.21Mb
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡
-      - 🇭🇰 HK.广州香港-1.移动.300M.NF
-      - 🇭🇰 香港1 奈飞
-      - 🇭🇰 香港04-测试 4
-      - 🇭🇰 香港04-测试
-      - 🇭🇰 香港04-测试 3
-      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
-      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_712 | 5.06Mb
-      - 🇭🇰 香港2 奈飞
-      - 可定制节点最低5元起
+      - 🇺🇸 美国01 原生
+      - 🇺🇸 美国02 原生
+      - 🇬🇧 英国01
+      - 🇪🇸 西班牙02
+      - 🇰🇷 韩国01
+      - 🇭🇰 香港04
+      - ②V2中转节点
+      - 🇭🇰 [VIP] HK 2 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 3 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 4 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 5 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK 6 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK X 香港EC2-Azure | 中转
+      - 🇭🇰 [VIP] HK-9▲香港Azure | 中转
+      - 🇯🇵 [VIP] JP-7▲日本EC2 | 直连
+      - 🇯🇵 [VIP] JP-8▲日本EC2 | 直连
+      - 🇰🇷 [VIP] KR-3▲韩国EC2 | 中转
+      - 🇰🇷 [VIP] KR-6▲韩国EC2 | 流媒体
+      - 🇷🇺 [VIP] RU-4▲俄罗斯 | NF
+      - 🇸🇬 [VIP] SG 1 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 2 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 3 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 6 新加坡EC2 | 中转
+      - 🇸🇬 [VIP] SG 7 新加坡EC2 | 中转
+      - 🇺🇸 [VIP] US-3▲美国Azure | 中转
+      - 🇭🇰 公益节点 香港1
+      - 🇭🇰 公益节点 香港3 VIP体验节点  x3.0
+      - 🇺🇸 美国7中转 | 免费节点 t.me/mftizi
+      - 🇭🇰 V3-中转3181|沪港-香港|解锁|x1.5
+      - 🇷🇺 V3-中转3227|上海联通-俄罗斯|x0.4
+      - 🇭🇰 【LowEnd】香港 普通 1 - Azure 0.3x
+      - 🇸🇬 【Tunnel_A】新加坡 普通 1 - AWS
+      - 🇭🇰 【Tunnel_A】香港 普通 A - Azure
+      - 🇭🇰 【Tunnel_B】香港  VIP C - Azure
+      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
+      - 🇨🇳 CN_29
+      - 🇭🇰 V2-中转3189|沪港-香港HKT|解锁|x1.2
+      - 🇷🇺 V2-中转3232|上海联通-俄罗斯|x0.3
+      - 🇭🇰 V2-中转3260|沪港-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3261|广东-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3444|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
+      - 🇨🇳 江苏省无锡市电信 7
+      - 🇨🇳 CN_10 |14.69Mb
+      - 🇨🇳 CN_25
+      - 🇨🇳 CN_997
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -203,22 +779,94 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇭🇰 香港1-流媒体
+      - 🇺🇸 中转-美国-3-流媒体解锁
       - 移动专用-测试-×2.5
-      - 🇭🇰 [直连] 香港3 aws 电信不可用
-      - 🇨🇳 CN_123
+      - 🇭🇰 vip-香港5
+      - 🇺🇸 A0美国-洛杉矶-长沙联通隧道中转
+      - 🇺🇸 A1美国 ION-洛杉矶-广移隧道中转-01
+      - A特殊时期用这个节点
+      - 🇭🇰 F-香港-03
+      - 🇭🇰 V1-IPLC-377|深圳-香港|解锁|4x|V2ray
+      - 🇸🇬 V1-IPLC-473|深圳-新加坡|解锁流|4x|V2ray
+      - 🇨🇳 V1-中转487|江西CN2-台湾|解锁流|2x|V2ray
+      - 🇨🇳 V2-中转437|上海CN2-台湾|解锁流|2x|V2ray
+      - 🇭🇰 V3-中转313|广港-香港|解锁流|1.5x|V2ray
+      - 🇭🇰 V3-中转411|广东-香港|解锁流|1.5x|V2ray
+      - 🇯🇵 V3-中转497|广港-日本软银|解锁|x1.5|V2ray
+      - 🇯🇵 V3-中转515|中港-日本M|解锁|x1.5|V2ray
+      - 🇸🇬 V4-中转257|新广东-台湾|解锁流|1.2x|V2ray
+      - 🇸🇬 V4-中转453|新广东B-香港HKT|解锁流|1.5x|V2ray
+      - 🇯🇵 V4-中转516|中港-日本M|解锁|x1.5|V2ray
+      - 🇯🇵 V4-中转517|中港-日本M|解锁|x1.5|V2ray
+      - 🇭🇰 V4-香港417|Azure|1x|V2ray
+      - 🇺🇸 US-Las Vegas@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat
+      - 🇺🇸 US-San Francisco@vpnhat 2
+      - 🇺🇸 US-San Francisco@vpnhat 3
+      - 🇺🇸 US-San Francisco@vpnhat 4
+      - "🇺🇸 [SS] 美国 01 #Media"
+      - "🇭🇰 [Trojan]香港 03 #Media"
+      - "🇭🇰 香港 01 #Media"
+      - "🇭🇰 香港 06 #Media"
+      - 🇭🇰 香港01
+      - 🇭🇰 V1|香港03|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港04|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港05|负载均衡|AIA隧道
+      - 🇭🇰 V1|香港06|负载均衡|AIA隧道
+      - 🇫🇷 6.20法国
+      - 🇬🇧 6.20英国01
+      - 🇬🇧 6.20英国02
       - 🇯🇵 日本03
-      - 🇺🇸 馃嚭馃嚫 US_6409 |60.21Mb
-      - 🇭🇰 香港
-      - 🇸🇬 新加坡
-      - 🇭🇰 HK.广州香港-1.移动.300M.NF
-      - 🇭🇰 香港1 奈飞
-      - 🇭🇰 香港04-测试 4
-      - 🇭🇰 香港04-测试
-      - 🇭🇰 香港04-测试 3
-      - 🇯🇵 US.广州美国-3.移动.300M.NF.PCR日服
-      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_712 | 5.06Mb
-      - 🇭🇰 香港2 奈飞
-      - 可定制节点最低5元起
+      - 🇺🇸 美国01 原生
+      - 🇺🇸 美国02 原生
+      - 🇬🇧 英国01
+      - 🇪🇸 西班牙02
+      - 🇰🇷 韩国01
+      - 🇭🇰 香港04
+      - ②V2中转节点
+      - 🇭🇰 [VIP] HK 2 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 3 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 4 香港Azure | 流媒体
+      - 🇭🇰 [VIP] HK 5 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK 6 香港EC2 | 中转
+      - 🇭🇰 [VIP] HK X 香港EC2-Azure | 中转
+      - 🇭🇰 [VIP] HK-9▲香港Azure | 中转
+      - 🇯🇵 [VIP] JP-7▲日本EC2 | 直连
+      - 🇯🇵 [VIP] JP-8▲日本EC2 | 直连
+      - 🇰🇷 [VIP] KR-3▲韩国EC2 | 中转
+      - 🇰🇷 [VIP] KR-6▲韩国EC2 | 流媒体
+      - 🇷🇺 [VIP] RU-4▲俄罗斯 | NF
+      - 🇸🇬 [VIP] SG 1 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 2 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 3 新加坡Azure | 流媒体
+      - 🇸🇬 [VIP] SG 6 新加坡EC2 | 中转
+      - 🇸🇬 [VIP] SG 7 新加坡EC2 | 中转
+      - 🇺🇸 [VIP] US-3▲美国Azure | 中转
+      - 🇭🇰 公益节点 香港1
+      - 🇭🇰 公益节点 香港3 VIP体验节点  x3.0
+      - 🇺🇸 美国7中转 | 免费节点 t.me/mftizi
+      - 🇭🇰 V3-中转3181|沪港-香港|解锁|x1.5
+      - 🇷🇺 V3-中转3227|上海联通-俄罗斯|x0.4
+      - 🇭🇰 【LowEnd】香港 普通 1 - Azure 0.3x
+      - 🇸🇬 【Tunnel_A】新加坡 普通 1 - AWS
+      - 🇭🇰 【Tunnel_A】香港 普通 A - Azure
+      - 🇭🇰 【Tunnel_B】香港  VIP C - Azure
+      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
+      - 🇨🇳 CN_29
+      - 🇭🇰 V2-中转3189|沪港-香港HKT|解锁|x1.2
+      - 🇷🇺 V2-中转3232|上海联通-俄罗斯|x0.3
+      - 🇭🇰 V2-中转3260|沪港-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3261|广东-香港HKBN|解锁|x1.0
+      - 🇭🇰 V2-中转3444|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
+      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
+      - 🇨🇳 江苏省无锡市电信 7
+      - 🇨🇳 CN_10 |14.69Mb
+      - 🇨🇳 CN_25
+      - 🇨🇳 CN_997
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
