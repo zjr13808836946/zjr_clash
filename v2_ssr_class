@@ -5,541 +5,445 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇬🇧 英国02|BGP, server: blx.lt.airnode.xyz, port: 14036, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.lt.airnode.xyz}}
-  - {name: 🇭🇰 V4-香港3082|Azure|x1.0|V2ray, server: azure-n7.ddns-only.xyz, port: 12585, type: vmess, uuid: ed4c43e1-8c44-313b-9990-c542eda68eb9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /sy666666, ws-headers: {Host: azure-n7.ddns-only.xyz}}
-  - {name: 🇭🇰 V4-香港3084|Azure|x1.0|V2ray, server: azure-n9.ddns-only.xyz, port: 12580, type: vmess, uuid: ed4c43e1-8c44-313b-9990-c542eda68eb9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /sy666666, ws-headers: {Host: azure-n9.ddns-only.xyz}}
-  - {name: "🇭🇰 [Lv.1] 香港A | 中转 | CDN", server: aga.ddns.tjiasu.xyz, port: 443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/shop, ws-headers: {Host: hkv2-1.ddns.tjiasu.xyz}}
-  - {name: "🇸🇬 [Lv.1] 新加坡B | 中转", server: aga.ddns.tjiasu.xyz, port: 443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/pianist, ws-headers: {Host: pianist.ddns.tjiasu.xyz}}
-  - {name: "🇸🇬 [Lv.1] 新加坡C | 临时节点", server: container-service-1.1p141cdo9m8vm.ap-southeast-1.cs.amazonlightsail.com, port: 443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/ddns, ws-headers: {Host: container-service-1.1p141cdo9m8vm.ap-southeast-1.cs.amazonlightsail.com}}
-  - {name: "🇺🇸 [Lv.1] 美国A | 中转", server: aga.ddns.tjiasu.xyz, port: 443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/common, ws-headers: {Host: usav2.ddns.tjiasu.xyz}}
-  - {name: "🇺🇸 [Lv.1] 美国B | 中转", server: aga-sg.ddns.tjiasu.xyz, port: 443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/rn, ws-headers: {Host: usbv2.ddns.tjiasu.xyz}}
-  - {name: "🇺🇸 [Lv.1] 美国C | 直连", server: shopv3.ddns.tjiasu.xyz, port: 443, type: vmess, uuid: e62cf90e-68e0-4d35-a638-3b50fe483399, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/shop, ws-headers: {Host: shopv3.ddns.tjiasu.xyz}}
-  - {name: 🇨🇳 Relay_-台湾_4411 |32.91Mb, server: tw.tcpbbr.net, port: 80, type: vmess, uuid: 73a4ff1c-85c8-11ea-82ef-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: tw.tcpbbr.net}}
-  - {name: "🇨🇳 vip4 香港-[解锁]台湾哔哩哔哩奶飞", server: 16.162.55.4, port: 443, type: vmess, uuid: 69233cfd-5c63-3e59-a919-ba0dcaae47c4, alterId: 16, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /nima, ws-headers: {Host: 16.162.55.4}}
-  - {name: 🇭🇰 香港_3727, server: hkt.comefromchinatown.com, port: 153, type: vmess, uuid: 73a4ff1c-85c8-11ea-82ef-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hkt.comefromchinatown.com}}
-  - {name: 🇨🇳 中国2021.06.30|台湾_3307, server: 211.23.132.124, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.132.124}}
-  - {name: 🇨🇳 台湾_5188, server: 211.23.132.124, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 211.23.132.124}}
-  - {name: 🇭🇰 香港 1赞助版, server: hk1.xcwlv2r.xyz, port: 30017, type: vmess, uuid: 90e86339-c68c-3f76-9bdf-e1f5e8af4a9f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /videos, ws-headers: {Host: xuexi.cn}}
-  - {name: 🇯🇵 V4-中转3609|上海-日本M|解锁|x1.5|V2ray, server: zhonggang-sy01.ddns-only.xyz, port: 13609, type: vmess, uuid: ed4c43e1-8c44-313b-9990-c542eda68eb9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /sy666666, ws-headers: {Host: zhonggang-sy01.ddns-only.xyz}}
-  - {name: 🇸🇬 新加坡02|CN2|解锁流媒体, server: blx.cn2.airnode.xyz, port: 14029, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.cn2.airnode.xyz}}
-  - {name: 🇸🇬 新加坡03|CN2|解锁流媒体, server: blx.cn2.airnode.xyz, port: 14030, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.cn2.airnode.xyz}}
-  - {name: 🇸🇬 新加坡04|CN2|解锁流媒体, server: blx.cn2.airnode.xyz, port: 14031, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.cn2.airnode.xyz}}
-  - {name: 🇸🇬 新加坡05|CN2|解锁流媒体, server: blx.cn2.airnode.xyz, port: 14032, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.cn2.airnode.xyz}}
-  - {name: 🇯🇵 日本01|CN2|解锁流媒体, server: blx.lt.airnode.xyz, port: 14013, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.lt.airnode.xyz}}
-  - {name: 🇯🇵 日本02|CN2|解锁流媒体, server: blx.lt.airnode.xyz, port: 14014, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.lt.airnode.xyz}}
-  - {name: 🇰🇷 韩国01|CN2, server: blx.cn2.airnode.xyz, port: 14001, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.cn2.airnode.xyz}}
-  - {name: 🇰🇷 韩国02|CN2, server: blx.cn2.airnode.xyz, port: 14002, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.cn2.airnode.xyz}}
-  - {name: 🇰🇷 韩国03|CN2, server: blx.cn2.airnode.xyz, port: 14003, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.cn2.airnode.xyz}}
-  - {name: 🇰🇷 韩国04|CN2, server: blx.cn2.airnode.xyz, port: 14004, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.cn2.airnode.xyz}}
-  - {name: 🇰🇷 韩国05|CN2, server: blx.cn2.airnode.xyz, port: 14005, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.cn2.airnode.xyz}}
-  - {name: 🇭🇰 香港01|BGP|解锁流媒体, server: blx.lt.airnode.xyz, port: 14018, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.lt.airnode.xyz}}
-  - {name: 🇭🇰 香港06|CN2|解锁流媒体, server: blx.cn2.airnode.xyz, port: 14023, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.cn2.airnode.xyz}}
-  - {name: 🇭🇰 香港07|CN2|解锁流媒体, server: blx.cn2.airnode.xyz, port: 14024, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.cn2.airnode.xyz}}
-  - {name: 🇭🇰 香港08|CN2|解锁流媒体, server: blx.cn2.airnode.xyz, port: 14025, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.cn2.airnode.xyz}}
-  - {name: 🇭🇰 香港09|CN2|解锁流媒体, server: blx.cn2.airnode.xyz, port: 14026, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.cn2.airnode.xyz}}
-  - {name: 🇭🇰 香港10|CN2|解锁流媒体, server: blx.cn2.airnode.xyz, port: 14027, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.cn2.airnode.xyz}}
-  - {name: 🇭🇰 香港11|HKT|原生IP解锁, server: blx.lt.airnode.xyz, port: 14037, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.lt.airnode.xyz}}
-  - {name: 🇭🇰 香港05|BGP|解锁流媒体, server: blx.lt.airnode.xyz, port: 14022, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.lt.airnode.xyz}}
-  - {name: 🇭🇰 香港04|BGP|解锁流媒体, server: blx.lt.airnode.xyz, port: 14021, type: vmess, uuid: 26015519-8ecb-3473-81f2-0e2bee1c0963, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: blx.lt.airnode.xyz}}
+  - {name: 🇯🇵 日本大阪 12(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: osk12.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: osk12.speedsvip.co}}
+  - {name: 🇯🇵 日本大阪 17(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: osk17.speedsvip.co, port: 554, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: osk17.speedsvip.co}}
+  - {name: 🇯🇵 日本东京 34(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty34.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty34.speedsvip.co}}
+  - {name: 🇯🇵 日本东京 39(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty39.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty39.speedsvip.co}}
+  - {name: 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty29.speedsvip.co, port: 443, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty29.speedsvip.co}}
+  - {name: 🇯🇵 日本东京 30(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty30.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty30.speedsvip.co}}
+  - {name: 🇯🇵 日本东京 21(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty21.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty21.speedsvip.co}}
+  - {name: 🇯🇵 日本东京 1(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty1.speedsvip.co, port: 443, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty1.speedsvip.co}}
+  - {name: 北海道 1(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ho1.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ho1.speedsvip.co}}
+  - {name: 🇬🇧 英国 01|BBC|珠移|0.8, server: kupo.hzyd.acfun.cat, port: 10099, type: vmess, uuid: 20fbeadf-d03f-3d34-8685-6b9656b87ffe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /soda, ws-headers: {Host: kupo.hzyd.acfun.cat}}
+  - {name: 🇸🇬 新加坡 01|DOcean|广移|1.0, server: kupo.hzyd.acfun.cat, port: 10010, type: vmess, uuid: 20fbeadf-d03f-3d34-8685-6b9656b87ffe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /soda, ws-headers: {Host: kupo.hzyd.acfun.cat}}
+  - {name: 🇨🇳 台湾04 |Hinet|广移|1.0, server: kupo.qdyd.acfun.run, port: 20110, type: vmess, uuid: 20fbeadf-d03f-3d34-8685-6b9656b87ffe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /soda, ws-headers: {Host: kupo.qdyd.acfun.run}}
+  - {name: 🇨🇳 台湾 02|HiNet|青移|1.0, server: kupo.qdyd.acfun.run, port: 19907, type: vmess, uuid: 20fbeadf-d03f-3d34-8685-6b9656b87ffe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /soda, ws-headers: {Host: kupo.qdyd.acfun.run}}
+  - {name: 🇸🇬 新加坡 01|DOcean|广移|1.0 2, server: kupo.hzyd.acfun.cat, port: 10010, type: vmess, uuid: 9b41414d-ce93-37e0-90b7-0bd31b287b64, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /soda, ws-headers: {Host: kupo.hzyd.acfun.cat}}
+  - {name: 🇨🇳 台湾 02|HiNet|青移|1.0 2, server: kupo.qdyd.acfun.run, port: 19907, type: vmess, uuid: 9b41414d-ce93-37e0-90b7-0bd31b287b64, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /soda, ws-headers: {Host: kupo.qdyd.acfun.run}}
+  - {name: 🇭🇰 云网|天津移动N1-香港, server: tjyd.v2cy.com, port: 80, type: vmess, uuid: a358fb5d-6ae0-42f4-af16-4322a60d4def, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: dn-pd2hiel8.cn2.run.gxu.edu.cn}}
+  - {name: A特殊时期用这个节点, server: 67.198.205.186, port: 10550, type: vmess, uuid: 4e7cbfaa-7e66-3e34-adcb-125bc37f8112, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /dl, ws-headers: {Host: download.windowsupdate.com}}
+  - {name: 🇺🇸 洛杉矶, server: 45.66.156.199, port: 39792, type: vmess, uuid: c8457a5e-5b58-4f3d-9133-5a975b7af4de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 45.66.156.199}}
+  - {name: 🇨🇳 台湾 03|HiNet|珠移|0.8, server: kupo.hzyd.acfun.cat, port: 19904, type: vmess, uuid: 9b41414d-ce93-37e0-90b7-0bd31b287b64, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /soda, ws-headers: {Host: kupo.hzyd.acfun.cat}}
+  - {name: 🇸🇬 新加坡 04|DOcean|珠移|1.0, server: kupo.qdyd.acfun.run, port: 10093, type: vmess, uuid: 9b41414d-ce93-37e0-90b7-0bd31b287b64, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /soda, ws-headers: {Host: kupo.qdyd.acfun.run}}
+  - {name: 🇰🇷 韩国 01|Azure|五邑1.0, server: kupo.hzyd.acfun.cat, port: 10031, type: vmess, uuid: 9b41414d-ce93-37e0-90b7-0bd31b287b64, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /soda, ws-headers: {Host: kupo.hzyd.acfun.cat}}
+  - {name: 🇯🇵 日本东京 6(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty6.speedsvip.co, port: 443, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty6.speedsvip.co}}
+  - {name: 🇯🇵 日本东京 8(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty8.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty8.speedsvip.co}}
+  - {name: 🇯🇵 日本东京 9(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty9.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty9.speedsvip.co}}
+  - {name: 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: osk10.speedsvip.co, port: 443, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: osk10.speedsvip.co}}
+  - {name: 🇭🇰 香港-1-北京中转, server: 52.81.94.63, port: 12202, type: vmess, uuid: 57b9f56f-8f51-3af3-87de-87b6e46b2e17, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 52.81.94.63}}
+  - {name: 🇯🇵 日本1 tg@freebaipiao, server: c1s4.jamjams.net, port: 19970, type: vmess, uuid: 6213d0c0-432f-445c-8a47-f58b9152b212, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国4 tg@freebaipiao, server: c1s3.jamjams.net, port: 19970, type: vmess, uuid: 6213d0c0-432f-445c-8a47-f58b9152b212, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国-1-北京中转, server: 52.81.94.63, port: 12203, type: vmess, uuid: 57b9f56f-8f51-3af3-87de-87b6e46b2e17, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 52.81.94.63}}
+  - {name: 🇯🇵 日本1 tg@freebaipiao 2, server: c1s4.jamjams.net, port: 19970, type: vmess, uuid: 6213d0c0-432f-445c-8a47-f58b9152b212, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 测试免流服务器, server: ru-a-01.joker007.top, port: 80, type: vmess, uuid: e90c4ab7-c3f0-43b0-80f8-48b4fffec448, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 🇺🇸 公益节点joker007.top 美国1, server: qn-a-01.joker007.top, port: 443, type: vmess, uuid: e90c4ab7-c3f0-43b0-80f8-48b4fffec448, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: qn-a-01.joker007.top}}
+  - {name: 🇯🇵 JP-Tokyo-Azure, server: 20.63.187.222, port: 80, type: vmess, uuid: b36cafcc-17d0-3c7e-9a06-366041e395a4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /download/233yun/78xifnxlz11wd8p2vanmg25mvvp1n61vezexpq465goyjltxblxjjujfkrnj5dyl2wrfks3vvwz32ssxacvi9ujf1rkpp4cxant, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇷🇺 RU-Moscow-Baxet, server: 45.144.2.56, port: 80, type: vmess, uuid: b36cafcc-17d0-3c7e-9a06-366041e395a4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /download/233yun/78xifnxlz11wd8p2vanmg25mvvp1n61vezexpq465goyjltxblxjjujfkrnj5dyl2wrfks3vvwz32ssxacvi9ujf1rkpp4cxant, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: osk6.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: osk6.speedsvip.co}}
   - {name: 移动专用-测试-×2.5, server: cmyh.ddns.566366.xyz, port: 190, type: vmess, uuid: a5331506-c4ae-3cdd-8759-f952492b4ebd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /wmsxwd, ws-headers: {Host: cmyh.ddns.566366.xyz}}
-  - {name: "🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]", server: cm-jm.okvpn.cc, port: 20049, type: vmess, uuid: 18b61e56-ecc2-41fb-b7f0-a13507d59487, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.cc}}
-  - {name: 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x, server: n62.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 317710:dTpVEM, obfs-param: download.windowsupdate.com}
-  - {name: 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5, server: guangdong01.ddns-only.xyz, port: 13445, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
-  - {name: 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5, server: guangdong01.ddns-only.xyz, port: 13446, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
-  - {name: 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5, server: guangdong01.ddns-only.xyz, port: 13447, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
-  - {name: 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5, server: guangdong01.ddns-only.xyz, port: 13448, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
-  - {name: 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5, server: guangdong01.ddns-only.xyz, port: 13449, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 244413:RkNzVf, obfs-param: b5e6d244413.microsoft.com}
   - {name: 🇨🇳 CN_25, server: 221.228.99.37, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
   - {name: 🇨🇳 CN_997, server: 221.228.99.37, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
-  - {name: 🇨🇳 中国ssr06, server: 221.228.99.37, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
   - {name: 🇨🇳 @SSRSUB-中国ssr06-付费推荐:suo.yt/ssrsub, server: 221.228.99.37, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
-  - {name: 🇺🇸 ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01, server: pvcc01.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
   - {name: 🇸🇬 V4-中转2980|广东-新加坡|x2.0, server: linode-zy.ddns-only.xyz, port: 12980, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
-  - {name: 🇯🇵 V4-中转3090|上海-日本M|解锁|x1.5, server: zhonggang-sy01.ddns-only.xyz, port: 13090, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
-  - {name: 🇸🇬 V4-中转3352|广东-新加坡|x2.5, server: linode-zy.ddns-only.xyz, port: 13352, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
   - {name: 🇸🇬 V4-中转3354|广东-新加坡|x2.5, server: linode-zy.ddns-only.xyz, port: 13354, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
   - {name: 🇸🇬 V4-中转3357|广东-新加坡|x2.5, server: linode-zy.ddns-only.xyz, port: 13357, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
-  - {name: 🇸🇬 V4-中转3358|广东-新加坡|x2.5, server: linode-zy.ddns-only.xyz, port: 13358, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
   - {name: 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5, server: guangdong05.ddns-only.xyz, port: 13489, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
   - {name: 🇸🇬 V4-中转3558|广东-新加坡|x2.0, server: linode-zy.ddns-only.xyz, port: 13558, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
-  - {name: 🇨🇳 中国-台湾宜兰 IPLC D02, server: tw02.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇰🇷 中国-韩国 IPLC D01 Netflix, server: kr01.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇯🇵 日本 まつやまし auひかり ホーム1ギガ D 03, server: jp03.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
-  - {name: 🇺🇸 美国实验性 IEPL 中继 D02, server: us07.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
   - {name: 🇲🇾 Relay_中国-马来西亚_16, server: hg03.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN01, server: hg01.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN02, server: hg02.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN03, server: hg03.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN04, server: hg04.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN05, server: hg05.clashcloud.tech, port: 62736, type: ssr, cipher: rc4-md5, password: tkfvkv, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇬🇧 英国02|BGP
-      - 🇭🇰 V4-香港3082|Azure|x1.0|V2ray
-      - 🇭🇰 V4-香港3084|Azure|x1.0|V2ray
-      - 🇭🇰 [Lv.1] 香港A | 中转 | CDN
-      - 🇸🇬 [Lv.1] 新加坡B | 中转
-      - 🇸🇬 [Lv.1] 新加坡C | 临时节点
-      - 🇺🇸 [Lv.1] 美国A | 中转
-      - 🇺🇸 [Lv.1] 美国B | 中转
-      - 🇺🇸 [Lv.1] 美国C | 直连
-      - 🇨🇳 Relay_-台湾_4411 |32.91Mb
-      - 🇨🇳 vip4 香港-[解锁]台湾哔哩哔哩奶飞
-      - 🇭🇰 香港_3727
-      - 🇨🇳 中国2021.06.30|台湾_3307
-      - 🇨🇳 台湾_5188
-      - 🇭🇰 香港 1赞助版
-      - 🇯🇵 V4-中转3609|上海-日本M|解锁|x1.5|V2ray
-      - 🇸🇬 新加坡02|CN2|解锁流媒体
-      - 🇸🇬 新加坡03|CN2|解锁流媒体
-      - 🇸🇬 新加坡04|CN2|解锁流媒体
-      - 🇸🇬 新加坡05|CN2|解锁流媒体
-      - 🇯🇵 日本01|CN2|解锁流媒体
-      - 🇯🇵 日本02|CN2|解锁流媒体
-      - 🇰🇷 韩国01|CN2
-      - 🇰🇷 韩国02|CN2
-      - 🇰🇷 韩国03|CN2
-      - 🇰🇷 韩国04|CN2
-      - 🇰🇷 韩国05|CN2
-      - 🇭🇰 香港01|BGP|解锁流媒体
-      - 🇭🇰 香港06|CN2|解锁流媒体
-      - 🇭🇰 香港07|CN2|解锁流媒体
-      - 🇭🇰 香港08|CN2|解锁流媒体
-      - 🇭🇰 香港09|CN2|解锁流媒体
-      - 🇭🇰 香港10|CN2|解锁流媒体
-      - 🇭🇰 香港11|HKT|原生IP解锁
-      - 🇭🇰 香港05|BGP|解锁流媒体
-      - 🇭🇰 香港04|BGP|解锁流媒体
+      - 🇯🇵 日本大阪 12(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 17(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 34(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 39(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 30(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 21(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇬🇧 英国 01|BBC|珠移|0.8
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0
+      - 🇨🇳 台湾04 |Hinet|广移|1.0
+      - 🇨🇳 台湾 02|HiNet|青移|1.0
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0 2
+      - 🇨🇳 台湾 02|HiNet|青移|1.0 2
+      - 🇭🇰 云网|天津移动N1-香港
+      - A特殊时期用这个节点
+      - 🇺🇸 洛杉矶
+      - 🇨🇳 台湾 03|HiNet|珠移|0.8
+      - 🇸🇬 新加坡 04|DOcean|珠移|1.0
+      - 🇰🇷 韩国 01|Azure|五邑1.0
+      - 🇯🇵 日本东京 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 8(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 9(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇭🇰 香港-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao
+      - 🇺🇸 美国4 tg@freebaipiao
+      - 🇰🇷 韩国-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao 2
+      - 测试免流服务器
+      - 🇺🇸 公益节点joker007.top 美国1
+      - 🇯🇵 JP-Tokyo-Azure
+      - 🇷🇺 RU-Moscow-Baxet
+      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 移动专用-测试-×2.5
-      - 🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]
-      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
-      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
       - 🇨🇳 CN_25
       - 🇨🇳 CN_997
-      - 🇨🇳 中国ssr06
       - 🇨🇳 @SSRSUB-中国ssr06-付费推荐:suo.yt/ssrsub
-      - 🇺🇸 ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
       - 🇸🇬 V4-中转2980|广东-新加坡|x2.0
-      - 🇯🇵 V4-中转3090|上海-日本M|解锁|x1.5
-      - 🇸🇬 V4-中转3352|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3357|广东-新加坡|x2.5
-      - 🇸🇬 V4-中转3358|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 🇺🇸 美国实验性 IEPL 中继 D02
       - 🇲🇾 Relay_中国-马来西亚_16
+      - 🇨🇳 Relay_🇨🇳CN01
+      - 🇨🇳 Relay_🇨🇳CN02
+      - 🇨🇳 Relay_🇨🇳CN03
+      - 🇨🇳 Relay_🇨🇳CN04
+      - 🇨🇳 Relay_🇨🇳CN05
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇬🇧 英国02|BGP
-      - 🇭🇰 V4-香港3082|Azure|x1.0|V2ray
-      - 🇭🇰 V4-香港3084|Azure|x1.0|V2ray
-      - 🇭🇰 [Lv.1] 香港A | 中转 | CDN
-      - 🇸🇬 [Lv.1] 新加坡B | 中转
-      - 🇸🇬 [Lv.1] 新加坡C | 临时节点
-      - 🇺🇸 [Lv.1] 美国A | 中转
-      - 🇺🇸 [Lv.1] 美国B | 中转
-      - 🇺🇸 [Lv.1] 美国C | 直连
-      - 🇨🇳 Relay_-台湾_4411 |32.91Mb
-      - 🇨🇳 vip4 香港-[解锁]台湾哔哩哔哩奶飞
-      - 🇭🇰 香港_3727
-      - 🇨🇳 中国2021.06.30|台湾_3307
-      - 🇨🇳 台湾_5188
-      - 🇭🇰 香港 1赞助版
-      - 🇯🇵 V4-中转3609|上海-日本M|解锁|x1.5|V2ray
-      - 🇸🇬 新加坡02|CN2|解锁流媒体
-      - 🇸🇬 新加坡03|CN2|解锁流媒体
-      - 🇸🇬 新加坡04|CN2|解锁流媒体
-      - 🇸🇬 新加坡05|CN2|解锁流媒体
-      - 🇯🇵 日本01|CN2|解锁流媒体
-      - 🇯🇵 日本02|CN2|解锁流媒体
-      - 🇰🇷 韩国01|CN2
-      - 🇰🇷 韩国02|CN2
-      - 🇰🇷 韩国03|CN2
-      - 🇰🇷 韩国04|CN2
-      - 🇰🇷 韩国05|CN2
-      - 🇭🇰 香港01|BGP|解锁流媒体
-      - 🇭🇰 香港06|CN2|解锁流媒体
-      - 🇭🇰 香港07|CN2|解锁流媒体
-      - 🇭🇰 香港08|CN2|解锁流媒体
-      - 🇭🇰 香港09|CN2|解锁流媒体
-      - 🇭🇰 香港10|CN2|解锁流媒体
-      - 🇭🇰 香港11|HKT|原生IP解锁
-      - 🇭🇰 香港05|BGP|解锁流媒体
-      - 🇭🇰 香港04|BGP|解锁流媒体
+      - 🇯🇵 日本大阪 12(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 17(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 34(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 39(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 30(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 21(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇬🇧 英国 01|BBC|珠移|0.8
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0
+      - 🇨🇳 台湾04 |Hinet|广移|1.0
+      - 🇨🇳 台湾 02|HiNet|青移|1.0
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0 2
+      - 🇨🇳 台湾 02|HiNet|青移|1.0 2
+      - 🇭🇰 云网|天津移动N1-香港
+      - A特殊时期用这个节点
+      - 🇺🇸 洛杉矶
+      - 🇨🇳 台湾 03|HiNet|珠移|0.8
+      - 🇸🇬 新加坡 04|DOcean|珠移|1.0
+      - 🇰🇷 韩国 01|Azure|五邑1.0
+      - 🇯🇵 日本东京 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 8(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 9(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇭🇰 香港-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao
+      - 🇺🇸 美国4 tg@freebaipiao
+      - 🇰🇷 韩国-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao 2
+      - 测试免流服务器
+      - 🇺🇸 公益节点joker007.top 美国1
+      - 🇯🇵 JP-Tokyo-Azure
+      - 🇷🇺 RU-Moscow-Baxet
+      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 移动专用-测试-×2.5
-      - 🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]
-      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
-      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
       - 🇨🇳 CN_25
       - 🇨🇳 CN_997
-      - 🇨🇳 中国ssr06
       - 🇨🇳 @SSRSUB-中国ssr06-付费推荐:suo.yt/ssrsub
-      - 🇺🇸 ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
       - 🇸🇬 V4-中转2980|广东-新加坡|x2.0
-      - 🇯🇵 V4-中转3090|上海-日本M|解锁|x1.5
-      - 🇸🇬 V4-中转3352|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3357|广东-新加坡|x2.5
-      - 🇸🇬 V4-中转3358|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 🇺🇸 美国实验性 IEPL 中继 D02
       - 🇲🇾 Relay_中国-马来西亚_16
+      - 🇨🇳 Relay_🇨🇳CN01
+      - 🇨🇳 Relay_🇨🇳CN02
+      - 🇨🇳 Relay_🇨🇳CN03
+      - 🇨🇳 Relay_🇨🇳CN04
+      - 🇨🇳 Relay_🇨🇳CN05
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧 英国02|BGP
-      - 🇭🇰 V4-香港3082|Azure|x1.0|V2ray
-      - 🇭🇰 V4-香港3084|Azure|x1.0|V2ray
-      - 🇭🇰 [Lv.1] 香港A | 中转 | CDN
-      - 🇸🇬 [Lv.1] 新加坡B | 中转
-      - 🇸🇬 [Lv.1] 新加坡C | 临时节点
-      - 🇺🇸 [Lv.1] 美国A | 中转
-      - 🇺🇸 [Lv.1] 美国B | 中转
-      - 🇺🇸 [Lv.1] 美国C | 直连
-      - 🇨🇳 Relay_-台湾_4411 |32.91Mb
-      - 🇨🇳 vip4 香港-[解锁]台湾哔哩哔哩奶飞
-      - 🇭🇰 香港_3727
-      - 🇨🇳 中国2021.06.30|台湾_3307
-      - 🇨🇳 台湾_5188
-      - 🇭🇰 香港 1赞助版
-      - 🇯🇵 V4-中转3609|上海-日本M|解锁|x1.5|V2ray
-      - 🇸🇬 新加坡02|CN2|解锁流媒体
-      - 🇸🇬 新加坡03|CN2|解锁流媒体
-      - 🇸🇬 新加坡04|CN2|解锁流媒体
-      - 🇸🇬 新加坡05|CN2|解锁流媒体
-      - 🇯🇵 日本01|CN2|解锁流媒体
-      - 🇯🇵 日本02|CN2|解锁流媒体
-      - 🇰🇷 韩国01|CN2
-      - 🇰🇷 韩国02|CN2
-      - 🇰🇷 韩国03|CN2
-      - 🇰🇷 韩国04|CN2
-      - 🇰🇷 韩国05|CN2
-      - 🇭🇰 香港01|BGP|解锁流媒体
-      - 🇭🇰 香港06|CN2|解锁流媒体
-      - 🇭🇰 香港07|CN2|解锁流媒体
-      - 🇭🇰 香港08|CN2|解锁流媒体
-      - 🇭🇰 香港09|CN2|解锁流媒体
-      - 🇭🇰 香港10|CN2|解锁流媒体
-      - 🇭🇰 香港11|HKT|原生IP解锁
-      - 🇭🇰 香港05|BGP|解锁流媒体
-      - 🇭🇰 香港04|BGP|解锁流媒体
+      - 🇯🇵 日本大阪 12(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 17(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 34(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 39(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 30(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 21(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇬🇧 英国 01|BBC|珠移|0.8
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0
+      - 🇨🇳 台湾04 |Hinet|广移|1.0
+      - 🇨🇳 台湾 02|HiNet|青移|1.0
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0 2
+      - 🇨🇳 台湾 02|HiNet|青移|1.0 2
+      - 🇭🇰 云网|天津移动N1-香港
+      - A特殊时期用这个节点
+      - 🇺🇸 洛杉矶
+      - 🇨🇳 台湾 03|HiNet|珠移|0.8
+      - 🇸🇬 新加坡 04|DOcean|珠移|1.0
+      - 🇰🇷 韩国 01|Azure|五邑1.0
+      - 🇯🇵 日本东京 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 8(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 9(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇭🇰 香港-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao
+      - 🇺🇸 美国4 tg@freebaipiao
+      - 🇰🇷 韩国-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao 2
+      - 测试免流服务器
+      - 🇺🇸 公益节点joker007.top 美国1
+      - 🇯🇵 JP-Tokyo-Azure
+      - 🇷🇺 RU-Moscow-Baxet
+      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 移动专用-测试-×2.5
-      - 🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]
-      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
-      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
       - 🇨🇳 CN_25
       - 🇨🇳 CN_997
-      - 🇨🇳 中国ssr06
       - 🇨🇳 @SSRSUB-中国ssr06-付费推荐:suo.yt/ssrsub
-      - 🇺🇸 ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
       - 🇸🇬 V4-中转2980|广东-新加坡|x2.0
-      - 🇯🇵 V4-中转3090|上海-日本M|解锁|x1.5
-      - 🇸🇬 V4-中转3352|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3357|广东-新加坡|x2.5
-      - 🇸🇬 V4-中转3358|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 🇺🇸 美国实验性 IEPL 中继 D02
       - 🇲🇾 Relay_中国-马来西亚_16
+      - 🇨🇳 Relay_🇨🇳CN01
+      - 🇨🇳 Relay_🇨🇳CN02
+      - 🇨🇳 Relay_🇨🇳CN03
+      - 🇨🇳 Relay_🇨🇳CN04
+      - 🇨🇳 Relay_🇨🇳CN05
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇬🇧 英国02|BGP
-      - 🇭🇰 V4-香港3082|Azure|x1.0|V2ray
-      - 🇭🇰 V4-香港3084|Azure|x1.0|V2ray
-      - 🇭🇰 [Lv.1] 香港A | 中转 | CDN
-      - 🇸🇬 [Lv.1] 新加坡B | 中转
-      - 🇸🇬 [Lv.1] 新加坡C | 临时节点
-      - 🇺🇸 [Lv.1] 美国A | 中转
-      - 🇺🇸 [Lv.1] 美国B | 中转
-      - 🇺🇸 [Lv.1] 美国C | 直连
-      - 🇨🇳 Relay_-台湾_4411 |32.91Mb
-      - 🇨🇳 vip4 香港-[解锁]台湾哔哩哔哩奶飞
-      - 🇭🇰 香港_3727
-      - 🇨🇳 中国2021.06.30|台湾_3307
-      - 🇨🇳 台湾_5188
-      - 🇭🇰 香港 1赞助版
-      - 🇯🇵 V4-中转3609|上海-日本M|解锁|x1.5|V2ray
-      - 🇸🇬 新加坡02|CN2|解锁流媒体
-      - 🇸🇬 新加坡03|CN2|解锁流媒体
-      - 🇸🇬 新加坡04|CN2|解锁流媒体
-      - 🇸🇬 新加坡05|CN2|解锁流媒体
-      - 🇯🇵 日本01|CN2|解锁流媒体
-      - 🇯🇵 日本02|CN2|解锁流媒体
-      - 🇰🇷 韩国01|CN2
-      - 🇰🇷 韩国02|CN2
-      - 🇰🇷 韩国03|CN2
-      - 🇰🇷 韩国04|CN2
-      - 🇰🇷 韩国05|CN2
-      - 🇭🇰 香港01|BGP|解锁流媒体
-      - 🇭🇰 香港06|CN2|解锁流媒体
-      - 🇭🇰 香港07|CN2|解锁流媒体
-      - 🇭🇰 香港08|CN2|解锁流媒体
-      - 🇭🇰 香港09|CN2|解锁流媒体
-      - 🇭🇰 香港10|CN2|解锁流媒体
-      - 🇭🇰 香港11|HKT|原生IP解锁
-      - 🇭🇰 香港05|BGP|解锁流媒体
-      - 🇭🇰 香港04|BGP|解锁流媒体
+      - 🇯🇵 日本大阪 12(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 17(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 34(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 39(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 30(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 21(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇬🇧 英国 01|BBC|珠移|0.8
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0
+      - 🇨🇳 台湾04 |Hinet|广移|1.0
+      - 🇨🇳 台湾 02|HiNet|青移|1.0
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0 2
+      - 🇨🇳 台湾 02|HiNet|青移|1.0 2
+      - 🇭🇰 云网|天津移动N1-香港
+      - A特殊时期用这个节点
+      - 🇺🇸 洛杉矶
+      - 🇨🇳 台湾 03|HiNet|珠移|0.8
+      - 🇸🇬 新加坡 04|DOcean|珠移|1.0
+      - 🇰🇷 韩国 01|Azure|五邑1.0
+      - 🇯🇵 日本东京 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 8(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 9(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇭🇰 香港-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao
+      - 🇺🇸 美国4 tg@freebaipiao
+      - 🇰🇷 韩国-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao 2
+      - 测试免流服务器
+      - 🇺🇸 公益节点joker007.top 美国1
+      - 🇯🇵 JP-Tokyo-Azure
+      - 🇷🇺 RU-Moscow-Baxet
+      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 移动专用-测试-×2.5
-      - 🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]
-      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
-      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
       - 🇨🇳 CN_25
       - 🇨🇳 CN_997
-      - 🇨🇳 中国ssr06
       - 🇨🇳 @SSRSUB-中国ssr06-付费推荐:suo.yt/ssrsub
-      - 🇺🇸 ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
       - 🇸🇬 V4-中转2980|广东-新加坡|x2.0
-      - 🇯🇵 V4-中转3090|上海-日本M|解锁|x1.5
-      - 🇸🇬 V4-中转3352|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3357|广东-新加坡|x2.5
-      - 🇸🇬 V4-中转3358|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 🇺🇸 美国实验性 IEPL 中继 D02
       - 🇲🇾 Relay_中国-马来西亚_16
+      - 🇨🇳 Relay_🇨🇳CN01
+      - 🇨🇳 Relay_🇨🇳CN02
+      - 🇨🇳 Relay_🇨🇳CN03
+      - 🇨🇳 Relay_🇨🇳CN04
+      - 🇨🇳 Relay_🇨🇳CN05
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇬🇧 英国02|BGP
-      - 🇭🇰 V4-香港3082|Azure|x1.0|V2ray
-      - 🇭🇰 V4-香港3084|Azure|x1.0|V2ray
-      - 🇭🇰 [Lv.1] 香港A | 中转 | CDN
-      - 🇸🇬 [Lv.1] 新加坡B | 中转
-      - 🇸🇬 [Lv.1] 新加坡C | 临时节点
-      - 🇺🇸 [Lv.1] 美国A | 中转
-      - 🇺🇸 [Lv.1] 美国B | 中转
-      - 🇺🇸 [Lv.1] 美国C | 直连
-      - 🇨🇳 Relay_-台湾_4411 |32.91Mb
-      - 🇨🇳 vip4 香港-[解锁]台湾哔哩哔哩奶飞
-      - 🇭🇰 香港_3727
-      - 🇨🇳 中国2021.06.30|台湾_3307
-      - 🇨🇳 台湾_5188
-      - 🇭🇰 香港 1赞助版
-      - 🇯🇵 V4-中转3609|上海-日本M|解锁|x1.5|V2ray
-      - 🇸🇬 新加坡02|CN2|解锁流媒体
-      - 🇸🇬 新加坡03|CN2|解锁流媒体
-      - 🇸🇬 新加坡04|CN2|解锁流媒体
-      - 🇸🇬 新加坡05|CN2|解锁流媒体
-      - 🇯🇵 日本01|CN2|解锁流媒体
-      - 🇯🇵 日本02|CN2|解锁流媒体
-      - 🇰🇷 韩国01|CN2
-      - 🇰🇷 韩国02|CN2
-      - 🇰🇷 韩国03|CN2
-      - 🇰🇷 韩国04|CN2
-      - 🇰🇷 韩国05|CN2
-      - 🇭🇰 香港01|BGP|解锁流媒体
-      - 🇭🇰 香港06|CN2|解锁流媒体
-      - 🇭🇰 香港07|CN2|解锁流媒体
-      - 🇭🇰 香港08|CN2|解锁流媒体
-      - 🇭🇰 香港09|CN2|解锁流媒体
-      - 🇭🇰 香港10|CN2|解锁流媒体
-      - 🇭🇰 香港11|HKT|原生IP解锁
-      - 🇭🇰 香港05|BGP|解锁流媒体
-      - 🇭🇰 香港04|BGP|解锁流媒体
+      - 🇯🇵 日本大阪 12(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 17(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 34(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 39(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 30(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 21(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇬🇧 英国 01|BBC|珠移|0.8
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0
+      - 🇨🇳 台湾04 |Hinet|广移|1.0
+      - 🇨🇳 台湾 02|HiNet|青移|1.0
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0 2
+      - 🇨🇳 台湾 02|HiNet|青移|1.0 2
+      - 🇭🇰 云网|天津移动N1-香港
+      - A特殊时期用这个节点
+      - 🇺🇸 洛杉矶
+      - 🇨🇳 台湾 03|HiNet|珠移|0.8
+      - 🇸🇬 新加坡 04|DOcean|珠移|1.0
+      - 🇰🇷 韩国 01|Azure|五邑1.0
+      - 🇯🇵 日本东京 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 8(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 9(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇭🇰 香港-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao
+      - 🇺🇸 美国4 tg@freebaipiao
+      - 🇰🇷 韩国-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao 2
+      - 测试免流服务器
+      - 🇺🇸 公益节点joker007.top 美国1
+      - 🇯🇵 JP-Tokyo-Azure
+      - 🇷🇺 RU-Moscow-Baxet
+      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 移动专用-测试-×2.5
-      - 🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]
-      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
-      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
       - 🇨🇳 CN_25
       - 🇨🇳 CN_997
-      - 🇨🇳 中国ssr06
       - 🇨🇳 @SSRSUB-中国ssr06-付费推荐:suo.yt/ssrsub
-      - 🇺🇸 ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
       - 🇸🇬 V4-中转2980|广东-新加坡|x2.0
-      - 🇯🇵 V4-中转3090|上海-日本M|解锁|x1.5
-      - 🇸🇬 V4-中转3352|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3357|广东-新加坡|x2.5
-      - 🇸🇬 V4-中转3358|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 🇺🇸 美国实验性 IEPL 中继 D02
       - 🇲🇾 Relay_中国-马来西亚_16
+      - 🇨🇳 Relay_🇨🇳CN01
+      - 🇨🇳 Relay_🇨🇳CN02
+      - 🇨🇳 Relay_🇨🇳CN03
+      - 🇨🇳 Relay_🇨🇳CN04
+      - 🇨🇳 Relay_🇨🇳CN05
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇬🇧 英国02|BGP
-      - 🇭🇰 V4-香港3082|Azure|x1.0|V2ray
-      - 🇭🇰 V4-香港3084|Azure|x1.0|V2ray
-      - 🇭🇰 [Lv.1] 香港A | 中转 | CDN
-      - 🇸🇬 [Lv.1] 新加坡B | 中转
-      - 🇸🇬 [Lv.1] 新加坡C | 临时节点
-      - 🇺🇸 [Lv.1] 美国A | 中转
-      - 🇺🇸 [Lv.1] 美国B | 中转
-      - 🇺🇸 [Lv.1] 美国C | 直连
-      - 🇨🇳 Relay_-台湾_4411 |32.91Mb
-      - 🇨🇳 vip4 香港-[解锁]台湾哔哩哔哩奶飞
-      - 🇭🇰 香港_3727
-      - 🇨🇳 中国2021.06.30|台湾_3307
-      - 🇨🇳 台湾_5188
-      - 🇭🇰 香港 1赞助版
-      - 🇯🇵 V4-中转3609|上海-日本M|解锁|x1.5|V2ray
-      - 🇸🇬 新加坡02|CN2|解锁流媒体
-      - 🇸🇬 新加坡03|CN2|解锁流媒体
-      - 🇸🇬 新加坡04|CN2|解锁流媒体
-      - 🇸🇬 新加坡05|CN2|解锁流媒体
-      - 🇯🇵 日本01|CN2|解锁流媒体
-      - 🇯🇵 日本02|CN2|解锁流媒体
-      - 🇰🇷 韩国01|CN2
-      - 🇰🇷 韩国02|CN2
-      - 🇰🇷 韩国03|CN2
-      - 🇰🇷 韩国04|CN2
-      - 🇰🇷 韩国05|CN2
-      - 🇭🇰 香港01|BGP|解锁流媒体
-      - 🇭🇰 香港06|CN2|解锁流媒体
-      - 🇭🇰 香港07|CN2|解锁流媒体
-      - 🇭🇰 香港08|CN2|解锁流媒体
-      - 🇭🇰 香港09|CN2|解锁流媒体
-      - 🇭🇰 香港10|CN2|解锁流媒体
-      - 🇭🇰 香港11|HKT|原生IP解锁
-      - 🇭🇰 香港05|BGP|解锁流媒体
-      - 🇭🇰 香港04|BGP|解锁流媒体
+      - 🇯🇵 日本大阪 12(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 17(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 34(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 39(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 30(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 21(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇬🇧 英国 01|BBC|珠移|0.8
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0
+      - 🇨🇳 台湾04 |Hinet|广移|1.0
+      - 🇨🇳 台湾 02|HiNet|青移|1.0
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0 2
+      - 🇨🇳 台湾 02|HiNet|青移|1.0 2
+      - 🇭🇰 云网|天津移动N1-香港
+      - A特殊时期用这个节点
+      - 🇺🇸 洛杉矶
+      - 🇨🇳 台湾 03|HiNet|珠移|0.8
+      - 🇸🇬 新加坡 04|DOcean|珠移|1.0
+      - 🇰🇷 韩国 01|Azure|五邑1.0
+      - 🇯🇵 日本东京 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 8(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 9(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇭🇰 香港-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao
+      - 🇺🇸 美国4 tg@freebaipiao
+      - 🇰🇷 韩国-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao 2
+      - 测试免流服务器
+      - 🇺🇸 公益节点joker007.top 美国1
+      - 🇯🇵 JP-Tokyo-Azure
+      - 🇷🇺 RU-Moscow-Baxet
+      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 移动专用-测试-×2.5
-      - 🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]
-      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
-      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
       - 🇨🇳 CN_25
       - 🇨🇳 CN_997
-      - 🇨🇳 中国ssr06
       - 🇨🇳 @SSRSUB-中国ssr06-付费推荐:suo.yt/ssrsub
-      - 🇺🇸 ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
       - 🇸🇬 V4-中转2980|广东-新加坡|x2.0
-      - 🇯🇵 V4-中转3090|上海-日本M|解锁|x1.5
-      - 🇸🇬 V4-中转3352|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3357|广东-新加坡|x2.5
-      - 🇸🇬 V4-中转3358|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 🇺🇸 美国实验性 IEPL 中继 D02
       - 🇲🇾 Relay_中国-马来西亚_16
+      - 🇨🇳 Relay_🇨🇳CN01
+      - 🇨🇳 Relay_🇨🇳CN02
+      - 🇨🇳 Relay_🇨🇳CN03
+      - 🇨🇳 Relay_🇨🇳CN04
+      - 🇨🇳 Relay_🇨🇳CN05
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧 英国02|BGP
-      - 🇭🇰 V4-香港3082|Azure|x1.0|V2ray
-      - 🇭🇰 V4-香港3084|Azure|x1.0|V2ray
-      - 🇭🇰 [Lv.1] 香港A | 中转 | CDN
-      - 🇸🇬 [Lv.1] 新加坡B | 中转
-      - 🇸🇬 [Lv.1] 新加坡C | 临时节点
-      - 🇺🇸 [Lv.1] 美国A | 中转
-      - 🇺🇸 [Lv.1] 美国B | 中转
-      - 🇺🇸 [Lv.1] 美国C | 直连
-      - 🇨🇳 Relay_-台湾_4411 |32.91Mb
-      - 🇨🇳 vip4 香港-[解锁]台湾哔哩哔哩奶飞
-      - 🇭🇰 香港_3727
-      - 🇨🇳 中国2021.06.30|台湾_3307
-      - 🇨🇳 台湾_5188
-      - 🇭🇰 香港 1赞助版
-      - 🇯🇵 V4-中转3609|上海-日本M|解锁|x1.5|V2ray
-      - 🇸🇬 新加坡02|CN2|解锁流媒体
-      - 🇸🇬 新加坡03|CN2|解锁流媒体
-      - 🇸🇬 新加坡04|CN2|解锁流媒体
-      - 🇸🇬 新加坡05|CN2|解锁流媒体
-      - 🇯🇵 日本01|CN2|解锁流媒体
-      - 🇯🇵 日本02|CN2|解锁流媒体
-      - 🇰🇷 韩国01|CN2
-      - 🇰🇷 韩国02|CN2
-      - 🇰🇷 韩国03|CN2
-      - 🇰🇷 韩国04|CN2
-      - 🇰🇷 韩国05|CN2
-      - 🇭🇰 香港01|BGP|解锁流媒体
-      - 🇭🇰 香港06|CN2|解锁流媒体
-      - 🇭🇰 香港07|CN2|解锁流媒体
-      - 🇭🇰 香港08|CN2|解锁流媒体
-      - 🇭🇰 香港09|CN2|解锁流媒体
-      - 🇭🇰 香港10|CN2|解锁流媒体
-      - 🇭🇰 香港11|HKT|原生IP解锁
-      - 🇭🇰 香港05|BGP|解锁流媒体
-      - 🇭🇰 香港04|BGP|解锁流媒体
+      - 🇯🇵 日本大阪 12(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 17(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 34(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 39(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 30(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 21(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇬🇧 英国 01|BBC|珠移|0.8
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0
+      - 🇨🇳 台湾04 |Hinet|广移|1.0
+      - 🇨🇳 台湾 02|HiNet|青移|1.0
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0 2
+      - 🇨🇳 台湾 02|HiNet|青移|1.0 2
+      - 🇭🇰 云网|天津移动N1-香港
+      - A特殊时期用这个节点
+      - 🇺🇸 洛杉矶
+      - 🇨🇳 台湾 03|HiNet|珠移|0.8
+      - 🇸🇬 新加坡 04|DOcean|珠移|1.0
+      - 🇰🇷 韩国 01|Azure|五邑1.0
+      - 🇯🇵 日本东京 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 8(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 9(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇭🇰 香港-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao
+      - 🇺🇸 美国4 tg@freebaipiao
+      - 🇰🇷 韩国-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao 2
+      - 测试免流服务器
+      - 🇺🇸 公益节点joker007.top 美国1
+      - 🇯🇵 JP-Tokyo-Azure
+      - 🇷🇺 RU-Moscow-Baxet
+      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 移动专用-测试-×2.5
-      - 🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]
-      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
-      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
       - 🇨🇳 CN_25
       - 🇨🇳 CN_997
-      - 🇨🇳 中国ssr06
       - 🇨🇳 @SSRSUB-中国ssr06-付费推荐:suo.yt/ssrsub
-      - 🇺🇸 ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
       - 🇸🇬 V4-中转2980|广东-新加坡|x2.0
-      - 🇯🇵 V4-中转3090|上海-日本M|解锁|x1.5
-      - 🇸🇬 V4-中转3352|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3357|广东-新加坡|x2.5
-      - 🇸🇬 V4-中转3358|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 🇺🇸 美国实验性 IEPL 中继 D02
       - 🇲🇾 Relay_中国-马来西亚_16
+      - 🇨🇳 Relay_🇨🇳CN01
+      - 🇨🇳 Relay_🇨🇳CN02
+      - 🇨🇳 Relay_🇨🇳CN03
+      - 🇨🇳 Relay_🇨🇳CN04
+      - 🇨🇳 Relay_🇨🇳CN05
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -562,68 +466,56 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧 英国02|BGP
-      - 🇭🇰 V4-香港3082|Azure|x1.0|V2ray
-      - 🇭🇰 V4-香港3084|Azure|x1.0|V2ray
-      - 🇭🇰 [Lv.1] 香港A | 中转 | CDN
-      - 🇸🇬 [Lv.1] 新加坡B | 中转
-      - 🇸🇬 [Lv.1] 新加坡C | 临时节点
-      - 🇺🇸 [Lv.1] 美国A | 中转
-      - 🇺🇸 [Lv.1] 美国B | 中转
-      - 🇺🇸 [Lv.1] 美国C | 直连
-      - 🇨🇳 Relay_-台湾_4411 |32.91Mb
-      - 🇨🇳 vip4 香港-[解锁]台湾哔哩哔哩奶飞
-      - 🇭🇰 香港_3727
-      - 🇨🇳 中国2021.06.30|台湾_3307
-      - 🇨🇳 台湾_5188
-      - 🇭🇰 香港 1赞助版
-      - 🇯🇵 V4-中转3609|上海-日本M|解锁|x1.5|V2ray
-      - 🇸🇬 新加坡02|CN2|解锁流媒体
-      - 🇸🇬 新加坡03|CN2|解锁流媒体
-      - 🇸🇬 新加坡04|CN2|解锁流媒体
-      - 🇸🇬 新加坡05|CN2|解锁流媒体
-      - 🇯🇵 日本01|CN2|解锁流媒体
-      - 🇯🇵 日本02|CN2|解锁流媒体
-      - 🇰🇷 韩国01|CN2
-      - 🇰🇷 韩国02|CN2
-      - 🇰🇷 韩国03|CN2
-      - 🇰🇷 韩国04|CN2
-      - 🇰🇷 韩国05|CN2
-      - 🇭🇰 香港01|BGP|解锁流媒体
-      - 🇭🇰 香港06|CN2|解锁流媒体
-      - 🇭🇰 香港07|CN2|解锁流媒体
-      - 🇭🇰 香港08|CN2|解锁流媒体
-      - 🇭🇰 香港09|CN2|解锁流媒体
-      - 🇭🇰 香港10|CN2|解锁流媒体
-      - 🇭🇰 香港11|HKT|原生IP解锁
-      - 🇭🇰 香港05|BGP|解锁流媒体
-      - 🇭🇰 香港04|BGP|解锁流媒体
+      - 🇯🇵 日本大阪 12(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 17(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 34(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 39(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 30(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 21(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 1(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇬🇧 英国 01|BBC|珠移|0.8
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0
+      - 🇨🇳 台湾04 |Hinet|广移|1.0
+      - 🇨🇳 台湾 02|HiNet|青移|1.0
+      - 🇸🇬 新加坡 01|DOcean|广移|1.0 2
+      - 🇨🇳 台湾 02|HiNet|青移|1.0 2
+      - 🇭🇰 云网|天津移动N1-香港
+      - A特殊时期用这个节点
+      - 🇺🇸 洛杉矶
+      - 🇨🇳 台湾 03|HiNet|珠移|0.8
+      - 🇸🇬 新加坡 04|DOcean|珠移|1.0
+      - 🇰🇷 韩国 01|Azure|五邑1.0
+      - 🇯🇵 日本东京 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 8(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 9(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇭🇰 香港-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao
+      - 🇺🇸 美国4 tg@freebaipiao
+      - 🇰🇷 韩国-1-北京中转
+      - 🇯🇵 日本1 tg@freebaipiao 2
+      - 测试免流服务器
+      - 🇺🇸 公益节点joker007.top 美国1
+      - 🇯🇵 JP-Tokyo-Azure
+      - 🇷🇺 RU-Moscow-Baxet
+      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 移动专用-测试-×2.5
-      - 🇸🇬 中转|新加坡Singtel03|华中隧道[流媒体解锁]
-      - 🇭🇰 【Tunnel_B】香港  普通 3 - Azure - 0.5x
-      - 🇭🇰 V2-中转3445|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3446|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3447|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3448|广东-香港HGC|解锁|x1.5
-      - 🇭🇰 V2-中转3449|广东-香港HGC|解锁|x1.5
       - 🇨🇳 CN_25
       - 🇨🇳 CN_997
-      - 🇨🇳 中国ssr06
       - 🇨🇳 @SSRSUB-中国ssr06-付费推荐:suo.yt/ssrsub
-      - 🇺🇸 ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
       - 🇸🇬 V4-中转2980|广东-新加坡|x2.0
-      - 🇯🇵 V4-中转3090|上海-日本M|解锁|x1.5
-      - 🇸🇬 V4-中转3352|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇸🇬 V4-中转3357|广东-新加坡|x2.5
-      - 🇸🇬 V4-中转3358|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
-      - 🇨🇳 中国-台湾宜兰 IPLC D02
-      - 🇰🇷 中国-韩国 IPLC D01 Netflix
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 🇺🇸 美国实验性 IEPL 中继 D02
       - 🇲🇾 Relay_中国-马来西亚_16
+      - 🇨🇳 Relay_🇨🇳CN01
+      - 🇨🇳 Relay_🇨🇳CN02
+      - 🇨🇳 Relay_🇨🇳CN03
+      - 🇨🇳 Relay_🇨🇳CN04
+      - 🇨🇳 Relay_🇨🇳CN05
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
