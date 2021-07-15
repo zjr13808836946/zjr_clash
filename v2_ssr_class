@@ -5,389 +5,509 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 CN_22, server: 185.124.240.150, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: osk6.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: osk6.speedsvip.co}}
-  - {name: 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty26.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty26.speedsvip.co}}
-  - {name: 🇺🇸 美国, server: us02.iganfan.xyz, port: 23333, type: trojan, password: 433fb846-280f-341a-a5be-62a9be2dd29a, sni: us02.iganfan.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 郑州联通-HKhttps://bit.ly/3uWuS7a, server: 42.236.94.1, port: 80, type: vmess, uuid: d51b0f1b-cf5a-454c-bc4c-171491ff5e74, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 002.cdn.8x.cx.hit.edu.cn}}
-  - {name: 🇺🇸 Relay_🇭🇰HK-🇺🇸US_2548, server: 18.162.50.178, port: 20430, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 CN_10, server: 185.124.240.150, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: 🇺🇸 美国（感谢关注youtube：8度科技）, server: jpaz1-1-1.biteb.xyz, port: 51131, type: vmess, uuid: b449003d-fabf-3360-8870-caff2d819afb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: jpaz1-1-1.biteb.xyz}}
-  - {name: 🇺🇸 美国（感谢关注youtube：8度科技） 2, server: jpaz1-1-1.biteb.xyz, port: 51132, type: vmess, uuid: b449003d-fabf-3360-8870-caff2d819afb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: jpaz1-1-1.biteb.xyz}}
-  - {name: 🇺🇸 美国（感谢关注youtube：8度科技） 3, server: jpaz1-1-1.biteb.xyz, port: 51131, type: vmess, uuid: b449003d-fabf-3360-8870-caff2d819afb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: jpaz1-1-1.biteb.xyz}}
-  - {name: 🇺🇸 US 7（感谢关注youtube：8度科技）, server: 96.43.91.60, port: 443, type: vmess, uuid: 3bfb43e2-7dfe-4757-86ee-1ce9fb9fd13a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.45218443.xyz}}
-  - {name: 🇭🇰 解锁丨香港01丨x1.0, server: yd.fenlin.club, port: 60013, type: vmess, uuid: abc92ede-4dc5-4c6f-9af2-ee8a4d1f8d7b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: 🇭🇰 解锁丨香港02丨x1.0, server: yd.fenlin.club, port: 60004, type: vmess, uuid: abc92ede-4dc5-4c6f-9af2-ee8a4d1f8d7b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: 🇸🇬 解锁丨新加坡01丨x1.0, server: yd.fenlin.club, port: 60009, type: vmess, uuid: abc92ede-4dc5-4c6f-9af2-ee8a4d1f8d7b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: 🇸🇬 解锁丨新加坡02丨x1.0, server: yd.fenlin.club, port: 60010, type: vmess, uuid: abc92ede-4dc5-4c6f-9af2-ee8a4d1f8d7b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: 🇯🇵 解锁丨日本01丨x1.0, server: yd.fenlin.club, port: 60001, type: vmess, uuid: abc92ede-4dc5-4c6f-9af2-ee8a4d1f8d7b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: 🇯🇵 解锁丨日本02丨x1.0, server: yd.fenlin.club, port: 60002, type: vmess, uuid: abc92ede-4dc5-4c6f-9af2-ee8a4d1f8d7b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: 🇺🇸 解锁丨美国01丨x1.0, server: yd.fenlin.club, port: 60007, type: vmess, uuid: abc92ede-4dc5-4c6f-9af2-ee8a4d1f8d7b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: 🇺🇸 解锁丨美国02丨x1.0, server: yd.fenlin.club, port: 60008, type: vmess, uuid: abc92ede-4dc5-4c6f-9af2-ee8a4d1f8d7b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: 🇮🇳 中继丨印度01丨x1.0, server: yd.fenlin.club, port: 60015, type: vmess, uuid: abc92ede-4dc5-4c6f-9af2-ee8a4d1f8d7b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: 🇮🇳 中继丨印度02丨x1.0, server: yd.fenlin.club, port: 60006, type: vmess, uuid: abc92ede-4dc5-4c6f-9af2-ee8a4d1f8d7b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: 🇨🇳 中继丨台湾01丨x1.0, server: yd.fenlin.club, port: 61000, type: vmess, uuid: abc92ede-4dc5-4c6f-9af2-ee8a4d1f8d7b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: 🇨🇳 中继丨台湾02丨x1.0, server: yd.fenlin.club, port: 61001, type: vmess, uuid: abc92ede-4dc5-4c6f-9af2-ee8a4d1f8d7b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: yd.fenlin.club}}
-  - {name: 🇺🇸 天津移动-HKhttps://bit.ly/3uWuS7a, server: 111.32.136.1, port: 80, type: vmess, uuid: d51b0f1b-cf5a-454c-bc4c-171491ff5e74, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 001.cdn.8x.cx.hit.edu.cn}}
-  - {name: 🇺🇸 宁波电信-HKhttps://bit.ly/3uWuS7a, server: 115.231.187.1, port: 80, type: vmess, uuid: d51b0f1b-cf5a-454c-bc4c-171491ff5e74, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 001.cdn.8x.cx.hit.edu.cn}}
-  - {name: 🇯🇵 日本02 | 中转AZ x0.5, server: relay.xxl123.fun, port: 20088, type: vmess, uuid: 235e8dce-80ac-41cb-98f6-89f3d76a2628, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /path, ws-headers: {Host: "http://ec2-54-223-120-161.cn-north-1.compute.amazonaws.com.cn,f932c3d98981b.download.microsoft.com"}}
-  - {name: 🇺🇸 美国 2, server: jpaz1-1-1.biteb.xyz, port: 51132, type: vmess, uuid: b449003d-fabf-3360-8870-caff2d819afb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: jpaz1-1-1.biteb.xyz}}
-  - {name: 🇭🇰 V2 | Vmshell香港 | SSR, server: zj3c.nat.3.huanlinserver.com, port: 25977, type: ss, cipher: chacha20-ietf-poly1305, password: 75d56571-3289-4d76-a898-166379cad4a0}
-  - {name: 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ho15.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ho15.speedsvip.co}}
-  - {name: 🇺🇸 公益节点joker007.top 美国2, server: qn-a-02.joker007.top, port: 80, type: vmess, uuid: e90c4ab7-c3f0-43b0-80f8-48b4fffec448, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: qn-a-02.joker007.top}}
-  - {name: 🇺🇸 美国N01, server: 0001.nio.gofast.run, port: 443, type: trojan, password: 37acbb3f-4f33-4c80-9a3d-ff7b3b75be90, sni: 0001.nio.gofast.run, skip-cert-verify: false}
-  - {name: 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: osk10.speedsvip.co, port: 443, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: osk10.speedsvip.co}}
-  - {name: 移动专用-测试-×2.5, server: cmyh.ddns.566366.xyz, port: 190, type: vmess, uuid: a5331506-c4ae-3cdd-8759-f952492b4ebd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /wmsxwd, ws-headers: {Host: cmyh.ddns.566366.xyz}}
-  - {name: 🇯🇵 日本东京 31(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty31.speedsvip.co, port: 443, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty31.speedsvip.co}}
-  - {name: 🇯🇵 日本东京 27(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty27.speedsvip.co, port: 443, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty27.speedsvip.co}}
+  - {name: 🇨🇳 【直连】TWN/台湾 B, server: twn01.ip4.ddns.acg.photos, port: 80, type: vmess, uuid: 6eb4f8d5-5b99-4eb0-a580-e15c4b852555, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: twn01.ip4.ddns.acg.photos}}
+  - {name: 🇸🇬 【中转】SIN/狮城 A - 天津移动, server: 111.32.136.1, port: 80, type: vmess, uuid: 6eb4f8d5-5b99-4eb0-a580-e15c4b852555, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 003.cdn.8x.cx.hit.edu.cn}}
+  - {name: 🇸🇬 【中转】SIN/狮城 A - 江苏移动, server: 112.25.91.1, port: 80, type: vmess, uuid: 6eb4f8d5-5b99-4eb0-a580-e15c4b852555, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 003.cdn.8x.cx.hit.edu.cn}}
+  - {name: NONE, server: v1.proxypools.top, port: 8443, type: trojan, password: 78839a87-f2f1-478d-adb4-5eff7d213b4d, sni: v1.proxypools.top, skip-cert-verify: false}
+  - {name: zhuomian.apaap.xyz_vmess_ws, server: zhuomian.apaap.xyz, port: 443, type: vmess, uuid: 759f0357-0f94-46fe-c9c0-9d25823c3624, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: "/pedtvws?ed=2048", ws-headers: {Host: zhuomian.apaap.xyz}}
+  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles, server: 67.21.70.175, port: 443, type: vmess, uuid: 6e37dfd3-534d-44f2-828d-16e7a9c0bfb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.30379939.xyz}}
+  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2, server: 170.178.165.253, port: 443, type: vmess, uuid: ee954308-5990-4914-b74f-b7be76963fde, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.55916573.xyz}}
+  - {name: 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong, server: hk1.auto.starlink.st, port: 65000, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点), server: 1e5495d9614c.fkunky.cn, port: 55413, type: vmess, uuid: f8ac95e7-098d-33c9-ac57-219850387ea7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}}
+  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3, server: 67.21.85.81, port: 443, type: vmess, uuid: 0b7f8d71-9a22-44c7-b6a1-3b86e295c8f0, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.61184446.xyz}}
+  - {name: 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2, server: 1e5495d9614c.fkunky.cn, port: 55411, type: vmess, uuid: f8ac95e7-098d-33c9-ac57-219850387ea7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}}
+  - {name: 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点), server: cn2.relay.starlink.st, port: 65008, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4, server: 67.21.70.180, port: 443, type: vmess, uuid: 6e37dfd3-534d-44f2-828d-16e7a9c0bfb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.30379939.xyz}}
+  - {name: 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2, server: cn2.relay.starlink.st, port: 65005, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3, server: cn1.relay.starlink.st, port: 65005, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3, server: cn2.relay.starlink.st, port: 65006, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4, server: cn2.relay.starlink.st, port: 65007, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "| 5.52Mb", server: 1.0.0.0, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: Relay_ |28.38Mb, server: cn2.relay.starlink.st, port: 65004, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 频道, server: 104.200.131.165, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: cf 23来自@tggonghai公海频道, server: 104.19.181.164, port: 443, type: vmess, uuid: 9bddd3b6-7b24-4575-ae3e-63fe8b30ed26, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /tggonghai, ws-headers: {Host: g23.newword.site}}
+  - {name: 🇺🇸 航海-美国3, server: shanghai.lianshangni.icu, port: 30175, type: vmess, uuid: 8bdaf2a5-102c-35f4-9939-9388b4ca90b3, alterId: 16, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 149.248.10.186}}
+  - {name: 🇺🇸 美国Y04, server: 0004.yedea.gofast.run, port: 443, type: trojan, password: 37acbb3f-4f33-4c80-9a3d-ff7b3b75be90, sni: 0004.yedea.gofast.run, skip-cert-verify: false}
+  - {name: 🇸🇬 节点更新https://bit.ly/3uWuS7a 37, server: ip.codeforces.live, port: 443, type: vmess, uuid: e6397eda-dd27-4832-a693-b3fb156ec0f3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /233blog, ws-headers: {Host: rn.ddns1312.top}}
+  - {name: 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14, server: 104.19.45.117, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇯🇵 日本自搭, server: 54.199.147.148, port: 80, type: vmess, uuid: 44ad0ab4-96a6-4efd-ff9f-353f5456c3f2, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: Pool_ | 8.79Mb, server: 107.167.26.27, port: 443, type: vmess, uuid: 17c10e13-bc5a-4a16-beca-decc8ad4135c, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.53493447.xyz}}
+  - {name: Relay_ |34.06Mb, server: cn2.relay.starlink.st, port: 65005, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "|22.85Mb", server: 64.32.17.32, port: 443, type: vmess, uuid: c8620345-7687-4b2c-b9c1-d39d434e25d4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.15169971.xyz}}
+  - {name: 🇸🇬 SG1(IEPL) - 沪新国际专线, server: cn2.relay.starlink.st, port: 65008, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty40.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty40.speedsvip.co}}
   - {name: 🇺🇸 美国-1-北京中转, server: 52.81.94.63, port: 12204, type: vmess, uuid: 57b9f56f-8f51-3af3-87de-87b6e46b2e17, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 52.81.94.63}}
-  - {name: 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty29.speedsvip.co, port: 443, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty29.speedsvip.co}}
+  - {name: 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ho15.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ho15.speedsvip.co}}
+  - {name: 🇺🇸 美国N01, server: 0001.nio.gofast.run, port: 443, type: trojan, password: 37acbb3f-4f33-4c80-9a3d-ff7b3b75be90, sni: 0001.nio.gofast.run, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国 Magic 02 1x 解锁, server: 0519-s1.cm.liangxinyun.xyz, port: 5201, type: trojan, password: 547855be-8027-3519-9ef6-560c72ba4b4d, sni: 0519-s1.cm.liangxinyun.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 Magic 01 1x 原生IP, server: 0750-s1.cm.liangxinyun.xyz, port: 5800, type: trojan, password: 547855be-8027-3519-9ef6-560c72ba4b4d, sni: 0750-s1.cm.liangxinyun.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 Magic 03 1x 原生IP, server: 0750-s1.cm.liangxinyun.xyz, port: 5802, type: trojan, password: 547855be-8027-3519-9ef6-560c72ba4b4d, sni: 0750-s1.cm.liangxinyun.xyz, skip-cert-verify: false}
+  - {name: 🇺🇸 美国（群友橘子分享的节点）, server: us2.paopao.cf, port: 443, type: vmess, uuid: 7f6b65e4-6d5b-4137-a1dc-d32f4a810239, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /tgzhucaidan, ws-headers: {Host: us2.paopao.cf}}
+  - {name: Relay_ | 1.84Mb, server: cn2.relay.starlink.st, port: 65003, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: Relay_ |24.05Mb, server: 67.21.72.237, port: 443, type: vmess, uuid: 2892319f-6662-45ae-b49f-3bc03db850c3, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.26001552.xyz}}
+  - {name: Relay_ |28.38Mb 2, server: cn2.relay.starlink.st, port: 65004, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: Relay_ |10.20Mb, server: cn2.relay.starlink.st, port: 65008, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 V4-中转3354|广东-新加坡|x2.5, server: linode-zy.ddns-only.xyz, port: 13354, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
   - {name: 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5, server: guangdong05.ddns-only.xyz, port: 13489, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
   - {name: 🇸🇬 V4-中转3558|广东-新加坡|x2.0, server: linode-zy.ddns-only.xyz, port: 13558, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
+  - {name: 42.157.196.104, server: 42.157.196.104, port: 20886, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 150555:IrOsdRCSpb, obfs-param: ajax.microsoft.com}
+  - {name: NL |21.99Mb, server: 185.186.245.44, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
+  - {name: NL |22.18Mb, server: 185.186.245.44, port: 8097, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
+  - {name: NL |22.74Mb, server: 185.186.245.44, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
+  - {name: 🇨🇳 Relay_🇨🇳CN | 1.61Mb, server: agahk.q88q.ml, port: 20001, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:ugxrw29ogq, obfs-param: 4bfb0623.baidu.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN |10.95Mb, server: relayneko.q88q.ml, port: 25167, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:ugxrw29ogq, obfs-param: 4bfb0623.baidu.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN |28.85Mb, server: cu.gkd.world, port: 10693, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10522:SiJIyH, obfs-param: .microsoft.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb, server: agahk.q88q.ml, port: 20023, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:ugxrw29ogq, obfs-param: 4bfb0623.baidu.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839, server: agahk.q88q.ml, port: 20001, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:ugxrw29ogq, obfs-param: 4bfb0623.baidu.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834, server: cu.gkd.world, port: 10693, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10522:SiJIyH, obfs-param: .microsoft.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833, server: relayneko.q88q.ml, port: 25162, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:ugxrw29ogq, obfs-param: 4bfb0623.baidu.com}
   - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844, server: relayneko.q88q.ml, port: 25171, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:ugxrw29ogq, obfs-param: 4bfb0623.baidu.com}
   - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848, server: relayneko.q88q.ml, port: 25167, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:ugxrw29ogq, obfs-param: 4bfb0623.baidu.com}
-  - {name: 42.157.196.104, server: 42.157.196.104, port: 20886, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 150555:IrOsdRCSpb, obfs-param: ajax.microsoft.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 CN_22
-      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国
-      - 🇺🇸 郑州联通-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 Relay_🇭🇰HK-🇺🇸US_2548
-      - 🇨🇳 CN_10
-      - 🇺🇸 美国（感谢关注youtube：8度科技）
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 3
-      - 🇺🇸 US 7（感谢关注youtube：8度科技）
-      - 🇭🇰 解锁丨香港01丨x1.0
-      - 🇭🇰 解锁丨香港02丨x1.0
-      - 🇸🇬 解锁丨新加坡01丨x1.0
-      - 🇸🇬 解锁丨新加坡02丨x1.0
-      - 🇯🇵 解锁丨日本01丨x1.0
-      - 🇯🇵 解锁丨日本02丨x1.0
-      - 🇺🇸 解锁丨美国01丨x1.0
-      - 🇺🇸 解锁丨美国02丨x1.0
-      - 🇮🇳 中继丨印度01丨x1.0
-      - 🇮🇳 中继丨印度02丨x1.0
-      - 🇨🇳 中继丨台湾01丨x1.0
-      - 🇨🇳 中继丨台湾02丨x1.0
-      - 🇺🇸 天津移动-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 宁波电信-HKhttps://bit.ly/3uWuS7a
-      - 🇯🇵 日本02 | 中转AZ x0.5
-      - 🇺🇸 美国 2
-      - 🇭🇰 V2 | Vmshell香港 | SSR
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 公益节点joker007.top 美国2
-      - 🇺🇸 美国N01
-      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 移动专用-测试-×2.5
-      - 🇯🇵 日本东京 31(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 27(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇨🇳 【直连】TWN/台湾 B
+      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
+      - NONE
+      - zhuomian.apaap.xyz_vmess_ws
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
+      - "| 5.52Mb"
+      - Relay_ |28.38Mb
+      - 频道
+      - cf 23来自@tggonghai公海频道
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
+      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
+      - 🇯🇵 日本自搭
+      - Pool_ | 8.79Mb
+      - Relay_ |34.06Mb
+      - "|22.85Mb"
+      - 🇸🇬 SG1(IEPL) - 沪新国际专线
+      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 🇺🇸 美国-1-北京中转
-      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国N01
+      - 🇰🇷 韩国 Magic 02 1x 解锁
+      - 🇭🇰 香港 Magic 01 1x 原生IP
+      - 🇭🇰 香港 Magic 03 1x 原生IP
+      - 🇺🇸 美国（群友橘子分享的节点）
+      - Relay_ | 1.84Mb
+      - Relay_ |24.05Mb
+      - Relay_ |28.38Mb 2
+      - Relay_ |10.20Mb
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
+      - 42.157.196.104
+      - NL |21.99Mb
+      - NL |22.18Mb
+      - NL |22.74Mb
+      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
+      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
+      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
       - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
       - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
-      - 42.157.196.104
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 CN_22
-      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国
-      - 🇺🇸 郑州联通-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 Relay_🇭🇰HK-🇺🇸US_2548
-      - 🇨🇳 CN_10
-      - 🇺🇸 美国（感谢关注youtube：8度科技）
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 3
-      - 🇺🇸 US 7（感谢关注youtube：8度科技）
-      - 🇭🇰 解锁丨香港01丨x1.0
-      - 🇭🇰 解锁丨香港02丨x1.0
-      - 🇸🇬 解锁丨新加坡01丨x1.0
-      - 🇸🇬 解锁丨新加坡02丨x1.0
-      - 🇯🇵 解锁丨日本01丨x1.0
-      - 🇯🇵 解锁丨日本02丨x1.0
-      - 🇺🇸 解锁丨美国01丨x1.0
-      - 🇺🇸 解锁丨美国02丨x1.0
-      - 🇮🇳 中继丨印度01丨x1.0
-      - 🇮🇳 中继丨印度02丨x1.0
-      - 🇨🇳 中继丨台湾01丨x1.0
-      - 🇨🇳 中继丨台湾02丨x1.0
-      - 🇺🇸 天津移动-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 宁波电信-HKhttps://bit.ly/3uWuS7a
-      - 🇯🇵 日本02 | 中转AZ x0.5
-      - 🇺🇸 美国 2
-      - 🇭🇰 V2 | Vmshell香港 | SSR
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 公益节点joker007.top 美国2
-      - 🇺🇸 美国N01
-      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 移动专用-测试-×2.5
-      - 🇯🇵 日本东京 31(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 27(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇨🇳 【直连】TWN/台湾 B
+      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
+      - NONE
+      - zhuomian.apaap.xyz_vmess_ws
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
+      - "| 5.52Mb"
+      - Relay_ |28.38Mb
+      - 频道
+      - cf 23来自@tggonghai公海频道
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
+      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
+      - 🇯🇵 日本自搭
+      - Pool_ | 8.79Mb
+      - Relay_ |34.06Mb
+      - "|22.85Mb"
+      - 🇸🇬 SG1(IEPL) - 沪新国际专线
+      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 🇺🇸 美国-1-北京中转
-      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国N01
+      - 🇰🇷 韩国 Magic 02 1x 解锁
+      - 🇭🇰 香港 Magic 01 1x 原生IP
+      - 🇭🇰 香港 Magic 03 1x 原生IP
+      - 🇺🇸 美国（群友橘子分享的节点）
+      - Relay_ | 1.84Mb
+      - Relay_ |24.05Mb
+      - Relay_ |28.38Mb 2
+      - Relay_ |10.20Mb
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
+      - 42.157.196.104
+      - NL |21.99Mb
+      - NL |22.18Mb
+      - NL |22.74Mb
+      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
+      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
+      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
       - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
       - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
-      - 42.157.196.104
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 CN_22
-      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国
-      - 🇺🇸 郑州联通-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 Relay_🇭🇰HK-🇺🇸US_2548
-      - 🇨🇳 CN_10
-      - 🇺🇸 美国（感谢关注youtube：8度科技）
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 3
-      - 🇺🇸 US 7（感谢关注youtube：8度科技）
-      - 🇭🇰 解锁丨香港01丨x1.0
-      - 🇭🇰 解锁丨香港02丨x1.0
-      - 🇸🇬 解锁丨新加坡01丨x1.0
-      - 🇸🇬 解锁丨新加坡02丨x1.0
-      - 🇯🇵 解锁丨日本01丨x1.0
-      - 🇯🇵 解锁丨日本02丨x1.0
-      - 🇺🇸 解锁丨美国01丨x1.0
-      - 🇺🇸 解锁丨美国02丨x1.0
-      - 🇮🇳 中继丨印度01丨x1.0
-      - 🇮🇳 中继丨印度02丨x1.0
-      - 🇨🇳 中继丨台湾01丨x1.0
-      - 🇨🇳 中继丨台湾02丨x1.0
-      - 🇺🇸 天津移动-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 宁波电信-HKhttps://bit.ly/3uWuS7a
-      - 🇯🇵 日本02 | 中转AZ x0.5
-      - 🇺🇸 美国 2
-      - 🇭🇰 V2 | Vmshell香港 | SSR
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 公益节点joker007.top 美国2
-      - 🇺🇸 美国N01
-      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 移动专用-测试-×2.5
-      - 🇯🇵 日本东京 31(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 27(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇨🇳 【直连】TWN/台湾 B
+      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
+      - NONE
+      - zhuomian.apaap.xyz_vmess_ws
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
+      - "| 5.52Mb"
+      - Relay_ |28.38Mb
+      - 频道
+      - cf 23来自@tggonghai公海频道
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
+      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
+      - 🇯🇵 日本自搭
+      - Pool_ | 8.79Mb
+      - Relay_ |34.06Mb
+      - "|22.85Mb"
+      - 🇸🇬 SG1(IEPL) - 沪新国际专线
+      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 🇺🇸 美国-1-北京中转
-      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国N01
+      - 🇰🇷 韩国 Magic 02 1x 解锁
+      - 🇭🇰 香港 Magic 01 1x 原生IP
+      - 🇭🇰 香港 Magic 03 1x 原生IP
+      - 🇺🇸 美国（群友橘子分享的节点）
+      - Relay_ | 1.84Mb
+      - Relay_ |24.05Mb
+      - Relay_ |28.38Mb 2
+      - Relay_ |10.20Mb
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
+      - 42.157.196.104
+      - NL |21.99Mb
+      - NL |22.18Mb
+      - NL |22.74Mb
+      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
+      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
+      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
       - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
       - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
-      - 42.157.196.104
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 CN_22
-      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国
-      - 🇺🇸 郑州联通-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 Relay_🇭🇰HK-🇺🇸US_2548
-      - 🇨🇳 CN_10
-      - 🇺🇸 美国（感谢关注youtube：8度科技）
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 3
-      - 🇺🇸 US 7（感谢关注youtube：8度科技）
-      - 🇭🇰 解锁丨香港01丨x1.0
-      - 🇭🇰 解锁丨香港02丨x1.0
-      - 🇸🇬 解锁丨新加坡01丨x1.0
-      - 🇸🇬 解锁丨新加坡02丨x1.0
-      - 🇯🇵 解锁丨日本01丨x1.0
-      - 🇯🇵 解锁丨日本02丨x1.0
-      - 🇺🇸 解锁丨美国01丨x1.0
-      - 🇺🇸 解锁丨美国02丨x1.0
-      - 🇮🇳 中继丨印度01丨x1.0
-      - 🇮🇳 中继丨印度02丨x1.0
-      - 🇨🇳 中继丨台湾01丨x1.0
-      - 🇨🇳 中继丨台湾02丨x1.0
-      - 🇺🇸 天津移动-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 宁波电信-HKhttps://bit.ly/3uWuS7a
-      - 🇯🇵 日本02 | 中转AZ x0.5
-      - 🇺🇸 美国 2
-      - 🇭🇰 V2 | Vmshell香港 | SSR
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 公益节点joker007.top 美国2
-      - 🇺🇸 美国N01
-      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 移动专用-测试-×2.5
-      - 🇯🇵 日本东京 31(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 27(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇨🇳 【直连】TWN/台湾 B
+      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
+      - NONE
+      - zhuomian.apaap.xyz_vmess_ws
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
+      - "| 5.52Mb"
+      - Relay_ |28.38Mb
+      - 频道
+      - cf 23来自@tggonghai公海频道
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
+      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
+      - 🇯🇵 日本自搭
+      - Pool_ | 8.79Mb
+      - Relay_ |34.06Mb
+      - "|22.85Mb"
+      - 🇸🇬 SG1(IEPL) - 沪新国际专线
+      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 🇺🇸 美国-1-北京中转
-      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国N01
+      - 🇰🇷 韩国 Magic 02 1x 解锁
+      - 🇭🇰 香港 Magic 01 1x 原生IP
+      - 🇭🇰 香港 Magic 03 1x 原生IP
+      - 🇺🇸 美国（群友橘子分享的节点）
+      - Relay_ | 1.84Mb
+      - Relay_ |24.05Mb
+      - Relay_ |28.38Mb 2
+      - Relay_ |10.20Mb
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
+      - 42.157.196.104
+      - NL |21.99Mb
+      - NL |22.18Mb
+      - NL |22.74Mb
+      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
+      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
+      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
       - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
       - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
-      - 42.157.196.104
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 CN_22
-      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国
-      - 🇺🇸 郑州联通-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 Relay_🇭🇰HK-🇺🇸US_2548
-      - 🇨🇳 CN_10
-      - 🇺🇸 美国（感谢关注youtube：8度科技）
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 3
-      - 🇺🇸 US 7（感谢关注youtube：8度科技）
-      - 🇭🇰 解锁丨香港01丨x1.0
-      - 🇭🇰 解锁丨香港02丨x1.0
-      - 🇸🇬 解锁丨新加坡01丨x1.0
-      - 🇸🇬 解锁丨新加坡02丨x1.0
-      - 🇯🇵 解锁丨日本01丨x1.0
-      - 🇯🇵 解锁丨日本02丨x1.0
-      - 🇺🇸 解锁丨美国01丨x1.0
-      - 🇺🇸 解锁丨美国02丨x1.0
-      - 🇮🇳 中继丨印度01丨x1.0
-      - 🇮🇳 中继丨印度02丨x1.0
-      - 🇨🇳 中继丨台湾01丨x1.0
-      - 🇨🇳 中继丨台湾02丨x1.0
-      - 🇺🇸 天津移动-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 宁波电信-HKhttps://bit.ly/3uWuS7a
-      - 🇯🇵 日本02 | 中转AZ x0.5
-      - 🇺🇸 美国 2
-      - 🇭🇰 V2 | Vmshell香港 | SSR
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 公益节点joker007.top 美国2
-      - 🇺🇸 美国N01
-      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 移动专用-测试-×2.5
-      - 🇯🇵 日本东京 31(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 27(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇨🇳 【直连】TWN/台湾 B
+      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
+      - NONE
+      - zhuomian.apaap.xyz_vmess_ws
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
+      - "| 5.52Mb"
+      - Relay_ |28.38Mb
+      - 频道
+      - cf 23来自@tggonghai公海频道
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
+      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
+      - 🇯🇵 日本自搭
+      - Pool_ | 8.79Mb
+      - Relay_ |34.06Mb
+      - "|22.85Mb"
+      - 🇸🇬 SG1(IEPL) - 沪新国际专线
+      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 🇺🇸 美国-1-北京中转
-      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国N01
+      - 🇰🇷 韩国 Magic 02 1x 解锁
+      - 🇭🇰 香港 Magic 01 1x 原生IP
+      - 🇭🇰 香港 Magic 03 1x 原生IP
+      - 🇺🇸 美国（群友橘子分享的节点）
+      - Relay_ | 1.84Mb
+      - Relay_ |24.05Mb
+      - Relay_ |28.38Mb 2
+      - Relay_ |10.20Mb
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
+      - 42.157.196.104
+      - NL |21.99Mb
+      - NL |22.18Mb
+      - NL |22.74Mb
+      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
+      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
+      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
       - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
       - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
-      - 42.157.196.104
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 CN_22
-      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国
-      - 🇺🇸 郑州联通-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 Relay_🇭🇰HK-🇺🇸US_2548
-      - 🇨🇳 CN_10
-      - 🇺🇸 美国（感谢关注youtube：8度科技）
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 3
-      - 🇺🇸 US 7（感谢关注youtube：8度科技）
-      - 🇭🇰 解锁丨香港01丨x1.0
-      - 🇭🇰 解锁丨香港02丨x1.0
-      - 🇸🇬 解锁丨新加坡01丨x1.0
-      - 🇸🇬 解锁丨新加坡02丨x1.0
-      - 🇯🇵 解锁丨日本01丨x1.0
-      - 🇯🇵 解锁丨日本02丨x1.0
-      - 🇺🇸 解锁丨美国01丨x1.0
-      - 🇺🇸 解锁丨美国02丨x1.0
-      - 🇮🇳 中继丨印度01丨x1.0
-      - 🇮🇳 中继丨印度02丨x1.0
-      - 🇨🇳 中继丨台湾01丨x1.0
-      - 🇨🇳 中继丨台湾02丨x1.0
-      - 🇺🇸 天津移动-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 宁波电信-HKhttps://bit.ly/3uWuS7a
-      - 🇯🇵 日本02 | 中转AZ x0.5
-      - 🇺🇸 美国 2
-      - 🇭🇰 V2 | Vmshell香港 | SSR
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 公益节点joker007.top 美国2
-      - 🇺🇸 美国N01
-      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 移动专用-测试-×2.5
-      - 🇯🇵 日本东京 31(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 27(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇨🇳 【直连】TWN/台湾 B
+      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
+      - NONE
+      - zhuomian.apaap.xyz_vmess_ws
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
+      - "| 5.52Mb"
+      - Relay_ |28.38Mb
+      - 频道
+      - cf 23来自@tggonghai公海频道
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
+      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
+      - 🇯🇵 日本自搭
+      - Pool_ | 8.79Mb
+      - Relay_ |34.06Mb
+      - "|22.85Mb"
+      - 🇸🇬 SG1(IEPL) - 沪新国际专线
+      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 🇺🇸 美国-1-北京中转
-      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国N01
+      - 🇰🇷 韩国 Magic 02 1x 解锁
+      - 🇭🇰 香港 Magic 01 1x 原生IP
+      - 🇭🇰 香港 Magic 03 1x 原生IP
+      - 🇺🇸 美国（群友橘子分享的节点）
+      - Relay_ | 1.84Mb
+      - Relay_ |24.05Mb
+      - Relay_ |28.38Mb 2
+      - Relay_ |10.20Mb
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
+      - 42.157.196.104
+      - NL |21.99Mb
+      - NL |22.18Mb
+      - NL |22.74Mb
+      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
+      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
+      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
       - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
       - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
-      - 42.157.196.104
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN_22
-      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国
-      - 🇺🇸 郑州联通-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 Relay_🇭🇰HK-🇺🇸US_2548
-      - 🇨🇳 CN_10
-      - 🇺🇸 美国（感谢关注youtube：8度科技）
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 3
-      - 🇺🇸 US 7（感谢关注youtube：8度科技）
-      - 🇭🇰 解锁丨香港01丨x1.0
-      - 🇭🇰 解锁丨香港02丨x1.0
-      - 🇸🇬 解锁丨新加坡01丨x1.0
-      - 🇸🇬 解锁丨新加坡02丨x1.0
-      - 🇯🇵 解锁丨日本01丨x1.0
-      - 🇯🇵 解锁丨日本02丨x1.0
-      - 🇺🇸 解锁丨美国01丨x1.0
-      - 🇺🇸 解锁丨美国02丨x1.0
-      - 🇮🇳 中继丨印度01丨x1.0
-      - 🇮🇳 中继丨印度02丨x1.0
-      - 🇨🇳 中继丨台湾01丨x1.0
-      - 🇨🇳 中继丨台湾02丨x1.0
-      - 🇺🇸 天津移动-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 宁波电信-HKhttps://bit.ly/3uWuS7a
-      - 🇯🇵 日本02 | 中转AZ x0.5
-      - 🇺🇸 美国 2
-      - 🇭🇰 V2 | Vmshell香港 | SSR
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 公益节点joker007.top 美国2
-      - 🇺🇸 美国N01
-      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 移动专用-测试-×2.5
-      - 🇯🇵 日本东京 31(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 27(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇨🇳 【直连】TWN/台湾 B
+      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
+      - NONE
+      - zhuomian.apaap.xyz_vmess_ws
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
+      - "| 5.52Mb"
+      - Relay_ |28.38Mb
+      - 频道
+      - cf 23来自@tggonghai公海频道
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
+      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
+      - 🇯🇵 日本自搭
+      - Pool_ | 8.79Mb
+      - Relay_ |34.06Mb
+      - "|22.85Mb"
+      - 🇸🇬 SG1(IEPL) - 沪新国际专线
+      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 🇺🇸 美国-1-北京中转
-      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国N01
+      - 🇰🇷 韩国 Magic 02 1x 解锁
+      - 🇭🇰 香港 Magic 01 1x 原生IP
+      - 🇭🇰 香港 Magic 03 1x 原生IP
+      - 🇺🇸 美国（群友橘子分享的节点）
+      - Relay_ | 1.84Mb
+      - Relay_ |24.05Mb
+      - Relay_ |28.38Mb 2
+      - Relay_ |10.20Mb
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
+      - 42.157.196.104
+      - NL |21.99Mb
+      - NL |22.18Mb
+      - NL |22.74Mb
+      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
+      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
+      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
       - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
       - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
-      - 42.157.196.104
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -410,49 +530,64 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN_22
-      - 🇯🇵 日本大阪 6(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国
-      - 🇺🇸 郑州联通-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 Relay_🇭🇰HK-🇺🇸US_2548
-      - 🇨🇳 CN_10
-      - 🇺🇸 美国（感谢关注youtube：8度科技）
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 2
-      - 🇺🇸 美国（感谢关注youtube：8度科技） 3
-      - 🇺🇸 US 7（感谢关注youtube：8度科技）
-      - 🇭🇰 解锁丨香港01丨x1.0
-      - 🇭🇰 解锁丨香港02丨x1.0
-      - 🇸🇬 解锁丨新加坡01丨x1.0
-      - 🇸🇬 解锁丨新加坡02丨x1.0
-      - 🇯🇵 解锁丨日本01丨x1.0
-      - 🇯🇵 解锁丨日本02丨x1.0
-      - 🇺🇸 解锁丨美国01丨x1.0
-      - 🇺🇸 解锁丨美国02丨x1.0
-      - 🇮🇳 中继丨印度01丨x1.0
-      - 🇮🇳 中继丨印度02丨x1.0
-      - 🇨🇳 中继丨台湾01丨x1.0
-      - 🇨🇳 中继丨台湾02丨x1.0
-      - 🇺🇸 天津移动-HKhttps://bit.ly/3uWuS7a
-      - 🇺🇸 宁波电信-HKhttps://bit.ly/3uWuS7a
-      - 🇯🇵 日本02 | 中转AZ x0.5
-      - 🇺🇸 美国 2
-      - 🇭🇰 V2 | Vmshell香港 | SSR
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 公益节点joker007.top 美国2
-      - 🇺🇸 美国N01
-      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 移动专用-测试-×2.5
-      - 🇯🇵 日本东京 31(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 27(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇨🇳 【直连】TWN/台湾 B
+      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
+      - NONE
+      - zhuomian.apaap.xyz_vmess_ws
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
+      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
+      - "| 5.52Mb"
+      - Relay_ |28.38Mb
+      - 频道
+      - cf 23来自@tggonghai公海频道
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
+      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
+      - 🇯🇵 日本自搭
+      - Pool_ | 8.79Mb
+      - Relay_ |34.06Mb
+      - "|22.85Mb"
+      - 🇸🇬 SG1(IEPL) - 沪新国际专线
+      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
       - 🇺🇸 美国-1-北京中转
-      - 🇯🇵 日本东京 29(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国N01
+      - 🇰🇷 韩国 Magic 02 1x 解锁
+      - 🇭🇰 香港 Magic 01 1x 原生IP
+      - 🇭🇰 香港 Magic 03 1x 原生IP
+      - 🇺🇸 美国（群友橘子分享的节点）
+      - Relay_ | 1.84Mb
+      - Relay_ |24.05Mb
+      - Relay_ |28.38Mb 2
+      - Relay_ |10.20Mb
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
+      - 42.157.196.104
+      - NL |21.99Mb
+      - NL |22.18Mb
+      - NL |22.74Mb
+      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
+      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
+      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
+      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
+      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
+      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
       - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
       - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
-      - 42.157.196.104
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
