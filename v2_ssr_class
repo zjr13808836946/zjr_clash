@@ -5,48 +5,65 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 【直连】TWN/台湾 B, server: twn01.ip4.ddns.acg.photos, port: 80, type: vmess, uuid: 6eb4f8d5-5b99-4eb0-a580-e15c4b852555, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: twn01.ip4.ddns.acg.photos}}
   - {name: 🇸🇬 【中转】SIN/狮城 A - 天津移动, server: 111.32.136.1, port: 80, type: vmess, uuid: 6eb4f8d5-5b99-4eb0-a580-e15c4b852555, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 003.cdn.8x.cx.hit.edu.cn}}
-  - {name: 🇸🇬 【中转】SIN/狮城 A - 江苏移动, server: 112.25.91.1, port: 80, type: vmess, uuid: 6eb4f8d5-5b99-4eb0-a580-e15c4b852555, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 003.cdn.8x.cx.hit.edu.cn}}
-  - {name: NONE, server: v1.proxypools.top, port: 8443, type: trojan, password: 78839a87-f2f1-478d-adb4-5eff7d213b4d, sni: v1.proxypools.top, skip-cert-verify: false}
-  - {name: zhuomian.apaap.xyz_vmess_ws, server: zhuomian.apaap.xyz, port: 443, type: vmess, uuid: 759f0357-0f94-46fe-c9c0-9d25823c3624, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: "/pedtvws?ed=2048", ws-headers: {Host: zhuomian.apaap.xyz}}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles, server: 67.21.70.175, port: 443, type: vmess, uuid: 6e37dfd3-534d-44f2-828d-16e7a9c0bfb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.30379939.xyz}}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2, server: 170.178.165.253, port: 443, type: vmess, uuid: ee954308-5990-4914-b74f-b7be76963fde, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.55916573.xyz}}
-  - {name: 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong, server: hk1.auto.starlink.st, port: 65000, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点), server: 1e5495d9614c.fkunky.cn, port: 55413, type: vmess, uuid: f8ac95e7-098d-33c9-ac57-219850387ea7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3, server: 67.21.85.81, port: 443, type: vmess, uuid: 0b7f8d71-9a22-44c7-b6a1-3b86e295c8f0, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.61184446.xyz}}
-  - {name: 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2, server: 1e5495d9614c.fkunky.cn, port: 55411, type: vmess, uuid: f8ac95e7-098d-33c9-ac57-219850387ea7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}}
-  - {name: 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点), server: cn2.relay.starlink.st, port: 65008, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4, server: 67.21.70.180, port: 443, type: vmess, uuid: 6e37dfd3-534d-44f2-828d-16e7a9c0bfb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.30379939.xyz}}
-  - {name: 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2, server: cn2.relay.starlink.st, port: 65005, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3, server: cn1.relay.starlink.st, port: 65005, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3, server: cn2.relay.starlink.st, port: 65006, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4, server: cn2.relay.starlink.st, port: 65007, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "| 5.52Mb", server: 1.0.0.0, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: Relay_ |28.38Mb, server: cn2.relay.starlink.st, port: 65004, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 频道, server: 104.200.131.165, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: cf 23来自@tggonghai公海频道, server: 104.19.181.164, port: 443, type: vmess, uuid: 9bddd3b6-7b24-4575-ae3e-63fe8b30ed26, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /tggonghai, ws-headers: {Host: g23.newword.site}}
-  - {name: 🇺🇸 航海-美国3, server: shanghai.lianshangni.icu, port: 30175, type: vmess, uuid: 8bdaf2a5-102c-35f4-9939-9388b4ca90b3, alterId: 16, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 149.248.10.186}}
-  - {name: 🇺🇸 美国Y04, server: 0004.yedea.gofast.run, port: 443, type: trojan, password: 37acbb3f-4f33-4c80-9a3d-ff7b3b75be90, sni: 0004.yedea.gofast.run, skip-cert-verify: false}
-  - {name: 🇸🇬 节点更新https://bit.ly/3uWuS7a 37, server: ip.codeforces.live, port: 443, type: vmess, uuid: e6397eda-dd27-4832-a693-b3fb156ec0f3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /233blog, ws-headers: {Host: rn.ddns1312.top}}
-  - {name: 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14, server: 104.19.45.117, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇯🇵 日本自搭, server: 54.199.147.148, port: 80, type: vmess, uuid: 44ad0ab4-96a6-4efd-ff9f-353f5456c3f2, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: Pool_ | 8.79Mb, server: 107.167.26.27, port: 443, type: vmess, uuid: 17c10e13-bc5a-4a16-beca-decc8ad4135c, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.53493447.xyz}}
-  - {name: Relay_ |34.06Mb, server: cn2.relay.starlink.st, port: 65005, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "|22.85Mb", server: 64.32.17.32, port: 443, type: vmess, uuid: c8620345-7687-4b2c-b9c1-d39d434e25d4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.15169971.xyz}}
-  - {name: 🇸🇬 SG1(IEPL) - 沪新国际专线, server: cn2.relay.starlink.st, port: 65008, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty40.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty40.speedsvip.co}}
-  - {name: 🇺🇸 美国-1-北京中转, server: 52.81.94.63, port: 12204, type: vmess, uuid: 57b9f56f-8f51-3af3-87de-87b6e46b2e17, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 52.81.94.63}}
-  - {name: 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ho15.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ho15.speedsvip.co}}
-  - {name: 🇺🇸 美国N01, server: 0001.nio.gofast.run, port: 443, type: trojan, password: 37acbb3f-4f33-4c80-9a3d-ff7b3b75be90, sni: 0001.nio.gofast.run, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国 Magic 02 1x 解锁, server: 0519-s1.cm.liangxinyun.xyz, port: 5201, type: trojan, password: 547855be-8027-3519-9ef6-560c72ba4b4d, sni: 0519-s1.cm.liangxinyun.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 Magic 01 1x 原生IP, server: 0750-s1.cm.liangxinyun.xyz, port: 5800, type: trojan, password: 547855be-8027-3519-9ef6-560c72ba4b4d, sni: 0750-s1.cm.liangxinyun.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 Magic 03 1x 原生IP, server: 0750-s1.cm.liangxinyun.xyz, port: 5802, type: trojan, password: 547855be-8027-3519-9ef6-560c72ba4b4d, sni: 0750-s1.cm.liangxinyun.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 美国（群友橘子分享的节点）, server: us2.paopao.cf, port: 443, type: vmess, uuid: 7f6b65e4-6d5b-4137-a1dc-d32f4a810239, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /tgzhucaidan, ws-headers: {Host: us2.paopao.cf}}
-  - {name: Relay_ | 1.84Mb, server: cn2.relay.starlink.st, port: 65003, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: Relay_ |24.05Mb, server: 67.21.72.237, port: 443, type: vmess, uuid: 2892319f-6662-45ae-b49f-3bc03db850c3, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.26001552.xyz}}
-  - {name: Relay_ |28.38Mb 2, server: cn2.relay.starlink.st, port: 65004, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: Relay_ |10.20Mb, server: cn2.relay.starlink.st, port: 65008, type: vmess, uuid: de84ddcc-954f-49a3-903b-b1e5817d8e8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 【中转】SIN/狮城 A - 宁波电信, server: 115.231.187.1, port: 80, type: vmess, uuid: 6eb4f8d5-5b99-4eb0-a580-e15c4b852555, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 003.cdn.8x.cx.hit.edu.cn}}
+  - {name: 🇭🇰 香港01 - 直连  - 银河机场, server: hk-01.yinriver.top, port: 80, type: vmess, uuid: f615d550-a054-43a1-b385-60d0eb80bae9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk-01.yinriver.top}}
+  - {name: 🇸🇬 新加坡⑥ 2, server: 52.ssrj.xyz, port: 65152, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡⑭ 2, server: 64.ssrj.xyz, port: 65164, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本 ③ 2, server: 48.ssrj.xyz, port: 65148, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇫🇷 法国 ⑤ 2, server: 51.ssrj.xyz, port: 65151, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国⑬ 2, server: 63.ssrj.xyz, port: 65163, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑧ 2, server: 54.ssrj.xyz, port: 61154, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑨ 2, server: 55.ssrj.xyz, port: 61155, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑩ 2, server: 56.ssrj.xyz, port: 61156, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑪ 2, server: 57.ssrj.xyz, port: 61157, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑯ 2, server: 66.ssrj.xyz, port: 65166, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ① 2, server: 44.ssrj.xyz, port: 61144, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ② 2, server: 45.ssrj.xyz, port: 61145, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ③ 2, server: 49.ssrj.xyz, port: 61149, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ⑦ 2, server: 53.ssrj.xyz, port: 61153, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ⑫ 2, server: 58.ssrj.xyz, port: 61158, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ⑮ 2, server: 65.ssrj.xyz, port: 65165, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡⑥ 3, server: 52.ssrj.xyz, port: 65152, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡⑭ 3, server: 64.ssrj.xyz, port: 65164, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本 ③ 3, server: 48.ssrj.xyz, port: 65148, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇫🇷 法国 ⑤ 3, server: 51.ssrj.xyz, port: 65151, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国⑬ 3, server: 63.ssrj.xyz, port: 65163, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑧ 3, server: 54.ssrj.xyz, port: 61154, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑨ 3, server: 55.ssrj.xyz, port: 61155, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑩ 3, server: 56.ssrj.xyz, port: 61156, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑪ 3, server: 57.ssrj.xyz, port: 61157, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑯ 3, server: 66.ssrj.xyz, port: 65166, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ① 3, server: 44.ssrj.xyz, port: 61144, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ② 3, server: 45.ssrj.xyz, port: 61145, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ③ 3, server: 49.ssrj.xyz, port: 61149, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ⑦ 3, server: 53.ssrj.xyz, port: 61153, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ⑫ 3, server: 58.ssrj.xyz, port: 61158, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ⑮ 3, server: 65.ssrj.xyz, port: 65165, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ⑰ 3, server: 67.ssrj.xyz, port: 65167, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡⑥ 4, server: 52.ssrj.xyz, port: 65152, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡⑭ 4, server: 64.ssrj.xyz, port: 65164, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本 ③ 4, server: 48.ssrj.xyz, port: 65148, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇫🇷 法国 ⑤ 4, server: 51.ssrj.xyz, port: 65151, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国⑬ 4, server: 63.ssrj.xyz, port: 65163, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑨ 4, server: 55.ssrj.xyz, port: 61155, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑩ 4, server: 56.ssrj.xyz, port: 61156, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑪ 4, server: 57.ssrj.xyz, port: 61157, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑯ 4, server: 66.ssrj.xyz, port: 65166, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ⑦ 4, server: 53.ssrj.xyz, port: 61153, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ⑫ 4, server: 58.ssrj.xyz, port: 61158, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ⑮ 4, server: 65.ssrj.xyz, port: 65165, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡⑭ 5, server: 64.ssrj.xyz, port: 65164, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本 ③ 5, server: 48.ssrj.xyz, port: 65148, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑨ 5, server: 55.ssrj.xyz, port: 61155, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑪ 5, server: 57.ssrj.xyz, port: 61157, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港  ⑯ 5, server: 66.ssrj.xyz, port: 65166, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ① 5, server: 44.ssrj.xyz, port: 61144, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ② 5, server: 45.ssrj.xyz, port: 61145, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ⑦ 5, server: 53.ssrj.xyz, port: 61153, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ⑫ 5, server: 58.ssrj.xyz, port: 61158, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ⑮ 5, server: 65.ssrj.xyz, port: 65165, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 ⑰ 5, server: 67.ssrj.xyz, port: 65167, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 V4-中转3354|广东-新加坡|x2.5, server: linode-zy.ddns-only.xyz, port: 13354, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
   - {name: 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5, server: guangdong05.ddns-only.xyz, port: 13489, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
   - {name: 🇸🇬 V4-中转3558|广东-新加坡|x2.0, server: linode-zy.ddns-only.xyz, port: 13558, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
@@ -69,48 +86,65 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 【直连】TWN/台湾 B
       - 🇸🇬 【中转】SIN/狮城 A - 天津移动
-      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
-      - NONE
-      - zhuomian.apaap.xyz_vmess_ws
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
-      - "| 5.52Mb"
-      - Relay_ |28.38Mb
-      - 频道
-      - cf 23来自@tggonghai公海频道
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
-      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
-      - 🇯🇵 日本自搭
-      - Pool_ | 8.79Mb
-      - Relay_ |34.06Mb
-      - "|22.85Mb"
-      - 🇸🇬 SG1(IEPL) - 沪新国际专线
-      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国-1-北京中转
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国N01
-      - 🇰🇷 韩国 Magic 02 1x 解锁
-      - 🇭🇰 香港 Magic 01 1x 原生IP
-      - 🇭🇰 香港 Magic 03 1x 原生IP
-      - 🇺🇸 美国（群友橘子分享的节点）
-      - Relay_ | 1.84Mb
-      - Relay_ |24.05Mb
-      - Relay_ |28.38Mb 2
-      - Relay_ |10.20Mb
+      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
+      - 🇭🇰 香港01 - 直连  - 银河机场
+      - 🇸🇬 新加坡⑥ 2
+      - 🇸🇬 新加坡⑭ 2
+      - 🇯🇵 日本 ③ 2
+      - 🇫🇷 法国 ⑤ 2
+      - 🇺🇸 美国⑬ 2
+      - 🇭🇰 香港  ⑧ 2
+      - 🇭🇰 香港  ⑨ 2
+      - 🇭🇰 香港  ⑩ 2
+      - 🇭🇰 香港  ⑪ 2
+      - 🇭🇰 香港  ⑯ 2
+      - 🇭🇰 香港 ① 2
+      - 🇭🇰 香港 ② 2
+      - 🇭🇰 香港 ③ 2
+      - 🇭🇰 香港 ⑦ 2
+      - 🇭🇰 香港 ⑫ 2
+      - 🇭🇰 香港 ⑮ 2
+      - 🇸🇬 新加坡⑥ 3
+      - 🇸🇬 新加坡⑭ 3
+      - 🇯🇵 日本 ③ 3
+      - 🇫🇷 法国 ⑤ 3
+      - 🇺🇸 美国⑬ 3
+      - 🇭🇰 香港  ⑧ 3
+      - 🇭🇰 香港  ⑨ 3
+      - 🇭🇰 香港  ⑩ 3
+      - 🇭🇰 香港  ⑪ 3
+      - 🇭🇰 香港  ⑯ 3
+      - 🇭🇰 香港 ① 3
+      - 🇭🇰 香港 ② 3
+      - 🇭🇰 香港 ③ 3
+      - 🇭🇰 香港 ⑦ 3
+      - 🇭🇰 香港 ⑫ 3
+      - 🇭🇰 香港 ⑮ 3
+      - 🇭🇰 香港 ⑰ 3
+      - 🇸🇬 新加坡⑥ 4
+      - 🇸🇬 新加坡⑭ 4
+      - 🇯🇵 日本 ③ 4
+      - 🇫🇷 法国 ⑤ 4
+      - 🇺🇸 美国⑬ 4
+      - 🇭🇰 香港  ⑨ 4
+      - 🇭🇰 香港  ⑩ 4
+      - 🇭🇰 香港  ⑪ 4
+      - 🇭🇰 香港  ⑯ 4
+      - 🇭🇰 香港 ⑦ 4
+      - 🇭🇰 香港 ⑫ 4
+      - 🇭🇰 香港 ⑮ 4
+      - 🇸🇬 新加坡⑭ 5
+      - 🇯🇵 日本 ③ 5
+      - 🇭🇰 香港  ⑨ 5
+      - 🇭🇰 香港  ⑪ 5
+      - 🇭🇰 香港  ⑯ 5
+      - 🇭🇰 香港 ① 5
+      - 🇭🇰 香港 ② 5
+      - 🇭🇰 香港 ⑦ 5
+      - 🇭🇰 香港 ⑫ 5
+      - 🇭🇰 香港 ⑮ 5
+      - 🇭🇰 香港 ⑰ 5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -133,48 +167,65 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 【直连】TWN/台湾 B
       - 🇸🇬 【中转】SIN/狮城 A - 天津移动
-      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
-      - NONE
-      - zhuomian.apaap.xyz_vmess_ws
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
-      - "| 5.52Mb"
-      - Relay_ |28.38Mb
-      - 频道
-      - cf 23来自@tggonghai公海频道
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
-      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
-      - 🇯🇵 日本自搭
-      - Pool_ | 8.79Mb
-      - Relay_ |34.06Mb
-      - "|22.85Mb"
-      - 🇸🇬 SG1(IEPL) - 沪新国际专线
-      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国-1-北京中转
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国N01
-      - 🇰🇷 韩国 Magic 02 1x 解锁
-      - 🇭🇰 香港 Magic 01 1x 原生IP
-      - 🇭🇰 香港 Magic 03 1x 原生IP
-      - 🇺🇸 美国（群友橘子分享的节点）
-      - Relay_ | 1.84Mb
-      - Relay_ |24.05Mb
-      - Relay_ |28.38Mb 2
-      - Relay_ |10.20Mb
+      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
+      - 🇭🇰 香港01 - 直连  - 银河机场
+      - 🇸🇬 新加坡⑥ 2
+      - 🇸🇬 新加坡⑭ 2
+      - 🇯🇵 日本 ③ 2
+      - 🇫🇷 法国 ⑤ 2
+      - 🇺🇸 美国⑬ 2
+      - 🇭🇰 香港  ⑧ 2
+      - 🇭🇰 香港  ⑨ 2
+      - 🇭🇰 香港  ⑩ 2
+      - 🇭🇰 香港  ⑪ 2
+      - 🇭🇰 香港  ⑯ 2
+      - 🇭🇰 香港 ① 2
+      - 🇭🇰 香港 ② 2
+      - 🇭🇰 香港 ③ 2
+      - 🇭🇰 香港 ⑦ 2
+      - 🇭🇰 香港 ⑫ 2
+      - 🇭🇰 香港 ⑮ 2
+      - 🇸🇬 新加坡⑥ 3
+      - 🇸🇬 新加坡⑭ 3
+      - 🇯🇵 日本 ③ 3
+      - 🇫🇷 法国 ⑤ 3
+      - 🇺🇸 美国⑬ 3
+      - 🇭🇰 香港  ⑧ 3
+      - 🇭🇰 香港  ⑨ 3
+      - 🇭🇰 香港  ⑩ 3
+      - 🇭🇰 香港  ⑪ 3
+      - 🇭🇰 香港  ⑯ 3
+      - 🇭🇰 香港 ① 3
+      - 🇭🇰 香港 ② 3
+      - 🇭🇰 香港 ③ 3
+      - 🇭🇰 香港 ⑦ 3
+      - 🇭🇰 香港 ⑫ 3
+      - 🇭🇰 香港 ⑮ 3
+      - 🇭🇰 香港 ⑰ 3
+      - 🇸🇬 新加坡⑥ 4
+      - 🇸🇬 新加坡⑭ 4
+      - 🇯🇵 日本 ③ 4
+      - 🇫🇷 法国 ⑤ 4
+      - 🇺🇸 美国⑬ 4
+      - 🇭🇰 香港  ⑨ 4
+      - 🇭🇰 香港  ⑩ 4
+      - 🇭🇰 香港  ⑪ 4
+      - 🇭🇰 香港  ⑯ 4
+      - 🇭🇰 香港 ⑦ 4
+      - 🇭🇰 香港 ⑫ 4
+      - 🇭🇰 香港 ⑮ 4
+      - 🇸🇬 新加坡⑭ 5
+      - 🇯🇵 日本 ③ 5
+      - 🇭🇰 香港  ⑨ 5
+      - 🇭🇰 香港  ⑪ 5
+      - 🇭🇰 香港  ⑯ 5
+      - 🇭🇰 香港 ① 5
+      - 🇭🇰 香港 ② 5
+      - 🇭🇰 香港 ⑦ 5
+      - 🇭🇰 香港 ⑫ 5
+      - 🇭🇰 香港 ⑮ 5
+      - 🇭🇰 香港 ⑰ 5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -197,48 +248,65 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 【直连】TWN/台湾 B
       - 🇸🇬 【中转】SIN/狮城 A - 天津移动
-      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
-      - NONE
-      - zhuomian.apaap.xyz_vmess_ws
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
-      - "| 5.52Mb"
-      - Relay_ |28.38Mb
-      - 频道
-      - cf 23来自@tggonghai公海频道
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
-      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
-      - 🇯🇵 日本自搭
-      - Pool_ | 8.79Mb
-      - Relay_ |34.06Mb
-      - "|22.85Mb"
-      - 🇸🇬 SG1(IEPL) - 沪新国际专线
-      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国-1-北京中转
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国N01
-      - 🇰🇷 韩国 Magic 02 1x 解锁
-      - 🇭🇰 香港 Magic 01 1x 原生IP
-      - 🇭🇰 香港 Magic 03 1x 原生IP
-      - 🇺🇸 美国（群友橘子分享的节点）
-      - Relay_ | 1.84Mb
-      - Relay_ |24.05Mb
-      - Relay_ |28.38Mb 2
-      - Relay_ |10.20Mb
+      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
+      - 🇭🇰 香港01 - 直连  - 银河机场
+      - 🇸🇬 新加坡⑥ 2
+      - 🇸🇬 新加坡⑭ 2
+      - 🇯🇵 日本 ③ 2
+      - 🇫🇷 法国 ⑤ 2
+      - 🇺🇸 美国⑬ 2
+      - 🇭🇰 香港  ⑧ 2
+      - 🇭🇰 香港  ⑨ 2
+      - 🇭🇰 香港  ⑩ 2
+      - 🇭🇰 香港  ⑪ 2
+      - 🇭🇰 香港  ⑯ 2
+      - 🇭🇰 香港 ① 2
+      - 🇭🇰 香港 ② 2
+      - 🇭🇰 香港 ③ 2
+      - 🇭🇰 香港 ⑦ 2
+      - 🇭🇰 香港 ⑫ 2
+      - 🇭🇰 香港 ⑮ 2
+      - 🇸🇬 新加坡⑥ 3
+      - 🇸🇬 新加坡⑭ 3
+      - 🇯🇵 日本 ③ 3
+      - 🇫🇷 法国 ⑤ 3
+      - 🇺🇸 美国⑬ 3
+      - 🇭🇰 香港  ⑧ 3
+      - 🇭🇰 香港  ⑨ 3
+      - 🇭🇰 香港  ⑩ 3
+      - 🇭🇰 香港  ⑪ 3
+      - 🇭🇰 香港  ⑯ 3
+      - 🇭🇰 香港 ① 3
+      - 🇭🇰 香港 ② 3
+      - 🇭🇰 香港 ③ 3
+      - 🇭🇰 香港 ⑦ 3
+      - 🇭🇰 香港 ⑫ 3
+      - 🇭🇰 香港 ⑮ 3
+      - 🇭🇰 香港 ⑰ 3
+      - 🇸🇬 新加坡⑥ 4
+      - 🇸🇬 新加坡⑭ 4
+      - 🇯🇵 日本 ③ 4
+      - 🇫🇷 法国 ⑤ 4
+      - 🇺🇸 美国⑬ 4
+      - 🇭🇰 香港  ⑨ 4
+      - 🇭🇰 香港  ⑩ 4
+      - 🇭🇰 香港  ⑪ 4
+      - 🇭🇰 香港  ⑯ 4
+      - 🇭🇰 香港 ⑦ 4
+      - 🇭🇰 香港 ⑫ 4
+      - 🇭🇰 香港 ⑮ 4
+      - 🇸🇬 新加坡⑭ 5
+      - 🇯🇵 日本 ③ 5
+      - 🇭🇰 香港  ⑨ 5
+      - 🇭🇰 香港  ⑪ 5
+      - 🇭🇰 香港  ⑯ 5
+      - 🇭🇰 香港 ① 5
+      - 🇭🇰 香港 ② 5
+      - 🇭🇰 香港 ⑦ 5
+      - 🇭🇰 香港 ⑫ 5
+      - 🇭🇰 香港 ⑮ 5
+      - 🇭🇰 香港 ⑰ 5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -260,48 +328,65 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 【直连】TWN/台湾 B
       - 🇸🇬 【中转】SIN/狮城 A - 天津移动
-      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
-      - NONE
-      - zhuomian.apaap.xyz_vmess_ws
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
-      - "| 5.52Mb"
-      - Relay_ |28.38Mb
-      - 频道
-      - cf 23来自@tggonghai公海频道
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
-      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
-      - 🇯🇵 日本自搭
-      - Pool_ | 8.79Mb
-      - Relay_ |34.06Mb
-      - "|22.85Mb"
-      - 🇸🇬 SG1(IEPL) - 沪新国际专线
-      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国-1-北京中转
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国N01
-      - 🇰🇷 韩国 Magic 02 1x 解锁
-      - 🇭🇰 香港 Magic 01 1x 原生IP
-      - 🇭🇰 香港 Magic 03 1x 原生IP
-      - 🇺🇸 美国（群友橘子分享的节点）
-      - Relay_ | 1.84Mb
-      - Relay_ |24.05Mb
-      - Relay_ |28.38Mb 2
-      - Relay_ |10.20Mb
+      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
+      - 🇭🇰 香港01 - 直连  - 银河机场
+      - 🇸🇬 新加坡⑥ 2
+      - 🇸🇬 新加坡⑭ 2
+      - 🇯🇵 日本 ③ 2
+      - 🇫🇷 法国 ⑤ 2
+      - 🇺🇸 美国⑬ 2
+      - 🇭🇰 香港  ⑧ 2
+      - 🇭🇰 香港  ⑨ 2
+      - 🇭🇰 香港  ⑩ 2
+      - 🇭🇰 香港  ⑪ 2
+      - 🇭🇰 香港  ⑯ 2
+      - 🇭🇰 香港 ① 2
+      - 🇭🇰 香港 ② 2
+      - 🇭🇰 香港 ③ 2
+      - 🇭🇰 香港 ⑦ 2
+      - 🇭🇰 香港 ⑫ 2
+      - 🇭🇰 香港 ⑮ 2
+      - 🇸🇬 新加坡⑥ 3
+      - 🇸🇬 新加坡⑭ 3
+      - 🇯🇵 日本 ③ 3
+      - 🇫🇷 法国 ⑤ 3
+      - 🇺🇸 美国⑬ 3
+      - 🇭🇰 香港  ⑧ 3
+      - 🇭🇰 香港  ⑨ 3
+      - 🇭🇰 香港  ⑩ 3
+      - 🇭🇰 香港  ⑪ 3
+      - 🇭🇰 香港  ⑯ 3
+      - 🇭🇰 香港 ① 3
+      - 🇭🇰 香港 ② 3
+      - 🇭🇰 香港 ③ 3
+      - 🇭🇰 香港 ⑦ 3
+      - 🇭🇰 香港 ⑫ 3
+      - 🇭🇰 香港 ⑮ 3
+      - 🇭🇰 香港 ⑰ 3
+      - 🇸🇬 新加坡⑥ 4
+      - 🇸🇬 新加坡⑭ 4
+      - 🇯🇵 日本 ③ 4
+      - 🇫🇷 法国 ⑤ 4
+      - 🇺🇸 美国⑬ 4
+      - 🇭🇰 香港  ⑨ 4
+      - 🇭🇰 香港  ⑩ 4
+      - 🇭🇰 香港  ⑪ 4
+      - 🇭🇰 香港  ⑯ 4
+      - 🇭🇰 香港 ⑦ 4
+      - 🇭🇰 香港 ⑫ 4
+      - 🇭🇰 香港 ⑮ 4
+      - 🇸🇬 新加坡⑭ 5
+      - 🇯🇵 日本 ③ 5
+      - 🇭🇰 香港  ⑨ 5
+      - 🇭🇰 香港  ⑪ 5
+      - 🇭🇰 香港  ⑯ 5
+      - 🇭🇰 香港 ① 5
+      - 🇭🇰 香港 ② 5
+      - 🇭🇰 香港 ⑦ 5
+      - 🇭🇰 香港 ⑫ 5
+      - 🇭🇰 香港 ⑮ 5
+      - 🇭🇰 香港 ⑰ 5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -323,48 +408,65 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 【直连】TWN/台湾 B
       - 🇸🇬 【中转】SIN/狮城 A - 天津移动
-      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
-      - NONE
-      - zhuomian.apaap.xyz_vmess_ws
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
-      - "| 5.52Mb"
-      - Relay_ |28.38Mb
-      - 频道
-      - cf 23来自@tggonghai公海频道
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
-      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
-      - 🇯🇵 日本自搭
-      - Pool_ | 8.79Mb
-      - Relay_ |34.06Mb
-      - "|22.85Mb"
-      - 🇸🇬 SG1(IEPL) - 沪新国际专线
-      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国-1-北京中转
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国N01
-      - 🇰🇷 韩国 Magic 02 1x 解锁
-      - 🇭🇰 香港 Magic 01 1x 原生IP
-      - 🇭🇰 香港 Magic 03 1x 原生IP
-      - 🇺🇸 美国（群友橘子分享的节点）
-      - Relay_ | 1.84Mb
-      - Relay_ |24.05Mb
-      - Relay_ |28.38Mb 2
-      - Relay_ |10.20Mb
+      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
+      - 🇭🇰 香港01 - 直连  - 银河机场
+      - 🇸🇬 新加坡⑥ 2
+      - 🇸🇬 新加坡⑭ 2
+      - 🇯🇵 日本 ③ 2
+      - 🇫🇷 法国 ⑤ 2
+      - 🇺🇸 美国⑬ 2
+      - 🇭🇰 香港  ⑧ 2
+      - 🇭🇰 香港  ⑨ 2
+      - 🇭🇰 香港  ⑩ 2
+      - 🇭🇰 香港  ⑪ 2
+      - 🇭🇰 香港  ⑯ 2
+      - 🇭🇰 香港 ① 2
+      - 🇭🇰 香港 ② 2
+      - 🇭🇰 香港 ③ 2
+      - 🇭🇰 香港 ⑦ 2
+      - 🇭🇰 香港 ⑫ 2
+      - 🇭🇰 香港 ⑮ 2
+      - 🇸🇬 新加坡⑥ 3
+      - 🇸🇬 新加坡⑭ 3
+      - 🇯🇵 日本 ③ 3
+      - 🇫🇷 法国 ⑤ 3
+      - 🇺🇸 美国⑬ 3
+      - 🇭🇰 香港  ⑧ 3
+      - 🇭🇰 香港  ⑨ 3
+      - 🇭🇰 香港  ⑩ 3
+      - 🇭🇰 香港  ⑪ 3
+      - 🇭🇰 香港  ⑯ 3
+      - 🇭🇰 香港 ① 3
+      - 🇭🇰 香港 ② 3
+      - 🇭🇰 香港 ③ 3
+      - 🇭🇰 香港 ⑦ 3
+      - 🇭🇰 香港 ⑫ 3
+      - 🇭🇰 香港 ⑮ 3
+      - 🇭🇰 香港 ⑰ 3
+      - 🇸🇬 新加坡⑥ 4
+      - 🇸🇬 新加坡⑭ 4
+      - 🇯🇵 日本 ③ 4
+      - 🇫🇷 法国 ⑤ 4
+      - 🇺🇸 美国⑬ 4
+      - 🇭🇰 香港  ⑨ 4
+      - 🇭🇰 香港  ⑩ 4
+      - 🇭🇰 香港  ⑪ 4
+      - 🇭🇰 香港  ⑯ 4
+      - 🇭🇰 香港 ⑦ 4
+      - 🇭🇰 香港 ⑫ 4
+      - 🇭🇰 香港 ⑮ 4
+      - 🇸🇬 新加坡⑭ 5
+      - 🇯🇵 日本 ③ 5
+      - 🇭🇰 香港  ⑨ 5
+      - 🇭🇰 香港  ⑪ 5
+      - 🇭🇰 香港  ⑯ 5
+      - 🇭🇰 香港 ① 5
+      - 🇭🇰 香港 ② 5
+      - 🇭🇰 香港 ⑦ 5
+      - 🇭🇰 香港 ⑫ 5
+      - 🇭🇰 香港 ⑮ 5
+      - 🇭🇰 香港 ⑰ 5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -386,48 +488,65 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 【直连】TWN/台湾 B
       - 🇸🇬 【中转】SIN/狮城 A - 天津移动
-      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
-      - NONE
-      - zhuomian.apaap.xyz_vmess_ws
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
-      - "| 5.52Mb"
-      - Relay_ |28.38Mb
-      - 频道
-      - cf 23来自@tggonghai公海频道
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
-      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
-      - 🇯🇵 日本自搭
-      - Pool_ | 8.79Mb
-      - Relay_ |34.06Mb
-      - "|22.85Mb"
-      - 🇸🇬 SG1(IEPL) - 沪新国际专线
-      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国-1-北京中转
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国N01
-      - 🇰🇷 韩国 Magic 02 1x 解锁
-      - 🇭🇰 香港 Magic 01 1x 原生IP
-      - 🇭🇰 香港 Magic 03 1x 原生IP
-      - 🇺🇸 美国（群友橘子分享的节点）
-      - Relay_ | 1.84Mb
-      - Relay_ |24.05Mb
-      - Relay_ |28.38Mb 2
-      - Relay_ |10.20Mb
+      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
+      - 🇭🇰 香港01 - 直连  - 银河机场
+      - 🇸🇬 新加坡⑥ 2
+      - 🇸🇬 新加坡⑭ 2
+      - 🇯🇵 日本 ③ 2
+      - 🇫🇷 法国 ⑤ 2
+      - 🇺🇸 美国⑬ 2
+      - 🇭🇰 香港  ⑧ 2
+      - 🇭🇰 香港  ⑨ 2
+      - 🇭🇰 香港  ⑩ 2
+      - 🇭🇰 香港  ⑪ 2
+      - 🇭🇰 香港  ⑯ 2
+      - 🇭🇰 香港 ① 2
+      - 🇭🇰 香港 ② 2
+      - 🇭🇰 香港 ③ 2
+      - 🇭🇰 香港 ⑦ 2
+      - 🇭🇰 香港 ⑫ 2
+      - 🇭🇰 香港 ⑮ 2
+      - 🇸🇬 新加坡⑥ 3
+      - 🇸🇬 新加坡⑭ 3
+      - 🇯🇵 日本 ③ 3
+      - 🇫🇷 法国 ⑤ 3
+      - 🇺🇸 美国⑬ 3
+      - 🇭🇰 香港  ⑧ 3
+      - 🇭🇰 香港  ⑨ 3
+      - 🇭🇰 香港  ⑩ 3
+      - 🇭🇰 香港  ⑪ 3
+      - 🇭🇰 香港  ⑯ 3
+      - 🇭🇰 香港 ① 3
+      - 🇭🇰 香港 ② 3
+      - 🇭🇰 香港 ③ 3
+      - 🇭🇰 香港 ⑦ 3
+      - 🇭🇰 香港 ⑫ 3
+      - 🇭🇰 香港 ⑮ 3
+      - 🇭🇰 香港 ⑰ 3
+      - 🇸🇬 新加坡⑥ 4
+      - 🇸🇬 新加坡⑭ 4
+      - 🇯🇵 日本 ③ 4
+      - 🇫🇷 法国 ⑤ 4
+      - 🇺🇸 美国⑬ 4
+      - 🇭🇰 香港  ⑨ 4
+      - 🇭🇰 香港  ⑩ 4
+      - 🇭🇰 香港  ⑪ 4
+      - 🇭🇰 香港  ⑯ 4
+      - 🇭🇰 香港 ⑦ 4
+      - 🇭🇰 香港 ⑫ 4
+      - 🇭🇰 香港 ⑮ 4
+      - 🇸🇬 新加坡⑭ 5
+      - 🇯🇵 日本 ③ 5
+      - 🇭🇰 香港  ⑨ 5
+      - 🇭🇰 香港  ⑪ 5
+      - 🇭🇰 香港  ⑯ 5
+      - 🇭🇰 香港 ① 5
+      - 🇭🇰 香港 ② 5
+      - 🇭🇰 香港 ⑦ 5
+      - 🇭🇰 香港 ⑫ 5
+      - 🇭🇰 香港 ⑮ 5
+      - 🇭🇰 香港 ⑰ 5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -450,48 +569,65 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 【直连】TWN/台湾 B
       - 🇸🇬 【中转】SIN/狮城 A - 天津移动
-      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
-      - NONE
-      - zhuomian.apaap.xyz_vmess_ws
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
-      - "| 5.52Mb"
-      - Relay_ |28.38Mb
-      - 频道
-      - cf 23来自@tggonghai公海频道
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
-      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
-      - 🇯🇵 日本自搭
-      - Pool_ | 8.79Mb
-      - Relay_ |34.06Mb
-      - "|22.85Mb"
-      - 🇸🇬 SG1(IEPL) - 沪新国际专线
-      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国-1-北京中转
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国N01
-      - 🇰🇷 韩国 Magic 02 1x 解锁
-      - 🇭🇰 香港 Magic 01 1x 原生IP
-      - 🇭🇰 香港 Magic 03 1x 原生IP
-      - 🇺🇸 美国（群友橘子分享的节点）
-      - Relay_ | 1.84Mb
-      - Relay_ |24.05Mb
-      - Relay_ |28.38Mb 2
-      - Relay_ |10.20Mb
+      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
+      - 🇭🇰 香港01 - 直连  - 银河机场
+      - 🇸🇬 新加坡⑥ 2
+      - 🇸🇬 新加坡⑭ 2
+      - 🇯🇵 日本 ③ 2
+      - 🇫🇷 法国 ⑤ 2
+      - 🇺🇸 美国⑬ 2
+      - 🇭🇰 香港  ⑧ 2
+      - 🇭🇰 香港  ⑨ 2
+      - 🇭🇰 香港  ⑩ 2
+      - 🇭🇰 香港  ⑪ 2
+      - 🇭🇰 香港  ⑯ 2
+      - 🇭🇰 香港 ① 2
+      - 🇭🇰 香港 ② 2
+      - 🇭🇰 香港 ③ 2
+      - 🇭🇰 香港 ⑦ 2
+      - 🇭🇰 香港 ⑫ 2
+      - 🇭🇰 香港 ⑮ 2
+      - 🇸🇬 新加坡⑥ 3
+      - 🇸🇬 新加坡⑭ 3
+      - 🇯🇵 日本 ③ 3
+      - 🇫🇷 法国 ⑤ 3
+      - 🇺🇸 美国⑬ 3
+      - 🇭🇰 香港  ⑧ 3
+      - 🇭🇰 香港  ⑨ 3
+      - 🇭🇰 香港  ⑩ 3
+      - 🇭🇰 香港  ⑪ 3
+      - 🇭🇰 香港  ⑯ 3
+      - 🇭🇰 香港 ① 3
+      - 🇭🇰 香港 ② 3
+      - 🇭🇰 香港 ③ 3
+      - 🇭🇰 香港 ⑦ 3
+      - 🇭🇰 香港 ⑫ 3
+      - 🇭🇰 香港 ⑮ 3
+      - 🇭🇰 香港 ⑰ 3
+      - 🇸🇬 新加坡⑥ 4
+      - 🇸🇬 新加坡⑭ 4
+      - 🇯🇵 日本 ③ 4
+      - 🇫🇷 法国 ⑤ 4
+      - 🇺🇸 美国⑬ 4
+      - 🇭🇰 香港  ⑨ 4
+      - 🇭🇰 香港  ⑩ 4
+      - 🇭🇰 香港  ⑪ 4
+      - 🇭🇰 香港  ⑯ 4
+      - 🇭🇰 香港 ⑦ 4
+      - 🇭🇰 香港 ⑫ 4
+      - 🇭🇰 香港 ⑮ 4
+      - 🇸🇬 新加坡⑭ 5
+      - 🇯🇵 日本 ③ 5
+      - 🇭🇰 香港  ⑨ 5
+      - 🇭🇰 香港  ⑪ 5
+      - 🇭🇰 香港  ⑯ 5
+      - 🇭🇰 香港 ① 5
+      - 🇭🇰 香港 ② 5
+      - 🇭🇰 香港 ⑦ 5
+      - 🇭🇰 香港 ⑫ 5
+      - 🇭🇰 香港 ⑮ 5
+      - 🇭🇰 香港 ⑰ 5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -530,48 +666,65 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 【直连】TWN/台湾 B
       - 🇸🇬 【中转】SIN/狮城 A - 天津移动
-      - 🇸🇬 【中转】SIN/狮城 A - 江苏移动
-      - NONE
-      - zhuomian.apaap.xyz_vmess_ws
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 2
-      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点)
-      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Los Angeles 4
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 2
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Guangzhou/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 3
-      - 🇨🇳 https://www.mattkaydiary.com|中国香港/中国台湾(CN)China/Shanghai/小东的程序未能精准识别(可能是中转节点) 4
-      - "| 5.52Mb"
-      - Relay_ |28.38Mb
-      - 频道
-      - cf 23来自@tggonghai公海频道
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 37
-      - 🇺🇸 美国(自由之梦免费节点-倒卖举报) 14
-      - 🇯🇵 日本自搭
-      - Pool_ | 8.79Mb
-      - Relay_ |34.06Mb
-      - "|22.85Mb"
-      - 🇸🇬 SG1(IEPL) - 沪新国际专线
-      - 🇯🇵 日本东京 40(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国-1-北京中转
-      - 北海道 15(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国N01
-      - 🇰🇷 韩国 Magic 02 1x 解锁
-      - 🇭🇰 香港 Magic 01 1x 原生IP
-      - 🇭🇰 香港 Magic 03 1x 原生IP
-      - 🇺🇸 美国（群友橘子分享的节点）
-      - Relay_ | 1.84Mb
-      - Relay_ |24.05Mb
-      - Relay_ |28.38Mb 2
-      - Relay_ |10.20Mb
+      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
+      - 🇭🇰 香港01 - 直连  - 银河机场
+      - 🇸🇬 新加坡⑥ 2
+      - 🇸🇬 新加坡⑭ 2
+      - 🇯🇵 日本 ③ 2
+      - 🇫🇷 法国 ⑤ 2
+      - 🇺🇸 美国⑬ 2
+      - 🇭🇰 香港  ⑧ 2
+      - 🇭🇰 香港  ⑨ 2
+      - 🇭🇰 香港  ⑩ 2
+      - 🇭🇰 香港  ⑪ 2
+      - 🇭🇰 香港  ⑯ 2
+      - 🇭🇰 香港 ① 2
+      - 🇭🇰 香港 ② 2
+      - 🇭🇰 香港 ③ 2
+      - 🇭🇰 香港 ⑦ 2
+      - 🇭🇰 香港 ⑫ 2
+      - 🇭🇰 香港 ⑮ 2
+      - 🇸🇬 新加坡⑥ 3
+      - 🇸🇬 新加坡⑭ 3
+      - 🇯🇵 日本 ③ 3
+      - 🇫🇷 法国 ⑤ 3
+      - 🇺🇸 美国⑬ 3
+      - 🇭🇰 香港  ⑧ 3
+      - 🇭🇰 香港  ⑨ 3
+      - 🇭🇰 香港  ⑩ 3
+      - 🇭🇰 香港  ⑪ 3
+      - 🇭🇰 香港  ⑯ 3
+      - 🇭🇰 香港 ① 3
+      - 🇭🇰 香港 ② 3
+      - 🇭🇰 香港 ③ 3
+      - 🇭🇰 香港 ⑦ 3
+      - 🇭🇰 香港 ⑫ 3
+      - 🇭🇰 香港 ⑮ 3
+      - 🇭🇰 香港 ⑰ 3
+      - 🇸🇬 新加坡⑥ 4
+      - 🇸🇬 新加坡⑭ 4
+      - 🇯🇵 日本 ③ 4
+      - 🇫🇷 法国 ⑤ 4
+      - 🇺🇸 美国⑬ 4
+      - 🇭🇰 香港  ⑨ 4
+      - 🇭🇰 香港  ⑩ 4
+      - 🇭🇰 香港  ⑪ 4
+      - 🇭🇰 香港  ⑯ 4
+      - 🇭🇰 香港 ⑦ 4
+      - 🇭🇰 香港 ⑫ 4
+      - 🇭🇰 香港 ⑮ 4
+      - 🇸🇬 新加坡⑭ 5
+      - 🇯🇵 日本 ③ 5
+      - 🇭🇰 香港  ⑨ 5
+      - 🇭🇰 香港  ⑪ 5
+      - 🇭🇰 香港  ⑯ 5
+      - 🇭🇰 香港 ① 5
+      - 🇭🇰 香港 ② 5
+      - 🇭🇰 香港 ⑦ 5
+      - 🇭🇰 香港 ⑫ 5
+      - 🇭🇰 香港 ⑮ 5
+      - 🇭🇰 香港 ⑰ 5
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
