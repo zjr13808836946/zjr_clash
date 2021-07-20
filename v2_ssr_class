@@ -5,146 +5,66 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇸🇬 【中转】SIN/狮城 A - 天津移动, server: 111.32.136.1, port: 80, type: vmess, uuid: 6eb4f8d5-5b99-4eb0-a580-e15c4b852555, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 003.cdn.8x.cx.hit.edu.cn}}
+  - {name: 🇺🇸 航海-美国3, server: shanghai.lianshangni.icu, port: 30175, type: vmess, uuid: 8bdaf2a5-102c-35f4-9939-9388b4ca90b3, alterId: 16, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 149.248.10.186}}
+  - {name: 🇺🇸 美国Y04, server: 0004.yedea.gofast.run, port: 443, type: trojan, password: 37acbb3f-4f33-4c80-9a3d-ff7b3b75be90, sni: 0004.yedea.gofast.run, skip-cert-verify: false}
+  - {name: 🇺🇸 美国N01, server: 0001.nio.gofast.run, port: 443, type: trojan, password: 37acbb3f-4f33-4c80-9a3d-ff7b3b75be90, sni: 0001.nio.gofast.run, skip-cert-verify: false}
+  - {name: 🇺🇸 航海-美国1, server: shanghai.lianshangni.icu, port: 30173, type: vmess, uuid: 8bdaf2a5-102c-35f4-9939-9388b4ca90b3, alterId: 16, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 45.77.120.69}}
+  - {name: 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: osk10.speedsvip.co, port: 443, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: osk10.speedsvip.co}}
+  - {name: 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty26.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty26.speedsvip.co}}
+  - {name: 🇺🇸 美国 14(综合、禁止BT下载) - V2ray, server: us14.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: us14.speedsvip.co}}
   - {name: 🇸🇬 【中转】SIN/狮城 A - 宁波电信, server: 115.231.187.1, port: 80, type: vmess, uuid: 6eb4f8d5-5b99-4eb0-a580-e15c4b852555, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 003.cdn.8x.cx.hit.edu.cn}}
-  - {name: 🇭🇰 香港01 - 直连  - 银河机场, server: hk-01.yinriver.top, port: 80, type: vmess, uuid: f615d550-a054-43a1-b385-60d0eb80bae9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk-01.yinriver.top}}
-  - {name: 🇸🇬 新加坡⑥ 2, server: 52.ssrj.xyz, port: 65152, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡⑭ 2, server: 64.ssrj.xyz, port: 65164, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本 ③ 2, server: 48.ssrj.xyz, port: 65148, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇫🇷 法国 ⑤ 2, server: 51.ssrj.xyz, port: 65151, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国⑬ 2, server: 63.ssrj.xyz, port: 65163, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑧ 2, server: 54.ssrj.xyz, port: 61154, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑨ 2, server: 55.ssrj.xyz, port: 61155, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑩ 2, server: 56.ssrj.xyz, port: 61156, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑪ 2, server: 57.ssrj.xyz, port: 61157, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑯ 2, server: 66.ssrj.xyz, port: 65166, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ① 2, server: 44.ssrj.xyz, port: 61144, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ② 2, server: 45.ssrj.xyz, port: 61145, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ③ 2, server: 49.ssrj.xyz, port: 61149, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ⑦ 2, server: 53.ssrj.xyz, port: 61153, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ⑫ 2, server: 58.ssrj.xyz, port: 61158, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ⑮ 2, server: 65.ssrj.xyz, port: 65165, type: vmess, uuid: eec894f3-d5c8-302e-b156-9ab07320e448, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡⑥ 3, server: 52.ssrj.xyz, port: 65152, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡⑭ 3, server: 64.ssrj.xyz, port: 65164, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本 ③ 3, server: 48.ssrj.xyz, port: 65148, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇫🇷 法国 ⑤ 3, server: 51.ssrj.xyz, port: 65151, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国⑬ 3, server: 63.ssrj.xyz, port: 65163, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑧ 3, server: 54.ssrj.xyz, port: 61154, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑨ 3, server: 55.ssrj.xyz, port: 61155, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑩ 3, server: 56.ssrj.xyz, port: 61156, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑪ 3, server: 57.ssrj.xyz, port: 61157, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑯ 3, server: 66.ssrj.xyz, port: 65166, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ① 3, server: 44.ssrj.xyz, port: 61144, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ② 3, server: 45.ssrj.xyz, port: 61145, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ③ 3, server: 49.ssrj.xyz, port: 61149, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ⑦ 3, server: 53.ssrj.xyz, port: 61153, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ⑫ 3, server: 58.ssrj.xyz, port: 61158, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ⑮ 3, server: 65.ssrj.xyz, port: 65165, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ⑰ 3, server: 67.ssrj.xyz, port: 65167, type: vmess, uuid: 3811548c-3fe9-3cd5-abe2-2e875d68d3e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡⑥ 4, server: 52.ssrj.xyz, port: 65152, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡⑭ 4, server: 64.ssrj.xyz, port: 65164, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本 ③ 4, server: 48.ssrj.xyz, port: 65148, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇫🇷 法国 ⑤ 4, server: 51.ssrj.xyz, port: 65151, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国⑬ 4, server: 63.ssrj.xyz, port: 65163, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑨ 4, server: 55.ssrj.xyz, port: 61155, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑩ 4, server: 56.ssrj.xyz, port: 61156, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑪ 4, server: 57.ssrj.xyz, port: 61157, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑯ 4, server: 66.ssrj.xyz, port: 65166, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ⑦ 4, server: 53.ssrj.xyz, port: 61153, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ⑫ 4, server: 58.ssrj.xyz, port: 61158, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ⑮ 4, server: 65.ssrj.xyz, port: 65165, type: vmess, uuid: 661b3622-f550-3049-8b36-524f42462fc8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡⑭ 5, server: 64.ssrj.xyz, port: 65164, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本 ③ 5, server: 48.ssrj.xyz, port: 65148, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑨ 5, server: 55.ssrj.xyz, port: 61155, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑪ 5, server: 57.ssrj.xyz, port: 61157, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港  ⑯ 5, server: 66.ssrj.xyz, port: 65166, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ① 5, server: 44.ssrj.xyz, port: 61144, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ② 5, server: 45.ssrj.xyz, port: 61145, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ⑦ 5, server: 53.ssrj.xyz, port: 61153, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ⑫ 5, server: 58.ssrj.xyz, port: 61158, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ⑮ 5, server: 65.ssrj.xyz, port: 65165, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 ⑰ 5, server: 67.ssrj.xyz, port: 65167, type: vmess, uuid: 4dc6af38-3df0-3806-a339-bfbc22441063, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 V4-中转3354|广东-新加坡|x2.5, server: linode-zy.ddns-only.xyz, port: 13354, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
-  - {name: 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5, server: guangdong05.ddns-only.xyz, port: 13489, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
-  - {name: 🇸🇬 V4-中转3558|广东-新加坡|x2.0, server: linode-zy.ddns-only.xyz, port: 13558, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 186375:290x6tvxunj, obfs-param: 6d2d5186375.microsoft.com}
-  - {name: 42.157.196.104, server: 42.157.196.104, port: 20886, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 150555:IrOsdRCSpb, obfs-param: ajax.microsoft.com}
+  - {name: 🇺🇸 【中转】USA/美国 A - 济南联通, server: 119.188.97.1, port: 80, type: vmess, uuid: 6eb4f8d5-5b99-4eb0-a580-e15c4b852555, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 005.cdn.8x.cx.hit.edu.cn}}
+  - {name: 🇺🇸 【中转】USA/美国 A - 重庆联通, server: 113.207.102.1, port: 80, type: vmess, uuid: 6eb4f8d5-5b99-4eb0-a580-e15c4b852555, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 005.cdn.8x.cx.hit.edu.cn}}
+  - {name: 🇸🇬 新加坡01 - 直连 - 银河机场, server: sg-01.yinriver.top, port: 443, type: vmess, uuid: 3c1e8390-4ffa-4936-bf03-58f941f1a607, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: sg-01.yinriver.top}}
+  - {name: 🇺🇸 美国03 - 直连 - 银河机场, server: us-03.yinriver.top, port: 443, type: vmess, uuid: 3c1e8390-4ffa-4936-bf03-58f941f1a607, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: us-03.yinriver.top}}
+  - {name: 🇪🇺 欧洲02 - 中转 - 银河机场, server: azsg.pengui.tools, port: 60011, type: vmess, uuid: 3c1e8390-4ffa-4936-bf03-58f941f1a607, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: azsg.pengui.tools}}
+  - {name: 🇭🇰 香港-02, server: superstar.srayx.xyz, port: 27101, type: vmess, uuid: e9f4e161-d58e-47a0-a6b3-95c346b968f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: superstar.srayx.xyz}}
+  - {name: 🇭🇰 香港-05, server: superstar.srayx.xyz, port: 27103, type: vmess, uuid: e9f4e161-d58e-47a0-a6b3-95c346b968f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: superstar.srayx.xyz}}
+  - {name: "🇭🇰 [Lite] HK-B [1x]", server: sdcm.666.boom.ovh, port: 51498, type: vmess, uuid: 40ba32a8-8375-47ed-b4f5-0a04b6388067, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇸🇬 [Lite] SG [1x]", server: 183.236.97.189, port: 10501, type: vmess, uuid: 40ba32a8-8375-47ed-b4f5-0a04b6388067, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇺🇸 [Start] US [1x]", server: sh163.2288.org, port: 31961, type: vmess, uuid: 40ba32a8-8375-47ed-b4f5-0a04b6388067, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本-教育, server: 172.67.69.36, port: 443, type: vmess, uuid: e26e8e56-6af6-fe22-d1ed-926650b89c76, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /fokfvws, ws-headers: {Host: nsawsrb.mooncloud.bike}}
+  - {name: 🇸🇬 V4-中转3354|广东-新加坡|x2.5, server: linode-zy.ddns-only.xyz, port: 13354, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 186375:290x6tvxunj, obfsparam: 6d2d5186375.microsoft.com}
+  - {name: 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5, server: guangdong05.ddns-only.xyz, port: 13489, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 186375:290x6tvxunj, obfsparam: 6d2d5186375.microsoft.com}
+  - {name: 🇸🇬 V4-中转3558|广东-新加坡|x2.0, server: linode-zy.ddns-only.xyz, port: 13558, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 186375:290x6tvxunj, obfsparam: 6d2d5186375.microsoft.com}
+  - {name: 42.157.196.104, server: 42.157.196.104, port: 20886, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_simple, protocolparam: 150555:IrOsdRCSpb, obfsparam: ajax.microsoft.com}
   - {name: NL |21.99Mb, server: 185.186.245.44, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
   - {name: NL |22.18Mb, server: 185.186.245.44, port: 8097, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
   - {name: NL |22.74Mb, server: 185.186.245.44, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
-  - {name: 🇨🇳 Relay_🇨🇳CN | 1.61Mb, server: agahk.q88q.ml, port: 20001, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:ugxrw29ogq, obfs-param: 4bfb0623.baidu.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN |10.95Mb, server: relayneko.q88q.ml, port: 25167, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:ugxrw29ogq, obfs-param: 4bfb0623.baidu.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN |28.85Mb, server: cu.gkd.world, port: 10693, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10522:SiJIyH, obfs-param: .microsoft.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb, server: agahk.q88q.ml, port: 20023, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:ugxrw29ogq, obfs-param: 4bfb0623.baidu.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839, server: agahk.q88q.ml, port: 20001, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:ugxrw29ogq, obfs-param: 4bfb0623.baidu.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834, server: cu.gkd.world, port: 10693, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 10522:SiJIyH, obfs-param: .microsoft.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833, server: relayneko.q88q.ml, port: 25162, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:ugxrw29ogq, obfs-param: 4bfb0623.baidu.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844, server: relayneko.q88q.ml, port: 25171, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:ugxrw29ogq, obfs-param: 4bfb0623.baidu.com}
-  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848, server: relayneko.q88q.ml, port: 25167, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:ugxrw29ogq, obfs-param: 4bfb0623.baidu.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN | 1.61Mb, server: agahk.q88q.ml, port: 20001, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 623:ugxrw29ogq, obfsparam: 4bfb0623.baidu.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN |10.95Mb, server: relayneko.q88q.ml, port: 25167, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 623:ugxrw29ogq, obfsparam: 4bfb0623.baidu.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN |28.85Mb, server: cu.gkd.world, port: 10693, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 10522:SiJIyH, obfsparam: .microsoft.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb, server: agahk.q88q.ml, port: 20023, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 623:ugxrw29ogq, obfsparam: 4bfb0623.baidu.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839, server: agahk.q88q.ml, port: 20001, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 623:ugxrw29ogq, obfsparam: 4bfb0623.baidu.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834, server: cu.gkd.world, port: 10693, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 10522:SiJIyH, obfsparam: .microsoft.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833, server: relayneko.q88q.ml, port: 25162, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 623:ugxrw29ogq, obfsparam: 4bfb0623.baidu.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844, server: relayneko.q88q.ml, port: 25171, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 623:ugxrw29ogq, obfsparam: 4bfb0623.baidu.com}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848, server: relayneko.q88q.ml, port: 25167, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 623:ugxrw29ogq, obfsparam: 4bfb0623.baidu.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇺🇸 美国N01
+      - 🇺🇸 航海-美国1
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
       - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇭🇰 香港01 - 直连  - 银河机场
-      - 🇸🇬 新加坡⑥ 2
-      - 🇸🇬 新加坡⑭ 2
-      - 🇯🇵 日本 ③ 2
-      - 🇫🇷 法国 ⑤ 2
-      - 🇺🇸 美国⑬ 2
-      - 🇭🇰 香港  ⑧ 2
-      - 🇭🇰 香港  ⑨ 2
-      - 🇭🇰 香港  ⑩ 2
-      - 🇭🇰 香港  ⑪ 2
-      - 🇭🇰 香港  ⑯ 2
-      - 🇭🇰 香港 ① 2
-      - 🇭🇰 香港 ② 2
-      - 🇭🇰 香港 ③ 2
-      - 🇭🇰 香港 ⑦ 2
-      - 🇭🇰 香港 ⑫ 2
-      - 🇭🇰 香港 ⑮ 2
-      - 🇸🇬 新加坡⑥ 3
-      - 🇸🇬 新加坡⑭ 3
-      - 🇯🇵 日本 ③ 3
-      - 🇫🇷 法国 ⑤ 3
-      - 🇺🇸 美国⑬ 3
-      - 🇭🇰 香港  ⑧ 3
-      - 🇭🇰 香港  ⑨ 3
-      - 🇭🇰 香港  ⑩ 3
-      - 🇭🇰 香港  ⑪ 3
-      - 🇭🇰 香港  ⑯ 3
-      - 🇭🇰 香港 ① 3
-      - 🇭🇰 香港 ② 3
-      - 🇭🇰 香港 ③ 3
-      - 🇭🇰 香港 ⑦ 3
-      - 🇭🇰 香港 ⑫ 3
-      - 🇭🇰 香港 ⑮ 3
-      - 🇭🇰 香港 ⑰ 3
-      - 🇸🇬 新加坡⑥ 4
-      - 🇸🇬 新加坡⑭ 4
-      - 🇯🇵 日本 ③ 4
-      - 🇫🇷 法国 ⑤ 4
-      - 🇺🇸 美国⑬ 4
-      - 🇭🇰 香港  ⑨ 4
-      - 🇭🇰 香港  ⑩ 4
-      - 🇭🇰 香港  ⑪ 4
-      - 🇭🇰 香港  ⑯ 4
-      - 🇭🇰 香港 ⑦ 4
-      - 🇭🇰 香港 ⑫ 4
-      - 🇭🇰 香港 ⑮ 4
-      - 🇸🇬 新加坡⑭ 5
-      - 🇯🇵 日本 ③ 5
-      - 🇭🇰 香港  ⑨ 5
-      - 🇭🇰 香港  ⑪ 5
-      - 🇭🇰 香港  ⑯ 5
-      - 🇭🇰 香港 ① 5
-      - 🇭🇰 香港 ② 5
-      - 🇭🇰 香港 ⑦ 5
-      - 🇭🇰 香港 ⑫ 5
-      - 🇭🇰 香港 ⑮ 5
-      - 🇭🇰 香港 ⑰ 5
+      - 🇺🇸 【中转】USA/美国 A - 济南联通
+      - 🇺🇸 【中转】USA/美国 A - 重庆联通
+      - 🇸🇬 新加坡01 - 直连 - 银河机场
+      - 🇺🇸 美国03 - 直连 - 银河机场
+      - 🇪🇺 欧洲02 - 中转 - 银河机场
+      - 🇭🇰 香港-02
+      - 🇭🇰 香港-05
+      - 🇭🇰 [Lite] HK-B [1x]
+      - 🇸🇬 [Lite] SG [1x]
+      - 🇺🇸 [Start] US [1x]
+      - 🇯🇵 日本-教育
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -167,65 +87,25 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇺🇸 美国N01
+      - 🇺🇸 航海-美国1
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
       - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇭🇰 香港01 - 直连  - 银河机场
-      - 🇸🇬 新加坡⑥ 2
-      - 🇸🇬 新加坡⑭ 2
-      - 🇯🇵 日本 ③ 2
-      - 🇫🇷 法国 ⑤ 2
-      - 🇺🇸 美国⑬ 2
-      - 🇭🇰 香港  ⑧ 2
-      - 🇭🇰 香港  ⑨ 2
-      - 🇭🇰 香港  ⑩ 2
-      - 🇭🇰 香港  ⑪ 2
-      - 🇭🇰 香港  ⑯ 2
-      - 🇭🇰 香港 ① 2
-      - 🇭🇰 香港 ② 2
-      - 🇭🇰 香港 ③ 2
-      - 🇭🇰 香港 ⑦ 2
-      - 🇭🇰 香港 ⑫ 2
-      - 🇭🇰 香港 ⑮ 2
-      - 🇸🇬 新加坡⑥ 3
-      - 🇸🇬 新加坡⑭ 3
-      - 🇯🇵 日本 ③ 3
-      - 🇫🇷 法国 ⑤ 3
-      - 🇺🇸 美国⑬ 3
-      - 🇭🇰 香港  ⑧ 3
-      - 🇭🇰 香港  ⑨ 3
-      - 🇭🇰 香港  ⑩ 3
-      - 🇭🇰 香港  ⑪ 3
-      - 🇭🇰 香港  ⑯ 3
-      - 🇭🇰 香港 ① 3
-      - 🇭🇰 香港 ② 3
-      - 🇭🇰 香港 ③ 3
-      - 🇭🇰 香港 ⑦ 3
-      - 🇭🇰 香港 ⑫ 3
-      - 🇭🇰 香港 ⑮ 3
-      - 🇭🇰 香港 ⑰ 3
-      - 🇸🇬 新加坡⑥ 4
-      - 🇸🇬 新加坡⑭ 4
-      - 🇯🇵 日本 ③ 4
-      - 🇫🇷 法国 ⑤ 4
-      - 🇺🇸 美国⑬ 4
-      - 🇭🇰 香港  ⑨ 4
-      - 🇭🇰 香港  ⑩ 4
-      - 🇭🇰 香港  ⑪ 4
-      - 🇭🇰 香港  ⑯ 4
-      - 🇭🇰 香港 ⑦ 4
-      - 🇭🇰 香港 ⑫ 4
-      - 🇭🇰 香港 ⑮ 4
-      - 🇸🇬 新加坡⑭ 5
-      - 🇯🇵 日本 ③ 5
-      - 🇭🇰 香港  ⑨ 5
-      - 🇭🇰 香港  ⑪ 5
-      - 🇭🇰 香港  ⑯ 5
-      - 🇭🇰 香港 ① 5
-      - 🇭🇰 香港 ② 5
-      - 🇭🇰 香港 ⑦ 5
-      - 🇭🇰 香港 ⑫ 5
-      - 🇭🇰 香港 ⑮ 5
-      - 🇭🇰 香港 ⑰ 5
+      - 🇺🇸 【中转】USA/美国 A - 济南联通
+      - 🇺🇸 【中转】USA/美国 A - 重庆联通
+      - 🇸🇬 新加坡01 - 直连 - 银河机场
+      - 🇺🇸 美国03 - 直连 - 银河机场
+      - 🇪🇺 欧洲02 - 中转 - 银河机场
+      - 🇭🇰 香港-02
+      - 🇭🇰 香港-05
+      - 🇭🇰 [Lite] HK-B [1x]
+      - 🇸🇬 [Lite] SG [1x]
+      - 🇺🇸 [Start] US [1x]
+      - 🇯🇵 日本-教育
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -248,65 +128,25 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇺🇸 美国N01
+      - 🇺🇸 航海-美国1
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
       - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇭🇰 香港01 - 直连  - 银河机场
-      - 🇸🇬 新加坡⑥ 2
-      - 🇸🇬 新加坡⑭ 2
-      - 🇯🇵 日本 ③ 2
-      - 🇫🇷 法国 ⑤ 2
-      - 🇺🇸 美国⑬ 2
-      - 🇭🇰 香港  ⑧ 2
-      - 🇭🇰 香港  ⑨ 2
-      - 🇭🇰 香港  ⑩ 2
-      - 🇭🇰 香港  ⑪ 2
-      - 🇭🇰 香港  ⑯ 2
-      - 🇭🇰 香港 ① 2
-      - 🇭🇰 香港 ② 2
-      - 🇭🇰 香港 ③ 2
-      - 🇭🇰 香港 ⑦ 2
-      - 🇭🇰 香港 ⑫ 2
-      - 🇭🇰 香港 ⑮ 2
-      - 🇸🇬 新加坡⑥ 3
-      - 🇸🇬 新加坡⑭ 3
-      - 🇯🇵 日本 ③ 3
-      - 🇫🇷 法国 ⑤ 3
-      - 🇺🇸 美国⑬ 3
-      - 🇭🇰 香港  ⑧ 3
-      - 🇭🇰 香港  ⑨ 3
-      - 🇭🇰 香港  ⑩ 3
-      - 🇭🇰 香港  ⑪ 3
-      - 🇭🇰 香港  ⑯ 3
-      - 🇭🇰 香港 ① 3
-      - 🇭🇰 香港 ② 3
-      - 🇭🇰 香港 ③ 3
-      - 🇭🇰 香港 ⑦ 3
-      - 🇭🇰 香港 ⑫ 3
-      - 🇭🇰 香港 ⑮ 3
-      - 🇭🇰 香港 ⑰ 3
-      - 🇸🇬 新加坡⑥ 4
-      - 🇸🇬 新加坡⑭ 4
-      - 🇯🇵 日本 ③ 4
-      - 🇫🇷 法国 ⑤ 4
-      - 🇺🇸 美国⑬ 4
-      - 🇭🇰 香港  ⑨ 4
-      - 🇭🇰 香港  ⑩ 4
-      - 🇭🇰 香港  ⑪ 4
-      - 🇭🇰 香港  ⑯ 4
-      - 🇭🇰 香港 ⑦ 4
-      - 🇭🇰 香港 ⑫ 4
-      - 🇭🇰 香港 ⑮ 4
-      - 🇸🇬 新加坡⑭ 5
-      - 🇯🇵 日本 ③ 5
-      - 🇭🇰 香港  ⑨ 5
-      - 🇭🇰 香港  ⑪ 5
-      - 🇭🇰 香港  ⑯ 5
-      - 🇭🇰 香港 ① 5
-      - 🇭🇰 香港 ② 5
-      - 🇭🇰 香港 ⑦ 5
-      - 🇭🇰 香港 ⑫ 5
-      - 🇭🇰 香港 ⑮ 5
-      - 🇭🇰 香港 ⑰ 5
+      - 🇺🇸 【中转】USA/美国 A - 济南联通
+      - 🇺🇸 【中转】USA/美国 A - 重庆联通
+      - 🇸🇬 新加坡01 - 直连 - 银河机场
+      - 🇺🇸 美国03 - 直连 - 银河机场
+      - 🇪🇺 欧洲02 - 中转 - 银河机场
+      - 🇭🇰 香港-02
+      - 🇭🇰 香港-05
+      - 🇭🇰 [Lite] HK-B [1x]
+      - 🇸🇬 [Lite] SG [1x]
+      - 🇺🇸 [Start] US [1x]
+      - 🇯🇵 日本-教育
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -328,65 +168,25 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇺🇸 美国N01
+      - 🇺🇸 航海-美国1
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
       - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇭🇰 香港01 - 直连  - 银河机场
-      - 🇸🇬 新加坡⑥ 2
-      - 🇸🇬 新加坡⑭ 2
-      - 🇯🇵 日本 ③ 2
-      - 🇫🇷 法国 ⑤ 2
-      - 🇺🇸 美国⑬ 2
-      - 🇭🇰 香港  ⑧ 2
-      - 🇭🇰 香港  ⑨ 2
-      - 🇭🇰 香港  ⑩ 2
-      - 🇭🇰 香港  ⑪ 2
-      - 🇭🇰 香港  ⑯ 2
-      - 🇭🇰 香港 ① 2
-      - 🇭🇰 香港 ② 2
-      - 🇭🇰 香港 ③ 2
-      - 🇭🇰 香港 ⑦ 2
-      - 🇭🇰 香港 ⑫ 2
-      - 🇭🇰 香港 ⑮ 2
-      - 🇸🇬 新加坡⑥ 3
-      - 🇸🇬 新加坡⑭ 3
-      - 🇯🇵 日本 ③ 3
-      - 🇫🇷 法国 ⑤ 3
-      - 🇺🇸 美国⑬ 3
-      - 🇭🇰 香港  ⑧ 3
-      - 🇭🇰 香港  ⑨ 3
-      - 🇭🇰 香港  ⑩ 3
-      - 🇭🇰 香港  ⑪ 3
-      - 🇭🇰 香港  ⑯ 3
-      - 🇭🇰 香港 ① 3
-      - 🇭🇰 香港 ② 3
-      - 🇭🇰 香港 ③ 3
-      - 🇭🇰 香港 ⑦ 3
-      - 🇭🇰 香港 ⑫ 3
-      - 🇭🇰 香港 ⑮ 3
-      - 🇭🇰 香港 ⑰ 3
-      - 🇸🇬 新加坡⑥ 4
-      - 🇸🇬 新加坡⑭ 4
-      - 🇯🇵 日本 ③ 4
-      - 🇫🇷 法国 ⑤ 4
-      - 🇺🇸 美国⑬ 4
-      - 🇭🇰 香港  ⑨ 4
-      - 🇭🇰 香港  ⑩ 4
-      - 🇭🇰 香港  ⑪ 4
-      - 🇭🇰 香港  ⑯ 4
-      - 🇭🇰 香港 ⑦ 4
-      - 🇭🇰 香港 ⑫ 4
-      - 🇭🇰 香港 ⑮ 4
-      - 🇸🇬 新加坡⑭ 5
-      - 🇯🇵 日本 ③ 5
-      - 🇭🇰 香港  ⑨ 5
-      - 🇭🇰 香港  ⑪ 5
-      - 🇭🇰 香港  ⑯ 5
-      - 🇭🇰 香港 ① 5
-      - 🇭🇰 香港 ② 5
-      - 🇭🇰 香港 ⑦ 5
-      - 🇭🇰 香港 ⑫ 5
-      - 🇭🇰 香港 ⑮ 5
-      - 🇭🇰 香港 ⑰ 5
+      - 🇺🇸 【中转】USA/美国 A - 济南联通
+      - 🇺🇸 【中转】USA/美国 A - 重庆联通
+      - 🇸🇬 新加坡01 - 直连 - 银河机场
+      - 🇺🇸 美国03 - 直连 - 银河机场
+      - 🇪🇺 欧洲02 - 中转 - 银河机场
+      - 🇭🇰 香港-02
+      - 🇭🇰 香港-05
+      - 🇭🇰 [Lite] HK-B [1x]
+      - 🇸🇬 [Lite] SG [1x]
+      - 🇺🇸 [Start] US [1x]
+      - 🇯🇵 日本-教育
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -408,65 +208,25 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇺🇸 美国N01
+      - 🇺🇸 航海-美国1
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
       - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇭🇰 香港01 - 直连  - 银河机场
-      - 🇸🇬 新加坡⑥ 2
-      - 🇸🇬 新加坡⑭ 2
-      - 🇯🇵 日本 ③ 2
-      - 🇫🇷 法国 ⑤ 2
-      - 🇺🇸 美国⑬ 2
-      - 🇭🇰 香港  ⑧ 2
-      - 🇭🇰 香港  ⑨ 2
-      - 🇭🇰 香港  ⑩ 2
-      - 🇭🇰 香港  ⑪ 2
-      - 🇭🇰 香港  ⑯ 2
-      - 🇭🇰 香港 ① 2
-      - 🇭🇰 香港 ② 2
-      - 🇭🇰 香港 ③ 2
-      - 🇭🇰 香港 ⑦ 2
-      - 🇭🇰 香港 ⑫ 2
-      - 🇭🇰 香港 ⑮ 2
-      - 🇸🇬 新加坡⑥ 3
-      - 🇸🇬 新加坡⑭ 3
-      - 🇯🇵 日本 ③ 3
-      - 🇫🇷 法国 ⑤ 3
-      - 🇺🇸 美国⑬ 3
-      - 🇭🇰 香港  ⑧ 3
-      - 🇭🇰 香港  ⑨ 3
-      - 🇭🇰 香港  ⑩ 3
-      - 🇭🇰 香港  ⑪ 3
-      - 🇭🇰 香港  ⑯ 3
-      - 🇭🇰 香港 ① 3
-      - 🇭🇰 香港 ② 3
-      - 🇭🇰 香港 ③ 3
-      - 🇭🇰 香港 ⑦ 3
-      - 🇭🇰 香港 ⑫ 3
-      - 🇭🇰 香港 ⑮ 3
-      - 🇭🇰 香港 ⑰ 3
-      - 🇸🇬 新加坡⑥ 4
-      - 🇸🇬 新加坡⑭ 4
-      - 🇯🇵 日本 ③ 4
-      - 🇫🇷 法国 ⑤ 4
-      - 🇺🇸 美国⑬ 4
-      - 🇭🇰 香港  ⑨ 4
-      - 🇭🇰 香港  ⑩ 4
-      - 🇭🇰 香港  ⑪ 4
-      - 🇭🇰 香港  ⑯ 4
-      - 🇭🇰 香港 ⑦ 4
-      - 🇭🇰 香港 ⑫ 4
-      - 🇭🇰 香港 ⑮ 4
-      - 🇸🇬 新加坡⑭ 5
-      - 🇯🇵 日本 ③ 5
-      - 🇭🇰 香港  ⑨ 5
-      - 🇭🇰 香港  ⑪ 5
-      - 🇭🇰 香港  ⑯ 5
-      - 🇭🇰 香港 ① 5
-      - 🇭🇰 香港 ② 5
-      - 🇭🇰 香港 ⑦ 5
-      - 🇭🇰 香港 ⑫ 5
-      - 🇭🇰 香港 ⑮ 5
-      - 🇭🇰 香港 ⑰ 5
+      - 🇺🇸 【中转】USA/美国 A - 济南联通
+      - 🇺🇸 【中转】USA/美国 A - 重庆联通
+      - 🇸🇬 新加坡01 - 直连 - 银河机场
+      - 🇺🇸 美国03 - 直连 - 银河机场
+      - 🇪🇺 欧洲02 - 中转 - 银河机场
+      - 🇭🇰 香港-02
+      - 🇭🇰 香港-05
+      - 🇭🇰 [Lite] HK-B [1x]
+      - 🇸🇬 [Lite] SG [1x]
+      - 🇺🇸 [Start] US [1x]
+      - 🇯🇵 日本-教育
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -488,65 +248,25 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇺🇸 美国N01
+      - 🇺🇸 航海-美国1
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
       - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇭🇰 香港01 - 直连  - 银河机场
-      - 🇸🇬 新加坡⑥ 2
-      - 🇸🇬 新加坡⑭ 2
-      - 🇯🇵 日本 ③ 2
-      - 🇫🇷 法国 ⑤ 2
-      - 🇺🇸 美国⑬ 2
-      - 🇭🇰 香港  ⑧ 2
-      - 🇭🇰 香港  ⑨ 2
-      - 🇭🇰 香港  ⑩ 2
-      - 🇭🇰 香港  ⑪ 2
-      - 🇭🇰 香港  ⑯ 2
-      - 🇭🇰 香港 ① 2
-      - 🇭🇰 香港 ② 2
-      - 🇭🇰 香港 ③ 2
-      - 🇭🇰 香港 ⑦ 2
-      - 🇭🇰 香港 ⑫ 2
-      - 🇭🇰 香港 ⑮ 2
-      - 🇸🇬 新加坡⑥ 3
-      - 🇸🇬 新加坡⑭ 3
-      - 🇯🇵 日本 ③ 3
-      - 🇫🇷 法国 ⑤ 3
-      - 🇺🇸 美国⑬ 3
-      - 🇭🇰 香港  ⑧ 3
-      - 🇭🇰 香港  ⑨ 3
-      - 🇭🇰 香港  ⑩ 3
-      - 🇭🇰 香港  ⑪ 3
-      - 🇭🇰 香港  ⑯ 3
-      - 🇭🇰 香港 ① 3
-      - 🇭🇰 香港 ② 3
-      - 🇭🇰 香港 ③ 3
-      - 🇭🇰 香港 ⑦ 3
-      - 🇭🇰 香港 ⑫ 3
-      - 🇭🇰 香港 ⑮ 3
-      - 🇭🇰 香港 ⑰ 3
-      - 🇸🇬 新加坡⑥ 4
-      - 🇸🇬 新加坡⑭ 4
-      - 🇯🇵 日本 ③ 4
-      - 🇫🇷 法国 ⑤ 4
-      - 🇺🇸 美国⑬ 4
-      - 🇭🇰 香港  ⑨ 4
-      - 🇭🇰 香港  ⑩ 4
-      - 🇭🇰 香港  ⑪ 4
-      - 🇭🇰 香港  ⑯ 4
-      - 🇭🇰 香港 ⑦ 4
-      - 🇭🇰 香港 ⑫ 4
-      - 🇭🇰 香港 ⑮ 4
-      - 🇸🇬 新加坡⑭ 5
-      - 🇯🇵 日本 ③ 5
-      - 🇭🇰 香港  ⑨ 5
-      - 🇭🇰 香港  ⑪ 5
-      - 🇭🇰 香港  ⑯ 5
-      - 🇭🇰 香港 ① 5
-      - 🇭🇰 香港 ② 5
-      - 🇭🇰 香港 ⑦ 5
-      - 🇭🇰 香港 ⑫ 5
-      - 🇭🇰 香港 ⑮ 5
-      - 🇭🇰 香港 ⑰ 5
+      - 🇺🇸 【中转】USA/美国 A - 济南联通
+      - 🇺🇸 【中转】USA/美国 A - 重庆联通
+      - 🇸🇬 新加坡01 - 直连 - 银河机场
+      - 🇺🇸 美国03 - 直连 - 银河机场
+      - 🇪🇺 欧洲02 - 中转 - 银河机场
+      - 🇭🇰 香港-02
+      - 🇭🇰 香港-05
+      - 🇭🇰 [Lite] HK-B [1x]
+      - 🇸🇬 [Lite] SG [1x]
+      - 🇺🇸 [Start] US [1x]
+      - 🇯🇵 日本-教育
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -569,65 +289,25 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇺🇸 美国N01
+      - 🇺🇸 航海-美国1
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
       - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇭🇰 香港01 - 直连  - 银河机场
-      - 🇸🇬 新加坡⑥ 2
-      - 🇸🇬 新加坡⑭ 2
-      - 🇯🇵 日本 ③ 2
-      - 🇫🇷 法国 ⑤ 2
-      - 🇺🇸 美国⑬ 2
-      - 🇭🇰 香港  ⑧ 2
-      - 🇭🇰 香港  ⑨ 2
-      - 🇭🇰 香港  ⑩ 2
-      - 🇭🇰 香港  ⑪ 2
-      - 🇭🇰 香港  ⑯ 2
-      - 🇭🇰 香港 ① 2
-      - 🇭🇰 香港 ② 2
-      - 🇭🇰 香港 ③ 2
-      - 🇭🇰 香港 ⑦ 2
-      - 🇭🇰 香港 ⑫ 2
-      - 🇭🇰 香港 ⑮ 2
-      - 🇸🇬 新加坡⑥ 3
-      - 🇸🇬 新加坡⑭ 3
-      - 🇯🇵 日本 ③ 3
-      - 🇫🇷 法国 ⑤ 3
-      - 🇺🇸 美国⑬ 3
-      - 🇭🇰 香港  ⑧ 3
-      - 🇭🇰 香港  ⑨ 3
-      - 🇭🇰 香港  ⑩ 3
-      - 🇭🇰 香港  ⑪ 3
-      - 🇭🇰 香港  ⑯ 3
-      - 🇭🇰 香港 ① 3
-      - 🇭🇰 香港 ② 3
-      - 🇭🇰 香港 ③ 3
-      - 🇭🇰 香港 ⑦ 3
-      - 🇭🇰 香港 ⑫ 3
-      - 🇭🇰 香港 ⑮ 3
-      - 🇭🇰 香港 ⑰ 3
-      - 🇸🇬 新加坡⑥ 4
-      - 🇸🇬 新加坡⑭ 4
-      - 🇯🇵 日本 ③ 4
-      - 🇫🇷 法国 ⑤ 4
-      - 🇺🇸 美国⑬ 4
-      - 🇭🇰 香港  ⑨ 4
-      - 🇭🇰 香港  ⑩ 4
-      - 🇭🇰 香港  ⑪ 4
-      - 🇭🇰 香港  ⑯ 4
-      - 🇭🇰 香港 ⑦ 4
-      - 🇭🇰 香港 ⑫ 4
-      - 🇭🇰 香港 ⑮ 4
-      - 🇸🇬 新加坡⑭ 5
-      - 🇯🇵 日本 ③ 5
-      - 🇭🇰 香港  ⑨ 5
-      - 🇭🇰 香港  ⑪ 5
-      - 🇭🇰 香港  ⑯ 5
-      - 🇭🇰 香港 ① 5
-      - 🇭🇰 香港 ② 5
-      - 🇭🇰 香港 ⑦ 5
-      - 🇭🇰 香港 ⑫ 5
-      - 🇭🇰 香港 ⑮ 5
-      - 🇭🇰 香港 ⑰ 5
+      - 🇺🇸 【中转】USA/美国 A - 济南联通
+      - 🇺🇸 【中转】USA/美国 A - 重庆联通
+      - 🇸🇬 新加坡01 - 直连 - 银河机场
+      - 🇺🇸 美国03 - 直连 - 银河机场
+      - 🇪🇺 欧洲02 - 中转 - 银河机场
+      - 🇭🇰 香港-02
+      - 🇭🇰 香港-05
+      - 🇭🇰 [Lite] HK-B [1x]
+      - 🇸🇬 [Lite] SG [1x]
+      - 🇺🇸 [Start] US [1x]
+      - 🇯🇵 日本-教育
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -666,65 +346,25 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 【中转】SIN/狮城 A - 天津移动
+      - 🇺🇸 航海-美国3
+      - 🇺🇸 美国Y04
+      - 🇺🇸 美国N01
+      - 🇺🇸 航海-美国1
+      - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
+      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
       - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇭🇰 香港01 - 直连  - 银河机场
-      - 🇸🇬 新加坡⑥ 2
-      - 🇸🇬 新加坡⑭ 2
-      - 🇯🇵 日本 ③ 2
-      - 🇫🇷 法国 ⑤ 2
-      - 🇺🇸 美国⑬ 2
-      - 🇭🇰 香港  ⑧ 2
-      - 🇭🇰 香港  ⑨ 2
-      - 🇭🇰 香港  ⑩ 2
-      - 🇭🇰 香港  ⑪ 2
-      - 🇭🇰 香港  ⑯ 2
-      - 🇭🇰 香港 ① 2
-      - 🇭🇰 香港 ② 2
-      - 🇭🇰 香港 ③ 2
-      - 🇭🇰 香港 ⑦ 2
-      - 🇭🇰 香港 ⑫ 2
-      - 🇭🇰 香港 ⑮ 2
-      - 🇸🇬 新加坡⑥ 3
-      - 🇸🇬 新加坡⑭ 3
-      - 🇯🇵 日本 ③ 3
-      - 🇫🇷 法国 ⑤ 3
-      - 🇺🇸 美国⑬ 3
-      - 🇭🇰 香港  ⑧ 3
-      - 🇭🇰 香港  ⑨ 3
-      - 🇭🇰 香港  ⑩ 3
-      - 🇭🇰 香港  ⑪ 3
-      - 🇭🇰 香港  ⑯ 3
-      - 🇭🇰 香港 ① 3
-      - 🇭🇰 香港 ② 3
-      - 🇭🇰 香港 ③ 3
-      - 🇭🇰 香港 ⑦ 3
-      - 🇭🇰 香港 ⑫ 3
-      - 🇭🇰 香港 ⑮ 3
-      - 🇭🇰 香港 ⑰ 3
-      - 🇸🇬 新加坡⑥ 4
-      - 🇸🇬 新加坡⑭ 4
-      - 🇯🇵 日本 ③ 4
-      - 🇫🇷 法国 ⑤ 4
-      - 🇺🇸 美国⑬ 4
-      - 🇭🇰 香港  ⑨ 4
-      - 🇭🇰 香港  ⑩ 4
-      - 🇭🇰 香港  ⑪ 4
-      - 🇭🇰 香港  ⑯ 4
-      - 🇭🇰 香港 ⑦ 4
-      - 🇭🇰 香港 ⑫ 4
-      - 🇭🇰 香港 ⑮ 4
-      - 🇸🇬 新加坡⑭ 5
-      - 🇯🇵 日本 ③ 5
-      - 🇭🇰 香港  ⑨ 5
-      - 🇭🇰 香港  ⑪ 5
-      - 🇭🇰 香港  ⑯ 5
-      - 🇭🇰 香港 ① 5
-      - 🇭🇰 香港 ② 5
-      - 🇭🇰 香港 ⑦ 5
-      - 🇭🇰 香港 ⑫ 5
-      - 🇭🇰 香港 ⑮ 5
-      - 🇭🇰 香港 ⑰ 5
+      - 🇺🇸 【中转】USA/美国 A - 济南联通
+      - 🇺🇸 【中转】USA/美国 A - 重庆联通
+      - 🇸🇬 新加坡01 - 直连 - 银河机场
+      - 🇺🇸 美国03 - 直连 - 银河机场
+      - 🇪🇺 欧洲02 - 中转 - 银河机场
+      - 🇭🇰 香港-02
+      - 🇭🇰 香港-05
+      - 🇭🇰 [Lite] HK-B [1x]
+      - 🇸🇬 [Lite] SG [1x]
+      - 🇺🇸 [Start] US [1x]
+      - 🇯🇵 日本-教育
       - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
       - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
@@ -2495,7 +2135,6 @@ rules:
  - DOMAIN-SUFFIX,mtalk.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,ocsp.pki.goog,🎯 全球直连
  - DOMAIN-SUFFIX,recaptcha.net,🎯 全球直连
- - DOMAIN-SUFFIX,redirector.gvt1.com,🎯 全球直连
  - DOMAIN-SUFFIX,safebrowsing-cache.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🎯 全球直连
  - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
@@ -2662,17 +2301,43 @@ rules:
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,hinet.net,🌍 国外媒体
  - DOMAIN-KEYWORD,livedazn,🌍 国外媒体
+ - DOMAIN-KEYWORD,vod2dazn,🌍 国外媒体
  - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
  - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
+ - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
+ - DOMAIN,players.brightcove.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,amplify.outbrain.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,bluekai.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,control.kochava.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,cws.conviva.com,🌍 国外媒体
  - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,dc1-voddash-perform.secure.footprint.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,dc1live21715dazn.akamaized.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,dc2-live2dash-perform.secure.footprint.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,dc2-live2hls-perform.secure.footprint.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,dc2-vodhls-perform.secure.footprint.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,dca-livedash-perform.secure.footprint.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,dca-voddash-perform.secure.footprint.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,dca-vodhls-perform.secure.footprint.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,dcb-livedash-perform.secure.footprint.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,dcb-voddash-perform.secure.footprint.net,🌍 国外媒体
  - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
  - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,perfops.doracdn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,s.llnwi.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,s.yimg.jp,🌍 国外媒体
+ - DOMAIN-SUFFIX,secure.footprint.net,🌍 国外媒体
  - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,urbanairship.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,vjs.zencdn.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,widevine.entitlement.us.theplatform.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,yahoo.co.jp,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
@@ -2893,6 +2558,9 @@ rules:
  - DOMAIN-SUFFIX,youtu.be,🌍 国外媒体
  - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
  - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
+ - PROCESS-NAME,com.google.android.apps.youtube.music,🌍 国外媒体
+ - PROCESS-NAME,com.google.android.youtube.tvmusicroot,🌍 国外媒体
+ - PROCESS-NAME,com.vanced.android.apps.youtube.music,🌍 国外媒体
  - DOMAIN-SUFFIX,1password.com,🚀 节点选择
  - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
  - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
@@ -3015,6 +2683,7 @@ rules:
  - DOMAIN-SUFFIX,nintendo.net,🚀 节点选择
  - DOMAIN-SUFFIX,nsstatic.net,🚀 节点选择
  - DOMAIN-SUFFIX,nytstyle.com,🚀 节点选择
+ - DOMAIN-SUFFIX,overcast.fm,🚀 节点选择
  - DOMAIN-SUFFIX,openvpn.net,🚀 节点选择
  - DOMAIN-SUFFIX,periscope.tv,🚀 节点选择
  - DOMAIN-SUFFIX,pinimg.com,🚀 节点选择
@@ -3289,6 +2958,7 @@ rules:
  - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
  - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
  - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
+ - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
  - DOMAIN-SUFFIX,423down.com,🎯 全球直连
  - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
  - DOMAIN-SUFFIX,chaipip.com,🎯 全球直连
@@ -3297,6 +2967,7 @@ rules:
  - DOMAIN-SUFFIX,kaikeba.com,🎯 全球直连
  - DOMAIN-SUFFIX,laomo.me,🎯 全球直连
  - DOMAIN-SUFFIX,mpyit.com,🎯 全球直连
+ - DOMAIN-SUFFIX,qupu123.com,🎯 全球直连
  - DOMAIN-SUFFIX,cn,🎯 全球直连
  - DOMAIN-SUFFIX,中国,🎯 全球直连
  - DOMAIN-SUFFIX,公司,🎯 全球直连
@@ -3793,7 +3464,6 @@ rules:
  - DOMAIN-SUFFIX,oracle.com,🎯 全球直连
  - DOMAIN-SUFFIX,oschina.net,🎯 全球直连
  - DOMAIN-SUFFIX,ourdvs.com,🎯 全球直连
- - DOMAIN-SUFFIX,overcast.fm,🎯 全球直连
  - DOMAIN-SUFFIX,paypal.com,🎯 全球直连
  - DOMAIN-SUFFIX,polyv.net,🎯 全球直连
  - DOMAIN-SUFFIX,qbox.me,🎯 全球直连
