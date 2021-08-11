@@ -5,325 +5,397 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 航海-美国3, server: shanghai.lianshangni.icu, port: 30175, type: vmess, uuid: 8bdaf2a5-102c-35f4-9939-9388b4ca90b3, alterId: 16, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 149.248.10.186}}
-  - {name: 🇺🇸 美国Y04, server: 0004.yedea.gofast.run, port: 443, type: trojan, password: 37acbb3f-4f33-4c80-9a3d-ff7b3b75be90, sni: 0004.yedea.gofast.run, skip-cert-verify: false}
-  - {name: 🇺🇸 美国N01, server: 0001.nio.gofast.run, port: 443, type: trojan, password: 37acbb3f-4f33-4c80-9a3d-ff7b3b75be90, sni: 0001.nio.gofast.run, skip-cert-verify: false}
-  - {name: 🇺🇸 航海-美国1, server: shanghai.lianshangni.icu, port: 30173, type: vmess, uuid: 8bdaf2a5-102c-35f4-9939-9388b4ca90b3, alterId: 16, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 45.77.120.69}}
+  - {name: 🇭🇰 HK | 7.55Mb, server: anycast.live.hk-b.starseadata.com, port: 41370, type: vmess, uuid: 1fc889fc-cd4d-4925-97f7-ff182bd73ded, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: anycast.live.hk-b.starseadata.com}}
+  - {name: 概念  | 6.82Mb, server: anycast.live.hk-b.starseadata.com, port: 44817, type: vmess, uuid: 1fc889fc-cd4d-4925-97f7-ff182bd73ded, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: anycast.live.hk-b.starseadata.com}}
+  - {name: 🇭🇰 概念🇭🇰HK_5027 | 8.59Mb, server: 13.94.26.230, port: 1016, type: vmess, uuid: 7fa9d805-7d70-486a-81a8-7249dcd908cd, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /TG@mftizi, ws-headers: {Host: hk3.uuv2.co.uk}}
+  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Denver, server: 212.102.44.83, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇭🇰 香港, server: azhk.yinriver.top, port: 60019, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: azhk.yinriver.top}}
+  - {name: 🇭🇰 香港 2, server: hk-02.yinriver.top, port: 80, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk-02.yinriver.top}}
+  - {name: 🇺🇸 洛杉矶（感谢关注youtube：8度科技）, server: 185.242.5.149, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇺🇸 洛杉矶（感谢关注youtube：8度科技） 2, server: 185.242.5.157, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇭🇰 香港 3, server: hkaz1.biteb.club, port: 54411, type: vmess, uuid: 7b372dfe-22cd-3947-9cd6-b0e55fc59d4a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: index, ws-headers: {Host: hkaz1.biteb.club}}
+  - {name: 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong, server: bgp.pengui.top, port: 80, type: vmess, uuid: 6b5e97d9-e3b0-4b12-8145-a052942803d5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /phkt, ws-headers: {Host: bgp.pengui.top}}
+  - {name: 🇨🇳 台湾, server: hkaz1.biteb.club, port: 54537, type: vmess, uuid: 7b372dfe-22cd-3947-9cd6-b0e55fc59d4a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: index, ws-headers: {Host: hkaz1.biteb.club}}
+  - {name: 🇭🇰 香港 4, server: zf.proxypools.top, port: 57888, type: ss, cipher: aes-256-gcm, password: e73edc5d-2eef-47c1-a2e3-6d202e3478bf}
+  - {name: 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x, server: hk3.uuv2.co.uk, port: 1016, type: vmess, uuid: 7fa9d805-7d70-486a-81a8-7249dcd908cd, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /TG@mftizi, ws-headers: {Host: hk3.uuv2.co.uk}}
+  - {name: 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2, server: hkaz1.biteb.club, port: 54489, type: vmess, uuid: 7b372dfe-22cd-3947-9cd6-b0e55fc59d4a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: index, ws-headers: {Host: hkaz1.biteb.club}}
+  - {name: 🇭🇰 香港 5, server: hkaz2.biteb.club, port: 51002, type: vmess, uuid: 7b372dfe-22cd-3947-9cd6-b0e55fc59d4a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: index, ws-headers: {Host: hkaz2.biteb.club}}
+  - {name: 🇺🇸 美国, server: gggz.quickairport.top, port: 21831, type: vmess, uuid: 943c710e-273c-4a48-b52c-8ab43049a08b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gggz.quickairport.top}}
+  - {name: 🇭🇰 香港 6, server: hkaz2.biteb.club, port: 54546, type: vmess, uuid: 7b372dfe-22cd-3947-9cd6-b0e55fc59d4a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: index, ws-headers: {Host: hkaz2.biteb.club}}
+  - {name: 🇸🇬 新加坡, server: anycast.live.hk-b.starseadata.com, port: 44817, type: vmess, uuid: 1fc889fc-cd4d-4925-97f7-ff182bd73ded, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: anycast.live.hk-b.starseadata.com}}
+  - {name: 🇭🇰 香港 7, server: hkaz2.biteb.club, port: 54349, type: vmess, uuid: 7b372dfe-22cd-3947-9cd6-b0e55fc59d4a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: index, ws-headers: {Host: hkaz2.biteb.club}}
+  - {name: 🇸🇬 Singapore 3, server: 104.21.67.220, port: 443, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: sg-02.yinriver.top}}
+  - {name: 🇭🇰 香港 8, server: hkaz3.biteb.xyz, port: 54549, type: vmess, uuid: 7b372dfe-22cd-3947-9cd6-b0e55fc59d4a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: index, ws-headers: {Host: hkaz3.biteb.xyz}}
+  - {name: 🇭🇰 香港 9, server: gggz.quickairport.top, port: 21824, type: vmess, uuid: 943c710e-273c-4a48-b52c-8ab43049a08b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gggz.quickairport.top}}
+  - {name: 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/さいたま市, server: jpaz1-1-1.biteb.xyz, port: 54494, type: vmess, uuid: 7b372dfe-22cd-3947-9cd6-b0e55fc59d4a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: index, ws-headers: {Host: jpaz1-1-1.biteb.xyz}}
+  - {name: 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/San Francisco, server: 104.21.67.220, port: 443, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: sg-08.yinriver.top}}
   - {name: 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: osk10.speedsvip.co, port: 443, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: osk10.speedsvip.co}}
-  - {name: 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray, server: ty26.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: ty26.speedsvip.co}}
-  - {name: 🇺🇸 美国 14(综合、禁止BT下载) - V2ray, server: us14.speedsvip.co, port: 80, type: vmess, uuid: 03f8a17f-2bb0-3977-a06f-d51fff334780, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /live/cctv6_2/index.m3u8, ws-headers: {Host: us14.speedsvip.co}}
-  - {name: 🇸🇬 【中转】SIN/狮城 A - 宁波电信, server: 115.231.187.1, port: 80, type: vmess, uuid: 6eb4f8d5-5b99-4eb0-a580-e15c4b852555, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 003.cdn.8x.cx.hit.edu.cn}}
-  - {name: 🇺🇸 【中转】USA/美国 A - 济南联通, server: 119.188.97.1, port: 80, type: vmess, uuid: 6eb4f8d5-5b99-4eb0-a580-e15c4b852555, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 005.cdn.8x.cx.hit.edu.cn}}
-  - {name: 🇺🇸 【中转】USA/美国 A - 重庆联通, server: 113.207.102.1, port: 80, type: vmess, uuid: 6eb4f8d5-5b99-4eb0-a580-e15c4b852555, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 005.cdn.8x.cx.hit.edu.cn}}
-  - {name: 🇸🇬 新加坡01 - 直连 - 银河机场, server: sg-01.yinriver.top, port: 443, type: vmess, uuid: 3c1e8390-4ffa-4936-bf03-58f941f1a607, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: sg-01.yinriver.top}}
-  - {name: 🇺🇸 美国03 - 直连 - 银河机场, server: us-03.yinriver.top, port: 443, type: vmess, uuid: 3c1e8390-4ffa-4936-bf03-58f941f1a607, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: us-03.yinriver.top}}
-  - {name: 🇪🇺 欧洲02 - 中转 - 银河机场, server: azsg.pengui.tools, port: 60011, type: vmess, uuid: 3c1e8390-4ffa-4936-bf03-58f941f1a607, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: azsg.pengui.tools}}
-  - {name: 🇭🇰 香港-02, server: superstar.srayx.xyz, port: 27101, type: vmess, uuid: e9f4e161-d58e-47a0-a6b3-95c346b968f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: superstar.srayx.xyz}}
-  - {name: 🇭🇰 香港-05, server: superstar.srayx.xyz, port: 27103, type: vmess, uuid: e9f4e161-d58e-47a0-a6b3-95c346b968f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: superstar.srayx.xyz}}
-  - {name: "🇭🇰 [Lite] HK-B [1x]", server: sdcm.666.boom.ovh, port: 51498, type: vmess, uuid: 40ba32a8-8375-47ed-b4f5-0a04b6388067, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇸🇬 [Lite] SG [1x]", server: 183.236.97.189, port: 10501, type: vmess, uuid: 40ba32a8-8375-47ed-b4f5-0a04b6388067, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇺🇸 [Start] US [1x]", server: sh163.2288.org, port: 31961, type: vmess, uuid: 40ba32a8-8375-47ed-b4f5-0a04b6388067, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本-教育, server: 172.67.69.36, port: 443, type: vmess, uuid: e26e8e56-6af6-fe22-d1ed-926650b89c76, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /fokfvws, ws-headers: {Host: nsawsrb.mooncloud.bike}}
-  - {name: 🇸🇬 V4-中转3354|广东-新加坡|x2.5, server: linode-zy.ddns-only.xyz, port: 13354, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 186375:290x6tvxunj, obfsparam: 6d2d5186375.microsoft.com}
-  - {name: 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5, server: guangdong05.ddns-only.xyz, port: 13489, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 186375:290x6tvxunj, obfsparam: 6d2d5186375.microsoft.com}
   - {name: 🇸🇬 V4-中转3558|广东-新加坡|x2.0, server: linode-zy.ddns-only.xyz, port: 13558, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 186375:290x6tvxunj, obfsparam: 6d2d5186375.microsoft.com}
   - {name: 42.157.196.104, server: 42.157.196.104, port: 20886, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_simple, protocolparam: 150555:IrOsdRCSpb, obfsparam: ajax.microsoft.com}
-  - {name: NL |21.99Mb, server: 185.186.245.44, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
-  - {name: NL |22.18Mb, server: 185.186.245.44, port: 8097, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
-  - {name: NL |22.74Mb, server: 185.186.245.44, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
-  - {name: 🇨🇳 Relay_🇨🇳CN | 1.61Mb, server: agahk.q88q.ml, port: 20001, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 623:ugxrw29ogq, obfsparam: 4bfb0623.baidu.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN |10.95Mb, server: relayneko.q88q.ml, port: 25167, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 623:ugxrw29ogq, obfsparam: 4bfb0623.baidu.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN |28.85Mb, server: cu.gkd.world, port: 10693, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 10522:SiJIyH, obfsparam: .microsoft.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb, server: agahk.q88q.ml, port: 20023, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 623:ugxrw29ogq, obfsparam: 4bfb0623.baidu.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839, server: agahk.q88q.ml, port: 20001, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 623:ugxrw29ogq, obfsparam: 4bfb0623.baidu.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834, server: cu.gkd.world, port: 10693, type: ssr, cipher: aes-256-cfb, password: TuXJdt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocolparam: 10522:SiJIyH, obfsparam: .microsoft.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833, server: relayneko.q88q.ml, port: 25162, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 623:ugxrw29ogq, obfsparam: 4bfb0623.baidu.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844, server: relayneko.q88q.ml, port: 25171, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 623:ugxrw29ogq, obfsparam: 4bfb0623.baidu.com}
-  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848, server: relayneko.q88q.ml, port: 25167, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 623:ugxrw29ogq, obfsparam: 4bfb0623.baidu.com}
+  - {name: Relay_ | 8.72Mb, server: sg12.clashcloud.tech, port: 37387, type: ssr, cipher: rc4-md5, password: qbpJjZ, protocol: origin, obfs: http_simple, protocolparam: "", obfsparam: download.windowsupdate.com}
+  - {name: 🇺🇸 Relay_中国-美国_1314, server: gzyd.dasaric.pw, port: 6002, type: ssr, cipher: chacha20-ietf, password: gaLgrz, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 109544:95fbvQ, obfsparam: 8acb8109544.microsoft.com}
+  - {name: 🇺🇸 Relay_中国-美国_1315, server: gzyd.dasaric.pw, port: 7004, type: ssr, cipher: chacha20-ietf, password: gaLgrz, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 109544:95fbvQ, obfsparam: 8acb8109544.microsoft.com}
+  - {name: 🇺🇸 Relay_中国-美国_1318, server: gzyd.dasaric.pw, port: 6003, type: ssr, cipher: chacha20-ietf, password: gaLgrz, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 109544:95fbvQ, obfsparam: 8acb8109544.microsoft.com}
+  - {name: 🇺🇸 Relay_中国-美国_1330, server: gzyd.dasaric.pw, port: 6001, type: ssr, cipher: chacha20-ietf, password: gaLgrz, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 109544:95fbvQ, obfsparam: 8acb8109544.microsoft.com}
+  - {name: 🇭🇰 Relay_中国-香港_1322, server: gzyd.dasaric.pw, port: 6011, type: ssr, cipher: chacha20-ietf, password: gaLgrz, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 109544:95fbvQ, obfsparam: 8acb8109544.microsoft.com}
+  - {name: 🇭🇰 Relay_中国-香港_65, server: n32.boom.party, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 165138:ndXj0r, obfsparam: download.windowsupdate.com}
+  - {name: 🇺🇸 Relay_美国-_13728, server: 138.197.232.58, port: 11394, type: ssr, cipher: aes-256-cfb, password: a02660, protocol: origin, obfs: http_simple, protocolparam: "", obfsparam: bing.com#Connection:keep-alive\nCookie:cid=a02660;Auth=required}
+  - {name: 🇨🇳 中国_1311, server: gzyd.dasaric.pw, port: 6007, type: ssr, cipher: chacha20-ietf, password: gaLgrz, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 109544:95fbvQ, obfsparam: 8acb8109544.microsoft.com}
+  - {name: 🇨🇳 中国_1317, server: gzyd.dasaric.pw, port: 6009, type: ssr, cipher: chacha20-ietf, password: gaLgrz, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 109544:95fbvQ, obfsparam: 8acb8109544.microsoft.com}
+  - {name: 🇨🇳 中国_1324, server: gzyd.dasaric.pw, port: 6006, type: ssr, cipher: chacha20-ietf, password: gaLgrz, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 109544:95fbvQ, obfsparam: 8acb8109544.microsoft.com}
+  - {name: 🇨🇳 中国_1325, server: gzyd.dasaric.pw, port: 6005, type: ssr, cipher: chacha20-ietf, password: gaLgrz, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 109544:95fbvQ, obfsparam: 8acb8109544.microsoft.com}
+  - {name: 🇨🇳 中国_1327, server: gzyd.dasaric.pw, port: 7008, type: ssr, cipher: chacha20-ietf, password: gaLgrz, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 109544:95fbvQ, obfsparam: 8acb8109544.microsoft.com}
+  - {name: 🇺🇸 美国_13698 |66.85Mb, server: 138.197.232.58, port: 11394, type: ssr, cipher: aes-256-cfb, password: a02660, protocol: origin, obfs: http_simple, protocolparam: "", obfsparam: ""}
+  - {name: 🇭🇰 防失效github.com/Leon406/Sub 中国-香港 IEPL Equinix HK8 C 01 1Gbps Netflix HBO TVB, server: sg11.cathayroute.com, port: 33099, type: ssr, cipher: rc4-md5, password: HdsrwE, protocol: origin, obfs: http_simple, protocolparam: "", obfsparam: download.windowsupdate.com}
+  - {name: 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C09, server: hgc09.cathayroute.com, port: 33099, type: ssr, cipher: rc4-md5, password: HdsrwE, protocol: origin, obfs: http_simple, protocolparam: "", obfsparam: download.windowsupdate.com}
+  - {name: 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D04, server: hkt04.clashcloud.tech, port: 37387, type: ssr, cipher: rc4-md5, password: qbpJjZ, protocol: origin, obfs: http_simple, protocolparam: "", obfsparam: download.windowsupdate.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇺🇸 美国N01
-      - 🇺🇸 航海-美国1
+      - 🇭🇰 HK | 7.55Mb
+      - 概念  | 6.82Mb
+      - 🇭🇰 概念🇭🇰HK_5027 | 8.59Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Denver
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技） 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 4
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇭🇰 香港 5
+      - 🇺🇸 美国
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 7
+      - 🇸🇬 Singapore 3
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/さいたま市
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/San Francisco
       - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
-      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇺🇸 【中转】USA/美国 A - 济南联通
-      - 🇺🇸 【中转】USA/美国 A - 重庆联通
-      - 🇸🇬 新加坡01 - 直连 - 银河机场
-      - 🇺🇸 美国03 - 直连 - 银河机场
-      - 🇪🇺 欧洲02 - 中转 - 银河机场
-      - 🇭🇰 香港-02
-      - 🇭🇰 香港-05
-      - 🇭🇰 [Lite] HK-B [1x]
-      - 🇸🇬 [Lite] SG [1x]
-      - 🇺🇸 [Start] US [1x]
-      - 🇯🇵 日本-教育
-      - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
-      - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
       - 42.157.196.104
-      - NL |21.99Mb
-      - NL |22.18Mb
-      - NL |22.74Mb
-      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
-      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
-      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
+      - Relay_ | 8.72Mb
+      - 🇺🇸 Relay_中国-美国_1314
+      - 🇺🇸 Relay_中国-美国_1315
+      - 🇺🇸 Relay_中国-美国_1318
+      - 🇺🇸 Relay_中国-美国_1330
+      - 🇭🇰 Relay_中国-香港_1322
+      - 🇭🇰 Relay_中国-香港_65
+      - 🇺🇸 Relay_美国-_13728
+      - 🇨🇳 中国_1311
+      - 🇨🇳 中国_1317
+      - 🇨🇳 中国_1324
+      - 🇨🇳 中国_1325
+      - 🇨🇳 中国_1327
+      - 🇺🇸 美国_13698 |66.85Mb
+      - 🇭🇰 防失效github.com/Leon406/Sub 中国-香港 IEPL Equinix HK8 C 01 1Gbps Netflix HBO TVB
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C09
+      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D04
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇺🇸 美国N01
-      - 🇺🇸 航海-美国1
+      - 🇭🇰 HK | 7.55Mb
+      - 概念  | 6.82Mb
+      - 🇭🇰 概念🇭🇰HK_5027 | 8.59Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Denver
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技） 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 4
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇭🇰 香港 5
+      - 🇺🇸 美国
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 7
+      - 🇸🇬 Singapore 3
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/さいたま市
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/San Francisco
       - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
-      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇺🇸 【中转】USA/美国 A - 济南联通
-      - 🇺🇸 【中转】USA/美国 A - 重庆联通
-      - 🇸🇬 新加坡01 - 直连 - 银河机场
-      - 🇺🇸 美国03 - 直连 - 银河机场
-      - 🇪🇺 欧洲02 - 中转 - 银河机场
-      - 🇭🇰 香港-02
-      - 🇭🇰 香港-05
-      - 🇭🇰 [Lite] HK-B [1x]
-      - 🇸🇬 [Lite] SG [1x]
-      - 🇺🇸 [Start] US [1x]
-      - 🇯🇵 日本-教育
-      - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
-      - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
       - 42.157.196.104
-      - NL |21.99Mb
-      - NL |22.18Mb
-      - NL |22.74Mb
-      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
-      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
-      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
+      - Relay_ | 8.72Mb
+      - 🇺🇸 Relay_中国-美国_1314
+      - 🇺🇸 Relay_中国-美国_1315
+      - 🇺🇸 Relay_中国-美国_1318
+      - 🇺🇸 Relay_中国-美国_1330
+      - 🇭🇰 Relay_中国-香港_1322
+      - 🇭🇰 Relay_中国-香港_65
+      - 🇺🇸 Relay_美国-_13728
+      - 🇨🇳 中国_1311
+      - 🇨🇳 中国_1317
+      - 🇨🇳 中国_1324
+      - 🇨🇳 中国_1325
+      - 🇨🇳 中国_1327
+      - 🇺🇸 美国_13698 |66.85Mb
+      - 🇭🇰 防失效github.com/Leon406/Sub 中国-香港 IEPL Equinix HK8 C 01 1Gbps Netflix HBO TVB
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C09
+      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D04
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇺🇸 美国N01
-      - 🇺🇸 航海-美国1
+      - 🇭🇰 HK | 7.55Mb
+      - 概念  | 6.82Mb
+      - 🇭🇰 概念🇭🇰HK_5027 | 8.59Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Denver
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技） 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 4
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇭🇰 香港 5
+      - 🇺🇸 美国
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 7
+      - 🇸🇬 Singapore 3
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/さいたま市
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/San Francisco
       - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
-      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇺🇸 【中转】USA/美国 A - 济南联通
-      - 🇺🇸 【中转】USA/美国 A - 重庆联通
-      - 🇸🇬 新加坡01 - 直连 - 银河机场
-      - 🇺🇸 美国03 - 直连 - 银河机场
-      - 🇪🇺 欧洲02 - 中转 - 银河机场
-      - 🇭🇰 香港-02
-      - 🇭🇰 香港-05
-      - 🇭🇰 [Lite] HK-B [1x]
-      - 🇸🇬 [Lite] SG [1x]
-      - 🇺🇸 [Start] US [1x]
-      - 🇯🇵 日本-教育
-      - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
-      - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
       - 42.157.196.104
-      - NL |21.99Mb
-      - NL |22.18Mb
-      - NL |22.74Mb
-      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
-      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
-      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
+      - Relay_ | 8.72Mb
+      - 🇺🇸 Relay_中国-美国_1314
+      - 🇺🇸 Relay_中国-美国_1315
+      - 🇺🇸 Relay_中国-美国_1318
+      - 🇺🇸 Relay_中国-美国_1330
+      - 🇭🇰 Relay_中国-香港_1322
+      - 🇭🇰 Relay_中国-香港_65
+      - 🇺🇸 Relay_美国-_13728
+      - 🇨🇳 中国_1311
+      - 🇨🇳 中国_1317
+      - 🇨🇳 中国_1324
+      - 🇨🇳 中国_1325
+      - 🇨🇳 中国_1327
+      - 🇺🇸 美国_13698 |66.85Mb
+      - 🇭🇰 防失效github.com/Leon406/Sub 中国-香港 IEPL Equinix HK8 C 01 1Gbps Netflix HBO TVB
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C09
+      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D04
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇺🇸 美国N01
-      - 🇺🇸 航海-美国1
+      - 🇭🇰 HK | 7.55Mb
+      - 概念  | 6.82Mb
+      - 🇭🇰 概念🇭🇰HK_5027 | 8.59Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Denver
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技） 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 4
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇭🇰 香港 5
+      - 🇺🇸 美国
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 7
+      - 🇸🇬 Singapore 3
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/さいたま市
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/San Francisco
       - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
-      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇺🇸 【中转】USA/美国 A - 济南联通
-      - 🇺🇸 【中转】USA/美国 A - 重庆联通
-      - 🇸🇬 新加坡01 - 直连 - 银河机场
-      - 🇺🇸 美国03 - 直连 - 银河机场
-      - 🇪🇺 欧洲02 - 中转 - 银河机场
-      - 🇭🇰 香港-02
-      - 🇭🇰 香港-05
-      - 🇭🇰 [Lite] HK-B [1x]
-      - 🇸🇬 [Lite] SG [1x]
-      - 🇺🇸 [Start] US [1x]
-      - 🇯🇵 日本-教育
-      - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
-      - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
       - 42.157.196.104
-      - NL |21.99Mb
-      - NL |22.18Mb
-      - NL |22.74Mb
-      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
-      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
-      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
+      - Relay_ | 8.72Mb
+      - 🇺🇸 Relay_中国-美国_1314
+      - 🇺🇸 Relay_中国-美国_1315
+      - 🇺🇸 Relay_中国-美国_1318
+      - 🇺🇸 Relay_中国-美国_1330
+      - 🇭🇰 Relay_中国-香港_1322
+      - 🇭🇰 Relay_中国-香港_65
+      - 🇺🇸 Relay_美国-_13728
+      - 🇨🇳 中国_1311
+      - 🇨🇳 中国_1317
+      - 🇨🇳 中国_1324
+      - 🇨🇳 中国_1325
+      - 🇨🇳 中国_1327
+      - 🇺🇸 美国_13698 |66.85Mb
+      - 🇭🇰 防失效github.com/Leon406/Sub 中国-香港 IEPL Equinix HK8 C 01 1Gbps Netflix HBO TVB
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C09
+      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D04
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇺🇸 美国N01
-      - 🇺🇸 航海-美国1
+      - 🇭🇰 HK | 7.55Mb
+      - 概念  | 6.82Mb
+      - 🇭🇰 概念🇭🇰HK_5027 | 8.59Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Denver
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技） 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 4
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇭🇰 香港 5
+      - 🇺🇸 美国
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 7
+      - 🇸🇬 Singapore 3
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/さいたま市
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/San Francisco
       - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
-      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇺🇸 【中转】USA/美国 A - 济南联通
-      - 🇺🇸 【中转】USA/美国 A - 重庆联通
-      - 🇸🇬 新加坡01 - 直连 - 银河机场
-      - 🇺🇸 美国03 - 直连 - 银河机场
-      - 🇪🇺 欧洲02 - 中转 - 银河机场
-      - 🇭🇰 香港-02
-      - 🇭🇰 香港-05
-      - 🇭🇰 [Lite] HK-B [1x]
-      - 🇸🇬 [Lite] SG [1x]
-      - 🇺🇸 [Start] US [1x]
-      - 🇯🇵 日本-教育
-      - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
-      - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
       - 42.157.196.104
-      - NL |21.99Mb
-      - NL |22.18Mb
-      - NL |22.74Mb
-      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
-      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
-      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
+      - Relay_ | 8.72Mb
+      - 🇺🇸 Relay_中国-美国_1314
+      - 🇺🇸 Relay_中国-美国_1315
+      - 🇺🇸 Relay_中国-美国_1318
+      - 🇺🇸 Relay_中国-美国_1330
+      - 🇭🇰 Relay_中国-香港_1322
+      - 🇭🇰 Relay_中国-香港_65
+      - 🇺🇸 Relay_美国-_13728
+      - 🇨🇳 中国_1311
+      - 🇨🇳 中国_1317
+      - 🇨🇳 中国_1324
+      - 🇨🇳 中国_1325
+      - 🇨🇳 中国_1327
+      - 🇺🇸 美国_13698 |66.85Mb
+      - 🇭🇰 防失效github.com/Leon406/Sub 中国-香港 IEPL Equinix HK8 C 01 1Gbps Netflix HBO TVB
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C09
+      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D04
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇺🇸 美国N01
-      - 🇺🇸 航海-美国1
+      - 🇭🇰 HK | 7.55Mb
+      - 概念  | 6.82Mb
+      - 🇭🇰 概念🇭🇰HK_5027 | 8.59Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Denver
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技） 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 4
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇭🇰 香港 5
+      - 🇺🇸 美国
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 7
+      - 🇸🇬 Singapore 3
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/さいたま市
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/San Francisco
       - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
-      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇺🇸 【中转】USA/美国 A - 济南联通
-      - 🇺🇸 【中转】USA/美国 A - 重庆联通
-      - 🇸🇬 新加坡01 - 直连 - 银河机场
-      - 🇺🇸 美国03 - 直连 - 银河机场
-      - 🇪🇺 欧洲02 - 中转 - 银河机场
-      - 🇭🇰 香港-02
-      - 🇭🇰 香港-05
-      - 🇭🇰 [Lite] HK-B [1x]
-      - 🇸🇬 [Lite] SG [1x]
-      - 🇺🇸 [Start] US [1x]
-      - 🇯🇵 日本-教育
-      - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
-      - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
       - 42.157.196.104
-      - NL |21.99Mb
-      - NL |22.18Mb
-      - NL |22.74Mb
-      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
-      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
-      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
+      - Relay_ | 8.72Mb
+      - 🇺🇸 Relay_中国-美国_1314
+      - 🇺🇸 Relay_中国-美国_1315
+      - 🇺🇸 Relay_中国-美国_1318
+      - 🇺🇸 Relay_中国-美国_1330
+      - 🇭🇰 Relay_中国-香港_1322
+      - 🇭🇰 Relay_中国-香港_65
+      - 🇺🇸 Relay_美国-_13728
+      - 🇨🇳 中国_1311
+      - 🇨🇳 中国_1317
+      - 🇨🇳 中国_1324
+      - 🇨🇳 中国_1325
+      - 🇨🇳 中国_1327
+      - 🇺🇸 美国_13698 |66.85Mb
+      - 🇭🇰 防失效github.com/Leon406/Sub 中国-香港 IEPL Equinix HK8 C 01 1Gbps Netflix HBO TVB
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C09
+      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D04
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇺🇸 美国N01
-      - 🇺🇸 航海-美国1
+      - 🇭🇰 HK | 7.55Mb
+      - 概念  | 6.82Mb
+      - 🇭🇰 概念🇭🇰HK_5027 | 8.59Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Denver
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技） 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 4
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇭🇰 香港 5
+      - 🇺🇸 美国
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 7
+      - 🇸🇬 Singapore 3
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/さいたま市
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/San Francisco
       - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
-      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇺🇸 【中转】USA/美国 A - 济南联通
-      - 🇺🇸 【中转】USA/美国 A - 重庆联通
-      - 🇸🇬 新加坡01 - 直连 - 银河机场
-      - 🇺🇸 美国03 - 直连 - 银河机场
-      - 🇪🇺 欧洲02 - 中转 - 银河机场
-      - 🇭🇰 香港-02
-      - 🇭🇰 香港-05
-      - 🇭🇰 [Lite] HK-B [1x]
-      - 🇸🇬 [Lite] SG [1x]
-      - 🇺🇸 [Start] US [1x]
-      - 🇯🇵 日本-教育
-      - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
-      - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
       - 42.157.196.104
-      - NL |21.99Mb
-      - NL |22.18Mb
-      - NL |22.74Mb
-      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
-      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
-      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
+      - Relay_ | 8.72Mb
+      - 🇺🇸 Relay_中国-美国_1314
+      - 🇺🇸 Relay_中国-美国_1315
+      - 🇺🇸 Relay_中国-美国_1318
+      - 🇺🇸 Relay_中国-美国_1330
+      - 🇭🇰 Relay_中国-香港_1322
+      - 🇭🇰 Relay_中国-香港_65
+      - 🇺🇸 Relay_美国-_13728
+      - 🇨🇳 中国_1311
+      - 🇨🇳 中国_1317
+      - 🇨🇳 中国_1324
+      - 🇨🇳 中国_1325
+      - 🇨🇳 中国_1327
+      - 🇺🇸 美国_13698 |66.85Mb
+      - 🇭🇰 防失效github.com/Leon406/Sub 中国-香港 IEPL Equinix HK8 C 01 1Gbps Netflix HBO TVB
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C09
+      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D04
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -346,41 +418,50 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 航海-美国3
-      - 🇺🇸 美国Y04
-      - 🇺🇸 美国N01
-      - 🇺🇸 航海-美国1
+      - 🇭🇰 HK | 7.55Mb
+      - 概念  | 6.82Mb
+      - 🇭🇰 概念🇭🇰HK_5027 | 8.59Mb
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/Denver
+      - 🇭🇰 香港
+      - 🇭🇰 香港 2
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
+      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技） 2
+      - 🇭🇰 香港 3
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong
+      - 🇨🇳 台湾
+      - 🇭🇰 香港 4
+      - 🇭🇰 香港 ☆☆ 04 ☆GMO☆  1.2x
+      - 🇭🇰 https://www.mattkaydiary.com|中国香港特别行政区(HK)Hongkong SAR China/Hong Kong 2
+      - 🇭🇰 香港 5
+      - 🇺🇸 美国
+      - 🇭🇰 香港 6
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 7
+      - 🇸🇬 Singapore 3
+      - 🇭🇰 香港 8
+      - 🇭🇰 香港 9
+      - 🇯🇵 https://www.mattkaydiary.com|日本(JP)Japan/さいたま市
+      - 🇺🇸 https://www.mattkaydiary.com|美国(US)USA/San Francisco
       - 🇯🇵 日本大阪 10(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇯🇵 日本东京 26(适合在线视频、页游、下载、禁止BT下载) - V2ray
-      - 🇺🇸 美国 14(综合、禁止BT下载) - V2ray
-      - 🇸🇬 【中转】SIN/狮城 A - 宁波电信
-      - 🇺🇸 【中转】USA/美国 A - 济南联通
-      - 🇺🇸 【中转】USA/美国 A - 重庆联通
-      - 🇸🇬 新加坡01 - 直连 - 银河机场
-      - 🇺🇸 美国03 - 直连 - 银河机场
-      - 🇪🇺 欧洲02 - 中转 - 银河机场
-      - 🇭🇰 香港-02
-      - 🇭🇰 香港-05
-      - 🇭🇰 [Lite] HK-B [1x]
-      - 🇸🇬 [Lite] SG [1x]
-      - 🇺🇸 [Start] US [1x]
-      - 🇯🇵 日本-教育
-      - 🇸🇬 V4-中转3354|广东-新加坡|x2.5
-      - 🇭🇰 V4-中转3489|广东-香港HKT|解锁|x1.5
       - 🇸🇬 V4-中转3558|广东-新加坡|x2.0
       - 42.157.196.104
-      - NL |21.99Mb
-      - NL |22.18Mb
-      - NL |22.74Mb
-      - 🇨🇳 Relay_🇨🇳CN | 1.61Mb
-      - 🇨🇳 Relay_🇨🇳CN |10.95Mb
-      - 🇨🇳 Relay_🇨🇳CN |28.85Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇩🇪DE_897 | 1.02Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_839
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_834
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_833
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_844
-      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_848
+      - Relay_ | 8.72Mb
+      - 🇺🇸 Relay_中国-美国_1314
+      - 🇺🇸 Relay_中国-美国_1315
+      - 🇺🇸 Relay_中国-美国_1318
+      - 🇺🇸 Relay_中国-美国_1330
+      - 🇭🇰 Relay_中国-香港_1322
+      - 🇭🇰 Relay_中国-香港_65
+      - 🇺🇸 Relay_美国-_13728
+      - 🇨🇳 中国_1311
+      - 🇨🇳 中国_1317
+      - 🇨🇳 中国_1324
+      - 🇨🇳 中国_1325
+      - 🇨🇳 中国_1327
+      - 🇺🇸 美国_13698 |66.85Mb
+      - 🇭🇰 防失效github.com/Leon406/Sub 中国-香港 IEPL Equinix HK8 C 01 1Gbps Netflix HBO TVB
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C09
+      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D04
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -2899,10 +2980,7 @@ rules:
  - DOMAIN-SUFFIX,smartmailcloud.com,🚀 节点选择
  - DOMAIN-SUFFIX,fanatical.com,🚀 节点选择
  - DOMAIN-SUFFIX,humblebundle.com,🚀 节点选择
- - DOMAIN-SUFFIX,steam-chat.com,🚀 节点选择
  - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
- - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
- - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
  - DOMAIN-SUFFIX,tap.io,🚀 节点选择
  - DOMAIN-SUFFIX,taptap.tw,🚀 节点选择
  - DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
