@@ -5,829 +5,901 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 HK B7, server: groupb.chbjpw.mobi, port: 20007, type: vmess, uuid: 35cf83c4-8719-470b-b011-8d0512b57687, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 付费节点, server: global-transit-01-hk.pucdn.me, port: 31102, type: vmess, uuid: 8f734594-a6d6-3b37-a386-2d40d316721c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-kr-02.pucdn.me}}
-  - {name: "🇸🇬 v2ray 新加坡(联通) [Netflix]", server: cu.cheapv2.xyz, port: 29901, type: vmess, uuid: 888215a8-77d4-3f31-8826-960470aa38af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: cu.cheapv2.xyz}}
-  - {name: 🇭🇰 iGG-HK - 香港HGC②- 倍率 1, server: hksk2.edgehelper.com, port: 33900, type: vmess, uuid: bf3b8591-877b-446f-8e8d-419594377808, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /bilibililive, ws-headers: {Host: f.video.weibocdn.com}}
+  - {name: 🇭🇰 香港3|@mftizi, server: hk3.uuv2.co.uk, port: 2053, type: vmess, uuid: 2751b1f3-54a5-447a-87ae-df1e88e2aaee, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /@mftizi, ws-headers: {Host: hk3.uuv2.co.uk}}
+  - {name: 🇭🇰 香港, server: hnlt.potatofly.xyz, port: 30004, type: vmess, uuid: 4fa5468f-f448-36bf-a43b-befe63d4d3b9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本, server: hnlt.potatofly.xyz, port: 30021, type: vmess, uuid: 4fa5468f-f448-36bf-a43b-befe63d4d3b9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇷🇺 俄罗斯K1000M丨x1x丨限速100M 负载5台, server: jsyd01.bellscloud.com, port: 15102, type: vmess, uuid: 3e54f950-46b4-3f24-b6fe-159c0ca63c20, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台, server: jsyd01.bellscloud.com, port: 15096, type: vmess, uuid: 3e54f950-46b4-3f24-b6fe-159c0ca63c20, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇭🇰 [1x] 香港-2-上海入口", server: sh.no-ne.xyz, port: 15605, type: vmess, uuid: 12992c55-096c-459d-b624-05a69f7ac007, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /alun, ws-headers: {Host: sh.no-ne.xyz}}
+  - {name: 🇭🇰 香港 2, server: gzyd.potatofly.xyz, port: 30016, type: vmess, uuid: 4fa5468f-f448-36bf-a43b-befe63d4d3b9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 概念   🇭🇰HK_1429, server: global-transit-01-hk.pucdn.me, port: 11115, type: vmess, uuid: f37bcc5b-6071-3588-a25d-d7747e4c648f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-hkt-a-08.pucdn.me}}
+  - {name: 🇺🇸 美国 1, server: kr-oracle.june628.ml, port: 40105, type: vmess, uuid: 130b7524-f6b5-4708-ac23-114803497e5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /adobe, ws-headers: {Host: kr-oracle.june628.ml}}
+  - {name: 🇭🇰 香港 3, server: hnlt.potatofly.xyz, port: 30006, type: vmess, uuid: 4fa5468f-f448-36bf-a43b-befe63d4d3b9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 iGG-HK - 香港HGC①- 倍率 1, server: hgc3.edgehelper.com, port: 34900, type: vmess, uuid: bf3b8591-877b-446f-8e8d-419594377808, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /douyulive, ws-headers: {Host: douyucdn.com}}
+  - {name: 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1, server: imgU14700602883.hk.huawei-cacahe.com, port: 20224, type: vmess, uuid: bf3b8591-877b-446f-8e8d-419594377808, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: broadcastlv.chat.bilibili.com}}
+  - {name: 付费节点, server: global-transit-01-hk.pucdn.me, port: 11108, type: vmess, uuid: 8f734594-a6d6-3b37-a386-2d40d316721c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-hkt-a-01.pucdn.me}}
+  - {name: "🇭🇰 [1x] 香港-2-上海入口 2", server: sh.no-ne.xyz, port: 15605, type: vmess, uuid: a68ca444-285d-4e64-957e-a23c4dadfe48, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /alun, ws-headers: {Host: sh.no-ne.xyz}}
+  - {name: "🇭🇰 [1x] 香港-2-温州入口", server: 101.67.14.216, port: 16852, type: vmess, uuid: a68ca444-285d-4e64-957e-a23c4dadfe48, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /alun, ws-headers: {Host: 101.67.14.216}}
+  - {name: "🇭🇰 [1x] 香港-2-温州入口 2", server: 101.67.14.216, port: 16852, type: vmess, uuid: 12992c55-096c-459d-b624-05a69f7ac007, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /alun, ws-headers: {Host: 101.67.14.216}}
+  - {name: 🇺🇸 US （感谢关注youtube：8度科技）, server: 199.10.64.245, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）, server: 84.39.114.86, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台, server: jsyd01.bellscloud.com, port: 15095, type: vmess, uuid: 3e54f950-46b4-3f24-b6fe-159c0ca63c20, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本 2, server: gzyd.potatofly.xyz, port: 30012, type: vmess, uuid: 4fa5468f-f448-36bf-a43b-befe63d4d3b9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本 3, server: hnlt.potatofly.xyz, port: 30008, type: vmess, uuid: 4fa5468f-f448-36bf-a43b-befe63d4d3b9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 4, server: global-transit-01-hk.pucdn.me, port: 16002, type: vmess, uuid: f37bcc5b-6071-3588-a25d-d7747e4c648f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-azure-hk-02.pucdn.me}}
+  - {name: 🇩🇪 德国, server: gzyd.potatofly.xyz, port: 30026, type: vmess, uuid: 4fa5468f-f448-36bf-a43b-befe63d4d3b9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国, server: 154.17.1.245, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 🇺🇸 美国 2, server: us25.xqkj.cloud, port: 1125, type: vmess, uuid: 0fd8830d-7c3f-43e9-a75f-d3c3c38d271d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: us25.xqkj.cloud}}
+  - {name: 🇺🇸 美国 3, server: us23.xqkj.cloud, port: 1123, type: vmess, uuid: 0fd8830d-7c3f-43e9-a75f-d3c3c38d271d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: us23.xqkj.cloud}}
+  - {name: 🇺🇸 美国 4, server: 154.17.2.95, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 🇺🇸 美国 5, server: 154.17.2.162, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 🇺🇸 美国 6, server: 154.17.2.149, port: 18334, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 🇺🇸 美国 7, server: 84.17.41.77, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇺🇸 美国 8, server: 192.111.134.195, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇺🇸 美国 9, server: 84.17.41.77, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇺🇸 美国 10, server: 154.17.5.184, port: 18331, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 🇺🇸 美国 11, server: 84.17.41.77, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇺🇸 美国 12, server: 154.17.2.54, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: YazuZ2ZE9p5Rn3CANKlD6SqC0OTSyXBIReypacD4Fae8gx87lOD3SY33jFAwCx}
+  - {name: 🇺🇸 美国 13, server: 104.244.208.205, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇺🇸 美国 14, server: 104.244.208.205, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇺🇸 美国 15, server: 66.115.182.79, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇷🇺 俄罗斯, server: gzyd.potatofly.xyz, port: 30024, type: vmess, uuid: 4fa5468f-f448-36bf-a43b-befe63d4d3b9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国 16, server: 199.10.64.99, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇺🇸 美国 17, server: 154.17.2.117, port: 18333, type: ss, cipher: chacha20-ietf-poly1305, password: 2SYSIDnBqT5eCl736xlD4yODaXaSF9EeNp3OZcpjyC8ARYwA0zgC83aKxFZRu3}
+  - {name: 🇺🇸 美国 18, server: 198.8.92.69, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇷🇴 罗马尼亚, server: 193.29.106.100, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇧🇪 比利时, server: 217.138.199.179, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇨🇭 瑞士, server: 45.12.222.245, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇮🇹 意大利, server: 84.17.45.247, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇺🇸 美国 19, server: 198.8.92.67, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇷🇴 罗马尼亚 2, server: 193.29.106.3, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇺🇸 美国 20, server: 84.17.35.103, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: 🇺🇸 美国 21, server: us01.xqkj.cloud, port: 1111, type: vmess, uuid: 0fd8830d-7c3f-43e9-a75f-d3c3c38d271d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: us01.xqkj.cloud}}
+  - {name: 🇷🇴 罗马尼亚 3, server: 193.29.106.61, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇺🇸 美国 22, server: 84.17.35.103, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇩🇪 德国 2, server: 185.93.180.101, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇺🇸 h|美国(US)USA/San Francisco 6, server: 104.21.67.220, port: 443, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: sg-02.yinriver.top}}
+  - {name: 🇪🇺 欧洲( 52, server: 217.138.211.221, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇺🇸 h|美国(US)USA/San Francisco 7, server: 104.21.67.220, port: 443, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: sg-01.yinriver.top}}
+  - {name: 🇺🇸 hm|美国(US)USA/Santa Clarita 3, server: 173.82.150.26, port: 443, type: vmess, uuid: 1a116d02-5fca-47fa-a2a1-6e8d0f2f71cc, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.75287890.xyz}}
+  - {name: 🇺🇸 h|美国(US)USA/Fremont, server: 23.83.227.86, port: 10606, type: vmess, uuid: c474da00-e28b-40b0-8356-8f62e5eb71e2, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国() 6, server: 199.10.64.245, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇺🇸 美国( 5, server: 199.10.64.245, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 🇪🇺 欧洲() 62, server: 37.120.212.131, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君), server: 104.160.186.54, port: 443, type: vmess, uuid: d3cbe556-8db3-47e0-8ef1-06b2cce00411, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.92726054.xyz}}
+  - {name: 🇺🇸 US_14207 |35.61Mb, server: 104.27.13.49, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 US_14225 |41.79Mb, server: 104.24.18.33, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 US_14067 |41.52Mb, server: 104.16.149.48, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 US_14137 |39.76Mb, server: 104.27.102.4, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: ZZ_15272 |36.94Mb, server: 162.159.137.143, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 US_14034 |41.12Mb, server: 104.18.7.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 US_14295 |41.33Mb, server: 104.25.139.10, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 US_14296 |40.23Mb, server: 104.24.92.7, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 US_14211 |35.41Mb, server: 104.24.210.64, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 US_14236 |40.89Mb, server: 104.25.125.44, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 US_14300 |37.23Mb, server: 104.25.150.169, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 US_14164 |39.40Mb, server: 172.67.112.66, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 US_14285 |34.24Mb, server: 104.18.9.18, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 US_14245 |31.34Mb, server: 104.25.175.69, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 美国2|@mftizi, server: us02.uuv2.uk, port: 2053, type: vmess, uuid: 3f0fffa3-b24c-4ae9-b8e7-3adf5992b54e, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /@mftizi, ws-headers: {Host: us02.uuv2.uk}}
+  - {name: 🇺🇸 美国2|中转|@mftizi, server: zza1.uuv2.uk, port: 5102, type: vmess, uuid: 3f0fffa3-b24c-4ae9-b8e7-3adf5992b54e, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /@mftizi, ws-headers: {Host: us02.uuv2.uk}}
+  - {name: 🇺🇸 美国 2 2, server: 172.67.182.11, port: 443, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: us-03.yinriver.top}}
+  - {name: 🇺🇸 美国 3 2, server: icook.tw, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇺🇸 美国 4 2, server: 104.16.148.48, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 🇷🇺 俄罗斯G1000M丨x1x丨限速100M 负载5台, server: jsyd01.bellscloud.com, port: 15097, type: vmess, uuid: 3e54f950-46b4-3f24-b6fe-159c0ca63c20, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台, server: jsyd01.bellscloud.com, port: 15098, type: vmess, uuid: 3e54f950-46b4-3f24-b6fe-159c0ca63c20, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇷🇺 俄罗斯B1000M丨x1x丨限速100M 负载5台, server: jsyd01.bellscloud.com, port: 15092, type: vmess, uuid: 59c9eceb-2f6d-3b29-b44e-0135c8848438, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台 2, server: jsyd01.bellscloud.com, port: 15095, type: vmess, uuid: 59c9eceb-2f6d-3b29-b44e-0135c8848438, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台 2, server: jsyd01.bellscloud.com, port: 15096, type: vmess, uuid: 59c9eceb-2f6d-3b29-b44e-0135c8848438, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台 2, server: jsyd01.bellscloud.com, port: 15098, type: vmess, uuid: 59c9eceb-2f6d-3b29-b44e-0135c8848438, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇷🇺 俄罗斯J1000M丨x1x丨限速100M 负载5台, server: jsyd01.bellscloud.com, port: 15101, type: vmess, uuid: 59c9eceb-2f6d-3b29-b44e-0135c8848438, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 iGG-SG - 上海-新加坡- 倍率 1, server: sg2.edgehelper.com, port: 23800, type: vmess, uuid: bf3b8591-877b-446f-8e8d-419594377808, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /douyulive, ws-headers: {Host: douyucdn.com}}
   - {name: 🇷🇺 iGG-RU - 俄罗斯-西伯利亚- 倍率 1, server: ru1.iggfastweb.com, port: 153, type: vmess, uuid: bf3b8591-877b-446f-8e8d-419594377808, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: broadcastlv.chat.bilibili.com}}
-  - {name: "🇯🇵 v2ray 日本(联通) [Netflix]", server: cu.cheapv2.xyz, port: 28802, type: vmess, uuid: 888215a8-77d4-3f31-8826-960470aa38af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: cu.cheapv2.xyz}}
   - {name: iGG-Global - 全球智选- 倍率 1.2, server: smart.iggfastweb.com, port: 32800, type: vmess, uuid: bf3b8591-877b-446f-8e8d-419594377808, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: broadcastlv.chat.bilibili.com}}
   - {name: "🇰🇷 v2ray 韩国(联通) [Netflix]", server: cu.cheapv2.xyz, port: 26606, type: vmess, uuid: 888215a8-77d4-3f31-8826-960470aa38af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: cu.cheapv2.xyz}}
   - {name: "🇲🇾 v2ray 马来西亚(联通) [Netflix]", server: cu.cheapv2.xyz, port: 26610, type: vmess, uuid: 888215a8-77d4-3f31-8826-960470aa38af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: cu.cheapv2.xyz}}
   - {name: 付费节点 2, server: global-transit-01-hk.pucdn.me, port: 11115, type: vmess, uuid: 8f734594-a6d6-3b37-a386-2d40d316721c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-hkt-a-08.pucdn.me}}
-  - {name: 付费节点 3, server: global-transit-01-hk.pucdn.me, port: 31124, type: vmess, uuid: 8f734594-a6d6-3b37-a386-2d40d316721c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-aws-sg-03.pucdn.me}}
-  - {name: 付费节点 4, server: global-transit-01-hk.pucdn.me, port: 11116, type: vmess, uuid: 8f734594-a6d6-3b37-a386-2d40d316721c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-hkt-a-09.pucdn.me}}
-  - {name: 付费节点 5, server: global-transit-01-hk.pucdn.me, port: 31125, type: vmess, uuid: 8f734594-a6d6-3b37-a386-2d40d316721c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-aws-sg-04.pucdn.me}}
-  - {name: 付费节点 6, server: global-transit-01-hk.pucdn.me, port: 31127, type: vmess, uuid: 8f734594-a6d6-3b37-a386-2d40d316721c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-aws-sg-06.pucdn.me}}
-  - {name: 付费节点 7, server: global-transit-01-hk.pucdn.me, port: 21105, type: vmess, uuid: 8f734594-a6d6-3b37-a386-2d40d316721c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-tw-05.pucdn.me}}
-  - {name: 付费节点 8, server: global-transit-01-hk.pucdn.me, port: 21106, type: vmess, uuid: 8f734594-a6d6-3b37-a386-2d40d316721c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-tw-06.pucdn.me}}
-  - {name: 🇭🇰 VIP|AWS|香港|中转|01, server: gy.xqcloud.net, port: 31001, type: ss, cipher: chacha20-ietf-poly1305, password: 1d1268dc-8bc2-4966-b57c-920beb2a58b9}
-  - {name: 🇭🇰 VIP|AWS|香港|中转|02, server: gy.xqcloud.net, port: 31002, type: ss, cipher: chacha20-ietf-poly1305, password: 1d1268dc-8bc2-4966-b57c-920beb2a58b9}
-  - {name: 🇭🇰 VIP|AWS|香港|中转|03, server: gy.xqcloud.net, port: 31003, type: ss, cipher: chacha20-ietf-poly1305, password: 1d1268dc-8bc2-4966-b57c-920beb2a58b9}
-  - {name: 🇭🇰 VIP|AWS|香港|中转|04, server: gy.xqcloud.net, port: 31004, type: ss, cipher: chacha20-ietf-poly1305, password: 1d1268dc-8bc2-4966-b57c-920beb2a58b9}
-  - {name: 🇰🇷 VIP|AWS|韩国|中转|01, server: gy.xqcloud.net, port: 32001, type: ss, cipher: chacha20-ietf-poly1305, password: 1d1268dc-8bc2-4966-b57c-920beb2a58b9}
-  - {name: 🇰🇷 VIP|AWS|韩国|中转|02, server: gy.xqcloud.net, port: 32008, type: ss, cipher: chacha20-ietf-poly1305, password: 1d1268dc-8bc2-4966-b57c-920beb2a58b9}
-  - {name: 🇯🇵 VIP|AWS|日本|中转|01, server: gy.xqcloud.net, port: 32003, type: ss, cipher: chacha20-ietf-poly1305, password: 1d1268dc-8bc2-4966-b57c-920beb2a58b9}
-  - {name: 🇯🇵 VIP|AWS|日本|中转|02, server: gy.xqcloud.net, port: 32004, type: ss, cipher: chacha20-ietf-poly1305, password: 1d1268dc-8bc2-4966-b57c-920beb2a58b9}
-  - {name: 🇯🇵 VIP|VUL|日本|中转|01, server: gy.xqcloud.net, port: 31008, type: ss, cipher: chacha20-ietf-poly1305, password: 1d1268dc-8bc2-4966-b57c-920beb2a58b9}
-  - {name: 🇯🇵 VIP|VUL|日本|中转|02, server: gy.xqcloud.net, port: 31007, type: ss, cipher: chacha20-ietf-poly1305, password: 1d1268dc-8bc2-4966-b57c-920beb2a58b9}
-  - {name: 🇬🇧 VIP|VUL|伦敦|中转|01, server: gy.xqcloud.net, port: 31010, type: ss, cipher: chacha20-ietf-poly1305, password: 1d1268dc-8bc2-4966-b57c-920beb2a58b9}
-  - {name: 🇦🇺 VIP|VUL|悉尼|中转|01, server: gy.xqcloud.net, port: 31011, type: ss, cipher: chacha20-ietf-poly1305, password: 1d1268dc-8bc2-4966-b57c-920beb2a58b9}
-  - {name: 🇨🇳 VIP|HINET|台湾|中转|01, server: gy.xqcloud.net, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 1d1268dc-8bc2-4966-b57c-920beb2a58b9}
-  - {name: 🇨🇳 台湾1000M丨x1x丨限速100M 负载5台, server: jsyd01.bellscloud.com, port: 10088, type: vmess, uuid: 59c9eceb-2f6d-3b29-b44e-0135c8848438, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本A1000M丨x1x丨限速100M 负载5台, server: jsyd01.bellscloud.com, port: 10089, type: vmess, uuid: 59c9eceb-2f6d-3b29-b44e-0135c8848438, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇻🇳 越南1000M丨x1x丨限速100M 负载5台, server: jsyd.joker007.top, port: 10096, type: vmess, uuid: 59c9eceb-2f6d-3b29-b44e-0135c8848438, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 香港1000M丨x1x丨限速100M 负载5台, server: jsyd01.bellscloud.com, port: 10087, type: vmess, uuid: 59c9eceb-2f6d-3b29-b44e-0135c8848438, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇭🇰 中国-香港 HK-TA [亚洲东部][Shadowsocks-AIA]", server: 162.62.81.43, port: 82, type: ss, cipher: aes-128-gcm, password: IPeyzi}
-  - {name: "🇭🇰 中国-香港 HK-TA [亚洲东部][Trojan-AIA]", server: hk-ta-aia.xpanel.xyz, port: 443, type: trojan, password: 581c18e5-8906-33b6-972d-067885b0602b, sni: hk-ta-aia.xpanel.xyz, skip-cert-verify: false}
-  - {name: "🇭🇰 中国-香港 HK-TB [亚洲东部][Shadowsocks-AIA]", server: 162.62.80.142, port: 82, type: ss, cipher: aes-128-gcm, password: IPeyzi}
-  - {name: "🇭🇰 中国-香港 HK-TB [亚洲东部][Trojan-AIA]", server: hk-tb-aia.xpanel.xyz, port: 443, type: trojan, password: 581c18e5-8906-33b6-972d-067885b0602b, sni: hk-tb-aia.xpanel.xyz, skip-cert-verify: false}
-  - {name: "🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Shadowsocks-AIA]", server: 162.62.82.226, port: 82, type: ss, cipher: aes-128-gcm, password: IPeyzi}
-  - {name: "🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Trojan-AIA]", server: hk-tc-aia.xpanel.xyz, port: 443, type: trojan, password: 581c18e5-8906-33b6-972d-067885b0602b, sni: hk-tc-aia.xpanel.xyz, skip-cert-verify: false}
-  - {name: "🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Shadowsocks-AIA]", server: 162.62.80.201, port: 82, type: ss, cipher: aes-128-gcm, password: IPeyzi}
-  - {name: "🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Trojan-AIA]", server: hk-td-aia.xpanel.xyz, port: 443, type: trojan, password: 581c18e5-8906-33b6-972d-067885b0602b, sni: hk-td-aia.xpanel.xyz, skip-cert-verify: false}
-  - {name: "🇭🇰 中国-香港 HK-VA [亚洲东部][Vmess-AIA]", server: hk-vma-aia.xpanel.xyz, port: 80, type: vmess, uuid: 581c18e5-8906-33b6-972d-067885b0602b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: hk-vma-aia.xpanel.xyz}}
-  - {name: "🇭🇰 中国-香港 HK-VB [亚洲东部][Vmess-AIA]", server: hk-vmb-aia.xpanel.xyz, port: 80, type: vmess, uuid: 581c18e5-8906-33b6-972d-067885b0602b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: hk-vmb-aia.xpanel.xyz}}
-  - {name: "🇭🇰 中国-香港 HK-VC [亚洲东部][NF-HK][Vmess-AIA]", server: hk-vmc-aia.xpanel.xyz, port: 80, type: vmess, uuid: 581c18e5-8906-33b6-972d-067885b0602b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: hk-vmc-aia.xpanel.xyz}}
-  - {name: "🇭🇰 中国-香港 HK-VD [亚洲东部][NF-HK][Vmess-AIA]", server: hk-vmd-aia.xpanel.xyz, port: 80, type: vmess, uuid: 581c18e5-8906-33b6-972d-067885b0602b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: hk-vmd-aia.xpanel.xyz}}
-  - {name: "🇸🇬 新加坡 SGC-TA [亚太南部][Shadowsocks-AIA]", server: 162.62.80.139, port: 82, type: ss, cipher: aes-128-gcm, password: IPeyzi}
-  - {name: "🇸🇬 新加坡 SGC-TA [亚太南部][Trojan-AIA]", server: sgc-ta-aia.xpanel.xyz, port: 443, type: trojan, password: 581c18e5-8906-33b6-972d-067885b0602b, sni: sgc-ta-aia.xpanel.xyz, skip-cert-verify: false}
-  - {name: "🇸🇬 新加坡 SGC-TB [亚太南部][Shadowsocks-AIA]", server: 162.62.81.63, port: 82, type: ss, cipher: aes-128-gcm, password: IPeyzi}
-  - {name: "🇸🇬 新加坡 SGC-TB [亚太南部][Trojan-AIA]", server: sgc-tb-aia.xpanel.xyz, port: 443, type: trojan, password: 581c18e5-8906-33b6-972d-067885b0602b, sni: sgc-tb-aia.xpanel.xyz, skip-cert-verify: false}
-  - {name: "🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Shadowsocks-AIA]", server: 162.62.82.26, port: 82, type: ss, cipher: aes-128-gcm, password: IPeyzi}
-  - {name: "🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Trojan-AIA]", server: sgc-tc-aia.xpanel.xyz, port: 443, type: trojan, password: 581c18e5-8906-33b6-972d-067885b0602b, sni: sgc-tc-aia.xpanel.xyz, skip-cert-verify: false}
-  - {name: "🇸🇬 新加坡 SGC-VA [亚太南部][Vmess-AIA]", server: sgc-vma-aia.xpanel.xyz, port: 80, type: vmess, uuid: 581c18e5-8906-33b6-972d-067885b0602b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: sgc-vma-aia.xpanel.xyz}}
-  - {name: "🇸🇬 新加坡 SGC-VB [亚太南部][Vmess-AIA]", server: sgc-vmb-aia.xpanel.xyz, port: 80, type: vmess, uuid: 581c18e5-8906-33b6-972d-067885b0602b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: sgc-vmb-aia.xpanel.xyz}}
-  - {name: "🇸🇬 新加坡 SGC-VC [亚太南部][NF-SG][Vmess-AIA]", server: sgc-vmc-aia.xpanel.xyz, port: 80, type: vmess, uuid: 581c18e5-8906-33b6-972d-067885b0602b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: sgc-vmc-aia.xpanel.xyz}}
-  - {name: "🇯🇵 日本-东京 JP-TA [亚洲东部][Trojan-AIA]", server: jp-ta-aia.xpanel.xyz, port: 443, type: trojan, password: 581c18e5-8906-33b6-972d-067885b0602b, sni: jp-ta-aia.xpanel.xyz, skip-cert-verify: false}
-  - {name: "🇰🇷 韩国-首尔 KR-TA [亚洲东部][Trojan-AIA]", server: kr-ta-aia.xpanel.xyz, port: 443, type: trojan, password: 581c18e5-8906-33b6-972d-067885b0602b, sni: kr-ta-aia.xpanel.xyz, skip-cert-verify: false}
-  - {name: "🇰🇷 韩国-首尔 KR-TC [亚洲东部][Shadowsocks-AIA]", server: 162.62.82.231, port: 82, type: ss, cipher: aes-128-gcm, password: IPeyzi}
-  - {name: "🇰🇷 韩国-首尔 KR-TD [亚洲东部][Trojan-AIA]", server: kr-td-aia.xpanel.xyz, port: 443, type: trojan, password: 581c18e5-8906-33b6-972d-067885b0602b, sni: kr-td-aia.xpanel.xyz, skip-cert-verify: false}
-  - {name: "🇰🇷 韩国-首尔 KR-VA [亚洲东部][Vmess-AIA]", server: kr-vma-aia.xpanel.xyz, port: 80, type: vmess, uuid: 581c18e5-8906-33b6-972d-067885b0602b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: kr-vma-aia.xpanel.xyz}}
-  - {name: "🇰🇷 韩国-首尔 KR-VC [亚洲东部][Vmess-AIA]", server: kr-vmc-aia.xpanel.xyz, port: 80, type: vmess, uuid: 581c18e5-8906-33b6-972d-067885b0602b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: kr-vmc-aia.xpanel.xyz}}
-  - {name: 🇭🇰 香港, server: 23.98.43.172, port: 111, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇭🇰 概念   🇭🇰HK_1429, server: global-transit-01-hk.pucdn.me, port: 11115, type: vmess, uuid: f37bcc5b-6071-3588-a25d-d7747e4c648f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-hkt-a-08.pucdn.me}}
-  - {name: 🇺🇸 US 🇺🇸 Denver 4, server: 212.102.44.83, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: 🇭🇰 HK_5186, server: 23.99.121.10, port: 80, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 🇯🇵 【直连】NRT/东京 A - 5, server: 025.JP.AP.POP.BIGAIRPORT.NET, port: 443, type: vmess, uuid: 7747c513-b7a4-4994-97bf-d81990df1505, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 025.JP.AP.POP.BIGAIRPORT.NET}}
+  - {name: 付费节点 3, server: global-transit-01-hk.pucdn.me, port: 31125, type: vmess, uuid: 8f734594-a6d6-3b37-a386-2d40d316721c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-aws-sg-04.pucdn.me}}
+  - {name: 付费节点 4, server: global-transit-01-hk.pucdn.me, port: 21106, type: vmess, uuid: 8f734594-a6d6-3b37-a386-2d40d316721c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-tw-06.pucdn.me}}
   - {name: 🇭🇰 iGG-HK - 香港HKBN ① - 倍率 1, server: fsU14700602883.harmonyoscloudcdn.com, port: 30555, type: vmess, uuid: bf3b8591-877b-446f-8e8d-419594377808, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1, server: imgU14700602883.hk.huawei-cacahe.com, port: 20224, type: vmess, uuid: bf3b8591-877b-446f-8e8d-419594377808, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: broadcastlv.chat.bilibili.com}}
   - {name: 🇸🇬 SG（感谢关注youtube：8度科技）, server: 104.21.67.220, port: 443, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: sg-01.yinriver.top}}
-  - {name: SS JP - CZ CT -> AWS  NTT, server: cct.misaka.rest, port: 32452, type: ss, cipher: aes-256-gcm, password: 799804e1-d750-4853-860e-f82a50c21944}
-  - {name: 🇺🇸 洛杉矶（感谢关注youtube：8度科技）, server: 185.242.5.147, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇯🇵 【直连】NRT/东京 A - 4, server: 024.JP.AP.POP.BIGAIRPORT.NET, port: 443, type: vmess, uuid: 140fcbf2-6376-406b-ad68-3eaabf9dd4a4, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 024.JP.AP.POP.BIGAIRPORT.NET}}
-  - {name: 🇭🇰 【直连】HKG/香港 D - 8, server: 058.HK.AP.POP.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 140fcbf2-6376-406b-ad68-3eaabf9dd4a4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 058.HK.AP.POP.BIGAIRPORT.NET}}
-  - {name: 🇸🇬 台湾c1-tg节点更新 https://bit.ly/3uWuS7a, server: hinet.be.sexy, port: 23232, type: vmess, uuid: e8e9ec0c-9a1e-429f-9283-b1b967ed80f3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 【直连】HKG/香港 C - 5, server: 045.HK.AP.POP.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 7747c513-b7a4-4994-97bf-d81990df1505, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 045.HK.AP.POP.BIGAIRPORT.NET}}
-  - {name: 🇰🇷 韩国-免流, server: kr-oracle.june628.ml, port: 41174, type: vmess, uuid: 130b7524-f6b5-4708-ac23-114803497e5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /adobe, ws-headers: {Host: kr-oracle.june628.ml}}
-  - {name: 🇨🇳 A-台湾|HINET|流媒体|标准1, server: gzyd.potatofly.xyz, port: 30014, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 A-台湾|HINET|流媒体|标准2, server: gzyd.potatofly.xyz, port: 30015, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 A-新加坡|HE|流媒体|标准1, server: gzyd.potatofly.xyz, port: 30026, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 A-新加坡|HE|流媒体|标准2, server: gzyd.potatofly.xyz, port: 30027, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 A-日本|软银|流媒体|标准1, server: gzyd.potatofly.xyz, port: 30012, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 A-日本|软银|流媒体|标准2, server: gzyd.potatofly.xyz, port: 30013, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇹🇭 A-泰国|流媒体|标准1, server: gzyd.potatofly.xyz, port: 30022, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇹🇭 A-泰国|流媒体|标准2, server: gzyd.potatofly.xyz, port: 30023, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 A-香港|HKT|流媒体|标准1, server: gzyd.potatofly.xyz, port: 30016, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 A-香港|HKT|流媒体|标准2, server: gzyd.potatofly.xyz, port: 30017, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 B-日本|NTT|标准2, server: hnlt.potatofly.xyz, port: 30021, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 B-日本|NTT|标准1, server: hnlt.potatofly.xyz, port: 30020, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 B-日本|软银|流媒体|标准1, server: hnlt.potatofly.xyz, port: 30008, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 B-日本|软银|流媒体|标准2, server: hnlt.potatofly.xyz, port: 30009, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 B-香港|Azure|标准3, server: hnlt.potatofly.xyz, port: 30006, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 B-香港|Azure|标准4, server: hnlt.potatofly.xyz, port: 30007, type: vmess, uuid: 7824890d-e07c-3650-9f67-364b2371bb88, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 【直连】HKG/香港 C - 7, server: 047.HK.AP.POP.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 7747c513-b7a4-4994-97bf-d81990df1505, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 047.HK.AP.POP.BIGAIRPORT.NET}}
-  - {name: 🇭🇰 【直连】HKG/香港 C - 10, server: 050.HK.AP.POP.BIGAIRPORT.NET, port: 80, type: vmess, uuid: 7747c513-b7a4-4994-97bf-d81990df1505, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 050.HK.AP.POP.BIGAIRPORT.NET}}
-  - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5178, server: 52.175.79.113, port: 60021, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5200, server: 52.175.79.113, port: 60019, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 🇭🇰 HK_5177, server: 52.184.26.48, port: 80, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇦🇹 奥地利, server: 146.70.28.92, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇨🇦 加拿大, server: 208.78.41.197, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇺🇸 美国(US)USA/Chicago, server: 172.67.182.11, port: 443, type: vmess, uuid: e1aa83ff-b8b5-41b8-a854-fdcd3faa8875, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: sg-01.yinriver.top}}
+  - {name: Pool_🇮🇱IL_913, server: 87.239.255.114, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: 🇩🇪 ☆🇩🇪 德国, server: 138.199.19.186, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
+  - {name: 🇩🇪 ☆🇩🇪 德国 2, server: 138.199.19.186, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇯🇵 ☆🇯🇵日本, server: gzyd.potatofly.xyz, port: 30013, type: vmess, uuid: 4fa5468f-f448-36bf-a43b-befe63d4d3b9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 HK B7
-      - 付费节点
-      - 🇸🇬 v2ray 新加坡(联通) [Netflix]
-      - 🇭🇰 iGG-HK - 香港HGC②- 倍率 1
+      - 🇭🇰 香港3|@mftizi
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇷🇺 俄罗斯K1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台
+      - 🇭🇰 [1x] 香港-2-上海入口
+      - 🇭🇰 香港 2
+      - 🇭🇰 概念   🇭🇰HK_1429
+      - 🇺🇸 美国 1
+      - 🇭🇰 香港 3
       - 🇭🇰 iGG-HK - 香港HGC①- 倍率 1
+      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
+      - 付费节点
+      - 🇭🇰 [1x] 香港-2-上海入口 2
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇭🇰 [1x] 香港-2-温州入口 2
+      - 🇺🇸 US （感谢关注youtube：8度科技）
+      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本 3
+      - 🇭🇰 香港 4
+      - 🇩🇪 德国
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇺🇸 美国 6
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇺🇸 美国 9
+      - 🇺🇸 美国 10
+      - 🇺🇸 美国 11
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 13
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 15
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇷🇴 罗马尼亚
+      - 🇧🇪 比利时
+      - 🇨🇭 瑞士
+      - 🇮🇹 意大利
+      - 🇺🇸 美国 19
+      - 🇷🇴 罗马尼亚 2
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇷🇴 罗马尼亚 3
+      - 🇺🇸 美国 22
+      - 🇩🇪 德国 2
+      - 🇺🇸 h|美国(US)USA/San Francisco 6
+      - 🇪🇺 欧洲( 52
+      - 🇺🇸 h|美国(US)USA/San Francisco 7
+      - 🇺🇸 hm|美国(US)USA/Santa Clarita 3
+      - 🇺🇸 h|美国(US)USA/Fremont
+      - 🇺🇸 美国() 6
+      - 🇺🇸 美国( 5
+      - 🇪🇺 欧洲() 62
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇺🇸 US_14207 |35.61Mb
+      - 🇺🇸 US_14225 |41.79Mb
+      - 🇺🇸 US_14067 |41.52Mb
+      - 🇺🇸 US_14137 |39.76Mb
+      - ZZ_15272 |36.94Mb
+      - 🇺🇸 US_14034 |41.12Mb
+      - 🇺🇸 US_14295 |41.33Mb
+      - 🇺🇸 US_14296 |40.23Mb
+      - 🇺🇸 US_14211 |35.41Mb
+      - 🇺🇸 US_14236 |40.89Mb
+      - 🇺🇸 US_14300 |37.23Mb
+      - 🇺🇸 US_14164 |39.40Mb
+      - 🇺🇸 US_14285 |34.24Mb
+      - 🇺🇸 US_14245 |31.34Mb
+      - 🇺🇸 美国2|@mftizi
+      - 🇺🇸 美国2|中转|@mftizi
+      - 🇺🇸 美国 2 2
+      - 🇺🇸 美国 3 2
+      - 🇺🇸 美国 4 2
+      - 🇷🇺 俄罗斯G1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯B1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯J1000M丨x1x丨限速100M 负载5台
       - 🇸🇬 iGG-SG - 上海-新加坡- 倍率 1
       - 🇷🇺 iGG-RU - 俄罗斯-西伯利亚- 倍率 1
-      - 🇯🇵 v2ray 日本(联通) [Netflix]
       - iGG-Global - 全球智选- 倍率 1.2
       - 🇰🇷 v2ray 韩国(联通) [Netflix]
       - 🇲🇾 v2ray 马来西亚(联通) [Netflix]
       - 付费节点 2
       - 付费节点 3
       - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 🇭🇰 VIP|AWS|香港|中转|01
-      - 🇭🇰 VIP|AWS|香港|中转|02
-      - 🇭🇰 VIP|AWS|香港|中转|03
-      - 🇭🇰 VIP|AWS|香港|中转|04
-      - 🇰🇷 VIP|AWS|韩国|中转|01
-      - 🇰🇷 VIP|AWS|韩国|中转|02
-      - 🇯🇵 VIP|AWS|日本|中转|01
-      - 🇯🇵 VIP|AWS|日本|中转|02
-      - 🇯🇵 VIP|VUL|日本|中转|01
-      - 🇯🇵 VIP|VUL|日本|中转|02
-      - 🇬🇧 VIP|VUL|伦敦|中转|01
-      - 🇦🇺 VIP|VUL|悉尼|中转|01
-      - 🇨🇳 VIP|HINET|台湾|中转|01
-      - 🇨🇳 台湾1000M丨x1x丨限速100M 负载5台
-      - 🇯🇵 日本A1000M丨x1x丨限速100M 负载5台
-      - 🇻🇳 越南1000M丨x1x丨限速100M 负载5台
-      - 🇨🇳 香港1000M丨x1x丨限速100M 负载5台
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-VA [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VB [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VC [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VD [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-VA [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VB [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VC [亚太南部][NF-SG][Vmess-AIA]
-      - 🇯🇵 日本-东京 JP-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TC [亚洲东部][Shadowsocks-AIA]
-      - 🇰🇷 韩国-首尔 KR-TD [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-VA [亚洲东部][Vmess-AIA]
-      - 🇰🇷 韩国-首尔 KR-VC [亚洲东部][Vmess-AIA]
-      - 🇭🇰 香港
-      - 🇭🇰 概念   🇭🇰HK_1429
-      - 🇺🇸 US 🇺🇸 Denver 4
-      - 🇭🇰 HK_5186
-      - 🇯🇵 【直连】NRT/东京 A - 5
       - 🇭🇰 iGG-HK - 香港HKBN ① - 倍率 1
-      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
       - 🇸🇬 SG（感谢关注youtube：8度科技）
-      - SS JP - CZ CT -> AWS  NTT
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇯🇵 【直连】NRT/东京 A - 4
-      - 🇭🇰 【直连】HKG/香港 D - 8
-      - 🇸🇬 台湾c1-tg节点更新 https://bit.ly/3uWuS7a
       - 🇭🇰 【直连】HKG/香港 C - 5
-      - 🇰🇷 韩国-免流
-      - 🇨🇳 A-台湾|HINET|流媒体|标准1
-      - 🇨🇳 A-台湾|HINET|流媒体|标准2
-      - 🇸🇬 A-新加坡|HE|流媒体|标准1
-      - 🇸🇬 A-新加坡|HE|流媒体|标准2
-      - 🇯🇵 A-日本|软银|流媒体|标准1
-      - 🇯🇵 A-日本|软银|流媒体|标准2
-      - 🇹🇭 A-泰国|流媒体|标准1
-      - 🇹🇭 A-泰国|流媒体|标准2
-      - 🇭🇰 A-香港|HKT|流媒体|标准1
-      - 🇭🇰 A-香港|HKT|流媒体|标准2
-      - 🇯🇵 B-日本|NTT|标准2
-      - 🇯🇵 B-日本|NTT|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准2
-      - 🇭🇰 B-香港|Azure|标准3
-      - 🇭🇰 B-香港|Azure|标准4
       - 🇭🇰 【直连】HKG/香港 C - 7
-      - 🇭🇰 【直连】HKG/香港 C - 10
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5178
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5200
-      - 🇭🇰 HK_5177
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大
+      - 🇺🇸 美国(US)USA/Chicago
+      - Pool_🇮🇱IL_913
+      - 🇩🇪 ☆🇩🇪 德国
+      - 🇩🇪 ☆🇩🇪 德国 2
+      - 🇯🇵 ☆🇯🇵日本
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 HK B7
-      - 付费节点
-      - 🇸🇬 v2ray 新加坡(联通) [Netflix]
-      - 🇭🇰 iGG-HK - 香港HGC②- 倍率 1
+      - 🇭🇰 香港3|@mftizi
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇷🇺 俄罗斯K1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台
+      - 🇭🇰 [1x] 香港-2-上海入口
+      - 🇭🇰 香港 2
+      - 🇭🇰 概念   🇭🇰HK_1429
+      - 🇺🇸 美国 1
+      - 🇭🇰 香港 3
       - 🇭🇰 iGG-HK - 香港HGC①- 倍率 1
+      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
+      - 付费节点
+      - 🇭🇰 [1x] 香港-2-上海入口 2
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇭🇰 [1x] 香港-2-温州入口 2
+      - 🇺🇸 US （感谢关注youtube：8度科技）
+      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本 3
+      - 🇭🇰 香港 4
+      - 🇩🇪 德国
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇺🇸 美国 6
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇺🇸 美国 9
+      - 🇺🇸 美国 10
+      - 🇺🇸 美国 11
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 13
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 15
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇷🇴 罗马尼亚
+      - 🇧🇪 比利时
+      - 🇨🇭 瑞士
+      - 🇮🇹 意大利
+      - 🇺🇸 美国 19
+      - 🇷🇴 罗马尼亚 2
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇷🇴 罗马尼亚 3
+      - 🇺🇸 美国 22
+      - 🇩🇪 德国 2
+      - 🇺🇸 h|美国(US)USA/San Francisco 6
+      - 🇪🇺 欧洲( 52
+      - 🇺🇸 h|美国(US)USA/San Francisco 7
+      - 🇺🇸 hm|美国(US)USA/Santa Clarita 3
+      - 🇺🇸 h|美国(US)USA/Fremont
+      - 🇺🇸 美国() 6
+      - 🇺🇸 美国( 5
+      - 🇪🇺 欧洲() 62
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇺🇸 US_14207 |35.61Mb
+      - 🇺🇸 US_14225 |41.79Mb
+      - 🇺🇸 US_14067 |41.52Mb
+      - 🇺🇸 US_14137 |39.76Mb
+      - ZZ_15272 |36.94Mb
+      - 🇺🇸 US_14034 |41.12Mb
+      - 🇺🇸 US_14295 |41.33Mb
+      - 🇺🇸 US_14296 |40.23Mb
+      - 🇺🇸 US_14211 |35.41Mb
+      - 🇺🇸 US_14236 |40.89Mb
+      - 🇺🇸 US_14300 |37.23Mb
+      - 🇺🇸 US_14164 |39.40Mb
+      - 🇺🇸 US_14285 |34.24Mb
+      - 🇺🇸 US_14245 |31.34Mb
+      - 🇺🇸 美国2|@mftizi
+      - 🇺🇸 美国2|中转|@mftizi
+      - 🇺🇸 美国 2 2
+      - 🇺🇸 美国 3 2
+      - 🇺🇸 美国 4 2
+      - 🇷🇺 俄罗斯G1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯B1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯J1000M丨x1x丨限速100M 负载5台
       - 🇸🇬 iGG-SG - 上海-新加坡- 倍率 1
       - 🇷🇺 iGG-RU - 俄罗斯-西伯利亚- 倍率 1
-      - 🇯🇵 v2ray 日本(联通) [Netflix]
       - iGG-Global - 全球智选- 倍率 1.2
       - 🇰🇷 v2ray 韩国(联通) [Netflix]
       - 🇲🇾 v2ray 马来西亚(联通) [Netflix]
       - 付费节点 2
       - 付费节点 3
       - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 🇭🇰 VIP|AWS|香港|中转|01
-      - 🇭🇰 VIP|AWS|香港|中转|02
-      - 🇭🇰 VIP|AWS|香港|中转|03
-      - 🇭🇰 VIP|AWS|香港|中转|04
-      - 🇰🇷 VIP|AWS|韩国|中转|01
-      - 🇰🇷 VIP|AWS|韩国|中转|02
-      - 🇯🇵 VIP|AWS|日本|中转|01
-      - 🇯🇵 VIP|AWS|日本|中转|02
-      - 🇯🇵 VIP|VUL|日本|中转|01
-      - 🇯🇵 VIP|VUL|日本|中转|02
-      - 🇬🇧 VIP|VUL|伦敦|中转|01
-      - 🇦🇺 VIP|VUL|悉尼|中转|01
-      - 🇨🇳 VIP|HINET|台湾|中转|01
-      - 🇨🇳 台湾1000M丨x1x丨限速100M 负载5台
-      - 🇯🇵 日本A1000M丨x1x丨限速100M 负载5台
-      - 🇻🇳 越南1000M丨x1x丨限速100M 负载5台
-      - 🇨🇳 香港1000M丨x1x丨限速100M 负载5台
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-VA [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VB [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VC [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VD [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-VA [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VB [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VC [亚太南部][NF-SG][Vmess-AIA]
-      - 🇯🇵 日本-东京 JP-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TC [亚洲东部][Shadowsocks-AIA]
-      - 🇰🇷 韩国-首尔 KR-TD [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-VA [亚洲东部][Vmess-AIA]
-      - 🇰🇷 韩国-首尔 KR-VC [亚洲东部][Vmess-AIA]
-      - 🇭🇰 香港
-      - 🇭🇰 概念   🇭🇰HK_1429
-      - 🇺🇸 US 🇺🇸 Denver 4
-      - 🇭🇰 HK_5186
-      - 🇯🇵 【直连】NRT/东京 A - 5
       - 🇭🇰 iGG-HK - 香港HKBN ① - 倍率 1
-      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
       - 🇸🇬 SG（感谢关注youtube：8度科技）
-      - SS JP - CZ CT -> AWS  NTT
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇯🇵 【直连】NRT/东京 A - 4
-      - 🇭🇰 【直连】HKG/香港 D - 8
-      - 🇸🇬 台湾c1-tg节点更新 https://bit.ly/3uWuS7a
       - 🇭🇰 【直连】HKG/香港 C - 5
-      - 🇰🇷 韩国-免流
-      - 🇨🇳 A-台湾|HINET|流媒体|标准1
-      - 🇨🇳 A-台湾|HINET|流媒体|标准2
-      - 🇸🇬 A-新加坡|HE|流媒体|标准1
-      - 🇸🇬 A-新加坡|HE|流媒体|标准2
-      - 🇯🇵 A-日本|软银|流媒体|标准1
-      - 🇯🇵 A-日本|软银|流媒体|标准2
-      - 🇹🇭 A-泰国|流媒体|标准1
-      - 🇹🇭 A-泰国|流媒体|标准2
-      - 🇭🇰 A-香港|HKT|流媒体|标准1
-      - 🇭🇰 A-香港|HKT|流媒体|标准2
-      - 🇯🇵 B-日本|NTT|标准2
-      - 🇯🇵 B-日本|NTT|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准2
-      - 🇭🇰 B-香港|Azure|标准3
-      - 🇭🇰 B-香港|Azure|标准4
       - 🇭🇰 【直连】HKG/香港 C - 7
-      - 🇭🇰 【直连】HKG/香港 C - 10
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5178
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5200
-      - 🇭🇰 HK_5177
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大
+      - 🇺🇸 美国(US)USA/Chicago
+      - Pool_🇮🇱IL_913
+      - 🇩🇪 ☆🇩🇪 德国
+      - 🇩🇪 ☆🇩🇪 德国 2
+      - 🇯🇵 ☆🇯🇵日本
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 HK B7
-      - 付费节点
-      - 🇸🇬 v2ray 新加坡(联通) [Netflix]
-      - 🇭🇰 iGG-HK - 香港HGC②- 倍率 1
+      - 🇭🇰 香港3|@mftizi
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇷🇺 俄罗斯K1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台
+      - 🇭🇰 [1x] 香港-2-上海入口
+      - 🇭🇰 香港 2
+      - 🇭🇰 概念   🇭🇰HK_1429
+      - 🇺🇸 美国 1
+      - 🇭🇰 香港 3
       - 🇭🇰 iGG-HK - 香港HGC①- 倍率 1
+      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
+      - 付费节点
+      - 🇭🇰 [1x] 香港-2-上海入口 2
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇭🇰 [1x] 香港-2-温州入口 2
+      - 🇺🇸 US （感谢关注youtube：8度科技）
+      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本 3
+      - 🇭🇰 香港 4
+      - 🇩🇪 德国
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇺🇸 美国 6
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇺🇸 美国 9
+      - 🇺🇸 美国 10
+      - 🇺🇸 美国 11
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 13
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 15
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇷🇴 罗马尼亚
+      - 🇧🇪 比利时
+      - 🇨🇭 瑞士
+      - 🇮🇹 意大利
+      - 🇺🇸 美国 19
+      - 🇷🇴 罗马尼亚 2
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇷🇴 罗马尼亚 3
+      - 🇺🇸 美国 22
+      - 🇩🇪 德国 2
+      - 🇺🇸 h|美国(US)USA/San Francisco 6
+      - 🇪🇺 欧洲( 52
+      - 🇺🇸 h|美国(US)USA/San Francisco 7
+      - 🇺🇸 hm|美国(US)USA/Santa Clarita 3
+      - 🇺🇸 h|美国(US)USA/Fremont
+      - 🇺🇸 美国() 6
+      - 🇺🇸 美国( 5
+      - 🇪🇺 欧洲() 62
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇺🇸 US_14207 |35.61Mb
+      - 🇺🇸 US_14225 |41.79Mb
+      - 🇺🇸 US_14067 |41.52Mb
+      - 🇺🇸 US_14137 |39.76Mb
+      - ZZ_15272 |36.94Mb
+      - 🇺🇸 US_14034 |41.12Mb
+      - 🇺🇸 US_14295 |41.33Mb
+      - 🇺🇸 US_14296 |40.23Mb
+      - 🇺🇸 US_14211 |35.41Mb
+      - 🇺🇸 US_14236 |40.89Mb
+      - 🇺🇸 US_14300 |37.23Mb
+      - 🇺🇸 US_14164 |39.40Mb
+      - 🇺🇸 US_14285 |34.24Mb
+      - 🇺🇸 US_14245 |31.34Mb
+      - 🇺🇸 美国2|@mftizi
+      - 🇺🇸 美国2|中转|@mftizi
+      - 🇺🇸 美国 2 2
+      - 🇺🇸 美国 3 2
+      - 🇺🇸 美国 4 2
+      - 🇷🇺 俄罗斯G1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯B1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯J1000M丨x1x丨限速100M 负载5台
       - 🇸🇬 iGG-SG - 上海-新加坡- 倍率 1
       - 🇷🇺 iGG-RU - 俄罗斯-西伯利亚- 倍率 1
-      - 🇯🇵 v2ray 日本(联通) [Netflix]
       - iGG-Global - 全球智选- 倍率 1.2
       - 🇰🇷 v2ray 韩国(联通) [Netflix]
       - 🇲🇾 v2ray 马来西亚(联通) [Netflix]
       - 付费节点 2
       - 付费节点 3
       - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 🇭🇰 VIP|AWS|香港|中转|01
-      - 🇭🇰 VIP|AWS|香港|中转|02
-      - 🇭🇰 VIP|AWS|香港|中转|03
-      - 🇭🇰 VIP|AWS|香港|中转|04
-      - 🇰🇷 VIP|AWS|韩国|中转|01
-      - 🇰🇷 VIP|AWS|韩国|中转|02
-      - 🇯🇵 VIP|AWS|日本|中转|01
-      - 🇯🇵 VIP|AWS|日本|中转|02
-      - 🇯🇵 VIP|VUL|日本|中转|01
-      - 🇯🇵 VIP|VUL|日本|中转|02
-      - 🇬🇧 VIP|VUL|伦敦|中转|01
-      - 🇦🇺 VIP|VUL|悉尼|中转|01
-      - 🇨🇳 VIP|HINET|台湾|中转|01
-      - 🇨🇳 台湾1000M丨x1x丨限速100M 负载5台
-      - 🇯🇵 日本A1000M丨x1x丨限速100M 负载5台
-      - 🇻🇳 越南1000M丨x1x丨限速100M 负载5台
-      - 🇨🇳 香港1000M丨x1x丨限速100M 负载5台
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-VA [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VB [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VC [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VD [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-VA [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VB [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VC [亚太南部][NF-SG][Vmess-AIA]
-      - 🇯🇵 日本-东京 JP-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TC [亚洲东部][Shadowsocks-AIA]
-      - 🇰🇷 韩国-首尔 KR-TD [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-VA [亚洲东部][Vmess-AIA]
-      - 🇰🇷 韩国-首尔 KR-VC [亚洲东部][Vmess-AIA]
-      - 🇭🇰 香港
-      - 🇭🇰 概念   🇭🇰HK_1429
-      - 🇺🇸 US 🇺🇸 Denver 4
-      - 🇭🇰 HK_5186
-      - 🇯🇵 【直连】NRT/东京 A - 5
       - 🇭🇰 iGG-HK - 香港HKBN ① - 倍率 1
-      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
       - 🇸🇬 SG（感谢关注youtube：8度科技）
-      - SS JP - CZ CT -> AWS  NTT
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇯🇵 【直连】NRT/东京 A - 4
-      - 🇭🇰 【直连】HKG/香港 D - 8
-      - 🇸🇬 台湾c1-tg节点更新 https://bit.ly/3uWuS7a
       - 🇭🇰 【直连】HKG/香港 C - 5
-      - 🇰🇷 韩国-免流
-      - 🇨🇳 A-台湾|HINET|流媒体|标准1
-      - 🇨🇳 A-台湾|HINET|流媒体|标准2
-      - 🇸🇬 A-新加坡|HE|流媒体|标准1
-      - 🇸🇬 A-新加坡|HE|流媒体|标准2
-      - 🇯🇵 A-日本|软银|流媒体|标准1
-      - 🇯🇵 A-日本|软银|流媒体|标准2
-      - 🇹🇭 A-泰国|流媒体|标准1
-      - 🇹🇭 A-泰国|流媒体|标准2
-      - 🇭🇰 A-香港|HKT|流媒体|标准1
-      - 🇭🇰 A-香港|HKT|流媒体|标准2
-      - 🇯🇵 B-日本|NTT|标准2
-      - 🇯🇵 B-日本|NTT|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准2
-      - 🇭🇰 B-香港|Azure|标准3
-      - 🇭🇰 B-香港|Azure|标准4
       - 🇭🇰 【直连】HKG/香港 C - 7
-      - 🇭🇰 【直连】HKG/香港 C - 10
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5178
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5200
-      - 🇭🇰 HK_5177
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大
+      - 🇺🇸 美国(US)USA/Chicago
+      - Pool_🇮🇱IL_913
+      - 🇩🇪 ☆🇩🇪 德国
+      - 🇩🇪 ☆🇩🇪 德国 2
+      - 🇯🇵 ☆🇯🇵日本
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 HK B7
-      - 付费节点
-      - 🇸🇬 v2ray 新加坡(联通) [Netflix]
-      - 🇭🇰 iGG-HK - 香港HGC②- 倍率 1
+      - 🇭🇰 香港3|@mftizi
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇷🇺 俄罗斯K1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台
+      - 🇭🇰 [1x] 香港-2-上海入口
+      - 🇭🇰 香港 2
+      - 🇭🇰 概念   🇭🇰HK_1429
+      - 🇺🇸 美国 1
+      - 🇭🇰 香港 3
       - 🇭🇰 iGG-HK - 香港HGC①- 倍率 1
+      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
+      - 付费节点
+      - 🇭🇰 [1x] 香港-2-上海入口 2
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇭🇰 [1x] 香港-2-温州入口 2
+      - 🇺🇸 US （感谢关注youtube：8度科技）
+      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本 3
+      - 🇭🇰 香港 4
+      - 🇩🇪 德国
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇺🇸 美国 6
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇺🇸 美国 9
+      - 🇺🇸 美国 10
+      - 🇺🇸 美国 11
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 13
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 15
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇷🇴 罗马尼亚
+      - 🇧🇪 比利时
+      - 🇨🇭 瑞士
+      - 🇮🇹 意大利
+      - 🇺🇸 美国 19
+      - 🇷🇴 罗马尼亚 2
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇷🇴 罗马尼亚 3
+      - 🇺🇸 美国 22
+      - 🇩🇪 德国 2
+      - 🇺🇸 h|美国(US)USA/San Francisco 6
+      - 🇪🇺 欧洲( 52
+      - 🇺🇸 h|美国(US)USA/San Francisco 7
+      - 🇺🇸 hm|美国(US)USA/Santa Clarita 3
+      - 🇺🇸 h|美国(US)USA/Fremont
+      - 🇺🇸 美国() 6
+      - 🇺🇸 美国( 5
+      - 🇪🇺 欧洲() 62
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇺🇸 US_14207 |35.61Mb
+      - 🇺🇸 US_14225 |41.79Mb
+      - 🇺🇸 US_14067 |41.52Mb
+      - 🇺🇸 US_14137 |39.76Mb
+      - ZZ_15272 |36.94Mb
+      - 🇺🇸 US_14034 |41.12Mb
+      - 🇺🇸 US_14295 |41.33Mb
+      - 🇺🇸 US_14296 |40.23Mb
+      - 🇺🇸 US_14211 |35.41Mb
+      - 🇺🇸 US_14236 |40.89Mb
+      - 🇺🇸 US_14300 |37.23Mb
+      - 🇺🇸 US_14164 |39.40Mb
+      - 🇺🇸 US_14285 |34.24Mb
+      - 🇺🇸 US_14245 |31.34Mb
+      - 🇺🇸 美国2|@mftizi
+      - 🇺🇸 美国2|中转|@mftizi
+      - 🇺🇸 美国 2 2
+      - 🇺🇸 美国 3 2
+      - 🇺🇸 美国 4 2
+      - 🇷🇺 俄罗斯G1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯B1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯J1000M丨x1x丨限速100M 负载5台
       - 🇸🇬 iGG-SG - 上海-新加坡- 倍率 1
       - 🇷🇺 iGG-RU - 俄罗斯-西伯利亚- 倍率 1
-      - 🇯🇵 v2ray 日本(联通) [Netflix]
       - iGG-Global - 全球智选- 倍率 1.2
       - 🇰🇷 v2ray 韩国(联通) [Netflix]
       - 🇲🇾 v2ray 马来西亚(联通) [Netflix]
       - 付费节点 2
       - 付费节点 3
       - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 🇭🇰 VIP|AWS|香港|中转|01
-      - 🇭🇰 VIP|AWS|香港|中转|02
-      - 🇭🇰 VIP|AWS|香港|中转|03
-      - 🇭🇰 VIP|AWS|香港|中转|04
-      - 🇰🇷 VIP|AWS|韩国|中转|01
-      - 🇰🇷 VIP|AWS|韩国|中转|02
-      - 🇯🇵 VIP|AWS|日本|中转|01
-      - 🇯🇵 VIP|AWS|日本|中转|02
-      - 🇯🇵 VIP|VUL|日本|中转|01
-      - 🇯🇵 VIP|VUL|日本|中转|02
-      - 🇬🇧 VIP|VUL|伦敦|中转|01
-      - 🇦🇺 VIP|VUL|悉尼|中转|01
-      - 🇨🇳 VIP|HINET|台湾|中转|01
-      - 🇨🇳 台湾1000M丨x1x丨限速100M 负载5台
-      - 🇯🇵 日本A1000M丨x1x丨限速100M 负载5台
-      - 🇻🇳 越南1000M丨x1x丨限速100M 负载5台
-      - 🇨🇳 香港1000M丨x1x丨限速100M 负载5台
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-VA [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VB [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VC [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VD [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-VA [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VB [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VC [亚太南部][NF-SG][Vmess-AIA]
-      - 🇯🇵 日本-东京 JP-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TC [亚洲东部][Shadowsocks-AIA]
-      - 🇰🇷 韩国-首尔 KR-TD [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-VA [亚洲东部][Vmess-AIA]
-      - 🇰🇷 韩国-首尔 KR-VC [亚洲东部][Vmess-AIA]
-      - 🇭🇰 香港
-      - 🇭🇰 概念   🇭🇰HK_1429
-      - 🇺🇸 US 🇺🇸 Denver 4
-      - 🇭🇰 HK_5186
-      - 🇯🇵 【直连】NRT/东京 A - 5
       - 🇭🇰 iGG-HK - 香港HKBN ① - 倍率 1
-      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
       - 🇸🇬 SG（感谢关注youtube：8度科技）
-      - SS JP - CZ CT -> AWS  NTT
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇯🇵 【直连】NRT/东京 A - 4
-      - 🇭🇰 【直连】HKG/香港 D - 8
-      - 🇸🇬 台湾c1-tg节点更新 https://bit.ly/3uWuS7a
       - 🇭🇰 【直连】HKG/香港 C - 5
-      - 🇰🇷 韩国-免流
-      - 🇨🇳 A-台湾|HINET|流媒体|标准1
-      - 🇨🇳 A-台湾|HINET|流媒体|标准2
-      - 🇸🇬 A-新加坡|HE|流媒体|标准1
-      - 🇸🇬 A-新加坡|HE|流媒体|标准2
-      - 🇯🇵 A-日本|软银|流媒体|标准1
-      - 🇯🇵 A-日本|软银|流媒体|标准2
-      - 🇹🇭 A-泰国|流媒体|标准1
-      - 🇹🇭 A-泰国|流媒体|标准2
-      - 🇭🇰 A-香港|HKT|流媒体|标准1
-      - 🇭🇰 A-香港|HKT|流媒体|标准2
-      - 🇯🇵 B-日本|NTT|标准2
-      - 🇯🇵 B-日本|NTT|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准2
-      - 🇭🇰 B-香港|Azure|标准3
-      - 🇭🇰 B-香港|Azure|标准4
       - 🇭🇰 【直连】HKG/香港 C - 7
-      - 🇭🇰 【直连】HKG/香港 C - 10
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5178
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5200
-      - 🇭🇰 HK_5177
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大
+      - 🇺🇸 美国(US)USA/Chicago
+      - Pool_🇮🇱IL_913
+      - 🇩🇪 ☆🇩🇪 德国
+      - 🇩🇪 ☆🇩🇪 德国 2
+      - 🇯🇵 ☆🇯🇵日本
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 HK B7
-      - 付费节点
-      - 🇸🇬 v2ray 新加坡(联通) [Netflix]
-      - 🇭🇰 iGG-HK - 香港HGC②- 倍率 1
+      - 🇭🇰 香港3|@mftizi
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇷🇺 俄罗斯K1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台
+      - 🇭🇰 [1x] 香港-2-上海入口
+      - 🇭🇰 香港 2
+      - 🇭🇰 概念   🇭🇰HK_1429
+      - 🇺🇸 美国 1
+      - 🇭🇰 香港 3
       - 🇭🇰 iGG-HK - 香港HGC①- 倍率 1
+      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
+      - 付费节点
+      - 🇭🇰 [1x] 香港-2-上海入口 2
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇭🇰 [1x] 香港-2-温州入口 2
+      - 🇺🇸 US （感谢关注youtube：8度科技）
+      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本 3
+      - 🇭🇰 香港 4
+      - 🇩🇪 德国
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇺🇸 美国 6
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇺🇸 美国 9
+      - 🇺🇸 美国 10
+      - 🇺🇸 美国 11
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 13
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 15
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇷🇴 罗马尼亚
+      - 🇧🇪 比利时
+      - 🇨🇭 瑞士
+      - 🇮🇹 意大利
+      - 🇺🇸 美国 19
+      - 🇷🇴 罗马尼亚 2
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇷🇴 罗马尼亚 3
+      - 🇺🇸 美国 22
+      - 🇩🇪 德国 2
+      - 🇺🇸 h|美国(US)USA/San Francisco 6
+      - 🇪🇺 欧洲( 52
+      - 🇺🇸 h|美国(US)USA/San Francisco 7
+      - 🇺🇸 hm|美国(US)USA/Santa Clarita 3
+      - 🇺🇸 h|美国(US)USA/Fremont
+      - 🇺🇸 美国() 6
+      - 🇺🇸 美国( 5
+      - 🇪🇺 欧洲() 62
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇺🇸 US_14207 |35.61Mb
+      - 🇺🇸 US_14225 |41.79Mb
+      - 🇺🇸 US_14067 |41.52Mb
+      - 🇺🇸 US_14137 |39.76Mb
+      - ZZ_15272 |36.94Mb
+      - 🇺🇸 US_14034 |41.12Mb
+      - 🇺🇸 US_14295 |41.33Mb
+      - 🇺🇸 US_14296 |40.23Mb
+      - 🇺🇸 US_14211 |35.41Mb
+      - 🇺🇸 US_14236 |40.89Mb
+      - 🇺🇸 US_14300 |37.23Mb
+      - 🇺🇸 US_14164 |39.40Mb
+      - 🇺🇸 US_14285 |34.24Mb
+      - 🇺🇸 US_14245 |31.34Mb
+      - 🇺🇸 美国2|@mftizi
+      - 🇺🇸 美国2|中转|@mftizi
+      - 🇺🇸 美国 2 2
+      - 🇺🇸 美国 3 2
+      - 🇺🇸 美国 4 2
+      - 🇷🇺 俄罗斯G1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯B1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯J1000M丨x1x丨限速100M 负载5台
       - 🇸🇬 iGG-SG - 上海-新加坡- 倍率 1
       - 🇷🇺 iGG-RU - 俄罗斯-西伯利亚- 倍率 1
-      - 🇯🇵 v2ray 日本(联通) [Netflix]
       - iGG-Global - 全球智选- 倍率 1.2
       - 🇰🇷 v2ray 韩国(联通) [Netflix]
       - 🇲🇾 v2ray 马来西亚(联通) [Netflix]
       - 付费节点 2
       - 付费节点 3
       - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 🇭🇰 VIP|AWS|香港|中转|01
-      - 🇭🇰 VIP|AWS|香港|中转|02
-      - 🇭🇰 VIP|AWS|香港|中转|03
-      - 🇭🇰 VIP|AWS|香港|中转|04
-      - 🇰🇷 VIP|AWS|韩国|中转|01
-      - 🇰🇷 VIP|AWS|韩国|中转|02
-      - 🇯🇵 VIP|AWS|日本|中转|01
-      - 🇯🇵 VIP|AWS|日本|中转|02
-      - 🇯🇵 VIP|VUL|日本|中转|01
-      - 🇯🇵 VIP|VUL|日本|中转|02
-      - 🇬🇧 VIP|VUL|伦敦|中转|01
-      - 🇦🇺 VIP|VUL|悉尼|中转|01
-      - 🇨🇳 VIP|HINET|台湾|中转|01
-      - 🇨🇳 台湾1000M丨x1x丨限速100M 负载5台
-      - 🇯🇵 日本A1000M丨x1x丨限速100M 负载5台
-      - 🇻🇳 越南1000M丨x1x丨限速100M 负载5台
-      - 🇨🇳 香港1000M丨x1x丨限速100M 负载5台
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-VA [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VB [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VC [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VD [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-VA [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VB [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VC [亚太南部][NF-SG][Vmess-AIA]
-      - 🇯🇵 日本-东京 JP-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TC [亚洲东部][Shadowsocks-AIA]
-      - 🇰🇷 韩国-首尔 KR-TD [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-VA [亚洲东部][Vmess-AIA]
-      - 🇰🇷 韩国-首尔 KR-VC [亚洲东部][Vmess-AIA]
-      - 🇭🇰 香港
-      - 🇭🇰 概念   🇭🇰HK_1429
-      - 🇺🇸 US 🇺🇸 Denver 4
-      - 🇭🇰 HK_5186
-      - 🇯🇵 【直连】NRT/东京 A - 5
       - 🇭🇰 iGG-HK - 香港HKBN ① - 倍率 1
-      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
       - 🇸🇬 SG（感谢关注youtube：8度科技）
-      - SS JP - CZ CT -> AWS  NTT
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇯🇵 【直连】NRT/东京 A - 4
-      - 🇭🇰 【直连】HKG/香港 D - 8
-      - 🇸🇬 台湾c1-tg节点更新 https://bit.ly/3uWuS7a
       - 🇭🇰 【直连】HKG/香港 C - 5
-      - 🇰🇷 韩国-免流
-      - 🇨🇳 A-台湾|HINET|流媒体|标准1
-      - 🇨🇳 A-台湾|HINET|流媒体|标准2
-      - 🇸🇬 A-新加坡|HE|流媒体|标准1
-      - 🇸🇬 A-新加坡|HE|流媒体|标准2
-      - 🇯🇵 A-日本|软银|流媒体|标准1
-      - 🇯🇵 A-日本|软银|流媒体|标准2
-      - 🇹🇭 A-泰国|流媒体|标准1
-      - 🇹🇭 A-泰国|流媒体|标准2
-      - 🇭🇰 A-香港|HKT|流媒体|标准1
-      - 🇭🇰 A-香港|HKT|流媒体|标准2
-      - 🇯🇵 B-日本|NTT|标准2
-      - 🇯🇵 B-日本|NTT|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准2
-      - 🇭🇰 B-香港|Azure|标准3
-      - 🇭🇰 B-香港|Azure|标准4
       - 🇭🇰 【直连】HKG/香港 C - 7
-      - 🇭🇰 【直连】HKG/香港 C - 10
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5178
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5200
-      - 🇭🇰 HK_5177
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大
+      - 🇺🇸 美国(US)USA/Chicago
+      - Pool_🇮🇱IL_913
+      - 🇩🇪 ☆🇩🇪 德国
+      - 🇩🇪 ☆🇩🇪 德国 2
+      - 🇯🇵 ☆🇯🇵日本
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 HK B7
-      - 付费节点
-      - 🇸🇬 v2ray 新加坡(联通) [Netflix]
-      - 🇭🇰 iGG-HK - 香港HGC②- 倍率 1
+      - 🇭🇰 香港3|@mftizi
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇷🇺 俄罗斯K1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台
+      - 🇭🇰 [1x] 香港-2-上海入口
+      - 🇭🇰 香港 2
+      - 🇭🇰 概念   🇭🇰HK_1429
+      - 🇺🇸 美国 1
+      - 🇭🇰 香港 3
       - 🇭🇰 iGG-HK - 香港HGC①- 倍率 1
+      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
+      - 付费节点
+      - 🇭🇰 [1x] 香港-2-上海入口 2
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇭🇰 [1x] 香港-2-温州入口 2
+      - 🇺🇸 US （感谢关注youtube：8度科技）
+      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本 3
+      - 🇭🇰 香港 4
+      - 🇩🇪 德国
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇺🇸 美国 6
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇺🇸 美国 9
+      - 🇺🇸 美国 10
+      - 🇺🇸 美国 11
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 13
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 15
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇷🇴 罗马尼亚
+      - 🇧🇪 比利时
+      - 🇨🇭 瑞士
+      - 🇮🇹 意大利
+      - 🇺🇸 美国 19
+      - 🇷🇴 罗马尼亚 2
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇷🇴 罗马尼亚 3
+      - 🇺🇸 美国 22
+      - 🇩🇪 德国 2
+      - 🇺🇸 h|美国(US)USA/San Francisco 6
+      - 🇪🇺 欧洲( 52
+      - 🇺🇸 h|美国(US)USA/San Francisco 7
+      - 🇺🇸 hm|美国(US)USA/Santa Clarita 3
+      - 🇺🇸 h|美国(US)USA/Fremont
+      - 🇺🇸 美国() 6
+      - 🇺🇸 美国( 5
+      - 🇪🇺 欧洲() 62
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇺🇸 US_14207 |35.61Mb
+      - 🇺🇸 US_14225 |41.79Mb
+      - 🇺🇸 US_14067 |41.52Mb
+      - 🇺🇸 US_14137 |39.76Mb
+      - ZZ_15272 |36.94Mb
+      - 🇺🇸 US_14034 |41.12Mb
+      - 🇺🇸 US_14295 |41.33Mb
+      - 🇺🇸 US_14296 |40.23Mb
+      - 🇺🇸 US_14211 |35.41Mb
+      - 🇺🇸 US_14236 |40.89Mb
+      - 🇺🇸 US_14300 |37.23Mb
+      - 🇺🇸 US_14164 |39.40Mb
+      - 🇺🇸 US_14285 |34.24Mb
+      - 🇺🇸 US_14245 |31.34Mb
+      - 🇺🇸 美国2|@mftizi
+      - 🇺🇸 美国2|中转|@mftizi
+      - 🇺🇸 美国 2 2
+      - 🇺🇸 美国 3 2
+      - 🇺🇸 美国 4 2
+      - 🇷🇺 俄罗斯G1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯B1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯J1000M丨x1x丨限速100M 负载5台
       - 🇸🇬 iGG-SG - 上海-新加坡- 倍率 1
       - 🇷🇺 iGG-RU - 俄罗斯-西伯利亚- 倍率 1
-      - 🇯🇵 v2ray 日本(联通) [Netflix]
       - iGG-Global - 全球智选- 倍率 1.2
       - 🇰🇷 v2ray 韩国(联通) [Netflix]
       - 🇲🇾 v2ray 马来西亚(联通) [Netflix]
       - 付费节点 2
       - 付费节点 3
       - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 🇭🇰 VIP|AWS|香港|中转|01
-      - 🇭🇰 VIP|AWS|香港|中转|02
-      - 🇭🇰 VIP|AWS|香港|中转|03
-      - 🇭🇰 VIP|AWS|香港|中转|04
-      - 🇰🇷 VIP|AWS|韩国|中转|01
-      - 🇰🇷 VIP|AWS|韩国|中转|02
-      - 🇯🇵 VIP|AWS|日本|中转|01
-      - 🇯🇵 VIP|AWS|日本|中转|02
-      - 🇯🇵 VIP|VUL|日本|中转|01
-      - 🇯🇵 VIP|VUL|日本|中转|02
-      - 🇬🇧 VIP|VUL|伦敦|中转|01
-      - 🇦🇺 VIP|VUL|悉尼|中转|01
-      - 🇨🇳 VIP|HINET|台湾|中转|01
-      - 🇨🇳 台湾1000M丨x1x丨限速100M 负载5台
-      - 🇯🇵 日本A1000M丨x1x丨限速100M 负载5台
-      - 🇻🇳 越南1000M丨x1x丨限速100M 负载5台
-      - 🇨🇳 香港1000M丨x1x丨限速100M 负载5台
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-VA [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VB [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VC [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VD [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-VA [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VB [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VC [亚太南部][NF-SG][Vmess-AIA]
-      - 🇯🇵 日本-东京 JP-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TC [亚洲东部][Shadowsocks-AIA]
-      - 🇰🇷 韩国-首尔 KR-TD [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-VA [亚洲东部][Vmess-AIA]
-      - 🇰🇷 韩国-首尔 KR-VC [亚洲东部][Vmess-AIA]
-      - 🇭🇰 香港
-      - 🇭🇰 概念   🇭🇰HK_1429
-      - 🇺🇸 US 🇺🇸 Denver 4
-      - 🇭🇰 HK_5186
-      - 🇯🇵 【直连】NRT/东京 A - 5
       - 🇭🇰 iGG-HK - 香港HKBN ① - 倍率 1
-      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
       - 🇸🇬 SG（感谢关注youtube：8度科技）
-      - SS JP - CZ CT -> AWS  NTT
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇯🇵 【直连】NRT/东京 A - 4
-      - 🇭🇰 【直连】HKG/香港 D - 8
-      - 🇸🇬 台湾c1-tg节点更新 https://bit.ly/3uWuS7a
       - 🇭🇰 【直连】HKG/香港 C - 5
-      - 🇰🇷 韩国-免流
-      - 🇨🇳 A-台湾|HINET|流媒体|标准1
-      - 🇨🇳 A-台湾|HINET|流媒体|标准2
-      - 🇸🇬 A-新加坡|HE|流媒体|标准1
-      - 🇸🇬 A-新加坡|HE|流媒体|标准2
-      - 🇯🇵 A-日本|软银|流媒体|标准1
-      - 🇯🇵 A-日本|软银|流媒体|标准2
-      - 🇹🇭 A-泰国|流媒体|标准1
-      - 🇹🇭 A-泰国|流媒体|标准2
-      - 🇭🇰 A-香港|HKT|流媒体|标准1
-      - 🇭🇰 A-香港|HKT|流媒体|标准2
-      - 🇯🇵 B-日本|NTT|标准2
-      - 🇯🇵 B-日本|NTT|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准2
-      - 🇭🇰 B-香港|Azure|标准3
-      - 🇭🇰 B-香港|Azure|标准4
       - 🇭🇰 【直连】HKG/香港 C - 7
-      - 🇭🇰 【直连】HKG/香港 C - 10
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5178
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5200
-      - 🇭🇰 HK_5177
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大
+      - 🇺🇸 美国(US)USA/Chicago
+      - Pool_🇮🇱IL_913
+      - 🇩🇪 ☆🇩🇪 德国
+      - 🇩🇪 ☆🇩🇪 德国 2
+      - 🇯🇵 ☆🇯🇵日本
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 HK B7
-      - 付费节点
-      - 🇸🇬 v2ray 新加坡(联通) [Netflix]
-      - 🇭🇰 iGG-HK - 香港HGC②- 倍率 1
+      - 🇭🇰 香港3|@mftizi
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇷🇺 俄罗斯K1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台
+      - 🇭🇰 [1x] 香港-2-上海入口
+      - 🇭🇰 香港 2
+      - 🇭🇰 概念   🇭🇰HK_1429
+      - 🇺🇸 美国 1
+      - 🇭🇰 香港 3
       - 🇭🇰 iGG-HK - 香港HGC①- 倍率 1
+      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
+      - 付费节点
+      - 🇭🇰 [1x] 香港-2-上海入口 2
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇭🇰 [1x] 香港-2-温州入口 2
+      - 🇺🇸 US （感谢关注youtube：8度科技）
+      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本 3
+      - 🇭🇰 香港 4
+      - 🇩🇪 德国
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇺🇸 美国 6
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇺🇸 美国 9
+      - 🇺🇸 美国 10
+      - 🇺🇸 美国 11
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 13
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 15
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇷🇴 罗马尼亚
+      - 🇧🇪 比利时
+      - 🇨🇭 瑞士
+      - 🇮🇹 意大利
+      - 🇺🇸 美国 19
+      - 🇷🇴 罗马尼亚 2
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇷🇴 罗马尼亚 3
+      - 🇺🇸 美国 22
+      - 🇩🇪 德国 2
+      - 🇺🇸 h|美国(US)USA/San Francisco 6
+      - 🇪🇺 欧洲( 52
+      - 🇺🇸 h|美国(US)USA/San Francisco 7
+      - 🇺🇸 hm|美国(US)USA/Santa Clarita 3
+      - 🇺🇸 h|美国(US)USA/Fremont
+      - 🇺🇸 美国() 6
+      - 🇺🇸 美国( 5
+      - 🇪🇺 欧洲() 62
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇺🇸 US_14207 |35.61Mb
+      - 🇺🇸 US_14225 |41.79Mb
+      - 🇺🇸 US_14067 |41.52Mb
+      - 🇺🇸 US_14137 |39.76Mb
+      - ZZ_15272 |36.94Mb
+      - 🇺🇸 US_14034 |41.12Mb
+      - 🇺🇸 US_14295 |41.33Mb
+      - 🇺🇸 US_14296 |40.23Mb
+      - 🇺🇸 US_14211 |35.41Mb
+      - 🇺🇸 US_14236 |40.89Mb
+      - 🇺🇸 US_14300 |37.23Mb
+      - 🇺🇸 US_14164 |39.40Mb
+      - 🇺🇸 US_14285 |34.24Mb
+      - 🇺🇸 US_14245 |31.34Mb
+      - 🇺🇸 美国2|@mftizi
+      - 🇺🇸 美国2|中转|@mftizi
+      - 🇺🇸 美国 2 2
+      - 🇺🇸 美国 3 2
+      - 🇺🇸 美国 4 2
+      - 🇷🇺 俄罗斯G1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯B1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯J1000M丨x1x丨限速100M 负载5台
       - 🇸🇬 iGG-SG - 上海-新加坡- 倍率 1
       - 🇷🇺 iGG-RU - 俄罗斯-西伯利亚- 倍率 1
-      - 🇯🇵 v2ray 日本(联通) [Netflix]
       - iGG-Global - 全球智选- 倍率 1.2
       - 🇰🇷 v2ray 韩国(联通) [Netflix]
       - 🇲🇾 v2ray 马来西亚(联通) [Netflix]
       - 付费节点 2
       - 付费节点 3
       - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 🇭🇰 VIP|AWS|香港|中转|01
-      - 🇭🇰 VIP|AWS|香港|中转|02
-      - 🇭🇰 VIP|AWS|香港|中转|03
-      - 🇭🇰 VIP|AWS|香港|中转|04
-      - 🇰🇷 VIP|AWS|韩国|中转|01
-      - 🇰🇷 VIP|AWS|韩国|中转|02
-      - 🇯🇵 VIP|AWS|日本|中转|01
-      - 🇯🇵 VIP|AWS|日本|中转|02
-      - 🇯🇵 VIP|VUL|日本|中转|01
-      - 🇯🇵 VIP|VUL|日本|中转|02
-      - 🇬🇧 VIP|VUL|伦敦|中转|01
-      - 🇦🇺 VIP|VUL|悉尼|中转|01
-      - 🇨🇳 VIP|HINET|台湾|中转|01
-      - 🇨🇳 台湾1000M丨x1x丨限速100M 负载5台
-      - 🇯🇵 日本A1000M丨x1x丨限速100M 负载5台
-      - 🇻🇳 越南1000M丨x1x丨限速100M 负载5台
-      - 🇨🇳 香港1000M丨x1x丨限速100M 负载5台
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-VA [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VB [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VC [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VD [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-VA [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VB [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VC [亚太南部][NF-SG][Vmess-AIA]
-      - 🇯🇵 日本-东京 JP-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TC [亚洲东部][Shadowsocks-AIA]
-      - 🇰🇷 韩国-首尔 KR-TD [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-VA [亚洲东部][Vmess-AIA]
-      - 🇰🇷 韩国-首尔 KR-VC [亚洲东部][Vmess-AIA]
-      - 🇭🇰 香港
-      - 🇭🇰 概念   🇭🇰HK_1429
-      - 🇺🇸 US 🇺🇸 Denver 4
-      - 🇭🇰 HK_5186
-      - 🇯🇵 【直连】NRT/东京 A - 5
       - 🇭🇰 iGG-HK - 香港HKBN ① - 倍率 1
-      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
       - 🇸🇬 SG（感谢关注youtube：8度科技）
-      - SS JP - CZ CT -> AWS  NTT
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇯🇵 【直连】NRT/东京 A - 4
-      - 🇭🇰 【直连】HKG/香港 D - 8
-      - 🇸🇬 台湾c1-tg节点更新 https://bit.ly/3uWuS7a
       - 🇭🇰 【直连】HKG/香港 C - 5
-      - 🇰🇷 韩国-免流
-      - 🇨🇳 A-台湾|HINET|流媒体|标准1
-      - 🇨🇳 A-台湾|HINET|流媒体|标准2
-      - 🇸🇬 A-新加坡|HE|流媒体|标准1
-      - 🇸🇬 A-新加坡|HE|流媒体|标准2
-      - 🇯🇵 A-日本|软银|流媒体|标准1
-      - 🇯🇵 A-日本|软银|流媒体|标准2
-      - 🇹🇭 A-泰国|流媒体|标准1
-      - 🇹🇭 A-泰国|流媒体|标准2
-      - 🇭🇰 A-香港|HKT|流媒体|标准1
-      - 🇭🇰 A-香港|HKT|流媒体|标准2
-      - 🇯🇵 B-日本|NTT|标准2
-      - 🇯🇵 B-日本|NTT|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准2
-      - 🇭🇰 B-香港|Azure|标准3
-      - 🇭🇰 B-香港|Azure|标准4
       - 🇭🇰 【直连】HKG/香港 C - 7
-      - 🇭🇰 【直连】HKG/香港 C - 10
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5178
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5200
-      - 🇭🇰 HK_5177
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大
+      - 🇺🇸 美国(US)USA/Chicago
+      - Pool_🇮🇱IL_913
+      - 🇩🇪 ☆🇩🇪 德国
+      - 🇩🇪 ☆🇩🇪 德国 2
+      - 🇯🇵 ☆🇯🇵日本
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -850,104 +922,113 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 HK B7
-      - 付费节点
-      - 🇸🇬 v2ray 新加坡(联通) [Netflix]
-      - 🇭🇰 iGG-HK - 香港HGC②- 倍率 1
+      - 🇭🇰 香港3|@mftizi
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇷🇺 俄罗斯K1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台
+      - 🇭🇰 [1x] 香港-2-上海入口
+      - 🇭🇰 香港 2
+      - 🇭🇰 概念   🇭🇰HK_1429
+      - 🇺🇸 美国 1
+      - 🇭🇰 香港 3
       - 🇭🇰 iGG-HK - 香港HGC①- 倍率 1
+      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
+      - 付费节点
+      - 🇭🇰 [1x] 香港-2-上海入口 2
+      - 🇭🇰 [1x] 香港-2-温州入口
+      - 🇭🇰 [1x] 香港-2-温州入口 2
+      - 🇺🇸 US （感谢关注youtube：8度科技）
+      - 🇬🇧 英国 曼彻斯特（感谢关注youtube：8度科技）
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台
+      - 🇯🇵 日本 2
+      - 🇯🇵 日本 3
+      - 🇭🇰 香港 4
+      - 🇩🇪 德国
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇺🇸 美国 6
+      - 🇺🇸 美国 7
+      - 🇺🇸 美国 8
+      - 🇺🇸 美国 9
+      - 🇺🇸 美国 10
+      - 🇺🇸 美国 11
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 13
+      - 🇺🇸 美国 14
+      - 🇺🇸 美国 15
+      - 🇷🇺 俄罗斯
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 17
+      - 🇺🇸 美国 18
+      - 🇷🇴 罗马尼亚
+      - 🇧🇪 比利时
+      - 🇨🇭 瑞士
+      - 🇮🇹 意大利
+      - 🇺🇸 美国 19
+      - 🇷🇴 罗马尼亚 2
+      - 🇺🇸 美国 20
+      - 🇺🇸 美国 21
+      - 🇷🇴 罗马尼亚 3
+      - 🇺🇸 美国 22
+      - 🇩🇪 德国 2
+      - 🇺🇸 h|美国(US)USA/San Francisco 6
+      - 🇪🇺 欧洲( 52
+      - 🇺🇸 h|美国(US)USA/San Francisco 7
+      - 🇺🇸 hm|美国(US)USA/Santa Clarita 3
+      - 🇺🇸 h|美国(US)USA/Fremont
+      - 🇺🇸 美国() 6
+      - 🇺🇸 美国( 5
+      - 🇪🇺 欧洲() 62
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - 🇺🇸 US_14207 |35.61Mb
+      - 🇺🇸 US_14225 |41.79Mb
+      - 🇺🇸 US_14067 |41.52Mb
+      - 🇺🇸 US_14137 |39.76Mb
+      - ZZ_15272 |36.94Mb
+      - 🇺🇸 US_14034 |41.12Mb
+      - 🇺🇸 US_14295 |41.33Mb
+      - 🇺🇸 US_14296 |40.23Mb
+      - 🇺🇸 US_14211 |35.41Mb
+      - 🇺🇸 US_14236 |40.89Mb
+      - 🇺🇸 US_14300 |37.23Mb
+      - 🇺🇸 US_14164 |39.40Mb
+      - 🇺🇸 US_14285 |34.24Mb
+      - 🇺🇸 US_14245 |31.34Mb
+      - 🇺🇸 美国2|@mftizi
+      - 🇺🇸 美国2|中转|@mftizi
+      - 🇺🇸 美国 2 2
+      - 🇺🇸 美国 3 2
+      - 🇺🇸 美国 4 2
+      - 🇷🇺 俄罗斯G1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯B1000M丨x1x丨限速100M 负载5台
+      - 🇷🇺 俄罗斯E1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯F1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯H1000M丨x1x丨限速100M 负载5台 2
+      - 🇷🇺 俄罗斯J1000M丨x1x丨限速100M 负载5台
       - 🇸🇬 iGG-SG - 上海-新加坡- 倍率 1
       - 🇷🇺 iGG-RU - 俄罗斯-西伯利亚- 倍率 1
-      - 🇯🇵 v2ray 日本(联通) [Netflix]
       - iGG-Global - 全球智选- 倍率 1.2
       - 🇰🇷 v2ray 韩国(联通) [Netflix]
       - 🇲🇾 v2ray 马来西亚(联通) [Netflix]
       - 付费节点 2
       - 付费节点 3
       - 付费节点 4
-      - 付费节点 5
-      - 付费节点 6
-      - 付费节点 7
-      - 付费节点 8
-      - 🇭🇰 VIP|AWS|香港|中转|01
-      - 🇭🇰 VIP|AWS|香港|中转|02
-      - 🇭🇰 VIP|AWS|香港|中转|03
-      - 🇭🇰 VIP|AWS|香港|中转|04
-      - 🇰🇷 VIP|AWS|韩国|中转|01
-      - 🇰🇷 VIP|AWS|韩国|中转|02
-      - 🇯🇵 VIP|AWS|日本|中转|01
-      - 🇯🇵 VIP|AWS|日本|中转|02
-      - 🇯🇵 VIP|VUL|日本|中转|01
-      - 🇯🇵 VIP|VUL|日本|中转|02
-      - 🇬🇧 VIP|VUL|伦敦|中转|01
-      - 🇦🇺 VIP|VUL|悉尼|中转|01
-      - 🇨🇳 VIP|HINET|台湾|中转|01
-      - 🇨🇳 台湾1000M丨x1x丨限速100M 负载5台
-      - 🇯🇵 日本A1000M丨x1x丨限速100M 负载5台
-      - 🇻🇳 越南1000M丨x1x丨限速100M 负载5台
-      - 🇨🇳 香港1000M丨x1x丨限速100M 负载5台
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TA [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TB [亚洲东部][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TC [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Shadowsocks-AIA]
-      - 🇭🇰 中国-香港 HK-TD [亚洲东部][NF-HK][Trojan-AIA]
-      - 🇭🇰 中国-香港 HK-VA [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VB [亚洲东部][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VC [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇭🇰 中国-香港 HK-VD [亚洲东部][NF-HK][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TA [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TB [亚太南部][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Shadowsocks-AIA]
-      - 🇸🇬 新加坡 SGC-TC [亚太南部][NF-SG][Trojan-AIA]
-      - 🇸🇬 新加坡 SGC-VA [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VB [亚太南部][Vmess-AIA]
-      - 🇸🇬 新加坡 SGC-VC [亚太南部][NF-SG][Vmess-AIA]
-      - 🇯🇵 日本-东京 JP-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TA [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-TC [亚洲东部][Shadowsocks-AIA]
-      - 🇰🇷 韩国-首尔 KR-TD [亚洲东部][Trojan-AIA]
-      - 🇰🇷 韩国-首尔 KR-VA [亚洲东部][Vmess-AIA]
-      - 🇰🇷 韩国-首尔 KR-VC [亚洲东部][Vmess-AIA]
-      - 🇭🇰 香港
-      - 🇭🇰 概念   🇭🇰HK_1429
-      - 🇺🇸 US 🇺🇸 Denver 4
-      - 🇭🇰 HK_5186
-      - 🇯🇵 【直连】NRT/东京 A - 5
       - 🇭🇰 iGG-HK - 香港HKBN ① - 倍率 1
-      - 🇭🇰 iGG-HK - 香港CMHK②- 倍率 1
       - 🇸🇬 SG（感谢关注youtube：8度科技）
-      - SS JP - CZ CT -> AWS  NTT
-      - 🇺🇸 洛杉矶（感谢关注youtube：8度科技）
-      - 🇯🇵 【直连】NRT/东京 A - 4
-      - 🇭🇰 【直连】HKG/香港 D - 8
-      - 🇸🇬 台湾c1-tg节点更新 https://bit.ly/3uWuS7a
       - 🇭🇰 【直连】HKG/香港 C - 5
-      - 🇰🇷 韩国-免流
-      - 🇨🇳 A-台湾|HINET|流媒体|标准1
-      - 🇨🇳 A-台湾|HINET|流媒体|标准2
-      - 🇸🇬 A-新加坡|HE|流媒体|标准1
-      - 🇸🇬 A-新加坡|HE|流媒体|标准2
-      - 🇯🇵 A-日本|软银|流媒体|标准1
-      - 🇯🇵 A-日本|软银|流媒体|标准2
-      - 🇹🇭 A-泰国|流媒体|标准1
-      - 🇹🇭 A-泰国|流媒体|标准2
-      - 🇭🇰 A-香港|HKT|流媒体|标准1
-      - 🇭🇰 A-香港|HKT|流媒体|标准2
-      - 🇯🇵 B-日本|NTT|标准2
-      - 🇯🇵 B-日本|NTT|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准1
-      - 🇯🇵 B-日本|软银|流媒体|标准2
-      - 🇭🇰 B-香港|Azure|标准3
-      - 🇭🇰 B-香港|Azure|标准4
       - 🇭🇰 【直连】HKG/香港 C - 7
-      - 🇭🇰 【直连】HKG/香港 C - 10
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5178
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_5200
-      - 🇭🇰 HK_5177
+      - 🇦🇹 奥地利
+      - 🇨🇦 加拿大
+      - 🇺🇸 美国(US)USA/Chicago
+      - Pool_🇮🇱IL_913
+      - 🇩🇪 ☆🇩🇪 德国
+      - 🇩🇪 ☆🇩🇪 德国 2
+      - 🇯🇵 ☆🇯🇵日本
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
