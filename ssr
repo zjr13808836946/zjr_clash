@@ -5,93 +5,93 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 Relay_中国-香港_2065, server: ntemp09.boom.party, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 254637:Ol4zZv, obfsparam: download.windowsupdate.com}
-  - {name: 🇭🇰 【Tunnel_A】香港 普通 E - Azure, server: ntemp19.boom.party, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 254637:Ol4zZv, obfsparam: download.windowsupdate.com}
-  - {name: ntemp19.boom.party:24000 (1), server: ntemp19.boom.party, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 44119:QwctEr, obfsparam: download.windowsupdate.com}
-  - {name: ntemp09.boom.party:18000 (1), server: ntemp09.boom.party, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 44119:QwctEr, obfsparam: download.windowsupdate.com}
-  - {name: 🇨🇳 CN_2658 |15.24Mb, server: ntemp19.boom.party, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 44119:QwctEr, obfsparam: download.windowsupdate.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_2657 |14.88Mb, server: cu.newhost.cc, port: 10691, type: ssr, cipher: aes-256-cfb, password: tFlIIS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 11752:CbQhlx, obfsparam: .www.bing.com}
+  - {name: 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港, server: 162.14.11.142, port: 31078, type: ssr, cipher: rc4-md5, password: Yw0SCS, protocol: origin, obfs: http_simple, protocolparam: t.me/vpnhat, obfsparam: download.windowsupdate.com}
+  - {name: opt24.boom.party:34000, server: opt24.boom.party, port: 34000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 254637:Ol4zZv, obfsparam: download.windowsupdate.com}
+  - {name: nn9.boom.party:48000, server: nn9.boom.party, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 254637:Ol4zZv, obfsparam: download.windowsupdate.com}
+  - {name: nkd.boom.party:23000, server: nkd.boom.party, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 254637:Ol4zZv, obfsparam: download.windowsupdate.com}
+  - {name: 65.49.193.120:502, server: 65.49.193.120, port: 502, type: ss, cipher: aes-256-cfb, password: bwhskrskr01}
+  - {name: 68.183.250.212:11394, server: 68.183.250.212, port: 11394, type: ssr, cipher: aes-256-cfb, password: a02660, protocol: origin, obfs: http_simple, protocolparam: "", obfsparam: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 Relay_中国-香港_2065
-      - 🇭🇰 【Tunnel_A】香港 普通 E - Azure
-      - ntemp19.boom.party:24000 (1)
-      - ntemp09.boom.party:18000 (1)
-      - 🇨🇳 CN_2658 |15.24Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_2657 |14.88Mb
+      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - 65.49.193.120:502
+      - 68.183.250.212:11394
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 Relay_中国-香港_2065
-      - 🇭🇰 【Tunnel_A】香港 普通 E - Azure
-      - ntemp19.boom.party:24000 (1)
-      - ntemp09.boom.party:18000 (1)
-      - 🇨🇳 CN_2658 |15.24Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_2657 |14.88Mb
+      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - 65.49.193.120:502
+      - 68.183.250.212:11394
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 Relay_中国-香港_2065
-      - 🇭🇰 【Tunnel_A】香港 普通 E - Azure
-      - ntemp19.boom.party:24000 (1)
-      - ntemp09.boom.party:18000 (1)
-      - 🇨🇳 CN_2658 |15.24Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_2657 |14.88Mb
+      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - 65.49.193.120:502
+      - 68.183.250.212:11394
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 Relay_中国-香港_2065
-      - 🇭🇰 【Tunnel_A】香港 普通 E - Azure
-      - ntemp19.boom.party:24000 (1)
-      - ntemp09.boom.party:18000 (1)
-      - 🇨🇳 CN_2658 |15.24Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_2657 |14.88Mb
+      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - 65.49.193.120:502
+      - 68.183.250.212:11394
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 Relay_中国-香港_2065
-      - 🇭🇰 【Tunnel_A】香港 普通 E - Azure
-      - ntemp19.boom.party:24000 (1)
-      - ntemp09.boom.party:18000 (1)
-      - 🇨🇳 CN_2658 |15.24Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_2657 |14.88Mb
+      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - 65.49.193.120:502
+      - 68.183.250.212:11394
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 Relay_中国-香港_2065
-      - 🇭🇰 【Tunnel_A】香港 普通 E - Azure
-      - ntemp19.boom.party:24000 (1)
-      - ntemp09.boom.party:18000 (1)
-      - 🇨🇳 CN_2658 |15.24Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_2657 |14.88Mb
+      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - 65.49.193.120:502
+      - 68.183.250.212:11394
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 Relay_中国-香港_2065
-      - 🇭🇰 【Tunnel_A】香港 普通 E - Azure
-      - ntemp19.boom.party:24000 (1)
-      - ntemp09.boom.party:18000 (1)
-      - 🇨🇳 CN_2658 |15.24Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_2657 |14.88Mb
+      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - 65.49.193.120:502
+      - 68.183.250.212:11394
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -114,12 +114,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 Relay_中国-香港_2065
-      - 🇭🇰 【Tunnel_A】香港 普通 E - Azure
-      - ntemp19.boom.party:24000 (1)
-      - ntemp09.boom.party:18000 (1)
-      - 🇨🇳 CN_2658 |15.24Mb
-      - 🇨🇳 Relay_🇨🇳CN-🇮🇳IN_2657 |14.88Mb
+      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - 65.49.193.120:502
+      - 68.183.250.212:11394
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
