@@ -5,11 +5,6 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "🇸🇬 [vip1][V2ray] 新加坡 ⑮-解锁Netflix", server: 65.ssrj.xyz, port: 65165, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇸🇬 [vip1][V2ray] 新加坡⑭-解锁Netflix", server: 64.ssrj.xyz, port: 65164, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇸🇬 [vip1][V2ray]新加坡 ③", server: 49.ssrj.xyz, port: 61149, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇸🇬 [vip2][V2ray]上海CN2中转-新加坡⑦︱解鎖NETFLIX", server: 40.ssrj.xyz, port: 65140, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇭🇰 [vip2][V2ray]北京bgp中转-香港 ①︱解鎖NETFLIX", server: 32.ssrj.xyz, port: 65132, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: "🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑨ HKBN-NETFLIX|HULU|HBO-G口", server: 11.ssrj.xyz, port: 65111, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: "🇰🇷 [vip3][v2ray]Iplc专线 深圳-韩国 ⑧ HKBN-NETFLIX|HULU|HBO-G口", server: 10.ssrj.xyz, port: 65110, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: "🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO", server: 7.ssrj.xyz, port: 65107, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
@@ -20,83 +15,281 @@ proxies:
   - {name: 🇨🇳 中国台湾15 14Mbps 604ms 奈飞自制剧, server: 35.201.218.125, port: 28879, type: vmess, uuid: 8f55c99d-d400-47d5-a949-638204907e0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇮🇳 印度1 107Mbps 729ms 奈飞自制剧, server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ssrgr-in02, ws-headers: {Host: none}}
   - {name: KR-Seoul, server: 103.249.31.24, port: 35905, type: ss, cipher: aes-256-gcm, password: tDKgKtnZts93mFqvauQBrdFN}
-  - {name: 🇪🇺 欧洲a 4, server: 139.155.22.227, port: 49110, type: vmess, uuid: f7675b7e-59bf-435c-ac03-dc2482f27e5d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港, server: 162.14.11.142, port: 31078, type: ssr, cipher: rc4-md5, password: Yw0SCS, protocol: origin, obfs: http_simple, protocolparam: t.me/vpnhat, obfsparam: download.windowsupdate.com}
   - {name: 🇸🇬 新加坡2 122Mbps 423ms 奈飞新加坡, server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ssrgr-hk18, ws-headers: {Host: none}}
   - {name: 🇸🇬 新加坡8 93Mbps 369ms 奈飞自制剧, server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ssrgr-sg07, ws-headers: {Host: none}}
   - {name: 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧, server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ssrgr-jp3, ws-headers: {Host: none}}
-  - {name: 🇨🇳 中国台湾15 14Mbps 631ms 奈飞自制剧, server: 35.201.218.125, port: 28879, type: vmess, uuid: 8f55c99d-d400-47d5-a949-638204907e0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_69, server: 84.17.41.71, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
   - {name: 🇯🇵 日本11 39Mbps 335ms 奈飞日本, server: jp1.direct.starlink.st, port: 65000, type: vmess, uuid: 8ee1ee4e-b65a-4238-ac88-d1429c018e58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇺🇸 美国, server: 84.17.41.83, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
   - {name: 🇨🇳 台湾, server: 2.58.241.46, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
   - {name: 🇨🇳 台湾 2, server: 2.58.241.46, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
-  - {name: 🇨🇳 台湾 3, server: 2.58.241.29, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇨🇳 台湾 4, server: 2.58.241.46, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
   - {name: 🇨🇦 加拿大_2839, server: 204.124.181.160, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10, server: 2.58.241.29, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: 🇭🇰 HK-4, server: 26.fastcloud.buzz, port: 18229, type: vmess, uuid: 48954094-1fd4-35fb-be72-e16f4832f7d6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 新加坡|小白+, server: cm.syhwdz.top, port: 40858, type: vmess, uuid: 5970926b-4765-3045-ab0f-099206e62032, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cdnxxy, ws-headers: {Host: music.163.com}}
   - {name: 🇯🇵 日本|电信混淆++, server: cm.syhwdz.top, port: 40606, type: vmess, uuid: 5970926b-4765-3045-ab0f-099206e62032, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cdnxy, ws-headers: {Host: a.189.cn}}
-  - {name: 读物云, server: cm.syhwdz.top, port: 40606, type: vmess, uuid: 5970926b-4765-3045-ab0f-099206e62032, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cdnxy, ws-headers: {Host: pull.free.video.10010.com}}
-  - {name: 🇺🇸 美国 2, server: 104.200.131.167, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇸🇬 新加坡15 48Mbps 799ms 奈飞自制剧, server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ssrgr-sg01, ws-headers: {Host: none}}
-  - {name: 🇺🇸 美国2|TG@mftizi, server: us02.uuv2.uk, port: 2053, type: vmess, uuid: 43582f47-d4e7-431a-9f7c-df38824f6a34, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /@mftizi, ws-headers: {Host: us02.uuv2.uk}}
-  - {name: 🇯🇵 日本1|https://t.me/mftizi, server: jp2.uuv2.co.uk, port: 1016, type: vmess, uuid: 43582f47-d4e7-431a-9f7c-df38824f6a34, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /TG@mftizi, ws-headers: {Host: jp2.uuv2.co.uk}}
   - {name: CA 2, server: 204.124.181.224, port: 26917, type: vmess, uuid: 3bc30c04-4854-47bc-80b5-4fbb2364006e, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: IN, server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ssrgr-in02, ws-headers: {Host: none}}
-  - {name: "🇸🇬 [vip1][V2ray]新加坡 ①", server: 44.ssrj.xyz, port: 61144, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: "🇯🇵 [vip1][V2ray]日本  ⑧", server: 54.ssrj.xyz, port: 61154, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇯🇵 [vip1][V2ray]日本  ⑪", server: 57.ssrj.xyz, port: 61157, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: "🇯🇵 [vip1][V2ray]日本 ⑦", server: 53.ssrj.xyz, port: 61153, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇯🇵 [vip1][V2ray]日本 ⑩", server: 56.ssrj.xyz, port: 61156, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇯🇵 [vip1][V2ray]日本⑤", server: 51.ssrj.xyz, port: 65151, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇭🇰 [vip1][V2ray]香港 ②-解锁Netflix", server: 45.ssrj.xyz, port: 61145, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇭🇰 [vip2][V2ray]北京bgp中转-香港③︱解鎖NETFLIX", server: 34.ssrj.xyz, port: 65134, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇸🇬 [vip2][V2ray]廣移中转-新加坡⑧ | 解鎖Netflix", server: 41.ssrj.xyz, port: 65141, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇯🇵 [vip2][V2ray]廣移中转-日本⑨ | 解鎖Netflix", server: 42.ssrj.xyz, port: 65142, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: "🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口", server: 12.ssrj.xyz, port: 65112, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: "🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ④ DMIT-NETFLIX|HULU|HBO", server: 6.ssrj.xyz, port: 65106, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 HK01|香港|x1.0, server: colagzcm.jumpwallsocks.online, port: 30001, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇭🇰 HK02|香港|x1.0, server: colagzcm.jumpwallsocks.online, port: 30002, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇭🇰 HK03|香港|x1.0, server: colagzcm.jumpwallsocks.online, port: 30003, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇭🇰 HK04|香港|x1.0, server: colagzcm.jumpwallsocks.online, port: 30004, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇭🇰 HK05|香港|x1.0, server: colagzcm.jumpwallsocks.online, port: 30005, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇨🇳 TW01|台湾|x1.0, server: colagzcm.jumpwallsocks.online, port: 38001, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇯🇵 JP01|日本|x1.0, server: colagzcm.jumpwallsocks.online, port: 32001, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇯🇵 JP02|日本|x1.0, server: colagzcm.jumpwallsocks.online, port: 32002, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇺🇸 US03|美国|x1.0, server: colagzcm.jumpwallsocks.online, port: 31003, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇺🇸 US04|美国|x1.0, server: colagzcm.jumpwallsocks.online, port: 31006, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇷🇴 RO01|罗马尼亚|x1.0, server: colagzcm.jumpwallsocks.online, port: 31004, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇨🇦 CA01|加拿大|x1.0, server: colagzcm.jumpwallsocks.online, port: 31005, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇸🇬 SG01|新加坡|x2.0, server: colagzcm.jumpwallsocks.online, port: 33001, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇰🇷 KR01|韩国|x1.0, server: colagzcm.jumpwallsocks.online, port: 34001, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇬🇧 UK01|英国|x1.0, server: colagzcm.jumpwallsocks.online, port: 35001, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇳🇱 NL01|荷兰|x1.0, server: colagzcm.jumpwallsocks.online, port: 35002, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇮🇩 IN01|印尼|x1.0, server: colagzcm.jumpwallsocks.online, port: 36001, type: trojan, password: edb25631-825c-44e4-ab05-4fde49cdcbf1, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
   - {name: 🇨🇳 台湾 (30元一年 全球160+节点 http://v2ray.byethost12.com ), server: tw.vip-vmess.tk, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
-  - {name: 🇺🇸 美国-弗吉尼亚-阿什本-ss-45.43.19.82:45329, server: 45.43.19.82, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
   - {name: 🇨🇳 中国-台湾-台北-ss-2.58.241.46:34815, server: 2.58.241.46, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
   - {name: 🇨🇳 TW_47553, server: 103.152.151.85, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) (17), server: 138.199.16.137, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
   - {name: 🇭🇰 香港 6, server: 52.175.62.204, port: 10086, type: vmess, uuid: b2053f19-19d8-4776-bd10-2b4191105648, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 52.175.62.204}}
   - {name: 🇨🇳 台湾  1, server: tw2.direct.starlink.st, port: 65000, type: vmess, uuid: 8ee1ee4e-b65a-4238-ac88-d1429c018e58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本 5, server: 13.208.92.125, port: 80, type: vmess, uuid: 07a20eee-d49e-4dab-a077-bb50fee46421, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.208.92.125}}
   - {name: 🇺🇸 美国  2, server: az1.keaiyun.top, port: 55411, type: vmess, uuid: 646e1a6b-005b-3d70-a2da-3bd84184892f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}}
   - {name: 🇺🇸 美国  3, server: az1.accesscam.org, port: 55417, type: vmess, uuid: 646e1a6b-005b-3d70-a2da-3bd84184892f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}}
   - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_4995, server: hk4.earths.team, port: 10086, type: vmess, uuid: b2053f19-19d8-4776-bd10-2b4191105648, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk4.earths.team}}
   - {name: 🇭🇰 bob16vip.com-V2ray-香港1, server: 103.85.20.81, port: 12345, type: vmess, uuid: 8c37630e-83f6-3dc1-85be-bb6974626719, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 cfmem.com_🇭🇰_HK_香港_1, server: az1.keaiyun.top, port: 55411, type: vmess, uuid: 646e1a6b-005b-3d70-a2da-3bd84184892f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: az1.keaiyun.top}}
+  - {name: 🇭🇰 cfmem.com_🇭🇰_HK_香港_2, server: az1.keaiyun.top, port: 55413, type: vmess, uuid: 646e1a6b-005b-3d70-a2da-3bd84184892f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: az1.keaiyun.top}}
+  - {name: 🇭🇰 cfmem.com_🇭🇰_HK_香港_3, server: az1.keaiyun.top, port: 55412, type: vmess, uuid: 646e1a6b-005b-3d70-a2da-3bd84184892f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: az1.keaiyun.top}}
+  - {name: 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_1, server: 204.124.181.224, port: 26917, type: vmess, uuid: 3bc30c04-4854-47bc-80b5-4fbb2364006e, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 cfmem.com_🇭🇰_HK_香港_4, server: az1.keaiyun.top, port: 55416, type: vmess, uuid: 646e1a6b-005b-3d70-a2da-3bd84184892f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: az1.keaiyun.top}}
+  - {name: 🇭🇰 cfmem.com_🇭🇰_HK_香港_8, server: az1.accesscam.org, port: 55417, type: vmess, uuid: 646e1a6b-005b-3d70-a2da-3bd84184892f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: az1.accesscam.org}}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_21, server: 103.152.151.85, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_52, server: 104.200.131.167, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_38, server: 104.200.132.35, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_41, server: 208.78.41.195, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_131, server: 104.200.131.167, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: 🇨🇳 TW_42304, server: 2.58.242.54, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: 🇨🇳 TW_48089, server: 2.58.241.29, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
+  - {name: 🇨🇳 TW_46726, server: 2.58.241.46, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: 🇨🇳 TW_49514, server: 2.58.241.46, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
+  - {name: 🇨🇳 TW_50695, server: 2.58.241.46, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: 🇨🇳 TW_38742, server: 2.58.241.29, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇨🇳 TW_44745, server: 2.58.241.46, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
+  - {name: 🇨🇳 TW_39720, server: 2.58.241.46, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
+  - {name: 🇨🇳 TW_42166, server: 2.58.241.29, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 🇭🇰 G12 香港, server: gy1-120.lhcloud.xyz, port: 40001, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇭🇰 G21 香港, server: gy1-120.lhcloud.xyz, port: 40002, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇸🇬 G11 新加坡, server: gy1-120.lhcloud.xyz, port: 40065, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇨🇳 G21 台湾, server: gy1-120.lhcloud.xyz, port: 40003, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇯🇵 G21 日本, server: gy1-120.lhcloud.xyz, port: 40058, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇯🇵 G22 日本, server: gy1-120.lhcloud.xyz, port: 40059, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇪🇺 欧洲, server: gy1-120.lhcloud.xyz, port: 40001, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇭🇰 香港, server: gy1-120.lhcloud.xyz, port: 40002, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇯🇵 日本, server: gy1-120.lhcloud.xyz, port: 40059, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇯🇵 日本 2, server: gy1-120.lhcloud.xyz, port: 40058, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇸🇬 新加坡, server: az1.accesscam.org, port: 55418, type: vmess, uuid: 646e1a6b-005b-3d70-a2da-3bd84184892f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}}
+  - {name: 🇭🇰 香港 2, server: az1.keaiyun.top, port: 55413, type: vmess, uuid: 646e1a6b-005b-3d70-a2da-3bd84184892f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}}
+  - {name: 🇨🇳 台湾 3, server: 2.58.241.46, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇨🇳 台湾 4, server: 2.58.242.46, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: "@SSRSUB-V04-付费推荐:suo.yt/ssrsub", server: 173.82.150.26, port: 443, type: vmess, uuid: 1a116d02-5fca-47fa-a2a1-6e8d0f2f71cc, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.75287890.xyz}}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君), server: nn-ssr4.feiclouddd.me, port: 443, type: vmess, uuid: 79214731-7f0c-4f2d-a894-13b7df293624, alterId: 60, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /sadfasdf, ws-headers: {Host: nn-ssr4.feiclouddd.me}}
+  - {name: CYL-科技, server: 103.152.151.86, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: CYL-科技 2, server: 103.152.151.68, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: 🇨🇳 台湾 5, server: 2.58.241.45, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇨🇳 台湾 6, server: 2.58.241.27, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: 🇨🇳 TW_41738, server: 103.152.151.85, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
+  - {name: 🇭🇰 香港 4, server: hk6.earths.team, port: 10086, type: vmess, uuid: b2053f19-19d8-4776-bd10-2b4191105648, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk6.earths.team}}
+  - {name: 🇨🇳 台湾  2, server: cn1.relay.starlink.st, port: 65013, type: vmess, uuid: 8ee1ee4e-b65a-4238-ac88-d1429c018e58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_2, server: 204.124.181.160, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 cfmem.com_🇭🇰_HK_香港_6, server: az1.accesscam.org, port: 55418, type: vmess, uuid: 646e1a6b-005b-3d70-a2da-3bd84184892f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: az1.accesscam.org}}
+  - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_53, server: 104.200.131.167, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_128, server: 104.200.131.167, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_143, server: 104.200.131.167, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 🇨🇳 TW_49202, server: 103.152.151.68, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
+  - {name: 🇨🇳 TW_49468, server: 103.152.151.68, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: 🇨🇳 TW_43893, server: 103.152.151.20, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇨🇳 TW_49126, server: 2.58.242.54, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: 🇨🇳 TW_50768, server: 2.58.241.45, port: 50768, type: ss, cipher: aes-256-gcm, password: MgWc3J8tAHsZrVqg4BaBHmGs}
+  - {name: 🇨🇳 TW_49396, server: 103.152.151.20, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇨🇳 TW_47027, server: 103.152.151.20, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: 🇨🇳 TW_45746, server: 103.152.151.68, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: 🇨🇳 TW_32558, server: 2.58.242.54, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
+  - {name: 🇨🇳 TW_38742 2, server: 2.58.242.54, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇨🇳 TW_41738 2, server: 2.58.241.45, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
+  - {name: 🇺🇸 G11 美国, server: gy1-120.lhcloud.xyz, port: 40066, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇨🇳 台湾 7, server: 2.58.241.6, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇨🇳 台湾 8, server: 2.58.241.45, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2, server: 104.200.131.167, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 这速度又不怎么样🇺🇸US |27.90Mb, server: c2s4.jamjams.net, port: 59710, type: vmess, uuid: e2078136-6651-409b-8b57-36c3361ffd3e, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: CYL-科技 3, server: 2.58.242.54, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: CYL-科技 4, server: 2.58.242.54, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: CYL-科技 5, server: 2.58.242.54, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: CYL-科技 6, server: 2.58.242.54, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: CYL-科技 7, server: 2.58.242.54, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: CYL-科技 8, server: 2.58.242.54, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: CYL-科技 9, server: 2.58.242.54, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: CYL-科技 10, server: 2.58.242.54, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: CYL-科技 11, server: 2.58.242.54, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: CYL-科技 12, server: 2.58.242.54, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: CYL-科技 13, server: 2.58.242.54, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: CYL-科技 14, server: 2.58.242.54, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: CYL-科技 15, server: 2.58.242.54, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: CYL-科技 16, server: 2.58.242.54, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
+  - {name: CYL-科技 17, server: 2.58.242.54, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: CYL-科技 18, server: 2.58.242.54, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: CYL-科技 19, server: 2.58.242.54, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
+  - {name: CYL-科技 20, server: 2.58.242.54, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: CYL-科技 21, server: 2.58.242.54, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: CYL-科技 22, server: 2.58.242.54, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: CYL-科技 23, server: 2.58.242.54, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
+  - {name: CYL-科技 24, server: 2.58.242.54, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: CYL-科技 25, server: 2.58.242.54, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: CYL-科技 26, server: 2.58.242.54, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: CYL-科技 27, server: 2.58.242.54, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
+  - {name: CYL-科技 28, server: 2.58.242.54, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: CYL-科技 29, server: 2.58.242.54, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: CYL-科技 30, server: 2.58.242.54, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: CYL-科技 31, server: 2.58.242.54, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: CYL-科技 32, server: 2.58.242.54, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: CYL-科技 33, server: 103.152.151.20, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: CYL-科技 34, server: 103.152.151.6, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: CYL-科技 35, server: 103.152.151.20, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: CYL-科技 36, server: 103.152.151.6, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
+  - {name: CYL-科技 37, server: 103.152.151.6, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: CYL-科技 38, server: 103.152.151.20, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: CYL-科技 39, server: 103.152.151.20, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: CYL-科技 40, server: 103.152.151.20, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: CYL-科技 41, server: 103.152.151.6, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: CYL-科技 42, server: 103.152.151.20, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: CYL-科技 43, server: 103.152.151.20, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: CYL-科技 44, server: 103.152.151.20, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: CYL-科技 45, server: 103.152.151.6, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
+  - {name: CYL-科技 46, server: 103.152.151.6, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: CYL-科技 47, server: 66.115.147.92, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: CYL-科技 48, server: 103.152.151.20, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: CYL-科技 49, server: 103.152.151.20, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: CYL-科技 50, server: 103.152.151.6, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: CYL-科技 51, server: 2.58.241.6, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: CYL-科技 52, server: 103.152.151.20, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: CYL-科技 53, server: 103.152.151.6, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: CYL-科技 54, server: 103.152.151.6, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: CYL-科技 55, server: 103.152.151.6, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: CYL-科技 56, server: 103.152.151.20, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: CYL-科技 57, server: 103.152.151.6, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: CYL-科技 58, server: 103.152.151.20, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: CYL-科技 59, server: 103.152.151.20, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: CYL-科技 60, server: 2.58.241.6, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: CYL-科技 61, server: 103.152.151.20, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: CYL-科技 62, server: 103.152.151.68, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: CYL-科技 63, server: 2.58.241.6, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: CYL-科技 64, server: 103.152.151.20, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: CYL-科技 65, server: 103.152.151.6, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: CYL-科技 66, server: 103.152.151.20, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
+  - {name: CYL-科技 67, server: 103.152.151.6, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: CYL-科技 68, server: 103.152.151.6, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: CYL-科技 69, server: 2.58.241.6, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: CYL-科技 70, server: 103.152.151.20, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: CYL-科技 71, server: 103.152.151.20, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: CYL-科技 72, server: 103.152.151.6, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: CYL-科技 73, server: 2.58.241.6, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: CYL-科技 74, server: v1.ssrsub.one, port: 156, type: vmess, uuid: fe74a1aa-4849-4239-838e-1e7d9f6e975d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.one}}
+  - {name: CYL-科技 75, server: 2.58.241.6, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: CYL-科技 76, server: 2.58.241.6, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: CYL-科技 77, server: 103.152.151.6, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
+  - {name: CYL-科技 78, server: 2.58.241.6, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
+  - {name: CYL-科技 79, server: 103.152.151.20, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: CYL-科技 80, server: 103.152.151.6, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
+  - {name: CYL-科技 81, server: 103.152.151.20, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: CYL-科技 82, server: 103.152.151.20, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
+  - {name: CYL-科技 83, server: 103.152.151.6, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: CYL-科技 84, server: 2.58.241.6, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: CYL-科技 85, server: 103.152.151.6, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: CYL-科技 86, server: 103.152.151.6, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: CYL-科技 87, server: 103.152.151.6, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: CYL-科技 88, server: 103.152.151.68, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: CYL-科技 89, server: 103.152.151.20, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: CYL-科技 90, server: 103.152.151.20, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: CYL-科技 91, server: 103.152.151.20, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: CYL-科技 92, server: 103.152.151.6, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: CYL-科技 93, server: 103.152.151.6, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: CYL-科技 94, server: 103.152.151.6, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: CYL-科技 95, server: 103.152.151.68, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: CYL-科技 96, server: 2.58.241.6, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: CYL-科技 97, server: 103.152.151.20, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: CYL-科技 98, server: 2.58.241.6, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: CYL-科技 99, server: 103.152.151.6, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: CYL-科技 100, server: 2.58.241.6, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: CYL-科技 101, server: 103.152.151.20, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
+  - {name: CYL-科技 102, server: 103.152.151.6, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: CYL-科技 103, server: 103.152.151.6, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
+  - {name: CYL-科技 104, server: 2.58.241.6, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: CYL-科技 105, server: 2.58.241.6, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: opt24.boom.party:34000, server: opt24.boom.party, port: 34000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 254637:Ol4zZv, obfsparam: download.windowsupdate.com}
+  - {name: nn9.boom.party:48000, server: nn9.boom.party, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 254637:Ol4zZv, obfsparam: download.windowsupdate.com}
+  - {name: nkd.boom.party:23000, server: nkd.boom.party, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 254637:Ol4zZv, obfsparam: download.windowsupdate.com}
+  - {name: CA_2791, server: 204.124.181.160, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: CA_2787, server: 204.124.181.224, port: 26917, type: vmess, uuid: 3bc30c04-4854-47bc-80b5-4fbb2364006e, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 cfmem.com_🇯🇵_JP_日本_1, server: wangjinang.ml, port: 43709, type: vmess, uuid: 7b2c61a7-d534-46e2-e0d7-a699352b1623, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: wangjinang.ml}}
+  - {name: 🇯🇵 cfmem.com_🇯🇵_JP_日本_2, server: wangjinang.ml, port: 50866, type: trojan, password: yLBm0Q2noA, sni: wangjinang.ml, skip-cert-verify: false}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7, server: 2.58.242.54, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_9, server: 103.152.151.6, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11, server: 2.58.241.6, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_13, server: 2.58.241.6, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_17, server: 103.152.151.20, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_20, server: 2.58.241.6, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_22, server: 103.152.151.20, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_23, server: 2.58.242.54, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_27, server: 2.58.242.54, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_28, server: 103.152.151.6, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_29, server: 2.58.241.6, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_34, server: 2.58.241.45, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_39, server: 2.58.241.6, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_43, server: 2.58.241.6, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_52, server: 103.152.151.6, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_55, server: 2.58.242.54, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_56, server: 103.152.151.6, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_58, server: 2.58.241.6, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_62, server: 2.58.242.54, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_66, server: 2.58.241.6, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_70, server: 103.152.151.6, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_71, server: 103.152.151.6, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_77, server: 2.58.241.6, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_78, server: 103.152.151.6, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_79, server: 2.58.241.6, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_83, server: 103.152.151.6, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87, server: tw1.direct.starlink.st, port: 65000, type: vmess, uuid: 8ee1ee4e-b65a-4238-ac88-d1429c018e58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_89, server: 2.58.241.6, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_90, server: 103.152.151.6, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_91, server: 2.58.241.6, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_92, server: 2.58.242.54, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_94, server: 103.152.151.6, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_95, server: 2.58.241.6, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_111, server: 2.58.241.6, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_120, server: 2.58.241.6, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_121, server: 2.58.241.6, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_123, server: 103.152.151.6, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_124, server: 2.58.242.54, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_127, server: 2.58.241.46, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_128, server: 2.58.241.6, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_130, server: 2.58.242.54, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_133, server: 2.58.241.6, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_147, server: 2.58.241.6, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_148, server: 103.152.151.6, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_154, server: 2.58.241.6, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_156, server: 2.58.242.54, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_159, server: 2.58.241.6, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_163, server: 2.58.241.6, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_168, server: 2.58.241.6, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_172, server: 103.152.151.6, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_174, server: 103.152.151.6, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_185, server: 103.152.151.68, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
+  - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_6, server: gigi.caibutou.top, port: 24861, type: vmess, uuid: 839507e0-99c6-49f1-b099-978ad847e4ad, alterId: 6, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /f01c7e0b02e/, ws-headers: {Host: gigi.caibutou.top}}
+  - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_7, server: 104.200.131.167, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_9, server: 154.208.10.121, port: 48151, type: vmess, uuid: 646e1a6b-005b-3d70-a2da-3bd84184892f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 154.208.10.121}}
+  - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_71, server: 212.102.44.86, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_83, server: 212.102.44.86, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_200, server: 103.152.151.68, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_202, server: 2.58.241.45, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: CYL-科技 106, server: 103.152.151.6, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: CYL-科技 107, server: 103.152.151.68, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: CYL-科技 108, server: 212.102.46.56, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: CYL-科技 109, server: 2.58.241.6, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: CYL-科技 110, server: 103.152.151.68, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: CYL-科技 111, server: 103.152.151.68, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: CYL-科技 112, server: 103.152.151.68, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 这速度又不怎么样🇨🇦CA |45.88Mb, server: c30s4.jamjams.net, port: 55761, type: vmess, uuid: c5408ac6-dafa-4ce9-8cd2-87032e7258f9, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 这速度又不怎么样🇨🇦CA |12.45Mb, server: c19s4.jamjams.net, port: 10273, type: vmess, uuid: 4062c2dc-840e-4b96-86b8-0c5a15e03efb, alterId: 8, cipher: auto, tls: false, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇸🇬 [vip1][V2ray] 新加坡 ⑮-解锁Netflix
-      - 🇸🇬 [vip1][V2ray] 新加坡⑭-解锁Netflix
-      - 🇸🇬 [vip1][V2ray]新加坡 ③
-      - 🇸🇬 [vip2][V2ray]上海CN2中转-新加坡⑦︱解鎖NETFLIX
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港 ①︱解鎖NETFLIX
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑨ HKBN-NETFLIX|HULU|HBO-G口
       - 🇰🇷 [vip3][v2ray]Iplc专线 深圳-韩国 ⑧ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
@@ -107,83 +300,281 @@ proxy-groups:
       - 🇨🇳 中国台湾15 14Mbps 604ms 奈飞自制剧
       - 🇮🇳 印度1 107Mbps 729ms 奈飞自制剧
       - KR-Seoul
-      - 🇪🇺 欧洲a 4
       - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇸🇬 新加坡2 122Mbps 423ms 奈飞新加坡
       - 🇸🇬 新加坡8 93Mbps 369ms 奈飞自制剧
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
-      - 🇨🇳 中国台湾15 14Mbps 631ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
       - 🇯🇵 日本11 39Mbps 335ms 奈飞日本
       - 🇺🇸 美国
       - 🇨🇳 台湾
       - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
       - 🇨🇦 加拿大_2839
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
-      - 🇭🇰 HK-4
       - 🇸🇬 新加坡|小白+
       - 🇯🇵 日本|电信混淆++
-      - 读物云
-      - 🇺🇸 美国 2
-      - 🇸🇬 新加坡15 48Mbps 799ms 奈飞自制剧
-      - 🇺🇸 美国2|TG@mftizi
-      - 🇯🇵 日本1|https://t.me/mftizi
       - CA 2
       - IN
-      - 🇸🇬 [vip1][V2ray]新加坡 ①
       - 🇯🇵 [vip1][V2ray]日本  ⑧
-      - 🇯🇵 [vip1][V2ray]日本  ⑪
       - 🇯🇵 [vip1][V2ray]日本 ⑦
-      - 🇯🇵 [vip1][V2ray]日本 ⑩
-      - 🇯🇵 [vip1][V2ray]日本⑤
-      - 🇭🇰 [vip1][V2ray]香港 ②-解锁Netflix
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港③︱解鎖NETFLIX
-      - 🇸🇬 [vip2][V2ray]廣移中转-新加坡⑧ | 解鎖Netflix
-      - 🇯🇵 [vip2][V2ray]廣移中转-日本⑨ | 解鎖Netflix
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ④ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 HK01|香港|x1.0
-      - 🇭🇰 HK02|香港|x1.0
-      - 🇭🇰 HK03|香港|x1.0
-      - 🇭🇰 HK04|香港|x1.0
-      - 🇭🇰 HK05|香港|x1.0
-      - 🇨🇳 TW01|台湾|x1.0
-      - 🇯🇵 JP01|日本|x1.0
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇺🇸 US03|美国|x1.0
-      - 🇺🇸 US04|美国|x1.0
-      - 🇷🇴 RO01|罗马尼亚|x1.0
-      - 🇨🇦 CA01|加拿大|x1.0
-      - 🇸🇬 SG01|新加坡|x2.0
-      - 🇰🇷 KR01|韩国|x1.0
-      - 🇬🇧 UK01|英国|x1.0
-      - 🇳🇱 NL01|荷兰|x1.0
-      - 🇮🇩 IN01|印尼|x1.0
       - 🇨🇳 台湾 (30元一年 全球160+节点 http://v2ray.byethost12.com )
-      - 🇺🇸 美国-弗吉尼亚-阿什本-ss-45.43.19.82:45329
       - 🇨🇳 中国-台湾-台北-ss-2.58.241.46:34815
       - 🇨🇳 TW_47553
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) (17)
       - 🇭🇰 香港 6
       - 🇨🇳 台湾  1
-      - 🇯🇵 日本 5
       - 🇺🇸 美国  2
       - 🇺🇸 美国  3
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_4995
       - 🇭🇰 bob16vip.com-V2ray-香港1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_3
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_4
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_8
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_21
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_52
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_38
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_41
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_131
+      - 🇨🇳 TW_42304
+      - 🇨🇳 TW_48089
+      - 🇨🇳 TW_46726
+      - 🇨🇳 TW_49514
+      - 🇨🇳 TW_50695
+      - 🇨🇳 TW_38742
+      - 🇨🇳 TW_44745
+      - 🇨🇳 TW_39720
+      - 🇨🇳 TW_42166
+      - 🇭🇰 G12 香港
+      - 🇭🇰 G21 香港
+      - 🇸🇬 G11 新加坡
+      - 🇨🇳 G21 台湾
+      - 🇯🇵 G21 日本
+      - 🇯🇵 G22 日本
+      - 🇪🇺 欧洲
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 2
+      - 🇨🇳 台湾 3
+      - 🇨🇳 台湾 4
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技
+      - CYL-科技 2
+      - 🇨🇳 台湾 5
+      - 🇨🇳 台湾 6
+      - 🇨🇳 TW_41738
+      - 🇭🇰 香港 4
+      - 🇨🇳 台湾  2
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_53
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_128
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_143
+      - 🇨🇳 TW_49202
+      - 🇨🇳 TW_49468
+      - 🇨🇳 TW_43893
+      - 🇨🇳 TW_49126
+      - 🇨🇳 TW_50768
+      - 🇨🇳 TW_49396
+      - 🇨🇳 TW_47027
+      - 🇨🇳 TW_45746
+      - 🇨🇳 TW_32558
+      - 🇨🇳 TW_38742 2
+      - 🇨🇳 TW_41738 2
+      - 🇺🇸 G11 美国
+      - 🇨🇳 台湾 7
+      - 🇨🇳 台湾 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 这速度又不怎么样🇺🇸US |27.90Mb
+      - CYL-科技 3
+      - CYL-科技 4
+      - CYL-科技 5
+      - CYL-科技 6
+      - CYL-科技 7
+      - CYL-科技 8
+      - CYL-科技 9
+      - CYL-科技 10
+      - CYL-科技 11
+      - CYL-科技 12
+      - CYL-科技 13
+      - CYL-科技 14
+      - CYL-科技 15
+      - CYL-科技 16
+      - CYL-科技 17
+      - CYL-科技 18
+      - CYL-科技 19
+      - CYL-科技 20
+      - CYL-科技 21
+      - CYL-科技 22
+      - CYL-科技 23
+      - CYL-科技 24
+      - CYL-科技 25
+      - CYL-科技 26
+      - CYL-科技 27
+      - CYL-科技 28
+      - CYL-科技 29
+      - CYL-科技 30
+      - CYL-科技 31
+      - CYL-科技 32
+      - CYL-科技 33
+      - CYL-科技 34
+      - CYL-科技 35
+      - CYL-科技 36
+      - CYL-科技 37
+      - CYL-科技 38
+      - CYL-科技 39
+      - CYL-科技 40
+      - CYL-科技 41
+      - CYL-科技 42
+      - CYL-科技 43
+      - CYL-科技 44
+      - CYL-科技 45
+      - CYL-科技 46
+      - CYL-科技 47
+      - CYL-科技 48
+      - CYL-科技 49
+      - CYL-科技 50
+      - CYL-科技 51
+      - CYL-科技 52
+      - CYL-科技 53
+      - CYL-科技 54
+      - CYL-科技 55
+      - CYL-科技 56
+      - CYL-科技 57
+      - CYL-科技 58
+      - CYL-科技 59
+      - CYL-科技 60
+      - CYL-科技 61
+      - CYL-科技 62
+      - CYL-科技 63
+      - CYL-科技 64
+      - CYL-科技 65
+      - CYL-科技 66
+      - CYL-科技 67
+      - CYL-科技 68
+      - CYL-科技 69
+      - CYL-科技 70
+      - CYL-科技 71
+      - CYL-科技 72
+      - CYL-科技 73
+      - CYL-科技 74
+      - CYL-科技 75
+      - CYL-科技 76
+      - CYL-科技 77
+      - CYL-科技 78
+      - CYL-科技 79
+      - CYL-科技 80
+      - CYL-科技 81
+      - CYL-科技 82
+      - CYL-科技 83
+      - CYL-科技 84
+      - CYL-科技 85
+      - CYL-科技 86
+      - CYL-科技 87
+      - CYL-科技 88
+      - CYL-科技 89
+      - CYL-科技 90
+      - CYL-科技 91
+      - CYL-科技 92
+      - CYL-科技 93
+      - CYL-科技 94
+      - CYL-科技 95
+      - CYL-科技 96
+      - CYL-科技 97
+      - CYL-科技 98
+      - CYL-科技 99
+      - CYL-科技 100
+      - CYL-科技 101
+      - CYL-科技 102
+      - CYL-科技 103
+      - CYL-科技 104
+      - CYL-科技 105
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - CA_2791
+      - CA_2787
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_1
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_9
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_13
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_17
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_20
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_22
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_23
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_27
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_28
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_29
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_34
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_39
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_43
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_52
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_55
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_56
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_58
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_62
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_66
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_70
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_71
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_77
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_78
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_79
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_89
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_90
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_91
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_92
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_94
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_95
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_111
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_120
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_121
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_123
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_124
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_127
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_128
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_130
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_133
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_147
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_148
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_154
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_156
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_159
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_163
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_168
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_172
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_174
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_185
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_7
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_9
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_71
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_200
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_202
+      - CYL-科技 106
+      - CYL-科技 107
+      - CYL-科技 108
+      - CYL-科技 109
+      - CYL-科技 110
+      - CYL-科技 111
+      - CYL-科技 112
+      - 这速度又不怎么样🇨🇦CA |45.88Mb
+      - 这速度又不怎么样🇨🇦CA |12.45Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 [vip1][V2ray] 新加坡 ⑮-解锁Netflix
-      - 🇸🇬 [vip1][V2ray] 新加坡⑭-解锁Netflix
-      - 🇸🇬 [vip1][V2ray]新加坡 ③
-      - 🇸🇬 [vip2][V2ray]上海CN2中转-新加坡⑦︱解鎖NETFLIX
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港 ①︱解鎖NETFLIX
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑨ HKBN-NETFLIX|HULU|HBO-G口
       - 🇰🇷 [vip3][v2ray]Iplc专线 深圳-韩国 ⑧ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
@@ -194,83 +585,281 @@ proxy-groups:
       - 🇨🇳 中国台湾15 14Mbps 604ms 奈飞自制剧
       - 🇮🇳 印度1 107Mbps 729ms 奈飞自制剧
       - KR-Seoul
-      - 🇪🇺 欧洲a 4
       - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇸🇬 新加坡2 122Mbps 423ms 奈飞新加坡
       - 🇸🇬 新加坡8 93Mbps 369ms 奈飞自制剧
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
-      - 🇨🇳 中国台湾15 14Mbps 631ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
       - 🇯🇵 日本11 39Mbps 335ms 奈飞日本
       - 🇺🇸 美国
       - 🇨🇳 台湾
       - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
       - 🇨🇦 加拿大_2839
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
-      - 🇭🇰 HK-4
       - 🇸🇬 新加坡|小白+
       - 🇯🇵 日本|电信混淆++
-      - 读物云
-      - 🇺🇸 美国 2
-      - 🇸🇬 新加坡15 48Mbps 799ms 奈飞自制剧
-      - 🇺🇸 美国2|TG@mftizi
-      - 🇯🇵 日本1|https://t.me/mftizi
       - CA 2
       - IN
-      - 🇸🇬 [vip1][V2ray]新加坡 ①
       - 🇯🇵 [vip1][V2ray]日本  ⑧
-      - 🇯🇵 [vip1][V2ray]日本  ⑪
       - 🇯🇵 [vip1][V2ray]日本 ⑦
-      - 🇯🇵 [vip1][V2ray]日本 ⑩
-      - 🇯🇵 [vip1][V2ray]日本⑤
-      - 🇭🇰 [vip1][V2ray]香港 ②-解锁Netflix
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港③︱解鎖NETFLIX
-      - 🇸🇬 [vip2][V2ray]廣移中转-新加坡⑧ | 解鎖Netflix
-      - 🇯🇵 [vip2][V2ray]廣移中转-日本⑨ | 解鎖Netflix
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ④ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 HK01|香港|x1.0
-      - 🇭🇰 HK02|香港|x1.0
-      - 🇭🇰 HK03|香港|x1.0
-      - 🇭🇰 HK04|香港|x1.0
-      - 🇭🇰 HK05|香港|x1.0
-      - 🇨🇳 TW01|台湾|x1.0
-      - 🇯🇵 JP01|日本|x1.0
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇺🇸 US03|美国|x1.0
-      - 🇺🇸 US04|美国|x1.0
-      - 🇷🇴 RO01|罗马尼亚|x1.0
-      - 🇨🇦 CA01|加拿大|x1.0
-      - 🇸🇬 SG01|新加坡|x2.0
-      - 🇰🇷 KR01|韩国|x1.0
-      - 🇬🇧 UK01|英国|x1.0
-      - 🇳🇱 NL01|荷兰|x1.0
-      - 🇮🇩 IN01|印尼|x1.0
       - 🇨🇳 台湾 (30元一年 全球160+节点 http://v2ray.byethost12.com )
-      - 🇺🇸 美国-弗吉尼亚-阿什本-ss-45.43.19.82:45329
       - 🇨🇳 中国-台湾-台北-ss-2.58.241.46:34815
       - 🇨🇳 TW_47553
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) (17)
       - 🇭🇰 香港 6
       - 🇨🇳 台湾  1
-      - 🇯🇵 日本 5
       - 🇺🇸 美国  2
       - 🇺🇸 美国  3
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_4995
       - 🇭🇰 bob16vip.com-V2ray-香港1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_3
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_4
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_8
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_21
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_52
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_38
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_41
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_131
+      - 🇨🇳 TW_42304
+      - 🇨🇳 TW_48089
+      - 🇨🇳 TW_46726
+      - 🇨🇳 TW_49514
+      - 🇨🇳 TW_50695
+      - 🇨🇳 TW_38742
+      - 🇨🇳 TW_44745
+      - 🇨🇳 TW_39720
+      - 🇨🇳 TW_42166
+      - 🇭🇰 G12 香港
+      - 🇭🇰 G21 香港
+      - 🇸🇬 G11 新加坡
+      - 🇨🇳 G21 台湾
+      - 🇯🇵 G21 日本
+      - 🇯🇵 G22 日本
+      - 🇪🇺 欧洲
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 2
+      - 🇨🇳 台湾 3
+      - 🇨🇳 台湾 4
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技
+      - CYL-科技 2
+      - 🇨🇳 台湾 5
+      - 🇨🇳 台湾 6
+      - 🇨🇳 TW_41738
+      - 🇭🇰 香港 4
+      - 🇨🇳 台湾  2
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_53
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_128
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_143
+      - 🇨🇳 TW_49202
+      - 🇨🇳 TW_49468
+      - 🇨🇳 TW_43893
+      - 🇨🇳 TW_49126
+      - 🇨🇳 TW_50768
+      - 🇨🇳 TW_49396
+      - 🇨🇳 TW_47027
+      - 🇨🇳 TW_45746
+      - 🇨🇳 TW_32558
+      - 🇨🇳 TW_38742 2
+      - 🇨🇳 TW_41738 2
+      - 🇺🇸 G11 美国
+      - 🇨🇳 台湾 7
+      - 🇨🇳 台湾 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 这速度又不怎么样🇺🇸US |27.90Mb
+      - CYL-科技 3
+      - CYL-科技 4
+      - CYL-科技 5
+      - CYL-科技 6
+      - CYL-科技 7
+      - CYL-科技 8
+      - CYL-科技 9
+      - CYL-科技 10
+      - CYL-科技 11
+      - CYL-科技 12
+      - CYL-科技 13
+      - CYL-科技 14
+      - CYL-科技 15
+      - CYL-科技 16
+      - CYL-科技 17
+      - CYL-科技 18
+      - CYL-科技 19
+      - CYL-科技 20
+      - CYL-科技 21
+      - CYL-科技 22
+      - CYL-科技 23
+      - CYL-科技 24
+      - CYL-科技 25
+      - CYL-科技 26
+      - CYL-科技 27
+      - CYL-科技 28
+      - CYL-科技 29
+      - CYL-科技 30
+      - CYL-科技 31
+      - CYL-科技 32
+      - CYL-科技 33
+      - CYL-科技 34
+      - CYL-科技 35
+      - CYL-科技 36
+      - CYL-科技 37
+      - CYL-科技 38
+      - CYL-科技 39
+      - CYL-科技 40
+      - CYL-科技 41
+      - CYL-科技 42
+      - CYL-科技 43
+      - CYL-科技 44
+      - CYL-科技 45
+      - CYL-科技 46
+      - CYL-科技 47
+      - CYL-科技 48
+      - CYL-科技 49
+      - CYL-科技 50
+      - CYL-科技 51
+      - CYL-科技 52
+      - CYL-科技 53
+      - CYL-科技 54
+      - CYL-科技 55
+      - CYL-科技 56
+      - CYL-科技 57
+      - CYL-科技 58
+      - CYL-科技 59
+      - CYL-科技 60
+      - CYL-科技 61
+      - CYL-科技 62
+      - CYL-科技 63
+      - CYL-科技 64
+      - CYL-科技 65
+      - CYL-科技 66
+      - CYL-科技 67
+      - CYL-科技 68
+      - CYL-科技 69
+      - CYL-科技 70
+      - CYL-科技 71
+      - CYL-科技 72
+      - CYL-科技 73
+      - CYL-科技 74
+      - CYL-科技 75
+      - CYL-科技 76
+      - CYL-科技 77
+      - CYL-科技 78
+      - CYL-科技 79
+      - CYL-科技 80
+      - CYL-科技 81
+      - CYL-科技 82
+      - CYL-科技 83
+      - CYL-科技 84
+      - CYL-科技 85
+      - CYL-科技 86
+      - CYL-科技 87
+      - CYL-科技 88
+      - CYL-科技 89
+      - CYL-科技 90
+      - CYL-科技 91
+      - CYL-科技 92
+      - CYL-科技 93
+      - CYL-科技 94
+      - CYL-科技 95
+      - CYL-科技 96
+      - CYL-科技 97
+      - CYL-科技 98
+      - CYL-科技 99
+      - CYL-科技 100
+      - CYL-科技 101
+      - CYL-科技 102
+      - CYL-科技 103
+      - CYL-科技 104
+      - CYL-科技 105
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - CA_2791
+      - CA_2787
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_1
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_9
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_13
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_17
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_20
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_22
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_23
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_27
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_28
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_29
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_34
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_39
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_43
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_52
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_55
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_56
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_58
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_62
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_66
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_70
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_71
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_77
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_78
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_79
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_89
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_90
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_91
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_92
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_94
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_95
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_111
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_120
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_121
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_123
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_124
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_127
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_128
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_130
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_133
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_147
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_148
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_154
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_156
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_159
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_163
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_168
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_172
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_174
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_185
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_7
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_9
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_71
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_200
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_202
+      - CYL-科技 106
+      - CYL-科技 107
+      - CYL-科技 108
+      - CYL-科技 109
+      - CYL-科技 110
+      - CYL-科技 111
+      - CYL-科技 112
+      - 这速度又不怎么样🇨🇦CA |45.88Mb
+      - 这速度又不怎么样🇨🇦CA |12.45Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 [vip1][V2ray] 新加坡 ⑮-解锁Netflix
-      - 🇸🇬 [vip1][V2ray] 新加坡⑭-解锁Netflix
-      - 🇸🇬 [vip1][V2ray]新加坡 ③
-      - 🇸🇬 [vip2][V2ray]上海CN2中转-新加坡⑦︱解鎖NETFLIX
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港 ①︱解鎖NETFLIX
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑨ HKBN-NETFLIX|HULU|HBO-G口
       - 🇰🇷 [vip3][v2ray]Iplc专线 深圳-韩国 ⑧ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
@@ -281,82 +870,280 @@ proxy-groups:
       - 🇨🇳 中国台湾15 14Mbps 604ms 奈飞自制剧
       - 🇮🇳 印度1 107Mbps 729ms 奈飞自制剧
       - KR-Seoul
-      - 🇪🇺 欧洲a 4
       - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇸🇬 新加坡2 122Mbps 423ms 奈飞新加坡
       - 🇸🇬 新加坡8 93Mbps 369ms 奈飞自制剧
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
-      - 🇨🇳 中国台湾15 14Mbps 631ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
       - 🇯🇵 日本11 39Mbps 335ms 奈飞日本
       - 🇺🇸 美国
       - 🇨🇳 台湾
       - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
       - 🇨🇦 加拿大_2839
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
-      - 🇭🇰 HK-4
       - 🇸🇬 新加坡|小白+
       - 🇯🇵 日本|电信混淆++
-      - 读物云
-      - 🇺🇸 美国 2
-      - 🇸🇬 新加坡15 48Mbps 799ms 奈飞自制剧
-      - 🇺🇸 美国2|TG@mftizi
-      - 🇯🇵 日本1|https://t.me/mftizi
       - CA 2
       - IN
-      - 🇸🇬 [vip1][V2ray]新加坡 ①
       - 🇯🇵 [vip1][V2ray]日本  ⑧
-      - 🇯🇵 [vip1][V2ray]日本  ⑪
       - 🇯🇵 [vip1][V2ray]日本 ⑦
-      - 🇯🇵 [vip1][V2ray]日本 ⑩
-      - 🇯🇵 [vip1][V2ray]日本⑤
-      - 🇭🇰 [vip1][V2ray]香港 ②-解锁Netflix
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港③︱解鎖NETFLIX
-      - 🇸🇬 [vip2][V2ray]廣移中转-新加坡⑧ | 解鎖Netflix
-      - 🇯🇵 [vip2][V2ray]廣移中转-日本⑨ | 解鎖Netflix
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ④ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 HK01|香港|x1.0
-      - 🇭🇰 HK02|香港|x1.0
-      - 🇭🇰 HK03|香港|x1.0
-      - 🇭🇰 HK04|香港|x1.0
-      - 🇭🇰 HK05|香港|x1.0
-      - 🇨🇳 TW01|台湾|x1.0
-      - 🇯🇵 JP01|日本|x1.0
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇺🇸 US03|美国|x1.0
-      - 🇺🇸 US04|美国|x1.0
-      - 🇷🇴 RO01|罗马尼亚|x1.0
-      - 🇨🇦 CA01|加拿大|x1.0
-      - 🇸🇬 SG01|新加坡|x2.0
-      - 🇰🇷 KR01|韩国|x1.0
-      - 🇬🇧 UK01|英国|x1.0
-      - 🇳🇱 NL01|荷兰|x1.0
-      - 🇮🇩 IN01|印尼|x1.0
       - 🇨🇳 台湾 (30元一年 全球160+节点 http://v2ray.byethost12.com )
-      - 🇺🇸 美国-弗吉尼亚-阿什本-ss-45.43.19.82:45329
       - 🇨🇳 中国-台湾-台北-ss-2.58.241.46:34815
       - 🇨🇳 TW_47553
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) (17)
       - 🇭🇰 香港 6
       - 🇨🇳 台湾  1
-      - 🇯🇵 日本 5
       - 🇺🇸 美国  2
       - 🇺🇸 美国  3
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_4995
       - 🇭🇰 bob16vip.com-V2ray-香港1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_3
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_4
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_8
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_21
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_52
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_38
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_41
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_131
+      - 🇨🇳 TW_42304
+      - 🇨🇳 TW_48089
+      - 🇨🇳 TW_46726
+      - 🇨🇳 TW_49514
+      - 🇨🇳 TW_50695
+      - 🇨🇳 TW_38742
+      - 🇨🇳 TW_44745
+      - 🇨🇳 TW_39720
+      - 🇨🇳 TW_42166
+      - 🇭🇰 G12 香港
+      - 🇭🇰 G21 香港
+      - 🇸🇬 G11 新加坡
+      - 🇨🇳 G21 台湾
+      - 🇯🇵 G21 日本
+      - 🇯🇵 G22 日本
+      - 🇪🇺 欧洲
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 2
+      - 🇨🇳 台湾 3
+      - 🇨🇳 台湾 4
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技
+      - CYL-科技 2
+      - 🇨🇳 台湾 5
+      - 🇨🇳 台湾 6
+      - 🇨🇳 TW_41738
+      - 🇭🇰 香港 4
+      - 🇨🇳 台湾  2
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_53
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_128
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_143
+      - 🇨🇳 TW_49202
+      - 🇨🇳 TW_49468
+      - 🇨🇳 TW_43893
+      - 🇨🇳 TW_49126
+      - 🇨🇳 TW_50768
+      - 🇨🇳 TW_49396
+      - 🇨🇳 TW_47027
+      - 🇨🇳 TW_45746
+      - 🇨🇳 TW_32558
+      - 🇨🇳 TW_38742 2
+      - 🇨🇳 TW_41738 2
+      - 🇺🇸 G11 美国
+      - 🇨🇳 台湾 7
+      - 🇨🇳 台湾 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 这速度又不怎么样🇺🇸US |27.90Mb
+      - CYL-科技 3
+      - CYL-科技 4
+      - CYL-科技 5
+      - CYL-科技 6
+      - CYL-科技 7
+      - CYL-科技 8
+      - CYL-科技 9
+      - CYL-科技 10
+      - CYL-科技 11
+      - CYL-科技 12
+      - CYL-科技 13
+      - CYL-科技 14
+      - CYL-科技 15
+      - CYL-科技 16
+      - CYL-科技 17
+      - CYL-科技 18
+      - CYL-科技 19
+      - CYL-科技 20
+      - CYL-科技 21
+      - CYL-科技 22
+      - CYL-科技 23
+      - CYL-科技 24
+      - CYL-科技 25
+      - CYL-科技 26
+      - CYL-科技 27
+      - CYL-科技 28
+      - CYL-科技 29
+      - CYL-科技 30
+      - CYL-科技 31
+      - CYL-科技 32
+      - CYL-科技 33
+      - CYL-科技 34
+      - CYL-科技 35
+      - CYL-科技 36
+      - CYL-科技 37
+      - CYL-科技 38
+      - CYL-科技 39
+      - CYL-科技 40
+      - CYL-科技 41
+      - CYL-科技 42
+      - CYL-科技 43
+      - CYL-科技 44
+      - CYL-科技 45
+      - CYL-科技 46
+      - CYL-科技 47
+      - CYL-科技 48
+      - CYL-科技 49
+      - CYL-科技 50
+      - CYL-科技 51
+      - CYL-科技 52
+      - CYL-科技 53
+      - CYL-科技 54
+      - CYL-科技 55
+      - CYL-科技 56
+      - CYL-科技 57
+      - CYL-科技 58
+      - CYL-科技 59
+      - CYL-科技 60
+      - CYL-科技 61
+      - CYL-科技 62
+      - CYL-科技 63
+      - CYL-科技 64
+      - CYL-科技 65
+      - CYL-科技 66
+      - CYL-科技 67
+      - CYL-科技 68
+      - CYL-科技 69
+      - CYL-科技 70
+      - CYL-科技 71
+      - CYL-科技 72
+      - CYL-科技 73
+      - CYL-科技 74
+      - CYL-科技 75
+      - CYL-科技 76
+      - CYL-科技 77
+      - CYL-科技 78
+      - CYL-科技 79
+      - CYL-科技 80
+      - CYL-科技 81
+      - CYL-科技 82
+      - CYL-科技 83
+      - CYL-科技 84
+      - CYL-科技 85
+      - CYL-科技 86
+      - CYL-科技 87
+      - CYL-科技 88
+      - CYL-科技 89
+      - CYL-科技 90
+      - CYL-科技 91
+      - CYL-科技 92
+      - CYL-科技 93
+      - CYL-科技 94
+      - CYL-科技 95
+      - CYL-科技 96
+      - CYL-科技 97
+      - CYL-科技 98
+      - CYL-科技 99
+      - CYL-科技 100
+      - CYL-科技 101
+      - CYL-科技 102
+      - CYL-科技 103
+      - CYL-科技 104
+      - CYL-科技 105
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - CA_2791
+      - CA_2787
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_1
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_9
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_13
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_17
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_20
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_22
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_23
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_27
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_28
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_29
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_34
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_39
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_43
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_52
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_55
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_56
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_58
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_62
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_66
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_70
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_71
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_77
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_78
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_79
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_89
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_90
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_91
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_92
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_94
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_95
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_111
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_120
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_121
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_123
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_124
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_127
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_128
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_130
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_133
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_147
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_148
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_154
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_156
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_159
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_163
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_168
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_172
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_174
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_185
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_7
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_9
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_71
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_200
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_202
+      - CYL-科技 106
+      - CYL-科技 107
+      - CYL-科技 108
+      - CYL-科技 109
+      - CYL-科技 110
+      - CYL-科技 111
+      - CYL-科技 112
+      - 这速度又不怎么样🇨🇦CA |45.88Mb
+      - 这速度又不怎么样🇨🇦CA |12.45Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬 [vip1][V2ray] 新加坡 ⑮-解锁Netflix
-      - 🇸🇬 [vip1][V2ray] 新加坡⑭-解锁Netflix
-      - 🇸🇬 [vip1][V2ray]新加坡 ③
-      - 🇸🇬 [vip2][V2ray]上海CN2中转-新加坡⑦︱解鎖NETFLIX
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港 ①︱解鎖NETFLIX
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑨ HKBN-NETFLIX|HULU|HBO-G口
       - 🇰🇷 [vip3][v2ray]Iplc专线 深圳-韩国 ⑧ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
@@ -367,82 +1154,280 @@ proxy-groups:
       - 🇨🇳 中国台湾15 14Mbps 604ms 奈飞自制剧
       - 🇮🇳 印度1 107Mbps 729ms 奈飞自制剧
       - KR-Seoul
-      - 🇪🇺 欧洲a 4
       - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇸🇬 新加坡2 122Mbps 423ms 奈飞新加坡
       - 🇸🇬 新加坡8 93Mbps 369ms 奈飞自制剧
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
-      - 🇨🇳 中国台湾15 14Mbps 631ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
       - 🇯🇵 日本11 39Mbps 335ms 奈飞日本
       - 🇺🇸 美国
       - 🇨🇳 台湾
       - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
       - 🇨🇦 加拿大_2839
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
-      - 🇭🇰 HK-4
       - 🇸🇬 新加坡|小白+
       - 🇯🇵 日本|电信混淆++
-      - 读物云
-      - 🇺🇸 美国 2
-      - 🇸🇬 新加坡15 48Mbps 799ms 奈飞自制剧
-      - 🇺🇸 美国2|TG@mftizi
-      - 🇯🇵 日本1|https://t.me/mftizi
       - CA 2
       - IN
-      - 🇸🇬 [vip1][V2ray]新加坡 ①
       - 🇯🇵 [vip1][V2ray]日本  ⑧
-      - 🇯🇵 [vip1][V2ray]日本  ⑪
       - 🇯🇵 [vip1][V2ray]日本 ⑦
-      - 🇯🇵 [vip1][V2ray]日本 ⑩
-      - 🇯🇵 [vip1][V2ray]日本⑤
-      - 🇭🇰 [vip1][V2ray]香港 ②-解锁Netflix
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港③︱解鎖NETFLIX
-      - 🇸🇬 [vip2][V2ray]廣移中转-新加坡⑧ | 解鎖Netflix
-      - 🇯🇵 [vip2][V2ray]廣移中转-日本⑨ | 解鎖Netflix
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ④ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 HK01|香港|x1.0
-      - 🇭🇰 HK02|香港|x1.0
-      - 🇭🇰 HK03|香港|x1.0
-      - 🇭🇰 HK04|香港|x1.0
-      - 🇭🇰 HK05|香港|x1.0
-      - 🇨🇳 TW01|台湾|x1.0
-      - 🇯🇵 JP01|日本|x1.0
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇺🇸 US03|美国|x1.0
-      - 🇺🇸 US04|美国|x1.0
-      - 🇷🇴 RO01|罗马尼亚|x1.0
-      - 🇨🇦 CA01|加拿大|x1.0
-      - 🇸🇬 SG01|新加坡|x2.0
-      - 🇰🇷 KR01|韩国|x1.0
-      - 🇬🇧 UK01|英国|x1.0
-      - 🇳🇱 NL01|荷兰|x1.0
-      - 🇮🇩 IN01|印尼|x1.0
       - 🇨🇳 台湾 (30元一年 全球160+节点 http://v2ray.byethost12.com )
-      - 🇺🇸 美国-弗吉尼亚-阿什本-ss-45.43.19.82:45329
       - 🇨🇳 中国-台湾-台北-ss-2.58.241.46:34815
       - 🇨🇳 TW_47553
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) (17)
       - 🇭🇰 香港 6
       - 🇨🇳 台湾  1
-      - 🇯🇵 日本 5
       - 🇺🇸 美国  2
       - 🇺🇸 美国  3
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_4995
       - 🇭🇰 bob16vip.com-V2ray-香港1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_3
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_4
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_8
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_21
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_52
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_38
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_41
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_131
+      - 🇨🇳 TW_42304
+      - 🇨🇳 TW_48089
+      - 🇨🇳 TW_46726
+      - 🇨🇳 TW_49514
+      - 🇨🇳 TW_50695
+      - 🇨🇳 TW_38742
+      - 🇨🇳 TW_44745
+      - 🇨🇳 TW_39720
+      - 🇨🇳 TW_42166
+      - 🇭🇰 G12 香港
+      - 🇭🇰 G21 香港
+      - 🇸🇬 G11 新加坡
+      - 🇨🇳 G21 台湾
+      - 🇯🇵 G21 日本
+      - 🇯🇵 G22 日本
+      - 🇪🇺 欧洲
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 2
+      - 🇨🇳 台湾 3
+      - 🇨🇳 台湾 4
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技
+      - CYL-科技 2
+      - 🇨🇳 台湾 5
+      - 🇨🇳 台湾 6
+      - 🇨🇳 TW_41738
+      - 🇭🇰 香港 4
+      - 🇨🇳 台湾  2
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_53
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_128
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_143
+      - 🇨🇳 TW_49202
+      - 🇨🇳 TW_49468
+      - 🇨🇳 TW_43893
+      - 🇨🇳 TW_49126
+      - 🇨🇳 TW_50768
+      - 🇨🇳 TW_49396
+      - 🇨🇳 TW_47027
+      - 🇨🇳 TW_45746
+      - 🇨🇳 TW_32558
+      - 🇨🇳 TW_38742 2
+      - 🇨🇳 TW_41738 2
+      - 🇺🇸 G11 美国
+      - 🇨🇳 台湾 7
+      - 🇨🇳 台湾 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 这速度又不怎么样🇺🇸US |27.90Mb
+      - CYL-科技 3
+      - CYL-科技 4
+      - CYL-科技 5
+      - CYL-科技 6
+      - CYL-科技 7
+      - CYL-科技 8
+      - CYL-科技 9
+      - CYL-科技 10
+      - CYL-科技 11
+      - CYL-科技 12
+      - CYL-科技 13
+      - CYL-科技 14
+      - CYL-科技 15
+      - CYL-科技 16
+      - CYL-科技 17
+      - CYL-科技 18
+      - CYL-科技 19
+      - CYL-科技 20
+      - CYL-科技 21
+      - CYL-科技 22
+      - CYL-科技 23
+      - CYL-科技 24
+      - CYL-科技 25
+      - CYL-科技 26
+      - CYL-科技 27
+      - CYL-科技 28
+      - CYL-科技 29
+      - CYL-科技 30
+      - CYL-科技 31
+      - CYL-科技 32
+      - CYL-科技 33
+      - CYL-科技 34
+      - CYL-科技 35
+      - CYL-科技 36
+      - CYL-科技 37
+      - CYL-科技 38
+      - CYL-科技 39
+      - CYL-科技 40
+      - CYL-科技 41
+      - CYL-科技 42
+      - CYL-科技 43
+      - CYL-科技 44
+      - CYL-科技 45
+      - CYL-科技 46
+      - CYL-科技 47
+      - CYL-科技 48
+      - CYL-科技 49
+      - CYL-科技 50
+      - CYL-科技 51
+      - CYL-科技 52
+      - CYL-科技 53
+      - CYL-科技 54
+      - CYL-科技 55
+      - CYL-科技 56
+      - CYL-科技 57
+      - CYL-科技 58
+      - CYL-科技 59
+      - CYL-科技 60
+      - CYL-科技 61
+      - CYL-科技 62
+      - CYL-科技 63
+      - CYL-科技 64
+      - CYL-科技 65
+      - CYL-科技 66
+      - CYL-科技 67
+      - CYL-科技 68
+      - CYL-科技 69
+      - CYL-科技 70
+      - CYL-科技 71
+      - CYL-科技 72
+      - CYL-科技 73
+      - CYL-科技 74
+      - CYL-科技 75
+      - CYL-科技 76
+      - CYL-科技 77
+      - CYL-科技 78
+      - CYL-科技 79
+      - CYL-科技 80
+      - CYL-科技 81
+      - CYL-科技 82
+      - CYL-科技 83
+      - CYL-科技 84
+      - CYL-科技 85
+      - CYL-科技 86
+      - CYL-科技 87
+      - CYL-科技 88
+      - CYL-科技 89
+      - CYL-科技 90
+      - CYL-科技 91
+      - CYL-科技 92
+      - CYL-科技 93
+      - CYL-科技 94
+      - CYL-科技 95
+      - CYL-科技 96
+      - CYL-科技 97
+      - CYL-科技 98
+      - CYL-科技 99
+      - CYL-科技 100
+      - CYL-科技 101
+      - CYL-科技 102
+      - CYL-科技 103
+      - CYL-科技 104
+      - CYL-科技 105
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - CA_2791
+      - CA_2787
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_1
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_9
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_13
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_17
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_20
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_22
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_23
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_27
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_28
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_29
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_34
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_39
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_43
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_52
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_55
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_56
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_58
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_62
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_66
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_70
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_71
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_77
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_78
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_79
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_89
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_90
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_91
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_92
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_94
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_95
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_111
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_120
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_121
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_123
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_124
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_127
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_128
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_130
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_133
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_147
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_148
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_154
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_156
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_159
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_163
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_168
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_172
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_174
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_185
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_7
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_9
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_71
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_200
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_202
+      - CYL-科技 106
+      - CYL-科技 107
+      - CYL-科技 108
+      - CYL-科技 109
+      - CYL-科技 110
+      - CYL-科技 111
+      - CYL-科技 112
+      - 这速度又不怎么样🇨🇦CA |45.88Mb
+      - 这速度又不怎么样🇨🇦CA |12.45Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇸🇬 [vip1][V2ray] 新加坡 ⑮-解锁Netflix
-      - 🇸🇬 [vip1][V2ray] 新加坡⑭-解锁Netflix
-      - 🇸🇬 [vip1][V2ray]新加坡 ③
-      - 🇸🇬 [vip2][V2ray]上海CN2中转-新加坡⑦︱解鎖NETFLIX
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港 ①︱解鎖NETFLIX
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑨ HKBN-NETFLIX|HULU|HBO-G口
       - 🇰🇷 [vip3][v2ray]Iplc专线 深圳-韩国 ⑧ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
@@ -453,82 +1438,280 @@ proxy-groups:
       - 🇨🇳 中国台湾15 14Mbps 604ms 奈飞自制剧
       - 🇮🇳 印度1 107Mbps 729ms 奈飞自制剧
       - KR-Seoul
-      - 🇪🇺 欧洲a 4
       - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇸🇬 新加坡2 122Mbps 423ms 奈飞新加坡
       - 🇸🇬 新加坡8 93Mbps 369ms 奈飞自制剧
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
-      - 🇨🇳 中国台湾15 14Mbps 631ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
       - 🇯🇵 日本11 39Mbps 335ms 奈飞日本
       - 🇺🇸 美国
       - 🇨🇳 台湾
       - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
       - 🇨🇦 加拿大_2839
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
-      - 🇭🇰 HK-4
       - 🇸🇬 新加坡|小白+
       - 🇯🇵 日本|电信混淆++
-      - 读物云
-      - 🇺🇸 美国 2
-      - 🇸🇬 新加坡15 48Mbps 799ms 奈飞自制剧
-      - 🇺🇸 美国2|TG@mftizi
-      - 🇯🇵 日本1|https://t.me/mftizi
       - CA 2
       - IN
-      - 🇸🇬 [vip1][V2ray]新加坡 ①
       - 🇯🇵 [vip1][V2ray]日本  ⑧
-      - 🇯🇵 [vip1][V2ray]日本  ⑪
       - 🇯🇵 [vip1][V2ray]日本 ⑦
-      - 🇯🇵 [vip1][V2ray]日本 ⑩
-      - 🇯🇵 [vip1][V2ray]日本⑤
-      - 🇭🇰 [vip1][V2ray]香港 ②-解锁Netflix
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港③︱解鎖NETFLIX
-      - 🇸🇬 [vip2][V2ray]廣移中转-新加坡⑧ | 解鎖Netflix
-      - 🇯🇵 [vip2][V2ray]廣移中转-日本⑨ | 解鎖Netflix
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ④ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 HK01|香港|x1.0
-      - 🇭🇰 HK02|香港|x1.0
-      - 🇭🇰 HK03|香港|x1.0
-      - 🇭🇰 HK04|香港|x1.0
-      - 🇭🇰 HK05|香港|x1.0
-      - 🇨🇳 TW01|台湾|x1.0
-      - 🇯🇵 JP01|日本|x1.0
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇺🇸 US03|美国|x1.0
-      - 🇺🇸 US04|美国|x1.0
-      - 🇷🇴 RO01|罗马尼亚|x1.0
-      - 🇨🇦 CA01|加拿大|x1.0
-      - 🇸🇬 SG01|新加坡|x2.0
-      - 🇰🇷 KR01|韩国|x1.0
-      - 🇬🇧 UK01|英国|x1.0
-      - 🇳🇱 NL01|荷兰|x1.0
-      - 🇮🇩 IN01|印尼|x1.0
       - 🇨🇳 台湾 (30元一年 全球160+节点 http://v2ray.byethost12.com )
-      - 🇺🇸 美国-弗吉尼亚-阿什本-ss-45.43.19.82:45329
       - 🇨🇳 中国-台湾-台北-ss-2.58.241.46:34815
       - 🇨🇳 TW_47553
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) (17)
       - 🇭🇰 香港 6
       - 🇨🇳 台湾  1
-      - 🇯🇵 日本 5
       - 🇺🇸 美国  2
       - 🇺🇸 美国  3
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_4995
       - 🇭🇰 bob16vip.com-V2ray-香港1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_3
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_4
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_8
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_21
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_52
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_38
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_41
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_131
+      - 🇨🇳 TW_42304
+      - 🇨🇳 TW_48089
+      - 🇨🇳 TW_46726
+      - 🇨🇳 TW_49514
+      - 🇨🇳 TW_50695
+      - 🇨🇳 TW_38742
+      - 🇨🇳 TW_44745
+      - 🇨🇳 TW_39720
+      - 🇨🇳 TW_42166
+      - 🇭🇰 G12 香港
+      - 🇭🇰 G21 香港
+      - 🇸🇬 G11 新加坡
+      - 🇨🇳 G21 台湾
+      - 🇯🇵 G21 日本
+      - 🇯🇵 G22 日本
+      - 🇪🇺 欧洲
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 2
+      - 🇨🇳 台湾 3
+      - 🇨🇳 台湾 4
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技
+      - CYL-科技 2
+      - 🇨🇳 台湾 5
+      - 🇨🇳 台湾 6
+      - 🇨🇳 TW_41738
+      - 🇭🇰 香港 4
+      - 🇨🇳 台湾  2
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_53
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_128
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_143
+      - 🇨🇳 TW_49202
+      - 🇨🇳 TW_49468
+      - 🇨🇳 TW_43893
+      - 🇨🇳 TW_49126
+      - 🇨🇳 TW_50768
+      - 🇨🇳 TW_49396
+      - 🇨🇳 TW_47027
+      - 🇨🇳 TW_45746
+      - 🇨🇳 TW_32558
+      - 🇨🇳 TW_38742 2
+      - 🇨🇳 TW_41738 2
+      - 🇺🇸 G11 美国
+      - 🇨🇳 台湾 7
+      - 🇨🇳 台湾 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 这速度又不怎么样🇺🇸US |27.90Mb
+      - CYL-科技 3
+      - CYL-科技 4
+      - CYL-科技 5
+      - CYL-科技 6
+      - CYL-科技 7
+      - CYL-科技 8
+      - CYL-科技 9
+      - CYL-科技 10
+      - CYL-科技 11
+      - CYL-科技 12
+      - CYL-科技 13
+      - CYL-科技 14
+      - CYL-科技 15
+      - CYL-科技 16
+      - CYL-科技 17
+      - CYL-科技 18
+      - CYL-科技 19
+      - CYL-科技 20
+      - CYL-科技 21
+      - CYL-科技 22
+      - CYL-科技 23
+      - CYL-科技 24
+      - CYL-科技 25
+      - CYL-科技 26
+      - CYL-科技 27
+      - CYL-科技 28
+      - CYL-科技 29
+      - CYL-科技 30
+      - CYL-科技 31
+      - CYL-科技 32
+      - CYL-科技 33
+      - CYL-科技 34
+      - CYL-科技 35
+      - CYL-科技 36
+      - CYL-科技 37
+      - CYL-科技 38
+      - CYL-科技 39
+      - CYL-科技 40
+      - CYL-科技 41
+      - CYL-科技 42
+      - CYL-科技 43
+      - CYL-科技 44
+      - CYL-科技 45
+      - CYL-科技 46
+      - CYL-科技 47
+      - CYL-科技 48
+      - CYL-科技 49
+      - CYL-科技 50
+      - CYL-科技 51
+      - CYL-科技 52
+      - CYL-科技 53
+      - CYL-科技 54
+      - CYL-科技 55
+      - CYL-科技 56
+      - CYL-科技 57
+      - CYL-科技 58
+      - CYL-科技 59
+      - CYL-科技 60
+      - CYL-科技 61
+      - CYL-科技 62
+      - CYL-科技 63
+      - CYL-科技 64
+      - CYL-科技 65
+      - CYL-科技 66
+      - CYL-科技 67
+      - CYL-科技 68
+      - CYL-科技 69
+      - CYL-科技 70
+      - CYL-科技 71
+      - CYL-科技 72
+      - CYL-科技 73
+      - CYL-科技 74
+      - CYL-科技 75
+      - CYL-科技 76
+      - CYL-科技 77
+      - CYL-科技 78
+      - CYL-科技 79
+      - CYL-科技 80
+      - CYL-科技 81
+      - CYL-科技 82
+      - CYL-科技 83
+      - CYL-科技 84
+      - CYL-科技 85
+      - CYL-科技 86
+      - CYL-科技 87
+      - CYL-科技 88
+      - CYL-科技 89
+      - CYL-科技 90
+      - CYL-科技 91
+      - CYL-科技 92
+      - CYL-科技 93
+      - CYL-科技 94
+      - CYL-科技 95
+      - CYL-科技 96
+      - CYL-科技 97
+      - CYL-科技 98
+      - CYL-科技 99
+      - CYL-科技 100
+      - CYL-科技 101
+      - CYL-科技 102
+      - CYL-科技 103
+      - CYL-科技 104
+      - CYL-科技 105
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - CA_2791
+      - CA_2787
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_1
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_9
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_13
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_17
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_20
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_22
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_23
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_27
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_28
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_29
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_34
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_39
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_43
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_52
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_55
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_56
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_58
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_62
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_66
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_70
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_71
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_77
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_78
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_79
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_89
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_90
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_91
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_92
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_94
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_95
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_111
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_120
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_121
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_123
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_124
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_127
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_128
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_130
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_133
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_147
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_148
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_154
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_156
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_159
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_163
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_168
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_172
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_174
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_185
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_7
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_9
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_71
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_200
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_202
+      - CYL-科技 106
+      - CYL-科技 107
+      - CYL-科技 108
+      - CYL-科技 109
+      - CYL-科技 110
+      - CYL-科技 111
+      - CYL-科技 112
+      - 这速度又不怎么样🇨🇦CA |45.88Mb
+      - 这速度又不怎么样🇨🇦CA |12.45Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬 [vip1][V2ray] 新加坡 ⑮-解锁Netflix
-      - 🇸🇬 [vip1][V2ray] 新加坡⑭-解锁Netflix
-      - 🇸🇬 [vip1][V2ray]新加坡 ③
-      - 🇸🇬 [vip2][V2ray]上海CN2中转-新加坡⑦︱解鎖NETFLIX
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港 ①︱解鎖NETFLIX
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑨ HKBN-NETFLIX|HULU|HBO-G口
       - 🇰🇷 [vip3][v2ray]Iplc专线 深圳-韩国 ⑧ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
@@ -539,83 +1722,281 @@ proxy-groups:
       - 🇨🇳 中国台湾15 14Mbps 604ms 奈飞自制剧
       - 🇮🇳 印度1 107Mbps 729ms 奈飞自制剧
       - KR-Seoul
-      - 🇪🇺 欧洲a 4
       - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇸🇬 新加坡2 122Mbps 423ms 奈飞新加坡
       - 🇸🇬 新加坡8 93Mbps 369ms 奈飞自制剧
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
-      - 🇨🇳 中国台湾15 14Mbps 631ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
       - 🇯🇵 日本11 39Mbps 335ms 奈飞日本
       - 🇺🇸 美国
       - 🇨🇳 台湾
       - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
       - 🇨🇦 加拿大_2839
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
-      - 🇭🇰 HK-4
       - 🇸🇬 新加坡|小白+
       - 🇯🇵 日本|电信混淆++
-      - 读物云
-      - 🇺🇸 美国 2
-      - 🇸🇬 新加坡15 48Mbps 799ms 奈飞自制剧
-      - 🇺🇸 美国2|TG@mftizi
-      - 🇯🇵 日本1|https://t.me/mftizi
       - CA 2
       - IN
-      - 🇸🇬 [vip1][V2ray]新加坡 ①
       - 🇯🇵 [vip1][V2ray]日本  ⑧
-      - 🇯🇵 [vip1][V2ray]日本  ⑪
       - 🇯🇵 [vip1][V2ray]日本 ⑦
-      - 🇯🇵 [vip1][V2ray]日本 ⑩
-      - 🇯🇵 [vip1][V2ray]日本⑤
-      - 🇭🇰 [vip1][V2ray]香港 ②-解锁Netflix
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港③︱解鎖NETFLIX
-      - 🇸🇬 [vip2][V2ray]廣移中转-新加坡⑧ | 解鎖Netflix
-      - 🇯🇵 [vip2][V2ray]廣移中转-日本⑨ | 解鎖Netflix
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ④ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 HK01|香港|x1.0
-      - 🇭🇰 HK02|香港|x1.0
-      - 🇭🇰 HK03|香港|x1.0
-      - 🇭🇰 HK04|香港|x1.0
-      - 🇭🇰 HK05|香港|x1.0
-      - 🇨🇳 TW01|台湾|x1.0
-      - 🇯🇵 JP01|日本|x1.0
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇺🇸 US03|美国|x1.0
-      - 🇺🇸 US04|美国|x1.0
-      - 🇷🇴 RO01|罗马尼亚|x1.0
-      - 🇨🇦 CA01|加拿大|x1.0
-      - 🇸🇬 SG01|新加坡|x2.0
-      - 🇰🇷 KR01|韩国|x1.0
-      - 🇬🇧 UK01|英国|x1.0
-      - 🇳🇱 NL01|荷兰|x1.0
-      - 🇮🇩 IN01|印尼|x1.0
       - 🇨🇳 台湾 (30元一年 全球160+节点 http://v2ray.byethost12.com )
-      - 🇺🇸 美国-弗吉尼亚-阿什本-ss-45.43.19.82:45329
       - 🇨🇳 中国-台湾-台北-ss-2.58.241.46:34815
       - 🇨🇳 TW_47553
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) (17)
       - 🇭🇰 香港 6
       - 🇨🇳 台湾  1
-      - 🇯🇵 日本 5
       - 🇺🇸 美国  2
       - 🇺🇸 美国  3
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_4995
       - 🇭🇰 bob16vip.com-V2ray-香港1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_3
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_4
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_8
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_21
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_52
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_38
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_41
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_131
+      - 🇨🇳 TW_42304
+      - 🇨🇳 TW_48089
+      - 🇨🇳 TW_46726
+      - 🇨🇳 TW_49514
+      - 🇨🇳 TW_50695
+      - 🇨🇳 TW_38742
+      - 🇨🇳 TW_44745
+      - 🇨🇳 TW_39720
+      - 🇨🇳 TW_42166
+      - 🇭🇰 G12 香港
+      - 🇭🇰 G21 香港
+      - 🇸🇬 G11 新加坡
+      - 🇨🇳 G21 台湾
+      - 🇯🇵 G21 日本
+      - 🇯🇵 G22 日本
+      - 🇪🇺 欧洲
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 2
+      - 🇨🇳 台湾 3
+      - 🇨🇳 台湾 4
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技
+      - CYL-科技 2
+      - 🇨🇳 台湾 5
+      - 🇨🇳 台湾 6
+      - 🇨🇳 TW_41738
+      - 🇭🇰 香港 4
+      - 🇨🇳 台湾  2
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_53
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_128
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_143
+      - 🇨🇳 TW_49202
+      - 🇨🇳 TW_49468
+      - 🇨🇳 TW_43893
+      - 🇨🇳 TW_49126
+      - 🇨🇳 TW_50768
+      - 🇨🇳 TW_49396
+      - 🇨🇳 TW_47027
+      - 🇨🇳 TW_45746
+      - 🇨🇳 TW_32558
+      - 🇨🇳 TW_38742 2
+      - 🇨🇳 TW_41738 2
+      - 🇺🇸 G11 美国
+      - 🇨🇳 台湾 7
+      - 🇨🇳 台湾 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 这速度又不怎么样🇺🇸US |27.90Mb
+      - CYL-科技 3
+      - CYL-科技 4
+      - CYL-科技 5
+      - CYL-科技 6
+      - CYL-科技 7
+      - CYL-科技 8
+      - CYL-科技 9
+      - CYL-科技 10
+      - CYL-科技 11
+      - CYL-科技 12
+      - CYL-科技 13
+      - CYL-科技 14
+      - CYL-科技 15
+      - CYL-科技 16
+      - CYL-科技 17
+      - CYL-科技 18
+      - CYL-科技 19
+      - CYL-科技 20
+      - CYL-科技 21
+      - CYL-科技 22
+      - CYL-科技 23
+      - CYL-科技 24
+      - CYL-科技 25
+      - CYL-科技 26
+      - CYL-科技 27
+      - CYL-科技 28
+      - CYL-科技 29
+      - CYL-科技 30
+      - CYL-科技 31
+      - CYL-科技 32
+      - CYL-科技 33
+      - CYL-科技 34
+      - CYL-科技 35
+      - CYL-科技 36
+      - CYL-科技 37
+      - CYL-科技 38
+      - CYL-科技 39
+      - CYL-科技 40
+      - CYL-科技 41
+      - CYL-科技 42
+      - CYL-科技 43
+      - CYL-科技 44
+      - CYL-科技 45
+      - CYL-科技 46
+      - CYL-科技 47
+      - CYL-科技 48
+      - CYL-科技 49
+      - CYL-科技 50
+      - CYL-科技 51
+      - CYL-科技 52
+      - CYL-科技 53
+      - CYL-科技 54
+      - CYL-科技 55
+      - CYL-科技 56
+      - CYL-科技 57
+      - CYL-科技 58
+      - CYL-科技 59
+      - CYL-科技 60
+      - CYL-科技 61
+      - CYL-科技 62
+      - CYL-科技 63
+      - CYL-科技 64
+      - CYL-科技 65
+      - CYL-科技 66
+      - CYL-科技 67
+      - CYL-科技 68
+      - CYL-科技 69
+      - CYL-科技 70
+      - CYL-科技 71
+      - CYL-科技 72
+      - CYL-科技 73
+      - CYL-科技 74
+      - CYL-科技 75
+      - CYL-科技 76
+      - CYL-科技 77
+      - CYL-科技 78
+      - CYL-科技 79
+      - CYL-科技 80
+      - CYL-科技 81
+      - CYL-科技 82
+      - CYL-科技 83
+      - CYL-科技 84
+      - CYL-科技 85
+      - CYL-科技 86
+      - CYL-科技 87
+      - CYL-科技 88
+      - CYL-科技 89
+      - CYL-科技 90
+      - CYL-科技 91
+      - CYL-科技 92
+      - CYL-科技 93
+      - CYL-科技 94
+      - CYL-科技 95
+      - CYL-科技 96
+      - CYL-科技 97
+      - CYL-科技 98
+      - CYL-科技 99
+      - CYL-科技 100
+      - CYL-科技 101
+      - CYL-科技 102
+      - CYL-科技 103
+      - CYL-科技 104
+      - CYL-科技 105
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - CA_2791
+      - CA_2787
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_1
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_9
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_13
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_17
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_20
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_22
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_23
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_27
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_28
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_29
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_34
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_39
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_43
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_52
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_55
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_56
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_58
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_62
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_66
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_70
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_71
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_77
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_78
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_79
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_89
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_90
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_91
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_92
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_94
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_95
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_111
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_120
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_121
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_123
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_124
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_127
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_128
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_130
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_133
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_147
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_148
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_154
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_156
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_159
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_163
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_168
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_172
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_174
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_185
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_7
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_9
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_71
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_200
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_202
+      - CYL-科技 106
+      - CYL-科技 107
+      - CYL-科技 108
+      - CYL-科技 109
+      - CYL-科技 110
+      - CYL-科技 111
+      - CYL-科技 112
+      - 这速度又不怎么样🇨🇦CA |45.88Mb
+      - 这速度又不怎么样🇨🇦CA |12.45Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 [vip1][V2ray] 新加坡 ⑮-解锁Netflix
-      - 🇸🇬 [vip1][V2ray] 新加坡⑭-解锁Netflix
-      - 🇸🇬 [vip1][V2ray]新加坡 ③
-      - 🇸🇬 [vip2][V2ray]上海CN2中转-新加坡⑦︱解鎖NETFLIX
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港 ①︱解鎖NETFLIX
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑨ HKBN-NETFLIX|HULU|HBO-G口
       - 🇰🇷 [vip3][v2ray]Iplc专线 深圳-韩国 ⑧ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
@@ -626,72 +2007,275 @@ proxy-groups:
       - 🇨🇳 中国台湾15 14Mbps 604ms 奈飞自制剧
       - 🇮🇳 印度1 107Mbps 729ms 奈飞自制剧
       - KR-Seoul
-      - 🇪🇺 欧洲a 4
       - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇸🇬 新加坡2 122Mbps 423ms 奈飞新加坡
       - 🇸🇬 新加坡8 93Mbps 369ms 奈飞自制剧
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
-      - 🇨🇳 中国台湾15 14Mbps 631ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
       - 🇯🇵 日本11 39Mbps 335ms 奈飞日本
       - 🇺🇸 美国
       - 🇨🇳 台湾
       - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
       - 🇨🇦 加拿大_2839
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
-      - 🇭🇰 HK-4
       - 🇸🇬 新加坡|小白+
       - 🇯🇵 日本|电信混淆++
-      - 读物云
-      - 🇺🇸 美国 2
-      - 🇸🇬 新加坡15 48Mbps 799ms 奈飞自制剧
-      - 🇺🇸 美国2|TG@mftizi
-      - 🇯🇵 日本1|https://t.me/mftizi
       - CA 2
       - IN
-      - 🇸🇬 [vip1][V2ray]新加坡 ①
       - 🇯🇵 [vip1][V2ray]日本  ⑧
-      - 🇯🇵 [vip1][V2ray]日本  ⑪
       - 🇯🇵 [vip1][V2ray]日本 ⑦
-      - 🇯🇵 [vip1][V2ray]日本 ⑩
-      - 🇯🇵 [vip1][V2ray]日本⑤
-      - 🇭🇰 [vip1][V2ray]香港 ②-解锁Netflix
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港③︱解鎖NETFLIX
-      - 🇸🇬 [vip2][V2ray]廣移中转-新加坡⑧ | 解鎖Netflix
-      - 🇯🇵 [vip2][V2ray]廣移中转-日本⑨ | 解鎖Netflix
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ④ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 HK01|香港|x1.0
-      - 🇭🇰 HK02|香港|x1.0
-      - 🇭🇰 HK03|香港|x1.0
-      - 🇭🇰 HK04|香港|x1.0
-      - 🇭🇰 HK05|香港|x1.0
-      - 🇨🇳 TW01|台湾|x1.0
-      - 🇯🇵 JP01|日本|x1.0
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇺🇸 US03|美国|x1.0
-      - 🇺🇸 US04|美国|x1.0
-      - 🇷🇴 RO01|罗马尼亚|x1.0
-      - 🇨🇦 CA01|加拿大|x1.0
-      - 🇸🇬 SG01|新加坡|x2.0
-      - 🇰🇷 KR01|韩国|x1.0
-      - 🇬🇧 UK01|英国|x1.0
-      - 🇳🇱 NL01|荷兰|x1.0
-      - 🇮🇩 IN01|印尼|x1.0
       - 🇨🇳 台湾 (30元一年 全球160+节点 http://v2ray.byethost12.com )
-      - 🇺🇸 美国-弗吉尼亚-阿什本-ss-45.43.19.82:45329
       - 🇨🇳 中国-台湾-台北-ss-2.58.241.46:34815
       - 🇨🇳 TW_47553
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) (17)
       - 🇭🇰 香港 6
       - 🇨🇳 台湾  1
-      - 🇯🇵 日本 5
       - 🇺🇸 美国  2
       - 🇺🇸 美国  3
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_4995
       - 🇭🇰 bob16vip.com-V2ray-香港1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_3
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_4
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_8
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_21
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_52
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_38
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_41
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_131
+      - 🇨🇳 TW_42304
+      - 🇨🇳 TW_48089
+      - 🇨🇳 TW_46726
+      - 🇨🇳 TW_49514
+      - 🇨🇳 TW_50695
+      - 🇨🇳 TW_38742
+      - 🇨🇳 TW_44745
+      - 🇨🇳 TW_39720
+      - 🇨🇳 TW_42166
+      - 🇭🇰 G12 香港
+      - 🇭🇰 G21 香港
+      - 🇸🇬 G11 新加坡
+      - 🇨🇳 G21 台湾
+      - 🇯🇵 G21 日本
+      - 🇯🇵 G22 日本
+      - 🇪🇺 欧洲
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 2
+      - 🇨🇳 台湾 3
+      - 🇨🇳 台湾 4
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技
+      - CYL-科技 2
+      - 🇨🇳 台湾 5
+      - 🇨🇳 台湾 6
+      - 🇨🇳 TW_41738
+      - 🇭🇰 香港 4
+      - 🇨🇳 台湾  2
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_53
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_128
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_143
+      - 🇨🇳 TW_49202
+      - 🇨🇳 TW_49468
+      - 🇨🇳 TW_43893
+      - 🇨🇳 TW_49126
+      - 🇨🇳 TW_50768
+      - 🇨🇳 TW_49396
+      - 🇨🇳 TW_47027
+      - 🇨🇳 TW_45746
+      - 🇨🇳 TW_32558
+      - 🇨🇳 TW_38742 2
+      - 🇨🇳 TW_41738 2
+      - 🇺🇸 G11 美国
+      - 🇨🇳 台湾 7
+      - 🇨🇳 台湾 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 这速度又不怎么样🇺🇸US |27.90Mb
+      - CYL-科技 3
+      - CYL-科技 4
+      - CYL-科技 5
+      - CYL-科技 6
+      - CYL-科技 7
+      - CYL-科技 8
+      - CYL-科技 9
+      - CYL-科技 10
+      - CYL-科技 11
+      - CYL-科技 12
+      - CYL-科技 13
+      - CYL-科技 14
+      - CYL-科技 15
+      - CYL-科技 16
+      - CYL-科技 17
+      - CYL-科技 18
+      - CYL-科技 19
+      - CYL-科技 20
+      - CYL-科技 21
+      - CYL-科技 22
+      - CYL-科技 23
+      - CYL-科技 24
+      - CYL-科技 25
+      - CYL-科技 26
+      - CYL-科技 27
+      - CYL-科技 28
+      - CYL-科技 29
+      - CYL-科技 30
+      - CYL-科技 31
+      - CYL-科技 32
+      - CYL-科技 33
+      - CYL-科技 34
+      - CYL-科技 35
+      - CYL-科技 36
+      - CYL-科技 37
+      - CYL-科技 38
+      - CYL-科技 39
+      - CYL-科技 40
+      - CYL-科技 41
+      - CYL-科技 42
+      - CYL-科技 43
+      - CYL-科技 44
+      - CYL-科技 45
+      - CYL-科技 46
+      - CYL-科技 47
+      - CYL-科技 48
+      - CYL-科技 49
+      - CYL-科技 50
+      - CYL-科技 51
+      - CYL-科技 52
+      - CYL-科技 53
+      - CYL-科技 54
+      - CYL-科技 55
+      - CYL-科技 56
+      - CYL-科技 57
+      - CYL-科技 58
+      - CYL-科技 59
+      - CYL-科技 60
+      - CYL-科技 61
+      - CYL-科技 62
+      - CYL-科技 63
+      - CYL-科技 64
+      - CYL-科技 65
+      - CYL-科技 66
+      - CYL-科技 67
+      - CYL-科技 68
+      - CYL-科技 69
+      - CYL-科技 70
+      - CYL-科技 71
+      - CYL-科技 72
+      - CYL-科技 73
+      - CYL-科技 74
+      - CYL-科技 75
+      - CYL-科技 76
+      - CYL-科技 77
+      - CYL-科技 78
+      - CYL-科技 79
+      - CYL-科技 80
+      - CYL-科技 81
+      - CYL-科技 82
+      - CYL-科技 83
+      - CYL-科技 84
+      - CYL-科技 85
+      - CYL-科技 86
+      - CYL-科技 87
+      - CYL-科技 88
+      - CYL-科技 89
+      - CYL-科技 90
+      - CYL-科技 91
+      - CYL-科技 92
+      - CYL-科技 93
+      - CYL-科技 94
+      - CYL-科技 95
+      - CYL-科技 96
+      - CYL-科技 97
+      - CYL-科技 98
+      - CYL-科技 99
+      - CYL-科技 100
+      - CYL-科技 101
+      - CYL-科技 102
+      - CYL-科技 103
+      - CYL-科技 104
+      - CYL-科技 105
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - CA_2791
+      - CA_2787
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_1
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_9
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_13
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_17
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_20
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_22
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_23
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_27
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_28
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_29
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_34
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_39
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_43
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_52
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_55
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_56
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_58
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_62
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_66
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_70
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_71
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_77
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_78
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_79
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_89
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_90
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_91
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_92
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_94
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_95
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_111
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_120
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_121
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_123
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_124
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_127
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_128
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_130
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_133
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_147
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_148
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_154
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_156
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_159
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_163
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_168
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_172
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_174
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_185
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_7
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_9
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_71
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_200
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_202
+      - CYL-科技 106
+      - CYL-科技 107
+      - CYL-科技 108
+      - CYL-科技 109
+      - CYL-科技 110
+      - CYL-科技 111
+      - CYL-科技 112
+      - 这速度又不怎么样🇨🇦CA |45.88Mb
+      - 这速度又不怎么样🇨🇦CA |12.45Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -714,11 +2298,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 [vip1][V2ray] 新加坡 ⑮-解锁Netflix
-      - 🇸🇬 [vip1][V2ray] 新加坡⑭-解锁Netflix
-      - 🇸🇬 [vip1][V2ray]新加坡 ③
-      - 🇸🇬 [vip2][V2ray]上海CN2中转-新加坡⑦︱解鎖NETFLIX
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港 ①︱解鎖NETFLIX
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑨ HKBN-NETFLIX|HULU|HBO-G口
       - 🇰🇷 [vip3][v2ray]Iplc专线 深圳-韩国 ⑧ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
@@ -729,72 +2308,275 @@ proxy-groups:
       - 🇨🇳 中国台湾15 14Mbps 604ms 奈飞自制剧
       - 🇮🇳 印度1 107Mbps 729ms 奈飞自制剧
       - KR-Seoul
-      - 🇪🇺 欧洲a 4
       - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇸🇬 新加坡2 122Mbps 423ms 奈飞新加坡
       - 🇸🇬 新加坡8 93Mbps 369ms 奈飞自制剧
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
-      - 🇨🇳 中国台湾15 14Mbps 631ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
       - 🇯🇵 日本11 39Mbps 335ms 奈飞日本
       - 🇺🇸 美国
       - 🇨🇳 台湾
       - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
       - 🇨🇦 加拿大_2839
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
-      - 🇭🇰 HK-4
       - 🇸🇬 新加坡|小白+
       - 🇯🇵 日本|电信混淆++
-      - 读物云
-      - 🇺🇸 美国 2
-      - 🇸🇬 新加坡15 48Mbps 799ms 奈飞自制剧
-      - 🇺🇸 美国2|TG@mftizi
-      - 🇯🇵 日本1|https://t.me/mftizi
       - CA 2
       - IN
-      - 🇸🇬 [vip1][V2ray]新加坡 ①
       - 🇯🇵 [vip1][V2ray]日本  ⑧
-      - 🇯🇵 [vip1][V2ray]日本  ⑪
       - 🇯🇵 [vip1][V2ray]日本 ⑦
-      - 🇯🇵 [vip1][V2ray]日本 ⑩
-      - 🇯🇵 [vip1][V2ray]日本⑤
-      - 🇭🇰 [vip1][V2ray]香港 ②-解锁Netflix
-      - 🇭🇰 [vip2][V2ray]北京bgp中转-香港③︱解鎖NETFLIX
-      - 🇸🇬 [vip2][V2ray]廣移中转-新加坡⑧ | 解鎖Netflix
-      - 🇯🇵 [vip2][V2ray]廣移中转-日本⑨ | 解鎖Netflix
       - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
       - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ④ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 HK01|香港|x1.0
-      - 🇭🇰 HK02|香港|x1.0
-      - 🇭🇰 HK03|香港|x1.0
-      - 🇭🇰 HK04|香港|x1.0
-      - 🇭🇰 HK05|香港|x1.0
-      - 🇨🇳 TW01|台湾|x1.0
-      - 🇯🇵 JP01|日本|x1.0
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇺🇸 US03|美国|x1.0
-      - 🇺🇸 US04|美国|x1.0
-      - 🇷🇴 RO01|罗马尼亚|x1.0
-      - 🇨🇦 CA01|加拿大|x1.0
-      - 🇸🇬 SG01|新加坡|x2.0
-      - 🇰🇷 KR01|韩国|x1.0
-      - 🇬🇧 UK01|英国|x1.0
-      - 🇳🇱 NL01|荷兰|x1.0
-      - 🇮🇩 IN01|印尼|x1.0
       - 🇨🇳 台湾 (30元一年 全球160+节点 http://v2ray.byethost12.com )
-      - 🇺🇸 美国-弗吉尼亚-阿什本-ss-45.43.19.82:45329
       - 🇨🇳 中国-台湾-台北-ss-2.58.241.46:34815
       - 🇨🇳 TW_47553
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) (17)
       - 🇭🇰 香港 6
       - 🇨🇳 台湾  1
-      - 🇯🇵 日本 5
       - 🇺🇸 美国  2
       - 🇺🇸 美国  3
       - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_4995
       - 🇭🇰 bob16vip.com-V2ray-香港1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_3
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_1
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_4
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_8
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_21
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_52
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_38
+      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_41
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_131
+      - 🇨🇳 TW_42304
+      - 🇨🇳 TW_48089
+      - 🇨🇳 TW_46726
+      - 🇨🇳 TW_49514
+      - 🇨🇳 TW_50695
+      - 🇨🇳 TW_38742
+      - 🇨🇳 TW_44745
+      - 🇨🇳 TW_39720
+      - 🇨🇳 TW_42166
+      - 🇭🇰 G12 香港
+      - 🇭🇰 G21 香港
+      - 🇸🇬 G11 新加坡
+      - 🇨🇳 G21 台湾
+      - 🇯🇵 G21 日本
+      - 🇯🇵 G22 日本
+      - 🇪🇺 欧洲
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇯🇵 日本 2
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港 2
+      - 🇨🇳 台湾 3
+      - 🇨🇳 台湾 4
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君)
+      - CYL-科技
+      - CYL-科技 2
+      - 🇨🇳 台湾 5
+      - 🇨🇳 台湾 6
+      - 🇨🇳 TW_41738
+      - 🇭🇰 香港 4
+      - 🇨🇳 台湾  2
+      - 🇳🇱 cfmem.com_🇳🇱_NL_荷兰_2
+      - 🇭🇰 cfmem.com_🇭🇰_HK_香港_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_53
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_128
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_143
+      - 🇨🇳 TW_49202
+      - 🇨🇳 TW_49468
+      - 🇨🇳 TW_43893
+      - 🇨🇳 TW_49126
+      - 🇨🇳 TW_50768
+      - 🇨🇳 TW_49396
+      - 🇨🇳 TW_47027
+      - 🇨🇳 TW_45746
+      - 🇨🇳 TW_32558
+      - 🇨🇳 TW_38742 2
+      - 🇨🇳 TW_41738 2
+      - 🇺🇸 G11 美国
+      - 🇨🇳 台湾 7
+      - 🇨🇳 台湾 8
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 2
+      - 🇺🇸 这速度又不怎么样🇺🇸US |27.90Mb
+      - CYL-科技 3
+      - CYL-科技 4
+      - CYL-科技 5
+      - CYL-科技 6
+      - CYL-科技 7
+      - CYL-科技 8
+      - CYL-科技 9
+      - CYL-科技 10
+      - CYL-科技 11
+      - CYL-科技 12
+      - CYL-科技 13
+      - CYL-科技 14
+      - CYL-科技 15
+      - CYL-科技 16
+      - CYL-科技 17
+      - CYL-科技 18
+      - CYL-科技 19
+      - CYL-科技 20
+      - CYL-科技 21
+      - CYL-科技 22
+      - CYL-科技 23
+      - CYL-科技 24
+      - CYL-科技 25
+      - CYL-科技 26
+      - CYL-科技 27
+      - CYL-科技 28
+      - CYL-科技 29
+      - CYL-科技 30
+      - CYL-科技 31
+      - CYL-科技 32
+      - CYL-科技 33
+      - CYL-科技 34
+      - CYL-科技 35
+      - CYL-科技 36
+      - CYL-科技 37
+      - CYL-科技 38
+      - CYL-科技 39
+      - CYL-科技 40
+      - CYL-科技 41
+      - CYL-科技 42
+      - CYL-科技 43
+      - CYL-科技 44
+      - CYL-科技 45
+      - CYL-科技 46
+      - CYL-科技 47
+      - CYL-科技 48
+      - CYL-科技 49
+      - CYL-科技 50
+      - CYL-科技 51
+      - CYL-科技 52
+      - CYL-科技 53
+      - CYL-科技 54
+      - CYL-科技 55
+      - CYL-科技 56
+      - CYL-科技 57
+      - CYL-科技 58
+      - CYL-科技 59
+      - CYL-科技 60
+      - CYL-科技 61
+      - CYL-科技 62
+      - CYL-科技 63
+      - CYL-科技 64
+      - CYL-科技 65
+      - CYL-科技 66
+      - CYL-科技 67
+      - CYL-科技 68
+      - CYL-科技 69
+      - CYL-科技 70
+      - CYL-科技 71
+      - CYL-科技 72
+      - CYL-科技 73
+      - CYL-科技 74
+      - CYL-科技 75
+      - CYL-科技 76
+      - CYL-科技 77
+      - CYL-科技 78
+      - CYL-科技 79
+      - CYL-科技 80
+      - CYL-科技 81
+      - CYL-科技 82
+      - CYL-科技 83
+      - CYL-科技 84
+      - CYL-科技 85
+      - CYL-科技 86
+      - CYL-科技 87
+      - CYL-科技 88
+      - CYL-科技 89
+      - CYL-科技 90
+      - CYL-科技 91
+      - CYL-科技 92
+      - CYL-科技 93
+      - CYL-科技 94
+      - CYL-科技 95
+      - CYL-科技 96
+      - CYL-科技 97
+      - CYL-科技 98
+      - CYL-科技 99
+      - CYL-科技 100
+      - CYL-科技 101
+      - CYL-科技 102
+      - CYL-科技 103
+      - CYL-科技 104
+      - CYL-科技 105
+      - opt24.boom.party:34000
+      - nn9.boom.party:48000
+      - nkd.boom.party:23000
+      - CA_2791
+      - CA_2787
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_1
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_9
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_13
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_17
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_20
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_22
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_23
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_27
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_28
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_29
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_34
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_39
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_43
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_52
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_55
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_56
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_58
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_62
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_66
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_70
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_71
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_77
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_78
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_79
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_89
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_90
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_91
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_92
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_94
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_95
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_111
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_120
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_121
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_123
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_124
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_127
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_128
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_130
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_133
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_147
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_148
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_154
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_156
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_159
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_163
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_168
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_172
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_174
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_185
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_6
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_7
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_9
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_71
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_83
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_200
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_202
+      - CYL-科技 106
+      - CYL-科技 107
+      - CYL-科技 108
+      - CYL-科技 109
+      - CYL-科技 110
+      - CYL-科技 111
+      - CYL-科技 112
+      - 这速度又不怎么样🇨🇦CA |45.88Mb
+      - 这速度又不怎么样🇨🇦CA |12.45Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
