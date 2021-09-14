@@ -5,1397 +5,685 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO", server: 7.ssrj.xyz, port: 65107, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑥ DMIT-NETFLIX|HULU|HBO", server: 8.ssrj.xyz, port: 65108, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 新加坡2 122Mbps 446ms 奈飞新加坡, server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ssrgr-hk18, ws-headers: {Host: none}}
-  - {name: 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港, server: 162.14.11.142, port: 31078, type: ssr, cipher: rc4-md5, password: Yw0SCS, protocol: origin, obfs: http_simple, protocolparam: t.me/vpnhat, obfsparam: download.windowsupdate.com}
   - {name: 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧, server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ssrgr-jp3, ws-headers: {Host: none}}
   - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_69, server: 84.17.41.71, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇯🇵 日本|电信混淆++, server: cm.syhwdz.top, port: 40606, type: vmess, uuid: 5970926b-4765-3045-ab0f-099206e62032, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cdnxy, ws-headers: {Host: a.189.cn}}
-  - {name: "🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口", server: 12.ssrj.xyz, port: 65112, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾  1, server: tw2.direct.starlink.st, port: 65000, type: vmess, uuid: 8ee1ee4e-b65a-4238-ac88-d1429c018e58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87, server: tw1.direct.starlink.st, port: 65000, type: vmess, uuid: 8ee1ee4e-b65a-4238-ac88-d1429c018e58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: CYL-科技, server: 212.102.46.56, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇺🇸 US-1, server: 34.fastcloud.buzz, port: 18205, type: vmess, uuid: 48954094-1fd4-35fb-be72-e16f4832f7d6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇺🇸 US-Seattle, server: 84.17.41.83, port: 35905, type: ss, cipher: aes-256-gcm, password: tDKgKtnZts93mFqvauQBrdFN}
-  - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_25, server: 212.102.44.86, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_17, server: 66.115.147.92, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_58, server: 212.102.44.86, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: 🇺🇸 US_03+@WangCai_1, server: 192.111.134.78, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇺🇸 US_04+@WangCai_1, server: 192.111.134.78, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇺🇸 US_11+@WangCai_1, server: 192.111.134.78, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇺🇸 US_16+@WangCai_1, server: 192.111.134.78, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: 🇺🇸 US_18+@WangCai_1, server: 192.111.134.78, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇺🇸 US_23+@WangCai_1, server: 192.111.134.78, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
-  - {name: 🇺🇸 US_24+@WangCai_1, server: 192.111.134.78, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
-  - {name: 🇺🇸 US_25+@WangCai_1, server: 192.111.134.78, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇺🇸 US_30+@WangCai_1, server: 192.111.134.78, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: 🇺🇸 US_39+@WangCai_1, server: 192.111.134.78, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: 🇺🇸 US_40+@WangCai_1, server: 192.111.134.78, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
-  - {name: 🇺🇸 US_42+@WangCai_1, server: 192.111.134.78, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
-  - {name: 🇺🇸 US_44+@WangCai_1, server: 192.111.134.78, port: 44945, type: ss, cipher: aes-256-gcm, password: F5bKkb9ggkLx4JbQrbLn7LjZ}
-  - {name: 🇺🇸 US_45+@WangCai_1, server: 192.111.134.78, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: 🇺🇸 US_47+@WangCai_1, server: 192.111.134.78, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: 🇺🇸 US_48+@WangCai_1, server: 192.111.134.78, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
-  - {name: 🇺🇸 US_49+@WangCai_1, server: 192.111.134.78, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
-  - {name: 🇺🇸 US_50+@WangCai_1, server: 192.111.134.78, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇺🇸 US_51+@WangCai_1, server: 192.111.134.78, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
-  - {name: 🇺🇸 US_54+@WangCai_1, server: 192.111.134.78, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
-  - {name: 🇺🇸 US_59+@WangCai_1, server: 192.111.134.78, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: 🇺🇸 US_61+@WangCai_1, server: 192.111.134.78, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
-  - {name: 🇺🇸 US_62+@WangCai_1, server: 192.111.134.78, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇺🇸 US_72+@WangCai_1, server: 192.111.134.78, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
-  - {name: CA_06+@WangCai_1, server: 66.115.147.92, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
-  - {name: CA_12+@WangCai_1, server: 66.115.147.92, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
-  - {name: CA_13+@WangCai_1, server: 66.115.147.92, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: CA_21+@WangCai_1, server: 66.115.147.92, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: CA_28+@WangCai_1, server: 66.115.147.92, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: CA_48+@WangCai_1, server: 66.115.147.92, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
-  - {name: CA_51+@WangCai_1, server: 66.115.147.92, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
-  - {name: CA_55+@WangCai_1, server: 66.115.147.92, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
-  - {name: CA_02+@WangCai_1, server: 66.115.147.77, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
+  - {name: 🇸🇬 SG_1, server: www.ligonwen.cf, port: 443, type: trojan, password: 7836137d-2db0-4809-9b57-ed14cf2ed4ce, sni: www.ligonwen.cf, skip-cert-verify: false}
+  - {name: CA_20+@WangCai_1, server: 66.115.147.92, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: CA_24+@WangCai_1, server: 66.115.147.92, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
+  - {name: CA_47+@WangCai_1, server: 66.115.147.92, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: CA_49+@WangCai_1, server: 66.115.147.92, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
+  - {name: CA_68+@WangCai_1, server: 66.115.147.92, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
   - {name: CA_11+@WangCai_1, server: 66.115.147.77, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: CA_16+@WangCai_1, server: 66.115.147.77, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: CA_21+@WangCai_1 2, server: 66.115.147.77, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: CA_23+@WangCai_1, server: 66.115.147.77, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
-  - {name: CA_24+@WangCai_1, server: 66.115.147.77, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
-  - {name: CA_26+@WangCai_1, server: 66.115.147.77, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: CA_27+@WangCai_1, server: 66.115.147.77, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: CA_30+@WangCai_1, server: 66.115.147.77, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: CA_31+@WangCai_1, server: 66.115.147.77, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: CA_32+@WangCai_1, server: 66.115.147.77, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
-  - {name: CA_33+@WangCai_1, server: 66.115.147.77, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: CA_20+@WangCai_1 2, server: 66.115.147.77, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
   - {name: CA_39+@WangCai_1, server: 66.115.147.77, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: CA_47+@WangCai_1, server: 66.115.147.77, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: CA_50+@WangCai_1, server: 66.115.147.77, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: CA_55+@WangCai_1 2, server: 66.115.147.77, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
-  - {name: CA_58+@WangCai_1, server: 66.115.147.77, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: CA_59+@WangCai_1, server: 66.115.147.77, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: CA_67+@WangCai_1, server: 66.115.147.77, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
-  - {name: CA_69+@WangCai_1, server: 66.115.147.77, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: CA_73+@WangCai_1, server: 66.115.147.77, port: 50768, type: ss, cipher: aes-256-gcm, password: MgWc3J8tAHsZrVqg4BaBHmGs}
-  - {name: CA_01+@WangCai_1, server: 198.8.92.67, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: CA_04+@WangCai_1, server: 198.8.92.67, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: CA_07+@WangCai_1, server: 198.8.92.67, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: CA_40+@WangCai_1, server: 66.115.147.77, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: CA_41+@WangCai_1, server: 66.115.147.77, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: CA_57+@WangCai_1, server: 66.115.147.77, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
   - {name: CA_11+@WangCai_1 2, server: 198.8.92.67, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: CA_14+@WangCai_1, server: 198.8.92.67, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
-  - {name: CA_16+@WangCai_1 2, server: 198.8.92.67, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: CA_17+@WangCai_1, server: 198.8.92.67, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
-  - {name: CA_19+@WangCai_1, server: 198.8.92.67, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: CA_20+@WangCai_1, server: 198.8.92.67, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: CA_26+@WangCai_1 2, server: 198.8.92.67, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: CA_30+@WangCai_1 2, server: 198.8.92.67, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: CA_31+@WangCai_1 2, server: 198.8.92.67, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: CA_38+@WangCai_1, server: 198.8.92.67, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: CA_39+@WangCai_1 2, server: 198.8.92.67, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: CA_41+@WangCai_1, server: 198.8.92.67, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
-  - {name: CA_42+@WangCai_1, server: 198.8.92.67, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
-  - {name: CA_46+@WangCai_1, server: 198.8.92.67, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: CA_50+@WangCai_1 2, server: 198.8.92.67, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: CA_56+@WangCai_1, server: 198.8.92.67, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
-  - {name: CA_66+@WangCai_1, server: 198.8.92.67, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: CA_68+@WangCai_1, server: 198.8.92.67, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: CA_70+@WangCai_1, server: 198.8.92.67, port: 50225, type: ss, cipher: aes-256-gcm, password: J2M953QbkCvvzx3vYWdyBQ4K}
-  - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_11604, server: tw1.direct.starlink.st, port: 65000, type: vmess, uuid: 8ee1ee4e-b65a-4238-ac88-d1429c018e58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: CA_33+@WangCai_1, server: 198.8.92.67, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: CA_34+@WangCai_1, server: 198.8.92.67, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
+  - {name: CA_67+@WangCai_1, server: 198.8.92.67, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
+  - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_2, server: 199.58.187.67, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
   - {name: 🇺🇸 cfmem.com_🇺🇸_US_美国_4, server: 173.82.46.67, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: www.37947454.xyz}}
-  - {name: 🇷🇺 俄罗斯, server: v6.ssrsub.one, port: 156, type: vmess, uuid: a88b0aa2-b6d3-487c-bada-5da80c3b928e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v6.ssrsub.one}}
-  - {name: 🇺🇸 US美国 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr, server: 45.43.14.104, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
-  - {name: 🇧🇪 BE比利时 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr, server: 5.253.205.102, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
-  - {name: "🇯🇵 [VIP1] 日本 01 直连 1x", server: jp1.ifl520.xyz, port: 15001, type: trojan, password: c989bd5c-d6b9-3c47-817a-18ed2c8a7a3a, sni: jp1.ifl520.xyz, skip-cert-verify: false}
-  - {name: "🇯🇵 [VIP1] 日本 02 直连 1x", server: jp2.ifl520.xyz, port: 15003, type: trojan, password: c989bd5c-d6b9-3c47-817a-18ed2c8a7a3a, sni: jp2.ifl520.xyz, skip-cert-verify: false}
-  - {name: "🇺🇸 [VIP1] 美国 03 直连 1x", server: am3.ifl520.xyz, port: 18006, type: trojan, password: c989bd5c-d6b9-3c47-817a-18ed2c8a7a3a, sni: am3.ifl520.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 Relay_🇭🇰HK-🇯🇵JP_4950, server: tk.shcn2.tkddns.xyz, port: 22642, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: zxjp-b.tkong.cc}}
-  - {name: 🇷🇺 RU_10793, server: 46.17.45.139, port: 56967, type: vmess, uuid: 5458261b-ec18-4673-9251-fa7859a5cacb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇷🇺 RU_10792, server: 45.140.169.224, port: 52341, type: vmess, uuid: 3f1079d6-998a-4d1b-98be-a7e9d5f30d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 Pool_🇺🇸US_18295, server: 192.74.238.111, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.17379738.xyz}}
   - {name: 🇮🇳 印度IN◆◆01 CDN加速 1x, server: global-transit-01-hn.pucdn.me, port: 60001, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-in-01.pucdn.me}}
-  - {name: 🇮🇳 印度IN◆◆02 CDN加速 1x, server: global-transit-01-hn.pucdn.me, port: 60002, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-in-02.pucdn.me}}
   - {name: 🇸🇬 新加坡◆AWS 01 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 61000, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-sg-01.pucdn.me}}
-  - {name: 🇸🇬 新加坡◆AWS 02 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 61001, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-sg-02.pucdn.me}}
-  - {name: 🇸🇬 新加坡◆AWS 03 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 61002, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-sg-03.pucdn.me}}
   - {name: 🇸🇬 新加坡◆AWS 04 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 61003, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-sg-04.pucdn.me}}
-  - {name: 🇸🇬 新加坡◆AWS 05 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 61004, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-sg-05.pucdn.me}}
   - {name: 🇸🇬 新加坡◆AWS 06 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 61005, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-sg-06.pucdn.me}}
-  - {name: 🇸🇬 新加坡◆AWS 07 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 61006, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-sg-07.pucdn.me}}
-  - {name: 🇸🇬 新加坡◆◆ SG 01 AWS 1x, server: global-transit-01-hk.pucdn.me, port: 31122, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-aws-sg-01.pucdn.me}}
   - {name: 🇸🇬 新加坡◆◆SG 04 AWS 1x, server: global-transit-01-hk.pucdn.me, port: 31125, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-aws-sg-04.pucdn.me}}
-  - {name: 🇯🇵 日本◆AWS 02 Netflix 1x, server: global-transit-01-hk.pucdn.me, port: 40002, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-jp-02.pucdn.me}}
+  - {name: 🇸🇬 新加坡◆◆SG 08 AWS 1x, server: global-transit-01-hk.pucdn.me, port: 31129, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-aws-sg-08.pucdn.me}}
   - {name: 🇯🇵 日本◆AWS 05 Netflix 1x, server: global-transit-01-hk.pucdn.me, port: 40005, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-jp-05.pucdn.me}}
   - {name: 🇯🇵 日本◆AWS 06 Netflix 1x, server: global-transit-01-hk.pucdn.me, port: 40006, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-jp-06.pucdn.me}}
   - {name: 🇯🇵 日本◆AWS 07 Netflix 1x, server: global-transit-01-hk.pucdn.me, port: 40007, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-jp-07.pucdn.me}}
-  - {name: 🇯🇵 日本◆AWS 08 Netflix 1x, server: global-transit-01-hk.pucdn.me, port: 40008, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-jp-08.pucdn.me}}
-  - {name: 🇯🇵 日本◆AWS 09 Netflix 1x, server: global-transit-01-hk.pucdn.me, port: 40009, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-jp-09.pucdn.me}}
   - {name: 🇯🇵 日本◆AWS 10 Netflix 1x, server: global-transit-01-hk.pucdn.me, port: 40010, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-jp-10.pucdn.me}}
   - {name: 🇯🇵 日本◆AWS 12 Netflix 1x, server: global-transit-01-hk.pucdn.me, port: 40012, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-jp-12.pucdn.me}}
-  - {name: 🇨🇳 沪台◆◆HINET 05 Netflix  動畫瘋 1x, server: global-transit-01-hk.pucdn.me, port: 21105, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-tw-05.pucdn.me}}
-  - {name: 🇨🇳 沪台◆◆HINET 06 Netflix  動畫瘋 1x, server: global-transit-01-hk.pucdn.me, port: 21106, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-tw-06.pucdn.me}}
   - {name: 🇨🇳 沪台◆◆HINET 07 Netflix  動畫瘋 1x, server: global-transit-01-hk.pucdn.me, port: 21107, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-tw-07.pucdn.me}}
-  - {name: 🇯🇵 沪日◆◆JP 01 AWS 高速 1x, server: global-transit-01-hk.pucdn.me, port: 32301, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-aws-jp-01.pucdn.me}}
-  - {name: 🇯🇵 沪日◆◆JP 02 AWS  高速 1x, server: global-transit-01-hk.pucdn.me, port: 32302, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-aws-jp-02.pucdn.me}}
-  - {name: 🇰🇷 沪韩◆◆KR 02 AWS 高速 1x, server: global-transit-01-hk.pucdn.me, port: 31102, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-kr-02.pucdn.me}}
   - {name: 🇰🇷 韩国◆AWS 01 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 63001, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-01.pucdn.me}}
-  - {name: 🇰🇷 韩国◆AWS 02 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 63002, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-02.pucdn.me}}
   - {name: 🇰🇷 韩国◆AWS 05 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 63005, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-05.pucdn.me}}
   - {name: 🇰🇷 韩国◆AWS 06 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 63006, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-06.pucdn.me}}
-  - {name: 🇰🇷 韩国◆AWS 07 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 63007, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-07.pucdn.me}}
+  - {name: 🇭🇰 香港◆AWS 03 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 62002, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-hk-03.pucdn.me}}
   - {name: 🇭🇰 香港◆AWS 04 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 62003, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-hk-04.pucdn.me}}
   - {name: 🇭🇰 香港◆AWS 08 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 62007, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-hk-08.pucdn.me}}
   - {name: 🇭🇰 香港◆AWS 10 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 62009, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-hk-10.pucdn.me}}
   - {name: 🇭🇰 香港◆AWS 11 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 62010, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-hk-11.pucdn.me}}
-  - {name: 🇭🇰 香港◆AWS 13 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 62012, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-hk-13.pucdn.me}}
   - {name: 🇭🇰 香港◆◆HK 01 Azure Game 3x, server: global-transit-01-hk.pucdn.me, port: 16001, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-azure-hk-01.pucdn.me}}
-  - {name: 🇭🇰 香港◆◆HK 02 Azure Game 3x, server: global-transit-01-hk.pucdn.me, port: 16002, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-azure-hk-02.pucdn.me}}
   - {name: 🇭🇰 香港◆◆HKT 08 PPCW Netflix 1x, server: global-transit-01-hk.pucdn.me, port: 11115, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-hkt-a-08.pucdn.me}}
-  - {name: 🇺🇸 美国02 | 解锁流媒体, server: cu.newhua99.xyz, port: 22814, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇸🇬 新加坡01 | 解锁流媒体, server: cm.newhua99.xyz, port: 22801, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇸🇬 新加坡02 | 解锁流媒体, server: cm2.newhua99.xyz, port: 22801, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇸🇬 新加坡02 优化 | 解锁流媒体, server: cm2.newhua99.xyz, port: 22922, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇸🇬 新加坡03 | 解锁流媒体, server: cm.newhua99.xyz, port: 22802, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇸🇬 新加坡03 优化 | 解锁流媒体, server: cm.newhua99.xyz, port: 22923, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇸🇬 新加坡04 | 解锁流媒体, server: cm2.newhua99.xyz, port: 22802, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇸🇬 新加坡04 优化 | 解锁流媒体, server: cm2.newhua99.xyz, port: 22924, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇸🇬 新加坡05 | 解锁流媒体, server: cm.newhua99.xyz, port: 22803, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇸🇬 新加坡06 | 解锁流媒体, server: cm2.newhua99.xyz, port: 22803, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇸🇬 新加坡06 优化 | 解锁流媒体, server: cm2.newhua99.xyz, port: 22926, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇭🇰 香港01 | 解锁流媒体, server: cm.newhua99.xyz, port: 22804, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇭🇰 香港02 | 解锁流媒体, server: cm2.newhua99.xyz, port: 22804, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇭🇰 香港03 | 解锁流媒体, server: cm.newhua99.xyz, port: 22805, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇭🇰 香港04 | 解锁流媒体, server: cm2.newhua99.xyz, port: 22805, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇯🇵 日本01 | 解锁流媒体, server: gkdct.gkd.world, port: 22806, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇯🇵 日本01 优化 | 解锁流媒体, server: cm.newhua99.xyz, port: 22926, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇯🇵 日本02 | 解锁流媒体, server: cu.newhua99.xyz, port: 22806, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇯🇵 日本02 优化 | 解锁流媒体, server: cu.newhua99.xyz, port: 22926, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇰🇷 韩国01, server: cm.newhua99.xyz, port: 22808, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇰🇷 韩国01 优化, server: cm.newhua99.xyz, port: 22928, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇰🇷 韩国02, server: cu.newhua99.xyz, port: 22808, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇰🇷 韩国02 优化, server: cu.newhua99.xyz, port: 22928, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇩🇪 德国01 优化, server: cm.newhua99.xyz, port: 22929, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇩🇪 德国02 优化, server: cu.newhua99.xyz, port: 22929, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇭🇰 香港07 | 解锁流媒体, server: cm.newhua99.xyz, port: 22811, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇭🇰 香港08 | 解锁流媒体, server: cm2.newhua99.xyz, port: 22811, type: ss, cipher: aes-128-gcm, password: 90f58bc8-d9ad-4d80-b28b-8b95dbdc194c}
-  - {name: 🇭🇰 香港百M宽带百嫖, server: 156.251.179.80, port: 80, type: vmess, uuid: dd86ceab-da37-4d72-851a-379022029011, alterId: 16, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 156.251.179.80}}
-  - {name: 🇭🇰 az香港测试机白嫖地saiii.cn, server: 13.70.63.72, port: 80, type: vmess, uuid: dd86ceab-da37-4d72-851a-379022029011, alterId: 19, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.70.63.72}}
-  - {name: 🇮🇳 az印度测试机白嫖地saiii.cn, server: 52.140.118.171, port: 80, type: vmess, uuid: dd86ceab-da37-4d72-851a-379022029011, alterId: 20, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 52.140.118.171}}
-  - {name: 🇯🇵 az日本测试机白嫖地saiii.cn, server: 20.89.96.113, port: 80, type: vmess, uuid: dd86ceab-da37-4d72-851a-379022029011, alterId: 22, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 20.89.96.113}}
+  - {name: 🇭🇰 香港2 华南移动|V3, server: rxzgzq.moox.icu, port: 34007, type: vmess, uuid: e94d3ed5-d94c-49ea-9a6c-830b247a1656, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hkbgp.xlanfly.xyz}}
+  - {name: 🇭🇰 香港1 广州移动|V1, server: icajm.moox.icu, port: 40011, type: vmess, uuid: e94d3ed5-d94c-49ea-9a6c-830b247a1656, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hkbgp.xlanfly.xyz}}
+  - {name: 🇨🇳 台湾5 原生|广州移动|V2, server: icajm.moox.icu, port: 34005, type: vmess, uuid: e94d3ed5-d94c-49ea-9a6c-830b247a1656, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: icajm.moox.icu}}
+  - {name: 🇭🇰 香港6 原生|华南移动|V2, server: rxzgzq.moox.icu, port: 34000, type: vmess, uuid: e94d3ed5-d94c-49ea-9a6c-830b247a1656, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: rxzgzq.moox.icu}}
+  - {name: 🇨🇳 TG@NGK668🇨🇳 CN_2678, server: 103.85.20.81, port: 12345, type: vmess, uuid: 41ee6c25-cc1c-36c0-a7b9-a094ad4c4057, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 TG@NGK668🇨🇳 CN_2681, server: 103.85.20.176, port: 12345, type: vmess, uuid: 41ee6c25-cc1c-36c0-a7b9-a094ad4c4057, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 TG@NGK668🇺🇸 Relay_🇨🇳CN-🇺🇸US_2691, server: us1.np.qjnodeip.xyz, port: 10018, type: vmess, uuid: fcd5281b-fb21-48fc-bcbf-31cd4c441c86, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6057, server: hk2.free80ml.tk, port: 80, type: vmess, uuid: 35fa01b6-aff0-3350-81d3-9185e6be42d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk2.free80ml.tk}}
+  - {name: 🇭🇰 TG@NGK668🇭🇰 HK_6059, server: 18.167.94.242, port: 80, type: vmess, uuid: cec85927-8a7a-4866-df8c-27ed589de0ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: 18.167.94.242}}
+  - {name: 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6061, server: hk1.v2.qjnodeip.xyz, port: 23333, type: vmess, uuid: AF48C4B4-4FAD-5F53-0DF4-098B58190767, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6065, server: hk1.v2.qjnodeip.xyz, port: 23333, type: vmess, uuid: BE34E48F-1FEB-C753-DCF4-E91A02CBC597, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6067, server: hk1.v2.qjnodeip.xyz, port: 23333, type: vmess, uuid: 727DC5B6-B30A-0366-79BA-7324E876EF37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6071, server: hk2.np.qjnodeip.xyz, port: 80, type: vmess, uuid: 35ec2934-cbb4-4236-ab0d-598adf447c9d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: hk2.np.qjnodeip.xyz}}
+  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: AF48C4B4-4FAD-5F53-0DF4-098B58190767, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300, server: tw1.v2.qjnodeip.xyz, port: 10086, type: vmess, uuid: 727DC5B6-B30A-0366-79BA-7324E876EF37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: DA47552E-92CD-3E57-0868-2A267E7FDE72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: 2525CC72-5E41-F11E-7CF3-CB434A4F8B4F, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304, server: tw1.v2.qjnodeip.xyz, port: 10086, type: vmess, uuid: 8E5594E5-3E20-4269-58C9-0966AF14539E, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305, server: tw1.v2.qjnodeip.xyz, port: 10086, type: vmess, uuid: DA47552E-92CD-3E57-0868-2A267E7FDE72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13306, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: 727DC5B6-B30A-0366-79BA-7324E876EF37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: C1F54227-5442-A7DD-D8CC-F77BECC09467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_2665, server: rxzgzq.moox.icu, port: 34000, type: vmess, uuid: e94d3ed5-d94c-49ea-9a6c-830b247a1656, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: rxzgzq.moox.icu}}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2675, server: rxzgzq.moox.icu, port: 40025, type: vmess, uuid: e94d3ed5-d94c-49ea-9a6c-830b247a1656, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: rxzgzq.moox.icu}}
+  - {name: ‌CA_46354, server: 198.8.92.67, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
+  - {name: ‌CA_49126, server: 198.8.92.67, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: ‌CA_50695, server: 198.8.92.67, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: "免流直连->AWS-JPN1[倍率:1.0]", server: jpn1.n-b.wiki, port: 80, type: vmess, uuid: 0722c15d-bcf0-4df8-8101-fa2ab01f6fa6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb, server: els.jklist.ga, port: 443, type: vmess, uuid: 25290405-8ef7-4561-acc0-0d234fe8d9da, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: els.jklist.ga}}
+  - {name: 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub, server: v6.ssrsub.one, port: 156, type: vmess, uuid: 2a37bd3a-f8c8-45e5-b05c-167f04159396, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v6.ssrsub.one}}
+  - {name: 🇨🇳 台湾 GCP 01https://dd.zhutou.cyou, server: gy.dxmax.top, port: 11112, type: vmess, uuid: 11be24d6-3b35-4bcf-9ab6-92ce1e63b2e8, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy.dxmax.top}}
+  - {name: CYL-科技 2, server: 23.224.149.254, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: www.88904794.xyz}}
+  - {name: CYL-科技 3, server: 46.182.107.165, port: 443, type: vmess, uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: www.07890885.xyz}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑥ DMIT-NETFLIX|HULU|HBO
       - 🇸🇬 新加坡2 122Mbps 446ms 奈飞新加坡
-      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
-      - 🇯🇵 日本|电信混淆++
-      - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
-      - 🇨🇳 台湾  1
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
       - CYL-科技
+      - 🇺🇸 US-1
       - 🇺🇸 US-Seattle
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_25
-      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_17
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_58
-      - 🇺🇸 US_03+@WangCai_1
-      - 🇺🇸 US_04+@WangCai_1
-      - 🇺🇸 US_11+@WangCai_1
-      - 🇺🇸 US_16+@WangCai_1
-      - 🇺🇸 US_18+@WangCai_1
-      - 🇺🇸 US_23+@WangCai_1
-      - 🇺🇸 US_24+@WangCai_1
-      - 🇺🇸 US_25+@WangCai_1
-      - 🇺🇸 US_30+@WangCai_1
-      - 🇺🇸 US_39+@WangCai_1
-      - 🇺🇸 US_40+@WangCai_1
-      - 🇺🇸 US_42+@WangCai_1
-      - 🇺🇸 US_44+@WangCai_1
-      - 🇺🇸 US_45+@WangCai_1
-      - 🇺🇸 US_47+@WangCai_1
-      - 🇺🇸 US_48+@WangCai_1
-      - 🇺🇸 US_49+@WangCai_1
-      - 🇺🇸 US_50+@WangCai_1
-      - 🇺🇸 US_51+@WangCai_1
-      - 🇺🇸 US_54+@WangCai_1
-      - 🇺🇸 US_59+@WangCai_1
-      - 🇺🇸 US_61+@WangCai_1
-      - 🇺🇸 US_62+@WangCai_1
-      - 🇺🇸 US_72+@WangCai_1
-      - CA_06+@WangCai_1
-      - CA_12+@WangCai_1
-      - CA_13+@WangCai_1
-      - CA_21+@WangCai_1
-      - CA_28+@WangCai_1
-      - CA_48+@WangCai_1
-      - CA_51+@WangCai_1
-      - CA_55+@WangCai_1
-      - CA_02+@WangCai_1
-      - CA_11+@WangCai_1
-      - CA_16+@WangCai_1
-      - CA_21+@WangCai_1 2
-      - CA_23+@WangCai_1
-      - CA_24+@WangCai_1
-      - CA_26+@WangCai_1
-      - CA_27+@WangCai_1
-      - CA_30+@WangCai_1
-      - CA_31+@WangCai_1
-      - CA_32+@WangCai_1
-      - CA_33+@WangCai_1
-      - CA_39+@WangCai_1
-      - CA_47+@WangCai_1
-      - CA_50+@WangCai_1
-      - CA_55+@WangCai_1 2
-      - CA_58+@WangCai_1
-      - CA_59+@WangCai_1
-      - CA_67+@WangCai_1
-      - CA_69+@WangCai_1
-      - CA_73+@WangCai_1
-      - CA_01+@WangCai_1
-      - CA_04+@WangCai_1
-      - CA_07+@WangCai_1
-      - CA_11+@WangCai_1 2
-      - CA_14+@WangCai_1
-      - CA_16+@WangCai_1 2
-      - CA_17+@WangCai_1
-      - CA_19+@WangCai_1
+      - 🇸🇬 SG_1
       - CA_20+@WangCai_1
-      - CA_26+@WangCai_1 2
-      - CA_30+@WangCai_1 2
-      - CA_31+@WangCai_1 2
-      - CA_38+@WangCai_1
-      - CA_39+@WangCai_1 2
-      - CA_41+@WangCai_1
-      - CA_42+@WangCai_1
-      - CA_46+@WangCai_1
-      - CA_50+@WangCai_1 2
-      - CA_56+@WangCai_1
-      - CA_66+@WangCai_1
+      - CA_24+@WangCai_1
+      - CA_47+@WangCai_1
+      - CA_49+@WangCai_1
       - CA_68+@WangCai_1
-      - CA_70+@WangCai_1
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_11604
+      - CA_11+@WangCai_1
+      - CA_20+@WangCai_1 2
+      - CA_39+@WangCai_1
+      - CA_40+@WangCai_1
+      - CA_41+@WangCai_1
+      - CA_57+@WangCai_1
+      - CA_11+@WangCai_1 2
+      - CA_33+@WangCai_1
+      - CA_34+@WangCai_1
+      - CA_67+@WangCai_1
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_2
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_4
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 US美国 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇧🇪 BE比利时 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇯🇵 [VIP1] 日本 01 直连 1x
-      - 🇯🇵 [VIP1] 日本 02 直连 1x
-      - 🇺🇸 [VIP1] 美国 03 直连 1x
-      - 🇭🇰 Relay_🇭🇰HK-🇯🇵JP_4950
-      - 🇷🇺 RU_10793
+      - 🇷🇺 RU_10792
+      - 🇺🇸 Pool_🇺🇸US_18295
       - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇮🇳 印度IN◆◆02 CDN加速 1x
       - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 02 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 03 Netflix 1x
       - 🇸🇬 新加坡◆AWS 04 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 05 Netflix 1x
       - 🇸🇬 新加坡◆AWS 06 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 07 Netflix 1x
-      - 🇸🇬 新加坡◆◆ SG 01 AWS 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇯🇵 日本◆AWS 02 Netflix 1x
+      - 🇸🇬 新加坡◆◆SG 08 AWS 1x
       - 🇯🇵 日本◆AWS 05 Netflix 1x
       - 🇯🇵 日本◆AWS 06 Netflix 1x
       - 🇯🇵 日本◆AWS 07 Netflix 1x
-      - 🇯🇵 日本◆AWS 08 Netflix 1x
-      - 🇯🇵 日本◆AWS 09 Netflix 1x
       - 🇯🇵 日本◆AWS 10 Netflix 1x
       - 🇯🇵 日本◆AWS 12 Netflix 1x
-      - 🇨🇳 沪台◆◆HINET 05 Netflix  動畫瘋 1x
-      - 🇨🇳 沪台◆◆HINET 06 Netflix  動畫瘋 1x
       - 🇨🇳 沪台◆◆HINET 07 Netflix  動畫瘋 1x
-      - 🇯🇵 沪日◆◆JP 01 AWS 高速 1x
-      - 🇯🇵 沪日◆◆JP 02 AWS  高速 1x
-      - 🇰🇷 沪韩◆◆KR 02 AWS 高速 1x
       - 🇰🇷 韩国◆AWS 01 Netflix 1x
-      - 🇰🇷 韩国◆AWS 02 Netflix 1x
       - 🇰🇷 韩国◆AWS 05 Netflix 1x
       - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇰🇷 韩国◆AWS 07 Netflix 1x
+      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 04 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆AWS 11 Netflix 1x
-      - 🇭🇰 香港◆AWS 13 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇭🇰 香港◆◆HK 02 Azure Game 3x
       - 🇭🇰 香港◆◆HKT 08 PPCW Netflix 1x
-      - 🇺🇸 美国02 | 解锁流媒体
-      - 🇸🇬 新加坡01 | 解锁流媒体
-      - 🇸🇬 新加坡02 | 解锁流媒体
-      - 🇸🇬 新加坡02 优化 | 解锁流媒体
-      - 🇸🇬 新加坡03 | 解锁流媒体
-      - 🇸🇬 新加坡03 优化 | 解锁流媒体
-      - 🇸🇬 新加坡04 | 解锁流媒体
-      - 🇸🇬 新加坡04 优化 | 解锁流媒体
-      - 🇸🇬 新加坡05 | 解锁流媒体
-      - 🇸🇬 新加坡06 | 解锁流媒体
-      - 🇸🇬 新加坡06 优化 | 解锁流媒体
-      - 🇭🇰 香港01 | 解锁流媒体
-      - 🇭🇰 香港02 | 解锁流媒体
-      - 🇭🇰 香港03 | 解锁流媒体
-      - 🇭🇰 香港04 | 解锁流媒体
-      - 🇯🇵 日本01 | 解锁流媒体
-      - 🇯🇵 日本01 优化 | 解锁流媒体
-      - 🇯🇵 日本02 | 解锁流媒体
-      - 🇯🇵 日本02 优化 | 解锁流媒体
-      - 🇰🇷 韩国01
-      - 🇰🇷 韩国01 优化
-      - 🇰🇷 韩国02
-      - 🇰🇷 韩国02 优化
-      - 🇩🇪 德国01 优化
-      - 🇩🇪 德国02 优化
-      - 🇭🇰 香港07 | 解锁流媒体
-      - 🇭🇰 香港08 | 解锁流媒体
-      - 🇭🇰 香港百M宽带百嫖
-      - 🇭🇰 az香港测试机白嫖地saiii.cn
-      - 🇮🇳 az印度测试机白嫖地saiii.cn
-      - 🇯🇵 az日本测试机白嫖地saiii.cn
+      - 🇭🇰 香港2 华南移动|V3
+      - 🇭🇰 香港1 广州移动|V1
+      - 🇨🇳 台湾5 原生|广州移动|V2
+      - 🇭🇰 香港6 原生|华南移动|V2
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2678
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2681
+      - 🇺🇸 TG@NGK668🇺🇸 Relay_🇨🇳CN-🇺🇸US_2691
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6057
+      - 🇭🇰 TG@NGK668🇭🇰 HK_6059
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6061
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6065
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6067
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6071
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13306
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_2665
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2675
+      - ‌CA_46354
+      - ‌CA_49126
+      - ‌CA_50695
+      - 免流直连->AWS-JPN1[倍率:1.0]
+      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
+      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
+      - 🇨🇳 台湾 GCP 01https://dd.zhutou.cyou
+      - CYL-科技 2
+      - CYL-科技 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑥ DMIT-NETFLIX|HULU|HBO
       - 🇸🇬 新加坡2 122Mbps 446ms 奈飞新加坡
-      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
-      - 🇯🇵 日本|电信混淆++
-      - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
-      - 🇨🇳 台湾  1
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
       - CYL-科技
+      - 🇺🇸 US-1
       - 🇺🇸 US-Seattle
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_25
-      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_17
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_58
-      - 🇺🇸 US_03+@WangCai_1
-      - 🇺🇸 US_04+@WangCai_1
-      - 🇺🇸 US_11+@WangCai_1
-      - 🇺🇸 US_16+@WangCai_1
-      - 🇺🇸 US_18+@WangCai_1
-      - 🇺🇸 US_23+@WangCai_1
-      - 🇺🇸 US_24+@WangCai_1
-      - 🇺🇸 US_25+@WangCai_1
-      - 🇺🇸 US_30+@WangCai_1
-      - 🇺🇸 US_39+@WangCai_1
-      - 🇺🇸 US_40+@WangCai_1
-      - 🇺🇸 US_42+@WangCai_1
-      - 🇺🇸 US_44+@WangCai_1
-      - 🇺🇸 US_45+@WangCai_1
-      - 🇺🇸 US_47+@WangCai_1
-      - 🇺🇸 US_48+@WangCai_1
-      - 🇺🇸 US_49+@WangCai_1
-      - 🇺🇸 US_50+@WangCai_1
-      - 🇺🇸 US_51+@WangCai_1
-      - 🇺🇸 US_54+@WangCai_1
-      - 🇺🇸 US_59+@WangCai_1
-      - 🇺🇸 US_61+@WangCai_1
-      - 🇺🇸 US_62+@WangCai_1
-      - 🇺🇸 US_72+@WangCai_1
-      - CA_06+@WangCai_1
-      - CA_12+@WangCai_1
-      - CA_13+@WangCai_1
-      - CA_21+@WangCai_1
-      - CA_28+@WangCai_1
-      - CA_48+@WangCai_1
-      - CA_51+@WangCai_1
-      - CA_55+@WangCai_1
-      - CA_02+@WangCai_1
-      - CA_11+@WangCai_1
-      - CA_16+@WangCai_1
-      - CA_21+@WangCai_1 2
-      - CA_23+@WangCai_1
-      - CA_24+@WangCai_1
-      - CA_26+@WangCai_1
-      - CA_27+@WangCai_1
-      - CA_30+@WangCai_1
-      - CA_31+@WangCai_1
-      - CA_32+@WangCai_1
-      - CA_33+@WangCai_1
-      - CA_39+@WangCai_1
-      - CA_47+@WangCai_1
-      - CA_50+@WangCai_1
-      - CA_55+@WangCai_1 2
-      - CA_58+@WangCai_1
-      - CA_59+@WangCai_1
-      - CA_67+@WangCai_1
-      - CA_69+@WangCai_1
-      - CA_73+@WangCai_1
-      - CA_01+@WangCai_1
-      - CA_04+@WangCai_1
-      - CA_07+@WangCai_1
-      - CA_11+@WangCai_1 2
-      - CA_14+@WangCai_1
-      - CA_16+@WangCai_1 2
-      - CA_17+@WangCai_1
-      - CA_19+@WangCai_1
+      - 🇸🇬 SG_1
       - CA_20+@WangCai_1
-      - CA_26+@WangCai_1 2
-      - CA_30+@WangCai_1 2
-      - CA_31+@WangCai_1 2
-      - CA_38+@WangCai_1
-      - CA_39+@WangCai_1 2
-      - CA_41+@WangCai_1
-      - CA_42+@WangCai_1
-      - CA_46+@WangCai_1
-      - CA_50+@WangCai_1 2
-      - CA_56+@WangCai_1
-      - CA_66+@WangCai_1
+      - CA_24+@WangCai_1
+      - CA_47+@WangCai_1
+      - CA_49+@WangCai_1
       - CA_68+@WangCai_1
-      - CA_70+@WangCai_1
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_11604
+      - CA_11+@WangCai_1
+      - CA_20+@WangCai_1 2
+      - CA_39+@WangCai_1
+      - CA_40+@WangCai_1
+      - CA_41+@WangCai_1
+      - CA_57+@WangCai_1
+      - CA_11+@WangCai_1 2
+      - CA_33+@WangCai_1
+      - CA_34+@WangCai_1
+      - CA_67+@WangCai_1
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_2
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_4
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 US美国 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇧🇪 BE比利时 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇯🇵 [VIP1] 日本 01 直连 1x
-      - 🇯🇵 [VIP1] 日本 02 直连 1x
-      - 🇺🇸 [VIP1] 美国 03 直连 1x
-      - 🇭🇰 Relay_🇭🇰HK-🇯🇵JP_4950
-      - 🇷🇺 RU_10793
+      - 🇷🇺 RU_10792
+      - 🇺🇸 Pool_🇺🇸US_18295
       - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇮🇳 印度IN◆◆02 CDN加速 1x
       - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 02 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 03 Netflix 1x
       - 🇸🇬 新加坡◆AWS 04 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 05 Netflix 1x
       - 🇸🇬 新加坡◆AWS 06 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 07 Netflix 1x
-      - 🇸🇬 新加坡◆◆ SG 01 AWS 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇯🇵 日本◆AWS 02 Netflix 1x
+      - 🇸🇬 新加坡◆◆SG 08 AWS 1x
       - 🇯🇵 日本◆AWS 05 Netflix 1x
       - 🇯🇵 日本◆AWS 06 Netflix 1x
       - 🇯🇵 日本◆AWS 07 Netflix 1x
-      - 🇯🇵 日本◆AWS 08 Netflix 1x
-      - 🇯🇵 日本◆AWS 09 Netflix 1x
       - 🇯🇵 日本◆AWS 10 Netflix 1x
       - 🇯🇵 日本◆AWS 12 Netflix 1x
-      - 🇨🇳 沪台◆◆HINET 05 Netflix  動畫瘋 1x
-      - 🇨🇳 沪台◆◆HINET 06 Netflix  動畫瘋 1x
       - 🇨🇳 沪台◆◆HINET 07 Netflix  動畫瘋 1x
-      - 🇯🇵 沪日◆◆JP 01 AWS 高速 1x
-      - 🇯🇵 沪日◆◆JP 02 AWS  高速 1x
-      - 🇰🇷 沪韩◆◆KR 02 AWS 高速 1x
       - 🇰🇷 韩国◆AWS 01 Netflix 1x
-      - 🇰🇷 韩国◆AWS 02 Netflix 1x
       - 🇰🇷 韩国◆AWS 05 Netflix 1x
       - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇰🇷 韩国◆AWS 07 Netflix 1x
+      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 04 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆AWS 11 Netflix 1x
-      - 🇭🇰 香港◆AWS 13 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇭🇰 香港◆◆HK 02 Azure Game 3x
       - 🇭🇰 香港◆◆HKT 08 PPCW Netflix 1x
-      - 🇺🇸 美国02 | 解锁流媒体
-      - 🇸🇬 新加坡01 | 解锁流媒体
-      - 🇸🇬 新加坡02 | 解锁流媒体
-      - 🇸🇬 新加坡02 优化 | 解锁流媒体
-      - 🇸🇬 新加坡03 | 解锁流媒体
-      - 🇸🇬 新加坡03 优化 | 解锁流媒体
-      - 🇸🇬 新加坡04 | 解锁流媒体
-      - 🇸🇬 新加坡04 优化 | 解锁流媒体
-      - 🇸🇬 新加坡05 | 解锁流媒体
-      - 🇸🇬 新加坡06 | 解锁流媒体
-      - 🇸🇬 新加坡06 优化 | 解锁流媒体
-      - 🇭🇰 香港01 | 解锁流媒体
-      - 🇭🇰 香港02 | 解锁流媒体
-      - 🇭🇰 香港03 | 解锁流媒体
-      - 🇭🇰 香港04 | 解锁流媒体
-      - 🇯🇵 日本01 | 解锁流媒体
-      - 🇯🇵 日本01 优化 | 解锁流媒体
-      - 🇯🇵 日本02 | 解锁流媒体
-      - 🇯🇵 日本02 优化 | 解锁流媒体
-      - 🇰🇷 韩国01
-      - 🇰🇷 韩国01 优化
-      - 🇰🇷 韩国02
-      - 🇰🇷 韩国02 优化
-      - 🇩🇪 德国01 优化
-      - 🇩🇪 德国02 优化
-      - 🇭🇰 香港07 | 解锁流媒体
-      - 🇭🇰 香港08 | 解锁流媒体
-      - 🇭🇰 香港百M宽带百嫖
-      - 🇭🇰 az香港测试机白嫖地saiii.cn
-      - 🇮🇳 az印度测试机白嫖地saiii.cn
-      - 🇯🇵 az日本测试机白嫖地saiii.cn
+      - 🇭🇰 香港2 华南移动|V3
+      - 🇭🇰 香港1 广州移动|V1
+      - 🇨🇳 台湾5 原生|广州移动|V2
+      - 🇭🇰 香港6 原生|华南移动|V2
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2678
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2681
+      - 🇺🇸 TG@NGK668🇺🇸 Relay_🇨🇳CN-🇺🇸US_2691
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6057
+      - 🇭🇰 TG@NGK668🇭🇰 HK_6059
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6061
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6065
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6067
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6071
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13306
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_2665
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2675
+      - ‌CA_46354
+      - ‌CA_49126
+      - ‌CA_50695
+      - 免流直连->AWS-JPN1[倍率:1.0]
+      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
+      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
+      - 🇨🇳 台湾 GCP 01https://dd.zhutou.cyou
+      - CYL-科技 2
+      - CYL-科技 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑥ DMIT-NETFLIX|HULU|HBO
       - 🇸🇬 新加坡2 122Mbps 446ms 奈飞新加坡
-      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
-      - 🇯🇵 日本|电信混淆++
-      - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
-      - 🇨🇳 台湾  1
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
       - CYL-科技
+      - 🇺🇸 US-1
       - 🇺🇸 US-Seattle
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_25
-      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_17
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_58
-      - 🇺🇸 US_03+@WangCai_1
-      - 🇺🇸 US_04+@WangCai_1
-      - 🇺🇸 US_11+@WangCai_1
-      - 🇺🇸 US_16+@WangCai_1
-      - 🇺🇸 US_18+@WangCai_1
-      - 🇺🇸 US_23+@WangCai_1
-      - 🇺🇸 US_24+@WangCai_1
-      - 🇺🇸 US_25+@WangCai_1
-      - 🇺🇸 US_30+@WangCai_1
-      - 🇺🇸 US_39+@WangCai_1
-      - 🇺🇸 US_40+@WangCai_1
-      - 🇺🇸 US_42+@WangCai_1
-      - 🇺🇸 US_44+@WangCai_1
-      - 🇺🇸 US_45+@WangCai_1
-      - 🇺🇸 US_47+@WangCai_1
-      - 🇺🇸 US_48+@WangCai_1
-      - 🇺🇸 US_49+@WangCai_1
-      - 🇺🇸 US_50+@WangCai_1
-      - 🇺🇸 US_51+@WangCai_1
-      - 🇺🇸 US_54+@WangCai_1
-      - 🇺🇸 US_59+@WangCai_1
-      - 🇺🇸 US_61+@WangCai_1
-      - 🇺🇸 US_62+@WangCai_1
-      - 🇺🇸 US_72+@WangCai_1
-      - CA_06+@WangCai_1
-      - CA_12+@WangCai_1
-      - CA_13+@WangCai_1
-      - CA_21+@WangCai_1
-      - CA_28+@WangCai_1
-      - CA_48+@WangCai_1
-      - CA_51+@WangCai_1
-      - CA_55+@WangCai_1
-      - CA_02+@WangCai_1
-      - CA_11+@WangCai_1
-      - CA_16+@WangCai_1
-      - CA_21+@WangCai_1 2
-      - CA_23+@WangCai_1
-      - CA_24+@WangCai_1
-      - CA_26+@WangCai_1
-      - CA_27+@WangCai_1
-      - CA_30+@WangCai_1
-      - CA_31+@WangCai_1
-      - CA_32+@WangCai_1
-      - CA_33+@WangCai_1
-      - CA_39+@WangCai_1
-      - CA_47+@WangCai_1
-      - CA_50+@WangCai_1
-      - CA_55+@WangCai_1 2
-      - CA_58+@WangCai_1
-      - CA_59+@WangCai_1
-      - CA_67+@WangCai_1
-      - CA_69+@WangCai_1
-      - CA_73+@WangCai_1
-      - CA_01+@WangCai_1
-      - CA_04+@WangCai_1
-      - CA_07+@WangCai_1
-      - CA_11+@WangCai_1 2
-      - CA_14+@WangCai_1
-      - CA_16+@WangCai_1 2
-      - CA_17+@WangCai_1
-      - CA_19+@WangCai_1
+      - 🇸🇬 SG_1
       - CA_20+@WangCai_1
-      - CA_26+@WangCai_1 2
-      - CA_30+@WangCai_1 2
-      - CA_31+@WangCai_1 2
-      - CA_38+@WangCai_1
-      - CA_39+@WangCai_1 2
-      - CA_41+@WangCai_1
-      - CA_42+@WangCai_1
-      - CA_46+@WangCai_1
-      - CA_50+@WangCai_1 2
-      - CA_56+@WangCai_1
-      - CA_66+@WangCai_1
+      - CA_24+@WangCai_1
+      - CA_47+@WangCai_1
+      - CA_49+@WangCai_1
       - CA_68+@WangCai_1
-      - CA_70+@WangCai_1
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_11604
+      - CA_11+@WangCai_1
+      - CA_20+@WangCai_1 2
+      - CA_39+@WangCai_1
+      - CA_40+@WangCai_1
+      - CA_41+@WangCai_1
+      - CA_57+@WangCai_1
+      - CA_11+@WangCai_1 2
+      - CA_33+@WangCai_1
+      - CA_34+@WangCai_1
+      - CA_67+@WangCai_1
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_2
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_4
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 US美国 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇧🇪 BE比利时 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇯🇵 [VIP1] 日本 01 直连 1x
-      - 🇯🇵 [VIP1] 日本 02 直连 1x
-      - 🇺🇸 [VIP1] 美国 03 直连 1x
-      - 🇭🇰 Relay_🇭🇰HK-🇯🇵JP_4950
-      - 🇷🇺 RU_10793
+      - 🇷🇺 RU_10792
+      - 🇺🇸 Pool_🇺🇸US_18295
       - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇮🇳 印度IN◆◆02 CDN加速 1x
       - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 02 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 03 Netflix 1x
       - 🇸🇬 新加坡◆AWS 04 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 05 Netflix 1x
       - 🇸🇬 新加坡◆AWS 06 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 07 Netflix 1x
-      - 🇸🇬 新加坡◆◆ SG 01 AWS 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇯🇵 日本◆AWS 02 Netflix 1x
+      - 🇸🇬 新加坡◆◆SG 08 AWS 1x
       - 🇯🇵 日本◆AWS 05 Netflix 1x
       - 🇯🇵 日本◆AWS 06 Netflix 1x
       - 🇯🇵 日本◆AWS 07 Netflix 1x
-      - 🇯🇵 日本◆AWS 08 Netflix 1x
-      - 🇯🇵 日本◆AWS 09 Netflix 1x
       - 🇯🇵 日本◆AWS 10 Netflix 1x
       - 🇯🇵 日本◆AWS 12 Netflix 1x
-      - 🇨🇳 沪台◆◆HINET 05 Netflix  動畫瘋 1x
-      - 🇨🇳 沪台◆◆HINET 06 Netflix  動畫瘋 1x
       - 🇨🇳 沪台◆◆HINET 07 Netflix  動畫瘋 1x
-      - 🇯🇵 沪日◆◆JP 01 AWS 高速 1x
-      - 🇯🇵 沪日◆◆JP 02 AWS  高速 1x
-      - 🇰🇷 沪韩◆◆KR 02 AWS 高速 1x
       - 🇰🇷 韩国◆AWS 01 Netflix 1x
-      - 🇰🇷 韩国◆AWS 02 Netflix 1x
       - 🇰🇷 韩国◆AWS 05 Netflix 1x
       - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇰🇷 韩国◆AWS 07 Netflix 1x
+      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 04 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆AWS 11 Netflix 1x
-      - 🇭🇰 香港◆AWS 13 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇭🇰 香港◆◆HK 02 Azure Game 3x
       - 🇭🇰 香港◆◆HKT 08 PPCW Netflix 1x
-      - 🇺🇸 美国02 | 解锁流媒体
-      - 🇸🇬 新加坡01 | 解锁流媒体
-      - 🇸🇬 新加坡02 | 解锁流媒体
-      - 🇸🇬 新加坡02 优化 | 解锁流媒体
-      - 🇸🇬 新加坡03 | 解锁流媒体
-      - 🇸🇬 新加坡03 优化 | 解锁流媒体
-      - 🇸🇬 新加坡04 | 解锁流媒体
-      - 🇸🇬 新加坡04 优化 | 解锁流媒体
-      - 🇸🇬 新加坡05 | 解锁流媒体
-      - 🇸🇬 新加坡06 | 解锁流媒体
-      - 🇸🇬 新加坡06 优化 | 解锁流媒体
-      - 🇭🇰 香港01 | 解锁流媒体
-      - 🇭🇰 香港02 | 解锁流媒体
-      - 🇭🇰 香港03 | 解锁流媒体
-      - 🇭🇰 香港04 | 解锁流媒体
-      - 🇯🇵 日本01 | 解锁流媒体
-      - 🇯🇵 日本01 优化 | 解锁流媒体
-      - 🇯🇵 日本02 | 解锁流媒体
-      - 🇯🇵 日本02 优化 | 解锁流媒体
-      - 🇰🇷 韩国01
-      - 🇰🇷 韩国01 优化
-      - 🇰🇷 韩国02
-      - 🇰🇷 韩国02 优化
-      - 🇩🇪 德国01 优化
-      - 🇩🇪 德国02 优化
-      - 🇭🇰 香港07 | 解锁流媒体
-      - 🇭🇰 香港08 | 解锁流媒体
-      - 🇭🇰 香港百M宽带百嫖
-      - 🇭🇰 az香港测试机白嫖地saiii.cn
-      - 🇮🇳 az印度测试机白嫖地saiii.cn
-      - 🇯🇵 az日本测试机白嫖地saiii.cn
+      - 🇭🇰 香港2 华南移动|V3
+      - 🇭🇰 香港1 广州移动|V1
+      - 🇨🇳 台湾5 原生|广州移动|V2
+      - 🇭🇰 香港6 原生|华南移动|V2
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2678
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2681
+      - 🇺🇸 TG@NGK668🇺🇸 Relay_🇨🇳CN-🇺🇸US_2691
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6057
+      - 🇭🇰 TG@NGK668🇭🇰 HK_6059
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6061
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6065
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6067
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6071
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13306
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_2665
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2675
+      - ‌CA_46354
+      - ‌CA_49126
+      - ‌CA_50695
+      - 免流直连->AWS-JPN1[倍率:1.0]
+      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
+      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
+      - 🇨🇳 台湾 GCP 01https://dd.zhutou.cyou
+      - CYL-科技 2
+      - CYL-科技 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑥ DMIT-NETFLIX|HULU|HBO
       - 🇸🇬 新加坡2 122Mbps 446ms 奈飞新加坡
-      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
-      - 🇯🇵 日本|电信混淆++
-      - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
-      - 🇨🇳 台湾  1
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
       - CYL-科技
+      - 🇺🇸 US-1
       - 🇺🇸 US-Seattle
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_25
-      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_17
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_58
-      - 🇺🇸 US_03+@WangCai_1
-      - 🇺🇸 US_04+@WangCai_1
-      - 🇺🇸 US_11+@WangCai_1
-      - 🇺🇸 US_16+@WangCai_1
-      - 🇺🇸 US_18+@WangCai_1
-      - 🇺🇸 US_23+@WangCai_1
-      - 🇺🇸 US_24+@WangCai_1
-      - 🇺🇸 US_25+@WangCai_1
-      - 🇺🇸 US_30+@WangCai_1
-      - 🇺🇸 US_39+@WangCai_1
-      - 🇺🇸 US_40+@WangCai_1
-      - 🇺🇸 US_42+@WangCai_1
-      - 🇺🇸 US_44+@WangCai_1
-      - 🇺🇸 US_45+@WangCai_1
-      - 🇺🇸 US_47+@WangCai_1
-      - 🇺🇸 US_48+@WangCai_1
-      - 🇺🇸 US_49+@WangCai_1
-      - 🇺🇸 US_50+@WangCai_1
-      - 🇺🇸 US_51+@WangCai_1
-      - 🇺🇸 US_54+@WangCai_1
-      - 🇺🇸 US_59+@WangCai_1
-      - 🇺🇸 US_61+@WangCai_1
-      - 🇺🇸 US_62+@WangCai_1
-      - 🇺🇸 US_72+@WangCai_1
-      - CA_06+@WangCai_1
-      - CA_12+@WangCai_1
-      - CA_13+@WangCai_1
-      - CA_21+@WangCai_1
-      - CA_28+@WangCai_1
-      - CA_48+@WangCai_1
-      - CA_51+@WangCai_1
-      - CA_55+@WangCai_1
-      - CA_02+@WangCai_1
-      - CA_11+@WangCai_1
-      - CA_16+@WangCai_1
-      - CA_21+@WangCai_1 2
-      - CA_23+@WangCai_1
-      - CA_24+@WangCai_1
-      - CA_26+@WangCai_1
-      - CA_27+@WangCai_1
-      - CA_30+@WangCai_1
-      - CA_31+@WangCai_1
-      - CA_32+@WangCai_1
-      - CA_33+@WangCai_1
-      - CA_39+@WangCai_1
-      - CA_47+@WangCai_1
-      - CA_50+@WangCai_1
-      - CA_55+@WangCai_1 2
-      - CA_58+@WangCai_1
-      - CA_59+@WangCai_1
-      - CA_67+@WangCai_1
-      - CA_69+@WangCai_1
-      - CA_73+@WangCai_1
-      - CA_01+@WangCai_1
-      - CA_04+@WangCai_1
-      - CA_07+@WangCai_1
-      - CA_11+@WangCai_1 2
-      - CA_14+@WangCai_1
-      - CA_16+@WangCai_1 2
-      - CA_17+@WangCai_1
-      - CA_19+@WangCai_1
+      - 🇸🇬 SG_1
       - CA_20+@WangCai_1
-      - CA_26+@WangCai_1 2
-      - CA_30+@WangCai_1 2
-      - CA_31+@WangCai_1 2
-      - CA_38+@WangCai_1
-      - CA_39+@WangCai_1 2
-      - CA_41+@WangCai_1
-      - CA_42+@WangCai_1
-      - CA_46+@WangCai_1
-      - CA_50+@WangCai_1 2
-      - CA_56+@WangCai_1
-      - CA_66+@WangCai_1
+      - CA_24+@WangCai_1
+      - CA_47+@WangCai_1
+      - CA_49+@WangCai_1
       - CA_68+@WangCai_1
-      - CA_70+@WangCai_1
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_11604
+      - CA_11+@WangCai_1
+      - CA_20+@WangCai_1 2
+      - CA_39+@WangCai_1
+      - CA_40+@WangCai_1
+      - CA_41+@WangCai_1
+      - CA_57+@WangCai_1
+      - CA_11+@WangCai_1 2
+      - CA_33+@WangCai_1
+      - CA_34+@WangCai_1
+      - CA_67+@WangCai_1
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_2
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_4
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 US美国 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇧🇪 BE比利时 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇯🇵 [VIP1] 日本 01 直连 1x
-      - 🇯🇵 [VIP1] 日本 02 直连 1x
-      - 🇺🇸 [VIP1] 美国 03 直连 1x
-      - 🇭🇰 Relay_🇭🇰HK-🇯🇵JP_4950
-      - 🇷🇺 RU_10793
+      - 🇷🇺 RU_10792
+      - 🇺🇸 Pool_🇺🇸US_18295
       - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇮🇳 印度IN◆◆02 CDN加速 1x
       - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 02 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 03 Netflix 1x
       - 🇸🇬 新加坡◆AWS 04 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 05 Netflix 1x
       - 🇸🇬 新加坡◆AWS 06 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 07 Netflix 1x
-      - 🇸🇬 新加坡◆◆ SG 01 AWS 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇯🇵 日本◆AWS 02 Netflix 1x
+      - 🇸🇬 新加坡◆◆SG 08 AWS 1x
       - 🇯🇵 日本◆AWS 05 Netflix 1x
       - 🇯🇵 日本◆AWS 06 Netflix 1x
       - 🇯🇵 日本◆AWS 07 Netflix 1x
-      - 🇯🇵 日本◆AWS 08 Netflix 1x
-      - 🇯🇵 日本◆AWS 09 Netflix 1x
       - 🇯🇵 日本◆AWS 10 Netflix 1x
       - 🇯🇵 日本◆AWS 12 Netflix 1x
-      - 🇨🇳 沪台◆◆HINET 05 Netflix  動畫瘋 1x
-      - 🇨🇳 沪台◆◆HINET 06 Netflix  動畫瘋 1x
       - 🇨🇳 沪台◆◆HINET 07 Netflix  動畫瘋 1x
-      - 🇯🇵 沪日◆◆JP 01 AWS 高速 1x
-      - 🇯🇵 沪日◆◆JP 02 AWS  高速 1x
-      - 🇰🇷 沪韩◆◆KR 02 AWS 高速 1x
       - 🇰🇷 韩国◆AWS 01 Netflix 1x
-      - 🇰🇷 韩国◆AWS 02 Netflix 1x
       - 🇰🇷 韩国◆AWS 05 Netflix 1x
       - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇰🇷 韩国◆AWS 07 Netflix 1x
+      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 04 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆AWS 11 Netflix 1x
-      - 🇭🇰 香港◆AWS 13 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇭🇰 香港◆◆HK 02 Azure Game 3x
       - 🇭🇰 香港◆◆HKT 08 PPCW Netflix 1x
-      - 🇺🇸 美国02 | 解锁流媒体
-      - 🇸🇬 新加坡01 | 解锁流媒体
-      - 🇸🇬 新加坡02 | 解锁流媒体
-      - 🇸🇬 新加坡02 优化 | 解锁流媒体
-      - 🇸🇬 新加坡03 | 解锁流媒体
-      - 🇸🇬 新加坡03 优化 | 解锁流媒体
-      - 🇸🇬 新加坡04 | 解锁流媒体
-      - 🇸🇬 新加坡04 优化 | 解锁流媒体
-      - 🇸🇬 新加坡05 | 解锁流媒体
-      - 🇸🇬 新加坡06 | 解锁流媒体
-      - 🇸🇬 新加坡06 优化 | 解锁流媒体
-      - 🇭🇰 香港01 | 解锁流媒体
-      - 🇭🇰 香港02 | 解锁流媒体
-      - 🇭🇰 香港03 | 解锁流媒体
-      - 🇭🇰 香港04 | 解锁流媒体
-      - 🇯🇵 日本01 | 解锁流媒体
-      - 🇯🇵 日本01 优化 | 解锁流媒体
-      - 🇯🇵 日本02 | 解锁流媒体
-      - 🇯🇵 日本02 优化 | 解锁流媒体
-      - 🇰🇷 韩国01
-      - 🇰🇷 韩国01 优化
-      - 🇰🇷 韩国02
-      - 🇰🇷 韩国02 优化
-      - 🇩🇪 德国01 优化
-      - 🇩🇪 德国02 优化
-      - 🇭🇰 香港07 | 解锁流媒体
-      - 🇭🇰 香港08 | 解锁流媒体
-      - 🇭🇰 香港百M宽带百嫖
-      - 🇭🇰 az香港测试机白嫖地saiii.cn
-      - 🇮🇳 az印度测试机白嫖地saiii.cn
-      - 🇯🇵 az日本测试机白嫖地saiii.cn
+      - 🇭🇰 香港2 华南移动|V3
+      - 🇭🇰 香港1 广州移动|V1
+      - 🇨🇳 台湾5 原生|广州移动|V2
+      - 🇭🇰 香港6 原生|华南移动|V2
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2678
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2681
+      - 🇺🇸 TG@NGK668🇺🇸 Relay_🇨🇳CN-🇺🇸US_2691
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6057
+      - 🇭🇰 TG@NGK668🇭🇰 HK_6059
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6061
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6065
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6067
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6071
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13306
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_2665
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2675
+      - ‌CA_46354
+      - ‌CA_49126
+      - ‌CA_50695
+      - 免流直连->AWS-JPN1[倍率:1.0]
+      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
+      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
+      - 🇨🇳 台湾 GCP 01https://dd.zhutou.cyou
+      - CYL-科技 2
+      - CYL-科技 3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑥ DMIT-NETFLIX|HULU|HBO
       - 🇸🇬 新加坡2 122Mbps 446ms 奈飞新加坡
-      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
-      - 🇯🇵 日本|电信混淆++
-      - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
-      - 🇨🇳 台湾  1
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
       - CYL-科技
+      - 🇺🇸 US-1
       - 🇺🇸 US-Seattle
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_25
-      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_17
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_58
-      - 🇺🇸 US_03+@WangCai_1
-      - 🇺🇸 US_04+@WangCai_1
-      - 🇺🇸 US_11+@WangCai_1
-      - 🇺🇸 US_16+@WangCai_1
-      - 🇺🇸 US_18+@WangCai_1
-      - 🇺🇸 US_23+@WangCai_1
-      - 🇺🇸 US_24+@WangCai_1
-      - 🇺🇸 US_25+@WangCai_1
-      - 🇺🇸 US_30+@WangCai_1
-      - 🇺🇸 US_39+@WangCai_1
-      - 🇺🇸 US_40+@WangCai_1
-      - 🇺🇸 US_42+@WangCai_1
-      - 🇺🇸 US_44+@WangCai_1
-      - 🇺🇸 US_45+@WangCai_1
-      - 🇺🇸 US_47+@WangCai_1
-      - 🇺🇸 US_48+@WangCai_1
-      - 🇺🇸 US_49+@WangCai_1
-      - 🇺🇸 US_50+@WangCai_1
-      - 🇺🇸 US_51+@WangCai_1
-      - 🇺🇸 US_54+@WangCai_1
-      - 🇺🇸 US_59+@WangCai_1
-      - 🇺🇸 US_61+@WangCai_1
-      - 🇺🇸 US_62+@WangCai_1
-      - 🇺🇸 US_72+@WangCai_1
-      - CA_06+@WangCai_1
-      - CA_12+@WangCai_1
-      - CA_13+@WangCai_1
-      - CA_21+@WangCai_1
-      - CA_28+@WangCai_1
-      - CA_48+@WangCai_1
-      - CA_51+@WangCai_1
-      - CA_55+@WangCai_1
-      - CA_02+@WangCai_1
-      - CA_11+@WangCai_1
-      - CA_16+@WangCai_1
-      - CA_21+@WangCai_1 2
-      - CA_23+@WangCai_1
-      - CA_24+@WangCai_1
-      - CA_26+@WangCai_1
-      - CA_27+@WangCai_1
-      - CA_30+@WangCai_1
-      - CA_31+@WangCai_1
-      - CA_32+@WangCai_1
-      - CA_33+@WangCai_1
-      - CA_39+@WangCai_1
-      - CA_47+@WangCai_1
-      - CA_50+@WangCai_1
-      - CA_55+@WangCai_1 2
-      - CA_58+@WangCai_1
-      - CA_59+@WangCai_1
-      - CA_67+@WangCai_1
-      - CA_69+@WangCai_1
-      - CA_73+@WangCai_1
-      - CA_01+@WangCai_1
-      - CA_04+@WangCai_1
-      - CA_07+@WangCai_1
-      - CA_11+@WangCai_1 2
-      - CA_14+@WangCai_1
-      - CA_16+@WangCai_1 2
-      - CA_17+@WangCai_1
-      - CA_19+@WangCai_1
+      - 🇸🇬 SG_1
       - CA_20+@WangCai_1
-      - CA_26+@WangCai_1 2
-      - CA_30+@WangCai_1 2
-      - CA_31+@WangCai_1 2
-      - CA_38+@WangCai_1
-      - CA_39+@WangCai_1 2
-      - CA_41+@WangCai_1
-      - CA_42+@WangCai_1
-      - CA_46+@WangCai_1
-      - CA_50+@WangCai_1 2
-      - CA_56+@WangCai_1
-      - CA_66+@WangCai_1
+      - CA_24+@WangCai_1
+      - CA_47+@WangCai_1
+      - CA_49+@WangCai_1
       - CA_68+@WangCai_1
-      - CA_70+@WangCai_1
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_11604
+      - CA_11+@WangCai_1
+      - CA_20+@WangCai_1 2
+      - CA_39+@WangCai_1
+      - CA_40+@WangCai_1
+      - CA_41+@WangCai_1
+      - CA_57+@WangCai_1
+      - CA_11+@WangCai_1 2
+      - CA_33+@WangCai_1
+      - CA_34+@WangCai_1
+      - CA_67+@WangCai_1
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_2
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_4
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 US美国 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇧🇪 BE比利时 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇯🇵 [VIP1] 日本 01 直连 1x
-      - 🇯🇵 [VIP1] 日本 02 直连 1x
-      - 🇺🇸 [VIP1] 美国 03 直连 1x
-      - 🇭🇰 Relay_🇭🇰HK-🇯🇵JP_4950
-      - 🇷🇺 RU_10793
+      - 🇷🇺 RU_10792
+      - 🇺🇸 Pool_🇺🇸US_18295
       - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇮🇳 印度IN◆◆02 CDN加速 1x
       - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 02 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 03 Netflix 1x
       - 🇸🇬 新加坡◆AWS 04 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 05 Netflix 1x
       - 🇸🇬 新加坡◆AWS 06 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 07 Netflix 1x
-      - 🇸🇬 新加坡◆◆ SG 01 AWS 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇯🇵 日本◆AWS 02 Netflix 1x
+      - 🇸🇬 新加坡◆◆SG 08 AWS 1x
       - 🇯🇵 日本◆AWS 05 Netflix 1x
       - 🇯🇵 日本◆AWS 06 Netflix 1x
       - 🇯🇵 日本◆AWS 07 Netflix 1x
-      - 🇯🇵 日本◆AWS 08 Netflix 1x
-      - 🇯🇵 日本◆AWS 09 Netflix 1x
       - 🇯🇵 日本◆AWS 10 Netflix 1x
       - 🇯🇵 日本◆AWS 12 Netflix 1x
-      - 🇨🇳 沪台◆◆HINET 05 Netflix  動畫瘋 1x
-      - 🇨🇳 沪台◆◆HINET 06 Netflix  動畫瘋 1x
       - 🇨🇳 沪台◆◆HINET 07 Netflix  動畫瘋 1x
-      - 🇯🇵 沪日◆◆JP 01 AWS 高速 1x
-      - 🇯🇵 沪日◆◆JP 02 AWS  高速 1x
-      - 🇰🇷 沪韩◆◆KR 02 AWS 高速 1x
       - 🇰🇷 韩国◆AWS 01 Netflix 1x
-      - 🇰🇷 韩国◆AWS 02 Netflix 1x
       - 🇰🇷 韩国◆AWS 05 Netflix 1x
       - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇰🇷 韩国◆AWS 07 Netflix 1x
+      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 04 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆AWS 11 Netflix 1x
-      - 🇭🇰 香港◆AWS 13 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇭🇰 香港◆◆HK 02 Azure Game 3x
       - 🇭🇰 香港◆◆HKT 08 PPCW Netflix 1x
-      - 🇺🇸 美国02 | 解锁流媒体
-      - 🇸🇬 新加坡01 | 解锁流媒体
-      - 🇸🇬 新加坡02 | 解锁流媒体
-      - 🇸🇬 新加坡02 优化 | 解锁流媒体
-      - 🇸🇬 新加坡03 | 解锁流媒体
-      - 🇸🇬 新加坡03 优化 | 解锁流媒体
-      - 🇸🇬 新加坡04 | 解锁流媒体
-      - 🇸🇬 新加坡04 优化 | 解锁流媒体
-      - 🇸🇬 新加坡05 | 解锁流媒体
-      - 🇸🇬 新加坡06 | 解锁流媒体
-      - 🇸🇬 新加坡06 优化 | 解锁流媒体
-      - 🇭🇰 香港01 | 解锁流媒体
-      - 🇭🇰 香港02 | 解锁流媒体
-      - 🇭🇰 香港03 | 解锁流媒体
-      - 🇭🇰 香港04 | 解锁流媒体
-      - 🇯🇵 日本01 | 解锁流媒体
-      - 🇯🇵 日本01 优化 | 解锁流媒体
-      - 🇯🇵 日本02 | 解锁流媒体
-      - 🇯🇵 日本02 优化 | 解锁流媒体
-      - 🇰🇷 韩国01
-      - 🇰🇷 韩国01 优化
-      - 🇰🇷 韩国02
-      - 🇰🇷 韩国02 优化
-      - 🇩🇪 德国01 优化
-      - 🇩🇪 德国02 优化
-      - 🇭🇰 香港07 | 解锁流媒体
-      - 🇭🇰 香港08 | 解锁流媒体
-      - 🇭🇰 香港百M宽带百嫖
-      - 🇭🇰 az香港测试机白嫖地saiii.cn
-      - 🇮🇳 az印度测试机白嫖地saiii.cn
-      - 🇯🇵 az日本测试机白嫖地saiii.cn
+      - 🇭🇰 香港2 华南移动|V3
+      - 🇭🇰 香港1 广州移动|V1
+      - 🇨🇳 台湾5 原生|广州移动|V2
+      - 🇭🇰 香港6 原生|华南移动|V2
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2678
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2681
+      - 🇺🇸 TG@NGK668🇺🇸 Relay_🇨🇳CN-🇺🇸US_2691
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6057
+      - 🇭🇰 TG@NGK668🇭🇰 HK_6059
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6061
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6065
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6067
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6071
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13306
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_2665
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2675
+      - ‌CA_46354
+      - ‌CA_49126
+      - ‌CA_50695
+      - 免流直连->AWS-JPN1[倍率:1.0]
+      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
+      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
+      - 🇨🇳 台湾 GCP 01https://dd.zhutou.cyou
+      - CYL-科技 2
+      - CYL-科技 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑥ DMIT-NETFLIX|HULU|HBO
       - 🇸🇬 新加坡2 122Mbps 446ms 奈飞新加坡
-      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
-      - 🇯🇵 日本|电信混淆++
-      - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
-      - 🇨🇳 台湾  1
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
       - CYL-科技
+      - 🇺🇸 US-1
       - 🇺🇸 US-Seattle
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_25
-      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_17
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_58
-      - 🇺🇸 US_03+@WangCai_1
-      - 🇺🇸 US_04+@WangCai_1
-      - 🇺🇸 US_11+@WangCai_1
-      - 🇺🇸 US_16+@WangCai_1
-      - 🇺🇸 US_18+@WangCai_1
-      - 🇺🇸 US_23+@WangCai_1
-      - 🇺🇸 US_24+@WangCai_1
-      - 🇺🇸 US_25+@WangCai_1
-      - 🇺🇸 US_30+@WangCai_1
-      - 🇺🇸 US_39+@WangCai_1
-      - 🇺🇸 US_40+@WangCai_1
-      - 🇺🇸 US_42+@WangCai_1
-      - 🇺🇸 US_44+@WangCai_1
-      - 🇺🇸 US_45+@WangCai_1
-      - 🇺🇸 US_47+@WangCai_1
-      - 🇺🇸 US_48+@WangCai_1
-      - 🇺🇸 US_49+@WangCai_1
-      - 🇺🇸 US_50+@WangCai_1
-      - 🇺🇸 US_51+@WangCai_1
-      - 🇺🇸 US_54+@WangCai_1
-      - 🇺🇸 US_59+@WangCai_1
-      - 🇺🇸 US_61+@WangCai_1
-      - 🇺🇸 US_62+@WangCai_1
-      - 🇺🇸 US_72+@WangCai_1
-      - CA_06+@WangCai_1
-      - CA_12+@WangCai_1
-      - CA_13+@WangCai_1
-      - CA_21+@WangCai_1
-      - CA_28+@WangCai_1
-      - CA_48+@WangCai_1
-      - CA_51+@WangCai_1
-      - CA_55+@WangCai_1
-      - CA_02+@WangCai_1
-      - CA_11+@WangCai_1
-      - CA_16+@WangCai_1
-      - CA_21+@WangCai_1 2
-      - CA_23+@WangCai_1
-      - CA_24+@WangCai_1
-      - CA_26+@WangCai_1
-      - CA_27+@WangCai_1
-      - CA_30+@WangCai_1
-      - CA_31+@WangCai_1
-      - CA_32+@WangCai_1
-      - CA_33+@WangCai_1
-      - CA_39+@WangCai_1
-      - CA_47+@WangCai_1
-      - CA_50+@WangCai_1
-      - CA_55+@WangCai_1 2
-      - CA_58+@WangCai_1
-      - CA_59+@WangCai_1
-      - CA_67+@WangCai_1
-      - CA_69+@WangCai_1
-      - CA_73+@WangCai_1
-      - CA_01+@WangCai_1
-      - CA_04+@WangCai_1
-      - CA_07+@WangCai_1
-      - CA_11+@WangCai_1 2
-      - CA_14+@WangCai_1
-      - CA_16+@WangCai_1 2
-      - CA_17+@WangCai_1
-      - CA_19+@WangCai_1
+      - 🇸🇬 SG_1
       - CA_20+@WangCai_1
-      - CA_26+@WangCai_1 2
-      - CA_30+@WangCai_1 2
-      - CA_31+@WangCai_1 2
-      - CA_38+@WangCai_1
-      - CA_39+@WangCai_1 2
-      - CA_41+@WangCai_1
-      - CA_42+@WangCai_1
-      - CA_46+@WangCai_1
-      - CA_50+@WangCai_1 2
-      - CA_56+@WangCai_1
-      - CA_66+@WangCai_1
+      - CA_24+@WangCai_1
+      - CA_47+@WangCai_1
+      - CA_49+@WangCai_1
       - CA_68+@WangCai_1
-      - CA_70+@WangCai_1
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_11604
+      - CA_11+@WangCai_1
+      - CA_20+@WangCai_1 2
+      - CA_39+@WangCai_1
+      - CA_40+@WangCai_1
+      - CA_41+@WangCai_1
+      - CA_57+@WangCai_1
+      - CA_11+@WangCai_1 2
+      - CA_33+@WangCai_1
+      - CA_34+@WangCai_1
+      - CA_67+@WangCai_1
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_2
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_4
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 US美国 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇧🇪 BE比利时 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇯🇵 [VIP1] 日本 01 直连 1x
-      - 🇯🇵 [VIP1] 日本 02 直连 1x
-      - 🇺🇸 [VIP1] 美国 03 直连 1x
-      - 🇭🇰 Relay_🇭🇰HK-🇯🇵JP_4950
-      - 🇷🇺 RU_10793
+      - 🇷🇺 RU_10792
+      - 🇺🇸 Pool_🇺🇸US_18295
       - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇮🇳 印度IN◆◆02 CDN加速 1x
       - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 02 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 03 Netflix 1x
       - 🇸🇬 新加坡◆AWS 04 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 05 Netflix 1x
       - 🇸🇬 新加坡◆AWS 06 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 07 Netflix 1x
-      - 🇸🇬 新加坡◆◆ SG 01 AWS 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇯🇵 日本◆AWS 02 Netflix 1x
+      - 🇸🇬 新加坡◆◆SG 08 AWS 1x
       - 🇯🇵 日本◆AWS 05 Netflix 1x
       - 🇯🇵 日本◆AWS 06 Netflix 1x
       - 🇯🇵 日本◆AWS 07 Netflix 1x
-      - 🇯🇵 日本◆AWS 08 Netflix 1x
-      - 🇯🇵 日本◆AWS 09 Netflix 1x
       - 🇯🇵 日本◆AWS 10 Netflix 1x
       - 🇯🇵 日本◆AWS 12 Netflix 1x
-      - 🇨🇳 沪台◆◆HINET 05 Netflix  動畫瘋 1x
-      - 🇨🇳 沪台◆◆HINET 06 Netflix  動畫瘋 1x
       - 🇨🇳 沪台◆◆HINET 07 Netflix  動畫瘋 1x
-      - 🇯🇵 沪日◆◆JP 01 AWS 高速 1x
-      - 🇯🇵 沪日◆◆JP 02 AWS  高速 1x
-      - 🇰🇷 沪韩◆◆KR 02 AWS 高速 1x
       - 🇰🇷 韩国◆AWS 01 Netflix 1x
-      - 🇰🇷 韩国◆AWS 02 Netflix 1x
       - 🇰🇷 韩国◆AWS 05 Netflix 1x
       - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇰🇷 韩国◆AWS 07 Netflix 1x
+      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 04 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆AWS 11 Netflix 1x
-      - 🇭🇰 香港◆AWS 13 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇭🇰 香港◆◆HK 02 Azure Game 3x
       - 🇭🇰 香港◆◆HKT 08 PPCW Netflix 1x
-      - 🇺🇸 美国02 | 解锁流媒体
-      - 🇸🇬 新加坡01 | 解锁流媒体
-      - 🇸🇬 新加坡02 | 解锁流媒体
-      - 🇸🇬 新加坡02 优化 | 解锁流媒体
-      - 🇸🇬 新加坡03 | 解锁流媒体
-      - 🇸🇬 新加坡03 优化 | 解锁流媒体
-      - 🇸🇬 新加坡04 | 解锁流媒体
-      - 🇸🇬 新加坡04 优化 | 解锁流媒体
-      - 🇸🇬 新加坡05 | 解锁流媒体
-      - 🇸🇬 新加坡06 | 解锁流媒体
-      - 🇸🇬 新加坡06 优化 | 解锁流媒体
-      - 🇭🇰 香港01 | 解锁流媒体
-      - 🇭🇰 香港02 | 解锁流媒体
-      - 🇭🇰 香港03 | 解锁流媒体
-      - 🇭🇰 香港04 | 解锁流媒体
-      - 🇯🇵 日本01 | 解锁流媒体
-      - 🇯🇵 日本01 优化 | 解锁流媒体
-      - 🇯🇵 日本02 | 解锁流媒体
-      - 🇯🇵 日本02 优化 | 解锁流媒体
-      - 🇰🇷 韩国01
-      - 🇰🇷 韩国01 优化
-      - 🇰🇷 韩国02
-      - 🇰🇷 韩国02 优化
-      - 🇩🇪 德国01 优化
-      - 🇩🇪 德国02 优化
-      - 🇭🇰 香港07 | 解锁流媒体
-      - 🇭🇰 香港08 | 解锁流媒体
-      - 🇭🇰 香港百M宽带百嫖
-      - 🇭🇰 az香港测试机白嫖地saiii.cn
-      - 🇮🇳 az印度测试机白嫖地saiii.cn
-      - 🇯🇵 az日本测试机白嫖地saiii.cn
+      - 🇭🇰 香港2 华南移动|V3
+      - 🇭🇰 香港1 广州移动|V1
+      - 🇨🇳 台湾5 原生|广州移动|V2
+      - 🇭🇰 香港6 原生|华南移动|V2
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2678
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2681
+      - 🇺🇸 TG@NGK668🇺🇸 Relay_🇨🇳CN-🇺🇸US_2691
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6057
+      - 🇭🇰 TG@NGK668🇭🇰 HK_6059
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6061
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6065
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6067
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6071
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13306
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_2665
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2675
+      - ‌CA_46354
+      - ‌CA_49126
+      - ‌CA_50695
+      - 免流直连->AWS-JPN1[倍率:1.0]
+      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
+      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
+      - 🇨🇳 台湾 GCP 01https://dd.zhutou.cyou
+      - CYL-科技 2
+      - CYL-科技 3
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑥ DMIT-NETFLIX|HULU|HBO
       - 🇸🇬 新加坡2 122Mbps 446ms 奈飞新加坡
-      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
-      - 🇯🇵 日本|电信混淆++
-      - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
-      - 🇨🇳 台湾  1
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
       - CYL-科技
+      - 🇺🇸 US-1
       - 🇺🇸 US-Seattle
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_25
-      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_17
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_58
-      - 🇺🇸 US_03+@WangCai_1
-      - 🇺🇸 US_04+@WangCai_1
-      - 🇺🇸 US_11+@WangCai_1
-      - 🇺🇸 US_16+@WangCai_1
-      - 🇺🇸 US_18+@WangCai_1
-      - 🇺🇸 US_23+@WangCai_1
-      - 🇺🇸 US_24+@WangCai_1
-      - 🇺🇸 US_25+@WangCai_1
-      - 🇺🇸 US_30+@WangCai_1
-      - 🇺🇸 US_39+@WangCai_1
-      - 🇺🇸 US_40+@WangCai_1
-      - 🇺🇸 US_42+@WangCai_1
-      - 🇺🇸 US_44+@WangCai_1
-      - 🇺🇸 US_45+@WangCai_1
-      - 🇺🇸 US_47+@WangCai_1
-      - 🇺🇸 US_48+@WangCai_1
-      - 🇺🇸 US_49+@WangCai_1
-      - 🇺🇸 US_50+@WangCai_1
-      - 🇺🇸 US_51+@WangCai_1
-      - 🇺🇸 US_54+@WangCai_1
-      - 🇺🇸 US_59+@WangCai_1
-      - 🇺🇸 US_61+@WangCai_1
-      - 🇺🇸 US_62+@WangCai_1
-      - 🇺🇸 US_72+@WangCai_1
-      - CA_06+@WangCai_1
-      - CA_12+@WangCai_1
-      - CA_13+@WangCai_1
-      - CA_21+@WangCai_1
-      - CA_28+@WangCai_1
-      - CA_48+@WangCai_1
-      - CA_51+@WangCai_1
-      - CA_55+@WangCai_1
-      - CA_02+@WangCai_1
-      - CA_11+@WangCai_1
-      - CA_16+@WangCai_1
-      - CA_21+@WangCai_1 2
-      - CA_23+@WangCai_1
-      - CA_24+@WangCai_1
-      - CA_26+@WangCai_1
-      - CA_27+@WangCai_1
-      - CA_30+@WangCai_1
-      - CA_31+@WangCai_1
-      - CA_32+@WangCai_1
-      - CA_33+@WangCai_1
-      - CA_39+@WangCai_1
-      - CA_47+@WangCai_1
-      - CA_50+@WangCai_1
-      - CA_55+@WangCai_1 2
-      - CA_58+@WangCai_1
-      - CA_59+@WangCai_1
-      - CA_67+@WangCai_1
-      - CA_69+@WangCai_1
-      - CA_73+@WangCai_1
-      - CA_01+@WangCai_1
-      - CA_04+@WangCai_1
-      - CA_07+@WangCai_1
-      - CA_11+@WangCai_1 2
-      - CA_14+@WangCai_1
-      - CA_16+@WangCai_1 2
-      - CA_17+@WangCai_1
-      - CA_19+@WangCai_1
+      - 🇸🇬 SG_1
       - CA_20+@WangCai_1
-      - CA_26+@WangCai_1 2
-      - CA_30+@WangCai_1 2
-      - CA_31+@WangCai_1 2
-      - CA_38+@WangCai_1
-      - CA_39+@WangCai_1 2
-      - CA_41+@WangCai_1
-      - CA_42+@WangCai_1
-      - CA_46+@WangCai_1
-      - CA_50+@WangCai_1 2
-      - CA_56+@WangCai_1
-      - CA_66+@WangCai_1
+      - CA_24+@WangCai_1
+      - CA_47+@WangCai_1
+      - CA_49+@WangCai_1
       - CA_68+@WangCai_1
-      - CA_70+@WangCai_1
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_11604
+      - CA_11+@WangCai_1
+      - CA_20+@WangCai_1 2
+      - CA_39+@WangCai_1
+      - CA_40+@WangCai_1
+      - CA_41+@WangCai_1
+      - CA_57+@WangCai_1
+      - CA_11+@WangCai_1 2
+      - CA_33+@WangCai_1
+      - CA_34+@WangCai_1
+      - CA_67+@WangCai_1
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_2
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_4
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 US美国 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇧🇪 BE比利时 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇯🇵 [VIP1] 日本 01 直连 1x
-      - 🇯🇵 [VIP1] 日本 02 直连 1x
-      - 🇺🇸 [VIP1] 美国 03 直连 1x
-      - 🇭🇰 Relay_🇭🇰HK-🇯🇵JP_4950
-      - 🇷🇺 RU_10793
+      - 🇷🇺 RU_10792
+      - 🇺🇸 Pool_🇺🇸US_18295
       - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇮🇳 印度IN◆◆02 CDN加速 1x
       - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 02 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 03 Netflix 1x
       - 🇸🇬 新加坡◆AWS 04 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 05 Netflix 1x
       - 🇸🇬 新加坡◆AWS 06 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 07 Netflix 1x
-      - 🇸🇬 新加坡◆◆ SG 01 AWS 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇯🇵 日本◆AWS 02 Netflix 1x
+      - 🇸🇬 新加坡◆◆SG 08 AWS 1x
       - 🇯🇵 日本◆AWS 05 Netflix 1x
       - 🇯🇵 日本◆AWS 06 Netflix 1x
       - 🇯🇵 日本◆AWS 07 Netflix 1x
-      - 🇯🇵 日本◆AWS 08 Netflix 1x
-      - 🇯🇵 日本◆AWS 09 Netflix 1x
       - 🇯🇵 日本◆AWS 10 Netflix 1x
       - 🇯🇵 日本◆AWS 12 Netflix 1x
-      - 🇨🇳 沪台◆◆HINET 05 Netflix  動畫瘋 1x
-      - 🇨🇳 沪台◆◆HINET 06 Netflix  動畫瘋 1x
       - 🇨🇳 沪台◆◆HINET 07 Netflix  動畫瘋 1x
-      - 🇯🇵 沪日◆◆JP 01 AWS 高速 1x
-      - 🇯🇵 沪日◆◆JP 02 AWS  高速 1x
-      - 🇰🇷 沪韩◆◆KR 02 AWS 高速 1x
       - 🇰🇷 韩国◆AWS 01 Netflix 1x
-      - 🇰🇷 韩国◆AWS 02 Netflix 1x
       - 🇰🇷 韩国◆AWS 05 Netflix 1x
       - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇰🇷 韩国◆AWS 07 Netflix 1x
+      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 04 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆AWS 11 Netflix 1x
-      - 🇭🇰 香港◆AWS 13 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇭🇰 香港◆◆HK 02 Azure Game 3x
       - 🇭🇰 香港◆◆HKT 08 PPCW Netflix 1x
-      - 🇺🇸 美国02 | 解锁流媒体
-      - 🇸🇬 新加坡01 | 解锁流媒体
-      - 🇸🇬 新加坡02 | 解锁流媒体
-      - 🇸🇬 新加坡02 优化 | 解锁流媒体
-      - 🇸🇬 新加坡03 | 解锁流媒体
-      - 🇸🇬 新加坡03 优化 | 解锁流媒体
-      - 🇸🇬 新加坡04 | 解锁流媒体
-      - 🇸🇬 新加坡04 优化 | 解锁流媒体
-      - 🇸🇬 新加坡05 | 解锁流媒体
-      - 🇸🇬 新加坡06 | 解锁流媒体
-      - 🇸🇬 新加坡06 优化 | 解锁流媒体
-      - 🇭🇰 香港01 | 解锁流媒体
-      - 🇭🇰 香港02 | 解锁流媒体
-      - 🇭🇰 香港03 | 解锁流媒体
-      - 🇭🇰 香港04 | 解锁流媒体
-      - 🇯🇵 日本01 | 解锁流媒体
-      - 🇯🇵 日本01 优化 | 解锁流媒体
-      - 🇯🇵 日本02 | 解锁流媒体
-      - 🇯🇵 日本02 优化 | 解锁流媒体
-      - 🇰🇷 韩国01
-      - 🇰🇷 韩国01 优化
-      - 🇰🇷 韩国02
-      - 🇰🇷 韩国02 优化
-      - 🇩🇪 德国01 优化
-      - 🇩🇪 德国02 优化
-      - 🇭🇰 香港07 | 解锁流媒体
-      - 🇭🇰 香港08 | 解锁流媒体
-      - 🇭🇰 香港百M宽带百嫖
-      - 🇭🇰 az香港测试机白嫖地saiii.cn
-      - 🇮🇳 az印度测试机白嫖地saiii.cn
-      - 🇯🇵 az日本测试机白嫖地saiii.cn
+      - 🇭🇰 香港2 华南移动|V3
+      - 🇭🇰 香港1 广州移动|V1
+      - 🇨🇳 台湾5 原生|广州移动|V2
+      - 🇭🇰 香港6 原生|华南移动|V2
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2678
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2681
+      - 🇺🇸 TG@NGK668🇺🇸 Relay_🇨🇳CN-🇺🇸US_2691
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6057
+      - 🇭🇰 TG@NGK668🇭🇰 HK_6059
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6061
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6065
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6067
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6071
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13306
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_2665
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2675
+      - ‌CA_46354
+      - ‌CA_49126
+      - ‌CA_50695
+      - 免流直连->AWS-JPN1[倍率:1.0]
+      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
+      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
+      - 🇨🇳 台湾 GCP 01https://dd.zhutou.cyou
+      - CYL-科技 2
+      - CYL-科技 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1418,175 +706,86 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑤ DMIT-NETFLIX|HULU|HBO
-      - 🇭🇰 [vip3][v2ray]Iplc专线 深圳-香港 ⑥ DMIT-NETFLIX|HULU|HBO
       - 🇸🇬 新加坡2 122Mbps 446ms 奈飞新加坡
-      - 🇭🇰 中国香港3 130Mbps 110ms 奈飞中国香港
       - 🇯🇵 日本9 102Mbps 453ms 奈飞自制剧
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_69
-      - 🇯🇵 日本|电信混淆++
-      - 🇯🇵 [vip3][v2ray]Iplc专线 深圳-日本 ⑩ HKBN-NETFLIX|HULU|HBO-G口
-      - 🇨🇳 台湾  1
-      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_87
       - CYL-科技
+      - 🇺🇸 US-1
       - 🇺🇸 US-Seattle
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_25
-      - 🇨🇦 cfmem.com_🇨🇦_CA_加拿大_17
-      - 🇺🇸 cfmem.com_🇺🇸_US_美国_58
-      - 🇺🇸 US_03+@WangCai_1
-      - 🇺🇸 US_04+@WangCai_1
-      - 🇺🇸 US_11+@WangCai_1
-      - 🇺🇸 US_16+@WangCai_1
-      - 🇺🇸 US_18+@WangCai_1
-      - 🇺🇸 US_23+@WangCai_1
-      - 🇺🇸 US_24+@WangCai_1
-      - 🇺🇸 US_25+@WangCai_1
-      - 🇺🇸 US_30+@WangCai_1
-      - 🇺🇸 US_39+@WangCai_1
-      - 🇺🇸 US_40+@WangCai_1
-      - 🇺🇸 US_42+@WangCai_1
-      - 🇺🇸 US_44+@WangCai_1
-      - 🇺🇸 US_45+@WangCai_1
-      - 🇺🇸 US_47+@WangCai_1
-      - 🇺🇸 US_48+@WangCai_1
-      - 🇺🇸 US_49+@WangCai_1
-      - 🇺🇸 US_50+@WangCai_1
-      - 🇺🇸 US_51+@WangCai_1
-      - 🇺🇸 US_54+@WangCai_1
-      - 🇺🇸 US_59+@WangCai_1
-      - 🇺🇸 US_61+@WangCai_1
-      - 🇺🇸 US_62+@WangCai_1
-      - 🇺🇸 US_72+@WangCai_1
-      - CA_06+@WangCai_1
-      - CA_12+@WangCai_1
-      - CA_13+@WangCai_1
-      - CA_21+@WangCai_1
-      - CA_28+@WangCai_1
-      - CA_48+@WangCai_1
-      - CA_51+@WangCai_1
-      - CA_55+@WangCai_1
-      - CA_02+@WangCai_1
-      - CA_11+@WangCai_1
-      - CA_16+@WangCai_1
-      - CA_21+@WangCai_1 2
-      - CA_23+@WangCai_1
-      - CA_24+@WangCai_1
-      - CA_26+@WangCai_1
-      - CA_27+@WangCai_1
-      - CA_30+@WangCai_1
-      - CA_31+@WangCai_1
-      - CA_32+@WangCai_1
-      - CA_33+@WangCai_1
-      - CA_39+@WangCai_1
-      - CA_47+@WangCai_1
-      - CA_50+@WangCai_1
-      - CA_55+@WangCai_1 2
-      - CA_58+@WangCai_1
-      - CA_59+@WangCai_1
-      - CA_67+@WangCai_1
-      - CA_69+@WangCai_1
-      - CA_73+@WangCai_1
-      - CA_01+@WangCai_1
-      - CA_04+@WangCai_1
-      - CA_07+@WangCai_1
-      - CA_11+@WangCai_1 2
-      - CA_14+@WangCai_1
-      - CA_16+@WangCai_1 2
-      - CA_17+@WangCai_1
-      - CA_19+@WangCai_1
+      - 🇸🇬 SG_1
       - CA_20+@WangCai_1
-      - CA_26+@WangCai_1 2
-      - CA_30+@WangCai_1 2
-      - CA_31+@WangCai_1 2
-      - CA_38+@WangCai_1
-      - CA_39+@WangCai_1 2
-      - CA_41+@WangCai_1
-      - CA_42+@WangCai_1
-      - CA_46+@WangCai_1
-      - CA_50+@WangCai_1 2
-      - CA_56+@WangCai_1
-      - CA_66+@WangCai_1
+      - CA_24+@WangCai_1
+      - CA_47+@WangCai_1
+      - CA_49+@WangCai_1
       - CA_68+@WangCai_1
-      - CA_70+@WangCai_1
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_11604
+      - CA_11+@WangCai_1
+      - CA_20+@WangCai_1 2
+      - CA_39+@WangCai_1
+      - CA_40+@WangCai_1
+      - CA_41+@WangCai_1
+      - CA_57+@WangCai_1
+      - CA_11+@WangCai_1 2
+      - CA_33+@WangCai_1
+      - CA_34+@WangCai_1
+      - CA_67+@WangCai_1
+      - 🇺🇸 cfmem.com_🇺🇸_US_美国_2
       - 🇺🇸 cfmem.com_🇺🇸_US_美国_4
-      - 🇷🇺 俄罗斯
-      - 🇺🇸 US美国 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇧🇪 BE比利时 独享节点-IP-带宽 99元包年  https://suo.yt/knPPqMr
-      - 🇯🇵 [VIP1] 日本 01 直连 1x
-      - 🇯🇵 [VIP1] 日本 02 直连 1x
-      - 🇺🇸 [VIP1] 美国 03 直连 1x
-      - 🇭🇰 Relay_🇭🇰HK-🇯🇵JP_4950
-      - 🇷🇺 RU_10793
+      - 🇷🇺 RU_10792
+      - 🇺🇸 Pool_🇺🇸US_18295
       - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇮🇳 印度IN◆◆02 CDN加速 1x
       - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 02 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 03 Netflix 1x
       - 🇸🇬 新加坡◆AWS 04 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 05 Netflix 1x
       - 🇸🇬 新加坡◆AWS 06 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 07 Netflix 1x
-      - 🇸🇬 新加坡◆◆ SG 01 AWS 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇯🇵 日本◆AWS 02 Netflix 1x
+      - 🇸🇬 新加坡◆◆SG 08 AWS 1x
       - 🇯🇵 日本◆AWS 05 Netflix 1x
       - 🇯🇵 日本◆AWS 06 Netflix 1x
       - 🇯🇵 日本◆AWS 07 Netflix 1x
-      - 🇯🇵 日本◆AWS 08 Netflix 1x
-      - 🇯🇵 日本◆AWS 09 Netflix 1x
       - 🇯🇵 日本◆AWS 10 Netflix 1x
       - 🇯🇵 日本◆AWS 12 Netflix 1x
-      - 🇨🇳 沪台◆◆HINET 05 Netflix  動畫瘋 1x
-      - 🇨🇳 沪台◆◆HINET 06 Netflix  動畫瘋 1x
       - 🇨🇳 沪台◆◆HINET 07 Netflix  動畫瘋 1x
-      - 🇯🇵 沪日◆◆JP 01 AWS 高速 1x
-      - 🇯🇵 沪日◆◆JP 02 AWS  高速 1x
-      - 🇰🇷 沪韩◆◆KR 02 AWS 高速 1x
       - 🇰🇷 韩国◆AWS 01 Netflix 1x
-      - 🇰🇷 韩国◆AWS 02 Netflix 1x
       - 🇰🇷 韩国◆AWS 05 Netflix 1x
       - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇰🇷 韩国◆AWS 07 Netflix 1x
+      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 04 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆AWS 11 Netflix 1x
-      - 🇭🇰 香港◆AWS 13 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇭🇰 香港◆◆HK 02 Azure Game 3x
       - 🇭🇰 香港◆◆HKT 08 PPCW Netflix 1x
-      - 🇺🇸 美国02 | 解锁流媒体
-      - 🇸🇬 新加坡01 | 解锁流媒体
-      - 🇸🇬 新加坡02 | 解锁流媒体
-      - 🇸🇬 新加坡02 优化 | 解锁流媒体
-      - 🇸🇬 新加坡03 | 解锁流媒体
-      - 🇸🇬 新加坡03 优化 | 解锁流媒体
-      - 🇸🇬 新加坡04 | 解锁流媒体
-      - 🇸🇬 新加坡04 优化 | 解锁流媒体
-      - 🇸🇬 新加坡05 | 解锁流媒体
-      - 🇸🇬 新加坡06 | 解锁流媒体
-      - 🇸🇬 新加坡06 优化 | 解锁流媒体
-      - 🇭🇰 香港01 | 解锁流媒体
-      - 🇭🇰 香港02 | 解锁流媒体
-      - 🇭🇰 香港03 | 解锁流媒体
-      - 🇭🇰 香港04 | 解锁流媒体
-      - 🇯🇵 日本01 | 解锁流媒体
-      - 🇯🇵 日本01 优化 | 解锁流媒体
-      - 🇯🇵 日本02 | 解锁流媒体
-      - 🇯🇵 日本02 优化 | 解锁流媒体
-      - 🇰🇷 韩国01
-      - 🇰🇷 韩国01 优化
-      - 🇰🇷 韩国02
-      - 🇰🇷 韩国02 优化
-      - 🇩🇪 德国01 优化
-      - 🇩🇪 德国02 优化
-      - 🇭🇰 香港07 | 解锁流媒体
-      - 🇭🇰 香港08 | 解锁流媒体
-      - 🇭🇰 香港百M宽带百嫖
-      - 🇭🇰 az香港测试机白嫖地saiii.cn
-      - 🇮🇳 az印度测试机白嫖地saiii.cn
-      - 🇯🇵 az日本测试机白嫖地saiii.cn
+      - 🇭🇰 香港2 华南移动|V3
+      - 🇭🇰 香港1 广州移动|V1
+      - 🇨🇳 台湾5 原生|广州移动|V2
+      - 🇭🇰 香港6 原生|华南移动|V2
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2678
+      - 🇨🇳 TG@NGK668🇨🇳 CN_2681
+      - 🇺🇸 TG@NGK668🇺🇸 Relay_🇨🇳CN-🇺🇸US_2691
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6057
+      - 🇭🇰 TG@NGK668🇭🇰 HK_6059
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6061
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6065
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6067
+      - 🇭🇰 TG@NGK668🇭🇰 Relay_🇭🇰HK-🇭🇰HK_6071
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13306
+      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_2665
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_2675
+      - ‌CA_46354
+      - ‌CA_49126
+      - ‌CA_50695
+      - 免流直连->AWS-JPN1[倍率:1.0]
+      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
+      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
+      - 🇨🇳 台湾 GCP 01https://dd.zhutou.cyou
+      - CYL-科技 2
+      - CYL-科技 3
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
