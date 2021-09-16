@@ -5,589 +5,1101 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇸🇬 SG_1, server: www.ligonwen.cf, port: 443, type: trojan, password: 7836137d-2db0-4809-9b57-ed14cf2ed4ce, sni: www.ligonwen.cf, skip-cert-verify: false}
-  - {name: 🇮🇳 印度IN◆◆01 CDN加速 1x, server: global-transit-01-hn.pucdn.me, port: 60001, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-in-01.pucdn.me}}
-  - {name: 🇸🇬 新加坡◆AWS 01 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 61000, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-sg-01.pucdn.me}}
-  - {name: 🇸🇬 新加坡◆AWS 04 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 61003, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-sg-04.pucdn.me}}
   - {name: 🇸🇬 新加坡◆◆SG 04 AWS 1x, server: global-transit-01-hk.pucdn.me, port: 31125, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-aws-sg-04.pucdn.me}}
-  - {name: 🇰🇷 韩国◆AWS 05 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 63005, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-05.pucdn.me}}
-  - {name: 🇰🇷 韩国◆AWS 06 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 63006, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-06.pucdn.me}}
-  - {name: 🇭🇰 香港◆AWS 03 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 62002, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-hk-03.pucdn.me}}
   - {name: 🇭🇰 香港◆AWS 08 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 62007, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-hk-08.pucdn.me}}
   - {name: 🇭🇰 香港◆AWS 10 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 62009, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-hk-10.pucdn.me}}
   - {name: 🇭🇰 香港◆◆HK 01 Azure Game 3x, server: global-transit-01-hk.pucdn.me, port: 16001, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-azure-hk-01.pucdn.me}}
-  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: AF48C4B4-4FAD-5F53-0DF4-098B58190767, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300, server: tw1.v2.qjnodeip.xyz, port: 10086, type: vmess, uuid: 727DC5B6-B30A-0366-79BA-7324E876EF37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: DA47552E-92CD-3E57-0868-2A267E7FDE72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: 2525CC72-5E41-F11E-7CF3-CB434A4F8B4F, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304, server: tw1.v2.qjnodeip.xyz, port: 10086, type: vmess, uuid: 8E5594E5-3E20-4269-58C9-0966AF14539E, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305, server: tw1.v2.qjnodeip.xyz, port: 10086, type: vmess, uuid: DA47552E-92CD-3E57-0868-2A267E7FDE72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: C1F54227-5442-A7DD-D8CC-F77BECC09467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb, server: els.jklist.ga, port: 443, type: vmess, uuid: 25290405-8ef7-4561-acc0-0d234fe8d9da, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: els.jklist.ga}}
-  - {name: 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub, server: v6.ssrsub.one, port: 156, type: vmess, uuid: 2a37bd3a-f8c8-45e5-b05c-167f04159396, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v6.ssrsub.one}}
-  - {name: 🇭🇰 高速香港2|2x, server: 121.35.254.186, port: 40251, type: ss, cipher: aes-256-cfb, password: Cdaem6TtuV6m}
   - {name: 🇭🇰 精品香港5|2x, server: 121.35.254.190, port: 40251, type: ss, cipher: aes-256-cfb, password: Cdaem6TtuV6m}
-  - {name: "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技%", server: 2.58.241.29, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 2", server: 2.58.242.46, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
-  - {name: "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 3", server: 2.58.242.46, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 4", server: 2.58.242.46, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
-  - {name: "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 5", server: 2.58.241.29, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 6", server: 2.58.242.46, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 7", server: 2.58.242.46, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: "", server: 139.155.22.227, port: 49110, type: vmess, uuid: f7675b7e-59bf-435c-ac03-dc2482f27e5d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇺🇸 [主力][4K高清]移动>广东>美国", server: zh.fxyjs.xyz, port: 50006, type: vmess, uuid: 6ed571d1-4869-4212-8f25-1748cb6067a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v1, ws-headers: {Host: v.qq.com}}
-  - {name: 🇬🇧 移动>佛山>英国, server: zh.fxyjs.xyz, port: 50009, type: vmess, uuid: 6ed571d1-4869-4212-8f25-1748cb6067a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v1, ws-headers: {Host: v.qq.com}}
-  - {name: 🇨🇳 +TW, server: 2.58.241.29, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: 🇨🇳 +TW 2, server: 2.58.241.29, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: 🇨🇳 +TW 3, server: 2.58.242.46, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: 🇨🇳 +TW 4, server: 2.58.242.46, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: 🇨🇳 +TW 5, server: 2.58.242.46, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
-  - {name: 🇨🇳 +TW 6, server: 2.58.242.46, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 🇨🇳 +TW 7, server: 2.58.242.46, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇨🇳 +TW 8, server: 2.58.242.46, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】, server: 2.58.241.133, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 2, server: 2.58.241.133, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 3, server: 2.58.241.133, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: 8080, server: 65.52.182.16, port: 8080, type: vmess, uuid: b0c7ef42-d5ec-41a7-fdac-e07544d16dea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /分享Q群:262349039, ws-headers: {Host: 65.52.182.16}}
   - {name: 🇸🇬 新加坡 (倍率 0.1), server: sg01.flxy.us, port: 35857, type: ss, cipher: aes-256-gcm, password: 9W98Oa9ZEkxZXODc}
-  - {name: "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 8", server: 2.58.242.46, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 9", server: 2.58.242.46, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
-  - {name: "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 10", server: 2.58.241.29, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 11", server: 2.58.242.46, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
-  - {name: 🇨🇳 中国成都（欢迎订阅youtube：8度科技）, server: 139.155.22.227, port: 49110, type: vmess, uuid: f7675b7e-59bf-435c-ac03-dc2482f27e5d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 cfmem.com_🇯🇵_JP_日本_6, server: jp10cf.v2cdn.org, port: 443, type: vmess, uuid: 727DC5B6-B30A-0366-79BA-7324E876EF37, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: jp10cf.v2cdn.org}}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】, server: 2.58.241.133, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 2, server: 2.58.241.133, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 3, server: 2.58.241.133, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 4, server: 2.58.241.133, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 5, server: 2.58.241.133, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 4, server: 2.58.241.133, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 5, server: 2.58.241.133, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
   - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 6, server: 2.58.241.133, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.131】, server: 2.58.241.131, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.131】 2, server: 2.58.241.131, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.131】 3, server: 2.58.241.131, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.131】 4, server: 2.58.241.131, port: 44945, type: ss, cipher: aes-256-gcm, password: F5bKkb9ggkLx4JbQrbLn7LjZ}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.131】 5, server: 2.58.241.131, port: 50225, type: ss, cipher: aes-256-gcm, password: J2M953QbkCvvzx3vYWdyBQ4K}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.29】, server: 2.58.241.29, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.29】 2, server: 2.58.241.29, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.29】 3, server: 2.58.241.29, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.29】 4, server: 2.58.241.29, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
-  - {name: 🇨🇳 台湾@freeyule【2.58.241.29】 5, server: 2.58.241.29, port: 50768, type: ss, cipher: aes-256-gcm, password: MgWc3J8tAHsZrVqg4BaBHmGs}
-  - {name: 🇸🇬 Relay_🇭🇰HK-🇸🇬SG_5981, server: 40.83.118.127, port: 80, type: vmess, uuid: e1b8cca0-96f9-4b08-afa2-97171dffc0c1, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /sgdo2, ws-headers: {Host: a.189.cn}}
-  - {name: 🇨🇭 瑞士, server: 84.17.53.212, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
-  - {name: 🇸🇬 节点更新https://bit.ly/3uWuS7a, server: 199.58.187.67, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇸🇬 节点更新https://bit.ly/3uWuS7a 2, server: 199.58.187.67, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 🇪🇺 欧洲(Youtube频道： 免费 vpn Vincent Jackson), server: 66.115.147.72, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 7, server: 2.58.241.133, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 8, server: 2.58.241.133, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 9, server: 2.58.241.133, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 10, server: 2.58.241.133, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 11, server: 2.58.241.133, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 12, server: 2.58.241.133, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 13, server: 2.58.241.133, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 14, server: 2.58.241.133, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 15, server: 2.58.241.133, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 16, server: 2.58.241.133, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 17, server: 2.58.241.133, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 18, server: 2.58.241.133, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 19, server: 2.58.241.133, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 20, server: 2.58.241.133, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 21, server: 2.58.241.133, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 22, server: 2.58.241.133, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 23, server: 2.58.241.133, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 24, server: 2.58.241.133, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 25, server: 2.58.241.133, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 26, server: 2.58.241.133, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 27, server: 2.58.241.133, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 28, server: 2.58.241.133, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 29, server: 2.58.241.133, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 30, server: 2.58.241.133, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 31, server: 2.58.241.133, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 32, server: 2.58.241.133, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 33, server: 2.58.241.133, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 34, server: 2.58.241.133, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 35, server: 2.58.241.133, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 36, server: 2.58.241.133, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 37, server: 2.58.241.133, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 38, server: 2.58.241.133, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 39, server: 2.58.241.133, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 40, server: 2.58.241.133, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 41, server: 2.58.241.133, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 42, server: 2.58.241.133, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 43, server: 2.58.241.133, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 44, server: 2.58.241.133, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 45, server: 2.58.241.133, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 46, server: 2.58.241.133, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 47, server: 2.58.241.133, port: 50225, type: ss, cipher: aes-256-gcm, password: J2M953QbkCvvzx3vYWdyBQ4K}
+  - {name: 🇨🇳 台湾@freeyule【2.58.241.133】 48, server: 2.58.241.133, port: 50768, type: ss, cipher: aes-256-gcm, password: MgWc3J8tAHsZrVqg4BaBHmGs}
+  - {name: 🇨🇳 Pool_🇹🇼 TW_7964, server: 2.58.241.29, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: www.ligonwen.cf_Trojan, server: www.ligonwen.cf, port: 443, type: trojan, password: 7836137d-2db0-4809-9b57-ed14cf2ed4ce, sni: www.ligonwen.cf, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡4, server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ssrgr-sg05, ws-headers: {Host: none}}
+  - {name: "🇭🇰 [主力]移动>佛山>香港az", server: zh.fxyjs.xyz, port: 50025, type: vmess, uuid: 6ed571d1-4869-4212-8f25-1748cb6067a3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /v1, ws-headers: {Host: meeting.speednetwork.xyz}}
+  - {name: "🇭🇰 [主力]移动>广州>香港az", server: jmnt.fastnetwork.fun, port: 50025, type: vmess, uuid: 6ed571d1-4869-4212-8f25-1748cb6067a3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /v1, ws-headers: {Host: meeting.speednetwork.xyz}}
+  - {name: "🇭🇰 [主力][Netflix]移动>广州>香港cm", server: jmnt.fastnetwork.fun, port: 50013, type: vmess, uuid: 6ed571d1-4869-4212-8f25-1748cb6067a3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /v1, ws-headers: {Host: meeting.speednetwork.xyz}}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_1, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: 8E5594E5-3E20-4269-58C9-0966AF14539E, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_2, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: C1F54227-5442-A7DD-D8CC-F77BECC09467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_3, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: DA47552E-92CD-3E57-0868-2A267E7FDE72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_4, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: AF48C4B4-4FAD-5F53-0DF4-098B58190767, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_5, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: 2525CC72-5E41-F11E-7CF3-CB434A4F8B4F, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 cfmem.com_🇯🇵_JP_日本_11, server: jp06.v2net.top, port: 443, type: vmess, uuid: 1242B403-55FB-8B66-16DF-283D5BD24FD2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: jp06.v2net.top}}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7, server: tw1.v2.qjnodeip.xyz, port: 10086, type: vmess, uuid: 8E5594E5-3E20-4269-58C9-0966AF14539E, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 cfmem.com_🇯🇵_JP_日本_18, server: jp06.v2net.top, port: 443, type: vmess, uuid: AF48C4B4-4FAD-5F53-0DF4-098B58190767, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: jp06.v2net.top}}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_8, server: tw1.v2.qjnodeip.xyz, port: 10086, type: vmess, uuid: 727DC5B6-B30A-0366-79BA-7324E876EF37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 cfmem.com_🇯🇵_JP_日本_19, server: jp06.v2net.top, port: 443, type: vmess, uuid: 8E5594E5-3E20-4269-58C9-0966AF14539E, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: jp06.v2net.top}}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: 29E99032-44AE-A4BF-BDA6-989551CB5416, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: 26CAFF84-CA2A-1087-4440-C40C8EAA2731, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_12, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: 5B1DEB6E-B3FF-032A-C967-27DF29B1D8CB, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_14, server: 2.58.241.29, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇨🇳 cfmem.com_🇹🇼_TW_台湾_18, server: 2.58.242.46, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: 🇹🇭 cfmem.com_🇹🇭_TH_泰国_3, server: 27.131.164.110, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇹🇭 cfmem.com_🇹🇭_TH_泰国_6, server: 27.131.164.110, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇨🇳 Relay_台湾-_13004, server: tw2.v2.qjnodeip.xyz, port: 8300, type: vmess, uuid: 29E99032-44AE-A4BF-BDA6-989551CB5416, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇬🇧 Relay_中国-英国_2057, server: n06.boom.party, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 254637:Ol4zZv, obfsparam: download.windowsupdate.com}
+  - {name: 🇭🇰 Relay_中国-香港_3080, server: nn9.boom.party, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 254637:Ol4zZv, obfsparam: download.windowsupdate.com}
+  - {name: 🇹🇭 泰国_12247, server: 27.131.164.94, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
+  - {name: 🇹🇭 泰国_12250, server: 27.131.164.94, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
+  - {name: 🇹🇭 泰国_12263, server: 27.131.164.94, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇹🇭 泰国_12266, server: 27.131.164.94, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇹🇭 泰国_12275, server: 27.131.164.110, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: 🇹🇭 泰国_12284, server: 27.131.164.94, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇹🇭 泰国_12298, server: 27.131.164.94, port: 50225, type: ss, cipher: aes-256-gcm, password: J2M953QbkCvvzx3vYWdyBQ4K}
+  - {name: 🇹🇭 泰国_12302, server: 27.131.164.94, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
+  - {name: 🇹🇭 泰国_12311, server: 27.131.164.94, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
+  - {name: 🇹🇭 泰国_12313, server: 27.131.164.94, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇹🇭 泰国_12315, server: 27.131.164.94, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
+  - {name: 🇹🇭 泰国_12318, server: 27.131.164.94, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
+  - {name: 🇹🇭 泰国_12321, server: 27.131.164.94, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 🇹🇭 泰国_12322, server: 27.131.164.94, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇹🇭 泰国_12326, server: 27.131.164.94, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 🇹🇭 泰国_12332, server: 27.131.164.94, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
+  - {name: 🇹🇭 泰国_12336, server: 27.131.164.94, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
+  - {name: 🇹🇭 泰国_12346, server: 27.131.164.94, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
+  - {name: 🇹🇭 泰国_12353, server: 27.131.164.94, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
+  - {name: 🇹🇭 泰国_12356, server: 27.131.164.94, port: 44945, type: ss, cipher: aes-256-gcm, password: F5bKkb9ggkLx4JbQrbLn7LjZ}
+  - {name: 🇹🇭 泰国_12357, server: 27.131.164.94, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇹🇭 泰国_12359, server: 27.131.164.94, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇹🇭 泰国_12363, server: 27.131.164.94, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: 🇹🇭 泰国_12366, server: 27.131.164.94, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: 🇹🇭 泰国_12367, server: 27.131.164.94, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇹🇭 泰国_12371, server: 27.131.164.94, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇹🇭 泰国_12375, server: 27.131.164.94, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇹🇭 泰国_12376, server: 27.131.164.94, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: 🇹🇭 泰国_12377, server: 27.131.164.94, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 🇹🇭 泰国_12381, server: 27.131.164.94, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: 🇹🇭 泰国_12383, server: 27.131.164.94, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇹🇭 泰国_12478, server: 27.131.164.94, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: 🇹🇭 泰国_12499, server: 27.131.164.94, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
+  - {name: 🇹🇭 泰国_12524, server: 27.131.164.110, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
+  - {name: 🇹🇭 泰国_12526, server: 27.131.164.110, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇹🇭 泰国_8913, server: 27.131.164.94, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: 🇭🇰 G12 香港, server: gy1-120.lhcloud.xyz, port: 40001, type: vmess, uuid: a879f325-5b3b-41df-ba4f-bc7bff2cf2f7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇭🇰 HK-Azure | V2 | 广移中转, server: ngzyd-1.okex-tradebot.xyz, port: 30002, type: vmess, uuid: 49e5e8d2-32f6-48aa-ba75-f243e1db1b31, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+  - {name: 🇨🇳 G21 台湾*, server: gy1-120.lhcloud.xyz, port: 40003, type: vmess, uuid: a879f325-5b3b-41df-ba4f-bc7bff2cf2f7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇸🇬 G11 新加坡, server: gy1-120.lhcloud.xyz, port: 40065, type: vmess, uuid: a879f325-5b3b-41df-ba4f-bc7bff2cf2f7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇸🇬 SG-AWS | V2 | 广移中转, server: ngzyd-1.okex-tradebot.xyz, port: 30004, type: vmess, uuid: 49e5e8d2-32f6-48aa-ba75-f243e1db1b31, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
+  - {name: 🇯🇵 G21 日本*, server: gy1-120.lhcloud.xyz, port: 40058, type: vmess, uuid: a879f325-5b3b-41df-ba4f-bc7bff2cf2f7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇯🇵 G22 日本*, server: gy1-120.lhcloud.xyz, port: 40059, type: vmess, uuid: a879f325-5b3b-41df-ba4f-bc7bff2cf2f7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇨🇳 台湾 1 - 1, server: ddns-yd.2ray.xyz, port: 18004, type: vmess, uuid: eb305893-2ce1-3e71-afb3-83bf5f36b2ac, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2, ws-headers: {Host: ddns-tw.kozow.com}}
+  - {name: 🇨🇳 台湾 1 - 2, server: zs.2ray.xyz, port: 62001, type: vmess, uuid: eb305893-2ce1-3e71-afb3-83bf5f36b2ac, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2, ws-headers: {Host: ddns-tw.kozow.com}}
+  - {name: 🇨🇳 台湾 1 - 3, server: ddns-zs.2ray.xyz, port: 62002, type: vmess, uuid: eb305893-2ce1-3e71-afb3-83bf5f36b2ac, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2, ws-headers: {Host: ddns-tw.kozow.com}}
+  - {name: 🇸🇬 新加坡 - 1, server: ddns-yd.2ray.xyz, port: 62003, type: vmess, uuid: eb305893-2ce1-3e71-afb3-83bf5f36b2ac, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2, ws-headers: {Host: ray-sg1.2ray.xyz}}
+  - {name: 🇸🇬 新加坡 - 2, server: ddns-yd.2ray.xyz, port: 62004, type: vmess, uuid: eb305893-2ce1-3e71-afb3-83bf5f36b2ac, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2, ws-headers: {Host: ray-sg2.2ray.xyz}}
+  - {name: 🇯🇵 日本 - 1, server: ddns-yd.2ray.xyz, port: 62012, type: vmess, uuid: eb305893-2ce1-3e71-afb3-83bf5f36b2ac, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2, ws-headers: {Host: ray-jp1.2ray.xyz}}
+  - {name: 🇭🇰 香港 - 2, server: zs.2ray.xyz, port: 62000, type: vmess, uuid: eb305893-2ce1-3e71-afb3-83bf5f36b2ac, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2, ws-headers: {Host: hgc.2ray.xyz}}
+  - {name: 🇭🇰 香港 - 3, server: ddns-yd.2ray.xyz, port: 62015, type: vmess, uuid: eb305893-2ce1-3e71-afb3-83bf5f36b2ac, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2, ws-headers: {Host: hk-8t.2ray.xyz}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇸🇬 SG_1
-      - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 04 Netflix 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇰🇷 韩国◆AWS 05 Netflix 1x
-      - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
-      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
-      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技%"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 2"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 3"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 4"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 5"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 6"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 7"
-      - ""
-      - 🇺🇸 [主力][4K高清]移动>广东>美国
-      - 🇬🇧 移动>佛山>英国
-      - 🇨🇳 +TW
-      - 🇨🇳 +TW 2
-      - 🇨🇳 +TW 3
-      - 🇨🇳 +TW 4
-      - 🇨🇳 +TW 5
-      - 🇨🇳 +TW 6
-      - 🇨🇳 +TW 7
-      - 🇨🇳 +TW 8
-      - 🇸🇬 新加坡 (倍率 0.1)
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 8"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 9"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 10"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 11"
-      - 🇨🇳 中国成都（欢迎订阅youtube：8度科技）
-      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_6
       - 🇨🇳 台湾@freeyule【2.58.241.133】
       - 🇨🇳 台湾@freeyule【2.58.241.133】 2
       - 🇨🇳 台湾@freeyule【2.58.241.133】 3
+      - 8080
+      - 🇸🇬 新加坡 (倍率 0.1)
       - 🇨🇳 台湾@freeyule【2.58.241.133】 4
       - 🇨🇳 台湾@freeyule【2.58.241.133】 5
       - 🇨🇳 台湾@freeyule【2.58.241.133】 6
-      - 🇨🇳 台湾@freeyule【2.58.241.131】
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 5
-      - 🇨🇳 台湾@freeyule【2.58.241.29】
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 5
-      - 🇸🇬 Relay_🇭🇰HK-🇸🇬SG_5981
-      - 🇨🇭 瑞士
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
-      - 🇪🇺 欧洲(Youtube频道： 免费 vpn Vincent Jackson)
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 7
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 8
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 9
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 10
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 11
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 12
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 13
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 14
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 15
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 16
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 17
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 18
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 19
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 20
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 21
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 22
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 23
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 24
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 25
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 26
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 27
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 28
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 29
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 30
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 31
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 32
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 33
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 34
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 35
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 36
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 37
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 38
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 39
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 40
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 41
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 42
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 43
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 44
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 45
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 46
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 47
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 48
+      - 🇨🇳 Pool_🇹🇼 TW_7964
+      - www.ligonwen.cf_Trojan
+      - 🇸🇬 新加坡4
+      - 🇭🇰 [主力]移动>佛山>香港az
+      - 🇭🇰 [主力]移动>广州>香港az
+      - 🇭🇰 [主力][Netflix]移动>广州>香港cm
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_1
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_3
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_4
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_5
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_18
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_8
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_19
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_12
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_14
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_18
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_3
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_6
+      - 🇨🇳 Relay_台湾-_13004
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇹🇭 泰国_12247
+      - 🇹🇭 泰国_12250
+      - 🇹🇭 泰国_12263
+      - 🇹🇭 泰国_12266
+      - 🇹🇭 泰国_12275
+      - 🇹🇭 泰国_12284
+      - 🇹🇭 泰国_12298
+      - 🇹🇭 泰国_12302
+      - 🇹🇭 泰国_12311
+      - 🇹🇭 泰国_12313
+      - 🇹🇭 泰国_12315
+      - 🇹🇭 泰国_12318
+      - 🇹🇭 泰国_12321
+      - 🇹🇭 泰国_12322
+      - 🇹🇭 泰国_12326
+      - 🇹🇭 泰国_12332
+      - 🇹🇭 泰国_12336
+      - 🇹🇭 泰国_12346
+      - 🇹🇭 泰国_12353
+      - 🇹🇭 泰国_12356
+      - 🇹🇭 泰国_12357
+      - 🇹🇭 泰国_12359
+      - 🇹🇭 泰国_12363
+      - 🇹🇭 泰国_12366
+      - 🇹🇭 泰国_12367
+      - 🇹🇭 泰国_12371
+      - 🇹🇭 泰国_12375
+      - 🇹🇭 泰国_12376
+      - 🇹🇭 泰国_12377
+      - 🇹🇭 泰国_12381
+      - 🇹🇭 泰国_12383
+      - 🇹🇭 泰国_12478
+      - 🇹🇭 泰国_12499
+      - 🇹🇭 泰国_12524
+      - 🇹🇭 泰国_12526
+      - 🇹🇭 泰国_8913
+      - 🇭🇰 G12 香港
+      - 🇭🇰 HK-Azure | V2 | 广移中转
+      - 🇨🇳 G21 台湾*
+      - 🇸🇬 G11 新加坡
+      - 🇸🇬 SG-AWS | V2 | 广移中转
+      - 🇯🇵 G21 日本*
+      - 🇯🇵 G22 日本*
+      - 🇨🇳 台湾 1 - 1
+      - 🇨🇳 台湾 1 - 2
+      - 🇨🇳 台湾 1 - 3
+      - 🇸🇬 新加坡 - 1
+      - 🇸🇬 新加坡 - 2
+      - 🇯🇵 日本 - 1
+      - 🇭🇰 香港 - 2
+      - 🇭🇰 香港 - 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 SG_1
-      - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 04 Netflix 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇰🇷 韩国◆AWS 05 Netflix 1x
-      - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
-      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
-      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技%"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 2"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 3"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 4"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 5"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 6"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 7"
-      - ""
-      - 🇺🇸 [主力][4K高清]移动>广东>美国
-      - 🇬🇧 移动>佛山>英国
-      - 🇨🇳 +TW
-      - 🇨🇳 +TW 2
-      - 🇨🇳 +TW 3
-      - 🇨🇳 +TW 4
-      - 🇨🇳 +TW 5
-      - 🇨🇳 +TW 6
-      - 🇨🇳 +TW 7
-      - 🇨🇳 +TW 8
-      - 🇸🇬 新加坡 (倍率 0.1)
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 8"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 9"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 10"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 11"
-      - 🇨🇳 中国成都（欢迎订阅youtube：8度科技）
-      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_6
       - 🇨🇳 台湾@freeyule【2.58.241.133】
       - 🇨🇳 台湾@freeyule【2.58.241.133】 2
       - 🇨🇳 台湾@freeyule【2.58.241.133】 3
+      - 8080
+      - 🇸🇬 新加坡 (倍率 0.1)
       - 🇨🇳 台湾@freeyule【2.58.241.133】 4
       - 🇨🇳 台湾@freeyule【2.58.241.133】 5
       - 🇨🇳 台湾@freeyule【2.58.241.133】 6
-      - 🇨🇳 台湾@freeyule【2.58.241.131】
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 5
-      - 🇨🇳 台湾@freeyule【2.58.241.29】
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 5
-      - 🇸🇬 Relay_🇭🇰HK-🇸🇬SG_5981
-      - 🇨🇭 瑞士
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
-      - 🇪🇺 欧洲(Youtube频道： 免费 vpn Vincent Jackson)
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 7
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 8
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 9
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 10
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 11
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 12
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 13
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 14
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 15
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 16
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 17
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 18
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 19
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 20
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 21
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 22
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 23
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 24
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 25
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 26
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 27
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 28
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 29
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 30
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 31
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 32
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 33
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 34
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 35
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 36
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 37
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 38
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 39
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 40
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 41
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 42
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 43
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 44
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 45
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 46
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 47
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 48
+      - 🇨🇳 Pool_🇹🇼 TW_7964
+      - www.ligonwen.cf_Trojan
+      - 🇸🇬 新加坡4
+      - 🇭🇰 [主力]移动>佛山>香港az
+      - 🇭🇰 [主力]移动>广州>香港az
+      - 🇭🇰 [主力][Netflix]移动>广州>香港cm
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_1
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_3
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_4
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_5
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_18
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_8
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_19
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_12
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_14
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_18
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_3
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_6
+      - 🇨🇳 Relay_台湾-_13004
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇹🇭 泰国_12247
+      - 🇹🇭 泰国_12250
+      - 🇹🇭 泰国_12263
+      - 🇹🇭 泰国_12266
+      - 🇹🇭 泰国_12275
+      - 🇹🇭 泰国_12284
+      - 🇹🇭 泰国_12298
+      - 🇹🇭 泰国_12302
+      - 🇹🇭 泰国_12311
+      - 🇹🇭 泰国_12313
+      - 🇹🇭 泰国_12315
+      - 🇹🇭 泰国_12318
+      - 🇹🇭 泰国_12321
+      - 🇹🇭 泰国_12322
+      - 🇹🇭 泰国_12326
+      - 🇹🇭 泰国_12332
+      - 🇹🇭 泰国_12336
+      - 🇹🇭 泰国_12346
+      - 🇹🇭 泰国_12353
+      - 🇹🇭 泰国_12356
+      - 🇹🇭 泰国_12357
+      - 🇹🇭 泰国_12359
+      - 🇹🇭 泰国_12363
+      - 🇹🇭 泰国_12366
+      - 🇹🇭 泰国_12367
+      - 🇹🇭 泰国_12371
+      - 🇹🇭 泰国_12375
+      - 🇹🇭 泰国_12376
+      - 🇹🇭 泰国_12377
+      - 🇹🇭 泰国_12381
+      - 🇹🇭 泰国_12383
+      - 🇹🇭 泰国_12478
+      - 🇹🇭 泰国_12499
+      - 🇹🇭 泰国_12524
+      - 🇹🇭 泰国_12526
+      - 🇹🇭 泰国_8913
+      - 🇭🇰 G12 香港
+      - 🇭🇰 HK-Azure | V2 | 广移中转
+      - 🇨🇳 G21 台湾*
+      - 🇸🇬 G11 新加坡
+      - 🇸🇬 SG-AWS | V2 | 广移中转
+      - 🇯🇵 G21 日本*
+      - 🇯🇵 G22 日本*
+      - 🇨🇳 台湾 1 - 1
+      - 🇨🇳 台湾 1 - 2
+      - 🇨🇳 台湾 1 - 3
+      - 🇸🇬 新加坡 - 1
+      - 🇸🇬 新加坡 - 2
+      - 🇯🇵 日本 - 1
+      - 🇭🇰 香港 - 2
+      - 🇭🇰 香港 - 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 SG_1
-      - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 04 Netflix 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇰🇷 韩国◆AWS 05 Netflix 1x
-      - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
-      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
-      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技%"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 2"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 3"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 4"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 5"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 6"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 7"
-      - ""
-      - 🇺🇸 [主力][4K高清]移动>广东>美国
-      - 🇬🇧 移动>佛山>英国
-      - 🇨🇳 +TW
-      - 🇨🇳 +TW 2
-      - 🇨🇳 +TW 3
-      - 🇨🇳 +TW 4
-      - 🇨🇳 +TW 5
-      - 🇨🇳 +TW 6
-      - 🇨🇳 +TW 7
-      - 🇨🇳 +TW 8
-      - 🇸🇬 新加坡 (倍率 0.1)
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 8"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 9"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 10"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 11"
-      - 🇨🇳 中国成都（欢迎订阅youtube：8度科技）
-      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_6
       - 🇨🇳 台湾@freeyule【2.58.241.133】
       - 🇨🇳 台湾@freeyule【2.58.241.133】 2
       - 🇨🇳 台湾@freeyule【2.58.241.133】 3
+      - 8080
+      - 🇸🇬 新加坡 (倍率 0.1)
       - 🇨🇳 台湾@freeyule【2.58.241.133】 4
       - 🇨🇳 台湾@freeyule【2.58.241.133】 5
       - 🇨🇳 台湾@freeyule【2.58.241.133】 6
-      - 🇨🇳 台湾@freeyule【2.58.241.131】
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 5
-      - 🇨🇳 台湾@freeyule【2.58.241.29】
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 5
-      - 🇸🇬 Relay_🇭🇰HK-🇸🇬SG_5981
-      - 🇨🇭 瑞士
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
-      - 🇪🇺 欧洲(Youtube频道： 免费 vpn Vincent Jackson)
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 7
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 8
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 9
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 10
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 11
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 12
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 13
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 14
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 15
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 16
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 17
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 18
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 19
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 20
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 21
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 22
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 23
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 24
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 25
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 26
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 27
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 28
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 29
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 30
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 31
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 32
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 33
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 34
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 35
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 36
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 37
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 38
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 39
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 40
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 41
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 42
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 43
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 44
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 45
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 46
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 47
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 48
+      - 🇨🇳 Pool_🇹🇼 TW_7964
+      - www.ligonwen.cf_Trojan
+      - 🇸🇬 新加坡4
+      - 🇭🇰 [主力]移动>佛山>香港az
+      - 🇭🇰 [主力]移动>广州>香港az
+      - 🇭🇰 [主力][Netflix]移动>广州>香港cm
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_1
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_3
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_4
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_5
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_18
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_8
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_19
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_12
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_14
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_18
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_3
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_6
+      - 🇨🇳 Relay_台湾-_13004
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇹🇭 泰国_12247
+      - 🇹🇭 泰国_12250
+      - 🇹🇭 泰国_12263
+      - 🇹🇭 泰国_12266
+      - 🇹🇭 泰国_12275
+      - 🇹🇭 泰国_12284
+      - 🇹🇭 泰国_12298
+      - 🇹🇭 泰国_12302
+      - 🇹🇭 泰国_12311
+      - 🇹🇭 泰国_12313
+      - 🇹🇭 泰国_12315
+      - 🇹🇭 泰国_12318
+      - 🇹🇭 泰国_12321
+      - 🇹🇭 泰国_12322
+      - 🇹🇭 泰国_12326
+      - 🇹🇭 泰国_12332
+      - 🇹🇭 泰国_12336
+      - 🇹🇭 泰国_12346
+      - 🇹🇭 泰国_12353
+      - 🇹🇭 泰国_12356
+      - 🇹🇭 泰国_12357
+      - 🇹🇭 泰国_12359
+      - 🇹🇭 泰国_12363
+      - 🇹🇭 泰国_12366
+      - 🇹🇭 泰国_12367
+      - 🇹🇭 泰国_12371
+      - 🇹🇭 泰国_12375
+      - 🇹🇭 泰国_12376
+      - 🇹🇭 泰国_12377
+      - 🇹🇭 泰国_12381
+      - 🇹🇭 泰国_12383
+      - 🇹🇭 泰国_12478
+      - 🇹🇭 泰国_12499
+      - 🇹🇭 泰国_12524
+      - 🇹🇭 泰国_12526
+      - 🇹🇭 泰国_8913
+      - 🇭🇰 G12 香港
+      - 🇭🇰 HK-Azure | V2 | 广移中转
+      - 🇨🇳 G21 台湾*
+      - 🇸🇬 G11 新加坡
+      - 🇸🇬 SG-AWS | V2 | 广移中转
+      - 🇯🇵 G21 日本*
+      - 🇯🇵 G22 日本*
+      - 🇨🇳 台湾 1 - 1
+      - 🇨🇳 台湾 1 - 2
+      - 🇨🇳 台湾 1 - 3
+      - 🇸🇬 新加坡 - 1
+      - 🇸🇬 新加坡 - 2
+      - 🇯🇵 日本 - 1
+      - 🇭🇰 香港 - 2
+      - 🇭🇰 香港 - 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬 SG_1
-      - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 04 Netflix 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇰🇷 韩国◆AWS 05 Netflix 1x
-      - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
-      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
-      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技%"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 2"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 3"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 4"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 5"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 6"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 7"
-      - ""
-      - 🇺🇸 [主力][4K高清]移动>广东>美国
-      - 🇬🇧 移动>佛山>英国
-      - 🇨🇳 +TW
-      - 🇨🇳 +TW 2
-      - 🇨🇳 +TW 3
-      - 🇨🇳 +TW 4
-      - 🇨🇳 +TW 5
-      - 🇨🇳 +TW 6
-      - 🇨🇳 +TW 7
-      - 🇨🇳 +TW 8
-      - 🇸🇬 新加坡 (倍率 0.1)
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 8"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 9"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 10"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 11"
-      - 🇨🇳 中国成都（欢迎订阅youtube：8度科技）
-      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_6
       - 🇨🇳 台湾@freeyule【2.58.241.133】
       - 🇨🇳 台湾@freeyule【2.58.241.133】 2
       - 🇨🇳 台湾@freeyule【2.58.241.133】 3
+      - 8080
+      - 🇸🇬 新加坡 (倍率 0.1)
       - 🇨🇳 台湾@freeyule【2.58.241.133】 4
       - 🇨🇳 台湾@freeyule【2.58.241.133】 5
       - 🇨🇳 台湾@freeyule【2.58.241.133】 6
-      - 🇨🇳 台湾@freeyule【2.58.241.131】
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 5
-      - 🇨🇳 台湾@freeyule【2.58.241.29】
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 5
-      - 🇸🇬 Relay_🇭🇰HK-🇸🇬SG_5981
-      - 🇨🇭 瑞士
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
-      - 🇪🇺 欧洲(Youtube频道： 免费 vpn Vincent Jackson)
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 7
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 8
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 9
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 10
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 11
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 12
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 13
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 14
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 15
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 16
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 17
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 18
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 19
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 20
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 21
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 22
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 23
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 24
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 25
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 26
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 27
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 28
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 29
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 30
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 31
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 32
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 33
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 34
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 35
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 36
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 37
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 38
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 39
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 40
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 41
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 42
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 43
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 44
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 45
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 46
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 47
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 48
+      - 🇨🇳 Pool_🇹🇼 TW_7964
+      - www.ligonwen.cf_Trojan
+      - 🇸🇬 新加坡4
+      - 🇭🇰 [主力]移动>佛山>香港az
+      - 🇭🇰 [主力]移动>广州>香港az
+      - 🇭🇰 [主力][Netflix]移动>广州>香港cm
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_1
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_3
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_4
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_5
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_18
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_8
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_19
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_12
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_14
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_18
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_3
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_6
+      - 🇨🇳 Relay_台湾-_13004
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇹🇭 泰国_12247
+      - 🇹🇭 泰国_12250
+      - 🇹🇭 泰国_12263
+      - 🇹🇭 泰国_12266
+      - 🇹🇭 泰国_12275
+      - 🇹🇭 泰国_12284
+      - 🇹🇭 泰国_12298
+      - 🇹🇭 泰国_12302
+      - 🇹🇭 泰国_12311
+      - 🇹🇭 泰国_12313
+      - 🇹🇭 泰国_12315
+      - 🇹🇭 泰国_12318
+      - 🇹🇭 泰国_12321
+      - 🇹🇭 泰国_12322
+      - 🇹🇭 泰国_12326
+      - 🇹🇭 泰国_12332
+      - 🇹🇭 泰国_12336
+      - 🇹🇭 泰国_12346
+      - 🇹🇭 泰国_12353
+      - 🇹🇭 泰国_12356
+      - 🇹🇭 泰国_12357
+      - 🇹🇭 泰国_12359
+      - 🇹🇭 泰国_12363
+      - 🇹🇭 泰国_12366
+      - 🇹🇭 泰国_12367
+      - 🇹🇭 泰国_12371
+      - 🇹🇭 泰国_12375
+      - 🇹🇭 泰国_12376
+      - 🇹🇭 泰国_12377
+      - 🇹🇭 泰国_12381
+      - 🇹🇭 泰国_12383
+      - 🇹🇭 泰国_12478
+      - 🇹🇭 泰国_12499
+      - 🇹🇭 泰国_12524
+      - 🇹🇭 泰国_12526
+      - 🇹🇭 泰国_8913
+      - 🇭🇰 G12 香港
+      - 🇭🇰 HK-Azure | V2 | 广移中转
+      - 🇨🇳 G21 台湾*
+      - 🇸🇬 G11 新加坡
+      - 🇸🇬 SG-AWS | V2 | 广移中转
+      - 🇯🇵 G21 日本*
+      - 🇯🇵 G22 日本*
+      - 🇨🇳 台湾 1 - 1
+      - 🇨🇳 台湾 1 - 2
+      - 🇨🇳 台湾 1 - 3
+      - 🇸🇬 新加坡 - 1
+      - 🇸🇬 新加坡 - 2
+      - 🇯🇵 日本 - 1
+      - 🇭🇰 香港 - 2
+      - 🇭🇰 香港 - 3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇸🇬 SG_1
-      - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 04 Netflix 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇰🇷 韩国◆AWS 05 Netflix 1x
-      - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
-      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
-      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技%"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 2"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 3"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 4"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 5"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 6"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 7"
-      - ""
-      - 🇺🇸 [主力][4K高清]移动>广东>美国
-      - 🇬🇧 移动>佛山>英国
-      - 🇨🇳 +TW
-      - 🇨🇳 +TW 2
-      - 🇨🇳 +TW 3
-      - 🇨🇳 +TW 4
-      - 🇨🇳 +TW 5
-      - 🇨🇳 +TW 6
-      - 🇨🇳 +TW 7
-      - 🇨🇳 +TW 8
-      - 🇸🇬 新加坡 (倍率 0.1)
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 8"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 9"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 10"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 11"
-      - 🇨🇳 中国成都（欢迎订阅youtube：8度科技）
-      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_6
       - 🇨🇳 台湾@freeyule【2.58.241.133】
       - 🇨🇳 台湾@freeyule【2.58.241.133】 2
       - 🇨🇳 台湾@freeyule【2.58.241.133】 3
+      - 8080
+      - 🇸🇬 新加坡 (倍率 0.1)
       - 🇨🇳 台湾@freeyule【2.58.241.133】 4
       - 🇨🇳 台湾@freeyule【2.58.241.133】 5
       - 🇨🇳 台湾@freeyule【2.58.241.133】 6
-      - 🇨🇳 台湾@freeyule【2.58.241.131】
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 5
-      - 🇨🇳 台湾@freeyule【2.58.241.29】
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 5
-      - 🇸🇬 Relay_🇭🇰HK-🇸🇬SG_5981
-      - 🇨🇭 瑞士
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
-      - 🇪🇺 欧洲(Youtube频道： 免费 vpn Vincent Jackson)
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 7
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 8
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 9
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 10
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 11
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 12
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 13
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 14
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 15
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 16
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 17
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 18
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 19
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 20
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 21
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 22
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 23
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 24
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 25
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 26
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 27
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 28
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 29
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 30
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 31
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 32
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 33
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 34
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 35
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 36
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 37
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 38
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 39
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 40
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 41
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 42
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 43
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 44
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 45
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 46
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 47
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 48
+      - 🇨🇳 Pool_🇹🇼 TW_7964
+      - www.ligonwen.cf_Trojan
+      - 🇸🇬 新加坡4
+      - 🇭🇰 [主力]移动>佛山>香港az
+      - 🇭🇰 [主力]移动>广州>香港az
+      - 🇭🇰 [主力][Netflix]移动>广州>香港cm
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_1
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_3
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_4
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_5
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_18
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_8
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_19
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_12
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_14
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_18
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_3
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_6
+      - 🇨🇳 Relay_台湾-_13004
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇹🇭 泰国_12247
+      - 🇹🇭 泰国_12250
+      - 🇹🇭 泰国_12263
+      - 🇹🇭 泰国_12266
+      - 🇹🇭 泰国_12275
+      - 🇹🇭 泰国_12284
+      - 🇹🇭 泰国_12298
+      - 🇹🇭 泰国_12302
+      - 🇹🇭 泰国_12311
+      - 🇹🇭 泰国_12313
+      - 🇹🇭 泰国_12315
+      - 🇹🇭 泰国_12318
+      - 🇹🇭 泰国_12321
+      - 🇹🇭 泰国_12322
+      - 🇹🇭 泰国_12326
+      - 🇹🇭 泰国_12332
+      - 🇹🇭 泰国_12336
+      - 🇹🇭 泰国_12346
+      - 🇹🇭 泰国_12353
+      - 🇹🇭 泰国_12356
+      - 🇹🇭 泰国_12357
+      - 🇹🇭 泰国_12359
+      - 🇹🇭 泰国_12363
+      - 🇹🇭 泰国_12366
+      - 🇹🇭 泰国_12367
+      - 🇹🇭 泰国_12371
+      - 🇹🇭 泰国_12375
+      - 🇹🇭 泰国_12376
+      - 🇹🇭 泰国_12377
+      - 🇹🇭 泰国_12381
+      - 🇹🇭 泰国_12383
+      - 🇹🇭 泰国_12478
+      - 🇹🇭 泰国_12499
+      - 🇹🇭 泰国_12524
+      - 🇹🇭 泰国_12526
+      - 🇹🇭 泰国_8913
+      - 🇭🇰 G12 香港
+      - 🇭🇰 HK-Azure | V2 | 广移中转
+      - 🇨🇳 G21 台湾*
+      - 🇸🇬 G11 新加坡
+      - 🇸🇬 SG-AWS | V2 | 广移中转
+      - 🇯🇵 G21 日本*
+      - 🇯🇵 G22 日本*
+      - 🇨🇳 台湾 1 - 1
+      - 🇨🇳 台湾 1 - 2
+      - 🇨🇳 台湾 1 - 3
+      - 🇸🇬 新加坡 - 1
+      - 🇸🇬 新加坡 - 2
+      - 🇯🇵 日本 - 1
+      - 🇭🇰 香港 - 2
+      - 🇭🇰 香港 - 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬 SG_1
-      - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 04 Netflix 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇰🇷 韩国◆AWS 05 Netflix 1x
-      - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
-      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
-      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技%"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 2"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 3"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 4"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 5"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 6"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 7"
-      - ""
-      - 🇺🇸 [主力][4K高清]移动>广东>美国
-      - 🇬🇧 移动>佛山>英国
-      - 🇨🇳 +TW
-      - 🇨🇳 +TW 2
-      - 🇨🇳 +TW 3
-      - 🇨🇳 +TW 4
-      - 🇨🇳 +TW 5
-      - 🇨🇳 +TW 6
-      - 🇨🇳 +TW 7
-      - 🇨🇳 +TW 8
-      - 🇸🇬 新加坡 (倍率 0.1)
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 8"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 9"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 10"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 11"
-      - 🇨🇳 中国成都（欢迎订阅youtube：8度科技）
-      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_6
       - 🇨🇳 台湾@freeyule【2.58.241.133】
       - 🇨🇳 台湾@freeyule【2.58.241.133】 2
       - 🇨🇳 台湾@freeyule【2.58.241.133】 3
+      - 8080
+      - 🇸🇬 新加坡 (倍率 0.1)
       - 🇨🇳 台湾@freeyule【2.58.241.133】 4
       - 🇨🇳 台湾@freeyule【2.58.241.133】 5
       - 🇨🇳 台湾@freeyule【2.58.241.133】 6
-      - 🇨🇳 台湾@freeyule【2.58.241.131】
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 5
-      - 🇨🇳 台湾@freeyule【2.58.241.29】
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 5
-      - 🇸🇬 Relay_🇭🇰HK-🇸🇬SG_5981
-      - 🇨🇭 瑞士
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
-      - 🇪🇺 欧洲(Youtube频道： 免费 vpn Vincent Jackson)
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 7
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 8
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 9
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 10
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 11
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 12
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 13
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 14
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 15
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 16
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 17
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 18
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 19
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 20
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 21
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 22
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 23
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 24
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 25
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 26
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 27
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 28
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 29
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 30
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 31
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 32
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 33
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 34
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 35
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 36
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 37
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 38
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 39
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 40
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 41
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 42
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 43
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 44
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 45
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 46
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 47
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 48
+      - 🇨🇳 Pool_🇹🇼 TW_7964
+      - www.ligonwen.cf_Trojan
+      - 🇸🇬 新加坡4
+      - 🇭🇰 [主力]移动>佛山>香港az
+      - 🇭🇰 [主力]移动>广州>香港az
+      - 🇭🇰 [主力][Netflix]移动>广州>香港cm
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_1
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_3
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_4
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_5
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_18
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_8
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_19
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_12
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_14
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_18
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_3
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_6
+      - 🇨🇳 Relay_台湾-_13004
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇹🇭 泰国_12247
+      - 🇹🇭 泰国_12250
+      - 🇹🇭 泰国_12263
+      - 🇹🇭 泰国_12266
+      - 🇹🇭 泰国_12275
+      - 🇹🇭 泰国_12284
+      - 🇹🇭 泰国_12298
+      - 🇹🇭 泰国_12302
+      - 🇹🇭 泰国_12311
+      - 🇹🇭 泰国_12313
+      - 🇹🇭 泰国_12315
+      - 🇹🇭 泰国_12318
+      - 🇹🇭 泰国_12321
+      - 🇹🇭 泰国_12322
+      - 🇹🇭 泰国_12326
+      - 🇹🇭 泰国_12332
+      - 🇹🇭 泰国_12336
+      - 🇹🇭 泰国_12346
+      - 🇹🇭 泰国_12353
+      - 🇹🇭 泰国_12356
+      - 🇹🇭 泰国_12357
+      - 🇹🇭 泰国_12359
+      - 🇹🇭 泰国_12363
+      - 🇹🇭 泰国_12366
+      - 🇹🇭 泰国_12367
+      - 🇹🇭 泰国_12371
+      - 🇹🇭 泰国_12375
+      - 🇹🇭 泰国_12376
+      - 🇹🇭 泰国_12377
+      - 🇹🇭 泰国_12381
+      - 🇹🇭 泰国_12383
+      - 🇹🇭 泰国_12478
+      - 🇹🇭 泰国_12499
+      - 🇹🇭 泰国_12524
+      - 🇹🇭 泰国_12526
+      - 🇹🇭 泰国_8913
+      - 🇭🇰 G12 香港
+      - 🇭🇰 HK-Azure | V2 | 广移中转
+      - 🇨🇳 G21 台湾*
+      - 🇸🇬 G11 新加坡
+      - 🇸🇬 SG-AWS | V2 | 广移中转
+      - 🇯🇵 G21 日本*
+      - 🇯🇵 G22 日本*
+      - 🇨🇳 台湾 1 - 1
+      - 🇨🇳 台湾 1 - 2
+      - 🇨🇳 台湾 1 - 3
+      - 🇸🇬 新加坡 - 1
+      - 🇸🇬 新加坡 - 2
+      - 🇯🇵 日本 - 1
+      - 🇭🇰 香港 - 2
+      - 🇭🇰 香港 - 3
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 SG_1
-      - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 04 Netflix 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇰🇷 韩国◆AWS 05 Netflix 1x
-      - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
-      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
-      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技%"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 2"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 3"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 4"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 5"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 6"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 7"
-      - ""
-      - 🇺🇸 [主力][4K高清]移动>广东>美国
-      - 🇬🇧 移动>佛山>英国
-      - 🇨🇳 +TW
-      - 🇨🇳 +TW 2
-      - 🇨🇳 +TW 3
-      - 🇨🇳 +TW 4
-      - 🇨🇳 +TW 5
-      - 🇨🇳 +TW 6
-      - 🇨🇳 +TW 7
-      - 🇨🇳 +TW 8
-      - 🇸🇬 新加坡 (倍率 0.1)
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 8"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 9"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 10"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 11"
-      - 🇨🇳 中国成都（欢迎订阅youtube：8度科技）
-      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_6
       - 🇨🇳 台湾@freeyule【2.58.241.133】
       - 🇨🇳 台湾@freeyule【2.58.241.133】 2
       - 🇨🇳 台湾@freeyule【2.58.241.133】 3
+      - 8080
+      - 🇸🇬 新加坡 (倍率 0.1)
       - 🇨🇳 台湾@freeyule【2.58.241.133】 4
       - 🇨🇳 台湾@freeyule【2.58.241.133】 5
       - 🇨🇳 台湾@freeyule【2.58.241.133】 6
-      - 🇨🇳 台湾@freeyule【2.58.241.131】
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 5
-      - 🇨🇳 台湾@freeyule【2.58.241.29】
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 5
-      - 🇸🇬 Relay_🇭🇰HK-🇸🇬SG_5981
-      - 🇨🇭 瑞士
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
-      - 🇪🇺 欧洲(Youtube频道： 免费 vpn Vincent Jackson)
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 7
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 8
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 9
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 10
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 11
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 12
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 13
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 14
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 15
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 16
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 17
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 18
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 19
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 20
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 21
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 22
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 23
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 24
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 25
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 26
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 27
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 28
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 29
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 30
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 31
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 32
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 33
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 34
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 35
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 36
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 37
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 38
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 39
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 40
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 41
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 42
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 43
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 44
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 45
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 46
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 47
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 48
+      - 🇨🇳 Pool_🇹🇼 TW_7964
+      - www.ligonwen.cf_Trojan
+      - 🇸🇬 新加坡4
+      - 🇭🇰 [主力]移动>佛山>香港az
+      - 🇭🇰 [主力]移动>广州>香港az
+      - 🇭🇰 [主力][Netflix]移动>广州>香港cm
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_1
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_3
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_4
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_5
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_18
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_8
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_19
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_12
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_14
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_18
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_3
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_6
+      - 🇨🇳 Relay_台湾-_13004
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇹🇭 泰国_12247
+      - 🇹🇭 泰国_12250
+      - 🇹🇭 泰国_12263
+      - 🇹🇭 泰国_12266
+      - 🇹🇭 泰国_12275
+      - 🇹🇭 泰国_12284
+      - 🇹🇭 泰国_12298
+      - 🇹🇭 泰国_12302
+      - 🇹🇭 泰国_12311
+      - 🇹🇭 泰国_12313
+      - 🇹🇭 泰国_12315
+      - 🇹🇭 泰国_12318
+      - 🇹🇭 泰国_12321
+      - 🇹🇭 泰国_12322
+      - 🇹🇭 泰国_12326
+      - 🇹🇭 泰国_12332
+      - 🇹🇭 泰国_12336
+      - 🇹🇭 泰国_12346
+      - 🇹🇭 泰国_12353
+      - 🇹🇭 泰国_12356
+      - 🇹🇭 泰国_12357
+      - 🇹🇭 泰国_12359
+      - 🇹🇭 泰国_12363
+      - 🇹🇭 泰国_12366
+      - 🇹🇭 泰国_12367
+      - 🇹🇭 泰国_12371
+      - 🇹🇭 泰国_12375
+      - 🇹🇭 泰国_12376
+      - 🇹🇭 泰国_12377
+      - 🇹🇭 泰国_12381
+      - 🇹🇭 泰国_12383
+      - 🇹🇭 泰国_12478
+      - 🇹🇭 泰国_12499
+      - 🇹🇭 泰国_12524
+      - 🇹🇭 泰国_12526
+      - 🇹🇭 泰国_8913
+      - 🇭🇰 G12 香港
+      - 🇭🇰 HK-Azure | V2 | 广移中转
+      - 🇨🇳 G21 台湾*
+      - 🇸🇬 G11 新加坡
+      - 🇸🇬 SG-AWS | V2 | 广移中转
+      - 🇯🇵 G21 日本*
+      - 🇯🇵 G22 日本*
+      - 🇨🇳 台湾 1 - 1
+      - 🇨🇳 台湾 1 - 2
+      - 🇨🇳 台湾 1 - 3
+      - 🇸🇬 新加坡 - 1
+      - 🇸🇬 新加坡 - 2
+      - 🇯🇵 日本 - 1
+      - 🇭🇰 香港 - 2
+      - 🇭🇰 香港 - 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -610,74 +1122,138 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 SG_1
-      - 🇮🇳 印度IN◆◆01 CDN加速 1x
-      - 🇸🇬 新加坡◆AWS 01 Netflix 1x
-      - 🇸🇬 新加坡◆AWS 04 Netflix 1x
       - 🇸🇬 新加坡◆◆SG 04 AWS 1x
-      - 🇰🇷 韩国◆AWS 05 Netflix 1x
-      - 🇰🇷 韩国◆AWS 06 Netflix 1x
-      - 🇭🇰 香港◆AWS 03 Netflix 1x
       - 🇭🇰 香港◆AWS 08 Netflix 1x
       - 🇭🇰 香港◆AWS 10 Netflix 1x
       - 🇭🇰 香港◆◆HK 01 Azure Game 3x
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13299
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13300
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13301
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13302
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13304
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13305
-      - 🇨🇳 TG@NGK668🇨🇳 Relay_🇹🇼TW-🇹🇼TW_13310
-      - 🇷🇺 Relay_-🇷🇺RU_6363 | 6.84Mb
-      - 🇷🇺 @SSRSUB-俄罗斯V13-付费推荐::suo.yt/ssrsub
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技%"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 2"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 3"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 4"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 5"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 6"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 7"
-      - ""
-      - 🇺🇸 [主力][4K高清]移动>广东>美国
-      - 🇬🇧 移动>佛山>英国
-      - 🇨🇳 +TW
-      - 🇨🇳 +TW 2
-      - 🇨🇳 +TW 3
-      - 🇨🇳 +TW 4
-      - 🇨🇳 +TW 5
-      - 🇨🇳 +TW 6
-      - 🇨🇳 +TW 7
-      - 🇨🇳 +TW 8
-      - 🇸🇬 新加坡 (倍率 0.1)
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 8"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 9"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 10"
-      - "🇨🇳 #台湾台北（欢迎订阅youtube：8度科技% 11"
-      - 🇨🇳 中国成都（欢迎订阅youtube：8度科技）
-      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_6
       - 🇨🇳 台湾@freeyule【2.58.241.133】
       - 🇨🇳 台湾@freeyule【2.58.241.133】 2
       - 🇨🇳 台湾@freeyule【2.58.241.133】 3
+      - 8080
+      - 🇸🇬 新加坡 (倍率 0.1)
       - 🇨🇳 台湾@freeyule【2.58.241.133】 4
       - 🇨🇳 台湾@freeyule【2.58.241.133】 5
       - 🇨🇳 台湾@freeyule【2.58.241.133】 6
-      - 🇨🇳 台湾@freeyule【2.58.241.131】
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.131】 5
-      - 🇨🇳 台湾@freeyule【2.58.241.29】
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 2
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 3
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 4
-      - 🇨🇳 台湾@freeyule【2.58.241.29】 5
-      - 🇸🇬 Relay_🇭🇰HK-🇸🇬SG_5981
-      - 🇨🇭 瑞士
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a
-      - 🇸🇬 节点更新https://bit.ly/3uWuS7a 2
-      - 🇪🇺 欧洲(Youtube频道： 免费 vpn Vincent Jackson)
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 7
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 8
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 9
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 10
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 11
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 12
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 13
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 14
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 15
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 16
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 17
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 18
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 19
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 20
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 21
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 22
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 23
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 24
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 25
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 26
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 27
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 28
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 29
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 30
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 31
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 32
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 33
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 34
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 35
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 36
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 37
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 38
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 39
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 40
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 41
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 42
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 43
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 44
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 45
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 46
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 47
+      - 🇨🇳 台湾@freeyule【2.58.241.133】 48
+      - 🇨🇳 Pool_🇹🇼 TW_7964
+      - www.ligonwen.cf_Trojan
+      - 🇸🇬 新加坡4
+      - 🇭🇰 [主力]移动>佛山>香港az
+      - 🇭🇰 [主力]移动>广州>香港az
+      - 🇭🇰 [主力][Netflix]移动>广州>香港cm
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_1
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_2
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_3
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_4
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_5
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_7
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_18
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_8
+      - 🇯🇵 cfmem.com_🇯🇵_JP_日本_19
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_10
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_11
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_12
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_14
+      - 🇨🇳 cfmem.com_🇹🇼_TW_台湾_18
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_3
+      - 🇹🇭 cfmem.com_🇹🇭_TH_泰国_6
+      - 🇨🇳 Relay_台湾-_13004
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇹🇭 泰国_12247
+      - 🇹🇭 泰国_12250
+      - 🇹🇭 泰国_12263
+      - 🇹🇭 泰国_12266
+      - 🇹🇭 泰国_12275
+      - 🇹🇭 泰国_12284
+      - 🇹🇭 泰国_12298
+      - 🇹🇭 泰国_12302
+      - 🇹🇭 泰国_12311
+      - 🇹🇭 泰国_12313
+      - 🇹🇭 泰国_12315
+      - 🇹🇭 泰国_12318
+      - 🇹🇭 泰国_12321
+      - 🇹🇭 泰国_12322
+      - 🇹🇭 泰国_12326
+      - 🇹🇭 泰国_12332
+      - 🇹🇭 泰国_12336
+      - 🇹🇭 泰国_12346
+      - 🇹🇭 泰国_12353
+      - 🇹🇭 泰国_12356
+      - 🇹🇭 泰国_12357
+      - 🇹🇭 泰国_12359
+      - 🇹🇭 泰国_12363
+      - 🇹🇭 泰国_12366
+      - 🇹🇭 泰国_12367
+      - 🇹🇭 泰国_12371
+      - 🇹🇭 泰国_12375
+      - 🇹🇭 泰国_12376
+      - 🇹🇭 泰国_12377
+      - 🇹🇭 泰国_12381
+      - 🇹🇭 泰国_12383
+      - 🇹🇭 泰国_12478
+      - 🇹🇭 泰国_12499
+      - 🇹🇭 泰国_12524
+      - 🇹🇭 泰国_12526
+      - 🇹🇭 泰国_8913
+      - 🇭🇰 G12 香港
+      - 🇭🇰 HK-Azure | V2 | 广移中转
+      - 🇨🇳 G21 台湾*
+      - 🇸🇬 G11 新加坡
+      - 🇸🇬 SG-AWS | V2 | 广移中转
+      - 🇯🇵 G21 日本*
+      - 🇯🇵 G22 日本*
+      - 🇨🇳 台湾 1 - 1
+      - 🇨🇳 台湾 1 - 2
+      - 🇨🇳 台湾 1 - 3
+      - 🇸🇬 新加坡 - 1
+      - 🇸🇬 新加坡 - 2
+      - 🇯🇵 日本 - 1
+      - 🇭🇰 香港 - 2
+      - 🇭🇰 香港 - 3
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
