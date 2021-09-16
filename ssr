@@ -5,61 +5,77 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 高速香港2|2x, server: 121.35.254.186, port: 40251, type: ss, cipher: aes-256-cfb, password: Cdaem6TtuV6m}
   - {name: 🇭🇰 精品香港5|2x, server: 121.35.254.190, port: 40251, type: ss, cipher: aes-256-cfb, password: Cdaem6TtuV6m}
+  - {name: 🇬🇧 Relay_中国-英国_2057, server: n06.boom.party, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 254637:Ol4zZv, obfsparam: download.windowsupdate.com}
+  - {name: 🇭🇰 Relay_中国-香港_3080, server: nn9.boom.party, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 254637:Ol4zZv, obfsparam: download.windowsupdate.com}
+  - {name: 🇸🇬 VIP1 AA新加坡丨TX丨04, server: 43.134.17.135, port: 59959, type: ssr, cipher: aes-256-cfb, password: qicaiyunti, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocolparam: 3755:8ZdSsq, obfsparam: "337063755.716b61.zhaoj.in,tse1.mm.bing.net,cloudfront.com,cloudflare.com,itunes.apple.com,www.icloud.com,ajax.microsoft.com,apps.bdimg.com,www.bing.com"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇸🇬 VIP1 AA新加坡丨TX丨04
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇸🇬 VIP1 AA新加坡丨TX丨04
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇸🇬 VIP1 AA新加坡丨TX丨04
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇸🇬 VIP1 AA新加坡丨TX丨04
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇸🇬 VIP1 AA新加坡丨TX丨04
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇸🇬 VIP1 AA新加坡丨TX丨04
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇸🇬 VIP1 AA新加坡丨TX丨04
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -82,8 +98,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 高速香港2|2x
       - 🇭🇰 精品香港5|2x
+      - 🇬🇧 Relay_中国-英国_2057
+      - 🇭🇰 Relay_中国-香港_3080
+      - 🇸🇬 VIP1 AA新加坡丨TX丨04
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -1798,6 +1816,7 @@ rules:
  - IP-CIDR,74.125.203.188/32,📢 谷歌FCM,no-resolve
  - IP-CIDR,74.125.204.188/32,📢 谷歌FCM,no-resolve
  - IP-CIDR,74.125.206.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,108.177.97.188/32,📢 谷歌FCM,no-resolve
  - IP-CIDR,108.177.125.188/32,📢 谷歌FCM,no-resolve
  - IP-CIDR,142.250.4.188/32,📢 谷歌FCM,no-resolve
  - IP-CIDR,142.250.10.188/32,📢 谷歌FCM,no-resolve
