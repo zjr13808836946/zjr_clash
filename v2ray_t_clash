@@ -5,62 +5,109 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 【VIP香港UC-腾讯Anycas专线】, server: 162.14.8.85, port: 27071, type: vmess, uuid: 293ec563-340e-429e-9c06-2a67c8766aa9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【VIP香港HKBN-腾讯Anycas专线】, server: 162.14.8.85, port: 27020, type: vmess, uuid: 293ec563-340e-429e-9c06-2a67c8766aa9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 普通节点-东亚直连B, server: az-d2.linkdns.xyz, port: 40087, type: trojan, password: a55b41a3-112c-3fff-bf36-b62e18798189, sni: az-d2.linkdns.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港02 - 解锁流媒体, server: hk02.cnzffw.com, port: 16003, type: trojan, password: 5268de89-9c07-49cd-a023-c0a5f829b238, sni: hk02.cnzffw.com, skip-cert-verify: false}
+  - {name: "🇲🇴 [江门移动]澳门03 中转 澳门电讯", server: jm.lanmeiddns.xyz, port: 25002, type: vmess, uuid: a38e47f3-2fab-3224-8401-276529c13b75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /node03, ws-headers: {Host: ctm.lanmeiddns.xyz}}
+  - {name: "🇲🇴 [广州移动]澳门01 中转 澳门电讯", server: gz.lanmeiddns.xyz, port: 25017, type: vmess, uuid: a38e47f3-2fab-3224-8401-276529c13b75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /node01, ws-headers: {Host: ctm.lanmeiddns.xyz}}
+  - {name: 🇭🇰 香港03 - 解锁流媒体| 负载*2, server: hk03.cnzffw.com, port: 15000, type: trojan, password: 5268de89-9c07-49cd-a023-c0a5f829b238, sni: hk03.cnzffw.com, skip-cert-verify: false}
+  - {name: 港03_|NF, server: hk-route-12369-3.dukou.info, port: 8303, type: trojan, password: c173cb6e-1725-5646-b168-dff4dd91a03b, sni: hk-route-12369-3.dukou.info, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 --03 x0.8, server: hk3.forward.xxziyuan.xyz, port: 21689, type: vmess, uuid: 41a080c7-beef-3e8f-8d3f-5b1044ae421b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk3.xxziyuan.xyz}}
+  - {name: 🇭🇰 香港AX03 22875进阶版 0.3x, server: 22875.cn-group-a-inbound-291shaud8n.loc.ddns.click, port: 8311, type: vmess, uuid: 27e88b76-1167-0bde-4f5e-0b4fdfa782e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 3#香港 09 解锁流媒体, server: ftq.out04.nodeserver.top, port: 13026, type: vmess, uuid: 85ad5079-0f88-3238-8c8a-c6d85f177a9a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out04.nodeserver.top}}
+  - {name: 🇭🇰 3#香港 08 解锁流媒体, server: ftq.out03.nodeserver.top, port: 13025, type: vmess, uuid: 85ad5079-0f88-3238-8c8a-c6d85f177a9a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out03.nodeserver.top}}
+  - {name: 🇸🇬 3#新加坡 03 解锁流媒体, server: ftq.out03.nodeserver.top, port: 13030, type: vmess, uuid: 85ad5079-0f88-3238-8c8a-c6d85f177a9a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out03.nodeserver.top}}
+  - {name: 🇭🇰 3#香港 06 解锁流媒体, server: ftq.out01.nodeserver.top, port: 13023, type: vmess, uuid: 85ad5079-0f88-3238-8c8a-c6d85f177a9a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out01.nodeserver.top}}
+  - {name: 🇨🇳 LV1 台湾 04 NF, server: zfd.out04.nodeserver.top, port: 16128, type: vmess, uuid: fa98b990-7df5-38eb-a3e6-b4d82052ddde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 LV1 香港 04 NF, server: zfd.out04.nodeserver.top, port: 16114, type: vmess, uuid: fa98b990-7df5-38eb-a3e6-b4d82052ddde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 LV1 新加坡 03 NF, server: zfd.out03.nodeserver.top, port: 16109, type: vmess, uuid: fa98b990-7df5-38eb-a3e6-b4d82052ddde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 LV1 香港 06 NF, server: zfd.out02.nodeserver.top, port: 16116, type: vmess, uuid: fa98b990-7df5-38eb-a3e6-b4d82052ddde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 LV1 新加坡 02 NF, server: zfd.out02.nodeserver.top, port: 16108, type: vmess, uuid: fa98b990-7df5-38eb-a3e6-b4d82052ddde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 CM|香港Misaka 02, server: gz.ddns.miaona.online, port: 10907, type: vmess, uuid: 2580c9d8-1fb7-4178-9a00-0ae22d3b05d5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /114514.apk, ws-headers: {Host: bilivideo.com}}
+  - {name: 🇭🇰 CM|香港Misaka 01, server: gz.ddns.miaona.online, port: 10928, type: vmess, uuid: 2580c9d8-1fb7-4178-9a00-0ae22d3b05d5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /114514.apk, ws-headers: {Host: bilivideo.com}}
+  - {name: "🇸🇬 [广州移动]新加坡01 中转 新加坡运营商网络", server: gz.lanmeiddns.xyz, port: 25017, type: vmess, uuid: a38e47f3-2fab-3224-8401-276529c13b75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /node01, ws-headers: {Host: dosg.lanmeiddns.xyz}}
+  - {name: "🇭🇰 [广州移动]香港01 中转 香港本地家宽", server: gz.lanmeiddns.xyz, port: 25017, type: vmess, uuid: a38e47f3-2fab-3224-8401-276529c13b75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /node01, ws-headers: {Host: hgc.lanmeiddns.xyz}}
+  - {name: 🇭🇰 V2-香港HGC01 中继C, server: in03.ddns168.com, port: 63027, type: vmess, uuid: 6d61c3a0-eb37-37e8-ac2e-0afbe25754af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
+  - {name: 🇭🇰 1香港C 流媒体 粤港, server: gzcmt.sixgod.cyou, port: 30101, type: vmess, uuid: cc340c5e-98dc-3ce4-bf48-6e5e7892bb3f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 Lite 香港 02, server: hddpn6edkakmsd4l.slowairport.rip, port: 62201, type: vmess, uuid: 923be6cb-cbc4-3fd7-be07-5bd2c0f08fc0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /bkyyds, ws-headers: {Host: microsoft.com}}
+  - {name: 🇭🇰 香港 03 - 解锁流媒体, server: wyyhk03.cnzffw.com, port: 13008, type: trojan, password: 574f6865-d7a8-419f-a166-9962c3483b73, sni: wyyhk03.cnzffw.com, skip-cert-verify: false}
+  - {name: 🇭🇰 中转 香港 HKT01 原生 中继C, server: in03.ddns168.com, port: 62033, type: vmess, uuid: 010469cb-2310-3013-a98b-5881bd752cd5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
+  - {name: 🇭🇰 香港01 - 解锁流媒体| 负载*4, server: hk01.cnzffw.com, port: 15005, type: trojan, password: 5268de89-9c07-49cd-a023-c0a5f829b238, sni: hk01.cnzffw.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港04 - 解锁流媒体, server: hk04.cnzffw.com, port: 13001, type: trojan, password: 5268de89-9c07-49cd-a023-c0a5f829b238, sni: hk04.cnzffw.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-04【NETFLIX】, server: hk04-n7.xiaoxiaofeng.cyou, port: 20407, type: vmess, uuid: 89a1eeaa-1ff3-3742-994f-5e9f90515479, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-02【NETFLIX】, server: hk02-n5.xiaoxiaofeng.cyou, port: 20205, type: vmess, uuid: 89a1eeaa-1ff3-3742-994f-5e9f90515479, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡06【Netflix】, server: sg06-n69.xiaoxiaofeng.cyou, port: 20669, type: vmess, uuid: 89a1eeaa-1ff3-3742-994f-5e9f90515479, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-03【NETFLIX】, server: hk03-n6.xiaoxiaofeng.cyou, port: 20306, type: vmess, uuid: 89a1eeaa-1ff3-3742-994f-5e9f90515479, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇲🇴 CM|澳门Wind 01, server: gz.ddns.miaona.online, port: 10917, type: vmess, uuid: 2580c9d8-1fb7-4178-9a00-0ae22d3b05d5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /114514.apk, ws-headers: {Host: bilivideo.com}}
+  - {name: 🇭🇰 HongKong 07, server: huadong.antlink.cyou, port: 38101, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: huadong.antlink.cyou}}
+  - {name: 🇭🇰 HongKong 11, server: huadong.antlink.cyou, port: 38102, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: huadong.antlink.cyou}}
+  - {name: 🇭🇰 HongKong 01, server: huanan.antlink.cyou, port: 38100, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: huanan.antlink.cyou}}
+  - {name: 🇭🇰 HongKong 10, server: shcn2.antlink.cyou, port: 38102, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: shcn2.antlink.cyou}}
+  - {name: 🇭🇰 HongKong 13, server: huanan.antlink.cyou, port: 38103, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: huanan.antlink.cyou}}
+  - {name: 🇭🇰 HongKong 06, server: shcn2.antlink.cyou, port: 38101, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: shcn2.antlink.cyou}}
+  - {name: 🇭🇰 HongKong 14, server: shcn2.antlink.cyou, port: 38103, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: shcn2.antlink.cyou}}
+  - {name: 🇭🇰 HongKong 03, server: shcn2.antlink.cyou, port: 38100, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: shcn2.antlink.cyou}}
+  - {name: 🇭🇰 HongKong 05, server: huanan.antlink.cyou, port: 38101, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: huanan.antlink.cyou}}
+  - {name: 🇭🇰 HongKong 09, server: huanan.antlink.cyou, port: 38102, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: huanan.antlink.cyou}}
+  - {name: 🇯🇵 vip1-日本1, server: 3.douluo.cyou, port: 26103, type: vmess, uuid: 6d8de423-5d56-3593-9b43-dec18f50b652, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 3.douluo.cyou}}
+  - {name: 🇭🇰 vip1-香港3, server: 12.douluo.cyou, port: 26112, type: vmess, uuid: 6d8de423-5d56-3593-9b43-dec18f50b652, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 12.douluo.cyou}}
+  - {name: 🇭🇰 vip1-香港4, server: 13.douluo.cyou, port: 26113, type: vmess, uuid: 6d8de423-5d56-3593-9b43-dec18f50b652, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.douluo.cyou}}
+  - {name: 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |, server: ingress-v1.myivpn.com, port: 40001, type: vmess, uuid: f89e0ec3-3634-39b2-8d0c-0228d4303732, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.vpn200.net}}
+  - {name: 🇭🇰 B2 长沙-香港PCCW | V2RAY中转 |, server: ingress-v2.myivpn.com, port: 50205, type: vmess, uuid: f89e0ec3-3634-39b2-8d0c-0228d4303732, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.vpn200.net}}
+  - {name: 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |, server: ingress-v2.myivpn.com, port: 40001, type: vmess, uuid: f89e0ec3-3634-39b2-8d0c-0228d4303732, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.vpn200.net}}
+  - {name: 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |, server: ingress-v1.myivpn.com, port: 50206, type: vmess, uuid: f89e0ec3-3634-39b2-8d0c-0228d4303732, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.vpn200.net}}
+  - {name: 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |, server: ingress-v2.myivpn.com, port: 50206, type: vmess, uuid: f89e0ec3-3634-39b2-8d0c-0228d4303732, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.vpn200.net}}
+  - {name: "🇭🇰 [vip1]︱V2ray︱⑩香港 1000M｜×1x｜限速100M｜解锁Netflix", server: 133.wgong.xyz, port: 52333, type: vmess, uuid: 38eb2614-6161-3a1c-ae07-b80cc0defd76, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 03 | 中转 | Trojan, server: node05.v2vn.xyz, port: 22369, type: trojan, password: 90880463-7cc5-45a2-82a0-c2669b1c930d, sni: node05.v2vn.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 01 | 中转 | Trojan, server: node01.v2vn.xyz, port: 22368, type: trojan, password: 90880463-7cc5-45a2-82a0-c2669b1c930d, sni: node01.v2vn.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 05 | 中转 | V2Ray, server: node01.v2vn.xyz, port: 12368, type: vmess, uuid: 90880463-7cc5-45a2-82a0-c2669b1c930d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /path, ws-headers: {Host: zoom.us}}
+  - {name: 🇭🇰 香港 02 | 中转 | Trojan, server: node08.v2vn.xyz, port: 22368, type: trojan, password: 90880463-7cc5-45a2-82a0-c2669b1c930d, sni: node08.v2vn.xyz, skip-cert-verify: false}
+  - {name: "🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）", server: bgp-1.icecloud-node.top, port: 1307, type: vmess, uuid: 1f5f9864-e62a-3d36-89de-1cc10f49f8d2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）", server: bgp-1.icecloud-node.top, port: 1309, type: vmess, uuid: 1f5f9864-e62a-3d36-89de-1cc10f49f8d2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 IEPL专线 01 香港BGP, server: fswkcmcc.zhongzhuanserver.com, port: 302, type: trojan, password: e6ff5684-efbf-3126-be09-67ac4af9e04a, sni: fswkcmcc.zhongzhuanserver.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡01解锁流媒体, server: dog.out01.nodeserver.top, port: 21026, type: vmess, uuid: 48ddbe94-67f6-3199-acf4-4a35f51dffbc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /dog, ws-headers: {Host: dog.out01.nodeserver.top}}
+  - {name: 🇨🇳 台湾01原生IP解锁流媒体, server: dog.out01.nodeserver.top, port: 21055, type: vmess, uuid: 48ddbe94-67f6-3199-acf4-4a35f51dffbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇭🇰 [01][Lv1][香港][2x][原生]", server: 120.232.173.126, port: 1001, type: vmess, uuid: baaadaec-14fa-38dc-89d5-4f8d0560acf1, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /game, ws-headers: {Host: hgc.hshd.jh}}
+  - {name: 🇸🇬 3#新加坡 02 解锁流媒体, server: ftq.out02.nodeserver.top, port: 13029, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out02.nodeserver.top}}
+  - {name: 🇨🇳 3#台湾 03 原生IP解锁, server: ftq.out03.nodeserver.top, port: 13040, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 3#台湾 02 原生IP解锁, server: ftq.out02.nodeserver.top, port: 13039, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 3#香港 09 解锁流媒体 2, server: ftq.out04.nodeserver.top, port: 13026, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out04.nodeserver.top}}
+  - {name: 🇭🇰 3#香港 08 解锁流媒体 2, server: ftq.out03.nodeserver.top, port: 13025, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out03.nodeserver.top}}
+  - {name: 🇭🇰 3#香港 10 解锁流媒体, server: ftq.out01.nodeserver.top, port: 13027, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out01.nodeserver.top}}
+  - {name: 🇭🇰 3#香港 01 解锁流媒体, server: ftq.out01.nodeserver.top, port: 13018, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out01.nodeserver.top}}
+  - {name: 🇸🇬 3#新加坡 05 解锁流媒体, server: ftq.out01.nodeserver.top, port: 13032, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out01.nodeserver.top}}
+  - {name: 🇭🇰 3#香港 05 解锁流媒体, server: ftq.out01.nodeserver.top, port: 13022, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out01.nodeserver.top}}
+  - {name: 🇭🇰 香港05解鎖NF, server: xl.out01.nodeserver.top, port: 22022, type: vmess, uuid: 0cc4a7ef-0fe2-311d-9f4b-53a7e00706f7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cjl, ws-headers: {Host: xl.out01.nodeserver.top}}
+  - {name: 🇭🇰 香港03解鎖NF, server: xl.out03.nodeserver.top, port: 22020, type: vmess, uuid: 0cc4a7ef-0fe2-311d-9f4b-53a7e00706f7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cjl, ws-headers: {Host: xl.out03.nodeserver.top}}
+  - {name: 🇨🇳 台湾01原生IP解鎖NF, server: xl.out01.nodeserver.top, port: 22055, type: vmess, uuid: 0cc4a7ef-0fe2-311d-9f4b-53a7e00706f7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡03解鎖NF, server: xl.out03.nodeserver.top, port: 22028, type: vmess, uuid: 0cc4a7ef-0fe2-311d-9f4b-53a7e00706f7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cjl, ws-headers: {Host: xl.out03.nodeserver.top}}
+  - {name: 🇸🇬 新加坡01解鎖NF, server: xl.out01.nodeserver.top, port: 22026, type: vmess, uuid: 0cc4a7ef-0fe2-311d-9f4b-53a7e00706f7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cjl, ws-headers: {Host: xl.out01.nodeserver.top}}
+  - {name: 🇭🇰 香港 --01 x1.0, server: hk1.forward.xxziyuan.xyz, port: 20369, type: vmess, uuid: 41a080c7-beef-3e8f-8d3f-5b1044ae421b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /qaqx, ws-headers: {Host: www.baidu.com}}
+  - {name: 🇸🇬 VIP1|新加坡03解锁流媒体, server: hd.out03.nodeserver.top, port: 23015, type: vmess, uuid: 725cf1c5-16ac-4141-8d8b-fa7ee1d0f19e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hd.out03.nodeserver.top}}
+  - {name: 🇸🇬 VIP1|新加坡01解锁流媒体, server: hd.out01.nodeserver.top, port: 23013, type: vmess, uuid: 725cf1c5-16ac-4141-8d8b-fa7ee1d0f19e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hd.out01.nodeserver.top}}
+  - {name: 🇭🇰 VIP1|香港03解锁流媒体, server: hd.out03.nodeserver.top, port: 23011, type: vmess, uuid: 725cf1c5-16ac-4141-8d8b-fa7ee1d0f19e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hd.out03.nodeserver.top}}
   - {name: 坡07, server: sg-cn-relay-7-74812.dukou.info, port: 9307, type: trojan, password: c173cb6e-1725-5646-b168-dff4dd91a03b, sni: sg-cn-relay-7-74812.dukou.info, skip-cert-verify: false}
   - {name: 🇭🇰 V2ray-香港BGP04-江门-NF, server: feisu-IPLC.ddns-only.xyz, port: 45803, type: vmess, uuid: 150ade53-c005-30f1-9d81-a0f016ff15ff, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mitao, ws-headers: {Host: mitao-hkt02.ddns-only.xyz}}
-  - {name: 🇸🇬 V1 | SG A3, server: z-a.aaxc.icu, port: 51413, type: vmess, uuid: 865d5d7f-9f22-3bd8-83f3-ea2475dd9c28, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /aaxc, ws-headers: {Host: z-a.aaxc.icu}}
-  - {name: 🇭🇰 【VIP香港HGC-腾讯Anycas专线】, server: 162.14.8.85, port: 27024, type: vmess, uuid: 293ec563-340e-429e-9c06-2a67c8766aa9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【VIP香港DT02-腾讯Anycas专线】, server: 162.14.8.85, port: 27014, type: vmess, uuid: 293ec563-340e-429e-9c06-2a67c8766aa9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【VIP香港微软03-中山超级BGP】, server: zs1.tjds.store, port: 39001, type: vmess, uuid: 293ec563-340e-429e-9c06-2a67c8766aa9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港01 - 解锁流媒体| 负载*4, server: hk01.cnzffw.com, port: 15005, type: trojan, password: 5268de89-9c07-49cd-a023-c0a5f829b238, sni: hk01.cnzffw.com, skip-cert-verify: false}
   - {name: 🇭🇰 金牛（香港专线）, server: 15.dilong.link, port: 6635, type: vmess, uuid: d2367939-32c3-4263-85da-f721a6b7f08d, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 15.dilong.link}}
   - {name: 🇭🇰 V1 | HK A2, server: z-a.aaxc.icu, port: 51112, type: vmess, uuid: e64a9ce1-2df8-368c-8748-fb15c10d86e4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /aaxc, ws-headers: {Host: z-a.aaxc.icu}}
   - {name: 🇸🇬 新加坡03【Netflix】, server: sg03-n66.xiaoxiaofeng.cyou, port: 20366, type: vmess, uuid: 89a1eeaa-1ff3-3742-994f-5e9f90515479, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇨🇳 V4-中转3309|广港B-台湾|解锁|x2.0|V2ray, server: guanggang-sy-03.ddns-only.xyz, port: 13309, type: vmess, uuid: 32dc2b11-6a41-3018-a737-6c953a5be07b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /sy666666, ws-headers: {Host: guanggang-sy-03.ddns-only.xyz}}
-  - {name: 🇯🇵 vip1-日本1, server: 3.douluo.cyou, port: 26103, type: vmess, uuid: 6d8de423-5d56-3593-9b43-dec18f50b652, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 3.douluo.cyou}}
   - {name: 🇭🇰 香港 HKBN1 V2ray节点, server: gz1.520vpn.top, port: 10080, type: vmess, uuid: bcefde83-7d5c-3a86-aec1-31817f7dd8ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: hk1.520ssr.co}}
-  - {name: 🇭🇰 3#香港 04 解锁流媒体, server: ftq.out04.nodeserver.top, port: 13021, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out04.nodeserver.top}}
-  - {name: 🇭🇰 3#香港 01 解锁流媒体, server: ftq.out01.nodeserver.top, port: 13018, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out01.nodeserver.top}}
-  - {name: 🇭🇰 香港01解鎖NF, server: xl.out01.nodeserver.top, port: 22018, type: vmess, uuid: 0cc4a7ef-0fe2-311d-9f4b-53a7e00706f7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cjl, ws-headers: {Host: xl.out01.nodeserver.top}}
-  - {name: 🇸🇬 新加坡03解鎖NF, server: xl.out03.nodeserver.top, port: 22028, type: vmess, uuid: 0cc4a7ef-0fe2-311d-9f4b-53a7e00706f7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cjl, ws-headers: {Host: xl.out03.nodeserver.top}}
-  - {name: 🇸🇬 新加坡01解鎖NF, server: xl.out01.nodeserver.top, port: 22026, type: vmess, uuid: 0cc4a7ef-0fe2-311d-9f4b-53a7e00706f7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cjl, ws-headers: {Host: xl.out01.nodeserver.top}}
-  - {name: 🇸🇬 VIP1|新加坡03解锁流媒体, server: hd.out03.nodeserver.top, port: 23015, type: vmess, uuid: 725cf1c5-16ac-4141-8d8b-fa7ee1d0f19e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hd.out03.nodeserver.top}}
   - {name: 🇭🇰 VIP1|香港04解锁流媒体, server: hd.out04.nodeserver.top, port: 23012, type: vmess, uuid: 725cf1c5-16ac-4141-8d8b-fa7ee1d0f19e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hd.out04.nodeserver.top}}
-  - {name: 🇭🇰 精品香港5|2x, server: 121.35.254.190, port: 40251, type: ss, cipher: aes-256-cfb, password: Cdaem6TtuV6m}
   - {name: "🇭🇰 [DIRECT] HK01|0.5x|三网直连", server: hk.azure.data2china.com, port: 52288, type: vmess, uuid: 343cc745-1eaf-423e-acf6-68f6c4d581b1, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hhhaaa114514, ws-headers: {Host: hk.azure.data2china.com}}
-  - {name: 🇭🇰 香港D 流媒体 粤港, server: gzcmt.sixgod.cyou, port: 30104, type: vmess, uuid: cc340c5e-98dc-3ce4-bf48-6e5e7892bb3f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 港13, server: hk-cnrelay-13-138465.dukou.info, port: 8313, type: trojan, password: c173cb6e-1725-5646-b168-dff4dd91a03b, sni: hk-cnrelay-13-138465.dukou.info, skip-cert-verify: false}
-  - {name: 港11, server: hk11-5423.dukouplan3.dev, port: 8011, type: trojan, password: c173cb6e-1725-5646-b168-dff4dd91a03b, sni: hk11-5423.dukouplan3.dev, skip-cert-verify: false}
-  - {name: 🇸🇬 3#新加坡 05 解锁流媒体, server: ftq.out01.nodeserver.top, port: 13032, type: vmess, uuid: 85ad5079-0f88-3238-8c8a-c6d85f177a9a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out01.nodeserver.top}}
+  - {name: 🇸🇬 3#新加坡 05 解锁流媒体 2, server: ftq.out01.nodeserver.top, port: 13032, type: vmess, uuid: 85ad5079-0f88-3238-8c8a-c6d85f177a9a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out01.nodeserver.top}}
   - {name: 🇸🇬 3#新加坡 01 解锁流媒体, server: ftq.out01.nodeserver.top, port: 13028, type: vmess, uuid: 85ad5079-0f88-3238-8c8a-c6d85f177a9a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out01.nodeserver.top}}
-  - {name: 🇭🇰 3#香港 06 解锁流媒体, server: ftq.out01.nodeserver.top, port: 13023, type: vmess, uuid: 85ad5079-0f88-3238-8c8a-c6d85f177a9a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out01.nodeserver.top}}
-  - {name: 🇸🇬 LV1 新加坡 03 NF, server: zfd.out03.nodeserver.top, port: 16109, type: vmess, uuid: fa98b990-7df5-38eb-a3e6-b4d82052ddde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 V2-香港HGC01 中继B, server: in02.ddns168.com, port: 63027, type: vmess, uuid: 6d61c3a0-eb37-37e8-ac2e-0afbe25754af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
-  - {name: 🇭🇰 香港B 流媒体 湘港, server: cscu.sixgod.cyou, port: 10002, type: vmess, uuid: cc340c5e-98dc-3ce4-bf48-6e5e7892bb3f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【VIP香港微软06-广州超级BGP】, server: gz2g9.tjds.store, port: 25024, type: vmess, uuid: 293ec563-340e-429e-9c06-2a67c8766aa9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【VIP香港腾讯06-广州超级BGP】, server: gz2g9.tjds.store, port: 25025, type: vmess, uuid: 293ec563-340e-429e-9c06-2a67c8766aa9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【VIP香港腾讯01-深圳超级BGP】, server: sz1.tjds.store, port: 14001, type: vmess, uuid: 293ec563-340e-429e-9c06-2a67c8766aa9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【VIP香港腾讯03-中山超级BGP】, server: zs1.tjds.store, port: 39003, type: vmess, uuid: 293ec563-340e-429e-9c06-2a67c8766aa9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 HK-HKBN | V2 | 广移中转, server: ngzyd-1.okex-tradebot.xyz, port: 30000, type: vmess, uuid: 7800ada8-8774-4641-b0b8-9d88e3c66371, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: ngzyd-1.okex-tradebot.xyz}}
   - {name: 🇭🇰 V1 | HK A1, server: z-a.aaxc.icu, port: 51111, type: vmess, uuid: e64a9ce1-2df8-368c-8748-fb15c10d86e4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /aaxc, ws-headers: {Host: z-a.aaxc.icu}}
   - {name: 🇸🇬 新加坡05【Netflix】, server: sg05-n68.xiaoxiaofeng.cyou, port: 20568, type: vmess, uuid: 89a1eeaa-1ff3-3742-994f-5e9f90515479, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 新加坡02【Netflix】, server: sg02-n65.xiaoxiaofeng.cyou, port: 20265, type: vmess, uuid: 89a1eeaa-1ff3-3742-994f-5e9f90515479, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇨🇳 CM|台湾Hinet 04, server: gz.ddns.miaona.online, port: 10944, type: vmess, uuid: 2580c9d8-1fb7-4178-9a00-0ae22d3b05d5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /114514.apk, ws-headers: {Host: bilivideo.com}}
   - {name: 🇸🇬 新加坡03解锁流媒体, server: dog.out03.nodeserver.top, port: 21028, type: vmess, uuid: 48ddbe94-67f6-3199-acf4-4a35f51dffbc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /dog, ws-headers: {Host: dog.out03.nodeserver.top}}
-  - {name: 🇸🇬 新加坡02解锁流媒体, server: dog.out02.nodeserver.top, port: 21027, type: vmess, uuid: 48ddbe94-67f6-3199-acf4-4a35f51dffbc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /dog, ws-headers: {Host: dog.out02.nodeserver.top}}
-  - {name: 🇭🇰 香港HKT-优化, server: cu.cnhost.top, port: 16620, type: vmess, uuid: 04fa0f10-13ee-4801-88f7-00d60b3b09fd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cu.cnhost.top}}
-  - {name: 🇭🇰 3#香港 09 解锁流媒体, server: ftq.out04.nodeserver.top, port: 13026, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out04.nodeserver.top}}
-  - {name: 🇸🇬 VIP1|新加坡02解锁流媒体, server: hd.out02.nodeserver.top, port: 23014, type: vmess, uuid: 725cf1c5-16ac-4141-8d8b-fa7ee1d0f19e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hd.out02.nodeserver.top}}
   - {name: 🇸🇬 VIP1|新加坡04解锁流媒体, server: hd.out04.nodeserver.top, port: 23016, type: vmess, uuid: 725cf1c5-16ac-4141-8d8b-fa7ee1d0f19e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hd.out04.nodeserver.top}}
   - {name: 🇭🇰 V2ray-香港BGP04-江门-NF 2, server: feisu-IPLC.ddns-only.xyz, port: 45803, type: vmess, uuid: 150ade53-c005-30f1-9d81-a0f016ff15ff, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mitao, ws-headers: {Host: jike-azhk31.ddns-only.xyz}}
   - {name: 坡04_|NF, server: sg-cn-hk-relay-4-40e978.dukou.info, port: 9304, type: trojan, password: c173cb6e-1725-5646-b168-dff4dd91a03b, sni: sg-cn-hk-relay-4-40e978.dukou.info, skip-cert-verify: false}
   - {name: 坡05_|NF, server: sg-cn-hk-relay-5-51f087.dukou.info, port: 9305, type: trojan, password: c173cb6e-1725-5646-b168-dff4dd91a03b, sni: sg-cn-hk-relay-5-51f087.dukou.info, skip-cert-verify: false}
   - {name: 坡06, server: sg-cn-relay-6-689145.dukou.info, port: 9306, type: trojan, password: c173cb6e-1725-5646-b168-dff4dd91a03b, sni: sg-cn-relay-6-689145.dukou.info, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 --03 x0.8, server: hk3.forward.xxziyuan.xyz, port: 21689, type: vmess, uuid: 41a080c7-beef-3e8f-8d3f-5b1044ae421b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk3.xxziyuan.xyz}}
   - {name: 🇭🇰 3#香港 01 解锁流媒体 2, server: ftq.out01.nodeserver.top, port: 13018, type: vmess, uuid: 85ad5079-0f88-3238-8c8a-c6d85f177a9a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out01.nodeserver.top}}
-  - {name: 🇭🇰 3#香港 09 解锁流媒体 2, server: ftq.out04.nodeserver.top, port: 13026, type: vmess, uuid: 85ad5079-0f88-3238-8c8a-c6d85f177a9a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out04.nodeserver.top}}
   - {name: 🇭🇰 3#香港 07 解锁流媒体, server: ftq.out02.nodeserver.top, port: 13024, type: vmess, uuid: 85ad5079-0f88-3238-8c8a-c6d85f177a9a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out02.nodeserver.top}}
   - {name: 🇭🇰 香港｜H02｜owo, server: shcu1.qwqcloud.top, port: 11252, type: trojan, password: 205c9676-57ec-31dd-b28b-21784535e18c, sni: shcu1.qwqcloud.top, skip-cert-verify: false}
   - {name: 🇸🇬 新加坡03 | 解锁流媒体, server: sg03.cnzffw.com, port: 16005, type: trojan, password: 5268de89-9c07-49cd-a023-c0a5f829b238, sni: sg03.cnzffw.com, skip-cert-verify: false}
@@ -68,174 +115,141 @@ proxies:
   - {name: 🇸🇬 新加坡07【Netflix】, server: sg07-n70.xiaoxiaofeng.cyou, port: 20770, type: vmess, uuid: 89a1eeaa-1ff3-3742-994f-5e9f90515479, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 香港 - v12, server: hk-v2-12.yisuhub.com, port: 5555, type: vmess, uuid: 5567dd4e-dd37-364e-bdd5-a671e752556d, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /es/yisuhub, ws-headers: {Host: hk-v2-12.yisuhub.com}}
   - {name: 🇸🇬 新加坡04解锁流媒体, server: dog.out04.nodeserver.top, port: 21029, type: vmess, uuid: 48ddbe94-67f6-3199-acf4-4a35f51dffbc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /dog, ws-headers: {Host: dog.out04.nodeserver.top}}
-  - {name: 🇸🇬 新加坡01解锁流媒体, server: dog.out01.nodeserver.top, port: 21026, type: vmess, uuid: 48ddbe94-67f6-3199-acf4-4a35f51dffbc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /dog, ws-headers: {Host: dog.out01.nodeserver.top}}
-  - {name: 🇨🇳 3#台湾 02 原生IP解锁, server: ftq.out02.nodeserver.top, port: 13039, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾02原生IP解鎖NF, server: xl.out02.nodeserver.top, port: 22056, type: vmess, uuid: 0cc4a7ef-0fe2-311d-9f4b-53a7e00706f7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇨🇳 台湾04原生IP解鎖NF, server: xl.out04.nodeserver.top, port: 22058, type: vmess, uuid: 0cc4a7ef-0fe2-311d-9f4b-53a7e00706f7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 V2-香港HGC01 中继E, server: in05.ddns168.com, port: 63027, type: vmess, uuid: 6d61c3a0-eb37-37e8-ac2e-0afbe25754af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
   - {name: 🇨🇳 台湾|Hinet|广州中转|A, server: gz.wxret.xyz, port: 511, type: vmess, uuid: 78f91457-a23d-327c-b461-d63b367b7670, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: gz.wxret.xyz}}
-  - {name: 🇭🇰 IEPL专线 01 香港BGP, server: fswkcmcc.zhongzhuanserver.com, port: 302, type: trojan, password: e6ff5684-efbf-3126-be09-67ac4af9e04a, sni: fswkcmcc.zhongzhuanserver.com, skip-cert-verify: false}
-  - {name: 🇭🇰 3#香港 05 解锁流媒体, server: ftq.out01.nodeserver.top, port: 13022, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out01.nodeserver.top}}
   - {name: 🇭🇰 香港HGC01 中继E | 原生 1.5x, server: in05.ddns168.com, port: 61027, type: vmess, uuid: c89e64c3-2a9c-30dd-ac6b-95ad5637c72a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
   - {name: 🇭🇰 3#香港 05 解锁流媒体 2, server: ftq.out01.nodeserver.top, port: 13022, type: vmess, uuid: 85ad5079-0f88-3238-8c8a-c6d85f177a9a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out01.nodeserver.top}}
   - {name: 🇭🇰 SVIP-A香港HKBN6, server: zzcm04.bananaspeed.cash, port: 1020, type: vmess, uuid: 2df4a058-74a8-5c72-854a-ac5a25e8b700, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: hkt6.bananaspeed.cash}}
   - {name: 🇭🇰 A自动选择香港HKT-002, server: zzcm04.bananaspeed.cash, port: 2790, type: vmess, uuid: 2df4a058-74a8-5c72-854a-ac5a25e8b700, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ted.com}}
-  - {name: 🇨🇳 台湾04原生IP解锁流媒体, server: dog.out04.nodeserver.top, port: 21058, type: vmess, uuid: 48ddbe94-67f6-3199-acf4-4a35f51dffbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 2香港A 流媒体 湘港, server: cscu.sixgod.cyou, port: 10001, type: vmess, uuid: cc340c5e-98dc-3ce4-bf48-6e5e7892bb3f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 香港｜M｜GZ03, server: na60.mypeter.top, port: 64646, type: trojan, password: 205c9676-57ec-31dd-b28b-21784535e18c, sni: na60.mypeter.top, skip-cert-verify: false}
-  - {name: 🇭🇰 V2-香港HKT01 中继E, server: in05.ddns168.com, port: 63033, type: vmess, uuid: 6d61c3a0-eb37-37e8-ac2e-0afbe25754af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
   - {name: 🇭🇰 SVIP-A香港HKBN2, server: zzcm06.bananaspeed.cash, port: 2570, type: vmess, uuid: 2df4a058-74a8-5c72-854a-ac5a25e8b700, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: hkt2.bananaspeed.cash}}
-  - {name: 🇭🇰 香港HKT-优化2, server: cm.cnhost.top, port: 16620, type: vmess, uuid: 6696bd2f-70f7-4001-9be1-269fa960664e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm.cnhost.top}}
-  - {name: 🇨🇳 台湾|Hinet|广州中转|B, server: gz.wxret.xyz, port: 510, type: vmess, uuid: 78f91457-a23d-327c-b461-d63b367b7670, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: gz.wxret.xyz}}
-  - {name: 🇭🇰 B1 广州-香港HKBN | 三网用户 | V2RAY中转 |, server: ingress-v1.myivpn.com, port: 50207, type: vmess, uuid: f89e0ec3-3634-39b2-8d0c-0228d4303732, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.vpn200.net}}
-  - {name: 🇭🇰 香港 05 | 中转 | V2Ray, server: node01.v2vn.xyz, port: 12368, type: vmess, uuid: 90880463-7cc5-45a2-82a0-c2669b1c930d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /path, ws-headers: {Host: zoom.us}}
-  - {name: "🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）", server: bgp-1.icecloud-node.top, port: 1307, type: vmess, uuid: 1f5f9864-e62a-3d36-89de-1cc10f49f8d2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港04解锁流媒体, server: dog.out04.nodeserver.top, port: 21021, type: vmess, uuid: 48ddbe94-67f6-3199-acf4-4a35f51dffbc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /dog, ws-headers: {Host: dog.out04.nodeserver.top}}
-  - {name: 🇨🇳 3#台湾 03 原生IP解锁, server: ftq.out03.nodeserver.top, port: 13040, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 香港HKT01 香港转发 | 原生 1.5x, server: hk-routing.in168.net, port: 61033, type: vmess, uuid: c89e64c3-2a9c-30dd-ac6b-95ad5637c72a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
-  - {name: 🇭🇰 香港 --01 x1.0, server: hk1.forward.xxziyuan.xyz, port: 20369, type: vmess, uuid: 41a080c7-beef-3e8f-8d3f-5b1044ae421b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /qaqx, ws-headers: {Host: www.baidu.com}}
-  - {name: 🇭🇰 VIP1|香港03解锁流媒体, server: hd.out03.nodeserver.top, port: 23011, type: vmess, uuid: 725cf1c5-16ac-4141-8d8b-fa7ee1d0f19e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hd.out03.nodeserver.top}}
   - {name: 🇭🇰 香港 01 | IEPL | VIP1 | 原生IP | 1x, server: iepl.inboard.soloxxy.com, port: 11011, type: vmess, uuid: 7e67383a-2c95-321c-ad43-f47d0dbf97ba, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv65phd.m3u8, ws-headers: {Host: iepl.inboard.soloxxy.com}}
-  - {name: 🇸🇬 V1 | SG A2, server: z-a.aaxc.icu, port: 51412, type: vmess, uuid: 865d5d7f-9f22-3bd8-83f3-ea2475dd9c28, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /aaxc, ws-headers: {Host: z-a.aaxc.icu}}
   - {name: "🇭🇰 [CM] HK122|1.0x|DNS", server: gz.cm.data2china.com, port: 30048, type: vmess, uuid: 343cc745-1eaf-423e-acf6-68f6c4d581b1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gz.cm.data2china.com}}
-  - {name: 🇭🇰 香港-02【NETFLIX】, server: hk02-n5.xiaoxiaofeng.cyou, port: 20205, type: vmess, uuid: 89a1eeaa-1ff3-3742-994f-5e9f90515479, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 Lite 香港 02, server: hddpn6edkakmsd4l.slowairport.rip, port: 62201, type: vmess, uuid: 923be6cb-cbc4-3fd7-be07-5bd2c0f08fc0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /bkyyds, ws-headers: {Host: microsoft.com}}
-  - {name: 🇭🇰 Lite 香港 01, server: hddpn6edkakmsd4l.slowairport.rip, port: 20006, type: vmess, uuid: 923be6cb-cbc4-3fd7-be07-5bd2c0f08fc0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /bkyyds, ws-headers: {Host: microsoft.com}}
   - {name: 🇭🇰 香港-01【NETFLIX】, server: hk01-n4.xiaoxiaofeng.cyou, port: 20104, type: vmess, uuid: 89a1eeaa-1ff3-3742-994f-5e9f90515479, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 HongKong 13, server: huanan.antlink.cyou, port: 38103, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: huanan.antlink.cyou}}
-  - {name: 🇭🇰 香港 01 | 中转 | Trojan, server: node01.v2vn.xyz, port: 22368, type: trojan, password: 90880463-7cc5-45a2-82a0-c2669b1c930d, sni: node01.v2vn.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾01原生IP解锁流媒体, server: dog.out01.nodeserver.top, port: 21055, type: vmess, uuid: 48ddbe94-67f6-3199-acf4-4a35f51dffbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 V2-香港HGC01 中继C, server: in03.ddns168.com, port: 63027, type: vmess, uuid: 6d61c3a0-eb37-37e8-ac2e-0afbe25754af, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
-  - {name: 🇭🇰 HongKong 14, server: shcn2.antlink.cyou, port: 38103, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: shcn2.antlink.cyou}}
-  - {name: "🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）", server: bgp-1.icecloud-node.top, port: 1309, type: vmess, uuid: 1f5f9864-e62a-3d36-89de-1cc10f49f8d2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HGC01 中继D | 原生 1.5x, server: in04.ddns168.com, port: 61027, type: vmess, uuid: c89e64c3-2a9c-30dd-ac6b-95ad5637c72a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
-  - {name: 🇭🇰 香港HGC01 中继C | 原生 1.5x, server: in03.ddns168.com, port: 61027, type: vmess, uuid: c89e64c3-2a9c-30dd-ac6b-95ad5637c72a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
-  - {name: 🇭🇰 香港03解鎖NF, server: xl.out03.nodeserver.top, port: 22020, type: vmess, uuid: 0cc4a7ef-0fe2-311d-9f4b-53a7e00706f7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cjl, ws-headers: {Host: xl.out03.nodeserver.top}}
-  - {name: 🇭🇰 香港AX03 22875进阶版 0.3x, server: 22875.cn-group-a-inbound-291shaud8n.loc.ddns.click, port: 8311, type: vmess, uuid: 27e88b76-1167-0bde-4f5e-0b4fdfa782e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 LV1 香港 04 NF, server: zfd.out04.nodeserver.top, port: 16114, type: vmess, uuid: fa98b990-7df5-38eb-a3e6-b4d82052ddde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 CM|香港Misaka 01, server: gz.ddns.miaona.online, port: 10928, type: vmess, uuid: 2580c9d8-1fb7-4178-9a00-0ae22d3b05d5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /114514.apk, ws-headers: {Host: bilivideo.com}}
-  - {name: 🇭🇰 HongKong 03, server: shcn2.antlink.cyou, port: 38100, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: shcn2.antlink.cyou}}
   - {name: 🇭🇰 v2ray-Hong Kong 01, server: iepl.hk.stohc.vpzcr.cn, port: 30001, type: vmess, uuid: 19bbfd8e-8506-33f7-b8b5-0e4b6a30c7cb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 vip1-香港5, server: 14.douluo.cyou, port: 26114, type: vmess, uuid: 6d8de423-5d56-3593-9b43-dec18f50b652, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 14.douluo.cyou}}
-  - {name: 🇭🇰 vip1-香港3, server: 12.douluo.cyou, port: 26112, type: vmess, uuid: 6d8de423-5d56-3593-9b43-dec18f50b652, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 12.douluo.cyou}}
-  - {name: 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |, server: ingress-v2.myivpn.com, port: 50206, type: vmess, uuid: f89e0ec3-3634-39b2-8d0c-0228d4303732, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.vpn200.net}}
-  - {name: 🇭🇰 香港 03 | 中转 | Trojan, server: node05.v2vn.xyz, port: 22369, type: trojan, password: 90880463-7cc5-45a2-82a0-c2669b1c930d, sni: node05.v2vn.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 02 | 中转 | Trojan, server: node08.v2vn.xyz, port: 22368, type: trojan, password: 90880463-7cc5-45a2-82a0-c2669b1c930d, sni: node08.v2vn.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 IEPL专线 05 香港HKT, server: fswkcmcc.zhongzhuanserver.com, port: 301, type: trojan, password: e6ff5684-efbf-3126-be09-67ac4af9e04a, sni: fswkcmcc.zhongzhuanserver.com, skip-cert-verify: false}
   - {name: 🇨🇳 台湾03原生IP解锁流媒体, server: dog.out03.nodeserver.top, port: 21057, type: vmess, uuid: 48ddbe94-67f6-3199-acf4-4a35f51dffbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇭🇰 [01][Lv1][香港][2x][原生]", server: 120.232.173.126, port: 1001, type: vmess, uuid: baaadaec-14fa-38dc-89d5-4f8d0560acf1, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /game, ws-headers: {Host: hgc.hshd.jh}}
-  - {name: 🇭🇰 3#香港 08 解锁流媒体, server: ftq.out03.nodeserver.top, port: 13025, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ftq, ws-headers: {Host: ftq.out03.nodeserver.top}}
-  - {name: 🇭🇰 香港HKT01 中继C | 原生 1.5x, server: in03.ddns168.com, port: 61033, type: vmess, uuid: c89e64c3-2a9c-30dd-ac6b-95ad5637c72a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
-  - {name: 🇭🇰 Lite 香港 03, server: hddpn6edkakmsd4l.slowairport.rip, port: 50298, type: vmess, uuid: 923be6cb-cbc4-3fd7-be07-5bd2c0f08fc0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /bkyyds, ws-headers: {Host: microsoft.com}}
-  - {name: "🇲🇴 [江门移动]澳门03 中转 澳门电讯", server: jm.lanmeiddns.xyz, port: 25002, type: vmess, uuid: a38e47f3-2fab-3224-8401-276529c13b75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /node03, ws-headers: {Host: ctm.lanmeiddns.xyz}}
-  - {name: "🇲🇴 [广州移动]澳门01 中转 澳门电讯", server: gz.lanmeiddns.xyz, port: 25017, type: vmess, uuid: a38e47f3-2fab-3224-8401-276529c13b75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /node01, ws-headers: {Host: ctm.lanmeiddns.xyz}}
   - {name: 🇭🇰 香港BX02 22875进阶版 0.3x, server: 22875.cn-group-b-inbound-2bsdhasd.loc.ddns.click, port: 8310, type: vmess, uuid: 27e88b76-1167-0bde-4f5e-0b4fdfa782e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港DX03 22875进阶版 0.3x, server: 22875.cn-group-d-inbound-cnshdjsdv.loc.ddns.click, port: 8311, type: vmess, uuid: 27e88b76-1167-0bde-4f5e-0b4fdfa782e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港-04【NETFLIX】, server: hk04-n7.xiaoxiaofeng.cyou, port: 20407, type: vmess, uuid: 89a1eeaa-1ff3-3742-994f-5e9f90515479, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 CM|香港HKT 01, server: gz.ddns.miaona.online, port: 10919, type: vmess, uuid: 2580c9d8-1fb7-4178-9a00-0ae22d3b05d5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /114514.apk, ws-headers: {Host: bilivideo.com}}
-  - {name: 🇭🇰 HongKong 05, server: huanan.antlink.cyou, port: 38101, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: huanan.antlink.cyou}}
-  - {name: 🇭🇰 HongKong 09, server: huanan.antlink.cyou, port: 38102, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: huanan.antlink.cyou}}
   - {name: 🇭🇰 vip1-香港1, server: 10.douluo.cyou, port: 26110, type: vmess, uuid: 6d8de423-5d56-3593-9b43-dec18f50b652, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 10.douluo.cyou}}
   - {name: 🇭🇰 B1 广州-香港AGA | V2RAY中转 |, server: ingress-v1.myivpn.com, port: 50201, type: vmess, uuid: f89e0ec3-3634-39b2-8d0c-0228d4303732, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.vpn200.net}}
-  - {name: "🇲🇴 [Az香港]澳门04 直连 澳门电讯", server: az.lanmeiddns.xyz, port: 25002, type: vmess, uuid: a38e47f3-2fab-3224-8401-276529c13b75, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /node04, ws-headers: {Host: ctm.lanmeiddns.xyz}}
   - {name: 港09, server: hk-route-12369-9.dukou.info, port: 8309, type: trojan, password: c173cb6e-1725-5646-b168-dff4dd91a03b, sni: hk-route-12369-9.dukou.info, skip-cert-verify: false}
   - {name: 港06_|NF|TVB, server: hk-route-12369-6.dukou.info, port: 8306, type: trojan, password: c173cb6e-1725-5646-b168-dff4dd91a03b, sni: hk-route-12369-6.dukou.info, skip-cert-verify: false}
-  - {name: 🇭🇰 香港AX02 22875进阶版 0.3x, server: 22875.cn-group-a-inbound-291shaud8n.loc.ddns.click, port: 8310, type: vmess, uuid: 27e88b76-1167-0bde-4f5e-0b4fdfa782e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 CM|香港Misaka 02, server: gz.ddns.miaona.online, port: 10907, type: vmess, uuid: 2580c9d8-1fb7-4178-9a00-0ae22d3b05d5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /114514.apk, ws-headers: {Host: bilivideo.com}}
-  - {name: 🇭🇰 1香港C 流媒体 粤港, server: gzcmt.sixgod.cyou, port: 30101, type: vmess, uuid: cc340c5e-98dc-3ce4-bf48-6e5e7892bb3f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 CM|香港Nero 01, server: gz.ddns.miaona.online, port: 10968, type: vmess, uuid: 2580c9d8-1fb7-4178-9a00-0ae22d3b05d5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /114514.apk, ws-headers: {Host: bilivideo.com}}
-  - {name: 🇭🇰 HongKong 06, server: shcn2.antlink.cyou, port: 38101, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: shcn2.antlink.cyou}}
-  - {name: 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |, server: ingress-v1.myivpn.com, port: 40001, type: vmess, uuid: f89e0ec3-3634-39b2-8d0c-0228d4303732, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.vpn200.net}}
   - {name: 🇭🇰 B3 广州-香港HKT | V2RAY中转 |, server: ingress-v1.myivpn.com, port: 50203, type: vmess, uuid: f89e0ec3-3634-39b2-8d0c-0228d4303732, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.vpn200.net}}
-  - {name: 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |, server: ingress-v1.myivpn.com, port: 50206, type: vmess, uuid: f89e0ec3-3634-39b2-8d0c-0228d4303732, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.vpn200.net}}
-  - {name: 🇭🇰 香港HKT-优化2 2, server: cm.cnhost.top, port: 16620, type: vmess, uuid: 04fa0f10-13ee-4801-88f7-00d60b3b09fd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm.cnhost.top}}
   - {name: 🇭🇰 香港HGC01 中继B | 原生 1.5x, server: in02.ddns168.com, port: 61027, type: vmess, uuid: c89e64c3-2a9c-30dd-ac6b-95ad5637c72a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
   - {name: 🇭🇰 香港HGC01 香港转发 | 原生 1.5x, server: hk-routing.in168.net, port: 61027, type: vmess, uuid: c89e64c3-2a9c-30dd-ac6b-95ad5637c72a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
-  - {name: 🇭🇰 香港HKT01 中继E | 原生 1.5x, server: in05.ddns168.com, port: 61033, type: vmess, uuid: c89e64c3-2a9c-30dd-ac6b-95ad5637c72a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}}
-  - {name: 🇭🇰 「极速」AAA香港｜M｜GZ01, server: na120.mypeter.top, port: 32341, type: trojan, password: 205c9676-57ec-31dd-b28b-21784535e18c, sni: na120.mypeter.top, skip-cert-verify: false}
-  - {name: 🇭🇰 HongKong 07, server: huadong.antlink.cyou, port: 38101, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: huadong.antlink.cyou}}
-  - {name: 🇭🇰 HongKong 11, server: huadong.antlink.cyou, port: 38102, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: huadong.antlink.cyou}}
-  - {name: 🇭🇰 HongKong 10, server: shcn2.antlink.cyou, port: 38102, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: shcn2.antlink.cyou}}
-  - {name: 🇭🇰 香港DX02 22875进阶版 0.3x, server: 22875.cn-group-d-inbound-cnshdjsdv.loc.ddns.click, port: 8310, type: vmess, uuid: 27e88b76-1167-0bde-4f5e-0b4fdfa782e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: "🇭🇰 [CM] HK121|1.0x|DNS", server: jmcm.cnsuhu.com, port: 40006, type: vmess, uuid: 343cc745-1eaf-423e-acf6-68f6c4d581b1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: jmcm.cnsuhu.com}}
-  - {name: 🇭🇰 香港-03【NETFLIX】, server: hk03-n6.xiaoxiaofeng.cyou, port: 20306, type: vmess, uuid: 89a1eeaa-1ff3-3742-994f-5e9f90515479, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇲🇴 CM|澳门Wind 01, server: gz.ddns.miaona.online, port: 10917, type: vmess, uuid: 2580c9d8-1fb7-4178-9a00-0ae22d3b05d5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /114514.apk, ws-headers: {Host: bilivideo.com}}
-  - {name: 🇭🇰 CM|香港HKT 03, server: gz.ddns.miaona.online, port: 10909, type: vmess, uuid: 2580c9d8-1fb7-4178-9a00-0ae22d3b05d5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /114514.apk, ws-headers: {Host: bilivideo.com}}
-  - {name: 🇭🇰 CM|香港HKT 02, server: gz.ddns.miaona.online, port: 10920, type: vmess, uuid: 2580c9d8-1fb7-4178-9a00-0ae22d3b05d5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /114514.apk, ws-headers: {Host: bilivideo.com}}
-  - {name: 🇭🇰 CM|香港Nero 02, server: gz.ddns.miaona.online, port: 10924, type: vmess, uuid: 2580c9d8-1fb7-4178-9a00-0ae22d3b05d5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /114514.apk, ws-headers: {Host: bilivideo.com}}
-  - {name: 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |, server: ingress-v2.myivpn.com, port: 40001, type: vmess, uuid: f89e0ec3-3634-39b2-8d0c-0228d4303732, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.vpn200.net}}
   - {name: 🇭🇰 香港03解锁流媒体, server: dog.out03.nodeserver.top, port: 21020, type: vmess, uuid: 48ddbe94-67f6-3199-acf4-4a35f51dffbc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /dog, ws-headers: {Host: dog.out03.nodeserver.top}}
-  - {name: 🇭🇰 香港02解锁流媒体, server: dog.out02.nodeserver.top, port: 21019, type: vmess, uuid: 48ddbe94-67f6-3199-acf4-4a35f51dffbc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /dog, ws-headers: {Host: dog.out02.nodeserver.top}}
-  - {name: 🇸🇬 Singapore 07, server: huadong.antlink.cyou, port: 38210, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: huadong.antlink.cyou}}
   - {name: "🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M｜解锁Netflix", server: 118.wgong.xyz, port: 52218, type: vmess, uuid: 06a5c3fd-797e-3bd0-b7e1-ec3efd0579ed, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 CM|香港Nero 04, server: gz.ddns.miaona.online, port: 10912, type: vmess, uuid: 2580c9d8-1fb7-4178-9a00-0ae22d3b05d5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /114514.apk, ws-headers: {Host: bilivideo.com}}
-  - {name: 🇭🇰 HongKong 01, server: huanan.antlink.cyou, port: 38100, type: vmess, uuid: 71ef0f80-a647-4a3f-901e-7f338ca871bd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: huanan.antlink.cyou}}
-  - {name: 🇭🇰 香港◆AWS 08 Netflix 1x, server: global-transit-02-hk.pucdn.me, port: 62007, type: vmess, uuid: 782e9cbb-07f7-3c3f-a89d-d3047081578d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-hk-08.pucdn.me}}
-  - {name: 🇯🇵 这速度不行     日本🚀, server: 139.162.123.161, port: 65443, type: vmess, uuid: 42cd918b-36b8-4c00-a58d-0a7fcf0b2df2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /d39d32d2fd37/, ws-headers: {Host: jp2.piyou.cyou}}
-  - {name: 🇭🇰 Relay_中国-香港_3080, server: nn9.boom.party, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocolparam: 254637:Ol4zZv, obfsparam: download.windowsupdate.com}
-  - {name: 🇭🇰 香港 - 2, server: zs.2ray.xyz, port: 62000, type: vmess, uuid: eb305893-2ce1-3e71-afb3-83bf5f36b2ac, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2, ws-headers: {Host: hgc.2ray.xyz}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 【VIP香港UC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港HKBN-腾讯Anycas专线】
-      - 普通节点-东亚直连B
+      - 🇭🇰 香港02 - 解锁流媒体
+      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
+      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
+      - 🇭🇰 香港03 - 解锁流媒体| 负载*2
+      - 港03_|NF
+      - 🇭🇰 香港 --03 x0.8
+      - 🇭🇰 香港AX03 22875进阶版 0.3x
+      - 🇭🇰 3#香港 09 解锁流媒体
+      - 🇭🇰 3#香港 08 解锁流媒体
+      - 🇸🇬 3#新加坡 03 解锁流媒体
+      - 🇭🇰 3#香港 06 解锁流媒体
+      - 🇨🇳 LV1 台湾 04 NF
+      - 🇭🇰 LV1 香港 04 NF
+      - 🇸🇬 LV1 新加坡 03 NF
+      - 🇭🇰 LV1 香港 06 NF
+      - 🇸🇬 LV1 新加坡 02 NF
+      - 🇭🇰 CM|香港Misaka 02
+      - 🇭🇰 CM|香港Misaka 01
+      - 🇸🇬 [广州移动]新加坡01 中转 新加坡运营商网络
+      - 🇭🇰 [广州移动]香港01 中转 香港本地家宽
+      - 🇭🇰 V2-香港HGC01 中继C
+      - 🇭🇰 1香港C 流媒体 粤港
+      - 🇭🇰 Lite 香港 02
+      - 🇭🇰 香港 03 - 解锁流媒体
+      - 🇭🇰 中转 香港 HKT01 原生 中继C
+      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
+      - 🇭🇰 香港04 - 解锁流媒体
+      - 🇭🇰 香港-04【NETFLIX】
+      - 🇭🇰 香港-02【NETFLIX】
+      - 🇸🇬 新加坡06【Netflix】
+      - 🇭🇰 香港-03【NETFLIX】
+      - 🇲🇴 CM|澳门Wind 01
+      - 🇭🇰 HongKong 07
+      - 🇭🇰 HongKong 11
+      - 🇭🇰 HongKong 01
+      - 🇭🇰 HongKong 10
+      - 🇭🇰 HongKong 13
+      - 🇭🇰 HongKong 06
+      - 🇭🇰 HongKong 14
+      - 🇭🇰 HongKong 03
+      - 🇭🇰 HongKong 05
+      - 🇭🇰 HongKong 09
+      - 🇯🇵 vip1-日本1
+      - 🇭🇰 vip1-香港3
+      - 🇭🇰 vip1-香港4
+      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
+      - 🇭🇰 B2 长沙-香港PCCW | V2RAY中转 |
+      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
+      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇭🇰 [vip1]︱V2ray︱⑩香港 1000M｜×1x｜限速100M｜解锁Netflix
+      - 🇭🇰 香港 03 | 中转 | Trojan
+      - 🇭🇰 香港 01 | 中转 | Trojan
+      - 🇭🇰 香港 05 | 中转 | V2Ray
+      - 🇭🇰 香港 02 | 中转 | Trojan
+      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
+      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
+      - 🇭🇰 IEPL专线 01 香港BGP
+      - 🇸🇬 新加坡01解锁流媒体
+      - 🇨🇳 台湾01原生IP解锁流媒体
+      - 🇭🇰 [01][Lv1][香港][2x][原生]
+      - 🇸🇬 3#新加坡 02 解锁流媒体
+      - 🇨🇳 3#台湾 03 原生IP解锁
+      - 🇨🇳 3#台湾 02 原生IP解锁
+      - 🇭🇰 3#香港 09 解锁流媒体 2
+      - 🇭🇰 3#香港 08 解锁流媒体 2
+      - 🇭🇰 3#香港 10 解锁流媒体
+      - 🇭🇰 3#香港 01 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇭🇰 3#香港 05 解锁流媒体
+      - 🇭🇰 香港05解鎖NF
+      - 🇭🇰 香港03解鎖NF
+      - 🇨🇳 台湾01原生IP解鎖NF
+      - 🇸🇬 新加坡03解鎖NF
+      - 🇸🇬 新加坡01解鎖NF
+      - 🇭🇰 香港 --01 x1.0
+      - 🇸🇬 VIP1|新加坡03解锁流媒体
+      - 🇸🇬 VIP1|新加坡01解锁流媒体
+      - 🇭🇰 VIP1|香港03解锁流媒体
       - 坡07
       - 🇭🇰 V2ray-香港BGP04-江门-NF
-      - 🇸🇬 V1 | SG A3
-      - 🇭🇰 【VIP香港HGC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港DT02-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港微软03-中山超级BGP】
-      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
       - 🇭🇰 金牛（香港专线）
       - 🇭🇰 V1 | HK A2
       - 🇸🇬 新加坡03【Netflix】
       - 🇨🇳 V4-中转3309|广港B-台湾|解锁|x2.0|V2ray
-      - 🇯🇵 vip1-日本1
       - 🇭🇰 香港 HKBN1 V2ray节点
-      - 🇭🇰 3#香港 04 解锁流媒体
-      - 🇭🇰 3#香港 01 解锁流媒体
-      - 🇭🇰 香港01解鎖NF
-      - 🇸🇬 新加坡03解鎖NF
-      - 🇸🇬 新加坡01解鎖NF
-      - 🇸🇬 VIP1|新加坡03解锁流媒体
       - 🇭🇰 VIP1|香港04解锁流媒体
-      - 🇭🇰 精品香港5|2x
       - 🇭🇰 [DIRECT] HK01|0.5x|三网直连
-      - 🇭🇰 香港D 流媒体 粤港
       - 港13
-      - 港11
-      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体 2
       - 🇸🇬 3#新加坡 01 解锁流媒体
-      - 🇭🇰 3#香港 06 解锁流媒体
-      - 🇸🇬 LV1 新加坡 03 NF
-      - 🇭🇰 V2-香港HGC01 中继B
-      - 🇭🇰 香港B 流媒体 湘港
-      - 🇭🇰 【VIP香港微软06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯01-深圳超级BGP】
-      - 🇭🇰 【VIP香港腾讯03-中山超级BGP】
       - 🇭🇰 HK-HKBN | V2 | 广移中转
       - 🇭🇰 V1 | HK A1
       - 🇸🇬 新加坡05【Netflix】
       - 🇸🇬 新加坡02【Netflix】
       - 🇨🇳 CM|台湾Hinet 04
       - 🇸🇬 新加坡03解锁流媒体
-      - 🇸🇬 新加坡02解锁流媒体
-      - 🇭🇰 香港HKT-优化
-      - 🇭🇰 3#香港 09 解锁流媒体
-      - 🇸🇬 VIP1|新加坡02解锁流媒体
       - 🇸🇬 VIP1|新加坡04解锁流媒体
       - 🇭🇰 V2ray-香港BGP04-江门-NF 2
       - 坡04_|NF
       - 坡05_|NF
       - 坡06
-      - 🇭🇰 香港 --03 x0.8
       - 🇭🇰 3#香港 01 解锁流媒体 2
-      - 🇭🇰 3#香港 09 解锁流媒体 2
       - 🇭🇰 3#香港 07 解锁流媒体
       - 🇭🇰 香港｜H02｜owo
       - 🇸🇬 新加坡03 | 解锁流媒体
@@ -243,174 +257,141 @@ proxy-groups:
       - 🇸🇬 新加坡07【Netflix】
       - 🇭🇰 香港 - v12
       - 🇸🇬 新加坡04解锁流媒体
-      - 🇸🇬 新加坡01解锁流媒体
-      - 🇨🇳 3#台湾 02 原生IP解锁
-      - 🇨🇳 台湾02原生IP解鎖NF
       - 🇨🇳 台湾04原生IP解鎖NF
-      - 🇭🇰 V2-香港HGC01 中继E
       - 🇨🇳 台湾|Hinet|广州中转|A
-      - 🇭🇰 IEPL专线 01 香港BGP
-      - 🇭🇰 3#香港 05 解锁流媒体
       - 🇭🇰 香港HGC01 中继E | 原生 1.5x
       - 🇭🇰 3#香港 05 解锁流媒体 2
       - 🇭🇰 SVIP-A香港HKBN6
       - 🇭🇰 A自动选择香港HKT-002
-      - 🇨🇳 台湾04原生IP解锁流媒体
       - 🇭🇰 2香港A 流媒体 湘港
       - 🇭🇰 香港｜M｜GZ03
-      - 🇭🇰 V2-香港HKT01 中继E
       - 🇭🇰 SVIP-A香港HKBN2
-      - 🇭🇰 香港HKT-优化2
-      - 🇨🇳 台湾|Hinet|广州中转|B
-      - 🇭🇰 B1 广州-香港HKBN | 三网用户 | V2RAY中转 |
-      - 🇭🇰 香港 05 | 中转 | V2Ray
-      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
-      - 🇭🇰 香港04解锁流媒体
-      - 🇨🇳 3#台湾 03 原生IP解锁
       - 🇭🇰 香港HKT01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港 --01 x1.0
-      - 🇭🇰 VIP1|香港03解锁流媒体
       - 🇭🇰 香港 01 | IEPL | VIP1 | 原生IP | 1x
-      - 🇸🇬 V1 | SG A2
       - 🇭🇰 [CM] HK122|1.0x|DNS
-      - 🇭🇰 香港-02【NETFLIX】
-      - 🇭🇰 Lite 香港 02
-      - 🇭🇰 Lite 香港 01
       - 🇭🇰 香港-01【NETFLIX】
-      - 🇭🇰 HongKong 13
-      - 🇭🇰 香港 01 | 中转 | Trojan
-      - 🇨🇳 台湾01原生IP解锁流媒体
-      - 🇭🇰 V2-香港HGC01 中继C
-      - 🇭🇰 HongKong 14
-      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
-      - 🇭🇰 香港HGC01 中继D | 原生 1.5x
-      - 🇭🇰 香港HGC01 中继C | 原生 1.5x
-      - 🇭🇰 香港03解鎖NF
-      - 🇭🇰 香港AX03 22875进阶版 0.3x
-      - 🇭🇰 LV1 香港 04 NF
-      - 🇭🇰 CM|香港Misaka 01
-      - 🇭🇰 HongKong 03
       - 🇭🇰 v2ray-Hong Kong 01
-      - 🇭🇰 vip1-香港5
-      - 🇭🇰 vip1-香港3
-      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港 03 | 中转 | Trojan
-      - 🇭🇰 香港 02 | 中转 | Trojan
-      - 🇭🇰 IEPL专线 05 香港HKT
       - 🇨🇳 台湾03原生IP解锁流媒体
-      - 🇭🇰 [01][Lv1][香港][2x][原生]
-      - 🇭🇰 3#香港 08 解锁流媒体
-      - 🇭🇰 香港HKT01 中继C | 原生 1.5x
-      - 🇭🇰 Lite 香港 03
-      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
-      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
       - 🇭🇰 香港BX02 22875进阶版 0.3x
-      - 🇭🇰 香港DX03 22875进阶版 0.3x
-      - 🇭🇰 香港-04【NETFLIX】
-      - 🇭🇰 CM|香港HKT 01
-      - 🇭🇰 HongKong 05
-      - 🇭🇰 HongKong 09
       - 🇭🇰 vip1-香港1
       - 🇭🇰 B1 广州-香港AGA | V2RAY中转 |
-      - 🇲🇴 [Az香港]澳门04 直连 澳门电讯
       - 港09
       - 港06_|NF|TVB
-      - 🇭🇰 香港AX02 22875进阶版 0.3x
-      - 🇭🇰 CM|香港Misaka 02
-      - 🇭🇰 1香港C 流媒体 粤港
-      - 🇭🇰 CM|香港Nero 01
-      - 🇭🇰 HongKong 06
-      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 B3 广州-香港HKT | V2RAY中转 |
-      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港HKT-优化2 2
       - 🇭🇰 香港HGC01 中继B | 原生 1.5x
       - 🇭🇰 香港HGC01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港HKT01 中继E | 原生 1.5x
-      - 🇭🇰 「极速」AAA香港｜M｜GZ01
-      - 🇭🇰 HongKong 07
-      - 🇭🇰 HongKong 11
-      - 🇭🇰 HongKong 10
-      - 🇭🇰 香港DX02 22875进阶版 0.3x
       - 🇭🇰 [CM] HK121|1.0x|DNS
-      - 🇭🇰 香港-03【NETFLIX】
-      - 🇲🇴 CM|澳门Wind 01
-      - 🇭🇰 CM|香港HKT 03
-      - 🇭🇰 CM|香港HKT 02
-      - 🇭🇰 CM|香港Nero 02
-      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 香港03解锁流媒体
-      - 🇭🇰 香港02解锁流媒体
-      - 🇸🇬 Singapore 07
       - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M｜解锁Netflix
-      - 🇭🇰 CM|香港Nero 04
-      - 🇭🇰 HongKong 01
-      - 🇭🇰 香港◆AWS 08 Netflix 1x
-      - 🇯🇵 这速度不行     日本🚀
-      - 🇭🇰 Relay_中国-香港_3080
-      - 🇭🇰 香港 - 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 【VIP香港UC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港HKBN-腾讯Anycas专线】
-      - 普通节点-东亚直连B
+      - 🇭🇰 香港02 - 解锁流媒体
+      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
+      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
+      - 🇭🇰 香港03 - 解锁流媒体| 负载*2
+      - 港03_|NF
+      - 🇭🇰 香港 --03 x0.8
+      - 🇭🇰 香港AX03 22875进阶版 0.3x
+      - 🇭🇰 3#香港 09 解锁流媒体
+      - 🇭🇰 3#香港 08 解锁流媒体
+      - 🇸🇬 3#新加坡 03 解锁流媒体
+      - 🇭🇰 3#香港 06 解锁流媒体
+      - 🇨🇳 LV1 台湾 04 NF
+      - 🇭🇰 LV1 香港 04 NF
+      - 🇸🇬 LV1 新加坡 03 NF
+      - 🇭🇰 LV1 香港 06 NF
+      - 🇸🇬 LV1 新加坡 02 NF
+      - 🇭🇰 CM|香港Misaka 02
+      - 🇭🇰 CM|香港Misaka 01
+      - 🇸🇬 [广州移动]新加坡01 中转 新加坡运营商网络
+      - 🇭🇰 [广州移动]香港01 中转 香港本地家宽
+      - 🇭🇰 V2-香港HGC01 中继C
+      - 🇭🇰 1香港C 流媒体 粤港
+      - 🇭🇰 Lite 香港 02
+      - 🇭🇰 香港 03 - 解锁流媒体
+      - 🇭🇰 中转 香港 HKT01 原生 中继C
+      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
+      - 🇭🇰 香港04 - 解锁流媒体
+      - 🇭🇰 香港-04【NETFLIX】
+      - 🇭🇰 香港-02【NETFLIX】
+      - 🇸🇬 新加坡06【Netflix】
+      - 🇭🇰 香港-03【NETFLIX】
+      - 🇲🇴 CM|澳门Wind 01
+      - 🇭🇰 HongKong 07
+      - 🇭🇰 HongKong 11
+      - 🇭🇰 HongKong 01
+      - 🇭🇰 HongKong 10
+      - 🇭🇰 HongKong 13
+      - 🇭🇰 HongKong 06
+      - 🇭🇰 HongKong 14
+      - 🇭🇰 HongKong 03
+      - 🇭🇰 HongKong 05
+      - 🇭🇰 HongKong 09
+      - 🇯🇵 vip1-日本1
+      - 🇭🇰 vip1-香港3
+      - 🇭🇰 vip1-香港4
+      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
+      - 🇭🇰 B2 长沙-香港PCCW | V2RAY中转 |
+      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
+      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇭🇰 [vip1]︱V2ray︱⑩香港 1000M｜×1x｜限速100M｜解锁Netflix
+      - 🇭🇰 香港 03 | 中转 | Trojan
+      - 🇭🇰 香港 01 | 中转 | Trojan
+      - 🇭🇰 香港 05 | 中转 | V2Ray
+      - 🇭🇰 香港 02 | 中转 | Trojan
+      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
+      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
+      - 🇭🇰 IEPL专线 01 香港BGP
+      - 🇸🇬 新加坡01解锁流媒体
+      - 🇨🇳 台湾01原生IP解锁流媒体
+      - 🇭🇰 [01][Lv1][香港][2x][原生]
+      - 🇸🇬 3#新加坡 02 解锁流媒体
+      - 🇨🇳 3#台湾 03 原生IP解锁
+      - 🇨🇳 3#台湾 02 原生IP解锁
+      - 🇭🇰 3#香港 09 解锁流媒体 2
+      - 🇭🇰 3#香港 08 解锁流媒体 2
+      - 🇭🇰 3#香港 10 解锁流媒体
+      - 🇭🇰 3#香港 01 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇭🇰 3#香港 05 解锁流媒体
+      - 🇭🇰 香港05解鎖NF
+      - 🇭🇰 香港03解鎖NF
+      - 🇨🇳 台湾01原生IP解鎖NF
+      - 🇸🇬 新加坡03解鎖NF
+      - 🇸🇬 新加坡01解鎖NF
+      - 🇭🇰 香港 --01 x1.0
+      - 🇸🇬 VIP1|新加坡03解锁流媒体
+      - 🇸🇬 VIP1|新加坡01解锁流媒体
+      - 🇭🇰 VIP1|香港03解锁流媒体
       - 坡07
       - 🇭🇰 V2ray-香港BGP04-江门-NF
-      - 🇸🇬 V1 | SG A3
-      - 🇭🇰 【VIP香港HGC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港DT02-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港微软03-中山超级BGP】
-      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
       - 🇭🇰 金牛（香港专线）
       - 🇭🇰 V1 | HK A2
       - 🇸🇬 新加坡03【Netflix】
       - 🇨🇳 V4-中转3309|广港B-台湾|解锁|x2.0|V2ray
-      - 🇯🇵 vip1-日本1
       - 🇭🇰 香港 HKBN1 V2ray节点
-      - 🇭🇰 3#香港 04 解锁流媒体
-      - 🇭🇰 3#香港 01 解锁流媒体
-      - 🇭🇰 香港01解鎖NF
-      - 🇸🇬 新加坡03解鎖NF
-      - 🇸🇬 新加坡01解鎖NF
-      - 🇸🇬 VIP1|新加坡03解锁流媒体
       - 🇭🇰 VIP1|香港04解锁流媒体
-      - 🇭🇰 精品香港5|2x
       - 🇭🇰 [DIRECT] HK01|0.5x|三网直连
-      - 🇭🇰 香港D 流媒体 粤港
       - 港13
-      - 港11
-      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体 2
       - 🇸🇬 3#新加坡 01 解锁流媒体
-      - 🇭🇰 3#香港 06 解锁流媒体
-      - 🇸🇬 LV1 新加坡 03 NF
-      - 🇭🇰 V2-香港HGC01 中继B
-      - 🇭🇰 香港B 流媒体 湘港
-      - 🇭🇰 【VIP香港微软06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯01-深圳超级BGP】
-      - 🇭🇰 【VIP香港腾讯03-中山超级BGP】
       - 🇭🇰 HK-HKBN | V2 | 广移中转
       - 🇭🇰 V1 | HK A1
       - 🇸🇬 新加坡05【Netflix】
       - 🇸🇬 新加坡02【Netflix】
       - 🇨🇳 CM|台湾Hinet 04
       - 🇸🇬 新加坡03解锁流媒体
-      - 🇸🇬 新加坡02解锁流媒体
-      - 🇭🇰 香港HKT-优化
-      - 🇭🇰 3#香港 09 解锁流媒体
-      - 🇸🇬 VIP1|新加坡02解锁流媒体
       - 🇸🇬 VIP1|新加坡04解锁流媒体
       - 🇭🇰 V2ray-香港BGP04-江门-NF 2
       - 坡04_|NF
       - 坡05_|NF
       - 坡06
-      - 🇭🇰 香港 --03 x0.8
       - 🇭🇰 3#香港 01 解锁流媒体 2
-      - 🇭🇰 3#香港 09 解锁流媒体 2
       - 🇭🇰 3#香港 07 解锁流媒体
       - 🇭🇰 香港｜H02｜owo
       - 🇸🇬 新加坡03 | 解锁流媒体
@@ -418,174 +399,141 @@ proxy-groups:
       - 🇸🇬 新加坡07【Netflix】
       - 🇭🇰 香港 - v12
       - 🇸🇬 新加坡04解锁流媒体
-      - 🇸🇬 新加坡01解锁流媒体
-      - 🇨🇳 3#台湾 02 原生IP解锁
-      - 🇨🇳 台湾02原生IP解鎖NF
       - 🇨🇳 台湾04原生IP解鎖NF
-      - 🇭🇰 V2-香港HGC01 中继E
       - 🇨🇳 台湾|Hinet|广州中转|A
-      - 🇭🇰 IEPL专线 01 香港BGP
-      - 🇭🇰 3#香港 05 解锁流媒体
       - 🇭🇰 香港HGC01 中继E | 原生 1.5x
       - 🇭🇰 3#香港 05 解锁流媒体 2
       - 🇭🇰 SVIP-A香港HKBN6
       - 🇭🇰 A自动选择香港HKT-002
-      - 🇨🇳 台湾04原生IP解锁流媒体
       - 🇭🇰 2香港A 流媒体 湘港
       - 🇭🇰 香港｜M｜GZ03
-      - 🇭🇰 V2-香港HKT01 中继E
       - 🇭🇰 SVIP-A香港HKBN2
-      - 🇭🇰 香港HKT-优化2
-      - 🇨🇳 台湾|Hinet|广州中转|B
-      - 🇭🇰 B1 广州-香港HKBN | 三网用户 | V2RAY中转 |
-      - 🇭🇰 香港 05 | 中转 | V2Ray
-      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
-      - 🇭🇰 香港04解锁流媒体
-      - 🇨🇳 3#台湾 03 原生IP解锁
       - 🇭🇰 香港HKT01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港 --01 x1.0
-      - 🇭🇰 VIP1|香港03解锁流媒体
       - 🇭🇰 香港 01 | IEPL | VIP1 | 原生IP | 1x
-      - 🇸🇬 V1 | SG A2
       - 🇭🇰 [CM] HK122|1.0x|DNS
-      - 🇭🇰 香港-02【NETFLIX】
-      - 🇭🇰 Lite 香港 02
-      - 🇭🇰 Lite 香港 01
       - 🇭🇰 香港-01【NETFLIX】
-      - 🇭🇰 HongKong 13
-      - 🇭🇰 香港 01 | 中转 | Trojan
-      - 🇨🇳 台湾01原生IP解锁流媒体
-      - 🇭🇰 V2-香港HGC01 中继C
-      - 🇭🇰 HongKong 14
-      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
-      - 🇭🇰 香港HGC01 中继D | 原生 1.5x
-      - 🇭🇰 香港HGC01 中继C | 原生 1.5x
-      - 🇭🇰 香港03解鎖NF
-      - 🇭🇰 香港AX03 22875进阶版 0.3x
-      - 🇭🇰 LV1 香港 04 NF
-      - 🇭🇰 CM|香港Misaka 01
-      - 🇭🇰 HongKong 03
       - 🇭🇰 v2ray-Hong Kong 01
-      - 🇭🇰 vip1-香港5
-      - 🇭🇰 vip1-香港3
-      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港 03 | 中转 | Trojan
-      - 🇭🇰 香港 02 | 中转 | Trojan
-      - 🇭🇰 IEPL专线 05 香港HKT
       - 🇨🇳 台湾03原生IP解锁流媒体
-      - 🇭🇰 [01][Lv1][香港][2x][原生]
-      - 🇭🇰 3#香港 08 解锁流媒体
-      - 🇭🇰 香港HKT01 中继C | 原生 1.5x
-      - 🇭🇰 Lite 香港 03
-      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
-      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
       - 🇭🇰 香港BX02 22875进阶版 0.3x
-      - 🇭🇰 香港DX03 22875进阶版 0.3x
-      - 🇭🇰 香港-04【NETFLIX】
-      - 🇭🇰 CM|香港HKT 01
-      - 🇭🇰 HongKong 05
-      - 🇭🇰 HongKong 09
       - 🇭🇰 vip1-香港1
       - 🇭🇰 B1 广州-香港AGA | V2RAY中转 |
-      - 🇲🇴 [Az香港]澳门04 直连 澳门电讯
       - 港09
       - 港06_|NF|TVB
-      - 🇭🇰 香港AX02 22875进阶版 0.3x
-      - 🇭🇰 CM|香港Misaka 02
-      - 🇭🇰 1香港C 流媒体 粤港
-      - 🇭🇰 CM|香港Nero 01
-      - 🇭🇰 HongKong 06
-      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 B3 广州-香港HKT | V2RAY中转 |
-      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港HKT-优化2 2
       - 🇭🇰 香港HGC01 中继B | 原生 1.5x
       - 🇭🇰 香港HGC01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港HKT01 中继E | 原生 1.5x
-      - 🇭🇰 「极速」AAA香港｜M｜GZ01
-      - 🇭🇰 HongKong 07
-      - 🇭🇰 HongKong 11
-      - 🇭🇰 HongKong 10
-      - 🇭🇰 香港DX02 22875进阶版 0.3x
       - 🇭🇰 [CM] HK121|1.0x|DNS
-      - 🇭🇰 香港-03【NETFLIX】
-      - 🇲🇴 CM|澳门Wind 01
-      - 🇭🇰 CM|香港HKT 03
-      - 🇭🇰 CM|香港HKT 02
-      - 🇭🇰 CM|香港Nero 02
-      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 香港03解锁流媒体
-      - 🇭🇰 香港02解锁流媒体
-      - 🇸🇬 Singapore 07
       - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M｜解锁Netflix
-      - 🇭🇰 CM|香港Nero 04
-      - 🇭🇰 HongKong 01
-      - 🇭🇰 香港◆AWS 08 Netflix 1x
-      - 🇯🇵 这速度不行     日本🚀
-      - 🇭🇰 Relay_中国-香港_3080
-      - 🇭🇰 香港 - 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 【VIP香港UC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港HKBN-腾讯Anycas专线】
-      - 普通节点-东亚直连B
+      - 🇭🇰 香港02 - 解锁流媒体
+      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
+      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
+      - 🇭🇰 香港03 - 解锁流媒体| 负载*2
+      - 港03_|NF
+      - 🇭🇰 香港 --03 x0.8
+      - 🇭🇰 香港AX03 22875进阶版 0.3x
+      - 🇭🇰 3#香港 09 解锁流媒体
+      - 🇭🇰 3#香港 08 解锁流媒体
+      - 🇸🇬 3#新加坡 03 解锁流媒体
+      - 🇭🇰 3#香港 06 解锁流媒体
+      - 🇨🇳 LV1 台湾 04 NF
+      - 🇭🇰 LV1 香港 04 NF
+      - 🇸🇬 LV1 新加坡 03 NF
+      - 🇭🇰 LV1 香港 06 NF
+      - 🇸🇬 LV1 新加坡 02 NF
+      - 🇭🇰 CM|香港Misaka 02
+      - 🇭🇰 CM|香港Misaka 01
+      - 🇸🇬 [广州移动]新加坡01 中转 新加坡运营商网络
+      - 🇭🇰 [广州移动]香港01 中转 香港本地家宽
+      - 🇭🇰 V2-香港HGC01 中继C
+      - 🇭🇰 1香港C 流媒体 粤港
+      - 🇭🇰 Lite 香港 02
+      - 🇭🇰 香港 03 - 解锁流媒体
+      - 🇭🇰 中转 香港 HKT01 原生 中继C
+      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
+      - 🇭🇰 香港04 - 解锁流媒体
+      - 🇭🇰 香港-04【NETFLIX】
+      - 🇭🇰 香港-02【NETFLIX】
+      - 🇸🇬 新加坡06【Netflix】
+      - 🇭🇰 香港-03【NETFLIX】
+      - 🇲🇴 CM|澳门Wind 01
+      - 🇭🇰 HongKong 07
+      - 🇭🇰 HongKong 11
+      - 🇭🇰 HongKong 01
+      - 🇭🇰 HongKong 10
+      - 🇭🇰 HongKong 13
+      - 🇭🇰 HongKong 06
+      - 🇭🇰 HongKong 14
+      - 🇭🇰 HongKong 03
+      - 🇭🇰 HongKong 05
+      - 🇭🇰 HongKong 09
+      - 🇯🇵 vip1-日本1
+      - 🇭🇰 vip1-香港3
+      - 🇭🇰 vip1-香港4
+      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
+      - 🇭🇰 B2 长沙-香港PCCW | V2RAY中转 |
+      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
+      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇭🇰 [vip1]︱V2ray︱⑩香港 1000M｜×1x｜限速100M｜解锁Netflix
+      - 🇭🇰 香港 03 | 中转 | Trojan
+      - 🇭🇰 香港 01 | 中转 | Trojan
+      - 🇭🇰 香港 05 | 中转 | V2Ray
+      - 🇭🇰 香港 02 | 中转 | Trojan
+      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
+      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
+      - 🇭🇰 IEPL专线 01 香港BGP
+      - 🇸🇬 新加坡01解锁流媒体
+      - 🇨🇳 台湾01原生IP解锁流媒体
+      - 🇭🇰 [01][Lv1][香港][2x][原生]
+      - 🇸🇬 3#新加坡 02 解锁流媒体
+      - 🇨🇳 3#台湾 03 原生IP解锁
+      - 🇨🇳 3#台湾 02 原生IP解锁
+      - 🇭🇰 3#香港 09 解锁流媒体 2
+      - 🇭🇰 3#香港 08 解锁流媒体 2
+      - 🇭🇰 3#香港 10 解锁流媒体
+      - 🇭🇰 3#香港 01 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇭🇰 3#香港 05 解锁流媒体
+      - 🇭🇰 香港05解鎖NF
+      - 🇭🇰 香港03解鎖NF
+      - 🇨🇳 台湾01原生IP解鎖NF
+      - 🇸🇬 新加坡03解鎖NF
+      - 🇸🇬 新加坡01解鎖NF
+      - 🇭🇰 香港 --01 x1.0
+      - 🇸🇬 VIP1|新加坡03解锁流媒体
+      - 🇸🇬 VIP1|新加坡01解锁流媒体
+      - 🇭🇰 VIP1|香港03解锁流媒体
       - 坡07
       - 🇭🇰 V2ray-香港BGP04-江门-NF
-      - 🇸🇬 V1 | SG A3
-      - 🇭🇰 【VIP香港HGC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港DT02-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港微软03-中山超级BGP】
-      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
       - 🇭🇰 金牛（香港专线）
       - 🇭🇰 V1 | HK A2
       - 🇸🇬 新加坡03【Netflix】
       - 🇨🇳 V4-中转3309|广港B-台湾|解锁|x2.0|V2ray
-      - 🇯🇵 vip1-日本1
       - 🇭🇰 香港 HKBN1 V2ray节点
-      - 🇭🇰 3#香港 04 解锁流媒体
-      - 🇭🇰 3#香港 01 解锁流媒体
-      - 🇭🇰 香港01解鎖NF
-      - 🇸🇬 新加坡03解鎖NF
-      - 🇸🇬 新加坡01解鎖NF
-      - 🇸🇬 VIP1|新加坡03解锁流媒体
       - 🇭🇰 VIP1|香港04解锁流媒体
-      - 🇭🇰 精品香港5|2x
       - 🇭🇰 [DIRECT] HK01|0.5x|三网直连
-      - 🇭🇰 香港D 流媒体 粤港
       - 港13
-      - 港11
-      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体 2
       - 🇸🇬 3#新加坡 01 解锁流媒体
-      - 🇭🇰 3#香港 06 解锁流媒体
-      - 🇸🇬 LV1 新加坡 03 NF
-      - 🇭🇰 V2-香港HGC01 中继B
-      - 🇭🇰 香港B 流媒体 湘港
-      - 🇭🇰 【VIP香港微软06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯01-深圳超级BGP】
-      - 🇭🇰 【VIP香港腾讯03-中山超级BGP】
       - 🇭🇰 HK-HKBN | V2 | 广移中转
       - 🇭🇰 V1 | HK A1
       - 🇸🇬 新加坡05【Netflix】
       - 🇸🇬 新加坡02【Netflix】
       - 🇨🇳 CM|台湾Hinet 04
       - 🇸🇬 新加坡03解锁流媒体
-      - 🇸🇬 新加坡02解锁流媒体
-      - 🇭🇰 香港HKT-优化
-      - 🇭🇰 3#香港 09 解锁流媒体
-      - 🇸🇬 VIP1|新加坡02解锁流媒体
       - 🇸🇬 VIP1|新加坡04解锁流媒体
       - 🇭🇰 V2ray-香港BGP04-江门-NF 2
       - 坡04_|NF
       - 坡05_|NF
       - 坡06
-      - 🇭🇰 香港 --03 x0.8
       - 🇭🇰 3#香港 01 解锁流媒体 2
-      - 🇭🇰 3#香港 09 解锁流媒体 2
       - 🇭🇰 3#香港 07 解锁流媒体
       - 🇭🇰 香港｜H02｜owo
       - 🇸🇬 新加坡03 | 解锁流媒体
@@ -593,173 +541,140 @@ proxy-groups:
       - 🇸🇬 新加坡07【Netflix】
       - 🇭🇰 香港 - v12
       - 🇸🇬 新加坡04解锁流媒体
-      - 🇸🇬 新加坡01解锁流媒体
-      - 🇨🇳 3#台湾 02 原生IP解锁
-      - 🇨🇳 台湾02原生IP解鎖NF
       - 🇨🇳 台湾04原生IP解鎖NF
-      - 🇭🇰 V2-香港HGC01 中继E
       - 🇨🇳 台湾|Hinet|广州中转|A
-      - 🇭🇰 IEPL专线 01 香港BGP
-      - 🇭🇰 3#香港 05 解锁流媒体
       - 🇭🇰 香港HGC01 中继E | 原生 1.5x
       - 🇭🇰 3#香港 05 解锁流媒体 2
       - 🇭🇰 SVIP-A香港HKBN6
       - 🇭🇰 A自动选择香港HKT-002
-      - 🇨🇳 台湾04原生IP解锁流媒体
       - 🇭🇰 2香港A 流媒体 湘港
       - 🇭🇰 香港｜M｜GZ03
-      - 🇭🇰 V2-香港HKT01 中继E
       - 🇭🇰 SVIP-A香港HKBN2
-      - 🇭🇰 香港HKT-优化2
-      - 🇨🇳 台湾|Hinet|广州中转|B
-      - 🇭🇰 B1 广州-香港HKBN | 三网用户 | V2RAY中转 |
-      - 🇭🇰 香港 05 | 中转 | V2Ray
-      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
-      - 🇭🇰 香港04解锁流媒体
-      - 🇨🇳 3#台湾 03 原生IP解锁
       - 🇭🇰 香港HKT01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港 --01 x1.0
-      - 🇭🇰 VIP1|香港03解锁流媒体
       - 🇭🇰 香港 01 | IEPL | VIP1 | 原生IP | 1x
-      - 🇸🇬 V1 | SG A2
       - 🇭🇰 [CM] HK122|1.0x|DNS
-      - 🇭🇰 香港-02【NETFLIX】
-      - 🇭🇰 Lite 香港 02
-      - 🇭🇰 Lite 香港 01
       - 🇭🇰 香港-01【NETFLIX】
-      - 🇭🇰 HongKong 13
-      - 🇭🇰 香港 01 | 中转 | Trojan
-      - 🇨🇳 台湾01原生IP解锁流媒体
-      - 🇭🇰 V2-香港HGC01 中继C
-      - 🇭🇰 HongKong 14
-      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
-      - 🇭🇰 香港HGC01 中继D | 原生 1.5x
-      - 🇭🇰 香港HGC01 中继C | 原生 1.5x
-      - 🇭🇰 香港03解鎖NF
-      - 🇭🇰 香港AX03 22875进阶版 0.3x
-      - 🇭🇰 LV1 香港 04 NF
-      - 🇭🇰 CM|香港Misaka 01
-      - 🇭🇰 HongKong 03
       - 🇭🇰 v2ray-Hong Kong 01
-      - 🇭🇰 vip1-香港5
-      - 🇭🇰 vip1-香港3
-      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港 03 | 中转 | Trojan
-      - 🇭🇰 香港 02 | 中转 | Trojan
-      - 🇭🇰 IEPL专线 05 香港HKT
       - 🇨🇳 台湾03原生IP解锁流媒体
-      - 🇭🇰 [01][Lv1][香港][2x][原生]
-      - 🇭🇰 3#香港 08 解锁流媒体
-      - 🇭🇰 香港HKT01 中继C | 原生 1.5x
-      - 🇭🇰 Lite 香港 03
-      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
-      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
       - 🇭🇰 香港BX02 22875进阶版 0.3x
-      - 🇭🇰 香港DX03 22875进阶版 0.3x
-      - 🇭🇰 香港-04【NETFLIX】
-      - 🇭🇰 CM|香港HKT 01
-      - 🇭🇰 HongKong 05
-      - 🇭🇰 HongKong 09
       - 🇭🇰 vip1-香港1
       - 🇭🇰 B1 广州-香港AGA | V2RAY中转 |
-      - 🇲🇴 [Az香港]澳门04 直连 澳门电讯
       - 港09
       - 港06_|NF|TVB
-      - 🇭🇰 香港AX02 22875进阶版 0.3x
-      - 🇭🇰 CM|香港Misaka 02
-      - 🇭🇰 1香港C 流媒体 粤港
-      - 🇭🇰 CM|香港Nero 01
-      - 🇭🇰 HongKong 06
-      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 B3 广州-香港HKT | V2RAY中转 |
-      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港HKT-优化2 2
       - 🇭🇰 香港HGC01 中继B | 原生 1.5x
       - 🇭🇰 香港HGC01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港HKT01 中继E | 原生 1.5x
-      - 🇭🇰 「极速」AAA香港｜M｜GZ01
-      - 🇭🇰 HongKong 07
-      - 🇭🇰 HongKong 11
-      - 🇭🇰 HongKong 10
-      - 🇭🇰 香港DX02 22875进阶版 0.3x
       - 🇭🇰 [CM] HK121|1.0x|DNS
-      - 🇭🇰 香港-03【NETFLIX】
-      - 🇲🇴 CM|澳门Wind 01
-      - 🇭🇰 CM|香港HKT 03
-      - 🇭🇰 CM|香港HKT 02
-      - 🇭🇰 CM|香港Nero 02
-      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 香港03解锁流媒体
-      - 🇭🇰 香港02解锁流媒体
-      - 🇸🇬 Singapore 07
       - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M｜解锁Netflix
-      - 🇭🇰 CM|香港Nero 04
-      - 🇭🇰 HongKong 01
-      - 🇭🇰 香港◆AWS 08 Netflix 1x
-      - 🇯🇵 这速度不行     日本🚀
-      - 🇭🇰 Relay_中国-香港_3080
-      - 🇭🇰 香港 - 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 【VIP香港UC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港HKBN-腾讯Anycas专线】
-      - 普通节点-东亚直连B
+      - 🇭🇰 香港02 - 解锁流媒体
+      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
+      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
+      - 🇭🇰 香港03 - 解锁流媒体| 负载*2
+      - 港03_|NF
+      - 🇭🇰 香港 --03 x0.8
+      - 🇭🇰 香港AX03 22875进阶版 0.3x
+      - 🇭🇰 3#香港 09 解锁流媒体
+      - 🇭🇰 3#香港 08 解锁流媒体
+      - 🇸🇬 3#新加坡 03 解锁流媒体
+      - 🇭🇰 3#香港 06 解锁流媒体
+      - 🇨🇳 LV1 台湾 04 NF
+      - 🇭🇰 LV1 香港 04 NF
+      - 🇸🇬 LV1 新加坡 03 NF
+      - 🇭🇰 LV1 香港 06 NF
+      - 🇸🇬 LV1 新加坡 02 NF
+      - 🇭🇰 CM|香港Misaka 02
+      - 🇭🇰 CM|香港Misaka 01
+      - 🇸🇬 [广州移动]新加坡01 中转 新加坡运营商网络
+      - 🇭🇰 [广州移动]香港01 中转 香港本地家宽
+      - 🇭🇰 V2-香港HGC01 中继C
+      - 🇭🇰 1香港C 流媒体 粤港
+      - 🇭🇰 Lite 香港 02
+      - 🇭🇰 香港 03 - 解锁流媒体
+      - 🇭🇰 中转 香港 HKT01 原生 中继C
+      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
+      - 🇭🇰 香港04 - 解锁流媒体
+      - 🇭🇰 香港-04【NETFLIX】
+      - 🇭🇰 香港-02【NETFLIX】
+      - 🇸🇬 新加坡06【Netflix】
+      - 🇭🇰 香港-03【NETFLIX】
+      - 🇲🇴 CM|澳门Wind 01
+      - 🇭🇰 HongKong 07
+      - 🇭🇰 HongKong 11
+      - 🇭🇰 HongKong 01
+      - 🇭🇰 HongKong 10
+      - 🇭🇰 HongKong 13
+      - 🇭🇰 HongKong 06
+      - 🇭🇰 HongKong 14
+      - 🇭🇰 HongKong 03
+      - 🇭🇰 HongKong 05
+      - 🇭🇰 HongKong 09
+      - 🇯🇵 vip1-日本1
+      - 🇭🇰 vip1-香港3
+      - 🇭🇰 vip1-香港4
+      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
+      - 🇭🇰 B2 长沙-香港PCCW | V2RAY中转 |
+      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
+      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇭🇰 [vip1]︱V2ray︱⑩香港 1000M｜×1x｜限速100M｜解锁Netflix
+      - 🇭🇰 香港 03 | 中转 | Trojan
+      - 🇭🇰 香港 01 | 中转 | Trojan
+      - 🇭🇰 香港 05 | 中转 | V2Ray
+      - 🇭🇰 香港 02 | 中转 | Trojan
+      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
+      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
+      - 🇭🇰 IEPL专线 01 香港BGP
+      - 🇸🇬 新加坡01解锁流媒体
+      - 🇨🇳 台湾01原生IP解锁流媒体
+      - 🇭🇰 [01][Lv1][香港][2x][原生]
+      - 🇸🇬 3#新加坡 02 解锁流媒体
+      - 🇨🇳 3#台湾 03 原生IP解锁
+      - 🇨🇳 3#台湾 02 原生IP解锁
+      - 🇭🇰 3#香港 09 解锁流媒体 2
+      - 🇭🇰 3#香港 08 解锁流媒体 2
+      - 🇭🇰 3#香港 10 解锁流媒体
+      - 🇭🇰 3#香港 01 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇭🇰 3#香港 05 解锁流媒体
+      - 🇭🇰 香港05解鎖NF
+      - 🇭🇰 香港03解鎖NF
+      - 🇨🇳 台湾01原生IP解鎖NF
+      - 🇸🇬 新加坡03解鎖NF
+      - 🇸🇬 新加坡01解鎖NF
+      - 🇭🇰 香港 --01 x1.0
+      - 🇸🇬 VIP1|新加坡03解锁流媒体
+      - 🇸🇬 VIP1|新加坡01解锁流媒体
+      - 🇭🇰 VIP1|香港03解锁流媒体
       - 坡07
       - 🇭🇰 V2ray-香港BGP04-江门-NF
-      - 🇸🇬 V1 | SG A3
-      - 🇭🇰 【VIP香港HGC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港DT02-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港微软03-中山超级BGP】
-      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
       - 🇭🇰 金牛（香港专线）
       - 🇭🇰 V1 | HK A2
       - 🇸🇬 新加坡03【Netflix】
       - 🇨🇳 V4-中转3309|广港B-台湾|解锁|x2.0|V2ray
-      - 🇯🇵 vip1-日本1
       - 🇭🇰 香港 HKBN1 V2ray节点
-      - 🇭🇰 3#香港 04 解锁流媒体
-      - 🇭🇰 3#香港 01 解锁流媒体
-      - 🇭🇰 香港01解鎖NF
-      - 🇸🇬 新加坡03解鎖NF
-      - 🇸🇬 新加坡01解鎖NF
-      - 🇸🇬 VIP1|新加坡03解锁流媒体
       - 🇭🇰 VIP1|香港04解锁流媒体
-      - 🇭🇰 精品香港5|2x
       - 🇭🇰 [DIRECT] HK01|0.5x|三网直连
-      - 🇭🇰 香港D 流媒体 粤港
       - 港13
-      - 港11
-      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体 2
       - 🇸🇬 3#新加坡 01 解锁流媒体
-      - 🇭🇰 3#香港 06 解锁流媒体
-      - 🇸🇬 LV1 新加坡 03 NF
-      - 🇭🇰 V2-香港HGC01 中继B
-      - 🇭🇰 香港B 流媒体 湘港
-      - 🇭🇰 【VIP香港微软06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯01-深圳超级BGP】
-      - 🇭🇰 【VIP香港腾讯03-中山超级BGP】
       - 🇭🇰 HK-HKBN | V2 | 广移中转
       - 🇭🇰 V1 | HK A1
       - 🇸🇬 新加坡05【Netflix】
       - 🇸🇬 新加坡02【Netflix】
       - 🇨🇳 CM|台湾Hinet 04
       - 🇸🇬 新加坡03解锁流媒体
-      - 🇸🇬 新加坡02解锁流媒体
-      - 🇭🇰 香港HKT-优化
-      - 🇭🇰 3#香港 09 解锁流媒体
-      - 🇸🇬 VIP1|新加坡02解锁流媒体
       - 🇸🇬 VIP1|新加坡04解锁流媒体
       - 🇭🇰 V2ray-香港BGP04-江门-NF 2
       - 坡04_|NF
       - 坡05_|NF
       - 坡06
-      - 🇭🇰 香港 --03 x0.8
       - 🇭🇰 3#香港 01 解锁流媒体 2
-      - 🇭🇰 3#香港 09 解锁流媒体 2
       - 🇭🇰 3#香港 07 解锁流媒体
       - 🇭🇰 香港｜H02｜owo
       - 🇸🇬 新加坡03 | 解锁流媒体
@@ -767,173 +682,140 @@ proxy-groups:
       - 🇸🇬 新加坡07【Netflix】
       - 🇭🇰 香港 - v12
       - 🇸🇬 新加坡04解锁流媒体
-      - 🇸🇬 新加坡01解锁流媒体
-      - 🇨🇳 3#台湾 02 原生IP解锁
-      - 🇨🇳 台湾02原生IP解鎖NF
       - 🇨🇳 台湾04原生IP解鎖NF
-      - 🇭🇰 V2-香港HGC01 中继E
       - 🇨🇳 台湾|Hinet|广州中转|A
-      - 🇭🇰 IEPL专线 01 香港BGP
-      - 🇭🇰 3#香港 05 解锁流媒体
       - 🇭🇰 香港HGC01 中继E | 原生 1.5x
       - 🇭🇰 3#香港 05 解锁流媒体 2
       - 🇭🇰 SVIP-A香港HKBN6
       - 🇭🇰 A自动选择香港HKT-002
-      - 🇨🇳 台湾04原生IP解锁流媒体
       - 🇭🇰 2香港A 流媒体 湘港
       - 🇭🇰 香港｜M｜GZ03
-      - 🇭🇰 V2-香港HKT01 中继E
       - 🇭🇰 SVIP-A香港HKBN2
-      - 🇭🇰 香港HKT-优化2
-      - 🇨🇳 台湾|Hinet|广州中转|B
-      - 🇭🇰 B1 广州-香港HKBN | 三网用户 | V2RAY中转 |
-      - 🇭🇰 香港 05 | 中转 | V2Ray
-      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
-      - 🇭🇰 香港04解锁流媒体
-      - 🇨🇳 3#台湾 03 原生IP解锁
       - 🇭🇰 香港HKT01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港 --01 x1.0
-      - 🇭🇰 VIP1|香港03解锁流媒体
       - 🇭🇰 香港 01 | IEPL | VIP1 | 原生IP | 1x
-      - 🇸🇬 V1 | SG A2
       - 🇭🇰 [CM] HK122|1.0x|DNS
-      - 🇭🇰 香港-02【NETFLIX】
-      - 🇭🇰 Lite 香港 02
-      - 🇭🇰 Lite 香港 01
       - 🇭🇰 香港-01【NETFLIX】
-      - 🇭🇰 HongKong 13
-      - 🇭🇰 香港 01 | 中转 | Trojan
-      - 🇨🇳 台湾01原生IP解锁流媒体
-      - 🇭🇰 V2-香港HGC01 中继C
-      - 🇭🇰 HongKong 14
-      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
-      - 🇭🇰 香港HGC01 中继D | 原生 1.5x
-      - 🇭🇰 香港HGC01 中继C | 原生 1.5x
-      - 🇭🇰 香港03解鎖NF
-      - 🇭🇰 香港AX03 22875进阶版 0.3x
-      - 🇭🇰 LV1 香港 04 NF
-      - 🇭🇰 CM|香港Misaka 01
-      - 🇭🇰 HongKong 03
       - 🇭🇰 v2ray-Hong Kong 01
-      - 🇭🇰 vip1-香港5
-      - 🇭🇰 vip1-香港3
-      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港 03 | 中转 | Trojan
-      - 🇭🇰 香港 02 | 中转 | Trojan
-      - 🇭🇰 IEPL专线 05 香港HKT
       - 🇨🇳 台湾03原生IP解锁流媒体
-      - 🇭🇰 [01][Lv1][香港][2x][原生]
-      - 🇭🇰 3#香港 08 解锁流媒体
-      - 🇭🇰 香港HKT01 中继C | 原生 1.5x
-      - 🇭🇰 Lite 香港 03
-      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
-      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
       - 🇭🇰 香港BX02 22875进阶版 0.3x
-      - 🇭🇰 香港DX03 22875进阶版 0.3x
-      - 🇭🇰 香港-04【NETFLIX】
-      - 🇭🇰 CM|香港HKT 01
-      - 🇭🇰 HongKong 05
-      - 🇭🇰 HongKong 09
       - 🇭🇰 vip1-香港1
       - 🇭🇰 B1 广州-香港AGA | V2RAY中转 |
-      - 🇲🇴 [Az香港]澳门04 直连 澳门电讯
       - 港09
       - 港06_|NF|TVB
-      - 🇭🇰 香港AX02 22875进阶版 0.3x
-      - 🇭🇰 CM|香港Misaka 02
-      - 🇭🇰 1香港C 流媒体 粤港
-      - 🇭🇰 CM|香港Nero 01
-      - 🇭🇰 HongKong 06
-      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 B3 广州-香港HKT | V2RAY中转 |
-      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港HKT-优化2 2
       - 🇭🇰 香港HGC01 中继B | 原生 1.5x
       - 🇭🇰 香港HGC01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港HKT01 中继E | 原生 1.5x
-      - 🇭🇰 「极速」AAA香港｜M｜GZ01
-      - 🇭🇰 HongKong 07
-      - 🇭🇰 HongKong 11
-      - 🇭🇰 HongKong 10
-      - 🇭🇰 香港DX02 22875进阶版 0.3x
       - 🇭🇰 [CM] HK121|1.0x|DNS
-      - 🇭🇰 香港-03【NETFLIX】
-      - 🇲🇴 CM|澳门Wind 01
-      - 🇭🇰 CM|香港HKT 03
-      - 🇭🇰 CM|香港HKT 02
-      - 🇭🇰 CM|香港Nero 02
-      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 香港03解锁流媒体
-      - 🇭🇰 香港02解锁流媒体
-      - 🇸🇬 Singapore 07
       - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M｜解锁Netflix
-      - 🇭🇰 CM|香港Nero 04
-      - 🇭🇰 HongKong 01
-      - 🇭🇰 香港◆AWS 08 Netflix 1x
-      - 🇯🇵 这速度不行     日本🚀
-      - 🇭🇰 Relay_中国-香港_3080
-      - 🇭🇰 香港 - 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 【VIP香港UC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港HKBN-腾讯Anycas专线】
-      - 普通节点-东亚直连B
+      - 🇭🇰 香港02 - 解锁流媒体
+      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
+      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
+      - 🇭🇰 香港03 - 解锁流媒体| 负载*2
+      - 港03_|NF
+      - 🇭🇰 香港 --03 x0.8
+      - 🇭🇰 香港AX03 22875进阶版 0.3x
+      - 🇭🇰 3#香港 09 解锁流媒体
+      - 🇭🇰 3#香港 08 解锁流媒体
+      - 🇸🇬 3#新加坡 03 解锁流媒体
+      - 🇭🇰 3#香港 06 解锁流媒体
+      - 🇨🇳 LV1 台湾 04 NF
+      - 🇭🇰 LV1 香港 04 NF
+      - 🇸🇬 LV1 新加坡 03 NF
+      - 🇭🇰 LV1 香港 06 NF
+      - 🇸🇬 LV1 新加坡 02 NF
+      - 🇭🇰 CM|香港Misaka 02
+      - 🇭🇰 CM|香港Misaka 01
+      - 🇸🇬 [广州移动]新加坡01 中转 新加坡运营商网络
+      - 🇭🇰 [广州移动]香港01 中转 香港本地家宽
+      - 🇭🇰 V2-香港HGC01 中继C
+      - 🇭🇰 1香港C 流媒体 粤港
+      - 🇭🇰 Lite 香港 02
+      - 🇭🇰 香港 03 - 解锁流媒体
+      - 🇭🇰 中转 香港 HKT01 原生 中继C
+      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
+      - 🇭🇰 香港04 - 解锁流媒体
+      - 🇭🇰 香港-04【NETFLIX】
+      - 🇭🇰 香港-02【NETFLIX】
+      - 🇸🇬 新加坡06【Netflix】
+      - 🇭🇰 香港-03【NETFLIX】
+      - 🇲🇴 CM|澳门Wind 01
+      - 🇭🇰 HongKong 07
+      - 🇭🇰 HongKong 11
+      - 🇭🇰 HongKong 01
+      - 🇭🇰 HongKong 10
+      - 🇭🇰 HongKong 13
+      - 🇭🇰 HongKong 06
+      - 🇭🇰 HongKong 14
+      - 🇭🇰 HongKong 03
+      - 🇭🇰 HongKong 05
+      - 🇭🇰 HongKong 09
+      - 🇯🇵 vip1-日本1
+      - 🇭🇰 vip1-香港3
+      - 🇭🇰 vip1-香港4
+      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
+      - 🇭🇰 B2 长沙-香港PCCW | V2RAY中转 |
+      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
+      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇭🇰 [vip1]︱V2ray︱⑩香港 1000M｜×1x｜限速100M｜解锁Netflix
+      - 🇭🇰 香港 03 | 中转 | Trojan
+      - 🇭🇰 香港 01 | 中转 | Trojan
+      - 🇭🇰 香港 05 | 中转 | V2Ray
+      - 🇭🇰 香港 02 | 中转 | Trojan
+      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
+      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
+      - 🇭🇰 IEPL专线 01 香港BGP
+      - 🇸🇬 新加坡01解锁流媒体
+      - 🇨🇳 台湾01原生IP解锁流媒体
+      - 🇭🇰 [01][Lv1][香港][2x][原生]
+      - 🇸🇬 3#新加坡 02 解锁流媒体
+      - 🇨🇳 3#台湾 03 原生IP解锁
+      - 🇨🇳 3#台湾 02 原生IP解锁
+      - 🇭🇰 3#香港 09 解锁流媒体 2
+      - 🇭🇰 3#香港 08 解锁流媒体 2
+      - 🇭🇰 3#香港 10 解锁流媒体
+      - 🇭🇰 3#香港 01 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇭🇰 3#香港 05 解锁流媒体
+      - 🇭🇰 香港05解鎖NF
+      - 🇭🇰 香港03解鎖NF
+      - 🇨🇳 台湾01原生IP解鎖NF
+      - 🇸🇬 新加坡03解鎖NF
+      - 🇸🇬 新加坡01解鎖NF
+      - 🇭🇰 香港 --01 x1.0
+      - 🇸🇬 VIP1|新加坡03解锁流媒体
+      - 🇸🇬 VIP1|新加坡01解锁流媒体
+      - 🇭🇰 VIP1|香港03解锁流媒体
       - 坡07
       - 🇭🇰 V2ray-香港BGP04-江门-NF
-      - 🇸🇬 V1 | SG A3
-      - 🇭🇰 【VIP香港HGC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港DT02-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港微软03-中山超级BGP】
-      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
       - 🇭🇰 金牛（香港专线）
       - 🇭🇰 V1 | HK A2
       - 🇸🇬 新加坡03【Netflix】
       - 🇨🇳 V4-中转3309|广港B-台湾|解锁|x2.0|V2ray
-      - 🇯🇵 vip1-日本1
       - 🇭🇰 香港 HKBN1 V2ray节点
-      - 🇭🇰 3#香港 04 解锁流媒体
-      - 🇭🇰 3#香港 01 解锁流媒体
-      - 🇭🇰 香港01解鎖NF
-      - 🇸🇬 新加坡03解鎖NF
-      - 🇸🇬 新加坡01解鎖NF
-      - 🇸🇬 VIP1|新加坡03解锁流媒体
       - 🇭🇰 VIP1|香港04解锁流媒体
-      - 🇭🇰 精品香港5|2x
       - 🇭🇰 [DIRECT] HK01|0.5x|三网直连
-      - 🇭🇰 香港D 流媒体 粤港
       - 港13
-      - 港11
-      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体 2
       - 🇸🇬 3#新加坡 01 解锁流媒体
-      - 🇭🇰 3#香港 06 解锁流媒体
-      - 🇸🇬 LV1 新加坡 03 NF
-      - 🇭🇰 V2-香港HGC01 中继B
-      - 🇭🇰 香港B 流媒体 湘港
-      - 🇭🇰 【VIP香港微软06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯01-深圳超级BGP】
-      - 🇭🇰 【VIP香港腾讯03-中山超级BGP】
       - 🇭🇰 HK-HKBN | V2 | 广移中转
       - 🇭🇰 V1 | HK A1
       - 🇸🇬 新加坡05【Netflix】
       - 🇸🇬 新加坡02【Netflix】
       - 🇨🇳 CM|台湾Hinet 04
       - 🇸🇬 新加坡03解锁流媒体
-      - 🇸🇬 新加坡02解锁流媒体
-      - 🇭🇰 香港HKT-优化
-      - 🇭🇰 3#香港 09 解锁流媒体
-      - 🇸🇬 VIP1|新加坡02解锁流媒体
       - 🇸🇬 VIP1|新加坡04解锁流媒体
       - 🇭🇰 V2ray-香港BGP04-江门-NF 2
       - 坡04_|NF
       - 坡05_|NF
       - 坡06
-      - 🇭🇰 香港 --03 x0.8
       - 🇭🇰 3#香港 01 解锁流媒体 2
-      - 🇭🇰 3#香港 09 解锁流媒体 2
       - 🇭🇰 3#香港 07 解锁流媒体
       - 🇭🇰 香港｜H02｜owo
       - 🇸🇬 新加坡03 | 解锁流媒体
@@ -941,173 +823,140 @@ proxy-groups:
       - 🇸🇬 新加坡07【Netflix】
       - 🇭🇰 香港 - v12
       - 🇸🇬 新加坡04解锁流媒体
-      - 🇸🇬 新加坡01解锁流媒体
-      - 🇨🇳 3#台湾 02 原生IP解锁
-      - 🇨🇳 台湾02原生IP解鎖NF
       - 🇨🇳 台湾04原生IP解鎖NF
-      - 🇭🇰 V2-香港HGC01 中继E
       - 🇨🇳 台湾|Hinet|广州中转|A
-      - 🇭🇰 IEPL专线 01 香港BGP
-      - 🇭🇰 3#香港 05 解锁流媒体
       - 🇭🇰 香港HGC01 中继E | 原生 1.5x
       - 🇭🇰 3#香港 05 解锁流媒体 2
       - 🇭🇰 SVIP-A香港HKBN6
       - 🇭🇰 A自动选择香港HKT-002
-      - 🇨🇳 台湾04原生IP解锁流媒体
       - 🇭🇰 2香港A 流媒体 湘港
       - 🇭🇰 香港｜M｜GZ03
-      - 🇭🇰 V2-香港HKT01 中继E
       - 🇭🇰 SVIP-A香港HKBN2
-      - 🇭🇰 香港HKT-优化2
-      - 🇨🇳 台湾|Hinet|广州中转|B
-      - 🇭🇰 B1 广州-香港HKBN | 三网用户 | V2RAY中转 |
-      - 🇭🇰 香港 05 | 中转 | V2Ray
-      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
-      - 🇭🇰 香港04解锁流媒体
-      - 🇨🇳 3#台湾 03 原生IP解锁
       - 🇭🇰 香港HKT01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港 --01 x1.0
-      - 🇭🇰 VIP1|香港03解锁流媒体
       - 🇭🇰 香港 01 | IEPL | VIP1 | 原生IP | 1x
-      - 🇸🇬 V1 | SG A2
       - 🇭🇰 [CM] HK122|1.0x|DNS
-      - 🇭🇰 香港-02【NETFLIX】
-      - 🇭🇰 Lite 香港 02
-      - 🇭🇰 Lite 香港 01
       - 🇭🇰 香港-01【NETFLIX】
-      - 🇭🇰 HongKong 13
-      - 🇭🇰 香港 01 | 中转 | Trojan
-      - 🇨🇳 台湾01原生IP解锁流媒体
-      - 🇭🇰 V2-香港HGC01 中继C
-      - 🇭🇰 HongKong 14
-      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
-      - 🇭🇰 香港HGC01 中继D | 原生 1.5x
-      - 🇭🇰 香港HGC01 中继C | 原生 1.5x
-      - 🇭🇰 香港03解鎖NF
-      - 🇭🇰 香港AX03 22875进阶版 0.3x
-      - 🇭🇰 LV1 香港 04 NF
-      - 🇭🇰 CM|香港Misaka 01
-      - 🇭🇰 HongKong 03
       - 🇭🇰 v2ray-Hong Kong 01
-      - 🇭🇰 vip1-香港5
-      - 🇭🇰 vip1-香港3
-      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港 03 | 中转 | Trojan
-      - 🇭🇰 香港 02 | 中转 | Trojan
-      - 🇭🇰 IEPL专线 05 香港HKT
       - 🇨🇳 台湾03原生IP解锁流媒体
-      - 🇭🇰 [01][Lv1][香港][2x][原生]
-      - 🇭🇰 3#香港 08 解锁流媒体
-      - 🇭🇰 香港HKT01 中继C | 原生 1.5x
-      - 🇭🇰 Lite 香港 03
-      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
-      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
       - 🇭🇰 香港BX02 22875进阶版 0.3x
-      - 🇭🇰 香港DX03 22875进阶版 0.3x
-      - 🇭🇰 香港-04【NETFLIX】
-      - 🇭🇰 CM|香港HKT 01
-      - 🇭🇰 HongKong 05
-      - 🇭🇰 HongKong 09
       - 🇭🇰 vip1-香港1
       - 🇭🇰 B1 广州-香港AGA | V2RAY中转 |
-      - 🇲🇴 [Az香港]澳门04 直连 澳门电讯
       - 港09
       - 港06_|NF|TVB
-      - 🇭🇰 香港AX02 22875进阶版 0.3x
-      - 🇭🇰 CM|香港Misaka 02
-      - 🇭🇰 1香港C 流媒体 粤港
-      - 🇭🇰 CM|香港Nero 01
-      - 🇭🇰 HongKong 06
-      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 B3 广州-香港HKT | V2RAY中转 |
-      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港HKT-优化2 2
       - 🇭🇰 香港HGC01 中继B | 原生 1.5x
       - 🇭🇰 香港HGC01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港HKT01 中继E | 原生 1.5x
-      - 🇭🇰 「极速」AAA香港｜M｜GZ01
-      - 🇭🇰 HongKong 07
-      - 🇭🇰 HongKong 11
-      - 🇭🇰 HongKong 10
-      - 🇭🇰 香港DX02 22875进阶版 0.3x
       - 🇭🇰 [CM] HK121|1.0x|DNS
-      - 🇭🇰 香港-03【NETFLIX】
-      - 🇲🇴 CM|澳门Wind 01
-      - 🇭🇰 CM|香港HKT 03
-      - 🇭🇰 CM|香港HKT 02
-      - 🇭🇰 CM|香港Nero 02
-      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 香港03解锁流媒体
-      - 🇭🇰 香港02解锁流媒体
-      - 🇸🇬 Singapore 07
       - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M｜解锁Netflix
-      - 🇭🇰 CM|香港Nero 04
-      - 🇭🇰 HongKong 01
-      - 🇭🇰 香港◆AWS 08 Netflix 1x
-      - 🇯🇵 这速度不行     日本🚀
-      - 🇭🇰 Relay_中国-香港_3080
-      - 🇭🇰 香港 - 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 【VIP香港UC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港HKBN-腾讯Anycas专线】
-      - 普通节点-东亚直连B
+      - 🇭🇰 香港02 - 解锁流媒体
+      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
+      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
+      - 🇭🇰 香港03 - 解锁流媒体| 负载*2
+      - 港03_|NF
+      - 🇭🇰 香港 --03 x0.8
+      - 🇭🇰 香港AX03 22875进阶版 0.3x
+      - 🇭🇰 3#香港 09 解锁流媒体
+      - 🇭🇰 3#香港 08 解锁流媒体
+      - 🇸🇬 3#新加坡 03 解锁流媒体
+      - 🇭🇰 3#香港 06 解锁流媒体
+      - 🇨🇳 LV1 台湾 04 NF
+      - 🇭🇰 LV1 香港 04 NF
+      - 🇸🇬 LV1 新加坡 03 NF
+      - 🇭🇰 LV1 香港 06 NF
+      - 🇸🇬 LV1 新加坡 02 NF
+      - 🇭🇰 CM|香港Misaka 02
+      - 🇭🇰 CM|香港Misaka 01
+      - 🇸🇬 [广州移动]新加坡01 中转 新加坡运营商网络
+      - 🇭🇰 [广州移动]香港01 中转 香港本地家宽
+      - 🇭🇰 V2-香港HGC01 中继C
+      - 🇭🇰 1香港C 流媒体 粤港
+      - 🇭🇰 Lite 香港 02
+      - 🇭🇰 香港 03 - 解锁流媒体
+      - 🇭🇰 中转 香港 HKT01 原生 中继C
+      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
+      - 🇭🇰 香港04 - 解锁流媒体
+      - 🇭🇰 香港-04【NETFLIX】
+      - 🇭🇰 香港-02【NETFLIX】
+      - 🇸🇬 新加坡06【Netflix】
+      - 🇭🇰 香港-03【NETFLIX】
+      - 🇲🇴 CM|澳门Wind 01
+      - 🇭🇰 HongKong 07
+      - 🇭🇰 HongKong 11
+      - 🇭🇰 HongKong 01
+      - 🇭🇰 HongKong 10
+      - 🇭🇰 HongKong 13
+      - 🇭🇰 HongKong 06
+      - 🇭🇰 HongKong 14
+      - 🇭🇰 HongKong 03
+      - 🇭🇰 HongKong 05
+      - 🇭🇰 HongKong 09
+      - 🇯🇵 vip1-日本1
+      - 🇭🇰 vip1-香港3
+      - 🇭🇰 vip1-香港4
+      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
+      - 🇭🇰 B2 长沙-香港PCCW | V2RAY中转 |
+      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
+      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇭🇰 [vip1]︱V2ray︱⑩香港 1000M｜×1x｜限速100M｜解锁Netflix
+      - 🇭🇰 香港 03 | 中转 | Trojan
+      - 🇭🇰 香港 01 | 中转 | Trojan
+      - 🇭🇰 香港 05 | 中转 | V2Ray
+      - 🇭🇰 香港 02 | 中转 | Trojan
+      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
+      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
+      - 🇭🇰 IEPL专线 01 香港BGP
+      - 🇸🇬 新加坡01解锁流媒体
+      - 🇨🇳 台湾01原生IP解锁流媒体
+      - 🇭🇰 [01][Lv1][香港][2x][原生]
+      - 🇸🇬 3#新加坡 02 解锁流媒体
+      - 🇨🇳 3#台湾 03 原生IP解锁
+      - 🇨🇳 3#台湾 02 原生IP解锁
+      - 🇭🇰 3#香港 09 解锁流媒体 2
+      - 🇭🇰 3#香港 08 解锁流媒体 2
+      - 🇭🇰 3#香港 10 解锁流媒体
+      - 🇭🇰 3#香港 01 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇭🇰 3#香港 05 解锁流媒体
+      - 🇭🇰 香港05解鎖NF
+      - 🇭🇰 香港03解鎖NF
+      - 🇨🇳 台湾01原生IP解鎖NF
+      - 🇸🇬 新加坡03解鎖NF
+      - 🇸🇬 新加坡01解鎖NF
+      - 🇭🇰 香港 --01 x1.0
+      - 🇸🇬 VIP1|新加坡03解锁流媒体
+      - 🇸🇬 VIP1|新加坡01解锁流媒体
+      - 🇭🇰 VIP1|香港03解锁流媒体
       - 坡07
       - 🇭🇰 V2ray-香港BGP04-江门-NF
-      - 🇸🇬 V1 | SG A3
-      - 🇭🇰 【VIP香港HGC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港DT02-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港微软03-中山超级BGP】
-      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
       - 🇭🇰 金牛（香港专线）
       - 🇭🇰 V1 | HK A2
       - 🇸🇬 新加坡03【Netflix】
       - 🇨🇳 V4-中转3309|广港B-台湾|解锁|x2.0|V2ray
-      - 🇯🇵 vip1-日本1
       - 🇭🇰 香港 HKBN1 V2ray节点
-      - 🇭🇰 3#香港 04 解锁流媒体
-      - 🇭🇰 3#香港 01 解锁流媒体
-      - 🇭🇰 香港01解鎖NF
-      - 🇸🇬 新加坡03解鎖NF
-      - 🇸🇬 新加坡01解鎖NF
-      - 🇸🇬 VIP1|新加坡03解锁流媒体
       - 🇭🇰 VIP1|香港04解锁流媒体
-      - 🇭🇰 精品香港5|2x
       - 🇭🇰 [DIRECT] HK01|0.5x|三网直连
-      - 🇭🇰 香港D 流媒体 粤港
       - 港13
-      - 港11
-      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体 2
       - 🇸🇬 3#新加坡 01 解锁流媒体
-      - 🇭🇰 3#香港 06 解锁流媒体
-      - 🇸🇬 LV1 新加坡 03 NF
-      - 🇭🇰 V2-香港HGC01 中继B
-      - 🇭🇰 香港B 流媒体 湘港
-      - 🇭🇰 【VIP香港微软06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯01-深圳超级BGP】
-      - 🇭🇰 【VIP香港腾讯03-中山超级BGP】
       - 🇭🇰 HK-HKBN | V2 | 广移中转
       - 🇭🇰 V1 | HK A1
       - 🇸🇬 新加坡05【Netflix】
       - 🇸🇬 新加坡02【Netflix】
       - 🇨🇳 CM|台湾Hinet 04
       - 🇸🇬 新加坡03解锁流媒体
-      - 🇸🇬 新加坡02解锁流媒体
-      - 🇭🇰 香港HKT-优化
-      - 🇭🇰 3#香港 09 解锁流媒体
-      - 🇸🇬 VIP1|新加坡02解锁流媒体
       - 🇸🇬 VIP1|新加坡04解锁流媒体
       - 🇭🇰 V2ray-香港BGP04-江门-NF 2
       - 坡04_|NF
       - 坡05_|NF
       - 坡06
-      - 🇭🇰 香港 --03 x0.8
       - 🇭🇰 3#香港 01 解锁流媒体 2
-      - 🇭🇰 3#香港 09 解锁流媒体 2
       - 🇭🇰 3#香港 07 解锁流媒体
       - 🇭🇰 香港｜H02｜owo
       - 🇸🇬 新加坡03 | 解锁流媒体
@@ -1115,174 +964,141 @@ proxy-groups:
       - 🇸🇬 新加坡07【Netflix】
       - 🇭🇰 香港 - v12
       - 🇸🇬 新加坡04解锁流媒体
-      - 🇸🇬 新加坡01解锁流媒体
-      - 🇨🇳 3#台湾 02 原生IP解锁
-      - 🇨🇳 台湾02原生IP解鎖NF
       - 🇨🇳 台湾04原生IP解鎖NF
-      - 🇭🇰 V2-香港HGC01 中继E
       - 🇨🇳 台湾|Hinet|广州中转|A
-      - 🇭🇰 IEPL专线 01 香港BGP
-      - 🇭🇰 3#香港 05 解锁流媒体
       - 🇭🇰 香港HGC01 中继E | 原生 1.5x
       - 🇭🇰 3#香港 05 解锁流媒体 2
       - 🇭🇰 SVIP-A香港HKBN6
       - 🇭🇰 A自动选择香港HKT-002
-      - 🇨🇳 台湾04原生IP解锁流媒体
       - 🇭🇰 2香港A 流媒体 湘港
       - 🇭🇰 香港｜M｜GZ03
-      - 🇭🇰 V2-香港HKT01 中继E
       - 🇭🇰 SVIP-A香港HKBN2
-      - 🇭🇰 香港HKT-优化2
-      - 🇨🇳 台湾|Hinet|广州中转|B
-      - 🇭🇰 B1 广州-香港HKBN | 三网用户 | V2RAY中转 |
-      - 🇭🇰 香港 05 | 中转 | V2Ray
-      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
-      - 🇭🇰 香港04解锁流媒体
-      - 🇨🇳 3#台湾 03 原生IP解锁
       - 🇭🇰 香港HKT01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港 --01 x1.0
-      - 🇭🇰 VIP1|香港03解锁流媒体
       - 🇭🇰 香港 01 | IEPL | VIP1 | 原生IP | 1x
-      - 🇸🇬 V1 | SG A2
       - 🇭🇰 [CM] HK122|1.0x|DNS
-      - 🇭🇰 香港-02【NETFLIX】
-      - 🇭🇰 Lite 香港 02
-      - 🇭🇰 Lite 香港 01
       - 🇭🇰 香港-01【NETFLIX】
-      - 🇭🇰 HongKong 13
-      - 🇭🇰 香港 01 | 中转 | Trojan
-      - 🇨🇳 台湾01原生IP解锁流媒体
-      - 🇭🇰 V2-香港HGC01 中继C
-      - 🇭🇰 HongKong 14
-      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
-      - 🇭🇰 香港HGC01 中继D | 原生 1.5x
-      - 🇭🇰 香港HGC01 中继C | 原生 1.5x
-      - 🇭🇰 香港03解鎖NF
-      - 🇭🇰 香港AX03 22875进阶版 0.3x
-      - 🇭🇰 LV1 香港 04 NF
-      - 🇭🇰 CM|香港Misaka 01
-      - 🇭🇰 HongKong 03
       - 🇭🇰 v2ray-Hong Kong 01
-      - 🇭🇰 vip1-香港5
-      - 🇭🇰 vip1-香港3
-      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港 03 | 中转 | Trojan
-      - 🇭🇰 香港 02 | 中转 | Trojan
-      - 🇭🇰 IEPL专线 05 香港HKT
       - 🇨🇳 台湾03原生IP解锁流媒体
-      - 🇭🇰 [01][Lv1][香港][2x][原生]
-      - 🇭🇰 3#香港 08 解锁流媒体
-      - 🇭🇰 香港HKT01 中继C | 原生 1.5x
-      - 🇭🇰 Lite 香港 03
-      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
-      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
       - 🇭🇰 香港BX02 22875进阶版 0.3x
-      - 🇭🇰 香港DX03 22875进阶版 0.3x
-      - 🇭🇰 香港-04【NETFLIX】
-      - 🇭🇰 CM|香港HKT 01
-      - 🇭🇰 HongKong 05
-      - 🇭🇰 HongKong 09
       - 🇭🇰 vip1-香港1
       - 🇭🇰 B1 广州-香港AGA | V2RAY中转 |
-      - 🇲🇴 [Az香港]澳门04 直连 澳门电讯
       - 港09
       - 港06_|NF|TVB
-      - 🇭🇰 香港AX02 22875进阶版 0.3x
-      - 🇭🇰 CM|香港Misaka 02
-      - 🇭🇰 1香港C 流媒体 粤港
-      - 🇭🇰 CM|香港Nero 01
-      - 🇭🇰 HongKong 06
-      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 B3 广州-香港HKT | V2RAY中转 |
-      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港HKT-优化2 2
       - 🇭🇰 香港HGC01 中继B | 原生 1.5x
       - 🇭🇰 香港HGC01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港HKT01 中继E | 原生 1.5x
-      - 🇭🇰 「极速」AAA香港｜M｜GZ01
-      - 🇭🇰 HongKong 07
-      - 🇭🇰 HongKong 11
-      - 🇭🇰 HongKong 10
-      - 🇭🇰 香港DX02 22875进阶版 0.3x
       - 🇭🇰 [CM] HK121|1.0x|DNS
-      - 🇭🇰 香港-03【NETFLIX】
-      - 🇲🇴 CM|澳门Wind 01
-      - 🇭🇰 CM|香港HKT 03
-      - 🇭🇰 CM|香港HKT 02
-      - 🇭🇰 CM|香港Nero 02
-      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 香港03解锁流媒体
-      - 🇭🇰 香港02解锁流媒体
-      - 🇸🇬 Singapore 07
       - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M｜解锁Netflix
-      - 🇭🇰 CM|香港Nero 04
-      - 🇭🇰 HongKong 01
-      - 🇭🇰 香港◆AWS 08 Netflix 1x
-      - 🇯🇵 这速度不行     日本🚀
-      - 🇭🇰 Relay_中国-香港_3080
-      - 🇭🇰 香港 - 2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 【VIP香港UC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港HKBN-腾讯Anycas专线】
-      - 普通节点-东亚直连B
+      - 🇭🇰 香港02 - 解锁流媒体
+      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
+      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
+      - 🇭🇰 香港03 - 解锁流媒体| 负载*2
+      - 港03_|NF
+      - 🇭🇰 香港 --03 x0.8
+      - 🇭🇰 香港AX03 22875进阶版 0.3x
+      - 🇭🇰 3#香港 09 解锁流媒体
+      - 🇭🇰 3#香港 08 解锁流媒体
+      - 🇸🇬 3#新加坡 03 解锁流媒体
+      - 🇭🇰 3#香港 06 解锁流媒体
+      - 🇨🇳 LV1 台湾 04 NF
+      - 🇭🇰 LV1 香港 04 NF
+      - 🇸🇬 LV1 新加坡 03 NF
+      - 🇭🇰 LV1 香港 06 NF
+      - 🇸🇬 LV1 新加坡 02 NF
+      - 🇭🇰 CM|香港Misaka 02
+      - 🇭🇰 CM|香港Misaka 01
+      - 🇸🇬 [广州移动]新加坡01 中转 新加坡运营商网络
+      - 🇭🇰 [广州移动]香港01 中转 香港本地家宽
+      - 🇭🇰 V2-香港HGC01 中继C
+      - 🇭🇰 1香港C 流媒体 粤港
+      - 🇭🇰 Lite 香港 02
+      - 🇭🇰 香港 03 - 解锁流媒体
+      - 🇭🇰 中转 香港 HKT01 原生 中继C
+      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
+      - 🇭🇰 香港04 - 解锁流媒体
+      - 🇭🇰 香港-04【NETFLIX】
+      - 🇭🇰 香港-02【NETFLIX】
+      - 🇸🇬 新加坡06【Netflix】
+      - 🇭🇰 香港-03【NETFLIX】
+      - 🇲🇴 CM|澳门Wind 01
+      - 🇭🇰 HongKong 07
+      - 🇭🇰 HongKong 11
+      - 🇭🇰 HongKong 01
+      - 🇭🇰 HongKong 10
+      - 🇭🇰 HongKong 13
+      - 🇭🇰 HongKong 06
+      - 🇭🇰 HongKong 14
+      - 🇭🇰 HongKong 03
+      - 🇭🇰 HongKong 05
+      - 🇭🇰 HongKong 09
+      - 🇯🇵 vip1-日本1
+      - 🇭🇰 vip1-香港3
+      - 🇭🇰 vip1-香港4
+      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
+      - 🇭🇰 B2 长沙-香港PCCW | V2RAY中转 |
+      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
+      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇭🇰 [vip1]︱V2ray︱⑩香港 1000M｜×1x｜限速100M｜解锁Netflix
+      - 🇭🇰 香港 03 | 中转 | Trojan
+      - 🇭🇰 香港 01 | 中转 | Trojan
+      - 🇭🇰 香港 05 | 中转 | V2Ray
+      - 🇭🇰 香港 02 | 中转 | Trojan
+      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
+      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
+      - 🇭🇰 IEPL专线 01 香港BGP
+      - 🇸🇬 新加坡01解锁流媒体
+      - 🇨🇳 台湾01原生IP解锁流媒体
+      - 🇭🇰 [01][Lv1][香港][2x][原生]
+      - 🇸🇬 3#新加坡 02 解锁流媒体
+      - 🇨🇳 3#台湾 03 原生IP解锁
+      - 🇨🇳 3#台湾 02 原生IP解锁
+      - 🇭🇰 3#香港 09 解锁流媒体 2
+      - 🇭🇰 3#香港 08 解锁流媒体 2
+      - 🇭🇰 3#香港 10 解锁流媒体
+      - 🇭🇰 3#香港 01 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇭🇰 3#香港 05 解锁流媒体
+      - 🇭🇰 香港05解鎖NF
+      - 🇭🇰 香港03解鎖NF
+      - 🇨🇳 台湾01原生IP解鎖NF
+      - 🇸🇬 新加坡03解鎖NF
+      - 🇸🇬 新加坡01解鎖NF
+      - 🇭🇰 香港 --01 x1.0
+      - 🇸🇬 VIP1|新加坡03解锁流媒体
+      - 🇸🇬 VIP1|新加坡01解锁流媒体
+      - 🇭🇰 VIP1|香港03解锁流媒体
       - 坡07
       - 🇭🇰 V2ray-香港BGP04-江门-NF
-      - 🇸🇬 V1 | SG A3
-      - 🇭🇰 【VIP香港HGC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港DT02-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港微软03-中山超级BGP】
-      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
       - 🇭🇰 金牛（香港专线）
       - 🇭🇰 V1 | HK A2
       - 🇸🇬 新加坡03【Netflix】
       - 🇨🇳 V4-中转3309|广港B-台湾|解锁|x2.0|V2ray
-      - 🇯🇵 vip1-日本1
       - 🇭🇰 香港 HKBN1 V2ray节点
-      - 🇭🇰 3#香港 04 解锁流媒体
-      - 🇭🇰 3#香港 01 解锁流媒体
-      - 🇭🇰 香港01解鎖NF
-      - 🇸🇬 新加坡03解鎖NF
-      - 🇸🇬 新加坡01解鎖NF
-      - 🇸🇬 VIP1|新加坡03解锁流媒体
       - 🇭🇰 VIP1|香港04解锁流媒体
-      - 🇭🇰 精品香港5|2x
       - 🇭🇰 [DIRECT] HK01|0.5x|三网直连
-      - 🇭🇰 香港D 流媒体 粤港
       - 港13
-      - 港11
-      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体 2
       - 🇸🇬 3#新加坡 01 解锁流媒体
-      - 🇭🇰 3#香港 06 解锁流媒体
-      - 🇸🇬 LV1 新加坡 03 NF
-      - 🇭🇰 V2-香港HGC01 中继B
-      - 🇭🇰 香港B 流媒体 湘港
-      - 🇭🇰 【VIP香港微软06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯01-深圳超级BGP】
-      - 🇭🇰 【VIP香港腾讯03-中山超级BGP】
       - 🇭🇰 HK-HKBN | V2 | 广移中转
       - 🇭🇰 V1 | HK A1
       - 🇸🇬 新加坡05【Netflix】
       - 🇸🇬 新加坡02【Netflix】
       - 🇨🇳 CM|台湾Hinet 04
       - 🇸🇬 新加坡03解锁流媒体
-      - 🇸🇬 新加坡02解锁流媒体
-      - 🇭🇰 香港HKT-优化
-      - 🇭🇰 3#香港 09 解锁流媒体
-      - 🇸🇬 VIP1|新加坡02解锁流媒体
       - 🇸🇬 VIP1|新加坡04解锁流媒体
       - 🇭🇰 V2ray-香港BGP04-江门-NF 2
       - 坡04_|NF
       - 坡05_|NF
       - 坡06
-      - 🇭🇰 香港 --03 x0.8
       - 🇭🇰 3#香港 01 解锁流媒体 2
-      - 🇭🇰 3#香港 09 解锁流媒体 2
       - 🇭🇰 3#香港 07 解锁流媒体
       - 🇭🇰 香港｜H02｜owo
       - 🇸🇬 新加坡03 | 解锁流媒体
@@ -1290,112 +1106,32 @@ proxy-groups:
       - 🇸🇬 新加坡07【Netflix】
       - 🇭🇰 香港 - v12
       - 🇸🇬 新加坡04解锁流媒体
-      - 🇸🇬 新加坡01解锁流媒体
-      - 🇨🇳 3#台湾 02 原生IP解锁
-      - 🇨🇳 台湾02原生IP解鎖NF
       - 🇨🇳 台湾04原生IP解鎖NF
-      - 🇭🇰 V2-香港HGC01 中继E
       - 🇨🇳 台湾|Hinet|广州中转|A
-      - 🇭🇰 IEPL专线 01 香港BGP
-      - 🇭🇰 3#香港 05 解锁流媒体
       - 🇭🇰 香港HGC01 中继E | 原生 1.5x
       - 🇭🇰 3#香港 05 解锁流媒体 2
       - 🇭🇰 SVIP-A香港HKBN6
       - 🇭🇰 A自动选择香港HKT-002
-      - 🇨🇳 台湾04原生IP解锁流媒体
       - 🇭🇰 2香港A 流媒体 湘港
       - 🇭🇰 香港｜M｜GZ03
-      - 🇭🇰 V2-香港HKT01 中继E
       - 🇭🇰 SVIP-A香港HKBN2
-      - 🇭🇰 香港HKT-优化2
-      - 🇨🇳 台湾|Hinet|广州中转|B
-      - 🇭🇰 B1 广州-香港HKBN | 三网用户 | V2RAY中转 |
-      - 🇭🇰 香港 05 | 中转 | V2Ray
-      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
-      - 🇭🇰 香港04解锁流媒体
-      - 🇨🇳 3#台湾 03 原生IP解锁
       - 🇭🇰 香港HKT01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港 --01 x1.0
-      - 🇭🇰 VIP1|香港03解锁流媒体
       - 🇭🇰 香港 01 | IEPL | VIP1 | 原生IP | 1x
-      - 🇸🇬 V1 | SG A2
       - 🇭🇰 [CM] HK122|1.0x|DNS
-      - 🇭🇰 香港-02【NETFLIX】
-      - 🇭🇰 Lite 香港 02
-      - 🇭🇰 Lite 香港 01
       - 🇭🇰 香港-01【NETFLIX】
-      - 🇭🇰 HongKong 13
-      - 🇭🇰 香港 01 | 中转 | Trojan
-      - 🇨🇳 台湾01原生IP解锁流媒体
-      - 🇭🇰 V2-香港HGC01 中继C
-      - 🇭🇰 HongKong 14
-      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
-      - 🇭🇰 香港HGC01 中继D | 原生 1.5x
-      - 🇭🇰 香港HGC01 中继C | 原生 1.5x
-      - 🇭🇰 香港03解鎖NF
-      - 🇭🇰 香港AX03 22875进阶版 0.3x
-      - 🇭🇰 LV1 香港 04 NF
-      - 🇭🇰 CM|香港Misaka 01
-      - 🇭🇰 HongKong 03
       - 🇭🇰 v2ray-Hong Kong 01
-      - 🇭🇰 vip1-香港5
-      - 🇭🇰 vip1-香港3
-      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港 03 | 中转 | Trojan
-      - 🇭🇰 香港 02 | 中转 | Trojan
-      - 🇭🇰 IEPL专线 05 香港HKT
       - 🇨🇳 台湾03原生IP解锁流媒体
-      - 🇭🇰 [01][Lv1][香港][2x][原生]
-      - 🇭🇰 3#香港 08 解锁流媒体
-      - 🇭🇰 香港HKT01 中继C | 原生 1.5x
-      - 🇭🇰 Lite 香港 03
-      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
-      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
       - 🇭🇰 香港BX02 22875进阶版 0.3x
-      - 🇭🇰 香港DX03 22875进阶版 0.3x
-      - 🇭🇰 香港-04【NETFLIX】
-      - 🇭🇰 CM|香港HKT 01
-      - 🇭🇰 HongKong 05
-      - 🇭🇰 HongKong 09
       - 🇭🇰 vip1-香港1
       - 🇭🇰 B1 广州-香港AGA | V2RAY中转 |
-      - 🇲🇴 [Az香港]澳门04 直连 澳门电讯
       - 港09
       - 港06_|NF|TVB
-      - 🇭🇰 香港AX02 22875进阶版 0.3x
-      - 🇭🇰 CM|香港Misaka 02
-      - 🇭🇰 1香港C 流媒体 粤港
-      - 🇭🇰 CM|香港Nero 01
-      - 🇭🇰 HongKong 06
-      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 B3 广州-香港HKT | V2RAY中转 |
-      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港HKT-优化2 2
       - 🇭🇰 香港HGC01 中继B | 原生 1.5x
       - 🇭🇰 香港HGC01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港HKT01 中继E | 原生 1.5x
-      - 🇭🇰 「极速」AAA香港｜M｜GZ01
-      - 🇭🇰 HongKong 07
-      - 🇭🇰 HongKong 11
-      - 🇭🇰 HongKong 10
-      - 🇭🇰 香港DX02 22875进阶版 0.3x
       - 🇭🇰 [CM] HK121|1.0x|DNS
-      - 🇭🇰 香港-03【NETFLIX】
-      - 🇲🇴 CM|澳门Wind 01
-      - 🇭🇰 CM|香港HKT 03
-      - 🇭🇰 CM|香港HKT 02
-      - 🇭🇰 CM|香港Nero 02
-      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 香港03解锁流媒体
-      - 🇭🇰 香港02解锁流媒体
-      - 🇸🇬 Singapore 07
       - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M｜解锁Netflix
-      - 🇭🇰 CM|香港Nero 04
-      - 🇭🇰 HongKong 01
-      - 🇭🇰 香港◆AWS 08 Netflix 1x
-      - 🇯🇵 这速度不行     日本🚀
-      - 🇭🇰 Relay_中国-香港_3080
-      - 🇭🇰 香港 - 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1418,62 +1154,109 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 【VIP香港UC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港HKBN-腾讯Anycas专线】
-      - 普通节点-东亚直连B
+      - 🇭🇰 香港02 - 解锁流媒体
+      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
+      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
+      - 🇭🇰 香港03 - 解锁流媒体| 负载*2
+      - 港03_|NF
+      - 🇭🇰 香港 --03 x0.8
+      - 🇭🇰 香港AX03 22875进阶版 0.3x
+      - 🇭🇰 3#香港 09 解锁流媒体
+      - 🇭🇰 3#香港 08 解锁流媒体
+      - 🇸🇬 3#新加坡 03 解锁流媒体
+      - 🇭🇰 3#香港 06 解锁流媒体
+      - 🇨🇳 LV1 台湾 04 NF
+      - 🇭🇰 LV1 香港 04 NF
+      - 🇸🇬 LV1 新加坡 03 NF
+      - 🇭🇰 LV1 香港 06 NF
+      - 🇸🇬 LV1 新加坡 02 NF
+      - 🇭🇰 CM|香港Misaka 02
+      - 🇭🇰 CM|香港Misaka 01
+      - 🇸🇬 [广州移动]新加坡01 中转 新加坡运营商网络
+      - 🇭🇰 [广州移动]香港01 中转 香港本地家宽
+      - 🇭🇰 V2-香港HGC01 中继C
+      - 🇭🇰 1香港C 流媒体 粤港
+      - 🇭🇰 Lite 香港 02
+      - 🇭🇰 香港 03 - 解锁流媒体
+      - 🇭🇰 中转 香港 HKT01 原生 中继C
+      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
+      - 🇭🇰 香港04 - 解锁流媒体
+      - 🇭🇰 香港-04【NETFLIX】
+      - 🇭🇰 香港-02【NETFLIX】
+      - 🇸🇬 新加坡06【Netflix】
+      - 🇭🇰 香港-03【NETFLIX】
+      - 🇲🇴 CM|澳门Wind 01
+      - 🇭🇰 HongKong 07
+      - 🇭🇰 HongKong 11
+      - 🇭🇰 HongKong 01
+      - 🇭🇰 HongKong 10
+      - 🇭🇰 HongKong 13
+      - 🇭🇰 HongKong 06
+      - 🇭🇰 HongKong 14
+      - 🇭🇰 HongKong 03
+      - 🇭🇰 HongKong 05
+      - 🇭🇰 HongKong 09
+      - 🇯🇵 vip1-日本1
+      - 🇭🇰 vip1-香港3
+      - 🇭🇰 vip1-香港4
+      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
+      - 🇭🇰 B2 长沙-香港PCCW | V2RAY中转 |
+      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
+      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
+      - 🇭🇰 [vip1]︱V2ray︱⑩香港 1000M｜×1x｜限速100M｜解锁Netflix
+      - 🇭🇰 香港 03 | 中转 | Trojan
+      - 🇭🇰 香港 01 | 中转 | Trojan
+      - 🇭🇰 香港 05 | 中转 | V2Ray
+      - 🇭🇰 香港 02 | 中转 | Trojan
+      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
+      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
+      - 🇭🇰 IEPL专线 01 香港BGP
+      - 🇸🇬 新加坡01解锁流媒体
+      - 🇨🇳 台湾01原生IP解锁流媒体
+      - 🇭🇰 [01][Lv1][香港][2x][原生]
+      - 🇸🇬 3#新加坡 02 解锁流媒体
+      - 🇨🇳 3#台湾 03 原生IP解锁
+      - 🇨🇳 3#台湾 02 原生IP解锁
+      - 🇭🇰 3#香港 09 解锁流媒体 2
+      - 🇭🇰 3#香港 08 解锁流媒体 2
+      - 🇭🇰 3#香港 10 解锁流媒体
+      - 🇭🇰 3#香港 01 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇭🇰 3#香港 05 解锁流媒体
+      - 🇭🇰 香港05解鎖NF
+      - 🇭🇰 香港03解鎖NF
+      - 🇨🇳 台湾01原生IP解鎖NF
+      - 🇸🇬 新加坡03解鎖NF
+      - 🇸🇬 新加坡01解鎖NF
+      - 🇭🇰 香港 --01 x1.0
+      - 🇸🇬 VIP1|新加坡03解锁流媒体
+      - 🇸🇬 VIP1|新加坡01解锁流媒体
+      - 🇭🇰 VIP1|香港03解锁流媒体
       - 坡07
       - 🇭🇰 V2ray-香港BGP04-江门-NF
-      - 🇸🇬 V1 | SG A3
-      - 🇭🇰 【VIP香港HGC-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港DT02-腾讯Anycas专线】
-      - 🇭🇰 【VIP香港微软03-中山超级BGP】
-      - 🇭🇰 香港01 - 解锁流媒体| 负载*4
       - 🇭🇰 金牛（香港专线）
       - 🇭🇰 V1 | HK A2
       - 🇸🇬 新加坡03【Netflix】
       - 🇨🇳 V4-中转3309|广港B-台湾|解锁|x2.0|V2ray
-      - 🇯🇵 vip1-日本1
       - 🇭🇰 香港 HKBN1 V2ray节点
-      - 🇭🇰 3#香港 04 解锁流媒体
-      - 🇭🇰 3#香港 01 解锁流媒体
-      - 🇭🇰 香港01解鎖NF
-      - 🇸🇬 新加坡03解鎖NF
-      - 🇸🇬 新加坡01解鎖NF
-      - 🇸🇬 VIP1|新加坡03解锁流媒体
       - 🇭🇰 VIP1|香港04解锁流媒体
-      - 🇭🇰 精品香港5|2x
       - 🇭🇰 [DIRECT] HK01|0.5x|三网直连
-      - 🇭🇰 香港D 流媒体 粤港
       - 港13
-      - 港11
-      - 🇸🇬 3#新加坡 05 解锁流媒体
+      - 🇸🇬 3#新加坡 05 解锁流媒体 2
       - 🇸🇬 3#新加坡 01 解锁流媒体
-      - 🇭🇰 3#香港 06 解锁流媒体
-      - 🇸🇬 LV1 新加坡 03 NF
-      - 🇭🇰 V2-香港HGC01 中继B
-      - 🇭🇰 香港B 流媒体 湘港
-      - 🇭🇰 【VIP香港微软06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯06-广州超级BGP】
-      - 🇭🇰 【VIP香港腾讯01-深圳超级BGP】
-      - 🇭🇰 【VIP香港腾讯03-中山超级BGP】
       - 🇭🇰 HK-HKBN | V2 | 广移中转
       - 🇭🇰 V1 | HK A1
       - 🇸🇬 新加坡05【Netflix】
       - 🇸🇬 新加坡02【Netflix】
       - 🇨🇳 CM|台湾Hinet 04
       - 🇸🇬 新加坡03解锁流媒体
-      - 🇸🇬 新加坡02解锁流媒体
-      - 🇭🇰 香港HKT-优化
-      - 🇭🇰 3#香港 09 解锁流媒体
-      - 🇸🇬 VIP1|新加坡02解锁流媒体
       - 🇸🇬 VIP1|新加坡04解锁流媒体
       - 🇭🇰 V2ray-香港BGP04-江门-NF 2
       - 坡04_|NF
       - 坡05_|NF
       - 坡06
-      - 🇭🇰 香港 --03 x0.8
       - 🇭🇰 3#香港 01 解锁流媒体 2
-      - 🇭🇰 3#香港 09 解锁流媒体 2
       - 🇭🇰 3#香港 07 解锁流媒体
       - 🇭🇰 香港｜H02｜owo
       - 🇸🇬 新加坡03 | 解锁流媒体
@@ -1481,112 +1264,32 @@ proxy-groups:
       - 🇸🇬 新加坡07【Netflix】
       - 🇭🇰 香港 - v12
       - 🇸🇬 新加坡04解锁流媒体
-      - 🇸🇬 新加坡01解锁流媒体
-      - 🇨🇳 3#台湾 02 原生IP解锁
-      - 🇨🇳 台湾02原生IP解鎖NF
       - 🇨🇳 台湾04原生IP解鎖NF
-      - 🇭🇰 V2-香港HGC01 中继E
       - 🇨🇳 台湾|Hinet|广州中转|A
-      - 🇭🇰 IEPL专线 01 香港BGP
-      - 🇭🇰 3#香港 05 解锁流媒体
       - 🇭🇰 香港HGC01 中继E | 原生 1.5x
       - 🇭🇰 3#香港 05 解锁流媒体 2
       - 🇭🇰 SVIP-A香港HKBN6
       - 🇭🇰 A自动选择香港HKT-002
-      - 🇨🇳 台湾04原生IP解锁流媒体
       - 🇭🇰 2香港A 流媒体 湘港
       - 🇭🇰 香港｜M｜GZ03
-      - 🇭🇰 V2-香港HKT01 中继E
       - 🇭🇰 SVIP-A香港HKBN2
-      - 🇭🇰 香港HKT-优化2
-      - 🇨🇳 台湾|Hinet|广州中转|B
-      - 🇭🇰 B1 广州-香港HKBN | 三网用户 | V2RAY中转 |
-      - 🇭🇰 香港 05 | 中转 | V2Ray
-      - 🇭🇰 A-CN2中继-HK-HE[NF原生]（1.0x）
-      - 🇭🇰 香港04解锁流媒体
-      - 🇨🇳 3#台湾 03 原生IP解锁
       - 🇭🇰 香港HKT01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港 --01 x1.0
-      - 🇭🇰 VIP1|香港03解锁流媒体
       - 🇭🇰 香港 01 | IEPL | VIP1 | 原生IP | 1x
-      - 🇸🇬 V1 | SG A2
       - 🇭🇰 [CM] HK122|1.0x|DNS
-      - 🇭🇰 香港-02【NETFLIX】
-      - 🇭🇰 Lite 香港 02
-      - 🇭🇰 Lite 香港 01
       - 🇭🇰 香港-01【NETFLIX】
-      - 🇭🇰 HongKong 13
-      - 🇭🇰 香港 01 | 中转 | Trojan
-      - 🇨🇳 台湾01原生IP解锁流媒体
-      - 🇭🇰 V2-香港HGC01 中继C
-      - 🇭🇰 HongKong 14
-      - 🇭🇰 A-A-CN2中继-HK-IT2[NF原生]（1.0x）
-      - 🇭🇰 香港HGC01 中继D | 原生 1.5x
-      - 🇭🇰 香港HGC01 中继C | 原生 1.5x
-      - 🇭🇰 香港03解鎖NF
-      - 🇭🇰 香港AX03 22875进阶版 0.3x
-      - 🇭🇰 LV1 香港 04 NF
-      - 🇭🇰 CM|香港Misaka 01
-      - 🇭🇰 HongKong 03
       - 🇭🇰 v2ray-Hong Kong 01
-      - 🇭🇰 vip1-香港5
-      - 🇭🇰 vip1-香港3
-      - 🇨🇳 B2 长沙-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港 03 | 中转 | Trojan
-      - 🇭🇰 香港 02 | 中转 | Trojan
-      - 🇭🇰 IEPL专线 05 香港HKT
       - 🇨🇳 台湾03原生IP解锁流媒体
-      - 🇭🇰 [01][Lv1][香港][2x][原生]
-      - 🇭🇰 3#香港 08 解锁流媒体
-      - 🇭🇰 香港HKT01 中继C | 原生 1.5x
-      - 🇭🇰 Lite 香港 03
-      - 🇲🇴 [江门移动]澳门03 中转 澳门电讯
-      - 🇲🇴 [广州移动]澳门01 中转 澳门电讯
       - 🇭🇰 香港BX02 22875进阶版 0.3x
-      - 🇭🇰 香港DX03 22875进阶版 0.3x
-      - 🇭🇰 香港-04【NETFLIX】
-      - 🇭🇰 CM|香港HKT 01
-      - 🇭🇰 HongKong 05
-      - 🇭🇰 HongKong 09
       - 🇭🇰 vip1-香港1
       - 🇭🇰 B1 广州-香港AGA | V2RAY中转 |
-      - 🇲🇴 [Az香港]澳门04 直连 澳门电讯
       - 港09
       - 港06_|NF|TVB
-      - 🇭🇰 香港AX02 22875进阶版 0.3x
-      - 🇭🇰 CM|香港Misaka 02
-      - 🇭🇰 1香港C 流媒体 粤港
-      - 🇭🇰 CM|香港Nero 01
-      - 🇭🇰 HongKong 06
-      - 🇭🇰 A1 广州-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 B3 广州-香港HKT | V2RAY中转 |
-      - 🇨🇳 B2 广州-香港HKT打机线  | 解锁Netflix、Tiktok等 | 视频专用 | 勿用Facebook Twitter WhatsApp | V2RAY中转 |
-      - 🇭🇰 香港HKT-优化2 2
       - 🇭🇰 香港HGC01 中继B | 原生 1.5x
       - 🇭🇰 香港HGC01 香港转发 | 原生 1.5x
-      - 🇭🇰 香港HKT01 中继E | 原生 1.5x
-      - 🇭🇰 「极速」AAA香港｜M｜GZ01
-      - 🇭🇰 HongKong 07
-      - 🇭🇰 HongKong 11
-      - 🇭🇰 HongKong 10
-      - 🇭🇰 香港DX02 22875进阶版 0.3x
       - 🇭🇰 [CM] HK121|1.0x|DNS
-      - 🇭🇰 香港-03【NETFLIX】
-      - 🇲🇴 CM|澳门Wind 01
-      - 🇭🇰 CM|香港HKT 03
-      - 🇭🇰 CM|香港HKT 02
-      - 🇭🇰 CM|香港Nero 02
-      - 🇭🇰 A2 长沙-香港 | 高可用集群 | V2RAY中转 |
       - 🇭🇰 香港03解锁流媒体
-      - 🇭🇰 香港02解锁流媒体
-      - 🇸🇬 Singapore 07
       - 🇭🇰 [vip1]︱V2ray︱③香港 1000M｜×1x｜限速100M｜解锁Netflix
-      - 🇭🇰 CM|香港Nero 04
-      - 🇭🇰 HongKong 01
-      - 🇭🇰 香港◆AWS 08 Netflix 1x
-      - 🇯🇵 这速度不行     日本🚀
-      - 🇭🇰 Relay_中国-香港_3080
-      - 🇭🇰 香港 - 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
