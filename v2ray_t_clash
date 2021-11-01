@@ -5,124 +5,81 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 日本 <03> | PCCW, server: mack.dliroom.co, port: 10007, type: vmess, uuid: b567bd47-bae6-3a4f-976a-3a64b701549c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: pqjp01.0894168.xyz}, udp: true}
-  - {name: 🇯🇵 日本 <01> | 上海独享, server: mack.dliroom.co, port: 10006, type: vmess, uuid: b567bd47-bae6-3a4f-976a-3a64b701549c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: jp03.ui3fuj66606.com}, udp: true}
-  - {name: 国内中专2-27, server: tz-yd01.jdxx.xyz, port: 35007, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 3935:RZVnik, obfs-param: 0a03d3935.microsoft.com, udp: true}
-  - {name: AZ转移动03-27, server: sl201.jdxx.xyz, port: 25987, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1237:Wa2lOa, obfs-param: b00e31237.microsoft.com, udp: true}
-  - {name: AZ转移动05-27, server: sl201.jdxx.xyz, port: 25989, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1237:Wa2lOa, obfs-param: b00e31237.microsoft.com, udp: true}
-  - {name: 🇯🇵 日本-移动隧道4-27, server: sl201.jdxx.xyz, port: 26389, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1620:BfGQJg, obfs-param: 2605b1620.microsoft.com, udp: true}
   - {name: 🇭🇰 香港 01, server: dg-hk-node01.linkthink.app, port: 10704, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 227003:iawnbjGNuv, obfs-param: "", udp: true}
   - {name: 🇭🇰 香港 01 2, server: dg-hk-node01.linkthink.app, port: 10520, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 227782:L1x3oQKUMT, obfs-param: "", udp: true}
   - {name: 🇭🇰 香港 01 3, server: dg-hk-node01.linkthink.app, port: 10418, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 227785:819VOzCkG3, obfs-param: "", udp: true}
-  - {name: 🇯🇵 日本-移动隧道2-27, server: sl201.jdxx.xyz, port: 26387, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 3935:RZVnik, obfs-param: 0a03d3935.microsoft.com, udp: true}
-  - {name: 🇭🇰 香港1-三网优化, server: 909hk1.fans8.xyz, port: 80, type: vmess, uuid: dd1e127b-7068-384f-98ac-b0358163017f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 909hk1.fans8.xyz}, udp: true}
-  - {name: 🇭🇰 香港3-三网优化, server: 615hk2.fans8.xyz, port: 80, type: vmess, uuid: dd1e127b-7068-384f-98ac-b0358163017f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 615hk2.fans8.xyz}, udp: true}
-  - {name: 🇭🇰 HKT转江门2-27, server: sl201.jdxx.xyz, port: 35002, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 3935:RZVnik, obfs-param: 0a03d3935.microsoft.com, udp: true}
-  - {name: 🇯🇵 日本-移动隧道1-27, server: sl201.jdxx.xyz, port: 26386, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 3935:RZVnik, obfs-param: 0a03d3935.microsoft.com, udp: true}
-  - {name: 🇨🇳 V2-台湾01 中继C | NF, server: in03.ddns168.com, port: 63002, type: vmess, uuid: 1dc83945-fda1-32a1-821c-2a395ae98161, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
-  - {name: 🇸🇬 V2-新加坡01 中继C | NF 1.5x, server: in03.ddns168.com, port: 63013, type: vmess, uuid: 1dc83945-fda1-32a1-821c-2a395ae98161, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mg, ws-headers: {Host: mugua-sg01.covid19.rip}, udp: true}
-  - {name: 🇸🇬 V2-新加坡02 中继B | 1.5x, server: in02.ddns168.com, port: 63052, type: vmess, uuid: 1dc83945-fda1-32a1-821c-2a395ae98161, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
-  - {name: 🇸🇬 V2-新加坡02 中继C | 1.5x, server: in03.ddns168.com, port: 63052, type: vmess, uuid: 1dc83945-fda1-32a1-821c-2a395ae98161, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
-  - {name: 🇸🇬 V2-新加坡02 中继D | 1.5x, server: in04.ddns168.com, port: 63052, type: vmess, uuid: 1dc83945-fda1-32a1-821c-2a395ae98161, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
-  - {name: 🇸🇬 V2-新加坡02 中继E | 1.5x, server: in05.ddns168.com, port: 63052, type: vmess, uuid: 1dc83945-fda1-32a1-821c-2a395ae98161, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
   - {name: 🇭🇰 V3-IEPL专线 香港HKBGP01 | 10x, server: iplc01.ddns168.com, port: 3083, type: vmess, uuid: 1dc83945-fda1-32a1-821c-2a395ae98161, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 V3-IEPL专线 新加坡05 | 10x 原生IP, server: iplc01.ddns168.com, port: 3053, type: vmess, uuid: 1dc83945-fda1-32a1-821c-2a395ae98161, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 JP A JM [两台负载][IPV6]", server: jm.v2ray.asia, port: 29955, type: vmess, uuid: fdc2ac0a-ce39-4b69-ae6a-4cc38643440f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇵🇭 菲律宾 VIP节点(马尼拉)●, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:f91myz466fp, obfs-param: bcbf9623.baidu.com, udp: true}
-  - {name: 🇭🇰 香港 VIP节点(HKBN 1G)●, server: gz1.52168.xyz, port: 1113, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:f91myz466fp, obfs-param: bcbf9623.baidu.com, udp: true}
-  - {name: 🇸🇬 DO新加坡-AZ中转-1T, server: hkzf.908600.xyz, port: 23361, type: vmess, uuid: 5537cad3-fcc1-499a-a7d8-491cb78da3e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: AZ转移动02-27, server: sl201.jdxx.xyz, port: 25986, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1620:BfGQJg, obfs-param: 2605b1620.microsoft.com, udp: true}
-  - {name: AZ转移动03-27 2, server: sl201.jdxx.xyz, port: 25987, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1620:BfGQJg, obfs-param: 2605b1620.microsoft.com, udp: true}
-  - {name: 🇭🇰 HKT转江门2-27 2, server: sl201.jdxx.xyz, port: 35002, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1620:BfGQJg, obfs-param: 2605b1620.microsoft.com, udp: true}
-  - {name: 🇯🇵 日本-移动隧道1-27 2, server: sl201.jdxx.xyz, port: 26386, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1620:BfGQJg, obfs-param: 2605b1620.microsoft.com, udp: true}
-  - {name: 🇰🇷 韩国-移动隧道5-27, server: sl201.jdxx.xyz, port: 26390, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1620:BfGQJg, obfs-param: 2605b1620.microsoft.com, udp: true}
-  - {name: 🇰🇷 韩国 VIP节点(首尔)★, server: gz2.52168.xyz, port: 2108, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:f91myz466fp, obfs-param: bcbf9623.baidu.com, udp: true}
-  - {name: AZ转移动04-27, server: sl201.jdxx.xyz, port: 25988, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1237:Wa2lOa, obfs-param: b00e31237.microsoft.com, udp: true}
-  - {name: 🇭🇰 HKT转江门1-27, server: sl201.jdxx.xyz, port: 35001, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1237:Wa2lOa, obfs-param: b00e31237.microsoft.com, udp: true}
-  - {name: 国内中专3-27, server: tz-yd01.jdxx.xyz, port: 35006, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1237:Wa2lOa, obfs-param: b00e31237.microsoft.com, udp: true}
-  - {name: 国内中专1-27, server: tz-yd01.jdxx.xyz, port: 35008, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 3935:RZVnik, obfs-param: 0a03d3935.microsoft.com, udp: true}
-  - {name: AZ转移动01-27, server: sl201.jdxx.xyz, port: 25985, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1620:BfGQJg, obfs-param: 2605b1620.microsoft.com, udp: true}
-  - {name: 国内中专1-27 2, server: tz-yd01.jdxx.xyz, port: 35008, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1237:Wa2lOa, obfs-param: b00e31237.microsoft.com, udp: true}
-  - {name: 🇭🇰 HKT转江门4-27, server: sl201.jdxx.xyz, port: 35004, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1237:Wa2lOa, obfs-param: b00e31237.microsoft.com, udp: true}
-  - {name: 🇯🇵 日本-移动隧道2-27 2, server: sl201.jdxx.xyz, port: 26387, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1620:BfGQJg, obfs-param: 2605b1620.microsoft.com, udp: true}
-  - {name: 🇭🇰 香港 免费节点(EC2负载均衡)★, server: gz2.52168.xyz, port: 2109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:f91myz466fp, obfs-param: bcbf9623.baidu.com, udp: true}
-  - {name: 🇭🇰 HKT转江门2-27 3, server: sl201.jdxx.xyz, port: 35002, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1237:Wa2lOa, obfs-param: b00e31237.microsoft.com, udp: true}
-  - {name: 🇯🇵 日本-移动隧道1-27 3, server: sl201.jdxx.xyz, port: 26386, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1237:Wa2lOa, obfs-param: b00e31237.microsoft.com, udp: true}
-  - {name: 🇭🇰 VIP2 香港 02 流媒体解锁, server: ppy.out01.nodeserver.top, port: 26011, type: vmess, uuid: 7708528d-9b24-3c0d-8920-165d255c5e3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 VIP2 香港 04 流媒体解锁, server: ppy.out01.nodeserver.top, port: 26013, type: vmess, uuid: 7708528d-9b24-3c0d-8920-165d255c5e3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 VIP2 香港 06 流媒体解锁, server: ppy.out01.nodeserver.top, port: 26015, type: vmess, uuid: 7708528d-9b24-3c0d-8920-165d255c5e3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 VIP2 香港 08 流媒体解锁, server: ppy.out01.nodeserver.top, port: 26017, type: vmess, uuid: 7708528d-9b24-3c0d-8920-165d255c5e3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 VIP2 香港 10 流媒体解锁, server: ppy.out01.nodeserver.top, port: 26019, type: vmess, uuid: 7708528d-9b24-3c0d-8920-165d255c5e3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 VIP2 日本 01 流媒体解锁, server: ppy.out01.nodeserver.top, port: 26006, type: vmess, uuid: 7708528d-9b24-3c0d-8920-165d255c5e3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 VIP2 日本 03 流媒体解锁, server: ppy.out03.nodeserver.top, port: 26008, type: vmess, uuid: 7708528d-9b24-3c0d-8920-165d255c5e3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇸🇬 VIP2 新加坡 02 流媒体解锁, server: ppy.out01.nodeserver.top, port: 26021, type: vmess, uuid: 7708528d-9b24-3c0d-8920-165d255c5e3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 VIP2 新加坡 04 流媒体解锁, server: ppy.out01.nodeserver.top, port: 26023, type: vmess, uuid: 7708528d-9b24-3c0d-8920-165d255c5e3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 V1-台湾02 中继A | NF, server: in01.ddns168.com, port: 63057, type: vmess, uuid: 1dc83945-fda1-32a1-821c-2a395ae98161, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
   - {name: 🇯🇵 V3-IEPL专线 日本04 | 10x, server: iplc01.ddns168.com, port: 3013, type: vmess, uuid: 1dc83945-fda1-32a1-821c-2a395ae98161, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇦🇺 澳大利亚 免费节点(悉尼)●, server: gz1.52168.xyz, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:f91myz466fp, obfs-param: bcbf9623.baidu.com, udp: true}
   - {name: 🇭🇰 香港 广港国际以太网专线(AZ)●, server: gz1.52168.xyz, port: 1114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:f91myz466fp, obfs-param: bcbf9623.baidu.com, udp: true}
-  - {name: 23.fbplay.net:10100-SS--1291794008, server: 23.fbplay.net, port: 10100, type: ss, cipher: aes-256-gcm, password: a78172b3, udp: true}
-  - {name: 🇯🇵 日本1|杭州|NF|TK, server: hznk.cn88.net, port: 45513, type: vmess, uuid: cb010271-a029-40c9-8cd0-7ec0b6a474f7, alterId: 3, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-hans, ws-headers: {Host: answers.microsoft.com}, udp: true}
-  - {name: 🇯🇵 日本1|湘日|NF|TK, server: hnnk.cn88.net, port: 45036, type: vmess, uuid: cb010271-a029-40c9-8cd0-7ec0b6a474f7, alterId: 3, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-hans, ws-headers: {Host: answers.microsoft.com}, udp: true}
-  - {name: 🇯🇵 日本2|杭州|NF|TK, server: hznk.cn88.net, port: 45514, type: vmess, uuid: cb010271-a029-40c9-8cd0-7ec0b6a474f7, alterId: 3, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-hans, ws-headers: {Host: answers.microsoft.com}, udp: true}
-  - {name: 🇯🇵 日本2|湘日|NF|TK, server: hnnk.cn88.net, port: 45059, type: vmess, uuid: cb010271-a029-40c9-8cd0-7ec0b6a474f7, alterId: 3, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-hans, ws-headers: {Host: answers.microsoft.com}, udp: true}
-  - {name: 🇸🇬 新加坡2|江门|NF|TK, server: jmnk.cn88.net, port: 45160, type: vmess, uuid: cb010271-a029-40c9-8cd0-7ec0b6a474f7, alterId: 3, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-hans, ws-headers: {Host: answers.microsoft.com}, udp: true}
-  - {name: "🇭🇰 B+.[1.5x]HK⇠IPLC(严禁下载)⇠北京:VI72131", server: 117.50.97.108, port: 231, type: vmess, uuid: 6e8ab15c-f5e4-314f-83cb-23d7663917ca, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /iso, ws-headers: {Host: 117.50.97.108}, udp: true}
-  - {name: "🇭🇰 B+.[1.5x]HK⇠IPLC(严禁下载)⇠北京:VI72132", server: 106.75.56.18, port: 231, type: vmess, uuid: 6e8ab15c-f5e4-314f-83cb-23d7663917ca, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /iso, ws-headers: {Host: 106.75.56.18}, udp: true}
-  - {name: "🇭🇰 B+.[1.5x]HK⇠IPLC(严禁下载)⇠广州:VI71131", server: 42.240.141.104, port: 231, type: vmess, uuid: 6e8ab15c-f5e4-314f-83cb-23d7663917ca, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /iso, ws-headers: {Host: 42.240.141.104}, udp: true}
-  - {name: "🇭🇰 B+.[1.5x]HK⇠IPLC(严禁下载)⇠广州:VI71132", server: 42.240.141.90, port: 231, type: vmess, uuid: 6e8ab15c-f5e4-314f-83cb-23d7663917ca, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /iso, ws-headers: {Host: 42.240.141.90}, udp: true}
-  - {name: "🇸🇬 B+.[1.5x]SG⇠IPLC(严禁下载)⇠北京:VI72232", server: 106.75.86.218, port: 231, type: vmess, uuid: 6e8ab15c-f5e4-314f-83cb-23d7663917ca, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /iso, ws-headers: {Host: 106.75.86.218}, udp: true}
-  - {name: "🇸🇬 B+.[1.5x]SG⇠IPLC(严禁下载)⇠广州:VI71231", server: 42.240.136.246, port: 231, type: vmess, uuid: 6e8ab15c-f5e4-314f-83cb-23d7663917ca, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /iso, ws-headers: {Host: 42.240.136.246}, udp: true}
-  - {name: "🇸🇬 B+.[1.5x]SG⇠IPLC(严禁下载)⇠广州:VI71232", server: 42.240.141.100, port: 231, type: vmess, uuid: 6e8ab15c-f5e4-314f-83cb-23d7663917ca, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /iso, ws-headers: {Host: 42.240.141.100}, udp: true}
-  - {name: "🇭🇰 B.[0.5x]HK.CMHK⇠BGP:VC38231", server: yqy38231.china-cdn-net.com, port: 38231, type: vmess, uuid: 6e8ab15c-f5e4-314f-83cb-23d7663917ca, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /iso, ws-headers: {Host: yqy38231.china-cdn-net.com}, udp: true}
-  - {name: "🇭🇰 B.[0.5x]HK.HKBN⇠BGP:VC38131", server: yqy38131.china-cdn-net.com, port: 38131, type: vmess, uuid: 6e8ab15c-f5e4-314f-83cb-23d7663917ca, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /iso, ws-headers: {Host: yqy38131.china-cdn-net.com}, udp: true}
-  - {name: "🇨🇳 B.[0.5x]TW.台北⇠HiNet:VC31234", server: yqy31234.china-cdn-net.com, port: 31234, type: vmess, uuid: 6e8ab15c-f5e4-314f-83cb-23d7663917ca, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /iso, ws-headers: {Host: yqy31234.china-cdn-net.com}, udp: true}
-  - {name: "🇨🇳 B.[0.5x]TW.彰化⇠HiNet:VC32234", server: yqy32234.china-cdn-net.com, port: 32234, type: vmess, uuid: 6e8ab15c-f5e4-314f-83cb-23d7663917ca, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /iso, ws-headers: {Host: yqy32234.china-cdn-net.com}, udp: true}
-  - {name: 🇮🇳 印度 VIP节点(孟买)★, server: gz2.52168.xyz, port: 2104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26901:ggyf3c2qzog, obfs-param: 94d9b26901.baidu.com, udp: true}
-  - {name: 🇮🇩 印度尼西亚 免费节点(雅加达)●, server: gz1.52168.xyz, port: 1103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26901:ggyf3c2qzog, obfs-param: 94d9b26901.baidu.com, udp: true}
   - {name: 🇦🇺 澳大利亚 免费节点(悉尼)● 2, server: gz1.52168.xyz, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26901:ggyf3c2qzog, obfs-param: 94d9b26901.baidu.com, udp: true}
   - {name: 🇵🇭 菲律宾 VIP节点(马尼拉)● 2, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26901:ggyf3c2qzog, obfs-param: 94d9b26901.baidu.com, udp: true}
   - {name: 🇵🇭 菲律宾 免费节点(马尼拉)●, server: gz1.52168.xyz, port: 1101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26901:ggyf3c2qzog, obfs-param: 94d9b26901.baidu.com, udp: true}
-  - {name: 🇭🇰 香港 VIP节点(HKBN 1G)● 2, server: gz1.52168.xyz, port: 1113, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26901:ggyf3c2qzog, obfs-param: 94d9b26901.baidu.com, udp: true}
-  - {name: 🇭🇰 V1 | HK B1, server: z-b.aaxc.icu, port: 51102, type: vmess, uuid: afac423b-973f-3471-b2e9-3353e55cd923, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /aaxc, ws-headers: {Host: z-b.aaxc.icu}, udp: true}
-  - {name: 🇯🇵 V1 | JP A1, server: z-a.aaxc.icu, port: 51311, type: vmess, uuid: afac423b-973f-3471-b2e9-3353e55cd923, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /aaxc, ws-headers: {Host: z-a.aaxc.icu}, udp: true}
-  - {name: 🇯🇵 V1 | JP A3, server: z-a.aaxc.icu, port: 51313, type: vmess, uuid: afac423b-973f-3471-b2e9-3353e55cd923, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /aaxc, ws-headers: {Host: z-a.aaxc.icu}, udp: true}
-  - {name: 🇰🇷 V1 | KR A1, server: z-a.aaxc.icu, port: 51511, type: vmess, uuid: afac423b-973f-3471-b2e9-3353e55cd923, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /aaxc, ws-headers: {Host: z-a.aaxc.icu}, udp: true}
-  - {name: 🇰🇷 V1 | KR A2, server: z-a.aaxc.icu, port: 51512, type: vmess, uuid: afac423b-973f-3471-b2e9-3353e55cd923, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /aaxc, ws-headers: {Host: z-a.aaxc.icu}, udp: true}
-  - {name: 🇰🇷 韩国 X09, server: 7704d818-78e5-471a-a1d6-655c4d79f662.1c5f5adf-a6ce-4066-b318-fa7eb97f68c8.xn--9kq764g2xn.com, port: 30009, type: vmess, uuid: 3fe6a1e0-863c-4db8-ab79-89a8b59ccce8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 韩国 X10, server: 7704d818-78e5-471a-a1d6-655c4d79f662.1c5f5adf-a6ce-4066-b318-fa7eb97f68c8.xn--9kq764g2xn.com, port: 30010, type: vmess, uuid: 3fe6a1e0-863c-4db8-ab79-89a8b59ccce8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 TW A JM, server: jm.v2ray.asia, port: 30410, type: vmess, uuid: fdc2ac0a-ce39-4b69-ae6a-4cc38643440f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇿🇦 TW A GZA, server: gya.v2ray.asia, port: 41438, type: vmess, uuid: fdc2ac0a-ce39-4b69-ae6a-4cc38643440f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 TW A GZB, server: gyb.v2ray.asia, port: 25354, type: vmess, uuid: fdc2ac0a-ce39-4b69-ae6a-4cc38643440f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 TW A SH, server: sh.v2ray.asia, port: 25104, type: vmess, uuid: fdc2ac0a-ce39-4b69-ae6a-4cc38643440f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 TW A CS, server: cs.v2ray.asia, port: 25026, type: vmess, uuid: fdc2ac0a-ce39-4b69-ae6a-4cc38643440f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 JP A HZ [两台负载][IPV6]", server: hl.v2ray.asia, port: 25033, type: vmess, uuid: fdc2ac0a-ce39-4b69-ae6a-4cc38643440f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港Azure-SG, server: 65.52.166.194, port: 80, type: vmess, uuid: cfa5281a-1724-38da-a699-4986f3045ff4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 🇭🇰 香港Azure-SG 2, server: 20.205.4.25, port: 80, type: vmess, uuid: cfa5281a-1724-38da-a699-4986f3045ff4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 🇭🇰 香港Azure-SG 3, server: 13.70.55.107, port: 80, type: vmess, uuid: cfa5281a-1724-38da-a699-4986f3045ff4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 🇭🇰 香港Azure-SG 4, server: 23.101.9.181, port: 80, type: vmess, uuid: cfa5281a-1724-38da-a699-4986f3045ff4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 🇭🇰 香港Azure-SG 5, server: 52.175.59.136, port: 80, type: vmess, uuid: cfa5281a-1724-38da-a699-4986f3045ff4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 🇭🇰 香港2-三网优化, server: 812hk1.fans8.xyz, port: 80, type: vmess, uuid: 342764a3-c8e2-3528-893f-744f0f4061dc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 812hk1.fans8.xyz}, udp: true}
-  - {name: 🇭🇰 香港3-三网优化 2, server: 615hk2.fans8.xyz, port: 80, type: vmess, uuid: 342764a3-c8e2-3528-893f-744f0f4061dc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 615hk2.fans8.xyz}, udp: true}
-  - {name: 🇲🇾 马来西亚1-三网优化, server: 923my.fans8.xyz, port: 80, type: vmess, uuid: 342764a3-c8e2-3528-893f-744f0f4061dc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 923my.fans8.xyz}, udp: true}
-  - {name: 🇮🇳 印度01 包月3元起, server: azhk.zz123.xyz, port: 33959, type: vmess, uuid: f1162104-2b92-37c8-8921-dcb4ff134db5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk.zz123.xyz}, udp: true}
-  - {name: 🇸🇬 新加坡01, server: azhk.zz123.xyz, port: 38141, type: vmess, uuid: f1162104-2b92-37c8-8921-dcb4ff134db5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk.zz123.xyz}, udp: true}
-  - {name: 🇸🇬 新加坡02, server: azhk.zz123.xyz, port: 35724, type: vmess, uuid: f1162104-2b92-37c8-8921-dcb4ff134db5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk.zz123.xyz}, udp: true}
-  - {name: 🇸🇬 新加坡03, server: azhk.zz123.xyz, port: 32819, type: vmess, uuid: f1162104-2b92-37c8-8921-dcb4ff134db5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk.zz123.xyz}, udp: true}
-  - {name: 🇯🇵 日本01, server: azhk.zz123.xyz, port: 34083, type: vmess, uuid: f1162104-2b92-37c8-8921-dcb4ff134db5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk.zz123.xyz}, udp: true}
-  - {name: 🇰🇷 韩国01, server: azhk.zz123.xyz, port: 33413, type: vmess, uuid: f1162104-2b92-37c8-8921-dcb4ff134db5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk.zz123.xyz}, udp: true}
-  - {name: 🇭🇰 香港免流01, server: hk01.zz123.xyz, port: 80, type: vmess, uuid: f1162104-2b92-37c8-8921-dcb4ff134db5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: a.189.cn}, udp: true}
-  - {name: 🇭🇰 香港免流02, server: hk02.zz123.xyz, port: 80, type: vmess, uuid: f1162104-2b92-37c8-8921-dcb4ff134db5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: a.189.cn}, udp: true}
-  - {name: 🇭🇰 香港免流03, server: hk03.zz123.xyz, port: 80, type: vmess, uuid: f1162104-2b92-37c8-8921-dcb4ff134db5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: a.189.cn}, udp: true}
-  - {name: 🇭🇰 香港免流04, server: hk04.zz123.xyz, port: 80, type: vmess, uuid: f1162104-2b92-37c8-8921-dcb4ff134db5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: a.189.cn}, udp: true}
-  - {name: 🇭🇰 香港免流05 解锁新加坡区奈飞, server: hk05.zz123.xyz, port: 80, type: vmess, uuid: f1162104-2b92-37c8-8921-dcb4ff134db5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: a.189.cn}, udp: true}
-  - {name: 🇮🇩 印度尼西亚 免费节点(雅加达)● 2, server: gz1.52168.xyz, port: 1103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:f91myz466fp, obfs-param: bcbf9623.baidu.com, udp: true}
-  - {name: 🇲🇾 马来西亚1-三网优化 2, server: 923my.fans8.xyz, port: 80, type: vmess, uuid: dd1e127b-7068-384f-98ac-b0358163017f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 923my.fans8.xyz}, udp: true}
-  - {name: 🇮🇳 孟买1|江门|NF|TK, server: jmnk.cn88.net, port: 45178, type: vmess, uuid: cb010271-a029-40c9-8cd0-7ec0b6a474f7, alterId: 3, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zh-hans, ws-headers: {Host: answers.microsoft.com}, udp: true}
-  - {name: 🇸🇬 V1 | SG A1, server: z-a.aaxc.icu, port: 51411, type: vmess, uuid: afac423b-973f-3471-b2e9-3353e55cd923, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /aaxc, ws-headers: {Host: z-a.aaxc.icu}, udp: true}
-  - {name: 🇷🇺 俄罗斯 S11, server: 7704d818-78e5-471a-a1d6-655c4d79f662.1c5f5adf-a6ce-4066-b318-fa7eb97f68c8.xn--9kq764g2xn.com, port: 30011, type: vmess, uuid: 3fe6a1e0-863c-4db8-ab79-89a8b59ccce8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港Azure-SG 6, server: 52.184.49.201, port: 80, type: vmess, uuid: cfa5281a-1724-38da-a699-4986f3045ff4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ny, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 🇭🇰 香港1-三网优化 2, server: 909hk1.fans8.xyz, port: 80, type: vmess, uuid: 342764a3-c8e2-3528-893f-744f0f4061dc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 909hk1.fans8.xyz}, udp: true}
+  - {name: 雷霆 - 405, server: 173.82.55.94, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.01787634.xyz}, udp: true}
+  - {name: 旋风 - 879, server: 72.44.68.22, port: 443, type: vmess, uuid: 788b567d-b954-46c1-93ab-417deb9a86b4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.65102680.xyz}, udp: true}
+  - {name: 1, server: 64.32.13.3, port: 443, type: vmess, uuid: 4dc574eb-94e8-439e-aad6-4d74df1a38c5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.12001759.xyz}, udp: true}
+  - {name: 🏳️‍🌈 银河云白嫖春川2G口带宽（流量只有500G）, server: 152.67.204.179, port: 40558, type: vmess, uuid: a7c7085f-708f-414c-c306-fbfa737b8f96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 旋风 - 873, server: 208.64.226.100, port: 443, type: vmess, uuid: 07d70da3-6931-4471-8dd7-3ad22106bbff, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.62238769.xyz}, udp: true}
+  - {name: 🇺🇲 免费梯子https://bit.ly/3uWuS7a, server: 172.252.99.27, port: 18331, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS, udp: true}
+  - {name: 🇭🇰 AZ香港-80-500G-禁ping, server: azhk.7979.gay, port: 80, type: vmess, uuid: 5537cad3-fcc1-499a-a7d8-491cb78da3e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: shoutingtoutiao3.10010.com}, udp: true}
+  - {name: 🇭🇰 美国 X03 | 港区 Netflix, server: 7704d818-78e5-471a-a1d6-655c4d79f662.1c5f5adf-a6ce-4066-b318-fa7eb97f68c8.xn--9kq764g2xn.com, port: 30003, type: vmess, uuid: 3fe6a1e0-863c-4db8-ab79-89a8b59ccce8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 V3-IEPL专线 新加坡05 | 10x 原生IP, server: iplc01.ddns168.com, port: 3053, type: vmess, uuid: 1dc83945-fda1-32a1-821c-2a395ae98161, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇵🇭 菲律宾 VIP节点(马尼拉)● 3, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:f91myz466fp, obfs-param: bcbf9623.baidu.com, udp: true}
+  - {name: 🇭🇰 香港 免费节点(EC2负载均衡)★, server: gz2.52168.xyz, port: 2109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:f91myz466fp, obfs-param: bcbf9623.baidu.com, udp: true}
+  - {name: 🇦🇺 澳大利亚 免费节点(悉尼)● 3, server: gz1.52168.xyz, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:f91myz466fp, obfs-param: bcbf9623.baidu.com, udp: true}
+  - {name: 🇭🇰 香港 广港国际以太网专线(AZ)● 2, server: gz1.52168.xyz, port: 1114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:f91myz466fp, obfs-param: bcbf9623.baidu.com, udp: true}
+  - {name: 🇦🇺 澳大利亚 免费节点(悉尼)● 2 2, server: gz1.52168.xyz, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26901:ggyf3c2qzog, obfs-param: 94d9b26901.baidu.com, udp: true}
+  - {name: 🇵🇭 菲律宾 VIP节点(马尼拉)● 2 2, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26901:ggyf3c2qzog, obfs-param: 94d9b26901.baidu.com, udp: true}
+  - {name: 🇵🇭 菲律宾 免费节点(马尼拉)● 2, server: gz1.52168.xyz, port: 1101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26901:ggyf3c2qzog, obfs-param: 94d9b26901.baidu.com, udp: true}
+  - {name: 🇸🇬 网址www.viyun.pw 嫖完网站自寻 稳定更新 美国38 长沙联通 v2ray G口带宽 公益节点, server: cs.lt.nkeo.top, port: 25015, type: vmess, uuid: 4a70cbbc-435f-38a5-9788-c7dc049bd0a3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: cs.lt.nkeo.top}, udp: true}
+  - {name: TG@安卓盒子, server: 520yyds.zhqt.xyz, port: 50093, type: vmess, uuid: aa585888-b5d2-4202-8297-1de78ef2e40a, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: chenguanxi.zhqt.xyz}, udp: true}
+  - {name: TG@安卓盒子 2, server: azhk2.zz123.xyz, port: 38141, type: vmess, uuid: fe712a7b-772e-3be3-a891-7dbf1f2535e2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}, udp: true}
+  - {name: TG@安卓盒子 3, server: azhk2.zz123.xyz, port: 33413, type: vmess, uuid: fe712a7b-772e-3be3-a891-7dbf1f2535e2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}, udp: true}
+  - {name: TG@安卓盒子 4, server: azhk2.zz123.xyz, port: 33413, type: vmess, uuid: db0dd61a-1221-300c-8b55-c2b5ae8b8d9d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}, udp: true}
+  - {name: TG@安卓盒子 5, server: azhk2.zz123.xyz, port: 33959, type: vmess, uuid: fe712a7b-772e-3be3-a891-7dbf1f2535e2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}, udp: true}
+  - {name: TG@安卓盒子 6, server: azhk2.zz123.xyz, port: 33413, type: vmess, uuid: b02255d6-6912-34da-9f25-d49a996e5014, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}, udp: true}
+  - {name: TG@安卓盒子 7, server: 520yyds.zhqt.xyz, port: 50093, type: vmess, uuid: 7d743060-33db-467e-b514-00813a3f0d0f, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: chenguanxi.zhqt.xyz}, udp: true}
+  - {name: TG@安卓盒子 8, server: azhk2.zz123.xyz, port: 35724, type: vmess, uuid: fe712a7b-772e-3be3-a891-7dbf1f2535e2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}, udp: true}
+  - {name: TG@安卓盒子 9, server: 520yyds.zhqt.xyz, port: 50093, type: vmess, uuid: 6484b9e6-05ef-4cd5-a6fa-573b531669b4, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: chenguanxi.zhqt.xyz}, udp: true}
+  - {name: TG@安卓盒子 10, server: azhk2.zz123.xyz, port: 35724, type: vmess, uuid: b02255d6-6912-34da-9f25-d49a996e5014, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}, udp: true}
+  - {name: TG@安卓盒子 11, server: azhk2.zz123.xyz, port: 32819, type: vmess, uuid: fe712a7b-772e-3be3-a891-7dbf1f2535e2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}, udp: true}
+  - {name: TG@安卓盒子 12, server: azhk2.zz123.xyz, port: 54188, type: vmess, uuid: fe712a7b-772e-3be3-a891-7dbf1f2535e2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}, udp: true}
+  - {name: TG@安卓盒子 13, server: azhk2.zz123.xyz, port: 33959, type: vmess, uuid: db0dd61a-1221-300c-8b55-c2b5ae8b8d9d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}, udp: true}
+  - {name: TG@安卓盒子 14, server: azhk2.zz123.xyz, port: 38141, type: vmess, uuid: db0dd61a-1221-300c-8b55-c2b5ae8b8d9d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}, udp: true}
+  - {name: TG@安卓盒子 15, server: azhk2.zz123.xyz, port: 54188, type: vmess, uuid: db0dd61a-1221-300c-8b55-c2b5ae8b8d9d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}, udp: true}
+  - {name: TG@安卓盒子 16, server: azhk2.zz123.xyz, port: 32819, type: vmess, uuid: db0dd61a-1221-300c-8b55-c2b5ae8b8d9d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}, udp: true}
+  - {name: TG@安卓盒子 17, server: azhk2.zz123.xyz, port: 35724, type: vmess, uuid: db0dd61a-1221-300c-8b55-c2b5ae8b8d9d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: azhk2.zz123.xyz}, udp: true}
+  - {name: 🇭🇰 HKT | 聊天, server: hkt.nkeo.top, port: 48691, type: vmess, uuid: 24e1b0c6-da6a-40d6-bebc-1890cbcf63c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hkt.nkeo.top}, udp: true}
+  - {name: 443端口-不限速-WS, server: a.xxyu.xyz, port: 443, type: vmess, uuid: 33a89ab7-cdf4-4eb9-fd1b-aaf6fb3079cb, alterId: 63, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: a.xxyu.xyz}, udp: true}
+  - {name: 🇭🇰 香港 01 4, server: dg-hk-node01.linkthink.app, port: 10464, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 231567:j1sSzUAk7P, obfs-param: "", udp: true}
+  - {name: 🇭🇰 末晨香港, server: 168.63.201.200, port: 51363, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 🇭🇰 末晨香港 2, server: 168.63.201.200, port: 21011, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 🇭🇰 末晨香港 3, server: 52.175.125.36, port: 29546, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 🇭🇰 末晨香港 4, server: 52.175.125.36, port: 22355, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 🇭🇰 末晨香港 5, server: 52.175.125.36, port: 16032, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 🇺🇲 末晨美国, server: 183.249.161.156, port: 31521, type: vmess, uuid: 42857a01-5c78-3594-b9aa-e434073c0e31, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 末晨日本, server: x-gz.gotout.work, port: 31322, type: vmess, uuid: 42857a01-5c78-3594-b9aa-e434073c0e31, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 末晨香港 6, server: 183.249.161.156, port: 31121, type: vmess, uuid: 42857a01-5c78-3594-b9aa-e434073c0e31, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 末晨香港 7, server: 183.249.161.156, port: 31322, type: vmess, uuid: 42857a01-5c78-3594-b9aa-e434073c0e31, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 末晨香港 8, server: 52.175.125.36, port: 22591, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 🇯🇵 末晨日本 2, server: x-cs.gotout.work, port: 31311, type: vmess, uuid: 42857a01-5c78-3594-b9aa-e434073c0e31, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇲 末晨美国 2, server: x-gz.gotout.work, port: 31621, type: vmess, uuid: 42857a01-5c78-3594-b9aa-e434073c0e31, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 末晨香港 9, server: 168.63.201.200, port: 10874, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 🇭🇰 末晨香港 10, server: hkt.comefromchinatown.com, port: 80, type: vmess, uuid: 5c7b33c6-6d83-11eb-b77b-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: broadcastlv.chat.bilibili.com}, udp: true}
+  - {name: 🇭🇰 末晨香港 11, server: hkt.comefromchinatown.com, port: 153, type: vmess, uuid: 5c7b33c6-6d83-11eb-b77b-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: broadcastlv.chat.bilibili.com}, udp: true}
+  - {name: 🇯🇵 末晨日本 3, server: 120.232.173.100, port: 25307, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 🇭🇰 末晨香港 12, server: 120.232.173.100, port: 10203, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 🇭🇰 末晨香港 13, server: 52.175.125.36, port: 28666, type: vmess, uuid: a3250995-7c4c-3d70-a91c-00eed5b2820c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 🇭🇰 香港 01 5, server: dg-hk-node01.linkthink.app, port: 10704, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 227003:iawnbjGNuv, obfs-param: "", udp: true}
+  - {name: 🇭🇰 香港 01 3 2, server: dg-hk-node01.linkthink.app, port: 10418, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 227785:819VOzCkG3, obfs-param: "", udp: true}
+  - {name: CYL-科技（2021.10.31）, server: 120.232.173.154, port: 50093, type: vmess, uuid: 6484b9e6-05ef-4cd5-a6fa-573b531669b4, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: chenguanxi.zhqt.xyz}, udp: true}
+  - {name: 🇸🇬 新加坡01 | az中转 | 1x, server: hkaz1.portforward.xyz, port: 26389, type: vmess, uuid: de13a9a9-c6dd-4aa8-b80e-6e005d7f2994, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /0kHyZqYL/, ws-headers: {Host: hkaz1.portforward.xyz}, udp: true}
+  - {name: 🇭🇰 香港02 | az中转| 1.2x, server: hkaz1.portforward.xyz, port: 43265, type: vmess, uuid: de13a9a9-c6dd-4aa8-b80e-6e005d7f2994, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hkaz1.portforward.xyz}, udp: true}
+  - {name: 🇯🇵 日本03 | az中转 | 1.2x, server: hkaz1.portforward.xyz, port: 45511, type: vmess, uuid: de13a9a9-c6dd-4aa8-b80e-6e005d7f2994, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /jp80, ws-headers: {Host: hkaz1.portforward.xyz}, udp: true}
+  - {name: 🇭🇰 香港05 | IEPL | 解锁NF | 7x, server: iepl.kriby.cc, port: 31234, type: vmess, uuid: de13a9a9-c6dd-4aa8-b80e-6e005d7f2994, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hkt2, ws-headers: {Host: iepl.kriby.cc}, udp: true}
+  - {name: 🇯🇵 日本02 | az中转 | 1.2x, server: hkzf.908600.xyz, port: 61218, type: vmess, uuid: de13a9a9-c6dd-4aa8-b80e-6e005d7f2994, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /lankerensjpp/, ws-headers: {Host: hkzf.908600.xyz}, udp: true}
 proxy-groups:
   - name: 🚀 全局设置
     type: select
@@ -151,248 +108,162 @@ proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
-      - 🇯🇵 日本 <03> | PCCW
-      - 🇯🇵 日本 <01> | 上海独享
-      - 国内中专2-27
-      - AZ转移动03-27
-      - AZ转移动05-27
-      - 🇯🇵 日本-移动隧道4-27
       - 🇭🇰 香港 01
       - 🇭🇰 香港 01 2
       - 🇭🇰 香港 01 3
-      - 🇯🇵 日本-移动隧道2-27
-      - 🇭🇰 香港1-三网优化
-      - 🇭🇰 香港3-三网优化
-      - 🇭🇰 HKT转江门2-27
-      - 🇯🇵 日本-移动隧道1-27
-      - 🇨🇳 V2-台湾01 中继C | NF
-      - 🇸🇬 V2-新加坡01 中继C | NF 1.5x
-      - 🇸🇬 V2-新加坡02 中继B | 1.5x
-      - 🇸🇬 V2-新加坡02 中继C | 1.5x
-      - 🇸🇬 V2-新加坡02 中继D | 1.5x
-      - 🇸🇬 V2-新加坡02 中继E | 1.5x
       - 🇭🇰 V3-IEPL专线 香港HKBGP01 | 10x
-      - 🇸🇬 V3-IEPL专线 新加坡05 | 10x 原生IP
-      - 🇯🇵 JP A JM [两台负载][IPV6]
       - 🇵🇭 菲律宾 VIP节点(马尼拉)●
-      - 🇭🇰 香港 VIP节点(HKBN 1G)●
-      - 🇸🇬 DO新加坡-AZ中转-1T
-      - AZ转移动02-27
-      - AZ转移动03-27 2
-      - 🇭🇰 HKT转江门2-27 2
-      - 🇯🇵 日本-移动隧道1-27 2
-      - 🇰🇷 韩国-移动隧道5-27
-      - 🇰🇷 韩国 VIP节点(首尔)★
-      - AZ转移动04-27
-      - 🇭🇰 HKT转江门1-27
-      - 国内中专3-27
-      - 国内中专1-27
-      - AZ转移动01-27
-      - 国内中专1-27 2
-      - 🇭🇰 HKT转江门4-27
-      - 🇯🇵 日本-移动隧道2-27 2
-      - 🇭🇰 香港 免费节点(EC2负载均衡)★
-      - 🇭🇰 HKT转江门2-27 3
-      - 🇯🇵 日本-移动隧道1-27 3
-      - 🇭🇰 VIP2 香港 02 流媒体解锁
-      - 🇭🇰 VIP2 香港 04 流媒体解锁
-      - 🇭🇰 VIP2 香港 06 流媒体解锁
-      - 🇭🇰 VIP2 香港 08 流媒体解锁
-      - 🇭🇰 VIP2 香港 10 流媒体解锁
-      - 🇯🇵 VIP2 日本 01 流媒体解锁
-      - 🇯🇵 VIP2 日本 03 流媒体解锁
       - 🇸🇬 VIP2 新加坡 02 流媒体解锁
-      - 🇸🇬 VIP2 新加坡 04 流媒体解锁
-      - 🇨🇳 V1-台湾02 中继A | NF
       - 🇯🇵 V3-IEPL专线 日本04 | 10x
       - 🇦🇺 澳大利亚 免费节点(悉尼)●
       - 🇭🇰 香港 广港国际以太网专线(AZ)●
-      - 23.fbplay.net:10100-SS--1291794008
-      - 🇯🇵 日本1|杭州|NF|TK
-      - 🇯🇵 日本1|湘日|NF|TK
-      - 🇯🇵 日本2|杭州|NF|TK
-      - 🇯🇵 日本2|湘日|NF|TK
-      - 🇸🇬 新加坡2|江门|NF|TK
-      - 🇭🇰 B+.[1.5x]HK⇠IPLC(严禁下载)⇠北京:VI72131
-      - 🇭🇰 B+.[1.5x]HK⇠IPLC(严禁下载)⇠北京:VI72132
-      - 🇭🇰 B+.[1.5x]HK⇠IPLC(严禁下载)⇠广州:VI71131
-      - 🇭🇰 B+.[1.5x]HK⇠IPLC(严禁下载)⇠广州:VI71132
-      - 🇸🇬 B+.[1.5x]SG⇠IPLC(严禁下载)⇠北京:VI72232
-      - 🇸🇬 B+.[1.5x]SG⇠IPLC(严禁下载)⇠广州:VI71231
-      - 🇸🇬 B+.[1.5x]SG⇠IPLC(严禁下载)⇠广州:VI71232
-      - 🇭🇰 B.[0.5x]HK.CMHK⇠BGP:VC38231
-      - 🇭🇰 B.[0.5x]HK.HKBN⇠BGP:VC38131
-      - 🇨🇳 B.[0.5x]TW.台北⇠HiNet:VC31234
-      - 🇨🇳 B.[0.5x]TW.彰化⇠HiNet:VC32234
-      - 🇮🇳 印度 VIP节点(孟买)★
-      - 🇮🇩 印度尼西亚 免费节点(雅加达)●
       - 🇦🇺 澳大利亚 免费节点(悉尼)● 2
       - 🇵🇭 菲律宾 VIP节点(马尼拉)● 2
       - 🇵🇭 菲律宾 免费节点(马尼拉)●
-      - 🇭🇰 香港 VIP节点(HKBN 1G)● 2
-      - 🇭🇰 V1 | HK B1
-      - 🇯🇵 V1 | JP A1
-      - 🇯🇵 V1 | JP A3
-      - 🇰🇷 V1 | KR A1
-      - 🇰🇷 V1 | KR A2
-      - 🇰🇷 韩国 X09
-      - 🇰🇷 韩国 X10
-      - 🇨🇳 TW A JM
-      - 🇿🇦 TW A GZA
-      - 🇨🇳 TW A GZB
-      - 🇨🇳 TW A SH
-      - 🇨🇳 TW A CS
-      - 🇯🇵 JP A HZ [两台负载][IPV6]
-      - 🇭🇰 香港Azure-SG
-      - 🇭🇰 香港Azure-SG 2
-      - 🇭🇰 香港Azure-SG 3
-      - 🇭🇰 香港Azure-SG 4
-      - 🇭🇰 香港Azure-SG 5
-      - 🇭🇰 香港2-三网优化
-      - 🇭🇰 香港3-三网优化 2
-      - 🇲🇾 马来西亚1-三网优化
-      - 🇮🇳 印度01 包月3元起
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡02
-      - 🇸🇬 新加坡03
-      - 🇯🇵 日本01
-      - 🇰🇷 韩国01
-      - 🇭🇰 香港免流01
-      - 🇭🇰 香港免流02
-      - 🇭🇰 香港免流03
-      - 🇭🇰 香港免流04
-      - 🇭🇰 香港免流05 解锁新加坡区奈飞
-      - 🇮🇩 印度尼西亚 免费节点(雅加达)● 2
-      - 🇲🇾 马来西亚1-三网优化 2
-      - 🇮🇳 孟买1|江门|NF|TK
-      - 🇸🇬 V1 | SG A1
-      - 🇷🇺 俄罗斯 S11
-      - 🇭🇰 香港Azure-SG 6
-      - 🇭🇰 香港1-三网优化 2
+      - 雷霆 - 405
+      - 旋风 - 879
+      - 1
+      - 🏳️‍🌈 银河云白嫖春川2G口带宽（流量只有500G）
+      - 旋风 - 873
+      - 🇺🇲 免费梯子https://bit.ly/3uWuS7a
+      - 🇭🇰 AZ香港-80-500G-禁ping
+      - 🇭🇰 美国 X03 | 港区 Netflix
+      - 🇸🇬 V3-IEPL专线 新加坡05 | 10x 原生IP
+      - 🇵🇭 菲律宾 VIP节点(马尼拉)● 3
+      - 🇭🇰 香港 免费节点(EC2负载均衡)★
+      - 🇦🇺 澳大利亚 免费节点(悉尼)● 3
+      - 🇭🇰 香港 广港国际以太网专线(AZ)● 2
+      - 🇦🇺 澳大利亚 免费节点(悉尼)● 2 2
+      - 🇵🇭 菲律宾 VIP节点(马尼拉)● 2 2
+      - 🇵🇭 菲律宾 免费节点(马尼拉)● 2
+      - 🇸🇬 网址www.viyun.pw 嫖完网站自寻 稳定更新 美国38 长沙联通 v2ray G口带宽 公益节点
+      - TG@安卓盒子
+      - TG@安卓盒子 2
+      - TG@安卓盒子 3
+      - TG@安卓盒子 4
+      - TG@安卓盒子 5
+      - TG@安卓盒子 6
+      - TG@安卓盒子 7
+      - TG@安卓盒子 8
+      - TG@安卓盒子 9
+      - TG@安卓盒子 10
+      - TG@安卓盒子 11
+      - TG@安卓盒子 12
+      - TG@安卓盒子 13
+      - TG@安卓盒子 14
+      - TG@安卓盒子 15
+      - TG@安卓盒子 16
+      - TG@安卓盒子 17
+      - 🇭🇰 HKT | 聊天
+      - 443端口-不限速-WS
+      - 🇭🇰 香港 01 4
+      - 🇭🇰 末晨香港
+      - 🇭🇰 末晨香港 2
+      - 🇭🇰 末晨香港 3
+      - 🇭🇰 末晨香港 4
+      - 🇭🇰 末晨香港 5
+      - 🇺🇲 末晨美国
+      - 🇯🇵 末晨日本
+      - 🇭🇰 末晨香港 6
+      - 🇭🇰 末晨香港 7
+      - 🇭🇰 末晨香港 8
+      - 🇯🇵 末晨日本 2
+      - 🇺🇲 末晨美国 2
+      - 🇭🇰 末晨香港 9
+      - 🇭🇰 末晨香港 10
+      - 🇭🇰 末晨香港 11
+      - 🇯🇵 末晨日本 3
+      - 🇭🇰 末晨香港 12
+      - 🇭🇰 末晨香港 13
+      - 🇭🇰 香港 01 5
+      - 🇭🇰 香港 01 3 2
+      - CYL-科技（2021.10.31）
+      - 🇸🇬 新加坡01 | az中转 | 1x
+      - 🇭🇰 香港02 | az中转| 1.2x
+      - 🇯🇵 日本03 | az中转 | 1.2x
+      - 🇭🇰 香港05 | IEPL | 解锁NF | 7x
+      - 🇯🇵 日本02 | az中转 | 1.2x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本 <03> | PCCW
-      - 🇯🇵 日本 <01> | 上海独享
-      - 国内中专2-27
-      - AZ转移动03-27
-      - AZ转移动05-27
-      - 🇯🇵 日本-移动隧道4-27
       - 🇭🇰 香港 01
       - 🇭🇰 香港 01 2
       - 🇭🇰 香港 01 3
-      - 🇯🇵 日本-移动隧道2-27
-      - 🇭🇰 香港1-三网优化
-      - 🇭🇰 香港3-三网优化
-      - 🇭🇰 HKT转江门2-27
-      - 🇯🇵 日本-移动隧道1-27
-      - 🇨🇳 V2-台湾01 中继C | NF
-      - 🇸🇬 V2-新加坡01 中继C | NF 1.5x
-      - 🇸🇬 V2-新加坡02 中继B | 1.5x
-      - 🇸🇬 V2-新加坡02 中继C | 1.5x
-      - 🇸🇬 V2-新加坡02 中继D | 1.5x
-      - 🇸🇬 V2-新加坡02 中继E | 1.5x
       - 🇭🇰 V3-IEPL专线 香港HKBGP01 | 10x
-      - 🇸🇬 V3-IEPL专线 新加坡05 | 10x 原生IP
-      - 🇯🇵 JP A JM [两台负载][IPV6]
       - 🇵🇭 菲律宾 VIP节点(马尼拉)●
-      - 🇭🇰 香港 VIP节点(HKBN 1G)●
-      - 🇸🇬 DO新加坡-AZ中转-1T
-      - AZ转移动02-27
-      - AZ转移动03-27 2
-      - 🇭🇰 HKT转江门2-27 2
-      - 🇯🇵 日本-移动隧道1-27 2
-      - 🇰🇷 韩国-移动隧道5-27
-      - 🇰🇷 韩国 VIP节点(首尔)★
-      - AZ转移动04-27
-      - 🇭🇰 HKT转江门1-27
-      - 国内中专3-27
-      - 国内中专1-27
-      - AZ转移动01-27
-      - 国内中专1-27 2
-      - 🇭🇰 HKT转江门4-27
-      - 🇯🇵 日本-移动隧道2-27 2
-      - 🇭🇰 香港 免费节点(EC2负载均衡)★
-      - 🇭🇰 HKT转江门2-27 3
-      - 🇯🇵 日本-移动隧道1-27 3
-      - 🇭🇰 VIP2 香港 02 流媒体解锁
-      - 🇭🇰 VIP2 香港 04 流媒体解锁
-      - 🇭🇰 VIP2 香港 06 流媒体解锁
-      - 🇭🇰 VIP2 香港 08 流媒体解锁
-      - 🇭🇰 VIP2 香港 10 流媒体解锁
-      - 🇯🇵 VIP2 日本 01 流媒体解锁
-      - 🇯🇵 VIP2 日本 03 流媒体解锁
       - 🇸🇬 VIP2 新加坡 02 流媒体解锁
-      - 🇸🇬 VIP2 新加坡 04 流媒体解锁
-      - 🇨🇳 V1-台湾02 中继A | NF
       - 🇯🇵 V3-IEPL专线 日本04 | 10x
       - 🇦🇺 澳大利亚 免费节点(悉尼)●
       - 🇭🇰 香港 广港国际以太网专线(AZ)●
-      - 23.fbplay.net:10100-SS--1291794008
-      - 🇯🇵 日本1|杭州|NF|TK
-      - 🇯🇵 日本1|湘日|NF|TK
-      - 🇯🇵 日本2|杭州|NF|TK
-      - 🇯🇵 日本2|湘日|NF|TK
-      - 🇸🇬 新加坡2|江门|NF|TK
-      - 🇭🇰 B+.[1.5x]HK⇠IPLC(严禁下载)⇠北京:VI72131
-      - 🇭🇰 B+.[1.5x]HK⇠IPLC(严禁下载)⇠北京:VI72132
-      - 🇭🇰 B+.[1.5x]HK⇠IPLC(严禁下载)⇠广州:VI71131
-      - 🇭🇰 B+.[1.5x]HK⇠IPLC(严禁下载)⇠广州:VI71132
-      - 🇸🇬 B+.[1.5x]SG⇠IPLC(严禁下载)⇠北京:VI72232
-      - 🇸🇬 B+.[1.5x]SG⇠IPLC(严禁下载)⇠广州:VI71231
-      - 🇸🇬 B+.[1.5x]SG⇠IPLC(严禁下载)⇠广州:VI71232
-      - 🇭🇰 B.[0.5x]HK.CMHK⇠BGP:VC38231
-      - 🇭🇰 B.[0.5x]HK.HKBN⇠BGP:VC38131
-      - 🇨🇳 B.[0.5x]TW.台北⇠HiNet:VC31234
-      - 🇨🇳 B.[0.5x]TW.彰化⇠HiNet:VC32234
-      - 🇮🇳 印度 VIP节点(孟买)★
-      - 🇮🇩 印度尼西亚 免费节点(雅加达)●
       - 🇦🇺 澳大利亚 免费节点(悉尼)● 2
       - 🇵🇭 菲律宾 VIP节点(马尼拉)● 2
       - 🇵🇭 菲律宾 免费节点(马尼拉)●
-      - 🇭🇰 香港 VIP节点(HKBN 1G)● 2
-      - 🇭🇰 V1 | HK B1
-      - 🇯🇵 V1 | JP A1
-      - 🇯🇵 V1 | JP A3
-      - 🇰🇷 V1 | KR A1
-      - 🇰🇷 V1 | KR A2
-      - 🇰🇷 韩国 X09
-      - 🇰🇷 韩国 X10
-      - 🇨🇳 TW A JM
-      - 🇿🇦 TW A GZA
-      - 🇨🇳 TW A GZB
-      - 🇨🇳 TW A SH
-      - 🇨🇳 TW A CS
-      - 🇯🇵 JP A HZ [两台负载][IPV6]
-      - 🇭🇰 香港Azure-SG
-      - 🇭🇰 香港Azure-SG 2
-      - 🇭🇰 香港Azure-SG 3
-      - 🇭🇰 香港Azure-SG 4
-      - 🇭🇰 香港Azure-SG 5
-      - 🇭🇰 香港2-三网优化
-      - 🇭🇰 香港3-三网优化 2
-      - 🇲🇾 马来西亚1-三网优化
-      - 🇮🇳 印度01 包月3元起
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡02
-      - 🇸🇬 新加坡03
-      - 🇯🇵 日本01
-      - 🇰🇷 韩国01
-      - 🇭🇰 香港免流01
-      - 🇭🇰 香港免流02
-      - 🇭🇰 香港免流03
-      - 🇭🇰 香港免流04
-      - 🇭🇰 香港免流05 解锁新加坡区奈飞
-      - 🇮🇩 印度尼西亚 免费节点(雅加达)● 2
-      - 🇲🇾 马来西亚1-三网优化 2
-      - 🇮🇳 孟买1|江门|NF|TK
-      - 🇸🇬 V1 | SG A1
-      - 🇷🇺 俄罗斯 S11
-      - 🇭🇰 香港Azure-SG 6
-      - 🇭🇰 香港1-三网优化 2
+      - 雷霆 - 405
+      - 旋风 - 879
+      - 1
+      - 🏳️‍🌈 银河云白嫖春川2G口带宽（流量只有500G）
+      - 旋风 - 873
+      - 🇺🇲 免费梯子https://bit.ly/3uWuS7a
+      - 🇭🇰 AZ香港-80-500G-禁ping
+      - 🇭🇰 美国 X03 | 港区 Netflix
+      - 🇸🇬 V3-IEPL专线 新加坡05 | 10x 原生IP
+      - 🇵🇭 菲律宾 VIP节点(马尼拉)● 3
+      - 🇭🇰 香港 免费节点(EC2负载均衡)★
+      - 🇦🇺 澳大利亚 免费节点(悉尼)● 3
+      - 🇭🇰 香港 广港国际以太网专线(AZ)● 2
+      - 🇦🇺 澳大利亚 免费节点(悉尼)● 2 2
+      - 🇵🇭 菲律宾 VIP节点(马尼拉)● 2 2
+      - 🇵🇭 菲律宾 免费节点(马尼拉)● 2
+      - 🇸🇬 网址www.viyun.pw 嫖完网站自寻 稳定更新 美国38 长沙联通 v2ray G口带宽 公益节点
+      - TG@安卓盒子
+      - TG@安卓盒子 2
+      - TG@安卓盒子 3
+      - TG@安卓盒子 4
+      - TG@安卓盒子 5
+      - TG@安卓盒子 6
+      - TG@安卓盒子 7
+      - TG@安卓盒子 8
+      - TG@安卓盒子 9
+      - TG@安卓盒子 10
+      - TG@安卓盒子 11
+      - TG@安卓盒子 12
+      - TG@安卓盒子 13
+      - TG@安卓盒子 14
+      - TG@安卓盒子 15
+      - TG@安卓盒子 16
+      - TG@安卓盒子 17
+      - 🇭🇰 HKT | 聊天
+      - 443端口-不限速-WS
+      - 🇭🇰 香港 01 4
+      - 🇭🇰 末晨香港
+      - 🇭🇰 末晨香港 2
+      - 🇭🇰 末晨香港 3
+      - 🇭🇰 末晨香港 4
+      - 🇭🇰 末晨香港 5
+      - 🇺🇲 末晨美国
+      - 🇯🇵 末晨日本
+      - 🇭🇰 末晨香港 6
+      - 🇭🇰 末晨香港 7
+      - 🇭🇰 末晨香港 8
+      - 🇯🇵 末晨日本 2
+      - 🇺🇲 末晨美国 2
+      - 🇭🇰 末晨香港 9
+      - 🇭🇰 末晨香港 10
+      - 🇭🇰 末晨香港 11
+      - 🇯🇵 末晨日本 3
+      - 🇭🇰 末晨香港 12
+      - 🇭🇰 末晨香港 13
+      - 🇭🇰 香港 01 5
+      - 🇭🇰 香港 01 3 2
+      - CYL-科技（2021.10.31）
+      - 🇸🇬 新加坡01 | az中转 | 1x
+      - 🇭🇰 香港02 | az中转| 1.2x
+      - 🇯🇵 日本03 | az中转 | 1.2x
+      - 🇭🇰 香港05 | IEPL | 解锁NF | 7x
+      - 🇯🇵 日本02 | az中转 | 1.2x
   - name: 🎯 国内网络
     type: select
     proxies:
