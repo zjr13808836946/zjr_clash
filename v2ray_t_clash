@@ -5,279 +5,74 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: AZ转移动03-27, server: sl201.jdxx.xyz, port: 25987, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1237:Wa2lOa, obfs-param: b00e31237.microsoft.com}
   - {name: 国内中专1-27, server: tz-yd01.jdxx.xyz, port: 35008, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 3935:RZVnik, obfs-param: 0a03d3935.microsoft.com}
-  - {name: 🇨🇳 【基礎】台湾￥遊戲01, server: 35.185.138.59, port: 6666, type: ssr, cipher: chacha20-ietf, password: kuaizai, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 65:ZffdsL, obfs-param: 42bf265.microsoft.com}
   - {name: 🇺🇲 美国 免费节点(洛杉矶)●, server: gz1.52168.xyz, port: 1109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com}
-  - {name: 🇬🇧 英国 免费节点★, server: gz2.52168.xyz, port: 2102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com}
-  - {name: 🇭🇰 香港 01, server: dg-hk-node01.linkthink.app, port: 10402, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 230850:b2i61FqJsR, obfs-param: ""}
-  - {name: 🇭🇰 香港 01 2, server: dg-hk-node01.linkthink.app, port: 10081, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 246070:2pfvHzKIct, obfs-param: ""}
-  - {name: 🇭🇰 香港免流01, server: 23.101.7.118, port: 80, type: vmess, uuid: 6df4636d-f11a-3788-bec8-2ae3c8011149, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: a.189.cn}}
-  - {name: 🇭🇰 香港免流02, server: 104.208.74.43, port: 80, type: vmess, uuid: 6df4636d-f11a-3788-bec8-2ae3c8011149, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: a.189.cn}}
-  - {name: 🇭🇰 香港免流04, server: 20.187.112.125, port: 80, type: vmess, uuid: 6df4636d-f11a-3788-bec8-2ae3c8011149, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: a.189.cn}}
-  - {name: 🇭🇰 香港免流05 解锁新加坡区奈飞, server: 20.187.113.212, port: 80, type: vmess, uuid: 6df4636d-f11a-3788-bec8-2ae3c8011149, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /zz, ws-headers: {Host: a.189.cn}}
   - {name: 🇨🇳 广州移动-Seoul-EC2-nf@vpnpool, server: 183.232.226.188, port: 63008, type: vmess, uuid: 329b6b96-5c75-3670-b3b7-eb2ad8c8667a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: t.me/vpnhat}}
   - {name: 🇨🇳 广州移动-Seoul-EC2-nf@vpnpool 2, server: 183.232.226.188, port: 63007, type: vmess, uuid: 329b6b96-5c75-3670-b3b7-eb2ad8c8667a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 🇯🇵 广州移动-JP-AWS-nf@vpnpool, server: 183.232.226.188, port: 40001, type: vmess, uuid: 329b6b96-5c75-3670-b3b7-eb2ad8c8667a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 503, server: 170.178.172.74, port: 443, type: vmess, uuid: 206d5f57-cac1-42b1-908b-d74acc41aa3b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/020724193005, ws-headers: {Host: www.12163699.xyz}}
-  - {name: 🇯🇵 日本阿伟科技-油管5, server: jpa.sttlink.xyz, port: 20189, type: vmess, uuid: ab60166b-d22d-3ae5-963f-e5867007ff08, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /ka, ws-headers: {Host: jpa.sttlink.xyz}}
-  - {name: 🇯🇵 日本阿伟科技-油管2, server: global-transit-02-sg.pucdn.me, port: 40003, type: vmess, uuid: 55699448-2208-3dc2-bfb4-ea771577a942, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-jp-03.pucdn.me}}
-  - {name: 🇯🇵 日本阿伟科技-油管2 2, server: global-transit-02-sg.pucdn.me, port: 40004, type: vmess, uuid: 55699448-2208-3dc2-bfb4-ea771577a942, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-jp-04.pucdn.me}}
-  - {name: 🇸🇬 公益 - 江门入口 - 新加坡, server: jm.mg-nb.com, port: 25079, type: trojan, password: 95e52887-f174-4e3b-b1f7-d52c6cc34d41, sni: jm.mg-nb.com, skip-cert-verify: false}
-  - {name: 🇭🇰 公益 - 广州入口 - 香港, server: gz.mg-nb.com, port: 25046, type: trojan, password: 95e52887-f174-4e3b-b1f7-d52c6cc34d41, sni: gz.mg-nb.com, skip-cert-verify: false}
   - {name: 🇺🇲 美国(Youtube技术分享室整理), server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: ray, ws-headers: {Host: us1nhg-node.aiqiche123.com}}
-  - {name: "", server: 129.146.99.5, port: 2316, type: vmess, uuid: f4994d84-d9a1-4b83-9bf7-c2c336351d5c, alterId: 71, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 公益 - 江门入口 - 台湾, server: jm.mg-nb.com, port: 25078, type: trojan, password: 95e52887-f174-4e3b-b1f7-d52c6cc34d41, sni: jm.mg-nb.com, skip-cert-verify: false}
-  - {name: 🇨🇳 39.9元高速节点购买:https://c1n.cn/gxvip, server: 37.19.199.210, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
-  - {name: 🇺🇲 美国（YouTube资源分享者）, server: 213.59.118.169, port: 443, type: vmess, uuid: f47bb3d4-37dd-44ee-a7ee-1c485a0e2b90, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /9auVq7xCL7, ws-headers: {Host: dp.5599.buzz}}
-  - {name: 🇺🇲 US_28+@WangCai_1, server: 185.124.240.146, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: 🇺🇲 US_51+@WangCai_1, server: 185.124.240.146, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
-  - {name: 🇺🇲 US_61+@WangCai_1, server: 185.124.240.146, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: 🇺🇲 US_36+@WangCai_1, server: 185.124.240.146, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
-  - {name: 🇺🇲 US_13+@WangCai_1, server: 185.124.240.146, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇺🇲 US_80+@WangCai_1, server: 185.124.240.146, port: 40711, type: ss, cipher: aes-256-gcm, password: rnngxSTJrXWKXHkvrF3npp9B}
-  - {name: 🇺🇲 US_81+@WangCai_1, server: 185.124.240.146, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
-  - {name: 🇬🇧 Relay_新加坡-英国_7292_26.20Mb, server: ukml.52jjyun.top, port: 80, type: vmess, uuid: 9b72e4cb-7888-4b36-ac2a-3d3c80c5c005, alterId: 10, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ukml.52jjyun.top}}
-  - {name: 🇮🇳 Relay_新加坡-印度_7302_36.92Mb, server: in.52jjyun.top, port: 80, type: vmess, uuid: 9b72e4cb-7888-4b36-ac2a-3d3c80c5c005, alterId: 10, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /jjyun, ws-headers: {Host: in.52jjyun.top}}
-  - {name: 🇯🇵 JP02-IEPL | 3x, server: iepl.marslink.icu, port: 35007, type: ss, cipher: chacha20-ietf-poly1305, password: dcbf79cb-82fa-46cc-aa33-750a656a9176}
-  - {name: ‌🇨🇦CA_09+@WangCai_1, server: 37.19.211.25, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: ‌🇨🇦CA_33+@WangCai_1, server: 37.19.211.75, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
-  - {name: 🇺🇲 US_57+@WangCai_1, server: 185.124.240.146, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
-  - {name: 🇹🇷 土耳其YouTube-由零开始, server: 107.150.94.12, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 🇹🇷 土耳其YouTube-由零开始 2, server: 107.150.94.12, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇳🇱 _NL_荷兰, server: 89.46.223.79, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
-  - {name: 🇳🇱 _NL_荷兰 2, server: 89.46.223.239, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: CYL-科技（2021.11.17）, server: 84.17.58.162, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: CYL-科技（2021.11.17） 2, server: 176.227.241.22, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇺🇲 美国YouTube-由零开始, server: 156.146.33.74, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
-  - {name: 🇹🇷 土耳其YouTube-由零开始 3, server: 107.150.94.14, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 🇺🇲 美国YouTube-由零开始 2, server: 156.146.33.74, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 瑞典ouTube-由零开始, server: 185.76.9.56, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
-  - {name: 🇹🇷 土耳其YouTube-由零开始 4, server: 107.150.94.14, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: 🇺🇲 美国YouTube-由零开始 3, server: 156.146.33.74, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
-  - {name: 🇺🇲 美国YouTube-由零开始 4, server: uk2.alink.qchwnd.moe, port: 10184, type: trojan, password: e0ccff28-4c8e-4936-a91e-3898037764e0, sni: uk2.alink.qchwnd.moe, skip-cert-verify: false}
-  - {name: 🇮🇳 印度YouTube-由零开始, server: infree1.tencentlink.icu, port: 11100, type: trojan, password: e0ccff28-4c8e-4936-a91e-3898037764e0, sni: infree1.tencentlink.icu, skip-cert-verify: false}
-  - {name: 🇺🇲 美国YouTube-由零开始 5, server: 66.115.182.68, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇹🇷 v2rayse_🇹🇷_TR_土耳其_8, server: 107.150.94.14, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
-  - {name: CYL-科技（2021.11.17） 3, server: 185.76.8.218, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
-  - {name: "网址: https://www.mgnb.jp", server: cmhk.sjebo.com.cn, port: 33333, type: trojan, password: 95e52887-f174-4e3b-b1f7-d52c6cc34d41, sni: cmhk.sjebo.com.cn, skip-cert-verify: false}
-  - {name: 🇯🇵 公益 - 广州入口 - 日本, server: gz.mg-nb.com, port: 25005, type: trojan, password: 95e52887-f174-4e3b-b1f7-d52c6cc34d41, sni: gz.mg-nb.com, skip-cert-verify: false}
-  - {name: 🇺🇲 US_66+@WangCai_1, server: 185.124.240.146, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
-  - {name: 🇸🇬 SG_11 @WangCai_1, server: 194.124.35.41, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG_11 @WangCai_1 2, server: 194.124.35.42, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇭🇰 HK_03+@WangCai_1, server: 118.107.244.112, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇸🇬 SG_07 @WangCai_1, server: 194.124.35.42, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG_06 @WangCai_1, server: 194.124.35.42, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG_00 @WangCai_1, server: 194.124.35.40, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG_07 @WangCai_1 2, server: 194.124.35.40, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG_10 @WangCai_1, server: 194.124.35.41, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: ‌🇨🇦CA_70+@WangCai_1, server: 37.19.211.25, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: ‌🇨🇦CA_08+@WangCai_1, server: 37.19.211.115, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇺🇲 US_49+@WangCai_1, server: 138.199.42.136, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: ‌🇨🇦CA_28+@WangCai_1, server: 37.19.211.40, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: ‌🇨🇦CA_67+@WangCai_1, server: 37.19.211.93, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
-  - {name: ‌🇨🇦CA_73+@WangCai_1, server: 37.19.211.70, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: ‌🇨🇦CA_79+@WangCai_1, server: 37.19.211.70, port: 32971, type: ss, cipher: aes-256-gcm, password: vwS65ZXyZg85ApwZ2bBh6zFZ}
-  - {name: ‌🇨🇦CA_19+@WangCai_1, server: 37.19.211.138, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: ‌🇨🇦CA_26+@WangCai_1, server: 37.19.211.108, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: ‌🇨🇦CA_26+@WangCai_1 2, server: 37.19.211.115, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: ‌🇨🇦CA_67+@WangCai_1 2, server: 37.19.211.70, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
-  - {name: ‌🇨🇦CA_46+@WangCai_1, server: 37.19.211.63, port: 45291, type: ss, cipher: aes-256-gcm, password: ecfJrNtBZwT748hxJ3ZyzZj2}
-  - {name: ‌🇨🇦CA_17+@WangCai_1, server: 37.19.211.108, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
-  - {name: ‌🇨🇦CA_18+@WangCai_1, server: 37.19.211.70, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: ‌🇨🇦CA_09+@WangCai_1 2, server: 37.19.211.70, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: ‌🇨🇦CA_32+@WangCai_1, server: 37.19.211.108, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
-  - {name: ‌🇨🇦CA_78+@WangCai_1, server: 37.19.211.85, port: 31216, type: ss, cipher: aes-256-gcm, password: wJwXatAGZ8xX5K8C7mruf84x}
-  - {name: ‌🇨🇦CA_18+@WangCai_1 2, server: 37.19.211.110, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: ‌🇨🇦CA_70+@WangCai_1 2, server: 37.19.211.108, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: ‌🇨🇦CA_36+@WangCai_1, server: 37.19.211.108, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
-  - {name: 🇺🇲 US_72+@WangCai_1, server: 138.199.42.136, port: 50181, type: ss, cipher: aes-256-gcm, password: d9adRr9UxymNSysYahMtpFpd}
-  - {name: ‌🇨🇦CA_19+@WangCai_1 2, server: 37.19.211.83, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: ‌🇨🇦CA_70+@WangCai_1 3, server: 37.19.211.85, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: ‌🇨🇦CA_28+@WangCai_1 2, server: 37.19.211.108, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: ‌🇨🇦CA_75+@WangCai_1, server: 37.19.211.70, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
-  - {name: ‌🇨🇦CA_44+@WangCai_1, server: 37.19.211.120, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: ‌🇨🇦CA_59+@WangCai_1, server: 37.19.211.93, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: ‌🇨🇦CA_09+@WangCai_1 3, server: 37.19.211.120, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: ‌🇨🇦CA_56+@WangCai_1, server: 37.19.211.50, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
-  - {name: ‌🇨🇦CA_78+@WangCai_1 2, server: 37.19.211.70, port: 31216, type: ss, cipher: aes-256-gcm, password: wJwXatAGZ8xX5K8C7mruf84x}
-  - {name: ‌🇨🇦CA_19+@WangCai_1 3, server: 37.19.211.70, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: 🇺🇲 US_81+@WangCai_1 2, server: 138.199.42.136, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
-  - {name: ‌🇨🇦CA_43+@WangCai_1, server: 37.19.211.138, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
-  - {name: ‌🇨🇦CA_33+@WangCai_1 2, server: 37.19.211.108, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
-  - {name: ‌🇨🇦CA_48+@WangCai_1, server: 37.19.211.85, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: ‌🇨🇦CA_62+@WangCai_1, server: 37.19.211.65, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: ‌🇨🇦CA_17+@WangCai_1 2, server: 37.19.211.28, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
-  - {name: ‌🇨🇦CA_31+@WangCai_1, server: 37.19.211.40, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: ‌🇨🇦CA_65+@WangCai_1, server: 37.19.211.93, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: ‌🇨🇦CA_83+@WangCai_1, server: 37.19.211.65, port: 41306, type: ss, cipher: aes-256-gcm, password: pzB5Y2twNtqFzWhEbBsPJMjj}
-  - {name: ‌🇨🇦CA_64+@WangCai_1, server: 37.19.211.93, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: ‌🇨🇦CA_24+@WangCai_1, server: 37.19.211.120, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
-  - {name: ‌🇨🇦CA_61+@WangCai_1, server: 37.19.211.113, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: ‌🇨🇦CA_78+@WangCai_1 3, server: 37.19.211.25, port: 31216, type: ss, cipher: aes-256-gcm, password: wJwXatAGZ8xX5K8C7mruf84x}
-  - {name: 🇺🇲 US_75+@WangCai_1, server: 138.199.42.136, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
-  - {name: ‌🇨🇦CA_48+@WangCai_1 2, server: 37.19.211.93, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: ‌🇨🇦CA_58+@WangCai_1, server: 37.19.211.83, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
-  - {name: ‌🇨🇦CA_82+@WangCai_1, server: 37.19.211.113, port: 39171, type: ss, cipher: aes-256-gcm, password: z4pM2gA9QEEC6NRmqTQubm6Z}
-  - {name: ‌🇨🇦CA_19+@WangCai_1 4, server: 37.19.211.65, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: ‌🇨🇦CA_01+@WangCai_1, server: 37.19.211.65, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: ‌🇨🇦CA_69+@WangCai_1, server: 37.19.211.83, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
-  - {name: ‌🇨🇦CA_08+@WangCai_1 2, server: 37.19.211.80, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: ‌🇨🇦CA_79+@WangCai_1 2, server: 37.19.211.50, port: 32971, type: ss, cipher: aes-256-gcm, password: vwS65ZXyZg85ApwZ2bBh6zFZ}
-  - {name: ‌🇨🇦CA_02+@WangCai_1, server: 37.19.211.50, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
-  - {name: ‌🇨🇦CA_23+@WangCai_1, server: 37.19.211.50, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
-  - {name: ‌🇨🇦CA_61+@WangCai_1 2, server: 37.19.211.78, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: ‌🇨🇦CA_78+@WangCai_1 4, server: 37.19.211.43, port: 31216, type: ss, cipher: aes-256-gcm, password: wJwXatAGZ8xX5K8C7mruf84x}
-  - {name: ‌🇨🇦CA_25+@WangCai_1, server: 37.19.211.28, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇩🇪 DE_01 @WangCai_1, server: 172.105.251.193, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: ‌🇨🇦CA_39+@WangCai_1, server: 37.19.211.50, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: ‌🇨🇦CA_19+@WangCai_1 5, server: 37.19.211.75, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: ‌🇨🇦CA_67+@WangCai_1 3, server: 37.19.211.110, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
-  - {name: ‌🇨🇦CA_82+@WangCai_1 2, server: 37.19.211.55, port: 39171, type: ss, cipher: aes-256-gcm, password: z4pM2gA9QEEC6NRmqTQubm6Z}
-  - {name: ‌🇨🇦CA_58+@WangCai_1 2, server: 37.19.211.93, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
-  - {name: ‌🇨🇦CA_36+@WangCai_1 2, server: 37.19.211.63, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
-  - {name: ‌🇨🇦CA_72+@WangCai_1, server: 37.19.211.85, port: 50181, type: ss, cipher: aes-256-gcm, password: d9adRr9UxymNSysYahMtpFpd}
-  - {name: ‌🇨🇦CA_08+@WangCai_1 3, server: 37.19.211.85, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: ‌🇨🇦CA_31+@WangCai_1 2, server: 37.19.211.83, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: ‌🇨🇦CA_83+@WangCai_1 2, server: 37.19.211.120, port: 41306, type: ss, cipher: aes-256-gcm, password: pzB5Y2twNtqFzWhEbBsPJMjj}
-  - {name: 🇺🇲 US_67+@WangCai_1, server: 138.199.42.136, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
-  - {name: ‌🇨🇦CA_48+@WangCai_1 3, server: 37.19.211.138, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: ‌🇨🇦CA_31+@WangCai_1 3, server: 37.19.211.88, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: ‌🇨🇦CA_16+@WangCai_1, server: 37.19.211.108, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: ‌🇨🇦CA_06+@WangCai_1, server: 37.19.211.80, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
-  - {name: 🇺🇲 US_64+@WangCai_1, server: 138.199.42.136, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: ‌🇨🇦CA_20+@WangCai_1, server: 37.19.211.110, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: ‌🇨🇦CA_28+@WangCai_1 3, server: 37.19.211.138, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: ‌🇨🇦CA_59+@WangCai_1 2, server: 37.19.211.50, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: ‌🇨🇦CA_28+@WangCai_1 4, server: 37.19.211.28, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: ‌🇨🇦CA_13+@WangCai_1, server: 37.19.211.28, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: ‌🇨🇦CA_08+@WangCai_1 4, server: 37.19.211.28, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: ‌🇨🇦CA_69+@WangCai_1 2, server: 37.19.211.110, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
-  - {name: 🇩🇪 DE_05 @WangCai_1, server: 172.105.251.193, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: ‌🇨🇦CA_61+@WangCai_1 3, server: 37.19.211.63, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: ‌🇨🇦CA_34+@WangCai_1, server: 37.19.211.63, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
-  - {name: ‌🇨🇦CA_48+@WangCai_1 4, server: 37.19.211.75, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: ‌🇨🇦CA_12+@WangCai_1, server: 37.19.211.40, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
-  - {name: ‌🇨🇦CA_13+@WangCai_1 2, server: 37.19.211.113, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: ‌🇨🇦CA_47+@WangCai_1, server: 37.19.211.120, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: ‌🇨🇦CA_18+@WangCai_1 3, server: 37.19.211.40, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: ‌🇨🇦CA_47+@WangCai_1 2, server: 37.19.211.55, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: ‌🇨🇦CA_41+@WangCai_1, server: 37.19.211.55, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
-  - {name: ‌🇨🇦CA_42+@WangCai_1, server: 37.19.211.80, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
-  - {name: ‌🇨🇦CA_69+@WangCai_1 3, server: 37.19.211.75, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
-  - {name: ‌🇨🇦CA_11+@WangCai_1, server: 37.19.211.113, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: ‌🇨🇦CA_30+@WangCai_1, server: 37.19.211.75, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: ‌🇨🇦CA_12+@WangCai_1 2, server: 37.19.211.65, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
-  - {name: ‌🇨🇦CA_81+@WangCai_1, server: 37.19.211.70, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
-  - {name: ‌🇨🇦CA_51+@WangCai_1, server: 37.19.211.55, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
-  - {name: ‌🇨🇦CA_45+@WangCai_1, server: 37.19.211.55, port: 44945, type: ss, cipher: aes-256-gcm, password: F5bKkb9ggkLx4JbQrbLn7LjZ}
-  - {name: ‌🇨🇦CA_67+@WangCai_1 4, server: 37.19.211.43, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
-  - {name: ‌🇨🇦CA_38+@WangCai_1, server: 37.19.211.80, port: 43963, type: ss, cipher: aes-256-gcm, password: Tuw6zzZM6JwWNZyYF9ckC4JZ}
-  - {name: ‌🇨🇦CA_49+@WangCai_1, server: 37.19.211.43, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: ‌🇨🇦CA_46+@WangCai_1 2, server: 37.19.211.60, port: 45291, type: ss, cipher: aes-256-gcm, password: ecfJrNtBZwT748hxJ3ZyzZj2}
-  - {name: ‌🇨🇦CA_24+@WangCai_1 2, server: 37.19.211.75, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
-  - {name: ‌🇨🇦CA_10+@WangCai_1, server: 37.19.211.120, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
-  - {name: ‌🇨🇦CA_11+@WangCai_1 2, server: 37.19.211.65, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: ‌🇨🇦CA_38+@WangCai_1 2, server: 37.19.211.25, port: 43963, type: ss, cipher: aes-256-gcm, password: Tuw6zzZM6JwWNZyYF9ckC4JZ}
-  - {name: ‌🇨🇦CA_76+@WangCai_1, server: 37.19.211.43, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
-  - {name: ‌🇨🇦CA_61+@WangCai_1 4, server: 37.19.211.110, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: ‌🇨🇦CA_15+@WangCai_1, server: 37.19.211.25, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
-  - {name: ‌🇨🇦CA_65+@WangCai_1 2, server: 37.19.211.63, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: ‌🇨🇦CA_49+@WangCai_1 2, server: 37.19.211.93, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: ‌🇨🇦CA_17+@WangCai_1 3, server: 37.19.211.115, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
-  - {name: ‌🇨🇦CA_31+@WangCai_1 4, server: 37.19.211.115, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: ‌🇨🇦CA_29+@WangCai_1, server: 37.19.211.50, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
-  - {name: ‌🇨🇦CA_49+@WangCai_1 3, server: 37.19.211.120, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: ‌🇨🇦CA_26+@WangCai_1 3, server: 37.19.211.80, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: ‌🇨🇦CA_14+@WangCai_1, server: 37.19.211.25, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
-  - {name: ‌🇨🇦CA_62+@WangCai_1 2, server: 37.19.211.85, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: ‌🇨🇦CA_25+@WangCai_1 2, server: 37.19.211.60, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: ‌🇨🇦CA_27+@WangCai_1, server: 37.19.211.138, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: ‌🇨🇦CA_06+@WangCai_1 2, server: 37.19.211.88, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
-  - {name: ‌🇨🇦CA_25+@WangCai_1 3, server: 37.19.211.138, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: ‌🇨🇦CA_63+@WangCai_1, server: 37.19.211.43, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
-  - {name: ‌🇨🇦CA_48+@WangCai_1 5, server: 37.19.211.83, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: ‌🇨🇦CA_80+@WangCai_1, server: 37.19.211.88, port: 40711, type: ss, cipher: aes-256-gcm, password: rnngxSTJrXWKXHkvrF3npp9B}
-  - {name: ‌🇨🇦CA_64+@WangCai_1 2, server: 37.19.211.43, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: ‌🇨🇦CA_65+@WangCai_1 3, server: 37.19.211.60, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: ‌🇨🇦CA_73+@WangCai_1 2, server: 37.19.211.88, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: ‌🇨🇦CA_17+@WangCai_1 4, server: 37.19.211.40, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
-  - {name: ‌🇨🇦CA_24+@WangCai_1 3, server: 37.19.211.60, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
-  - {name: ‌🇨🇦CA_58+@WangCai_1 3, server: 37.19.211.78, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
-  - {name: ‌🇨🇦CA_27+@WangCai_1 2, server: 37.19.211.110, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: 🇺🇲 US_82+@WangCai_1, server: 185.124.240.146, port: 39171, type: ss, cipher: aes-256-gcm, password: z4pM2gA9QEEC6NRmqTQubm6Z}
-  - {name: ‌🇨🇦CA_14+@WangCai_1 2, server: 37.19.211.113, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
-  - {name: ‌🇨🇦CA_34+@WangCai_1 2, server: 37.19.211.93, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
-  - {name: ‌🇨🇦CA_68+@WangCai_1, server: 37.19.211.75, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: ‌🇨🇦CA_68+@WangCai_1 2, server: 37.19.211.138, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: ‌🇨🇦CA_18+@WangCai_1 4, server: 37.19.211.138, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: ‌🇨🇦CA_64+@WangCai_1 3, server: 37.19.211.60, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: ‌🇨🇦CA_07+@WangCai_1, server: 37.19.211.75, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: ‌🇨🇦CA_81+@WangCai_1 2, server: 37.19.211.80, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
-  - {name: ‌🇨🇦CA_11+@WangCai_1 3, server: 37.19.211.50, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: ‌🇨🇦CA_57+@WangCai_1, server: 37.19.211.83, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
-  - {name: ‌🇨🇦CA_13+@WangCai_1 3, server: 37.19.211.80, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: ‌🇨🇦CA_47+@WangCai_1 3, server: 37.19.211.85, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: ‌🇨🇦CA_44+@WangCai_1 2, server: 37.19.211.60, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: 🇺🇲 US_44+@WangCai_1, server: 185.124.240.146, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: 🇺🇲 US_39+@WangCai_1, server: 185.124.240.146, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: ‌🇨🇦CA_48+@WangCai_1 6, server: 37.19.211.113, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: ‌🇨🇦CA_31+@WangCai_1 5, server: 37.19.211.113, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: ‌🇨🇦CA_81+@WangCai_1 3, server: 37.19.211.120, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
-  - {name: ‌🇨🇦CA_53+@WangCai_1, server: 37.19.211.78, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
-  - {name: ‌🇨🇦CA_36+@WangCai_1 3, server: 37.19.211.85, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
-  - {name: ‌🇨🇦CA_78+@WangCai_1 5, server: 37.19.211.113, port: 31216, type: ss, cipher: aes-256-gcm, password: wJwXatAGZ8xX5K8C7mruf84x}
-  - {name: ‌🇨🇦CA_32+@WangCai_1 2, server: 37.19.211.63, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
-  - {name: ‌🇨🇦CA_49+@WangCai_1 4, server: 37.19.211.60, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: ‌🇨🇦CA_51+@WangCai_1 2, server: 37.19.211.138, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
-  - {name: ‌🇨🇦CA_30+@WangCai_1 2, server: 37.19.211.110, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: ‌🇨🇦CA_61+@WangCai_1 5, server: 37.19.211.83, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: 🇺🇲 US_30+@WangCai_1, server: 185.124.240.146, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: ‌🇨🇦CA_26+@WangCai_1 4, server: 37.19.211.88, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: ‌🇨🇦CA_76+@WangCai_1 2, server: 37.19.211.28, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
-  - {name: ‌🇨🇦CA_24+@WangCai_1 4, server: 37.19.211.28, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
-  - {name: ‌🇨🇦CA_56+@WangCai_1 2, server: 37.19.211.110, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
-  - {name: ‌🇨🇦CA_41+@WangCai_1 2, server: 37.19.211.85, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
-  - {name: ‌🇨🇦CA_59+@WangCai_1 3, server: 37.19.211.78, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: 🇺🇲 US_35+@WangCai_1, server: 185.124.240.146, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
-  - {name: 🇺🇲 US_08+@WangCai_1, server: 185.124.240.146, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇺🇲 US_62+@WangCai_1, server: 185.124.240.146, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: ‌🇨🇦CA_57+@WangCai_1 2, server: 37.19.211.78, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
-  - {name: ‌🇨🇦CA_06+@WangCai_1 3, server: 37.19.211.78, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
-  - {name: 🇺🇲 US_59+@WangCai_1, server: 185.124.240.146, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: ‌🇨🇦CA_34+@WangCai_1 3, server: 37.19.211.78, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
-  - {name: 🇺🇲 US_49+@WangCai_1 2, server: 185.124.240.146, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: 🇺🇲 US_73+@WangCai_1, server: 185.124.240.146, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇺🇲 US_03+@WangCai_1, server: 185.124.240.146, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇺🇲 US_31+@WangCai_1, server: 185.124.240.146, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: 🇺🇲 US_06+@WangCai_1, server: 185.124.240.146, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
-  - {name: 🇺🇲 US_46+@WangCai_1, server: 185.124.240.146, port: 45291, type: ss, cipher: aes-256-gcm, password: ecfJrNtBZwT748hxJ3ZyzZj2}
-  - {name: ‌🇨🇦CA_36+@WangCai_1 4, server: 37.19.211.78, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
-  - {name: ‌🇨🇦CA_60+@WangCai_1, server: 37.19.211.78, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇺🇲 US_45+@WangCai_1, server: 185.124.240.146, port: 44945, type: ss, cipher: aes-256-gcm, password: F5bKkb9ggkLx4JbQrbLn7LjZ}
-  - {name: 🇺🇲 US_32+@WangCai_1, server: 185.124.240.146, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
-  - {name: 🇺🇲 US_05+@WangCai_1, server: 185.124.240.146, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
-  - {name: 🇺🇲 US_64+@WangCai_1 2, server: 185.124.240.146, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇺🇲 US_70+@WangCai_1, server: 185.124.240.146, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: 🇺🇲 US_78+@WangCai_1, server: 185.124.240.146, port: 31216, type: ss, cipher: aes-256-gcm, password: wJwXatAGZ8xX5K8C7mruf84x}
-  - {name: 🇺🇲 US_17+@WangCai_1, server: 185.124.240.146, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
-  - {name: 🇺🇲 US_50+@WangCai_1, server: 185.124.240.146, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
-  - {name: 🇺🇲 US_02+@WangCai_1, server: 185.124.240.146, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
-  - {name: 🇺🇲 US_12+@WangCai_1, server: 185.124.240.146, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
-  - {name: 🇺🇲 US_40+@WangCai_1, server: 185.124.240.146, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: 🇺🇲 US_34+@WangCai_1, server: 185.124.240.146, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
-  - {name: 🇺🇲 US_27+@WangCai_1, server: 185.124.240.146, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: 🇺🇲 US_29+@WangCai_1, server: 185.124.240.146, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
-  - {name: 搬运工2, server: 923my.fans8.xyz, port: 80, type: vmess, uuid: 5d71207f-1f21-32f1-9035-0f014d4a133c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 923my.fans8.xyz}}
-  - {name: 搬运工4, server: 1030tw.fans8.xyz, port: 80, type: vmess, uuid: 5d71207f-1f21-32f1-9035-0f014d4a133c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 1030tw.fans8.xyz}}
-  - {name: 搬运工6, server: 1023sg.fans8.xyz, port: 80, type: vmess, uuid: 5d71207f-1f21-32f1-9035-0f014d4a133c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 1023sg.fans8.xyz}}
-  - {name: 搬运工9, server: 1104jp.fans8.xyz, port: 80, type: vmess, uuid: 5d71207f-1f21-32f1-9035-0f014d4a133c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 1104jp.fans8.xyz}}
-  - {name: 搬运工10, server: 715hk.fans8.xyz, port: 80, type: vmess, uuid: 5d71207f-1f21-32f1-9035-0f014d4a133c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 715hk.fans8.xyz}}
-  - {name: 搬运工11, server: 930tg.fans8.xyz, port: 80, type: vmess, uuid: 5d71207f-1f21-32f1-9035-0f014d4a133c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 930tg.fans8.xyz}}
-  - {name: 搬运工12, server: 909hk1.fans8.xyz, port: 80, type: vmess, uuid: 5d71207f-1f21-32f1-9035-0f014d4a133c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 909hk1.fans8.xyz}}
-  - {name: 🇺🇲 76美国 TG@freekankan, server: 185.124.240.146, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇺🇲 80美国, server: 185.124.240.146, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: 🇺🇲 81美国, server: 185.124.240.146, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇸🇬 vip1丨新加坡10丨v2ray丨江门隧道丨800mbps_3, server: jm.01.nkeo.top, port: 45063, type: vmess, uuid: 6c97c3da-8945-3083-b7b7-e497b5a493f3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: jm.01.nkeo.top}}
+  - {name: 🇭🇰 vip1丨新加坡11丨v2ray丨杭港隧道_4, server: hz.cu.nkeo.top, port: 45200, type: vmess, uuid: 6c97c3da-8945-3083-b7b7-e497b5a493f3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: hz.cu.nkeo.top}}
+  - {name: 🇭🇰 vip1丨新加坡12丨v2ray丨杭港隧道_5, server: hz.cu.nkeo.top, port: 45209, type: vmess, uuid: 6c97c3da-8945-3083-b7b7-e497b5a493f3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: hz.cu.nkeo.top}}
+  - {name: 🇸🇬 vip1丨新加坡7丨v2ray丨江门隧道丨800mbps_6, server: jm.01.nkeo.top, port: 45027, type: vmess, uuid: 6c97c3da-8945-3083-b7b7-e497b5a493f3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: jm.01.nkeo.top}}
+  - {name: 🇸🇬 vip1丨新加坡8丨v2ray丨江门隧道丨800mbps_7, server: jm.01.nkeo.top, port: 45007, type: vmess, uuid: 6c97c3da-8945-3083-b7b7-e497b5a493f3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: jm.01.nkeo.top}}
+  - {name: 🇸🇬 vip1丨新加坡9丨v2ray丨江门隧道丨800mbps_8, server: jm.01.nkeo.top, port: 45034, type: vmess, uuid: 6c97c3da-8945-3083-b7b7-e497b5a493f3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: jm.01.nkeo.top}}
+  - {name: 🇭🇰 vip1丨香港17--v2ray--国内中转_19, server: az.wokuaitule.xyz, port: 17717, type: vmess, uuid: 6c97c3da-8945-3083-b7b7-e497b5a493f3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: az.wokuaitule.xyz}}
+  - {name: "网址: https://t.me/vpnhat", server: cmhk.sjebo.com.cn, port: 33333, type: trojan, password: 95e52887-f174-4e3b-b1f7-d52c6cc34d41, sni: cmhk.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "网址: https://t.me/vpnhat 2", server: cmhk.sjebo.com.cn, port: 33333, type: trojan, password: 1e3bf44e-9d71-459d-874a-72c4c1c54803, sni: cmhk.sjebo.com.cn, skip-cert-verify: false}
+  - {name: 🇭🇰 公益-vpnhat-香港, server: jm.mg-nb.com, port: 25077, type: trojan, password: 1e3bf44e-9d71-459d-874a-72c4c1c54803, sni: jm.mg-nb.com, skip-cert-verify: false}
+  - {name: 🇸🇬 公益-vpnhat-新加坡, server: jm.mg-nb.com, port: 25079, type: trojan, password: 1e3bf44e-9d71-459d-874a-72c4c1c54803, sni: jm.mg-nb.com, skip-cert-verify: false}
+  - {name: 🇭🇰 公益-vpnhat-香港 2, server: gz.mg-nb.com, port: 25046, type: trojan, password: 1e3bf44e-9d71-459d-874a-72c4c1c54803, sni: gz.mg-nb.com, skip-cert-verify: false}
+  - {name: 🇯🇵 公益-vpnhat-日本, server: gz.mg-nb.com, port: 25005, type: trojan, password: 1e3bf44e-9d71-459d-874a-72c4c1c54803, sni: gz.mg-nb.com, skip-cert-verify: false}
+  - {name: 🇨🇳 公益-vpnhat-台湾, server: gz.mg-nb.com, port: 25047, type: trojan, password: 1e3bf44e-9d71-459d-874a-72c4c1c54803, sni: gz.mg-nb.com, skip-cert-verify: false}
+  - {name: 🇸🇬 公益-vpnhat-新加坡 2, server: gz.mg-nb.com, port: 25049, type: trojan, password: 1e3bf44e-9d71-459d-874a-72c4c1c54803, sni: gz.mg-nb.com, skip-cert-verify: false}
+  - {name: "🇭🇰 [Lv.1] 香港A | 中转 | CDN", server: v1.369855.xyz, port: 11443, type: vmess, uuid: 576e6f18-0b8f-4bf1-83e4-3d9a6e6cd9ae, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/shop, ws-headers: {Host: hkv2-1.ddns.tjiasu.xyz}}
+  - {name: "🇸🇬 [Lv.1] 新加坡A | 直连", server: v1.369855.xyz, port: 11443, type: vmess, uuid: 576e6f18-0b8f-4bf1-83e4-3d9a6e6cd9ae, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/sg, ws-headers: {Host: sgav2.ddns.tjiasu.xyz}}
+  - {name: "🇸🇬 [Lv.1] 新加坡B | 中转", server: v1.369855.xyz, port: 11443, type: vmess, uuid: 576e6f18-0b8f-4bf1-83e4-3d9a6e6cd9ae, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /api/pianist, ws-headers: {Host: pianist.ddns.tjiasu.xyz}}
+  - {name: 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D06, server: hkt06.clashcloud.tech, port: 59866, type: ssr, cipher: rc4-md5, password: lenw4ae9js, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D07, server: hkt07.clashcloud.tech, port: 59866, type: ssr, cipher: rc4-md5, password: lenw4ae9js, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 中国-台湾宜兰 IPLC D10, server: tw10.clashcloud.tech, port: 59866, type: ssr, cipher: rc4-md5, password: lenw4ae9js, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps, server: hr01.clashcloud.tech, port: 59866, type: ssr, cipher: rc4-md5, password: lenw4ae9js, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps, server: hr10.clashcloud.tech, port: 59866, type: ssr, cipher: rc4-md5, password: lenw4ae9js, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D11 1000Mbps, server: hr11.clashcloud.tech, port: 59866, type: ssr, cipher: rc4-md5, password: lenw4ae9js, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps, server: hr12.clashcloud.tech, port: 59866, type: ssr, cipher: rc4-md5, password: lenw4ae9js, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps, server: hr03.clashcloud.tech, port: 59866, type: ssr, cipher: rc4-md5, password: lenw4ae9js, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps, server: hr04.clashcloud.tech, port: 59866, type: ssr, cipher: rc4-md5, password: lenw4ae9js, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps, server: hr05.clashcloud.tech, port: 59866, type: ssr, cipher: rc4-md5, password: lenw4ae9js, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D6 1000Mbps, server: hr06.clashcloud.tech, port: 59866, type: ssr, cipher: rc4-md5, password: lenw4ae9js, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps, server: hr07.clashcloud.tech, port: 59866, type: ssr, cipher: rc4-md5, password: lenw4ae9js, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 台湾丨公益节点丨1 _2, server: 34.81.88.200, port: 33344, type: vmess, uuid: 21c34329-3da6-3d37-965d-a1d3662f5237, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 34.81.88.200}}
+  - {name: 🇸🇬 新加坡丨高速中转丨1_3, server: zz.keaitz.xyz, port: 36611, type: vmess, uuid: 21c34329-3da6-3d37-965d-a1d3662f5237, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: "🇭🇰 香港丨专属节点丨1\t_18", server: sz.91sir.cn, port: 45643, type: vmess, uuid: 21c34329-3da6-3d37-965d-a1d3662f5237, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇭🇰 香港丨流媒体解锁丨1_21, server: zz.keaitz.xyz, port: 36615, type: vmess, uuid: 21c34329-3da6-3d37-965d-a1d3662f5237, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇭🇰 香港丨流媒体解锁丨2_22, server: zz.keaitz.xyz, port: 36616, type: vmess, uuid: 21c34329-3da6-3d37-965d-a1d3662f5237, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇭🇰 香港丨流媒体解锁丨3_23, server: zz.keaitz.xyz, port: 36617, type: vmess, uuid: 21c34329-3da6-3d37-965d-a1d3662f5237, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
+  - {name: YouTube-由零开始, server: gy.b2.nkeo.top, port: 45122, type: trojan, password: 1079739e-fa18-437f-b818-1f3a04fd9911, sni: gy.b2.nkeo.top, skip-cert-verify: false}
+  - {name: 🇯🇵 日本 まつやまし auひかり ホーム1ギガ D 07, server: jp07.clashcloud.tech, port: 59866, type: ssr, cipher: rc4-md5, password: lenw4ae9js, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com}
+  - {name: 「🇺🇸」菠萝蜜, server: hk.huanyumingle.xyz, port: 10020, type: ss, cipher: chacha20-ietf-poly1305, password: 60a6bf3c-f656-441b-a48b-a57731af9fd6}
+  - {name: 「🇯🇵」大宝剑「中转」✰, server: yt.shenseven.xyz, port: 39443, type: ss, cipher: chacha20-ietf-poly1305, password: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9}
+  - {name: 「🇸🇬」虚神甲「中转」✰, server: mp.shenseven.xyz, port: 47443, type: ss, cipher: chacha20-ietf-poly1305, password: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9}
+  - {name: 🇨🇳 「🇸🇬」神之魂「解锁」★★, server: yh.shenseven.xyz, port: 11773, type: ss, cipher: chacha20-ietf-poly1305, password: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9}
+  - {name: 「🇸🇬」指天剑「中转」★★, server: aga.shenseven.xyz, port: 10029, type: ss, cipher: chacha20-ietf-poly1305, password: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9}
+  - {name: 「🇸🇬」含沙剑「中转」★, server: yt.shenseven.xyz, port: 49443, type: ss, cipher: chacha20-ietf-poly1305, password: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9}
+  - {name: 「🇸🇬」太苍枪「中转」★★★, server: yt.shenseven.xyz, port: 38443, type: trojan, password: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9, sni: yt.shenseven.xyz, skip-cert-verify: false}
+  - {name: 「🇮🇳」炼妖壶「中转」★, server: fs.shenseven.xyz, port: 56443, type: trojan, password: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9, sni: fs.shenseven.xyz, skip-cert-verify: false}
+  - {name: 「🇯🇵」复活甲「中转」★, server: up.shenseven.xyz, port: 31443, type: trojan, password: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9, sni: up.shenseven.xyz, skip-cert-verify: false}
+  - {name: 「🇸🇬」观音泪「中转」★, server: mf.shenseven.xyz, port: 44124, type: trojan, password: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9, sni: mf.shenseven.xyz, skip-cert-verify: false}
+  - {name: 「🇸🇬」圣之杯「中转」★★, server: fs.shenseven.xyz, port: 36443, type: trojan, password: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9, sni: fs.shenseven.xyz, skip-cert-verify: false}
+  - {name: 「🇸🇬」神之手「中转」★★, server: up.shenseven.xyz, port: 44443, type: trojan, password: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9, sni: up.shenseven.xyz, skip-cert-verify: false}
+  - {name: 「🇰🇷」轩辕剑「中转」★, server: mp.shenseven.xyz, port: 49443, type: vmess, uuid: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /shensevenyyds, ws-headers: {Host: mp.shenseven.xyz}}
+  - {name: 「🇬🇧」昊天锤「中转」★★, server: yh.shenseven.xyz, port: 46443, type: vmess, uuid: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 「🇭🇰」超神器「免流」★★★, server: fk.shenseven.xyz, port: 8080, type: vmess, uuid: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: gd.189.cn}}
+  - {name: 「🇭🇰」尊神刀「免流」✰, server: qv18.shenseven.xyz, port: 8080, type: vmess, uuid: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /JJkuv3, ws-headers: {Host: a.189.cn}}
+  - {name: 「🇭🇰」神之器「免流」✰, server: qv20.shenseven.xyz, port: 80, type: vmess, uuid: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 「🇭🇰」神之刃「免流」✰, server: qv21.shenseven.xyz, port: 80, type: vmess, uuid: 437b10ea-9263-4c9d-8cf1-a8fc4755bcd9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: shoutingtoutiao1.10010.com}}
+  - {name: 🇯🇵 日本 NO.3|软银线路|联通优化|3x, server: us4gia.zhqsm.734.icu, port: 20443, type: trojan, password: f2961c0c-0f76-330a-b8ec-1a3429624389, sni: us4gia.zhqsm.734.icu, skip-cert-verify: false}
+  - {name: 🇯🇵 日本 NO.4|llj节点|移动优化||2x|, server: rb2.llj.734.icu, port: 10443, type: trojan, password: f2961c0c-0f76-330a-b8ec-1a3429624389, sni: rb2.llj.734.icu, skip-cert-verify: false}
+  - {name: 🇺🇲 美国 NO.13 CN2 GIA |三网直连|2x, server: gia13.zhqsm.734.icu, port: 443, type: trojan, password: f2961c0c-0f76-330a-b8ec-1a3429624389, sni: gia13.zhqsm.734.icu, skip-cert-verify: false}
+  - {name: 🇺🇲 美国 NO.14 CN2 GIA |三网直连|2x, server: ion3.734.icu, port: 10443, type: trojan, password: f2961c0c-0f76-330a-b8ec-1a3429624389, sni: ion3.734.icu, skip-cert-verify: false}
+  - {name: 🇺🇲 美国 NO.15 CN2 GIA |Netflix|HBO|Hulu|2x, server: ion3.734.icu, port: 11443, type: trojan, password: f2961c0c-0f76-330a-b8ec-1a3429624389, sni: ion3.734.icu, skip-cert-verify: false}
+  - {name: AZ转移动03-27, server: sl201.jdxx.xyz, port: 25987, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1237:Wa2lOa, obfs-param: b00e31237.microsoft.com}
+  - {name: 華人社區_2, server: zz.keaitz.xyz, port: 46517, type: vmess, uuid: d0d6545b-2f46-314c-8c38-070553b1e091, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: zz.keaitz.xyz}}
 proxy-groups:
   - name: 🚀 全局设置
     type: select
@@ -295,557 +90,147 @@ proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
-      - AZ转移动03-27
       - 国内中专1-27
-      - 🇨🇳 【基礎】台湾￥遊戲01
       - 🇺🇲 美国 免费节点(洛杉矶)●
-      - 🇬🇧 英国 免费节点★
-      - 🇭🇰 香港 01
-      - 🇭🇰 香港 01 2
-      - 🇭🇰 香港免流01
-      - 🇭🇰 香港免流02
-      - 🇭🇰 香港免流04
-      - 🇭🇰 香港免流05 解锁新加坡区奈飞
       - 🇨🇳 广州移动-Seoul-EC2-nf@vpnpool
       - 🇨🇳 广州移动-Seoul-EC2-nf@vpnpool 2
-      - 🇯🇵 广州移动-JP-AWS-nf@vpnpool
-      - 503
-      - 🇯🇵 日本阿伟科技-油管5
-      - 🇯🇵 日本阿伟科技-油管2
-      - 🇯🇵 日本阿伟科技-油管2 2
-      - 🇸🇬 公益 - 江门入口 - 新加坡
-      - 🇭🇰 公益 - 广州入口 - 香港
       - 🇺🇲 美国(Youtube技术分享室整理)
-      - ""
-      - 🇨🇳 公益 - 江门入口 - 台湾
-      - 🇨🇳 39.9元高速节点购买:https://c1n.cn/gxvip
-      - 🇺🇲 美国（YouTube资源分享者）
-      - 🇺🇲 US_28+@WangCai_1
-      - 🇺🇲 US_51+@WangCai_1
-      - 🇺🇲 US_61+@WangCai_1
-      - 🇺🇲 US_36+@WangCai_1
-      - 🇺🇲 US_13+@WangCai_1
-      - 🇺🇲 US_80+@WangCai_1
-      - 🇺🇲 US_81+@WangCai_1
-      - 🇬🇧 Relay_新加坡-英国_7292_26.20Mb
-      - 🇮🇳 Relay_新加坡-印度_7302_36.92Mb
-      - 🇯🇵 JP02-IEPL | 3x
-      - ‌🇨🇦CA_09+@WangCai_1
-      - ‌🇨🇦CA_33+@WangCai_1
-      - 🇺🇲 US_57+@WangCai_1
-      - 🇹🇷 土耳其YouTube-由零开始
-      - 🇹🇷 土耳其YouTube-由零开始 2
-      - 🇳🇱 _NL_荷兰
-      - 🇳🇱 _NL_荷兰 2
-      - CYL-科技（2021.11.17）
-      - CYL-科技（2021.11.17） 2
-      - 🇺🇲 美国YouTube-由零开始
-      - 🇹🇷 土耳其YouTube-由零开始 3
-      - 🇺🇲 美国YouTube-由零开始 2
-      - 瑞典ouTube-由零开始
-      - 🇹🇷 土耳其YouTube-由零开始 4
-      - 🇺🇲 美国YouTube-由零开始 3
-      - 🇺🇲 美国YouTube-由零开始 4
-      - 🇮🇳 印度YouTube-由零开始
-      - 🇺🇲 美国YouTube-由零开始 5
-      - 🇹🇷 v2rayse_🇹🇷_TR_土耳其_8
-      - CYL-科技（2021.11.17） 3
-      - "网址: https://www.mgnb.jp"
-      - 🇯🇵 公益 - 广州入口 - 日本
-      - 🇺🇲 US_66+@WangCai_1
-      - 🇸🇬 SG_11 @WangCai_1
-      - 🇸🇬 SG_11 @WangCai_1 2
-      - 🇭🇰 HK_03+@WangCai_1
-      - 🇸🇬 SG_07 @WangCai_1
-      - 🇸🇬 SG_06 @WangCai_1
-      - 🇸🇬 SG_00 @WangCai_1
-      - 🇸🇬 SG_07 @WangCai_1 2
-      - 🇸🇬 SG_10 @WangCai_1
-      - ‌🇨🇦CA_70+@WangCai_1
-      - ‌🇨🇦CA_08+@WangCai_1
-      - 🇺🇲 US_49+@WangCai_1
-      - ‌🇨🇦CA_28+@WangCai_1
-      - ‌🇨🇦CA_67+@WangCai_1
-      - ‌🇨🇦CA_73+@WangCai_1
-      - ‌🇨🇦CA_79+@WangCai_1
-      - ‌🇨🇦CA_19+@WangCai_1
-      - ‌🇨🇦CA_26+@WangCai_1
-      - ‌🇨🇦CA_26+@WangCai_1 2
-      - ‌🇨🇦CA_67+@WangCai_1 2
-      - ‌🇨🇦CA_46+@WangCai_1
-      - ‌🇨🇦CA_17+@WangCai_1
-      - ‌🇨🇦CA_18+@WangCai_1
-      - ‌🇨🇦CA_09+@WangCai_1 2
-      - ‌🇨🇦CA_32+@WangCai_1
-      - ‌🇨🇦CA_78+@WangCai_1
-      - ‌🇨🇦CA_18+@WangCai_1 2
-      - ‌🇨🇦CA_70+@WangCai_1 2
-      - ‌🇨🇦CA_36+@WangCai_1
-      - 🇺🇲 US_72+@WangCai_1
-      - ‌🇨🇦CA_19+@WangCai_1 2
-      - ‌🇨🇦CA_70+@WangCai_1 3
-      - ‌🇨🇦CA_28+@WangCai_1 2
-      - ‌🇨🇦CA_75+@WangCai_1
-      - ‌🇨🇦CA_44+@WangCai_1
-      - ‌🇨🇦CA_59+@WangCai_1
-      - ‌🇨🇦CA_09+@WangCai_1 3
-      - ‌🇨🇦CA_56+@WangCai_1
-      - ‌🇨🇦CA_78+@WangCai_1 2
-      - ‌🇨🇦CA_19+@WangCai_1 3
-      - 🇺🇲 US_81+@WangCai_1 2
-      - ‌🇨🇦CA_43+@WangCai_1
-      - ‌🇨🇦CA_33+@WangCai_1 2
-      - ‌🇨🇦CA_48+@WangCai_1
-      - ‌🇨🇦CA_62+@WangCai_1
-      - ‌🇨🇦CA_17+@WangCai_1 2
-      - ‌🇨🇦CA_31+@WangCai_1
-      - ‌🇨🇦CA_65+@WangCai_1
-      - ‌🇨🇦CA_83+@WangCai_1
-      - ‌🇨🇦CA_64+@WangCai_1
-      - ‌🇨🇦CA_24+@WangCai_1
-      - ‌🇨🇦CA_61+@WangCai_1
-      - ‌🇨🇦CA_78+@WangCai_1 3
-      - 🇺🇲 US_75+@WangCai_1
-      - ‌🇨🇦CA_48+@WangCai_1 2
-      - ‌🇨🇦CA_58+@WangCai_1
-      - ‌🇨🇦CA_82+@WangCai_1
-      - ‌🇨🇦CA_19+@WangCai_1 4
-      - ‌🇨🇦CA_01+@WangCai_1
-      - ‌🇨🇦CA_69+@WangCai_1
-      - ‌🇨🇦CA_08+@WangCai_1 2
-      - ‌🇨🇦CA_79+@WangCai_1 2
-      - ‌🇨🇦CA_02+@WangCai_1
-      - ‌🇨🇦CA_23+@WangCai_1
-      - ‌🇨🇦CA_61+@WangCai_1 2
-      - ‌🇨🇦CA_78+@WangCai_1 4
-      - ‌🇨🇦CA_25+@WangCai_1
-      - 🇩🇪 DE_01 @WangCai_1
-      - ‌🇨🇦CA_39+@WangCai_1
-      - ‌🇨🇦CA_19+@WangCai_1 5
-      - ‌🇨🇦CA_67+@WangCai_1 3
-      - ‌🇨🇦CA_82+@WangCai_1 2
-      - ‌🇨🇦CA_58+@WangCai_1 2
-      - ‌🇨🇦CA_36+@WangCai_1 2
-      - ‌🇨🇦CA_72+@WangCai_1
-      - ‌🇨🇦CA_08+@WangCai_1 3
-      - ‌🇨🇦CA_31+@WangCai_1 2
-      - ‌🇨🇦CA_83+@WangCai_1 2
-      - 🇺🇲 US_67+@WangCai_1
-      - ‌🇨🇦CA_48+@WangCai_1 3
-      - ‌🇨🇦CA_31+@WangCai_1 3
-      - ‌🇨🇦CA_16+@WangCai_1
-      - ‌🇨🇦CA_06+@WangCai_1
-      - 🇺🇲 US_64+@WangCai_1
-      - ‌🇨🇦CA_20+@WangCai_1
-      - ‌🇨🇦CA_28+@WangCai_1 3
-      - ‌🇨🇦CA_59+@WangCai_1 2
-      - ‌🇨🇦CA_28+@WangCai_1 4
-      - ‌🇨🇦CA_13+@WangCai_1
-      - ‌🇨🇦CA_08+@WangCai_1 4
-      - ‌🇨🇦CA_69+@WangCai_1 2
-      - 🇩🇪 DE_05 @WangCai_1
-      - ‌🇨🇦CA_61+@WangCai_1 3
-      - ‌🇨🇦CA_34+@WangCai_1
-      - ‌🇨🇦CA_48+@WangCai_1 4
-      - ‌🇨🇦CA_12+@WangCai_1
-      - ‌🇨🇦CA_13+@WangCai_1 2
-      - ‌🇨🇦CA_47+@WangCai_1
-      - ‌🇨🇦CA_18+@WangCai_1 3
-      - ‌🇨🇦CA_47+@WangCai_1 2
-      - ‌🇨🇦CA_41+@WangCai_1
-      - ‌🇨🇦CA_42+@WangCai_1
-      - ‌🇨🇦CA_69+@WangCai_1 3
-      - ‌🇨🇦CA_11+@WangCai_1
-      - ‌🇨🇦CA_30+@WangCai_1
-      - ‌🇨🇦CA_12+@WangCai_1 2
-      - ‌🇨🇦CA_81+@WangCai_1
-      - ‌🇨🇦CA_51+@WangCai_1
-      - ‌🇨🇦CA_45+@WangCai_1
-      - ‌🇨🇦CA_67+@WangCai_1 4
-      - ‌🇨🇦CA_38+@WangCai_1
-      - ‌🇨🇦CA_49+@WangCai_1
-      - ‌🇨🇦CA_46+@WangCai_1 2
-      - ‌🇨🇦CA_24+@WangCai_1 2
-      - ‌🇨🇦CA_10+@WangCai_1
-      - ‌🇨🇦CA_11+@WangCai_1 2
-      - ‌🇨🇦CA_38+@WangCai_1 2
-      - ‌🇨🇦CA_76+@WangCai_1
-      - ‌🇨🇦CA_61+@WangCai_1 4
-      - ‌🇨🇦CA_15+@WangCai_1
-      - ‌🇨🇦CA_65+@WangCai_1 2
-      - ‌🇨🇦CA_49+@WangCai_1 2
-      - ‌🇨🇦CA_17+@WangCai_1 3
-      - ‌🇨🇦CA_31+@WangCai_1 4
-      - ‌🇨🇦CA_29+@WangCai_1
-      - ‌🇨🇦CA_49+@WangCai_1 3
-      - ‌🇨🇦CA_26+@WangCai_1 3
-      - ‌🇨🇦CA_14+@WangCai_1
-      - ‌🇨🇦CA_62+@WangCai_1 2
-      - ‌🇨🇦CA_25+@WangCai_1 2
-      - ‌🇨🇦CA_27+@WangCai_1
-      - ‌🇨🇦CA_06+@WangCai_1 2
-      - ‌🇨🇦CA_25+@WangCai_1 3
-      - ‌🇨🇦CA_63+@WangCai_1
-      - ‌🇨🇦CA_48+@WangCai_1 5
-      - ‌🇨🇦CA_80+@WangCai_1
-      - ‌🇨🇦CA_64+@WangCai_1 2
-      - ‌🇨🇦CA_65+@WangCai_1 3
-      - ‌🇨🇦CA_73+@WangCai_1 2
-      - ‌🇨🇦CA_17+@WangCai_1 4
-      - ‌🇨🇦CA_24+@WangCai_1 3
-      - ‌🇨🇦CA_58+@WangCai_1 3
-      - ‌🇨🇦CA_27+@WangCai_1 2
-      - 🇺🇲 US_82+@WangCai_1
-      - ‌🇨🇦CA_14+@WangCai_1 2
-      - ‌🇨🇦CA_34+@WangCai_1 2
-      - ‌🇨🇦CA_68+@WangCai_1
-      - ‌🇨🇦CA_68+@WangCai_1 2
-      - ‌🇨🇦CA_18+@WangCai_1 4
-      - ‌🇨🇦CA_64+@WangCai_1 3
-      - ‌🇨🇦CA_07+@WangCai_1
-      - ‌🇨🇦CA_81+@WangCai_1 2
-      - ‌🇨🇦CA_11+@WangCai_1 3
-      - ‌🇨🇦CA_57+@WangCai_1
-      - ‌🇨🇦CA_13+@WangCai_1 3
-      - ‌🇨🇦CA_47+@WangCai_1 3
-      - ‌🇨🇦CA_44+@WangCai_1 2
-      - 🇺🇲 US_44+@WangCai_1
-      - 🇺🇲 US_39+@WangCai_1
-      - ‌🇨🇦CA_48+@WangCai_1 6
-      - ‌🇨🇦CA_31+@WangCai_1 5
-      - ‌🇨🇦CA_81+@WangCai_1 3
-      - ‌🇨🇦CA_53+@WangCai_1
-      - ‌🇨🇦CA_36+@WangCai_1 3
-      - ‌🇨🇦CA_78+@WangCai_1 5
-      - ‌🇨🇦CA_32+@WangCai_1 2
-      - ‌🇨🇦CA_49+@WangCai_1 4
-      - ‌🇨🇦CA_51+@WangCai_1 2
-      - ‌🇨🇦CA_30+@WangCai_1 2
-      - ‌🇨🇦CA_61+@WangCai_1 5
-      - 🇺🇲 US_30+@WangCai_1
-      - ‌🇨🇦CA_26+@WangCai_1 4
-      - ‌🇨🇦CA_76+@WangCai_1 2
-      - ‌🇨🇦CA_24+@WangCai_1 4
-      - ‌🇨🇦CA_56+@WangCai_1 2
-      - ‌🇨🇦CA_41+@WangCai_1 2
-      - ‌🇨🇦CA_59+@WangCai_1 3
-      - 🇺🇲 US_35+@WangCai_1
-      - 🇺🇲 US_08+@WangCai_1
-      - 🇺🇲 US_62+@WangCai_1
-      - ‌🇨🇦CA_57+@WangCai_1 2
-      - ‌🇨🇦CA_06+@WangCai_1 3
-      - 🇺🇲 US_59+@WangCai_1
-      - ‌🇨🇦CA_34+@WangCai_1 3
-      - 🇺🇲 US_49+@WangCai_1 2
-      - 🇺🇲 US_73+@WangCai_1
-      - 🇺🇲 US_03+@WangCai_1
-      - 🇺🇲 US_31+@WangCai_1
-      - 🇺🇲 US_06+@WangCai_1
-      - 🇺🇲 US_46+@WangCai_1
-      - ‌🇨🇦CA_36+@WangCai_1 4
-      - ‌🇨🇦CA_60+@WangCai_1
-      - 🇺🇲 US_45+@WangCai_1
-      - 🇺🇲 US_32+@WangCai_1
-      - 🇺🇲 US_05+@WangCai_1
-      - 🇺🇲 US_64+@WangCai_1 2
-      - 🇺🇲 US_70+@WangCai_1
-      - 🇺🇲 US_78+@WangCai_1
-      - 🇺🇲 US_17+@WangCai_1
-      - 🇺🇲 US_50+@WangCai_1
-      - 🇺🇲 US_02+@WangCai_1
-      - 🇺🇲 US_12+@WangCai_1
-      - 🇺🇲 US_40+@WangCai_1
-      - 🇺🇲 US_34+@WangCai_1
-      - 🇺🇲 US_27+@WangCai_1
-      - 🇺🇲 US_29+@WangCai_1
-      - 搬运工2
-      - 搬运工4
-      - 搬运工6
-      - 搬运工9
-      - 搬运工10
-      - 搬运工11
-      - 搬运工12
-      - 🇺🇲 76美国 TG@freekankan
-      - 🇺🇲 80美国
-      - 🇺🇲 81美国
+      - 🇸🇬 vip1丨新加坡10丨v2ray丨江门隧道丨800mbps_3
+      - 🇭🇰 vip1丨新加坡11丨v2ray丨杭港隧道_4
+      - 🇭🇰 vip1丨新加坡12丨v2ray丨杭港隧道_5
+      - 🇸🇬 vip1丨新加坡7丨v2ray丨江门隧道丨800mbps_6
+      - 🇸🇬 vip1丨新加坡8丨v2ray丨江门隧道丨800mbps_7
+      - 🇸🇬 vip1丨新加坡9丨v2ray丨江门隧道丨800mbps_8
+      - 🇭🇰 vip1丨香港17--v2ray--国内中转_19
+      - "网址: https://t.me/vpnhat"
+      - "网址: https://t.me/vpnhat 2"
+      - 🇭🇰 公益-vpnhat-香港
+      - 🇸🇬 公益-vpnhat-新加坡
+      - 🇭🇰 公益-vpnhat-香港 2
+      - 🇯🇵 公益-vpnhat-日本
+      - 🇨🇳 公益-vpnhat-台湾
+      - 🇸🇬 公益-vpnhat-新加坡 2
+      - 🇭🇰 [Lv.1] 香港A | 中转 | CDN
+      - 🇸🇬 [Lv.1] 新加坡A | 直连
+      - 🇸🇬 [Lv.1] 新加坡B | 中转
+      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D07
+      - 🇨🇳 中国-台湾宜兰 IPLC D10
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D11 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D6 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
+      - 🇨🇳 台湾丨公益节点丨1 _2
+      - 🇸🇬 新加坡丨高速中转丨1_3
+      - "🇭🇰 香港丨专属节点丨1\t_18"
+      - 🇭🇰 香港丨流媒体解锁丨1_21
+      - 🇭🇰 香港丨流媒体解锁丨2_22
+      - 🇭🇰 香港丨流媒体解锁丨3_23
+      - YouTube-由零开始
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ D 07
+      - 「🇺🇸」菠萝蜜
+      - 「🇯🇵」大宝剑「中转」✰
+      - 「🇸🇬」虚神甲「中转」✰
+      - 🇨🇳 「🇸🇬」神之魂「解锁」★★
+      - 「🇸🇬」指天剑「中转」★★
+      - 「🇸🇬」含沙剑「中转」★
+      - 「🇸🇬」太苍枪「中转」★★★
+      - 「🇮🇳」炼妖壶「中转」★
+      - 「🇯🇵」复活甲「中转」★
+      - 「🇸🇬」观音泪「中转」★
+      - 「🇸🇬」圣之杯「中转」★★
+      - 「🇸🇬」神之手「中转」★★
+      - 「🇰🇷」轩辕剑「中转」★
+      - 「🇬🇧」昊天锤「中转」★★
+      - 「🇭🇰」超神器「免流」★★★
+      - 「🇭🇰」尊神刀「免流」✰
+      - 「🇭🇰」神之器「免流」✰
+      - 「🇭🇰」神之刃「免流」✰
+      - 🇯🇵 日本 NO.3|软银线路|联通优化|3x
+      - 🇯🇵 日本 NO.4|llj节点|移动优化||2x|
+      - 🇺🇲 美国 NO.13 CN2 GIA |三网直连|2x
+      - 🇺🇲 美国 NO.14 CN2 GIA |三网直连|2x
+      - 🇺🇲 美国 NO.15 CN2 GIA |Netflix|HBO|Hulu|2x
+      - AZ转移动03-27
+      - 華人社區_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AZ转移动03-27
       - 国内中专1-27
-      - 🇨🇳 【基礎】台湾￥遊戲01
       - 🇺🇲 美国 免费节点(洛杉矶)●
-      - 🇬🇧 英国 免费节点★
-      - 🇭🇰 香港 01
-      - 🇭🇰 香港 01 2
-      - 🇭🇰 香港免流01
-      - 🇭🇰 香港免流02
-      - 🇭🇰 香港免流04
-      - 🇭🇰 香港免流05 解锁新加坡区奈飞
       - 🇨🇳 广州移动-Seoul-EC2-nf@vpnpool
       - 🇨🇳 广州移动-Seoul-EC2-nf@vpnpool 2
-      - 🇯🇵 广州移动-JP-AWS-nf@vpnpool
-      - 503
-      - 🇯🇵 日本阿伟科技-油管5
-      - 🇯🇵 日本阿伟科技-油管2
-      - 🇯🇵 日本阿伟科技-油管2 2
-      - 🇸🇬 公益 - 江门入口 - 新加坡
-      - 🇭🇰 公益 - 广州入口 - 香港
       - 🇺🇲 美国(Youtube技术分享室整理)
-      - ""
-      - 🇨🇳 公益 - 江门入口 - 台湾
-      - 🇨🇳 39.9元高速节点购买:https://c1n.cn/gxvip
-      - 🇺🇲 美国（YouTube资源分享者）
-      - 🇺🇲 US_28+@WangCai_1
-      - 🇺🇲 US_51+@WangCai_1
-      - 🇺🇲 US_61+@WangCai_1
-      - 🇺🇲 US_36+@WangCai_1
-      - 🇺🇲 US_13+@WangCai_1
-      - 🇺🇲 US_80+@WangCai_1
-      - 🇺🇲 US_81+@WangCai_1
-      - 🇬🇧 Relay_新加坡-英国_7292_26.20Mb
-      - 🇮🇳 Relay_新加坡-印度_7302_36.92Mb
-      - 🇯🇵 JP02-IEPL | 3x
-      - ‌🇨🇦CA_09+@WangCai_1
-      - ‌🇨🇦CA_33+@WangCai_1
-      - 🇺🇲 US_57+@WangCai_1
-      - 🇹🇷 土耳其YouTube-由零开始
-      - 🇹🇷 土耳其YouTube-由零开始 2
-      - 🇳🇱 _NL_荷兰
-      - 🇳🇱 _NL_荷兰 2
-      - CYL-科技（2021.11.17）
-      - CYL-科技（2021.11.17） 2
-      - 🇺🇲 美国YouTube-由零开始
-      - 🇹🇷 土耳其YouTube-由零开始 3
-      - 🇺🇲 美国YouTube-由零开始 2
-      - 瑞典ouTube-由零开始
-      - 🇹🇷 土耳其YouTube-由零开始 4
-      - 🇺🇲 美国YouTube-由零开始 3
-      - 🇺🇲 美国YouTube-由零开始 4
-      - 🇮🇳 印度YouTube-由零开始
-      - 🇺🇲 美国YouTube-由零开始 5
-      - 🇹🇷 v2rayse_🇹🇷_TR_土耳其_8
-      - CYL-科技（2021.11.17） 3
-      - "网址: https://www.mgnb.jp"
-      - 🇯🇵 公益 - 广州入口 - 日本
-      - 🇺🇲 US_66+@WangCai_1
-      - 🇸🇬 SG_11 @WangCai_1
-      - 🇸🇬 SG_11 @WangCai_1 2
-      - 🇭🇰 HK_03+@WangCai_1
-      - 🇸🇬 SG_07 @WangCai_1
-      - 🇸🇬 SG_06 @WangCai_1
-      - 🇸🇬 SG_00 @WangCai_1
-      - 🇸🇬 SG_07 @WangCai_1 2
-      - 🇸🇬 SG_10 @WangCai_1
-      - ‌🇨🇦CA_70+@WangCai_1
-      - ‌🇨🇦CA_08+@WangCai_1
-      - 🇺🇲 US_49+@WangCai_1
-      - ‌🇨🇦CA_28+@WangCai_1
-      - ‌🇨🇦CA_67+@WangCai_1
-      - ‌🇨🇦CA_73+@WangCai_1
-      - ‌🇨🇦CA_79+@WangCai_1
-      - ‌🇨🇦CA_19+@WangCai_1
-      - ‌🇨🇦CA_26+@WangCai_1
-      - ‌🇨🇦CA_26+@WangCai_1 2
-      - ‌🇨🇦CA_67+@WangCai_1 2
-      - ‌🇨🇦CA_46+@WangCai_1
-      - ‌🇨🇦CA_17+@WangCai_1
-      - ‌🇨🇦CA_18+@WangCai_1
-      - ‌🇨🇦CA_09+@WangCai_1 2
-      - ‌🇨🇦CA_32+@WangCai_1
-      - ‌🇨🇦CA_78+@WangCai_1
-      - ‌🇨🇦CA_18+@WangCai_1 2
-      - ‌🇨🇦CA_70+@WangCai_1 2
-      - ‌🇨🇦CA_36+@WangCai_1
-      - 🇺🇲 US_72+@WangCai_1
-      - ‌🇨🇦CA_19+@WangCai_1 2
-      - ‌🇨🇦CA_70+@WangCai_1 3
-      - ‌🇨🇦CA_28+@WangCai_1 2
-      - ‌🇨🇦CA_75+@WangCai_1
-      - ‌🇨🇦CA_44+@WangCai_1
-      - ‌🇨🇦CA_59+@WangCai_1
-      - ‌🇨🇦CA_09+@WangCai_1 3
-      - ‌🇨🇦CA_56+@WangCai_1
-      - ‌🇨🇦CA_78+@WangCai_1 2
-      - ‌🇨🇦CA_19+@WangCai_1 3
-      - 🇺🇲 US_81+@WangCai_1 2
-      - ‌🇨🇦CA_43+@WangCai_1
-      - ‌🇨🇦CA_33+@WangCai_1 2
-      - ‌🇨🇦CA_48+@WangCai_1
-      - ‌🇨🇦CA_62+@WangCai_1
-      - ‌🇨🇦CA_17+@WangCai_1 2
-      - ‌🇨🇦CA_31+@WangCai_1
-      - ‌🇨🇦CA_65+@WangCai_1
-      - ‌🇨🇦CA_83+@WangCai_1
-      - ‌🇨🇦CA_64+@WangCai_1
-      - ‌🇨🇦CA_24+@WangCai_1
-      - ‌🇨🇦CA_61+@WangCai_1
-      - ‌🇨🇦CA_78+@WangCai_1 3
-      - 🇺🇲 US_75+@WangCai_1
-      - ‌🇨🇦CA_48+@WangCai_1 2
-      - ‌🇨🇦CA_58+@WangCai_1
-      - ‌🇨🇦CA_82+@WangCai_1
-      - ‌🇨🇦CA_19+@WangCai_1 4
-      - ‌🇨🇦CA_01+@WangCai_1
-      - ‌🇨🇦CA_69+@WangCai_1
-      - ‌🇨🇦CA_08+@WangCai_1 2
-      - ‌🇨🇦CA_79+@WangCai_1 2
-      - ‌🇨🇦CA_02+@WangCai_1
-      - ‌🇨🇦CA_23+@WangCai_1
-      - ‌🇨🇦CA_61+@WangCai_1 2
-      - ‌🇨🇦CA_78+@WangCai_1 4
-      - ‌🇨🇦CA_25+@WangCai_1
-      - 🇩🇪 DE_01 @WangCai_1
-      - ‌🇨🇦CA_39+@WangCai_1
-      - ‌🇨🇦CA_19+@WangCai_1 5
-      - ‌🇨🇦CA_67+@WangCai_1 3
-      - ‌🇨🇦CA_82+@WangCai_1 2
-      - ‌🇨🇦CA_58+@WangCai_1 2
-      - ‌🇨🇦CA_36+@WangCai_1 2
-      - ‌🇨🇦CA_72+@WangCai_1
-      - ‌🇨🇦CA_08+@WangCai_1 3
-      - ‌🇨🇦CA_31+@WangCai_1 2
-      - ‌🇨🇦CA_83+@WangCai_1 2
-      - 🇺🇲 US_67+@WangCai_1
-      - ‌🇨🇦CA_48+@WangCai_1 3
-      - ‌🇨🇦CA_31+@WangCai_1 3
-      - ‌🇨🇦CA_16+@WangCai_1
-      - ‌🇨🇦CA_06+@WangCai_1
-      - 🇺🇲 US_64+@WangCai_1
-      - ‌🇨🇦CA_20+@WangCai_1
-      - ‌🇨🇦CA_28+@WangCai_1 3
-      - ‌🇨🇦CA_59+@WangCai_1 2
-      - ‌🇨🇦CA_28+@WangCai_1 4
-      - ‌🇨🇦CA_13+@WangCai_1
-      - ‌🇨🇦CA_08+@WangCai_1 4
-      - ‌🇨🇦CA_69+@WangCai_1 2
-      - 🇩🇪 DE_05 @WangCai_1
-      - ‌🇨🇦CA_61+@WangCai_1 3
-      - ‌🇨🇦CA_34+@WangCai_1
-      - ‌🇨🇦CA_48+@WangCai_1 4
-      - ‌🇨🇦CA_12+@WangCai_1
-      - ‌🇨🇦CA_13+@WangCai_1 2
-      - ‌🇨🇦CA_47+@WangCai_1
-      - ‌🇨🇦CA_18+@WangCai_1 3
-      - ‌🇨🇦CA_47+@WangCai_1 2
-      - ‌🇨🇦CA_41+@WangCai_1
-      - ‌🇨🇦CA_42+@WangCai_1
-      - ‌🇨🇦CA_69+@WangCai_1 3
-      - ‌🇨🇦CA_11+@WangCai_1
-      - ‌🇨🇦CA_30+@WangCai_1
-      - ‌🇨🇦CA_12+@WangCai_1 2
-      - ‌🇨🇦CA_81+@WangCai_1
-      - ‌🇨🇦CA_51+@WangCai_1
-      - ‌🇨🇦CA_45+@WangCai_1
-      - ‌🇨🇦CA_67+@WangCai_1 4
-      - ‌🇨🇦CA_38+@WangCai_1
-      - ‌🇨🇦CA_49+@WangCai_1
-      - ‌🇨🇦CA_46+@WangCai_1 2
-      - ‌🇨🇦CA_24+@WangCai_1 2
-      - ‌🇨🇦CA_10+@WangCai_1
-      - ‌🇨🇦CA_11+@WangCai_1 2
-      - ‌🇨🇦CA_38+@WangCai_1 2
-      - ‌🇨🇦CA_76+@WangCai_1
-      - ‌🇨🇦CA_61+@WangCai_1 4
-      - ‌🇨🇦CA_15+@WangCai_1
-      - ‌🇨🇦CA_65+@WangCai_1 2
-      - ‌🇨🇦CA_49+@WangCai_1 2
-      - ‌🇨🇦CA_17+@WangCai_1 3
-      - ‌🇨🇦CA_31+@WangCai_1 4
-      - ‌🇨🇦CA_29+@WangCai_1
-      - ‌🇨🇦CA_49+@WangCai_1 3
-      - ‌🇨🇦CA_26+@WangCai_1 3
-      - ‌🇨🇦CA_14+@WangCai_1
-      - ‌🇨🇦CA_62+@WangCai_1 2
-      - ‌🇨🇦CA_25+@WangCai_1 2
-      - ‌🇨🇦CA_27+@WangCai_1
-      - ‌🇨🇦CA_06+@WangCai_1 2
-      - ‌🇨🇦CA_25+@WangCai_1 3
-      - ‌🇨🇦CA_63+@WangCai_1
-      - ‌🇨🇦CA_48+@WangCai_1 5
-      - ‌🇨🇦CA_80+@WangCai_1
-      - ‌🇨🇦CA_64+@WangCai_1 2
-      - ‌🇨🇦CA_65+@WangCai_1 3
-      - ‌🇨🇦CA_73+@WangCai_1 2
-      - ‌🇨🇦CA_17+@WangCai_1 4
-      - ‌🇨🇦CA_24+@WangCai_1 3
-      - ‌🇨🇦CA_58+@WangCai_1 3
-      - ‌🇨🇦CA_27+@WangCai_1 2
-      - 🇺🇲 US_82+@WangCai_1
-      - ‌🇨🇦CA_14+@WangCai_1 2
-      - ‌🇨🇦CA_34+@WangCai_1 2
-      - ‌🇨🇦CA_68+@WangCai_1
-      - ‌🇨🇦CA_68+@WangCai_1 2
-      - ‌🇨🇦CA_18+@WangCai_1 4
-      - ‌🇨🇦CA_64+@WangCai_1 3
-      - ‌🇨🇦CA_07+@WangCai_1
-      - ‌🇨🇦CA_81+@WangCai_1 2
-      - ‌🇨🇦CA_11+@WangCai_1 3
-      - ‌🇨🇦CA_57+@WangCai_1
-      - ‌🇨🇦CA_13+@WangCai_1 3
-      - ‌🇨🇦CA_47+@WangCai_1 3
-      - ‌🇨🇦CA_44+@WangCai_1 2
-      - 🇺🇲 US_44+@WangCai_1
-      - 🇺🇲 US_39+@WangCai_1
-      - ‌🇨🇦CA_48+@WangCai_1 6
-      - ‌🇨🇦CA_31+@WangCai_1 5
-      - ‌🇨🇦CA_81+@WangCai_1 3
-      - ‌🇨🇦CA_53+@WangCai_1
-      - ‌🇨🇦CA_36+@WangCai_1 3
-      - ‌🇨🇦CA_78+@WangCai_1 5
-      - ‌🇨🇦CA_32+@WangCai_1 2
-      - ‌🇨🇦CA_49+@WangCai_1 4
-      - ‌🇨🇦CA_51+@WangCai_1 2
-      - ‌🇨🇦CA_30+@WangCai_1 2
-      - ‌🇨🇦CA_61+@WangCai_1 5
-      - 🇺🇲 US_30+@WangCai_1
-      - ‌🇨🇦CA_26+@WangCai_1 4
-      - ‌🇨🇦CA_76+@WangCai_1 2
-      - ‌🇨🇦CA_24+@WangCai_1 4
-      - ‌🇨🇦CA_56+@WangCai_1 2
-      - ‌🇨🇦CA_41+@WangCai_1 2
-      - ‌🇨🇦CA_59+@WangCai_1 3
-      - 🇺🇲 US_35+@WangCai_1
-      - 🇺🇲 US_08+@WangCai_1
-      - 🇺🇲 US_62+@WangCai_1
-      - ‌🇨🇦CA_57+@WangCai_1 2
-      - ‌🇨🇦CA_06+@WangCai_1 3
-      - 🇺🇲 US_59+@WangCai_1
-      - ‌🇨🇦CA_34+@WangCai_1 3
-      - 🇺🇲 US_49+@WangCai_1 2
-      - 🇺🇲 US_73+@WangCai_1
-      - 🇺🇲 US_03+@WangCai_1
-      - 🇺🇲 US_31+@WangCai_1
-      - 🇺🇲 US_06+@WangCai_1
-      - 🇺🇲 US_46+@WangCai_1
-      - ‌🇨🇦CA_36+@WangCai_1 4
-      - ‌🇨🇦CA_60+@WangCai_1
-      - 🇺🇲 US_45+@WangCai_1
-      - 🇺🇲 US_32+@WangCai_1
-      - 🇺🇲 US_05+@WangCai_1
-      - 🇺🇲 US_64+@WangCai_1 2
-      - 🇺🇲 US_70+@WangCai_1
-      - 🇺🇲 US_78+@WangCai_1
-      - 🇺🇲 US_17+@WangCai_1
-      - 🇺🇲 US_50+@WangCai_1
-      - 🇺🇲 US_02+@WangCai_1
-      - 🇺🇲 US_12+@WangCai_1
-      - 🇺🇲 US_40+@WangCai_1
-      - 🇺🇲 US_34+@WangCai_1
-      - 🇺🇲 US_27+@WangCai_1
-      - 🇺🇲 US_29+@WangCai_1
-      - 搬运工2
-      - 搬运工4
-      - 搬运工6
-      - 搬运工9
-      - 搬运工10
-      - 搬运工11
-      - 搬运工12
-      - 🇺🇲 76美国 TG@freekankan
-      - 🇺🇲 80美国
-      - 🇺🇲 81美国
+      - 🇸🇬 vip1丨新加坡10丨v2ray丨江门隧道丨800mbps_3
+      - 🇭🇰 vip1丨新加坡11丨v2ray丨杭港隧道_4
+      - 🇭🇰 vip1丨新加坡12丨v2ray丨杭港隧道_5
+      - 🇸🇬 vip1丨新加坡7丨v2ray丨江门隧道丨800mbps_6
+      - 🇸🇬 vip1丨新加坡8丨v2ray丨江门隧道丨800mbps_7
+      - 🇸🇬 vip1丨新加坡9丨v2ray丨江门隧道丨800mbps_8
+      - 🇭🇰 vip1丨香港17--v2ray--国内中转_19
+      - "网址: https://t.me/vpnhat"
+      - "网址: https://t.me/vpnhat 2"
+      - 🇭🇰 公益-vpnhat-香港
+      - 🇸🇬 公益-vpnhat-新加坡
+      - 🇭🇰 公益-vpnhat-香港 2
+      - 🇯🇵 公益-vpnhat-日本
+      - 🇨🇳 公益-vpnhat-台湾
+      - 🇸🇬 公益-vpnhat-新加坡 2
+      - 🇭🇰 [Lv.1] 香港A | 中转 | CDN
+      - 🇸🇬 [Lv.1] 新加坡A | 直连
+      - 🇸🇬 [Lv.1] 新加坡B | 中转
+      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D07
+      - 🇨🇳 中国-台湾宜兰 IPLC D10
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D11 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D6 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
+      - 🇨🇳 台湾丨公益节点丨1 _2
+      - 🇸🇬 新加坡丨高速中转丨1_3
+      - "🇭🇰 香港丨专属节点丨1\t_18"
+      - 🇭🇰 香港丨流媒体解锁丨1_21
+      - 🇭🇰 香港丨流媒体解锁丨2_22
+      - 🇭🇰 香港丨流媒体解锁丨3_23
+      - YouTube-由零开始
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ D 07
+      - 「🇺🇸」菠萝蜜
+      - 「🇯🇵」大宝剑「中转」✰
+      - 「🇸🇬」虚神甲「中转」✰
+      - 🇨🇳 「🇸🇬」神之魂「解锁」★★
+      - 「🇸🇬」指天剑「中转」★★
+      - 「🇸🇬」含沙剑「中转」★
+      - 「🇸🇬」太苍枪「中转」★★★
+      - 「🇮🇳」炼妖壶「中转」★
+      - 「🇯🇵」复活甲「中转」★
+      - 「🇸🇬」观音泪「中转」★
+      - 「🇸🇬」圣之杯「中转」★★
+      - 「🇸🇬」神之手「中转」★★
+      - 「🇰🇷」轩辕剑「中转」★
+      - 「🇬🇧」昊天锤「中转」★★
+      - 「🇭🇰」超神器「免流」★★★
+      - 「🇭🇰」尊神刀「免流」✰
+      - 「🇭🇰」神之器「免流」✰
+      - 「🇭🇰」神之刃「免流」✰
+      - 🇯🇵 日本 NO.3|软银线路|联通优化|3x
+      - 🇯🇵 日本 NO.4|llj节点|移动优化||2x|
+      - 🇺🇲 美国 NO.13 CN2 GIA |三网直连|2x
+      - 🇺🇲 美国 NO.14 CN2 GIA |三网直连|2x
+      - 🇺🇲 美国 NO.15 CN2 GIA |Netflix|HBO|Hulu|2x
+      - AZ转移动03-27
+      - 華人社區_2
   - name: 🎯 国内网络
     type: select
     proxies:
@@ -997,7 +382,10 @@ proxy-groups:
       - DIRECT
       - 🚀 全局设置
       - ♻️ 自动选择
-      - 🇭🇰 香港免流05 解锁新加坡区奈飞
+      - 🇭🇰 香港丨流媒体解锁丨1_21
+      - 🇭🇰 香港丨流媒体解锁丨2_22
+      - 🇭🇰 香港丨流媒体解锁丨3_23
+      - 🇨🇳 「🇸🇬」神之魂「解锁」★★
   - name: 🛑 广告拦截
     type: select
     proxies:
@@ -1024,99 +412,62 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
     proxies:
-      - 🇭🇰 香港 01
-      - 🇭🇰 香港 01 2
-      - 🇭🇰 香港免流01
-      - 🇭🇰 香港免流02
-      - 🇭🇰 香港免流04
-      - 🇭🇰 香港免流05 解锁新加坡区奈飞
-      - 🇭🇰 公益 - 广州入口 - 香港
-      - 🇭🇰 HK_03+@WangCai_1
+      - 🇭🇰 vip1丨新加坡11丨v2ray丨杭港隧道_4
+      - 🇭🇰 vip1丨新加坡12丨v2ray丨杭港隧道_5
+      - 🇭🇰 vip1丨香港17--v2ray--国内中转_19
+      - 🇭🇰 公益-vpnhat-香港
+      - 🇭🇰 公益-vpnhat-香港 2
+      - 🇭🇰 [Lv.1] 香港A | 中转 | CDN
+      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - 🇭🇰 香港 油尖旺御金·国峯 網上行寬頻 D07
+      - "🇭🇰 香港丨专属节点丨1\t_18"
+      - 🇭🇰 香港丨流媒体解锁丨1_21
+      - 🇭🇰 香港丨流媒体解锁丨2_22
+      - 🇭🇰 香港丨流媒体解锁丨3_23
   - name: 🇯🇵 日本节点
     type: select
     proxies:
-      - 🇯🇵 广州移动-JP-AWS-nf@vpnpool
-      - 🇯🇵 日本阿伟科技-油管5
-      - 🇯🇵 日本阿伟科技-油管2
-      - 🇯🇵 日本阿伟科技-油管2 2
-      - 🇯🇵 JP02-IEPL | 3x
-      - 🇯🇵 公益 - 广州入口 - 日本
+      - 🇯🇵 公益-vpnhat-日本
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D11 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D6 1000Mbps
+      - 🇯🇵 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ D 07
+      - 🇯🇵 日本 NO.3|软银线路|联通优化|3x
+      - 🇯🇵 日本 NO.4|llj节点|移动优化||2x|
   - name: 🇺🇲 美国节点
     type: select
     proxies:
       - 🇺🇲 美国 免费节点(洛杉矶)●
       - 🇺🇲 美国(Youtube技术分享室整理)
-      - 🇺🇲 美国（YouTube资源分享者）
-      - 🇺🇲 US_28+@WangCai_1
-      - 🇺🇲 US_51+@WangCai_1
-      - 🇺🇲 US_61+@WangCai_1
-      - 🇺🇲 US_36+@WangCai_1
-      - 🇺🇲 US_13+@WangCai_1
-      - 🇺🇲 US_80+@WangCai_1
-      - 🇺🇲 US_81+@WangCai_1
-      - 🇺🇲 US_57+@WangCai_1
-      - 🇺🇲 美国YouTube-由零开始
-      - 🇺🇲 美国YouTube-由零开始 2
-      - 🇺🇲 美国YouTube-由零开始 3
-      - 🇺🇲 美国YouTube-由零开始 4
-      - 🇺🇲 美国YouTube-由零开始 5
-      - 🇺🇲 US_66+@WangCai_1
-      - 🇺🇲 US_49+@WangCai_1
-      - 🇺🇲 US_72+@WangCai_1
-      - 🇺🇲 US_81+@WangCai_1 2
-      - 🇺🇲 US_75+@WangCai_1
-      - 🇺🇲 US_67+@WangCai_1
-      - 🇺🇲 US_64+@WangCai_1
-      - 🇺🇲 US_82+@WangCai_1
-      - 🇺🇲 US_44+@WangCai_1
-      - 🇺🇲 US_39+@WangCai_1
-      - 🇺🇲 US_30+@WangCai_1
-      - 🇺🇲 US_35+@WangCai_1
-      - 🇺🇲 US_08+@WangCai_1
-      - 🇺🇲 US_62+@WangCai_1
-      - 🇺🇲 US_59+@WangCai_1
-      - 🇺🇲 US_49+@WangCai_1 2
-      - 🇺🇲 US_73+@WangCai_1
-      - 🇺🇲 US_03+@WangCai_1
-      - 🇺🇲 US_31+@WangCai_1
-      - 🇺🇲 US_06+@WangCai_1
-      - 🇺🇲 US_46+@WangCai_1
-      - 🇺🇲 US_45+@WangCai_1
-      - 🇺🇲 US_32+@WangCai_1
-      - 🇺🇲 US_05+@WangCai_1
-      - 🇺🇲 US_64+@WangCai_1 2
-      - 🇺🇲 US_70+@WangCai_1
-      - 🇺🇲 US_78+@WangCai_1
-      - 🇺🇲 US_17+@WangCai_1
-      - 🇺🇲 US_50+@WangCai_1
-      - 🇺🇲 US_02+@WangCai_1
-      - 🇺🇲 US_12+@WangCai_1
-      - 🇺🇲 US_40+@WangCai_1
-      - 🇺🇲 US_34+@WangCai_1
-      - 🇺🇲 US_27+@WangCai_1
-      - 🇺🇲 US_29+@WangCai_1
-      - 🇺🇲 76美国 TG@freekankan
-      - 🇺🇲 80美国
-      - 🇺🇲 81美国
+      - 🇺🇲 美国 NO.13 CN2 GIA |三网直连|2x
+      - 🇺🇲 美国 NO.14 CN2 GIA |三网直连|2x
+      - 🇺🇲 美国 NO.15 CN2 GIA |Netflix|HBO|Hulu|2x
   - name: 🇸🇬 新加坡节点
     type: select
     proxies:
-      - 🇭🇰 香港免流05 解锁新加坡区奈飞
-      - 🇸🇬 公益 - 江门入口 - 新加坡
-      - 🇬🇧 Relay_新加坡-英国_7292_26.20Mb
-      - 🇮🇳 Relay_新加坡-印度_7302_36.92Mb
-      - 🇸🇬 SG_11 @WangCai_1
-      - 🇸🇬 SG_11 @WangCai_1 2
-      - 🇸🇬 SG_07 @WangCai_1
-      - 🇸🇬 SG_06 @WangCai_1
-      - 🇸🇬 SG_00 @WangCai_1
-      - 🇸🇬 SG_07 @WangCai_1 2
-      - 🇸🇬 SG_10 @WangCai_1
+      - 🇸🇬 vip1丨新加坡10丨v2ray丨江门隧道丨800mbps_3
+      - 🇭🇰 vip1丨新加坡11丨v2ray丨杭港隧道_4
+      - 🇭🇰 vip1丨新加坡12丨v2ray丨杭港隧道_5
+      - 🇸🇬 vip1丨新加坡7丨v2ray丨江门隧道丨800mbps_6
+      - 🇸🇬 vip1丨新加坡8丨v2ray丨江门隧道丨800mbps_7
+      - 🇸🇬 vip1丨新加坡9丨v2ray丨江门隧道丨800mbps_8
+      - 🇸🇬 公益-vpnhat-新加坡
+      - 🇸🇬 公益-vpnhat-新加坡 2
+      - 🇸🇬 [Lv.1] 新加坡A | 直连
+      - 🇸🇬 [Lv.1] 新加坡B | 中转
+      - 🇸🇬 新加坡丨高速中转丨1_3
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
-      - 🇨🇳 【基礎】台湾￥遊戲01
-      - 🇨🇳 公益 - 江门入口 - 台湾
+      - 🇨🇳 公益-vpnhat-台湾
+      - 🇨🇳 中国-台湾宜兰 IPLC D10
+      - 🇨🇳 台湾丨公益节点丨1 _2
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
@@ -1124,11 +475,15 @@ proxy-groups:
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - 🇭🇰 香港免流05 解锁新加坡区奈飞
+      - 🇭🇰 香港丨流媒体解锁丨1_21
+      - 🇭🇰 香港丨流媒体解锁丨2_22
+      - 🇭🇰 香港丨流媒体解锁丨3_23
+      - 🇨🇳 「🇸🇬」神之魂「解锁」★★
+      - 🇺🇲 美国 NO.15 CN2 GIA |Netflix|HBO|Hulu|2x
   - name: 🔑 专用线路
     type: select
     proxies:
-      - 🇯🇵 JP02-IEPL | 3x
+      - 🇨🇳 中国-台湾宜兰 IPLC D10
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 国内网络
  - DOMAIN-SUFFIX,ip6-localhost,🎯 国内网络
