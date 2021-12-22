@@ -3,17 +3,36 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: 127.0.0.1:9090
+external-controller: :9090
 proxies:
-  - {name: 🇭🇰 香港 03 测试, server: 42.157.196.103, port: 10049, type: ssr, cipher: rc4-md5, password: Yk4UdrOyQg, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 267054:8ELiYjJ7tU, obfs-param: ""}
   - {name: 🇭🇰 【Tunnel_F】香港 VIP 7 - HKBN - 17000 单端口, server: n114.boom.party, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 107440:xsWJSz, obfs-param: www.baidu.com}
   - {name: 🇸🇬 【Tunnel_K】新加坡 普通 4 - DO - 21000 单端口, server: nkb.boom.party, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 107440:xsWJSz, obfs-param: www.baidu.com}
-  - {name: 🇭🇰 香港 01, server: dg-hk-node01.linkthink.app, port: 10809, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 271859:8ZVtjXgYSK, obfs-param: ""}
-  - {name: 🇭🇰 香港 01 2, server: dg-hk-node01.linkthink.app, port: 10116, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 266203:TFHs2fnG65, obfs-param: ""}
-  - {name: 🇭🇰 香港 01 3, server: dg-hk-node01.linkthink.app, port: 10003, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 266904:p1Z3g85foj, obfs-param: ""}
-  - {name: 🏳️‍🌈 JK1-V4-湖新LINODE02|1.5x流量-解锁, server: jike1-gzyd.ddns-only.xyz, port: 31568, type: ssr, cipher: chacha20-ietf, password: yT6Am5, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 156931:VxAvMJ, obfs-param: 67a6c156931.microsoft.com}
-  - {name: 🇸🇬 入门-新加坡linode03-广州中转-解锁, server: mitao-gzyd.ddns-only.xyz, port: 10421, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 489062:CTqbi2, obfs-param: f829d489062.microsoft.com}
-  - {name: 🇸🇬 入门-新加坡linode03-广州中转-解锁 2, server: xixi-gzyd.ddns-only.xyz, port: 10421, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 489062:CTqbi2, obfs-param: f829d489062.microsoft.com}
+  - {name: AA-中继-DE-Linode - 18348, server: cdn-cn.nekocloud.cn, port: 19082, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇭🇰 AA-中继-HK-HKT.01 - 18348, server: cdn-cn.nekocloud.cn, port: 19072, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇭🇰 AA-中继-HK-HKT.02 - 18348, server: cdn-cn.nekocloud.cn, port: 19071, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇭🇰 AA-中继-HK-HKT.03 - 18348, server: cdn-cn.nekocloud.cn, port: 19002, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇭🇰 AA-中继-HK-Leaseweb.01 - 18348, server: cdn-cn.nekocloud.cn, port: 19025, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇭🇰 AA-中继-HK-Leaseweb.03 - 18348, server: cdn-cn.nekocloud.cn, port: 19041, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇭🇰 AA-中继-HK-NTT.02 - 18348, server: cdn-cn.nekocloud.cn, port: 19004, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇭🇰 AA-中继-HK-打機神線.02 - 18348, server: cdn-cn.nekocloud.cn, port: 19001, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇭🇰 AA-中继-HK-香港寬頻HKBN - 18348, server: cdn-cn.nekocloud.cn, port: 19086, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇯🇵 AA-中继-JP-Linode.01 - 18348, server: cdn-cn.nekocloud.cn, port: 19053, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇯🇵 AA-中继-JP-Linode.02 - 18348, server: cdn-cn.nekocloud.cn, port: 19075, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇯🇵 AA-中继-JP-NTT.02 - 18348, server: cdn-cn.nekocloud.cn, port: 19052, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇯🇵 AA-中继-JP-NTT.03 - 18348, server: cdn-cn.nekocloud.cn, port: 19065, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇯🇵 AA-中继-JP-Sakura.04 - 18348, server: cdn-cn.nekocloud.cn, port: 10005, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇸🇬 AA-中继-SG-NTT.02 - 18348, server: cdn.node.sg.ntt03.nekocloud.cn, port: 19078, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇸🇬 AA-中继-SG-NTT.03 - 18348, server: cdn-cn.nekocloud.cn, port: 19089, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇯🇵 Lv.1-JP-Linode.02 - 18348, server: cdn-cn.nekocloud.cn, port: 19006, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇯🇵 Lv.1-JP-Sakura.02 - 18348, server: cdn-cn.nekocloud.cn, port: 19017, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇸🇬 Lv.1-SG-DO - 18348, server: cdn-cn.nekocloud.cn, port: 19031, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇸🇬 Lv.1-SG-Linode.02 - 18348, server: cdn-cn.nekocloud.cn, port: 19056, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇸🇬 Lv.1-SG-NTT.01 - 18348, server: cdn-cn.nekocloud.cn, port: 19076, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇸🇬 Lv.1-SG-NTT.02 - 18348, server: cdn-cn.nekocloud.cn, port: 19087, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇸🇬 Lv.1-SG-NTT.03 - 18348, server: cdn-cn.nekocloud.cn, port: 19091, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇭🇰 AA-中继-HK-打機神線.01 - 18348, server: cdn-cn.nekocloud.cn, port: 19039, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇯🇵 AA-中继-JP-GMO.01 - 18348, server: cdn-cn.nekocloud.cn, port: 19059, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
+  - {name: 🇯🇵 AA-中继-JP-Indigo.01 - 18348, server: cdn-cn.nekocloud.cn, port: 19081, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 107412:p4jVdh, obfs-param: b5dc0107412.wns.windows.com}
 proxy-groups:
   - name: 🚀 全局设置
     type: select
@@ -31,30 +50,67 @@ proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
-      - 🇭🇰 香港 03 测试
       - 🇭🇰 【Tunnel_F】香港 VIP 7 - HKBN - 17000 单端口
       - 🇸🇬 【Tunnel_K】新加坡 普通 4 - DO - 21000 单端口
-      - 🇭🇰 香港 01
-      - 🇭🇰 香港 01 2
-      - 🇭🇰 香港 01 3
-      - 🏳️‍🌈 JK1-V4-湖新LINODE02|1.5x流量-解锁
-      - 🇸🇬 入门-新加坡linode03-广州中转-解锁
-      - 🇸🇬 入门-新加坡linode03-广州中转-解锁 2
+      - AA-中继-DE-Linode - 18348
+      - 🇭🇰 AA-中继-HK-HKT.01 - 18348
+      - 🇭🇰 AA-中继-HK-HKT.02 - 18348
+      - 🇭🇰 AA-中继-HK-HKT.03 - 18348
+      - 🇭🇰 AA-中继-HK-Leaseweb.01 - 18348
+      - 🇭🇰 AA-中继-HK-Leaseweb.03 - 18348
+      - 🇭🇰 AA-中继-HK-NTT.02 - 18348
+      - 🇭🇰 AA-中继-HK-打機神線.02 - 18348
+      - 🇭🇰 AA-中继-HK-香港寬頻HKBN - 18348
+      - 🇯🇵 AA-中继-JP-Linode.01 - 18348
+      - 🇯🇵 AA-中继-JP-Linode.02 - 18348
+      - 🇯🇵 AA-中继-JP-NTT.02 - 18348
+      - 🇯🇵 AA-中继-JP-NTT.03 - 18348
+      - 🇯🇵 AA-中继-JP-Sakura.04 - 18348
+      - 🇸🇬 AA-中继-SG-NTT.02 - 18348
+      - 🇸🇬 AA-中继-SG-NTT.03 - 18348
+      - 🇯🇵 Lv.1-JP-Linode.02 - 18348
+      - 🇯🇵 Lv.1-JP-Sakura.02 - 18348
+      - 🇸🇬 Lv.1-SG-DO - 18348
+      - 🇸🇬 Lv.1-SG-Linode.02 - 18348
+      - 🇸🇬 Lv.1-SG-NTT.01 - 18348
+      - 🇸🇬 Lv.1-SG-NTT.02 - 18348
+      - 🇸🇬 Lv.1-SG-NTT.03 - 18348
+      - 🇭🇰 AA-中继-HK-打機神線.01 - 18348
+      - 🇯🇵 AA-中继-JP-GMO.01 - 18348
+      - 🇯🇵 AA-中继-JP-Indigo.01 - 18348
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
-      - 🇭🇰 香港 03 测试
       - 🇭🇰 【Tunnel_F】香港 VIP 7 - HKBN - 17000 单端口
       - 🇸🇬 【Tunnel_K】新加坡 普通 4 - DO - 21000 单端口
-      - 🇭🇰 香港 01
-      - 🇭🇰 香港 01 2
-      - 🇭🇰 香港 01 3
-      - 🏳️‍🌈 JK1-V4-湖新LINODE02|1.5x流量-解锁
-      - 🇸🇬 入门-新加坡linode03-广州中转-解锁
-      - 🇸🇬 入门-新加坡linode03-广州中转-解锁 2
+      - AA-中继-DE-Linode - 18348
+      - 🇭🇰 AA-中继-HK-HKT.01 - 18348
+      - 🇭🇰 AA-中继-HK-HKT.02 - 18348
+      - 🇭🇰 AA-中继-HK-HKT.03 - 18348
+      - 🇭🇰 AA-中继-HK-Leaseweb.01 - 18348
+      - 🇭🇰 AA-中继-HK-Leaseweb.03 - 18348
+      - 🇭🇰 AA-中继-HK-NTT.02 - 18348
+      - 🇭🇰 AA-中继-HK-打機神線.02 - 18348
+      - 🇭🇰 AA-中继-HK-香港寬頻HKBN - 18348
+      - 🇯🇵 AA-中继-JP-Linode.01 - 18348
+      - 🇯🇵 AA-中继-JP-Linode.02 - 18348
+      - 🇯🇵 AA-中继-JP-NTT.02 - 18348
+      - 🇯🇵 AA-中继-JP-NTT.03 - 18348
+      - 🇯🇵 AA-中继-JP-Sakura.04 - 18348
+      - 🇸🇬 AA-中继-SG-NTT.02 - 18348
+      - 🇸🇬 AA-中继-SG-NTT.03 - 18348
+      - 🇯🇵 Lv.1-JP-Linode.02 - 18348
+      - 🇯🇵 Lv.1-JP-Sakura.02 - 18348
+      - 🇸🇬 Lv.1-SG-DO - 18348
+      - 🇸🇬 Lv.1-SG-Linode.02 - 18348
+      - 🇸🇬 Lv.1-SG-NTT.01 - 18348
+      - 🇸🇬 Lv.1-SG-NTT.02 - 18348
+      - 🇸🇬 Lv.1-SG-NTT.03 - 18348
+      - 🇭🇰 AA-中继-HK-打機神線.01 - 18348
+      - 🇯🇵 AA-中继-JP-GMO.01 - 18348
+      - 🇯🇵 AA-中继-JP-Indigo.01 - 18348
   - name: 🎯 国内网络
     type: select
     proxies:
@@ -206,9 +262,6 @@ proxy-groups:
       - DIRECT
       - 🚀 全局设置
       - ♻️ 自动选择
-      - 🏳️‍🌈 JK1-V4-湖新LINODE02|1.5x流量-解锁
-      - 🇸🇬 入门-新加坡linode03-广州中转-解锁
-      - 🇸🇬 入门-新加坡linode03-广州中转-解锁 2
   - name: 🛑 广告拦截
     type: select
     proxies:
@@ -236,62 +289,70 @@ proxy-groups:
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
-      - 🇭🇰 香港 03 测试
       - 🇭🇰 【Tunnel_F】香港 VIP 7 - HKBN - 17000 单端口
-      - 🇭🇰 香港 01
-      - 🇭🇰 香港 01 2
-      - 🇭🇰 香港 01 3
+      - 🇭🇰 AA-中继-HK-HKT.01 - 18348
+      - 🇭🇰 AA-中继-HK-HKT.02 - 18348
+      - 🇭🇰 AA-中继-HK-HKT.03 - 18348
+      - 🇭🇰 AA-中继-HK-Leaseweb.01 - 18348
+      - 🇭🇰 AA-中继-HK-Leaseweb.03 - 18348
+      - 🇭🇰 AA-中继-HK-NTT.02 - 18348
+      - 🇭🇰 AA-中继-HK-打機神線.02 - 18348
+      - 🇭🇰 AA-中继-HK-香港寬頻HKBN - 18348
+      - 🇭🇰 AA-中继-HK-打機神線.01 - 18348
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
-      - DIRECT
+      - 🇯🇵 AA-中继-JP-Linode.01 - 18348
+      - 🇯🇵 AA-中继-JP-Linode.02 - 18348
+      - 🇯🇵 AA-中继-JP-NTT.02 - 18348
+      - 🇯🇵 AA-中继-JP-NTT.03 - 18348
+      - 🇯🇵 AA-中继-JP-Sakura.04 - 18348
+      - 🇯🇵 Lv.1-JP-Linode.02 - 18348
+      - 🇯🇵 Lv.1-JP-Sakura.02 - 18348
+      - 🇯🇵 AA-中继-JP-GMO.01 - 18348
+      - 🇯🇵 AA-中继-JP-Indigo.01 - 18348
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
       - DIRECT
   - name: 🇸🇬 新加坡节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
       - 🇸🇬 【Tunnel_K】新加坡 普通 4 - DO - 21000 单端口
-      - 🏳️‍🌈 JK1-V4-湖新LINODE02|1.5x流量-解锁
-      - 🇸🇬 入门-新加坡linode03-广州中转-解锁
-      - 🇸🇬 入门-新加坡linode03-广州中转-解锁 2
+      - 🇸🇬 AA-中继-SG-NTT.02 - 18348
+      - 🇸🇬 AA-中继-SG-NTT.03 - 18348
+      - 🇸🇬 Lv.1-SG-DO - 18348
+      - 🇸🇬 Lv.1-SG-Linode.02 - 18348
+      - 🇸🇬 Lv.1-SG-NTT.01 - 18348
+      - 🇸🇬 Lv.1-SG-NTT.02 - 18348
+      - 🇸🇬 Lv.1-SG-NTT.03 - 18348
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
       - DIRECT
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
       - DIRECT
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - 🏳️‍🌈 JK1-V4-湖新LINODE02|1.5x流量-解锁
-      - 🇸🇬 入门-新加坡linode03-广州中转-解锁
-      - 🇸🇬 入门-新加坡linode03-广州中转-解锁 2
+      - DIRECT
   - name: 🔑 专用线路
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
       - DIRECT
 rules:
