@@ -5,38 +5,52 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇸🇬 新加坡2, server: sg-am21.eqsunshine.com, port: 8080, type: ssr, cipher: aes-256-cfb, password: jUQAcjhEG, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com}
-  - {name: 🇮🇳 印度, server: in-am2.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: fD0KP8PWA, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇺🇸 美国-netflix, server: 107.167.23.50, port: 8084, type: ssr, cipher: aes-256-cfb, password: RhKqtYoG8, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com}
-  - {name: 🇺🇸 美国1, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇦🇺 澳大利亚, server: sy-am2.eqsunshine.com, port: 443, type: ssr, cipher: aes-256-cfb, password: Jz8r4gLNP, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇺🇸 美国2, server: us-am11.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: vGndzdmPB, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com}
-  - {name: 🇩🇪 德国, server: de-am2.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: 82BMko4lE, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇬🇧 英国, server: uk-am3-5.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: PNRbp3j9B, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇰🇷 韩国|tg频道:@ripaojiedian, server: kr-am6.eqnode.net, port: 443, type: ssr, cipher: aes-256-cfb, password: abHpSuLdQ, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com}
-  - {name: 🇦🇺 Sydney-EC2, server: 54.206.12.203, port: 443, type: ssr, cipher: aes-256-cfb, password: Jz8r4gLNP, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnhat}
-  - {name: 🇫🇷 Paris-EC2, server: 35.180.0.141, port: 8181, type: ssr, cipher: aes-256-cfb, password: gVWc0WaJn, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnhat}
-  - {name: 🇮🇳 Mumbai-EC2, server: 35.154.27.192, port: 8080, type: ssr, cipher: aes-256-cfb, password: fD0KP8PWA, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnhat}
-  - {name: Portland-EC2, server: 34.220.180.26, port: 8080, type: ssr, cipher: aes-256-cfb, password: vGndzdmPB, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnhat}
-  - {name: Portland-EC2 2, server: 34.219.236.31, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnhat}
-  - {name: Frankfurt-EC2, server: 3.124.12.30, port: 8080, type: ssr, cipher: aes-256-cfb, password: 82BMko4lE, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 广州移动-高雄Hinet, server: 183.232.13.63, port: 2105, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 4679:af9l9x30bzq, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 广州移动-香港Azure, server: 183.232.56.182, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 广州移动-香港Azure 2, server: 183.232.56.182, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 广州移动-SG-Choopa, server: 183.232.56.182, port: 1502, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 广州移动-Istanbul-DGN, server: 183.232.56.182, port: 1561, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
-  - {name: 🇰🇷 广州移动-Sacramento-Krypt, server: 183.232.56.182, port: 1302, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
-  - {name: 🇯🇵 广州移动-Tokyo-NTT, server: 183.232.56.182, port: 1252, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 广州移动-SG-Choopa 2, server: 183.232.56.110, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
-  - {name: 🇰🇷 广州移动-LAX-Krypt, server: 183.232.56.110, port: 1303, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
-  - {name: 🇰🇷 广州移动-LAX-Krypt 2, server: 183.232.56.110, port: 1301, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 广州移动-高雄Hinet 2, server: 183.232.56.110, port: 1203, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 广州移动-高雄Hinet 3, server: 183.232.56.110, port: 1201, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
-  - {name: 🇯🇵 广州移动-Tokyo-NTT 2, server: 183.232.56.110, port: 1253, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 广州移动-Okazaki-NTT, server: 183.232.56.110, port: 1251, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
-  - {name: 🇬🇧 London-EC2, server: 18.133.245.231, port: 8181, type: ssr, cipher: aes-256-cfb, password: PNRbp3j9B, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnhat}
-  - {name: 🇫🇷 Paris-EC2 2, server: 15.236.122.201, port: 8181, type: ssr, cipher: aes-256-cfb, password: X3LKnwp5C, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnhat}
-  - {name: LAX-Sharktech, server: 107.167.23.50, port: 8084, type: ssr, cipher: aes-256-cfb, password: RhKqtYoG8, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnhat}
+  - {name: 🇸🇬 广州移动-SG-Choopa, server: 183.232.56.182, port: 1502, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇸🇬 广州移动-SG-Choopa 2, server: 183.232.56.110, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇨🇳 广州移动-高雄Hinet, server: 183.232.56.110, port: 1201, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Jsnzkpg天下第一, server: 183.232.56.182, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Jsnzkpg天下第一 2, server: 183.232.56.110, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Jsnzkpg天下第一 3, server: 183.232.56.182, port: 1502, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Jsnzkpg天下第一 4, server: 183.232.56.110, port: 1253, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-2-2.0x-视频", server: bgphzhk2.host.mznode.link, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-2-2.0x-视频", server: relaysgp2.host.mznode.link, port: 1502, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-3-2.0x-视频", server: bgpshtw3.host.mznode.link, port: 1203, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-1-2.0x-视频", server: dmhk1.host.mznode.link, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-2-2.0x-视频", server: dmhk2.host.mznode.link, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-3-2.0x-视频", server: dmhk3.host.mznode.link, port: 576, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: 🇨🇳 广州移动-高雄Hinet 2, server: 183.232.56.110, port: 1203, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇨🇳 广州移动-Okazaki-NTT, server: 183.232.56.110, port: 1251, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇸🇬 Singapore, server: 183.232.56.110, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇯🇵 油管晓飞分享 🇯🇵 07.日本 路由管控, server: qdd.lcycloud.site, port: 20007, type: ssr, cipher: chacha20-ietf, password: akhfaf, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1554:IqBVpL, obfs-param: 83bc01554.microsoft.com, udp: true}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [Free]-直连-HKT-香港-2-视频", server: freehkt2.mznode.link, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-3-2.0x-视频", server: bgphzhk3.host.mznode.link, port: 576, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-3-2.0x-视频", server: relaysgp3.host.mznode.link, port: 1503, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: 🇺🇲 美国-netflix, server: 107.167.23.50, port: 8084, type: ssr, cipher: aes-256-cfb, password: RhKqtYoG8, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
+  - {name: 🇩🇪 德国, server: de-am2.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: 82BMko4lE, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 🇭🇰 广州移动-香港Azure, server: 183.232.56.182, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇨🇳 广州移动-Sacramento-Krypt, server: 183.232.56.182, port: 1302, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇨🇳 广州移动-Tokyo-NTT, server: 183.232.56.182, port: 1252, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇨🇳 广州移动-LAX-Krypt, server: 183.232.56.110, port: 1303, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇨🇳 广州移动-Tokyo-NTT 2, server: 183.232.56.110, port: 1253, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 节点C|tg频道:@ripaojiedian, server: 183.232.56.110, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇸🇬 广州移动-SG-Choopa 3, server: 183.232.56.110, port: 1503, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇭🇰 广州移动-香港Azure 2, server: 183.232.56.182, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Jsnzkpg天下第一 5, server: 183.232.56.110, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Jsnzkpg天下第一 6, server: 183.232.56.110, port: 577, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Jsnzkpg天下第一 7, server: 183.232.56.110, port: 1503, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Jsnzkpg天下第一 8, server: 183.232.56.110, port: 1251, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-1-2.0x-视频", server: bgphzhk1.host.mznode.link, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-4-2.0x-视频", server: bgphzhk4.host.mznode.link, port: 577, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-1-视频", server: relayjp1.host.mznode.link, port: 1251, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-2-视频", server: relayjp2.host.mznode.link, port: 1252, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-3-视频", server: relayjp3.host.mznode.link, port: 1253, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-1-2.0x-视频", server: relaysgp1.host.mznode.link, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-2-2.0x-视频", server: bgpshus2.host.mznode.link, port: 1302, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: 🇰🇷 油管晓飞分享 🇰🇷 09.韩国 路由管控, server: qdd.lcycloud.site, port: 20009, type: ssr, cipher: chacha20-ietf, password: akhfaf, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1554:IqBVpL, obfs-param: 83bc01554.microsoft.com, udp: true}
+  - {name: Mumbai-EC2, server: 35.154.27.192, port: 8080, type: ssr, cipher: aes-256-cfb, password: fD0KP8PWA, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnhat, udp: true}
+  - {name: LAX-Sharktech, server: 107.167.23.50, port: 8084, type: ssr, cipher: aes-256-cfb, password: RhKqtYoG8, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-1-2.0x-视频", server: bgpshtw1.host.mznode.link, port: 1201, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-3-2.0x-视频", server: bgpshus3.host.mznode.link, port: 1303, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
 proxy-groups:
   - name: 🚀 全局设置
     type: select
@@ -54,75 +68,104 @@ proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
-      - 🇸🇬 新加坡2
-      - 🇮🇳 印度
-      - 🇺🇸 美国-netflix
-      - 🇺🇸 美国1
-      - 🇦🇺 澳大利亚
-      - 🇺🇸 美国2
-      - 🇩🇪 德国
-      - 🇬🇧 英国
-      - 🇰🇷 韩国|tg频道:@ripaojiedian
-      - 🇦🇺 Sydney-EC2
-      - 🇫🇷 Paris-EC2
-      - 🇮🇳 Mumbai-EC2
-      - Portland-EC2
-      - Portland-EC2 2
-      - Frankfurt-EC2
-      - 🇨🇳 广州移动-高雄Hinet
-      - 🇭🇰 广州移动-香港Azure
-      - 🇭🇰 广州移动-香港Azure 2
       - 🇸🇬 广州移动-SG-Choopa
-      - 🇨🇳 广州移动-Istanbul-DGN
-      - 🇰🇷 广州移动-Sacramento-Krypt
-      - 🇯🇵 广州移动-Tokyo-NTT
       - 🇸🇬 广州移动-SG-Choopa 2
-      - 🇰🇷 广州移动-LAX-Krypt
-      - 🇰🇷 广州移动-LAX-Krypt 2
+      - 🇨🇳 广州移动-高雄Hinet
+      - Jsnzkpg天下第一
+      - Jsnzkpg天下第一 2
+      - Jsnzkpg天下第一 3
+      - Jsnzkpg天下第一 4
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-2-2.0x-视频
+      - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-2-2.0x-视频
+      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-3-2.0x-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-1-2.0x-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-2-2.0x-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-3-2.0x-视频
       - 🇨🇳 广州移动-高雄Hinet 2
-      - 🇨🇳 广州移动-高雄Hinet 3
-      - 🇯🇵 广州移动-Tokyo-NTT 2
       - 🇨🇳 广州移动-Okazaki-NTT
-      - 🇬🇧 London-EC2
-      - 🇫🇷 Paris-EC2 2
+      - 🇸🇬 Singapore
+      - 🇯🇵 油管晓飞分享 🇯🇵 07.日本 路由管控
+      - 🇭🇰 油管晓飞分享🇭🇰 [Free]-直连-HKT-香港-2-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-3-2.0x-视频
+      - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-3-2.0x-视频
+      - 🇺🇲 美国-netflix
+      - 🇩🇪 德国
+      - 🇭🇰 广州移动-香港Azure
+      - 🇨🇳 广州移动-Sacramento-Krypt
+      - 🇨🇳 广州移动-Tokyo-NTT
+      - 🇨🇳 广州移动-LAX-Krypt
+      - 🇨🇳 广州移动-Tokyo-NTT 2
+      - 节点C|tg频道:@ripaojiedian
+      - 🇸🇬 广州移动-SG-Choopa 3
+      - 🇭🇰 广州移动-香港Azure 2
+      - Jsnzkpg天下第一 5
+      - Jsnzkpg天下第一 6
+      - Jsnzkpg天下第一 7
+      - Jsnzkpg天下第一 8
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-1-2.0x-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-4-2.0x-视频
+      - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-1-视频
+      - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-2-视频
+      - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-3-视频
+      - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-1-2.0x-视频
+      - 🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-2-2.0x-视频
+      - 🇰🇷 油管晓飞分享 🇰🇷 09.韩国 路由管控
+      - Mumbai-EC2
       - LAX-Sharktech
+      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-1-2.0x-视频
+      - 🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-3-2.0x-视频
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
     proxies:
-      - 🇸🇬 新加坡2
-      - 🇮🇳 印度
-      - 🇺🇸 美国-netflix
-      - 🇺🇸 美国1
-      - 🇦🇺 澳大利亚
-      - 🇺🇸 美国2
-      - 🇩🇪 德国
-      - 🇬🇧 英国
-      - 🇰🇷 韩国|tg频道:@ripaojiedian
-      - 🇦🇺 Sydney-EC2
-      - 🇫🇷 Paris-EC2
-      - 🇮🇳 Mumbai-EC2
-      - Portland-EC2
-      - Portland-EC2 2
-      - Frankfurt-EC2
-      - 🇨🇳 广州移动-高雄Hinet
-      - 🇭🇰 广州移动-香港Azure
-      - 🇭🇰 广州移动-香港Azure 2
       - 🇸🇬 广州移动-SG-Choopa
-      - 🇨🇳 广州移动-Istanbul-DGN
-      - 🇰🇷 广州移动-Sacramento-Krypt
-      - 🇯🇵 广州移动-Tokyo-NTT
       - 🇸🇬 广州移动-SG-Choopa 2
-      - 🇰🇷 广州移动-LAX-Krypt
-      - 🇰🇷 广州移动-LAX-Krypt 2
+      - 🇨🇳 广州移动-高雄Hinet
+      - Jsnzkpg天下第一
+      - Jsnzkpg天下第一 2
+      - Jsnzkpg天下第一 3
+      - Jsnzkpg天下第一 4
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-2-2.0x-视频
+      - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-2-2.0x-视频
+      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-3-2.0x-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-1-2.0x-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-2-2.0x-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-3-2.0x-视频
       - 🇨🇳 广州移动-高雄Hinet 2
-      - 🇨🇳 广州移动-高雄Hinet 3
-      - 🇯🇵 广州移动-Tokyo-NTT 2
       - 🇨🇳 广州移动-Okazaki-NTT
-      - 🇬🇧 London-EC2
-      - 🇫🇷 Paris-EC2 2
+      - 🇸🇬 Singapore
+      - 🇯🇵 油管晓飞分享 🇯🇵 07.日本 路由管控
+      - 🇭🇰 油管晓飞分享🇭🇰 [Free]-直连-HKT-香港-2-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-3-2.0x-视频
+      - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-3-2.0x-视频
+      - 🇺🇲 美国-netflix
+      - 🇩🇪 德国
+      - 🇭🇰 广州移动-香港Azure
+      - 🇨🇳 广州移动-Sacramento-Krypt
+      - 🇨🇳 广州移动-Tokyo-NTT
+      - 🇨🇳 广州移动-LAX-Krypt
+      - 🇨🇳 广州移动-Tokyo-NTT 2
+      - 节点C|tg频道:@ripaojiedian
+      - 🇸🇬 广州移动-SG-Choopa 3
+      - 🇭🇰 广州移动-香港Azure 2
+      - Jsnzkpg天下第一 5
+      - Jsnzkpg天下第一 6
+      - Jsnzkpg天下第一 7
+      - Jsnzkpg天下第一 8
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-1-2.0x-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-4-2.0x-视频
+      - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-1-视频
+      - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-2-视频
+      - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-3-视频
+      - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-1-2.0x-视频
+      - 🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-2-2.0x-视频
+      - 🇰🇷 油管晓飞分享 🇰🇷 09.韩国 路由管控
+      - Mumbai-EC2
       - LAX-Sharktech
+      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-1-2.0x-视频
+      - 🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-3-2.0x-视频
   - name: 🎯 国内网络
     type: select
     proxies:
@@ -301,43 +344,65 @@ proxy-groups:
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
     proxies:
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-2-2.0x-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-1-2.0x-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-2-2.0x-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-3-2.0x-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [Free]-直连-HKT-香港-2-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-3-2.0x-视频
       - 🇭🇰 广州移动-香港Azure
       - 🇭🇰 广州移动-香港Azure 2
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-1-2.0x-视频
+      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-4-2.0x-视频
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
     proxies:
-      - DIRECT
+      - 🇯🇵 油管晓飞分享 🇯🇵 07.日本 路由管控
+      - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-1-视频
+      - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-2-视频
+      - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-3-视频
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
     proxies:
-      - 🇺🇸 美国-netflix
-      - 🇺🇸 美国1
-      - 🇺🇸 美国2
+      - 🇺🇲 美国-netflix
+      - 🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-2-2.0x-视频
+      - 🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-3-2.0x-视频
   - name: 🇸🇬 新加坡节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
     proxies:
-      - 🇸🇬 新加坡2
       - 🇸🇬 广州移动-SG-Choopa
       - 🇸🇬 广州移动-SG-Choopa 2
+      - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-2-2.0x-视频
+      - 🇸🇬 Singapore
+      - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-3-2.0x-视频
+      - 🇸🇬 广州移动-SG-Choopa 3
+      - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-1-2.0x-视频
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
     proxies:
-      - DIRECT
+      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-3-2.0x-视频
+      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-1-2.0x-视频
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
     proxies:
-      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - 🇰🇷 油管晓飞分享 🇰🇷 09.韩国 路由管控
   - name: 🎥 奈飞节点
     type: select
     proxies:
@@ -346,6 +411,7 @@ proxy-groups:
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
     proxies:
       - DIRECT
 rules:
@@ -2269,7 +2335,7 @@ rules:
  - DOMAIN,gamer2-cds.cdn.hinet.net,📺 巴哈姆特
  - DOMAIN-SUFFIX,bahamut.com.tw,📺 巴哈姆特
  - DOMAIN-SUFFIX,gamer.com.tw,📺 巴哈姆特
- - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,hinet.net,📺 巴哈姆特
  - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
@@ -2304,7 +2370,6 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
- - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
  - DOMAIN-SUFFIX,go.com,🌍 国外媒体
@@ -8485,6 +8550,7 @@ rules:
  - IP-CIDR,20.139.160.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,20.249.255.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,20.251.0.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,20.253.4.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,20.253.89.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,20.255.255.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,27.0.128.0/22,🎯 国内网络,no-resolve
@@ -8711,23 +8777,37 @@ rules:
  - IP-CIDR,43.95.96.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,43.95.112.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,43.96.0.0/11,🎯 国内网络,no-resolve
- - IP-CIDR,43.130.128.0/17,🎯 国内网络,no-resolve
- - IP-CIDR,43.131.128.0/17,🎯 国内网络,no-resolve
+ - IP-CIDR,43.130.128.0/18,🎯 国内网络,no-resolve
+ - IP-CIDR,43.131.128.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.8.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.10.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.12.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.16.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.32.0/19,🎯 国内网络,no-resolve
- - IP-CIDR,43.132.69.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.75.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.78.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,43.132.82.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.87.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,43.132.88.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,43.132.92.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,43.132.92.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.135.224.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,43.136.0.0/13,🎯 国内网络,no-resolve
- - IP-CIDR,43.144.0.0/12,🎯 国内网络,no-resolve
+ - IP-CIDR,43.144.0.0/13,🎯 国内网络,no-resolve
+ - IP-CIDR,43.152.4.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,43.152.8.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,43.152.11.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,43.152.12.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,43.152.16.0/20,🎯 国内网络,no-resolve
+ - IP-CIDR,43.152.32.0/20,🎯 国内网络,no-resolve
+ - IP-CIDR,43.152.48.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,43.152.52.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,43.152.55.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,43.152.57.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,43.152.60.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,43.152.64.0/18,🎯 国内网络,no-resolve
+ - IP-CIDR,43.152.128.0/17,🎯 国内网络,no-resolve
+ - IP-CIDR,43.153.64.0/18,🎯 国内网络,no-resolve
+ - IP-CIDR,43.156.0.0/16,🎯 国内网络,no-resolve
+ - IP-CIDR,43.157.192.0/18,🎯 国内网络,no-resolve
+ - IP-CIDR,43.158.0.0/15,🎯 国内网络,no-resolve
  - IP-CIDR,43.160.0.0/11,🎯 国内网络,no-resolve
  - IP-CIDR,43.192.0.0/14,🎯 国内网络,no-resolve
  - IP-CIDR,43.196.0.0/15,🎯 国内网络,no-resolve
@@ -8790,6 +8870,8 @@ rules:
  - IP-CIDR,43.228.148.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.228.152.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.228.188.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,43.228.204.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,43.228.240.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.229.40.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.229.48.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.229.56.0/22,🎯 国内网络,no-resolve
@@ -8888,6 +8970,7 @@ rules:
  - IP-CIDR,43.246.0.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,43.246.64.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,43.246.96.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,43.246.112.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.246.148.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.246.150.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.246.228.0/22,🎯 国内网络,no-resolve
@@ -8954,9 +9037,6 @@ rules:
  - IP-CIDR,43.250.244.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.251.4.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.251.36.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,43.251.69.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,43.251.70.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,43.251.149.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.251.192.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.251.232.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.251.244.0/22,🎯 国内网络,no-resolve
@@ -9010,7 +9090,7 @@ rules:
  - IP-CIDR,45.40.224.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,45.65.16.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,45.87.53.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,45.87.54.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,45.87.54.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,45.112.132.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,45.112.188.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,45.112.208.0/20,🎯 国内网络,no-resolve
@@ -9294,17 +9374,13 @@ rules:
  - IP-CIDR,59.80.0.0/15,🎯 国内网络,no-resolve
  - IP-CIDR,59.82.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,59.83.0.0/18,🎯 国内网络,no-resolve
- - IP-CIDR,59.83.136.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,59.83.144.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,59.83.160.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,59.83.180.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,59.83.184.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,59.83.192.0/19,🎯 国内网络,no-resolve
- - IP-CIDR,59.83.224.0/20,🎯 国内网络,no-resolve
- - IP-CIDR,59.83.240.0/21,🎯 国内网络,no-resolve
- - IP-CIDR,59.83.248.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,59.83.252.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,59.83.254.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,59.83.224.0/21,🎯 国内网络,no-resolve
+ - IP-CIDR,59.83.232.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,59.107.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,59.108.0.0/14,🎯 国内网络,no-resolve
  - IP-CIDR,59.151.0.0/17,🎯 国内网络,no-resolve
@@ -9367,6 +9443,7 @@ rules:
  - IP-CIDR,61.232.0.0/14,🎯 国内网络,no-resolve
  - IP-CIDR,61.236.0.0/15,🎯 国内网络,no-resolve
  - IP-CIDR,61.240.0.0/14,🎯 国内网络,no-resolve
+ - IP-CIDR,62.3.6.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,62.234.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,64.188.38.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,64.188.40.0/22,🎯 国内网络,no-resolve
@@ -9401,7 +9478,9 @@ rules:
  - IP-CIDR,101.36.128.0/17,🎯 国内网络,no-resolve
  - IP-CIDR,101.37.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,101.38.0.0/15,🎯 国内网络,no-resolve
- - IP-CIDR,101.40.0.0/13,🎯 国内网络,no-resolve
+ - IP-CIDR,101.40.0.0/14,🎯 国内网络,no-resolve
+ - IP-CIDR,101.45.0.0/16,🎯 国内网络,no-resolve
+ - IP-CIDR,101.46.0.0/15,🎯 国内网络,no-resolve
  - IP-CIDR,101.48.0.0/15,🎯 国内网络,no-resolve
  - IP-CIDR,101.50.8.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,101.50.56.0/22,🎯 国内网络,no-resolve
@@ -9466,7 +9545,7 @@ rules:
  - IP-CIDR,101.198.189.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,101.198.190.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,101.198.194.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,101.198.196.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,101.198.196.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,101.198.200.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,101.198.224.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,101.199.0.0/19,🎯 国内网络,no-resolve
@@ -9523,6 +9602,7 @@ rules:
  - IP-CIDR,103.5.192.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.5.252.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.6.76.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,103.6.108.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.6.120.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.6.220.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.7.140.0/22,🎯 国内网络,no-resolve
@@ -9676,6 +9756,7 @@ rules:
  - IP-CIDR,103.35.32.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,103.35.48.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.35.104.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,103.35.180.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.35.220.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.36.28.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.36.36.0/22,🎯 国内网络,no-resolve
@@ -9741,6 +9822,7 @@ rules:
  - IP-CIDR,103.40.240.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,103.41.0.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.41.52.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,103.41.116.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.41.140.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.41.148.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.41.152.0/22,🎯 国内网络,no-resolve
@@ -9763,6 +9845,7 @@ rules:
  - IP-CIDR,103.43.220.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.43.224.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.43.240.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,103.44.58.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.44.80.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.44.120.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.44.144.0/22,🎯 国内网络,no-resolve
@@ -9875,6 +9958,8 @@ rules:
  - IP-CIDR,103.56.32.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.56.56.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.56.72.0/21,🎯 国内网络,no-resolve
+ - IP-CIDR,103.56.100.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,103.56.104.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.56.140.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.56.152.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.56.184.0/22,🎯 国内网络,no-resolve
@@ -10229,6 +10314,7 @@ rules:
  - IP-CIDR,103.98.240.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.98.250.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.98.252.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,103.99.55.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.99.56.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.99.104.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.99.116.0/22,🎯 国内网络,no-resolve
@@ -10381,6 +10467,8 @@ rules:
  - IP-CIDR,103.119.156.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.119.180.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.119.200.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,103.119.224.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.119.227.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.120.52.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.120.72.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.120.76.0/24,🎯 国内网络,no-resolve
@@ -10561,7 +10649,6 @@ rules:
  - IP-CIDR,103.153.99.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.153.114.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.153.122.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.153.128.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.153.132.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.153.146.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.153.160.0/23,🎯 国内网络,no-resolve
@@ -10578,7 +10665,7 @@ rules:
  - IP-CIDR,103.155.34.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.155.48.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.155.76.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.155.100.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.155.101.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.155.248.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.156.28.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.156.68.0/23,🎯 国内网络,no-resolve
@@ -10599,6 +10686,7 @@ rules:
  - IP-CIDR,103.158.16.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.158.200.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.158.224.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.159.80.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.159.122.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.159.124.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.159.134.0/23,🎯 国内网络,no-resolve
@@ -10658,6 +10746,15 @@ rules:
  - IP-CIDR,103.173.102.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.173.182.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.173.184.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.174.94.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.175.14.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.175.114.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.175.118.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.176.52.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.176.222.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.176.244.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.177.28.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.177.70.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.0.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.48.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.56.0/22,🎯 国内网络,no-resolve
@@ -10665,7 +10762,10 @@ rules:
  - IP-CIDR,103.192.88.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.96.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.112.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.192.128.0/20,🎯 国内网络,no-resolve
+ - IP-CIDR,103.192.128.0/21,🎯 国内网络,no-resolve
+ - IP-CIDR,103.192.137.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,103.192.138.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.192.140.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.144.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.164.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.188.0/22,🎯 国内网络,no-resolve
@@ -10692,8 +10792,7 @@ rules:
  - IP-CIDR,103.196.168.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.196.185.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.196.186.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.197.181.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,103.197.183.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,103.197.180.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.197.228.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.197.253.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.197.254.0/23,🎯 国内网络,no-resolve
@@ -10705,7 +10804,6 @@ rules:
  - IP-CIDR,103.198.156.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.198.180.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.198.196.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.198.202.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.199.164.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.199.196.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.199.228.0/22,🎯 国内网络,no-resolve
@@ -10790,7 +10888,6 @@ rules:
  - IP-CIDR,103.208.16.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.208.28.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.208.48.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.208.148.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.209.112.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.209.136.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.209.201.0/24,🎯 国内网络,no-resolve
@@ -10890,7 +10987,6 @@ rules:
  - IP-CIDR,103.220.192.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.220.200.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.220.240.0/21,🎯 国内网络,no-resolve
- - IP-CIDR,103.221.32.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.221.88.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.221.96.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,103.221.128.0/18,🎯 国内网络,no-resolve
@@ -10928,11 +11024,8 @@ rules:
  - IP-CIDR,103.224.220.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.224.224.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.224.232.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.225.32.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.226.40.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.226.57.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,103.226.58.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.226.60.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,103.226.56.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.226.80.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.226.116.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.226.132.0/22,🎯 国内网络,no-resolve
@@ -10999,6 +11092,7 @@ rules:
  - IP-CIDR,103.234.128.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.234.172.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.234.180.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,103.234.244.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.235.56.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.235.80.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.235.85.0/24,🎯 国内网络,no-resolve
@@ -11403,7 +11497,11 @@ rules:
  - IP-CIDR,114.31.64.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,114.54.0.0/15,🎯 国内网络,no-resolve
  - IP-CIDR,114.60.0.0/14,🎯 国内网络,no-resolve
- - IP-CIDR,114.64.0.0/14,🎯 国内网络,no-resolve
+ - IP-CIDR,114.64.0.0/15,🎯 国内网络,no-resolve
+ - IP-CIDR,114.66.0.0/17,🎯 国内网络,no-resolve
+ - IP-CIDR,114.66.160.0/19,🎯 国内网络,no-resolve
+ - IP-CIDR,114.66.192.0/18,🎯 国内网络,no-resolve
+ - IP-CIDR,114.67.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,114.68.0.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,114.68.64.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,114.68.96.0/22,🎯 国内网络,no-resolve
@@ -11428,6 +11526,7 @@ rules:
  - IP-CIDR,114.112.96.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,114.112.116.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,114.112.120.0/21,🎯 国内网络,no-resolve
+ - IP-CIDR,114.112.129.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,114.112.136.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,114.112.144.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,114.112.160.0/19,🎯 国内网络,no-resolve
@@ -11482,6 +11581,7 @@ rules:
  - IP-CIDR,115.169.14.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,115.169.16.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,115.169.39.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,115.169.40.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,115.169.42.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,115.169.44.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,115.169.48.0/20,🎯 国内网络,no-resolve
@@ -11645,7 +11745,7 @@ rules:
  - IP-CIDR,118.26.144.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,118.26.149.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,118.26.150.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,118.26.152.0/21,🎯 国内网络,no-resolve
+ - IP-CIDR,118.26.156.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,118.26.160.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,118.26.192.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,118.28.0.0/15,🎯 国内网络,no-resolve
@@ -11671,8 +11771,6 @@ rules:
  - IP-CIDR,118.103.164.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,118.103.168.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,118.103.176.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,118.103.245.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,118.103.246.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,118.112.0.0/13,🎯 国内网络,no-resolve
  - IP-CIDR,118.120.0.0/14,🎯 国内网络,no-resolve
  - IP-CIDR,118.124.0.0/15,🎯 国内网络,no-resolve
@@ -11695,7 +11793,12 @@ rules:
  - IP-CIDR,118.184.192.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,118.184.240.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,118.186.0.0/15,🎯 国内网络,no-resolve
- - IP-CIDR,118.188.0.0/16,🎯 国内网络,no-resolve
+ - IP-CIDR,118.188.0.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,118.188.8.0/21,🎯 国内网络,no-resolve
+ - IP-CIDR,118.188.16.0/20,🎯 国内网络,no-resolve
+ - IP-CIDR,118.188.32.0/19,🎯 国内网络,no-resolve
+ - IP-CIDR,118.188.64.0/18,🎯 国内网络,no-resolve
+ - IP-CIDR,118.188.128.0/17,🎯 国内网络,no-resolve
  - IP-CIDR,118.190.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,118.191.0.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,118.191.32.0/19,🎯 国内网络,no-resolve
@@ -11916,7 +12019,6 @@ rules:
  - IP-CIDR,121.59.101.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.102.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.104.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,121.59.106.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.108.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.112.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.121.0/24,🎯 国内网络,no-resolve
@@ -11926,7 +12028,9 @@ rules:
  - IP-CIDR,121.59.136.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.141.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.142.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,121.59.144.0/21,🎯 国内网络,no-resolve
+ - IP-CIDR,121.59.145.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,121.59.146.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,121.59.148.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.152.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.154.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.156.0/22,🎯 国内网络,no-resolve
@@ -11937,6 +12041,7 @@ rules:
  - IP-CIDR,121.76.0.0/15,🎯 国内网络,no-resolve
  - IP-CIDR,121.79.128.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,121.89.0.0/16,🎯 国内网络,no-resolve
+ - IP-CIDR,121.91.104.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,121.100.128.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,121.101.0.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,121.101.208.0/20,🎯 国内网络,no-resolve
@@ -12130,7 +12235,7 @@ rules:
  - IP-CIDR,124.71.192.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,124.71.224.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,124.71.240.0/21,🎯 国内网络,no-resolve
- - IP-CIDR,124.71.250.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,124.71.250.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,124.71.252.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,124.72.0.0/13,🎯 国内网络,no-resolve
  - IP-CIDR,124.88.0.0/13,🎯 国内网络,no-resolve
@@ -12201,7 +12306,7 @@ rules:
  - IP-CIDR,132.232.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,132.237.134.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,134.175.0.0/16,🎯 国内网络,no-resolve
- - IP-CIDR,135.84.254.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,135.84.255.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,135.159.208.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,135.244.80.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,137.59.59.0/24,🎯 国内网络,no-resolve
@@ -12215,7 +12320,14 @@ rules:
  - IP-CIDR,139.5.192.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,139.5.204.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,139.5.244.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,139.9.0.0/16,🎯 国内网络,no-resolve
+ - IP-CIDR,139.9.0.0/18,🎯 国内网络,no-resolve
+ - IP-CIDR,139.9.64.0/19,🎯 国内网络,no-resolve
+ - IP-CIDR,139.9.96.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,139.9.98.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,139.9.100.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,139.9.104.0/21,🎯 国内网络,no-resolve
+ - IP-CIDR,139.9.112.0/20,🎯 国内网络,no-resolve
+ - IP-CIDR,139.9.128.0/17,🎯 国内网络,no-resolve
  - IP-CIDR,139.129.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,139.138.238.0/28,🎯 国内网络,no-resolve
  - IP-CIDR,139.148.0.0/16,🎯 国内网络,no-resolve
@@ -12306,7 +12418,6 @@ rules:
  - IP-CIDR,144.211.138.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,144.255.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,146.56.192.0/18,🎯 国内网络,no-resolve
- - IP-CIDR,146.88.175.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,146.196.56.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,146.196.68.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,146.196.92.0/22,🎯 国内网络,no-resolve
@@ -12319,6 +12430,7 @@ rules:
  - IP-CIDR,147.243.13.32/27,🎯 国内网络,no-resolve
  - IP-CIDR,147.243.13.64/27,🎯 国内网络,no-resolve
  - IP-CIDR,147.243.14.32/27,🎯 国内网络,no-resolve
+ - IP-CIDR,147.243.103.0/25,🎯 国内网络,no-resolve
  - IP-CIDR,148.70.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,150.0.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,150.115.0.0/16,🎯 国内网络,no-resolve
@@ -12459,9 +12571,9 @@ rules:
  - IP-CIDR,163.228.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,163.244.246.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,164.52.80.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,165.84.197.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,165.154.60.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,165.154.64.0/18,🎯 国内网络,no-resolve
+ - IP-CIDR,165.154.100.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,165.154.104.0/21,🎯 国内网络,no-resolve
+ - IP-CIDR,165.154.112.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,165.154.128.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,165.154.192.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,165.156.30.0/24,🎯 国内网络,no-resolve
@@ -12658,7 +12770,6 @@ rules:
  - IP-CIDR,194.138.136.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,194.138.202.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,194.138.245.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,195.142.215.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,198.175.100.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,198.208.17.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,198.208.19.0/24,🎯 国内网络,no-resolve
@@ -13047,7 +13158,12 @@ rules:
  - IP-CIDR,202.158.242.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,202.160.140.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,202.160.156.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,202.160.176.64/26,🎯 国内网络,no-resolve
+ - IP-CIDR,202.160.176.64/29,🎯 国内网络,no-resolve
+ - IP-CIDR,202.160.176.72/30,🎯 国内网络,no-resolve
+ - IP-CIDR,202.160.176.76/32,🎯 国内网络,no-resolve
+ - IP-CIDR,202.160.176.78/31,🎯 国内网络,no-resolve
+ - IP-CIDR,202.160.176.80/28,🎯 国内网络,no-resolve
+ - IP-CIDR,202.160.176.96/27,🎯 国内网络,no-resolve
  - IP-CIDR,202.160.176.128/25,🎯 国内网络,no-resolve
  - IP-CIDR,202.160.177.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,202.160.178.0/23,🎯 国内网络,no-resolve
@@ -14177,11 +14293,9 @@ rules:
  - IP-CIDR,211.155.68.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,211.155.72.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,211.155.80.0/20,🎯 国内网络,no-resolve
- - IP-CIDR,211.155.97.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,211.155.98.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,211.155.100.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,211.155.104.0/21,🎯 国内网络,no-resolve
- - IP-CIDR,211.155.113.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,211.155.96.0/20,🎯 国内网络,no-resolve
+ - IP-CIDR,211.155.112.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,211.155.114.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,211.155.116.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,211.155.120.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,211.155.128.0/17,🎯 国内网络,no-resolve
@@ -14213,7 +14327,8 @@ rules:
  - IP-CIDR,218.98.0.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,218.98.77.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,218.98.78.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,218.98.80.0/20,🎯 国内网络,no-resolve
+ - IP-CIDR,218.98.80.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,218.98.92.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,218.98.96.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,218.98.100.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,218.98.102.0/23,🎯 国内网络,no-resolve
@@ -14283,8 +14398,7 @@ rules:
  - IP-CIDR,220.155.32.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,220.155.64.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,220.155.128.0/17,🎯 国内网络,no-resolve
- - IP-CIDR,220.158.241.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.158.243.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,220.158.240.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,220.160.0.0/11,🎯 国内网络,no-resolve
  - IP-CIDR,220.192.0.0/12,🎯 国内网络,no-resolve
  - IP-CIDR,220.231.0.0/18,🎯 国内网络,no-resolve
@@ -14315,12 +14429,19 @@ rules:
  - IP-CIDR,220.242.134.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,220.242.173.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,220.242.183.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.197.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.205.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.207.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.217.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.218.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.220.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.185.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.186.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.188.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.190.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.192.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.196.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.200.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.202.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.204.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.209.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.210.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.214.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.216.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,220.242.224.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,220.243.0.0/17,🎯 国内网络,no-resolve
  - IP-CIDR,220.243.128.0/18,🎯 国内网络,no-resolve
@@ -14343,7 +14464,7 @@ rules:
  - IP-CIDR,220.243.238.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,220.243.243.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,220.243.244.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.243.246.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,220.243.246.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,220.243.249.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,220.243.250.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,220.243.252.0/24,🎯 国内网络,no-resolve
@@ -14397,6 +14518,7 @@ rules:
  - IP-CIDR,222.126.174.76/30,🎯 国内网络,no-resolve
  - IP-CIDR,222.126.174.88/29,🎯 国内网络,no-resolve
  - IP-CIDR,222.126.174.144/28,🎯 国内网络,no-resolve
+ - IP-CIDR,222.126.176.0/29,🎯 国内网络,no-resolve
  - IP-CIDR,222.126.178.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,222.126.180.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,222.126.184.0/21,🎯 国内网络,no-resolve
@@ -14466,6 +14588,7 @@ rules:
  - DOMAIN-SUFFIX,msftconnecttest.com,🎯 国内网络
  - DOMAIN-SUFFIX,msftncsi.com,🎯 国内网络
  - DOMAIN-SUFFIX,qupu123.com,🎯 国内网络
+ - DOMAIN-SUFFIX,pdfwifi.com,🎯 国内网络
  - DOMAIN-SUFFIX,cn,🎯 国内网络
  - DOMAIN-SUFFIX,中国,🎯 国内网络
  - DOMAIN-SUFFIX,公司,🎯 国内网络
@@ -14933,7 +15056,6 @@ rules:
  - DOMAIN-SUFFIX,lanzoux.com,🎯 国内网络
  - DOMAIN-SUFFIX,lemicp.com,🎯 国内网络
  - DOMAIN-SUFFIX,letitfly.me,🎯 国内网络
- - DOMAIN-SUFFIX,linkedin.com,🎯 国内网络
  - DOMAIN-SUFFIX,lizhi.fm,🎯 国内网络
  - DOMAIN-SUFFIX,lizhi.io,🎯 国内网络
  - DOMAIN-SUFFIX,lizhifm.com,🎯 国内网络
