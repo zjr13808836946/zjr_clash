@@ -5,251 +5,180 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 Base 香港 HK - 1 HKT, server: tunnel.e-nets.xyz, port: 9600, type: ss, cipher: chacha20-ietf-poly1305, password: pDC5MTKZPmVPgPLU, udp: true}
-  - {name: 🇭🇰 Base 香港 HK - 3 HKT, server: tunnel.e-nets.xyz, port: 9602, type: ss, cipher: chacha20-ietf-poly1305, password: pDC5MTKZPmVPgPLU, udp: true}
-  - {name: 🇸🇬 广州移动-SG-Choopa, server: 183.232.56.182, port: 1502, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇸🇬 广州移动-SG-Choopa 2, server: 183.232.56.110, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇨🇳 广州移动-高雄Hinet, server: 183.232.56.110, port: 1201, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇯🇵 日本1|BGP中转, server: azhk.relay.qchwnd.moe, port: 44602, type: trojan, password: b89d279d-707e-4892-8963-9479ffd53b23, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false, udp: true}
-  - {name: "🇦🇺 澳大利亚[感谢订阅——科技网络]", server: 37.120.212.162, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2XtmwMEgsVJYKWF4VjkL, udp: true}
-  - {name: 🇭🇰 新加坡|广港隧道|1.5x, server: newgy.jidan666.com, port: 23034, type: trojan, password: b89d279d-707e-4892-8963-9479ffd53b23, sni: newgy.jidan666.com, skip-cert-verify: false, udp: true}
-  - {name: 共享, server: 27.122.57.72, port: 35326, type: vmess, uuid: 217362fd-3e43-4436-be62-92f6dd57303b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 每次连接前用国内网络更新订阅, server: cm-jm.okvpn.xyz, port: 20001, type: vmess, uuid: 61d03e1a-756d-4643-9cc3-a4b0bb693833, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}, udp: true}
-  - {name: 🇵🇭 菲律宾, server: 188.214.125.106, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG, udp: true}
-  - {name: 🇭🇰 香港1号 https://t.me/freev2_ml, server: freehk1.godlight.xyz, port: 443, type: vmess, uuid: e9cb9488-b4b5-44af-8dac-01f21eb1ccfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /Download.apk, ws-headers: {Host: freehk1.godlight.xyz}, udp: true}
-  - {name: 🇭🇰 香港Azure21|停机卡免流, server: awshk.okvpn.xyz, port: 80, type: vmess, uuid: 61d03e1a-756d-4643-9cc3-a4b0bb693833, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: super-hk.smdynet.com}, udp: true}
-  - {name: Jsnzkpg天下第一, server: 183.232.56.182, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Jsnzkpg天下第一 2, server: 183.232.56.110, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Jsnzkpg天下第一 3, server: 183.232.56.182, port: 1502, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Jsnzkpg天下第一 4, server: 183.232.56.110, port: 1253, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇸🇬 Singapore 01 | Media, server: iepl.sg.21ce.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: 🇭🇰 Hong Kong 08, server: iepl.hk.4a75.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: 🇭🇰 Hong Kong 14, server: iepl.hk.71bc.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: 🇭🇰 Hong Kong 07, server: iepl.hk.cc38.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: 🇭🇰 Hong Kong 11, server: iepl.hk.206f.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: 伊朗测试, server: apple84.hfnote.top, port: 9011, type: vmess, uuid: 873dafce-5dd7-36b5-b648-46fc267d3e2e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: apple84.hfnote.top}, udp: true}
-  - {name: 🇰🇷 韩国01丨Netfix丨国内中转, server: apple131.hfnote.top, port: 9021, type: vmess, uuid: 873dafce-5dd7-36b5-b648-46fc267d3e2e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: apple131.hfnote.top}, udp: true}
-  - {name: 🇯🇵 专线 日本 01 3x Media, server: iepl.inboard.soloxxy.com, port: 5004, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: iepl.inboard.soloxxy.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 专线 香港 01 3x, server: iepl.inboard.soloxxy.com, port: 5000, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: iepl.inboard.soloxxy.com, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-2-2.0x-视频", server: bgphzhk2.host.mznode.link, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: "🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-2-2.0x-视频", server: relaysgp2.host.mznode.link, port: 1502, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: "🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-3-2.0x-视频", server: bgpshtw3.host.mznode.link, port: 1203, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-1-2.0x-视频", server: dmhk1.host.mznode.link, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-2-2.0x-视频", server: dmhk2.host.mznode.link, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-3-2.0x-视频", server: dmhk3.host.mznode.link, port: 576, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: 🇭🇰 中转|香港HGC06|华南隧道, server: cm-jm.okvpn.xyz, port: 20000, type: vmess, uuid: 61d03e1a-756d-4643-9cc3-a4b0bb693833, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}, udp: true}
-  - {name: 🇰🇷 韩国02丨Netfix丨国内中转, server: apple132.hfnote.top, port: 9022, type: vmess, uuid: 873dafce-5dd7-36b5-b648-46fc267d3e2e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: apple132.hfnote.top}, udp: true}
-  - {name: 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 03 1x, server: 0750-s1.cm.liangxinyun.xyz, port: 5802, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: 0750-s1.cm.liangxinyun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 专线|香港08|原生HGCBBS, server: zfd.out02.nodeserver.top, port: 16237, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇲 标准|美国02|解锁流媒体, server: zfd.out02.nodeserver.top, port: 16104, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 广州移动-高雄Hinet 2, server: 183.232.56.110, port: 1203, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇨🇳 广州移动-Okazaki-NTT, server: 183.232.56.110, port: 1251, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇭🇰 日本1|广港隧道|1.5x, server: newgy.jidan666.com, port: 23031, type: trojan, password: b89d279d-707e-4892-8963-9479ffd53b23, sni: newgy.jidan666.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 日本2|广港隧道|1.5x, server: newgy.jidan666.com, port: 23032, type: trojan, password: b89d279d-707e-4892-8963-9479ffd53b23, sni: newgy.jidan666.com, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore, server: 183.232.56.110, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇭🇰 香港(绿头外网集团)(Public), server: hk5.applesuperman.tk, port: 10601, type: vmess, uuid: d3435521-3d1f-37f7-ab48-f5302bc6a4fb, alterId: 16, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: hk5.applesuperman.tk}, udp: true}
-  - {name: 🇨🇳 台湾(绿头外网集团)(Public), server: hzcm.rokishi.cyou, port: 20000, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458, udp: true}
-  - {name: 🇨🇳 台湾(绿头外网集团)(Public) 2, server: hzcm.rokishi.cyou, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: a9616a54-5409-42df-822f-f412e46c2458, udp: true}
-  - {name: 🇰🇷 中继 韩国 02 1x Media, server: hzcm-yp-pop-01.liangxinyun.xyz, port: 5201, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: hzcm-yp-pop-01.liangxinyun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 油管晓飞分享 🇯🇵 07.日本 路由管控, server: qdd.lcycloud.site, port: 20007, type: ssr, cipher: chacha20-ietf, password: akhfaf, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1554:IqBVpL, obfs-param: 83bc01554.microsoft.com, udp: true}
-  - {name: "🇭🇰 油管晓飞分享🇭🇰 [Free]-直连-HKT-香港-2-视频", server: freehkt2.mznode.link, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-3-2.0x-视频", server: bgphzhk3.host.mznode.link, port: 576, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: "🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-3-2.0x-视频", server: relaysgp3.host.mznode.link, port: 1503, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 04 1x, server: 0750-s1.cm.liangxinyun.xyz, port: 5803, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: 0750-s1.cm.liangxinyun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 +Base+新加坡+SG+-+4, server: tunnel.e-nets.xyz, port: 9803, type: ss, cipher: chacha20-ietf-poly1305, password: pDC5MTKZPmVPgPLU, udp: true}
-  - {name: 🇸🇬 +Base+新加坡+SG+-+5, server: tunnel.e-nets.xyz, port: 9804, type: ss, cipher: chacha20-ietf-poly1305, password: pDC5MTKZPmVPgPLU, udp: true}
-  - {name: 🇸🇬 +Base+新加坡+SG+-+6, server: tunnel.e-nets.xyz, port: 9805, type: ss, cipher: chacha20-ietf-poly1305, password: pDC5MTKZPmVPgPLU, udp: true}
-  - {name: 🇭🇰 +Base+香港+HK+-+2+HKT, server: tunnel.e-nets.xyz, port: 9601, type: ss, cipher: chacha20-ietf-poly1305, password: pDC5MTKZPmVPgPLU, udp: true}
-  - {name: 🇦🇺 +Base+澳大利亚+AU+-+1, server: tunnel.e-nets.xyz, port: 9200, type: ss, cipher: chacha20-ietf-poly1305, password: pDC5MTKZPmVPgPLU, udp: true}
-  - {name: 🇺🇲 美国-netflix, server: 107.167.23.50, port: 8084, type: ssr, cipher: aes-256-cfb, password: RhKqtYoG8, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
-  - {name: 🇩🇪 德国, server: de-am2.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: 82BMko4lE, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇲🇾 _NON_FMYC-2021.11.28_184, server: us07.vip-v2ray.cf, port: 58740, type: vmess, uuid: 4ca67d33-f626-47ba-e077-0ff6742fc31c, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 广州移动-香港Azure, server: 183.232.56.182, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇨🇳 广州移动-Sacramento-Krypt, server: 183.232.56.182, port: 1302, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇨🇳 广州移动-Tokyo-NTT, server: 183.232.56.182, port: 1252, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇨🇳 广州移动-LAX-Krypt, server: 183.232.56.110, port: 1303, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇨🇳 广州移动-Tokyo-NTT 2, server: 183.232.56.110, port: 1253, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇺🇲 US_6697+@WangCai_1, server: 38.91.102.96, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇺🇲 US_2375+@WangCai_1, server: 38.91.102.96, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇲 US_8009+@WangCai_1, server: 169.197.143.157, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x, server: mf-do-ua-10.xncloud.xyz, port: 80, type: vmess, uuid: 71ba860d-7a06-37cc-a3d6-04250bdf118a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-10.xncloud.xyz}, udp: true}
-  - {name: 节点C|tg频道:@ripaojiedian, server: 183.232.56.110, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇸🇬 SG(Youtube技术分享室整理), server: 217.138.221.42, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw, udp: true}
-  - {name: 🇸🇬 新加坡|BGP中转, server: azhk.relay.qchwnd.moe, port: 44605, type: trojan, password: b89d279d-707e-4892-8963-9479ffd53b23, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false, udp: true}
-  - {name: "🇸🇬 中转|新加坡Singtel01|华南隧道[流媒体解锁]", server: cm-jm.okvpn.xyz, port: 20049, type: vmess, uuid: 61d03e1a-756d-4643-9cc3-a4b0bb693833, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}, udp: true}
-  - {name: 🇺🇲 US_5003+@WangCai_1, server: 169.197.143.157, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇺🇲 US_9101+@WangCai_1, server: 169.197.143.157, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇺🇲 US_7001+@WangCai_1, server: 169.197.143.157, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 🇺🇲 US_2376+@WangCai_1, server: 169.197.143.157, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇸🇬 广州移动-SG-Choopa 3, server: 183.232.56.110, port: 1503, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇨🇳 标准|中国台湾04|解锁流媒体, server: zfd.out04.nodeserver.top, port: 16128, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 广州移动-香港Azure 2, server: 183.232.56.182, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇸🇬 【新鸟免费】美国UA -DO 09 免流 1.0x, server: mf-do-ua-09.xncloud.xyz, port: 80, type: vmess, uuid: 71ba860d-7a06-37cc-a3d6-04250bdf118a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-09.xncloud.xyz}, udp: true}
-  - {name: 🇺🇲 US_7306+@WangCai_1, server: 38.91.102.96, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇺🇲 US_7307+@WangCai_1, server: 38.91.102.96, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇺🇲 US_2376+@WangCai_1 2, server: 38.91.102.96, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇲 US_8008+@WangCai_1, server: 38.91.102.96, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 🇺🇲 US_5004+@WangCai_1, server: 38.91.102.96, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇺🇲 US_8118+@WangCai_1, server: 38.91.102.96, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 🇺🇲 US_8080+@WangCai_1, server: 38.91.102.96, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇺🇲 US_8090+@WangCai_1, server: 38.91.102.96, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 🇺🇲 US_9102+@WangCai_1, server: 38.91.102.96, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇺🇲 US_6379+@WangCai_1, server: 38.91.102.96, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 🇺🇲 US_8000+@WangCai_1, server: 38.91.102.96, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇺🇲 US_8009+@WangCai_1 2, server: 38.91.102.96, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 🇺🇲 _US_美国, server: 38.91.102.86, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: IT, server: 139.99.62.207, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 🇺🇲 美国, server: 172.105.177.120, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 🇺🇲 美国 2, server: 172.105.180.227, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 🇬🇧 英国, server: 84.17.37.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: tjwRqQvteAjt3xFmbZTA, udp: true}
-  - {name: 🇨🇦 加拿大, server: 139.99.62.207, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 直连-东京1, server: 15.152.149.104, port: 10066, type: vmess, uuid: b24945af-3d84-3d7f-8f52-b3ca0f68cdf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇲 _US_美国 2, server: 38.91.102.86, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇯🇵 _JP_日本, server: 172.105.232.147, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇰🇷 _KR_韩国, server: 141.164.62.67, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: Jsnzkpg天下第一 5, server: 183.232.56.110, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Jsnzkpg天下第一 6, server: 183.232.56.110, port: 577, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇭🇰 moon365.net🇭🇰HK+734+free, server: 84.17.37.55, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: tjwRqQvteAjt3xFmbZTA, udp: true}
-  - {name: Jsnzkpg天下第一 7, server: 183.232.56.110, port: 1503, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: "[12.26]+TG频道@Jsnzk", server: 117.28.243.173, port: 2173, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: Jsnzkpg天下第一 8, server: 183.232.56.110, port: 1251, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇺🇲 +United+States+01+|+Media, server: iepl.us.e99c.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: 🇺🇲 +United+States+04+|+Media, server: iepl.us.6e28.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: 🇺🇲 +United+States+05+|+Media, server: iepl.us.4bcf.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: 🇺🇲 +United+States+03+|+Media, server: iepl.us.4447.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: 🇭🇰 +Hong+Kong+06, server: iepl.hk.0686.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: 🇦🇺 澳大利亚01丨Netfix丨安徽中转, server: apple139.hfnote.top, port: 9028, type: vmess, uuid: 873dafce-5dd7-36b5-b648-46fc267d3e2e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: apple139.hfnote.top}, udp: true}
-  - {name: 🇸🇦 迪拜01丨Netfix丨广东中转, server: apple127.hfnote.top, port: 55304, type: vmess, uuid: 873dafce-5dd7-36b5-b648-46fc267d3e2e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: apple127.hfnote.top}, udp: true}
-  - {name: 🇭🇰 专线|香港02|原生HGCBBS, server: v32.88host.buzz, port: 18065, type: vmess, uuid: 7d96f94e-7be4-33a7-9f45-9c91b3df90e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: +|+5.29Mb, server: 172.105.180.227, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: +|+4.70Mb, server: 172.105.180.227, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 🇯🇵 中继 日本 01 1x Media, server: xmsj-sha-ctcn2-01.liangxinyun.xyz, port: 5600, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: xmsj-sha-ctcn2-01.liangxinyun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 中继 日本 02 1x Media, server: xmsj-sha-ctcn2-01.liangxinyun.xyz, port: 5601, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: xmsj-sha-ctcn2-01.liangxinyun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 中继 日本 03 1x Media, server: xmsj-sha-ctcn2-01.liangxinyun.xyz, port: 5602, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: xmsj-sha-ctcn2-01.liangxinyun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 中继 日本 04 1x Media, server: xmsj-sha-ctcn2-01.liangxinyun.xyz, port: 5603, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: xmsj-sha-ctcn2-01.liangxinyun.xyz, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-1-2.0x-视频", server: bgphzhk1.host.mznode.link, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-4-2.0x-视频", server: bgphzhk4.host.mznode.link, port: 577, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: "🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-1-视频", server: relayjp1.host.mznode.link, port: 1251, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: "🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-2-视频", server: relayjp2.host.mznode.link, port: 1252, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: "🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-3-视频", server: relayjp3.host.mznode.link, port: 1253, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: "🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-1-2.0x-视频", server: relaysgp1.host.mznode.link, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: "🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-2-2.0x-视频", server: bgpshus2.host.mznode.link, port: 1302, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: 🇰🇷 油管晓飞分享 🇰🇷 中继 韩国 03 1x Media, server: hzcm-yp-pop-01.liangxinyun.xyz, port: 5202, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: hzcm-yp-pop-01.liangxinyun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 02 1x, server: 0750-s1.cm.liangxinyun.xyz, port: 5801, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: 0750-s1.cm.liangxinyun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇲🇾 油管晓飞分享 🇲🇾 中继 马来西亚 01 1x Residential, server: 0750-s2.cm.liangxinyun.xyz, port: 5500, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: 0750-s2.cm.liangxinyun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇲 专线|西雅图01|原生NTT, server: zfd.out01.nodeserver.top, port: 16233, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇲 美国（欢迎订阅YouTube晓柒科技）, server: us06.xqkj.cloud, port: 1116, type: vmess, uuid: 4e6bebba-c9a5-4f3c-a559-8601abdb392d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: us06.xqkj.cloud}, udp: true}
-  - {name: 🇺🇲 美国（欢迎订阅YouTube晓柒科技） 2, server: us07.xqkj.cloud, port: 1117, type: vmess, uuid: 4e6bebba-c9a5-4f3c-a559-8601abdb392d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: us07.xqkj.cloud}, udp: true}
-  - {name: 🇺🇲 美国（欢迎订阅YouTube晓柒科技） 3, server: us09.xqkj.cloud, port: 1119, type: vmess, uuid: 4e6bebba-c9a5-4f3c-a559-8601abdb392d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: us09.xqkj.cloud}, udp: true}
-  - {name: 🇮🇳 印度（欢迎订阅YouTube晓柒科技）, server: ind04.xqkj.cloud, port: 1916, type: vmess, uuid: 4e6bebba-c9a5-4f3c-a559-8601abdb392d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: ind04.xqkj.cloud}, udp: true}
-  - {name: 🇮🇳 印度（欢迎订阅YouTube晓柒科技） 2, server: ind05.xqkj.cloud, port: 1916, type: vmess, uuid: 4e6bebba-c9a5-4f3c-a559-8601abdb392d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: ind05.xqkj.cloud}, udp: true}
-  - {name: 🇮🇳 印度(绿头外网集团)(Public), server: 172.105.57.249, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇮🇳 印度(绿头外网集团)(Public) 2, server: 172.105.57.249, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 🇮🇳 印度(绿头外网集团)(Public) 3, server: 172.105.57.249, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇮🇳 印度(绿头外网集团)(Public) 4, server: 172.105.57.249, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇯🇵 日本01丨流媒体解锁丨广东中继, server: apple114.hfnote.top, port: 9014, type: vmess, uuid: 873dafce-5dd7-36b5-b648-46fc267d3e2e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: apple114.hfnote.top}, udp: true}
-  - {name: 🇦🇺 澳大利亚02丨Netfix丨广东中转, server: apple108.hfnote.top, port: 9007, type: vmess, uuid: 873dafce-5dd7-36b5-b648-46fc267d3e2e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: apple108.hfnote.top}, udp: true}
-  - {name: 🇺🇲 中继 美国 02 1x Residential, server: xmsj-sha-ctcn2-01.liangxinyun.xyz, port: 5501, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: xmsj-sha-ctcn2-01.liangxinyun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 油管晓飞分享 🇰🇷 09.韩国 路由管控, server: qdd.lcycloud.site, port: 20009, type: ssr, cipher: chacha20-ietf, password: akhfaf, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 1554:IqBVpL, obfs-param: 83bc01554.microsoft.com, udp: true}
-  - {name: 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 01 1x, server: 0750-s1.cm.liangxinyun.xyz, port: 5800, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: 0750-s1.cm.liangxinyun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 专线|中国台湾03|原生HINET, server: zfd.out02.nodeserver.top, port: 16224, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇲 标准|美国01|解锁流媒体, server: zfd.out01.nodeserver.top, port: 16103, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 标准|印度02|解锁流媒体, server: v28.88host.buzz, port: 18075, type: vmess, uuid: 924017d1-3724-3fd8-be78-7ef6120cb653, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /mojing, ws-headers: {Host: v28.88host.buzz}, udp: true}
-  - {name: Mumbai-EC2, server: 35.154.27.192, port: 8080, type: ssr, cipher: aes-256-cfb, password: fD0KP8PWA, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-Sharktech, server: 107.167.23.50, port: 8084, type: ssr, cipher: aes-256-cfb, password: RhKqtYoG8, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇺🇲 US_7002+@WangCai_1, server: 38.91.102.96, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 🇺🇲 US_7307+@WangCai_1 2, server: 167.88.61.60, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇺🇲 US_5500+@WangCai_1, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇺🇲 US_5601+@WangCai_1, server: 169.197.143.157, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇺🇲 US_8119+@WangCai_1, server: 169.197.143.157, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 🇺🇲 US_7306+@WangCai_1 2, server: 169.197.143.157, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇺🇲 US_8881+@WangCai_1, server: 169.197.143.157, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 🇺🇲 US_6379+@WangCai_1 2, server: 169.197.143.157, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 🇺🇲 US_5004+@WangCai_1 2, server: 169.197.143.157, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇺🇲 US_2375+@WangCai_1 2, server: 169.197.143.157, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇨🇳 台湾, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇲 _US_美国 3, server: 38.64.138.145, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇲 _US_美国 4, server: 38.91.102.86, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇭🇰 香港|BGP中转|HGC|1.2x, server: azhk.relay.qchwnd.moe, port: 44601, type: trojan, password: b89d279d-707e-4892-8963-9479ffd53b23, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 印度|BGP中转, server: azhk.relay.qchwnd.moe, port: 44604, type: trojan, password: b89d279d-707e-4892-8963-9479ffd53b23, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇲 US_8882+@WangCai_1, server: 38.91.102.86, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 🇺🇲 US_8888+@WangCai_1, server: 38.91.102.86, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇺🇲 US_9102+@WangCai_1 2, server: 38.91.102.86, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇺🇲 US_9101+@WangCai_1 2, server: 38.91.102.96, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇺🇲 US_8118+@WangCai_1 2, server: 167.88.61.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 🇺🇲 US_8118+@WangCai_1 3, server: 169.197.143.157, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 🇺🇲 US_6697+@WangCai_1 2, server: 169.197.143.157, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇺🇲 US_9102+@WangCai_1 3, server: 169.197.143.157, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇺🇲 US_8080+@WangCai_1 2, server: 169.197.143.157, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇺🇲 US_0443+@WangCai_1, server: 169.197.143.157, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇺🇲 US_8882+@WangCai_1 2, server: 169.197.143.157, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 🇺🇲 US_8091+@WangCai_1, server: 169.197.143.157, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 🇺🇲 US_5500+@WangCai_1 2, server: 169.197.143.157, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇺🇲 _US_美国 5, server: 38.91.102.86, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇲 _US_美国 6, server: 38.91.102.86, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 🇺🇲 _US_美国 7, server: 38.91.102.86, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇲 _US_美国 8, server: 38.91.102.86, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇺🇲 _US_美国 9, server: 38.91.102.86, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇺🇲 _US_美国 10, server: 38.91.102.86, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇺🇲 _US_美国 11, server: 38.91.102.86, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: "🇺🇲 美国[感谢订阅——科技网络]", server: 38.91.102.86, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇺🇲 +US_1908+|62.51Mb, server: 38.143.66.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 🇺🇲 +US_1909+|57.14Mb, server: 38.143.66.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 🇺🇲 +US_1927+|37.51Mb, server: 38.91.102.86, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇺🇲 +US_1941+|112.98Mb, server: 38.64.138.145, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 🇺🇲 +US_1950+|39.78Mb, server: 38.91.102.86, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇺🇲 _US_美国 12, server: 38.143.66.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: "🇭🇰 [直连/CN2 GIA] 香港10 阿里云 HK", server: 47.243.67.117, port: 8888, type: vmess, uuid: 4e088dd5-98dc-4b2d-8f6c-d33559c50e49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 47.243.67.117}, udp: true}
-  - {name: 🇺🇲 美国（欢迎订阅YouTube晓柒科技） 4, server: us08.xqkj.cloud, port: 1118, type: vmess, uuid: 4e6bebba-c9a5-4f3c-a559-8601abdb392d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: us08.xqkj.cloud}, udp: true}
-  - {name: 🇮🇳 印度(绿头外网集团)(Public) 5, server: 172.105.57.249, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇲 美国(绿头外网集团)(Public), server: 38.64.138.145, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 🇺🇲 美国(绿头外网集团)(Public) 2, server: 38.64.138.145, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇨🇳 中继 台湾 04 1x Residential, server: xmsj-sha-ctcn2-01.liangxinyun.xyz, port: 5903, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: xmsj-sha-ctcn2-01.liangxinyun.xyz, skip-cert-verify: false, udp: true}
-  - {name: "🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-1-2.0x-视频", server: bgpshtw1.host.mznode.link, port: 1201, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: "🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-3-2.0x-视频", server: bgpshus3.host.mznode.link, port: 1303, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com, udp: true}
-  - {name: 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 05 1x, server: 0750-s1.cm.liangxinyun.xyz, port: 5804, type: trojan, password: 28cbaf4f-b8d0-376b-8168-920a6c155673, sni: 0750-s1.cm.liangxinyun.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 印度, server: 172.105.35.61, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 🇺🇲 美国 3, server: 192.46.210.73, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇨🇳 台湾 2, server: 118.107.244.112, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 🇭🇰 香港, server: 192.46.210.73, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇺🇲 美国 4, server: 192.46.210.73, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇺🇲 美国 5, server: 192.46.210.73, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇨🇳 台湾 3, server: 118.107.244.112, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇺🇲 YouTube-由零开始-美国6379, server: 38.143.66.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 🇺🇲 美国 6, server: 38.75.136.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇨🇳 台湾 4, server: 188.214.106.98, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH, udp: true}
-  - {name: 🇭🇰 HK(Youtube技术分享室整理), server: cmhk04.xc188.net, port: 443, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /clientarea, ws-headers: {Host: cmhk04.xc188.net}, udp: true}
-  - {name: 🇭🇰 +HK(Youtube技术分享室整理), server: 118.107.244.113, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇨🇳 TW(Youtube技术分享室整理), server: 139.162.56.155, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 🇺🇲 US(Youtube技术分享室整理), server: 172.104.168.83, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇭🇰 +HK(Youtube技术分享室整理) 2, server: 118.107.244.114, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇭🇰 HK(Youtube技术分享室整理) 2, server: www.xinyi369.tk, port: 443, type: trojan, password: 3528818a-1fe2-4c2a-b4f7-17e4d1eca52a, sni: www.xinyi369.tk, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 SG(Youtube技术分享室整理) 2, server: 217.182.199.168, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 🇺🇲 US(Youtube技术分享室整理) 2, server: cc.hciahciphcie.club, port: 443, type: vmess, uuid: 9a297bb1-06e3-4e6f-97fa-3d3202d46596, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /84c3f/, ws-headers: {Host: cc.hciahciphcie.club}, udp: true}
-  - {name: 🇭🇰 +HK(Youtube技术分享室整理) 3, server: 118.107.244.114, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 🇮🇳 印度+🇮🇳(Youtube技术分享室整理), server: 192.46.211.249, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇮🇳 印度+🇮🇳(Youtube技术分享室整理) 2, server: 192.46.211.249, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇲 US(Youtube技术分享室整理) 3, server: 38.114.114.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇯🇵 日本+🇯🇵(Youtube技术分享室整理), server: 5.180.76.74, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: "🇮🇳 印度+🇮🇳(技术分享室整理,欢迎订阅)", server: 192.46.208.153, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇲 US(Youtube技术分享室整理) 4, server: 38.114.114.69, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 🇺🇲 美国(Youtube技术分享室整理), server: 38.75.136.139, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 🇺🇲 US(Youtube技术分享室整理) 5, server: 38.75.136.21, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇲 US(Youtube技术分享室整理) 6, server: 38.75.136.45, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇲 美国(Youtube技术分享室整理) 2, server: 38.114.114.68, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇯🇵 日本🇯🇵(Youtube技术分享室整理), server: 158.247.208.21, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇺🇲 美国(Youtube技术分享室整理) 3, server: 38.75.136.102, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美(Youtube技术分享室整理), server: 38.75.137.66, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇲 US(Youtube技术分享室整理) 7, server: 38.75.136.117, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇺🇲 US(Youtube技术分享室整理) 8, server: 38.114.114.68, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 🇭🇰 HK(Youtube技术分享室整理) 3, server: mf-aws-sg-07.xncloud.xyz, port: 18000, type: vmess, uuid: 05927be3-4d24-39b1-9ddb-ef7ed7965d03, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-07.xncloud.xyz}, udp: true}
-  - {name: (Youtube技术分享室整理), server: 185.172.113.156, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇸🇬 SG(Youtube技术分享室整理) 3, server: 103.253.26.134, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: eeh7iewe.com}, udp: true}
-  - {name: 🇻🇳 越南+🇻🇳(Youtube技术分享室整理), server: 188.214.152.194, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: t8BFcaM3GSCw5FHbph27, udp: true}
-  - {name: 🇭🇰 +HK(Youtube技术分享室整理) 4, server: 118.107.244.112, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 🇭🇰 +HK(Youtube技术分享室整理) 5, server: 118.107.244.112, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 🇺🇲 US(Youtube技术分享室整理) 9, server: 172.104.168.83, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇺🇲 US(Youtube技术分享室整理) 10, server: 172.104.168.83, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 🇭🇰 Base 香港 HK - 1 HKT, server: tunnel.e-nets.xyz, port: 9600, type: ss, cipher: chacha20-ietf-poly1305, password: pDC5MTKZPmVPgPLU}
+  - {name: 🇭🇰 Base 香港 HK - 3 HKT, server: tunnel.e-nets.xyz, port: 9602, type: ss, cipher: chacha20-ietf-poly1305, password: pDC5MTKZPmVPgPLU}
+  - {name: 🇸🇬 广州移动-SG-Choopa, server: 183.232.56.182, port: 1502, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇸🇬 广州移动-SG-Choopa 2, server: 183.232.56.110, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇯🇵 日本1|BGP中转, server: azhk.relay.qchwnd.moe, port: 44602, type: trojan, password: b89d279d-707e-4892-8963-9479ffd53b23, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡|广港隧道|1.5x, server: newgy.jidan666.com, port: 23034, type: trojan, password: b89d279d-707e-4892-8963-9479ffd53b23, sni: newgy.jidan666.com, skip-cert-verify: false}
+  - {name: 共享, server: 27.122.57.72, port: 35326, type: vmess, uuid: 217362fd-3e43-4436-be62-92f6dd57303b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 每次连接前用国内网络更新订阅, server: cm-jm.okvpn.xyz, port: 20001, type: vmess, uuid: 61d03e1a-756d-4643-9cc3-a4b0bb693833, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 🇭🇰 香港Azure21|停机卡免流, server: awshk.okvpn.xyz, port: 80, type: vmess, uuid: 61d03e1a-756d-4643-9cc3-a4b0bb693833, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: super-hk.smdynet.com}}
+  - {name: Jsnzkpg天下第一, server: 183.232.56.182, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: Jsnzkpg天下第一 2, server: 183.232.56.110, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: Jsnzkpg天下第一 3, server: 183.232.56.182, port: 1502, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇸🇬 Singapore 01 | Media, server: iepl.sg.21ce.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}}
+  - {name: 🇭🇰 Hong Kong 08, server: iepl.hk.4a75.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}}
+  - {name: 🇭🇰 Hong Kong 14, server: iepl.hk.71bc.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}}
+  - {name: 🇭🇰 Hong Kong 07, server: iepl.hk.cc38.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}}
+  - {name: 🇭🇰 Hong Kong 11, server: iepl.hk.206f.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-2-2.0x-视频", server: bgphzhk2.host.mznode.link, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com}
+  - {name: "🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-2-2.0x-视频", server: relaysgp2.host.mznode.link, port: 1502, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-1-2.0x-视频", server: dmhk1.host.mznode.link, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-2-2.0x-视频", server: dmhk2.host.mznode.link, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-3-2.0x-视频", server: dmhk3.host.mznode.link, port: 576, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com}
+  - {name: 🇭🇰 中转|香港HGC06|华南隧道, server: cm-jm.okvpn.xyz, port: 20000, type: vmess, uuid: 61d03e1a-756d-4643-9cc3-a4b0bb693833, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 🇭🇰 专线|香港08|原生HGCBBS, server: zfd.out02.nodeserver.top, port: 16237, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 广州移动-Okazaki-NTT, server: 183.232.56.110, port: 1251, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇯🇵 日本1|广港隧道|1.5x, server: newgy.jidan666.com, port: 23031, type: trojan, password: b89d279d-707e-4892-8963-9479ffd53b23, sni: newgy.jidan666.com, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore, server: 183.232.56.110, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇭🇰 香港(绿头外网集团)(Public), server: hk5.applesuperman.tk, port: 10601, type: vmess, uuid: d3435521-3d1f-37f7-ab48-f5302bc6a4fb, alterId: 16, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: hk5.applesuperman.tk}}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [Free]-直连-HKT-香港-2-视频", server: freehkt2.mznode.link, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-3-2.0x-视频", server: bgphzhk3.host.mznode.link, port: 576, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com}
+  - {name: "🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-3-2.0x-视频", server: relaysgp3.host.mznode.link, port: 1503, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com}
+  - {name: 🇸🇬 +Base+新加坡+SG+-+4, server: tunnel.e-nets.xyz, port: 9803, type: ss, cipher: chacha20-ietf-poly1305, password: pDC5MTKZPmVPgPLU}
+  - {name: 🇸🇬 +Base+新加坡+SG+-+5, server: tunnel.e-nets.xyz, port: 9804, type: ss, cipher: chacha20-ietf-poly1305, password: pDC5MTKZPmVPgPLU}
+  - {name: 🇸🇬 +Base+新加坡+SG+-+6, server: tunnel.e-nets.xyz, port: 9805, type: ss, cipher: chacha20-ietf-poly1305, password: pDC5MTKZPmVPgPLU}
+  - {name: 🇭🇰 +Base+香港+HK+-+2+HKT, server: tunnel.e-nets.xyz, port: 9601, type: ss, cipher: chacha20-ietf-poly1305, password: pDC5MTKZPmVPgPLU}
+  - {name: 🇦🇺 +Base+澳大利亚+AU+-+1, server: tunnel.e-nets.xyz, port: 9200, type: ss, cipher: chacha20-ietf-poly1305, password: pDC5MTKZPmVPgPLU}
+  - {name: 🇭🇰 广州移动-香港Azure, server: 183.232.56.182, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇰🇷 广州移动-Sacramento-Krypt, server: 183.232.56.182, port: 1302, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇯🇵 广州移动-Tokyo-NTT, server: 183.232.56.182, port: 1252, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇯🇵 广州移动-Tokyo-NTT 2, server: 183.232.56.110, port: 1253, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 节点C|tg频道:@ripaojiedian, server: 183.232.56.110, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇸🇬 新加坡|BGP中转, server: azhk.relay.qchwnd.moe, port: 44605, type: trojan, password: b89d279d-707e-4892-8963-9479ffd53b23, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
+  - {name: "🇸🇬 中转|新加坡Singtel01|华南隧道[流媒体解锁]", server: cm-jm.okvpn.xyz, port: 20049, type: vmess, uuid: 61d03e1a-756d-4643-9cc3-a4b0bb693833, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 🇸🇬 广州移动-SG-Choopa 3, server: 183.232.56.110, port: 1503, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇭🇰 广州移动-香港Azure 2, server: 183.232.56.182, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: IT, server: 139.99.62.207, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 长期节点, server: 198.41.212.234, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /sakura/, ws-headers: {Host: 2022-world-1.a-yu.xyz}}
+  - {name: 🇨🇦 加拿大, server: 139.99.62.207, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇯🇵 直连-东京1, server: 15.152.149.104, port: 10066, type: vmess, uuid: b24945af-3d84-3d7f-8f52-b3ca0f68cdf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: Jsnzkpg天下第一 4, server: 183.232.56.110, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: Jsnzkpg天下第一 5, server: 183.232.56.110, port: 577, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇭🇰 moon365.net🇭🇰HK+734+free, server: 84.17.37.55, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: tjwRqQvteAjt3xFmbZTA}
+  - {name: Jsnzkpg天下第一 6, server: 183.232.56.110, port: 1251, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇺🇸 +United+States+01+|+Media, server: iepl.us.e99c.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}}
+  - {name: 🇺🇸 +United+States+04+|+Media, server: iepl.us.6e28.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}}
+  - {name: 🇺🇸 +United+States+05+|+Media, server: iepl.us.4bcf.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}}
+  - {name: 🇺🇸 +United+States+03+|+Media, server: iepl.us.4447.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}}
+  - {name: 🇭🇰 +Hong+Kong+06, server: iepl.hk.0686.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}}
+  - {name: +|+5.29Mb, server: 172.105.180.227, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: +|+4.70Mb, server: 172.105.180.227, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: "🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-4-2.0x-视频", server: bgphzhk4.host.mznode.link, port: 577, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com}
+  - {name: "🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-2-视频", server: relayjp2.host.mznode.link, port: 1252, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com}
+  - {name: "🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-3-视频", server: relayjp3.host.mznode.link, port: 1253, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com}
+  - {name: "🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-1-2.0x-视频", server: relaysgp1.host.mznode.link, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com}
+  - {name: "🇺🇸 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-2-2.0x-视频", server: bgpshus2.host.mznode.link, port: 1302, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com}
+  - {name: 🇺🇸 专线|西雅图01|原生NTT, server: zfd.out01.nodeserver.top, port: 16233, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 专线|中国台湾03|原生HINET, server: zfd.out02.nodeserver.top, port: 16224, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇮🇳 印度|BGP中转, server: azhk.relay.qchwnd.moe, port: 44604, type: trojan, password: b89d279d-707e-4892-8963-9479ffd53b23, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇺🇸 专线|西雅图02|原生NTT, server: zfd.out02.nodeserver.top, port: 16234, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾, server: 118.107.244.112, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 美国, server: 172.105.180.227, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇦🇺 澳大利亚, server: 172.105.180.227, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 美国 2, server: 172.105.180.227, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 美国 3, server: 172.105.180.227, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 美国 4, server: 172.105.177.120, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 美国 5, server: 172.105.180.227, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇺🇸 美国 6, server: 172.105.180.227, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国 7, server: 172.105.180.227, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇭🇰 HK(Youtube技术分享室整理), server: cmhk04.xc188.net, port: 443, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /clientarea, ws-headers: {Host: cmhk04.xc188.net}}
+  - {name: 🇭🇰 +HK(Youtube技术分享室整理), server: 118.107.244.113, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇳 TW(Youtube技术分享室整理), server: 139.162.56.155, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 US(Youtube技术分享室整理), server: 172.104.168.83, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇭🇰 +HK(Youtube技术分享室整理) 2, server: 118.107.244.114, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇭🇰 +HK(Youtube技术分享室整理) 3, server: 118.107.244.114, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 US(Youtube技术分享室整理) 2, server: 38.114.114.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇯🇵 日本+🇯🇵(Youtube技术分享室整理), server: 5.180.76.74, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 US(Youtube技术分享室整理) 3, server: 38.114.114.69, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇯🇵 日本🇯🇵(Youtube技术分享室整理), server: 158.247.208.21, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 美国(Youtube技术分享室整理), server: 38.114.114.49, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 US(Youtube技术分享室整理) 4, server: 38.114.114.68, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 HK(Youtube技术分享室整理) 2, server: mf-aws-sg-07.xncloud.xyz, port: 18000, type: vmess, uuid: 05927be3-4d24-39b1-9ddb-ef7ed7965d03, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-07.xncloud.xyz}}
+  - {name: (Youtube技术分享室整理), server: 185.172.113.156, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇻🇳 越南+🇻🇳(Youtube技术分享室整理), server: 188.214.152.194, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: t8BFcaM3GSCw5FHbph27}
+  - {name: 🇭🇰 +HK(Youtube技术分享室整理) 4, server: 118.107.244.112, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇨🇳 _TW_台湾, server: 188.214.106.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
+  - {name: 🇸🇬 中转*广州移动-新加坡*01, server: 112.33.36.109, port: 10002, type: vmess, uuid: baf7ca7f-4491-49e5-a26e-8ca8791756e1, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 【推荐】IPLC专线上海-香港一_01, server: z00001.security-cloudfront-cdn.com, port: 36458, type: ssr, cipher: aes-256-cfb, password: J143FovtodcbhBdq, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: 🇸🇬 *国内中转*SG|广州移动-新加坡_0003, server: z0003.security-cloudfront-cdn.com, port: 36458, type: ssr, cipher: aes-256-cfb, password: J143FovtodcbhBdq, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
+  - {name: Relay_ |15.22Mb, server: 183.232.56.110, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇺🇸 Relay_🇨🇳CN-🇺🇸US_255, server: 183.232.56.110, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇭🇰 V2 IEPL Game | HK2, server: x.gotout.work, port: 30012, type: ss, cipher: aes-256-gcm, password: 7o8j8vi14nv}
+  - {name: 🇸🇬 V2 IEPL Game | SG1, server: x.gotout.work, port: 30041, type: ss, cipher: aes-256-gcm, password: 7o8j8vi14nv}
+  - {name: 🇺🇸 V2 IPLC Game | US1, server: x.gotout.work, port: 30061, type: ss, cipher: aes-256-gcm, password: 7o8j8vi14nv}
+  - {name: 🇨🇳 中国_TG@nodesharing, server: shcn2-01.iplc188.com, port: 10011, type: vmess, uuid: 897a19f0-8df1-4ba1-a4a8-05331a82c2ab, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_TG@nodesharing 2, server: shcn2-01.iplc188.com, port: 10015, type: vmess, uuid: 897a19f0-8df1-4ba1-a4a8-05331a82c2ab, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港_TG@nodesharing, server: apple93.hfnote.top, port: 9093, type: vmess, uuid: 873dafce-5dd7-36b5-b648-46fc267d3e2e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: apple93.hfnote.top}}
+  - {name: 🇦🇺 澳大利亚_TG@nodesharing, server: 172.105.180.227, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇦🇺 澳大利亚_TG@nodesharing 2, server: 172.105.180.227, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇦🇺 澳大利亚_TG@nodesharing 3, server: 172.105.180.227, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇦🇺 澳大利亚_TG@nodesharing 4, server: 172.105.180.227, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇦🇺 澳大利亚_TG@nodesharing 5, server: 172.105.180.227, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇦🇺 澳大利亚_TG@nodesharing 6, server: 172.105.180.227, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇦🇺 澳大利亚_TG@nodesharing 7, server: 172.105.180.227, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇦🇺 澳大利亚_TG@nodesharing 8, server: 172.105.180.227, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇦🇺 澳大利亚_TG@nodesharing 9, server: 172.105.180.227, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇮🇳 印度_TG@nodesharing, server: 172.105.42.228, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇮🇳 印度_TG@nodesharing 2, server: 172.105.42.228, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇮🇳 印度_TG@nodesharing 3, server: 172.105.42.228, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇮🇳 印度_TG@nodesharing 4, server: 172.105.42.228, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇮🇳 印度_TG@nodesharing 5, server: 172.105.42.228, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇮🇳 印度_TG@nodesharing 6, server: 172.105.42.228, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇮🇳 印度_TG@nodesharing 7, server: 172.105.42.228, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇵🇭 菲律宾_TG@nodesharing, server: 188.214.125.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG}
+  - {name: 🇮🇳 印度_TG@nodesharing 8, server: 172.105.42.228, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇮🇳 印度_TG@nodesharing 9, server: 172.105.42.228, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇮🇳 印度_TG@nodesharing 10, server: 172.105.42.228, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇮🇳 印度_TG@nodesharing 11, server: 172.105.42.228, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇮🇳 印度_TG@nodesharing 12, server: 172.105.42.228, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇮🇳 印度_TG@nodesharing 13, server: 172.105.42.228, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇮🇳 印度_TG@nodesharing 14, server: 172.105.42.228, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇮🇳 印度_TG@nodesharing 15, server: 172.105.42.228, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇮🇳 印度_TG@nodesharing 16, server: 172.105.42.94, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇮🇳 印度_TG@nodesharing 17, server: 172.105.42.94, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇮🇳 印度_TG@nodesharing 18, server: 172.105.42.228, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇮🇳 印度_TG@nodesharing 19, server: 172.105.42.94, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇮🇳 印度_TG@nodesharing 20, server: 172.105.42.94, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇮🇳 印度_TG@nodesharing 21, server: 172.105.42.228, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇮🇳 印度_TG@nodesharing 22, server: 172.105.42.94, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇮🇳 印度_TG@nodesharing 23, server: 172.105.42.94, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇮🇳 印度_TG@nodesharing 24, server: 172.105.42.94, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇮🇳 印度_TG@nodesharing 25, server: 172.105.42.94, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇦🇺 澳大利亚_TG@nodesharing 10, server: 116.206.230.130, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: zaNeDgu9mZKpEMTHQJy8}
+  - {name: 🇯🇵 日本_TG@nodesharing, server: 185.160.26.181, port: 889, type: ss, cipher: chacha20-ietf-poly1305, password: KhS1x8JT7p58RIp7gz}
+  - {name: 🇨🇳 台湾_TG@nodesharing, server: apple120.hfnote.top, port: 9001, type: vmess, uuid: 873dafce-5dd7-36b5-b648-46fc267d3e2e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: apple120.hfnote.top}}
+  - {name: 🇯🇵 日本_TG@nodesharing 2, server: 185.160.26.73, port: 890, type: ss, cipher: chacha20-ietf-poly1305, password: KhS1x8JT7p58RIp7gz}
+  - {name: 🇮🇳 印度_TG@nodesharing 26, server: 172.105.42.228, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇮🇩 印度尼西亚_TG@nodesharing, server: 45.133.181.58, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: qzj5NqakK4YvYYU87eFF}
+  - {name: 🇮🇳 印度_TG@nodesharing 27, server: 172.105.42.228, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 香港_TG@nodesharing 2, server: 118.107.244.112, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇭🇰 香港_TG@nodesharing 3, server: 118.107.244.112, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇸🇬 VIP1新加坡 | Singapore, server: cf2.xxcv.cc, port: 8443, type: vmess, uuid: 16d71e09-b2ae-3d8c-8bbb-5eeabed31975, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /sg, ws-headers: {Host: sg.xxcv.cc}}
+  - {name: 🇭🇰 VIP1香港HGC | 原生IP | 2号, server: cf2.xxcv.cc, port: 2083, type: vmess, uuid: 16d71e09-b2ae-3d8c-8bbb-5eeabed31975, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /hkhgc2, ws-headers: {Host: hkhgc2.xxcv.cc}}
+  - {name: 🇯🇵 日本, server: 112.33.32.136, port: 10005, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 _HK_香港, server: 118.107.244.112, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇭🇰 _HK_香港 2, server: 118.107.244.112, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇯🇵 _JP_日本, server: 139.162.116.154, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇵🇭 菲律宾, server: 188.214.125.106, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG}
+  - {name: 🇭🇰 香港1号 https://t.me/freev2_ml, server: freehk1.godlight.xyz, port: 443, type: vmess, uuid: e9cb9488-b4b5-44af-8dac-01f21eb1ccfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /Download.apk, ws-headers: {Host: freehk1.godlight.xyz}}
+  - {name: "🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-3-2.0x-视频", server: bgpshtw3.host.mznode.link, port: 1203, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: b43e313.microsoft.com}
+  - {name: 🇯🇵 日本2|广港隧道|1.5x, server: newgy.jidan666.com, port: 23032, type: trojan, password: b89d279d-707e-4892-8963-9479ffd53b23, sni: newgy.jidan666.com, skip-cert-verify: false}
+  - {name: 🇺🇸 美国 8, server: 172.105.180.227, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇬🇧 英国, server: 84.17.37.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: tjwRqQvteAjt3xFmbZTA}
+  - {name: 🇯🇵 _JP_日本 2, server: 172.105.232.147, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇮🇳 印度, server: 192.46.213.179, port: 6616, type: vmess, uuid: 844df0b0-fbe1-486b-86fb-d2d8d8d6f4d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 192.46.213.179}}
+  - {name: 🇭🇰 香港, server: 192.46.210.73, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 美国 9, server: 192.46.210.73, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 美国 10, server: 172.105.180.227, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇳 台湾 2, server: 188.214.106.98, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
+  - {name: 🇮🇳 印度+🇮🇳(Youtube技术分享室整理), server: 192.46.211.249, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 US(Youtube技术分享室整理) 5, server: 172.104.168.83, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 US(Youtube技术分享室整理) 6, server: 172.104.168.83, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: Relay_ |13.90Mb, server: 183.232.56.110, port: 1203, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
+  - {name: 🇺🇸 _US_美国, server: 169.197.142.39, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇯🇵 日本04丨大阪丨Netfix丨安联中转, server: apple140.hfnote.top, port: 14004, type: vmess, uuid: 873dafce-5dd7-36b5-b648-46fc267d3e2e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: apple140.hfnote.top}}
 proxy-groups:
   - name: 🚀 全局设置
     type: select
@@ -271,498 +200,355 @@ proxy-groups:
       - 🇭🇰 Base 香港 HK - 3 HKT
       - 🇸🇬 广州移动-SG-Choopa
       - 🇸🇬 广州移动-SG-Choopa 2
-      - 🇨🇳 广州移动-高雄Hinet
       - 🇯🇵 日本1|BGP中转
-      - 🇦🇺 澳大利亚[感谢订阅——科技网络]
-      - 🇭🇰 新加坡|广港隧道|1.5x
+      - 🇸🇬 新加坡|广港隧道|1.5x
       - 共享
       - 🇸🇬 每次连接前用国内网络更新订阅
-      - 🇵🇭 菲律宾
-      - 🇭🇰 香港1号 https://t.me/freev2_ml
       - 🇭🇰 香港Azure21|停机卡免流
       - Jsnzkpg天下第一
       - Jsnzkpg天下第一 2
       - Jsnzkpg天下第一 3
-      - Jsnzkpg天下第一 4
       - 🇸🇬 Singapore 01 | Media
       - 🇭🇰 Hong Kong 08
       - 🇭🇰 Hong Kong 14
       - 🇭🇰 Hong Kong 07
       - 🇭🇰 Hong Kong 11
-      - 伊朗测试
-      - 🇰🇷 韩国01丨Netfix丨国内中转
-      - 🇯🇵 专线 日本 01 3x Media
-      - 🇭🇰 专线 香港 01 3x
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-2-2.0x-视频
       - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-2-2.0x-视频
-      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-3-2.0x-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-1-2.0x-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-2-2.0x-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-3-2.0x-视频
       - 🇭🇰 中转|香港HGC06|华南隧道
-      - 🇰🇷 韩国02丨Netfix丨国内中转
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 03 1x
       - 🇭🇰 专线|香港08|原生HGCBBS
-      - 🇺🇲 标准|美国02|解锁流媒体
-      - 🇨🇳 广州移动-高雄Hinet 2
       - 🇨🇳 广州移动-Okazaki-NTT
-      - 🇭🇰 日本1|广港隧道|1.5x
-      - 🇭🇰 日本2|广港隧道|1.5x
+      - 🇯🇵 日本1|广港隧道|1.5x
       - 🇸🇬 Singapore
       - 🇭🇰 香港(绿头外网集团)(Public)
-      - 🇨🇳 台湾(绿头外网集团)(Public)
-      - 🇨🇳 台湾(绿头外网集团)(Public) 2
-      - 🇰🇷 中继 韩国 02 1x Media
-      - 🇯🇵 油管晓飞分享 🇯🇵 07.日本 路由管控
       - 🇭🇰 油管晓飞分享🇭🇰 [Free]-直连-HKT-香港-2-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-3-2.0x-视频
       - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-3-2.0x-视频
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 04 1x
       - 🇸🇬 +Base+新加坡+SG+-+4
       - 🇸🇬 +Base+新加坡+SG+-+5
       - 🇸🇬 +Base+新加坡+SG+-+6
       - 🇭🇰 +Base+香港+HK+-+2+HKT
       - 🇦🇺 +Base+澳大利亚+AU+-+1
-      - 🇺🇲 美国-netflix
-      - 🇩🇪 德国
-      - 🇲🇾 _NON_FMYC-2021.11.28_184
       - 🇭🇰 广州移动-香港Azure
-      - 🇨🇳 广州移动-Sacramento-Krypt
-      - 🇨🇳 广州移动-Tokyo-NTT
-      - 🇨🇳 广州移动-LAX-Krypt
-      - 🇨🇳 广州移动-Tokyo-NTT 2
-      - 🇺🇲 US_6697+@WangCai_1
-      - 🇺🇲 US_2375+@WangCai_1
-      - 🇺🇲 US_8009+@WangCai_1
-      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
+      - 🇰🇷 广州移动-Sacramento-Krypt
+      - 🇯🇵 广州移动-Tokyo-NTT
+      - 🇯🇵 广州移动-Tokyo-NTT 2
       - 节点C|tg频道:@ripaojiedian
-      - 🇸🇬 SG(Youtube技术分享室整理)
       - 🇸🇬 新加坡|BGP中转
       - 🇸🇬 中转|新加坡Singtel01|华南隧道[流媒体解锁]
-      - 🇺🇲 US_5003+@WangCai_1
-      - 🇺🇲 US_9101+@WangCai_1
-      - 🇺🇲 US_7001+@WangCai_1
-      - 🇺🇲 US_2376+@WangCai_1
       - 🇸🇬 广州移动-SG-Choopa 3
-      - 🇨🇳 标准|中国台湾04|解锁流媒体
       - 🇭🇰 广州移动-香港Azure 2
-      - 🇸🇬 【新鸟免费】美国UA -DO 09 免流 1.0x
-      - 🇺🇲 US_7306+@WangCai_1
-      - 🇺🇲 US_7307+@WangCai_1
-      - 🇺🇲 US_2376+@WangCai_1 2
-      - 🇺🇲 US_8008+@WangCai_1
-      - 🇺🇲 US_5004+@WangCai_1
-      - 🇺🇲 US_8118+@WangCai_1
-      - 🇺🇲 US_8080+@WangCai_1
-      - 🇺🇲 US_8090+@WangCai_1
-      - 🇺🇲 US_9102+@WangCai_1
-      - 🇺🇲 US_6379+@WangCai_1
-      - 🇺🇲 US_8000+@WangCai_1
-      - 🇺🇲 US_8009+@WangCai_1 2
-      - 🇺🇲 _US_美国
       - IT
-      - 🇺🇲 美国
-      - 🇺🇲 美国 2
-      - 🇬🇧 英国
+      - 长期节点
       - 🇨🇦 加拿大
-      - 直连-东京1
-      - 🇺🇲 _US_美国 2
-      - 🇯🇵 _JP_日本
-      - 🇰🇷 _KR_韩国
+      - 🇯🇵 直连-东京1
+      - Jsnzkpg天下第一 4
       - Jsnzkpg天下第一 5
-      - Jsnzkpg天下第一 6
       - 🇭🇰 moon365.net🇭🇰HK+734+free
-      - Jsnzkpg天下第一 7
-      - "[12.26]+TG频道@Jsnzk"
-      - Jsnzkpg天下第一 8
-      - 🇺🇲 +United+States+01+|+Media
-      - 🇺🇲 +United+States+04+|+Media
-      - 🇺🇲 +United+States+05+|+Media
-      - 🇺🇲 +United+States+03+|+Media
+      - Jsnzkpg天下第一 6
+      - 🇺🇸 +United+States+01+|+Media
+      - 🇺🇸 +United+States+04+|+Media
+      - 🇺🇸 +United+States+05+|+Media
+      - 🇺🇸 +United+States+03+|+Media
       - 🇭🇰 +Hong+Kong+06
-      - 🇦🇺 澳大利亚01丨Netfix丨安徽中转
-      - 🇸🇦 迪拜01丨Netfix丨广东中转
-      - 🇭🇰 专线|香港02|原生HGCBBS
       - +|+5.29Mb
       - +|+4.70Mb
-      - 🇯🇵 中继 日本 01 1x Media
-      - 🇯🇵 中继 日本 02 1x Media
-      - 🇯🇵 中继 日本 03 1x Media
-      - 🇯🇵 中继 日本 04 1x Media
-      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-1-2.0x-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-4-2.0x-视频
-      - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-1-视频
       - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-2-视频
       - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-3-视频
       - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-1-2.0x-视频
-      - 🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-2-2.0x-视频
-      - 🇰🇷 油管晓飞分享 🇰🇷 中继 韩国 03 1x Media
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 02 1x
-      - 🇲🇾 油管晓飞分享 🇲🇾 中继 马来西亚 01 1x Residential
-      - 🇺🇲 专线|西雅图01|原生NTT
-      - 🇺🇲 美国（欢迎订阅YouTube晓柒科技）
-      - 🇺🇲 美国（欢迎订阅YouTube晓柒科技） 2
-      - 🇺🇲 美国（欢迎订阅YouTube晓柒科技） 3
-      - 🇮🇳 印度（欢迎订阅YouTube晓柒科技）
-      - 🇮🇳 印度（欢迎订阅YouTube晓柒科技） 2
-      - 🇮🇳 印度(绿头外网集团)(Public)
-      - 🇮🇳 印度(绿头外网集团)(Public) 2
-      - 🇮🇳 印度(绿头外网集团)(Public) 3
-      - 🇮🇳 印度(绿头外网集团)(Public) 4
-      - 🇯🇵 日本01丨流媒体解锁丨广东中继
-      - 🇦🇺 澳大利亚02丨Netfix丨广东中转
-      - 🇺🇲 中继 美国 02 1x Residential
-      - 🇰🇷 油管晓飞分享 🇰🇷 09.韩国 路由管控
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 01 1x
+      - 🇺🇸 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-2-2.0x-视频
+      - 🇺🇸 专线|西雅图01|原生NTT
       - 🇨🇳 专线|中国台湾03|原生HINET
-      - 🇺🇲 标准|美国01|解锁流媒体
-      - 🇮🇳 标准|印度02|解锁流媒体
-      - Mumbai-EC2
-      - LAX-Sharktech
-      - 🇺🇲 US_7002+@WangCai_1
-      - 🇺🇲 US_7307+@WangCai_1 2
-      - 🇺🇲 US_5500+@WangCai_1
-      - 🇺🇲 US_5601+@WangCai_1
-      - 🇺🇲 US_8119+@WangCai_1
-      - 🇺🇲 US_7306+@WangCai_1 2
-      - 🇺🇲 US_8881+@WangCai_1
-      - 🇺🇲 US_6379+@WangCai_1 2
-      - 🇺🇲 US_5004+@WangCai_1 2
-      - 🇺🇲 US_2375+@WangCai_1 2
-      - 🇨🇳 台湾
-      - 🇺🇲 _US_美国 3
-      - 🇺🇲 _US_美国 4
-      - 🇭🇰 香港|BGP中转|HGC|1.2x
       - 🇮🇳 印度|BGP中转
-      - 🇺🇲 US_8882+@WangCai_1
-      - 🇺🇲 US_8888+@WangCai_1
-      - 🇺🇲 US_9102+@WangCai_1 2
-      - 🇺🇲 US_9101+@WangCai_1 2
-      - 🇺🇲 US_8118+@WangCai_1 2
-      - 🇺🇲 US_8118+@WangCai_1 3
-      - 🇺🇲 US_6697+@WangCai_1 2
-      - 🇺🇲 US_9102+@WangCai_1 3
-      - 🇺🇲 US_8080+@WangCai_1 2
-      - 🇺🇲 US_0443+@WangCai_1
-      - 🇺🇲 US_8882+@WangCai_1 2
-      - 🇺🇲 US_8091+@WangCai_1
-      - 🇺🇲 US_5500+@WangCai_1 2
-      - 🇺🇲 _US_美国 5
-      - 🇺🇲 _US_美国 6
-      - 🇺🇲 _US_美国 7
-      - 🇺🇲 _US_美国 8
-      - 🇺🇲 _US_美国 9
-      - 🇺🇲 _US_美国 10
-      - 🇺🇲 _US_美国 11
-      - 🇺🇲 美国[感谢订阅——科技网络]
-      - 🇺🇲 +US_1908+|62.51Mb
-      - 🇺🇲 +US_1909+|57.14Mb
-      - 🇺🇲 +US_1927+|37.51Mb
-      - 🇺🇲 +US_1941+|112.98Mb
-      - 🇺🇲 +US_1950+|39.78Mb
-      - 🇺🇲 _US_美国 12
-      - 🇭🇰 [直连/CN2 GIA] 香港10 阿里云 HK
-      - 🇺🇲 美国（欢迎订阅YouTube晓柒科技） 4
-      - 🇮🇳 印度(绿头外网集团)(Public) 5
-      - 🇺🇲 美国(绿头外网集团)(Public)
-      - 🇺🇲 美国(绿头外网集团)(Public) 2
-      - 🇨🇳 中继 台湾 04 1x Residential
-      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-1-2.0x-视频
-      - 🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-3-2.0x-视频
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 05 1x
-      - 🇮🇳 印度
-      - 🇺🇲 美国 3
-      - 🇨🇳 台湾 2
-      - 🇭🇰 香港
-      - 🇺🇲 美国 4
-      - 🇺🇲 美国 5
-      - 🇨🇳 台湾 3
-      - 🇺🇲 YouTube-由零开始-美国6379
-      - 🇺🇲 美国 6
-      - 🇨🇳 台湾 4
+      - 🇺🇸 专线|西雅图02|原生NTT
+      - 🇨🇳 台湾
+      - 🇺🇸 美国
+      - 🇦🇺 澳大利亚
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇺🇸 美国 6
+      - 🇺🇸 美国 7
       - 🇭🇰 HK(Youtube技术分享室整理)
       - 🇭🇰 +HK(Youtube技术分享室整理)
       - 🇨🇳 TW(Youtube技术分享室整理)
-      - 🇺🇲 US(Youtube技术分享室整理)
+      - 🇺🇸 US(Youtube技术分享室整理)
       - 🇭🇰 +HK(Youtube技术分享室整理) 2
-      - 🇭🇰 HK(Youtube技术分享室整理) 2
-      - 🇸🇬 SG(Youtube技术分享室整理) 2
-      - 🇺🇲 US(Youtube技术分享室整理) 2
       - 🇭🇰 +HK(Youtube技术分享室整理) 3
-      - 🇮🇳 印度+🇮🇳(Youtube技术分享室整理)
-      - 🇮🇳 印度+🇮🇳(Youtube技术分享室整理) 2
-      - 🇺🇲 US(Youtube技术分享室整理) 3
+      - 🇺🇸 US(Youtube技术分享室整理) 2
       - 🇯🇵 日本+🇯🇵(Youtube技术分享室整理)
-      - 🇮🇳 印度+🇮🇳(技术分享室整理,欢迎订阅)
-      - 🇺🇲 US(Youtube技术分享室整理) 4
-      - 🇺🇲 美国(Youtube技术分享室整理)
-      - 🇺🇲 US(Youtube技术分享室整理) 5
-      - 🇺🇲 US(Youtube技术分享室整理) 6
-      - 🇺🇲 美国(Youtube技术分享室整理) 2
+      - 🇺🇸 US(Youtube技术分享室整理) 3
       - 🇯🇵 日本🇯🇵(Youtube技术分享室整理)
-      - 🇺🇲 美国(Youtube技术分享室整理) 3
-      - 美(Youtube技术分享室整理)
-      - 🇺🇲 US(Youtube技术分享室整理) 7
-      - 🇺🇲 US(Youtube技术分享室整理) 8
-      - 🇭🇰 HK(Youtube技术分享室整理) 3
+      - 🇺🇸 美国(Youtube技术分享室整理)
+      - 🇺🇸 US(Youtube技术分享室整理) 4
+      - 🇭🇰 HK(Youtube技术分享室整理) 2
       - (Youtube技术分享室整理)
-      - 🇸🇬 SG(Youtube技术分享室整理) 3
       - 🇻🇳 越南+🇻🇳(Youtube技术分享室整理)
       - 🇭🇰 +HK(Youtube技术分享室整理) 4
-      - 🇭🇰 +HK(Youtube技术分享室整理) 5
-      - 🇺🇲 US(Youtube技术分享室整理) 9
-      - 🇺🇲 US(Youtube技术分享室整理) 10
+      - 🇨🇳 _TW_台湾
+      - 🇸🇬 中转*广州移动-新加坡*01
+      - 🇭🇰 【推荐】IPLC专线上海-香港一_01
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡_0003
+      - Relay_ |15.22Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_255
+      - 🇭🇰 V2 IEPL Game | HK2
+      - 🇸🇬 V2 IEPL Game | SG1
+      - 🇺🇸 V2 IPLC Game | US1
+      - 🇨🇳 中国_TG@nodesharing
+      - 🇨🇳 中国_TG@nodesharing 2
+      - 🇭🇰 香港_TG@nodesharing
+      - 🇦🇺 澳大利亚_TG@nodesharing
+      - 🇦🇺 澳大利亚_TG@nodesharing 2
+      - 🇦🇺 澳大利亚_TG@nodesharing 3
+      - 🇦🇺 澳大利亚_TG@nodesharing 4
+      - 🇦🇺 澳大利亚_TG@nodesharing 5
+      - 🇦🇺 澳大利亚_TG@nodesharing 6
+      - 🇦🇺 澳大利亚_TG@nodesharing 7
+      - 🇦🇺 澳大利亚_TG@nodesharing 8
+      - 🇦🇺 澳大利亚_TG@nodesharing 9
+      - 🇮🇳 印度_TG@nodesharing
+      - 🇮🇳 印度_TG@nodesharing 2
+      - 🇮🇳 印度_TG@nodesharing 3
+      - 🇮🇳 印度_TG@nodesharing 4
+      - 🇮🇳 印度_TG@nodesharing 5
+      - 🇮🇳 印度_TG@nodesharing 6
+      - 🇮🇳 印度_TG@nodesharing 7
+      - 🇵🇭 菲律宾_TG@nodesharing
+      - 🇮🇳 印度_TG@nodesharing 8
+      - 🇮🇳 印度_TG@nodesharing 9
+      - 🇮🇳 印度_TG@nodesharing 10
+      - 🇮🇳 印度_TG@nodesharing 11
+      - 🇮🇳 印度_TG@nodesharing 12
+      - 🇮🇳 印度_TG@nodesharing 13
+      - 🇮🇳 印度_TG@nodesharing 14
+      - 🇮🇳 印度_TG@nodesharing 15
+      - 🇮🇳 印度_TG@nodesharing 16
+      - 🇮🇳 印度_TG@nodesharing 17
+      - 🇮🇳 印度_TG@nodesharing 18
+      - 🇮🇳 印度_TG@nodesharing 19
+      - 🇮🇳 印度_TG@nodesharing 20
+      - 🇮🇳 印度_TG@nodesharing 21
+      - 🇮🇳 印度_TG@nodesharing 22
+      - 🇮🇳 印度_TG@nodesharing 23
+      - 🇮🇳 印度_TG@nodesharing 24
+      - 🇮🇳 印度_TG@nodesharing 25
+      - 🇦🇺 澳大利亚_TG@nodesharing 10
+      - 🇯🇵 日本_TG@nodesharing
+      - 🇨🇳 台湾_TG@nodesharing
+      - 🇯🇵 日本_TG@nodesharing 2
+      - 🇮🇳 印度_TG@nodesharing 26
+      - 🇮🇩 印度尼西亚_TG@nodesharing
+      - 🇮🇳 印度_TG@nodesharing 27
+      - 🇭🇰 香港_TG@nodesharing 2
+      - 🇭🇰 香港_TG@nodesharing 3
+      - 🇸🇬 VIP1新加坡 | Singapore
+      - 🇭🇰 VIP1香港HGC | 原生IP | 2号
+      - 🇯🇵 日本
+      - 🇭🇰 _HK_香港
+      - 🇭🇰 _HK_香港 2
+      - 🇯🇵 _JP_日本
+      - 🇵🇭 菲律宾
+      - 🇭🇰 香港1号 https://t.me/freev2_ml
+      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-3-2.0x-视频
+      - 🇯🇵 日本2|广港隧道|1.5x
+      - 🇺🇸 美国 8
+      - 🇬🇧 英国
+      - 🇯🇵 _JP_日本 2
+      - 🇮🇳 印度
+      - 🇭🇰 香港
+      - 🇺🇸 美国 9
+      - 🇺🇸 美国 10
+      - 🇨🇳 台湾 2
+      - 🇮🇳 印度+🇮🇳(Youtube技术分享室整理)
+      - 🇺🇸 US(Youtube技术分享室整理) 5
+      - 🇺🇸 US(Youtube技术分享室整理) 6
+      - Relay_ |13.90Mb
+      - 🇺🇸 _US_美国
+      - 🇯🇵 日本04丨大阪丨Netfix丨安联中转
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
       - 🇭🇰 Base 香港 HK - 1 HKT
       - 🇭🇰 Base 香港 HK - 3 HKT
       - 🇸🇬 广州移动-SG-Choopa
       - 🇸🇬 广州移动-SG-Choopa 2
-      - 🇨🇳 广州移动-高雄Hinet
       - 🇯🇵 日本1|BGP中转
-      - 🇦🇺 澳大利亚[感谢订阅——科技网络]
-      - 🇭🇰 新加坡|广港隧道|1.5x
+      - 🇸🇬 新加坡|广港隧道|1.5x
       - 共享
       - 🇸🇬 每次连接前用国内网络更新订阅
-      - 🇵🇭 菲律宾
-      - 🇭🇰 香港1号 https://t.me/freev2_ml
       - 🇭🇰 香港Azure21|停机卡免流
       - Jsnzkpg天下第一
       - Jsnzkpg天下第一 2
       - Jsnzkpg天下第一 3
-      - Jsnzkpg天下第一 4
       - 🇸🇬 Singapore 01 | Media
       - 🇭🇰 Hong Kong 08
       - 🇭🇰 Hong Kong 14
       - 🇭🇰 Hong Kong 07
       - 🇭🇰 Hong Kong 11
-      - 伊朗测试
-      - 🇰🇷 韩国01丨Netfix丨国内中转
-      - 🇯🇵 专线 日本 01 3x Media
-      - 🇭🇰 专线 香港 01 3x
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-2-2.0x-视频
       - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-2-2.0x-视频
-      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-3-2.0x-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-1-2.0x-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-2-2.0x-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-3-2.0x-视频
       - 🇭🇰 中转|香港HGC06|华南隧道
-      - 🇰🇷 韩国02丨Netfix丨国内中转
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 03 1x
       - 🇭🇰 专线|香港08|原生HGCBBS
-      - 🇺🇲 标准|美国02|解锁流媒体
-      - 🇨🇳 广州移动-高雄Hinet 2
       - 🇨🇳 广州移动-Okazaki-NTT
-      - 🇭🇰 日本1|广港隧道|1.5x
-      - 🇭🇰 日本2|广港隧道|1.5x
+      - 🇯🇵 日本1|广港隧道|1.5x
       - 🇸🇬 Singapore
       - 🇭🇰 香港(绿头外网集团)(Public)
-      - 🇨🇳 台湾(绿头外网集团)(Public)
-      - 🇨🇳 台湾(绿头外网集团)(Public) 2
-      - 🇰🇷 中继 韩国 02 1x Media
-      - 🇯🇵 油管晓飞分享 🇯🇵 07.日本 路由管控
       - 🇭🇰 油管晓飞分享🇭🇰 [Free]-直连-HKT-香港-2-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-3-2.0x-视频
       - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-3-2.0x-视频
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 04 1x
       - 🇸🇬 +Base+新加坡+SG+-+4
       - 🇸🇬 +Base+新加坡+SG+-+5
       - 🇸🇬 +Base+新加坡+SG+-+6
       - 🇭🇰 +Base+香港+HK+-+2+HKT
       - 🇦🇺 +Base+澳大利亚+AU+-+1
-      - 🇺🇲 美国-netflix
-      - 🇩🇪 德国
-      - 🇲🇾 _NON_FMYC-2021.11.28_184
       - 🇭🇰 广州移动-香港Azure
-      - 🇨🇳 广州移动-Sacramento-Krypt
-      - 🇨🇳 广州移动-Tokyo-NTT
-      - 🇨🇳 广州移动-LAX-Krypt
-      - 🇨🇳 广州移动-Tokyo-NTT 2
-      - 🇺🇲 US_6697+@WangCai_1
-      - 🇺🇲 US_2375+@WangCai_1
-      - 🇺🇲 US_8009+@WangCai_1
-      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
+      - 🇰🇷 广州移动-Sacramento-Krypt
+      - 🇯🇵 广州移动-Tokyo-NTT
+      - 🇯🇵 广州移动-Tokyo-NTT 2
       - 节点C|tg频道:@ripaojiedian
-      - 🇸🇬 SG(Youtube技术分享室整理)
       - 🇸🇬 新加坡|BGP中转
       - 🇸🇬 中转|新加坡Singtel01|华南隧道[流媒体解锁]
-      - 🇺🇲 US_5003+@WangCai_1
-      - 🇺🇲 US_9101+@WangCai_1
-      - 🇺🇲 US_7001+@WangCai_1
-      - 🇺🇲 US_2376+@WangCai_1
       - 🇸🇬 广州移动-SG-Choopa 3
-      - 🇨🇳 标准|中国台湾04|解锁流媒体
       - 🇭🇰 广州移动-香港Azure 2
-      - 🇸🇬 【新鸟免费】美国UA -DO 09 免流 1.0x
-      - 🇺🇲 US_7306+@WangCai_1
-      - 🇺🇲 US_7307+@WangCai_1
-      - 🇺🇲 US_2376+@WangCai_1 2
-      - 🇺🇲 US_8008+@WangCai_1
-      - 🇺🇲 US_5004+@WangCai_1
-      - 🇺🇲 US_8118+@WangCai_1
-      - 🇺🇲 US_8080+@WangCai_1
-      - 🇺🇲 US_8090+@WangCai_1
-      - 🇺🇲 US_9102+@WangCai_1
-      - 🇺🇲 US_6379+@WangCai_1
-      - 🇺🇲 US_8000+@WangCai_1
-      - 🇺🇲 US_8009+@WangCai_1 2
-      - 🇺🇲 _US_美国
       - IT
-      - 🇺🇲 美国
-      - 🇺🇲 美国 2
-      - 🇬🇧 英国
+      - 长期节点
       - 🇨🇦 加拿大
-      - 直连-东京1
-      - 🇺🇲 _US_美国 2
-      - 🇯🇵 _JP_日本
-      - 🇰🇷 _KR_韩国
+      - 🇯🇵 直连-东京1
+      - Jsnzkpg天下第一 4
       - Jsnzkpg天下第一 5
-      - Jsnzkpg天下第一 6
       - 🇭🇰 moon365.net🇭🇰HK+734+free
-      - Jsnzkpg天下第一 7
-      - "[12.26]+TG频道@Jsnzk"
-      - Jsnzkpg天下第一 8
-      - 🇺🇲 +United+States+01+|+Media
-      - 🇺🇲 +United+States+04+|+Media
-      - 🇺🇲 +United+States+05+|+Media
-      - 🇺🇲 +United+States+03+|+Media
+      - Jsnzkpg天下第一 6
+      - 🇺🇸 +United+States+01+|+Media
+      - 🇺🇸 +United+States+04+|+Media
+      - 🇺🇸 +United+States+05+|+Media
+      - 🇺🇸 +United+States+03+|+Media
       - 🇭🇰 +Hong+Kong+06
-      - 🇦🇺 澳大利亚01丨Netfix丨安徽中转
-      - 🇸🇦 迪拜01丨Netfix丨广东中转
-      - 🇭🇰 专线|香港02|原生HGCBBS
       - +|+5.29Mb
       - +|+4.70Mb
-      - 🇯🇵 中继 日本 01 1x Media
-      - 🇯🇵 中继 日本 02 1x Media
-      - 🇯🇵 中继 日本 03 1x Media
-      - 🇯🇵 中继 日本 04 1x Media
-      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-1-2.0x-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-4-2.0x-视频
-      - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-1-视频
       - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-2-视频
       - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-3-视频
       - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-1-2.0x-视频
-      - 🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-2-2.0x-视频
-      - 🇰🇷 油管晓飞分享 🇰🇷 中继 韩国 03 1x Media
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 02 1x
-      - 🇲🇾 油管晓飞分享 🇲🇾 中继 马来西亚 01 1x Residential
-      - 🇺🇲 专线|西雅图01|原生NTT
-      - 🇺🇲 美国（欢迎订阅YouTube晓柒科技）
-      - 🇺🇲 美国（欢迎订阅YouTube晓柒科技） 2
-      - 🇺🇲 美国（欢迎订阅YouTube晓柒科技） 3
-      - 🇮🇳 印度（欢迎订阅YouTube晓柒科技）
-      - 🇮🇳 印度（欢迎订阅YouTube晓柒科技） 2
-      - 🇮🇳 印度(绿头外网集团)(Public)
-      - 🇮🇳 印度(绿头外网集团)(Public) 2
-      - 🇮🇳 印度(绿头外网集团)(Public) 3
-      - 🇮🇳 印度(绿头外网集团)(Public) 4
-      - 🇯🇵 日本01丨流媒体解锁丨广东中继
-      - 🇦🇺 澳大利亚02丨Netfix丨广东中转
-      - 🇺🇲 中继 美国 02 1x Residential
-      - 🇰🇷 油管晓飞分享 🇰🇷 09.韩国 路由管控
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 01 1x
+      - 🇺🇸 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-2-2.0x-视频
+      - 🇺🇸 专线|西雅图01|原生NTT
       - 🇨🇳 专线|中国台湾03|原生HINET
-      - 🇺🇲 标准|美国01|解锁流媒体
-      - 🇮🇳 标准|印度02|解锁流媒体
-      - Mumbai-EC2
-      - LAX-Sharktech
-      - 🇺🇲 US_7002+@WangCai_1
-      - 🇺🇲 US_7307+@WangCai_1 2
-      - 🇺🇲 US_5500+@WangCai_1
-      - 🇺🇲 US_5601+@WangCai_1
-      - 🇺🇲 US_8119+@WangCai_1
-      - 🇺🇲 US_7306+@WangCai_1 2
-      - 🇺🇲 US_8881+@WangCai_1
-      - 🇺🇲 US_6379+@WangCai_1 2
-      - 🇺🇲 US_5004+@WangCai_1 2
-      - 🇺🇲 US_2375+@WangCai_1 2
-      - 🇨🇳 台湾
-      - 🇺🇲 _US_美国 3
-      - 🇺🇲 _US_美国 4
-      - 🇭🇰 香港|BGP中转|HGC|1.2x
       - 🇮🇳 印度|BGP中转
-      - 🇺🇲 US_8882+@WangCai_1
-      - 🇺🇲 US_8888+@WangCai_1
-      - 🇺🇲 US_9102+@WangCai_1 2
-      - 🇺🇲 US_9101+@WangCai_1 2
-      - 🇺🇲 US_8118+@WangCai_1 2
-      - 🇺🇲 US_8118+@WangCai_1 3
-      - 🇺🇲 US_6697+@WangCai_1 2
-      - 🇺🇲 US_9102+@WangCai_1 3
-      - 🇺🇲 US_8080+@WangCai_1 2
-      - 🇺🇲 US_0443+@WangCai_1
-      - 🇺🇲 US_8882+@WangCai_1 2
-      - 🇺🇲 US_8091+@WangCai_1
-      - 🇺🇲 US_5500+@WangCai_1 2
-      - 🇺🇲 _US_美国 5
-      - 🇺🇲 _US_美国 6
-      - 🇺🇲 _US_美国 7
-      - 🇺🇲 _US_美国 8
-      - 🇺🇲 _US_美国 9
-      - 🇺🇲 _US_美国 10
-      - 🇺🇲 _US_美国 11
-      - 🇺🇲 美国[感谢订阅——科技网络]
-      - 🇺🇲 +US_1908+|62.51Mb
-      - 🇺🇲 +US_1909+|57.14Mb
-      - 🇺🇲 +US_1927+|37.51Mb
-      - 🇺🇲 +US_1941+|112.98Mb
-      - 🇺🇲 +US_1950+|39.78Mb
-      - 🇺🇲 _US_美国 12
-      - 🇭🇰 [直连/CN2 GIA] 香港10 阿里云 HK
-      - 🇺🇲 美国（欢迎订阅YouTube晓柒科技） 4
-      - 🇮🇳 印度(绿头外网集团)(Public) 5
-      - 🇺🇲 美国(绿头外网集团)(Public)
-      - 🇺🇲 美国(绿头外网集团)(Public) 2
-      - 🇨🇳 中继 台湾 04 1x Residential
-      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-1-2.0x-视频
-      - 🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-3-2.0x-视频
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 05 1x
-      - 🇮🇳 印度
-      - 🇺🇲 美国 3
-      - 🇨🇳 台湾 2
-      - 🇭🇰 香港
-      - 🇺🇲 美国 4
-      - 🇺🇲 美国 5
-      - 🇨🇳 台湾 3
-      - 🇺🇲 YouTube-由零开始-美国6379
-      - 🇺🇲 美国 6
-      - 🇨🇳 台湾 4
+      - 🇺🇸 专线|西雅图02|原生NTT
+      - 🇨🇳 台湾
+      - 🇺🇸 美国
+      - 🇦🇺 澳大利亚
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇺🇸 美国 6
+      - 🇺🇸 美国 7
       - 🇭🇰 HK(Youtube技术分享室整理)
       - 🇭🇰 +HK(Youtube技术分享室整理)
       - 🇨🇳 TW(Youtube技术分享室整理)
-      - 🇺🇲 US(Youtube技术分享室整理)
+      - 🇺🇸 US(Youtube技术分享室整理)
       - 🇭🇰 +HK(Youtube技术分享室整理) 2
-      - 🇭🇰 HK(Youtube技术分享室整理) 2
-      - 🇸🇬 SG(Youtube技术分享室整理) 2
-      - 🇺🇲 US(Youtube技术分享室整理) 2
       - 🇭🇰 +HK(Youtube技术分享室整理) 3
-      - 🇮🇳 印度+🇮🇳(Youtube技术分享室整理)
-      - 🇮🇳 印度+🇮🇳(Youtube技术分享室整理) 2
-      - 🇺🇲 US(Youtube技术分享室整理) 3
+      - 🇺🇸 US(Youtube技术分享室整理) 2
       - 🇯🇵 日本+🇯🇵(Youtube技术分享室整理)
-      - 🇮🇳 印度+🇮🇳(技术分享室整理,欢迎订阅)
-      - 🇺🇲 US(Youtube技术分享室整理) 4
-      - 🇺🇲 美国(Youtube技术分享室整理)
-      - 🇺🇲 US(Youtube技术分享室整理) 5
-      - 🇺🇲 US(Youtube技术分享室整理) 6
-      - 🇺🇲 美国(Youtube技术分享室整理) 2
+      - 🇺🇸 US(Youtube技术分享室整理) 3
       - 🇯🇵 日本🇯🇵(Youtube技术分享室整理)
-      - 🇺🇲 美国(Youtube技术分享室整理) 3
-      - 美(Youtube技术分享室整理)
-      - 🇺🇲 US(Youtube技术分享室整理) 7
-      - 🇺🇲 US(Youtube技术分享室整理) 8
-      - 🇭🇰 HK(Youtube技术分享室整理) 3
+      - 🇺🇸 美国(Youtube技术分享室整理)
+      - 🇺🇸 US(Youtube技术分享室整理) 4
+      - 🇭🇰 HK(Youtube技术分享室整理) 2
       - (Youtube技术分享室整理)
-      - 🇸🇬 SG(Youtube技术分享室整理) 3
       - 🇻🇳 越南+🇻🇳(Youtube技术分享室整理)
       - 🇭🇰 +HK(Youtube技术分享室整理) 4
-      - 🇭🇰 +HK(Youtube技术分享室整理) 5
-      - 🇺🇲 US(Youtube技术分享室整理) 9
-      - 🇺🇲 US(Youtube技术分享室整理) 10
+      - 🇨🇳 _TW_台湾
+      - 🇸🇬 中转*广州移动-新加坡*01
+      - 🇭🇰 【推荐】IPLC专线上海-香港一_01
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡_0003
+      - Relay_ |15.22Mb
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_255
+      - 🇭🇰 V2 IEPL Game | HK2
+      - 🇸🇬 V2 IEPL Game | SG1
+      - 🇺🇸 V2 IPLC Game | US1
+      - 🇨🇳 中国_TG@nodesharing
+      - 🇨🇳 中国_TG@nodesharing 2
+      - 🇭🇰 香港_TG@nodesharing
+      - 🇦🇺 澳大利亚_TG@nodesharing
+      - 🇦🇺 澳大利亚_TG@nodesharing 2
+      - 🇦🇺 澳大利亚_TG@nodesharing 3
+      - 🇦🇺 澳大利亚_TG@nodesharing 4
+      - 🇦🇺 澳大利亚_TG@nodesharing 5
+      - 🇦🇺 澳大利亚_TG@nodesharing 6
+      - 🇦🇺 澳大利亚_TG@nodesharing 7
+      - 🇦🇺 澳大利亚_TG@nodesharing 8
+      - 🇦🇺 澳大利亚_TG@nodesharing 9
+      - 🇮🇳 印度_TG@nodesharing
+      - 🇮🇳 印度_TG@nodesharing 2
+      - 🇮🇳 印度_TG@nodesharing 3
+      - 🇮🇳 印度_TG@nodesharing 4
+      - 🇮🇳 印度_TG@nodesharing 5
+      - 🇮🇳 印度_TG@nodesharing 6
+      - 🇮🇳 印度_TG@nodesharing 7
+      - 🇵🇭 菲律宾_TG@nodesharing
+      - 🇮🇳 印度_TG@nodesharing 8
+      - 🇮🇳 印度_TG@nodesharing 9
+      - 🇮🇳 印度_TG@nodesharing 10
+      - 🇮🇳 印度_TG@nodesharing 11
+      - 🇮🇳 印度_TG@nodesharing 12
+      - 🇮🇳 印度_TG@nodesharing 13
+      - 🇮🇳 印度_TG@nodesharing 14
+      - 🇮🇳 印度_TG@nodesharing 15
+      - 🇮🇳 印度_TG@nodesharing 16
+      - 🇮🇳 印度_TG@nodesharing 17
+      - 🇮🇳 印度_TG@nodesharing 18
+      - 🇮🇳 印度_TG@nodesharing 19
+      - 🇮🇳 印度_TG@nodesharing 20
+      - 🇮🇳 印度_TG@nodesharing 21
+      - 🇮🇳 印度_TG@nodesharing 22
+      - 🇮🇳 印度_TG@nodesharing 23
+      - 🇮🇳 印度_TG@nodesharing 24
+      - 🇮🇳 印度_TG@nodesharing 25
+      - 🇦🇺 澳大利亚_TG@nodesharing 10
+      - 🇯🇵 日本_TG@nodesharing
+      - 🇨🇳 台湾_TG@nodesharing
+      - 🇯🇵 日本_TG@nodesharing 2
+      - 🇮🇳 印度_TG@nodesharing 26
+      - 🇮🇩 印度尼西亚_TG@nodesharing
+      - 🇮🇳 印度_TG@nodesharing 27
+      - 🇭🇰 香港_TG@nodesharing 2
+      - 🇭🇰 香港_TG@nodesharing 3
+      - 🇸🇬 VIP1新加坡 | Singapore
+      - 🇭🇰 VIP1香港HGC | 原生IP | 2号
+      - 🇯🇵 日本
+      - 🇭🇰 _HK_香港
+      - 🇭🇰 _HK_香港 2
+      - 🇯🇵 _JP_日本
+      - 🇵🇭 菲律宾
+      - 🇭🇰 香港1号 https://t.me/freev2_ml
+      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-3-2.0x-视频
+      - 🇯🇵 日本2|广港隧道|1.5x
+      - 🇺🇸 美国 8
+      - 🇬🇧 英国
+      - 🇯🇵 _JP_日本 2
+      - 🇮🇳 印度
+      - 🇭🇰 香港
+      - 🇺🇸 美国 9
+      - 🇺🇸 美国 10
+      - 🇨🇳 台湾 2
+      - 🇮🇳 印度+🇮🇳(Youtube技术分享室整理)
+      - 🇺🇸 US(Youtube技术分享室整理) 5
+      - 🇺🇸 US(Youtube技术分享室整理) 6
+      - Relay_ |13.90Mb
+      - 🇺🇸 _US_美国
+      - 🇯🇵 日本04丨大阪丨Netfix丨安联中转
   - name: 🎯 国内网络
     type: select
     proxies:
@@ -914,12 +700,7 @@ proxy-groups:
       - DIRECT
       - 🚀 全局设置
       - ♻️ 自动选择
-      - 🇺🇲 标准|美国02|解锁流媒体
       - 🇸🇬 中转|新加坡Singtel01|华南隧道[流媒体解锁]
-      - 🇨🇳 标准|中国台湾04|解锁流媒体
-      - 🇯🇵 日本01丨流媒体解锁丨广东中继
-      - 🇺🇲 标准|美国01|解锁流媒体
-      - 🇮🇳 标准|印度02|解锁流媒体
   - name: 🛑 广告拦截
     type: select
     proxies:
@@ -947,186 +728,102 @@ proxy-groups:
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
       - 🇭🇰 Base 香港 HK - 1 HKT
       - 🇭🇰 Base 香港 HK - 3 HKT
-      - 🇭🇰 新加坡|广港隧道|1.5x
-      - 🇭🇰 香港1号 https://t.me/freev2_ml
+      - 🇸🇬 新加坡|广港隧道|1.5x
       - 🇭🇰 香港Azure21|停机卡免流
       - 🇭🇰 Hong Kong 08
       - 🇭🇰 Hong Kong 14
       - 🇭🇰 Hong Kong 07
       - 🇭🇰 Hong Kong 11
-      - 🇭🇰 专线 香港 01 3x
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-2-2.0x-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-1-2.0x-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-2-2.0x-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-精品-HK-香港-3-2.0x-视频
       - 🇭🇰 中转|香港HGC06|华南隧道
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 03 1x
       - 🇭🇰 专线|香港08|原生HGCBBS
-      - 🇭🇰 日本1|广港隧道|1.5x
-      - 🇭🇰 日本2|广港隧道|1.5x
+      - 🇯🇵 日本1|广港隧道|1.5x
       - 🇭🇰 香港(绿头外网集团)(Public)
       - 🇭🇰 油管晓飞分享🇭🇰 [Free]-直连-HKT-香港-2-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-3-2.0x-视频
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 04 1x
       - 🇭🇰 +Base+香港+HK+-+2+HKT
       - 🇭🇰 广州移动-香港Azure
       - 🇭🇰 广州移动-香港Azure 2
       - 🇭🇰 moon365.net🇭🇰HK+734+free
-      - 🇭🇰 专线|香港02|原生HGCBBS
-      - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-1-2.0x-视频
       - 🇭🇰 油管晓飞分享🇭🇰 [小麦]-中继-HK-香港-4-2.0x-视频
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 02 1x
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 01 1x
-      - 🇭🇰 香港|BGP中转|HGC|1.2x
-      - 🇭🇰 [直连/CN2 GIA] 香港10 阿里云 HK
-      - 🇭🇰 油管晓飞分享 🇭🇰 中继 香港 05 1x
-      - 🇭🇰 香港
       - 🇭🇰 HK(Youtube技术分享室整理)
       - 🇭🇰 +HK(Youtube技术分享室整理)
       - 🇭🇰 +HK(Youtube技术分享室整理) 2
-      - 🇭🇰 HK(Youtube技术分享室整理) 2
       - 🇭🇰 +HK(Youtube技术分享室整理) 3
-      - 🇭🇰 HK(Youtube技术分享室整理) 3
+      - 🇭🇰 HK(Youtube技术分享室整理) 2
       - 🇭🇰 +HK(Youtube技术分享室整理) 4
-      - 🇭🇰 +HK(Youtube技术分享室整理) 5
+      - 🇭🇰 【推荐】IPLC专线上海-香港一_01
+      - 🇭🇰 V2 IEPL Game | HK2
+      - 🇭🇰 香港_TG@nodesharing
+      - 🇭🇰 香港_TG@nodesharing 2
+      - 🇭🇰 香港_TG@nodesharing 3
+      - 🇭🇰 VIP1香港HGC | 原生IP | 2号
+      - 🇭🇰 _HK_香港
+      - 🇭🇰 _HK_香港 2
+      - 🇭🇰 香港1号 https://t.me/freev2_ml
+      - 🇯🇵 日本2|广港隧道|1.5x
+      - 🇭🇰 香港
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
       - 🇯🇵 日本1|BGP中转
-      - 🇯🇵 专线 日本 01 3x Media
-      - 🇭🇰 日本1|广港隧道|1.5x
-      - 🇭🇰 日本2|广港隧道|1.5x
-      - 🇯🇵 油管晓飞分享 🇯🇵 07.日本 路由管控
-      - 直连-东京1
-      - 🇯🇵 _JP_日本
-      - 🇯🇵 中继 日本 01 1x Media
-      - 🇯🇵 中继 日本 02 1x Media
-      - 🇯🇵 中继 日本 03 1x Media
-      - 🇯🇵 中继 日本 04 1x Media
-      - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-1-视频
+      - 🇯🇵 日本1|广港隧道|1.5x
+      - 🇯🇵 直连-东京1
       - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-2-视频
       - 🇯🇵 油管晓飞分享🇯🇵 [小麦]-中继-JP-日本-3-视频
-      - 🇯🇵 日本01丨流媒体解锁丨广东中继
       - 🇯🇵 日本+🇯🇵(Youtube技术分享室整理)
       - 🇯🇵 日本🇯🇵(Youtube技术分享室整理)
+      - 🇯🇵 日本_TG@nodesharing
+      - 🇯🇵 日本_TG@nodesharing 2
+      - 🇯🇵 日本
+      - 🇯🇵 _JP_日本
+      - 🇯🇵 日本2|广港隧道|1.5x
+      - 🇯🇵 _JP_日本 2
+      - 🇯🇵 日本04丨大阪丨Netfix丨安联中转
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
-      - 🇺🇲 标准|美国02|解锁流媒体
-      - 🇺🇲 美国-netflix
-      - 🇺🇲 US_6697+@WangCai_1
-      - 🇺🇲 US_2375+@WangCai_1
-      - 🇺🇲 US_8009+@WangCai_1
-      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
-      - 🇺🇲 US_5003+@WangCai_1
-      - 🇺🇲 US_9101+@WangCai_1
-      - 🇺🇲 US_7001+@WangCai_1
-      - 🇺🇲 US_2376+@WangCai_1
-      - 🇸🇬 【新鸟免费】美国UA -DO 09 免流 1.0x
-      - 🇺🇲 US_7306+@WangCai_1
-      - 🇺🇲 US_7307+@WangCai_1
-      - 🇺🇲 US_2376+@WangCai_1 2
-      - 🇺🇲 US_8008+@WangCai_1
-      - 🇺🇲 US_5004+@WangCai_1
-      - 🇺🇲 US_8118+@WangCai_1
-      - 🇺🇲 US_8080+@WangCai_1
-      - 🇺🇲 US_8090+@WangCai_1
-      - 🇺🇲 US_9102+@WangCai_1
-      - 🇺🇲 US_6379+@WangCai_1
-      - 🇺🇲 US_8000+@WangCai_1
-      - 🇺🇲 US_8009+@WangCai_1 2
-      - 🇺🇲 _US_美国
-      - 🇺🇲 美国
-      - 🇺🇲 美国 2
-      - 🇺🇲 _US_美国 2
-      - 🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-2-2.0x-视频
-      - 🇺🇲 专线|西雅图01|原生NTT
-      - 🇺🇲 美国（欢迎订阅YouTube晓柒科技）
-      - 🇺🇲 美国（欢迎订阅YouTube晓柒科技） 2
-      - 🇺🇲 美国（欢迎订阅YouTube晓柒科技） 3
-      - 🇺🇲 中继 美国 02 1x Residential
-      - 🇺🇲 标准|美国01|解锁流媒体
-      - 🇺🇲 US_7002+@WangCai_1
-      - 🇺🇲 US_7307+@WangCai_1 2
-      - 🇺🇲 US_5500+@WangCai_1
-      - 🇺🇲 US_5601+@WangCai_1
-      - 🇺🇲 US_8119+@WangCai_1
-      - 🇺🇲 US_7306+@WangCai_1 2
-      - 🇺🇲 US_8881+@WangCai_1
-      - 🇺🇲 US_6379+@WangCai_1 2
-      - 🇺🇲 US_5004+@WangCai_1 2
-      - 🇺🇲 US_2375+@WangCai_1 2
-      - 🇺🇲 _US_美国 3
-      - 🇺🇲 _US_美国 4
-      - 🇺🇲 US_8882+@WangCai_1
-      - 🇺🇲 US_8888+@WangCai_1
-      - 🇺🇲 US_9102+@WangCai_1 2
-      - 🇺🇲 US_9101+@WangCai_1 2
-      - 🇺🇲 US_8118+@WangCai_1 2
-      - 🇺🇲 US_8118+@WangCai_1 3
-      - 🇺🇲 US_6697+@WangCai_1 2
-      - 🇺🇲 US_9102+@WangCai_1 3
-      - 🇺🇲 US_8080+@WangCai_1 2
-      - 🇺🇲 US_0443+@WangCai_1
-      - 🇺🇲 US_8882+@WangCai_1 2
-      - 🇺🇲 US_8091+@WangCai_1
-      - 🇺🇲 US_5500+@WangCai_1 2
-      - 🇺🇲 _US_美国 5
-      - 🇺🇲 _US_美国 6
-      - 🇺🇲 _US_美国 7
-      - 🇺🇲 _US_美国 8
-      - 🇺🇲 _US_美国 9
-      - 🇺🇲 _US_美国 10
-      - 🇺🇲 _US_美国 11
-      - 🇺🇲 美国[感谢订阅——科技网络]
-      - 🇺🇲 +US_1908+|62.51Mb
-      - 🇺🇲 +US_1909+|57.14Mb
-      - 🇺🇲 +US_1927+|37.51Mb
-      - 🇺🇲 +US_1941+|112.98Mb
-      - 🇺🇲 +US_1950+|39.78Mb
-      - 🇺🇲 _US_美国 12
-      - 🇺🇲 美国（欢迎订阅YouTube晓柒科技） 4
-      - 🇺🇲 美国(绿头外网集团)(Public)
-      - 🇺🇲 美国(绿头外网集团)(Public) 2
-      - 🇺🇲 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-3-2.0x-视频
-      - 🇺🇲 美国 3
-      - 🇺🇲 美国 4
-      - 🇺🇲 美国 5
-      - 🇺🇲 YouTube-由零开始-美国6379
-      - 🇺🇲 美国 6
-      - 🇺🇲 US(Youtube技术分享室整理)
-      - 🇺🇲 US(Youtube技术分享室整理) 2
-      - 🇺🇲 US(Youtube技术分享室整理) 3
-      - 🇺🇲 US(Youtube技术分享室整理) 4
-      - 🇺🇲 美国(Youtube技术分享室整理)
-      - 🇺🇲 US(Youtube技术分享室整理) 5
-      - 🇺🇲 US(Youtube技术分享室整理) 6
-      - 🇺🇲 美国(Youtube技术分享室整理) 2
-      - 🇺🇲 美国(Youtube技术分享室整理) 3
-      - 美(Youtube技术分享室整理)
-      - 🇺🇲 US(Youtube技术分享室整理) 7
-      - 🇺🇲 US(Youtube技术分享室整理) 8
-      - 🇺🇲 US(Youtube技术分享室整理) 9
-      - 🇺🇲 US(Youtube技术分享室整理) 10
+      - 🇺🇸 油管晓飞分享🇺🇸 [小麦]-中继-US-美国-2-2.0x-视频
+      - 🇺🇸 专线|西雅图01|原生NTT
+      - 🇺🇸 专线|西雅图02|原生NTT
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 🇺🇸 美国 3
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇺🇸 美国 6
+      - 🇺🇸 美国 7
+      - 🇺🇸 US(Youtube技术分享室整理)
+      - 🇺🇸 US(Youtube技术分享室整理) 2
+      - 🇺🇸 US(Youtube技术分享室整理) 3
+      - 🇺🇸 美国(Youtube技术分享室整理)
+      - 🇺🇸 US(Youtube技术分享室整理) 4
+      - 🇺🇸 Relay_🇨🇳CN-🇺🇸US_255
+      - 🇺🇸 V2 IPLC Game | US1
+      - 🇺🇸 美国 8
+      - 🇺🇸 美国 9
+      - 🇺🇸 美国 10
+      - 🇺🇸 US(Youtube技术分享室整理) 5
+      - 🇺🇸 US(Youtube技术分享室整理) 6
+      - 🇺🇸 _US_美国
   - name: 🇸🇬 新加坡节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
       - 🇸🇬 广州移动-SG-Choopa
       - 🇸🇬 广州移动-SG-Choopa 2
-      - 🇭🇰 新加坡|广港隧道|1.5x
+      - 🇸🇬 新加坡|广港隧道|1.5x
       - 🇸🇬 每次连接前用国内网络更新订阅
       - 🇸🇬 Singapore 01 | Media
       - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-2-2.0x-视频
@@ -1135,82 +832,59 @@ proxy-groups:
       - 🇸🇬 +Base+新加坡+SG+-+4
       - 🇸🇬 +Base+新加坡+SG+-+5
       - 🇸🇬 +Base+新加坡+SG+-+6
-      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
-      - 🇸🇬 SG(Youtube技术分享室整理)
       - 🇸🇬 新加坡|BGP中转
       - 🇸🇬 中转|新加坡Singtel01|华南隧道[流媒体解锁]
       - 🇸🇬 广州移动-SG-Choopa 3
-      - 🇸🇬 【新鸟免费】美国UA -DO 09 免流 1.0x
       - 🇸🇬 油管晓飞分享🇸🇬 [小麦]-中继-SGP-新加坡-1-2.0x-视频
-      - 🇸🇬 SG(Youtube技术分享室整理) 2
-      - 🇸🇬 SG(Youtube技术分享室整理) 3
+      - 🇸🇬 中转*广州移动-新加坡*01
+      - 🇸🇬 *国内中转*SG|广州移动-新加坡_0003
+      - 🇸🇬 V2 IEPL Game | SG1
+      - 🇸🇬 VIP1新加坡 | Singapore
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
-      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-3-2.0x-视频
-      - 🇨🇳 台湾(绿头外网集团)(Public)
-      - 🇨🇳 台湾(绿头外网集团)(Public) 2
-      - 🇨🇳 标准|中国台湾04|解锁流媒体
       - 🇨🇳 专线|中国台湾03|原生HINET
       - 🇨🇳 台湾
-      - 🇨🇳 中继 台湾 04 1x Residential
-      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-1-2.0x-视频
-      - 🇨🇳 台湾 2
-      - 🇨🇳 台湾 3
-      - 🇨🇳 台湾 4
       - 🇨🇳 TW(Youtube技术分享室整理)
+      - 🇨🇳 _TW_台湾
+      - 🇨🇳 台湾_TG@nodesharing
+      - 🇨🇳 油管晓飞分享🇨🇳 [小麦]-中继-TW-台湾-3-2.0x-视频
+      - 🇨🇳 台湾 2
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
-      - 🇰🇷 韩国01丨Netfix丨国内中转
-      - 🇰🇷 韩国02丨Netfix丨国内中转
-      - 🇰🇷 中继 韩国 02 1x Media
-      - 🇰🇷 _KR_韩国
-      - 🇰🇷 油管晓飞分享 🇰🇷 中继 韩国 03 1x Media
-      - 🇰🇷 油管晓飞分享 🇰🇷 09.韩国 路由管控
+      - DIRECT
   - name: 🎥 奈飞节点
     type: select
     proxies:
       - 🇸🇬 Singapore 01 | Media
-      - 🇯🇵 专线 日本 01 3x Media
       - 🇭🇰 专线|香港08|原生HGCBBS
-      - 🇺🇲 标准|美国02|解锁流媒体
-      - 🇰🇷 中继 韩国 02 1x Media
       - 🇸🇬 中转|新加坡Singtel01|华南隧道[流媒体解锁]
-      - 🇨🇳 标准|中国台湾04|解锁流媒体
-      - 🇺🇲 +United+States+01+|+Media
-      - 🇺🇲 +United+States+04+|+Media
-      - 🇺🇲 +United+States+05+|+Media
-      - 🇺🇲 +United+States+03+|+Media
-      - 🇭🇰 专线|香港02|原生HGCBBS
-      - 🇯🇵 中继 日本 01 1x Media
-      - 🇯🇵 中继 日本 02 1x Media
-      - 🇯🇵 中继 日本 03 1x Media
-      - 🇯🇵 中继 日本 04 1x Media
-      - 🇰🇷 油管晓飞分享 🇰🇷 中继 韩国 03 1x Media
-      - 🇺🇲 专线|西雅图01|原生NTT
-      - 🇯🇵 日本01丨流媒体解锁丨广东中继
+      - 🇺🇸 +United+States+01+|+Media
+      - 🇺🇸 +United+States+04+|+Media
+      - 🇺🇸 +United+States+05+|+Media
+      - 🇺🇸 +United+States+03+|+Media
+      - 🇺🇸 专线|西雅图01|原生NTT
       - 🇨🇳 专线|中国台湾03|原生HINET
-      - 🇺🇲 标准|美国01|解锁流媒体
-      - 🇮🇳 标准|印度02|解锁流媒体
+      - 🇺🇸 专线|西雅图02|原生NTT
+      - 🇭🇰 VIP1香港HGC | 原生IP | 2号
   - name: 🔑 专用线路
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
     proxies:
-      - 🇯🇵 专线 日本 01 3x Media
-      - 🇭🇰 专线 香港 01 3x
       - 🇭🇰 专线|香港08|原生HGCBBS
-      - 🇭🇰 专线|香港02|原生HGCBBS
-      - 🇺🇲 专线|西雅图01|原生NTT
+      - 🇺🇸 专线|西雅图01|原生NTT
       - 🇨🇳 专线|中国台湾03|原生HINET
+      - 🇺🇸 专线|西雅图02|原生NTT
+      - 🇭🇰 【推荐】IPLC专线上海-香港一_01
+      - 🇭🇰 V2 IEPL Game | HK2
+      - 🇸🇬 V2 IEPL Game | SG1
+      - 🇺🇸 V2 IPLC Game | US1
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 国内网络
  - DOMAIN-SUFFIX,ip6-localhost,🎯 国内网络
@@ -3132,7 +2806,7 @@ rules:
  - DOMAIN,gamer2-cds.cdn.hinet.net,📺 巴哈姆特
  - DOMAIN-SUFFIX,bahamut.com.tw,📺 巴哈姆特
  - DOMAIN-SUFFIX,gamer.com.tw,📺 巴哈姆特
- - DOMAIN-SUFFIX,hinet.net,📺 巴哈姆特
+ - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
  - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
@@ -3167,6 +2841,7 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
  - DOMAIN-SUFFIX,go.com,🌍 国外媒体
@@ -3438,9 +3113,14 @@ rules:
  - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
  - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
  - DOMAIN,music.youtube.com,🌍 国外媒体
+ - DOMAIN,p-bstarstatic.akamaized.net,🌏 出海媒体
+ - DOMAIN,p.bstarstatic.com,🌏 出海媒体
+ - DOMAIN,upos-bstar-mirrorakam.akamaized.net,🌏 出海媒体
+ - DOMAIN,upos-bstar1-mirrorakam.akamaized.net,🌏 出海媒体
  - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 出海媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 出海媒体
  - DOMAIN-SUFFIX,bilibili.com,🌏 出海媒体
+ - DOMAIN-SUFFIX,bilibili.tv,🌏 出海媒体
  - IP-CIDR,45.43.32.234/32,🌏 出海媒体
  - IP-CIDR,119.29.29.29/32,🌏 出海媒体
  - IP-CIDR,128.1.62.200/32,🌏 出海媒体
@@ -3452,6 +3132,7 @@ rules:
  - IP-CIDR,203.107.1.65/32,🌏 出海媒体
  - IP-CIDR,203.107.1.66/32,🌏 出海媒体
  - DOMAIN,cache.video.iqiyi.com,🌏 出海媒体
+ - DOMAIN-SUFFIX,iq.com,🌏 出海媒体
  - DOMAIN-SUFFIX,1password.com,🚀 全局设置
  - DOMAIN-SUFFIX,adguard.org,🚀 全局设置
  - DOMAIN-SUFFIX,bit.no.com,🚀 全局设置
@@ -3463,6 +3144,7 @@ rules:
  - DOMAIN-SUFFIX,hoyolab.com,🚀 全局设置
  - DOMAIN-SUFFIX,inoreader.com,🚀 全局设置
  - DOMAIN-SUFFIX,ip138.com,🚀 全局设置
+ - DOMAIN-SUFFIX,linkedin.com,🚀 全局设置
  - DOMAIN-SUFFIX,myteamspeak.com,🚀 全局设置
  - DOMAIN-SUFFIX,notion.so,🚀 全局设置
  - DOMAIN-SUFFIX,ping.pe,🚀 全局设置
@@ -3471,8 +3153,6 @@ rules:
  - DOMAIN-SUFFIX,tumbex.com,🚀 全局设置
  - DOMAIN-SUFFIX,twdvd.com,🚀 全局设置
  - DOMAIN-SUFFIX,unsplash.com,🚀 全局设置
- - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,🚀 全局设置
- - DOMAIN-SUFFIX,yunpanjingling.com,🚀 全局设置
  - DOMAIN-SUFFIX,eu,🚀 全局设置
  - DOMAIN-SUFFIX,hk,🚀 全局设置
  - DOMAIN-SUFFIX,jp,🚀 全局设置
@@ -8818,7 +8498,6 @@ rules:
  - DOMAIN-SUFFIX,xmovies.com,🚀 全局设置
  - DOMAIN-SUFFIX,xn--4gq171p.com,🚀 全局设置
  - DOMAIN-SUFFIX,xn--czq75pvv1aj5c.org,🚀 全局设置
- - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,🚀 全局设置
  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 全局设置
  - DOMAIN-SUFFIX,xn--oiq.cc,🚀 全局设置
  - DOMAIN-SUFFIX,xn--p8j9a0d9c9a.xn--q9jyb4c,🚀 全局设置
@@ -9347,7 +9026,6 @@ rules:
  - IP-CIDR,20.139.160.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,20.249.255.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,20.251.0.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,20.253.4.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,20.253.89.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,20.255.255.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,27.0.128.0/22,🎯 国内网络,no-resolve
@@ -9574,37 +9252,23 @@ rules:
  - IP-CIDR,43.95.96.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,43.95.112.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,43.96.0.0/11,🎯 国内网络,no-resolve
- - IP-CIDR,43.130.128.0/18,🎯 国内网络,no-resolve
- - IP-CIDR,43.131.128.0/18,🎯 国内网络,no-resolve
+ - IP-CIDR,43.130.128.0/17,🎯 国内网络,no-resolve
+ - IP-CIDR,43.131.128.0/17,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.8.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.10.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.12.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.16.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.32.0/19,🎯 国内网络,no-resolve
+ - IP-CIDR,43.132.69.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.75.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.78.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,43.132.82.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.132.87.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,43.132.92.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,43.132.88.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,43.132.92.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,43.135.224.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,43.136.0.0/13,🎯 国内网络,no-resolve
- - IP-CIDR,43.144.0.0/13,🎯 国内网络,no-resolve
- - IP-CIDR,43.152.4.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,43.152.8.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,43.152.11.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,43.152.12.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,43.152.16.0/20,🎯 国内网络,no-resolve
- - IP-CIDR,43.152.32.0/20,🎯 国内网络,no-resolve
- - IP-CIDR,43.152.48.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,43.152.52.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,43.152.55.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,43.152.57.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,43.152.60.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,43.152.64.0/18,🎯 国内网络,no-resolve
- - IP-CIDR,43.152.128.0/17,🎯 国内网络,no-resolve
- - IP-CIDR,43.153.64.0/18,🎯 国内网络,no-resolve
- - IP-CIDR,43.156.0.0/16,🎯 国内网络,no-resolve
- - IP-CIDR,43.157.192.0/18,🎯 国内网络,no-resolve
- - IP-CIDR,43.158.0.0/15,🎯 国内网络,no-resolve
+ - IP-CIDR,43.144.0.0/12,🎯 国内网络,no-resolve
  - IP-CIDR,43.160.0.0/11,🎯 国内网络,no-resolve
  - IP-CIDR,43.192.0.0/14,🎯 国内网络,no-resolve
  - IP-CIDR,43.196.0.0/15,🎯 国内网络,no-resolve
@@ -9667,8 +9331,6 @@ rules:
  - IP-CIDR,43.228.148.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.228.152.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.228.188.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,43.228.204.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,43.228.240.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.229.40.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.229.48.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.229.56.0/22,🎯 国内网络,no-resolve
@@ -9767,7 +9429,6 @@ rules:
  - IP-CIDR,43.246.0.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,43.246.64.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,43.246.96.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,43.246.112.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.246.148.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.246.150.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.246.228.0/22,🎯 国内网络,no-resolve
@@ -9834,6 +9495,9 @@ rules:
  - IP-CIDR,43.250.244.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.251.4.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.251.36.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,43.251.69.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,43.251.70.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,43.251.149.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,43.251.192.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.251.232.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,43.251.244.0/22,🎯 国内网络,no-resolve
@@ -9887,7 +9551,7 @@ rules:
  - IP-CIDR,45.40.224.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,45.65.16.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,45.87.53.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,45.87.54.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,45.87.54.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,45.112.132.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,45.112.188.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,45.112.208.0/20,🎯 国内网络,no-resolve
@@ -10171,13 +9835,17 @@ rules:
  - IP-CIDR,59.80.0.0/15,🎯 国内网络,no-resolve
  - IP-CIDR,59.82.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,59.83.0.0/18,🎯 国内网络,no-resolve
+ - IP-CIDR,59.83.136.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,59.83.144.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,59.83.160.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,59.83.180.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,59.83.184.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,59.83.192.0/19,🎯 国内网络,no-resolve
- - IP-CIDR,59.83.224.0/21,🎯 国内网络,no-resolve
- - IP-CIDR,59.83.232.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,59.83.224.0/20,🎯 国内网络,no-resolve
+ - IP-CIDR,59.83.240.0/21,🎯 国内网络,no-resolve
+ - IP-CIDR,59.83.248.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,59.83.252.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,59.83.254.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,59.107.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,59.108.0.0/14,🎯 国内网络,no-resolve
  - IP-CIDR,59.151.0.0/17,🎯 国内网络,no-resolve
@@ -10240,7 +9908,6 @@ rules:
  - IP-CIDR,61.232.0.0/14,🎯 国内网络,no-resolve
  - IP-CIDR,61.236.0.0/15,🎯 国内网络,no-resolve
  - IP-CIDR,61.240.0.0/14,🎯 国内网络,no-resolve
- - IP-CIDR,62.3.6.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,62.234.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,64.188.38.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,64.188.40.0/22,🎯 国内网络,no-resolve
@@ -10275,9 +9942,7 @@ rules:
  - IP-CIDR,101.36.128.0/17,🎯 国内网络,no-resolve
  - IP-CIDR,101.37.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,101.38.0.0/15,🎯 国内网络,no-resolve
- - IP-CIDR,101.40.0.0/14,🎯 国内网络,no-resolve
- - IP-CIDR,101.45.0.0/16,🎯 国内网络,no-resolve
- - IP-CIDR,101.46.0.0/15,🎯 国内网络,no-resolve
+ - IP-CIDR,101.40.0.0/13,🎯 国内网络,no-resolve
  - IP-CIDR,101.48.0.0/15,🎯 国内网络,no-resolve
  - IP-CIDR,101.50.8.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,101.50.56.0/22,🎯 国内网络,no-resolve
@@ -10342,7 +10007,7 @@ rules:
  - IP-CIDR,101.198.189.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,101.198.190.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,101.198.194.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,101.198.196.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,101.198.196.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,101.198.200.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,101.198.224.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,101.199.0.0/19,🎯 国内网络,no-resolve
@@ -10399,7 +10064,6 @@ rules:
  - IP-CIDR,103.5.192.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.5.252.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.6.76.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.6.108.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.6.120.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.6.220.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.7.140.0/22,🎯 国内网络,no-resolve
@@ -10553,7 +10217,6 @@ rules:
  - IP-CIDR,103.35.32.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,103.35.48.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.35.104.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.35.180.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.35.220.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.36.28.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.36.36.0/22,🎯 国内网络,no-resolve
@@ -10619,7 +10282,6 @@ rules:
  - IP-CIDR,103.40.240.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,103.41.0.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.41.52.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.41.116.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.41.140.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.41.148.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.41.152.0/22,🎯 国内网络,no-resolve
@@ -10642,7 +10304,6 @@ rules:
  - IP-CIDR,103.43.220.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.43.224.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.43.240.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.44.58.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.44.80.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.44.120.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.44.144.0/22,🎯 国内网络,no-resolve
@@ -10755,8 +10416,6 @@ rules:
  - IP-CIDR,103.56.32.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.56.56.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.56.72.0/21,🎯 国内网络,no-resolve
- - IP-CIDR,103.56.100.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.56.104.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.56.140.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.56.152.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.56.184.0/22,🎯 国内网络,no-resolve
@@ -11111,7 +10770,6 @@ rules:
  - IP-CIDR,103.98.240.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.98.250.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.98.252.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.99.55.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.99.56.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.99.104.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.99.116.0/22,🎯 国内网络,no-resolve
@@ -11264,8 +10922,6 @@ rules:
  - IP-CIDR,103.119.156.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.119.180.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.119.200.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.119.224.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.119.227.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.120.52.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.120.72.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.120.76.0/24,🎯 国内网络,no-resolve
@@ -11446,6 +11102,7 @@ rules:
  - IP-CIDR,103.153.99.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.153.114.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.153.122.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.153.128.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.153.132.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.153.146.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.153.160.0/23,🎯 国内网络,no-resolve
@@ -11462,7 +11119,7 @@ rules:
  - IP-CIDR,103.155.34.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.155.48.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.155.76.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.155.101.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,103.155.100.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.155.248.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.156.28.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.156.68.0/23,🎯 国内网络,no-resolve
@@ -11483,7 +11140,6 @@ rules:
  - IP-CIDR,103.158.16.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.158.200.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.158.224.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.159.80.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.159.122.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.159.124.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.159.134.0/23,🎯 国内网络,no-resolve
@@ -11543,15 +11199,6 @@ rules:
  - IP-CIDR,103.173.102.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.173.182.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.173.184.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.174.94.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.175.14.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.175.114.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.175.118.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.176.52.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.176.222.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.176.244.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.177.28.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.177.70.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.0.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.48.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.56.0/22,🎯 国内网络,no-resolve
@@ -11559,10 +11206,7 @@ rules:
  - IP-CIDR,103.192.88.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.96.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.112.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.192.128.0/21,🎯 国内网络,no-resolve
- - IP-CIDR,103.192.137.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,103.192.138.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.192.140.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,103.192.128.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.144.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.164.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.192.188.0/22,🎯 国内网络,no-resolve
@@ -11589,7 +11233,8 @@ rules:
  - IP-CIDR,103.196.168.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.196.185.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.196.186.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,103.197.180.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,103.197.181.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,103.197.183.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.197.228.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.197.253.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,103.197.254.0/23,🎯 国内网络,no-resolve
@@ -11601,6 +11246,7 @@ rules:
  - IP-CIDR,103.198.156.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.198.180.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.198.196.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,103.198.202.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,103.199.164.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.199.196.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.199.228.0/22,🎯 国内网络,no-resolve
@@ -11685,6 +11331,7 @@ rules:
  - IP-CIDR,103.208.16.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.208.28.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.208.48.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,103.208.148.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.209.112.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.209.136.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.209.201.0/24,🎯 国内网络,no-resolve
@@ -11784,6 +11431,7 @@ rules:
  - IP-CIDR,103.220.192.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.220.200.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.220.240.0/21,🎯 国内网络,no-resolve
+ - IP-CIDR,103.221.32.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.221.88.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.221.96.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,103.221.128.0/18,🎯 国内网络,no-resolve
@@ -11821,8 +11469,11 @@ rules:
  - IP-CIDR,103.224.220.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.224.224.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.224.232.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,103.225.32.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.226.40.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.226.56.0/21,🎯 国内网络,no-resolve
+ - IP-CIDR,103.226.57.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,103.226.58.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,103.226.60.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.226.80.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.226.116.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.226.132.0/22,🎯 国内网络,no-resolve
@@ -11889,7 +11540,6 @@ rules:
  - IP-CIDR,103.234.128.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.234.172.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.234.180.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,103.234.244.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.235.56.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,103.235.80.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,103.235.85.0/24,🎯 国内网络,no-resolve
@@ -12294,11 +11944,7 @@ rules:
  - IP-CIDR,114.31.64.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,114.54.0.0/15,🎯 国内网络,no-resolve
  - IP-CIDR,114.60.0.0/14,🎯 国内网络,no-resolve
- - IP-CIDR,114.64.0.0/15,🎯 国内网络,no-resolve
- - IP-CIDR,114.66.0.0/17,🎯 国内网络,no-resolve
- - IP-CIDR,114.66.160.0/19,🎯 国内网络,no-resolve
- - IP-CIDR,114.66.192.0/18,🎯 国内网络,no-resolve
- - IP-CIDR,114.67.0.0/16,🎯 国内网络,no-resolve
+ - IP-CIDR,114.64.0.0/14,🎯 国内网络,no-resolve
  - IP-CIDR,114.68.0.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,114.68.64.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,114.68.96.0/22,🎯 国内网络,no-resolve
@@ -12323,7 +11969,6 @@ rules:
  - IP-CIDR,114.112.96.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,114.112.116.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,114.112.120.0/21,🎯 国内网络,no-resolve
- - IP-CIDR,114.112.129.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,114.112.136.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,114.112.144.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,114.112.160.0/19,🎯 国内网络,no-resolve
@@ -12378,7 +12023,6 @@ rules:
  - IP-CIDR,115.169.14.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,115.169.16.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,115.169.39.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,115.169.40.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,115.169.42.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,115.169.44.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,115.169.48.0/20,🎯 国内网络,no-resolve
@@ -12542,7 +12186,7 @@ rules:
  - IP-CIDR,118.26.144.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,118.26.149.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,118.26.150.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,118.26.156.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,118.26.152.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,118.26.160.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,118.26.192.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,118.28.0.0/15,🎯 国内网络,no-resolve
@@ -12568,6 +12212,8 @@ rules:
  - IP-CIDR,118.103.164.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,118.103.168.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,118.103.176.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,118.103.245.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,118.103.246.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,118.112.0.0/13,🎯 国内网络,no-resolve
  - IP-CIDR,118.120.0.0/14,🎯 国内网络,no-resolve
  - IP-CIDR,118.124.0.0/15,🎯 国内网络,no-resolve
@@ -12590,12 +12236,7 @@ rules:
  - IP-CIDR,118.184.192.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,118.184.240.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,118.186.0.0/15,🎯 国内网络,no-resolve
- - IP-CIDR,118.188.0.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,118.188.8.0/21,🎯 国内网络,no-resolve
- - IP-CIDR,118.188.16.0/20,🎯 国内网络,no-resolve
- - IP-CIDR,118.188.32.0/19,🎯 国内网络,no-resolve
- - IP-CIDR,118.188.64.0/18,🎯 国内网络,no-resolve
- - IP-CIDR,118.188.128.0/17,🎯 国内网络,no-resolve
+ - IP-CIDR,118.188.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,118.190.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,118.191.0.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,118.191.32.0/19,🎯 国内网络,no-resolve
@@ -12816,6 +12457,7 @@ rules:
  - IP-CIDR,121.59.101.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.102.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.104.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,121.59.106.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.108.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.112.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.121.0/24,🎯 国内网络,no-resolve
@@ -12825,9 +12467,7 @@ rules:
  - IP-CIDR,121.59.136.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.141.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.142.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,121.59.145.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,121.59.146.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,121.59.148.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,121.59.144.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.152.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.154.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,121.59.156.0/22,🎯 国内网络,no-resolve
@@ -12838,7 +12478,6 @@ rules:
  - IP-CIDR,121.76.0.0/15,🎯 国内网络,no-resolve
  - IP-CIDR,121.79.128.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,121.89.0.0/16,🎯 国内网络,no-resolve
- - IP-CIDR,121.91.104.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,121.100.128.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,121.101.0.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,121.101.208.0/20,🎯 国内网络,no-resolve
@@ -13032,7 +12671,7 @@ rules:
  - IP-CIDR,124.71.192.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,124.71.224.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,124.71.240.0/21,🎯 国内网络,no-resolve
- - IP-CIDR,124.71.250.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,124.71.250.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,124.71.252.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,124.72.0.0/13,🎯 国内网络,no-resolve
  - IP-CIDR,124.88.0.0/13,🎯 国内网络,no-resolve
@@ -13103,7 +12742,7 @@ rules:
  - IP-CIDR,132.232.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,132.237.134.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,134.175.0.0/16,🎯 国内网络,no-resolve
- - IP-CIDR,135.84.255.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,135.84.254.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,135.159.208.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,135.244.80.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,137.59.59.0/24,🎯 国内网络,no-resolve
@@ -13117,14 +12756,7 @@ rules:
  - IP-CIDR,139.5.192.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,139.5.204.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,139.5.244.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,139.9.0.0/18,🎯 国内网络,no-resolve
- - IP-CIDR,139.9.64.0/19,🎯 国内网络,no-resolve
- - IP-CIDR,139.9.96.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,139.9.98.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,139.9.100.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,139.9.104.0/21,🎯 国内网络,no-resolve
- - IP-CIDR,139.9.112.0/20,🎯 国内网络,no-resolve
- - IP-CIDR,139.9.128.0/17,🎯 国内网络,no-resolve
+ - IP-CIDR,139.9.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,139.129.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,139.138.238.0/28,🎯 国内网络,no-resolve
  - IP-CIDR,139.148.0.0/16,🎯 国内网络,no-resolve
@@ -13215,6 +12847,7 @@ rules:
  - IP-CIDR,144.211.138.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,144.255.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,146.56.192.0/18,🎯 国内网络,no-resolve
+ - IP-CIDR,146.88.175.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,146.196.56.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,146.196.68.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,146.196.92.0/22,🎯 国内网络,no-resolve
@@ -13227,7 +12860,6 @@ rules:
  - IP-CIDR,147.243.13.32/27,🎯 国内网络,no-resolve
  - IP-CIDR,147.243.13.64/27,🎯 国内网络,no-resolve
  - IP-CIDR,147.243.14.32/27,🎯 国内网络,no-resolve
- - IP-CIDR,147.243.103.0/25,🎯 国内网络,no-resolve
  - IP-CIDR,148.70.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,150.0.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,150.115.0.0/16,🎯 国内网络,no-resolve
@@ -13368,9 +13000,9 @@ rules:
  - IP-CIDR,163.228.0.0/16,🎯 国内网络,no-resolve
  - IP-CIDR,163.244.246.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,164.52.80.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,165.154.100.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,165.154.104.0/21,🎯 国内网络,no-resolve
- - IP-CIDR,165.154.112.0/20,🎯 国内网络,no-resolve
+ - IP-CIDR,165.84.197.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,165.154.60.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,165.154.64.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,165.154.128.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,165.154.192.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,165.156.30.0/24,🎯 国内网络,no-resolve
@@ -13567,6 +13199,7 @@ rules:
  - IP-CIDR,194.138.136.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,194.138.202.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,194.138.245.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,195.142.215.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,198.175.100.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,198.208.17.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,198.208.19.0/24,🎯 国内网络,no-resolve
@@ -13955,12 +13588,7 @@ rules:
  - IP-CIDR,202.158.242.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,202.160.140.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,202.160.156.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,202.160.176.64/29,🎯 国内网络,no-resolve
- - IP-CIDR,202.160.176.72/30,🎯 国内网络,no-resolve
- - IP-CIDR,202.160.176.76/32,🎯 国内网络,no-resolve
- - IP-CIDR,202.160.176.78/31,🎯 国内网络,no-resolve
- - IP-CIDR,202.160.176.80/28,🎯 国内网络,no-resolve
- - IP-CIDR,202.160.176.96/27,🎯 国内网络,no-resolve
+ - IP-CIDR,202.160.176.64/26,🎯 国内网络,no-resolve
  - IP-CIDR,202.160.176.128/25,🎯 国内网络,no-resolve
  - IP-CIDR,202.160.177.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,202.160.178.0/23,🎯 国内网络,no-resolve
@@ -15090,9 +14718,11 @@ rules:
  - IP-CIDR,211.155.68.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,211.155.72.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,211.155.80.0/20,🎯 国内网络,no-resolve
- - IP-CIDR,211.155.96.0/20,🎯 国内网络,no-resolve
- - IP-CIDR,211.155.112.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,211.155.114.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,211.155.97.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,211.155.98.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,211.155.100.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,211.155.104.0/21,🎯 国内网络,no-resolve
+ - IP-CIDR,211.155.113.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,211.155.116.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,211.155.120.0/21,🎯 国内网络,no-resolve
  - IP-CIDR,211.155.128.0/17,🎯 国内网络,no-resolve
@@ -15124,8 +14754,7 @@ rules:
  - IP-CIDR,218.98.0.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,218.98.77.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,218.98.78.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,218.98.80.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,218.98.92.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,218.98.80.0/20,🎯 国内网络,no-resolve
  - IP-CIDR,218.98.96.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,218.98.100.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,218.98.102.0/23,🎯 国内网络,no-resolve
@@ -15195,7 +14824,8 @@ rules:
  - IP-CIDR,220.155.32.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,220.155.64.0/18,🎯 国内网络,no-resolve
  - IP-CIDR,220.155.128.0/17,🎯 国内网络,no-resolve
- - IP-CIDR,220.158.240.0/22,🎯 国内网络,no-resolve
+ - IP-CIDR,220.158.241.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,220.158.243.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,220.160.0.0/11,🎯 国内网络,no-resolve
  - IP-CIDR,220.192.0.0/12,🎯 国内网络,no-resolve
  - IP-CIDR,220.231.0.0/18,🎯 国内网络,no-resolve
@@ -15226,19 +14856,12 @@ rules:
  - IP-CIDR,220.242.134.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,220.242.173.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,220.242.183.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.185.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.186.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.188.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.190.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.192.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.196.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.200.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.202.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.204.0/22,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.209.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.210.0/23,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.214.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.242.216.0/21,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.197.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.205.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.207.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.217.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.218.0/23,🎯 国内网络,no-resolve
+ - IP-CIDR,220.242.220.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,220.242.224.0/19,🎯 国内网络,no-resolve
  - IP-CIDR,220.243.0.0/17,🎯 国内网络,no-resolve
  - IP-CIDR,220.243.128.0/18,🎯 国内网络,no-resolve
@@ -15261,7 +14884,7 @@ rules:
  - IP-CIDR,220.243.238.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,220.243.243.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,220.243.244.0/24,🎯 国内网络,no-resolve
- - IP-CIDR,220.243.246.0/24,🎯 国内网络,no-resolve
+ - IP-CIDR,220.243.246.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,220.243.249.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,220.243.250.0/24,🎯 国内网络,no-resolve
  - IP-CIDR,220.243.252.0/24,🎯 国内网络,no-resolve
@@ -15315,7 +14938,6 @@ rules:
  - IP-CIDR,222.126.174.76/30,🎯 国内网络,no-resolve
  - IP-CIDR,222.126.174.88/29,🎯 国内网络,no-resolve
  - IP-CIDR,222.126.174.144/28,🎯 国内网络,no-resolve
- - IP-CIDR,222.126.176.0/29,🎯 国内网络,no-resolve
  - IP-CIDR,222.126.178.0/23,🎯 国内网络,no-resolve
  - IP-CIDR,222.126.180.0/22,🎯 国内网络,no-resolve
  - IP-CIDR,222.126.184.0/21,🎯 国内网络,no-resolve
@@ -15477,7 +15099,6 @@ rules:
  - DOMAIN-SUFFIX,biliapi.com,🎯 国内网络
  - DOMAIN-SUFFIX,biliapi.net,🎯 国内网络
  - DOMAIN-SUFFIX,bilibili.com,🎯 国内网络
- - DOMAIN-SUFFIX,bilibili.tv,🎯 国内网络
  - DOMAIN-SUFFIX,biligame.com,🎯 国内网络
  - DOMAIN-SUFFIX,biligame.net,🎯 国内网络
  - DOMAIN-SUFFIX,bilivideo.com,🎯 国内网络
@@ -15731,7 +15352,6 @@ rules:
  - DOMAIN-SUFFIX,baomitu.com,🎯 国内网络
  - DOMAIN-SUFFIX,bootcss.com,🎯 国内网络
  - DOMAIN-SUFFIX,jiasule.com,🎯 国内网络
- - DOMAIN-SUFFIX,jsdelivr.net,🎯 国内网络
  - DOMAIN-SUFFIX,staticfile.org,🎯 国内网络
  - DOMAIN-SUFFIX,upaiyun.com,🎯 国内网络
  - DOMAIN-SUFFIX,10010.com,🎯 国内网络
