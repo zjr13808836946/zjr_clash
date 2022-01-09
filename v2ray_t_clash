@@ -7,10 +7,12 @@ external-controller: :9090
 proxies:
   - {name: 美国-netflix, server: 107.167.23.50, port: 8084, type: ssr, cipher: aes-256-cfb, password: RhKqtYoG8, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
   - {name: 专线|西雅图02|原生NTT, server: zfd.out02.nodeserver.top, port: 16234, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 回国专线贵州, server: 203.189.208.74, port: 48776, type: vmess, uuid: d40c20e7-a5c3-4dcf-93c3-b2d7efb1159f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 电信二区(四川), server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-香港, server: 211.99.96.11, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
   - {name: vpnpool-香港 2, server: 211.99.96.7, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
+  - {name: vpnpool-香港 3, server: 211.99.96.13, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
+  - {name: vpnpool-香港 4, server: 211.99.96.10, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
+  - {name: HK(Youtube技术分享室整理), server: 47.99.142.242, port: 54497, type: vmess, uuid: 4b6b4c48-dbd6-4743-8e33-0049006b3068, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 专线|香港01|原生HGCBBS, server: v31.88host.buzz, port: 18064, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 专线|香港02|原生HGCBBS, server: v32.88host.buzz, port: 18065, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 专线|香港03|原生CMI, server: v33.88host.buzz, port: 18066, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -21,8 +23,7 @@ proxies:
   - {name: 专线|香港08|原生HKBN, server: v32.88host.buzz, port: 18083, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 专线|台湾01|原生HINET, server: v36.88host.buzz, port: 18078, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 专线|台湾02|原生HINET, server: v35.88host.buzz, port: 18079, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|俄罗斯02|原生IP, server: v32.88host.buzz, port: 18060, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|俄罗斯04|原生IP, server: v34.88host.buzz, port: 18062, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|俄罗斯01|原生IP, server: v31.88host.buzz, port: 18059, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 专线|美国01|原生NTT, server: v31.88host.buzz, port: 18042, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 专线|美国02|原生NTT, server: v32.88host.buzz, port: 18043, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 专线|美国03|原生NTT, server: v33.88host.buzz, port: 18044, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -30,21 +31,28 @@ proxies:
   - {name: 专线|西雅图01|原生NTT, server: v31.88host.buzz, port: 18084, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 专线|西雅图02|原生NTT 2, server: v32.88host.buzz, port: 18085, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 标准|日本03|解锁流媒体, server: v23.88host.buzz, port: 18023, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|日本04|解锁流媒体, server: v24.88host.buzz, port: 18024, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|台湾02|视频主力, server: v12.88host.buzz, port: 18118, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|俄罗斯02|限速100M, server: v12.88host.buzz, port: 18002, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TW(Youtube技术分享室整理), server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 4.06|CN中国55, server: 183.232.13.63, port: 2109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 28416:xul3hsefzm, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "｜IPLC｜香港\n", server: 211.99.96.19, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-02, server: mc.xiaohouzi.club, port: 30002, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-05, server: mc.xiaohouzi.club, port: 27820, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-09, server: mc.xiaohouzi.club, port: 29239, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-093, server: sh.xiaohouzi.club, port: 24913, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-097, server: sh.xiaohouzi.club, port: 17903, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-A06, server: sh.xiaohouzi.club, port: 25236, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
   - {name: A-V2RAY-加速-韩国01, server: mc.xiaohouzi.club, port: 28321, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: A-V2RAY-加速-韩国03, server: mc.xiaohouzi.club, port: 28323, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
   - {name: v2ray-BGP-韩国B03, server: bgp.xiaohouzi.club, port: 28523, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
   - {name: V2RAY-香港-HKT-支持NETFLIX-03, server: hkt-pqs01.xiaohouzi.club, port: 10051, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: V2RAY-香港-HKT-支持NETFLIX-04, server: hkt-pqs02.xiaohouzi.club, port: 10052, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
   - {name: V2RAY-香港AWV09, server: hk-azure03.xiaohouzi.club, port: 10051, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
   - {name: V2RAY-香港AWV092, server: azhk003.xiaohouzi.club, port: 10051, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
   - {name: V2RAY-香港AZURE-落地, server: azure-hk-t.xiaohouzi.club, port: 10050, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
   - {name: V2RAY-香港AZURE-落地05, server: a89.xiaohouzi.club, port: 10050, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
   - {name: V2RAY-香港AZURE-落地06, server: a90.xiaohouzi.club, port: 10050, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: V2RAY-香港AZURE-落地09, server: azhk03.xiaohouzi.club, port: 10050, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
   - {name: V2RAY-香港AZURE-落地097, server: azhk097.xiaohouzi.club, port: 10051, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M", server: v112.wgong.xyz, port: 52212, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M", server: 116.wgong.xyz, port: 52216, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M", server: 121.wgong.xyz, port: 52221, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 朝鲜IPLC专线, server: 211.99.96.16, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
   - {name: Hong Kong 11, server: iepl.hk.206f.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
   - {name: Hong Kong 07, server: iepl.hk.cc38.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
@@ -52,50 +60,42 @@ proxies:
   - {name: Hong Kong 14, server: iepl.hk.71bc.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
   - {name: Hong Kong 13, server: iepl.hk.31c4.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
   - {name: Hong Kong 02, server: iepl.hk.c474.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub", server: v8.ssrsub.com, port: 443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
-  - {name: 中国(绿头外网集团)(Public), server: 101.132.173.78, port: 41993, type: vmess, uuid: e24ac30e-e296-4761-af23-7bda2781ba85, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 卢森堡(绿头外网集团)(Public), server: s2.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s2.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: Hong Kong 10, server: iepl.hk.fda0.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
+  - {name: "@SSRSUB-美国V01-付费推荐::suo.yt/ssrsub", server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
   - {name: 新加坡(绿头外网集团)(Airport), server: naspghmzbh.hk.portx.cc, port: 26811, type: ss, cipher: aes-256-gcm, password: dbd781851f0f0367ae02ce768, udp: true}
-  - {name: 日本(绿头外网集团)(Airport), server: jp05-vm0.entry.ikuuu.casa, port: 446, type: vmess, uuid: 0b7c6e4f-304b-329e-bfca-459388279b81, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp05-vm0.entry.ikuuu.casa}, udp: true}
   - {name: 香港17852, server: 211.99.96.19, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
   - {name: "[vip1]︱V2ray①台湾Hinet原生节点 600M｜×1x｜限速100M", server: v111.wgong.xyz, port: 52211, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M 2", server: v112.wgong.xyz, port: 52212, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M", server: v112.wgong.xyz, port: 52212, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M", server: v113.wgong.xyz, port: 52213, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M", server: v115.wgong.xyz, port: 52215, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M 2", server: 116.wgong.xyz, port: 52216, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M", server: 116.wgong.xyz, port: 52216, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M", server: 118.wgong.xyz, port: 52218, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M", server: 119.wgong.xyz, port: 52219, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M 2", server: 121.wgong.xyz, port: 52221, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[vip1]︱V2ray︱⑩日本 1000M｜×1x｜限速100M", server: 120.wgong.xyz, port: 52220, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M", server: 121.wgong.xyz, port: 52221, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[vip1]︱V2ray︱⑮新加坡 1000M｜×1x｜限速100M", server: 133.wgong.xyz, port: 52333, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M", server: 135.wgong.xyz, port: 52335, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing, server: cs.lhcloud.xyz, port: 40067, type: vmess, uuid: 3a651574-9236-4d2c-be3e-33460080fc76, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cs.lhcloud.xyz}, udp: true}
-  - {name: 香港_TG@nodesharing 2, server: CS.lhcloud.xyz, port: 40002, type: vmess, uuid: 3a651574-9236-4d2c-be3e-33460080fc76, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: CS.lhcloud.xyz}, udp: true}
-  - {name: 香港_TG@nodesharing 3, server: HZ.lhcloud.xyz, port: 40002, type: vmess, uuid: 3a651574-9236-4d2c-be3e-33460080fc76, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: HZ.lhcloud.xyz}, udp: true}
-  - {name: 美国_TG@nodesharing, server: gy1-120.lhcloud.xyz, port: 40066, type: vmess, uuid: 3a651574-9236-4d2c-be3e-33460080fc76, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}, udp: true}
-  - {name: 日本_TG@nodesharing, server: CS.lhcloud.xyz, port: 40060, type: vmess, uuid: 3a651574-9236-4d2c-be3e-33460080fc76, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: CS.lhcloud.xyz}, udp: true}
-  - {name: 新加坡_TG@nodesharing, server: HZ.lhcloud.xyz, port: 40065, type: vmess, uuid: 3a651574-9236-4d2c-be3e-33460080fc76, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: HZ.lhcloud.xyz}, udp: true}
-  - {name: Alien, server: 120.197.130.73, port: 39073, type: vmess, uuid: bb16b3af-518c-3b80-b589-6fa807cefb8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Alien 2, server: 120.197.130.73, port: 39065, type: vmess, uuid: bb16b3af-518c-3b80-b589-6fa807cefb8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: v1|亚洲|B|混合负载|低延主力, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627975.sina.cn}, udp: true}
   - {name: v1|亚洲|A|混合负载|外贸主力, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627875.sina.cn}, udp: true}
   - {name: v1|亚洲|E|混合负载|疾驰主力, server: k5.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627c7064.sina.cn}, udp: true}
   - {name: v1|香港|A|5台负载, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627b7d.sina.cn}, udp: true}
   - {name: v1|香港|B|6台负载, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627973.sina.cn}, udp: true}
-  - {name: v1|香港|C|7台负载, server: k3.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627f7769.sina.cn}, udp: true}
   - {name: v1|香港|E|4台负载, server: k5.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627c7063.sina.cn}, udp: true}
   - {name: v1|新加坡|A|6台负载, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627f7466.sina.cn}, udp: true}
   - {name: v1|新加坡|B|7台负载, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627f7561.sina.cn}, udp: true}
   - {name: v1|新加坡|C|8台负载, server: k3.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627f7566.sina.cn}, udp: true}
   - {name: v1|新加坡|C|9台负载, server: k3.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627772.sina.cn}, udp: true}
-  - {name: v1|新加坡|D|5台负载, server: k4.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627c7564.sina.cn}, udp: true}
   - {name: v1|新加坡|E|7台负载, server: k5.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627c7062.sina.cn}, udp: true}
   - {name: v1|日本|A|7台负载, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627877.sina.cn}, udp: true}
+  - {name: v1|日本|B|4台负载, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627f7562.sina.cn}, udp: true}
   - {name: v1|日本|B|8台负载, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627977.sina.cn}, udp: true}
   - {name: v1|日本|C|9台负载, server: k3.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627777.sina.cn}, udp: true}
+  - {name: v1|日本|D|5台负载, server: k4.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627c7667.sina.cn}, udp: true}
   - {name: v1|日本|E|6台负载, server: k5.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627c7061.sina.cn}, udp: true}
   - {name: v1|美国|A|6台负载, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627f7d63.sina.cn}, udp: true}
   - {name: v1|美国|B|5台负载, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627872.sina.cn}, udp: true}
   - {name: v1|美国|C|3台负载, server: k3.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627f7d64.sina.cn}, udp: true}
+  - {name: v1|美国|D|4台负载, server: k4.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627c7569.sina.cn}, udp: true}
   - {name: v1|美国|E|6台负载, server: k5.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627c7060.sina.cn}, udp: true}
   - {name: v1|香港|A|7台负载|原生, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d703462787d.sina.cn}, udp: true}
   - {name: v1|香港|B|8台负载|原生, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627f7060.sina.cn}, udp: true}
@@ -106,6 +106,7 @@ proxies:
   - {name: v1|台湾|E|5台负载|原生, server: k5.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627c7768.sina.cn}, udp: true}
   - {name: v1|新加坡|A|4台负载|原生, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627f7c68.sina.cn}, udp: true}
   - {name: v1|新加坡|B|4台负载|原生, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627f7c69.sina.cn}, udp: true}
+  - {name: v1|新加坡|D|5台负载|原生, server: k4.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627c7563.sina.cn}, udp: true}
   - {name: v1|新加坡|E|4台负载|原生, server: k5.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627c7767.sina.cn}, udp: true}
   - {name: v1|美国|A|3台负载|原生, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627c7461.sina.cn}, udp: true}
   - {name: v1|澳洲|A|4台负载, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627f7467.sina.cn}, udp: true}
@@ -114,27 +115,47 @@ proxies:
   - {name: v1|澳洲|E|3台负载, server: k5.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627c7c62.sina.cn}, udp: true}
   - {name: v1|印度|A|4台负载, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627f7d67.sina.cn}, udp: true}
   - {name: v1|俄罗斯|A|3台负载, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: d20509715c54, plugin: obfs, plugin-opts: {mode: http, host: 6172777c60786d7034627f7d69.sina.cn}, udp: true}
+  - {name: +Hong+Kong+07, server: iepl.hk.cc38.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
   - {name: 专线|香港08|原生HGCBBS, server: zfd.out02.nodeserver.top, port: 16237, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 标准|中国台湾04|解锁流媒体, server: zfd.out04.nodeserver.top, port: 16128, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: +Hong+Kong+06, server: iepl.hk.0686.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: HK(Youtube技术分享室整理), server: shcn2-06b.iplc188.com, port: 10005, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 印度|广港隧道|1.5x, server: newgy.jidan666.com, port: 23033, type: trojan, password: b89d279d-707e-4892-8963-9479ffd53b23, sni: newgy.jidan666.com, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港01|原生HGCBBS 2, server: v31.88host.buzz, port: 18064, type: vmess, uuid: d81c2f32-b514-3a43-b672-47a28829e018, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港02|原生HGCBBS 2, server: v32.88host.buzz, port: 18065, type: vmess, uuid: d81c2f32-b514-3a43-b672-47a28829e018, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港05|原生HGCBBS 2, server: v35.88host.buzz, port: 18068, type: vmess, uuid: d81c2f32-b514-3a43-b672-47a28829e018, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港06|原生CMI 2, server: v36.88host.buzz, port: 18069, type: vmess, uuid: d81c2f32-b514-3a43-b672-47a28829e018, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港07|原生HKBN 2, server: v31.88host.buzz, port: 18082, type: vmess, uuid: d81c2f32-b514-3a43-b672-47a28829e018, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港08|原生HKBN 2, server: v32.88host.buzz, port: 18083, type: vmess, uuid: d81c2f32-b514-3a43-b672-47a28829e018, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾01|原生HINET 2, server: v36.88host.buzz, port: 18078, type: vmess, uuid: d81c2f32-b514-3a43-b672-47a28829e018, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国01|原生NTT 2, server: v31.88host.buzz, port: 18042, type: vmess, uuid: d81c2f32-b514-3a43-b672-47a28829e018, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国02|原生NTT 2, server: v32.88host.buzz, port: 18043, type: vmess, uuid: d81c2f32-b514-3a43-b672-47a28829e018, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国03|原生NTT 2, server: v33.88host.buzz, port: 18044, type: vmess, uuid: d81c2f32-b514-3a43-b672-47a28829e018, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国04|原生NTT 2, server: v34.88host.buzz, port: 18045, type: vmess, uuid: d81c2f32-b514-3a43-b672-47a28829e018, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|西雅图01|原生NTT 2, server: v31.88host.buzz, port: 18084, type: vmess, uuid: d81c2f32-b514-3a43-b672-47a28829e018, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|西雅图02|原生NTT 3, server: v32.88host.buzz, port: 18085, type: vmess, uuid: d81c2f32-b514-3a43-b672-47a28829e018, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|台湾03|视频主力, server: v13.88host.buzz, port: 18119, type: vmess, uuid: d81c2f32-b514-3a43-b672-47a28829e018, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|西雅图01|原生NTT 2, server: zfd.out01.nodeserver.top, port: 16233, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK(Youtube技术分享室整理) 2, server: shcn2-06b.iplc188.com, port: 10005, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: +vpnpool-香港, server: 211.99.96.15, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
+  - {name: 基础|台湾03|视频主力, server: v13.88host.buzz, port: 18119, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 基础|台湾04|视频主力, server: v11.88host.buzz, port: 18120, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ������������ CN_81, server: s3.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: 基础|俄罗斯01|限速100M, server: v11.88host.buzz, port: 18001, type: vmess, uuid: efa700eb-9bdb-3d1c-b35d-f34fd86d7b34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港1|tg频道:@ripaojiedian, server: 211.99.96.13, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 台湾, server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾 2, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港, server: 118.107.244.112, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 中国_TG@nodesharing, server: 211.99.96.16, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 香港_TG@nodesharing, server: 8.210.214.129, port: 9000, type: vmess, uuid: d120c693-682c-4133-9360-d201effa857a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing 2, server: 211.99.96.15, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 3, server: 211.99.96.7, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 4, server: 211.99.96.10, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 5, server: 211.99.96.11, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 6, server: 211.99.96.14, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 7, server: 211.99.96.9, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 8, server: 211.99.96.18, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 9, server: 211.99.96.4, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 10, server: 211.99.96.17, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 11, server: 211.99.96.35, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 12, server: 211.99.96.36, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 13, server: 211.99.96.33, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 14, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing 15, server: in04.2333dns.com, port: 64068, type: vmess, uuid: 19380563-e9f4-367a-b58f-43def434398e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
+  - {name: 中国_TG@nodesharing 16, server: guangzou-yd-jy-03.pucdn.me, port: 40002, type: vmess, uuid: 5f495bcf-148f-3949-a083-199bc89ef937, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-jp-01.pucdn.me}, udp: true}
+  - {name: 中国_TG@nodesharing 17, server: 211.99.96.30, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 18, server: in02.2333dns.com, port: 64068, type: vmess, uuid: 19380563-e9f4-367a-b58f-43def434398e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
+  - {name: 中国_TG@nodesharing 19, server: in05.2333dns.com, port: 64068, type: vmess, uuid: 19380563-e9f4-367a-b58f-43def434398e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
+  - {name: 中国_TG@nodesharing 20, server: 211.99.96.26, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 21, server: 211.99.96.27, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 中国_TG@nodesharing 22, server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: FR_113, server: 62.210.209.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "@SSRSUB-V04-付费推荐:suo.yt/ssrsub", server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien, server: 120.197.130.73, port: 39073, type: vmess, uuid: bb16b3af-518c-3b80-b589-6fa807cefb8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 2, server: 120.197.130.73, port: 39065, type: vmess, uuid: bb16b3af-518c-3b80-b589-6fa807cefb8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -143,10 +164,12 @@ proxy-groups:
       - 🎯 全球直连
       - 美国-netflix
       - 专线|西雅图02|原生NTT
-      - 回国专线贵州
       - 电信二区(四川)
       - vpnpool-香港
       - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港 4
+      - HK(Youtube技术分享室整理)
       - 专线|香港01|原生HGCBBS
       - 专线|香港02|原生HGCBBS
       - 专线|香港03|原生CMI
@@ -157,8 +180,7 @@ proxy-groups:
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生HINET
       - 专线|台湾02|原生HINET
-      - 专线|俄罗斯02|原生IP
-      - 专线|俄罗斯04|原生IP
+      - 专线|俄罗斯01|原生IP
       - 专线|美国01|原生NTT
       - 专线|美国02|原生NTT
       - 专线|美国03|原生NTT
@@ -166,21 +188,28 @@ proxy-groups:
       - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
       - 标准|日本03|解锁流媒体
+      - 标准|日本04|解锁流媒体
+      - 基础|台湾02|视频主力
+      - 基础|俄罗斯02|限速100M
+      - TW(Youtube技术分享室整理)
       - 4.06|CN中国55
+      - "｜IPLC｜香港\n"
+      - A-aV2RAY-CMCC-香港-02
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-097
+      - A-aV2RAY-CMCC-香港-A06
       - A-V2RAY-加速-韩国01
+      - A-V2RAY-加速-韩国03
       - v2ray-BGP-韩国B03
       - V2RAY-香港-HKT-支持NETFLIX-03
-      - V2RAY-香港-HKT-支持NETFLIX-04
       - V2RAY-香港AWV09
       - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
-      - V2RAY-香港AZURE-落地09
       - V2RAY-香港AZURE-落地097
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - 朝鲜IPLC专线
       - Hong Kong 11
       - Hong Kong 07
@@ -188,50 +217,42 @@ proxy-groups:
       - Hong Kong 14
       - Hong Kong 13
       - Hong Kong 02
-      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
-      - 中国(绿头外网集团)(Public)
-      - 卢森堡(绿头外网集团)(Public)
+      - Hong Kong 10
+      - "@SSRSUB-美国V01-付费推荐::suo.yt/ssrsub"
       - 新加坡(绿头外网集团)(Airport)
-      - 日本(绿头外网集团)(Airport)
       - 香港17852
       - "[vip1]︱V2ray①台湾Hinet原生节点 600M｜×1x｜限速100M"
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑩日本 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑮新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
-      - 香港_TG@nodesharing
-      - 香港_TG@nodesharing 2
-      - 香港_TG@nodesharing 3
-      - 美国_TG@nodesharing
-      - 日本_TG@nodesharing
-      - 新加坡_TG@nodesharing
-      - Alien
-      - Alien 2
       - v1|亚洲|B|混合负载|低延主力
       - v1|亚洲|A|混合负载|外贸主力
       - v1|亚洲|E|混合负载|疾驰主力
       - v1|香港|A|5台负载
       - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
       - v1|香港|E|4台负载
       - v1|新加坡|A|6台负载
       - v1|新加坡|B|7台负载
       - v1|新加坡|C|8台负载
       - v1|新加坡|C|9台负载
-      - v1|新加坡|D|5台负载
       - v1|新加坡|E|7台负载
       - v1|日本|A|7台负载
+      - v1|日本|B|4台负载
       - v1|日本|B|8台负载
       - v1|日本|C|9台负载
+      - v1|日本|D|5台负载
       - v1|日本|E|6台负载
       - v1|美国|A|6台负载
       - v1|美国|B|5台负载
       - v1|美国|C|3台负载
+      - v1|美国|D|4台负载
       - v1|美国|E|6台负载
       - v1|香港|A|7台负载|原生
       - v1|香港|B|8台负载|原生
@@ -242,6 +263,7 @@ proxy-groups:
       - v1|台湾|E|5台负载|原生
       - v1|新加坡|A|4台负载|原生
       - v1|新加坡|B|4台负载|原生
+      - v1|新加坡|D|5台负载|原生
       - v1|新加坡|E|4台负载|原生
       - v1|美国|A|3台负载|原生
       - v1|澳洲|A|4台负载
@@ -250,27 +272,47 @@ proxy-groups:
       - v1|澳洲|E|3台负载
       - v1|印度|A|4台负载
       - v1|俄罗斯|A|3台负载
+      - +Hong+Kong+07
       - 专线|香港08|原生HGCBBS
       - 标准|中国台湾04|解锁流媒体
       - +Hong+Kong+06
-      - HK(Youtube技术分享室整理)
-      - 印度|广港隧道|1.5x
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生HINET 2
-      - 专线|美国01|原生NTT 2
-      - 专线|美国02|原生NTT 2
-      - 专线|美国03|原生NTT 2
-      - 专线|美国04|原生NTT 2
       - 专线|西雅图01|原生NTT 2
-      - 专线|西雅图02|原生NTT 3
+      - HK(Youtube技术分享室整理) 2
+      - +vpnpool-香港
       - 基础|台湾03|视频主力
       - 基础|台湾04|视频主力
-      - ������������ CN_81
+      - 基础|俄罗斯01|限速100M
+      - 香港1|tg频道:@ripaojiedian
+      - 台湾
+      - 台湾 2
+      - _HK_香港
+      - 中国_TG@nodesharing
+      - 香港_TG@nodesharing
+      - 中国_TG@nodesharing 2
+      - 中国_TG@nodesharing 3
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
+      - 中国_TG@nodesharing 6
+      - 中国_TG@nodesharing 7
+      - 中国_TG@nodesharing 8
+      - 中国_TG@nodesharing 9
+      - 中国_TG@nodesharing 10
+      - 中国_TG@nodesharing 11
+      - 中国_TG@nodesharing 12
+      - 中国_TG@nodesharing 13
+      - 中国_TG@nodesharing 14
+      - 中国_TG@nodesharing 15
+      - 中国_TG@nodesharing 16
+      - 中国_TG@nodesharing 17
+      - 中国_TG@nodesharing 18
+      - 中国_TG@nodesharing 19
+      - 中国_TG@nodesharing 20
+      - 中国_TG@nodesharing 21
+      - 中国_TG@nodesharing 22
+      - FR_113
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - Alien
+      - Alien 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -278,10 +320,12 @@ proxy-groups:
     proxies:
       - 美国-netflix
       - 专线|西雅图02|原生NTT
-      - 回国专线贵州
       - 电信二区(四川)
       - vpnpool-香港
       - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港 4
+      - HK(Youtube技术分享室整理)
       - 专线|香港01|原生HGCBBS
       - 专线|香港02|原生HGCBBS
       - 专线|香港03|原生CMI
@@ -292,8 +336,7 @@ proxy-groups:
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生HINET
       - 专线|台湾02|原生HINET
-      - 专线|俄罗斯02|原生IP
-      - 专线|俄罗斯04|原生IP
+      - 专线|俄罗斯01|原生IP
       - 专线|美国01|原生NTT
       - 专线|美国02|原生NTT
       - 专线|美国03|原生NTT
@@ -301,21 +344,28 @@ proxy-groups:
       - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
       - 标准|日本03|解锁流媒体
+      - 标准|日本04|解锁流媒体
+      - 基础|台湾02|视频主力
+      - 基础|俄罗斯02|限速100M
+      - TW(Youtube技术分享室整理)
       - 4.06|CN中国55
+      - "｜IPLC｜香港\n"
+      - A-aV2RAY-CMCC-香港-02
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-097
+      - A-aV2RAY-CMCC-香港-A06
       - A-V2RAY-加速-韩国01
+      - A-V2RAY-加速-韩国03
       - v2ray-BGP-韩国B03
       - V2RAY-香港-HKT-支持NETFLIX-03
-      - V2RAY-香港-HKT-支持NETFLIX-04
       - V2RAY-香港AWV09
       - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
-      - V2RAY-香港AZURE-落地09
       - V2RAY-香港AZURE-落地097
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - 朝鲜IPLC专线
       - Hong Kong 11
       - Hong Kong 07
@@ -323,50 +373,42 @@ proxy-groups:
       - Hong Kong 14
       - Hong Kong 13
       - Hong Kong 02
-      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
-      - 中国(绿头外网集团)(Public)
-      - 卢森堡(绿头外网集团)(Public)
+      - Hong Kong 10
+      - "@SSRSUB-美国V01-付费推荐::suo.yt/ssrsub"
       - 新加坡(绿头外网集团)(Airport)
-      - 日本(绿头外网集团)(Airport)
       - 香港17852
       - "[vip1]︱V2ray①台湾Hinet原生节点 600M｜×1x｜限速100M"
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑩日本 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑮新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
-      - 香港_TG@nodesharing
-      - 香港_TG@nodesharing 2
-      - 香港_TG@nodesharing 3
-      - 美国_TG@nodesharing
-      - 日本_TG@nodesharing
-      - 新加坡_TG@nodesharing
-      - Alien
-      - Alien 2
       - v1|亚洲|B|混合负载|低延主力
       - v1|亚洲|A|混合负载|外贸主力
       - v1|亚洲|E|混合负载|疾驰主力
       - v1|香港|A|5台负载
       - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
       - v1|香港|E|4台负载
       - v1|新加坡|A|6台负载
       - v1|新加坡|B|7台负载
       - v1|新加坡|C|8台负载
       - v1|新加坡|C|9台负载
-      - v1|新加坡|D|5台负载
       - v1|新加坡|E|7台负载
       - v1|日本|A|7台负载
+      - v1|日本|B|4台负载
       - v1|日本|B|8台负载
       - v1|日本|C|9台负载
+      - v1|日本|D|5台负载
       - v1|日本|E|6台负载
       - v1|美国|A|6台负载
       - v1|美国|B|5台负载
       - v1|美国|C|3台负载
+      - v1|美国|D|4台负载
       - v1|美国|E|6台负载
       - v1|香港|A|7台负载|原生
       - v1|香港|B|8台负载|原生
@@ -377,6 +419,7 @@ proxy-groups:
       - v1|台湾|E|5台负载|原生
       - v1|新加坡|A|4台负载|原生
       - v1|新加坡|B|4台负载|原生
+      - v1|新加坡|D|5台负载|原生
       - v1|新加坡|E|4台负载|原生
       - v1|美国|A|3台负载|原生
       - v1|澳洲|A|4台负载
@@ -385,27 +428,47 @@ proxy-groups:
       - v1|澳洲|E|3台负载
       - v1|印度|A|4台负载
       - v1|俄罗斯|A|3台负载
+      - +Hong+Kong+07
       - 专线|香港08|原生HGCBBS
       - 标准|中国台湾04|解锁流媒体
       - +Hong+Kong+06
-      - HK(Youtube技术分享室整理)
-      - 印度|广港隧道|1.5x
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生HINET 2
-      - 专线|美国01|原生NTT 2
-      - 专线|美国02|原生NTT 2
-      - 专线|美国03|原生NTT 2
-      - 专线|美国04|原生NTT 2
       - 专线|西雅图01|原生NTT 2
-      - 专线|西雅图02|原生NTT 3
+      - HK(Youtube技术分享室整理) 2
+      - +vpnpool-香港
       - 基础|台湾03|视频主力
       - 基础|台湾04|视频主力
-      - ������������ CN_81
+      - 基础|俄罗斯01|限速100M
+      - 香港1|tg频道:@ripaojiedian
+      - 台湾
+      - 台湾 2
+      - _HK_香港
+      - 中国_TG@nodesharing
+      - 香港_TG@nodesharing
+      - 中国_TG@nodesharing 2
+      - 中国_TG@nodesharing 3
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
+      - 中国_TG@nodesharing 6
+      - 中国_TG@nodesharing 7
+      - 中国_TG@nodesharing 8
+      - 中国_TG@nodesharing 9
+      - 中国_TG@nodesharing 10
+      - 中国_TG@nodesharing 11
+      - 中国_TG@nodesharing 12
+      - 中国_TG@nodesharing 13
+      - 中国_TG@nodesharing 14
+      - 中国_TG@nodesharing 15
+      - 中国_TG@nodesharing 16
+      - 中国_TG@nodesharing 17
+      - 中国_TG@nodesharing 18
+      - 中国_TG@nodesharing 19
+      - 中国_TG@nodesharing 20
+      - 中国_TG@nodesharing 21
+      - 中国_TG@nodesharing 22
+      - FR_113
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - Alien
+      - Alien 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -414,10 +477,12 @@ proxy-groups:
       - 🎯 全球直连
       - 美国-netflix
       - 专线|西雅图02|原生NTT
-      - 回国专线贵州
       - 电信二区(四川)
       - vpnpool-香港
       - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港 4
+      - HK(Youtube技术分享室整理)
       - 专线|香港01|原生HGCBBS
       - 专线|香港02|原生HGCBBS
       - 专线|香港03|原生CMI
@@ -428,8 +493,7 @@ proxy-groups:
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生HINET
       - 专线|台湾02|原生HINET
-      - 专线|俄罗斯02|原生IP
-      - 专线|俄罗斯04|原生IP
+      - 专线|俄罗斯01|原生IP
       - 专线|美国01|原生NTT
       - 专线|美国02|原生NTT
       - 专线|美国03|原生NTT
@@ -437,21 +501,28 @@ proxy-groups:
       - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
       - 标准|日本03|解锁流媒体
+      - 标准|日本04|解锁流媒体
+      - 基础|台湾02|视频主力
+      - 基础|俄罗斯02|限速100M
+      - TW(Youtube技术分享室整理)
       - 4.06|CN中国55
+      - "｜IPLC｜香港\n"
+      - A-aV2RAY-CMCC-香港-02
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-097
+      - A-aV2RAY-CMCC-香港-A06
       - A-V2RAY-加速-韩国01
+      - A-V2RAY-加速-韩国03
       - v2ray-BGP-韩国B03
       - V2RAY-香港-HKT-支持NETFLIX-03
-      - V2RAY-香港-HKT-支持NETFLIX-04
       - V2RAY-香港AWV09
       - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
-      - V2RAY-香港AZURE-落地09
       - V2RAY-香港AZURE-落地097
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - 朝鲜IPLC专线
       - Hong Kong 11
       - Hong Kong 07
@@ -459,50 +530,42 @@ proxy-groups:
       - Hong Kong 14
       - Hong Kong 13
       - Hong Kong 02
-      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
-      - 中国(绿头外网集团)(Public)
-      - 卢森堡(绿头外网集团)(Public)
+      - Hong Kong 10
+      - "@SSRSUB-美国V01-付费推荐::suo.yt/ssrsub"
       - 新加坡(绿头外网集团)(Airport)
-      - 日本(绿头外网集团)(Airport)
       - 香港17852
       - "[vip1]︱V2ray①台湾Hinet原生节点 600M｜×1x｜限速100M"
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑩日本 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑮新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
-      - 香港_TG@nodesharing
-      - 香港_TG@nodesharing 2
-      - 香港_TG@nodesharing 3
-      - 美国_TG@nodesharing
-      - 日本_TG@nodesharing
-      - 新加坡_TG@nodesharing
-      - Alien
-      - Alien 2
       - v1|亚洲|B|混合负载|低延主力
       - v1|亚洲|A|混合负载|外贸主力
       - v1|亚洲|E|混合负载|疾驰主力
       - v1|香港|A|5台负载
       - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
       - v1|香港|E|4台负载
       - v1|新加坡|A|6台负载
       - v1|新加坡|B|7台负载
       - v1|新加坡|C|8台负载
       - v1|新加坡|C|9台负载
-      - v1|新加坡|D|5台负载
       - v1|新加坡|E|7台负载
       - v1|日本|A|7台负载
+      - v1|日本|B|4台负载
       - v1|日本|B|8台负载
       - v1|日本|C|9台负载
+      - v1|日本|D|5台负载
       - v1|日本|E|6台负载
       - v1|美国|A|6台负载
       - v1|美国|B|5台负载
       - v1|美国|C|3台负载
+      - v1|美国|D|4台负载
       - v1|美国|E|6台负载
       - v1|香港|A|7台负载|原生
       - v1|香港|B|8台负载|原生
@@ -513,6 +576,7 @@ proxy-groups:
       - v1|台湾|E|5台负载|原生
       - v1|新加坡|A|4台负载|原生
       - v1|新加坡|B|4台负载|原生
+      - v1|新加坡|D|5台负载|原生
       - v1|新加坡|E|4台负载|原生
       - v1|美国|A|3台负载|原生
       - v1|澳洲|A|4台负载
@@ -521,27 +585,47 @@ proxy-groups:
       - v1|澳洲|E|3台负载
       - v1|印度|A|4台负载
       - v1|俄罗斯|A|3台负载
+      - +Hong+Kong+07
       - 专线|香港08|原生HGCBBS
       - 标准|中国台湾04|解锁流媒体
       - +Hong+Kong+06
-      - HK(Youtube技术分享室整理)
-      - 印度|广港隧道|1.5x
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生HINET 2
-      - 专线|美国01|原生NTT 2
-      - 专线|美国02|原生NTT 2
-      - 专线|美国03|原生NTT 2
-      - 专线|美国04|原生NTT 2
       - 专线|西雅图01|原生NTT 2
-      - 专线|西雅图02|原生NTT 3
+      - HK(Youtube技术分享室整理) 2
+      - +vpnpool-香港
       - 基础|台湾03|视频主力
       - 基础|台湾04|视频主力
-      - ������������ CN_81
+      - 基础|俄罗斯01|限速100M
+      - 香港1|tg频道:@ripaojiedian
+      - 台湾
+      - 台湾 2
+      - _HK_香港
+      - 中国_TG@nodesharing
+      - 香港_TG@nodesharing
+      - 中国_TG@nodesharing 2
+      - 中国_TG@nodesharing 3
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
+      - 中国_TG@nodesharing 6
+      - 中国_TG@nodesharing 7
+      - 中国_TG@nodesharing 8
+      - 中国_TG@nodesharing 9
+      - 中国_TG@nodesharing 10
+      - 中国_TG@nodesharing 11
+      - 中国_TG@nodesharing 12
+      - 中国_TG@nodesharing 13
+      - 中国_TG@nodesharing 14
+      - 中国_TG@nodesharing 15
+      - 中国_TG@nodesharing 16
+      - 中国_TG@nodesharing 17
+      - 中国_TG@nodesharing 18
+      - 中国_TG@nodesharing 19
+      - 中国_TG@nodesharing 20
+      - 中国_TG@nodesharing 21
+      - 中国_TG@nodesharing 22
+      - FR_113
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - Alien
+      - Alien 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -562,10 +646,12 @@ proxy-groups:
       - 🎯 全球直连
       - 美国-netflix
       - 专线|西雅图02|原生NTT
-      - 回国专线贵州
       - 电信二区(四川)
       - vpnpool-香港
       - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港 4
+      - HK(Youtube技术分享室整理)
       - 专线|香港01|原生HGCBBS
       - 专线|香港02|原生HGCBBS
       - 专线|香港03|原生CMI
@@ -576,8 +662,7 @@ proxy-groups:
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生HINET
       - 专线|台湾02|原生HINET
-      - 专线|俄罗斯02|原生IP
-      - 专线|俄罗斯04|原生IP
+      - 专线|俄罗斯01|原生IP
       - 专线|美国01|原生NTT
       - 专线|美国02|原生NTT
       - 专线|美国03|原生NTT
@@ -585,21 +670,28 @@ proxy-groups:
       - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
       - 标准|日本03|解锁流媒体
+      - 标准|日本04|解锁流媒体
+      - 基础|台湾02|视频主力
+      - 基础|俄罗斯02|限速100M
+      - TW(Youtube技术分享室整理)
       - 4.06|CN中国55
+      - "｜IPLC｜香港\n"
+      - A-aV2RAY-CMCC-香港-02
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-097
+      - A-aV2RAY-CMCC-香港-A06
       - A-V2RAY-加速-韩国01
+      - A-V2RAY-加速-韩国03
       - v2ray-BGP-韩国B03
       - V2RAY-香港-HKT-支持NETFLIX-03
-      - V2RAY-香港-HKT-支持NETFLIX-04
       - V2RAY-香港AWV09
       - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
-      - V2RAY-香港AZURE-落地09
       - V2RAY-香港AZURE-落地097
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - 朝鲜IPLC专线
       - Hong Kong 11
       - Hong Kong 07
@@ -607,50 +699,42 @@ proxy-groups:
       - Hong Kong 14
       - Hong Kong 13
       - Hong Kong 02
-      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
-      - 中国(绿头外网集团)(Public)
-      - 卢森堡(绿头外网集团)(Public)
+      - Hong Kong 10
+      - "@SSRSUB-美国V01-付费推荐::suo.yt/ssrsub"
       - 新加坡(绿头外网集团)(Airport)
-      - 日本(绿头外网集团)(Airport)
       - 香港17852
       - "[vip1]︱V2ray①台湾Hinet原生节点 600M｜×1x｜限速100M"
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑩日本 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑮新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
-      - 香港_TG@nodesharing
-      - 香港_TG@nodesharing 2
-      - 香港_TG@nodesharing 3
-      - 美国_TG@nodesharing
-      - 日本_TG@nodesharing
-      - 新加坡_TG@nodesharing
-      - Alien
-      - Alien 2
       - v1|亚洲|B|混合负载|低延主力
       - v1|亚洲|A|混合负载|外贸主力
       - v1|亚洲|E|混合负载|疾驰主力
       - v1|香港|A|5台负载
       - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
       - v1|香港|E|4台负载
       - v1|新加坡|A|6台负载
       - v1|新加坡|B|7台负载
       - v1|新加坡|C|8台负载
       - v1|新加坡|C|9台负载
-      - v1|新加坡|D|5台负载
       - v1|新加坡|E|7台负载
       - v1|日本|A|7台负载
+      - v1|日本|B|4台负载
       - v1|日本|B|8台负载
       - v1|日本|C|9台负载
+      - v1|日本|D|5台负载
       - v1|日本|E|6台负载
       - v1|美国|A|6台负载
       - v1|美国|B|5台负载
       - v1|美国|C|3台负载
+      - v1|美国|D|4台负载
       - v1|美国|E|6台负载
       - v1|香港|A|7台负载|原生
       - v1|香港|B|8台负载|原生
@@ -661,6 +745,7 @@ proxy-groups:
       - v1|台湾|E|5台负载|原生
       - v1|新加坡|A|4台负载|原生
       - v1|新加坡|B|4台负载|原生
+      - v1|新加坡|D|5台负载|原生
       - v1|新加坡|E|4台负载|原生
       - v1|美国|A|3台负载|原生
       - v1|澳洲|A|4台负载
@@ -669,33 +754,55 @@ proxy-groups:
       - v1|澳洲|E|3台负载
       - v1|印度|A|4台负载
       - v1|俄罗斯|A|3台负载
+      - +Hong+Kong+07
       - 专线|香港08|原生HGCBBS
       - 标准|中国台湾04|解锁流媒体
       - +Hong+Kong+06
-      - HK(Youtube技术分享室整理)
-      - 印度|广港隧道|1.5x
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生HINET 2
-      - 专线|美国01|原生NTT 2
-      - 专线|美国02|原生NTT 2
-      - 专线|美国03|原生NTT 2
-      - 专线|美国04|原生NTT 2
       - 专线|西雅图01|原生NTT 2
-      - 专线|西雅图02|原生NTT 3
+      - HK(Youtube技术分享室整理) 2
+      - +vpnpool-香港
       - 基础|台湾03|视频主力
       - 基础|台湾04|视频主力
-      - ������������ CN_81
+      - 基础|俄罗斯01|限速100M
+      - 香港1|tg频道:@ripaojiedian
+      - 台湾
+      - 台湾 2
+      - _HK_香港
+      - 中国_TG@nodesharing
+      - 香港_TG@nodesharing
+      - 中国_TG@nodesharing 2
+      - 中国_TG@nodesharing 3
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
+      - 中国_TG@nodesharing 6
+      - 中国_TG@nodesharing 7
+      - 中国_TG@nodesharing 8
+      - 中国_TG@nodesharing 9
+      - 中国_TG@nodesharing 10
+      - 中国_TG@nodesharing 11
+      - 中国_TG@nodesharing 12
+      - 中国_TG@nodesharing 13
+      - 中国_TG@nodesharing 14
+      - 中国_TG@nodesharing 15
+      - 中国_TG@nodesharing 16
+      - 中国_TG@nodesharing 17
+      - 中国_TG@nodesharing 18
+      - 中国_TG@nodesharing 19
+      - 中国_TG@nodesharing 20
+      - 中国_TG@nodesharing 21
+      - 中国_TG@nodesharing 22
+      - FR_113
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - Alien
+      - Alien 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - vpnpool-香港
       - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港 4
       - 专线|香港01|原生HGCBBS
       - 专线|香港02|原生HGCBBS
       - 专线|香港03|原生CMI
@@ -706,38 +813,42 @@ proxy-groups:
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生HINET
       - 专线|台湾02|原生HINET
+      - 基础|台湾02|视频主力
+      - "｜IPLC｜香港\n"
+      - A-aV2RAY-CMCC-香港-02
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-097
+      - A-aV2RAY-CMCC-香港-A06
       - V2RAY-香港-HKT-支持NETFLIX-03
-      - V2RAY-香港-HKT-支持NETFLIX-04
       - V2RAY-香港AWV09
       - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
-      - V2RAY-香港AZURE-落地09
       - V2RAY-香港AZURE-落地097
       - 香港17852
       - "[vip1]︱V2ray①台湾Hinet原生节点 600M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
-      - 香港_TG@nodesharing
-      - 香港_TG@nodesharing 2
-      - 香港_TG@nodesharing 3
       - v1|香港|A|5台负载
       - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
       - v1|香港|E|4台负载
       - v1|新加坡|A|6台负载
       - v1|新加坡|B|7台负载
       - v1|新加坡|C|8台负载
       - v1|新加坡|C|9台负载
-      - v1|新加坡|D|5台负载
       - v1|新加坡|E|7台负载
       - v1|日本|A|7台负载
+      - v1|日本|B|4台负载
       - v1|日本|B|8台负载
       - v1|日本|C|9台负载
+      - v1|日本|D|5台负载
       - v1|日本|E|6台负载
       - v1|美国|A|6台负载
       - v1|美国|B|5台负载
       - v1|美国|C|3台负载
+      - v1|美国|D|4台负载
       - v1|美国|E|6台负载
       - v1|香港|A|7台负载|原生
       - v1|香港|B|8台负载|原生
@@ -748,6 +859,7 @@ proxy-groups:
       - v1|台湾|E|5台负载|原生
       - v1|新加坡|A|4台负载|原生
       - v1|新加坡|B|4台负载|原生
+      - v1|新加坡|D|5台负载|原生
       - v1|新加坡|E|4台负载|原生
       - v1|美国|A|3台负载|原生
       - v1|澳洲|A|4台负载
@@ -758,16 +870,14 @@ proxy-groups:
       - v1|俄罗斯|A|3台负载
       - 专线|香港08|原生HGCBBS
       - 标准|中国台湾04|解锁流媒体
-      - 印度|广港隧道|1.5x
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生HINET 2
+      - +vpnpool-香港
       - 基础|台湾03|视频主力
       - 基础|台湾04|视频主力
+      - 香港1|tg频道:@ripaojiedian
+      - 台湾
+      - 台湾 2
+      - _HK_香港
+      - 香港_TG@nodesharing
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -776,10 +886,12 @@ proxy-groups:
       - 🔰 节点选择
       - 美国-netflix
       - 专线|西雅图02|原生NTT
-      - 回国专线贵州
       - 电信二区(四川)
       - vpnpool-香港
       - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港 4
+      - HK(Youtube技术分享室整理)
       - 专线|香港01|原生HGCBBS
       - 专线|香港02|原生HGCBBS
       - 专线|香港03|原生CMI
@@ -790,8 +902,7 @@ proxy-groups:
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生HINET
       - 专线|台湾02|原生HINET
-      - 专线|俄罗斯02|原生IP
-      - 专线|俄罗斯04|原生IP
+      - 专线|俄罗斯01|原生IP
       - 专线|美国01|原生NTT
       - 专线|美国02|原生NTT
       - 专线|美国03|原生NTT
@@ -799,21 +910,28 @@ proxy-groups:
       - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
       - 标准|日本03|解锁流媒体
+      - 标准|日本04|解锁流媒体
+      - 基础|台湾02|视频主力
+      - 基础|俄罗斯02|限速100M
+      - TW(Youtube技术分享室整理)
       - 4.06|CN中国55
+      - "｜IPLC｜香港\n"
+      - A-aV2RAY-CMCC-香港-02
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-097
+      - A-aV2RAY-CMCC-香港-A06
       - A-V2RAY-加速-韩国01
+      - A-V2RAY-加速-韩国03
       - v2ray-BGP-韩国B03
       - V2RAY-香港-HKT-支持NETFLIX-03
-      - V2RAY-香港-HKT-支持NETFLIX-04
       - V2RAY-香港AWV09
       - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
-      - V2RAY-香港AZURE-落地09
       - V2RAY-香港AZURE-落地097
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - 朝鲜IPLC专线
       - Hong Kong 11
       - Hong Kong 07
@@ -821,50 +939,42 @@ proxy-groups:
       - Hong Kong 14
       - Hong Kong 13
       - Hong Kong 02
-      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
-      - 中国(绿头外网集团)(Public)
-      - 卢森堡(绿头外网集团)(Public)
+      - Hong Kong 10
+      - "@SSRSUB-美国V01-付费推荐::suo.yt/ssrsub"
       - 新加坡(绿头外网集团)(Airport)
-      - 日本(绿头外网集团)(Airport)
       - 香港17852
       - "[vip1]︱V2ray①台湾Hinet原生节点 600M｜×1x｜限速100M"
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑩日本 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑮新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
-      - 香港_TG@nodesharing
-      - 香港_TG@nodesharing 2
-      - 香港_TG@nodesharing 3
-      - 美国_TG@nodesharing
-      - 日本_TG@nodesharing
-      - 新加坡_TG@nodesharing
-      - Alien
-      - Alien 2
       - v1|亚洲|B|混合负载|低延主力
       - v1|亚洲|A|混合负载|外贸主力
       - v1|亚洲|E|混合负载|疾驰主力
       - v1|香港|A|5台负载
       - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
       - v1|香港|E|4台负载
       - v1|新加坡|A|6台负载
       - v1|新加坡|B|7台负载
       - v1|新加坡|C|8台负载
       - v1|新加坡|C|9台负载
-      - v1|新加坡|D|5台负载
       - v1|新加坡|E|7台负载
       - v1|日本|A|7台负载
+      - v1|日本|B|4台负载
       - v1|日本|B|8台负载
       - v1|日本|C|9台负载
+      - v1|日本|D|5台负载
       - v1|日本|E|6台负载
       - v1|美国|A|6台负载
       - v1|美国|B|5台负载
       - v1|美国|C|3台负载
+      - v1|美国|D|4台负载
       - v1|美国|E|6台负载
       - v1|香港|A|7台负载|原生
       - v1|香港|B|8台负载|原生
@@ -875,6 +985,7 @@ proxy-groups:
       - v1|台湾|E|5台负载|原生
       - v1|新加坡|A|4台负载|原生
       - v1|新加坡|B|4台负载|原生
+      - v1|新加坡|D|5台负载|原生
       - v1|新加坡|E|4台负载|原生
       - v1|美国|A|3台负载|原生
       - v1|澳洲|A|4台负载
@@ -883,27 +994,47 @@ proxy-groups:
       - v1|澳洲|E|3台负载
       - v1|印度|A|4台负载
       - v1|俄罗斯|A|3台负载
+      - +Hong+Kong+07
       - 专线|香港08|原生HGCBBS
       - 标准|中国台湾04|解锁流媒体
       - +Hong+Kong+06
-      - HK(Youtube技术分享室整理)
-      - 印度|广港隧道|1.5x
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生HINET 2
-      - 专线|美国01|原生NTT 2
-      - 专线|美国02|原生NTT 2
-      - 专线|美国03|原生NTT 2
-      - 专线|美国04|原生NTT 2
       - 专线|西雅图01|原生NTT 2
-      - 专线|西雅图02|原生NTT 3
+      - HK(Youtube技术分享室整理) 2
+      - +vpnpool-香港
       - 基础|台湾03|视频主力
       - 基础|台湾04|视频主力
-      - ������������ CN_81
+      - 基础|俄罗斯01|限速100M
+      - 香港1|tg频道:@ripaojiedian
+      - 台湾
+      - 台湾 2
+      - _HK_香港
+      - 中国_TG@nodesharing
+      - 香港_TG@nodesharing
+      - 中国_TG@nodesharing 2
+      - 中国_TG@nodesharing 3
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
+      - 中国_TG@nodesharing 6
+      - 中国_TG@nodesharing 7
+      - 中国_TG@nodesharing 8
+      - 中国_TG@nodesharing 9
+      - 中国_TG@nodesharing 10
+      - 中国_TG@nodesharing 11
+      - 中国_TG@nodesharing 12
+      - 中国_TG@nodesharing 13
+      - 中国_TG@nodesharing 14
+      - 中国_TG@nodesharing 15
+      - 中国_TG@nodesharing 16
+      - 中国_TG@nodesharing 17
+      - 中国_TG@nodesharing 18
+      - 中国_TG@nodesharing 19
+      - 中国_TG@nodesharing 20
+      - 中国_TG@nodesharing 21
+      - 中国_TG@nodesharing 22
+      - FR_113
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - Alien
+      - Alien 2
   - name: 📲 电报信息
     type: select
     proxies:
@@ -911,10 +1042,12 @@ proxy-groups:
       - 🎯 全球直连
       - 美国-netflix
       - 专线|西雅图02|原生NTT
-      - 回国专线贵州
       - 电信二区(四川)
       - vpnpool-香港
       - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港 4
+      - HK(Youtube技术分享室整理)
       - 专线|香港01|原生HGCBBS
       - 专线|香港02|原生HGCBBS
       - 专线|香港03|原生CMI
@@ -925,8 +1058,7 @@ proxy-groups:
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生HINET
       - 专线|台湾02|原生HINET
-      - 专线|俄罗斯02|原生IP
-      - 专线|俄罗斯04|原生IP
+      - 专线|俄罗斯01|原生IP
       - 专线|美国01|原生NTT
       - 专线|美国02|原生NTT
       - 专线|美国03|原生NTT
@@ -934,21 +1066,28 @@ proxy-groups:
       - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
       - 标准|日本03|解锁流媒体
+      - 标准|日本04|解锁流媒体
+      - 基础|台湾02|视频主力
+      - 基础|俄罗斯02|限速100M
+      - TW(Youtube技术分享室整理)
       - 4.06|CN中国55
+      - "｜IPLC｜香港\n"
+      - A-aV2RAY-CMCC-香港-02
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-097
+      - A-aV2RAY-CMCC-香港-A06
       - A-V2RAY-加速-韩国01
+      - A-V2RAY-加速-韩国03
       - v2ray-BGP-韩国B03
       - V2RAY-香港-HKT-支持NETFLIX-03
-      - V2RAY-香港-HKT-支持NETFLIX-04
       - V2RAY-香港AWV09
       - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
-      - V2RAY-香港AZURE-落地09
       - V2RAY-香港AZURE-落地097
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - 朝鲜IPLC专线
       - Hong Kong 11
       - Hong Kong 07
@@ -956,50 +1095,42 @@ proxy-groups:
       - Hong Kong 14
       - Hong Kong 13
       - Hong Kong 02
-      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
-      - 中国(绿头外网集团)(Public)
-      - 卢森堡(绿头外网集团)(Public)
+      - Hong Kong 10
+      - "@SSRSUB-美国V01-付费推荐::suo.yt/ssrsub"
       - 新加坡(绿头外网集团)(Airport)
-      - 日本(绿头外网集团)(Airport)
       - 香港17852
       - "[vip1]︱V2ray①台湾Hinet原生节点 600M｜×1x｜限速100M"
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑩日本 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑮新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
-      - 香港_TG@nodesharing
-      - 香港_TG@nodesharing 2
-      - 香港_TG@nodesharing 3
-      - 美国_TG@nodesharing
-      - 日本_TG@nodesharing
-      - 新加坡_TG@nodesharing
-      - Alien
-      - Alien 2
       - v1|亚洲|B|混合负载|低延主力
       - v1|亚洲|A|混合负载|外贸主力
       - v1|亚洲|E|混合负载|疾驰主力
       - v1|香港|A|5台负载
       - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
       - v1|香港|E|4台负载
       - v1|新加坡|A|6台负载
       - v1|新加坡|B|7台负载
       - v1|新加坡|C|8台负载
       - v1|新加坡|C|9台负载
-      - v1|新加坡|D|5台负载
       - v1|新加坡|E|7台负载
       - v1|日本|A|7台负载
+      - v1|日本|B|4台负载
       - v1|日本|B|8台负载
       - v1|日本|C|9台负载
+      - v1|日本|D|5台负载
       - v1|日本|E|6台负载
       - v1|美国|A|6台负载
       - v1|美国|B|5台负载
       - v1|美国|C|3台负载
+      - v1|美国|D|4台负载
       - v1|美国|E|6台负载
       - v1|香港|A|7台负载|原生
       - v1|香港|B|8台负载|原生
@@ -1010,6 +1141,7 @@ proxy-groups:
       - v1|台湾|E|5台负载|原生
       - v1|新加坡|A|4台负载|原生
       - v1|新加坡|B|4台负载|原生
+      - v1|新加坡|D|5台负载|原生
       - v1|新加坡|E|4台负载|原生
       - v1|美国|A|3台负载|原生
       - v1|澳洲|A|4台负载
@@ -1018,27 +1150,47 @@ proxy-groups:
       - v1|澳洲|E|3台负载
       - v1|印度|A|4台负载
       - v1|俄罗斯|A|3台负载
+      - +Hong+Kong+07
       - 专线|香港08|原生HGCBBS
       - 标准|中国台湾04|解锁流媒体
       - +Hong+Kong+06
-      - HK(Youtube技术分享室整理)
-      - 印度|广港隧道|1.5x
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生HINET 2
-      - 专线|美国01|原生NTT 2
-      - 专线|美国02|原生NTT 2
-      - 专线|美国03|原生NTT 2
-      - 专线|美国04|原生NTT 2
       - 专线|西雅图01|原生NTT 2
-      - 专线|西雅图02|原生NTT 3
+      - HK(Youtube技术分享室整理) 2
+      - +vpnpool-香港
       - 基础|台湾03|视频主力
       - 基础|台湾04|视频主力
-      - ������������ CN_81
+      - 基础|俄罗斯01|限速100M
+      - 香港1|tg频道:@ripaojiedian
+      - 台湾
+      - 台湾 2
+      - _HK_香港
+      - 中国_TG@nodesharing
+      - 香港_TG@nodesharing
+      - 中国_TG@nodesharing 2
+      - 中国_TG@nodesharing 3
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
+      - 中国_TG@nodesharing 6
+      - 中国_TG@nodesharing 7
+      - 中国_TG@nodesharing 8
+      - 中国_TG@nodesharing 9
+      - 中国_TG@nodesharing 10
+      - 中国_TG@nodesharing 11
+      - 中国_TG@nodesharing 12
+      - 中国_TG@nodesharing 13
+      - 中国_TG@nodesharing 14
+      - 中国_TG@nodesharing 15
+      - 中国_TG@nodesharing 16
+      - 中国_TG@nodesharing 17
+      - 中国_TG@nodesharing 18
+      - 中国_TG@nodesharing 19
+      - 中国_TG@nodesharing 20
+      - 中国_TG@nodesharing 21
+      - 中国_TG@nodesharing 22
+      - FR_113
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - Alien
+      - Alien 2
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1047,10 +1199,12 @@ proxy-groups:
       - ♻️ 自动选择
       - 美国-netflix
       - 专线|西雅图02|原生NTT
-      - 回国专线贵州
       - 电信二区(四川)
       - vpnpool-香港
       - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港 4
+      - HK(Youtube技术分享室整理)
       - 专线|香港01|原生HGCBBS
       - 专线|香港02|原生HGCBBS
       - 专线|香港03|原生CMI
@@ -1061,8 +1215,7 @@ proxy-groups:
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生HINET
       - 专线|台湾02|原生HINET
-      - 专线|俄罗斯02|原生IP
-      - 专线|俄罗斯04|原生IP
+      - 专线|俄罗斯01|原生IP
       - 专线|美国01|原生NTT
       - 专线|美国02|原生NTT
       - 专线|美国03|原生NTT
@@ -1070,21 +1223,28 @@ proxy-groups:
       - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
       - 标准|日本03|解锁流媒体
+      - 标准|日本04|解锁流媒体
+      - 基础|台湾02|视频主力
+      - 基础|俄罗斯02|限速100M
+      - TW(Youtube技术分享室整理)
       - 4.06|CN中国55
+      - "｜IPLC｜香港\n"
+      - A-aV2RAY-CMCC-香港-02
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-097
+      - A-aV2RAY-CMCC-香港-A06
       - A-V2RAY-加速-韩国01
+      - A-V2RAY-加速-韩国03
       - v2ray-BGP-韩国B03
       - V2RAY-香港-HKT-支持NETFLIX-03
-      - V2RAY-香港-HKT-支持NETFLIX-04
       - V2RAY-香港AWV09
       - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
-      - V2RAY-香港AZURE-落地09
       - V2RAY-香港AZURE-落地097
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - 朝鲜IPLC专线
       - Hong Kong 11
       - Hong Kong 07
@@ -1092,50 +1252,42 @@ proxy-groups:
       - Hong Kong 14
       - Hong Kong 13
       - Hong Kong 02
-      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
-      - 中国(绿头外网集团)(Public)
-      - 卢森堡(绿头外网集团)(Public)
+      - Hong Kong 10
+      - "@SSRSUB-美国V01-付费推荐::suo.yt/ssrsub"
       - 新加坡(绿头外网集团)(Airport)
-      - 日本(绿头外网集团)(Airport)
       - 香港17852
       - "[vip1]︱V2ray①台湾Hinet原生节点 600M｜×1x｜限速100M"
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑩日本 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑮新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
-      - 香港_TG@nodesharing
-      - 香港_TG@nodesharing 2
-      - 香港_TG@nodesharing 3
-      - 美国_TG@nodesharing
-      - 日本_TG@nodesharing
-      - 新加坡_TG@nodesharing
-      - Alien
-      - Alien 2
       - v1|亚洲|B|混合负载|低延主力
       - v1|亚洲|A|混合负载|外贸主力
       - v1|亚洲|E|混合负载|疾驰主力
       - v1|香港|A|5台负载
       - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
       - v1|香港|E|4台负载
       - v1|新加坡|A|6台负载
       - v1|新加坡|B|7台负载
       - v1|新加坡|C|8台负载
       - v1|新加坡|C|9台负载
-      - v1|新加坡|D|5台负载
       - v1|新加坡|E|7台负载
       - v1|日本|A|7台负载
+      - v1|日本|B|4台负载
       - v1|日本|B|8台负载
       - v1|日本|C|9台负载
+      - v1|日本|D|5台负载
       - v1|日本|E|6台负载
       - v1|美国|A|6台负载
       - v1|美国|B|5台负载
       - v1|美国|C|3台负载
+      - v1|美国|D|4台负载
       - v1|美国|E|6台负载
       - v1|香港|A|7台负载|原生
       - v1|香港|B|8台负载|原生
@@ -1146,6 +1298,7 @@ proxy-groups:
       - v1|台湾|E|5台负载|原生
       - v1|新加坡|A|4台负载|原生
       - v1|新加坡|B|4台负载|原生
+      - v1|新加坡|D|5台负载|原生
       - v1|新加坡|E|4台负载|原生
       - v1|美国|A|3台负载|原生
       - v1|澳洲|A|4台负载
@@ -1154,27 +1307,47 @@ proxy-groups:
       - v1|澳洲|E|3台负载
       - v1|印度|A|4台负载
       - v1|俄罗斯|A|3台负载
+      - +Hong+Kong+07
       - 专线|香港08|原生HGCBBS
       - 标准|中国台湾04|解锁流媒体
       - +Hong+Kong+06
-      - HK(Youtube技术分享室整理)
-      - 印度|广港隧道|1.5x
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生HINET 2
-      - 专线|美国01|原生NTT 2
-      - 专线|美国02|原生NTT 2
-      - 专线|美国03|原生NTT 2
-      - 专线|美国04|原生NTT 2
       - 专线|西雅图01|原生NTT 2
-      - 专线|西雅图02|原生NTT 3
+      - HK(Youtube技术分享室整理) 2
+      - +vpnpool-香港
       - 基础|台湾03|视频主力
       - 基础|台湾04|视频主力
-      - ������������ CN_81
+      - 基础|俄罗斯01|限速100M
+      - 香港1|tg频道:@ripaojiedian
+      - 台湾
+      - 台湾 2
+      - _HK_香港
+      - 中国_TG@nodesharing
+      - 香港_TG@nodesharing
+      - 中国_TG@nodesharing 2
+      - 中国_TG@nodesharing 3
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
+      - 中国_TG@nodesharing 6
+      - 中国_TG@nodesharing 7
+      - 中国_TG@nodesharing 8
+      - 中国_TG@nodesharing 9
+      - 中国_TG@nodesharing 10
+      - 中国_TG@nodesharing 11
+      - 中国_TG@nodesharing 12
+      - 中国_TG@nodesharing 13
+      - 中国_TG@nodesharing 14
+      - 中国_TG@nodesharing 15
+      - 中国_TG@nodesharing 16
+      - 中国_TG@nodesharing 17
+      - 中国_TG@nodesharing 18
+      - 中国_TG@nodesharing 19
+      - 中国_TG@nodesharing 20
+      - 中国_TG@nodesharing 21
+      - 中国_TG@nodesharing 22
+      - FR_113
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - Alien
+      - Alien 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1192,10 +1365,12 @@ proxy-groups:
       - ♻️ 自动选择
       - 美国-netflix
       - 专线|西雅图02|原生NTT
-      - 回国专线贵州
       - 电信二区(四川)
       - vpnpool-香港
       - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港 4
+      - HK(Youtube技术分享室整理)
       - 专线|香港01|原生HGCBBS
       - 专线|香港02|原生HGCBBS
       - 专线|香港03|原生CMI
@@ -1206,8 +1381,7 @@ proxy-groups:
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生HINET
       - 专线|台湾02|原生HINET
-      - 专线|俄罗斯02|原生IP
-      - 专线|俄罗斯04|原生IP
+      - 专线|俄罗斯01|原生IP
       - 专线|美国01|原生NTT
       - 专线|美国02|原生NTT
       - 专线|美国03|原生NTT
@@ -1215,21 +1389,28 @@ proxy-groups:
       - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
       - 标准|日本03|解锁流媒体
+      - 标准|日本04|解锁流媒体
+      - 基础|台湾02|视频主力
+      - 基础|俄罗斯02|限速100M
+      - TW(Youtube技术分享室整理)
       - 4.06|CN中国55
+      - "｜IPLC｜香港\n"
+      - A-aV2RAY-CMCC-香港-02
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-097
+      - A-aV2RAY-CMCC-香港-A06
       - A-V2RAY-加速-韩国01
+      - A-V2RAY-加速-韩国03
       - v2ray-BGP-韩国B03
       - V2RAY-香港-HKT-支持NETFLIX-03
-      - V2RAY-香港-HKT-支持NETFLIX-04
       - V2RAY-香港AWV09
       - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
-      - V2RAY-香港AZURE-落地09
       - V2RAY-香港AZURE-落地097
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - 朝鲜IPLC专线
       - Hong Kong 11
       - Hong Kong 07
@@ -1237,50 +1418,42 @@ proxy-groups:
       - Hong Kong 14
       - Hong Kong 13
       - Hong Kong 02
-      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
-      - 中国(绿头外网集团)(Public)
-      - 卢森堡(绿头外网集团)(Public)
+      - Hong Kong 10
+      - "@SSRSUB-美国V01-付费推荐::suo.yt/ssrsub"
       - 新加坡(绿头外网集团)(Airport)
-      - 日本(绿头外网集团)(Airport)
       - 香港17852
       - "[vip1]︱V2ray①台湾Hinet原生节点 600M｜×1x｜限速100M"
-      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
-      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M 2"
+      - "[vip1]︱V2ray︱⑩日本 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray︱⑪日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑮新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
-      - 香港_TG@nodesharing
-      - 香港_TG@nodesharing 2
-      - 香港_TG@nodesharing 3
-      - 美国_TG@nodesharing
-      - 日本_TG@nodesharing
-      - 新加坡_TG@nodesharing
-      - Alien
-      - Alien 2
       - v1|亚洲|B|混合负载|低延主力
       - v1|亚洲|A|混合负载|外贸主力
       - v1|亚洲|E|混合负载|疾驰主力
       - v1|香港|A|5台负载
       - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
       - v1|香港|E|4台负载
       - v1|新加坡|A|6台负载
       - v1|新加坡|B|7台负载
       - v1|新加坡|C|8台负载
       - v1|新加坡|C|9台负载
-      - v1|新加坡|D|5台负载
       - v1|新加坡|E|7台负载
       - v1|日本|A|7台负载
+      - v1|日本|B|4台负载
       - v1|日本|B|8台负载
       - v1|日本|C|9台负载
+      - v1|日本|D|5台负载
       - v1|日本|E|6台负载
       - v1|美国|A|6台负载
       - v1|美国|B|5台负载
       - v1|美国|C|3台负载
+      - v1|美国|D|4台负载
       - v1|美国|E|6台负载
       - v1|香港|A|7台负载|原生
       - v1|香港|B|8台负载|原生
@@ -1291,6 +1464,7 @@ proxy-groups:
       - v1|台湾|E|5台负载|原生
       - v1|新加坡|A|4台负载|原生
       - v1|新加坡|B|4台负载|原生
+      - v1|新加坡|D|5台负载|原生
       - v1|新加坡|E|4台负载|原生
       - v1|美国|A|3台负载|原生
       - v1|澳洲|A|4台负载
@@ -1299,27 +1473,47 @@ proxy-groups:
       - v1|澳洲|E|3台负载
       - v1|印度|A|4台负载
       - v1|俄罗斯|A|3台负载
+      - +Hong+Kong+07
       - 专线|香港08|原生HGCBBS
       - 标准|中国台湾04|解锁流媒体
       - +Hong+Kong+06
-      - HK(Youtube技术分享室整理)
-      - 印度|广港隧道|1.5x
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生HINET 2
-      - 专线|美国01|原生NTT 2
-      - 专线|美国02|原生NTT 2
-      - 专线|美国03|原生NTT 2
-      - 专线|美国04|原生NTT 2
       - 专线|西雅图01|原生NTT 2
-      - 专线|西雅图02|原生NTT 3
+      - HK(Youtube技术分享室整理) 2
+      - +vpnpool-香港
       - 基础|台湾03|视频主力
       - 基础|台湾04|视频主力
-      - ������������ CN_81
+      - 基础|俄罗斯01|限速100M
+      - 香港1|tg频道:@ripaojiedian
+      - 台湾
+      - 台湾 2
+      - _HK_香港
+      - 中国_TG@nodesharing
+      - 香港_TG@nodesharing
+      - 中国_TG@nodesharing 2
+      - 中国_TG@nodesharing 3
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
+      - 中国_TG@nodesharing 6
+      - 中国_TG@nodesharing 7
+      - 中国_TG@nodesharing 8
+      - 中国_TG@nodesharing 9
+      - 中国_TG@nodesharing 10
+      - 中国_TG@nodesharing 11
+      - 中国_TG@nodesharing 12
+      - 中国_TG@nodesharing 13
+      - 中国_TG@nodesharing 14
+      - 中国_TG@nodesharing 15
+      - 中国_TG@nodesharing 16
+      - 中国_TG@nodesharing 17
+      - 中国_TG@nodesharing 18
+      - 中国_TG@nodesharing 19
+      - 中国_TG@nodesharing 20
+      - 中国_TG@nodesharing 21
+      - 中国_TG@nodesharing 22
+      - FR_113
+      - "@SSRSUB-V04-付费推荐:suo.yt/ssrsub"
+      - Alien
+      - Alien 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
