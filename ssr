@@ -5,47 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国-netflix, server: 107.167.23.50, port: 8084, type: ssr, cipher: aes-256-cfb, password: RhKqtYoG8, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
-  - {name: LAX-Sharktech, server: 107.167.23.50, port: 8084, type: ssr, cipher: aes-256-cfb, password: RhKqtYoG8, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnhat, udp: true}
-  - {name: US(Youtube技术分享室整理), server: 107.167.23.50, port: 8084, type: ssr, cipher: aes-256-cfb, password: RhKqtYoG8, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
   - {name: 4.06|CN中国55, server: 183.232.13.63, port: 2109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 28416:xul3hsefzm, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 广州-日本 DMIT丨全解锁丨A3_1, server: gzydddns.xyz, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1:8GmpAV, obfs-param: 385231065.microsoft.com, udp: true}
-  - {name: IEPL莞港专线 香港 HGC丨全解锁丨独享丨A1 2_16, server: IEPL1.ddnsfree.com, port: 10261, type: ssr, cipher: chacha20-ietf, password: 3tkhds, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1:8GmpAV, obfs-param: 654671.microsoft.com, udp: true}
+  - {name: 翻墙党fanqiangdang.com_CA_3, server: ca-am3.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: 4axflHccX, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 翻墙党fanqiangdang.com_CA_4, server: ca-am3.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: 4axflHccX, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: US(Youtube技术分享室整理), server: 107.167.23.50, port: 8084, type: ssr, cipher: aes-256-cfb, password: RhKqtYoG8, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国-netflix
-      - LAX-Sharktech
-      - US(Youtube技术分享室整理)
       - 4.06|CN中国55
-      - 广州-日本 DMIT丨全解锁丨A3_1
-      - IEPL莞港专线 香港 HGC丨全解锁丨独享丨A1 2_16
+      - 翻墙党fanqiangdang.com_CA_3
+      - 翻墙党fanqiangdang.com_CA_4
+      - US(Youtube技术分享室整理)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国-netflix
-      - LAX-Sharktech
-      - US(Youtube技术分享室整理)
       - 4.06|CN中国55
-      - 广州-日本 DMIT丨全解锁丨A3_1
-      - IEPL莞港专线 香港 HGC丨全解锁丨独享丨A1 2_16
+      - 翻墙党fanqiangdang.com_CA_3
+      - 翻墙党fanqiangdang.com_CA_4
+      - US(Youtube技术分享室整理)
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国-netflix
-      - LAX-Sharktech
-      - US(Youtube技术分享室整理)
       - 4.06|CN中国55
-      - 广州-日本 DMIT丨全解锁丨A3_1
-      - IEPL莞港专线 香港 HGC丨全解锁丨独享丨A1 2_16
+      - 翻墙党fanqiangdang.com_CA_3
+      - 翻墙党fanqiangdang.com_CA_4
+      - US(Youtube技术分享室整理)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,52 +56,43 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国-netflix
-      - LAX-Sharktech
-      - US(Youtube技术分享室整理)
       - 4.06|CN中国55
-      - 广州-日本 DMIT丨全解锁丨A3_1
-      - IEPL莞港专线 香港 HGC丨全解锁丨独享丨A1 2_16
+      - 翻墙党fanqiangdang.com_CA_3
+      - 翻墙党fanqiangdang.com_CA_4
+      - US(Youtube技术分享室整理)
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - IEPL莞港专线 香港 HGC丨全解锁丨独享丨A1 2_16
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国-netflix
-      - LAX-Sharktech
-      - US(Youtube技术分享室整理)
       - 4.06|CN中国55
-      - 广州-日本 DMIT丨全解锁丨A3_1
-      - IEPL莞港专线 香港 HGC丨全解锁丨独享丨A1 2_16
+      - 翻墙党fanqiangdang.com_CA_3
+      - 翻墙党fanqiangdang.com_CA_4
+      - US(Youtube技术分享室整理)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国-netflix
-      - LAX-Sharktech
-      - US(Youtube技术分享室整理)
       - 4.06|CN中国55
-      - 广州-日本 DMIT丨全解锁丨A3_1
-      - IEPL莞港专线 香港 HGC丨全解锁丨独享丨A1 2_16
+      - 翻墙党fanqiangdang.com_CA_3
+      - 翻墙党fanqiangdang.com_CA_4
+      - US(Youtube技术分享室整理)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国-netflix
-      - LAX-Sharktech
-      - US(Youtube技术分享室整理)
       - 4.06|CN中国55
-      - 广州-日本 DMIT丨全解锁丨A3_1
-      - IEPL莞港专线 香港 HGC丨全解锁丨独享丨A1 2_16
+      - 翻墙党fanqiangdang.com_CA_3
+      - 翻墙党fanqiangdang.com_CA_4
+      - US(Youtube技术分享室整理)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -125,12 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国-netflix
-      - LAX-Sharktech
-      - US(Youtube技术分享室整理)
       - 4.06|CN中国55
-      - 广州-日本 DMIT丨全解锁丨A3_1
-      - IEPL莞港专线 香港 HGC丨全解锁丨独享丨A1 2_16
+      - 翻墙党fanqiangdang.com_CA_3
+      - 翻墙党fanqiangdang.com_CA_4
+      - US(Youtube技术分享室整理)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
