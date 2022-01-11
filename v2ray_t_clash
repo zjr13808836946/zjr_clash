@@ -5,15 +5,40 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 共享, server: 27.122.57.72, port: 35326, type: vmess, uuid: 217362fd-3e43-4436-be62-92f6dd57303b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _NON_FMYC-2021.11.28_184, server: us07.vip-v2ray.cf, port: 58740, type: vmess, uuid: 4ca67d33-f626-47ba-e077-0ff6742fc31c, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 专线|西雅图02|原生NTT, server: zfd.out02.nodeserver.top, port: 16234, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-香港, server: 211.99.96.7, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: 4.06|CN中国55, server: 183.232.13.63, port: 2109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 28416:xul3hsefzm, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 回国专线贵州, server: 203.189.208.74, port: 48776, type: vmess, uuid: d40c20e7-a5c3-4dcf-93c3-b2d7efb1159f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 电信二区(四川), server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK(Youtube技术分享室整理), server: 47.99.142.242, port: 54497, type: vmess, uuid: 4b6b4c48-dbd6-4743-8e33-0049006b3068, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TW(Youtube技术分享室整理), server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-05, server: mc.xiaohouzi.club, port: 27820, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-09, server: mc.xiaohouzi.club, port: 29239, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-092, server: sh.xiaohouzi.club, port: 24912, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-093, server: sh.xiaohouzi.club, port: 24913, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-095, server: sh.xiaohouzi.club, port: 17901, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-A04, server: sh.xiaohouzi.club, port: 25234, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-A06, server: sh.xiaohouzi.club, port: 25236, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: A-V2RAY-加速-韩国01, server: mc.xiaohouzi.club, port: 28321, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: v2ray-BGP-韩国B02, server: bgp.xiaohouzi.club, port: 28522, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: v2ray-BGP-韩国B03, server: bgp.xiaohouzi.club, port: 28523, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: V2RAY-俄罗斯-西伯利亚02, server: v2-r02.xiaohouzi.club, port: 10051, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
   - {name: V2RAY-香港-HKT-支持NETFLIX-03, server: hkt-pqs01.xiaohouzi.club, port: 10051, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: V2RAY-香港-HKT-支持NETFLIX-04, server: hkt-pqs02.xiaohouzi.club, port: 10052, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: V2RAY-香港AWV09, server: hk-azure03.xiaohouzi.club, port: 10051, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: V2RAY-香港AWV092, server: azhk003.xiaohouzi.club, port: 10051, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
   - {name: V2RAY-香港AZURE-落地05, server: a89.xiaohouzi.club, port: 10050, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
   - {name: V2RAY-香港AZURE-落地06, server: a90.xiaohouzi.club, port: 10050, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
   - {name: V2RAY-香港AZURE-落地09, server: azhk03.xiaohouzi.club, port: 10050, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: Hong Kong 11, server: iepl.hk.206f.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
+  - {name: 【新鸟免费】俄罗斯RU-Justhost 04 免流 1.0x, server: mf-justhost-ru-04.xncloud.xyz, port: 80, type: vmess, uuid: 17ce7953-6828-3b8b-8081-dc030aeffb33, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-justhost-ru-04.xncloud.xyz}, udp: true}
+  - {name: 【新鸟免费】美国UA -DO 05 免流 1.0x, server: mf-do-ua-05.xncloud.xyz, port: 80, type: vmess, uuid: 17ce7953-6828-3b8b-8081-dc030aeffb33, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-05.xncloud.xyz}, udp: true}
+  - {name: 【新鸟免费】美国UA -DO 06 免流 1.0x, server: mf-do-ua-06.xncloud.xyz, port: 80, type: vmess, uuid: 17ce7953-6828-3b8b-8081-dc030aeffb33, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-06.xncloud.xyz}, udp: true}
+  - {name: 【新鸟免费】美国UA -DO 07 免流 1.0x, server: mf-do-ua-07.xncloud.xyz, port: 80, type: vmess, uuid: 17ce7953-6828-3b8b-8081-dc030aeffb33, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-07.xncloud.xyz}, udp: true}
+  - {name: "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub", server: v8.ssrsub.com, port: 443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
+  - {name: "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub", server: v8.ssrsub.com, port: 443, type: vmess, uuid: e6c36d58-6070-4b55-a437-146e6b53ec57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
+  - {name: "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M", server: v112.wgong.xyz, port: 52212, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M", server: v113.wgong.xyz, port: 52213, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M", server: v115.wgong.xyz, port: 52215, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M", server: 116.wgong.xyz, port: 52216, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M", server: 118.wgong.xyz, port: 52218, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M", server: 119.wgong.xyz, port: 52219, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -23,148 +48,195 @@ proxies:
   - {name: "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M", server: 135.wgong.xyz, port: 52335, type: vmess, uuid: 02fc90d6-4940-3031-9d2c-eb75013beff3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 专线|香港08|原生HGCBBS, server: zfd.out02.nodeserver.top, port: 16237, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: YouTube-由零开始, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
-  - {name: 专线|西雅图01|原生NTT, server: zfd.out01.nodeserver.top, port: 16233, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK(Youtube技术分享室整理), server: shcn2-06b.iplc188.com, port: 10005, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|中国台湾04|解锁流媒体, server: zfd.out04.nodeserver.top, port: 16128, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: CYL-科技（202201.04）, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
-  - {name: 香港1|tg频道:@ripaojiedian, server: 211.99.96.13, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
-  - {name: _HK_香港, server: 118.107.244.112, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 中国_TG@nodesharing, server: 211.99.96.9, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
-  - {name: 中国_TG@nodesharing 2, server: 211.99.96.4, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
-  - {name: 中国_TG@nodesharing 3, server: 211.99.96.33, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
-  - {name: 中国_TG@nodesharing 4, server: in04.2333dns.com, port: 64068, type: vmess, uuid: 19380563-e9f4-367a-b58f-43def434398e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
-  - {name: 标准|香港01|解锁流媒体, server: v21.88host.buzz, port: 18025, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港02|解锁流媒体, server: v22.88host.buzz, port: 18026, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港03|解锁流媒体, server: v23.88host.buzz, port: 18027, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港04|解锁流媒体, server: v24.88host.buzz, port: 18028, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港05|解锁流媒体, server: v25.88host.buzz, port: 18029, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|日本03|解锁流媒体, server: v23.88host.buzz, port: 18023, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡01|解锁流媒体, server: v21.88host.buzz, port: 18033, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡03|解锁流媒体, server: v23.88host.buzz, port: 18035, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港03|原生CMI, server: v33.88host.buzz, port: 18066, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港04|原生HGCBBS, server: v34.88host.buzz, port: 18067, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港05|原生HGCBBS, server: v35.88host.buzz, port: 18068, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港07|原生HKBN, server: v31.88host.buzz, port: 18082, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港08|原生HKBN, server: v32.88host.buzz, port: 18083, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾01|原生Taipei, server: v36.88host.buzz, port: 18078, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国02|原生Seattle, server: v32.88host.buzz, port: 18043, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国03|原生Seattle, server: v33.88host.buzz, port: 18044, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|西雅图01|原生NTT 2, server: v31.88host.buzz, port: 18084, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|西雅图02|原生NTT 2, server: v32.88host.buzz, port: 18085, type: vmess, uuid: 70e3b7b6-661a-3632-a116-37eb04691e1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港01|解锁流媒体 2, server: v21.88host.buzz, port: 18025, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港02|解锁流媒体 2, server: v22.88host.buzz, port: 18026, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港03|解锁流媒体 2, server: v23.88host.buzz, port: 18027, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港04|解锁流媒体 2, server: v24.88host.buzz, port: 18028, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港05|解锁流媒体 2, server: v25.88host.buzz, port: 18029, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|日本03|解锁流媒体 2, server: v23.88host.buzz, port: 18023, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|美国03|解锁流媒体, server: v23.88host.buzz, port: 18139, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡01|解锁流媒体 2, server: v21.88host.buzz, port: 18033, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡03|解锁流媒体 2, server: v23.88host.buzz, port: 18035, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港01|原生HGCBBS, server: v31.88host.buzz, port: 18064, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港03|原生CMI 2, server: v33.88host.buzz, port: 18066, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港04|原生HGCBBS 2, server: v34.88host.buzz, port: 18067, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港05|原生HGCBBS 2, server: v35.88host.buzz, port: 18068, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港06|原生CMI, server: v36.88host.buzz, port: 18069, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港07|原生HKBN 2, server: v31.88host.buzz, port: 18082, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港08|原生HKBN 2, server: v32.88host.buzz, port: 18083, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾01|原生Taipei 2, server: v36.88host.buzz, port: 18078, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国04|原生Seattle, server: v34.88host.buzz, port: 18045, type: vmess, uuid: b9f83b80-c68b-360a-a43d-2f05cb711caa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港01|解锁流媒体 3, server: v21.88host.buzz, port: 18025, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港02|解锁流媒体 3, server: v22.88host.buzz, port: 18026, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港03|解锁流媒体 3, server: v23.88host.buzz, port: 18027, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港04|解锁流媒体 3, server: v24.88host.buzz, port: 18028, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港05|解锁流媒体 3, server: v25.88host.buzz, port: 18029, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|日本03|解锁流媒体 3, server: v23.88host.buzz, port: 18023, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|美国03|解锁流媒体 2, server: v23.88host.buzz, port: 18139, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡01|解锁流媒体 3, server: v21.88host.buzz, port: 18033, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡03|解锁流媒体 3, server: v23.88host.buzz, port: 18035, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港01|原生HGCBBS 2, server: v31.88host.buzz, port: 18064, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港03|原生CMI 3, server: v33.88host.buzz, port: 18066, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港04|原生HGCBBS 3, server: v34.88host.buzz, port: 18067, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港05|原生HGCBBS 3, server: v35.88host.buzz, port: 18068, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港06|原生CMI 2, server: v36.88host.buzz, port: 18069, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港07|原生HKBN 3, server: v31.88host.buzz, port: 18082, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港08|原生HKBN 3, server: v32.88host.buzz, port: 18083, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾01|原生Taipei 3, server: v36.88host.buzz, port: 18078, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾02|原生Taipei, server: v35.88host.buzz, port: 18079, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国03|原生Seattle 2, server: v33.88host.buzz, port: 18044, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国04|原生Seattle 2, server: v34.88host.buzz, port: 18045, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|西雅图01|原生NTT 3, server: v31.88host.buzz, port: 18084, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|西雅图02|原生NTT 3, server: v32.88host.buzz, port: 18085, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港01|解锁流媒体 4, server: v21.88host.buzz, port: 18025, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港02|解锁流媒体 4, server: v22.88host.buzz, port: 18026, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港03|解锁流媒体 4, server: v23.88host.buzz, port: 18027, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港04|解锁流媒体 4, server: v24.88host.buzz, port: 18028, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港05|解锁流媒体 4, server: v25.88host.buzz, port: 18029, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|日本03|解锁流媒体 4, server: v23.88host.buzz, port: 18023, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|美国03|解锁流媒体 3, server: v23.88host.buzz, port: 18139, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡01|解锁流媒体 4, server: v21.88host.buzz, port: 18033, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡03|解锁流媒体 4, server: v23.88host.buzz, port: 18035, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港01|原生HGCBBS 3, server: v31.88host.buzz, port: 18064, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港03|原生CMI 4, server: v33.88host.buzz, port: 18066, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港04|原生HGCBBS 4, server: v34.88host.buzz, port: 18067, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港05|原生HGCBBS 4, server: v35.88host.buzz, port: 18068, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港06|原生CMI 3, server: v36.88host.buzz, port: 18069, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港07|原生HKBN 4, server: v31.88host.buzz, port: 18082, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港08|原生HKBN 4, server: v32.88host.buzz, port: 18083, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾01|原生Taipei 4, server: v36.88host.buzz, port: 18078, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国01|原生Seattle, server: v31.88host.buzz, port: 18042, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国02|原生Seattle 2, server: v32.88host.buzz, port: 18043, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国03|原生Seattle 3, server: v33.88host.buzz, port: 18044, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国04|原生Seattle 3, server: v34.88host.buzz, port: 18045, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|西雅图01|原生NTT 4, server: v31.88host.buzz, port: 18084, type: vmess, uuid: 7ebafaf6-7fe9-38cf-b630-a32a0b1f6170, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港01|解锁流媒体 5, server: v21.88host.buzz, port: 18025, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港02|解锁流媒体 5, server: v22.88host.buzz, port: 18026, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港03|解锁流媒体 5, server: v23.88host.buzz, port: 18027, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港04|解锁流媒体 5, server: v24.88host.buzz, port: 18028, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港05|解锁流媒体 5, server: v25.88host.buzz, port: 18029, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|日本03|解锁流媒体 5, server: v23.88host.buzz, port: 18023, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡01|解锁流媒体 5, server: v21.88host.buzz, port: 18033, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡03|解锁流媒体 5, server: v23.88host.buzz, port: 18035, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港01|原生HGCBBS 4, server: v31.88host.buzz, port: 18064, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港03|原生CMI 5, server: v33.88host.buzz, port: 18066, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港04|原生HGCBBS 5, server: v34.88host.buzz, port: 18067, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港05|原生HGCBBS 5, server: v35.88host.buzz, port: 18068, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港06|原生CMI 4, server: v36.88host.buzz, port: 18069, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港07|原生HKBN 5, server: v31.88host.buzz, port: 18082, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港08|原生HKBN 5, server: v32.88host.buzz, port: 18083, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾01|原生Taipei 5, server: v36.88host.buzz, port: 18078, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾02|原生Taipei 2, server: v35.88host.buzz, port: 18079, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国, server: 38.143.66.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 中国_TG@nodesharing, server: in02.2333dns.com, port: 64068, type: vmess, uuid: 19380563-e9f4-367a-b58f-43def434398e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
+  - {name: 美国_TG@nodesharing, server: usa-sanfrancisco.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}, udp: true}
+  - {name: 基础|台湾01|负载均衡, server: v12.88host.buzz, port: 18117, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|台湾02|负载均衡, server: v12.88host.buzz, port: 18118, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|台湾04|负载均衡, server: v11.88host.buzz, port: 18120, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|俄罗斯03|负载均衡, server: v11.88host.buzz, port: 18003, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|香港01|解锁流媒体, server: v21.88host.buzz, port: 18025, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|香港02|解锁流媒体, server: v22.88host.buzz, port: 18026, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|香港05|解锁流媒体, server: v25.88host.buzz, port: 18029, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|美国01|解锁流媒体, server: v22.88host.buzz, port: 18137, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|美国02|解锁流媒体, server: v22.88host.buzz, port: 18138, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|印度02|解锁流媒体, server: v28.88host.buzz, port: 18075, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|加拿大02|解锁流媒体, server: v28.88host.buzz, port: 18073, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|新加坡01|解锁流媒体, server: v21.88host.buzz, port: 18033, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|新加坡02|解锁流媒体, server: v22.88host.buzz, port: 18034, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港01|原生HGCBBS, server: v31.88host.buzz, port: 18064, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港04|原生HGCBBS, server: v34.88host.buzz, port: 18067, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港05|原生HGCBBS, server: v35.88host.buzz, port: 18068, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港07|原生HKBN, server: v31.88host.buzz, port: 18082, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港08|原生HKBN, server: v32.88host.buzz, port: 18083, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|台湾01|原生Taipei, server: v36.88host.buzz, port: 18078, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国01|原生Seattle, server: v31.88host.buzz, port: 18042, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国02|原生Seattle, server: v32.88host.buzz, port: 18043, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国03|原生Seattle, server: v33.88host.buzz, port: 18044, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国04|原生Seattle, server: v34.88host.buzz, port: 18045, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|西雅图01|原生NTT, server: v31.88host.buzz, port: 18084, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|西雅图02|原生NTT 2, server: v32.88host.buzz, port: 18085, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|俄罗斯03|原生Moscow, server: v33.88host.buzz, port: 18061, type: vmess, uuid: 33d0d1ba-992e-3700-8fb7-1f871c618166, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|台湾01|负载均衡 2, server: v12.88host.buzz, port: 18117, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|台湾03|负载均衡, server: v13.88host.buzz, port: 18119, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|台湾04|负载均衡 2, server: v11.88host.buzz, port: 18120, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|俄罗斯03|负载均衡 2, server: v11.88host.buzz, port: 18003, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|日本03|解锁流媒体, server: v23.88host.buzz, port: 18023, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|美国01|解锁流媒体 2, server: v22.88host.buzz, port: 18137, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|印度02|解锁流媒体 2, server: v28.88host.buzz, port: 18075, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|加拿大02|解锁流媒体 2, server: v28.88host.buzz, port: 18073, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|新加坡01|解锁流媒体 2, server: v21.88host.buzz, port: 18033, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|新加坡02|解锁流媒体 2, server: v22.88host.buzz, port: 18034, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港01|原生HGCBBS 2, server: v31.88host.buzz, port: 18064, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港04|原生HGCBBS 2, server: v34.88host.buzz, port: 18067, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港05|原生HGCBBS 2, server: v35.88host.buzz, port: 18068, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港07|原生HKBN 2, server: v31.88host.buzz, port: 18082, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港08|原生HKBN 2, server: v32.88host.buzz, port: 18083, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|台湾01|原生Taipei 2, server: v36.88host.buzz, port: 18078, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|台湾03|原生Taipei, server: v34.88host.buzz, port: 18080, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 专线|美国01|原生Seattle 2, server: v31.88host.buzz, port: 18042, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国03|原生Seattle 4, server: v33.88host.buzz, port: 18044, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国04|原生Seattle 4, server: v34.88host.buzz, port: 18045, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|西雅图01|原生NTT 5, server: v31.88host.buzz, port: 18084, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港 2, server: 118.107.244.112, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 中国_TG@nodesharing 5, server: 211.99.96.12, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
-  - {name: _HK_香港 3, server: 118.107.244.112, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _HK_香港 4, server: 118.107.244.112, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _HK_香港 5, server: 118.107.244.112, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: "｜IPLC｜香港\n", server: 211.99.96.19, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: Hong+Kong+07, server: iepl.hk.cc38.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: Hong+Kong+09, server: iepl.hk.023d.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: Hong+Kong+14, server: iepl.hk.71bc.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: Hong+Kong+10, server: iepl.hk.fda0.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: +Hong+Kong+07, server: iepl.hk.cc38.linkit.dev, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: +vpnpool-香港, server: 211.99.96.15, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, plugin: obfs, plugin-opts: {mode: http, host: ds.download.windowsupdate.com}, udp: true}
-  - {name: 中国_TG@nodesharing 6, server: 211.99.96.16, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
-  - {name: 中国_TG@nodesharing 7, server: 211.99.96.15, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
-  - {name: 中国_TG@nodesharing 8, server: 211.99.96.7, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
-  - {name: 中国_TG@nodesharing 9, server: 211.99.96.14, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
-  - {name: 中国_TG@nodesharing 10, server: 211.99.96.35, port: 17852, type: ss, cipher: xchacha20-ietf-poly1305, password: 25rmp7CQ, udp: true}
+  - {name: 专线|美国02|原生Seattle 2, server: v32.88host.buzz, port: 18043, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国03|原生Seattle 2, server: v33.88host.buzz, port: 18044, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国04|原生Seattle 2, server: v34.88host.buzz, port: 18045, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|西雅图01|原生NTT 2, server: v31.88host.buzz, port: 18084, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|西雅图02|原生NTT 3, server: v32.88host.buzz, port: 18085, type: vmess, uuid: 17ac880e-4949-3632-9691-feece7bac00b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港, server: 118.107.244.112, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 2, server: 38.75.136.93, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国 3, server: 38.75.136.93, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 4, server: 38.75.136.93, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国 5, server: 38.75.136.93, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国 6, server: 38.75.136.93, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 7, server: 38.75.136.93, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_TG@nodesharing 2, server: 169.197.142.39, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国_TG@nodesharing 3, server: 70.39.71.2, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV, udp: true}
+  - {name: 美国_TG@nodesharing 4, server: 38.75.136.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _HK_香港 2, server: 118.107.244.112, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _HK_香港 3, server: 118.107.244.112, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US(Youtube技术分享室整理), server: 107.167.23.50, port: 8084, type: ssr, cipher: aes-256-cfb, password: RhKqtYoG8, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-02, server: mc.xiaohouzi.club, port: 30002, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: 比利时_TG@nodesharing, server: 77.243.191.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs, udp: true}
+  - {name: 台湾w-油管 2, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _中国_（）_120, server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _中国_（）_79, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing 2, server: 120.232.239.101, port: 13040, type: vmess, uuid: f3ecf0d7-c7f1-3858-b6ae-06609b1540cc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK|苏醒云|购买支持发展, server: tras.hk01.qiguangyicai.xyz, port: 4443, type: trojan, password: db34e8c2-bdd2-4e5e-8092-65a34654f02e, sni: tras.hk01.qiguangyicai.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港免流节点2号|10Gps, server: 20.205.56.212, port: 443, type: vmess, uuid: a942fcbd-99b1-33a2-a0f3-fe65911181d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: shoutingtoutiao3.10010.com}, udp: true}
+  - {name: Pool_🇭🇰HK_591, server: 118.107.244.112, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Pool_🇭🇰HK_621, server: 118.107.244.112, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: A-aV2RAY-CMCC-香港-097, server: sh.xiaohouzi.club, port: 17903, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: 中国_TG@nodesharing 3, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港 4, server: 118.107.244.112, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: V2RAY-香港AZURE-落地, server: azure-hk-t.xiaohouzi.club, port: 10050, type: vmess, uuid: b455941f-8e1a-31f4-8f44-922982b15eb4, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
+  - {name: _US_美国 8, server: 66.55.92.101, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW, udp: true}
+  - {name: _US_美国 9, server: usa-sanfrancisco.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}, udp: true}
+  - {name: _NL_荷兰, server: 89.238.177.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: VPPqaR4qpLmNw37jaJg6, udp: true}
+  - {name: 中国_TG@nodesharing 4, server: 8d21436.pb.gladns.com, port: 3389, type: trojan, password: 1a1247ea6cb266b4, sni: 8d21436.pb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing 5, server: 8d21436.pa.gladns.com, port: 3389, type: trojan, password: 1a1247ea6cb266b4, sni: 8d21436.pa.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing 6, server: 8d21436.pf.gladns.com, port: 3389, type: trojan, password: 1a1247ea6cb266b4, sni: 8d21436.pf.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing 7, server: 8d21436.ph.gladns.com, port: 3389, type: trojan, password: 1a1247ea6cb266b4, sni: 8d21436.ph.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing 8, server: 8d21436.pd.gladns.com, port: 3389, type: trojan, password: 1a1247ea6cb266b4, sni: 8d21436.pd.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: 香港_TG@nodesharing, server: qinton001.bmbai.buzz, port: 889, type: vmess, uuid: d06330a7-1fdd-3b99-a0ed-754e6a11d4ce, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1.baiyun.pw}, udp: true}
+  - {name: 基础|台湾01|负载均衡 3, server: v12.88host.buzz, port: 18117, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|台湾03|负载均衡 2, server: v13.88host.buzz, port: 18119, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|俄罗斯03|负载均衡 3, server: v11.88host.buzz, port: 18003, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|俄罗斯04|负载均衡, server: v12.88host.buzz, port: 18004, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|美国02|解锁流媒体 2, server: v22.88host.buzz, port: 18138, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|印度02|解锁流媒体 3, server: v28.88host.buzz, port: 18075, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|加拿大02|解锁流媒体 3, server: v28.88host.buzz, port: 18073, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|新加坡01|解锁流媒体 3, server: v21.88host.buzz, port: 18033, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|新加坡02|解锁流媒体 3, server: v22.88host.buzz, port: 18034, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港01|原生HGCBBS 3, server: v31.88host.buzz, port: 18064, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港02|原生HGCBBS, server: v32.88host.buzz, port: 18065, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港04|原生HGCBBS 3, server: v34.88host.buzz, port: 18067, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港05|原生HGCBBS 3, server: v35.88host.buzz, port: 18068, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港07|原生HKBN 3, server: v31.88host.buzz, port: 18082, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港08|原生HKBN 3, server: v32.88host.buzz, port: 18083, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|台湾01|原生Taipei 3, server: v36.88host.buzz, port: 18078, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国01|原生Seattle 3, server: v31.88host.buzz, port: 18042, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国02|原生Seattle 3, server: v32.88host.buzz, port: 18043, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国03|原生Seattle 3, server: v33.88host.buzz, port: 18044, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国04|原生Seattle 3, server: v34.88host.buzz, port: 18045, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|西雅图01|原生NTT 3, server: v31.88host.buzz, port: 18084, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|西雅图02|原生NTT 4, server: v32.88host.buzz, port: 18085, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|台湾01|负载均衡 4, server: v12.88host.buzz, port: 18117, type: vmess, uuid: a2b363bc-04fa-32a9-94b2-078820e41b7f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|台湾02|负载均衡 2, server: v12.88host.buzz, port: 18118, type: vmess, uuid: a2b363bc-04fa-32a9-94b2-078820e41b7f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|台湾03|负载均衡 3, server: v13.88host.buzz, port: 18119, type: vmess, uuid: a2b363bc-04fa-32a9-94b2-078820e41b7f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|美国02|解锁流媒体 3, server: v22.88host.buzz, port: 18138, type: vmess, uuid: a2b363bc-04fa-32a9-94b2-078820e41b7f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|新加坡02|解锁流媒体 4, server: v22.88host.buzz, port: 18034, type: vmess, uuid: a2b363bc-04fa-32a9-94b2-078820e41b7f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港04|原生HGCBBS 4, server: v34.88host.buzz, port: 18067, type: vmess, uuid: a2b363bc-04fa-32a9-94b2-078820e41b7f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港05|原生HGCBBS 4, server: v35.88host.buzz, port: 18068, type: vmess, uuid: a2b363bc-04fa-32a9-94b2-078820e41b7f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|台湾03|负载均衡 4, server: v13.88host.buzz, port: 18119, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|台湾04|负载均衡 3, server: v11.88host.buzz, port: 18120, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|俄罗斯03|负载均衡 4, server: v11.88host.buzz, port: 18003, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|俄罗斯04|负载均衡 2, server: v12.88host.buzz, port: 18004, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|美国01|解锁流媒体 3, server: v22.88host.buzz, port: 18137, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|美国02|解锁流媒体 4, server: v22.88host.buzz, port: 18138, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|印度02|解锁流媒体 4, server: v28.88host.buzz, port: 18075, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|加拿大02|解锁流媒体 4, server: v28.88host.buzz, port: 18073, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|新加坡01|解锁流媒体 4, server: v21.88host.buzz, port: 18033, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|新加坡02|解锁流媒体 5, server: v22.88host.buzz, port: 18034, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港01|原生HGCBBS 4, server: v31.88host.buzz, port: 18064, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港02|原生HGCBBS 2, server: v32.88host.buzz, port: 18065, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港04|原生HGCBBS 5, server: v34.88host.buzz, port: 18067, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港05|原生HGCBBS 5, server: v35.88host.buzz, port: 18068, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港07|原生HKBN 4, server: v31.88host.buzz, port: 18082, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港08|原生HKBN 4, server: v32.88host.buzz, port: 18083, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|台湾01|原生Taipei 4, server: v36.88host.buzz, port: 18078, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|台湾02|原生Taipei, server: v35.88host.buzz, port: 18079, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|台湾03|原生Taipei 2, server: v34.88host.buzz, port: 18080, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国01|原生Seattle 4, server: v31.88host.buzz, port: 18042, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国02|原生Seattle 4, server: v32.88host.buzz, port: 18043, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国03|原生Seattle 4, server: v33.88host.buzz, port: 18044, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国04|原生Seattle 4, server: v34.88host.buzz, port: 18045, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|西雅图01|原生NTT 4, server: v31.88host.buzz, port: 18084, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|西雅图02|原生NTT 5, server: v32.88host.buzz, port: 18085, type: vmess, uuid: c5d3feef-43a2-3ba3-9956-4a3426d541b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V1-俄罗斯01 中继C 1.2x, server: in03.2333dns.com, port: 64071, type: vmess, uuid: 8426925e-2f87-349e-a7ba-1375c3afd37b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: biteb-ru01.covid19.rip}, udp: true}
+  - {name: V1-俄罗斯01 中继D 1.2x, server: in04.2333dns.com, port: 64071, type: vmess, uuid: 8426925e-2f87-349e-a7ba-1375c3afd37b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: biteb-ru01.covid19.rip}, udp: true}
+  - {name: V1-台湾05 中继A 2x, server: in01.2333dns.com, port: 64068, type: vmess, uuid: 8426925e-2f87-349e-a7ba-1375c3afd37b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
+  - {name: V1-日本B组 直连 速度随缘 1x, server: jp-group-b-direct.myn0des.com, port: 8880, type: vmess, uuid: 8426925e-2f87-349e-a7ba-1375c3afd37b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: new.vip.weibo.cn}, udp: true}
+  - {name: V1-香港B组 直连 速度随缘 1x, server: hk-group-b-direct.myn0des.com, port: 8880, type: vmess, uuid: 8426925e-2f87-349e-a7ba-1375c3afd37b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: new.vip.weibo.cn}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 共享
+      - _NON_FMYC-2021.11.28_184
       - 专线|西雅图02|原生NTT
-      - vpnpool-香港
-      - 4.06|CN中国55
+      - 回国专线贵州
+      - 电信二区(四川)
+      - HK(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-092
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-095
+      - A-aV2RAY-CMCC-香港-A04
+      - A-aV2RAY-CMCC-香港-A06
+      - A-V2RAY-加速-韩国01
+      - v2ray-BGP-韩国B02
+      - v2ray-BGP-韩国B03
+      - V2RAY-俄罗斯-西伯利亚02
       - V2RAY-香港-HKT-支持NETFLIX-03
+      - V2RAY-香港-HKT-支持NETFLIX-04
+      - V2RAY-香港AWV09
+      - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
       - V2RAY-香港AZURE-落地09
-      - Hong Kong 11
+      - 【新鸟免费】俄罗斯RU-Justhost 04 免流 1.0x
+      - 【新鸟免费】美国UA -DO 05 免流 1.0x
+      - 【新鸟免费】美国UA -DO 06 免流 1.0x
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
+      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
@@ -174,147 +246,194 @@ proxy-groups:
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
       - 专线|香港08|原生HGCBBS
       - YouTube-由零开始
-      - 专线|西雅图01|原生NTT
-      - HK(Youtube技术分享室整理)
+      - 标准|中国台湾04|解锁流媒体
       - CYL-科技（202201.04）
-      - 香港1|tg频道:@ripaojiedian
-      - _HK_香港
+      - _US_美国
       - 中国_TG@nodesharing
-      - 中国_TG@nodesharing 2
-      - 中国_TG@nodesharing 3
-      - 中国_TG@nodesharing 4
+      - 美国_TG@nodesharing
+      - 基础|台湾01|负载均衡
+      - 基础|台湾02|负载均衡
+      - 基础|台湾04|负载均衡
+      - 基础|俄罗斯03|负载均衡
       - 标准|香港01|解锁流媒体
       - 标准|香港02|解锁流媒体
-      - 标准|香港03|解锁流媒体
-      - 标准|香港04|解锁流媒体
       - 标准|香港05|解锁流媒体
-      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体
+      - 标准|美国02|解锁流媒体
+      - 标准|印度02|解锁流媒体
+      - 标准|加拿大02|解锁流媒体
       - 标准|新加坡01|解锁流媒体
-      - 标准|新加坡03|解锁流媒体
-      - 专线|香港03|原生CMI
+      - 标准|新加坡02|解锁流媒体
+      - 专线|香港01|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
+      - 专线|美国01|原生Seattle
       - 专线|美国02|原生Seattle
       - 专线|美国03|原生Seattle
-      - 专线|西雅图01|原生NTT 2
+      - 专线|美国04|原生Seattle
+      - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
-      - 标准|香港01|解锁流媒体 2
-      - 标准|香港02|解锁流媒体 2
-      - 标准|香港03|解锁流媒体 2
-      - 标准|香港04|解锁流媒体 2
-      - 标准|香港05|解锁流媒体 2
-      - 标准|日本03|解锁流媒体 2
-      - 标准|美国03|解锁流媒体
+      - 专线|俄罗斯03|原生Moscow
+      - 基础|台湾01|负载均衡 2
+      - 基础|台湾03|负载均衡
+      - 基础|台湾04|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 2
+      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 2
+      - 标准|加拿大02|解锁流媒体 2
       - 标准|新加坡01|解锁流媒体 2
-      - 标准|新加坡03|解锁流媒体 2
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港03|原生CMI 2
+      - 标准|新加坡02|解锁流媒体 2
+      - 专线|香港01|原生HGCBBS 2
       - 专线|香港04|原生HGCBBS 2
       - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI
       - 专线|香港07|原生HKBN 2
       - 专线|香港08|原生HKBN 2
       - 专线|台湾01|原生Taipei 2
-      - 专线|美国04|原生Seattle
-      - 标准|香港01|解锁流媒体 3
-      - 标准|香港02|解锁流媒体 3
-      - 标准|香港03|解锁流媒体 3
-      - 标准|香港04|解锁流媒体 3
-      - 标准|香港05|解锁流媒体 3
-      - 标准|日本03|解锁流媒体 3
-      - 标准|美国03|解锁流媒体 2
-      - 标准|新加坡01|解锁流媒体 3
-      - 标准|新加坡03|解锁流媒体 3
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港03|原生CMI 3
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei
+      - 专线|美国01|原生Seattle 2
+      - 专线|美国02|原生Seattle 2
       - 专线|美国03|原生Seattle 2
       - 专线|美国04|原生Seattle 2
-      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图01|原生NTT 2
       - 专线|西雅图02|原生NTT 3
-      - 标准|香港01|解锁流媒体 4
-      - 标准|香港02|解锁流媒体 4
-      - 标准|香港03|解锁流媒体 4
-      - 标准|香港04|解锁流媒体 4
-      - 标准|香港05|解锁流媒体 4
-      - 标准|日本03|解锁流媒体 4
-      - 标准|美国03|解锁流媒体 3
-      - 标准|新加坡01|解锁流媒体 4
-      - 标准|新加坡03|解锁流媒体 4
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港03|原生CMI 4
-      - 专线|香港04|原生HGCBBS 4
-      - 专线|香港05|原生HGCBBS 4
-      - 专线|香港06|原生CMI 3
-      - 专线|香港07|原生HKBN 4
-      - 专线|香港08|原生HKBN 4
-      - 专线|台湾01|原生Taipei 4
-      - 专线|美国01|原生Seattle
-      - 专线|美国02|原生Seattle 2
-      - 专线|美国03|原生Seattle 3
-      - 专线|美国04|原生Seattle 3
-      - 专线|西雅图01|原生NTT 4
-      - 标准|香港01|解锁流媒体 5
-      - 标准|香港02|解锁流媒体 5
-      - 标准|香港03|解锁流媒体 5
-      - 标准|香港04|解锁流媒体 5
-      - 标准|香港05|解锁流媒体 5
-      - 标准|日本03|解锁流媒体 5
-      - 标准|新加坡01|解锁流媒体 5
-      - 标准|新加坡03|解锁流媒体 5
-      - 专线|香港01|原生HGCBBS 4
-      - 专线|香港03|原生CMI 5
-      - 专线|香港04|原生HGCBBS 5
-      - 专线|香港05|原生HGCBBS 5
-      - 专线|香港06|原生CMI 4
-      - 专线|香港07|原生HKBN 5
-      - 专线|香港08|原生HKBN 5
-      - 专线|台湾01|原生Taipei 5
-      - 专线|台湾02|原生Taipei 2
-      - 专线|美国01|原生Seattle 2
-      - 专线|美国03|原生Seattle 4
-      - 专线|美国04|原生Seattle 4
-      - 专线|西雅图01|原生NTT 5
+      - _HK_香港
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - 美国_TG@nodesharing 2
+      - 美国_TG@nodesharing 3
+      - 美国_TG@nodesharing 4
       - _HK_香港 2
-      - 中国_TG@nodesharing 5
       - _HK_香港 3
+      - US(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-02
+      - 比利时_TG@nodesharing
+      - 台湾w-油管 2
+      - _中国_（）_120
+      - _中国_（）_79
+      - 中国_TG@nodesharing 2
+      - HK|苏醒云|购买支持发展
+      - 香港免流节点2号|10Gps
+      - Pool_🇭🇰HK_591
+      - Pool_🇭🇰HK_621
+      - A-aV2RAY-CMCC-香港-097
+      - 中国_TG@nodesharing 3
       - _HK_香港 4
-      - _HK_香港 5
-      - "｜IPLC｜香港\n"
-      - Hong+Kong+07
-      - Hong+Kong+09
-      - Hong+Kong+14
-      - Hong+Kong+10
-      - +Hong+Kong+07
-      - +vpnpool-香港
+      - V2RAY-香港AZURE-落地
+      - _US_美国 8
+      - _US_美国 9
+      - _NL_荷兰
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
       - 中国_TG@nodesharing 6
       - 中国_TG@nodesharing 7
       - 中国_TG@nodesharing 8
-      - 中国_TG@nodesharing 9
-      - 中国_TG@nodesharing 10
+      - 香港_TG@nodesharing
+      - 基础|台湾01|负载均衡 3
+      - 基础|台湾03|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 3
+      - 基础|俄罗斯04|负载均衡
+      - 标准|美国02|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 3
+      - 标准|加拿大02|解锁流媒体 3
+      - 标准|新加坡01|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 3
+      - 专线|香港01|原生HGCBBS 3
+      - 专线|香港02|原生HGCBBS
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国01|原生Seattle 3
+      - 专线|美国02|原生Seattle 3
+      - 专线|美国03|原生Seattle 3
+      - 专线|美国04|原生Seattle 3
+      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图02|原生NTT 4
+      - 基础|台湾01|负载均衡 4
+      - 基础|台湾02|负载均衡 2
+      - 基础|台湾03|负载均衡 3
+      - 标准|美国02|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 4
+      - 专线|香港04|原生HGCBBS 4
+      - 专线|香港05|原生HGCBBS 4
+      - 基础|台湾03|负载均衡 4
+      - 基础|台湾04|负载均衡 3
+      - 基础|俄罗斯03|负载均衡 4
+      - 基础|俄罗斯04|负载均衡 2
+      - 标准|美国01|解锁流媒体 3
+      - 标准|美国02|解锁流媒体 4
+      - 标准|印度02|解锁流媒体 4
+      - 标准|加拿大02|解锁流媒体 4
+      - 标准|新加坡01|解锁流媒体 4
+      - 标准|新加坡02|解锁流媒体 5
+      - 专线|香港01|原生HGCBBS 4
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 5
+      - 专线|香港05|原生HGCBBS 5
+      - 专线|香港07|原生HKBN 4
+      - 专线|香港08|原生HKBN 4
+      - 专线|台湾01|原生Taipei 4
+      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei 2
+      - 专线|美国01|原生Seattle 4
+      - 专线|美国02|原生Seattle 4
+      - 专线|美国03|原生Seattle 4
+      - 专线|美国04|原生Seattle 4
+      - 专线|西雅图01|原生NTT 4
+      - 专线|西雅图02|原生NTT 5
+      - V1-俄罗斯01 中继C 1.2x
+      - V1-俄罗斯01 中继D 1.2x
+      - V1-台湾05 中继A 2x
+      - V1-日本B组 直连 速度随缘 1x
+      - V1-香港B组 直连 速度随缘 1x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 共享
+      - _NON_FMYC-2021.11.28_184
       - 专线|西雅图02|原生NTT
-      - vpnpool-香港
-      - 4.06|CN中国55
+      - 回国专线贵州
+      - 电信二区(四川)
+      - HK(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-092
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-095
+      - A-aV2RAY-CMCC-香港-A04
+      - A-aV2RAY-CMCC-香港-A06
+      - A-V2RAY-加速-韩国01
+      - v2ray-BGP-韩国B02
+      - v2ray-BGP-韩国B03
+      - V2RAY-俄罗斯-西伯利亚02
       - V2RAY-香港-HKT-支持NETFLIX-03
+      - V2RAY-香港-HKT-支持NETFLIX-04
+      - V2RAY-香港AWV09
+      - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
       - V2RAY-香港AZURE-落地09
-      - Hong Kong 11
+      - 【新鸟免费】俄罗斯RU-Justhost 04 免流 1.0x
+      - 【新鸟免费】美国UA -DO 05 免流 1.0x
+      - 【新鸟免费】美国UA -DO 06 免流 1.0x
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
+      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
@@ -324,148 +443,195 @@ proxy-groups:
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
       - 专线|香港08|原生HGCBBS
       - YouTube-由零开始
-      - 专线|西雅图01|原生NTT
-      - HK(Youtube技术分享室整理)
+      - 标准|中国台湾04|解锁流媒体
       - CYL-科技（202201.04）
-      - 香港1|tg频道:@ripaojiedian
-      - _HK_香港
+      - _US_美国
       - 中国_TG@nodesharing
-      - 中国_TG@nodesharing 2
-      - 中国_TG@nodesharing 3
-      - 中国_TG@nodesharing 4
+      - 美国_TG@nodesharing
+      - 基础|台湾01|负载均衡
+      - 基础|台湾02|负载均衡
+      - 基础|台湾04|负载均衡
+      - 基础|俄罗斯03|负载均衡
       - 标准|香港01|解锁流媒体
       - 标准|香港02|解锁流媒体
-      - 标准|香港03|解锁流媒体
-      - 标准|香港04|解锁流媒体
       - 标准|香港05|解锁流媒体
-      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体
+      - 标准|美国02|解锁流媒体
+      - 标准|印度02|解锁流媒体
+      - 标准|加拿大02|解锁流媒体
       - 标准|新加坡01|解锁流媒体
-      - 标准|新加坡03|解锁流媒体
-      - 专线|香港03|原生CMI
+      - 标准|新加坡02|解锁流媒体
+      - 专线|香港01|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
+      - 专线|美国01|原生Seattle
       - 专线|美国02|原生Seattle
       - 专线|美国03|原生Seattle
-      - 专线|西雅图01|原生NTT 2
+      - 专线|美国04|原生Seattle
+      - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
-      - 标准|香港01|解锁流媒体 2
-      - 标准|香港02|解锁流媒体 2
-      - 标准|香港03|解锁流媒体 2
-      - 标准|香港04|解锁流媒体 2
-      - 标准|香港05|解锁流媒体 2
-      - 标准|日本03|解锁流媒体 2
-      - 标准|美国03|解锁流媒体
+      - 专线|俄罗斯03|原生Moscow
+      - 基础|台湾01|负载均衡 2
+      - 基础|台湾03|负载均衡
+      - 基础|台湾04|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 2
+      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 2
+      - 标准|加拿大02|解锁流媒体 2
       - 标准|新加坡01|解锁流媒体 2
-      - 标准|新加坡03|解锁流媒体 2
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港03|原生CMI 2
+      - 标准|新加坡02|解锁流媒体 2
+      - 专线|香港01|原生HGCBBS 2
       - 专线|香港04|原生HGCBBS 2
       - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI
       - 专线|香港07|原生HKBN 2
       - 专线|香港08|原生HKBN 2
       - 专线|台湾01|原生Taipei 2
-      - 专线|美国04|原生Seattle
-      - 标准|香港01|解锁流媒体 3
-      - 标准|香港02|解锁流媒体 3
-      - 标准|香港03|解锁流媒体 3
-      - 标准|香港04|解锁流媒体 3
-      - 标准|香港05|解锁流媒体 3
-      - 标准|日本03|解锁流媒体 3
-      - 标准|美国03|解锁流媒体 2
-      - 标准|新加坡01|解锁流媒体 3
-      - 标准|新加坡03|解锁流媒体 3
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港03|原生CMI 3
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei
+      - 专线|美国01|原生Seattle 2
+      - 专线|美国02|原生Seattle 2
       - 专线|美国03|原生Seattle 2
       - 专线|美国04|原生Seattle 2
-      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图01|原生NTT 2
       - 专线|西雅图02|原生NTT 3
-      - 标准|香港01|解锁流媒体 4
-      - 标准|香港02|解锁流媒体 4
-      - 标准|香港03|解锁流媒体 4
-      - 标准|香港04|解锁流媒体 4
-      - 标准|香港05|解锁流媒体 4
-      - 标准|日本03|解锁流媒体 4
-      - 标准|美国03|解锁流媒体 3
-      - 标准|新加坡01|解锁流媒体 4
-      - 标准|新加坡03|解锁流媒体 4
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港03|原生CMI 4
-      - 专线|香港04|原生HGCBBS 4
-      - 专线|香港05|原生HGCBBS 4
-      - 专线|香港06|原生CMI 3
-      - 专线|香港07|原生HKBN 4
-      - 专线|香港08|原生HKBN 4
-      - 专线|台湾01|原生Taipei 4
-      - 专线|美国01|原生Seattle
-      - 专线|美国02|原生Seattle 2
-      - 专线|美国03|原生Seattle 3
-      - 专线|美国04|原生Seattle 3
-      - 专线|西雅图01|原生NTT 4
-      - 标准|香港01|解锁流媒体 5
-      - 标准|香港02|解锁流媒体 5
-      - 标准|香港03|解锁流媒体 5
-      - 标准|香港04|解锁流媒体 5
-      - 标准|香港05|解锁流媒体 5
-      - 标准|日本03|解锁流媒体 5
-      - 标准|新加坡01|解锁流媒体 5
-      - 标准|新加坡03|解锁流媒体 5
-      - 专线|香港01|原生HGCBBS 4
-      - 专线|香港03|原生CMI 5
-      - 专线|香港04|原生HGCBBS 5
-      - 专线|香港05|原生HGCBBS 5
-      - 专线|香港06|原生CMI 4
-      - 专线|香港07|原生HKBN 5
-      - 专线|香港08|原生HKBN 5
-      - 专线|台湾01|原生Taipei 5
-      - 专线|台湾02|原生Taipei 2
-      - 专线|美国01|原生Seattle 2
-      - 专线|美国03|原生Seattle 4
-      - 专线|美国04|原生Seattle 4
-      - 专线|西雅图01|原生NTT 5
+      - _HK_香港
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - 美国_TG@nodesharing 2
+      - 美国_TG@nodesharing 3
+      - 美国_TG@nodesharing 4
       - _HK_香港 2
-      - 中国_TG@nodesharing 5
       - _HK_香港 3
+      - US(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-02
+      - 比利时_TG@nodesharing
+      - 台湾w-油管 2
+      - _中国_（）_120
+      - _中国_（）_79
+      - 中国_TG@nodesharing 2
+      - HK|苏醒云|购买支持发展
+      - 香港免流节点2号|10Gps
+      - Pool_🇭🇰HK_591
+      - Pool_🇭🇰HK_621
+      - A-aV2RAY-CMCC-香港-097
+      - 中国_TG@nodesharing 3
       - _HK_香港 4
-      - _HK_香港 5
-      - "｜IPLC｜香港\n"
-      - Hong+Kong+07
-      - Hong+Kong+09
-      - Hong+Kong+14
-      - Hong+Kong+10
-      - +Hong+Kong+07
-      - +vpnpool-香港
+      - V2RAY-香港AZURE-落地
+      - _US_美国 8
+      - _US_美国 9
+      - _NL_荷兰
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
       - 中国_TG@nodesharing 6
       - 中国_TG@nodesharing 7
       - 中国_TG@nodesharing 8
-      - 中国_TG@nodesharing 9
-      - 中国_TG@nodesharing 10
+      - 香港_TG@nodesharing
+      - 基础|台湾01|负载均衡 3
+      - 基础|台湾03|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 3
+      - 基础|俄罗斯04|负载均衡
+      - 标准|美国02|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 3
+      - 标准|加拿大02|解锁流媒体 3
+      - 标准|新加坡01|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 3
+      - 专线|香港01|原生HGCBBS 3
+      - 专线|香港02|原生HGCBBS
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国01|原生Seattle 3
+      - 专线|美国02|原生Seattle 3
+      - 专线|美国03|原生Seattle 3
+      - 专线|美国04|原生Seattle 3
+      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图02|原生NTT 4
+      - 基础|台湾01|负载均衡 4
+      - 基础|台湾02|负载均衡 2
+      - 基础|台湾03|负载均衡 3
+      - 标准|美国02|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 4
+      - 专线|香港04|原生HGCBBS 4
+      - 专线|香港05|原生HGCBBS 4
+      - 基础|台湾03|负载均衡 4
+      - 基础|台湾04|负载均衡 3
+      - 基础|俄罗斯03|负载均衡 4
+      - 基础|俄罗斯04|负载均衡 2
+      - 标准|美国01|解锁流媒体 3
+      - 标准|美国02|解锁流媒体 4
+      - 标准|印度02|解锁流媒体 4
+      - 标准|加拿大02|解锁流媒体 4
+      - 标准|新加坡01|解锁流媒体 4
+      - 标准|新加坡02|解锁流媒体 5
+      - 专线|香港01|原生HGCBBS 4
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 5
+      - 专线|香港05|原生HGCBBS 5
+      - 专线|香港07|原生HKBN 4
+      - 专线|香港08|原生HKBN 4
+      - 专线|台湾01|原生Taipei 4
+      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei 2
+      - 专线|美国01|原生Seattle 4
+      - 专线|美国02|原生Seattle 4
+      - 专线|美国03|原生Seattle 4
+      - 专线|美国04|原生Seattle 4
+      - 专线|西雅图01|原生NTT 4
+      - 专线|西雅图02|原生NTT 5
+      - V1-俄罗斯01 中继C 1.2x
+      - V1-俄罗斯01 中继D 1.2x
+      - V1-台湾05 中继A 2x
+      - V1-日本B组 直连 速度随缘 1x
+      - V1-香港B组 直连 速度随缘 1x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 共享
+      - _NON_FMYC-2021.11.28_184
       - 专线|西雅图02|原生NTT
-      - vpnpool-香港
-      - 4.06|CN中国55
+      - 回国专线贵州
+      - 电信二区(四川)
+      - HK(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-092
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-095
+      - A-aV2RAY-CMCC-香港-A04
+      - A-aV2RAY-CMCC-香港-A06
+      - A-V2RAY-加速-韩国01
+      - v2ray-BGP-韩国B02
+      - v2ray-BGP-韩国B03
+      - V2RAY-俄罗斯-西伯利亚02
       - V2RAY-香港-HKT-支持NETFLIX-03
+      - V2RAY-香港-HKT-支持NETFLIX-04
+      - V2RAY-香港AWV09
+      - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
       - V2RAY-香港AZURE-落地09
-      - Hong Kong 11
+      - 【新鸟免费】俄罗斯RU-Justhost 04 免流 1.0x
+      - 【新鸟免费】美国UA -DO 05 免流 1.0x
+      - 【新鸟免费】美国UA -DO 06 免流 1.0x
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
+      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
@@ -475,133 +641,155 @@ proxy-groups:
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
       - 专线|香港08|原生HGCBBS
       - YouTube-由零开始
-      - 专线|西雅图01|原生NTT
-      - HK(Youtube技术分享室整理)
+      - 标准|中国台湾04|解锁流媒体
       - CYL-科技（202201.04）
-      - 香港1|tg频道:@ripaojiedian
-      - _HK_香港
+      - _US_美国
       - 中国_TG@nodesharing
-      - 中国_TG@nodesharing 2
-      - 中国_TG@nodesharing 3
-      - 中国_TG@nodesharing 4
+      - 美国_TG@nodesharing
+      - 基础|台湾01|负载均衡
+      - 基础|台湾02|负载均衡
+      - 基础|台湾04|负载均衡
+      - 基础|俄罗斯03|负载均衡
       - 标准|香港01|解锁流媒体
       - 标准|香港02|解锁流媒体
-      - 标准|香港03|解锁流媒体
-      - 标准|香港04|解锁流媒体
       - 标准|香港05|解锁流媒体
-      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体
+      - 标准|美国02|解锁流媒体
+      - 标准|印度02|解锁流媒体
+      - 标准|加拿大02|解锁流媒体
       - 标准|新加坡01|解锁流媒体
-      - 标准|新加坡03|解锁流媒体
-      - 专线|香港03|原生CMI
+      - 标准|新加坡02|解锁流媒体
+      - 专线|香港01|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
+      - 专线|美国01|原生Seattle
       - 专线|美国02|原生Seattle
       - 专线|美国03|原生Seattle
-      - 专线|西雅图01|原生NTT 2
+      - 专线|美国04|原生Seattle
+      - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
-      - 标准|香港01|解锁流媒体 2
-      - 标准|香港02|解锁流媒体 2
-      - 标准|香港03|解锁流媒体 2
-      - 标准|香港04|解锁流媒体 2
-      - 标准|香港05|解锁流媒体 2
-      - 标准|日本03|解锁流媒体 2
-      - 标准|美国03|解锁流媒体
+      - 专线|俄罗斯03|原生Moscow
+      - 基础|台湾01|负载均衡 2
+      - 基础|台湾03|负载均衡
+      - 基础|台湾04|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 2
+      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 2
+      - 标准|加拿大02|解锁流媒体 2
       - 标准|新加坡01|解锁流媒体 2
-      - 标准|新加坡03|解锁流媒体 2
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港03|原生CMI 2
+      - 标准|新加坡02|解锁流媒体 2
+      - 专线|香港01|原生HGCBBS 2
       - 专线|香港04|原生HGCBBS 2
       - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI
       - 专线|香港07|原生HKBN 2
       - 专线|香港08|原生HKBN 2
       - 专线|台湾01|原生Taipei 2
-      - 专线|美国04|原生Seattle
-      - 标准|香港01|解锁流媒体 3
-      - 标准|香港02|解锁流媒体 3
-      - 标准|香港03|解锁流媒体 3
-      - 标准|香港04|解锁流媒体 3
-      - 标准|香港05|解锁流媒体 3
-      - 标准|日本03|解锁流媒体 3
-      - 标准|美国03|解锁流媒体 2
-      - 标准|新加坡01|解锁流媒体 3
-      - 标准|新加坡03|解锁流媒体 3
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港03|原生CMI 3
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei
+      - 专线|美国01|原生Seattle 2
+      - 专线|美国02|原生Seattle 2
       - 专线|美国03|原生Seattle 2
       - 专线|美国04|原生Seattle 2
-      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图01|原生NTT 2
       - 专线|西雅图02|原生NTT 3
-      - 标准|香港01|解锁流媒体 4
-      - 标准|香港02|解锁流媒体 4
-      - 标准|香港03|解锁流媒体 4
-      - 标准|香港04|解锁流媒体 4
-      - 标准|香港05|解锁流媒体 4
-      - 标准|日本03|解锁流媒体 4
-      - 标准|美国03|解锁流媒体 3
-      - 标准|新加坡01|解锁流媒体 4
-      - 标准|新加坡03|解锁流媒体 4
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港03|原生CMI 4
-      - 专线|香港04|原生HGCBBS 4
-      - 专线|香港05|原生HGCBBS 4
-      - 专线|香港06|原生CMI 3
-      - 专线|香港07|原生HKBN 4
-      - 专线|香港08|原生HKBN 4
-      - 专线|台湾01|原生Taipei 4
-      - 专线|美国01|原生Seattle
-      - 专线|美国02|原生Seattle 2
-      - 专线|美国03|原生Seattle 3
-      - 专线|美国04|原生Seattle 3
-      - 专线|西雅图01|原生NTT 4
-      - 标准|香港01|解锁流媒体 5
-      - 标准|香港02|解锁流媒体 5
-      - 标准|香港03|解锁流媒体 5
-      - 标准|香港04|解锁流媒体 5
-      - 标准|香港05|解锁流媒体 5
-      - 标准|日本03|解锁流媒体 5
-      - 标准|新加坡01|解锁流媒体 5
-      - 标准|新加坡03|解锁流媒体 5
-      - 专线|香港01|原生HGCBBS 4
-      - 专线|香港03|原生CMI 5
-      - 专线|香港04|原生HGCBBS 5
-      - 专线|香港05|原生HGCBBS 5
-      - 专线|香港06|原生CMI 4
-      - 专线|香港07|原生HKBN 5
-      - 专线|香港08|原生HKBN 5
-      - 专线|台湾01|原生Taipei 5
-      - 专线|台湾02|原生Taipei 2
-      - 专线|美国01|原生Seattle 2
-      - 专线|美国03|原生Seattle 4
-      - 专线|美国04|原生Seattle 4
-      - 专线|西雅图01|原生NTT 5
+      - _HK_香港
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - 美国_TG@nodesharing 2
+      - 美国_TG@nodesharing 3
+      - 美国_TG@nodesharing 4
       - _HK_香港 2
-      - 中国_TG@nodesharing 5
       - _HK_香港 3
+      - US(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-02
+      - 比利时_TG@nodesharing
+      - 台湾w-油管 2
+      - _中国_（）_120
+      - _中国_（）_79
+      - 中国_TG@nodesharing 2
+      - HK|苏醒云|购买支持发展
+      - 香港免流节点2号|10Gps
+      - Pool_🇭🇰HK_591
+      - Pool_🇭🇰HK_621
+      - A-aV2RAY-CMCC-香港-097
+      - 中国_TG@nodesharing 3
       - _HK_香港 4
-      - _HK_香港 5
-      - "｜IPLC｜香港\n"
-      - Hong+Kong+07
-      - Hong+Kong+09
-      - Hong+Kong+14
-      - Hong+Kong+10
-      - +Hong+Kong+07
-      - +vpnpool-香港
+      - V2RAY-香港AZURE-落地
+      - _US_美国 8
+      - _US_美国 9
+      - _NL_荷兰
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
       - 中国_TG@nodesharing 6
       - 中国_TG@nodesharing 7
       - 中国_TG@nodesharing 8
-      - 中国_TG@nodesharing 9
-      - 中国_TG@nodesharing 10
+      - 香港_TG@nodesharing
+      - 基础|台湾01|负载均衡 3
+      - 基础|台湾03|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 3
+      - 基础|俄罗斯04|负载均衡
+      - 标准|美国02|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 3
+      - 标准|加拿大02|解锁流媒体 3
+      - 标准|新加坡01|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 3
+      - 专线|香港01|原生HGCBBS 3
+      - 专线|香港02|原生HGCBBS
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国01|原生Seattle 3
+      - 专线|美国02|原生Seattle 3
+      - 专线|美国03|原生Seattle 3
+      - 专线|美国04|原生Seattle 3
+      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图02|原生NTT 4
+      - 基础|台湾01|负载均衡 4
+      - 基础|台湾02|负载均衡 2
+      - 基础|台湾03|负载均衡 3
+      - 标准|美国02|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 4
+      - 专线|香港04|原生HGCBBS 4
+      - 专线|香港05|原生HGCBBS 4
+      - 基础|台湾03|负载均衡 4
+      - 基础|台湾04|负载均衡 3
+      - 基础|俄罗斯03|负载均衡 4
+      - 基础|俄罗斯04|负载均衡 2
+      - 标准|美国01|解锁流媒体 3
+      - 标准|美国02|解锁流媒体 4
+      - 标准|印度02|解锁流媒体 4
+      - 标准|加拿大02|解锁流媒体 4
+      - 标准|新加坡01|解锁流媒体 4
+      - 标准|新加坡02|解锁流媒体 5
+      - 专线|香港01|原生HGCBBS 4
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 5
+      - 专线|香港05|原生HGCBBS 5
+      - 专线|香港07|原生HKBN 4
+      - 专线|香港08|原生HKBN 4
+      - 专线|台湾01|原生Taipei 4
+      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei 2
+      - 专线|美国01|原生Seattle 4
+      - 专线|美国02|原生Seattle 4
+      - 专线|美国03|原生Seattle 4
+      - 专线|美国04|原生Seattle 4
+      - 专线|西雅图01|原生NTT 4
+      - 专线|西雅图02|原生NTT 5
+      - V1-俄罗斯01 中继C 1.2x
+      - V1-俄罗斯01 中继D 1.2x
+      - V1-台湾05 中继A 2x
+      - V1-日本B组 直连 速度随缘 1x
+      - V1-香港B组 直连 速度随缘 1x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -620,15 +808,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 共享
+      - _NON_FMYC-2021.11.28_184
       - 专线|西雅图02|原生NTT
-      - vpnpool-香港
-      - 4.06|CN中国55
+      - 回国专线贵州
+      - 电信二区(四川)
+      - HK(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-092
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-095
+      - A-aV2RAY-CMCC-香港-A04
+      - A-aV2RAY-CMCC-香港-A06
+      - A-V2RAY-加速-韩国01
+      - v2ray-BGP-韩国B02
+      - v2ray-BGP-韩国B03
+      - V2RAY-俄罗斯-西伯利亚02
       - V2RAY-香港-HKT-支持NETFLIX-03
+      - V2RAY-香港-HKT-支持NETFLIX-04
+      - V2RAY-香港AWV09
+      - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
       - V2RAY-香港AZURE-落地09
-      - Hong Kong 11
+      - 【新鸟免费】俄罗斯RU-Justhost 04 免流 1.0x
+      - 【新鸟免费】美国UA -DO 05 免流 1.0x
+      - 【新鸟免费】美国UA -DO 06 免流 1.0x
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
+      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
@@ -638,232 +851,275 @@ proxy-groups:
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
       - 专线|香港08|原生HGCBBS
       - YouTube-由零开始
-      - 专线|西雅图01|原生NTT
-      - HK(Youtube技术分享室整理)
+      - 标准|中国台湾04|解锁流媒体
       - CYL-科技（202201.04）
-      - 香港1|tg频道:@ripaojiedian
-      - _HK_香港
+      - _US_美国
       - 中国_TG@nodesharing
-      - 中国_TG@nodesharing 2
-      - 中国_TG@nodesharing 3
-      - 中国_TG@nodesharing 4
+      - 美国_TG@nodesharing
+      - 基础|台湾01|负载均衡
+      - 基础|台湾02|负载均衡
+      - 基础|台湾04|负载均衡
+      - 基础|俄罗斯03|负载均衡
       - 标准|香港01|解锁流媒体
       - 标准|香港02|解锁流媒体
-      - 标准|香港03|解锁流媒体
-      - 标准|香港04|解锁流媒体
       - 标准|香港05|解锁流媒体
-      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体
+      - 标准|美国02|解锁流媒体
+      - 标准|印度02|解锁流媒体
+      - 标准|加拿大02|解锁流媒体
       - 标准|新加坡01|解锁流媒体
-      - 标准|新加坡03|解锁流媒体
-      - 专线|香港03|原生CMI
+      - 标准|新加坡02|解锁流媒体
+      - 专线|香港01|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
+      - 专线|美国01|原生Seattle
       - 专线|美国02|原生Seattle
       - 专线|美国03|原生Seattle
-      - 专线|西雅图01|原生NTT 2
+      - 专线|美国04|原生Seattle
+      - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
-      - 标准|香港01|解锁流媒体 2
-      - 标准|香港02|解锁流媒体 2
-      - 标准|香港03|解锁流媒体 2
-      - 标准|香港04|解锁流媒体 2
-      - 标准|香港05|解锁流媒体 2
-      - 标准|日本03|解锁流媒体 2
-      - 标准|美国03|解锁流媒体
+      - 专线|俄罗斯03|原生Moscow
+      - 基础|台湾01|负载均衡 2
+      - 基础|台湾03|负载均衡
+      - 基础|台湾04|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 2
+      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 2
+      - 标准|加拿大02|解锁流媒体 2
       - 标准|新加坡01|解锁流媒体 2
-      - 标准|新加坡03|解锁流媒体 2
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港03|原生CMI 2
+      - 标准|新加坡02|解锁流媒体 2
+      - 专线|香港01|原生HGCBBS 2
       - 专线|香港04|原生HGCBBS 2
       - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI
       - 专线|香港07|原生HKBN 2
       - 专线|香港08|原生HKBN 2
       - 专线|台湾01|原生Taipei 2
-      - 专线|美国04|原生Seattle
-      - 标准|香港01|解锁流媒体 3
-      - 标准|香港02|解锁流媒体 3
-      - 标准|香港03|解锁流媒体 3
-      - 标准|香港04|解锁流媒体 3
-      - 标准|香港05|解锁流媒体 3
-      - 标准|日本03|解锁流媒体 3
-      - 标准|美国03|解锁流媒体 2
-      - 标准|新加坡01|解锁流媒体 3
-      - 标准|新加坡03|解锁流媒体 3
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港03|原生CMI 3
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei
+      - 专线|美国01|原生Seattle 2
+      - 专线|美国02|原生Seattle 2
       - 专线|美国03|原生Seattle 2
       - 专线|美国04|原生Seattle 2
-      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图01|原生NTT 2
       - 专线|西雅图02|原生NTT 3
-      - 标准|香港01|解锁流媒体 4
-      - 标准|香港02|解锁流媒体 4
-      - 标准|香港03|解锁流媒体 4
-      - 标准|香港04|解锁流媒体 4
-      - 标准|香港05|解锁流媒体 4
-      - 标准|日本03|解锁流媒体 4
-      - 标准|美国03|解锁流媒体 3
-      - 标准|新加坡01|解锁流媒体 4
-      - 标准|新加坡03|解锁流媒体 4
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港03|原生CMI 4
-      - 专线|香港04|原生HGCBBS 4
-      - 专线|香港05|原生HGCBBS 4
-      - 专线|香港06|原生CMI 3
-      - 专线|香港07|原生HKBN 4
-      - 专线|香港08|原生HKBN 4
-      - 专线|台湾01|原生Taipei 4
-      - 专线|美国01|原生Seattle
-      - 专线|美国02|原生Seattle 2
-      - 专线|美国03|原生Seattle 3
-      - 专线|美国04|原生Seattle 3
-      - 专线|西雅图01|原生NTT 4
-      - 标准|香港01|解锁流媒体 5
-      - 标准|香港02|解锁流媒体 5
-      - 标准|香港03|解锁流媒体 5
-      - 标准|香港04|解锁流媒体 5
-      - 标准|香港05|解锁流媒体 5
-      - 标准|日本03|解锁流媒体 5
-      - 标准|新加坡01|解锁流媒体 5
-      - 标准|新加坡03|解锁流媒体 5
-      - 专线|香港01|原生HGCBBS 4
-      - 专线|香港03|原生CMI 5
-      - 专线|香港04|原生HGCBBS 5
-      - 专线|香港05|原生HGCBBS 5
-      - 专线|香港06|原生CMI 4
-      - 专线|香港07|原生HKBN 5
-      - 专线|香港08|原生HKBN 5
-      - 专线|台湾01|原生Taipei 5
-      - 专线|台湾02|原生Taipei 2
-      - 专线|美国01|原生Seattle 2
-      - 专线|美国03|原生Seattle 4
-      - 专线|美国04|原生Seattle 4
-      - 专线|西雅图01|原生NTT 5
+      - _HK_香港
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - 美国_TG@nodesharing 2
+      - 美国_TG@nodesharing 3
+      - 美国_TG@nodesharing 4
       - _HK_香港 2
-      - 中国_TG@nodesharing 5
       - _HK_香港 3
+      - US(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-02
+      - 比利时_TG@nodesharing
+      - 台湾w-油管 2
+      - _中国_（）_120
+      - _中国_（）_79
+      - 中国_TG@nodesharing 2
+      - HK|苏醒云|购买支持发展
+      - 香港免流节点2号|10Gps
+      - Pool_🇭🇰HK_591
+      - Pool_🇭🇰HK_621
+      - A-aV2RAY-CMCC-香港-097
+      - 中国_TG@nodesharing 3
       - _HK_香港 4
-      - _HK_香港 5
-      - "｜IPLC｜香港\n"
-      - Hong+Kong+07
-      - Hong+Kong+09
-      - Hong+Kong+14
-      - Hong+Kong+10
-      - +Hong+Kong+07
-      - +vpnpool-香港
+      - V2RAY-香港AZURE-落地
+      - _US_美国 8
+      - _US_美国 9
+      - _NL_荷兰
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
       - 中国_TG@nodesharing 6
       - 中国_TG@nodesharing 7
       - 中国_TG@nodesharing 8
-      - 中国_TG@nodesharing 9
-      - 中国_TG@nodesharing 10
+      - 香港_TG@nodesharing
+      - 基础|台湾01|负载均衡 3
+      - 基础|台湾03|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 3
+      - 基础|俄罗斯04|负载均衡
+      - 标准|美国02|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 3
+      - 标准|加拿大02|解锁流媒体 3
+      - 标准|新加坡01|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 3
+      - 专线|香港01|原生HGCBBS 3
+      - 专线|香港02|原生HGCBBS
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国01|原生Seattle 3
+      - 专线|美国02|原生Seattle 3
+      - 专线|美国03|原生Seattle 3
+      - 专线|美国04|原生Seattle 3
+      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图02|原生NTT 4
+      - 基础|台湾01|负载均衡 4
+      - 基础|台湾02|负载均衡 2
+      - 基础|台湾03|负载均衡 3
+      - 标准|美国02|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 4
+      - 专线|香港04|原生HGCBBS 4
+      - 专线|香港05|原生HGCBBS 4
+      - 基础|台湾03|负载均衡 4
+      - 基础|台湾04|负载均衡 3
+      - 基础|俄罗斯03|负载均衡 4
+      - 基础|俄罗斯04|负载均衡 2
+      - 标准|美国01|解锁流媒体 3
+      - 标准|美国02|解锁流媒体 4
+      - 标准|印度02|解锁流媒体 4
+      - 标准|加拿大02|解锁流媒体 4
+      - 标准|新加坡01|解锁流媒体 4
+      - 标准|新加坡02|解锁流媒体 5
+      - 专线|香港01|原生HGCBBS 4
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 5
+      - 专线|香港05|原生HGCBBS 5
+      - 专线|香港07|原生HKBN 4
+      - 专线|香港08|原生HKBN 4
+      - 专线|台湾01|原生Taipei 4
+      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei 2
+      - 专线|美国01|原生Seattle 4
+      - 专线|美国02|原生Seattle 4
+      - 专线|美国03|原生Seattle 4
+      - 专线|美国04|原生Seattle 4
+      - 专线|西雅图01|原生NTT 4
+      - 专线|西雅图02|原生NTT 5
+      - V1-俄罗斯01 中继C 1.2x
+      - V1-俄罗斯01 中继D 1.2x
+      - V1-台湾05 中继A 2x
+      - V1-日本B组 直连 速度随缘 1x
+      - V1-香港B组 直连 速度随缘 1x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - vpnpool-香港
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-092
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-095
+      - A-aV2RAY-CMCC-香港-A04
+      - A-aV2RAY-CMCC-香港-A06
       - V2RAY-香港-HKT-支持NETFLIX-03
+      - V2RAY-香港-HKT-支持NETFLIX-04
+      - V2RAY-香港AWV09
+      - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
       - V2RAY-香港AZURE-落地09
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
       - 专线|香港08|原生HGCBBS
-      - 香港1|tg频道:@ripaojiedian
-      - _HK_香港
+      - 标准|中国台湾04|解锁流媒体
+      - 基础|台湾01|负载均衡
+      - 基础|台湾02|负载均衡
+      - 基础|台湾04|负载均衡
       - 标准|香港01|解锁流媒体
       - 标准|香港02|解锁流媒体
-      - 标准|香港03|解锁流媒体
-      - 标准|香港04|解锁流媒体
       - 标准|香港05|解锁流媒体
-      - 专线|香港03|原生CMI
+      - 专线|香港01|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
-      - 标准|香港01|解锁流媒体 2
-      - 标准|香港02|解锁流媒体 2
-      - 标准|香港03|解锁流媒体 2
-      - 标准|香港04|解锁流媒体 2
-      - 标准|香港05|解锁流媒体 2
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港03|原生CMI 2
+      - 基础|台湾01|负载均衡 2
+      - 基础|台湾03|负载均衡
+      - 基础|台湾04|负载均衡 2
+      - 专线|香港01|原生HGCBBS 2
       - 专线|香港04|原生HGCBBS 2
       - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI
       - 专线|香港07|原生HKBN 2
       - 专线|香港08|原生HKBN 2
       - 专线|台湾01|原生Taipei 2
-      - 标准|香港01|解锁流媒体 3
-      - 标准|香港02|解锁流媒体 3
-      - 标准|香港03|解锁流媒体 3
-      - 标准|香港04|解锁流媒体 3
-      - 标准|香港05|解锁流媒体 3
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港03|原生CMI 3
+      - 专线|台湾03|原生Taipei
+      - _HK_香港
+      - _HK_香港 2
+      - _HK_香港 3
+      - A-aV2RAY-CMCC-香港-02
+      - 台湾w-油管 2
+      - 香港免流节点2号|10Gps
+      - A-aV2RAY-CMCC-香港-097
+      - _HK_香港 4
+      - V2RAY-香港AZURE-落地
+      - 香港_TG@nodesharing
+      - 基础|台湾01|负载均衡 3
+      - 基础|台湾03|负载均衡 2
+      - 专线|香港01|原生HGCBBS 3
+      - 专线|香港02|原生HGCBBS
       - 专线|香港04|原生HGCBBS 3
       - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI 2
       - 专线|香港07|原生HKBN 3
       - 专线|香港08|原生HKBN 3
       - 专线|台湾01|原生Taipei 3
-      - 专线|台湾02|原生Taipei
-      - 标准|香港01|解锁流媒体 4
-      - 标准|香港02|解锁流媒体 4
-      - 标准|香港03|解锁流媒体 4
-      - 标准|香港04|解锁流媒体 4
-      - 标准|香港05|解锁流媒体 4
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港03|原生CMI 4
+      - 基础|台湾01|负载均衡 4
+      - 基础|台湾02|负载均衡 2
+      - 基础|台湾03|负载均衡 3
       - 专线|香港04|原生HGCBBS 4
       - 专线|香港05|原生HGCBBS 4
-      - 专线|香港06|原生CMI 3
+      - 基础|台湾03|负载均衡 4
+      - 基础|台湾04|负载均衡 3
+      - 专线|香港01|原生HGCBBS 4
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 5
+      - 专线|香港05|原生HGCBBS 5
       - 专线|香港07|原生HKBN 4
       - 专线|香港08|原生HKBN 4
       - 专线|台湾01|原生Taipei 4
-      - 标准|香港01|解锁流媒体 5
-      - 标准|香港02|解锁流媒体 5
-      - 标准|香港03|解锁流媒体 5
-      - 标准|香港04|解锁流媒体 5
-      - 标准|香港05|解锁流媒体 5
-      - 专线|香港01|原生HGCBBS 4
-      - 专线|香港03|原生CMI 5
-      - 专线|香港04|原生HGCBBS 5
-      - 专线|香港05|原生HGCBBS 5
-      - 专线|香港06|原生CMI 4
-      - 专线|香港07|原生HKBN 5
-      - 专线|香港08|原生HKBN 5
-      - 专线|台湾01|原生Taipei 5
-      - 专线|台湾02|原生Taipei 2
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
-      - _HK_香港 5
-      - "｜IPLC｜香港\n"
-      - +vpnpool-香港
+      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei 2
+      - V1-台湾05 中继A 2x
+      - V1-香港B组 直连 速度随缘 1x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 共享
+      - _NON_FMYC-2021.11.28_184
       - 专线|西雅图02|原生NTT
-      - vpnpool-香港
-      - 4.06|CN中国55
+      - 回国专线贵州
+      - 电信二区(四川)
+      - HK(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-092
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-095
+      - A-aV2RAY-CMCC-香港-A04
+      - A-aV2RAY-CMCC-香港-A06
+      - A-V2RAY-加速-韩国01
+      - v2ray-BGP-韩国B02
+      - v2ray-BGP-韩国B03
+      - V2RAY-俄罗斯-西伯利亚02
       - V2RAY-香港-HKT-支持NETFLIX-03
+      - V2RAY-香港-HKT-支持NETFLIX-04
+      - V2RAY-香港AWV09
+      - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
       - V2RAY-香港AZURE-落地09
-      - Hong Kong 11
+      - 【新鸟免费】俄罗斯RU-Justhost 04 免流 1.0x
+      - 【新鸟免费】美国UA -DO 05 免流 1.0x
+      - 【新鸟免费】美国UA -DO 06 免流 1.0x
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
+      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
@@ -873,147 +1129,194 @@ proxy-groups:
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
       - 专线|香港08|原生HGCBBS
       - YouTube-由零开始
-      - 专线|西雅图01|原生NTT
-      - HK(Youtube技术分享室整理)
+      - 标准|中国台湾04|解锁流媒体
       - CYL-科技（202201.04）
-      - 香港1|tg频道:@ripaojiedian
-      - _HK_香港
+      - _US_美国
       - 中国_TG@nodesharing
-      - 中国_TG@nodesharing 2
-      - 中国_TG@nodesharing 3
-      - 中国_TG@nodesharing 4
+      - 美国_TG@nodesharing
+      - 基础|台湾01|负载均衡
+      - 基础|台湾02|负载均衡
+      - 基础|台湾04|负载均衡
+      - 基础|俄罗斯03|负载均衡
       - 标准|香港01|解锁流媒体
       - 标准|香港02|解锁流媒体
-      - 标准|香港03|解锁流媒体
-      - 标准|香港04|解锁流媒体
       - 标准|香港05|解锁流媒体
-      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体
+      - 标准|美国02|解锁流媒体
+      - 标准|印度02|解锁流媒体
+      - 标准|加拿大02|解锁流媒体
       - 标准|新加坡01|解锁流媒体
-      - 标准|新加坡03|解锁流媒体
-      - 专线|香港03|原生CMI
+      - 标准|新加坡02|解锁流媒体
+      - 专线|香港01|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
+      - 专线|美国01|原生Seattle
       - 专线|美国02|原生Seattle
       - 专线|美国03|原生Seattle
-      - 专线|西雅图01|原生NTT 2
+      - 专线|美国04|原生Seattle
+      - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
-      - 标准|香港01|解锁流媒体 2
-      - 标准|香港02|解锁流媒体 2
-      - 标准|香港03|解锁流媒体 2
-      - 标准|香港04|解锁流媒体 2
-      - 标准|香港05|解锁流媒体 2
-      - 标准|日本03|解锁流媒体 2
-      - 标准|美国03|解锁流媒体
+      - 专线|俄罗斯03|原生Moscow
+      - 基础|台湾01|负载均衡 2
+      - 基础|台湾03|负载均衡
+      - 基础|台湾04|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 2
+      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 2
+      - 标准|加拿大02|解锁流媒体 2
       - 标准|新加坡01|解锁流媒体 2
-      - 标准|新加坡03|解锁流媒体 2
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港03|原生CMI 2
+      - 标准|新加坡02|解锁流媒体 2
+      - 专线|香港01|原生HGCBBS 2
       - 专线|香港04|原生HGCBBS 2
       - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI
       - 专线|香港07|原生HKBN 2
       - 专线|香港08|原生HKBN 2
       - 专线|台湾01|原生Taipei 2
-      - 专线|美国04|原生Seattle
-      - 标准|香港01|解锁流媒体 3
-      - 标准|香港02|解锁流媒体 3
-      - 标准|香港03|解锁流媒体 3
-      - 标准|香港04|解锁流媒体 3
-      - 标准|香港05|解锁流媒体 3
-      - 标准|日本03|解锁流媒体 3
-      - 标准|美国03|解锁流媒体 2
-      - 标准|新加坡01|解锁流媒体 3
-      - 标准|新加坡03|解锁流媒体 3
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港03|原生CMI 3
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei
+      - 专线|美国01|原生Seattle 2
+      - 专线|美国02|原生Seattle 2
       - 专线|美国03|原生Seattle 2
       - 专线|美国04|原生Seattle 2
-      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图01|原生NTT 2
       - 专线|西雅图02|原生NTT 3
-      - 标准|香港01|解锁流媒体 4
-      - 标准|香港02|解锁流媒体 4
-      - 标准|香港03|解锁流媒体 4
-      - 标准|香港04|解锁流媒体 4
-      - 标准|香港05|解锁流媒体 4
-      - 标准|日本03|解锁流媒体 4
-      - 标准|美国03|解锁流媒体 3
-      - 标准|新加坡01|解锁流媒体 4
-      - 标准|新加坡03|解锁流媒体 4
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港03|原生CMI 4
-      - 专线|香港04|原生HGCBBS 4
-      - 专线|香港05|原生HGCBBS 4
-      - 专线|香港06|原生CMI 3
-      - 专线|香港07|原生HKBN 4
-      - 专线|香港08|原生HKBN 4
-      - 专线|台湾01|原生Taipei 4
-      - 专线|美国01|原生Seattle
-      - 专线|美国02|原生Seattle 2
-      - 专线|美国03|原生Seattle 3
-      - 专线|美国04|原生Seattle 3
-      - 专线|西雅图01|原生NTT 4
-      - 标准|香港01|解锁流媒体 5
-      - 标准|香港02|解锁流媒体 5
-      - 标准|香港03|解锁流媒体 5
-      - 标准|香港04|解锁流媒体 5
-      - 标准|香港05|解锁流媒体 5
-      - 标准|日本03|解锁流媒体 5
-      - 标准|新加坡01|解锁流媒体 5
-      - 标准|新加坡03|解锁流媒体 5
-      - 专线|香港01|原生HGCBBS 4
-      - 专线|香港03|原生CMI 5
-      - 专线|香港04|原生HGCBBS 5
-      - 专线|香港05|原生HGCBBS 5
-      - 专线|香港06|原生CMI 4
-      - 专线|香港07|原生HKBN 5
-      - 专线|香港08|原生HKBN 5
-      - 专线|台湾01|原生Taipei 5
-      - 专线|台湾02|原生Taipei 2
-      - 专线|美国01|原生Seattle 2
-      - 专线|美国03|原生Seattle 4
-      - 专线|美国04|原生Seattle 4
-      - 专线|西雅图01|原生NTT 5
+      - _HK_香港
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - 美国_TG@nodesharing 2
+      - 美国_TG@nodesharing 3
+      - 美国_TG@nodesharing 4
       - _HK_香港 2
-      - 中国_TG@nodesharing 5
       - _HK_香港 3
+      - US(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-02
+      - 比利时_TG@nodesharing
+      - 台湾w-油管 2
+      - _中国_（）_120
+      - _中国_（）_79
+      - 中国_TG@nodesharing 2
+      - HK|苏醒云|购买支持发展
+      - 香港免流节点2号|10Gps
+      - Pool_🇭🇰HK_591
+      - Pool_🇭🇰HK_621
+      - A-aV2RAY-CMCC-香港-097
+      - 中国_TG@nodesharing 3
       - _HK_香港 4
-      - _HK_香港 5
-      - "｜IPLC｜香港\n"
-      - Hong+Kong+07
-      - Hong+Kong+09
-      - Hong+Kong+14
-      - Hong+Kong+10
-      - +Hong+Kong+07
-      - +vpnpool-香港
+      - V2RAY-香港AZURE-落地
+      - _US_美国 8
+      - _US_美国 9
+      - _NL_荷兰
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
       - 中国_TG@nodesharing 6
       - 中国_TG@nodesharing 7
       - 中国_TG@nodesharing 8
-      - 中国_TG@nodesharing 9
-      - 中国_TG@nodesharing 10
+      - 香港_TG@nodesharing
+      - 基础|台湾01|负载均衡 3
+      - 基础|台湾03|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 3
+      - 基础|俄罗斯04|负载均衡
+      - 标准|美国02|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 3
+      - 标准|加拿大02|解锁流媒体 3
+      - 标准|新加坡01|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 3
+      - 专线|香港01|原生HGCBBS 3
+      - 专线|香港02|原生HGCBBS
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国01|原生Seattle 3
+      - 专线|美国02|原生Seattle 3
+      - 专线|美国03|原生Seattle 3
+      - 专线|美国04|原生Seattle 3
+      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图02|原生NTT 4
+      - 基础|台湾01|负载均衡 4
+      - 基础|台湾02|负载均衡 2
+      - 基础|台湾03|负载均衡 3
+      - 标准|美国02|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 4
+      - 专线|香港04|原生HGCBBS 4
+      - 专线|香港05|原生HGCBBS 4
+      - 基础|台湾03|负载均衡 4
+      - 基础|台湾04|负载均衡 3
+      - 基础|俄罗斯03|负载均衡 4
+      - 基础|俄罗斯04|负载均衡 2
+      - 标准|美国01|解锁流媒体 3
+      - 标准|美国02|解锁流媒体 4
+      - 标准|印度02|解锁流媒体 4
+      - 标准|加拿大02|解锁流媒体 4
+      - 标准|新加坡01|解锁流媒体 4
+      - 标准|新加坡02|解锁流媒体 5
+      - 专线|香港01|原生HGCBBS 4
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 5
+      - 专线|香港05|原生HGCBBS 5
+      - 专线|香港07|原生HKBN 4
+      - 专线|香港08|原生HKBN 4
+      - 专线|台湾01|原生Taipei 4
+      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei 2
+      - 专线|美国01|原生Seattle 4
+      - 专线|美国02|原生Seattle 4
+      - 专线|美国03|原生Seattle 4
+      - 专线|美国04|原生Seattle 4
+      - 专线|西雅图01|原生NTT 4
+      - 专线|西雅图02|原生NTT 5
+      - V1-俄罗斯01 中继C 1.2x
+      - V1-俄罗斯01 中继D 1.2x
+      - V1-台湾05 中继A 2x
+      - V1-日本B组 直连 速度随缘 1x
+      - V1-香港B组 直连 速度随缘 1x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 共享
+      - _NON_FMYC-2021.11.28_184
       - 专线|西雅图02|原生NTT
-      - vpnpool-香港
-      - 4.06|CN中国55
+      - 回国专线贵州
+      - 电信二区(四川)
+      - HK(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-092
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-095
+      - A-aV2RAY-CMCC-香港-A04
+      - A-aV2RAY-CMCC-香港-A06
+      - A-V2RAY-加速-韩国01
+      - v2ray-BGP-韩国B02
+      - v2ray-BGP-韩国B03
+      - V2RAY-俄罗斯-西伯利亚02
       - V2RAY-香港-HKT-支持NETFLIX-03
+      - V2RAY-香港-HKT-支持NETFLIX-04
+      - V2RAY-香港AWV09
+      - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
       - V2RAY-香港AZURE-落地09
-      - Hong Kong 11
+      - 【新鸟免费】俄罗斯RU-Justhost 04 免流 1.0x
+      - 【新鸟免费】美国UA -DO 05 免流 1.0x
+      - 【新鸟免费】美国UA -DO 06 免流 1.0x
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
+      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
@@ -1023,148 +1326,195 @@ proxy-groups:
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
       - 专线|香港08|原生HGCBBS
       - YouTube-由零开始
-      - 专线|西雅图01|原生NTT
-      - HK(Youtube技术分享室整理)
+      - 标准|中国台湾04|解锁流媒体
       - CYL-科技（202201.04）
-      - 香港1|tg频道:@ripaojiedian
-      - _HK_香港
+      - _US_美国
       - 中国_TG@nodesharing
-      - 中国_TG@nodesharing 2
-      - 中国_TG@nodesharing 3
-      - 中国_TG@nodesharing 4
+      - 美国_TG@nodesharing
+      - 基础|台湾01|负载均衡
+      - 基础|台湾02|负载均衡
+      - 基础|台湾04|负载均衡
+      - 基础|俄罗斯03|负载均衡
       - 标准|香港01|解锁流媒体
       - 标准|香港02|解锁流媒体
-      - 标准|香港03|解锁流媒体
-      - 标准|香港04|解锁流媒体
       - 标准|香港05|解锁流媒体
-      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体
+      - 标准|美国02|解锁流媒体
+      - 标准|印度02|解锁流媒体
+      - 标准|加拿大02|解锁流媒体
       - 标准|新加坡01|解锁流媒体
-      - 标准|新加坡03|解锁流媒体
-      - 专线|香港03|原生CMI
+      - 标准|新加坡02|解锁流媒体
+      - 专线|香港01|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
+      - 专线|美国01|原生Seattle
       - 专线|美国02|原生Seattle
       - 专线|美国03|原生Seattle
-      - 专线|西雅图01|原生NTT 2
+      - 专线|美国04|原生Seattle
+      - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
-      - 标准|香港01|解锁流媒体 2
-      - 标准|香港02|解锁流媒体 2
-      - 标准|香港03|解锁流媒体 2
-      - 标准|香港04|解锁流媒体 2
-      - 标准|香港05|解锁流媒体 2
-      - 标准|日本03|解锁流媒体 2
-      - 标准|美国03|解锁流媒体
+      - 专线|俄罗斯03|原生Moscow
+      - 基础|台湾01|负载均衡 2
+      - 基础|台湾03|负载均衡
+      - 基础|台湾04|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 2
+      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 2
+      - 标准|加拿大02|解锁流媒体 2
       - 标准|新加坡01|解锁流媒体 2
-      - 标准|新加坡03|解锁流媒体 2
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港03|原生CMI 2
+      - 标准|新加坡02|解锁流媒体 2
+      - 专线|香港01|原生HGCBBS 2
       - 专线|香港04|原生HGCBBS 2
       - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI
       - 专线|香港07|原生HKBN 2
       - 专线|香港08|原生HKBN 2
       - 专线|台湾01|原生Taipei 2
-      - 专线|美国04|原生Seattle
-      - 标准|香港01|解锁流媒体 3
-      - 标准|香港02|解锁流媒体 3
-      - 标准|香港03|解锁流媒体 3
-      - 标准|香港04|解锁流媒体 3
-      - 标准|香港05|解锁流媒体 3
-      - 标准|日本03|解锁流媒体 3
-      - 标准|美国03|解锁流媒体 2
-      - 标准|新加坡01|解锁流媒体 3
-      - 标准|新加坡03|解锁流媒体 3
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港03|原生CMI 3
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei
+      - 专线|美国01|原生Seattle 2
+      - 专线|美国02|原生Seattle 2
       - 专线|美国03|原生Seattle 2
       - 专线|美国04|原生Seattle 2
-      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图01|原生NTT 2
       - 专线|西雅图02|原生NTT 3
-      - 标准|香港01|解锁流媒体 4
-      - 标准|香港02|解锁流媒体 4
-      - 标准|香港03|解锁流媒体 4
-      - 标准|香港04|解锁流媒体 4
-      - 标准|香港05|解锁流媒体 4
-      - 标准|日本03|解锁流媒体 4
-      - 标准|美国03|解锁流媒体 3
-      - 标准|新加坡01|解锁流媒体 4
-      - 标准|新加坡03|解锁流媒体 4
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港03|原生CMI 4
-      - 专线|香港04|原生HGCBBS 4
-      - 专线|香港05|原生HGCBBS 4
-      - 专线|香港06|原生CMI 3
-      - 专线|香港07|原生HKBN 4
-      - 专线|香港08|原生HKBN 4
-      - 专线|台湾01|原生Taipei 4
-      - 专线|美国01|原生Seattle
-      - 专线|美国02|原生Seattle 2
-      - 专线|美国03|原生Seattle 3
-      - 专线|美国04|原生Seattle 3
-      - 专线|西雅图01|原生NTT 4
-      - 标准|香港01|解锁流媒体 5
-      - 标准|香港02|解锁流媒体 5
-      - 标准|香港03|解锁流媒体 5
-      - 标准|香港04|解锁流媒体 5
-      - 标准|香港05|解锁流媒体 5
-      - 标准|日本03|解锁流媒体 5
-      - 标准|新加坡01|解锁流媒体 5
-      - 标准|新加坡03|解锁流媒体 5
-      - 专线|香港01|原生HGCBBS 4
-      - 专线|香港03|原生CMI 5
-      - 专线|香港04|原生HGCBBS 5
-      - 专线|香港05|原生HGCBBS 5
-      - 专线|香港06|原生CMI 4
-      - 专线|香港07|原生HKBN 5
-      - 专线|香港08|原生HKBN 5
-      - 专线|台湾01|原生Taipei 5
-      - 专线|台湾02|原生Taipei 2
-      - 专线|美国01|原生Seattle 2
-      - 专线|美国03|原生Seattle 4
-      - 专线|美国04|原生Seattle 4
-      - 专线|西雅图01|原生NTT 5
+      - _HK_香港
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - 美国_TG@nodesharing 2
+      - 美国_TG@nodesharing 3
+      - 美国_TG@nodesharing 4
       - _HK_香港 2
-      - 中国_TG@nodesharing 5
       - _HK_香港 3
+      - US(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-02
+      - 比利时_TG@nodesharing
+      - 台湾w-油管 2
+      - _中国_（）_120
+      - _中国_（）_79
+      - 中国_TG@nodesharing 2
+      - HK|苏醒云|购买支持发展
+      - 香港免流节点2号|10Gps
+      - Pool_🇭🇰HK_591
+      - Pool_🇭🇰HK_621
+      - A-aV2RAY-CMCC-香港-097
+      - 中国_TG@nodesharing 3
       - _HK_香港 4
-      - _HK_香港 5
-      - "｜IPLC｜香港\n"
-      - Hong+Kong+07
-      - Hong+Kong+09
-      - Hong+Kong+14
-      - Hong+Kong+10
-      - +Hong+Kong+07
-      - +vpnpool-香港
+      - V2RAY-香港AZURE-落地
+      - _US_美国 8
+      - _US_美国 9
+      - _NL_荷兰
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
       - 中国_TG@nodesharing 6
       - 中国_TG@nodesharing 7
       - 中国_TG@nodesharing 8
-      - 中国_TG@nodesharing 9
-      - 中国_TG@nodesharing 10
+      - 香港_TG@nodesharing
+      - 基础|台湾01|负载均衡 3
+      - 基础|台湾03|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 3
+      - 基础|俄罗斯04|负载均衡
+      - 标准|美国02|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 3
+      - 标准|加拿大02|解锁流媒体 3
+      - 标准|新加坡01|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 3
+      - 专线|香港01|原生HGCBBS 3
+      - 专线|香港02|原生HGCBBS
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国01|原生Seattle 3
+      - 专线|美国02|原生Seattle 3
+      - 专线|美国03|原生Seattle 3
+      - 专线|美国04|原生Seattle 3
+      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图02|原生NTT 4
+      - 基础|台湾01|负载均衡 4
+      - 基础|台湾02|负载均衡 2
+      - 基础|台湾03|负载均衡 3
+      - 标准|美国02|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 4
+      - 专线|香港04|原生HGCBBS 4
+      - 专线|香港05|原生HGCBBS 4
+      - 基础|台湾03|负载均衡 4
+      - 基础|台湾04|负载均衡 3
+      - 基础|俄罗斯03|负载均衡 4
+      - 基础|俄罗斯04|负载均衡 2
+      - 标准|美国01|解锁流媒体 3
+      - 标准|美国02|解锁流媒体 4
+      - 标准|印度02|解锁流媒体 4
+      - 标准|加拿大02|解锁流媒体 4
+      - 标准|新加坡01|解锁流媒体 4
+      - 标准|新加坡02|解锁流媒体 5
+      - 专线|香港01|原生HGCBBS 4
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 5
+      - 专线|香港05|原生HGCBBS 5
+      - 专线|香港07|原生HKBN 4
+      - 专线|香港08|原生HKBN 4
+      - 专线|台湾01|原生Taipei 4
+      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei 2
+      - 专线|美国01|原生Seattle 4
+      - 专线|美国02|原生Seattle 4
+      - 专线|美国03|原生Seattle 4
+      - 专线|美国04|原生Seattle 4
+      - 专线|西雅图01|原生NTT 4
+      - 专线|西雅图02|原生NTT 5
+      - V1-俄罗斯01 中继C 1.2x
+      - V1-俄罗斯01 中继D 1.2x
+      - V1-台湾05 中继A 2x
+      - V1-日本B组 直连 速度随缘 1x
+      - V1-香港B组 直连 速度随缘 1x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 共享
+      - _NON_FMYC-2021.11.28_184
       - 专线|西雅图02|原生NTT
-      - vpnpool-香港
-      - 4.06|CN中国55
+      - 回国专线贵州
+      - 电信二区(四川)
+      - HK(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-092
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-095
+      - A-aV2RAY-CMCC-香港-A04
+      - A-aV2RAY-CMCC-香港-A06
+      - A-V2RAY-加速-韩国01
+      - v2ray-BGP-韩国B02
+      - v2ray-BGP-韩国B03
+      - V2RAY-俄罗斯-西伯利亚02
       - V2RAY-香港-HKT-支持NETFLIX-03
+      - V2RAY-香港-HKT-支持NETFLIX-04
+      - V2RAY-香港AWV09
+      - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
       - V2RAY-香港AZURE-落地09
-      - Hong Kong 11
+      - 【新鸟免费】俄罗斯RU-Justhost 04 免流 1.0x
+      - 【新鸟免费】美国UA -DO 05 免流 1.0x
+      - 【新鸟免费】美国UA -DO 06 免流 1.0x
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
+      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
@@ -1174,133 +1524,155 @@ proxy-groups:
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
       - 专线|香港08|原生HGCBBS
       - YouTube-由零开始
-      - 专线|西雅图01|原生NTT
-      - HK(Youtube技术分享室整理)
+      - 标准|中国台湾04|解锁流媒体
       - CYL-科技（202201.04）
-      - 香港1|tg频道:@ripaojiedian
-      - _HK_香港
+      - _US_美国
       - 中国_TG@nodesharing
-      - 中国_TG@nodesharing 2
-      - 中国_TG@nodesharing 3
-      - 中国_TG@nodesharing 4
+      - 美国_TG@nodesharing
+      - 基础|台湾01|负载均衡
+      - 基础|台湾02|负载均衡
+      - 基础|台湾04|负载均衡
+      - 基础|俄罗斯03|负载均衡
       - 标准|香港01|解锁流媒体
       - 标准|香港02|解锁流媒体
-      - 标准|香港03|解锁流媒体
-      - 标准|香港04|解锁流媒体
       - 标准|香港05|解锁流媒体
-      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体
+      - 标准|美国02|解锁流媒体
+      - 标准|印度02|解锁流媒体
+      - 标准|加拿大02|解锁流媒体
       - 标准|新加坡01|解锁流媒体
-      - 标准|新加坡03|解锁流媒体
-      - 专线|香港03|原生CMI
+      - 标准|新加坡02|解锁流媒体
+      - 专线|香港01|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
+      - 专线|美国01|原生Seattle
       - 专线|美国02|原生Seattle
       - 专线|美国03|原生Seattle
-      - 专线|西雅图01|原生NTT 2
+      - 专线|美国04|原生Seattle
+      - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
-      - 标准|香港01|解锁流媒体 2
-      - 标准|香港02|解锁流媒体 2
-      - 标准|香港03|解锁流媒体 2
-      - 标准|香港04|解锁流媒体 2
-      - 标准|香港05|解锁流媒体 2
-      - 标准|日本03|解锁流媒体 2
-      - 标准|美国03|解锁流媒体
+      - 专线|俄罗斯03|原生Moscow
+      - 基础|台湾01|负载均衡 2
+      - 基础|台湾03|负载均衡
+      - 基础|台湾04|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 2
+      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 2
+      - 标准|加拿大02|解锁流媒体 2
       - 标准|新加坡01|解锁流媒体 2
-      - 标准|新加坡03|解锁流媒体 2
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港03|原生CMI 2
+      - 标准|新加坡02|解锁流媒体 2
+      - 专线|香港01|原生HGCBBS 2
       - 专线|香港04|原生HGCBBS 2
       - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI
       - 专线|香港07|原生HKBN 2
       - 专线|香港08|原生HKBN 2
       - 专线|台湾01|原生Taipei 2
-      - 专线|美国04|原生Seattle
-      - 标准|香港01|解锁流媒体 3
-      - 标准|香港02|解锁流媒体 3
-      - 标准|香港03|解锁流媒体 3
-      - 标准|香港04|解锁流媒体 3
-      - 标准|香港05|解锁流媒体 3
-      - 标准|日本03|解锁流媒体 3
-      - 标准|美国03|解锁流媒体 2
-      - 标准|新加坡01|解锁流媒体 3
-      - 标准|新加坡03|解锁流媒体 3
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港03|原生CMI 3
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei
+      - 专线|美国01|原生Seattle 2
+      - 专线|美国02|原生Seattle 2
       - 专线|美国03|原生Seattle 2
       - 专线|美国04|原生Seattle 2
-      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图01|原生NTT 2
       - 专线|西雅图02|原生NTT 3
-      - 标准|香港01|解锁流媒体 4
-      - 标准|香港02|解锁流媒体 4
-      - 标准|香港03|解锁流媒体 4
-      - 标准|香港04|解锁流媒体 4
-      - 标准|香港05|解锁流媒体 4
-      - 标准|日本03|解锁流媒体 4
-      - 标准|美国03|解锁流媒体 3
-      - 标准|新加坡01|解锁流媒体 4
-      - 标准|新加坡03|解锁流媒体 4
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港03|原生CMI 4
-      - 专线|香港04|原生HGCBBS 4
-      - 专线|香港05|原生HGCBBS 4
-      - 专线|香港06|原生CMI 3
-      - 专线|香港07|原生HKBN 4
-      - 专线|香港08|原生HKBN 4
-      - 专线|台湾01|原生Taipei 4
-      - 专线|美国01|原生Seattle
-      - 专线|美国02|原生Seattle 2
-      - 专线|美国03|原生Seattle 3
-      - 专线|美国04|原生Seattle 3
-      - 专线|西雅图01|原生NTT 4
-      - 标准|香港01|解锁流媒体 5
-      - 标准|香港02|解锁流媒体 5
-      - 标准|香港03|解锁流媒体 5
-      - 标准|香港04|解锁流媒体 5
-      - 标准|香港05|解锁流媒体 5
-      - 标准|日本03|解锁流媒体 5
-      - 标准|新加坡01|解锁流媒体 5
-      - 标准|新加坡03|解锁流媒体 5
-      - 专线|香港01|原生HGCBBS 4
-      - 专线|香港03|原生CMI 5
-      - 专线|香港04|原生HGCBBS 5
-      - 专线|香港05|原生HGCBBS 5
-      - 专线|香港06|原生CMI 4
-      - 专线|香港07|原生HKBN 5
-      - 专线|香港08|原生HKBN 5
-      - 专线|台湾01|原生Taipei 5
-      - 专线|台湾02|原生Taipei 2
-      - 专线|美国01|原生Seattle 2
-      - 专线|美国03|原生Seattle 4
-      - 专线|美国04|原生Seattle 4
-      - 专线|西雅图01|原生NTT 5
+      - _HK_香港
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - 美国_TG@nodesharing 2
+      - 美国_TG@nodesharing 3
+      - 美国_TG@nodesharing 4
       - _HK_香港 2
-      - 中国_TG@nodesharing 5
       - _HK_香港 3
+      - US(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-02
+      - 比利时_TG@nodesharing
+      - 台湾w-油管 2
+      - _中国_（）_120
+      - _中国_（）_79
+      - 中国_TG@nodesharing 2
+      - HK|苏醒云|购买支持发展
+      - 香港免流节点2号|10Gps
+      - Pool_🇭🇰HK_591
+      - Pool_🇭🇰HK_621
+      - A-aV2RAY-CMCC-香港-097
+      - 中国_TG@nodesharing 3
       - _HK_香港 4
-      - _HK_香港 5
-      - "｜IPLC｜香港\n"
-      - Hong+Kong+07
-      - Hong+Kong+09
-      - Hong+Kong+14
-      - Hong+Kong+10
-      - +Hong+Kong+07
-      - +vpnpool-香港
+      - V2RAY-香港AZURE-落地
+      - _US_美国 8
+      - _US_美国 9
+      - _NL_荷兰
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
       - 中国_TG@nodesharing 6
       - 中国_TG@nodesharing 7
       - 中国_TG@nodesharing 8
-      - 中国_TG@nodesharing 9
-      - 中国_TG@nodesharing 10
+      - 香港_TG@nodesharing
+      - 基础|台湾01|负载均衡 3
+      - 基础|台湾03|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 3
+      - 基础|俄罗斯04|负载均衡
+      - 标准|美国02|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 3
+      - 标准|加拿大02|解锁流媒体 3
+      - 标准|新加坡01|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 3
+      - 专线|香港01|原生HGCBBS 3
+      - 专线|香港02|原生HGCBBS
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国01|原生Seattle 3
+      - 专线|美国02|原生Seattle 3
+      - 专线|美国03|原生Seattle 3
+      - 专线|美国04|原生Seattle 3
+      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图02|原生NTT 4
+      - 基础|台湾01|负载均衡 4
+      - 基础|台湾02|负载均衡 2
+      - 基础|台湾03|负载均衡 3
+      - 标准|美国02|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 4
+      - 专线|香港04|原生HGCBBS 4
+      - 专线|香港05|原生HGCBBS 4
+      - 基础|台湾03|负载均衡 4
+      - 基础|台湾04|负载均衡 3
+      - 基础|俄罗斯03|负载均衡 4
+      - 基础|俄罗斯04|负载均衡 2
+      - 标准|美国01|解锁流媒体 3
+      - 标准|美国02|解锁流媒体 4
+      - 标准|印度02|解锁流媒体 4
+      - 标准|加拿大02|解锁流媒体 4
+      - 标准|新加坡01|解锁流媒体 4
+      - 标准|新加坡02|解锁流媒体 5
+      - 专线|香港01|原生HGCBBS 4
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 5
+      - 专线|香港05|原生HGCBBS 5
+      - 专线|香港07|原生HKBN 4
+      - 专线|香港08|原生HKBN 4
+      - 专线|台湾01|原生Taipei 4
+      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei 2
+      - 专线|美国01|原生Seattle 4
+      - 专线|美国02|原生Seattle 4
+      - 专线|美国03|原生Seattle 4
+      - 专线|美国04|原生Seattle 4
+      - 专线|西雅图01|原生NTT 4
+      - 专线|西雅图02|原生NTT 5
+      - V1-俄罗斯01 中继C 1.2x
+      - V1-俄罗斯01 中继D 1.2x
+      - V1-台湾05 中继A 2x
+      - V1-日本B组 直连 速度随缘 1x
+      - V1-香港B组 直连 速度随缘 1x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1316,15 +1688,40 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 共享
+      - _NON_FMYC-2021.11.28_184
       - 专线|西雅图02|原生NTT
-      - vpnpool-香港
-      - 4.06|CN中国55
+      - 回国专线贵州
+      - 电信二区(四川)
+      - HK(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-05
+      - A-aV2RAY-CMCC-香港-09
+      - A-aV2RAY-CMCC-香港-092
+      - A-aV2RAY-CMCC-香港-093
+      - A-aV2RAY-CMCC-香港-095
+      - A-aV2RAY-CMCC-香港-A04
+      - A-aV2RAY-CMCC-香港-A06
+      - A-V2RAY-加速-韩国01
+      - v2ray-BGP-韩国B02
+      - v2ray-BGP-韩国B03
+      - V2RAY-俄罗斯-西伯利亚02
       - V2RAY-香港-HKT-支持NETFLIX-03
+      - V2RAY-香港-HKT-支持NETFLIX-04
+      - V2RAY-香港AWV09
+      - V2RAY-香港AWV092
       - V2RAY-香港AZURE-落地05
       - V2RAY-香港AZURE-落地06
       - V2RAY-香港AZURE-落地09
-      - Hong Kong 11
+      - 【新鸟免费】俄罗斯RU-Justhost 04 免流 1.0x
+      - 【新鸟免费】美国UA -DO 05 免流 1.0x
+      - 【新鸟免费】美国UA -DO 06 免流 1.0x
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - "@SSRSUB-美国V08-付费推荐::suo.yt/ssrsub"
+      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
+      - "[vip1]︱V2ray②新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray③新加坡 1000M｜×1x｜限速100M"
+      - "[vip1]︱V2ray⑤新加坡 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑥日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑧日本 1000M｜×1x｜限速100M"
       - "[vip1]︱V2ray︱⑨日本 1000M｜×1x｜限速100M"
@@ -1334,133 +1731,155 @@ proxy-groups:
       - "[vip1]︱V2ray︱⑰香港 1000M｜×1x｜限速100M"
       - 专线|香港08|原生HGCBBS
       - YouTube-由零开始
-      - 专线|西雅图01|原生NTT
-      - HK(Youtube技术分享室整理)
+      - 标准|中国台湾04|解锁流媒体
       - CYL-科技（202201.04）
-      - 香港1|tg频道:@ripaojiedian
-      - _HK_香港
+      - _US_美国
       - 中国_TG@nodesharing
-      - 中国_TG@nodesharing 2
-      - 中国_TG@nodesharing 3
-      - 中国_TG@nodesharing 4
+      - 美国_TG@nodesharing
+      - 基础|台湾01|负载均衡
+      - 基础|台湾02|负载均衡
+      - 基础|台湾04|负载均衡
+      - 基础|俄罗斯03|负载均衡
       - 标准|香港01|解锁流媒体
       - 标准|香港02|解锁流媒体
-      - 标准|香港03|解锁流媒体
-      - 标准|香港04|解锁流媒体
       - 标准|香港05|解锁流媒体
-      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体
+      - 标准|美国02|解锁流媒体
+      - 标准|印度02|解锁流媒体
+      - 标准|加拿大02|解锁流媒体
       - 标准|新加坡01|解锁流媒体
-      - 标准|新加坡03|解锁流媒体
-      - 专线|香港03|原生CMI
+      - 标准|新加坡02|解锁流媒体
+      - 专线|香港01|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
+      - 专线|美国01|原生Seattle
       - 专线|美国02|原生Seattle
       - 专线|美国03|原生Seattle
-      - 专线|西雅图01|原生NTT 2
+      - 专线|美国04|原生Seattle
+      - 专线|西雅图01|原生NTT
       - 专线|西雅图02|原生NTT 2
-      - 标准|香港01|解锁流媒体 2
-      - 标准|香港02|解锁流媒体 2
-      - 标准|香港03|解锁流媒体 2
-      - 标准|香港04|解锁流媒体 2
-      - 标准|香港05|解锁流媒体 2
-      - 标准|日本03|解锁流媒体 2
-      - 标准|美国03|解锁流媒体
+      - 专线|俄罗斯03|原生Moscow
+      - 基础|台湾01|负载均衡 2
+      - 基础|台湾03|负载均衡
+      - 基础|台湾04|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 2
+      - 标准|日本03|解锁流媒体
+      - 标准|美国01|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 2
+      - 标准|加拿大02|解锁流媒体 2
       - 标准|新加坡01|解锁流媒体 2
-      - 标准|新加坡03|解锁流媒体 2
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港03|原生CMI 2
+      - 标准|新加坡02|解锁流媒体 2
+      - 专线|香港01|原生HGCBBS 2
       - 专线|香港04|原生HGCBBS 2
       - 专线|香港05|原生HGCBBS 2
-      - 专线|香港06|原生CMI
       - 专线|香港07|原生HKBN 2
       - 专线|香港08|原生HKBN 2
       - 专线|台湾01|原生Taipei 2
-      - 专线|美国04|原生Seattle
-      - 标准|香港01|解锁流媒体 3
-      - 标准|香港02|解锁流媒体 3
-      - 标准|香港03|解锁流媒体 3
-      - 标准|香港04|解锁流媒体 3
-      - 标准|香港05|解锁流媒体 3
-      - 标准|日本03|解锁流媒体 3
-      - 标准|美国03|解锁流媒体 2
-      - 标准|新加坡01|解锁流媒体 3
-      - 标准|新加坡03|解锁流媒体 3
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港03|原生CMI 3
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI 2
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei
+      - 专线|美国01|原生Seattle 2
+      - 专线|美国02|原生Seattle 2
       - 专线|美国03|原生Seattle 2
       - 专线|美国04|原生Seattle 2
-      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图01|原生NTT 2
       - 专线|西雅图02|原生NTT 3
-      - 标准|香港01|解锁流媒体 4
-      - 标准|香港02|解锁流媒体 4
-      - 标准|香港03|解锁流媒体 4
-      - 标准|香港04|解锁流媒体 4
-      - 标准|香港05|解锁流媒体 4
-      - 标准|日本03|解锁流媒体 4
-      - 标准|美国03|解锁流媒体 3
-      - 标准|新加坡01|解锁流媒体 4
-      - 标准|新加坡03|解锁流媒体 4
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港03|原生CMI 4
-      - 专线|香港04|原生HGCBBS 4
-      - 专线|香港05|原生HGCBBS 4
-      - 专线|香港06|原生CMI 3
-      - 专线|香港07|原生HKBN 4
-      - 专线|香港08|原生HKBN 4
-      - 专线|台湾01|原生Taipei 4
-      - 专线|美国01|原生Seattle
-      - 专线|美国02|原生Seattle 2
-      - 专线|美国03|原生Seattle 3
-      - 专线|美国04|原生Seattle 3
-      - 专线|西雅图01|原生NTT 4
-      - 标准|香港01|解锁流媒体 5
-      - 标准|香港02|解锁流媒体 5
-      - 标准|香港03|解锁流媒体 5
-      - 标准|香港04|解锁流媒体 5
-      - 标准|香港05|解锁流媒体 5
-      - 标准|日本03|解锁流媒体 5
-      - 标准|新加坡01|解锁流媒体 5
-      - 标准|新加坡03|解锁流媒体 5
-      - 专线|香港01|原生HGCBBS 4
-      - 专线|香港03|原生CMI 5
-      - 专线|香港04|原生HGCBBS 5
-      - 专线|香港05|原生HGCBBS 5
-      - 专线|香港06|原生CMI 4
-      - 专线|香港07|原生HKBN 5
-      - 专线|香港08|原生HKBN 5
-      - 专线|台湾01|原生Taipei 5
-      - 专线|台湾02|原生Taipei 2
-      - 专线|美国01|原生Seattle 2
-      - 专线|美国03|原生Seattle 4
-      - 专线|美国04|原生Seattle 4
-      - 专线|西雅图01|原生NTT 5
+      - _HK_香港
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - 美国_TG@nodesharing 2
+      - 美国_TG@nodesharing 3
+      - 美国_TG@nodesharing 4
       - _HK_香港 2
-      - 中国_TG@nodesharing 5
       - _HK_香港 3
+      - US(Youtube技术分享室整理)
+      - A-aV2RAY-CMCC-香港-02
+      - 比利时_TG@nodesharing
+      - 台湾w-油管 2
+      - _中国_（）_120
+      - _中国_（）_79
+      - 中国_TG@nodesharing 2
+      - HK|苏醒云|购买支持发展
+      - 香港免流节点2号|10Gps
+      - Pool_🇭🇰HK_591
+      - Pool_🇭🇰HK_621
+      - A-aV2RAY-CMCC-香港-097
+      - 中国_TG@nodesharing 3
       - _HK_香港 4
-      - _HK_香港 5
-      - "｜IPLC｜香港\n"
-      - Hong+Kong+07
-      - Hong+Kong+09
-      - Hong+Kong+14
-      - Hong+Kong+10
-      - +Hong+Kong+07
-      - +vpnpool-香港
+      - V2RAY-香港AZURE-落地
+      - _US_美国 8
+      - _US_美国 9
+      - _NL_荷兰
+      - 中国_TG@nodesharing 4
+      - 中国_TG@nodesharing 5
       - 中国_TG@nodesharing 6
       - 中国_TG@nodesharing 7
       - 中国_TG@nodesharing 8
-      - 中国_TG@nodesharing 9
-      - 中国_TG@nodesharing 10
+      - 香港_TG@nodesharing
+      - 基础|台湾01|负载均衡 3
+      - 基础|台湾03|负载均衡 2
+      - 基础|俄罗斯03|负载均衡 3
+      - 基础|俄罗斯04|负载均衡
+      - 标准|美国02|解锁流媒体 2
+      - 标准|印度02|解锁流媒体 3
+      - 标准|加拿大02|解锁流媒体 3
+      - 标准|新加坡01|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 3
+      - 专线|香港01|原生HGCBBS 3
+      - 专线|香港02|原生HGCBBS
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国01|原生Seattle 3
+      - 专线|美国02|原生Seattle 3
+      - 专线|美国03|原生Seattle 3
+      - 专线|美国04|原生Seattle 3
+      - 专线|西雅图01|原生NTT 3
+      - 专线|西雅图02|原生NTT 4
+      - 基础|台湾01|负载均衡 4
+      - 基础|台湾02|负载均衡 2
+      - 基础|台湾03|负载均衡 3
+      - 标准|美国02|解锁流媒体 3
+      - 标准|新加坡02|解锁流媒体 4
+      - 专线|香港04|原生HGCBBS 4
+      - 专线|香港05|原生HGCBBS 4
+      - 基础|台湾03|负载均衡 4
+      - 基础|台湾04|负载均衡 3
+      - 基础|俄罗斯03|负载均衡 4
+      - 基础|俄罗斯04|负载均衡 2
+      - 标准|美国01|解锁流媒体 3
+      - 标准|美国02|解锁流媒体 4
+      - 标准|印度02|解锁流媒体 4
+      - 标准|加拿大02|解锁流媒体 4
+      - 标准|新加坡01|解锁流媒体 4
+      - 标准|新加坡02|解锁流媒体 5
+      - 专线|香港01|原生HGCBBS 4
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 5
+      - 专线|香港05|原生HGCBBS 5
+      - 专线|香港07|原生HKBN 4
+      - 专线|香港08|原生HKBN 4
+      - 专线|台湾01|原生Taipei 4
+      - 专线|台湾02|原生Taipei
+      - 专线|台湾03|原生Taipei 2
+      - 专线|美国01|原生Seattle 4
+      - 专线|美国02|原生Seattle 4
+      - 专线|美国03|原生Seattle 4
+      - 专线|美国04|原生Seattle 4
+      - 专线|西雅图01|原生NTT 4
+      - 专线|西雅图02|原生NTT 5
+      - V1-俄罗斯01 中继C 1.2x
+      - V1-俄罗斯01 中继D 1.2x
+      - V1-台湾05 中继A 2x
+      - V1-日本B组 直连 速度随缘 1x
+      - V1-香港B组 直连 速度随缘 1x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
