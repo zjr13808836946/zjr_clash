@@ -5,671 +5,835 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 回国专线贵州, server: 203.189.208.74, port: 48776, type: vmess, uuid: d40c20e7-a5c3-4dcf-93c3-b2d7efb1159f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: YouTube-由零开始, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
-  - {name: 台湾w-油管 2, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _中国_（）_120, server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|印度02|解锁流媒体, server: v28.88host.buzz, port: 18075, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡01|解锁流媒体, server: v21.88host.buzz, port: 18033, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港02|原生HGCBBS, server: v32.88host.buzz, port: 18065, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港04|原生HGCBBS, server: v34.88host.buzz, port: 18067, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港05|原生HGCBBS, server: v35.88host.buzz, port: 18068, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港07|原生HKBN, server: v31.88host.buzz, port: 18082, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港08|原生HKBN, server: v32.88host.buzz, port: 18083, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾01|原生Taipei, server: v36.88host.buzz, port: 18078, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国02|原生Seattle, server: v32.88host.buzz, port: 18043, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国03|原生Seattle, server: v33.88host.buzz, port: 18044, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国04|原生Seattle, server: v34.88host.buzz, port: 18045, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|西雅图01|原生NTT, server: v31.88host.buzz, port: 18084, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|西雅图02|原生NTT, server: v32.88host.buzz, port: 18085, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V1-日本B组 直连 速度随缘 1x, server: jp-group-b-direct.myn0des.com, port: 8880, type: vmess, uuid: 8426925e-2f87-349e-a7ba-1375c3afd37b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: new.vip.weibo.cn}, udp: true}
-  - {name: V1-香港B组 直连 速度随缘 1x, server: hk-group-b-direct.myn0des.com, port: 8880, type: vmess, uuid: 8426925e-2f87-349e-a7ba-1375c3afd37b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: new.vip.weibo.cn}, udp: true}
   - {name: Large 新加坡02 - all | IEPL | 倍率:1.5, server: roog5tee.nodeinfo.icu, port: 3202, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
-  - {name: Large 新加坡03 - all | MIEPL | 倍率:1.6, server: eim1kae9.nodeinfo.icu, port: 3203, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
   - {name: Large 新加坡04 - all | MIEPL | 倍率:1.6, server: ainetu9e.nodeinfo.icu, port: 3204, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
   - {name: Large 新加坡05 - all | IEPL | 倍率:1.5, server: aebek1oo.nodeinfo.icu, port: 1001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
   - {name: Large 新加坡06 - all | IEPL | 倍率:1.5, server: phoo6aem.nodeinfo.icu, port: 1002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
   - {name: Large 新加坡10 - all | IEPL | 倍率:1.5, server: aes7oosi.nodeinfo.icu, port: 3210, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
   - {name: Large 香港16 - allmedia | MIEPL | 倍率:1.6, server: quohvop8.nodeinfo.icu, port: 6016, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
-  - {name: Large 香港20 - nf | AIA | 倍率:1.6, server: ti5mulix.nodeinfo.icu, port: 6020, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
-  - {name: Large 香港23 - nfo | IEPL | 倍率:1.6, server: shei5eij.nodeinfo.icu, port: 3725, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
   - {name: Large 香港24 - nfo | IEPL | 倍率:1.6, server: phahx7xo.nodeinfo.icu, port: 3726, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
   - {name: Lil 新加坡04 - netflix | IEPL | 倍率:2, server: ohg5xoot.nodeinfo.icu, port: 2002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
   - {name: Lil 新加坡05 - netflix | IEPL | 倍率:2, server: axeed0uh.nodeinfo.icu, port: 2003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
-  - {name: Lil 美国07 - all | IEPL | 倍率:1.3, server: ohjei8ph.nodeinfo.icu, port: 1156, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
-  - {name: Lil 美国09 - allmedia | IEPL | 倍率:1.3, server: unah2wel.nodeinfo.icu, port: 1158, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
-  - {name: v1|亚洲|C|混合负载|视频主力, server: k3.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627775.sina.cn}, udp: true}
-  - {name: v1|亚洲|B|混合负载|低延主力, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627975.sina.cn}, udp: true}
-  - {name: v1|亚洲|A|混合负载|外贸主力, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627875.sina.cn}, udp: true}
-  - {name: v1|香港|A|5台负载, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627b7d.sina.cn}, udp: true}
-  - {name: v1|香港|B|6台负载, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627973.sina.cn}, udp: true}
-  - {name: v1|香港|C|7台负载, server: k3.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627f7769.sina.cn}, udp: true}
-  - {name: v1|新加坡|A|6台负载, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627f7466.sina.cn}, udp: true}
-  - {name: v1|新加坡|B|7台负载, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627f7561.sina.cn}, udp: true}
-  - {name: v1|新加坡|C|8台负载, server: k3.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627f7566.sina.cn}, udp: true}
-  - {name: v1|新加坡|C|9台负载, server: k3.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627772.sina.cn}, udp: true}
-  - {name: v1|日本|A|7台负载, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627877.sina.cn}, udp: true}
-  - {name: v1|日本|B|4台负载, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627f7562.sina.cn}, udp: true}
-  - {name: v1|日本|B|8台负载, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627977.sina.cn}, udp: true}
-  - {name: v1|日本|C|9台负载, server: k3.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627777.sina.cn}, udp: true}
-  - {name: v1|美国|A|6台负载, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627f7d63.sina.cn}, udp: true}
-  - {name: v1|美国|C|3台负载, server: k3.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627f7d64.sina.cn}, udp: true}
-  - {name: v1|香港|A|7台负载|原生, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d712662787d.sina.cn}, udp: true}
-  - {name: v1|香港|B|8台负载|原生, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627f7060.sina.cn}, udp: true}
-  - {name: v1|香港|C|9台负载|原生, server: k3.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627f7567.sina.cn}, udp: true}
-  - {name: v1|台湾|C|4台负载|原生, server: k3.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d712662767d.sina.cn}, udp: true}
-  - {name: v1|新加坡|A|4台负载|原生, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627f7c68.sina.cn}, udp: true}
-  - {name: v1|新加坡|B|4台负载|原生, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627f7c69.sina.cn}, udp: true}
-  - {name: v1|美国|A|3台负载|原生, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627c7461.sina.cn}, udp: true}
-  - {name: v1|澳洲|A|4台负载, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627f7467.sina.cn}, udp: true}
-  - {name: v1|澳洲|B|3台负载, server: k2.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627c7663.sina.cn}, udp: true}
-  - {name: v1|澳洲|C|4台负载, server: k3.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627c7766.sina.cn}, udp: true}
-  - {name: v1|印度|A|4台负载, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627f7d67.sina.cn}, udp: true}
-  - {name: v1|俄罗斯|A|3台负载, server: k1.7h7.xyz, port: 41321, type: ss, cipher: aes-128-gcm, password: e7d63e435c92, plugin: obfs, plugin-opts: {mode: http, host: 6475787761736d7126627f7d69.sina.cn}, udp: true}
   - {name: 娄底联通-SG-Melbicom@vpnhat, server: 116.163.10.157, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
-  - {name: 北京优刻云-香港DMIT@vpnhat, server: 117.50.106.86, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
-  - {name: 徐州联通-SG-Melbicom@vpnhat, server: 122.192.154.50, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
   - {name: 徐州联通-彰化Hinet@vpnhat, server: 122.192.154.54, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
-  - {name: 徐州联通-SG-Melbicom@vpnhat 3, server: 122.192.189.5, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
-  - {name: 北京科技网-Tokyo-Linode@vpnhat 2, server: 123.59.72.193, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
   - {name: 广州优刻云-Tokyo-Linode@vpnhat 2, server: 106.75.154.24, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
   - {name: 北京优刻云-香港DMIT@vpnhat 2, server: 117.50.106.86, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
-  - {name: 徐州联通-SG-Melbicom@vpnhat 4, server: 122.192.154.50, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
   - {name: 徐州联通-彰化Hinet@vpnhat 2, server: 122.192.154.54, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
-  - {name: 徐州联通-SG-Melbicom@vpnhat 6, server: 122.192.189.5, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
   - {name: 北京科技网-Tokyo-Linode@vpnhat 6, server: 123.59.87.29, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
-  - {name: 【新鸟免费】美国UA -DO 05 免流 1.0x, server: mf-do-ua-05.xncloud.xyz, port: 80, type: vmess, uuid: 17ce7953-6828-3b8b-8081-dc030aeffb33, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-05.xncloud.xyz}, udp: true}
-  - {name: "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub", server: v8.ssrsub.com, port: 443, type: vmess, uuid: e6c36d58-6070-4b55-a437-146e6b53ec57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
-  - {name: 专线|香港08|原生HGCBBS, server: zfd.out02.nodeserver.top, port: 16237, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_TG@nodesharing, server: in02.2333dns.com, port: 64068, type: vmess, uuid: 19380563-e9f4-367a-b58f-43def434398e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
-  - {name: _US_美国, server: 38.75.136.93, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 专线|美国01|原生Seattle, server: v31.88host.buzz, port: 18042, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V1-台湾05 中继A 2x, server: in01.2333dns.com, port: 64068, type: vmess, uuid: 8426925e-2f87-349e-a7ba-1375c3afd37b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
-  - {name: v2ray 香港(联通), server: cu.cheapv2.xyz, port: 26612, type: vmess, uuid: ef25cb86-f309-337c-b7ea-c5b8f87d34e2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: cu.cheapv2.xyz}, udp: true}
-  - {name: 中国_TG@nodesharing 2, server: in04.2333dns.com, port: 64068, type: vmess, uuid: 19380563-e9f4-367a-b58f-43def434398e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
-  - {name: 标准|加拿大01|解锁流媒体, server: v27.88host.buzz, port: 18072, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾03|原生Taipei, server: v34.88host.buzz, port: 18080, type: vmess, uuid: a00182f7-0407-33c2-8106-5b4761755339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Large 台灣03 - all | MIEPL | 倍率:1.6, server: keem9bov.nodeinfo.icu, port: 6503, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
-  - {name: Large 台灣04 - all | IEPL | 倍率:1.5, server: zahre8ai.nodeinfo.icu, port: 699, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
-  - {name: Large 日本04 - allmedia | IEPL | 倍率:1.3, server: ib7uge9u.nodeinfo.icu, port: 6304, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
-  - {name: Large 香港03 - allmedia | MIEPL | 倍率:1.8, server: wu3gadam.nodeinfo.icu, port: 6003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
-  - {name: Large 香港13 - all | AIA | 倍率:1.6, server: koo3cuiz.nodeinfo.icu, port: 6013, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
-  - {name: Large 香港14 - nf | MIEPL | 倍率:1.6, server: utai3iw1.nodeinfo.icu, port: 6014, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
-  - {name: Lil 菲律宾01 - SHOPP | IEPL | 倍率:1.3, server: xugeed0e.nodeinfo.icu, port: 1105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
-  - {name: VU新加坡-AZ中转, server: 13.94.36.226, port: 55529, type: vmess, uuid: 0c026923-0425-420f-99a6-f940ed3798a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}, udp: true}
-  - {name: "[台湾 01] 广东｜HiNet", server: 101.67.8.158, port: 31102, type: vmess, uuid: c35e2e64-b67a-4141-be78-51dd0923a114, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index.html, ws-headers: {Host: net.dacy.cc}, udp: true}
-  - {name: "[香港 01] 香港｜HGC", server: azure-f4s.transfer.foom.cc, port: 13892, type: vmess, uuid: c35e2e64-b67a-4141-be78-51dd0923a114, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index.html, ws-headers: {Host: net.dacy.cc}, udp: true}
-  - {name: "[香港 02] 香港｜Azure", server: azure-f4s.transfer.foom.cc, port: 35481, type: vmess, uuid: c35e2e64-b67a-4141-be78-51dd0923a114, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index.html, ws-headers: {Host: net.dacy.cc}, udp: true}
   - {name: 娄底联通-SG-Melbicom@vpnhat 2, server: 116.163.10.208, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
-  - {name: 上海优刻云-Tokyo-Linode@vpnhat 3, server: 106.75.233.91, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
   - {name: 上海优刻云-Tokyo-Linode@vpnhat 4, server: 113.31.155.165, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
   - {name: 娄底联通-SG-Melbicom@vpnhat 3, server: 116.163.10.157, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
   - {name: 北京科技网-Tokyo-Linode@vpnhat 4, server: 120.132.50.158, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
   - {name: 佛山移动-彰化Hinet@vpnhat 2, server: 183.232.163.134, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
-  - {name: 香港/江门移动A 2, server: jma.v2ray.asia, port: 25425, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: jma.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港/江门移动B 2, server: jmb.v2ray.asia, port: 25315, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: jmb.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港/广州移动A 2, server: gya.v2ray.asia, port: 25168, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: gya.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港/广州移动B 2, server: gyb.v2ray.asia, port: 25106, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: gyb.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港/佛山移动 2, server: fs.v2ray.asia, port: 25069, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: fs.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港/安徽联通 2, server: ah.v2ray.asia, port: 25426, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: ah.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港/长沙联通 2, server: cs.v2ray.asia, port: 25393, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: cs.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港/上海移动 2, server: shy.v2ray.asia, port: 30278, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: shy.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港B/江门移动A 2, server: jma.v2ray.asia, port: 25439, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: jma.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港B/江门移动B 2, server: jmb.v2ray.asia, port: 25333, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: jmb.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港B/广州移动A 2, server: gya.v2ray.asia, port: 25170, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: gya.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港B/广州移动B 2, server: gyb.v2ray.asia, port: 25134, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: gyb.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港B/佛山移动 2, server: fs.v2ray.asia, port: 25070, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: fs.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港B/安徽联通 2, server: ah.v2ray.asia, port: 25447, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: ah.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港B/上海移动 2, server: shy.v2ray.asia, port: 30317, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: shy.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 香港B/上海联通 2, server: shl.v2ray.asia, port: 25614, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: shl.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 日本/江门移动A 2, server: jma.v2ray.asia, port: 25440, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: jma.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 日本/江门移动B 2, server: jmb.v2ray.asia, port: 25334, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: jmb.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 日本/广州移动A 2, server: gya.v2ray.asia, port: 25171, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: gya.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 日本/广州移动B 2, server: gyb.v2ray.asia, port: 25135, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: gyb.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 日本/佛山移动 2, server: fs.v2ray.asia, port: 25071, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: fs.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 日本/安徽联通 2, server: ah.v2ray.asia, port: 25448, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: ah.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 日本/长沙联通 2, server: cs.v2ray.asia, port: 25409, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: cs.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: 日本/上海联通 2, server: shl.v2ray.asia, port: 25615, type: trojan, password: 301d401d-6deb-4a0c-bb85-2ed7506cb93a, sni: shl.v2ray.asia, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_282, server: 117.28.243.173, port: 4173, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_287, server: 117.28.243.220, port: 8254, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_292, server: sl201.jdxx.xyz, port: 35003, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 672:GvYh7Z, obfs-param: t.me/proxypoolqwerty426, udp: true}
   - {name: Relay_🇨🇳CN-🇯🇵JP_293, server: sl201.jdxx.xyz, port: 26386, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 587:YGWYBS, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_300, server: sl201.jdxx.xyz, port: 35004, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 587:YGWYBS, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_303, server: sl201.jdxx.xyz, port: 35002, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 91:rfwijt, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇯🇵JP_305, server: sl201.jdxx.xyz, port: 26389, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 91:rfwijt, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_306, server: sl201.jdxx.xyz, port: 25986, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 587:YGWYBS, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_307, server: tz-yd01.jdxx.xyz, port: 35005, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 587:YGWYBS, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_308, server: sl201.jdxx.xyz, port: 25986, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 91:rfwijt, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇯🇵JP_309, server: sl201.jdxx.xyz, port: 26390, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 587:YGWYBS, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇯🇵JP_310, server: sl201.jdxx.xyz, port: 26386, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 672:GvYh7Z, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇯🇵JP_312, server: sl201.jdxx.xyz, port: 26389, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 587:YGWYBS, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇸🇬SG_313, server: sl201.jdxx.xyz, port: 26387, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 672:GvYh7Z, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇯🇵JP_314, server: sl201.jdxx.xyz, port: 26386, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 91:rfwijt, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_316, server: sl201.jdxx.xyz, port: 25987, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 91:rfwijt, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇸🇬SG_317, server: sl201.jdxx.xyz, port: 26387, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 587:YGWYBS, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇸🇬SG_318, server: sl201.jdxx.xyz, port: 26387, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 91:rfwijt, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇯🇵JP_321, server: sl201.jdxx.xyz, port: 26389, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 672:GvYh7Z, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_323, server: tz-yd01.jdxx.xyz, port: 35006, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 672:GvYh7Z, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_329, server: tz-yd01.jdxx.xyz, port: 35007, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 672:GvYh7Z, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Relay_🇭🇰HK-🇭🇰HK_613, server: azhk.relay.qchwnd.moe, port: 44601, type: trojan, password: 52face98-c4cb-4299-aa38-9546085b0619, sni: azhk.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇹🇼TW_614, server: azhk.relay.qchwnd.moe, port: 44608, type: trojan, password: 52face98-c4cb-4299-aa38-9546085b0619, sni: azhk.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2080, server: v8.ssrsub.com, port: 443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
   - {name: _HK_香港, server: 118.107.244.112, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: _HK_香港 3, server: 118.107.244.112, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _HK_香港 4, server: 118.107.244.112, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: V1-香港B组 直连 速度随缘 1x 2, server: hk-group-b-direct.myn0des.com, port: 8880, type: vmess, uuid: 19380563-e9f4-367a-b58f-43def434398e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: new.vip.weibo.cn}, udp: true}
-  - {name: V1-日本B组 直连 速度随缘 1x 2, server: jp-group-b-direct.myn0des.com, port: 8880, type: vmess, uuid: 19380563-e9f4-367a-b58f-43def434398e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: new.vip.weibo.cn}, udp: true}
-  - {name: Jsnzkpg 18, server: ls-02.yuyu.cool, port: 20279, type: ssr, cipher: chacha20-ietf, password: 7mtHSG, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 3863:sUJNw3, obfs-param: d8fdf2.microsoft.com, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_298, server: tz-yd01.jdxx.xyz, port: 35005, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 672:GvYh7Z, obfs-param: t.me/proxypoolqwerty426, udp: true}
   - {name: Relay_🇨🇳CN-🇯🇵JP_327, server: sl201.jdxx.xyz, port: 26390, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 672:GvYh7Z, obfs-param: t.me/proxypoolqwerty426, udp: true}
-  - {name: Pool_🇭🇰HK_556, server: 118.107.244.112, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: Pool_🇭🇰HK_557, server: 118.107.244.112, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: Pool_🇭🇰HK_590, server: 118.107.244.112, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇭🇰HK_595, server: 118.107.244.112, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
   - {name: Pool_🇭🇰HK_600, server: 118.107.244.112, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 共享, server: 27.122.57.72, port: 35326, type: vmess, uuid: 217362fd-3e43-4436-be62-92f6dd57303b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CYL-科技（202201.04）, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
+  - {name: "v2ray 日本(移动) [Netflix]", server: cm2.cheapv2.xyz, port: 28802, type: vmess, uuid: ef25cb86-f309-337c-b7ea-c5b8f87d34e2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: cm2.cheapv2.xyz}, udp: true}
+  - {name: "v2ray 日本(联通) [Netflix]", server: cu.cheapv2.xyz, port: 28802, type: vmess, uuid: ef25cb86-f309-337c-b7ea-c5b8f87d34e2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: cu.cheapv2.xyz}, udp: true}
+  - {name: "v2ray 香港HGC(联通) [Netflix]", server: cu.cheapv2.xyz, port: 23318, type: vmess, uuid: ef25cb86-f309-337c-b7ea-c5b8f87d34e2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: cu.cheapv2.xyz}, udp: true}
+  - {name: Large 新加坡07 - all | IEPL | 倍率:1.5, server: eer9iqu7.nodeinfo.icu, port: 1003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 新加坡11 - all | IEPL | 倍率:1.5, server: quo7chie.nodeinfo.icu, port: 3211, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 新加坡12 - all | IEPL | 倍率:1.5, server: iephu5so.nodeinfo.icu, port: 3212, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 韩国01 - nf | MIEPL | 倍率:1.6, server: peev0eey.nodeinfo.icu, port: 6101, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 韩国02 - nf | MIEPL | 倍率:1.6, server: rosei6ei.nodeinfo.icu, port: 6102, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港01 - allmedia | MIEPL | 倍率:1.8, server: phahw1un.nodeinfo.icu, port: 6001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港04 - allmedia | MIEPL | 倍率:1.8, server: queigh5h.nodeinfo.icu, port: 6004, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: 杭州移动-彰化Hinet@vpnhat, server: 120.232.192.115, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
+  - {name: 台中Hinet@vpnhat, server: 60.249.3.231, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
+  - {name: 台中Hinet@vpnhat 2, server: 60.249.3.231, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
+  - {name: "v2ray 韩国(联通) [Netflix]", server: cu.cheapv2.xyz, port: 26602, type: vmess, uuid: ef25cb86-f309-337c-b7ea-c5b8f87d34e2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: cu.cheapv2.xyz}, udp: true}
+  - {name: 新加坡, server: fuck.biubiubiu.cloud, port: 443, type: trojan, password: B4iK9pXaRnHfr9Rp, sni: fuck.biubiubiu.cloud, skip-cert-verify: true, udp: true}
+  - {name: HK(Youtube技术分享室整理), server: 62.216.92.179, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: RO_741, server: 62.216.92.180, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: 广州优刻云-Tokyo-Linode@vpnhat, server: 106.75.154.24, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
+  - {name: 上海优刻云-Tokyo-Linode@vpnhat, server: 106.75.233.91, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
+  - {name: 娄底联通-SG-Melbicom@vpnhat 4, server: 116.163.10.208, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
+  - {name: 徐州联通-SG-Melbicom@vpnhat 5, server: 122.192.154.53, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
+  - {name: +Relay_🇸🇬SG-🇸🇬SG_901, server: 81.90.189.172, port: 889, type: ss, cipher: chacha20-ietf-poly1305, password: KhS1x8JT7p58RIp7gz, udp: true}
+  - {name: 基础|香港01|负载均衡, server: v11.88host.buzz, port: 18005, type: vmess, uuid: b1069cb9-6bfa-38cc-9cfb-805d1e3a5070, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|香港02|负载均衡, server: v12.88host.buzz, port: 18006, type: vmess, uuid: b1069cb9-6bfa-38cc-9cfb-805d1e3a5070, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|香港03|负载均衡, server: v13.88host.buzz, port: 18007, type: vmess, uuid: b1069cb9-6bfa-38cc-9cfb-805d1e3a5070, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|香港05|负载均衡, server: v12.88host.buzz, port: 18009, type: vmess, uuid: b1069cb9-6bfa-38cc-9cfb-805d1e3a5070, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港02|原生HGCBBS, server: v32.88host.buzz, port: 18065, type: vmess, uuid: b1069cb9-6bfa-38cc-9cfb-805d1e3a5070, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港04|原生HGCBBS, server: v34.88host.buzz, port: 18067, type: vmess, uuid: b1069cb9-6bfa-38cc-9cfb-805d1e3a5070, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港05|原生HGCBBS, server: v35.88host.buzz, port: 18068, type: vmess, uuid: b1069cb9-6bfa-38cc-9cfb-805d1e3a5070, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港07|原生HKBN, server: v31.88host.buzz, port: 18082, type: vmess, uuid: b1069cb9-6bfa-38cc-9cfb-805d1e3a5070, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港08|原生HKBN, server: v32.88host.buzz, port: 18083, type: vmess, uuid: b1069cb9-6bfa-38cc-9cfb-805d1e3a5070, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|台湾01|原生Taipei, server: v36.88host.buzz, port: 18078, type: vmess, uuid: b1069cb9-6bfa-38cc-9cfb-805d1e3a5070, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|台湾02|原生Taipei, server: v35.88host.buzz, port: 18079, type: vmess, uuid: b1069cb9-6bfa-38cc-9cfb-805d1e3a5070, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|西雅图01|原生NTT, server: v31.88host.buzz, port: 18084, type: vmess, uuid: b1069cb9-6bfa-38cc-9cfb-805d1e3a5070, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|香港01|负载均衡 2, server: v11.88host.buzz, port: 18005, type: vmess, uuid: 5c4e1928-eed5-3b48-b1dc-1575bdd584dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|香港02|负载均衡 2, server: v12.88host.buzz, port: 18006, type: vmess, uuid: 5c4e1928-eed5-3b48-b1dc-1575bdd584dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|香港03|负载均衡 2, server: v13.88host.buzz, port: 18007, type: vmess, uuid: 5c4e1928-eed5-3b48-b1dc-1575bdd584dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|香港05|负载均衡 2, server: v12.88host.buzz, port: 18009, type: vmess, uuid: 5c4e1928-eed5-3b48-b1dc-1575bdd584dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港01|原生HGCBBS, server: v31.88host.buzz, port: 18064, type: vmess, uuid: d6b30550-19ff-324c-b95f-d19a0da68d44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港02|原生HGCBBS 2, server: v32.88host.buzz, port: 18065, type: vmess, uuid: d6b30550-19ff-324c-b95f-d19a0da68d44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港04|原生HGCBBS 2, server: v34.88host.buzz, port: 18067, type: vmess, uuid: d6b30550-19ff-324c-b95f-d19a0da68d44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港05|原生HGCBBS 2, server: v35.88host.buzz, port: 18068, type: vmess, uuid: d6b30550-19ff-324c-b95f-d19a0da68d44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港07|原生HKBN 2, server: v31.88host.buzz, port: 18082, type: vmess, uuid: d6b30550-19ff-324c-b95f-d19a0da68d44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港08|原生HKBN 2, server: v32.88host.buzz, port: 18083, type: vmess, uuid: d6b30550-19ff-324c-b95f-d19a0da68d44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|台湾01|原生Taipei 2, server: v36.88host.buzz, port: 18078, type: vmess, uuid: d6b30550-19ff-324c-b95f-d19a0da68d44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(Youtube技术分享室整理), server: 172.104.168.83, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 日本🇯🇵(Youtube技术分享室整理), server: 158.247.213.165, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: "IN(技术分享室整理,欢迎订阅)", server: 45.118.133.51, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: KR(Youtube技术分享室整理), server: 148.66.56.98, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: TW(Youtube技术分享室整理), server: 139.162.56.155, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US(Youtube技术分享室整理) 2, server: 139.162.24.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: JP(Youtube技术分享室整理), server: 141.164.47.208, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 日本+🇯🇵(Youtube技术分享室整理), server: 158.247.226.61, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 日本(Youtube技术分享室整理), server: 141.164.35.41, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US(Youtube技术分享室整理) 3, server: 158.247.197.36, port: 7244, type: vmess, uuid: f2ec65ae-733c-11ec-a0b8-560003ca3919, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /b7GIli9S/, ws-headers: {Host: 158.247.197.36}, udp: true}
+  - {name: JP(Youtube技术分享室整理) 2, server: 158.247.203.168, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: "|74.80Mb", server: 103.138.75.235, port: 443, type: vmess, uuid: 8ccc3052-4941-47e4-b85f-a67ea71e3fe6, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /clientarea, ws-headers: {Host: 103.138.75.235}, udp: true}
+  - {name: Pool_ | 7.56Mb, server: 202.61.141.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 202.61.141.130}, udp: true}
+  - {name: Pool_ |16.30Mb, server: 202.61.141.194, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 202.61.141.194}, udp: true}
+  - {name: Pool_ |330.97Mb, server: 103.253.26.20, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: zecjk.com}, udp: true}
+  - {name: Pool_ |491.22Mb, server: 103.253.26.134, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: eeh7iewe.com}, udp: true}
+  - {name: Relay_ |340.37Mb, server: zecjk.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: zecjk.com}, udp: true}
+  - {name: Relay_ |390.48Mb, server: eeh7iewe.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: eeh7iewe.com}, udp: true}
+  - {name: Relay_ |17.62Mb, server: jp-tokyo-node2.ycgyg.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: jp-tokyo-node2.ycgyg.com}, udp: true}
+  - {name: Relay_ | 4.56Mb, server: ycgyg.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: ycgyg.com}, udp: true}
+  - {name: Relay_🇷🇴RO-🇷🇴RO_793 |12.05Mb, server: hk-server-01.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: hk-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇷🇴RO-🇷🇴RO_795 |14.63Mb, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇷🇴RO-🇷🇴RO_796 |11.75Mb, server: hk-server-01.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: RO_797 |14.94Mb, server: 62.216.92.180, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: 台湾w-油管 2, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V1-香港B组 直连 速度随缘 1x, server: hk-group-b-direct.myn0des.com, port: 8880, type: vmess, uuid: 8426925e-2f87-349e-a7ba-1375c3afd37b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: new.vip.weibo.cn}, udp: true}
+  - {name: Large 香港20 - nf | AIA | 倍率:1.6, server: ti5mulix.nodeinfo.icu, port: 6020, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港23 - nfo | IEPL | 倍率:1.6, server: shei5eij.nodeinfo.icu, port: 3725, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 台灣03 - all | MIEPL | 倍率:1.6, server: keem9bov.nodeinfo.icu, port: 6503, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 台灣04 - all | IEPL | 倍率:1.5, server: zahre8ai.nodeinfo.icu, port: 699, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港03 - allmedia | MIEPL | 倍率:1.8, server: wu3gadam.nodeinfo.icu, port: 6003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港13 - all | AIA | 倍率:1.6, server: koo3cuiz.nodeinfo.icu, port: 6013, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港14 - nf | MIEPL | 倍率:1.6, server: utai3iw1.nodeinfo.icu, port: 6014, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Relay_🇨🇳CN-🇯🇵JP_312, server: sl201.jdxx.xyz, port: 26389, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 587:YGWYBS, obfs-param: t.me/proxypoolqwerty426, udp: true}
+  - {name: Relay_🇨🇳CN-🇯🇵JP_321, server: sl201.jdxx.xyz, port: 26389, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 672:GvYh7Z, obfs-param: t.me/proxypoolqwerty426, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_329, server: tz-yd01.jdxx.xyz, port: 35007, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 672:GvYh7Z, obfs-param: t.me/proxypoolqwerty426, udp: true}
+  - {name: +Pool_🇭🇰HK_556, server: 118.107.244.112, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _中国_（）_79, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "v2ray 马来西亚(移动) [Netflix]", server: cu.cheapv2.xyz, port: 26610, type: vmess, uuid: ef25cb86-f309-337c-b7ea-c5b8f87d34e2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: cu.cheapv2.xyz}, udp: true}
+  - {name: Large 台灣05 - all | IEPL | 倍率:1.5, server: eu1she3s.nodeinfo.icu, port: 700, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 新加坡08 - all | IEPL | 倍率:1.5, server: eu7aish2.nodeinfo.icu, port: 1004, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 新加坡09 - all | IEPL | 倍率:1.5, server: meeku3zi.nodeinfo.icu, port: 3209, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港02 - nf | MIEPL | 倍率:1.8, server: ooqu0eep.nodeinfo.icu, port: 6002, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港05 - allmedia | MIEPL | 倍率:1.8, server: keixai3u.nodeinfo.icu, port: 6005, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港08 - all | AIA | 倍率:1.6, server: ie2ohyai.nodeinfo.icu, port: 6008, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港09 - nf | AIA | 倍率:1.6, server: eevahb9v.nodeinfo.icu, port: 6009, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港10 - nf | AIA | 倍率:1.6, server: thoo6foh.nodeinfo.icu, port: 6010, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港11 - nf | AIA | 倍率:1.6, server: aezee4ea.nodeinfo.icu, port: 6011, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港12 - nf | AIA | 倍率:1.6, server: ahheil5u.nodeinfo.icu, port: 6012, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港15 - allmedia | MIEPL | 倍率:1.6, server: phu8iej2.nodeinfo.icu, port: 6015, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港18 - nf | AIA | 倍率:1.8, server: vieghei0.nodeinfo.icu, port: 6018, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港21 - nfo | MIEPL | 倍率:1.6, server: aic5ucu1.nodeinfo.icu, port: 6021, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 香港22 - nf | AIA | 倍率:1.8, server: aquoh8xi.nodeinfo.icu, port: 6022, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Lil 香港11 - nf | AIA | 倍率:3, server: el2ohqua.nodeinfo.icu, port: 2111, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Lil 香港12 - nf | AIA | 倍率:3, server: oohas7ou.nodeinfo.icu, port: 2112, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: Large 台灣01 - all | IEPL | 倍率:1.8, server: oogha1za.nodeinfo.icu, port: 6501, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 213256:N2IRi4, obfs-param: c4499213256.www.gov.hk, udp: true}
+  - {name: 上海优刻云-Tokyo-Linode@vpnhat 2, server: 113.31.155.165, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
+  - {name: 北京科技网-Tokyo-Linode@vpnhat 5, server: 123.59.72.193, port: 3389, type: trojan, password: 3426d80c2e066a83, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国01|原生Seattle, server: v31.88host.buzz, port: 18042, type: vmess, uuid: b1069cb9-6bfa-38cc-9cfb-805d1e3a5070, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港01|原生HGCBBS 2, server: v31.88host.buzz, port: 18064, type: vmess, uuid: 5c4e1928-eed5-3b48-b1dc-1575bdd584dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港02|原生HGCBBS 3, server: v32.88host.buzz, port: 18065, type: vmess, uuid: 5c4e1928-eed5-3b48-b1dc-1575bdd584dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港04|原生HGCBBS 3, server: v34.88host.buzz, port: 18067, type: vmess, uuid: 5c4e1928-eed5-3b48-b1dc-1575bdd584dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港05|原生HGCBBS 3, server: v35.88host.buzz, port: 18068, type: vmess, uuid: 5c4e1928-eed5-3b48-b1dc-1575bdd584dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港07|原生HKBN 3, server: v31.88host.buzz, port: 18082, type: vmess, uuid: 5c4e1928-eed5-3b48-b1dc-1575bdd584dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|香港08|原生HKBN 3, server: v32.88host.buzz, port: 18083, type: vmess, uuid: 5c4e1928-eed5-3b48-b1dc-1575bdd584dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|台湾01|原生Taipei 3, server: v36.88host.buzz, port: 18078, type: vmess, uuid: 5c4e1928-eed5-3b48-b1dc-1575bdd584dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|美国03|原生Seattle, server: v33.88host.buzz, port: 18044, type: vmess, uuid: 5c4e1928-eed5-3b48-b1dc-1575bdd584dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|香港01|负载均衡 3, server: v11.88host.buzz, port: 18005, type: vmess, uuid: d6b30550-19ff-324c-b95f-d19a0da68d44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|香港02|负载均衡 3, server: v12.88host.buzz, port: 18006, type: vmess, uuid: d6b30550-19ff-324c-b95f-d19a0da68d44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|香港03|负载均衡 3, server: v13.88host.buzz, port: 18007, type: vmess, uuid: d6b30550-19ff-324c-b95f-d19a0da68d44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 基础|香港05|负载均衡 3, server: v12.88host.buzz, port: 18009, type: vmess, uuid: d6b30550-19ff-324c-b95f-d19a0da68d44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本(Youtube技术分享室整理) 2, server: 141.164.35.41, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: SG(Youtube技术分享室整理), server: 194.124.35.11, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: RO |17.47Mb, server: 62.216.92.180, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇷🇴RO-🇷🇴RO_799 |14.18Mb, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: ⌈绿通⌋ 香港 01, server: hz1.ftnodes1.xyz, port: 46794, type: vmess, uuid: 19d4f460-862a-4884-98ab-40befb18e504, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 香港 HK 04, server: 01-hgvhjh.globalrelay.link, port: 15004, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 6622:885pgDOfGlIJq7Nt, obfs-param: ae3136622.microsoft.com, udp: true}
+  - {name: 香港 HK 09, server: 01-hgvhjh.globalrelay.link, port: 15009, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 6622:885pgDOfGlIJq7Nt, obfs-param: ae3136622.microsoft.com, udp: true}
+  - {name: 香港 HK 03, server: 01-hgvhjh.globalrelay.link, port: 15003, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 6622:885pgDOfGlIJq7Nt, obfs-param: ae3136622.microsoft.com, udp: true}
+  - {name: 香港 HK 08, server: 01-hgvhjh.globalrelay.link, port: 15008, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 6622:885pgDOfGlIJq7Nt, obfs-param: ae3136622.microsoft.com, udp: true}
+  - {name: 香港 HK 07, server: 01-hgvhjh.globalrelay.link, port: 15007, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 6622:885pgDOfGlIJq7Nt, obfs-param: ae3136622.microsoft.com, udp: true}
+  - {name: 香港 HK 06, server: 01-hgvhjh.globalrelay.link, port: 15006, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 6622:885pgDOfGlIJq7Nt, obfs-param: ae3136622.microsoft.com, udp: true}
+  - {name: 台湾 TW 07, server: 01-hgvhjh.globalrelay.link, port: 15507, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 6622:885pgDOfGlIJq7Nt, obfs-param: ae3136622.microsoft.com, udp: true}
+  - {name: 韩国 KR 02, server: 01-hgvhjh.globalrelay.link, port: 15302, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 6622:885pgDOfGlIJq7Nt, obfs-param: ae3136622.microsoft.com, udp: true}
+  - {name: 台湾 TW 02, server: 01-hgvhjh.globalrelay.link, port: 15502, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 6622:885pgDOfGlIJq7Nt, obfs-param: ae3136622.microsoft.com, udp: true}
+  - {name: 台湾 TW 03, server: 01-hgvhjh.globalrelay.link, port: 15503, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 6622:885pgDOfGlIJq7Nt, obfs-param: ae3136622.microsoft.com, udp: true}
+  - {name: 台湾 TW 06, server: 01-hgvhjh.globalrelay.link, port: 15506, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 6622:885pgDOfGlIJq7Nt, obfs-param: ae3136622.microsoft.com, udp: true}
+  - {name: 新加坡 SG 05, server: 01-hgvhjh.globalrelay.link, port: 15405, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 6622:885pgDOfGlIJq7Nt, obfs-param: ae3136622.microsoft.com, udp: true}
+  - {name: 韩国 KR 07, server: 01-hgvhjh.globalrelay.link, port: 15307, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 6622:885pgDOfGlIJq7Nt, obfs-param: ae3136622.microsoft.com, udp: true}
+  - {name: 新加坡 SG 03, server: 01-hgvhjh.globalrelay.link, port: 15403, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 6622:885pgDOfGlIJq7Nt, obfs-param: ae3136622.microsoft.com, udp: true}
+  - {name: 菲律宾_TG@nodesharing, server: 188.214.125.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG, udp: true}
+  - {name: By t.me/lqmoe, server: directhkt4.host.mznode.link, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: t.me/lqmoe, udp: true}
+  - {name: From t.me/vpnpool, server: freehkt2.mznode.link, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: t.me/vpnpool, udp: true}
+  - {name: "[大麦]-AIA-HK-香港-1-2.0x-视频", server: bgphk1.vip.mznode.link, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-HK-香港-2-2.0x-视频", server: bgphk2.vip.mznode.link, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-HK-香港-3-2.0x-视频", server: bgphk3.vip.mznode.link, port: 576, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-HK-香港-6-2.0x-视频", server: bgphk6.vip.mznode.link, port: 579, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-HK-香港-8-2.0x-视频", server: bgphk8.vip.mznode.link, port: 581, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-HK-香港-9-2.0x-视频", server: bgphk9.vip.mznode.link, port: 582, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-HK-香港-A-2.0x-视频", server: bgphka.vip.mznode.link, port: 583, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-JP-日本-1-2.0x-视频", server: relayjp1.vip.mznode.link, port: 1451, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-JP-日本-2-2.0x-视频", server: relayjp2.vip.mznode.link, port: 1452, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-JP-日本-3-2.0x-视频", server: relayjp3.vip.mznode.link, port: 1453, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-KR-韩国-1-2.0x-视频", server: qdcukr1.vip.mznode.link, port: 1551, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: 280d593947.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-KR-韩国-2-2.0x-视频", server: shkr2.vip.mznode.link, port: 1552, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: 280d593947.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-SGP-新加坡-2-2.0x-视频", server: relaysgp2.vip.mznode.link, port: 1502, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-SGP-新加坡-4-2.0x-视频", server: relaysgp4.vip.mznode.link, port: 1504, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-TW-台湾-2-2.0x-视频", server: aiatw2.mznode.link, port: 1202, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-TW-台湾-3-2.0x-视频", server: aiatw3.mznode.link, port: 1203, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-TW-台湾-5-2.0x-视频", server: aiatw5.mznode.link, port: 1205, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-TW-台湾-6-2.0x-视频", server: aiatw6.mznode.link, port: 1206, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[大麦]-AIA-VN-越南-1-2.0x-视频", server: aiavnd1.vip.mznode.link, port: 1611, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[小麦]-中继-HK-香港-1-2.0x-视频", server: bgphzhk1.host.mznode.link, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[小麦]-中继-HK-香港-2-2.0x-视频", server: bgphzhk2.host.mznode.link, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[小麦]-中继-HK-香港-3-2.0x-视频", server: bgphzhk3.host.mznode.link, port: 576, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[小麦]-中继-HK-香港-4-2.0x-视频", server: bgphzhk4.host.mznode.link, port: 577, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[小麦]-中继-JP-日本-1-视频", server: relayjp1.host.mznode.link, port: 1251, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[小麦]-中继-SGP-新加坡-1-2.0x-视频", server: relaysgp1.host.mznode.link, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[小麦]-中继-TW-台湾-1-2.0x-视频", server: bgpshtw1.host.mznode.link, port: 1201, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[小麦]-中继-TW-台湾-3-2.0x-视频", server: bgpshtw3.host.mznode.link, port: 1203, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[小麦]-精品-HK-香港-2-2.0x-视频", server: dmhk2.host.mznode.link, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 93947:SKKSas, obfs-param: b43e313.microsoft.com, udp: true}
+  - {name: "[1x]CU 日本 隧道 NO.1", server: cu.googo.in, port: 21006, type: ss, cipher: chacha20-ietf-poly1305, password: a6583148-6f03-49f8-b636-2f295fb3953e, udp: true}
+  - {name: "[1x]CU 新加坡 隧道 NO.1", server: cu.googo.in, port: 21008, type: ss, cipher: chacha20-ietf-poly1305, password: a6583148-6f03-49f8-b636-2f295fb3953e, udp: true}
+  - {name: "[1x]CU 香港 隧道 NO.2", server: cu.googo.in, port: 21014, type: ss, cipher: chacha20-ietf-poly1305, password: a6583148-6f03-49f8-b636-2f295fb3953e, udp: true}
+  - {name: 【新鸟免费】日本JP-AWS 04 1.0x, server: mf-aws-jp-04.xncloud.xyz, port: 18000, type: vmess, uuid: 4747ec2e-5c89-3a96-b9f1-b82c641641c7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-04.xncloud.xyz}, udp: true}
+  - {name: 【新鸟免费】日本JP-AWS 05 1.0x, server: mf-aws-jp-05.xncloud.xyz, port: 18000, type: vmess, uuid: 4747ec2e-5c89-3a96-b9f1-b82c641641c7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-05.xncloud.xyz}, udp: true}
+  - {name: 【新鸟免费】日本JP-AWS 06 1.0x, server: mf-aws-jp-06.xncloud.xyz, port: 18000, type: vmess, uuid: 4747ec2e-5c89-3a96-b9f1-b82c641641c7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-06.xncloud.xyz}, udp: true}
+  - {name: 【新鸟免费】日本JP-AWS 07 1.0x, server: mf-aws-jp-07.xncloud.xyz, port: 18000, type: vmess, uuid: 4747ec2e-5c89-3a96-b9f1-b82c641641c7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-07.xncloud.xyz}, udp: true}
+  - {name: 【新鸟免费】日本JP-AWS 10 1.0x, server: mf-aws-jp-10.xncloud.xyz, port: 18000, type: vmess, uuid: 4747ec2e-5c89-3a96-b9f1-b82c641641c7, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-10.xncloud.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 回国专线贵州
       - YouTube-由零开始
-      - 台湾w-油管 2
-      - _中国_（）_120
-      - 标准|印度02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
+      - Large 新加坡02 - all | IEPL | 倍率:1.5
+      - Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - Large 新加坡05 - all | IEPL | 倍率:1.5
+      - Large 新加坡06 - all | IEPL | 倍率:1.5
+      - Large 新加坡10 - all | IEPL | 倍率:1.5
+      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港24 - nfo | IEPL | 倍率:1.6
+      - Lil 新加坡04 - netflix | IEPL | 倍率:2
+      - Lil 新加坡05 - netflix | IEPL | 倍率:2
+      - 娄底联通-SG-Melbicom@vpnhat
+      - 徐州联通-彰化Hinet@vpnhat
+      - 广州优刻云-Tokyo-Linode@vpnhat 2
+      - 北京优刻云-香港DMIT@vpnhat 2
+      - 徐州联通-彰化Hinet@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 6
+      - 娄底联通-SG-Melbicom@vpnhat 2
+      - 上海优刻云-Tokyo-Linode@vpnhat 4
+      - 娄底联通-SG-Melbicom@vpnhat 3
+      - 北京科技网-Tokyo-Linode@vpnhat 4
+      - 佛山移动-彰化Hinet@vpnhat 2
+      - Relay_🇨🇳CN-🇯🇵JP_293
+      - _HK_香港
+      - _HK_香港 3
+      - Relay_🇨🇳CN-🇯🇵JP_327
+      - Pool_🇭🇰HK_600
+      - 共享
+      - CYL-科技（202201.04）
+      - v2ray 日本(移动) [Netflix]
+      - v2ray 日本(联通) [Netflix]
+      - v2ray 香港HGC(联通) [Netflix]
+      - Large 新加坡07 - all | IEPL | 倍率:1.5
+      - Large 新加坡11 - all | IEPL | 倍率:1.5
+      - Large 新加坡12 - all | IEPL | 倍率:1.5
+      - Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 杭州移动-彰化Hinet@vpnhat
+      - 台中Hinet@vpnhat
+      - 台中Hinet@vpnhat 2
+      - v2ray 韩国(联通) [Netflix]
+      - 新加坡
+      - HK(Youtube技术分享室整理)
+      - RO_741
+      - 广州优刻云-Tokyo-Linode@vpnhat
+      - 上海优刻云-Tokyo-Linode@vpnhat
+      - 娄底联通-SG-Melbicom@vpnhat 4
+      - 徐州联通-SG-Melbicom@vpnhat 5
+      - +Relay_🇸🇬SG-🇸🇬SG_901
+      - 基础|香港01|负载均衡
+      - 基础|香港02|负载均衡
+      - 基础|香港03|负载均衡
+      - 基础|香港05|负载均衡
       - 专线|香港02|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
-      - 专线|美国02|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|美国04|原生Seattle
+      - 专线|台湾02|原生Taipei
       - 专线|西雅图01|原生NTT
-      - 专线|西雅图02|原生NTT
-      - V1-日本B组 直连 速度随缘 1x
+      - 基础|香港01|负载均衡 2
+      - 基础|香港02|负载均衡 2
+      - 基础|香港03|负载均衡 2
+      - 基础|香港05|负载均衡 2
+      - 专线|香港01|原生HGCBBS
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 2
+      - 专线|香港05|原生HGCBBS 2
+      - 专线|香港07|原生HKBN 2
+      - 专线|香港08|原生HKBN 2
+      - 专线|台湾01|原生Taipei 2
+      - US(Youtube技术分享室整理)
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - IN(技术分享室整理,欢迎订阅)
+      - KR(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - JP(Youtube技术分享室整理)
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - 日本(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 3
+      - JP(Youtube技术分享室整理) 2
+      - "|74.80Mb"
+      - Pool_ | 7.56Mb
+      - Pool_ |16.30Mb
+      - Pool_ |330.97Mb
+      - Pool_ |491.22Mb
+      - Relay_ |340.37Mb
+      - Relay_ |390.48Mb
+      - Relay_ |17.62Mb
+      - Relay_ | 4.56Mb
+      - Relay_🇷🇴RO-🇷🇴RO_793 |12.05Mb
+      - Relay_🇷🇴RO-🇷🇴RO_795 |14.63Mb
+      - Relay_🇷🇴RO-🇷🇴RO_796 |11.75Mb
+      - RO_797 |14.94Mb
+      - 台湾w-油管 2
       - V1-香港B组 直连 速度随缘 1x
-      - Large 新加坡02 - all | IEPL | 倍率:1.5
-      - Large 新加坡03 - all | MIEPL | 倍率:1.6
-      - Large 新加坡04 - all | MIEPL | 倍率:1.6
-      - Large 新加坡05 - all | IEPL | 倍率:1.5
-      - Large 新加坡06 - all | IEPL | 倍率:1.5
-      - Large 新加坡10 - all | IEPL | 倍率:1.5
-      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - Large 香港20 - nf | AIA | 倍率:1.6
       - Large 香港23 - nfo | IEPL | 倍率:1.6
-      - Large 香港24 - nfo | IEPL | 倍率:1.6
-      - Lil 新加坡04 - netflix | IEPL | 倍率:2
-      - Lil 新加坡05 - netflix | IEPL | 倍率:2
-      - Lil 美国07 - all | IEPL | 倍率:1.3
-      - Lil 美国09 - allmedia | IEPL | 倍率:1.3
-      - v1|亚洲|C|混合负载|视频主力
-      - v1|亚洲|B|混合负载|低延主力
-      - v1|亚洲|A|混合负载|外贸主力
-      - v1|香港|A|5台负载
-      - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
-      - v1|新加坡|A|6台负载
-      - v1|新加坡|B|7台负载
-      - v1|新加坡|C|8台负载
-      - v1|新加坡|C|9台负载
-      - v1|日本|A|7台负载
-      - v1|日本|B|4台负载
-      - v1|日本|B|8台负载
-      - v1|日本|C|9台负载
-      - v1|美国|A|6台负载
-      - v1|美国|C|3台负载
-      - v1|香港|A|7台负载|原生
-      - v1|香港|B|8台负载|原生
-      - v1|香港|C|9台负载|原生
-      - v1|台湾|C|4台负载|原生
-      - v1|新加坡|A|4台负载|原生
-      - v1|新加坡|B|4台负载|原生
-      - v1|美国|A|3台负载|原生
-      - v1|澳洲|A|4台负载
-      - v1|澳洲|B|3台负载
-      - v1|澳洲|C|4台负载
-      - v1|印度|A|4台负载
-      - v1|俄罗斯|A|3台负载
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 北京优刻云-香港DMIT@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-彰化Hinet@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 广州优刻云-Tokyo-Linode@vpnhat 2
-      - 北京优刻云-香港DMIT@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 4
-      - 徐州联通-彰化Hinet@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 6
-      - 北京科技网-Tokyo-Linode@vpnhat 6
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
-      - 专线|香港08|原生HGCBBS
-      - 中国_TG@nodesharing
-      - _US_美国
-      - 专线|美国01|原生Seattle
-      - V1-台湾05 中继A 2x
-      - v2ray 香港(联通)
-      - 中国_TG@nodesharing 2
-      - 标准|加拿大01|解锁流媒体
-      - 专线|台湾03|原生Taipei
       - Large 台灣03 - all | MIEPL | 倍率:1.6
       - Large 台灣04 - all | IEPL | 倍率:1.5
-      - Large 日本04 - allmedia | IEPL | 倍率:1.3
       - Large 香港03 - allmedia | MIEPL | 倍率:1.8
       - Large 香港13 - all | AIA | 倍率:1.6
       - Large 香港14 - nf | MIEPL | 倍率:1.6
-      - Lil 菲律宾01 - SHOPP | IEPL | 倍率:1.3
-      - VU新加坡-AZ中转
-      - "[台湾 01] 广东｜HiNet"
-      - "[香港 01] 香港｜HGC"
-      - "[香港 02] 香港｜Azure"
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 上海优刻云-Tokyo-Linode@vpnhat 3
-      - 上海优刻云-Tokyo-Linode@vpnhat 4
-      - 娄底联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 4
-      - 佛山移动-彰化Hinet@vpnhat 2
-      - 香港/江门移动A 2
-      - 香港/江门移动B 2
-      - 香港/广州移动A 2
-      - 香港/广州移动B 2
-      - 香港/佛山移动 2
-      - 香港/安徽联通 2
-      - 香港/长沙联通 2
-      - 香港/上海移动 2
-      - 香港B/江门移动A 2
-      - 香港B/江门移动B 2
-      - 香港B/广州移动A 2
-      - 香港B/广州移动B 2
-      - 香港B/佛山移动 2
-      - 香港B/安徽联通 2
-      - 香港B/上海移动 2
-      - 香港B/上海联通 2
-      - 日本/江门移动A 2
-      - 日本/江门移动B 2
-      - 日本/广州移动A 2
-      - 日本/广州移动B 2
-      - 日本/佛山移动 2
-      - 日本/安徽联通 2
-      - 日本/长沙联通 2
-      - 日本/上海联通 2
-      - Relay_🇨🇳CN-🇺🇸US_282
-      - Relay_🇨🇳CN-🇺🇸US_287
-      - Relay_🇨🇳CN-🇭🇰HK_292
-      - Relay_🇨🇳CN-🇯🇵JP_293
-      - Relay_🇨🇳CN-🇭🇰HK_300
-      - Relay_🇨🇳CN-🇭🇰HK_303
-      - Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇨🇳CN-🇭🇰HK_306
-      - Relay_🇨🇳CN-🇭🇰HK_307
-      - Relay_🇨🇳CN-🇭🇰HK_308
-      - Relay_🇨🇳CN-🇯🇵JP_309
-      - Relay_🇨🇳CN-🇯🇵JP_310
       - Relay_🇨🇳CN-🇯🇵JP_312
-      - Relay_🇨🇳CN-🇸🇬SG_313
-      - Relay_🇨🇳CN-🇯🇵JP_314
-      - Relay_🇨🇳CN-🇭🇰HK_316
-      - Relay_🇨🇳CN-🇸🇬SG_317
-      - Relay_🇨🇳CN-🇸🇬SG_318
       - Relay_🇨🇳CN-🇯🇵JP_321
-      - Relay_🇨🇳CN-🇭🇰HK_323
       - Relay_🇨🇳CN-🇭🇰HK_329
-      - Relay_🇭🇰HK-🇭🇰HK_613
-      - Relay_🇭🇰HK-🇹🇼TW_614
-      - Relay_🇺🇸US-🇺🇸US_2080
-      - _HK_香港
-      - _HK_香港 3
-      - _HK_香港 4
-      - V1-香港B组 直连 速度随缘 1x 2
-      - V1-日本B组 直连 速度随缘 1x 2
-      - Jsnzkpg 18
-      - Relay_🇨🇳CN-🇭🇰HK_298
-      - Relay_🇨🇳CN-🇯🇵JP_327
-      - Pool_🇭🇰HK_556
-      - Pool_🇭🇰HK_557
-      - Pool_🇭🇰HK_590
-      - Pool_🇭🇰HK_595
-      - Pool_🇭🇰HK_600
+      - +Pool_🇭🇰HK_556
+      - _中国_（）_79
+      - 中国_TG@nodesharing
+      - v2ray 马来西亚(移动) [Netflix]
+      - Large 台灣05 - all | IEPL | 倍率:1.5
+      - Large 新加坡08 - all | IEPL | 倍率:1.5
+      - Large 新加坡09 - all | IEPL | 倍率:1.5
+      - Large 香港02 - nf | MIEPL | 倍率:1.8
+      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港08 - all | AIA | 倍率:1.6
+      - Large 香港09 - nf | AIA | 倍率:1.6
+      - Large 香港10 - nf | AIA | 倍率:1.6
+      - Large 香港11 - nf | AIA | 倍率:1.6
+      - Large 香港12 - nf | AIA | 倍率:1.6
+      - Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港18 - nf | AIA | 倍率:1.8
+      - Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - Large 香港22 - nf | AIA | 倍率:1.8
+      - Lil 香港11 - nf | AIA | 倍率:3
+      - Lil 香港12 - nf | AIA | 倍率:3
+      - Large 台灣01 - all | IEPL | 倍率:1.8
+      - 上海优刻云-Tokyo-Linode@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 5
+      - 专线|美国01|原生Seattle
+      - 专线|香港01|原生HGCBBS 2
+      - 专线|香港02|原生HGCBBS 3
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国03|原生Seattle
+      - 基础|香港01|负载均衡 3
+      - 基础|香港02|负载均衡 3
+      - 基础|香港03|负载均衡 3
+      - 基础|香港05|负载均衡 3
+      - 日本(Youtube技术分享室整理) 2
+      - SG(Youtube技术分享室整理)
+      - RO |17.47Mb
+      - Relay_🇷🇴RO-🇷🇴RO_799 |14.18Mb
+      - ⌈绿通⌋ 香港 01
+      - 香港 HK 04
+      - 香港 HK 09
+      - 香港 HK 03
+      - 香港 HK 08
+      - 香港 HK 07
+      - 香港 HK 06
+      - 台湾 TW 07
+      - 韩国 KR 02
+      - 台湾 TW 02
+      - 台湾 TW 03
+      - 台湾 TW 06
+      - 新加坡 SG 05
+      - 韩国 KR 07
+      - 新加坡 SG 03
+      - 菲律宾_TG@nodesharing
+      - By t.me/lqmoe
+      - From t.me/vpnpool
+      - "[大麦]-AIA-HK-香港-1-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-2-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-3-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-6-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-8-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-9-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-A-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-1-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-2-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-3-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-1-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-4-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-2-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-3-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-5-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-6-2.0x-视频"
+      - "[大麦]-AIA-VN-越南-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-2-2.0x-视频"
+      - "[小麦]-中继-HK-香港-3-2.0x-视频"
+      - "[小麦]-中继-HK-香港-4-2.0x-视频"
+      - "[小麦]-中继-JP-日本-1-视频"
+      - "[小麦]-中继-SGP-新加坡-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-3-2.0x-视频"
+      - "[小麦]-精品-HK-香港-2-2.0x-视频"
+      - "[1x]CU 日本 隧道 NO.1"
+      - "[1x]CU 新加坡 隧道 NO.1"
+      - "[1x]CU 香港 隧道 NO.2"
+      - 【新鸟免费】日本JP-AWS 04 1.0x
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - 【新鸟免费】日本JP-AWS 06 1.0x
+      - 【新鸟免费】日本JP-AWS 07 1.0x
+      - 【新鸟免费】日本JP-AWS 10 1.0x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 回国专线贵州
       - YouTube-由零开始
-      - 台湾w-油管 2
-      - _中国_（）_120
-      - 标准|印度02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
+      - Large 新加坡02 - all | IEPL | 倍率:1.5
+      - Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - Large 新加坡05 - all | IEPL | 倍率:1.5
+      - Large 新加坡06 - all | IEPL | 倍率:1.5
+      - Large 新加坡10 - all | IEPL | 倍率:1.5
+      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港24 - nfo | IEPL | 倍率:1.6
+      - Lil 新加坡04 - netflix | IEPL | 倍率:2
+      - Lil 新加坡05 - netflix | IEPL | 倍率:2
+      - 娄底联通-SG-Melbicom@vpnhat
+      - 徐州联通-彰化Hinet@vpnhat
+      - 广州优刻云-Tokyo-Linode@vpnhat 2
+      - 北京优刻云-香港DMIT@vpnhat 2
+      - 徐州联通-彰化Hinet@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 6
+      - 娄底联通-SG-Melbicom@vpnhat 2
+      - 上海优刻云-Tokyo-Linode@vpnhat 4
+      - 娄底联通-SG-Melbicom@vpnhat 3
+      - 北京科技网-Tokyo-Linode@vpnhat 4
+      - 佛山移动-彰化Hinet@vpnhat 2
+      - Relay_🇨🇳CN-🇯🇵JP_293
+      - _HK_香港
+      - _HK_香港 3
+      - Relay_🇨🇳CN-🇯🇵JP_327
+      - Pool_🇭🇰HK_600
+      - 共享
+      - CYL-科技（202201.04）
+      - v2ray 日本(移动) [Netflix]
+      - v2ray 日本(联通) [Netflix]
+      - v2ray 香港HGC(联通) [Netflix]
+      - Large 新加坡07 - all | IEPL | 倍率:1.5
+      - Large 新加坡11 - all | IEPL | 倍率:1.5
+      - Large 新加坡12 - all | IEPL | 倍率:1.5
+      - Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 杭州移动-彰化Hinet@vpnhat
+      - 台中Hinet@vpnhat
+      - 台中Hinet@vpnhat 2
+      - v2ray 韩国(联通) [Netflix]
+      - 新加坡
+      - HK(Youtube技术分享室整理)
+      - RO_741
+      - 广州优刻云-Tokyo-Linode@vpnhat
+      - 上海优刻云-Tokyo-Linode@vpnhat
+      - 娄底联通-SG-Melbicom@vpnhat 4
+      - 徐州联通-SG-Melbicom@vpnhat 5
+      - +Relay_🇸🇬SG-🇸🇬SG_901
+      - 基础|香港01|负载均衡
+      - 基础|香港02|负载均衡
+      - 基础|香港03|负载均衡
+      - 基础|香港05|负载均衡
       - 专线|香港02|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
-      - 专线|美国02|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|美国04|原生Seattle
+      - 专线|台湾02|原生Taipei
       - 专线|西雅图01|原生NTT
-      - 专线|西雅图02|原生NTT
-      - V1-日本B组 直连 速度随缘 1x
+      - 基础|香港01|负载均衡 2
+      - 基础|香港02|负载均衡 2
+      - 基础|香港03|负载均衡 2
+      - 基础|香港05|负载均衡 2
+      - 专线|香港01|原生HGCBBS
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 2
+      - 专线|香港05|原生HGCBBS 2
+      - 专线|香港07|原生HKBN 2
+      - 专线|香港08|原生HKBN 2
+      - 专线|台湾01|原生Taipei 2
+      - US(Youtube技术分享室整理)
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - IN(技术分享室整理,欢迎订阅)
+      - KR(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - JP(Youtube技术分享室整理)
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - 日本(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 3
+      - JP(Youtube技术分享室整理) 2
+      - "|74.80Mb"
+      - Pool_ | 7.56Mb
+      - Pool_ |16.30Mb
+      - Pool_ |330.97Mb
+      - Pool_ |491.22Mb
+      - Relay_ |340.37Mb
+      - Relay_ |390.48Mb
+      - Relay_ |17.62Mb
+      - Relay_ | 4.56Mb
+      - Relay_🇷🇴RO-🇷🇴RO_793 |12.05Mb
+      - Relay_🇷🇴RO-🇷🇴RO_795 |14.63Mb
+      - Relay_🇷🇴RO-🇷🇴RO_796 |11.75Mb
+      - RO_797 |14.94Mb
+      - 台湾w-油管 2
       - V1-香港B组 直连 速度随缘 1x
-      - Large 新加坡02 - all | IEPL | 倍率:1.5
-      - Large 新加坡03 - all | MIEPL | 倍率:1.6
-      - Large 新加坡04 - all | MIEPL | 倍率:1.6
-      - Large 新加坡05 - all | IEPL | 倍率:1.5
-      - Large 新加坡06 - all | IEPL | 倍率:1.5
-      - Large 新加坡10 - all | IEPL | 倍率:1.5
-      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - Large 香港20 - nf | AIA | 倍率:1.6
       - Large 香港23 - nfo | IEPL | 倍率:1.6
-      - Large 香港24 - nfo | IEPL | 倍率:1.6
-      - Lil 新加坡04 - netflix | IEPL | 倍率:2
-      - Lil 新加坡05 - netflix | IEPL | 倍率:2
-      - Lil 美国07 - all | IEPL | 倍率:1.3
-      - Lil 美国09 - allmedia | IEPL | 倍率:1.3
-      - v1|亚洲|C|混合负载|视频主力
-      - v1|亚洲|B|混合负载|低延主力
-      - v1|亚洲|A|混合负载|外贸主力
-      - v1|香港|A|5台负载
-      - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
-      - v1|新加坡|A|6台负载
-      - v1|新加坡|B|7台负载
-      - v1|新加坡|C|8台负载
-      - v1|新加坡|C|9台负载
-      - v1|日本|A|7台负载
-      - v1|日本|B|4台负载
-      - v1|日本|B|8台负载
-      - v1|日本|C|9台负载
-      - v1|美国|A|6台负载
-      - v1|美国|C|3台负载
-      - v1|香港|A|7台负载|原生
-      - v1|香港|B|8台负载|原生
-      - v1|香港|C|9台负载|原生
-      - v1|台湾|C|4台负载|原生
-      - v1|新加坡|A|4台负载|原生
-      - v1|新加坡|B|4台负载|原生
-      - v1|美国|A|3台负载|原生
-      - v1|澳洲|A|4台负载
-      - v1|澳洲|B|3台负载
-      - v1|澳洲|C|4台负载
-      - v1|印度|A|4台负载
-      - v1|俄罗斯|A|3台负载
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 北京优刻云-香港DMIT@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-彰化Hinet@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 广州优刻云-Tokyo-Linode@vpnhat 2
-      - 北京优刻云-香港DMIT@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 4
-      - 徐州联通-彰化Hinet@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 6
-      - 北京科技网-Tokyo-Linode@vpnhat 6
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
-      - 专线|香港08|原生HGCBBS
-      - 中国_TG@nodesharing
-      - _US_美国
-      - 专线|美国01|原生Seattle
-      - V1-台湾05 中继A 2x
-      - v2ray 香港(联通)
-      - 中国_TG@nodesharing 2
-      - 标准|加拿大01|解锁流媒体
-      - 专线|台湾03|原生Taipei
       - Large 台灣03 - all | MIEPL | 倍率:1.6
       - Large 台灣04 - all | IEPL | 倍率:1.5
-      - Large 日本04 - allmedia | IEPL | 倍率:1.3
       - Large 香港03 - allmedia | MIEPL | 倍率:1.8
       - Large 香港13 - all | AIA | 倍率:1.6
       - Large 香港14 - nf | MIEPL | 倍率:1.6
-      - Lil 菲律宾01 - SHOPP | IEPL | 倍率:1.3
-      - VU新加坡-AZ中转
-      - "[台湾 01] 广东｜HiNet"
-      - "[香港 01] 香港｜HGC"
-      - "[香港 02] 香港｜Azure"
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 上海优刻云-Tokyo-Linode@vpnhat 3
-      - 上海优刻云-Tokyo-Linode@vpnhat 4
-      - 娄底联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 4
-      - 佛山移动-彰化Hinet@vpnhat 2
-      - 香港/江门移动A 2
-      - 香港/江门移动B 2
-      - 香港/广州移动A 2
-      - 香港/广州移动B 2
-      - 香港/佛山移动 2
-      - 香港/安徽联通 2
-      - 香港/长沙联通 2
-      - 香港/上海移动 2
-      - 香港B/江门移动A 2
-      - 香港B/江门移动B 2
-      - 香港B/广州移动A 2
-      - 香港B/广州移动B 2
-      - 香港B/佛山移动 2
-      - 香港B/安徽联通 2
-      - 香港B/上海移动 2
-      - 香港B/上海联通 2
-      - 日本/江门移动A 2
-      - 日本/江门移动B 2
-      - 日本/广州移动A 2
-      - 日本/广州移动B 2
-      - 日本/佛山移动 2
-      - 日本/安徽联通 2
-      - 日本/长沙联通 2
-      - 日本/上海联通 2
-      - Relay_🇨🇳CN-🇺🇸US_282
-      - Relay_🇨🇳CN-🇺🇸US_287
-      - Relay_🇨🇳CN-🇭🇰HK_292
-      - Relay_🇨🇳CN-🇯🇵JP_293
-      - Relay_🇨🇳CN-🇭🇰HK_300
-      - Relay_🇨🇳CN-🇭🇰HK_303
-      - Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇨🇳CN-🇭🇰HK_306
-      - Relay_🇨🇳CN-🇭🇰HK_307
-      - Relay_🇨🇳CN-🇭🇰HK_308
-      - Relay_🇨🇳CN-🇯🇵JP_309
-      - Relay_🇨🇳CN-🇯🇵JP_310
       - Relay_🇨🇳CN-🇯🇵JP_312
-      - Relay_🇨🇳CN-🇸🇬SG_313
-      - Relay_🇨🇳CN-🇯🇵JP_314
-      - Relay_🇨🇳CN-🇭🇰HK_316
-      - Relay_🇨🇳CN-🇸🇬SG_317
-      - Relay_🇨🇳CN-🇸🇬SG_318
       - Relay_🇨🇳CN-🇯🇵JP_321
-      - Relay_🇨🇳CN-🇭🇰HK_323
       - Relay_🇨🇳CN-🇭🇰HK_329
-      - Relay_🇭🇰HK-🇭🇰HK_613
-      - Relay_🇭🇰HK-🇹🇼TW_614
-      - Relay_🇺🇸US-🇺🇸US_2080
-      - _HK_香港
-      - _HK_香港 3
-      - _HK_香港 4
-      - V1-香港B组 直连 速度随缘 1x 2
-      - V1-日本B组 直连 速度随缘 1x 2
-      - Jsnzkpg 18
-      - Relay_🇨🇳CN-🇭🇰HK_298
-      - Relay_🇨🇳CN-🇯🇵JP_327
-      - Pool_🇭🇰HK_556
-      - Pool_🇭🇰HK_557
-      - Pool_🇭🇰HK_590
-      - Pool_🇭🇰HK_595
-      - Pool_🇭🇰HK_600
+      - +Pool_🇭🇰HK_556
+      - _中国_（）_79
+      - 中国_TG@nodesharing
+      - v2ray 马来西亚(移动) [Netflix]
+      - Large 台灣05 - all | IEPL | 倍率:1.5
+      - Large 新加坡08 - all | IEPL | 倍率:1.5
+      - Large 新加坡09 - all | IEPL | 倍率:1.5
+      - Large 香港02 - nf | MIEPL | 倍率:1.8
+      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港08 - all | AIA | 倍率:1.6
+      - Large 香港09 - nf | AIA | 倍率:1.6
+      - Large 香港10 - nf | AIA | 倍率:1.6
+      - Large 香港11 - nf | AIA | 倍率:1.6
+      - Large 香港12 - nf | AIA | 倍率:1.6
+      - Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港18 - nf | AIA | 倍率:1.8
+      - Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - Large 香港22 - nf | AIA | 倍率:1.8
+      - Lil 香港11 - nf | AIA | 倍率:3
+      - Lil 香港12 - nf | AIA | 倍率:3
+      - Large 台灣01 - all | IEPL | 倍率:1.8
+      - 上海优刻云-Tokyo-Linode@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 5
+      - 专线|美国01|原生Seattle
+      - 专线|香港01|原生HGCBBS 2
+      - 专线|香港02|原生HGCBBS 3
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国03|原生Seattle
+      - 基础|香港01|负载均衡 3
+      - 基础|香港02|负载均衡 3
+      - 基础|香港03|负载均衡 3
+      - 基础|香港05|负载均衡 3
+      - 日本(Youtube技术分享室整理) 2
+      - SG(Youtube技术分享室整理)
+      - RO |17.47Mb
+      - Relay_🇷🇴RO-🇷🇴RO_799 |14.18Mb
+      - ⌈绿通⌋ 香港 01
+      - 香港 HK 04
+      - 香港 HK 09
+      - 香港 HK 03
+      - 香港 HK 08
+      - 香港 HK 07
+      - 香港 HK 06
+      - 台湾 TW 07
+      - 韩国 KR 02
+      - 台湾 TW 02
+      - 台湾 TW 03
+      - 台湾 TW 06
+      - 新加坡 SG 05
+      - 韩国 KR 07
+      - 新加坡 SG 03
+      - 菲律宾_TG@nodesharing
+      - By t.me/lqmoe
+      - From t.me/vpnpool
+      - "[大麦]-AIA-HK-香港-1-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-2-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-3-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-6-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-8-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-9-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-A-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-1-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-2-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-3-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-1-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-4-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-2-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-3-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-5-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-6-2.0x-视频"
+      - "[大麦]-AIA-VN-越南-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-2-2.0x-视频"
+      - "[小麦]-中继-HK-香港-3-2.0x-视频"
+      - "[小麦]-中继-HK-香港-4-2.0x-视频"
+      - "[小麦]-中继-JP-日本-1-视频"
+      - "[小麦]-中继-SGP-新加坡-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-3-2.0x-视频"
+      - "[小麦]-精品-HK-香港-2-2.0x-视频"
+      - "[1x]CU 日本 隧道 NO.1"
+      - "[1x]CU 新加坡 隧道 NO.1"
+      - "[1x]CU 香港 隧道 NO.2"
+      - 【新鸟免费】日本JP-AWS 04 1.0x
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - 【新鸟免费】日本JP-AWS 06 1.0x
+      - 【新鸟免费】日本JP-AWS 07 1.0x
+      - 【新鸟免费】日本JP-AWS 10 1.0x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 回国专线贵州
       - YouTube-由零开始
-      - 台湾w-油管 2
-      - _中国_（）_120
-      - 标准|印度02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
+      - Large 新加坡02 - all | IEPL | 倍率:1.5
+      - Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - Large 新加坡05 - all | IEPL | 倍率:1.5
+      - Large 新加坡06 - all | IEPL | 倍率:1.5
+      - Large 新加坡10 - all | IEPL | 倍率:1.5
+      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港24 - nfo | IEPL | 倍率:1.6
+      - Lil 新加坡04 - netflix | IEPL | 倍率:2
+      - Lil 新加坡05 - netflix | IEPL | 倍率:2
+      - 娄底联通-SG-Melbicom@vpnhat
+      - 徐州联通-彰化Hinet@vpnhat
+      - 广州优刻云-Tokyo-Linode@vpnhat 2
+      - 北京优刻云-香港DMIT@vpnhat 2
+      - 徐州联通-彰化Hinet@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 6
+      - 娄底联通-SG-Melbicom@vpnhat 2
+      - 上海优刻云-Tokyo-Linode@vpnhat 4
+      - 娄底联通-SG-Melbicom@vpnhat 3
+      - 北京科技网-Tokyo-Linode@vpnhat 4
+      - 佛山移动-彰化Hinet@vpnhat 2
+      - Relay_🇨🇳CN-🇯🇵JP_293
+      - _HK_香港
+      - _HK_香港 3
+      - Relay_🇨🇳CN-🇯🇵JP_327
+      - Pool_🇭🇰HK_600
+      - 共享
+      - CYL-科技（202201.04）
+      - v2ray 日本(移动) [Netflix]
+      - v2ray 日本(联通) [Netflix]
+      - v2ray 香港HGC(联通) [Netflix]
+      - Large 新加坡07 - all | IEPL | 倍率:1.5
+      - Large 新加坡11 - all | IEPL | 倍率:1.5
+      - Large 新加坡12 - all | IEPL | 倍率:1.5
+      - Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 杭州移动-彰化Hinet@vpnhat
+      - 台中Hinet@vpnhat
+      - 台中Hinet@vpnhat 2
+      - v2ray 韩国(联通) [Netflix]
+      - 新加坡
+      - HK(Youtube技术分享室整理)
+      - RO_741
+      - 广州优刻云-Tokyo-Linode@vpnhat
+      - 上海优刻云-Tokyo-Linode@vpnhat
+      - 娄底联通-SG-Melbicom@vpnhat 4
+      - 徐州联通-SG-Melbicom@vpnhat 5
+      - +Relay_🇸🇬SG-🇸🇬SG_901
+      - 基础|香港01|负载均衡
+      - 基础|香港02|负载均衡
+      - 基础|香港03|负载均衡
+      - 基础|香港05|负载均衡
       - 专线|香港02|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
-      - 专线|美国02|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|美国04|原生Seattle
+      - 专线|台湾02|原生Taipei
       - 专线|西雅图01|原生NTT
-      - 专线|西雅图02|原生NTT
-      - V1-日本B组 直连 速度随缘 1x
+      - 基础|香港01|负载均衡 2
+      - 基础|香港02|负载均衡 2
+      - 基础|香港03|负载均衡 2
+      - 基础|香港05|负载均衡 2
+      - 专线|香港01|原生HGCBBS
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 2
+      - 专线|香港05|原生HGCBBS 2
+      - 专线|香港07|原生HKBN 2
+      - 专线|香港08|原生HKBN 2
+      - 专线|台湾01|原生Taipei 2
+      - US(Youtube技术分享室整理)
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - IN(技术分享室整理,欢迎订阅)
+      - KR(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - JP(Youtube技术分享室整理)
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - 日本(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 3
+      - JP(Youtube技术分享室整理) 2
+      - "|74.80Mb"
+      - Pool_ | 7.56Mb
+      - Pool_ |16.30Mb
+      - Pool_ |330.97Mb
+      - Pool_ |491.22Mb
+      - Relay_ |340.37Mb
+      - Relay_ |390.48Mb
+      - Relay_ |17.62Mb
+      - Relay_ | 4.56Mb
+      - Relay_🇷🇴RO-🇷🇴RO_793 |12.05Mb
+      - Relay_🇷🇴RO-🇷🇴RO_795 |14.63Mb
+      - Relay_🇷🇴RO-🇷🇴RO_796 |11.75Mb
+      - RO_797 |14.94Mb
+      - 台湾w-油管 2
       - V1-香港B组 直连 速度随缘 1x
-      - Large 新加坡02 - all | IEPL | 倍率:1.5
-      - Large 新加坡03 - all | MIEPL | 倍率:1.6
-      - Large 新加坡04 - all | MIEPL | 倍率:1.6
-      - Large 新加坡05 - all | IEPL | 倍率:1.5
-      - Large 新加坡06 - all | IEPL | 倍率:1.5
-      - Large 新加坡10 - all | IEPL | 倍率:1.5
-      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - Large 香港20 - nf | AIA | 倍率:1.6
       - Large 香港23 - nfo | IEPL | 倍率:1.6
-      - Large 香港24 - nfo | IEPL | 倍率:1.6
-      - Lil 新加坡04 - netflix | IEPL | 倍率:2
-      - Lil 新加坡05 - netflix | IEPL | 倍率:2
-      - Lil 美国07 - all | IEPL | 倍率:1.3
-      - Lil 美国09 - allmedia | IEPL | 倍率:1.3
-      - v1|亚洲|C|混合负载|视频主力
-      - v1|亚洲|B|混合负载|低延主力
-      - v1|亚洲|A|混合负载|外贸主力
-      - v1|香港|A|5台负载
-      - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
-      - v1|新加坡|A|6台负载
-      - v1|新加坡|B|7台负载
-      - v1|新加坡|C|8台负载
-      - v1|新加坡|C|9台负载
-      - v1|日本|A|7台负载
-      - v1|日本|B|4台负载
-      - v1|日本|B|8台负载
-      - v1|日本|C|9台负载
-      - v1|美国|A|6台负载
-      - v1|美国|C|3台负载
-      - v1|香港|A|7台负载|原生
-      - v1|香港|B|8台负载|原生
-      - v1|香港|C|9台负载|原生
-      - v1|台湾|C|4台负载|原生
-      - v1|新加坡|A|4台负载|原生
-      - v1|新加坡|B|4台负载|原生
-      - v1|美国|A|3台负载|原生
-      - v1|澳洲|A|4台负载
-      - v1|澳洲|B|3台负载
-      - v1|澳洲|C|4台负载
-      - v1|印度|A|4台负载
-      - v1|俄罗斯|A|3台负载
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 北京优刻云-香港DMIT@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-彰化Hinet@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 广州优刻云-Tokyo-Linode@vpnhat 2
-      - 北京优刻云-香港DMIT@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 4
-      - 徐州联通-彰化Hinet@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 6
-      - 北京科技网-Tokyo-Linode@vpnhat 6
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
-      - 专线|香港08|原生HGCBBS
-      - 中国_TG@nodesharing
-      - _US_美国
-      - 专线|美国01|原生Seattle
-      - V1-台湾05 中继A 2x
-      - v2ray 香港(联通)
-      - 中国_TG@nodesharing 2
-      - 标准|加拿大01|解锁流媒体
-      - 专线|台湾03|原生Taipei
       - Large 台灣03 - all | MIEPL | 倍率:1.6
       - Large 台灣04 - all | IEPL | 倍率:1.5
-      - Large 日本04 - allmedia | IEPL | 倍率:1.3
       - Large 香港03 - allmedia | MIEPL | 倍率:1.8
       - Large 香港13 - all | AIA | 倍率:1.6
       - Large 香港14 - nf | MIEPL | 倍率:1.6
-      - Lil 菲律宾01 - SHOPP | IEPL | 倍率:1.3
-      - VU新加坡-AZ中转
-      - "[台湾 01] 广东｜HiNet"
-      - "[香港 01] 香港｜HGC"
-      - "[香港 02] 香港｜Azure"
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 上海优刻云-Tokyo-Linode@vpnhat 3
-      - 上海优刻云-Tokyo-Linode@vpnhat 4
-      - 娄底联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 4
-      - 佛山移动-彰化Hinet@vpnhat 2
-      - 香港/江门移动A 2
-      - 香港/江门移动B 2
-      - 香港/广州移动A 2
-      - 香港/广州移动B 2
-      - 香港/佛山移动 2
-      - 香港/安徽联通 2
-      - 香港/长沙联通 2
-      - 香港/上海移动 2
-      - 香港B/江门移动A 2
-      - 香港B/江门移动B 2
-      - 香港B/广州移动A 2
-      - 香港B/广州移动B 2
-      - 香港B/佛山移动 2
-      - 香港B/安徽联通 2
-      - 香港B/上海移动 2
-      - 香港B/上海联通 2
-      - 日本/江门移动A 2
-      - 日本/江门移动B 2
-      - 日本/广州移动A 2
-      - 日本/广州移动B 2
-      - 日本/佛山移动 2
-      - 日本/安徽联通 2
-      - 日本/长沙联通 2
-      - 日本/上海联通 2
-      - Relay_🇨🇳CN-🇺🇸US_282
-      - Relay_🇨🇳CN-🇺🇸US_287
-      - Relay_🇨🇳CN-🇭🇰HK_292
-      - Relay_🇨🇳CN-🇯🇵JP_293
-      - Relay_🇨🇳CN-🇭🇰HK_300
-      - Relay_🇨🇳CN-🇭🇰HK_303
-      - Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇨🇳CN-🇭🇰HK_306
-      - Relay_🇨🇳CN-🇭🇰HK_307
-      - Relay_🇨🇳CN-🇭🇰HK_308
-      - Relay_🇨🇳CN-🇯🇵JP_309
-      - Relay_🇨🇳CN-🇯🇵JP_310
       - Relay_🇨🇳CN-🇯🇵JP_312
-      - Relay_🇨🇳CN-🇸🇬SG_313
-      - Relay_🇨🇳CN-🇯🇵JP_314
-      - Relay_🇨🇳CN-🇭🇰HK_316
-      - Relay_🇨🇳CN-🇸🇬SG_317
-      - Relay_🇨🇳CN-🇸🇬SG_318
       - Relay_🇨🇳CN-🇯🇵JP_321
-      - Relay_🇨🇳CN-🇭🇰HK_323
       - Relay_🇨🇳CN-🇭🇰HK_329
-      - Relay_🇭🇰HK-🇭🇰HK_613
-      - Relay_🇭🇰HK-🇹🇼TW_614
-      - Relay_🇺🇸US-🇺🇸US_2080
-      - _HK_香港
-      - _HK_香港 3
-      - _HK_香港 4
-      - V1-香港B组 直连 速度随缘 1x 2
-      - V1-日本B组 直连 速度随缘 1x 2
-      - Jsnzkpg 18
-      - Relay_🇨🇳CN-🇭🇰HK_298
-      - Relay_🇨🇳CN-🇯🇵JP_327
-      - Pool_🇭🇰HK_556
-      - Pool_🇭🇰HK_557
-      - Pool_🇭🇰HK_590
-      - Pool_🇭🇰HK_595
-      - Pool_🇭🇰HK_600
+      - +Pool_🇭🇰HK_556
+      - _中国_（）_79
+      - 中国_TG@nodesharing
+      - v2ray 马来西亚(移动) [Netflix]
+      - Large 台灣05 - all | IEPL | 倍率:1.5
+      - Large 新加坡08 - all | IEPL | 倍率:1.5
+      - Large 新加坡09 - all | IEPL | 倍率:1.5
+      - Large 香港02 - nf | MIEPL | 倍率:1.8
+      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港08 - all | AIA | 倍率:1.6
+      - Large 香港09 - nf | AIA | 倍率:1.6
+      - Large 香港10 - nf | AIA | 倍率:1.6
+      - Large 香港11 - nf | AIA | 倍率:1.6
+      - Large 香港12 - nf | AIA | 倍率:1.6
+      - Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港18 - nf | AIA | 倍率:1.8
+      - Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - Large 香港22 - nf | AIA | 倍率:1.8
+      - Lil 香港11 - nf | AIA | 倍率:3
+      - Lil 香港12 - nf | AIA | 倍率:3
+      - Large 台灣01 - all | IEPL | 倍率:1.8
+      - 上海优刻云-Tokyo-Linode@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 5
+      - 专线|美国01|原生Seattle
+      - 专线|香港01|原生HGCBBS 2
+      - 专线|香港02|原生HGCBBS 3
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国03|原生Seattle
+      - 基础|香港01|负载均衡 3
+      - 基础|香港02|负载均衡 3
+      - 基础|香港03|负载均衡 3
+      - 基础|香港05|负载均衡 3
+      - 日本(Youtube技术分享室整理) 2
+      - SG(Youtube技术分享室整理)
+      - RO |17.47Mb
+      - Relay_🇷🇴RO-🇷🇴RO_799 |14.18Mb
+      - ⌈绿通⌋ 香港 01
+      - 香港 HK 04
+      - 香港 HK 09
+      - 香港 HK 03
+      - 香港 HK 08
+      - 香港 HK 07
+      - 香港 HK 06
+      - 台湾 TW 07
+      - 韩国 KR 02
+      - 台湾 TW 02
+      - 台湾 TW 03
+      - 台湾 TW 06
+      - 新加坡 SG 05
+      - 韩国 KR 07
+      - 新加坡 SG 03
+      - 菲律宾_TG@nodesharing
+      - By t.me/lqmoe
+      - From t.me/vpnpool
+      - "[大麦]-AIA-HK-香港-1-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-2-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-3-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-6-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-8-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-9-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-A-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-1-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-2-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-3-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-1-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-4-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-2-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-3-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-5-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-6-2.0x-视频"
+      - "[大麦]-AIA-VN-越南-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-2-2.0x-视频"
+      - "[小麦]-中继-HK-香港-3-2.0x-视频"
+      - "[小麦]-中继-HK-香港-4-2.0x-视频"
+      - "[小麦]-中继-JP-日本-1-视频"
+      - "[小麦]-中继-SGP-新加坡-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-3-2.0x-视频"
+      - "[小麦]-精品-HK-香港-2-2.0x-视频"
+      - "[1x]CU 日本 隧道 NO.1"
+      - "[1x]CU 新加坡 隧道 NO.1"
+      - "[1x]CU 香港 隧道 NO.2"
+      - 【新鸟免费】日本JP-AWS 04 1.0x
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - 【新鸟免费】日本JP-AWS 06 1.0x
+      - 【新鸟免费】日本JP-AWS 07 1.0x
+      - 【新鸟免费】日本JP-AWS 10 1.0x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -688,749 +852,940 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 回国专线贵州
       - YouTube-由零开始
-      - 台湾w-油管 2
-      - _中国_（）_120
-      - 标准|印度02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
-      - 专线|香港02|原生HGCBBS
-      - 专线|香港04|原生HGCBBS
-      - 专线|香港05|原生HGCBBS
-      - 专线|香港07|原生HKBN
-      - 专线|香港08|原生HKBN
-      - 专线|台湾01|原生Taipei
-      - 专线|美国02|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|美国04|原生Seattle
-      - 专线|西雅图01|原生NTT
-      - 专线|西雅图02|原生NTT
-      - V1-日本B组 直连 速度随缘 1x
-      - V1-香港B组 直连 速度随缘 1x
       - Large 新加坡02 - all | IEPL | 倍率:1.5
-      - Large 新加坡03 - all | MIEPL | 倍率:1.6
       - Large 新加坡04 - all | MIEPL | 倍率:1.6
       - Large 新加坡05 - all | IEPL | 倍率:1.5
       - Large 新加坡06 - all | IEPL | 倍率:1.5
       - Large 新加坡10 - all | IEPL | 倍率:1.5
       - Large 香港16 - allmedia | MIEPL | 倍率:1.6
-      - Large 香港20 - nf | AIA | 倍率:1.6
-      - Large 香港23 - nfo | IEPL | 倍率:1.6
       - Large 香港24 - nfo | IEPL | 倍率:1.6
       - Lil 新加坡04 - netflix | IEPL | 倍率:2
       - Lil 新加坡05 - netflix | IEPL | 倍率:2
-      - Lil 美国07 - all | IEPL | 倍率:1.3
-      - Lil 美国09 - allmedia | IEPL | 倍率:1.3
-      - v1|亚洲|C|混合负载|视频主力
-      - v1|亚洲|B|混合负载|低延主力
-      - v1|亚洲|A|混合负载|外贸主力
-      - v1|香港|A|5台负载
-      - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
-      - v1|新加坡|A|6台负载
-      - v1|新加坡|B|7台负载
-      - v1|新加坡|C|8台负载
-      - v1|新加坡|C|9台负载
-      - v1|日本|A|7台负载
-      - v1|日本|B|4台负载
-      - v1|日本|B|8台负载
-      - v1|日本|C|9台负载
-      - v1|美国|A|6台负载
-      - v1|美国|C|3台负载
-      - v1|香港|A|7台负载|原生
-      - v1|香港|B|8台负载|原生
-      - v1|香港|C|9台负载|原生
-      - v1|台湾|C|4台负载|原生
-      - v1|新加坡|A|4台负载|原生
-      - v1|新加坡|B|4台负载|原生
-      - v1|美国|A|3台负载|原生
-      - v1|澳洲|A|4台负载
-      - v1|澳洲|B|3台负载
-      - v1|澳洲|C|4台负载
-      - v1|印度|A|4台负载
-      - v1|俄罗斯|A|3台负载
       - 娄底联通-SG-Melbicom@vpnhat
-      - 北京优刻云-香港DMIT@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
       - 徐州联通-彰化Hinet@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
       - 广州优刻云-Tokyo-Linode@vpnhat 2
       - 北京优刻云-香港DMIT@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 4
       - 徐州联通-彰化Hinet@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 6
       - 北京科技网-Tokyo-Linode@vpnhat 6
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
-      - 专线|香港08|原生HGCBBS
-      - 中国_TG@nodesharing
-      - _US_美国
-      - 专线|美国01|原生Seattle
-      - V1-台湾05 中继A 2x
-      - v2ray 香港(联通)
-      - 中国_TG@nodesharing 2
-      - 标准|加拿大01|解锁流媒体
-      - 专线|台湾03|原生Taipei
-      - Large 台灣03 - all | MIEPL | 倍率:1.6
-      - Large 台灣04 - all | IEPL | 倍率:1.5
-      - Large 日本04 - allmedia | IEPL | 倍率:1.3
-      - Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港13 - all | AIA | 倍率:1.6
-      - Large 香港14 - nf | MIEPL | 倍率:1.6
-      - Lil 菲律宾01 - SHOPP | IEPL | 倍率:1.3
-      - VU新加坡-AZ中转
-      - "[台湾 01] 广东｜HiNet"
-      - "[香港 01] 香港｜HGC"
-      - "[香港 02] 香港｜Azure"
       - 娄底联通-SG-Melbicom@vpnhat 2
-      - 上海优刻云-Tokyo-Linode@vpnhat 3
       - 上海优刻云-Tokyo-Linode@vpnhat 4
       - 娄底联通-SG-Melbicom@vpnhat 3
       - 北京科技网-Tokyo-Linode@vpnhat 4
       - 佛山移动-彰化Hinet@vpnhat 2
-      - 香港/江门移动A 2
-      - 香港/江门移动B 2
-      - 香港/广州移动A 2
-      - 香港/广州移动B 2
-      - 香港/佛山移动 2
-      - 香港/安徽联通 2
-      - 香港/长沙联通 2
-      - 香港/上海移动 2
-      - 香港B/江门移动A 2
-      - 香港B/江门移动B 2
-      - 香港B/广州移动A 2
-      - 香港B/广州移动B 2
-      - 香港B/佛山移动 2
-      - 香港B/安徽联通 2
-      - 香港B/上海移动 2
-      - 香港B/上海联通 2
-      - 日本/江门移动A 2
-      - 日本/江门移动B 2
-      - 日本/广州移动A 2
-      - 日本/广州移动B 2
-      - 日本/佛山移动 2
-      - 日本/安徽联通 2
-      - 日本/长沙联通 2
-      - 日本/上海联通 2
-      - Relay_🇨🇳CN-🇺🇸US_282
-      - Relay_🇨🇳CN-🇺🇸US_287
-      - Relay_🇨🇳CN-🇭🇰HK_292
       - Relay_🇨🇳CN-🇯🇵JP_293
-      - Relay_🇨🇳CN-🇭🇰HK_300
-      - Relay_🇨🇳CN-🇭🇰HK_303
-      - Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇨🇳CN-🇭🇰HK_306
-      - Relay_🇨🇳CN-🇭🇰HK_307
-      - Relay_🇨🇳CN-🇭🇰HK_308
-      - Relay_🇨🇳CN-🇯🇵JP_309
-      - Relay_🇨🇳CN-🇯🇵JP_310
-      - Relay_🇨🇳CN-🇯🇵JP_312
-      - Relay_🇨🇳CN-🇸🇬SG_313
-      - Relay_🇨🇳CN-🇯🇵JP_314
-      - Relay_🇨🇳CN-🇭🇰HK_316
-      - Relay_🇨🇳CN-🇸🇬SG_317
-      - Relay_🇨🇳CN-🇸🇬SG_318
-      - Relay_🇨🇳CN-🇯🇵JP_321
-      - Relay_🇨🇳CN-🇭🇰HK_323
-      - Relay_🇨🇳CN-🇭🇰HK_329
-      - Relay_🇭🇰HK-🇭🇰HK_613
-      - Relay_🇭🇰HK-🇹🇼TW_614
-      - Relay_🇺🇸US-🇺🇸US_2080
       - _HK_香港
       - _HK_香港 3
-      - _HK_香港 4
-      - V1-香港B组 直连 速度随缘 1x 2
-      - V1-日本B组 直连 速度随缘 1x 2
-      - Jsnzkpg 18
-      - Relay_🇨🇳CN-🇭🇰HK_298
       - Relay_🇨🇳CN-🇯🇵JP_327
-      - Pool_🇭🇰HK_556
-      - Pool_🇭🇰HK_557
-      - Pool_🇭🇰HK_590
-      - Pool_🇭🇰HK_595
       - Pool_🇭🇰HK_600
-  - name: 🌏 国内媒体
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 台湾w-油管 2
+      - 共享
+      - CYL-科技（202201.04）
+      - v2ray 日本(移动) [Netflix]
+      - v2ray 日本(联通) [Netflix]
+      - v2ray 香港HGC(联通) [Netflix]
+      - Large 新加坡07 - all | IEPL | 倍率:1.5
+      - Large 新加坡11 - all | IEPL | 倍率:1.5
+      - Large 新加坡12 - all | IEPL | 倍率:1.5
+      - Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 杭州移动-彰化Hinet@vpnhat
+      - 台中Hinet@vpnhat
+      - 台中Hinet@vpnhat 2
+      - v2ray 韩国(联通) [Netflix]
+      - 新加坡
+      - HK(Youtube技术分享室整理)
+      - RO_741
+      - 广州优刻云-Tokyo-Linode@vpnhat
+      - 上海优刻云-Tokyo-Linode@vpnhat
+      - 娄底联通-SG-Melbicom@vpnhat 4
+      - 徐州联通-SG-Melbicom@vpnhat 5
+      - +Relay_🇸🇬SG-🇸🇬SG_901
+      - 基础|香港01|负载均衡
+      - 基础|香港02|负载均衡
+      - 基础|香港03|负载均衡
+      - 基础|香港05|负载均衡
       - 专线|香港02|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
+      - 专线|台湾02|原生Taipei
+      - 专线|西雅图01|原生NTT
+      - 基础|香港01|负载均衡 2
+      - 基础|香港02|负载均衡 2
+      - 基础|香港03|负载均衡 2
+      - 基础|香港05|负载均衡 2
+      - 专线|香港01|原生HGCBBS
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 2
+      - 专线|香港05|原生HGCBBS 2
+      - 专线|香港07|原生HKBN 2
+      - 专线|香港08|原生HKBN 2
+      - 专线|台湾01|原生Taipei 2
+      - US(Youtube技术分享室整理)
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - IN(技术分享室整理,欢迎订阅)
+      - KR(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - JP(Youtube技术分享室整理)
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - 日本(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 3
+      - JP(Youtube技术分享室整理) 2
+      - "|74.80Mb"
+      - Pool_ | 7.56Mb
+      - Pool_ |16.30Mb
+      - Pool_ |330.97Mb
+      - Pool_ |491.22Mb
+      - Relay_ |340.37Mb
+      - Relay_ |390.48Mb
+      - Relay_ |17.62Mb
+      - Relay_ | 4.56Mb
+      - Relay_🇷🇴RO-🇷🇴RO_793 |12.05Mb
+      - Relay_🇷🇴RO-🇷🇴RO_795 |14.63Mb
+      - Relay_🇷🇴RO-🇷🇴RO_796 |11.75Mb
+      - RO_797 |14.94Mb
+      - 台湾w-油管 2
       - V1-香港B组 直连 速度随缘 1x
-      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - Large 香港20 - nf | AIA | 倍率:1.6
       - Large 香港23 - nfo | IEPL | 倍率:1.6
-      - Large 香港24 - nfo | IEPL | 倍率:1.6
-      - v1|香港|A|5台负载
-      - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
-      - v1|新加坡|A|6台负载
-      - v1|新加坡|B|7台负载
-      - v1|新加坡|C|8台负载
-      - v1|新加坡|C|9台负载
-      - v1|日本|A|7台负载
-      - v1|日本|B|4台负载
-      - v1|日本|B|8台负载
-      - v1|日本|C|9台负载
-      - v1|美国|A|6台负载
-      - v1|美国|C|3台负载
-      - v1|香港|A|7台负载|原生
-      - v1|香港|B|8台负载|原生
-      - v1|香港|C|9台负载|原生
-      - v1|台湾|C|4台负载|原生
-      - v1|新加坡|A|4台负载|原生
-      - v1|新加坡|B|4台负载|原生
-      - v1|美国|A|3台负载|原生
-      - v1|澳洲|A|4台负载
-      - v1|澳洲|B|3台负载
-      - v1|澳洲|C|4台负载
-      - v1|印度|A|4台负载
-      - v1|俄罗斯|A|3台负载
-      - 北京优刻云-香港DMIT@vpnhat
-      - 徐州联通-彰化Hinet@vpnhat
-      - 北京优刻云-香港DMIT@vpnhat 2
-      - 徐州联通-彰化Hinet@vpnhat 2
-      - 专线|香港08|原生HGCBBS
-      - V1-台湾05 中继A 2x
-      - v2ray 香港(联通)
-      - 专线|台湾03|原生Taipei
       - Large 台灣03 - all | MIEPL | 倍率:1.6
       - Large 台灣04 - all | IEPL | 倍率:1.5
       - Large 香港03 - allmedia | MIEPL | 倍率:1.8
       - Large 香港13 - all | AIA | 倍率:1.6
       - Large 香港14 - nf | MIEPL | 倍率:1.6
-      - "[台湾 01] 广东｜HiNet"
-      - "[香港 01] 香港｜HGC"
-      - "[香港 02] 香港｜Azure"
+      - Relay_🇨🇳CN-🇯🇵JP_312
+      - Relay_🇨🇳CN-🇯🇵JP_321
+      - Relay_🇨🇳CN-🇭🇰HK_329
+      - +Pool_🇭🇰HK_556
+      - _中国_（）_79
+      - 中国_TG@nodesharing
+      - v2ray 马来西亚(移动) [Netflix]
+      - Large 台灣05 - all | IEPL | 倍率:1.5
+      - Large 新加坡08 - all | IEPL | 倍率:1.5
+      - Large 新加坡09 - all | IEPL | 倍率:1.5
+      - Large 香港02 - nf | MIEPL | 倍率:1.8
+      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港08 - all | AIA | 倍率:1.6
+      - Large 香港09 - nf | AIA | 倍率:1.6
+      - Large 香港10 - nf | AIA | 倍率:1.6
+      - Large 香港11 - nf | AIA | 倍率:1.6
+      - Large 香港12 - nf | AIA | 倍率:1.6
+      - Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港18 - nf | AIA | 倍率:1.8
+      - Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - Large 香港22 - nf | AIA | 倍率:1.8
+      - Lil 香港11 - nf | AIA | 倍率:3
+      - Lil 香港12 - nf | AIA | 倍率:3
+      - Large 台灣01 - all | IEPL | 倍率:1.8
+      - 上海优刻云-Tokyo-Linode@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 5
+      - 专线|美国01|原生Seattle
+      - 专线|香港01|原生HGCBBS 2
+      - 专线|香港02|原生HGCBBS 3
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国03|原生Seattle
+      - 基础|香港01|负载均衡 3
+      - 基础|香港02|负载均衡 3
+      - 基础|香港03|负载均衡 3
+      - 基础|香港05|负载均衡 3
+      - 日本(Youtube技术分享室整理) 2
+      - SG(Youtube技术分享室整理)
+      - RO |17.47Mb
+      - Relay_🇷🇴RO-🇷🇴RO_799 |14.18Mb
+      - ⌈绿通⌋ 香港 01
+      - 香港 HK 04
+      - 香港 HK 09
+      - 香港 HK 03
+      - 香港 HK 08
+      - 香港 HK 07
+      - 香港 HK 06
+      - 台湾 TW 07
+      - 韩国 KR 02
+      - 台湾 TW 02
+      - 台湾 TW 03
+      - 台湾 TW 06
+      - 新加坡 SG 05
+      - 韩国 KR 07
+      - 新加坡 SG 03
+      - 菲律宾_TG@nodesharing
+      - By t.me/lqmoe
+      - From t.me/vpnpool
+      - "[大麦]-AIA-HK-香港-1-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-2-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-3-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-6-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-8-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-9-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-A-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-1-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-2-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-3-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-1-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-4-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-2-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-3-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-5-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-6-2.0x-视频"
+      - "[大麦]-AIA-VN-越南-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-2-2.0x-视频"
+      - "[小麦]-中继-HK-香港-3-2.0x-视频"
+      - "[小麦]-中继-HK-香港-4-2.0x-视频"
+      - "[小麦]-中继-JP-日本-1-视频"
+      - "[小麦]-中继-SGP-新加坡-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-3-2.0x-视频"
+      - "[小麦]-精品-HK-香港-2-2.0x-视频"
+      - "[1x]CU 日本 隧道 NO.1"
+      - "[1x]CU 新加坡 隧道 NO.1"
+      - "[1x]CU 香港 隧道 NO.2"
+      - 【新鸟免费】日本JP-AWS 04 1.0x
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - 【新鸟免费】日本JP-AWS 06 1.0x
+      - 【新鸟免费】日本JP-AWS 07 1.0x
+      - 【新鸟免费】日本JP-AWS 10 1.0x
+  - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港24 - nfo | IEPL | 倍率:1.6
+      - 徐州联通-彰化Hinet@vpnhat
+      - 北京优刻云-香港DMIT@vpnhat 2
+      - 徐州联通-彰化Hinet@vpnhat 2
       - 佛山移动-彰化Hinet@vpnhat 2
-      - 香港/江门移动A 2
-      - 香港/江门移动B 2
-      - 香港/广州移动A 2
-      - 香港/广州移动B 2
-      - 香港/佛山移动 2
-      - 香港/安徽联通 2
-      - 香港/长沙联通 2
-      - 香港/上海移动 2
-      - 香港B/江门移动A 2
-      - 香港B/江门移动B 2
-      - 香港B/广州移动A 2
-      - 香港B/广州移动B 2
-      - 香港B/佛山移动 2
-      - 香港B/安徽联通 2
-      - 香港B/上海移动 2
-      - 香港B/上海联通 2
       - _HK_香港
       - _HK_香港 3
-      - _HK_香港 4
-      - V1-香港B组 直连 速度随缘 1x 2
+      - v2ray 香港HGC(联通) [Netflix]
+      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 杭州移动-彰化Hinet@vpnhat
+      - 台中Hinet@vpnhat
+      - 台中Hinet@vpnhat 2
+      - 基础|香港01|负载均衡
+      - 基础|香港02|负载均衡
+      - 基础|香港03|负载均衡
+      - 基础|香港05|负载均衡
+      - 专线|香港02|原生HGCBBS
+      - 专线|香港04|原生HGCBBS
+      - 专线|香港05|原生HGCBBS
+      - 专线|香港07|原生HKBN
+      - 专线|香港08|原生HKBN
+      - 专线|台湾01|原生Taipei
+      - 专线|台湾02|原生Taipei
+      - 基础|香港01|负载均衡 2
+      - 基础|香港02|负载均衡 2
+      - 基础|香港03|负载均衡 2
+      - 基础|香港05|负载均衡 2
+      - 专线|香港01|原生HGCBBS
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 2
+      - 专线|香港05|原生HGCBBS 2
+      - 专线|香港07|原生HKBN 2
+      - 专线|香港08|原生HKBN 2
+      - 专线|台湾01|原生Taipei 2
+      - 台湾w-油管 2
+      - V1-香港B组 直连 速度随缘 1x
+      - Large 香港20 - nf | AIA | 倍率:1.6
+      - Large 香港23 - nfo | IEPL | 倍率:1.6
+      - Large 台灣03 - all | MIEPL | 倍率:1.6
+      - Large 台灣04 - all | IEPL | 倍率:1.5
+      - Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港13 - all | AIA | 倍率:1.6
+      - Large 香港14 - nf | MIEPL | 倍率:1.6
+      - Large 台灣05 - all | IEPL | 倍率:1.5
+      - Large 香港02 - nf | MIEPL | 倍率:1.8
+      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港08 - all | AIA | 倍率:1.6
+      - Large 香港09 - nf | AIA | 倍率:1.6
+      - Large 香港10 - nf | AIA | 倍率:1.6
+      - Large 香港11 - nf | AIA | 倍率:1.6
+      - Large 香港12 - nf | AIA | 倍率:1.6
+      - Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港18 - nf | AIA | 倍率:1.8
+      - Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - Large 香港22 - nf | AIA | 倍率:1.8
+      - Lil 香港11 - nf | AIA | 倍率:3
+      - Lil 香港12 - nf | AIA | 倍率:3
+      - Large 台灣01 - all | IEPL | 倍率:1.8
+      - 专线|香港01|原生HGCBBS 2
+      - 专线|香港02|原生HGCBBS 3
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 基础|香港01|负载均衡 3
+      - 基础|香港02|负载均衡 3
+      - 基础|香港03|负载均衡 3
+      - 基础|香港05|负载均衡 3
+      - ⌈绿通⌋ 香港 01
+      - 香港 HK 04
+      - 香港 HK 09
+      - 香港 HK 03
+      - 香港 HK 08
+      - 香港 HK 07
+      - 香港 HK 06
+      - 台湾 TW 07
+      - 台湾 TW 02
+      - 台湾 TW 03
+      - 台湾 TW 06
+      - "[大麦]-AIA-HK-香港-1-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-2-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-3-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-6-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-8-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-9-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-A-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-2-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-3-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-5-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-6-2.0x-视频"
+      - "[小麦]-中继-HK-香港-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-2-2.0x-视频"
+      - "[小麦]-中继-HK-香港-3-2.0x-视频"
+      - "[小麦]-中继-HK-香港-4-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-3-2.0x-视频"
+      - "[小麦]-精品-HK-香港-2-2.0x-视频"
+      - "[1x]CU 香港 隧道 NO.2"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 回国专线贵州
       - YouTube-由零开始
-      - 台湾w-油管 2
-      - _中国_（）_120
-      - 标准|印度02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
+      - Large 新加坡02 - all | IEPL | 倍率:1.5
+      - Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - Large 新加坡05 - all | IEPL | 倍率:1.5
+      - Large 新加坡06 - all | IEPL | 倍率:1.5
+      - Large 新加坡10 - all | IEPL | 倍率:1.5
+      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港24 - nfo | IEPL | 倍率:1.6
+      - Lil 新加坡04 - netflix | IEPL | 倍率:2
+      - Lil 新加坡05 - netflix | IEPL | 倍率:2
+      - 娄底联通-SG-Melbicom@vpnhat
+      - 徐州联通-彰化Hinet@vpnhat
+      - 广州优刻云-Tokyo-Linode@vpnhat 2
+      - 北京优刻云-香港DMIT@vpnhat 2
+      - 徐州联通-彰化Hinet@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 6
+      - 娄底联通-SG-Melbicom@vpnhat 2
+      - 上海优刻云-Tokyo-Linode@vpnhat 4
+      - 娄底联通-SG-Melbicom@vpnhat 3
+      - 北京科技网-Tokyo-Linode@vpnhat 4
+      - 佛山移动-彰化Hinet@vpnhat 2
+      - Relay_🇨🇳CN-🇯🇵JP_293
+      - _HK_香港
+      - _HK_香港 3
+      - Relay_🇨🇳CN-🇯🇵JP_327
+      - Pool_🇭🇰HK_600
+      - 共享
+      - CYL-科技（202201.04）
+      - v2ray 日本(移动) [Netflix]
+      - v2ray 日本(联通) [Netflix]
+      - v2ray 香港HGC(联通) [Netflix]
+      - Large 新加坡07 - all | IEPL | 倍率:1.5
+      - Large 新加坡11 - all | IEPL | 倍率:1.5
+      - Large 新加坡12 - all | IEPL | 倍率:1.5
+      - Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 杭州移动-彰化Hinet@vpnhat
+      - 台中Hinet@vpnhat
+      - 台中Hinet@vpnhat 2
+      - v2ray 韩国(联通) [Netflix]
+      - 新加坡
+      - HK(Youtube技术分享室整理)
+      - RO_741
+      - 广州优刻云-Tokyo-Linode@vpnhat
+      - 上海优刻云-Tokyo-Linode@vpnhat
+      - 娄底联通-SG-Melbicom@vpnhat 4
+      - 徐州联通-SG-Melbicom@vpnhat 5
+      - +Relay_🇸🇬SG-🇸🇬SG_901
+      - 基础|香港01|负载均衡
+      - 基础|香港02|负载均衡
+      - 基础|香港03|负载均衡
+      - 基础|香港05|负载均衡
       - 专线|香港02|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
-      - 专线|美国02|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|美国04|原生Seattle
+      - 专线|台湾02|原生Taipei
       - 专线|西雅图01|原生NTT
-      - 专线|西雅图02|原生NTT
-      - V1-日本B组 直连 速度随缘 1x
+      - 基础|香港01|负载均衡 2
+      - 基础|香港02|负载均衡 2
+      - 基础|香港03|负载均衡 2
+      - 基础|香港05|负载均衡 2
+      - 专线|香港01|原生HGCBBS
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 2
+      - 专线|香港05|原生HGCBBS 2
+      - 专线|香港07|原生HKBN 2
+      - 专线|香港08|原生HKBN 2
+      - 专线|台湾01|原生Taipei 2
+      - US(Youtube技术分享室整理)
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - IN(技术分享室整理,欢迎订阅)
+      - KR(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - JP(Youtube技术分享室整理)
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - 日本(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 3
+      - JP(Youtube技术分享室整理) 2
+      - "|74.80Mb"
+      - Pool_ | 7.56Mb
+      - Pool_ |16.30Mb
+      - Pool_ |330.97Mb
+      - Pool_ |491.22Mb
+      - Relay_ |340.37Mb
+      - Relay_ |390.48Mb
+      - Relay_ |17.62Mb
+      - Relay_ | 4.56Mb
+      - Relay_🇷🇴RO-🇷🇴RO_793 |12.05Mb
+      - Relay_🇷🇴RO-🇷🇴RO_795 |14.63Mb
+      - Relay_🇷🇴RO-🇷🇴RO_796 |11.75Mb
+      - RO_797 |14.94Mb
+      - 台湾w-油管 2
       - V1-香港B组 直连 速度随缘 1x
-      - Large 新加坡02 - all | IEPL | 倍率:1.5
-      - Large 新加坡03 - all | MIEPL | 倍率:1.6
-      - Large 新加坡04 - all | MIEPL | 倍率:1.6
-      - Large 新加坡05 - all | IEPL | 倍率:1.5
-      - Large 新加坡06 - all | IEPL | 倍率:1.5
-      - Large 新加坡10 - all | IEPL | 倍率:1.5
-      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - Large 香港20 - nf | AIA | 倍率:1.6
       - Large 香港23 - nfo | IEPL | 倍率:1.6
-      - Large 香港24 - nfo | IEPL | 倍率:1.6
-      - Lil 新加坡04 - netflix | IEPL | 倍率:2
-      - Lil 新加坡05 - netflix | IEPL | 倍率:2
-      - Lil 美国07 - all | IEPL | 倍率:1.3
-      - Lil 美国09 - allmedia | IEPL | 倍率:1.3
-      - v1|亚洲|C|混合负载|视频主力
-      - v1|亚洲|B|混合负载|低延主力
-      - v1|亚洲|A|混合负载|外贸主力
-      - v1|香港|A|5台负载
-      - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
-      - v1|新加坡|A|6台负载
-      - v1|新加坡|B|7台负载
-      - v1|新加坡|C|8台负载
-      - v1|新加坡|C|9台负载
-      - v1|日本|A|7台负载
-      - v1|日本|B|4台负载
-      - v1|日本|B|8台负载
-      - v1|日本|C|9台负载
-      - v1|美国|A|6台负载
-      - v1|美国|C|3台负载
-      - v1|香港|A|7台负载|原生
-      - v1|香港|B|8台负载|原生
-      - v1|香港|C|9台负载|原生
-      - v1|台湾|C|4台负载|原生
-      - v1|新加坡|A|4台负载|原生
-      - v1|新加坡|B|4台负载|原生
-      - v1|美国|A|3台负载|原生
-      - v1|澳洲|A|4台负载
-      - v1|澳洲|B|3台负载
-      - v1|澳洲|C|4台负载
-      - v1|印度|A|4台负载
-      - v1|俄罗斯|A|3台负载
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 北京优刻云-香港DMIT@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-彰化Hinet@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 广州优刻云-Tokyo-Linode@vpnhat 2
-      - 北京优刻云-香港DMIT@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 4
-      - 徐州联通-彰化Hinet@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 6
-      - 北京科技网-Tokyo-Linode@vpnhat 6
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
-      - 专线|香港08|原生HGCBBS
-      - 中国_TG@nodesharing
-      - _US_美国
-      - 专线|美国01|原生Seattle
-      - V1-台湾05 中继A 2x
-      - v2ray 香港(联通)
-      - 中国_TG@nodesharing 2
-      - 标准|加拿大01|解锁流媒体
-      - 专线|台湾03|原生Taipei
       - Large 台灣03 - all | MIEPL | 倍率:1.6
       - Large 台灣04 - all | IEPL | 倍率:1.5
-      - Large 日本04 - allmedia | IEPL | 倍率:1.3
       - Large 香港03 - allmedia | MIEPL | 倍率:1.8
       - Large 香港13 - all | AIA | 倍率:1.6
       - Large 香港14 - nf | MIEPL | 倍率:1.6
-      - Lil 菲律宾01 - SHOPP | IEPL | 倍率:1.3
-      - VU新加坡-AZ中转
-      - "[台湾 01] 广东｜HiNet"
-      - "[香港 01] 香港｜HGC"
-      - "[香港 02] 香港｜Azure"
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 上海优刻云-Tokyo-Linode@vpnhat 3
-      - 上海优刻云-Tokyo-Linode@vpnhat 4
-      - 娄底联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 4
-      - 佛山移动-彰化Hinet@vpnhat 2
-      - 香港/江门移动A 2
-      - 香港/江门移动B 2
-      - 香港/广州移动A 2
-      - 香港/广州移动B 2
-      - 香港/佛山移动 2
-      - 香港/安徽联通 2
-      - 香港/长沙联通 2
-      - 香港/上海移动 2
-      - 香港B/江门移动A 2
-      - 香港B/江门移动B 2
-      - 香港B/广州移动A 2
-      - 香港B/广州移动B 2
-      - 香港B/佛山移动 2
-      - 香港B/安徽联通 2
-      - 香港B/上海移动 2
-      - 香港B/上海联通 2
-      - 日本/江门移动A 2
-      - 日本/江门移动B 2
-      - 日本/广州移动A 2
-      - 日本/广州移动B 2
-      - 日本/佛山移动 2
-      - 日本/安徽联通 2
-      - 日本/长沙联通 2
-      - 日本/上海联通 2
-      - Relay_🇨🇳CN-🇺🇸US_282
-      - Relay_🇨🇳CN-🇺🇸US_287
-      - Relay_🇨🇳CN-🇭🇰HK_292
-      - Relay_🇨🇳CN-🇯🇵JP_293
-      - Relay_🇨🇳CN-🇭🇰HK_300
-      - Relay_🇨🇳CN-🇭🇰HK_303
-      - Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇨🇳CN-🇭🇰HK_306
-      - Relay_🇨🇳CN-🇭🇰HK_307
-      - Relay_🇨🇳CN-🇭🇰HK_308
-      - Relay_🇨🇳CN-🇯🇵JP_309
-      - Relay_🇨🇳CN-🇯🇵JP_310
       - Relay_🇨🇳CN-🇯🇵JP_312
-      - Relay_🇨🇳CN-🇸🇬SG_313
-      - Relay_🇨🇳CN-🇯🇵JP_314
-      - Relay_🇨🇳CN-🇭🇰HK_316
-      - Relay_🇨🇳CN-🇸🇬SG_317
-      - Relay_🇨🇳CN-🇸🇬SG_318
       - Relay_🇨🇳CN-🇯🇵JP_321
-      - Relay_🇨🇳CN-🇭🇰HK_323
       - Relay_🇨🇳CN-🇭🇰HK_329
-      - Relay_🇭🇰HK-🇭🇰HK_613
-      - Relay_🇭🇰HK-🇹🇼TW_614
-      - Relay_🇺🇸US-🇺🇸US_2080
-      - _HK_香港
-      - _HK_香港 3
-      - _HK_香港 4
-      - V1-香港B组 直连 速度随缘 1x 2
-      - V1-日本B组 直连 速度随缘 1x 2
-      - Jsnzkpg 18
-      - Relay_🇨🇳CN-🇭🇰HK_298
-      - Relay_🇨🇳CN-🇯🇵JP_327
-      - Pool_🇭🇰HK_556
-      - Pool_🇭🇰HK_557
-      - Pool_🇭🇰HK_590
-      - Pool_🇭🇰HK_595
-      - Pool_🇭🇰HK_600
+      - +Pool_🇭🇰HK_556
+      - _中国_（）_79
+      - 中国_TG@nodesharing
+      - v2ray 马来西亚(移动) [Netflix]
+      - Large 台灣05 - all | IEPL | 倍率:1.5
+      - Large 新加坡08 - all | IEPL | 倍率:1.5
+      - Large 新加坡09 - all | IEPL | 倍率:1.5
+      - Large 香港02 - nf | MIEPL | 倍率:1.8
+      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港08 - all | AIA | 倍率:1.6
+      - Large 香港09 - nf | AIA | 倍率:1.6
+      - Large 香港10 - nf | AIA | 倍率:1.6
+      - Large 香港11 - nf | AIA | 倍率:1.6
+      - Large 香港12 - nf | AIA | 倍率:1.6
+      - Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港18 - nf | AIA | 倍率:1.8
+      - Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - Large 香港22 - nf | AIA | 倍率:1.8
+      - Lil 香港11 - nf | AIA | 倍率:3
+      - Lil 香港12 - nf | AIA | 倍率:3
+      - Large 台灣01 - all | IEPL | 倍率:1.8
+      - 上海优刻云-Tokyo-Linode@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 5
+      - 专线|美国01|原生Seattle
+      - 专线|香港01|原生HGCBBS 2
+      - 专线|香港02|原生HGCBBS 3
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国03|原生Seattle
+      - 基础|香港01|负载均衡 3
+      - 基础|香港02|负载均衡 3
+      - 基础|香港03|负载均衡 3
+      - 基础|香港05|负载均衡 3
+      - 日本(Youtube技术分享室整理) 2
+      - SG(Youtube技术分享室整理)
+      - RO |17.47Mb
+      - Relay_🇷🇴RO-🇷🇴RO_799 |14.18Mb
+      - ⌈绿通⌋ 香港 01
+      - 香港 HK 04
+      - 香港 HK 09
+      - 香港 HK 03
+      - 香港 HK 08
+      - 香港 HK 07
+      - 香港 HK 06
+      - 台湾 TW 07
+      - 韩国 KR 02
+      - 台湾 TW 02
+      - 台湾 TW 03
+      - 台湾 TW 06
+      - 新加坡 SG 05
+      - 韩国 KR 07
+      - 新加坡 SG 03
+      - 菲律宾_TG@nodesharing
+      - By t.me/lqmoe
+      - From t.me/vpnpool
+      - "[大麦]-AIA-HK-香港-1-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-2-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-3-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-6-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-8-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-9-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-A-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-1-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-2-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-3-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-1-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-4-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-2-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-3-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-5-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-6-2.0x-视频"
+      - "[大麦]-AIA-VN-越南-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-2-2.0x-视频"
+      - "[小麦]-中继-HK-香港-3-2.0x-视频"
+      - "[小麦]-中继-HK-香港-4-2.0x-视频"
+      - "[小麦]-中继-JP-日本-1-视频"
+      - "[小麦]-中继-SGP-新加坡-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-3-2.0x-视频"
+      - "[小麦]-精品-HK-香港-2-2.0x-视频"
+      - "[1x]CU 日本 隧道 NO.1"
+      - "[1x]CU 新加坡 隧道 NO.1"
+      - "[1x]CU 香港 隧道 NO.2"
+      - 【新鸟免费】日本JP-AWS 04 1.0x
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - 【新鸟免费】日本JP-AWS 06 1.0x
+      - 【新鸟免费】日本JP-AWS 07 1.0x
+      - 【新鸟免费】日本JP-AWS 10 1.0x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 回国专线贵州
       - YouTube-由零开始
-      - 台湾w-油管 2
-      - _中国_（）_120
-      - 标准|印度02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
+      - Large 新加坡02 - all | IEPL | 倍率:1.5
+      - Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - Large 新加坡05 - all | IEPL | 倍率:1.5
+      - Large 新加坡06 - all | IEPL | 倍率:1.5
+      - Large 新加坡10 - all | IEPL | 倍率:1.5
+      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港24 - nfo | IEPL | 倍率:1.6
+      - Lil 新加坡04 - netflix | IEPL | 倍率:2
+      - Lil 新加坡05 - netflix | IEPL | 倍率:2
+      - 娄底联通-SG-Melbicom@vpnhat
+      - 徐州联通-彰化Hinet@vpnhat
+      - 广州优刻云-Tokyo-Linode@vpnhat 2
+      - 北京优刻云-香港DMIT@vpnhat 2
+      - 徐州联通-彰化Hinet@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 6
+      - 娄底联通-SG-Melbicom@vpnhat 2
+      - 上海优刻云-Tokyo-Linode@vpnhat 4
+      - 娄底联通-SG-Melbicom@vpnhat 3
+      - 北京科技网-Tokyo-Linode@vpnhat 4
+      - 佛山移动-彰化Hinet@vpnhat 2
+      - Relay_🇨🇳CN-🇯🇵JP_293
+      - _HK_香港
+      - _HK_香港 3
+      - Relay_🇨🇳CN-🇯🇵JP_327
+      - Pool_🇭🇰HK_600
+      - 共享
+      - CYL-科技（202201.04）
+      - v2ray 日本(移动) [Netflix]
+      - v2ray 日本(联通) [Netflix]
+      - v2ray 香港HGC(联通) [Netflix]
+      - Large 新加坡07 - all | IEPL | 倍率:1.5
+      - Large 新加坡11 - all | IEPL | 倍率:1.5
+      - Large 新加坡12 - all | IEPL | 倍率:1.5
+      - Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 杭州移动-彰化Hinet@vpnhat
+      - 台中Hinet@vpnhat
+      - 台中Hinet@vpnhat 2
+      - v2ray 韩国(联通) [Netflix]
+      - 新加坡
+      - HK(Youtube技术分享室整理)
+      - RO_741
+      - 广州优刻云-Tokyo-Linode@vpnhat
+      - 上海优刻云-Tokyo-Linode@vpnhat
+      - 娄底联通-SG-Melbicom@vpnhat 4
+      - 徐州联通-SG-Melbicom@vpnhat 5
+      - +Relay_🇸🇬SG-🇸🇬SG_901
+      - 基础|香港01|负载均衡
+      - 基础|香港02|负载均衡
+      - 基础|香港03|负载均衡
+      - 基础|香港05|负载均衡
       - 专线|香港02|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
-      - 专线|美国02|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|美国04|原生Seattle
+      - 专线|台湾02|原生Taipei
       - 专线|西雅图01|原生NTT
-      - 专线|西雅图02|原生NTT
-      - V1-日本B组 直连 速度随缘 1x
+      - 基础|香港01|负载均衡 2
+      - 基础|香港02|负载均衡 2
+      - 基础|香港03|负载均衡 2
+      - 基础|香港05|负载均衡 2
+      - 专线|香港01|原生HGCBBS
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 2
+      - 专线|香港05|原生HGCBBS 2
+      - 专线|香港07|原生HKBN 2
+      - 专线|香港08|原生HKBN 2
+      - 专线|台湾01|原生Taipei 2
+      - US(Youtube技术分享室整理)
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - IN(技术分享室整理,欢迎订阅)
+      - KR(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - JP(Youtube技术分享室整理)
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - 日本(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 3
+      - JP(Youtube技术分享室整理) 2
+      - "|74.80Mb"
+      - Pool_ | 7.56Mb
+      - Pool_ |16.30Mb
+      - Pool_ |330.97Mb
+      - Pool_ |491.22Mb
+      - Relay_ |340.37Mb
+      - Relay_ |390.48Mb
+      - Relay_ |17.62Mb
+      - Relay_ | 4.56Mb
+      - Relay_🇷🇴RO-🇷🇴RO_793 |12.05Mb
+      - Relay_🇷🇴RO-🇷🇴RO_795 |14.63Mb
+      - Relay_🇷🇴RO-🇷🇴RO_796 |11.75Mb
+      - RO_797 |14.94Mb
+      - 台湾w-油管 2
       - V1-香港B组 直连 速度随缘 1x
-      - Large 新加坡02 - all | IEPL | 倍率:1.5
-      - Large 新加坡03 - all | MIEPL | 倍率:1.6
-      - Large 新加坡04 - all | MIEPL | 倍率:1.6
-      - Large 新加坡05 - all | IEPL | 倍率:1.5
-      - Large 新加坡06 - all | IEPL | 倍率:1.5
-      - Large 新加坡10 - all | IEPL | 倍率:1.5
-      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - Large 香港20 - nf | AIA | 倍率:1.6
       - Large 香港23 - nfo | IEPL | 倍率:1.6
-      - Large 香港24 - nfo | IEPL | 倍率:1.6
-      - Lil 新加坡04 - netflix | IEPL | 倍率:2
-      - Lil 新加坡05 - netflix | IEPL | 倍率:2
-      - Lil 美国07 - all | IEPL | 倍率:1.3
-      - Lil 美国09 - allmedia | IEPL | 倍率:1.3
-      - v1|亚洲|C|混合负载|视频主力
-      - v1|亚洲|B|混合负载|低延主力
-      - v1|亚洲|A|混合负载|外贸主力
-      - v1|香港|A|5台负载
-      - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
-      - v1|新加坡|A|6台负载
-      - v1|新加坡|B|7台负载
-      - v1|新加坡|C|8台负载
-      - v1|新加坡|C|9台负载
-      - v1|日本|A|7台负载
-      - v1|日本|B|4台负载
-      - v1|日本|B|8台负载
-      - v1|日本|C|9台负载
-      - v1|美国|A|6台负载
-      - v1|美国|C|3台负载
-      - v1|香港|A|7台负载|原生
-      - v1|香港|B|8台负载|原生
-      - v1|香港|C|9台负载|原生
-      - v1|台湾|C|4台负载|原生
-      - v1|新加坡|A|4台负载|原生
-      - v1|新加坡|B|4台负载|原生
-      - v1|美国|A|3台负载|原生
-      - v1|澳洲|A|4台负载
-      - v1|澳洲|B|3台负载
-      - v1|澳洲|C|4台负载
-      - v1|印度|A|4台负载
-      - v1|俄罗斯|A|3台负载
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 北京优刻云-香港DMIT@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-彰化Hinet@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 广州优刻云-Tokyo-Linode@vpnhat 2
-      - 北京优刻云-香港DMIT@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 4
-      - 徐州联通-彰化Hinet@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 6
-      - 北京科技网-Tokyo-Linode@vpnhat 6
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
-      - 专线|香港08|原生HGCBBS
-      - 中国_TG@nodesharing
-      - _US_美国
-      - 专线|美国01|原生Seattle
-      - V1-台湾05 中继A 2x
-      - v2ray 香港(联通)
-      - 中国_TG@nodesharing 2
-      - 标准|加拿大01|解锁流媒体
-      - 专线|台湾03|原生Taipei
       - Large 台灣03 - all | MIEPL | 倍率:1.6
       - Large 台灣04 - all | IEPL | 倍率:1.5
-      - Large 日本04 - allmedia | IEPL | 倍率:1.3
       - Large 香港03 - allmedia | MIEPL | 倍率:1.8
       - Large 香港13 - all | AIA | 倍率:1.6
       - Large 香港14 - nf | MIEPL | 倍率:1.6
-      - Lil 菲律宾01 - SHOPP | IEPL | 倍率:1.3
-      - VU新加坡-AZ中转
-      - "[台湾 01] 广东｜HiNet"
-      - "[香港 01] 香港｜HGC"
-      - "[香港 02] 香港｜Azure"
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 上海优刻云-Tokyo-Linode@vpnhat 3
-      - 上海优刻云-Tokyo-Linode@vpnhat 4
-      - 娄底联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 4
-      - 佛山移动-彰化Hinet@vpnhat 2
-      - 香港/江门移动A 2
-      - 香港/江门移动B 2
-      - 香港/广州移动A 2
-      - 香港/广州移动B 2
-      - 香港/佛山移动 2
-      - 香港/安徽联通 2
-      - 香港/长沙联通 2
-      - 香港/上海移动 2
-      - 香港B/江门移动A 2
-      - 香港B/江门移动B 2
-      - 香港B/广州移动A 2
-      - 香港B/广州移动B 2
-      - 香港B/佛山移动 2
-      - 香港B/安徽联通 2
-      - 香港B/上海移动 2
-      - 香港B/上海联通 2
-      - 日本/江门移动A 2
-      - 日本/江门移动B 2
-      - 日本/广州移动A 2
-      - 日本/广州移动B 2
-      - 日本/佛山移动 2
-      - 日本/安徽联通 2
-      - 日本/长沙联通 2
-      - 日本/上海联通 2
-      - Relay_🇨🇳CN-🇺🇸US_282
-      - Relay_🇨🇳CN-🇺🇸US_287
-      - Relay_🇨🇳CN-🇭🇰HK_292
-      - Relay_🇨🇳CN-🇯🇵JP_293
-      - Relay_🇨🇳CN-🇭🇰HK_300
-      - Relay_🇨🇳CN-🇭🇰HK_303
-      - Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇨🇳CN-🇭🇰HK_306
-      - Relay_🇨🇳CN-🇭🇰HK_307
-      - Relay_🇨🇳CN-🇭🇰HK_308
-      - Relay_🇨🇳CN-🇯🇵JP_309
-      - Relay_🇨🇳CN-🇯🇵JP_310
       - Relay_🇨🇳CN-🇯🇵JP_312
-      - Relay_🇨🇳CN-🇸🇬SG_313
-      - Relay_🇨🇳CN-🇯🇵JP_314
-      - Relay_🇨🇳CN-🇭🇰HK_316
-      - Relay_🇨🇳CN-🇸🇬SG_317
-      - Relay_🇨🇳CN-🇸🇬SG_318
       - Relay_🇨🇳CN-🇯🇵JP_321
-      - Relay_🇨🇳CN-🇭🇰HK_323
       - Relay_🇨🇳CN-🇭🇰HK_329
-      - Relay_🇭🇰HK-🇭🇰HK_613
-      - Relay_🇭🇰HK-🇹🇼TW_614
-      - Relay_🇺🇸US-🇺🇸US_2080
-      - _HK_香港
-      - _HK_香港 3
-      - _HK_香港 4
-      - V1-香港B组 直连 速度随缘 1x 2
-      - V1-日本B组 直连 速度随缘 1x 2
-      - Jsnzkpg 18
-      - Relay_🇨🇳CN-🇭🇰HK_298
-      - Relay_🇨🇳CN-🇯🇵JP_327
-      - Pool_🇭🇰HK_556
-      - Pool_🇭🇰HK_557
-      - Pool_🇭🇰HK_590
-      - Pool_🇭🇰HK_595
-      - Pool_🇭🇰HK_600
+      - +Pool_🇭🇰HK_556
+      - _中国_（）_79
+      - 中国_TG@nodesharing
+      - v2ray 马来西亚(移动) [Netflix]
+      - Large 台灣05 - all | IEPL | 倍率:1.5
+      - Large 新加坡08 - all | IEPL | 倍率:1.5
+      - Large 新加坡09 - all | IEPL | 倍率:1.5
+      - Large 香港02 - nf | MIEPL | 倍率:1.8
+      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港08 - all | AIA | 倍率:1.6
+      - Large 香港09 - nf | AIA | 倍率:1.6
+      - Large 香港10 - nf | AIA | 倍率:1.6
+      - Large 香港11 - nf | AIA | 倍率:1.6
+      - Large 香港12 - nf | AIA | 倍率:1.6
+      - Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港18 - nf | AIA | 倍率:1.8
+      - Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - Large 香港22 - nf | AIA | 倍率:1.8
+      - Lil 香港11 - nf | AIA | 倍率:3
+      - Lil 香港12 - nf | AIA | 倍率:3
+      - Large 台灣01 - all | IEPL | 倍率:1.8
+      - 上海优刻云-Tokyo-Linode@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 5
+      - 专线|美国01|原生Seattle
+      - 专线|香港01|原生HGCBBS 2
+      - 专线|香港02|原生HGCBBS 3
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国03|原生Seattle
+      - 基础|香港01|负载均衡 3
+      - 基础|香港02|负载均衡 3
+      - 基础|香港03|负载均衡 3
+      - 基础|香港05|负载均衡 3
+      - 日本(Youtube技术分享室整理) 2
+      - SG(Youtube技术分享室整理)
+      - RO |17.47Mb
+      - Relay_🇷🇴RO-🇷🇴RO_799 |14.18Mb
+      - ⌈绿通⌋ 香港 01
+      - 香港 HK 04
+      - 香港 HK 09
+      - 香港 HK 03
+      - 香港 HK 08
+      - 香港 HK 07
+      - 香港 HK 06
+      - 台湾 TW 07
+      - 韩国 KR 02
+      - 台湾 TW 02
+      - 台湾 TW 03
+      - 台湾 TW 06
+      - 新加坡 SG 05
+      - 韩国 KR 07
+      - 新加坡 SG 03
+      - 菲律宾_TG@nodesharing
+      - By t.me/lqmoe
+      - From t.me/vpnpool
+      - "[大麦]-AIA-HK-香港-1-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-2-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-3-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-6-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-8-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-9-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-A-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-1-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-2-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-3-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-1-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-4-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-2-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-3-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-5-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-6-2.0x-视频"
+      - "[大麦]-AIA-VN-越南-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-2-2.0x-视频"
+      - "[小麦]-中继-HK-香港-3-2.0x-视频"
+      - "[小麦]-中继-HK-香港-4-2.0x-视频"
+      - "[小麦]-中继-JP-日本-1-视频"
+      - "[小麦]-中继-SGP-新加坡-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-3-2.0x-视频"
+      - "[小麦]-精品-HK-香港-2-2.0x-视频"
+      - "[1x]CU 日本 隧道 NO.1"
+      - "[1x]CU 新加坡 隧道 NO.1"
+      - "[1x]CU 香港 隧道 NO.2"
+      - 【新鸟免费】日本JP-AWS 04 1.0x
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - 【新鸟免费】日本JP-AWS 06 1.0x
+      - 【新鸟免费】日本JP-AWS 07 1.0x
+      - 【新鸟免费】日本JP-AWS 10 1.0x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 回国专线贵州
       - YouTube-由零开始
-      - 台湾w-油管 2
-      - _中国_（）_120
-      - 标准|印度02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
+      - Large 新加坡02 - all | IEPL | 倍率:1.5
+      - Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - Large 新加坡05 - all | IEPL | 倍率:1.5
+      - Large 新加坡06 - all | IEPL | 倍率:1.5
+      - Large 新加坡10 - all | IEPL | 倍率:1.5
+      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港24 - nfo | IEPL | 倍率:1.6
+      - Lil 新加坡04 - netflix | IEPL | 倍率:2
+      - Lil 新加坡05 - netflix | IEPL | 倍率:2
+      - 娄底联通-SG-Melbicom@vpnhat
+      - 徐州联通-彰化Hinet@vpnhat
+      - 广州优刻云-Tokyo-Linode@vpnhat 2
+      - 北京优刻云-香港DMIT@vpnhat 2
+      - 徐州联通-彰化Hinet@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 6
+      - 娄底联通-SG-Melbicom@vpnhat 2
+      - 上海优刻云-Tokyo-Linode@vpnhat 4
+      - 娄底联通-SG-Melbicom@vpnhat 3
+      - 北京科技网-Tokyo-Linode@vpnhat 4
+      - 佛山移动-彰化Hinet@vpnhat 2
+      - Relay_🇨🇳CN-🇯🇵JP_293
+      - _HK_香港
+      - _HK_香港 3
+      - Relay_🇨🇳CN-🇯🇵JP_327
+      - Pool_🇭🇰HK_600
+      - 共享
+      - CYL-科技（202201.04）
+      - v2ray 日本(移动) [Netflix]
+      - v2ray 日本(联通) [Netflix]
+      - v2ray 香港HGC(联通) [Netflix]
+      - Large 新加坡07 - all | IEPL | 倍率:1.5
+      - Large 新加坡11 - all | IEPL | 倍率:1.5
+      - Large 新加坡12 - all | IEPL | 倍率:1.5
+      - Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 杭州移动-彰化Hinet@vpnhat
+      - 台中Hinet@vpnhat
+      - 台中Hinet@vpnhat 2
+      - v2ray 韩国(联通) [Netflix]
+      - 新加坡
+      - HK(Youtube技术分享室整理)
+      - RO_741
+      - 广州优刻云-Tokyo-Linode@vpnhat
+      - 上海优刻云-Tokyo-Linode@vpnhat
+      - 娄底联通-SG-Melbicom@vpnhat 4
+      - 徐州联通-SG-Melbicom@vpnhat 5
+      - +Relay_🇸🇬SG-🇸🇬SG_901
+      - 基础|香港01|负载均衡
+      - 基础|香港02|负载均衡
+      - 基础|香港03|负载均衡
+      - 基础|香港05|负载均衡
       - 专线|香港02|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
-      - 专线|美国02|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|美国04|原生Seattle
+      - 专线|台湾02|原生Taipei
       - 专线|西雅图01|原生NTT
-      - 专线|西雅图02|原生NTT
-      - V1-日本B组 直连 速度随缘 1x
+      - 基础|香港01|负载均衡 2
+      - 基础|香港02|负载均衡 2
+      - 基础|香港03|负载均衡 2
+      - 基础|香港05|负载均衡 2
+      - 专线|香港01|原生HGCBBS
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 2
+      - 专线|香港05|原生HGCBBS 2
+      - 专线|香港07|原生HKBN 2
+      - 专线|香港08|原生HKBN 2
+      - 专线|台湾01|原生Taipei 2
+      - US(Youtube技术分享室整理)
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - IN(技术分享室整理,欢迎订阅)
+      - KR(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - JP(Youtube技术分享室整理)
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - 日本(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 3
+      - JP(Youtube技术分享室整理) 2
+      - "|74.80Mb"
+      - Pool_ | 7.56Mb
+      - Pool_ |16.30Mb
+      - Pool_ |330.97Mb
+      - Pool_ |491.22Mb
+      - Relay_ |340.37Mb
+      - Relay_ |390.48Mb
+      - Relay_ |17.62Mb
+      - Relay_ | 4.56Mb
+      - Relay_🇷🇴RO-🇷🇴RO_793 |12.05Mb
+      - Relay_🇷🇴RO-🇷🇴RO_795 |14.63Mb
+      - Relay_🇷🇴RO-🇷🇴RO_796 |11.75Mb
+      - RO_797 |14.94Mb
+      - 台湾w-油管 2
       - V1-香港B组 直连 速度随缘 1x
-      - Large 新加坡02 - all | IEPL | 倍率:1.5
-      - Large 新加坡03 - all | MIEPL | 倍率:1.6
-      - Large 新加坡04 - all | MIEPL | 倍率:1.6
-      - Large 新加坡05 - all | IEPL | 倍率:1.5
-      - Large 新加坡06 - all | IEPL | 倍率:1.5
-      - Large 新加坡10 - all | IEPL | 倍率:1.5
-      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - Large 香港20 - nf | AIA | 倍率:1.6
       - Large 香港23 - nfo | IEPL | 倍率:1.6
-      - Large 香港24 - nfo | IEPL | 倍率:1.6
-      - Lil 新加坡04 - netflix | IEPL | 倍率:2
-      - Lil 新加坡05 - netflix | IEPL | 倍率:2
-      - Lil 美国07 - all | IEPL | 倍率:1.3
-      - Lil 美国09 - allmedia | IEPL | 倍率:1.3
-      - v1|亚洲|C|混合负载|视频主力
-      - v1|亚洲|B|混合负载|低延主力
-      - v1|亚洲|A|混合负载|外贸主力
-      - v1|香港|A|5台负载
-      - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
-      - v1|新加坡|A|6台负载
-      - v1|新加坡|B|7台负载
-      - v1|新加坡|C|8台负载
-      - v1|新加坡|C|9台负载
-      - v1|日本|A|7台负载
-      - v1|日本|B|4台负载
-      - v1|日本|B|8台负载
-      - v1|日本|C|9台负载
-      - v1|美国|A|6台负载
-      - v1|美国|C|3台负载
-      - v1|香港|A|7台负载|原生
-      - v1|香港|B|8台负载|原生
-      - v1|香港|C|9台负载|原生
-      - v1|台湾|C|4台负载|原生
-      - v1|新加坡|A|4台负载|原生
-      - v1|新加坡|B|4台负载|原生
-      - v1|美国|A|3台负载|原生
-      - v1|澳洲|A|4台负载
-      - v1|澳洲|B|3台负载
-      - v1|澳洲|C|4台负载
-      - v1|印度|A|4台负载
-      - v1|俄罗斯|A|3台负载
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 北京优刻云-香港DMIT@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-彰化Hinet@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 广州优刻云-Tokyo-Linode@vpnhat 2
-      - 北京优刻云-香港DMIT@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 4
-      - 徐州联通-彰化Hinet@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 6
-      - 北京科技网-Tokyo-Linode@vpnhat 6
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
-      - 专线|香港08|原生HGCBBS
-      - 中国_TG@nodesharing
-      - _US_美国
-      - 专线|美国01|原生Seattle
-      - V1-台湾05 中继A 2x
-      - v2ray 香港(联通)
-      - 中国_TG@nodesharing 2
-      - 标准|加拿大01|解锁流媒体
-      - 专线|台湾03|原生Taipei
       - Large 台灣03 - all | MIEPL | 倍率:1.6
       - Large 台灣04 - all | IEPL | 倍率:1.5
-      - Large 日本04 - allmedia | IEPL | 倍率:1.3
       - Large 香港03 - allmedia | MIEPL | 倍率:1.8
       - Large 香港13 - all | AIA | 倍率:1.6
       - Large 香港14 - nf | MIEPL | 倍率:1.6
-      - Lil 菲律宾01 - SHOPP | IEPL | 倍率:1.3
-      - VU新加坡-AZ中转
-      - "[台湾 01] 广东｜HiNet"
-      - "[香港 01] 香港｜HGC"
-      - "[香港 02] 香港｜Azure"
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 上海优刻云-Tokyo-Linode@vpnhat 3
-      - 上海优刻云-Tokyo-Linode@vpnhat 4
-      - 娄底联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 4
-      - 佛山移动-彰化Hinet@vpnhat 2
-      - 香港/江门移动A 2
-      - 香港/江门移动B 2
-      - 香港/广州移动A 2
-      - 香港/广州移动B 2
-      - 香港/佛山移动 2
-      - 香港/安徽联通 2
-      - 香港/长沙联通 2
-      - 香港/上海移动 2
-      - 香港B/江门移动A 2
-      - 香港B/江门移动B 2
-      - 香港B/广州移动A 2
-      - 香港B/广州移动B 2
-      - 香港B/佛山移动 2
-      - 香港B/安徽联通 2
-      - 香港B/上海移动 2
-      - 香港B/上海联通 2
-      - 日本/江门移动A 2
-      - 日本/江门移动B 2
-      - 日本/广州移动A 2
-      - 日本/广州移动B 2
-      - 日本/佛山移动 2
-      - 日本/安徽联通 2
-      - 日本/长沙联通 2
-      - 日本/上海联通 2
-      - Relay_🇨🇳CN-🇺🇸US_282
-      - Relay_🇨🇳CN-🇺🇸US_287
-      - Relay_🇨🇳CN-🇭🇰HK_292
-      - Relay_🇨🇳CN-🇯🇵JP_293
-      - Relay_🇨🇳CN-🇭🇰HK_300
-      - Relay_🇨🇳CN-🇭🇰HK_303
-      - Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇨🇳CN-🇭🇰HK_306
-      - Relay_🇨🇳CN-🇭🇰HK_307
-      - Relay_🇨🇳CN-🇭🇰HK_308
-      - Relay_🇨🇳CN-🇯🇵JP_309
-      - Relay_🇨🇳CN-🇯🇵JP_310
       - Relay_🇨🇳CN-🇯🇵JP_312
-      - Relay_🇨🇳CN-🇸🇬SG_313
-      - Relay_🇨🇳CN-🇯🇵JP_314
-      - Relay_🇨🇳CN-🇭🇰HK_316
-      - Relay_🇨🇳CN-🇸🇬SG_317
-      - Relay_🇨🇳CN-🇸🇬SG_318
       - Relay_🇨🇳CN-🇯🇵JP_321
-      - Relay_🇨🇳CN-🇭🇰HK_323
       - Relay_🇨🇳CN-🇭🇰HK_329
-      - Relay_🇭🇰HK-🇭🇰HK_613
-      - Relay_🇭🇰HK-🇹🇼TW_614
-      - Relay_🇺🇸US-🇺🇸US_2080
-      - _HK_香港
-      - _HK_香港 3
-      - _HK_香港 4
-      - V1-香港B组 直连 速度随缘 1x 2
-      - V1-日本B组 直连 速度随缘 1x 2
-      - Jsnzkpg 18
-      - Relay_🇨🇳CN-🇭🇰HK_298
-      - Relay_🇨🇳CN-🇯🇵JP_327
-      - Pool_🇭🇰HK_556
-      - Pool_🇭🇰HK_557
-      - Pool_🇭🇰HK_590
-      - Pool_🇭🇰HK_595
-      - Pool_🇭🇰HK_600
+      - +Pool_🇭🇰HK_556
+      - _中国_（）_79
+      - 中国_TG@nodesharing
+      - v2ray 马来西亚(移动) [Netflix]
+      - Large 台灣05 - all | IEPL | 倍率:1.5
+      - Large 新加坡08 - all | IEPL | 倍率:1.5
+      - Large 新加坡09 - all | IEPL | 倍率:1.5
+      - Large 香港02 - nf | MIEPL | 倍率:1.8
+      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港08 - all | AIA | 倍率:1.6
+      - Large 香港09 - nf | AIA | 倍率:1.6
+      - Large 香港10 - nf | AIA | 倍率:1.6
+      - Large 香港11 - nf | AIA | 倍率:1.6
+      - Large 香港12 - nf | AIA | 倍率:1.6
+      - Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港18 - nf | AIA | 倍率:1.8
+      - Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - Large 香港22 - nf | AIA | 倍率:1.8
+      - Lil 香港11 - nf | AIA | 倍率:3
+      - Lil 香港12 - nf | AIA | 倍率:3
+      - Large 台灣01 - all | IEPL | 倍率:1.8
+      - 上海优刻云-Tokyo-Linode@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 5
+      - 专线|美国01|原生Seattle
+      - 专线|香港01|原生HGCBBS 2
+      - 专线|香港02|原生HGCBBS 3
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国03|原生Seattle
+      - 基础|香港01|负载均衡 3
+      - 基础|香港02|负载均衡 3
+      - 基础|香港03|负载均衡 3
+      - 基础|香港05|负载均衡 3
+      - 日本(Youtube技术分享室整理) 2
+      - SG(Youtube技术分享室整理)
+      - RO |17.47Mb
+      - Relay_🇷🇴RO-🇷🇴RO_799 |14.18Mb
+      - ⌈绿通⌋ 香港 01
+      - 香港 HK 04
+      - 香港 HK 09
+      - 香港 HK 03
+      - 香港 HK 08
+      - 香港 HK 07
+      - 香港 HK 06
+      - 台湾 TW 07
+      - 韩国 KR 02
+      - 台湾 TW 02
+      - 台湾 TW 03
+      - 台湾 TW 06
+      - 新加坡 SG 05
+      - 韩国 KR 07
+      - 新加坡 SG 03
+      - 菲律宾_TG@nodesharing
+      - By t.me/lqmoe
+      - From t.me/vpnpool
+      - "[大麦]-AIA-HK-香港-1-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-2-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-3-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-6-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-8-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-9-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-A-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-1-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-2-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-3-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-1-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-4-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-2-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-3-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-5-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-6-2.0x-视频"
+      - "[大麦]-AIA-VN-越南-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-2-2.0x-视频"
+      - "[小麦]-中继-HK-香港-3-2.0x-视频"
+      - "[小麦]-中继-HK-香港-4-2.0x-视频"
+      - "[小麦]-中继-JP-日本-1-视频"
+      - "[小麦]-中继-SGP-新加坡-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-3-2.0x-视频"
+      - "[小麦]-精品-HK-香港-2-2.0x-视频"
+      - "[1x]CU 日本 隧道 NO.1"
+      - "[1x]CU 新加坡 隧道 NO.1"
+      - "[1x]CU 香港 隧道 NO.2"
+      - 【新鸟免费】日本JP-AWS 04 1.0x
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - 【新鸟免费】日本JP-AWS 06 1.0x
+      - 【新鸟免费】日本JP-AWS 07 1.0x
+      - 【新鸟免费】日本JP-AWS 10 1.0x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1446,168 +1801,209 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 回国专线贵州
       - YouTube-由零开始
-      - 台湾w-油管 2
-      - _中国_（）_120
-      - 标准|印度02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
+      - Large 新加坡02 - all | IEPL | 倍率:1.5
+      - Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - Large 新加坡05 - all | IEPL | 倍率:1.5
+      - Large 新加坡06 - all | IEPL | 倍率:1.5
+      - Large 新加坡10 - all | IEPL | 倍率:1.5
+      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港24 - nfo | IEPL | 倍率:1.6
+      - Lil 新加坡04 - netflix | IEPL | 倍率:2
+      - Lil 新加坡05 - netflix | IEPL | 倍率:2
+      - 娄底联通-SG-Melbicom@vpnhat
+      - 徐州联通-彰化Hinet@vpnhat
+      - 广州优刻云-Tokyo-Linode@vpnhat 2
+      - 北京优刻云-香港DMIT@vpnhat 2
+      - 徐州联通-彰化Hinet@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 6
+      - 娄底联通-SG-Melbicom@vpnhat 2
+      - 上海优刻云-Tokyo-Linode@vpnhat 4
+      - 娄底联通-SG-Melbicom@vpnhat 3
+      - 北京科技网-Tokyo-Linode@vpnhat 4
+      - 佛山移动-彰化Hinet@vpnhat 2
+      - Relay_🇨🇳CN-🇯🇵JP_293
+      - _HK_香港
+      - _HK_香港 3
+      - Relay_🇨🇳CN-🇯🇵JP_327
+      - Pool_🇭🇰HK_600
+      - 共享
+      - CYL-科技（202201.04）
+      - v2ray 日本(移动) [Netflix]
+      - v2ray 日本(联通) [Netflix]
+      - v2ray 香港HGC(联通) [Netflix]
+      - Large 新加坡07 - all | IEPL | 倍率:1.5
+      - Large 新加坡11 - all | IEPL | 倍率:1.5
+      - Large 新加坡12 - all | IEPL | 倍率:1.5
+      - Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - Large 韩国02 - nf | MIEPL | 倍率:1.6
+      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 杭州移动-彰化Hinet@vpnhat
+      - 台中Hinet@vpnhat
+      - 台中Hinet@vpnhat 2
+      - v2ray 韩国(联通) [Netflix]
+      - 新加坡
+      - HK(Youtube技术分享室整理)
+      - RO_741
+      - 广州优刻云-Tokyo-Linode@vpnhat
+      - 上海优刻云-Tokyo-Linode@vpnhat
+      - 娄底联通-SG-Melbicom@vpnhat 4
+      - 徐州联通-SG-Melbicom@vpnhat 5
+      - +Relay_🇸🇬SG-🇸🇬SG_901
+      - 基础|香港01|负载均衡
+      - 基础|香港02|负载均衡
+      - 基础|香港03|负载均衡
+      - 基础|香港05|负载均衡
       - 专线|香港02|原生HGCBBS
       - 专线|香港04|原生HGCBBS
       - 专线|香港05|原生HGCBBS
       - 专线|香港07|原生HKBN
       - 专线|香港08|原生HKBN
       - 专线|台湾01|原生Taipei
-      - 专线|美国02|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|美国04|原生Seattle
+      - 专线|台湾02|原生Taipei
       - 专线|西雅图01|原生NTT
-      - 专线|西雅图02|原生NTT
-      - V1-日本B组 直连 速度随缘 1x
+      - 基础|香港01|负载均衡 2
+      - 基础|香港02|负载均衡 2
+      - 基础|香港03|负载均衡 2
+      - 基础|香港05|负载均衡 2
+      - 专线|香港01|原生HGCBBS
+      - 专线|香港02|原生HGCBBS 2
+      - 专线|香港04|原生HGCBBS 2
+      - 专线|香港05|原生HGCBBS 2
+      - 专线|香港07|原生HKBN 2
+      - 专线|香港08|原生HKBN 2
+      - 专线|台湾01|原生Taipei 2
+      - US(Youtube技术分享室整理)
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - IN(技术分享室整理,欢迎订阅)
+      - KR(Youtube技术分享室整理)
+      - TW(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - JP(Youtube技术分享室整理)
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - 日本(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 3
+      - JP(Youtube技术分享室整理) 2
+      - "|74.80Mb"
+      - Pool_ | 7.56Mb
+      - Pool_ |16.30Mb
+      - Pool_ |330.97Mb
+      - Pool_ |491.22Mb
+      - Relay_ |340.37Mb
+      - Relay_ |390.48Mb
+      - Relay_ |17.62Mb
+      - Relay_ | 4.56Mb
+      - Relay_🇷🇴RO-🇷🇴RO_793 |12.05Mb
+      - Relay_🇷🇴RO-🇷🇴RO_795 |14.63Mb
+      - Relay_🇷🇴RO-🇷🇴RO_796 |11.75Mb
+      - RO_797 |14.94Mb
+      - 台湾w-油管 2
       - V1-香港B组 直连 速度随缘 1x
-      - Large 新加坡02 - all | IEPL | 倍率:1.5
-      - Large 新加坡03 - all | MIEPL | 倍率:1.6
-      - Large 新加坡04 - all | MIEPL | 倍率:1.6
-      - Large 新加坡05 - all | IEPL | 倍率:1.5
-      - Large 新加坡06 - all | IEPL | 倍率:1.5
-      - Large 新加坡10 - all | IEPL | 倍率:1.5
-      - Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - Large 香港20 - nf | AIA | 倍率:1.6
       - Large 香港23 - nfo | IEPL | 倍率:1.6
-      - Large 香港24 - nfo | IEPL | 倍率:1.6
-      - Lil 新加坡04 - netflix | IEPL | 倍率:2
-      - Lil 新加坡05 - netflix | IEPL | 倍率:2
-      - Lil 美国07 - all | IEPL | 倍率:1.3
-      - Lil 美国09 - allmedia | IEPL | 倍率:1.3
-      - v1|亚洲|C|混合负载|视频主力
-      - v1|亚洲|B|混合负载|低延主力
-      - v1|亚洲|A|混合负载|外贸主力
-      - v1|香港|A|5台负载
-      - v1|香港|B|6台负载
-      - v1|香港|C|7台负载
-      - v1|新加坡|A|6台负载
-      - v1|新加坡|B|7台负载
-      - v1|新加坡|C|8台负载
-      - v1|新加坡|C|9台负载
-      - v1|日本|A|7台负载
-      - v1|日本|B|4台负载
-      - v1|日本|B|8台负载
-      - v1|日本|C|9台负载
-      - v1|美国|A|6台负载
-      - v1|美国|C|3台负载
-      - v1|香港|A|7台负载|原生
-      - v1|香港|B|8台负载|原生
-      - v1|香港|C|9台负载|原生
-      - v1|台湾|C|4台负载|原生
-      - v1|新加坡|A|4台负载|原生
-      - v1|新加坡|B|4台负载|原生
-      - v1|美国|A|3台负载|原生
-      - v1|澳洲|A|4台负载
-      - v1|澳洲|B|3台负载
-      - v1|澳洲|C|4台负载
-      - v1|印度|A|4台负载
-      - v1|俄罗斯|A|3台负载
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 北京优刻云-香港DMIT@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-彰化Hinet@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 广州优刻云-Tokyo-Linode@vpnhat 2
-      - 北京优刻云-香港DMIT@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 4
-      - 徐州联通-彰化Hinet@vpnhat 2
-      - 徐州联通-SG-Melbicom@vpnhat 6
-      - 北京科技网-Tokyo-Linode@vpnhat 6
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - "@SSRSUB-美国V18-付费推荐::suo.yt/ssrsub"
-      - 专线|香港08|原生HGCBBS
-      - 中国_TG@nodesharing
-      - _US_美国
-      - 专线|美国01|原生Seattle
-      - V1-台湾05 中继A 2x
-      - v2ray 香港(联通)
-      - 中国_TG@nodesharing 2
-      - 标准|加拿大01|解锁流媒体
-      - 专线|台湾03|原生Taipei
       - Large 台灣03 - all | MIEPL | 倍率:1.6
       - Large 台灣04 - all | IEPL | 倍率:1.5
-      - Large 日本04 - allmedia | IEPL | 倍率:1.3
       - Large 香港03 - allmedia | MIEPL | 倍率:1.8
       - Large 香港13 - all | AIA | 倍率:1.6
       - Large 香港14 - nf | MIEPL | 倍率:1.6
-      - Lil 菲律宾01 - SHOPP | IEPL | 倍率:1.3
-      - VU新加坡-AZ中转
-      - "[台湾 01] 广东｜HiNet"
-      - "[香港 01] 香港｜HGC"
-      - "[香港 02] 香港｜Azure"
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 上海优刻云-Tokyo-Linode@vpnhat 3
-      - 上海优刻云-Tokyo-Linode@vpnhat 4
-      - 娄底联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 4
-      - 佛山移动-彰化Hinet@vpnhat 2
-      - 香港/江门移动A 2
-      - 香港/江门移动B 2
-      - 香港/广州移动A 2
-      - 香港/广州移动B 2
-      - 香港/佛山移动 2
-      - 香港/安徽联通 2
-      - 香港/长沙联通 2
-      - 香港/上海移动 2
-      - 香港B/江门移动A 2
-      - 香港B/江门移动B 2
-      - 香港B/广州移动A 2
-      - 香港B/广州移动B 2
-      - 香港B/佛山移动 2
-      - 香港B/安徽联通 2
-      - 香港B/上海移动 2
-      - 香港B/上海联通 2
-      - 日本/江门移动A 2
-      - 日本/江门移动B 2
-      - 日本/广州移动A 2
-      - 日本/广州移动B 2
-      - 日本/佛山移动 2
-      - 日本/安徽联通 2
-      - 日本/长沙联通 2
-      - 日本/上海联通 2
-      - Relay_🇨🇳CN-🇺🇸US_282
-      - Relay_🇨🇳CN-🇺🇸US_287
-      - Relay_🇨🇳CN-🇭🇰HK_292
-      - Relay_🇨🇳CN-🇯🇵JP_293
-      - Relay_🇨🇳CN-🇭🇰HK_300
-      - Relay_🇨🇳CN-🇭🇰HK_303
-      - Relay_🇨🇳CN-🇯🇵JP_305
-      - Relay_🇨🇳CN-🇭🇰HK_306
-      - Relay_🇨🇳CN-🇭🇰HK_307
-      - Relay_🇨🇳CN-🇭🇰HK_308
-      - Relay_🇨🇳CN-🇯🇵JP_309
-      - Relay_🇨🇳CN-🇯🇵JP_310
       - Relay_🇨🇳CN-🇯🇵JP_312
-      - Relay_🇨🇳CN-🇸🇬SG_313
-      - Relay_🇨🇳CN-🇯🇵JP_314
-      - Relay_🇨🇳CN-🇭🇰HK_316
-      - Relay_🇨🇳CN-🇸🇬SG_317
-      - Relay_🇨🇳CN-🇸🇬SG_318
       - Relay_🇨🇳CN-🇯🇵JP_321
-      - Relay_🇨🇳CN-🇭🇰HK_323
       - Relay_🇨🇳CN-🇭🇰HK_329
-      - Relay_🇭🇰HK-🇭🇰HK_613
-      - Relay_🇭🇰HK-🇹🇼TW_614
-      - Relay_🇺🇸US-🇺🇸US_2080
-      - _HK_香港
-      - _HK_香港 3
-      - _HK_香港 4
-      - V1-香港B组 直连 速度随缘 1x 2
-      - V1-日本B组 直连 速度随缘 1x 2
-      - Jsnzkpg 18
-      - Relay_🇨🇳CN-🇭🇰HK_298
-      - Relay_🇨🇳CN-🇯🇵JP_327
-      - Pool_🇭🇰HK_556
-      - Pool_🇭🇰HK_557
-      - Pool_🇭🇰HK_590
-      - Pool_🇭🇰HK_595
-      - Pool_🇭🇰HK_600
+      - +Pool_🇭🇰HK_556
+      - _中国_（）_79
+      - 中国_TG@nodesharing
+      - v2ray 马来西亚(移动) [Netflix]
+      - Large 台灣05 - all | IEPL | 倍率:1.5
+      - Large 新加坡08 - all | IEPL | 倍率:1.5
+      - Large 新加坡09 - all | IEPL | 倍率:1.5
+      - Large 香港02 - nf | MIEPL | 倍率:1.8
+      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - Large 香港08 - all | AIA | 倍率:1.6
+      - Large 香港09 - nf | AIA | 倍率:1.6
+      - Large 香港10 - nf | AIA | 倍率:1.6
+      - Large 香港11 - nf | AIA | 倍率:1.6
+      - Large 香港12 - nf | AIA | 倍率:1.6
+      - Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - Large 香港18 - nf | AIA | 倍率:1.8
+      - Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - Large 香港22 - nf | AIA | 倍率:1.8
+      - Lil 香港11 - nf | AIA | 倍率:3
+      - Lil 香港12 - nf | AIA | 倍率:3
+      - Large 台灣01 - all | IEPL | 倍率:1.8
+      - 上海优刻云-Tokyo-Linode@vpnhat 2
+      - 北京科技网-Tokyo-Linode@vpnhat 5
+      - 专线|美国01|原生Seattle
+      - 专线|香港01|原生HGCBBS 2
+      - 专线|香港02|原生HGCBBS 3
+      - 专线|香港04|原生HGCBBS 3
+      - 专线|香港05|原生HGCBBS 3
+      - 专线|香港07|原生HKBN 3
+      - 专线|香港08|原生HKBN 3
+      - 专线|台湾01|原生Taipei 3
+      - 专线|美国03|原生Seattle
+      - 基础|香港01|负载均衡 3
+      - 基础|香港02|负载均衡 3
+      - 基础|香港03|负载均衡 3
+      - 基础|香港05|负载均衡 3
+      - 日本(Youtube技术分享室整理) 2
+      - SG(Youtube技术分享室整理)
+      - RO |17.47Mb
+      - Relay_🇷🇴RO-🇷🇴RO_799 |14.18Mb
+      - ⌈绿通⌋ 香港 01
+      - 香港 HK 04
+      - 香港 HK 09
+      - 香港 HK 03
+      - 香港 HK 08
+      - 香港 HK 07
+      - 香港 HK 06
+      - 台湾 TW 07
+      - 韩国 KR 02
+      - 台湾 TW 02
+      - 台湾 TW 03
+      - 台湾 TW 06
+      - 新加坡 SG 05
+      - 韩国 KR 07
+      - 新加坡 SG 03
+      - 菲律宾_TG@nodesharing
+      - By t.me/lqmoe
+      - From t.me/vpnpool
+      - "[大麦]-AIA-HK-香港-1-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-2-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-3-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-6-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-8-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-9-2.0x-视频"
+      - "[大麦]-AIA-HK-香港-A-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-1-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-2-2.0x-视频"
+      - "[大麦]-AIA-JP-日本-3-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-1-2.0x-视频"
+      - "[大麦]-AIA-KR-韩国-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-2-2.0x-视频"
+      - "[大麦]-AIA-SGP-新加坡-4-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-2-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-3-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-5-2.0x-视频"
+      - "[大麦]-AIA-TW-台湾-6-2.0x-视频"
+      - "[大麦]-AIA-VN-越南-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-1-2.0x-视频"
+      - "[小麦]-中继-HK-香港-2-2.0x-视频"
+      - "[小麦]-中继-HK-香港-3-2.0x-视频"
+      - "[小麦]-中继-HK-香港-4-2.0x-视频"
+      - "[小麦]-中继-JP-日本-1-视频"
+      - "[小麦]-中继-SGP-新加坡-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-1-2.0x-视频"
+      - "[小麦]-中继-TW-台湾-3-2.0x-视频"
+      - "[小麦]-精品-HK-香港-2-2.0x-视频"
+      - "[1x]CU 日本 隧道 NO.1"
+      - "[1x]CU 新加坡 隧道 NO.1"
+      - "[1x]CU 香港 隧道 NO.2"
+      - 【新鸟免费】日本JP-AWS 04 1.0x
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - 【新鸟免费】日本JP-AWS 06 1.0x
+      - 【新鸟免费】日本JP-AWS 07 1.0x
+      - 【新鸟免费】日本JP-AWS 10 1.0x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
