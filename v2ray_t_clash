@@ -5,17 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 娄底联通-SG-Melbicom@vpnhat, server: 116.163.10.157, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
-  - {name: 徐州联通-SG-Melbicom@vpnhat, server: 122.192.154.50, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
-  - {name: 徐州联通-SG-Melbicom@vpnhat 3, server: 122.192.189.5, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
-  - {name: 北京科技网-Tokyo-Linode@vpnhat 2, server: 123.59.72.193, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
-  - {name: 娄底联通-SG-Melbicom@vpnhat 2, server: 116.163.10.208, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
-  - {name: 杭州移动-彰化Hinet@vpnhat, server: 120.232.192.115, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
-  - {name: 广州优刻云-Tokyo-Linode@vpnhat, server: 106.75.154.24, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
-  - {name: 上海优刻云-Tokyo-Linode@vpnhat, server: 106.75.233.91, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
-  - {name: 广州移动-彰化Hinet@vpnhat, server: 120.232.192.136, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
   - {name: V1-香港B组 直连 速度随缘 1x_27, server: hk-group-b-direct.myn0des.com, port: 8880, type: vmess, uuid: f0622fcc-55a3-346f-81d1-d60fa5a9fbe8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-group-b-direct.myn0des.com}, udp: true}
-  - {name: 徐州联通-彰化Hinet@vpnhat, server: 122.192.154.54, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
   - {name: TG   @ShareCentrePro, server: 112.64.53.159, port: 17015, type: vmess, uuid: 0ca8100c-d6d7-3089-8f95-1565610ec3c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
   - {name: 52281 @WangCai_1, server: 81.wgong.xyz, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 52201 @WangCai_1, server: 101.wgong.xyz, port: 52201, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -27,60 +17,7 @@ proxies:
   - {name: 52233 @WangCai_1, server: 133.wgong.xyz, port: 52333, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 52235 @WangCai_1, server: 135.wgong.xyz, port: 52335, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 52236 @WangCai_1, server: 136.wgong.xyz, port: 52436, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港01|负载均衡, server: v11.88host.buzz, port: 18005, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港02|负载均衡, server: v12.88host.buzz, port: 18006, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港03|负载均衡, server: v13.88host.buzz, port: 18007, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港04|负载均衡, server: v11.88host.buzz, port: 18008, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港05|负载均衡, server: v12.88host.buzz, port: 18009, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|印度02|解锁流媒体, server: v28.88host.buzz, port: 18075, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|加拿大02|解锁流媒体, server: v28.88host.buzz, port: 18073, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡01|解锁流媒体, server: v21.88host.buzz, port: 18033, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|亚洲01|混合负载, server: v31.88host.buzz, port: 18053, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港01|原生HGCBBS, server: v31.88host.buzz, port: 18064, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港04|原生HGCBBS, server: v34.88host.buzz, port: 18067, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港05|原生HGCBBS, server: v35.88host.buzz, port: 18068, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港07|原生HKBN, server: v31.88host.buzz, port: 18082, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港08|原生HKBN, server: v32.88host.buzz, port: 18083, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾01|原生Taipei, server: v36.88host.buzz, port: 18078, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾03|原生Taipei, server: v34.88host.buzz, port: 18080, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|西雅图02|原生NTT, server: v32.88host.buzz, port: 18085, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港01|负载均衡 2, server: v11.88host.buzz, port: 18005, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港02|负载均衡 2, server: v12.88host.buzz, port: 18006, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港03|负载均衡 2, server: v13.88host.buzz, port: 18007, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港04|负载均衡 2, server: v11.88host.buzz, port: 18008, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港05|负载均衡 2, server: v12.88host.buzz, port: 18009, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|印度02|解锁流媒体 2, server: v28.88host.buzz, port: 18075, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|加拿大02|解锁流媒体 2, server: v28.88host.buzz, port: 18073, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|亚洲01|混合负载 2, server: v31.88host.buzz, port: 18053, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港01|原生HGCBBS 2, server: v31.88host.buzz, port: 18064, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港02|原生HGCBBS, server: v32.88host.buzz, port: 18065, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港04|原生HGCBBS 2, server: v34.88host.buzz, port: 18067, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港05|原生HGCBBS 2, server: v35.88host.buzz, port: 18068, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港07|原生HKBN 2, server: v31.88host.buzz, port: 18082, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港08|原生HKBN 2, server: v32.88host.buzz, port: 18083, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾01|原生Taipei 2, server: v36.88host.buzz, port: 18078, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾03|原生Taipei 2, server: v34.88host.buzz, port: 18080, type: vmess, uuid: 9bb4af9b-cacf-350c-a37a-4ad7e89064ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港01|负载均衡 3, server: v11.88host.buzz, port: 18005, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港02|负载均衡 3, server: v12.88host.buzz, port: 18006, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港03|负载均衡 3, server: v13.88host.buzz, port: 18007, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港04|负载均衡 3, server: v11.88host.buzz, port: 18008, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 基础|香港05|负载均衡 3, server: v12.88host.buzz, port: 18009, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|日本02|解锁流媒体, server: v22.88host.buzz, port: 18022, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡01|解锁流媒体 2, server: v21.88host.buzz, port: 18033, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|亚洲01|混合负载 3, server: v31.88host.buzz, port: 18053, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港01|原生HGCBBS 3, server: v31.88host.buzz, port: 18064, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港02|原生HGCBBS 2, server: v32.88host.buzz, port: 18065, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港05|原生HGCBBS 3, server: v35.88host.buzz, port: 18068, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港06|原生CMI, server: v36.88host.buzz, port: 18069, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港07|原生HKBN 3, server: v31.88host.buzz, port: 18082, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港08|原生HKBN 3, server: v32.88host.buzz, port: 18083, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾01|原生Taipei 3, server: v36.88host.buzz, port: 18078, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|台湾03|原生Taipei 3, server: v34.88host.buzz, port: 18080, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国01|原生Seattle, server: v31.88host.buzz, port: 18042, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|美国03|原生Seattle, server: v33.88host.buzz, port: 18044, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|西雅图02|原生NTT 2, server: v32.88host.buzz, port: 18085, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: YouTube-由零开始, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
-  - {name: 佛山移动-彰化Hinet@vpnhat, server: 183.232.163.134, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
   - {name: V1-香港B组 直连 速度随缘 1x, server: hk-group-b-direct.myn0des.com, port: 8880, type: vmess, uuid: 8426925e-2f87-349e-a7ba-1375c3afd37b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: new.vip.weibo.cn}, udp: true}
   - {name: 52282 @WangCai_1, server: 82.wgong.xyz, port: 52282, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 52285 @WangCai_1, server: 85.wgong.xyz, port: 52285, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -90,20 +27,10 @@ proxies:
   - {name: 52215 @WangCai_1, server: 118.wgong.xyz, port: 52218, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 52227 @WangCai_1, server: 127.wgong.xyz, port: 52227, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 52237 @WangCai_1, server: 137.wgong.xyz, port: 52437, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IEPL专线 日本04 | 3x, server: iplc01.2333dns.com, port: 3011, type: vmess, uuid: 2eb3fd45-025b-30a4-856e-ca98edbb1b06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: IEPL专线 马来西亚01 | 3x 原生IP, server: iplc01.2333dns.com, port: 3061, type: vmess, uuid: 2eb3fd45-025b-30a4-856e-ca98edbb1b06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 新加坡01 中继A | 原生 1.5x, server: in01.2333dns.com, port: 61066, type: vmess, uuid: 2eb3fd45-025b-30a4-856e-ca98edbb1b06, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /jkl, ws-headers: {Host: jkl-sg01.airport-v2.com}, udp: true}
-  - {name: 新加坡04 中继A | 1.5x, server: in01.2333dns.com, port: 61045, type: vmess, uuid: 2eb3fd45-025b-30a4-856e-ca98edbb1b06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jkl, ws-headers: {Host: jkl-sg04.covid19.rip}, udp: true}
-  - {name: 新加坡04 中继C | 1.5x, server: in03.2333dns.com, port: 61045, type: vmess, uuid: 2eb3fd45-025b-30a4-856e-ca98edbb1b06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jkl, ws-headers: {Host: jkl-sg04.covid19.rip}, udp: true}
   - {name: "网址: https://www.mgnb.jp", server: cmhk.sjebo.com.cn, port: 33333, type: trojan, password: a4b74b1f-36cf-4156-b28d-bdddba123ceb, sni: cmhk.sjebo.com.cn, skip-cert-verify: true, udp: true}
   - {name: 公益+-+香港+-+100Mbps, server: gy.mg-nb.com, port: 20002, type: ss, cipher: aes-128-gcm, password: a4b74b1f-36cf-4156-b28d-bdddba123ceb, udp: true}
-  - {name: 专线|香港02|原生HGCBBS 3, server: v32.88host.buzz, port: 18065, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港03|原生CMI, server: v33.88host.buzz, port: 18066, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港06|原生CMI 2, server: v36.88host.buzz, port: 18069, type: vmess, uuid: 938f6354-57a1-38a7-9b6e-70fddd695060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港03|原生CMI 2, server: v33.88host.buzz, port: 18066, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|香港04|原生HGCBBS 3, server: v34.88host.buzz, port: 18067, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线|西雅图01|原生NTT, server: v31.88host.buzz, port: 18084, type: vmess, uuid: b4fdb5c9-e67b-39cd-8f79-a835a6ef3be9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AZ香港-1天, server: 52.175.60.111, port: 34440, type: vmess, uuid: 441fc9f3-48d2-4e71-8899-df95f66c1ab7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}, udp: true}
   - {name: vpnpool-Tokyo-Linode, server: 20.205.107.157, port: 11220, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 2, server: 168.63.152.183, port: 52201, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 3, server: 20.205.34.31, port: 11221, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -125,7 +52,6 @@ proxies:
   - {name: vpnpool-SG-DigitalOcean 8, server: 168.63.152.183, port: 52225, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 8, server: 20.205.58.228, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 9, server: 20.189.71.130, port: 52227, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Linode 10, server: 168.63.153.160, port: 52228, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-香港腾讯云, server: 40.83.115.147, port: 52330, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-SG-DigitalOcean 9, server: 20.205.96.84, port: 52331, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-SG-DigitalOcean 10, server: 20.189.71.12, port: 52333, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -133,47 +59,152 @@ proxies:
   - {name: vpnpool-SG-DigitalOcean 12, server: 20.189.71.12, port: 52335, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-SG-DigitalOcean 13, server: 20.189.71.130, port: 52436, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-SG-DigitalOcean 14, server: 40.83.115.147, port: 52437, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Linode 11, server: 40.83.115.147, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-Linode 10, server: 40.83.115.147, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-SG-DigitalOcean 15, server: 20.189.71.130, port: 52282, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Linode 12, server: 52.175.56.64, port: 52284, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-Linode 11, server: 52.175.56.64, port: 52284, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-SG-DigitalOcean 16, server: 52.175.56.64, port: 52285, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Linode 13, server: 52.229.130.73, port: 52296, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-SG-DigitalOcean 17, server: 52.175.30.122, port: 52298, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-SG-DigitalOcean 18, server: 20.189.71.130, port: 52213, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-SG-DigitalOcean 19, server: 52.184.15.105, port: 52214, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Linode 14, server: 20.189.71.130, port: 52215, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-Linode 12, server: 20.189.71.130, port: 52215, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港_TG@nodesharing_10, server: 110.wgong.xyz, port: 52210, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港_TG@nodesharing_13, server: 105.wgong.xyz, port: 52205, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港_TG@nodesharing_15, server: 84.wgong.xyz, port: 52284, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_19, server: 96.wgong.xyz, port: 52296, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港_TG@nodesharing_58, server: 121.wgong.xyz, port: 52221, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_62, server: 128.wgong.xyz, port: 52228, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_161, server: 86.wgong.xyz, port: 52286, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港, server: 118.107.244.112, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _HK_香港 2, server: 118.107.244.112, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125", server: bed2020.tw.cutefoodie.com, port: 8080, type: vmess, uuid: 2740071b-e46f-3b7d-9975-302c5a3468a4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wc/media/8575211314, ws-headers: {Host: zoommb134224142108rwg.cloud.zoom.us}, udp: true}
   - {name: "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19", server: sg1.amznoc.cutefoodie.com, port: 10109, type: vmess, uuid: 2740071b-e46f-3b7d-9975-302c5a3468a4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wc/media/8575211314, ws-headers: {Host: zoommb134224141246rwg.cloud.zoom.us}, udp: true}
   - {name: "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19", server: sg3.amznoc.cutefoodie.com, port: 15109, type: vmess, uuid: 2740071b-e46f-3b7d-9975-302c5a3468a4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wc/media/8575211314, ws-headers: {Host: zoommb13422414140rwg.cloud.zoom.us}, udp: true}
-  - {name: "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125 2", server: bed2020.tw.cutefoodie.com, port: 8080, type: vmess, uuid: 4246ce7c-b502-3faf-9a44-adb61a311098, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wc/media/8575211314, ws-headers: {Host: zoommb134224142108rwg.cloud.zoom.us}, udp: true}
   - {name: "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19 2", server: sg3.amznoc.cutefoodie.com, port: 15109, type: vmess, uuid: 4246ce7c-b502-3faf-9a44-adb61a311098, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wc/media/8575211314, ws-headers: {Host: zoommb13422414140rwg.cloud.zoom.us}, udp: true}
-  - {name: +Sydney-MYTEK, server: 118.107.244.112, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 52230 @WangCai_1, server: 130.wgong.xyz, port: 52330, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 公益+-+美国+-+100Mbps, server: gy.mg-nb.com, port: 20001, type: ss, cipher: aes-128-gcm, password: a4b74b1f-36cf-4156-b28d-bdddba123ceb, udp: true}
+  - {name: _NON_FMYC-2021.11.28_184, server: us07.vip-v2ray.cf, port: 58740, type: vmess, uuid: 4ca67d33-f626-47ba-e077-0ff6742fc31c, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_305_ 4.81Mb, server: ddns04.r8o8c8k.xyz, port: 65012, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: ddns04.r8o8c8k.xyz}, udp: true}
+  - {name: 52232 @WangCai_1, server: 132.wgong.xyz, port: 52332, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国, server: 169.197.143.157, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: IEPL专线 香港HGC02 | 3x 原生IP, server: iplc01.2333dns.com, port: 3021, type: vmess, uuid: 2eb3fd45-025b-30a4-856e-ca98edbb1b06, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: IEPL专线 香港HKT01 | 3x 原生IP, server: iplc01.2333dns.com, port: 3141, type: vmess, uuid: 2eb3fd45-025b-30a4-856e-ca98edbb1b06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾05 中继B | 原生 1.5x, server: in02.2333dns.com, port: 61068, type: vmess, uuid: 2eb3fd45-025b-30a4-856e-ca98edbb1b06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
+  - {name: 公益+-+香港+-+50Mbps, server: fs.mg-nb.com, port: 25048, type: ss, cipher: aes-128-gcm, password: a4b74b1f-36cf-4156-b28d-bdddba123ceb, udp: true}
+  - {name: 公益+-+日本+-+100Mbps, server: gy.mg-nb.com, port: 20000, type: ss, cipher: aes-128-gcm, password: a4b74b1f-36cf-4156-b28d-bdddba123ceb, udp: true}
+  - {name: 美国Trojan 容灾3, server: us3.tr.mg-nb.com, port: 12953, type: trojan, password: a4b74b1f-36cf-4156-b28d-bdddba123ceb, sni: us3.tr.mg-nb.com, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-台北Hinet-dip, server: 20.205.8.31, port: 52211, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 2, server: 38.75.136.49, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 3, server: 167.88.61.204, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 4, server: 38.75.136.45, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国 5, server: 38.75.136.45, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 6, server: 167.88.61.130, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 7, server: 169.197.143.157, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 8, server: 169.197.143.157, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国 9, server: 167.88.62.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国 10, server: 167.88.61.130, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 11, server: 169.197.143.157, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国 12, server: 169.197.143.157, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: "[直连] 日本 AWS - 【1x 11.24】19", server: jp.amzlight.cutefoodie.com, port: 18109, type: vmess, uuid: 4246ce7c-b502-3faf-9a44-adb61a311098, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wc/media/84894199158, ws-headers: {Host: zoommb134224142104rwg.cloud.zoom.us}, udp: true}
+  - {name: 香港 Prime - 【原生IP 解锁港区Netflix 1x】15, server: hk1.prime.cutefoodie.com, port: 8080, type: vmess, uuid: 4246ce7c-b502-3faf-9a44-adb61a311098, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wc/media/8575211314, ws-headers: {Host: zoommb134224142108rwg.cloud.zoom.us}, udp: true}
+  - {name: US(Youtube技术分享室整理), server: 167.88.61.130, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US(Youtube技术分享室整理) 2, server: 167.88.61.96, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US(Youtube技术分享室整理) 3, server: 38.75.136.102, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国(Youtube技术分享室整理), server: 167.88.61.204, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US(Youtube技术分享室整理) 4, server: 38.75.136.116, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国(Youtube技术分享室整理) 2, server: 38.68.134.202, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: "美国[感谢订阅——科技网络]", server: 38.75.136.102, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 2", server: 38.75.136.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 3", server: 38.75.136.102, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 4", server: 38.75.136.102, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 5", server: 38.68.134.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 6", server: 38.75.136.102, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 7", server: 38.75.136.116, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 8", server: 38.75.136.116, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 9", server: 38.75.136.116, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: vpnpool-Nonthaburi-CAT, server: 183.232.13.63, port: 2109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Nonthaburi-CAT 2, server: 183.240.181.27, port: 2109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-Iptelecom, server: 183.232.13.63, port: 2107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-Iptelecom 2, server: 183.240.181.27, port: 2107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Azure, server: 183.240.181.27, port: 1114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: US_8881+@WangCai_1, server: 169.197.143.157, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_5004+@WangCai_1, server: 169.197.143.157, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国_TG@nodesharing_27, server: 38.143.66.55, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国_TG@nodesharing_28, server: 38.143.66.55, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国_TG@nodesharing_36, server: 38.143.66.55, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国_TG@nodesharing_39, server: 38.143.66.55, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国_TG@nodesharing_40, server: 167.88.61.96, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_TG@nodesharing_46, server: 38.143.66.55, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_TG@nodesharing_47, server: 38.143.66.55, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_TG@nodesharing_54, server: 38.143.66.55, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_TG@nodesharing_60, server: 167.88.61.96, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国_TG@nodesharing_62, server: 38.143.66.55, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 美国_TG@nodesharing_71, server: 167.88.61.96, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_TG@nodesharing_77, server: 38.143.66.55, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_TG@nodesharing_82, server: 38.143.66.55, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国_TG@nodesharing_92, server: 38.143.66.55, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国_TG@nodesharing_101, server: 38.143.66.55, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国_TG@nodesharing_104, server: 38.143.66.55, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_TG@nodesharing_106, server: 167.88.61.96, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国_TG@nodesharing_107, server: 38.143.66.55, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 美国_TG@nodesharing_141, server: 167.88.61.96, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国_TG@nodesharing_167, server: 167.88.61.96, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 法国_TG@nodesharing_316, server: 37.120.136.234, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Xd2xnHT8tYkVt5BDk92b, udp: true}
+  - {name: 美国_TG@nodesharing_424, server: 38.143.66.55, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 美国_TG@nodesharing_591, server: 38.143.66.55, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_TG@nodesharing_606, server: 38.143.66.55, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国_TG@nodesharing_612, server: 38.143.66.55, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国|04|流解, server: 2.56.173.239, port: 8888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 2.56.173.239}, udp: true}
+  - {name: 电信二区(四川), server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V1-俄罗斯01 中继D 1.2x, server: in04.2333dns.com, port: 64071, type: vmess, uuid: 8426925e-2f87-349e-a7ba-1375c3afd37b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: biteb-ru01.covid19.rip}, udp: true}
+  - {name: Card Captor Sakura, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
+  - {name: TG   @ShareCentrePro 2, server: 120.197.85.39, port: 17015, type: vmess, uuid: 0ca8100c-d6d7-3089-8f95-1565610ec3c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: TG   @ShareCentrePro 3, server: 120.197.85.39, port: 17014, type: vmess, uuid: 0ca8100c-d6d7-3089-8f95-1565610ec3c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 52283 @WangCai_1, server: 83.wgong.xyz, port: 52283, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 52299 @WangCai_1, server: 99.wgong.xyz, port: 52299, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: IEPL专线 新加坡05 | 3x 原生IP, server: iplc01.2333dns.com, port: 3051, type: vmess, uuid: 2eb3fd45-025b-30a4-856e-ca98edbb1b06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 印度01 中继D | 1.5x, server: in04.2333dns.com, port: 61051, type: vmess, uuid: 2eb3fd45-025b-30a4-856e-ca98edbb1b06, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
+  - {name: 新加坡01 中继D | 原生 1.5x, server: in04.2333dns.com, port: 61066, type: vmess, uuid: 2eb3fd45-025b-30a4-856e-ca98edbb1b06, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /jkl, ws-headers: {Host: jkl-sg01.airport-v2.com}, udp: true}
+  - {name: TG+@ShareCentrePro_US_美国, server: 167.88.61.130, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: vpnpool-香港腾讯云 2, server: 168.63.152.183, port: 52329, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 13, server: 38.75.136.45, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 14, server: 38.75.136.45, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 15, server: 169.197.143.157, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国 16, server: 169.197.143.157, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国 17, server: 38.75.136.45, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 18, server: 169.197.143.157, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 19, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: default_name, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
+  - {name: "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19 2", server: sg1.amznoc.cutefoodie.com, port: 10109, type: vmess, uuid: 4246ce7c-b502-3faf-9a44-adb61a311098, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wc/media/8575211314, ws-headers: {Host: zoommb134224141246rwg.cloud.zoom.us}, udp: true}
+  - {name: "[FREE] GGC 1Gbps 20220124", server: 154.3.8.151, port: 30067, type: ss, cipher: aes-256-gcm, password: iUB0923RBA, udp: true}
+  - {name: 「🇸🇬」Singapore 01, server: 18.136.201.49, port: 80, type: vmess, uuid: c03a14f9-c334-409f-940f-efc5ba581d06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index.html, ws-headers: {Host: net.dacy.cc}, udp: true}
+  - {name: 「🇸🇬」Singapore 02, server: 18.141.205.139, port: 80, type: vmess, uuid: c03a14f9-c334-409f-940f-efc5ba581d06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index.html, ws-headers: {Host: net.dacy.cc}, udp: true}
+  - {name: 「🇺🇸」United States 02, server: 52.53.249.1, port: 80, type: vmess, uuid: c03a14f9-c334-409f-940f-efc5ba581d06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index.html, ws-headers: {Host: net.dacy.cc}, udp: true}
+  - {name: 日本|| https://t.me/hkgzs01, server: 3.112.221.191, port: 443, type: vmess, uuid: 89de25af-b37c-4a0f-9d5c-f842fdb9e08e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 3.112.221.191}, udp: true}
+  - {name: _US_美国 20, server: 38.75.136.45, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 21, server: 38.75.136.45, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 22, server: 169.197.143.157, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 23, server: 209.58.139.41, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}, udp: true}
+  - {name: _US_美国 24, server: 167.88.61.130, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 25, server: 167.88.61.130, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 26, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 05 @WangCai_1, server: 198.41.212.5, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
+  - {name: HK/香港SS-03 - 1000M - 1x_6, server: cs.v2bees.net, port: 25131, type: ss, cipher: chacha20-ietf-poly1305, password: 06de3e32-0bb5-4fac-9b5f-1d7bb3b062fb, udp: true}
+  - {name: HK/香港SS-05 - 1000M - 1x_8, server: cs.v2bees.net, port: 25137, type: ss, cipher: chacha20-ietf-poly1305, password: 06de3e32-0bb5-4fac-9b5f-1d7bb3b062fb, udp: true}
+  - {name: HK/香港SS-06 - 1000M - 2x-流媒体解锁_9, server: gza8.v2bees.net, port: 45214, type: ss, cipher: chacha20-ietf-poly1305, password: 06de3e32-0bb5-4fac-9b5f-1d7bb3b062fb, udp: true}
+  - {name: HK/香港03 - 1000M - 1x_12, server: cs.lt.nkeo.top, port: 25378, type: vmess, uuid: 06de3e32-0bb5-4fac-9b5f-1d7bb3b062fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: cs.lt.nkeo.top}, udp: true}
+  - {name: HK/香港04 - 1000M - 1x_13, server: cs.lt.nkeo.top, port: 25379, type: vmess, uuid: 06de3e32-0bb5-4fac-9b5f-1d7bb3b062fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: cs.lt.nkeo.top}, udp: true}
+  - {name: SG/新加坡01 - 1000M - 1x_15, server: gza8.v2bees.net, port: 25098, type: vmess, uuid: 06de3e32-0bb5-4fac-9b5f-1d7bb3b062fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: gza8.v2bees.net}, udp: true}
+  - {name: SG/新加坡02 - 1000M - 1x_16, server: gza8.v2bees.net, port: 25101, type: vmess, uuid: 06de3e32-0bb5-4fac-9b5f-1d7bb3b062fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: gza8.v2bees.net}, udp: true}
+  - {name: JP/日本01 - 1000M - 1x_18, server: gza8.v2bees.net, port: 25158, type: vmess, uuid: 06de3e32-0bb5-4fac-9b5f-1d7bb3b062fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: gza8.v2bees.net}, udp: true}
+  - {name: JP/日本02 - 1000M - 1x_19, server: gza8.v2bees.net, port: 25159, type: vmess, uuid: 06de3e32-0bb5-4fac-9b5f-1d7bb3b062fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: gza8.v2bees.net}, udp: true}
+  - {name: JP/日本03 - 1000M - 1x_20, server: gza8.v2bees.net, port: 25160, type: vmess, uuid: 06de3e32-0bb5-4fac-9b5f-1d7bb3b062fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: gza8.v2bees.net}, udp: true}
+  - {name: TW/台湾01 - 1000M - 2x - 流媒体解锁_24, server: gza8.v2bees.net, port: 45037, type: vmess, uuid: 06de3e32-0bb5-4fac-9b5f-1d7bb3b062fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: gza8.v2bees.net}, udp: true}
+  - {name: US/美国01 - 1000M - 2x - 流媒体解锁_25, server: gza8.v2bees.net, port: 45028, type: vmess, uuid: 06de3e32-0bb5-4fac-9b5f-1d7bb3b062fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: gza8.v2bees.net}, udp: true}
+  - {name: 香港_Hk, server: 20.205.107.157, port: 52332, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港_HK, server: 20.205.32.135, port: 11224, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港hk, server: 52.175.56.64, port: 52207, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "中转|日本GMO08|华南隧道[流媒体解锁]", server: cm-jm.okvpn.xyz, port: 20015, type: vmess, uuid: b6cfdcc9-804e-4609-a317-d171d39c5725, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 杭州移动-彰化Hinet@vpnhat
-      - 广州优刻云-Tokyo-Linode@vpnhat
-      - 上海优刻云-Tokyo-Linode@vpnhat
-      - 广州移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x_27
-      - 徐州联通-彰化Hinet@vpnhat
       - TG   @ShareCentrePro
       - 52281 @WangCai_1
       - 52201 @WangCai_1
@@ -185,60 +216,7 @@ proxy-groups:
       - 52233 @WangCai_1
       - 52235 @WangCai_1
       - 52236 @WangCai_1
-      - 基础|香港01|负载均衡
-      - 基础|香港02|负载均衡
-      - 基础|香港03|负载均衡
-      - 基础|香港04|负载均衡
-      - 基础|香港05|负载均衡
-      - 标准|印度02|解锁流媒体
-      - 标准|加拿大02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
-      - 专线|亚洲01|混合负载
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港04|原生HGCBBS
-      - 专线|香港05|原生HGCBBS
-      - 专线|香港07|原生HKBN
-      - 专线|香港08|原生HKBN
-      - 专线|台湾01|原生Taipei
-      - 专线|台湾03|原生Taipei
-      - 专线|西雅图02|原生NTT
-      - 基础|香港01|负载均衡 2
-      - 基础|香港02|负载均衡 2
-      - 基础|香港03|负载均衡 2
-      - 基础|香港04|负载均衡 2
-      - 基础|香港05|负载均衡 2
-      - 标准|印度02|解锁流媒体 2
-      - 标准|加拿大02|解锁流媒体 2
-      - 专线|亚洲01|混合负载 2
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS
-      - 专线|香港04|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生Taipei 2
-      - 专线|台湾03|原生Taipei 2
-      - 基础|香港01|负载均衡 3
-      - 基础|香港02|负载均衡 3
-      - 基础|香港03|负载均衡 3
-      - 基础|香港04|负载均衡 3
-      - 基础|香港05|负载均衡 3
-      - 标准|日本02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体 2
-      - 专线|亚洲01|混合负载 3
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾03|原生Taipei 3
-      - 专线|美国01|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|西雅图02|原生NTT 2
       - YouTube-由零开始
-      - 佛山移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x
       - 52282 @WangCai_1
       - 52285 @WangCai_1
@@ -248,20 +226,10 @@ proxy-groups:
       - 52215 @WangCai_1
       - 52227 @WangCai_1
       - 52237 @WangCai_1
-      - IEPL专线 日本04 | 3x
       - IEPL专线 马来西亚01 | 3x 原生IP
       - 新加坡01 中继A | 原生 1.5x
-      - 新加坡04 中继A | 1.5x
-      - 新加坡04 中继C | 1.5x
       - "网址: https://www.mgnb.jp"
       - 公益+-+香港+-+100Mbps
-      - 专线|香港02|原生HGCBBS 3
-      - 专线|香港03|原生CMI
-      - 专线|香港06|原生CMI 2
-      - 专线|香港03|原生CMI 2
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|西雅图01|原生NTT
-      - AZ香港-1天
       - vpnpool-Tokyo-Linode
       - vpnpool-Tokyo-Linode 2
       - vpnpool-Tokyo-Linode 3
@@ -283,7 +251,6 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 8
       - vpnpool-Tokyo-Linode 8
       - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
       - vpnpool-香港腾讯云
       - vpnpool-SG-DigitalOcean 9
       - vpnpool-SG-DigitalOcean 10
@@ -291,46 +258,151 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 12
       - vpnpool-SG-DigitalOcean 13
       - vpnpool-SG-DigitalOcean 14
-      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 10
       - vpnpool-SG-DigitalOcean 15
-      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 11
       - vpnpool-SG-DigitalOcean 16
-      - vpnpool-Tokyo-Linode 13
       - vpnpool-SG-DigitalOcean 17
       - vpnpool-SG-DigitalOcean 18
       - vpnpool-SG-DigitalOcean 19
-      - vpnpool-Tokyo-Linode 14
+      - vpnpool-Tokyo-Linode 12
       - 香港_TG@nodesharing_10
       - 香港_TG@nodesharing_13
       - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_19
       - 香港_TG@nodesharing_58
-      - 香港_TG@nodesharing_62
-      - 香港_TG@nodesharing_161
-      - _HK_香港
-      - _HK_香港 2
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125"
       - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19"
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125 2"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19 2"
-      - +Sydney-MYTEK
+      - 52230 @WangCai_1
+      - 公益+-+美国+-+100Mbps
+      - _NON_FMYC-2021.11.28_184
+      - Relay_🇨🇳CN-🇺🇸US_305_ 4.81Mb
+      - 52232 @WangCai_1
+      - _US_美国
+      - IEPL专线 香港HGC02 | 3x 原生IP
+      - IEPL专线 香港HKT01 | 3x 原生IP
+      - 台湾05 中继B | 原生 1.5x
+      - 公益+-+香港+-+50Mbps
+      - 公益+-+日本+-+100Mbps
+      - 美国Trojan 容灾3
+      - vpnpool-台北Hinet-dip
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - "[直连] 日本 AWS - 【1x 11.24】19"
+      - 香港 Prime - 【原生IP 解锁港区Netflix 1x】15
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 3
+      - 美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 4
+      - 美国(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 2
+      - 美国[感谢订阅——科技网络] 3
+      - 美国[感谢订阅——科技网络] 4
+      - 美国[感谢订阅——科技网络] 5
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 美国[感谢订阅——科技网络] 8
+      - 美国[感谢订阅——科技网络] 9
+      - vpnpool-Nonthaburi-CAT
+      - vpnpool-Nonthaburi-CAT 2
+      - vpnpool-Tokyo-Iptelecom
+      - vpnpool-Tokyo-Iptelecom 2
+      - vpnpool-香港Azure
+      - US_8881+@WangCai_1
+      - US_5004+@WangCai_1
+      - 美国_TG@nodesharing_27
+      - 美国_TG@nodesharing_28
+      - 美国_TG@nodesharing_36
+      - 美国_TG@nodesharing_39
+      - 美国_TG@nodesharing_40
+      - 美国_TG@nodesharing_46
+      - 美国_TG@nodesharing_47
+      - 美国_TG@nodesharing_54
+      - 美国_TG@nodesharing_60
+      - 美国_TG@nodesharing_62
+      - 美国_TG@nodesharing_71
+      - 美国_TG@nodesharing_77
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_92
+      - 美国_TG@nodesharing_101
+      - 美国_TG@nodesharing_104
+      - 美国_TG@nodesharing_106
+      - 美国_TG@nodesharing_107
+      - 美国_TG@nodesharing_141
+      - 美国_TG@nodesharing_167
+      - 法国_TG@nodesharing_316
+      - 美国_TG@nodesharing_424
+      - 美国_TG@nodesharing_591
+      - 美国_TG@nodesharing_606
+      - 美国_TG@nodesharing_612
+      - 美国|04|流解
+      - 电信二区(四川)
+      - V1-俄罗斯01 中继D 1.2x
+      - Card Captor Sakura
+      - TG   @ShareCentrePro 2
+      - TG   @ShareCentrePro 3
+      - 52283 @WangCai_1
+      - 52299 @WangCai_1
+      - IEPL专线 新加坡05 | 3x 原生IP
+      - 印度01 中继D | 1.5x
+      - 新加坡01 中继D | 原生 1.5x
+      - TG+@ShareCentrePro_US_美国
+      - vpnpool-香港腾讯云 2
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - default_name
+      - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19 2"
+      - "[FREE] GGC 1Gbps 20220124"
+      - 「🇸🇬」Singapore 01
+      - 「🇸🇬」Singapore 02
+      - 「🇺🇸」United States 02
+      - 日本|| https://t.me/hkgzs01
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - 05 @WangCai_1
+      - HK/香港SS-03 - 1000M - 1x_6
+      - HK/香港SS-05 - 1000M - 1x_8
+      - HK/香港SS-06 - 1000M - 2x-流媒体解锁_9
+      - HK/香港03 - 1000M - 1x_12
+      - HK/香港04 - 1000M - 1x_13
+      - SG/新加坡01 - 1000M - 1x_15
+      - SG/新加坡02 - 1000M - 1x_16
+      - JP/日本01 - 1000M - 1x_18
+      - JP/日本02 - 1000M - 1x_19
+      - JP/日本03 - 1000M - 1x_20
+      - TW/台湾01 - 1000M - 2x - 流媒体解锁_24
+      - US/美国01 - 1000M - 2x - 流媒体解锁_25
+      - 香港_Hk
+      - 香港_HK
+      - 香港hk
+      - 中转|日本GMO08|华南隧道[流媒体解锁]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 杭州移动-彰化Hinet@vpnhat
-      - 广州优刻云-Tokyo-Linode@vpnhat
-      - 上海优刻云-Tokyo-Linode@vpnhat
-      - 广州移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x_27
-      - 徐州联通-彰化Hinet@vpnhat
       - TG   @ShareCentrePro
       - 52281 @WangCai_1
       - 52201 @WangCai_1
@@ -342,60 +414,7 @@ proxy-groups:
       - 52233 @WangCai_1
       - 52235 @WangCai_1
       - 52236 @WangCai_1
-      - 基础|香港01|负载均衡
-      - 基础|香港02|负载均衡
-      - 基础|香港03|负载均衡
-      - 基础|香港04|负载均衡
-      - 基础|香港05|负载均衡
-      - 标准|印度02|解锁流媒体
-      - 标准|加拿大02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
-      - 专线|亚洲01|混合负载
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港04|原生HGCBBS
-      - 专线|香港05|原生HGCBBS
-      - 专线|香港07|原生HKBN
-      - 专线|香港08|原生HKBN
-      - 专线|台湾01|原生Taipei
-      - 专线|台湾03|原生Taipei
-      - 专线|西雅图02|原生NTT
-      - 基础|香港01|负载均衡 2
-      - 基础|香港02|负载均衡 2
-      - 基础|香港03|负载均衡 2
-      - 基础|香港04|负载均衡 2
-      - 基础|香港05|负载均衡 2
-      - 标准|印度02|解锁流媒体 2
-      - 标准|加拿大02|解锁流媒体 2
-      - 专线|亚洲01|混合负载 2
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS
-      - 专线|香港04|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生Taipei 2
-      - 专线|台湾03|原生Taipei 2
-      - 基础|香港01|负载均衡 3
-      - 基础|香港02|负载均衡 3
-      - 基础|香港03|负载均衡 3
-      - 基础|香港04|负载均衡 3
-      - 基础|香港05|负载均衡 3
-      - 标准|日本02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体 2
-      - 专线|亚洲01|混合负载 3
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾03|原生Taipei 3
-      - 专线|美国01|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|西雅图02|原生NTT 2
       - YouTube-由零开始
-      - 佛山移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x
       - 52282 @WangCai_1
       - 52285 @WangCai_1
@@ -405,20 +424,10 @@ proxy-groups:
       - 52215 @WangCai_1
       - 52227 @WangCai_1
       - 52237 @WangCai_1
-      - IEPL专线 日本04 | 3x
       - IEPL专线 马来西亚01 | 3x 原生IP
       - 新加坡01 中继A | 原生 1.5x
-      - 新加坡04 中继A | 1.5x
-      - 新加坡04 中继C | 1.5x
       - "网址: https://www.mgnb.jp"
       - 公益+-+香港+-+100Mbps
-      - 专线|香港02|原生HGCBBS 3
-      - 专线|香港03|原生CMI
-      - 专线|香港06|原生CMI 2
-      - 专线|香港03|原生CMI 2
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|西雅图01|原生NTT
-      - AZ香港-1天
       - vpnpool-Tokyo-Linode
       - vpnpool-Tokyo-Linode 2
       - vpnpool-Tokyo-Linode 3
@@ -440,7 +449,6 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 8
       - vpnpool-Tokyo-Linode 8
       - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
       - vpnpool-香港腾讯云
       - vpnpool-SG-DigitalOcean 9
       - vpnpool-SG-DigitalOcean 10
@@ -448,47 +456,152 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 12
       - vpnpool-SG-DigitalOcean 13
       - vpnpool-SG-DigitalOcean 14
-      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 10
       - vpnpool-SG-DigitalOcean 15
-      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 11
       - vpnpool-SG-DigitalOcean 16
-      - vpnpool-Tokyo-Linode 13
       - vpnpool-SG-DigitalOcean 17
       - vpnpool-SG-DigitalOcean 18
       - vpnpool-SG-DigitalOcean 19
-      - vpnpool-Tokyo-Linode 14
+      - vpnpool-Tokyo-Linode 12
       - 香港_TG@nodesharing_10
       - 香港_TG@nodesharing_13
       - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_19
       - 香港_TG@nodesharing_58
-      - 香港_TG@nodesharing_62
-      - 香港_TG@nodesharing_161
-      - _HK_香港
-      - _HK_香港 2
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125"
       - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19"
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125 2"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19 2"
-      - +Sydney-MYTEK
+      - 52230 @WangCai_1
+      - 公益+-+美国+-+100Mbps
+      - _NON_FMYC-2021.11.28_184
+      - Relay_🇨🇳CN-🇺🇸US_305_ 4.81Mb
+      - 52232 @WangCai_1
+      - _US_美国
+      - IEPL专线 香港HGC02 | 3x 原生IP
+      - IEPL专线 香港HKT01 | 3x 原生IP
+      - 台湾05 中继B | 原生 1.5x
+      - 公益+-+香港+-+50Mbps
+      - 公益+-+日本+-+100Mbps
+      - 美国Trojan 容灾3
+      - vpnpool-台北Hinet-dip
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - "[直连] 日本 AWS - 【1x 11.24】19"
+      - 香港 Prime - 【原生IP 解锁港区Netflix 1x】15
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 3
+      - 美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 4
+      - 美国(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 2
+      - 美国[感谢订阅——科技网络] 3
+      - 美国[感谢订阅——科技网络] 4
+      - 美国[感谢订阅——科技网络] 5
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 美国[感谢订阅——科技网络] 8
+      - 美国[感谢订阅——科技网络] 9
+      - vpnpool-Nonthaburi-CAT
+      - vpnpool-Nonthaburi-CAT 2
+      - vpnpool-Tokyo-Iptelecom
+      - vpnpool-Tokyo-Iptelecom 2
+      - vpnpool-香港Azure
+      - US_8881+@WangCai_1
+      - US_5004+@WangCai_1
+      - 美国_TG@nodesharing_27
+      - 美国_TG@nodesharing_28
+      - 美国_TG@nodesharing_36
+      - 美国_TG@nodesharing_39
+      - 美国_TG@nodesharing_40
+      - 美国_TG@nodesharing_46
+      - 美国_TG@nodesharing_47
+      - 美国_TG@nodesharing_54
+      - 美国_TG@nodesharing_60
+      - 美国_TG@nodesharing_62
+      - 美国_TG@nodesharing_71
+      - 美国_TG@nodesharing_77
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_92
+      - 美国_TG@nodesharing_101
+      - 美国_TG@nodesharing_104
+      - 美国_TG@nodesharing_106
+      - 美国_TG@nodesharing_107
+      - 美国_TG@nodesharing_141
+      - 美国_TG@nodesharing_167
+      - 法国_TG@nodesharing_316
+      - 美国_TG@nodesharing_424
+      - 美国_TG@nodesharing_591
+      - 美国_TG@nodesharing_606
+      - 美国_TG@nodesharing_612
+      - 美国|04|流解
+      - 电信二区(四川)
+      - V1-俄罗斯01 中继D 1.2x
+      - Card Captor Sakura
+      - TG   @ShareCentrePro 2
+      - TG   @ShareCentrePro 3
+      - 52283 @WangCai_1
+      - 52299 @WangCai_1
+      - IEPL专线 新加坡05 | 3x 原生IP
+      - 印度01 中继D | 1.5x
+      - 新加坡01 中继D | 原生 1.5x
+      - TG+@ShareCentrePro_US_美国
+      - vpnpool-香港腾讯云 2
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - default_name
+      - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19 2"
+      - "[FREE] GGC 1Gbps 20220124"
+      - 「🇸🇬」Singapore 01
+      - 「🇸🇬」Singapore 02
+      - 「🇺🇸」United States 02
+      - 日本|| https://t.me/hkgzs01
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - 05 @WangCai_1
+      - HK/香港SS-03 - 1000M - 1x_6
+      - HK/香港SS-05 - 1000M - 1x_8
+      - HK/香港SS-06 - 1000M - 2x-流媒体解锁_9
+      - HK/香港03 - 1000M - 1x_12
+      - HK/香港04 - 1000M - 1x_13
+      - SG/新加坡01 - 1000M - 1x_15
+      - SG/新加坡02 - 1000M - 1x_16
+      - JP/日本01 - 1000M - 1x_18
+      - JP/日本02 - 1000M - 1x_19
+      - JP/日本03 - 1000M - 1x_20
+      - TW/台湾01 - 1000M - 2x - 流媒体解锁_24
+      - US/美国01 - 1000M - 2x - 流媒体解锁_25
+      - 香港_Hk
+      - 香港_HK
+      - 香港hk
+      - 中转|日本GMO08|华南隧道[流媒体解锁]
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 杭州移动-彰化Hinet@vpnhat
-      - 广州优刻云-Tokyo-Linode@vpnhat
-      - 上海优刻云-Tokyo-Linode@vpnhat
-      - 广州移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x_27
-      - 徐州联通-彰化Hinet@vpnhat
       - TG   @ShareCentrePro
       - 52281 @WangCai_1
       - 52201 @WangCai_1
@@ -500,60 +613,7 @@ proxy-groups:
       - 52233 @WangCai_1
       - 52235 @WangCai_1
       - 52236 @WangCai_1
-      - 基础|香港01|负载均衡
-      - 基础|香港02|负载均衡
-      - 基础|香港03|负载均衡
-      - 基础|香港04|负载均衡
-      - 基础|香港05|负载均衡
-      - 标准|印度02|解锁流媒体
-      - 标准|加拿大02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
-      - 专线|亚洲01|混合负载
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港04|原生HGCBBS
-      - 专线|香港05|原生HGCBBS
-      - 专线|香港07|原生HKBN
-      - 专线|香港08|原生HKBN
-      - 专线|台湾01|原生Taipei
-      - 专线|台湾03|原生Taipei
-      - 专线|西雅图02|原生NTT
-      - 基础|香港01|负载均衡 2
-      - 基础|香港02|负载均衡 2
-      - 基础|香港03|负载均衡 2
-      - 基础|香港04|负载均衡 2
-      - 基础|香港05|负载均衡 2
-      - 标准|印度02|解锁流媒体 2
-      - 标准|加拿大02|解锁流媒体 2
-      - 专线|亚洲01|混合负载 2
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS
-      - 专线|香港04|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生Taipei 2
-      - 专线|台湾03|原生Taipei 2
-      - 基础|香港01|负载均衡 3
-      - 基础|香港02|负载均衡 3
-      - 基础|香港03|负载均衡 3
-      - 基础|香港04|负载均衡 3
-      - 基础|香港05|负载均衡 3
-      - 标准|日本02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体 2
-      - 专线|亚洲01|混合负载 3
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾03|原生Taipei 3
-      - 专线|美国01|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|西雅图02|原生NTT 2
       - YouTube-由零开始
-      - 佛山移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x
       - 52282 @WangCai_1
       - 52285 @WangCai_1
@@ -563,20 +623,10 @@ proxy-groups:
       - 52215 @WangCai_1
       - 52227 @WangCai_1
       - 52237 @WangCai_1
-      - IEPL专线 日本04 | 3x
       - IEPL专线 马来西亚01 | 3x 原生IP
       - 新加坡01 中继A | 原生 1.5x
-      - 新加坡04 中继A | 1.5x
-      - 新加坡04 中继C | 1.5x
       - "网址: https://www.mgnb.jp"
       - 公益+-+香港+-+100Mbps
-      - 专线|香港02|原生HGCBBS 3
-      - 专线|香港03|原生CMI
-      - 专线|香港06|原生CMI 2
-      - 专线|香港03|原生CMI 2
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|西雅图01|原生NTT
-      - AZ香港-1天
       - vpnpool-Tokyo-Linode
       - vpnpool-Tokyo-Linode 2
       - vpnpool-Tokyo-Linode 3
@@ -598,7 +648,6 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 8
       - vpnpool-Tokyo-Linode 8
       - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
       - vpnpool-香港腾讯云
       - vpnpool-SG-DigitalOcean 9
       - vpnpool-SG-DigitalOcean 10
@@ -606,30 +655,145 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 12
       - vpnpool-SG-DigitalOcean 13
       - vpnpool-SG-DigitalOcean 14
-      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 10
       - vpnpool-SG-DigitalOcean 15
-      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 11
       - vpnpool-SG-DigitalOcean 16
-      - vpnpool-Tokyo-Linode 13
       - vpnpool-SG-DigitalOcean 17
       - vpnpool-SG-DigitalOcean 18
       - vpnpool-SG-DigitalOcean 19
-      - vpnpool-Tokyo-Linode 14
+      - vpnpool-Tokyo-Linode 12
       - 香港_TG@nodesharing_10
       - 香港_TG@nodesharing_13
       - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_19
       - 香港_TG@nodesharing_58
-      - 香港_TG@nodesharing_62
-      - 香港_TG@nodesharing_161
-      - _HK_香港
-      - _HK_香港 2
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125"
       - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19"
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125 2"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19 2"
-      - +Sydney-MYTEK
+      - 52230 @WangCai_1
+      - 公益+-+美国+-+100Mbps
+      - _NON_FMYC-2021.11.28_184
+      - Relay_🇨🇳CN-🇺🇸US_305_ 4.81Mb
+      - 52232 @WangCai_1
+      - _US_美国
+      - IEPL专线 香港HGC02 | 3x 原生IP
+      - IEPL专线 香港HKT01 | 3x 原生IP
+      - 台湾05 中继B | 原生 1.5x
+      - 公益+-+香港+-+50Mbps
+      - 公益+-+日本+-+100Mbps
+      - 美国Trojan 容灾3
+      - vpnpool-台北Hinet-dip
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - "[直连] 日本 AWS - 【1x 11.24】19"
+      - 香港 Prime - 【原生IP 解锁港区Netflix 1x】15
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 3
+      - 美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 4
+      - 美国(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 2
+      - 美国[感谢订阅——科技网络] 3
+      - 美国[感谢订阅——科技网络] 4
+      - 美国[感谢订阅——科技网络] 5
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 美国[感谢订阅——科技网络] 8
+      - 美国[感谢订阅——科技网络] 9
+      - vpnpool-Nonthaburi-CAT
+      - vpnpool-Nonthaburi-CAT 2
+      - vpnpool-Tokyo-Iptelecom
+      - vpnpool-Tokyo-Iptelecom 2
+      - vpnpool-香港Azure
+      - US_8881+@WangCai_1
+      - US_5004+@WangCai_1
+      - 美国_TG@nodesharing_27
+      - 美国_TG@nodesharing_28
+      - 美国_TG@nodesharing_36
+      - 美国_TG@nodesharing_39
+      - 美国_TG@nodesharing_40
+      - 美国_TG@nodesharing_46
+      - 美国_TG@nodesharing_47
+      - 美国_TG@nodesharing_54
+      - 美国_TG@nodesharing_60
+      - 美国_TG@nodesharing_62
+      - 美国_TG@nodesharing_71
+      - 美国_TG@nodesharing_77
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_92
+      - 美国_TG@nodesharing_101
+      - 美国_TG@nodesharing_104
+      - 美国_TG@nodesharing_106
+      - 美国_TG@nodesharing_107
+      - 美国_TG@nodesharing_141
+      - 美国_TG@nodesharing_167
+      - 法国_TG@nodesharing_316
+      - 美国_TG@nodesharing_424
+      - 美国_TG@nodesharing_591
+      - 美国_TG@nodesharing_606
+      - 美国_TG@nodesharing_612
+      - 美国|04|流解
+      - 电信二区(四川)
+      - V1-俄罗斯01 中继D 1.2x
+      - Card Captor Sakura
+      - TG   @ShareCentrePro 2
+      - TG   @ShareCentrePro 3
+      - 52283 @WangCai_1
+      - 52299 @WangCai_1
+      - IEPL专线 新加坡05 | 3x 原生IP
+      - 印度01 中继D | 1.5x
+      - 新加坡01 中继D | 原生 1.5x
+      - TG+@ShareCentrePro_US_美国
+      - vpnpool-香港腾讯云 2
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - default_name
+      - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19 2"
+      - "[FREE] GGC 1Gbps 20220124"
+      - 「🇸🇬」Singapore 01
+      - 「🇸🇬」Singapore 02
+      - 「🇺🇸」United States 02
+      - 日本|| https://t.me/hkgzs01
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - 05 @WangCai_1
+      - HK/香港SS-03 - 1000M - 1x_6
+      - HK/香港SS-05 - 1000M - 1x_8
+      - HK/香港SS-06 - 1000M - 2x-流媒体解锁_9
+      - HK/香港03 - 1000M - 1x_12
+      - HK/香港04 - 1000M - 1x_13
+      - SG/新加坡01 - 1000M - 1x_15
+      - SG/新加坡02 - 1000M - 1x_16
+      - JP/日本01 - 1000M - 1x_18
+      - JP/日本02 - 1000M - 1x_19
+      - JP/日本03 - 1000M - 1x_20
+      - TW/台湾01 - 1000M - 2x - 流媒体解锁_24
+      - US/美国01 - 1000M - 2x - 流媒体解锁_25
+      - 香港_Hk
+      - 香港_HK
+      - 香港hk
+      - 中转|日本GMO08|华南隧道[流媒体解锁]
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -648,17 +812,7 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 杭州移动-彰化Hinet@vpnhat
-      - 广州优刻云-Tokyo-Linode@vpnhat
-      - 上海优刻云-Tokyo-Linode@vpnhat
-      - 广州移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x_27
-      - 徐州联通-彰化Hinet@vpnhat
       - TG   @ShareCentrePro
       - 52281 @WangCai_1
       - 52201 @WangCai_1
@@ -670,60 +824,7 @@ proxy-groups:
       - 52233 @WangCai_1
       - 52235 @WangCai_1
       - 52236 @WangCai_1
-      - 基础|香港01|负载均衡
-      - 基础|香港02|负载均衡
-      - 基础|香港03|负载均衡
-      - 基础|香港04|负载均衡
-      - 基础|香港05|负载均衡
-      - 标准|印度02|解锁流媒体
-      - 标准|加拿大02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
-      - 专线|亚洲01|混合负载
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港04|原生HGCBBS
-      - 专线|香港05|原生HGCBBS
-      - 专线|香港07|原生HKBN
-      - 专线|香港08|原生HKBN
-      - 专线|台湾01|原生Taipei
-      - 专线|台湾03|原生Taipei
-      - 专线|西雅图02|原生NTT
-      - 基础|香港01|负载均衡 2
-      - 基础|香港02|负载均衡 2
-      - 基础|香港03|负载均衡 2
-      - 基础|香港04|负载均衡 2
-      - 基础|香港05|负载均衡 2
-      - 标准|印度02|解锁流媒体 2
-      - 标准|加拿大02|解锁流媒体 2
-      - 专线|亚洲01|混合负载 2
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS
-      - 专线|香港04|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生Taipei 2
-      - 专线|台湾03|原生Taipei 2
-      - 基础|香港01|负载均衡 3
-      - 基础|香港02|负载均衡 3
-      - 基础|香港03|负载均衡 3
-      - 基础|香港04|负载均衡 3
-      - 基础|香港05|负载均衡 3
-      - 标准|日本02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体 2
-      - 专线|亚洲01|混合负载 3
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾03|原生Taipei 3
-      - 专线|美国01|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|西雅图02|原生NTT 2
       - YouTube-由零开始
-      - 佛山移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x
       - 52282 @WangCai_1
       - 52285 @WangCai_1
@@ -733,20 +834,10 @@ proxy-groups:
       - 52215 @WangCai_1
       - 52227 @WangCai_1
       - 52237 @WangCai_1
-      - IEPL专线 日本04 | 3x
       - IEPL专线 马来西亚01 | 3x 原生IP
       - 新加坡01 中继A | 原生 1.5x
-      - 新加坡04 中继A | 1.5x
-      - 新加坡04 中继C | 1.5x
       - "网址: https://www.mgnb.jp"
       - 公益+-+香港+-+100Mbps
-      - 专线|香港02|原生HGCBBS 3
-      - 专线|香港03|原生CMI
-      - 专线|香港06|原生CMI 2
-      - 专线|香港03|原生CMI 2
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|西雅图01|原生NTT
-      - AZ香港-1天
       - vpnpool-Tokyo-Linode
       - vpnpool-Tokyo-Linode 2
       - vpnpool-Tokyo-Linode 3
@@ -768,7 +859,6 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 8
       - vpnpool-Tokyo-Linode 8
       - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
       - vpnpool-香港腾讯云
       - vpnpool-SG-DigitalOcean 9
       - vpnpool-SG-DigitalOcean 10
@@ -776,114 +866,182 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 12
       - vpnpool-SG-DigitalOcean 13
       - vpnpool-SG-DigitalOcean 14
-      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 10
       - vpnpool-SG-DigitalOcean 15
-      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 11
       - vpnpool-SG-DigitalOcean 16
-      - vpnpool-Tokyo-Linode 13
       - vpnpool-SG-DigitalOcean 17
       - vpnpool-SG-DigitalOcean 18
       - vpnpool-SG-DigitalOcean 19
-      - vpnpool-Tokyo-Linode 14
+      - vpnpool-Tokyo-Linode 12
       - 香港_TG@nodesharing_10
       - 香港_TG@nodesharing_13
       - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_19
       - 香港_TG@nodesharing_58
-      - 香港_TG@nodesharing_62
-      - 香港_TG@nodesharing_161
-      - _HK_香港
-      - _HK_香港 2
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125"
       - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19"
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125 2"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19 2"
-      - +Sydney-MYTEK
+      - 52230 @WangCai_1
+      - 公益+-+美国+-+100Mbps
+      - _NON_FMYC-2021.11.28_184
+      - Relay_🇨🇳CN-🇺🇸US_305_ 4.81Mb
+      - 52232 @WangCai_1
+      - _US_美国
+      - IEPL专线 香港HGC02 | 3x 原生IP
+      - IEPL专线 香港HKT01 | 3x 原生IP
+      - 台湾05 中继B | 原生 1.5x
+      - 公益+-+香港+-+50Mbps
+      - 公益+-+日本+-+100Mbps
+      - 美国Trojan 容灾3
+      - vpnpool-台北Hinet-dip
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - "[直连] 日本 AWS - 【1x 11.24】19"
+      - 香港 Prime - 【原生IP 解锁港区Netflix 1x】15
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 3
+      - 美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 4
+      - 美国(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 2
+      - 美国[感谢订阅——科技网络] 3
+      - 美国[感谢订阅——科技网络] 4
+      - 美国[感谢订阅——科技网络] 5
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 美国[感谢订阅——科技网络] 8
+      - 美国[感谢订阅——科技网络] 9
+      - vpnpool-Nonthaburi-CAT
+      - vpnpool-Nonthaburi-CAT 2
+      - vpnpool-Tokyo-Iptelecom
+      - vpnpool-Tokyo-Iptelecom 2
+      - vpnpool-香港Azure
+      - US_8881+@WangCai_1
+      - US_5004+@WangCai_1
+      - 美国_TG@nodesharing_27
+      - 美国_TG@nodesharing_28
+      - 美国_TG@nodesharing_36
+      - 美国_TG@nodesharing_39
+      - 美国_TG@nodesharing_40
+      - 美国_TG@nodesharing_46
+      - 美国_TG@nodesharing_47
+      - 美国_TG@nodesharing_54
+      - 美国_TG@nodesharing_60
+      - 美国_TG@nodesharing_62
+      - 美国_TG@nodesharing_71
+      - 美国_TG@nodesharing_77
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_92
+      - 美国_TG@nodesharing_101
+      - 美国_TG@nodesharing_104
+      - 美国_TG@nodesharing_106
+      - 美国_TG@nodesharing_107
+      - 美国_TG@nodesharing_141
+      - 美国_TG@nodesharing_167
+      - 法国_TG@nodesharing_316
+      - 美国_TG@nodesharing_424
+      - 美国_TG@nodesharing_591
+      - 美国_TG@nodesharing_606
+      - 美国_TG@nodesharing_612
+      - 美国|04|流解
+      - 电信二区(四川)
+      - V1-俄罗斯01 中继D 1.2x
+      - Card Captor Sakura
+      - TG   @ShareCentrePro 2
+      - TG   @ShareCentrePro 3
+      - 52283 @WangCai_1
+      - 52299 @WangCai_1
+      - IEPL专线 新加坡05 | 3x 原生IP
+      - 印度01 中继D | 1.5x
+      - 新加坡01 中继D | 原生 1.5x
+      - TG+@ShareCentrePro_US_美国
+      - vpnpool-香港腾讯云 2
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - default_name
+      - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19 2"
+      - "[FREE] GGC 1Gbps 20220124"
+      - 「🇸🇬」Singapore 01
+      - 「🇸🇬」Singapore 02
+      - 「🇺🇸」United States 02
+      - 日本|| https://t.me/hkgzs01
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - 05 @WangCai_1
+      - HK/香港SS-03 - 1000M - 1x_6
+      - HK/香港SS-05 - 1000M - 1x_8
+      - HK/香港SS-06 - 1000M - 2x-流媒体解锁_9
+      - HK/香港03 - 1000M - 1x_12
+      - HK/香港04 - 1000M - 1x_13
+      - SG/新加坡01 - 1000M - 1x_15
+      - SG/新加坡02 - 1000M - 1x_16
+      - JP/日本01 - 1000M - 1x_18
+      - JP/日本02 - 1000M - 1x_19
+      - JP/日本03 - 1000M - 1x_20
+      - TW/台湾01 - 1000M - 2x - 流媒体解锁_24
+      - US/美国01 - 1000M - 2x - 流媒体解锁_25
+      - 香港_Hk
+      - 香港_HK
+      - 香港hk
+      - 中转|日本GMO08|华南隧道[流媒体解锁]
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 杭州移动-彰化Hinet@vpnhat
-      - 广州移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x_27
-      - 徐州联通-彰化Hinet@vpnhat
-      - 基础|香港01|负载均衡
-      - 基础|香港02|负载均衡
-      - 基础|香港03|负载均衡
-      - 基础|香港04|负载均衡
-      - 基础|香港05|负载均衡
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港04|原生HGCBBS
-      - 专线|香港05|原生HGCBBS
-      - 专线|香港07|原生HKBN
-      - 专线|香港08|原生HKBN
-      - 专线|台湾01|原生Taipei
-      - 专线|台湾03|原生Taipei
-      - 基础|香港01|负载均衡 2
-      - 基础|香港02|负载均衡 2
-      - 基础|香港03|负载均衡 2
-      - 基础|香港04|负载均衡 2
-      - 基础|香港05|负载均衡 2
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS
-      - 专线|香港04|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生Taipei 2
-      - 专线|台湾03|原生Taipei 2
-      - 基础|香港01|负载均衡 3
-      - 基础|香港02|负载均衡 3
-      - 基础|香港03|负载均衡 3
-      - 基础|香港04|负载均衡 3
-      - 基础|香港05|负载均衡 3
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾03|原生Taipei 3
-      - 佛山移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x
       - 公益+-+香港+-+100Mbps
-      - 专线|香港02|原生HGCBBS 3
-      - 专线|香港03|原生CMI
-      - 专线|香港06|原生CMI 2
-      - 专线|香港03|原生CMI 2
-      - 专线|香港04|原生HGCBBS 3
-      - AZ香港-1天
       - vpnpool-香港腾讯云
       - 香港_TG@nodesharing_10
       - 香港_TG@nodesharing_13
       - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_19
       - 香港_TG@nodesharing_58
-      - 香港_TG@nodesharing_62
-      - 香港_TG@nodesharing_161
-      - _HK_香港
-      - _HK_香港 2
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125"
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125 2"
+      - IEPL专线 香港HGC02 | 3x 原生IP
+      - IEPL专线 香港HKT01 | 3x 原生IP
+      - 台湾05 中继B | 原生 1.5x
+      - 公益+-+香港+-+50Mbps
+      - vpnpool-台北Hinet-dip
+      - 香港 Prime - 【原生IP 解锁港区Netflix 1x】15
+      - vpnpool-香港Azure
+      - vpnpool-香港腾讯云 2
+      - 日本|| https://t.me/hkgzs01
+      - HK/香港SS-03 - 1000M - 1x_6
+      - HK/香港SS-05 - 1000M - 1x_8
+      - HK/香港SS-06 - 1000M - 2x-流媒体解锁_9
+      - HK/香港03 - 1000M - 1x_12
+      - HK/香港04 - 1000M - 1x_13
+      - TW/台湾01 - 1000M - 2x - 流媒体解锁_24
+      - 香港_Hk
+      - 香港_HK
+      - 香港hk
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 杭州移动-彰化Hinet@vpnhat
-      - 广州优刻云-Tokyo-Linode@vpnhat
-      - 上海优刻云-Tokyo-Linode@vpnhat
-      - 广州移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x_27
-      - 徐州联通-彰化Hinet@vpnhat
       - TG   @ShareCentrePro
       - 52281 @WangCai_1
       - 52201 @WangCai_1
@@ -895,60 +1053,7 @@ proxy-groups:
       - 52233 @WangCai_1
       - 52235 @WangCai_1
       - 52236 @WangCai_1
-      - 基础|香港01|负载均衡
-      - 基础|香港02|负载均衡
-      - 基础|香港03|负载均衡
-      - 基础|香港04|负载均衡
-      - 基础|香港05|负载均衡
-      - 标准|印度02|解锁流媒体
-      - 标准|加拿大02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
-      - 专线|亚洲01|混合负载
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港04|原生HGCBBS
-      - 专线|香港05|原生HGCBBS
-      - 专线|香港07|原生HKBN
-      - 专线|香港08|原生HKBN
-      - 专线|台湾01|原生Taipei
-      - 专线|台湾03|原生Taipei
-      - 专线|西雅图02|原生NTT
-      - 基础|香港01|负载均衡 2
-      - 基础|香港02|负载均衡 2
-      - 基础|香港03|负载均衡 2
-      - 基础|香港04|负载均衡 2
-      - 基础|香港05|负载均衡 2
-      - 标准|印度02|解锁流媒体 2
-      - 标准|加拿大02|解锁流媒体 2
-      - 专线|亚洲01|混合负载 2
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS
-      - 专线|香港04|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生Taipei 2
-      - 专线|台湾03|原生Taipei 2
-      - 基础|香港01|负载均衡 3
-      - 基础|香港02|负载均衡 3
-      - 基础|香港03|负载均衡 3
-      - 基础|香港04|负载均衡 3
-      - 基础|香港05|负载均衡 3
-      - 标准|日本02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体 2
-      - 专线|亚洲01|混合负载 3
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾03|原生Taipei 3
-      - 专线|美国01|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|西雅图02|原生NTT 2
       - YouTube-由零开始
-      - 佛山移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x
       - 52282 @WangCai_1
       - 52285 @WangCai_1
@@ -958,20 +1063,10 @@ proxy-groups:
       - 52215 @WangCai_1
       - 52227 @WangCai_1
       - 52237 @WangCai_1
-      - IEPL专线 日本04 | 3x
       - IEPL专线 马来西亚01 | 3x 原生IP
       - 新加坡01 中继A | 原生 1.5x
-      - 新加坡04 中继A | 1.5x
-      - 新加坡04 中继C | 1.5x
       - "网址: https://www.mgnb.jp"
       - 公益+-+香港+-+100Mbps
-      - 专线|香港02|原生HGCBBS 3
-      - 专线|香港03|原生CMI
-      - 专线|香港06|原生CMI 2
-      - 专线|香港03|原生CMI 2
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|西雅图01|原生NTT
-      - AZ香港-1天
       - vpnpool-Tokyo-Linode
       - vpnpool-Tokyo-Linode 2
       - vpnpool-Tokyo-Linode 3
@@ -993,7 +1088,6 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 8
       - vpnpool-Tokyo-Linode 8
       - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
       - vpnpool-香港腾讯云
       - vpnpool-SG-DigitalOcean 9
       - vpnpool-SG-DigitalOcean 10
@@ -1001,46 +1095,151 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 12
       - vpnpool-SG-DigitalOcean 13
       - vpnpool-SG-DigitalOcean 14
-      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 10
       - vpnpool-SG-DigitalOcean 15
-      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 11
       - vpnpool-SG-DigitalOcean 16
-      - vpnpool-Tokyo-Linode 13
       - vpnpool-SG-DigitalOcean 17
       - vpnpool-SG-DigitalOcean 18
       - vpnpool-SG-DigitalOcean 19
-      - vpnpool-Tokyo-Linode 14
+      - vpnpool-Tokyo-Linode 12
       - 香港_TG@nodesharing_10
       - 香港_TG@nodesharing_13
       - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_19
       - 香港_TG@nodesharing_58
-      - 香港_TG@nodesharing_62
-      - 香港_TG@nodesharing_161
-      - _HK_香港
-      - _HK_香港 2
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125"
       - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19"
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125 2"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19 2"
-      - +Sydney-MYTEK
+      - 52230 @WangCai_1
+      - 公益+-+美国+-+100Mbps
+      - _NON_FMYC-2021.11.28_184
+      - Relay_🇨🇳CN-🇺🇸US_305_ 4.81Mb
+      - 52232 @WangCai_1
+      - _US_美国
+      - IEPL专线 香港HGC02 | 3x 原生IP
+      - IEPL专线 香港HKT01 | 3x 原生IP
+      - 台湾05 中继B | 原生 1.5x
+      - 公益+-+香港+-+50Mbps
+      - 公益+-+日本+-+100Mbps
+      - 美国Trojan 容灾3
+      - vpnpool-台北Hinet-dip
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - "[直连] 日本 AWS - 【1x 11.24】19"
+      - 香港 Prime - 【原生IP 解锁港区Netflix 1x】15
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 3
+      - 美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 4
+      - 美国(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 2
+      - 美国[感谢订阅——科技网络] 3
+      - 美国[感谢订阅——科技网络] 4
+      - 美国[感谢订阅——科技网络] 5
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 美国[感谢订阅——科技网络] 8
+      - 美国[感谢订阅——科技网络] 9
+      - vpnpool-Nonthaburi-CAT
+      - vpnpool-Nonthaburi-CAT 2
+      - vpnpool-Tokyo-Iptelecom
+      - vpnpool-Tokyo-Iptelecom 2
+      - vpnpool-香港Azure
+      - US_8881+@WangCai_1
+      - US_5004+@WangCai_1
+      - 美国_TG@nodesharing_27
+      - 美国_TG@nodesharing_28
+      - 美国_TG@nodesharing_36
+      - 美国_TG@nodesharing_39
+      - 美国_TG@nodesharing_40
+      - 美国_TG@nodesharing_46
+      - 美国_TG@nodesharing_47
+      - 美国_TG@nodesharing_54
+      - 美国_TG@nodesharing_60
+      - 美国_TG@nodesharing_62
+      - 美国_TG@nodesharing_71
+      - 美国_TG@nodesharing_77
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_92
+      - 美国_TG@nodesharing_101
+      - 美国_TG@nodesharing_104
+      - 美国_TG@nodesharing_106
+      - 美国_TG@nodesharing_107
+      - 美国_TG@nodesharing_141
+      - 美国_TG@nodesharing_167
+      - 法国_TG@nodesharing_316
+      - 美国_TG@nodesharing_424
+      - 美国_TG@nodesharing_591
+      - 美国_TG@nodesharing_606
+      - 美国_TG@nodesharing_612
+      - 美国|04|流解
+      - 电信二区(四川)
+      - V1-俄罗斯01 中继D 1.2x
+      - Card Captor Sakura
+      - TG   @ShareCentrePro 2
+      - TG   @ShareCentrePro 3
+      - 52283 @WangCai_1
+      - 52299 @WangCai_1
+      - IEPL专线 新加坡05 | 3x 原生IP
+      - 印度01 中继D | 1.5x
+      - 新加坡01 中继D | 原生 1.5x
+      - TG+@ShareCentrePro_US_美国
+      - vpnpool-香港腾讯云 2
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - default_name
+      - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19 2"
+      - "[FREE] GGC 1Gbps 20220124"
+      - 「🇸🇬」Singapore 01
+      - 「🇸🇬」Singapore 02
+      - 「🇺🇸」United States 02
+      - 日本|| https://t.me/hkgzs01
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - 05 @WangCai_1
+      - HK/香港SS-03 - 1000M - 1x_6
+      - HK/香港SS-05 - 1000M - 1x_8
+      - HK/香港SS-06 - 1000M - 2x-流媒体解锁_9
+      - HK/香港03 - 1000M - 1x_12
+      - HK/香港04 - 1000M - 1x_13
+      - SG/新加坡01 - 1000M - 1x_15
+      - SG/新加坡02 - 1000M - 1x_16
+      - JP/日本01 - 1000M - 1x_18
+      - JP/日本02 - 1000M - 1x_19
+      - JP/日本03 - 1000M - 1x_20
+      - TW/台湾01 - 1000M - 2x - 流媒体解锁_24
+      - US/美国01 - 1000M - 2x - 流媒体解锁_25
+      - 香港_Hk
+      - 香港_HK
+      - 香港hk
+      - 中转|日本GMO08|华南隧道[流媒体解锁]
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 杭州移动-彰化Hinet@vpnhat
-      - 广州优刻云-Tokyo-Linode@vpnhat
-      - 上海优刻云-Tokyo-Linode@vpnhat
-      - 广州移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x_27
-      - 徐州联通-彰化Hinet@vpnhat
       - TG   @ShareCentrePro
       - 52281 @WangCai_1
       - 52201 @WangCai_1
@@ -1052,60 +1251,7 @@ proxy-groups:
       - 52233 @WangCai_1
       - 52235 @WangCai_1
       - 52236 @WangCai_1
-      - 基础|香港01|负载均衡
-      - 基础|香港02|负载均衡
-      - 基础|香港03|负载均衡
-      - 基础|香港04|负载均衡
-      - 基础|香港05|负载均衡
-      - 标准|印度02|解锁流媒体
-      - 标准|加拿大02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
-      - 专线|亚洲01|混合负载
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港04|原生HGCBBS
-      - 专线|香港05|原生HGCBBS
-      - 专线|香港07|原生HKBN
-      - 专线|香港08|原生HKBN
-      - 专线|台湾01|原生Taipei
-      - 专线|台湾03|原生Taipei
-      - 专线|西雅图02|原生NTT
-      - 基础|香港01|负载均衡 2
-      - 基础|香港02|负载均衡 2
-      - 基础|香港03|负载均衡 2
-      - 基础|香港04|负载均衡 2
-      - 基础|香港05|负载均衡 2
-      - 标准|印度02|解锁流媒体 2
-      - 标准|加拿大02|解锁流媒体 2
-      - 专线|亚洲01|混合负载 2
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS
-      - 专线|香港04|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生Taipei 2
-      - 专线|台湾03|原生Taipei 2
-      - 基础|香港01|负载均衡 3
-      - 基础|香港02|负载均衡 3
-      - 基础|香港03|负载均衡 3
-      - 基础|香港04|负载均衡 3
-      - 基础|香港05|负载均衡 3
-      - 标准|日本02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体 2
-      - 专线|亚洲01|混合负载 3
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾03|原生Taipei 3
-      - 专线|美国01|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|西雅图02|原生NTT 2
       - YouTube-由零开始
-      - 佛山移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x
       - 52282 @WangCai_1
       - 52285 @WangCai_1
@@ -1115,20 +1261,10 @@ proxy-groups:
       - 52215 @WangCai_1
       - 52227 @WangCai_1
       - 52237 @WangCai_1
-      - IEPL专线 日本04 | 3x
       - IEPL专线 马来西亚01 | 3x 原生IP
       - 新加坡01 中继A | 原生 1.5x
-      - 新加坡04 中继A | 1.5x
-      - 新加坡04 中继C | 1.5x
       - "网址: https://www.mgnb.jp"
       - 公益+-+香港+-+100Mbps
-      - 专线|香港02|原生HGCBBS 3
-      - 专线|香港03|原生CMI
-      - 专线|香港06|原生CMI 2
-      - 专线|香港03|原生CMI 2
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|西雅图01|原生NTT
-      - AZ香港-1天
       - vpnpool-Tokyo-Linode
       - vpnpool-Tokyo-Linode 2
       - vpnpool-Tokyo-Linode 3
@@ -1150,7 +1286,6 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 8
       - vpnpool-Tokyo-Linode 8
       - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
       - vpnpool-香港腾讯云
       - vpnpool-SG-DigitalOcean 9
       - vpnpool-SG-DigitalOcean 10
@@ -1158,47 +1293,152 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 12
       - vpnpool-SG-DigitalOcean 13
       - vpnpool-SG-DigitalOcean 14
-      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 10
       - vpnpool-SG-DigitalOcean 15
-      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 11
       - vpnpool-SG-DigitalOcean 16
-      - vpnpool-Tokyo-Linode 13
       - vpnpool-SG-DigitalOcean 17
       - vpnpool-SG-DigitalOcean 18
       - vpnpool-SG-DigitalOcean 19
-      - vpnpool-Tokyo-Linode 14
+      - vpnpool-Tokyo-Linode 12
       - 香港_TG@nodesharing_10
       - 香港_TG@nodesharing_13
       - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_19
       - 香港_TG@nodesharing_58
-      - 香港_TG@nodesharing_62
-      - 香港_TG@nodesharing_161
-      - _HK_香港
-      - _HK_香港 2
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125"
       - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19"
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125 2"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19 2"
-      - +Sydney-MYTEK
+      - 52230 @WangCai_1
+      - 公益+-+美国+-+100Mbps
+      - _NON_FMYC-2021.11.28_184
+      - Relay_🇨🇳CN-🇺🇸US_305_ 4.81Mb
+      - 52232 @WangCai_1
+      - _US_美国
+      - IEPL专线 香港HGC02 | 3x 原生IP
+      - IEPL专线 香港HKT01 | 3x 原生IP
+      - 台湾05 中继B | 原生 1.5x
+      - 公益+-+香港+-+50Mbps
+      - 公益+-+日本+-+100Mbps
+      - 美国Trojan 容灾3
+      - vpnpool-台北Hinet-dip
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - "[直连] 日本 AWS - 【1x 11.24】19"
+      - 香港 Prime - 【原生IP 解锁港区Netflix 1x】15
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 3
+      - 美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 4
+      - 美国(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 2
+      - 美国[感谢订阅——科技网络] 3
+      - 美国[感谢订阅——科技网络] 4
+      - 美国[感谢订阅——科技网络] 5
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 美国[感谢订阅——科技网络] 8
+      - 美国[感谢订阅——科技网络] 9
+      - vpnpool-Nonthaburi-CAT
+      - vpnpool-Nonthaburi-CAT 2
+      - vpnpool-Tokyo-Iptelecom
+      - vpnpool-Tokyo-Iptelecom 2
+      - vpnpool-香港Azure
+      - US_8881+@WangCai_1
+      - US_5004+@WangCai_1
+      - 美国_TG@nodesharing_27
+      - 美国_TG@nodesharing_28
+      - 美国_TG@nodesharing_36
+      - 美国_TG@nodesharing_39
+      - 美国_TG@nodesharing_40
+      - 美国_TG@nodesharing_46
+      - 美国_TG@nodesharing_47
+      - 美国_TG@nodesharing_54
+      - 美国_TG@nodesharing_60
+      - 美国_TG@nodesharing_62
+      - 美国_TG@nodesharing_71
+      - 美国_TG@nodesharing_77
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_92
+      - 美国_TG@nodesharing_101
+      - 美国_TG@nodesharing_104
+      - 美国_TG@nodesharing_106
+      - 美国_TG@nodesharing_107
+      - 美国_TG@nodesharing_141
+      - 美国_TG@nodesharing_167
+      - 法国_TG@nodesharing_316
+      - 美国_TG@nodesharing_424
+      - 美国_TG@nodesharing_591
+      - 美国_TG@nodesharing_606
+      - 美国_TG@nodesharing_612
+      - 美国|04|流解
+      - 电信二区(四川)
+      - V1-俄罗斯01 中继D 1.2x
+      - Card Captor Sakura
+      - TG   @ShareCentrePro 2
+      - TG   @ShareCentrePro 3
+      - 52283 @WangCai_1
+      - 52299 @WangCai_1
+      - IEPL专线 新加坡05 | 3x 原生IP
+      - 印度01 中继D | 1.5x
+      - 新加坡01 中继D | 原生 1.5x
+      - TG+@ShareCentrePro_US_美国
+      - vpnpool-香港腾讯云 2
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - default_name
+      - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19 2"
+      - "[FREE] GGC 1Gbps 20220124"
+      - 「🇸🇬」Singapore 01
+      - 「🇸🇬」Singapore 02
+      - 「🇺🇸」United States 02
+      - 日本|| https://t.me/hkgzs01
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - 05 @WangCai_1
+      - HK/香港SS-03 - 1000M - 1x_6
+      - HK/香港SS-05 - 1000M - 1x_8
+      - HK/香港SS-06 - 1000M - 2x-流媒体解锁_9
+      - HK/香港03 - 1000M - 1x_12
+      - HK/香港04 - 1000M - 1x_13
+      - SG/新加坡01 - 1000M - 1x_15
+      - SG/新加坡02 - 1000M - 1x_16
+      - JP/日本01 - 1000M - 1x_18
+      - JP/日本02 - 1000M - 1x_19
+      - JP/日本03 - 1000M - 1x_20
+      - TW/台湾01 - 1000M - 2x - 流媒体解锁_24
+      - US/美国01 - 1000M - 2x - 流媒体解锁_25
+      - 香港_Hk
+      - 香港_HK
+      - 香港hk
+      - 中转|日本GMO08|华南隧道[流媒体解锁]
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 杭州移动-彰化Hinet@vpnhat
-      - 广州优刻云-Tokyo-Linode@vpnhat
-      - 上海优刻云-Tokyo-Linode@vpnhat
-      - 广州移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x_27
-      - 徐州联通-彰化Hinet@vpnhat
       - TG   @ShareCentrePro
       - 52281 @WangCai_1
       - 52201 @WangCai_1
@@ -1210,60 +1450,7 @@ proxy-groups:
       - 52233 @WangCai_1
       - 52235 @WangCai_1
       - 52236 @WangCai_1
-      - 基础|香港01|负载均衡
-      - 基础|香港02|负载均衡
-      - 基础|香港03|负载均衡
-      - 基础|香港04|负载均衡
-      - 基础|香港05|负载均衡
-      - 标准|印度02|解锁流媒体
-      - 标准|加拿大02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
-      - 专线|亚洲01|混合负载
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港04|原生HGCBBS
-      - 专线|香港05|原生HGCBBS
-      - 专线|香港07|原生HKBN
-      - 专线|香港08|原生HKBN
-      - 专线|台湾01|原生Taipei
-      - 专线|台湾03|原生Taipei
-      - 专线|西雅图02|原生NTT
-      - 基础|香港01|负载均衡 2
-      - 基础|香港02|负载均衡 2
-      - 基础|香港03|负载均衡 2
-      - 基础|香港04|负载均衡 2
-      - 基础|香港05|负载均衡 2
-      - 标准|印度02|解锁流媒体 2
-      - 标准|加拿大02|解锁流媒体 2
-      - 专线|亚洲01|混合负载 2
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS
-      - 专线|香港04|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生Taipei 2
-      - 专线|台湾03|原生Taipei 2
-      - 基础|香港01|负载均衡 3
-      - 基础|香港02|负载均衡 3
-      - 基础|香港03|负载均衡 3
-      - 基础|香港04|负载均衡 3
-      - 基础|香港05|负载均衡 3
-      - 标准|日本02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体 2
-      - 专线|亚洲01|混合负载 3
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾03|原生Taipei 3
-      - 专线|美国01|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|西雅图02|原生NTT 2
       - YouTube-由零开始
-      - 佛山移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x
       - 52282 @WangCai_1
       - 52285 @WangCai_1
@@ -1273,20 +1460,10 @@ proxy-groups:
       - 52215 @WangCai_1
       - 52227 @WangCai_1
       - 52237 @WangCai_1
-      - IEPL专线 日本04 | 3x
       - IEPL专线 马来西亚01 | 3x 原生IP
       - 新加坡01 中继A | 原生 1.5x
-      - 新加坡04 中继A | 1.5x
-      - 新加坡04 中继C | 1.5x
       - "网址: https://www.mgnb.jp"
       - 公益+-+香港+-+100Mbps
-      - 专线|香港02|原生HGCBBS 3
-      - 专线|香港03|原生CMI
-      - 专线|香港06|原生CMI 2
-      - 专线|香港03|原生CMI 2
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|西雅图01|原生NTT
-      - AZ香港-1天
       - vpnpool-Tokyo-Linode
       - vpnpool-Tokyo-Linode 2
       - vpnpool-Tokyo-Linode 3
@@ -1308,7 +1485,6 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 8
       - vpnpool-Tokyo-Linode 8
       - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
       - vpnpool-香港腾讯云
       - vpnpool-SG-DigitalOcean 9
       - vpnpool-SG-DigitalOcean 10
@@ -1316,30 +1492,145 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 12
       - vpnpool-SG-DigitalOcean 13
       - vpnpool-SG-DigitalOcean 14
-      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 10
       - vpnpool-SG-DigitalOcean 15
-      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 11
       - vpnpool-SG-DigitalOcean 16
-      - vpnpool-Tokyo-Linode 13
       - vpnpool-SG-DigitalOcean 17
       - vpnpool-SG-DigitalOcean 18
       - vpnpool-SG-DigitalOcean 19
-      - vpnpool-Tokyo-Linode 14
+      - vpnpool-Tokyo-Linode 12
       - 香港_TG@nodesharing_10
       - 香港_TG@nodesharing_13
       - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_19
       - 香港_TG@nodesharing_58
-      - 香港_TG@nodesharing_62
-      - 香港_TG@nodesharing_161
-      - _HK_香港
-      - _HK_香港 2
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125"
       - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19"
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125 2"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19 2"
-      - +Sydney-MYTEK
+      - 52230 @WangCai_1
+      - 公益+-+美国+-+100Mbps
+      - _NON_FMYC-2021.11.28_184
+      - Relay_🇨🇳CN-🇺🇸US_305_ 4.81Mb
+      - 52232 @WangCai_1
+      - _US_美国
+      - IEPL专线 香港HGC02 | 3x 原生IP
+      - IEPL专线 香港HKT01 | 3x 原生IP
+      - 台湾05 中继B | 原生 1.5x
+      - 公益+-+香港+-+50Mbps
+      - 公益+-+日本+-+100Mbps
+      - 美国Trojan 容灾3
+      - vpnpool-台北Hinet-dip
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - "[直连] 日本 AWS - 【1x 11.24】19"
+      - 香港 Prime - 【原生IP 解锁港区Netflix 1x】15
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 3
+      - 美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 4
+      - 美国(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 2
+      - 美国[感谢订阅——科技网络] 3
+      - 美国[感谢订阅——科技网络] 4
+      - 美国[感谢订阅——科技网络] 5
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 美国[感谢订阅——科技网络] 8
+      - 美国[感谢订阅——科技网络] 9
+      - vpnpool-Nonthaburi-CAT
+      - vpnpool-Nonthaburi-CAT 2
+      - vpnpool-Tokyo-Iptelecom
+      - vpnpool-Tokyo-Iptelecom 2
+      - vpnpool-香港Azure
+      - US_8881+@WangCai_1
+      - US_5004+@WangCai_1
+      - 美国_TG@nodesharing_27
+      - 美国_TG@nodesharing_28
+      - 美国_TG@nodesharing_36
+      - 美国_TG@nodesharing_39
+      - 美国_TG@nodesharing_40
+      - 美国_TG@nodesharing_46
+      - 美国_TG@nodesharing_47
+      - 美国_TG@nodesharing_54
+      - 美国_TG@nodesharing_60
+      - 美国_TG@nodesharing_62
+      - 美国_TG@nodesharing_71
+      - 美国_TG@nodesharing_77
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_92
+      - 美国_TG@nodesharing_101
+      - 美国_TG@nodesharing_104
+      - 美国_TG@nodesharing_106
+      - 美国_TG@nodesharing_107
+      - 美国_TG@nodesharing_141
+      - 美国_TG@nodesharing_167
+      - 法国_TG@nodesharing_316
+      - 美国_TG@nodesharing_424
+      - 美国_TG@nodesharing_591
+      - 美国_TG@nodesharing_606
+      - 美国_TG@nodesharing_612
+      - 美国|04|流解
+      - 电信二区(四川)
+      - V1-俄罗斯01 中继D 1.2x
+      - Card Captor Sakura
+      - TG   @ShareCentrePro 2
+      - TG   @ShareCentrePro 3
+      - 52283 @WangCai_1
+      - 52299 @WangCai_1
+      - IEPL专线 新加坡05 | 3x 原生IP
+      - 印度01 中继D | 1.5x
+      - 新加坡01 中继D | 原生 1.5x
+      - TG+@ShareCentrePro_US_美国
+      - vpnpool-香港腾讯云 2
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - default_name
+      - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19 2"
+      - "[FREE] GGC 1Gbps 20220124"
+      - 「🇸🇬」Singapore 01
+      - 「🇸🇬」Singapore 02
+      - 「🇺🇸」United States 02
+      - 日本|| https://t.me/hkgzs01
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - 05 @WangCai_1
+      - HK/香港SS-03 - 1000M - 1x_6
+      - HK/香港SS-05 - 1000M - 1x_8
+      - HK/香港SS-06 - 1000M - 2x-流媒体解锁_9
+      - HK/香港03 - 1000M - 1x_12
+      - HK/香港04 - 1000M - 1x_13
+      - SG/新加坡01 - 1000M - 1x_15
+      - SG/新加坡02 - 1000M - 1x_16
+      - JP/日本01 - 1000M - 1x_18
+      - JP/日本02 - 1000M - 1x_19
+      - JP/日本03 - 1000M - 1x_20
+      - TW/台湾01 - 1000M - 2x - 流媒体解锁_24
+      - US/美国01 - 1000M - 2x - 流媒体解锁_25
+      - 香港_Hk
+      - 香港_HK
+      - 香港hk
+      - 中转|日本GMO08|华南隧道[流媒体解锁]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1355,17 +1646,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 娄底联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat
-      - 徐州联通-SG-Melbicom@vpnhat 3
-      - 北京科技网-Tokyo-Linode@vpnhat 2
-      - 娄底联通-SG-Melbicom@vpnhat 2
-      - 杭州移动-彰化Hinet@vpnhat
-      - 广州优刻云-Tokyo-Linode@vpnhat
-      - 上海优刻云-Tokyo-Linode@vpnhat
-      - 广州移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x_27
-      - 徐州联通-彰化Hinet@vpnhat
       - TG   @ShareCentrePro
       - 52281 @WangCai_1
       - 52201 @WangCai_1
@@ -1377,60 +1658,7 @@ proxy-groups:
       - 52233 @WangCai_1
       - 52235 @WangCai_1
       - 52236 @WangCai_1
-      - 基础|香港01|负载均衡
-      - 基础|香港02|负载均衡
-      - 基础|香港03|负载均衡
-      - 基础|香港04|负载均衡
-      - 基础|香港05|负载均衡
-      - 标准|印度02|解锁流媒体
-      - 标准|加拿大02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体
-      - 专线|亚洲01|混合负载
-      - 专线|香港01|原生HGCBBS
-      - 专线|香港04|原生HGCBBS
-      - 专线|香港05|原生HGCBBS
-      - 专线|香港07|原生HKBN
-      - 专线|香港08|原生HKBN
-      - 专线|台湾01|原生Taipei
-      - 专线|台湾03|原生Taipei
-      - 专线|西雅图02|原生NTT
-      - 基础|香港01|负载均衡 2
-      - 基础|香港02|负载均衡 2
-      - 基础|香港03|负载均衡 2
-      - 基础|香港04|负载均衡 2
-      - 基础|香港05|负载均衡 2
-      - 标准|印度02|解锁流媒体 2
-      - 标准|加拿大02|解锁流媒体 2
-      - 专线|亚洲01|混合负载 2
-      - 专线|香港01|原生HGCBBS 2
-      - 专线|香港02|原生HGCBBS
-      - 专线|香港04|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 2
-      - 专线|香港07|原生HKBN 2
-      - 专线|香港08|原生HKBN 2
-      - 专线|台湾01|原生Taipei 2
-      - 专线|台湾03|原生Taipei 2
-      - 基础|香港01|负载均衡 3
-      - 基础|香港02|负载均衡 3
-      - 基础|香港03|负载均衡 3
-      - 基础|香港04|负载均衡 3
-      - 基础|香港05|负载均衡 3
-      - 标准|日本02|解锁流媒体
-      - 标准|新加坡01|解锁流媒体 2
-      - 专线|亚洲01|混合负载 3
-      - 专线|香港01|原生HGCBBS 3
-      - 专线|香港02|原生HGCBBS 2
-      - 专线|香港05|原生HGCBBS 3
-      - 专线|香港06|原生CMI
-      - 专线|香港07|原生HKBN 3
-      - 专线|香港08|原生HKBN 3
-      - 专线|台湾01|原生Taipei 3
-      - 专线|台湾03|原生Taipei 3
-      - 专线|美国01|原生Seattle
-      - 专线|美国03|原生Seattle
-      - 专线|西雅图02|原生NTT 2
       - YouTube-由零开始
-      - 佛山移动-彰化Hinet@vpnhat
       - V1-香港B组 直连 速度随缘 1x
       - 52282 @WangCai_1
       - 52285 @WangCai_1
@@ -1440,20 +1668,10 @@ proxy-groups:
       - 52215 @WangCai_1
       - 52227 @WangCai_1
       - 52237 @WangCai_1
-      - IEPL专线 日本04 | 3x
       - IEPL专线 马来西亚01 | 3x 原生IP
       - 新加坡01 中继A | 原生 1.5x
-      - 新加坡04 中继A | 1.5x
-      - 新加坡04 中继C | 1.5x
       - "网址: https://www.mgnb.jp"
       - 公益+-+香港+-+100Mbps
-      - 专线|香港02|原生HGCBBS 3
-      - 专线|香港03|原生CMI
-      - 专线|香港06|原生CMI 2
-      - 专线|香港03|原生CMI 2
-      - 专线|香港04|原生HGCBBS 3
-      - 专线|西雅图01|原生NTT
-      - AZ香港-1天
       - vpnpool-Tokyo-Linode
       - vpnpool-Tokyo-Linode 2
       - vpnpool-Tokyo-Linode 3
@@ -1475,7 +1693,6 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 8
       - vpnpool-Tokyo-Linode 8
       - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
       - vpnpool-香港腾讯云
       - vpnpool-SG-DigitalOcean 9
       - vpnpool-SG-DigitalOcean 10
@@ -1483,30 +1700,145 @@ proxy-groups:
       - vpnpool-SG-DigitalOcean 12
       - vpnpool-SG-DigitalOcean 13
       - vpnpool-SG-DigitalOcean 14
-      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 10
       - vpnpool-SG-DigitalOcean 15
-      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 11
       - vpnpool-SG-DigitalOcean 16
-      - vpnpool-Tokyo-Linode 13
       - vpnpool-SG-DigitalOcean 17
       - vpnpool-SG-DigitalOcean 18
       - vpnpool-SG-DigitalOcean 19
-      - vpnpool-Tokyo-Linode 14
+      - vpnpool-Tokyo-Linode 12
       - 香港_TG@nodesharing_10
       - 香港_TG@nodesharing_13
       - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_19
       - 香港_TG@nodesharing_58
-      - 香港_TG@nodesharing_62
-      - 香港_TG@nodesharing_161
-      - _HK_香港
-      - _HK_香港 2
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125"
       - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19"
-      - "[直连] 台湾 Hinet 1 - 【原生IP 1x 925】1125 2"
       - "[直连] 新加坡 AWS3 - 【高级 移动联通 1x 11.24】19 2"
-      - +Sydney-MYTEK
+      - 52230 @WangCai_1
+      - 公益+-+美国+-+100Mbps
+      - _NON_FMYC-2021.11.28_184
+      - Relay_🇨🇳CN-🇺🇸US_305_ 4.81Mb
+      - 52232 @WangCai_1
+      - _US_美国
+      - IEPL专线 香港HGC02 | 3x 原生IP
+      - IEPL专线 香港HKT01 | 3x 原生IP
+      - 台湾05 中继B | 原生 1.5x
+      - 公益+-+香港+-+50Mbps
+      - 公益+-+日本+-+100Mbps
+      - 美国Trojan 容灾3
+      - vpnpool-台北Hinet-dip
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - _US_美国 8
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - "[直连] 日本 AWS - 【1x 11.24】19"
+      - 香港 Prime - 【原生IP 解锁港区Netflix 1x】15
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 3
+      - 美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 4
+      - 美国(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 2
+      - 美国[感谢订阅——科技网络] 3
+      - 美国[感谢订阅——科技网络] 4
+      - 美国[感谢订阅——科技网络] 5
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 美国[感谢订阅——科技网络] 8
+      - 美国[感谢订阅——科技网络] 9
+      - vpnpool-Nonthaburi-CAT
+      - vpnpool-Nonthaburi-CAT 2
+      - vpnpool-Tokyo-Iptelecom
+      - vpnpool-Tokyo-Iptelecom 2
+      - vpnpool-香港Azure
+      - US_8881+@WangCai_1
+      - US_5004+@WangCai_1
+      - 美国_TG@nodesharing_27
+      - 美国_TG@nodesharing_28
+      - 美国_TG@nodesharing_36
+      - 美国_TG@nodesharing_39
+      - 美国_TG@nodesharing_40
+      - 美国_TG@nodesharing_46
+      - 美国_TG@nodesharing_47
+      - 美国_TG@nodesharing_54
+      - 美国_TG@nodesharing_60
+      - 美国_TG@nodesharing_62
+      - 美国_TG@nodesharing_71
+      - 美国_TG@nodesharing_77
+      - 美国_TG@nodesharing_82
+      - 美国_TG@nodesharing_92
+      - 美国_TG@nodesharing_101
+      - 美国_TG@nodesharing_104
+      - 美国_TG@nodesharing_106
+      - 美国_TG@nodesharing_107
+      - 美国_TG@nodesharing_141
+      - 美国_TG@nodesharing_167
+      - 法国_TG@nodesharing_316
+      - 美国_TG@nodesharing_424
+      - 美国_TG@nodesharing_591
+      - 美国_TG@nodesharing_606
+      - 美国_TG@nodesharing_612
+      - 美国|04|流解
+      - 电信二区(四川)
+      - V1-俄罗斯01 中继D 1.2x
+      - Card Captor Sakura
+      - TG   @ShareCentrePro 2
+      - TG   @ShareCentrePro 3
+      - 52283 @WangCai_1
+      - 52299 @WangCai_1
+      - IEPL专线 新加坡05 | 3x 原生IP
+      - 印度01 中继D | 1.5x
+      - 新加坡01 中继D | 原生 1.5x
+      - TG+@ShareCentrePro_US_美国
+      - vpnpool-香港腾讯云 2
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - default_name
+      - "[直连] 新加坡 AWS1 - 【高级 移动联通 1x 11.24】19 2"
+      - "[FREE] GGC 1Gbps 20220124"
+      - 「🇸🇬」Singapore 01
+      - 「🇸🇬」Singapore 02
+      - 「🇺🇸」United States 02
+      - 日本|| https://t.me/hkgzs01
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - 05 @WangCai_1
+      - HK/香港SS-03 - 1000M - 1x_6
+      - HK/香港SS-05 - 1000M - 1x_8
+      - HK/香港SS-06 - 1000M - 2x-流媒体解锁_9
+      - HK/香港03 - 1000M - 1x_12
+      - HK/香港04 - 1000M - 1x_13
+      - SG/新加坡01 - 1000M - 1x_15
+      - SG/新加坡02 - 1000M - 1x_16
+      - JP/日本01 - 1000M - 1x_18
+      - JP/日本02 - 1000M - 1x_19
+      - JP/日本03 - 1000M - 1x_20
+      - TW/台湾01 - 1000M - 2x - 流媒体解锁_24
+      - US/美国01 - 1000M - 2x - 流媒体解锁_25
+      - 香港_Hk
+      - 香港_HK
+      - 香港hk
+      - 中转|日本GMO08|华南隧道[流媒体解锁]
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
