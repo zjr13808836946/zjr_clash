@@ -5,37 +5,19 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 503, server: 170.178.172.74, port: 443, type: vmess, uuid: 206d5f57-cac1-42b1-908b-d74acc41aa3b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/020724193005, headers: {Host: www.12163699.xyz}}}
   - {name: 52298 @WangCai_1, server: 98.wgong.xyz, port: 52298, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 52282 @WangCai_1, server: 82.wgong.xyz, port: 52282, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港1|BGP中转|Netflix|1.2x, server: azhk.relay.qchwnd.moe, port: 44601, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
-  - {name: 🇯🇵 日本1|BGP中转|Netflix, server: azhk.relay.qchwnd.moe, port: 44602, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
-  - {name: 🇯🇵 日本2|BGP中转|Netflix, server: azhk.relay.qchwnd.moe, port: 44603, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
-  - {name: 🇮🇳 印度|BGP中转, server: azhk.relay.qchwnd.moe, port: 44604, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡|BGP中转|Netflix, server: azhk.relay.qchwnd.moe, port: 44605, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
-  - {name: 🇮🇳 印度|广州移动中转, server: newgy.jidan666.com, port: 23034, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: newgy.jidan666.com, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡|广州移动中转|Netflix, server: newgy.jidan666.com, port: 23035, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: newgy.jidan666.com, skip-cert-verify: false}
   - {name: 🇸🇬 Lv2新加坡2|V2Ray|中转优化, server: 183.232.226.171, port: 20010, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /5dyun.m3u8, headers: {Host: 183.232.226.171}}}
   - {name: 🇸🇬 Lv2新加坡4|V2Ray|中转优化, server: 183.232.226.171, port: 20012, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ws, headers: {Host: 183.232.226.171}}}
   - {name: 🇯🇵 Lv2日本3|V2Ray|中转优化, server: 183.232.226.171, port: 20011, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ws, headers: {Host: 183.232.226.171}}}
   - {name: 🇯🇵 Lv2日本4 | V2Ray|中转优化, server: 183.232.226.171, port: 20013, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ws, headers: {Host: 183.232.226.171}}}
   - {name: 52283 @WangCai_1, server: 83.wgong.xyz, port: 52283, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 52281 @WangCai_1, server: 81.wgong.xyz, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 52226 @WangCai_1, server: 126.wgong.xyz, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 52215 @WangCai_1, server: 118.wgong.xyz, port: 52218, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🏳️‍🌈 香港高速公益节点(有限流量)2.0, server: 233.ezydfdd.com, port: 443, type: vmess, uuid: 71e71266-c8b2-4dc7-8a19-f3390a7b1507, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /qwe, headers: {Host: 233.ezydfdd.com}}}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 02 1.0x, server: tunnel-sg-a-01.xncloud.xyz, port: 102, type: vmess, uuid: 5d095145-1556-3d6a-aef2-6ae6413f3f47, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-sg-02.xncloud.xyz}}}
-  - {name: 🇯🇵 日本2|广州移动中转|Netflix, server: newgy.jidan666.com, port: 23033, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: newgy.jidan666.com, skip-cert-verify: false}
-  - {name: 🇨🇳 Ytb:鹏哥分享_CN_中国_167, server: ddns04.r8o8c8k.xyz, port: 65012, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: ddns04.r8o8c8k.xyz}}}
-  - {name: 🇭🇰 香港_TG@nodesharing_4, server: 122.wgong.xyz, port: 52222, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇯🇵 日本千兆-11号, server: 81.wgong.xyz, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡千兆-01号, server: 131.wgong.xyz, port: 52331, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡千兆-03号, server: 125.wgong.xyz, port: 52225, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 v2-香港h6-g200, server: g200.soow.win, port: 50110, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: h6.faak3.xyz}}}
-  - {name: 🇭🇰 ---v2节点-香港h5-稳定-cn2, server: cn2.soow.win, port: 50080, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: h5.wpaa.win}}}
   - {name: 🇭🇰 ---v2节点-香港h5-稳定-g300, server: g300.soow.win, port: 50081, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: h5.wpaa.win}}}
   - {name: 🇸🇬 v2-新加坡24-g2, server: g200.soow.win, port: 50089, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 24.faak4.xyz}}}
-  - {name: 🇭🇰 v2-香港HKBGP-hk3-cn2, server: cn2.soow.win, port: 50005, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: hk3.faak3.xyz}}}
-  - {name: 🇭🇰 v2-香港HKBGP5-cn2, server: cn2.soow.win, port: 50085, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 5.faak3.xyz}}}
   - {name: 🇭🇰 v2-香港HKBGP5-g5, server: g500.soow.win, port: 50085, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 5.faak3.xyz}}}
   - {name: 🇭🇰 v2节点-香港h5-g2, server: g200.soow.win, port: 50081, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: h5.wpaa.win}}}
   - {name: 🇸🇬 SG/新加坡01 - 1000M - 1x, server: gza8.v2bees.net, port: 25098, type: vmess, uuid: c1bcb373-a453-4d31-b38b-85e652e19281, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}}
@@ -47,8 +29,6 @@ proxies:
   - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 07 1.0x, server: tunnel-sg-a-01.xncloud.xyz, port: 107, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-sg-07.xncloud.xyz}}}
   - {name: 🇰🇷 韩国|V2Ray|中转优化, server: 103.56.60.37, port: 20925, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ws, headers: {Host: 103.56.60.37}}}
   - {name: 🇭🇰 香港1| V2Ray | 流媒体优选, server: 120.232.41.113, port: 20020, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /mfyun.m3u8, headers: {Host: 120.232.41.113}}}
-  - {name: 🇸🇬 新加坡1|SSR|中转优化 - 30002 单端口, server: 120.232.41.113, port: 30002, type: ssr, cipher: rc4-md5, password: mfyun001, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1:123456789, obfs-param: 753361.bing.com}
-  - {name: 🇯🇵 v2-日本hk1-cn2, server: cn2.soow.win, port: 50027, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /video, headers: {Host: hk1.wpaa.win}}}
   - {name: 🇨🇳 【新鸟免费】台湾TW-Hinet 04 1.0x, server: tunnel-tw-a-01.xncloud.xyz, port: 504, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-hinet-tw-04.xncloud.xyz}}}
   - {name: 🇭🇰 香港IPServerOne, server: 103.93.75.114, port: 80, type: vmess, uuid: 35f5c8a0-6e97-3c78-b034-c06dd6154c44, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
   - {name: 🇭🇰 香港IPServerOne 2, server: 103.93.75.114, port: 80, type: vmess, uuid: 5c41411a-750a-37e8-966f-11aea49227c4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
@@ -60,155 +40,122 @@ proxies:
   - {name: 🇭🇰 香港IPServerOne 8, server: 103.93.75.114, port: 80, type: vmess, uuid: e9f1d931-48b7-3345-8e8d-8d31edc786e4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
   - {name: 🇭🇰 香港IPServerOne 9, server: 103.93.75.80, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
   - {name: 🇭🇰 香港IPServerOne 10, server: 103.93.75.80, port: 80, type: vmess, uuid: 5c41411a-750a-37e8-966f-11aea49227c4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港IPServerOne 11, server: 103.93.75.80, port: 80, type: vmess, uuid: 745b504f-06da-345d-a389-c6e532334815, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港IPServerOne 12, server: 103.93.75.80, port: 80, type: vmess, uuid: 9fd65683-3942-3dbf-be07-d2fcdff733f0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港IPServerOne 13, server: 103.93.75.80, port: 80, type: vmess, uuid: 35f5c8a0-6e97-3c78-b034-c06dd6154c44, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港IPServerOne 14, server: 103.93.75.80, port: 80, type: vmess, uuid: c1de45d9-87eb-3af5-84fc-db92dc104e16, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港Azure-Tokyo-M247, server: 104.208.66.112, port: 25418, type: trojan, password: 99a68273-b51d-3818-a174-764e907c6d7b, skip-cert-verify: false}
-  - {name: 🇭🇰 香港Azure-SG-DigitalOcean, server: 104.208.66.112, port: 25998, type: trojan, password: 99a68273-b51d-3818-a174-764e907c6d7b, skip-cert-verify: false}
-  - {name: 🇭🇰 香港Azure-Santa Clara-DigitalOcean, server: 104.208.66.112, port: 26316, type: trojan, password: 99a68273-b51d-3818-a174-764e907c6d7b, skip-cert-verify: false}
-  - {name: 🇭🇰 香港Azure-Bangkok-Scloud-nf, server: 104.208.66.112, port: 27346, type: trojan, password: 99a68273-b51d-3818-a174-764e907c6d7b, skip-cert-verify: false}
-  - {name: 🇭🇰 香港Azure, server: 104.208.66.112, port: 27561, type: trojan, password: 99a68273-b51d-3818-a174-764e907c6d7b, skip-cert-verify: false}
-  - {name: 🇭🇰 香港Azure-香港Scloud-nf, server: 104.208.66.112, port: 29456, type: trojan, password: 99a68273-b51d-3818-a174-764e907c6d7b, skip-cert-verify: false}
+  - {name: 🇭🇰 香港IPServerOne 11, server: 103.93.75.80, port: 80, type: vmess, uuid: 9fd65683-3942-3dbf-be07-d2fcdff733f0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
+  - {name: 🇭🇰 香港IPServerOne 12, server: 103.93.75.80, port: 80, type: vmess, uuid: 35f5c8a0-6e97-3c78-b034-c06dd6154c44, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
+  - {name: 🇭🇰 香港IPServerOne 13, server: 103.93.75.80, port: 80, type: vmess, uuid: c1de45d9-87eb-3af5-84fc-db92dc104e16, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
   - {name: 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 201, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
   - {name: 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 204, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
   - {name: 🇸🇬 【新鸟免费】日本JP-AWS 05 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 205, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
   - {name: 🇸🇬 【新鸟免费】日本JP-AWS 06 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 206, type: vmess, uuid: d2b7d8e8-66ec-36b9-9a9c-5e85e198184f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 A-沪港IPLC→倍率5→香港14, server: hk14.xiaocloud.icu, port: 21417, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【V2】IPLC-香港13-倍率8【数据不过墙丨迪士尼+】, server: hk13.xiaocloud.icu, port: 21316, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡04, server: sg04.xiaocloud.icu, port: 20467, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡07-联通, server: sg07.xiaocloud.icu, port: 20770, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡08-联通, server: sg08.xiaocloud.icu, port: 20871, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡09-联通, server: sg09.xiaocloud.icu, port: 20972, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国2|BGP中转|Netflix, server: azhk.relay.qchwnd.moe, port: 44611, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
-  - {name: 🇯🇵 日本千兆-05号, server: tunnel-jp-a-01.xncloud.xyz, port: 210, type: vmess, uuid: d2b90316-8969-3f9b-8db2-a5b565a6bde3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-jp-10.xncloud.xyz}}}
   - {name: 🇯🇵 日本千兆-13号, server: 83.wgong.xyz, port: 52283, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 v2-香港HKBGP-hk3-g2, server: g200.soow.win, port: 50020, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: hk3.faak3.xyz}}}
-  - {name: 🇯🇵 v2-日本hk1-g5, server: g500.soow.win, port: 50027, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /video, headers: {Host: hk1.wpaa.win}}}
   - {name: 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 204, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-jp-04.xncloud.xyz}}}
-  - {name: 🇭🇰 香港IPServerOne 15, server: 103.93.75.80, port: 80, type: vmess, uuid: e9f1d931-48b7-3345-8e8d-8d31edc786e4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
+  - {name: 🇭🇰 香港IPServerOne 14, server: 103.93.75.80, port: 80, type: vmess, uuid: e9f1d931-48b7-3345-8e8d-8d31edc786e4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
   - {name: 🇸🇬 【新鸟免费】日本JP-AWS 08 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 208, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
-  - {name: 52298 @WangCai_1 2, server: 98.wgong.xyz, port: 52298, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 52282 @WangCai_1 2, server: 82.wgong.xyz, port: 52282, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 52282 @WangCai_1, server: 82.wgong.xyz, port: 52282, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 香港_TG@nodesharing_13, server: 105.wgong.xyz, port: 52205, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港1|BGP中转|Netflix|1.2x 2, server: azhk.relay.qchwnd.moe, port: 44601, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
-  - {name: 🇯🇵 日本1|BGP中转|Netflix 2, server: azhk.relay.qchwnd.moe, port: 44602, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
-  - {name: 🇯🇵 日本2|BGP中转|Netflix 2, server: azhk.relay.qchwnd.moe, port: 44603, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
-  - {name: 🇮🇳 印度|BGP中转 2, server: azhk.relay.qchwnd.moe, port: 44604, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡|BGP中转|Netflix 2, server: azhk.relay.qchwnd.moe, port: 44605, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
-  - {name: 🇮🇩 印度尼西亚|BGP中转|Netflix|1.2x, server: azhk.relay.qchwnd.moe, port: 44607, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
-  - {name: 🇭🇰 香港2|BGP|Netflix, server: azhk.node.qchwnd.moe, port: 44609, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: azhk.node.qchwnd.moe, skip-cert-verify: false}
-  - {name: 🇸🇬 Lv2新加坡2|V2Ray|中转优化 2, server: 183.232.226.171, port: 20010, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /5dyun.m3u8, headers: {Host: 183.232.226.171}}}
-  - {name: 🇸🇬 Lv2新加坡4|V2Ray|中转优化 2, server: 183.232.226.171, port: 20012, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ws, headers: {Host: 183.232.226.171}}}
-  - {name: 🇯🇵 Lv2日本3|V2Ray|中转优化 2, server: 183.232.226.171, port: 20011, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ws, headers: {Host: 183.232.226.171}}}
-  - {name: 🇯🇵 Lv2日本4 | V2Ray|中转优化 2, server: 183.232.226.171, port: 20013, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ws, headers: {Host: 183.232.226.171}}}
-  - {name: 52209 @WangCai_1, server: 109.wgong.xyz, port: 52209, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 52283 @WangCai_1 2, server: 83.wgong.xyz, port: 52283, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 52281 @WangCai_1 2, server: 81.wgong.xyz, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本1|广州移动中转|Netflix, server: newgy.jidan666.com, port: 23032, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: newgy.jidan666.com, skip-cert-verify: false}
-  - {name: 52226 @WangCai_1 2, server: 126.wgong.xyz, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🏳️‍🌈 香港高速公益节点(有限流量)2.0 2, server: 233.ezydfdd.com, port: 443, type: vmess, uuid: 71e71266-c8b2-4dc7-8a19-f3390a7b1507, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /qwe, headers: {Host: 233.ezydfdd.com}}}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 02 1.0x 2, server: tunnel-sg-a-01.xncloud.xyz, port: 102, type: vmess, uuid: 5d095145-1556-3d6a-aef2-6ae6413f3f47, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-sg-02.xncloud.xyz}}}
-  - {name: 🇨🇳 Ytb:鹏哥分享_CN_中国_167 2, server: ddns04.r8o8c8k.xyz, port: 65012, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rocket, headers: {Host: ddns04.r8o8c8k.xyz}}}
-  - {name: 🇭🇰 新加坡02丨广港隧道丨原生IP丨, server: fs.jcytl.com, port: 47812, type: vmess, uuid: dfa6706c-ab9d-378c-a25e-00d41eeb7431, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: www.baidu.com}}}
-  - {name: 🇯🇵 日本千兆-01号, server: tunnel-jp-a-01.xncloud.xyz, port: 207, type: vmess, uuid: d2b90316-8969-3f9b-8db2-a5b565a6bde3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-jp-07.xncloud.xyz}}}
+  - {name: 52281 @WangCai_1, server: 81.wgong.xyz, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 ---v2节点-香港h5-稳定-cn2, server: cn2.soow.win, port: 50080, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: h5.wpaa.win}}}
+  - {name: 🇭🇰 v2-香港HKBGP-hk3-cn2, server: cn2.soow.win, port: 50005, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: hk3.faak3.xyz}}}
+  - {name: 🇯🇵 JP/日本02 - 1000M - 1x, server: gza8.v2bees.net, port: 25159, type: vmess, uuid: c1bcb373-a453-4d31-b38b-85e652e19281, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}}
+  - {name: 🇸🇬 【新鸟免费】日本JP-AWS 05 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 205, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-jp-05.xncloud.xyz}}}
   - {name: 🇯🇵 日本千兆-09号, server: 105.wgong.xyz, port: 52205, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇯🇵 日本千兆-10号, server: 109.wgong.xyz, port: 52209, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本千兆-11号 2, server: 81.wgong.xyz, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡千兆-01号 2, server: 131.wgong.xyz, port: 52331, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡千兆-03号 2, server: 125.wgong.xyz, port: 52225, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 v2-香港h6-g200 2, server: g200.soow.win, port: 50110, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: h6.faak3.xyz}}}
-  - {name: 🇭🇰 ---v2节点-香港h5-稳定-cn2 2, server: cn2.soow.win, port: 50080, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: h5.wpaa.win}}}
-  - {name: 🇭🇰 ---v2节点-香港h5-稳定-g300 2, server: g300.soow.win, port: 50081, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: h5.wpaa.win}}}
-  - {name: 🇸🇬 v2-新加坡24-g2 2, server: g200.soow.win, port: 50089, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 24.faak4.xyz}}}
-  - {name: 🇭🇰 v2-香港HKBGP-hk3-cn2 2, server: cn2.soow.win, port: 50005, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: hk3.faak3.xyz}}}
-  - {name: 🇭🇰 v2-香港HKBGP5-g5 2, server: g500.soow.win, port: 50085, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 5.faak3.xyz}}}
-  - {name: 🇭🇰 v2节点-香港h5-g2 2, server: g200.soow.win, port: 50081, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: h5.wpaa.win}}}
-  - {name: 🇸🇬 SG/新加坡01 - 1000M - 1x 2, server: gza8.v2bees.net, port: 25098, type: vmess, uuid: c1bcb373-a453-4d31-b38b-85e652e19281, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}}
-  - {name: 🇸🇬 SG/新加坡02 - 1000M - 1x 2, server: gza8.v2bees.net, port: 25101, type: vmess, uuid: c1bcb373-a453-4d31-b38b-85e652e19281, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}}
-  - {name: 🇸🇬 SG/新加坡03 - 1000M - 1x 2, server: gza8.v2bees.net, port: 25103, type: vmess, uuid: c1bcb373-a453-4d31-b38b-85e652e19281, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}}
-  - {name: 🇯🇵 JP/日本02 - 1000M - 1x, server: gza8.v2bees.net, port: 25159, type: vmess, uuid: c1bcb373-a453-4d31-b38b-85e652e19281, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 04 1.0x, server: tunnel-sg-a-01.xncloud.xyz, port: 104, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-sg-04.xncloud.xyz}}}
-  - {name: 🇸🇬 【新鸟免费】日本JP-AWS 05 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 205, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-jp-05.xncloud.xyz}}}
-  - {name: 🇸🇬 vpnpool-SG-DigitalOcean, server: 20.205.96.84, port: 52331, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 52231 @WangCai_1, server: 131.wgong.xyz, port: 52331, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国|V2Ray|中转优化 2, server: 103.56.60.37, port: 20925, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ws, headers: {Host: 103.56.60.37}}}
-  - {name: 🇺🇸 美国千兆-05号, server: 82.wgong.xyz, port: 52282, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 v2-日本hk1-cn2 2, server: cn2.soow.win, port: 50027, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /video, headers: {Host: hk1.wpaa.win}}}
-  - {name: 🇯🇵 日本千兆-09号 2, server: 105.wgong.xyz, port: 52205, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本千兆-10号 2, server: 109.wgong.xyz, port: 52209, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡千兆-01号 3, server: 131.wgong.xyz, port: 52331, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡千兆-03号 3, server: 125.wgong.xyz, port: 52225, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 n_52284 好兄弟，新年快乐, server: 84.wgong.xyz, port: 52284, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 n_52285 好兄弟，新年快乐, server: 85.wgong.xyz, port: 52285, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 n_52207 好兄弟，新年快乐, server: 107.wgong.xyz, port: 52207, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 n_52215 好兄弟，新年快乐_24, server: 118.wgong.xyz, port: 52218, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 n_52215 好兄弟，新年快乐_25, server: 119.wgong.xyz, port: 52219, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 n_52220 好兄弟，新年快乐, server: 120.wgong.xyz, port: 52220, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 n_52221 好兄弟，新年快乐, server: 121.wgong.xyz, port: 52221, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 n_52220 好兄弟，新年快乐_28, server: 122.wgong.xyz, port: 52222, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 n_52226 好兄弟，新年快乐, server: 126.wgong.xyz, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港IPServerOne 16, server: 103.93.75.114, port: 80, type: vmess, uuid: 35f5c8a0-6e97-3c78-b034-c06dd6154c44, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港IPServerOne 17, server: 103.93.75.114, port: 80, type: vmess, uuid: 5c41411a-750a-37e8-966f-11aea49227c4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港IPServerOne 18, server: 103.93.75.114, port: 80, type: vmess, uuid: 9fd65683-3942-3dbf-be07-d2fcdff733f0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港IPServerOne 19, server: 103.93.75.114, port: 80, type: vmess, uuid: c1de45d9-87eb-3af5-84fc-db92dc104e16, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港IPServerOne 20, server: 103.93.75.80, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港IPServerOne 21, server: 103.93.75.80, port: 80, type: vmess, uuid: 5c41411a-750a-37e8-966f-11aea49227c4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港IPServerOne 22, server: 103.93.75.80, port: 80, type: vmess, uuid: 745b504f-06da-345d-a389-c6e532334815, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港IPServerOne 23, server: 103.93.75.80, port: 80, type: vmess, uuid: 9fd65683-3942-3dbf-be07-d2fcdff733f0, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港IPServerOne 24, server: 103.93.75.80, port: 80, type: vmess, uuid: 35f5c8a0-6e97-3c78-b034-c06dd6154c44, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港IPServerOne 25, server: 103.93.75.80, port: 80, type: vmess, uuid: c1de45d9-87eb-3af5-84fc-db92dc104e16, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港IPServerOne 26, server: 103.93.75.80, port: 80, type: vmess, uuid: df3b1380-4ba9-381c-bc1b-efa6d2bf33b2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港Azure-Bengaluru-DigitalOcean, server: 104.208.66.112, port: 24312, type: trojan, password: 99a68273-b51d-3818-a174-764e907c6d7b, skip-cert-verify: false}
-  - {name: 🇭🇰 香港Azure-Tokyo-M247 2, server: 104.208.66.112, port: 25418, type: trojan, password: 99a68273-b51d-3818-a174-764e907c6d7b, skip-cert-verify: false}
-  - {name: 🇭🇰 香港Azure-SG-DigitalOcean 2, server: 104.208.66.112, port: 25998, type: trojan, password: 99a68273-b51d-3818-a174-764e907c6d7b, skip-cert-verify: false}
-  - {name: 🇭🇰 香港Azure-Santa Clara-DigitalOcean 2, server: 104.208.66.112, port: 26316, type: trojan, password: 99a68273-b51d-3818-a174-764e907c6d7b, skip-cert-verify: false}
-  - {name: 🇭🇰 香港Azure-Bangkok-Scloud-nf 2, server: 104.208.66.112, port: 27346, type: trojan, password: 99a68273-b51d-3818-a174-764e907c6d7b, skip-cert-verify: false}
-  - {name: 🇭🇰 香港Azure 2, server: 104.208.66.112, port: 27561, type: trojan, password: 99a68273-b51d-3818-a174-764e907c6d7b, skip-cert-verify: false}
-  - {name: 🇭🇰 香港Azure-香港Scloud-nf 2, server: 104.208.66.112, port: 29456, type: trojan, password: 99a68273-b51d-3818-a174-764e907c6d7b, skip-cert-verify: false}
-  - {name: 🇸🇬 SG-Azure, server: 20.24.43.66, port: 27561, type: trojan, password: 99a68273-b51d-3818-a174-764e907c6d7b, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡1, server: hk1.4kxray.xyz, port: 4142, type: vmess, uuid: efef2a3a-ce10-328b-b65c-eeae36eb9345, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: hk1.4kxray.xyz}}}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 04 1.0x 2, server: tunnel-sg-a-01.xncloud.xyz, port: 104, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 08 1.0x, server: tunnel-sg-a-01.xncloud.xyz, port: 108, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 09 1.0x, server: tunnel-sg-a-01.xncloud.xyz, port: 109, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
+  - {name: 🇭🇰 香港IPServerOne 15, server: 103.93.75.80, port: 80, type: vmess, uuid: 745b504f-06da-345d-a389-c6e532334815, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
+  - {name: 🇭🇰 香港IPServerOne 16, server: 103.93.75.80, port: 80, type: vmess, uuid: df3b1380-4ba9-381c-bc1b-efa6d2bf33b2, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: t.me/vpnhat}}}
+  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 04 1.0x, server: tunnel-sg-a-01.xncloud.xyz, port: 104, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
   - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 10 1.0x, server: tunnel-sg-a-01.xncloud.xyz, port: 110, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 201, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 3, server: tunnel-jp-a-01.xncloud.xyz, port: 204, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
   - {name: 🇸🇬 【新鸟免费】日本JP-AWS 07 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 207, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 10 1.0x 2, server: tunnel-sg-a-01.xncloud.xyz, port: 110, type: vmess, uuid: d2b7d8e8-66ec-36b9-9a9c-5e85e198184f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇸🇬 【新鸟免费】日本JP-AWS 10 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 210, type: vmess, uuid: d2b7d8e8-66ec-36b9-9a9c-5e85e198184f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇨🇳 A-台湾-02【NETFLIX丨迪士尼+】, server: tw02.xiaocloud.icu, port: 20240, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 A-沪港IPLC→倍率5→香港14 2, server: hk14.xiaocloud.icu, port: 21417, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 A-香港-15【NETFLIX】, server: hk15.xiaocloud.icu, port: 21518, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【V2】IPLC-香港13-倍率8【数据不过墙丨迪士尼+】 2, server: hk13.xiaocloud.icu, port: 21316, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 【V2】台湾-01-【NETFLIX-非自制剧】, server: tw01.xiaocloud.icu, port: 20139, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 【V2】日本-05-迪士尼+, server: jp05.xiaocloud.icu, port: 20528, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【V2】香港-02-Netflix, server: hk02.xiaocloud.icu, port: 20205, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡01, server: sg01.xiaocloud.icu, port: 20164, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡02, server: sg02.xiaocloud.icu, port: 20265, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡04 2, server: sg04.xiaocloud.icu, port: 20467, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡05, server: sg05.xiaocloud.icu, port: 20568, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡06-联通, server: sg06.xiaocloud.icu, port: 20669, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡07-联通 2, server: sg07.xiaocloud.icu, port: 20770, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡08-联通 2, server: sg08.xiaocloud.icu, port: 20871, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡09-联通 2, server: sg09.xiaocloud.icu, port: 20972, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本-02, server: jp02.xiaocloud.icu, port: 20225, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本-03, server: jp03.xiaocloud.icu, port: 20326, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本-04, server: jp04.xiaocloud.icu, port: 20427, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港-01【迪士尼+】, server: hk01.xiaocloud.icu, port: 20104, type: vmess, uuid: 08501a22-fbf5-31a4-b57b-a89022eb3517, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国2|BGP中转|Netflix 2, server: azhk.relay.qchwnd.moe, port: 44611, type: trojan, password: ddcfe6cb-d001-430e-9781-427496e3ed1d, sni: azhk.relay.qchwnd.moe, skip-cert-verify: false}
   - {name: 🇭🇰 【低延迟】中转*广州移动-香港*03, server: 112.33.32.136, port: 10001, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 中转*广州移动-日本东京*03, server: 112.33.32.136, port: 10005, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【推荐】IPLC专线广州-香港_12, server: z00012.security-cloudfront-cdn.com, port: 44160, type: ssr, cipher: aes-256-cfb, password: wQ16gJrbBvvME3my, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive"}
-  - {name: 52225 @WangCai_1, server: 125.wgong.xyz, port: 52225, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本2|SSR|中转优化 - 30001 单端口, server: 120.232.41.113, port: 30001, type: ssr, cipher: rc4-md5, password: mfyun001, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1:123456789, obfs-param: 753361.bing.com}
-  - {name: 🇯🇵 日本千兆-13号 2, server: 83.wgong.xyz, port: 52283, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 v2-香港HKBGP-hk3-g2 2, server: g200.soow.win, port: 50020, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: hk3.faak3.xyz}}}
-  - {name: 🇯🇵 v2-日本hk1-g5 2, server: g500.soow.win, port: 50027, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /video, headers: {Host: hk1.wpaa.win}}}
-  - {name: 🇨🇳 【新鸟免费】台湾TW-Hinet 05 1.0x, server: tunnel-tw-a-01.xncloud.xyz, port: 505, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-hinet-tw-05.xncloud.xyz}}}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 01 1.0x, server: tunnel-sg-a-01.xncloud.xyz, port: 101, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-sg-01.xncloud.xyz}}}
-  - {name: 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 3, server: tunnel-jp-a-01.xncloud.xyz, port: 201, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-jp-01.xncloud.xyz}}}
-  - {name: 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 4, server: tunnel-jp-a-01.xncloud.xyz, port: 204, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-jp-04.xncloud.xyz}}}
+  - {name: 🇯🇵 v2-日本hk1-g5, server: g500.soow.win, port: 50027, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /video, headers: {Host: hk1.wpaa.win}}}
+  - {name: 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 201, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-jp-01.xncloud.xyz}}}
+  - {name: 🇭🇰 香港_TG@nodesharing_15, server: 86.wgong.xyz, port: 52286, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 v2-香港HKBGP5-cn2, server: cn2.soow.win, port: 50085, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 5.faak3.xyz}}}
+  - {name: 🇸🇬 【新鸟免费】日本JP-AWS 02 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 202, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-jp-02.xncloud.xyz}}}
+  - {name: 🇸🇬 【新鸟免费】日本JP-AWS 07 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 207, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-jp-07.xncloud.xyz}}}
+  - {name: 🇸🇬 【新鸟免费】日本JP-AWS 02 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 202, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
+  - {name: 🇺🇸 美国高速公益节点2.0, server: daw.ezydfdd.com, port: 443, type: vmess, uuid: ba38c261-7b27-4c96-adf9-0dfcbc8ab40f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /qwe, headers: {Host: daw.ezydfdd.com}}}
+  - {name: 🇺🇸 美国高速公益节点, server: 3.ezydfdd.com, port: 443, type: vmess, uuid: 7ab3f0d7-164c-4bde-8a45-2d6653da2ad1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /qwe, headers: {Host: 3.ezydfdd.com}}}
+  - {name: 🇨🇳 -v2-台湾3-cn2, server: cn2.soow.win, port: 50060, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 3.faak3.xyz}}}
+  - {name: 🇺🇸 v2-美国m1-cn2, server: cn2.soow.win, port: 50046, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /video, headers: {Host: m1.faak4.xyz}}}
+  - {name: 🇸🇬 【新鸟免费】日本JP-AWS 06 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 206, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-jp-06.xncloud.xyz}}}
+  - {name: 🇸🇬 【新鸟免费】日本JP-AWS 08 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 208, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-jp-08.xncloud.xyz}}}
+  - {name: 🇸🇬 【新鸟免费】日本JP-AWS 10 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 210, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-aws-jp-10.xncloud.xyz}}}
+  - {name: 🇨🇳 中国_TG@nodesharing_488, server: shcu01a.iplc188.com, port: 10003, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK/香港SS-01+-+1000M+-+1x, server: cs.v2bees.net, port: 25120, type: ss, cipher: chacha20-ietf-poly1305, password: c1bcb373-a453-4d31-b38b-85e652e19281}
+  - {name: 🇭🇰 HK/香港SS-05+-+1000M+-+1x, server: cs.v2bees.net, port: 25137, type: ss, cipher: chacha20-ietf-poly1305, password: c1bcb373-a453-4d31-b38b-85e652e19281}
+  - {name: 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x, server: mf-do-ua-05.xncloud.xyz, port: 80, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: mf-do-ua-05.xncloud.xyz}}}
+  - {name: 🇸🇬 【新鸟免费】美国UA -DO 07 免流 1.0x, server: mf-do-ua-07.xncloud.xyz, port: 80, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
+  - {name: 🇺🇸 【推荐】上海联通-洛杉矶专线21, server: shcu01a.iplc188.com, port: 10003, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇺🇸 [联通直连]-美国西雅图06", server: sea06.nb1.fr, port: 64443, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: sea06.nb1.fr}}}
+  - {name: 🇯🇵 v2-日本hk1-cn2, server: cn2.soow.win, port: 50027, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /video, headers: {Host: hk1.wpaa.win}}}
+  - {name: FREE_V2ray_US_A 倍率*1, server: anycast.galaxydigital.top, port: 443, type: vmess, uuid: bd5c5d7b-dd49-4548-bc6b-c9dd619cc85a, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /jcl6ng8, headers: {Host: rnus1-4.galaxycloud.buzz}}}
+  - {name: FREE_V2ray_US_B 倍率*1, server: anycast.galaxydigital.top, port: 443, type: vmess, uuid: bd5c5d7b-dd49-4548-bc6b-c9dd619cc85a, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /Vigwgzan, headers: {Host: rnus1-1.galaxycloud.buzz}}}
+  - {name: 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x 2, server: mf-do-ua-05.xncloud.xyz, port: 80, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /niaoyun, headers: {Host: t.me/vpnhat}}}
+  - {name: 🇭🇰 香港(绿头外网集团)(Public), server: 2.zhuzhu12.com, port: 44301, type: vmess, uuid: d4bae454-7a1a-3afd-978e-303a1b928a85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zz, headers: {Host: 2.zhuzhu12.com}}}
+  - {name: 🇭🇰 香港(绿头外网集团)(Public) 2, server: 4.zhuzhu12.com, port: 8080, type: vmess, uuid: d4bae454-7a1a-3afd-978e-303a1b928a85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zz, headers: {Host: 4.zhuzhu12.com}}}
+  - {name: 🇭🇰 香港(绿头外网集团)(Public) 3, server: 5.zhuzhu12.com, port: 443, type: vmess, uuid: d4bae454-7a1a-3afd-978e-303a1b928a85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zz, headers: {Host: 5.zhuzhu12.com}}}
+  - {name: 🇰🇷 韩国(绿头外网集团)(Public), server: 120.232.174.96, port: 44384, type: vmess, uuid: d4bae454-7a1a-3afd-978e-303a1b928a85, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /zz, headers: {Host: 120.232.174.96}}}
+  - {name: 🇰🇷 韩国(绿头外网集团)(Public) 2, server: kr-free.shancloudweb.xyz, port: 15001, type: trojan, password: 432b5e82-b78a-4ef9-86b2-4311abd3c8c3, sni: kr-free.shancloudweb.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港(绿头外网集团)(Public) 4, server: sxctr.hk2.qiguangyicai.xyz, port: 44143, type: trojan, password: 373c42c8-d608-4974-8d90-6e44db50dc78, sni: sxctr.hk2.qiguangyicai.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡(绿头外网集团)(Public), server: v1.369855.xyz, port: 11443, type: vmess, uuid: 97886ae9-9229-4094-9668-90d66ad2a2b2, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /api/sg, headers: {Host: sgav2.ddns.tjiasu.xyz}}}
+  - {name: 🇨🇳 中国_TG@nodesharing_14, server: wndjw.ezydfdd.com, port: 443, type: vmess, uuid: 03ab2300-a054-4e6f-bfeb-16864375c44e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /qwe, headers: {Host: wndjw.ezydfdd.com}}}
+  - {name: 🇸🇬 vip1-新加坡2||限速100M, server: 16.douluo.cyou, port: 26116, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 16.douluo.cyou}}}
+  - {name: 🇸🇬 vip1-新加坡3||限速100M, server: 17.douluo.cyou, port: 26117, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 17.douluo.cyou}}}
+  - {name: 🇯🇵 vip1-日本1||限速100M, server: 3.douluo.cyou, port: 26103, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 3.douluo.cyou}}}
+  - {name: 🇯🇵 vip1-日本2||限速100M, server: 4.douluo.cyou, port: 26104, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 4.douluo.cyou}}}
+  - {name: 🇯🇵 vip1-日本4||限速100M, server: 6.douluo.cyou, port: 26106, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 6.douluo.cyou}}}
+  - {name: 🇺🇸 vip1-美国2||电信中继||限速100M, server: 5.douluo.cyou, port: 26105, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 5.douluo.cyou}}}
+  - {name: 🇰🇷 vip1-韩国1||限速100M, server: 21.douluo.cyou, port: 26121, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 21.douluo.cyou}}}
+  - {name: 🇰🇷 vip1-韩国2||限速100M, server: 22.douluo.cyou, port: 29122, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 22.douluo.cyou}}}
+  - {name: 🇭🇰 vip1-香港1||限速100M, server: 10.douluo.cyou, port: 26110, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 10.douluo.cyou}}}
+  - {name: 🇭🇰 vip1-香港3||限速100M, server: 12.douluo.cyou, port: 36112, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 12.douluo.cyou}}}
+  - {name: 🇭🇰 vip1-香港5||限速100M, server: 14.douluo.cyou, port: 26114, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 14.douluo.cyou}}}
+  - {name: 🇸🇬 vip2-新加坡2原生ip Netflix||限速500m, server: 38.douluo.cyou, port: 29138, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 38.douluo.cyou}}}
+  - {name: 🇸🇬 vip2-新加坡3原生ip Netflix限速500m, server: 39.douluo.cyou, port: 29139, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 39.douluo.cyou}}}
+  - {name: 🇯🇵 vip2-日本10原生ip Netflix||限速500m, server: 31.douluo.cyou, port: 29131, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 31.douluo.cyou}}}
+  - {name: 🇯🇵 vip2-日本11广移||限速500m, server: 32.douluo.cyou, port: 29132, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 32.douluo.cyou}}}
+  - {name: 🇯🇵 vip2-日本8原生IP Netflix||限速500m, server: 30.douluo.cyou, port: 29130, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 30.douluo.cyou}}}
+  - {name: 🇰🇷 vip2-韩国2原生ip ||限速500m, server: 36.douluo.cyou, port: 29136, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 36.douluo.cyou}}}
+  - {name: 🇭🇰 vip2-香港1 原生IP ||限速500M, server: 23.douluo.cyou, port: 26123, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 23.douluo.cyou}}}
+  - {name: 🇭🇰 vip2-香港4 原生IP||北京BGP||限速500M, server: 26.douluo.cyou, port: 26126, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 26.douluo.cyou}}}
+  - {name: 🇨🇳 vip3-台湾1 三网||限速1000M, server: 45.douluo.cyou, port: 26145, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 VIP3-日本1三网优化 极速||限速1000M, server: 48.douluo.cyou, port: 29148, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 48.douluo.cyou}}}
+  - {name: 🇭🇰 VIP3-香港1三网优化||极速||限速1000M, server: 47.douluo.cyou, port: 29147, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 47.douluo.cyou}}}
+  - {name: 🇭🇰 vip3-香港2 三网优化||极速||限速1000M, server: 46.douluo.cyou, port: 29146, type: vmess, uuid: 42720279-8029-313b-a1c6-118426a9a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 每次连接前用国内网络更新订阅, server: cm-jm.okvpn.xyz, port: 20001, type: vmess, uuid: d0f63071-b049-4456-b63c-273569be670c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm-jm.okvpn.xyz}}}
+  - {name: "🇸🇬 中转|新加坡Singtel01|华南隧道[流媒体解锁]", server: cm-jm.okvpn.xyz, port: 20049, type: vmess, uuid: d0f63071-b049-4456-b63c-273569be670c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm-jm.okvpn.xyz}}}
+  - {name: "🇯🇵 中转|日本GMO07|华南隧道[流媒体解锁]", server: cm-jm.okvpn.xyz, port: 20015, type: vmess, uuid: d0f63071-b049-4456-b63c-273569be670c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm-jm.okvpn.xyz}}}
+  - {name: 🇭🇰 香港1|广州入口, server: sz.cm.nkeo.top, port: 25229, type: trojan, password: 1597117b-3b34-45af-9780-0470c269e851, sni: sz.cm.nkeo.top, skip-cert-verify: false}
+  - {name: 🇭🇰 香港2|广州入口|原生|NF, server: gzcm.rymv2rayssl.xyz, port: 44649, type: trojan, password: 1597117b-3b34-45af-9780-0470c269e851, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港3|广州入口|原生, server: gzcm.rymv2rayssl.xyz, port: 44602, type: trojan, password: 1597117b-3b34-45af-9780-0470c269e851, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港5|长沙入口|原生, server: cs.cu.01.211129.xyz, port: 21062, type: trojan, password: 1597117b-3b34-45af-9780-0470c269e851, sni: cs.cu.01.211129.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港7|安徽入口|原生, server: ah.cm.01.211129.xyz, port: 46305, type: trojan, password: 1597117b-3b34-45af-9780-0470c269e851, sni: ah.cm.01.211129.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾1|长沙入口|原生|NF, server: cs.cu.01.211129.xyz, port: 48377, type: trojan, password: 1597117b-3b34-45af-9780-0470c269e851, sni: cs.cu.01.211129.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾2|安徽入口|原生|NF, server: ah.cm.01.211129.xyz, port: 25800, type: trojan, password: 1597117b-3b34-45af-9780-0470c269e851, sni: ah.cm.01.211129.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本1|杭州入口|原生|NF, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: 1597117b-3b34-45af-9780-0470c269e851, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本2|杭州入口|原生|NF, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: 1597117b-3b34-45af-9780-0470c269e851, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本3|长沙入口|原生|NF, server: cs.cu.01.211129.xyz, port: 44640, type: trojan, password: 1597117b-3b34-45af-9780-0470c269e851, sni: cs.cu.01.211129.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本5|杭州入口|原生|NF, server: hzcu.rymv2rayssl.xyz, port: 44641, type: trojan, password: 1597117b-3b34-45af-9780-0470c269e851, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡2|广州入口, server: gzcm.rymv2rayssl.xyz, port: 44605, type: trojan, password: 1597117b-3b34-45af-9780-0470c269e851, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡3|广州入口, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: 1597117b-3b34-45af-9780-0470c269e851, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港1|广州入口 2, server: sz.cm.nkeo.top, port: 25229, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: sz.cm.nkeo.top, skip-cert-verify: false}
+  - {name: 🇭🇰 香港2|广州入口|原生|NF 2, server: gzcm.rymv2rayssl.xyz, port: 44649, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港3|广州入口|原生 2, server: gzcm.rymv2rayssl.xyz, port: 44602, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港5|长沙入口|原生 2, server: cs.cu.01.211129.xyz, port: 21062, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: cs.cu.01.211129.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港7|安徽入口|原生 2, server: ah.cm.01.211129.xyz, port: 46305, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: ah.cm.01.211129.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾1|长沙入口|原生|NF 2, server: cs.cu.01.211129.xyz, port: 48377, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: cs.cu.01.211129.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本1|杭州入口|原生|NF 2, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本2|杭州入口|原生|NF 2, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本3|长沙入口|原生|NF 2, server: cs.cu.01.211129.xyz, port: 44640, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: cs.cu.01.211129.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本5|杭州入口|原生|NF 2, server: hzcu.rymv2rayssl.xyz, port: 44641, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡2|广州入口 2, server: gzcm.rymv2rayssl.xyz, port: 44605, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡3|广州入口 2, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 汕头联通=>HK-HGC-500Mbps, server: 101.67.8.158, port: 20000, type: trojan, password: daozhu-TGID-Uallen_Qbit-zhuanshudailidaoyongsiquanjia, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 全局设置
     type: select
@@ -226,37 +173,19 @@ proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
+      - 503
       - 52298 @WangCai_1
-      - 52282 @WangCai_1
-      - 🇭🇰 香港1|BGP中转|Netflix|1.2x
-      - 🇯🇵 日本1|BGP中转|Netflix
-      - 🇯🇵 日本2|BGP中转|Netflix
-      - 🇮🇳 印度|BGP中转
-      - 🇸🇬 新加坡|BGP中转|Netflix
-      - 🇮🇳 印度|广州移动中转
-      - 🇸🇬 新加坡|广州移动中转|Netflix
       - 🇸🇬 Lv2新加坡2|V2Ray|中转优化
       - 🇸🇬 Lv2新加坡4|V2Ray|中转优化
       - 🇯🇵 Lv2日本3|V2Ray|中转优化
       - 🇯🇵 Lv2日本4 | V2Ray|中转优化
       - 52283 @WangCai_1
-      - 52281 @WangCai_1
       - 52226 @WangCai_1
-      - 52215 @WangCai_1
       - 🏳️‍🌈 香港高速公益节点(有限流量)2.0
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 02 1.0x
-      - 🇯🇵 日本2|广州移动中转|Netflix
-      - 🇨🇳 Ytb:鹏哥分享_CN_中国_167
-      - 🇭🇰 香港_TG@nodesharing_4
       - 🇯🇵 日本千兆-11号
-      - 🇸🇬 新加坡千兆-01号
-      - 🇸🇬 新加坡千兆-03号
       - 🇭🇰 v2-香港h6-g200
-      - 🇭🇰 ---v2节点-香港h5-稳定-cn2
       - 🇭🇰 ---v2节点-香港h5-稳定-g300
       - 🇸🇬 v2-新加坡24-g2
-      - 🇭🇰 v2-香港HKBGP-hk3-cn2
-      - 🇭🇰 v2-香港HKBGP5-cn2
       - 🇭🇰 v2-香港HKBGP5-g5
       - 🇭🇰 v2节点-香港h5-g2
       - 🇸🇬 SG/新加坡01 - 1000M - 1x
@@ -268,8 +197,6 @@ proxy-groups:
       - 🇸🇬 【新鸟免费】新加坡SG-AWS 07 1.0x
       - 🇰🇷 韩国|V2Ray|中转优化
       - 🇭🇰 香港1| V2Ray | 流媒体优选
-      - 🇸🇬 新加坡1|SSR|中转优化 - 30002 单端口
-      - 🇯🇵 v2-日本hk1-cn2
       - 🇨🇳 【新鸟免费】台湾TW-Hinet 04 1.0x
       - 🇭🇰 香港IPServerOne
       - 🇭🇰 香港IPServerOne 2
@@ -284,188 +211,137 @@ proxy-groups:
       - 🇭🇰 香港IPServerOne 11
       - 🇭🇰 香港IPServerOne 12
       - 🇭🇰 香港IPServerOne 13
-      - 🇭🇰 香港IPServerOne 14
-      - 🇭🇰 香港Azure-Tokyo-M247
-      - 🇭🇰 香港Azure-SG-DigitalOcean
-      - 🇭🇰 香港Azure-Santa Clara-DigitalOcean
-      - 🇭🇰 香港Azure-Bangkok-Scloud-nf
-      - 🇭🇰 香港Azure
-      - 🇭🇰 香港Azure-香港Scloud-nf
       - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x
       - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x
       - 🇸🇬 【新鸟免费】日本JP-AWS 05 1.0x
       - 🇸🇬 【新鸟免费】日本JP-AWS 06 1.0x
-      - 🇭🇰 A-沪港IPLC→倍率5→香港14
-      - 🇭🇰 【V2】IPLC-香港13-倍率8【数据不过墙丨迪士尼+】
-      - 🇸🇬 新加坡04
-      - 🇸🇬 新加坡07-联通
-      - 🇸🇬 新加坡08-联通
-      - 🇸🇬 新加坡09-联通
-      - 🇺🇸 美国2|BGP中转|Netflix
-      - 🇯🇵 日本千兆-05号
       - 🇯🇵 日本千兆-13号
       - 🇭🇰 v2-香港HKBGP-hk3-g2
-      - 🇯🇵 v2-日本hk1-g5
       - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 2
-      - 🇭🇰 香港IPServerOne 15
+      - 🇭🇰 香港IPServerOne 14
       - 🇸🇬 【新鸟免费】日本JP-AWS 08 1.0x
-      - 52298 @WangCai_1 2
-      - 52282 @WangCai_1 2
+      - 52282 @WangCai_1
       - 🇭🇰 香港_TG@nodesharing_13
-      - 🇭🇰 香港1|BGP中转|Netflix|1.2x 2
-      - 🇯🇵 日本1|BGP中转|Netflix 2
-      - 🇯🇵 日本2|BGP中转|Netflix 2
-      - 🇮🇳 印度|BGP中转 2
-      - 🇸🇬 新加坡|BGP中转|Netflix 2
-      - 🇮🇩 印度尼西亚|BGP中转|Netflix|1.2x
-      - 🇭🇰 香港2|BGP|Netflix
-      - 🇸🇬 Lv2新加坡2|V2Ray|中转优化 2
-      - 🇸🇬 Lv2新加坡4|V2Ray|中转优化 2
-      - 🇯🇵 Lv2日本3|V2Ray|中转优化 2
-      - 🇯🇵 Lv2日本4 | V2Ray|中转优化 2
-      - 52209 @WangCai_1
-      - 52283 @WangCai_1 2
-      - 52281 @WangCai_1 2
-      - 🇯🇵 日本1|广州移动中转|Netflix
-      - 52226 @WangCai_1 2
-      - 🏳️‍🌈 香港高速公益节点(有限流量)2.0 2
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 02 1.0x 2
-      - 🇨🇳 Ytb:鹏哥分享_CN_中国_167 2
-      - 🇭🇰 新加坡02丨广港隧道丨原生IP丨
-      - 🇯🇵 日本千兆-01号
+      - 52281 @WangCai_1
+      - 🇭🇰 ---v2节点-香港h5-稳定-cn2
+      - 🇭🇰 v2-香港HKBGP-hk3-cn2
+      - 🇯🇵 JP/日本02 - 1000M - 1x
+      - 🇸🇬 【新鸟免费】日本JP-AWS 05 1.0x 2
       - 🇯🇵 日本千兆-09号
       - 🇯🇵 日本千兆-10号
-      - 🇯🇵 日本千兆-11号 2
-      - 🇸🇬 新加坡千兆-01号 2
-      - 🇸🇬 新加坡千兆-03号 2
-      - 🇭🇰 v2-香港h6-g200 2
-      - 🇭🇰 ---v2节点-香港h5-稳定-cn2 2
-      - 🇭🇰 ---v2节点-香港h5-稳定-g300 2
-      - 🇸🇬 v2-新加坡24-g2 2
-      - 🇭🇰 v2-香港HKBGP-hk3-cn2 2
-      - 🇭🇰 v2-香港HKBGP5-g5 2
-      - 🇭🇰 v2节点-香港h5-g2 2
-      - 🇸🇬 SG/新加坡01 - 1000M - 1x 2
-      - 🇸🇬 SG/新加坡02 - 1000M - 1x 2
-      - 🇸🇬 SG/新加坡03 - 1000M - 1x 2
-      - 🇯🇵 JP/日本02 - 1000M - 1x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 04 1.0x
-      - 🇸🇬 【新鸟免费】日本JP-AWS 05 1.0x 2
-      - 🇸🇬 vpnpool-SG-DigitalOcean
-      - 52231 @WangCai_1
-      - 🇰🇷 韩国|V2Ray|中转优化 2
-      - 🇺🇸 美国千兆-05号
-      - 🇯🇵 v2-日本hk1-cn2 2
-      - 🇯🇵 日本千兆-09号 2
-      - 🇯🇵 日本千兆-10号 2
-      - 🇸🇬 新加坡千兆-01号 3
-      - 🇸🇬 新加坡千兆-03号 3
-      - 🇸🇬 n_52284 好兄弟，新年快乐
-      - 🇸🇬 n_52285 好兄弟，新年快乐
       - 🇸🇬 n_52207 好兄弟，新年快乐
-      - 🇸🇬 n_52215 好兄弟，新年快乐_24
       - 🇸🇬 n_52215 好兄弟，新年快乐_25
-      - 🇸🇬 n_52220 好兄弟，新年快乐
       - 🇸🇬 n_52221 好兄弟，新年快乐
-      - 🇸🇬 n_52220 好兄弟，新年快乐_28
       - 🇸🇬 n_52226 好兄弟，新年快乐
+      - 🇭🇰 香港IPServerOne 15
       - 🇭🇰 香港IPServerOne 16
-      - 🇭🇰 香港IPServerOne 17
-      - 🇭🇰 香港IPServerOne 18
-      - 🇭🇰 香港IPServerOne 19
-      - 🇭🇰 香港IPServerOne 20
-      - 🇭🇰 香港IPServerOne 21
-      - 🇭🇰 香港IPServerOne 22
-      - 🇭🇰 香港IPServerOne 23
-      - 🇭🇰 香港IPServerOne 24
-      - 🇭🇰 香港IPServerOne 25
-      - 🇭🇰 香港IPServerOne 26
-      - 🇭🇰 香港Azure-Bengaluru-DigitalOcean
-      - 🇭🇰 香港Azure-Tokyo-M247 2
-      - 🇭🇰 香港Azure-SG-DigitalOcean 2
-      - 🇭🇰 香港Azure-Santa Clara-DigitalOcean 2
-      - 🇭🇰 香港Azure-Bangkok-Scloud-nf 2
-      - 🇭🇰 香港Azure 2
-      - 🇭🇰 香港Azure-香港Scloud-nf 2
-      - 🇸🇬 SG-Azure
-      - 🇸🇬 新加坡1
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 04 1.0x 2
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 09 1.0x
+      - 🇸🇬 【新鸟免费】新加坡SG-AWS 04 1.0x
       - 🇸🇬 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 2
-      - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 3
       - 🇸🇬 【新鸟免费】日本JP-AWS 07 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 10 1.0x 2
-      - 🇸🇬 【新鸟免费】日本JP-AWS 10 1.0x
-      - 🇨🇳 A-台湾-02【NETFLIX丨迪士尼+】
-      - 🇭🇰 A-沪港IPLC→倍率5→香港14 2
-      - 🇭🇰 A-香港-15【NETFLIX】
-      - 🇭🇰 【V2】IPLC-香港13-倍率8【数据不过墙丨迪士尼+】 2
-      - 🇨🇳 【V2】台湾-01-【NETFLIX-非自制剧】
-      - 🇯🇵 【V2】日本-05-迪士尼+
-      - 🇭🇰 【V2】香港-02-Netflix
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡02
-      - 🇸🇬 新加坡04 2
-      - 🇸🇬 新加坡05
-      - 🇸🇬 新加坡06-联通
-      - 🇸🇬 新加坡07-联通 2
-      - 🇸🇬 新加坡08-联通 2
-      - 🇸🇬 新加坡09-联通 2
-      - 🇯🇵 日本-02
-      - 🇯🇵 日本-03
-      - 🇯🇵 日本-04
-      - 🇭🇰 香港-01【迪士尼+】
-      - 🇺🇸 美国2|BGP中转|Netflix 2
       - 🇭🇰 【低延迟】中转*广州移动-香港*03
-      - 🇯🇵 中转*广州移动-日本东京*03
-      - 🇭🇰 【推荐】IPLC专线广州-香港_12
-      - 52225 @WangCai_1
-      - 🇯🇵 日本2|SSR|中转优化 - 30001 单端口
-      - 🇯🇵 日本千兆-13号 2
-      - 🇭🇰 v2-香港HKBGP-hk3-g2 2
-      - 🇯🇵 v2-日本hk1-g5 2
-      - 🇨🇳 【新鸟免费】台湾TW-Hinet 05 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 01 1.0x
-      - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 3
-      - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 4
+      - 🇯🇵 v2-日本hk1-g5
+      - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 2
+      - 🇭🇰 香港_TG@nodesharing_15
+      - 🇭🇰 v2-香港HKBGP5-cn2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 02 1.0x
+      - 🇸🇬 【新鸟免费】日本JP-AWS 07 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 02 1.0x 2
+      - 🇺🇸 美国高速公益节点2.0
+      - 🇺🇸 美国高速公益节点
+      - 🇨🇳 -v2-台湾3-cn2
+      - 🇺🇸 v2-美国m1-cn2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 06 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 08 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 10 1.0x
+      - 🇨🇳 中国_TG@nodesharing_488
+      - 🇭🇰 HK/香港SS-01+-+1000M+-+1x
+      - 🇭🇰 HK/香港SS-05+-+1000M+-+1x
+      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x
+      - 🇸🇬 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - 🇺🇸 【推荐】上海联通-洛杉矶专线21
+      - 🇺🇸 [联通直连]-美国西雅图06
+      - 🇯🇵 v2-日本hk1-cn2
+      - FREE_V2ray_US_A 倍率*1
+      - FREE_V2ray_US_B 倍率*1
+      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x 2
+      - 🇭🇰 香港(绿头外网集团)(Public)
+      - 🇭🇰 香港(绿头外网集团)(Public) 2
+      - 🇭🇰 香港(绿头外网集团)(Public) 3
+      - 🇰🇷 韩国(绿头外网集团)(Public)
+      - 🇰🇷 韩国(绿头外网集团)(Public) 2
+      - 🇭🇰 香港(绿头外网集团)(Public) 4
+      - 🇸🇬 新加坡(绿头外网集团)(Public)
+      - 🇨🇳 中国_TG@nodesharing_14
+      - 🇸🇬 vip1-新加坡2||限速100M
+      - 🇸🇬 vip1-新加坡3||限速100M
+      - 🇯🇵 vip1-日本1||限速100M
+      - 🇯🇵 vip1-日本2||限速100M
+      - 🇯🇵 vip1-日本4||限速100M
+      - 🇺🇸 vip1-美国2||电信中继||限速100M
+      - 🇰🇷 vip1-韩国1||限速100M
+      - 🇰🇷 vip1-韩国2||限速100M
+      - 🇭🇰 vip1-香港1||限速100M
+      - 🇭🇰 vip1-香港3||限速100M
+      - 🇭🇰 vip1-香港5||限速100M
+      - 🇸🇬 vip2-新加坡2原生ip Netflix||限速500m
+      - 🇸🇬 vip2-新加坡3原生ip Netflix限速500m
+      - 🇯🇵 vip2-日本10原生ip Netflix||限速500m
+      - 🇯🇵 vip2-日本11广移||限速500m
+      - 🇯🇵 vip2-日本8原生IP Netflix||限速500m
+      - 🇰🇷 vip2-韩国2原生ip ||限速500m
+      - 🇭🇰 vip2-香港1 原生IP ||限速500M
+      - 🇭🇰 vip2-香港4 原生IP||北京BGP||限速500M
+      - 🇨🇳 vip3-台湾1 三网||限速1000M
+      - 🇯🇵 VIP3-日本1三网优化 极速||限速1000M
+      - 🇭🇰 VIP3-香港1三网优化||极速||限速1000M
+      - 🇭🇰 vip3-香港2 三网优化||极速||限速1000M
+      - 🇸🇬 每次连接前用国内网络更新订阅
+      - 🇸🇬 中转|新加坡Singtel01|华南隧道[流媒体解锁]
+      - 🇯🇵 中转|日本GMO07|华南隧道[流媒体解锁]
+      - 🇭🇰 香港1|广州入口
+      - 🇭🇰 香港2|广州入口|原生|NF
+      - 🇭🇰 香港3|广州入口|原生
+      - 🇭🇰 香港5|长沙入口|原生
+      - 🇭🇰 香港7|安徽入口|原生
+      - 🇨🇳 台湾1|长沙入口|原生|NF
+      - 🇨🇳 台湾2|安徽入口|原生|NF
+      - 🇯🇵 日本1|杭州入口|原生|NF
+      - 🇯🇵 日本2|杭州入口|原生|NF
+      - 🇯🇵 日本3|长沙入口|原生|NF
+      - 🇯🇵 日本5|杭州入口|原生|NF
+      - 🇸🇬 新加坡2|广州入口
+      - 🇸🇬 新加坡3|广州入口
+      - 🇭🇰 香港1|广州入口 2
+      - 🇭🇰 香港2|广州入口|原生|NF 2
+      - 🇭🇰 香港3|广州入口|原生 2
+      - 🇭🇰 香港5|长沙入口|原生 2
+      - 🇭🇰 香港7|安徽入口|原生 2
+      - 🇨🇳 台湾1|长沙入口|原生|NF 2
+      - 🇯🇵 日本1|杭州入口|原生|NF 2
+      - 🇯🇵 日本2|杭州入口|原生|NF 2
+      - 🇯🇵 日本3|长沙入口|原生|NF 2
+      - 🇯🇵 日本5|杭州入口|原生|NF 2
+      - 🇸🇬 新加坡2|广州入口 2
+      - 🇸🇬 新加坡3|广州入口 2
+      - 🇭🇰 汕头联通=>HK-HGC-500Mbps
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 503
       - 52298 @WangCai_1
-      - 52282 @WangCai_1
-      - 🇭🇰 香港1|BGP中转|Netflix|1.2x
-      - 🇯🇵 日本1|BGP中转|Netflix
-      - 🇯🇵 日本2|BGP中转|Netflix
-      - 🇮🇳 印度|BGP中转
-      - 🇸🇬 新加坡|BGP中转|Netflix
-      - 🇮🇳 印度|广州移动中转
-      - 🇸🇬 新加坡|广州移动中转|Netflix
       - 🇸🇬 Lv2新加坡2|V2Ray|中转优化
       - 🇸🇬 Lv2新加坡4|V2Ray|中转优化
       - 🇯🇵 Lv2日本3|V2Ray|中转优化
       - 🇯🇵 Lv2日本4 | V2Ray|中转优化
       - 52283 @WangCai_1
-      - 52281 @WangCai_1
       - 52226 @WangCai_1
-      - 52215 @WangCai_1
       - 🏳️‍🌈 香港高速公益节点(有限流量)2.0
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 02 1.0x
-      - 🇯🇵 日本2|广州移动中转|Netflix
-      - 🇨🇳 Ytb:鹏哥分享_CN_中国_167
-      - 🇭🇰 香港_TG@nodesharing_4
       - 🇯🇵 日本千兆-11号
-      - 🇸🇬 新加坡千兆-01号
-      - 🇸🇬 新加坡千兆-03号
       - 🇭🇰 v2-香港h6-g200
-      - 🇭🇰 ---v2节点-香港h5-稳定-cn2
       - 🇭🇰 ---v2节点-香港h5-稳定-g300
       - 🇸🇬 v2-新加坡24-g2
-      - 🇭🇰 v2-香港HKBGP-hk3-cn2
-      - 🇭🇰 v2-香港HKBGP5-cn2
       - 🇭🇰 v2-香港HKBGP5-g5
       - 🇭🇰 v2节点-香港h5-g2
       - 🇸🇬 SG/新加坡01 - 1000M - 1x
@@ -477,8 +353,6 @@ proxy-groups:
       - 🇸🇬 【新鸟免费】新加坡SG-AWS 07 1.0x
       - 🇰🇷 韩国|V2Ray|中转优化
       - 🇭🇰 香港1| V2Ray | 流媒体优选
-      - 🇸🇬 新加坡1|SSR|中转优化 - 30002 单端口
-      - 🇯🇵 v2-日本hk1-cn2
       - 🇨🇳 【新鸟免费】台湾TW-Hinet 04 1.0x
       - 🇭🇰 香港IPServerOne
       - 🇭🇰 香港IPServerOne 2
@@ -493,152 +367,119 @@ proxy-groups:
       - 🇭🇰 香港IPServerOne 11
       - 🇭🇰 香港IPServerOne 12
       - 🇭🇰 香港IPServerOne 13
-      - 🇭🇰 香港IPServerOne 14
-      - 🇭🇰 香港Azure-Tokyo-M247
-      - 🇭🇰 香港Azure-SG-DigitalOcean
-      - 🇭🇰 香港Azure-Santa Clara-DigitalOcean
-      - 🇭🇰 香港Azure-Bangkok-Scloud-nf
-      - 🇭🇰 香港Azure
-      - 🇭🇰 香港Azure-香港Scloud-nf
       - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x
       - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x
       - 🇸🇬 【新鸟免费】日本JP-AWS 05 1.0x
       - 🇸🇬 【新鸟免费】日本JP-AWS 06 1.0x
-      - 🇭🇰 A-沪港IPLC→倍率5→香港14
-      - 🇭🇰 【V2】IPLC-香港13-倍率8【数据不过墙丨迪士尼+】
-      - 🇸🇬 新加坡04
-      - 🇸🇬 新加坡07-联通
-      - 🇸🇬 新加坡08-联通
-      - 🇸🇬 新加坡09-联通
-      - 🇺🇸 美国2|BGP中转|Netflix
-      - 🇯🇵 日本千兆-05号
       - 🇯🇵 日本千兆-13号
       - 🇭🇰 v2-香港HKBGP-hk3-g2
-      - 🇯🇵 v2-日本hk1-g5
       - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 2
-      - 🇭🇰 香港IPServerOne 15
+      - 🇭🇰 香港IPServerOne 14
       - 🇸🇬 【新鸟免费】日本JP-AWS 08 1.0x
-      - 52298 @WangCai_1 2
-      - 52282 @WangCai_1 2
+      - 52282 @WangCai_1
       - 🇭🇰 香港_TG@nodesharing_13
-      - 🇭🇰 香港1|BGP中转|Netflix|1.2x 2
-      - 🇯🇵 日本1|BGP中转|Netflix 2
-      - 🇯🇵 日本2|BGP中转|Netflix 2
-      - 🇮🇳 印度|BGP中转 2
-      - 🇸🇬 新加坡|BGP中转|Netflix 2
-      - 🇮🇩 印度尼西亚|BGP中转|Netflix|1.2x
-      - 🇭🇰 香港2|BGP|Netflix
-      - 🇸🇬 Lv2新加坡2|V2Ray|中转优化 2
-      - 🇸🇬 Lv2新加坡4|V2Ray|中转优化 2
-      - 🇯🇵 Lv2日本3|V2Ray|中转优化 2
-      - 🇯🇵 Lv2日本4 | V2Ray|中转优化 2
-      - 52209 @WangCai_1
-      - 52283 @WangCai_1 2
-      - 52281 @WangCai_1 2
-      - 🇯🇵 日本1|广州移动中转|Netflix
-      - 52226 @WangCai_1 2
-      - 🏳️‍🌈 香港高速公益节点(有限流量)2.0 2
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 02 1.0x 2
-      - 🇨🇳 Ytb:鹏哥分享_CN_中国_167 2
-      - 🇭🇰 新加坡02丨广港隧道丨原生IP丨
-      - 🇯🇵 日本千兆-01号
+      - 52281 @WangCai_1
+      - 🇭🇰 ---v2节点-香港h5-稳定-cn2
+      - 🇭🇰 v2-香港HKBGP-hk3-cn2
+      - 🇯🇵 JP/日本02 - 1000M - 1x
+      - 🇸🇬 【新鸟免费】日本JP-AWS 05 1.0x 2
       - 🇯🇵 日本千兆-09号
       - 🇯🇵 日本千兆-10号
-      - 🇯🇵 日本千兆-11号 2
-      - 🇸🇬 新加坡千兆-01号 2
-      - 🇸🇬 新加坡千兆-03号 2
-      - 🇭🇰 v2-香港h6-g200 2
-      - 🇭🇰 ---v2节点-香港h5-稳定-cn2 2
-      - 🇭🇰 ---v2节点-香港h5-稳定-g300 2
-      - 🇸🇬 v2-新加坡24-g2 2
-      - 🇭🇰 v2-香港HKBGP-hk3-cn2 2
-      - 🇭🇰 v2-香港HKBGP5-g5 2
-      - 🇭🇰 v2节点-香港h5-g2 2
-      - 🇸🇬 SG/新加坡01 - 1000M - 1x 2
-      - 🇸🇬 SG/新加坡02 - 1000M - 1x 2
-      - 🇸🇬 SG/新加坡03 - 1000M - 1x 2
-      - 🇯🇵 JP/日本02 - 1000M - 1x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 04 1.0x
-      - 🇸🇬 【新鸟免费】日本JP-AWS 05 1.0x 2
-      - 🇸🇬 vpnpool-SG-DigitalOcean
-      - 52231 @WangCai_1
-      - 🇰🇷 韩国|V2Ray|中转优化 2
-      - 🇺🇸 美国千兆-05号
-      - 🇯🇵 v2-日本hk1-cn2 2
-      - 🇯🇵 日本千兆-09号 2
-      - 🇯🇵 日本千兆-10号 2
-      - 🇸🇬 新加坡千兆-01号 3
-      - 🇸🇬 新加坡千兆-03号 3
-      - 🇸🇬 n_52284 好兄弟，新年快乐
-      - 🇸🇬 n_52285 好兄弟，新年快乐
       - 🇸🇬 n_52207 好兄弟，新年快乐
-      - 🇸🇬 n_52215 好兄弟，新年快乐_24
       - 🇸🇬 n_52215 好兄弟，新年快乐_25
-      - 🇸🇬 n_52220 好兄弟，新年快乐
       - 🇸🇬 n_52221 好兄弟，新年快乐
-      - 🇸🇬 n_52220 好兄弟，新年快乐_28
       - 🇸🇬 n_52226 好兄弟，新年快乐
+      - 🇭🇰 香港IPServerOne 15
       - 🇭🇰 香港IPServerOne 16
-      - 🇭🇰 香港IPServerOne 17
-      - 🇭🇰 香港IPServerOne 18
-      - 🇭🇰 香港IPServerOne 19
-      - 🇭🇰 香港IPServerOne 20
-      - 🇭🇰 香港IPServerOne 21
-      - 🇭🇰 香港IPServerOne 22
-      - 🇭🇰 香港IPServerOne 23
-      - 🇭🇰 香港IPServerOne 24
-      - 🇭🇰 香港IPServerOne 25
-      - 🇭🇰 香港IPServerOne 26
-      - 🇭🇰 香港Azure-Bengaluru-DigitalOcean
-      - 🇭🇰 香港Azure-Tokyo-M247 2
-      - 🇭🇰 香港Azure-SG-DigitalOcean 2
-      - 🇭🇰 香港Azure-Santa Clara-DigitalOcean 2
-      - 🇭🇰 香港Azure-Bangkok-Scloud-nf 2
-      - 🇭🇰 香港Azure 2
-      - 🇭🇰 香港Azure-香港Scloud-nf 2
-      - 🇸🇬 SG-Azure
-      - 🇸🇬 新加坡1
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 04 1.0x 2
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 09 1.0x
+      - 🇸🇬 【新鸟免费】新加坡SG-AWS 04 1.0x
       - 🇸🇬 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 2
-      - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 3
       - 🇸🇬 【新鸟免费】日本JP-AWS 07 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 10 1.0x 2
-      - 🇸🇬 【新鸟免费】日本JP-AWS 10 1.0x
-      - 🇨🇳 A-台湾-02【NETFLIX丨迪士尼+】
-      - 🇭🇰 A-沪港IPLC→倍率5→香港14 2
-      - 🇭🇰 A-香港-15【NETFLIX】
-      - 🇭🇰 【V2】IPLC-香港13-倍率8【数据不过墙丨迪士尼+】 2
-      - 🇨🇳 【V2】台湾-01-【NETFLIX-非自制剧】
-      - 🇯🇵 【V2】日本-05-迪士尼+
-      - 🇭🇰 【V2】香港-02-Netflix
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡02
-      - 🇸🇬 新加坡04 2
-      - 🇸🇬 新加坡05
-      - 🇸🇬 新加坡06-联通
-      - 🇸🇬 新加坡07-联通 2
-      - 🇸🇬 新加坡08-联通 2
-      - 🇸🇬 新加坡09-联通 2
-      - 🇯🇵 日本-02
-      - 🇯🇵 日本-03
-      - 🇯🇵 日本-04
-      - 🇭🇰 香港-01【迪士尼+】
-      - 🇺🇸 美国2|BGP中转|Netflix 2
       - 🇭🇰 【低延迟】中转*广州移动-香港*03
-      - 🇯🇵 中转*广州移动-日本东京*03
-      - 🇭🇰 【推荐】IPLC专线广州-香港_12
-      - 52225 @WangCai_1
-      - 🇯🇵 日本2|SSR|中转优化 - 30001 单端口
-      - 🇯🇵 日本千兆-13号 2
-      - 🇭🇰 v2-香港HKBGP-hk3-g2 2
-      - 🇯🇵 v2-日本hk1-g5 2
-      - 🇨🇳 【新鸟免费】台湾TW-Hinet 05 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 01 1.0x
-      - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 3
-      - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 4
+      - 🇯🇵 v2-日本hk1-g5
+      - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 2
+      - 🇭🇰 香港_TG@nodesharing_15
+      - 🇭🇰 v2-香港HKBGP5-cn2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 02 1.0x
+      - 🇸🇬 【新鸟免费】日本JP-AWS 07 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 02 1.0x 2
+      - 🇺🇸 美国高速公益节点2.0
+      - 🇺🇸 美国高速公益节点
+      - 🇨🇳 -v2-台湾3-cn2
+      - 🇺🇸 v2-美国m1-cn2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 06 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 08 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 10 1.0x
+      - 🇨🇳 中国_TG@nodesharing_488
+      - 🇭🇰 HK/香港SS-01+-+1000M+-+1x
+      - 🇭🇰 HK/香港SS-05+-+1000M+-+1x
+      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x
+      - 🇸🇬 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - 🇺🇸 【推荐】上海联通-洛杉矶专线21
+      - 🇺🇸 [联通直连]-美国西雅图06
+      - 🇯🇵 v2-日本hk1-cn2
+      - FREE_V2ray_US_A 倍率*1
+      - FREE_V2ray_US_B 倍率*1
+      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x 2
+      - 🇭🇰 香港(绿头外网集团)(Public)
+      - 🇭🇰 香港(绿头外网集团)(Public) 2
+      - 🇭🇰 香港(绿头外网集团)(Public) 3
+      - 🇰🇷 韩国(绿头外网集团)(Public)
+      - 🇰🇷 韩国(绿头外网集团)(Public) 2
+      - 🇭🇰 香港(绿头外网集团)(Public) 4
+      - 🇸🇬 新加坡(绿头外网集团)(Public)
+      - 🇨🇳 中国_TG@nodesharing_14
+      - 🇸🇬 vip1-新加坡2||限速100M
+      - 🇸🇬 vip1-新加坡3||限速100M
+      - 🇯🇵 vip1-日本1||限速100M
+      - 🇯🇵 vip1-日本2||限速100M
+      - 🇯🇵 vip1-日本4||限速100M
+      - 🇺🇸 vip1-美国2||电信中继||限速100M
+      - 🇰🇷 vip1-韩国1||限速100M
+      - 🇰🇷 vip1-韩国2||限速100M
+      - 🇭🇰 vip1-香港1||限速100M
+      - 🇭🇰 vip1-香港3||限速100M
+      - 🇭🇰 vip1-香港5||限速100M
+      - 🇸🇬 vip2-新加坡2原生ip Netflix||限速500m
+      - 🇸🇬 vip2-新加坡3原生ip Netflix限速500m
+      - 🇯🇵 vip2-日本10原生ip Netflix||限速500m
+      - 🇯🇵 vip2-日本11广移||限速500m
+      - 🇯🇵 vip2-日本8原生IP Netflix||限速500m
+      - 🇰🇷 vip2-韩国2原生ip ||限速500m
+      - 🇭🇰 vip2-香港1 原生IP ||限速500M
+      - 🇭🇰 vip2-香港4 原生IP||北京BGP||限速500M
+      - 🇨🇳 vip3-台湾1 三网||限速1000M
+      - 🇯🇵 VIP3-日本1三网优化 极速||限速1000M
+      - 🇭🇰 VIP3-香港1三网优化||极速||限速1000M
+      - 🇭🇰 vip3-香港2 三网优化||极速||限速1000M
+      - 🇸🇬 每次连接前用国内网络更新订阅
+      - 🇸🇬 中转|新加坡Singtel01|华南隧道[流媒体解锁]
+      - 🇯🇵 中转|日本GMO07|华南隧道[流媒体解锁]
+      - 🇭🇰 香港1|广州入口
+      - 🇭🇰 香港2|广州入口|原生|NF
+      - 🇭🇰 香港3|广州入口|原生
+      - 🇭🇰 香港5|长沙入口|原生
+      - 🇭🇰 香港7|安徽入口|原生
+      - 🇨🇳 台湾1|长沙入口|原生|NF
+      - 🇨🇳 台湾2|安徽入口|原生|NF
+      - 🇯🇵 日本1|杭州入口|原生|NF
+      - 🇯🇵 日本2|杭州入口|原生|NF
+      - 🇯🇵 日本3|长沙入口|原生|NF
+      - 🇯🇵 日本5|杭州入口|原生|NF
+      - 🇸🇬 新加坡2|广州入口
+      - 🇸🇬 新加坡3|广州入口
+      - 🇭🇰 香港1|广州入口 2
+      - 🇭🇰 香港2|广州入口|原生|NF 2
+      - 🇭🇰 香港3|广州入口|原生 2
+      - 🇭🇰 香港5|长沙入口|原生 2
+      - 🇭🇰 香港7|安徽入口|原生 2
+      - 🇨🇳 台湾1|长沙入口|原生|NF 2
+      - 🇯🇵 日本1|杭州入口|原生|NF 2
+      - 🇯🇵 日本2|杭州入口|原生|NF 2
+      - 🇯🇵 日本3|长沙入口|原生|NF 2
+      - 🇯🇵 日本5|杭州入口|原生|NF 2
+      - 🇸🇬 新加坡2|广州入口 2
+      - 🇸🇬 新加坡3|广州入口 2
+      - 🇭🇰 汕头联通=>HK-HGC-500Mbps
   - name: 🎯 国内网络
     type: select
     proxies:
@@ -791,6 +632,8 @@ proxy-groups:
       - 🚀 全局设置
       - ♻️ 自动选择
       - 🇭🇰 HK/香港03 - 1000M - 2x - 流媒体解锁
+      - 🇸🇬 中转|新加坡Singtel01|华南隧道[流媒体解锁]
+      - 🇯🇵 中转|日本GMO07|华南隧道[流媒体解锁]
   - name: 🛑 广告拦截
     type: select
     proxies:
@@ -819,14 +662,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 香港1|BGP中转|Netflix|1.2x
       - 🏳️‍🌈 香港高速公益节点(有限流量)2.0
-      - 🇭🇰 香港_TG@nodesharing_4
       - 🇭🇰 v2-香港h6-g200
-      - 🇭🇰 ---v2节点-香港h5-稳定-cn2
       - 🇭🇰 ---v2节点-香港h5-稳定-g300
-      - 🇭🇰 v2-香港HKBGP-hk3-cn2
-      - 🇭🇰 v2-香港HKBGP5-cn2
       - 🇭🇰 v2-香港HKBGP5-g5
       - 🇭🇰 v2节点-香港h5-g2
       - 🇭🇰 HK/香港03 - 1000M - 2x - 流媒体解锁
@@ -844,242 +682,211 @@ proxy-groups:
       - 🇭🇰 香港IPServerOne 11
       - 🇭🇰 香港IPServerOne 12
       - 🇭🇰 香港IPServerOne 13
-      - 🇭🇰 香港IPServerOne 14
-      - 🇭🇰 香港Azure-Tokyo-M247
-      - 🇭🇰 香港Azure-SG-DigitalOcean
-      - 🇭🇰 香港Azure-Santa Clara-DigitalOcean
-      - 🇭🇰 香港Azure-Bangkok-Scloud-nf
-      - 🇭🇰 香港Azure
-      - 🇭🇰 香港Azure-香港Scloud-nf
-      - 🇭🇰 A-沪港IPLC→倍率5→香港14
-      - 🇭🇰 【V2】IPLC-香港13-倍率8【数据不过墙丨迪士尼+】
       - 🇭🇰 v2-香港HKBGP-hk3-g2
-      - 🇭🇰 香港IPServerOne 15
+      - 🇭🇰 香港IPServerOne 14
       - 🇭🇰 香港_TG@nodesharing_13
-      - 🇭🇰 香港1|BGP中转|Netflix|1.2x 2
-      - 🇭🇰 香港2|BGP|Netflix
-      - 🏳️‍🌈 香港高速公益节点(有限流量)2.0 2
-      - 🇭🇰 新加坡02丨广港隧道丨原生IP丨
-      - 🇭🇰 v2-香港h6-g200 2
-      - 🇭🇰 ---v2节点-香港h5-稳定-cn2 2
-      - 🇭🇰 ---v2节点-香港h5-稳定-g300 2
-      - 🇭🇰 v2-香港HKBGP-hk3-cn2 2
-      - 🇭🇰 v2-香港HKBGP5-g5 2
-      - 🇭🇰 v2节点-香港h5-g2 2
+      - 🇭🇰 ---v2节点-香港h5-稳定-cn2
+      - 🇭🇰 v2-香港HKBGP-hk3-cn2
+      - 🇭🇰 香港IPServerOne 15
       - 🇭🇰 香港IPServerOne 16
-      - 🇭🇰 香港IPServerOne 17
-      - 🇭🇰 香港IPServerOne 18
-      - 🇭🇰 香港IPServerOne 19
-      - 🇭🇰 香港IPServerOne 20
-      - 🇭🇰 香港IPServerOne 21
-      - 🇭🇰 香港IPServerOne 22
-      - 🇭🇰 香港IPServerOne 23
-      - 🇭🇰 香港IPServerOne 24
-      - 🇭🇰 香港IPServerOne 25
-      - 🇭🇰 香港IPServerOne 26
-      - 🇭🇰 香港Azure-Bengaluru-DigitalOcean
-      - 🇭🇰 香港Azure-Tokyo-M247 2
-      - 🇭🇰 香港Azure-SG-DigitalOcean 2
-      - 🇭🇰 香港Azure-Santa Clara-DigitalOcean 2
-      - 🇭🇰 香港Azure-Bangkok-Scloud-nf 2
-      - 🇭🇰 香港Azure 2
-      - 🇭🇰 香港Azure-香港Scloud-nf 2
-      - 🇭🇰 A-沪港IPLC→倍率5→香港14 2
-      - 🇭🇰 A-香港-15【NETFLIX】
-      - 🇭🇰 【V2】IPLC-香港13-倍率8【数据不过墙丨迪士尼+】 2
-      - 🇭🇰 【V2】香港-02-Netflix
-      - 🇭🇰 香港-01【迪士尼+】
       - 🇭🇰 【低延迟】中转*广州移动-香港*03
-      - 🇭🇰 【推荐】IPLC专线广州-香港_12
-      - 🇭🇰 v2-香港HKBGP-hk3-g2 2
+      - 🇭🇰 香港_TG@nodesharing_15
+      - 🇭🇰 v2-香港HKBGP5-cn2
+      - 🇭🇰 HK/香港SS-01+-+1000M+-+1x
+      - 🇭🇰 HK/香港SS-05+-+1000M+-+1x
+      - 🇭🇰 香港(绿头外网集团)(Public)
+      - 🇭🇰 香港(绿头外网集团)(Public) 2
+      - 🇭🇰 香港(绿头外网集团)(Public) 3
+      - 🇭🇰 香港(绿头外网集团)(Public) 4
+      - 🇭🇰 vip1-香港1||限速100M
+      - 🇭🇰 vip1-香港3||限速100M
+      - 🇭🇰 vip1-香港5||限速100M
+      - 🇭🇰 vip2-香港1 原生IP ||限速500M
+      - 🇭🇰 vip2-香港4 原生IP||北京BGP||限速500M
+      - 🇭🇰 VIP3-香港1三网优化||极速||限速1000M
+      - 🇭🇰 vip3-香港2 三网优化||极速||限速1000M
+      - 🇭🇰 香港1|广州入口
+      - 🇭🇰 香港2|广州入口|原生|NF
+      - 🇭🇰 香港3|广州入口|原生
+      - 🇭🇰 香港5|长沙入口|原生
+      - 🇭🇰 香港7|安徽入口|原生
+      - 🇭🇰 香港1|广州入口 2
+      - 🇭🇰 香港2|广州入口|原生|NF 2
+      - 🇭🇰 香港3|广州入口|原生 2
+      - 🇭🇰 香港5|长沙入口|原生 2
+      - 🇭🇰 香港7|安徽入口|原生 2
+      - 🇭🇰 汕头联通=>HK-HGC-500Mbps
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇯🇵 日本1|BGP中转|Netflix
-      - 🇯🇵 日本2|BGP中转|Netflix
       - 🇯🇵 Lv2日本3|V2Ray|中转优化
       - 🇯🇵 Lv2日本4 | V2Ray|中转优化
-      - 🇯🇵 日本2|广州移动中转|Netflix
       - 🇯🇵 日本千兆-11号
       - 🇯🇵 JP/日本01 - 1000M - 1x
-      - 🇯🇵 v2-日本hk1-cn2
       - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x
       - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x
       - 🇸🇬 【新鸟免费】日本JP-AWS 05 1.0x
       - 🇸🇬 【新鸟免费】日本JP-AWS 06 1.0x
-      - 🇯🇵 日本千兆-05号
       - 🇯🇵 日本千兆-13号
-      - 🇯🇵 v2-日本hk1-g5
       - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 2
       - 🇸🇬 【新鸟免费】日本JP-AWS 08 1.0x
-      - 🇯🇵 日本1|BGP中转|Netflix 2
-      - 🇯🇵 日本2|BGP中转|Netflix 2
-      - 🇯🇵 Lv2日本3|V2Ray|中转优化 2
-      - 🇯🇵 Lv2日本4 | V2Ray|中转优化 2
-      - 🇯🇵 日本1|广州移动中转|Netflix
-      - 🇯🇵 日本千兆-01号
-      - 🇯🇵 日本千兆-09号
-      - 🇯🇵 日本千兆-10号
-      - 🇯🇵 日本千兆-11号 2
       - 🇯🇵 JP/日本02 - 1000M - 1x
       - 🇸🇬 【新鸟免费】日本JP-AWS 05 1.0x 2
-      - 🇯🇵 v2-日本hk1-cn2 2
-      - 🇯🇵 日本千兆-09号 2
-      - 🇯🇵 日本千兆-10号 2
-      - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 2
-      - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 3
+      - 🇯🇵 日本千兆-09号
+      - 🇯🇵 日本千兆-10号
       - 🇸🇬 【新鸟免费】日本JP-AWS 07 1.0x
+      - 🇯🇵 v2-日本hk1-g5
+      - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 02 1.0x
+      - 🇸🇬 【新鸟免费】日本JP-AWS 07 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 02 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 06 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 08 1.0x 2
       - 🇸🇬 【新鸟免费】日本JP-AWS 10 1.0x
-      - 🇯🇵 【V2】日本-05-迪士尼+
-      - 🇯🇵 日本-02
-      - 🇯🇵 日本-03
-      - 🇯🇵 日本-04
-      - 🇯🇵 中转*广州移动-日本东京*03
-      - 🇯🇵 日本2|SSR|中转优化 - 30001 单端口
-      - 🇯🇵 日本千兆-13号 2
-      - 🇯🇵 v2-日本hk1-g5 2
-      - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 3
-      - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 4
+      - 🇯🇵 v2-日本hk1-cn2
+      - 🇯🇵 vip1-日本1||限速100M
+      - 🇯🇵 vip1-日本2||限速100M
+      - 🇯🇵 vip1-日本4||限速100M
+      - 🇯🇵 vip2-日本10原生ip Netflix||限速500m
+      - 🇯🇵 vip2-日本11广移||限速500m
+      - 🇯🇵 vip2-日本8原生IP Netflix||限速500m
+      - 🇯🇵 VIP3-日本1三网优化 极速||限速1000M
+      - 🇯🇵 中转|日本GMO07|华南隧道[流媒体解锁]
+      - 🇯🇵 日本1|杭州入口|原生|NF
+      - 🇯🇵 日本2|杭州入口|原生|NF
+      - 🇯🇵 日本3|长沙入口|原生|NF
+      - 🇯🇵 日本5|杭州入口|原生|NF
+      - 🇯🇵 日本1|杭州入口|原生|NF 2
+      - 🇯🇵 日本2|杭州入口|原生|NF 2
+      - 🇯🇵 日本3|长沙入口|原生|NF 2
+      - 🇯🇵 日本5|杭州入口|原生|NF 2
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 美国2|BGP中转|Netflix
-      - 🇺🇸 美国千兆-05号
-      - 🇺🇸 美国2|BGP中转|Netflix 2
+      - 🇺🇸 美国高速公益节点2.0
+      - 🇺🇸 美国高速公益节点
+      - 🇺🇸 v2-美国m1-cn2
+      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x
+      - 🇸🇬 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - 🇺🇸 【推荐】上海联通-洛杉矶专线21
+      - 🇺🇸 [联通直连]-美国西雅图06
+      - FREE_V2ray_US_A 倍率*1
+      - FREE_V2ray_US_B 倍率*1
+      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x 2
+      - 🇺🇸 vip1-美国2||电信中继||限速100M
   - name: 🇸🇬 新加坡节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇸🇬 新加坡|BGP中转|Netflix
-      - 🇸🇬 新加坡|广州移动中转|Netflix
       - 🇸🇬 Lv2新加坡2|V2Ray|中转优化
       - 🇸🇬 Lv2新加坡4|V2Ray|中转优化
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 02 1.0x
-      - 🇸🇬 新加坡千兆-01号
-      - 🇸🇬 新加坡千兆-03号
       - 🇸🇬 v2-新加坡24-g2
       - 🇸🇬 SG/新加坡01 - 1000M - 1x
       - 🇸🇬 SG/新加坡02 - 1000M - 1x
       - 🇸🇬 SG/新加坡03 - 1000M - 1x
       - 🇸🇬 【新鸟免费】新加坡SG-AWS 05 1.0x
       - 🇸🇬 【新鸟免费】新加坡SG-AWS 07 1.0x
-      - 🇸🇬 新加坡1|SSR|中转优化 - 30002 单端口
       - 🇨🇳 【新鸟免费】台湾TW-Hinet 04 1.0x
-      - 🇭🇰 香港Azure-SG-DigitalOcean
       - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x
       - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x
       - 🇸🇬 【新鸟免费】日本JP-AWS 05 1.0x
       - 🇸🇬 【新鸟免费】日本JP-AWS 06 1.0x
-      - 🇸🇬 新加坡04
-      - 🇸🇬 新加坡07-联通
-      - 🇸🇬 新加坡08-联通
-      - 🇸🇬 新加坡09-联通
       - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 2
       - 🇸🇬 【新鸟免费】日本JP-AWS 08 1.0x
-      - 🇸🇬 新加坡|BGP中转|Netflix 2
-      - 🇸🇬 Lv2新加坡2|V2Ray|中转优化 2
-      - 🇸🇬 Lv2新加坡4|V2Ray|中转优化 2
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 02 1.0x 2
-      - 🇭🇰 新加坡02丨广港隧道丨原生IP丨
-      - 🇸🇬 新加坡千兆-01号 2
-      - 🇸🇬 新加坡千兆-03号 2
-      - 🇸🇬 v2-新加坡24-g2 2
-      - 🇸🇬 SG/新加坡01 - 1000M - 1x 2
-      - 🇸🇬 SG/新加坡02 - 1000M - 1x 2
-      - 🇸🇬 SG/新加坡03 - 1000M - 1x 2
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 04 1.0x
       - 🇸🇬 【新鸟免费】日本JP-AWS 05 1.0x 2
-      - 🇸🇬 vpnpool-SG-DigitalOcean
-      - 🇸🇬 新加坡千兆-01号 3
-      - 🇸🇬 新加坡千兆-03号 3
-      - 🇸🇬 n_52284 好兄弟，新年快乐
-      - 🇸🇬 n_52285 好兄弟，新年快乐
       - 🇸🇬 n_52207 好兄弟，新年快乐
-      - 🇸🇬 n_52215 好兄弟，新年快乐_24
       - 🇸🇬 n_52215 好兄弟，新年快乐_25
-      - 🇸🇬 n_52220 好兄弟，新年快乐
       - 🇸🇬 n_52221 好兄弟，新年快乐
-      - 🇸🇬 n_52220 好兄弟，新年快乐_28
       - 🇸🇬 n_52226 好兄弟，新年快乐
-      - 🇭🇰 香港Azure-SG-DigitalOcean 2
-      - 🇸🇬 SG-Azure
-      - 🇸🇬 新加坡1
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 04 1.0x 2
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 09 1.0x
+      - 🇸🇬 【新鸟免费】新加坡SG-AWS 04 1.0x
       - 🇸🇬 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 2
-      - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 3
       - 🇸🇬 【新鸟免费】日本JP-AWS 07 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 02 1.0x
+      - 🇸🇬 【新鸟免费】日本JP-AWS 07 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 02 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 06 1.0x 2
+      - 🇸🇬 【新鸟免费】日本JP-AWS 08 1.0x 2
       - 🇸🇬 【新鸟免费】日本JP-AWS 10 1.0x
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡02
-      - 🇸🇬 新加坡04 2
-      - 🇸🇬 新加坡05
-      - 🇸🇬 新加坡06-联通
-      - 🇸🇬 新加坡07-联通 2
-      - 🇸🇬 新加坡08-联通 2
-      - 🇸🇬 新加坡09-联通 2
-      - 🇨🇳 【新鸟免费】台湾TW-Hinet 05 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 01 1.0x
-      - 🇸🇬 【新鸟免费】日本JP-AWS 01 1.0x 3
-      - 🇸🇬 【新鸟免费】日本JP-AWS 04 1.0x 4
+      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x
+      - 🇸🇬 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x 2
+      - 🇸🇬 新加坡(绿头外网集团)(Public)
+      - 🇸🇬 vip1-新加坡2||限速100M
+      - 🇸🇬 vip1-新加坡3||限速100M
+      - 🇸🇬 vip2-新加坡2原生ip Netflix||限速500m
+      - 🇸🇬 vip2-新加坡3原生ip Netflix限速500m
+      - 🇸🇬 每次连接前用国内网络更新订阅
+      - 🇸🇬 中转|新加坡Singtel01|华南隧道[流媒体解锁]
+      - 🇸🇬 新加坡2|广州入口
+      - 🇸🇬 新加坡3|广州入口
+      - 🇸🇬 新加坡2|广州入口 2
+      - 🇸🇬 新加坡3|广州入口 2
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 🇨🇳 【新鸟免费】台湾TW-Hinet 04 1.0x
-      - 🇨🇳 A-台湾-02【NETFLIX丨迪士尼+】
-      - 🇨🇳 【V2】台湾-01-【NETFLIX-非自制剧】
-      - 🇨🇳 【新鸟免费】台湾TW-Hinet 05 1.0x
+      - 🇨🇳 -v2-台湾3-cn2
+      - 🇨🇳 vip3-台湾1 三网||限速1000M
+      - 🇨🇳 台湾1|长沙入口|原生|NF
+      - 🇨🇳 台湾2|安徽入口|原生|NF
+      - 🇨🇳 台湾1|长沙入口|原生|NF 2
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 🇰🇷 韩国|V2Ray|中转优化
-      - 🇰🇷 韩国|V2Ray|中转优化 2
+      - 🇰🇷 韩国(绿头外网集团)(Public)
+      - 🇰🇷 韩国(绿头外网集团)(Public) 2
+      - 🇰🇷 vip1-韩国1||限速100M
+      - 🇰🇷 vip1-韩国2||限速100M
+      - 🇰🇷 vip2-韩国2原生ip ||限速500m
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - 🇭🇰 香港1|BGP中转|Netflix|1.2x
-      - 🇯🇵 日本1|BGP中转|Netflix
-      - 🇯🇵 日本2|BGP中转|Netflix
-      - 🇸🇬 新加坡|BGP中转|Netflix
-      - 🇸🇬 新加坡|广州移动中转|Netflix
-      - 🇯🇵 日本2|广州移动中转|Netflix
       - 🇭🇰 HK/香港03 - 1000M - 2x - 流媒体解锁
-      - 🇺🇸 美国2|BGP中转|Netflix
-      - 🇭🇰 香港1|BGP中转|Netflix|1.2x 2
-      - 🇯🇵 日本1|BGP中转|Netflix 2
-      - 🇯🇵 日本2|BGP中转|Netflix 2
-      - 🇸🇬 新加坡|BGP中转|Netflix 2
-      - 🇮🇩 印度尼西亚|BGP中转|Netflix|1.2x
-      - 🇭🇰 香港2|BGP|Netflix
-      - 🇯🇵 日本1|广州移动中转|Netflix
-      - 🇭🇰 新加坡02丨广港隧道丨原生IP丨
-      - 🇨🇳 A-台湾-02【NETFLIX丨迪士尼+】
-      - 🇭🇰 A-香港-15【NETFLIX】
-      - 🇨🇳 【V2】台湾-01-【NETFLIX-非自制剧】
-      - 🇭🇰 【V2】香港-02-Netflix
-      - 🇺🇸 美国2|BGP中转|Netflix 2
+      - 🇸🇬 vip2-新加坡2原生ip Netflix||限速500m
+      - 🇸🇬 vip2-新加坡3原生ip Netflix限速500m
+      - 🇯🇵 vip2-日本10原生ip Netflix||限速500m
+      - 🇯🇵 vip2-日本8原生IP Netflix||限速500m
+      - 🇰🇷 vip2-韩国2原生ip ||限速500m
+      - 🇭🇰 vip2-香港1 原生IP ||限速500M
+      - 🇭🇰 vip2-香港4 原生IP||北京BGP||限速500M
+      - 🇸🇬 中转|新加坡Singtel01|华南隧道[流媒体解锁]
+      - 🇯🇵 中转|日本GMO07|华南隧道[流媒体解锁]
+      - 🇭🇰 香港2|广州入口|原生|NF
+      - 🇭🇰 香港3|广州入口|原生
+      - 🇭🇰 香港5|长沙入口|原生
+      - 🇭🇰 香港7|安徽入口|原生
+      - 🇨🇳 台湾1|长沙入口|原生|NF
+      - 🇨🇳 台湾2|安徽入口|原生|NF
+      - 🇯🇵 日本1|杭州入口|原生|NF
+      - 🇯🇵 日本2|杭州入口|原生|NF
+      - 🇯🇵 日本3|长沙入口|原生|NF
+      - 🇯🇵 日本5|杭州入口|原生|NF
+      - 🇭🇰 香港2|广州入口|原生|NF 2
+      - 🇭🇰 香港3|广州入口|原生 2
+      - 🇭🇰 香港5|长沙入口|原生 2
+      - 🇭🇰 香港7|安徽入口|原生 2
+      - 🇨🇳 台湾1|长沙入口|原生|NF 2
+      - 🇯🇵 日本1|杭州入口|原生|NF 2
+      - 🇯🇵 日本2|杭州入口|原生|NF 2
+      - 🇯🇵 日本3|长沙入口|原生|NF 2
+      - 🇯🇵 日本5|杭州入口|原生|NF 2
   - name: 🔑 专用线路
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 A-沪港IPLC→倍率5→香港14
-      - 🇭🇰 【V2】IPLC-香港13-倍率8【数据不过墙丨迪士尼+】
-      - 🇭🇰 A-沪港IPLC→倍率5→香港14 2
-      - 🇭🇰 【V2】IPLC-香港13-倍率8【数据不过墙丨迪士尼+】 2
-      - 🇭🇰 【推荐】IPLC专线广州-香港_12
+      - 🇺🇸 【推荐】上海联通-洛杉矶专线21
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 国内网络
  - DOMAIN-SUFFIX,ip6-localhost,🎯 国内网络
