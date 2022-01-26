@@ -5,943 +5,427 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡5 | SSR - 20002 单端口, server: 120.232.41.113, port: 20002, type: ssr, cipher: rc4-md5, password: mfyun001, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1:123456789, obfs-param: 753361.bing.com, udp: true}
-  - {name: 中国 香港-A1-CM中继, server: cn-gz-02.arrc.fun, port: 3001, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
-  - {name: 中国 香港-A2-CM中继, server: cn-gz-02.arrc.fun, port: 3000, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
-  - {name: 俄罗斯 伯力-A1-CU中继, server: cn-cz-01.arrc.fun, port: 3022, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
-  - {name: 台湾 台北-A1-CM中继, server: cn-gz-02.arrc.fun, port: 3005, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
-  - {name: 新加坡-SG-A1-CM中继, server: cn-gz-02.arrc.fun, port: 3007, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
-  - {name: 新加坡-SG-A2-CM中继, server: cn-gz-02.arrc.fun, port: 3010, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
-  - {name: 日本 东京-A2-CU中继, server: cn-cz-01.arrc.fun, port: 3003, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
-  - {name: 美国 洛杉矶-A1-CM中继, server: cn-gz-02.arrc.fun, port: 3009, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
-  - {name: 美国 洛杉矶-A2-CM中继, server: cn-gz-02.arrc.fun, port: 3008, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
-  - {name: SG-Nerocloud, server: 183.232.56.187, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12865:7IPUJt, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-DMIT, server: 183.232.56.187, port: 11805, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12865:7IPUJt, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港HKT, server: 183.232.56.187, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12865:7IPUJt, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 503, server: 170.178.172.74, port: 443, type: vmess, uuid: 206d5f57-cac1-42b1-908b-d74acc41aa3b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/020724193005, ws-headers: {Host: www.12163699.xyz}, udp: true}
-  - {name: 52298 @WangCai_1, server: 98.wgong.xyz, port: 52298, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: Lv2新加坡2|V2Ray|中转优化, server: 183.232.226.171, port: 20010, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /5dyun.m3u8, ws-headers: {Host: 183.232.226.171}, udp: true}
   - {name: Lv2新加坡4|V2Ray|中转优化, server: 183.232.226.171, port: 20012, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 183.232.226.171}, udp: true}
   - {name: Lv2日本3|V2Ray|中转优化, server: 183.232.226.171, port: 20011, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 183.232.226.171}, udp: true}
   - {name: Lv2日本4 | V2Ray|中转优化, server: 183.232.226.171, port: 20013, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 183.232.226.171}, udp: true}
-  - {name: 52226 @WangCai_1, server: 126.wgong.xyz, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港高速公益节点(有限流量)2.0, server: 233.ezydfdd.com, port: 443, type: vmess, uuid: 71e71266-c8b2-4dc7-8a19-f3390a7b1507, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 233.ezydfdd.com}, udp: true}
   - {name: v2-香港h6-g200, server: g200.soow.win, port: 50110, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: h6.faak3.xyz}, udp: true}
   - {name: ---v2节点-香港h5-稳定-g300, server: g300.soow.win, port: 50081, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: h5.wpaa.win}, udp: true}
   - {name: v2-新加坡24-g2, server: g200.soow.win, port: 50089, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 24.faak4.xyz}, udp: true}
   - {name: v2-香港HKBGP5-g5, server: g500.soow.win, port: 50085, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 5.faak3.xyz}, udp: true}
   - {name: v2节点-香港h5-g2, server: g200.soow.win, port: 50081, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: h5.wpaa.win}, udp: true}
-  - {name: 【新鸟免费】新加坡SG-AWS 05 1.0x, server: tunnel-sg-a-01.xncloud.xyz, port: 105, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-05.xncloud.xyz}, udp: true}
-  - {name: 【新鸟免费】新加坡SG-AWS 07 1.0x, server: tunnel-sg-a-01.xncloud.xyz, port: 107, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-07.xncloud.xyz}, udp: true}
   - {name: 韩国|V2Ray|中转优化, server: 103.56.60.37, port: 20925, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 103.56.60.37}, udp: true}
   - {name: 香港1| V2Ray | 流媒体优选, server: 120.232.41.113, port: 20020, type: vmess, uuid: c0fc2247-c778-31bf-81a6-18af5c0c41a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mfyun.m3u8, ws-headers: {Host: 120.232.41.113}, udp: true}
-  - {name: 【新鸟免费】台湾TW-Hinet 04 1.0x, server: tunnel-tw-a-01.xncloud.xyz, port: 504, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-hinet-tw-04.xncloud.xyz}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 01 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 201, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 04 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 204, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: v2-香港HKBGP-hk3-g2, server: g200.soow.win, port: 50020, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: hk3.faak3.xyz}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 04 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 204, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-04.xncloud.xyz}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 08 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 208, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 52282 @WangCai_1, server: 82.wgong.xyz, port: 52282, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_13, server: 105.wgong.xyz, port: 52205, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ---v2节点-香港h5-稳定-cn2, server: cn2.soow.win, port: 50080, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: h5.wpaa.win}, udp: true}
-  - {name: 日本千兆-09号, server: 105.wgong.xyz, port: 52205, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本千兆-10号, server: 109.wgong.xyz, port: 52209, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: n_52207 好兄弟，新年快乐, server: 107.wgong.xyz, port: 52207, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: n_52215 好兄弟，新年快乐_25, server: 119.wgong.xyz, port: 52219, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: n_52221 好兄弟，新年快乐, server: 121.wgong.xyz, port: 52221, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: n_52226 好兄弟，新年快乐, server: 126.wgong.xyz, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 【新鸟免费】新加坡SG-AWS 10 1.0x, server: tunnel-sg-a-01.xncloud.xyz, port: 110, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 07 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 207, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 【低延迟】中转*广州移动-香港*03, server: 112.33.32.136, port: 10001, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: v2-日本hk1-g5, server: g500.soow.win, port: 50027, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: hk1.wpaa.win}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 01 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 201, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-01.xncloud.xyz}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 02 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 202, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-02.xncloud.xyz}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 07 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 207, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-07.xncloud.xyz}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 02 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 202, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 【新鸟免费】日本JP-AWS 02 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 202, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
   - {name: 美国高速公益节点2.0, server: daw.ezydfdd.com, port: 443, type: vmess, uuid: ba38c261-7b27-4c96-adf9-0dfcbc8ab40f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: daw.ezydfdd.com}, udp: true}
   - {name: 美国高速公益节点, server: 3.ezydfdd.com, port: 443, type: vmess, uuid: 7ab3f0d7-164c-4bde-8a45-2d6653da2ad1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 3.ezydfdd.com}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 06 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 206, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-06.xncloud.xyz}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 08 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 208, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-08.xncloud.xyz}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 10 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 210, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-10.xncloud.xyz}, udp: true}
-  - {name: 中国_TG@nodesharing_488, server: shcu01a.iplc188.com, port: 10003, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 【新鸟免费】美国UA -DO 05 免流 1.0x, server: mf-do-ua-05.xncloud.xyz, port: 80, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-05.xncloud.xyz}, udp: true}
-  - {name: 【新鸟免费】美国UA -DO 07 免流 1.0x, server: mf-do-ua-07.xncloud.xyz, port: 80, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 【推荐】上海联通-洛杉矶专线21, server: shcu01a.iplc188.com, port: 10003, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 【新鸟免费】日本JP-AWS 08 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 208, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-08.xncloud.xyz}, udp: true}
   - {name: "[联通直连]-美国西雅图06", server: sea06.nb1.fr, port: 64443, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /clientarea, ws-headers: {Host: sea06.nb1.fr}, udp: true}
-  - {name: FREE_V2ray_US_A 倍率*1, server: anycast.galaxydigital.top, port: 443, type: vmess, uuid: bd5c5d7b-dd49-4548-bc6b-c9dd619cc85a, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /jcl6ng8, ws-headers: {Host: rnus1-4.galaxycloud.buzz}, udp: true}
-  - {name: FREE_V2ray_US_B 倍率*1, server: anycast.galaxydigital.top, port: 443, type: vmess, uuid: bd5c5d7b-dd49-4548-bc6b-c9dd619cc85a, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Vigwgzan, ws-headers: {Host: rnus1-1.galaxycloud.buzz}, udp: true}
   - {name: 香港(绿头外网集团)(Public), server: 2.zhuzhu12.com, port: 44301, type: vmess, uuid: d4bae454-7a1a-3afd-978e-303a1b928a85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zz, ws-headers: {Host: 2.zhuzhu12.com}, udp: true}
   - {name: 香港(绿头外网集团)(Public) 2, server: 4.zhuzhu12.com, port: 8080, type: vmess, uuid: d4bae454-7a1a-3afd-978e-303a1b928a85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zz, ws-headers: {Host: 4.zhuzhu12.com}, udp: true}
   - {name: 香港(绿头外网集团)(Public) 3, server: 5.zhuzhu12.com, port: 443, type: vmess, uuid: d4bae454-7a1a-3afd-978e-303a1b928a85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zz, ws-headers: {Host: 5.zhuzhu12.com}, udp: true}
-  - {name: 韩国(绿头外网集团)(Public), server: 120.232.174.96, port: 44384, type: vmess, uuid: d4bae454-7a1a-3afd-978e-303a1b928a85, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zz, ws-headers: {Host: 120.232.174.96}, udp: true}
-  - {name: 韩国(绿头外网集团)(Public) 2, server: kr-free.shancloudweb.xyz, port: 15001, type: trojan, password: 432b5e82-b78a-4ef9-86b2-4311abd3c8c3, sni: kr-free.shancloudweb.xyz, skip-cert-verify: true, udp: true}
   - {name: 香港(绿头外网集团)(Public) 4, server: sxctr.hk2.qiguangyicai.xyz, port: 44143, type: trojan, password: 373c42c8-d608-4974-8d90-6e44db50dc78, sni: sxctr.hk2.qiguangyicai.xyz, skip-cert-verify: true, udp: true}
-  - {name: 中国_TG@nodesharing_14, server: wndjw.ezydfdd.com, port: 443, type: vmess, uuid: 03ab2300-a054-4e6f-bfeb-16864375c44e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: wndjw.ezydfdd.com}, udp: true}
-  - {name: 每次连接前用国内网络更新订阅, server: cm-jm.okvpn.xyz, port: 20001, type: vmess, uuid: d0f63071-b049-4456-b63c-273569be670c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}, udp: true}
-  - {name: "中转|新加坡Singtel01|华南隧道[流媒体解锁]", server: cm-jm.okvpn.xyz, port: 20049, type: vmess, uuid: d0f63071-b049-4456-b63c-273569be670c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}, udp: true}
   - {name: "中转|日本GMO07|华南隧道[流媒体解锁]", server: cm-jm.okvpn.xyz, port: 20015, type: vmess, uuid: d0f63071-b049-4456-b63c-273569be670c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}, udp: true}
-  - {name: 香港2|广州入口|原生|NF, server: gzcm.rymv2rayssl.xyz, port: 44649, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港3|广州入口|原生, server: gzcm.rymv2rayssl.xyz, port: 44602, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港5|长沙入口|原生, server: cs.cu.01.211129.xyz, port: 21062, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港7|安徽入口|原生, server: ah.cm.01.211129.xyz, port: 46305, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: ah.cm.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本1|杭州入口|原生|NF, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本2|杭州入口|原生|NF, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本3|长沙入口|原生|NF, server: cs.cu.01.211129.xyz, port: 44640, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡2|广州入口, server: gzcm.rymv2rayssl.xyz, port: 44605, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡3|广州入口, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 汕头联通=>HK-HGC-500Mbps, server: 101.67.8.158, port: 20000, type: trojan, password: daozhu-TGID-Uallen_Qbit-zhuanshudailidaoyongsiquanjia, skip-cert-verify: true, udp: true}
-  - {name: 香港2|广州入口|原生|NF 2, server: gzcm.rymv2rayssl.xyz, port: 44649, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港5|长沙入口|原生 2, server: cs.cu.01.211129.xyz, port: 21062, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本1|杭州入口|原生|NF 2, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本2|杭州入口|原生|NF 2, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本5|杭州入口|原生|NF, server: hzcu.rymv2rayssl.xyz, port: 44641, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡2|广州入口 2, server: gzcm.rymv2rayssl.xyz, port: 44605, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡3|广州入口 2, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港3|广州入口|原生 2, server: gzcm.rymv2rayssl.xyz, port: 44602, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港5|长沙入口|原生 3, server: cs.cu.01.211129.xyz, port: 21062, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本1|杭州入口|原生|NF 3, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本2|杭州入口|原生|NF 3, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本3|长沙入口|原生|NF 2, server: cs.cu.01.211129.xyz, port: 44640, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡2|广州入口 3, server: gzcm.rymv2rayssl.xyz, port: 44605, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡3|广州入口 3, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国2|原生|去广告|NF, server: 23.234.239.117, port: 55432, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, skip-cert-verify: true, udp: true}
-  - {name: 香港3|广州入口|原生 3, server: gzcm.rymv2rayssl.xyz, port: 44602, type: trojan, password: a4a564a2-c217-4e78-aecd-4e4820be77f6, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本1|杭州入口|原生|NF 4, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: a4a564a2-c217-4e78-aecd-4e4820be77f6, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本2|杭州入口|原生|NF 4, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: a4a564a2-c217-4e78-aecd-4e4820be77f6, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本3|长沙入口|原生|NF 3, server: cs.cu.01.211129.xyz, port: 44640, type: trojan, password: a4a564a2-c217-4e78-aecd-4e4820be77f6, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡2|广州入口 4, server: gzcm.rymv2rayssl.xyz, port: 44605, type: trojan, password: a4a564a2-c217-4e78-aecd-4e4820be77f6, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡3|广州入口 4, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: a4a564a2-c217-4e78-aecd-4e4820be77f6, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港2|广州入口|原生|NF 3, server: gzcm.rymv2rayssl.xyz, port: 44649, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港5|长沙入口|原生 4, server: cs.cu.01.211129.xyz, port: 21062, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港7|安徽入口|原生 2, server: ah.cm.01.211129.xyz, port: 46305, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: ah.cm.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本1|杭州入口|原生|NF 5, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本2|杭州入口|原生|NF 5, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本3|长沙入口|原生|NF 4, server: cs.cu.01.211129.xyz, port: 44640, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡2|广州入口 5, server: gzcm.rymv2rayssl.xyz, port: 44605, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡3|广州入口 5, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港7|安徽入口|原生 3, server: ah.cm.01.211129.xyz, port: 46305, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: ah.cm.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本1|杭州入口|原生|NF 6, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本2|杭州入口|原生|NF 6, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡2|广州入口 6, server: gzcm.rymv2rayssl.xyz, port: 44605, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡3|广州入口 6, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港千兆-04号, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡千兆-06号, server: tunnel-sg-a-01.xncloud.xyz, port: 101, type: vmess, uuid: d2b90316-8969-3f9b-8db2-a5b565a6bde3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-01.xncloud.xyz}, udp: true}
-  - {name: 翻墙党fanqiangdang.com@0123_CN_56, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 翻墙党fanqiangdang.com@0123_CN_62, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 翻墙党fanqiangdang.com@0123_CN_27, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港千兆-04号 2, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 52296 @WangCai_1, server: 96.wgong.xyz, port: 52296, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港5|长沙入口|原生, server: cs.cu.01.211129.xyz, port: 21062, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本1|杭州入口|原生|NF, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本2|杭州入口|原生|NF, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡2|广州入口, server: gzcm.rymv2rayssl.xyz, port: 44605, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡3|广州入口, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港3|广州入口|原生, server: gzcm.rymv2rayssl.xyz, port: 44602, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港5|长沙入口|原生 2, server: cs.cu.01.211129.xyz, port: 21062, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本1|杭州入口|原生|NF 2, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本2|杭州入口|原生|NF 2, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本3|长沙入口|原生|NF, server: cs.cu.01.211129.xyz, port: 44640, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡3|广州入口 2, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港3|广州入口|原生 2, server: gzcm.rymv2rayssl.xyz, port: 44602, type: trojan, password: a4a564a2-c217-4e78-aecd-4e4820be77f6, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本1|杭州入口|原生|NF 3, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: a4a564a2-c217-4e78-aecd-4e4820be77f6, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本2|杭州入口|原生|NF 3, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: a4a564a2-c217-4e78-aecd-4e4820be77f6, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本3|长沙入口|原生|NF 2, server: cs.cu.01.211129.xyz, port: 44640, type: trojan, password: a4a564a2-c217-4e78-aecd-4e4820be77f6, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡2|广州入口 2, server: gzcm.rymv2rayssl.xyz, port: 44605, type: trojan, password: a4a564a2-c217-4e78-aecd-4e4820be77f6, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡3|广州入口 3, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: a4a564a2-c217-4e78-aecd-4e4820be77f6, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港2|广州入口|原生|NF, server: gzcm.rymv2rayssl.xyz, port: 44649, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港5|长沙入口|原生 3, server: cs.cu.01.211129.xyz, port: 21062, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港7|安徽入口|原生, server: ah.cm.01.211129.xyz, port: 46305, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: ah.cm.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本1|杭州入口|原生|NF 4, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本2|杭州入口|原生|NF 4, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本3|长沙入口|原生|NF 3, server: cs.cu.01.211129.xyz, port: 44640, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡2|广州入口 3, server: gzcm.rymv2rayssl.xyz, port: 44605, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡3|广州入口 4, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港7|安徽入口|原生 2, server: ah.cm.01.211129.xyz, port: 46305, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: ah.cm.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本1|杭州入口|原生|NF 5, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡2|广州入口 4, server: gzcm.rymv2rayssl.xyz, port: 44605, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡3|广州入口 5, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港千兆-04号, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 52221 @WangCai_1, server: 121.wgong.xyz, port: 52221, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 52215 @WangCai_1, server: 119.wgong.xyz, port: 52219, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港7|安徽入口|原生 4, server: ah.cm.01.211129.xyz, port: 46305, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: ah.cm.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港7|安徽入口|原生 5, server: ah.cm.01.211129.xyz, port: 46305, type: trojan, password: 0783787a-4071-467f-9a43-006e352eb7c3, sni: ah.cm.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港5|长沙入口|原生 5, server: cs.cu.01.211129.xyz, port: 21062, type: trojan, password: a4a564a2-c217-4e78-aecd-4e4820be77f6, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港3|广州入口|原生 4, server: gzcm.rymv2rayssl.xyz, port: 44602, type: trojan, password: db1f0bbb-ce1e-42c3-9af3-f48392458ad9, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港3|广州入口|原生 5, server: gzcm.rymv2rayssl.xyz, port: 44602, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: VIP1新加坡-佛移-2号线路-tr, server: gdfs.xxcv.cc, port: 26002, type: trojan, password: 6483539f-5540-3feb-ad94-e5fd6f674553, sni: gdfs.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: VIP1新加坡-佛移-3号线路-tr, server: gdfs.xxcv.cc, port: 26003, type: trojan, password: 6483539f-5540-3feb-ad94-e5fd6f674553, sni: gdfs.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: VIP1新加坡-佛移-4号线路-tr, server: gdfs.xxcv.cc, port: 26004, type: trojan, password: 6483539f-5540-3feb-ad94-e5fd6f674553, sni: gdfs.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: VIP1新加坡-佛移多线路负载均衡-tr, server: gdfs.xxcv.cc, port: 26666, type: trojan, password: 6483539f-5540-3feb-ad94-e5fd6f674553, sni: gdfs.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: 香港5|长沙入口|原生 4, server: cs.cu.01.211129.xyz, port: 21062, type: trojan, password: a4a564a2-c217-4e78-aecd-4e4820be77f6, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
   - {name: VIP1美国 洛杉矶 | 佛移多线路负载均衡, server: gdfs.xxcv.cc, port: 36660, type: vmess, uuid: 6483539f-5540-3feb-ad94-e5fd6f674553, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/us?ed=2048", ws-headers: {Host: huayun.xyz}, udp: true}
   - {name: VIP1美国 洛杉矶 | 广移多线路负载均衡, server: gdyd.xxcv.cc, port: 36660, type: vmess, uuid: 6483539f-5540-3feb-ad94-e5fd6f674553, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/us?ed=2048", ws-headers: {Host: huayun.xyz}, udp: true}
   - {name: VIP1越南-原生IP-佛移-tr, server: gdfs.xxcv.cc, port: 25603, type: trojan, password: 6483539f-5540-3feb-ad94-e5fd6f674553, sni: gdfs.xxcv.cc, skip-cert-verify: true, udp: true}
   - {name: VIP1越南-原生IP-广移-tr, server: gdyd.xxcv.cc, port: 25603, type: trojan, password: 6483539f-5540-3feb-ad94-e5fd6f674553, sni: gdyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: 【新鸟免费】台湾TW-Hinet 02 1.0x, server: tunnel-tw-a-01.xncloud.xyz, port: 502, type: vmess, uuid: 5d095145-1556-3d6a-aef2-6ae6413f3f47, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-hinet-tw-02.xncloud.xyz}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 01 1.0x 3, server: tunnel-jp-a-01.xncloud.xyz, port: 201, type: vmess, uuid: 5d095145-1556-3d6a-aef2-6ae6413f3f47, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-01.xncloud.xyz}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 06 1.0x 2, server: tunnel-jp-a-01.xncloud.xyz, port: 206, type: vmess, uuid: 5d095145-1556-3d6a-aef2-6ae6413f3f47, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-06.xncloud.xyz}, udp: true}
+  - {name: 【新鸟免费】日本JP-AWS 06 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 206, type: vmess, uuid: 5d095145-1556-3d6a-aef2-6ae6413f3f47, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-06.xncloud.xyz}, udp: true}
   - {name: 日本千兆-15号, server: 126.wgong.xyz, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 日本千兆-17号, server: 121.wgong.xyz, port: 52221, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 日本千兆-20号, server: 107.wgong.xyz, port: 52207, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 【新鸟免费】台湾TW-Hinet 02 1.0x 2, server: tunnel-tw-a-01.xncloud.xyz, port: 502, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 【新鸟免费】台湾TW-Hinet 05 1.0x, server: tunnel-tw-a-01.xncloud.xyz, port: 505, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 【新鸟免费】新加坡SG-AWS 01 1.0x, server: tunnel-sg-a-01.xncloud.xyz, port: 101, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 【新鸟免费】新加坡SG-AWS 10 1.0x 2, server: tunnel-sg-a-01.xncloud.xyz, port: 110, type: vmess, uuid: d2b7d8e8-66ec-36b9-9a9c-5e85e198184f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: youtube:8度科技_美国, server: v8.ssrsub.com, port: 443, type: vmess, uuid: 974aeac3-c27c-4e20-86e4-03f526faaccd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
-  - {name: youtube:8度科技_美国 2, server: 38.68.135.93, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: youtube:8度科技_美国 3, server: 38.68.134.191, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: youtube:8度科技_美国 4, server: 38.75.136.45, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: youtube:8度科技_加拿大, server: 198.57.27.184, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: youtube:8度科技_美国 5, server: 142.202.48.34, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: youtube:8度科技_美国 6, server: 38.68.134.190, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: youtube:8度科技_美国 7, server: 38.68.134.37, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: youtube:8度科技_美国 8, server: 38.68.135.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: youtube:8度科技_加拿大 2, server: 134.195.196.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: youtube:8度科技_加拿大 3, server: 198.57.27.241, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: youtube:8度科技_美国 9, server: 167.88.63.28, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: youtube:8度科技_美国 10, server: 167.88.62.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: youtube:8度科技_美国 11, server: 167.88.63.28, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: youtube:8度科技_加拿大 4, server: 198.57.27.184, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: youtube:8度科技_美国 12, server: 38.68.134.23, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: youtube:8度科技_加拿大 5, server: 198.57.27.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: youtube:8度科技_美国 13, server: 38.68.135.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: youtube:8度科技_美国 14, server: 38.68.135.93, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: youtube:8度科技_加拿大 6, server: 134.195.196.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: youtube:8度科技_美国 15, server: 38.68.134.190, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: youtube:8度科技_加拿大 7, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: youtube:8度科技_美国 16, server: 169.197.141.244, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: youtube:8度科技_加拿大 8, server: 134.195.196.149, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: youtube:8度科技_美国 17, server: 38.107.226.48, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: youtube:8度科技_加拿大 9, server: 198.57.27.152, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: youtube:8度科技_美国 18, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国千兆-16号, server: mf-do-ua-05.xncloud.xyz, port: 80, type: vmess, uuid: d2b90316-8969-3f9b-8db2-a5b565a6bde3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-05.xncloud.xyz}, udp: true}
+  - {name: 【新鸟免费】新加坡SG-AWS 10 1.0x, server: tunnel-sg-a-01.xncloud.xyz, port: 110, type: vmess, uuid: d2b7d8e8-66ec-36b9-9a9c-5e85e198184f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: youtube:8度科技_美国, server: 167.88.63.28, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: youtube:8度科技_美国 2, server: 38.68.135.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: youtube:8度科技_美国 3, server: 169.197.141.244, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: 日本千兆-20号 2, server: 107.wgong.xyz, port: 52207, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港Azure-Tokyo-Linode, server: 102.wgong.xyz, port: 11221, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港Azure-SG-DigitalOcean, server: 106.wgong.xyz, port: 11223, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港Azure-SG-DigitalOcean 2, server: 107.wgong.xyz, port: 52207, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港Azure-Ashburn-EC2-dip, server: 123.wgong.xyz, port: 52223, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港Azure-SG-DigitalOcean 3, server: v113.wgong.xyz, port: 52213, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港Azure-SG-DigitalOcean 4, server: v114.wgong.xyz, port: 52214, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港Azure-Tokyo-Linode 2, server: v115.wgong.xyz, port: 52215, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港Azure-Columbus-EC2-dip, server: v124.wgong.xyz, port: 52224, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK-HGC-500Mbps, server: 218.190.242.130, port: 443, type: trojan, password: daozhu-TGID-Uallen_Qbit-zhuanshudailidaoyongsiquanjia, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管, server: 38.143.66.20, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 翻墙党fanqiangdang.com@0123_CN_40, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Ytb:鹏哥分享_US_美国_56, server: 38.68.134.190, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_阿伟科技-油管 2, server: 38.143.66.55, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: Ytb:鹏哥分享_US_美国_19, server: 38.68.134.190, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: Ytb:鹏哥分享_CA_加拿大_131, server: 134.195.196.128, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: Ytb:鹏哥分享_GB_英国_97, server: 172.99.190.186, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 翻墙党fanqiangdang.com@0123_70, server: 104.17.161.28, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: us.fovi.tk}, udp: true}
-  - {name: US_2359 |52.03Mb, server: v8.ssrsub.com, port: 443, type: vmess, uuid: 51273235-0995-455e-96e4-83b1811b4cab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
-  - {name: 翻墙党fanqiangdang.com@0123_US_65, server: 104.24.223.86, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: us.fovi.tk}, udp: true}
-  - {name: Ytb:鹏哥分享_CA_加拿大_177, server: 134.195.196.150, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 3, server: 169.197.143.219, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: Ytb:鹏哥分享_CA_加拿大_112, server: 134.195.196.200, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Ytb:鹏哥分享_US_美国_7, server: 38.75.136.45, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: Ytb:鹏哥分享_CA_加拿大_139, server: 134.195.196.150, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 4, server: 38.143.66.20, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Ytb:鹏哥分享_CA_加拿大_211, server: 134.195.196.128, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 20, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 51273235-0995-455e-96e4-83b1811b4cab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
-  - {name: 美国_阿伟科技-油管 5, server: 38.68.135.18, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1159+|65.72Mb, server: 38.75.137.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Ytb:鹏哥分享_CA_加拿大_174, server: 134.195.196.200, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: Ytb:鹏哥分享_CA_加拿大_148, server: 134.195.196.128, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: Ytb:鹏哥分享_CA_加拿大_194, server: 134.195.196.128, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Ytb:鹏哥分享_CA_加拿大_85, server: 134.195.196.128, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 日本|03|LINODE|0.7x|流解, server: linode.jp.tgproxy.wtf, port: 28888, type: vmess, uuid: 23a8f304-5667-4f47-9fad-72e23ddc59be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: linode.jp.tgproxy.wtf}, udp: true}
-  - {name: Ytb:鹏哥分享_CA_加拿大_217, server: 134.195.196.128, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: Ytb:鹏哥分享_CA_加拿大_115, server: 134.195.196.128, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: Ytb:鹏哥分享_CA_加拿大_126, server: 134.195.196.128, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 6, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 香港8|AZ直连, server: 20.187.75.130, port: 21062, type: trojan, password: 8112d026-0735-4f8b-af14-10332ac65959, skip-cert-verify: true, udp: true}
-  - {name: +_KR_韩国_233, server: 141.164.59.168, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_TG@nodesharing_14, server: 38.91.102.125, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国_阿伟科技-油管, server: 38.143.66.20, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: 【请尽快更换至新订阅】Azure香港|东莞移动, server: gg.piyun.bid, port: 10651, type: trojan, password: 2803debb-27c4-455f-9bff-46ba0bebb710, sni: gg.piyun.bid, skip-cert-verify: true, udp: true}
-  - {name: V4-#248|广东-香港HKT|x2.0|V2ray_7, server: 120.232.215.244, port: 40248, type: vmess, uuid: c6cc2661-8d39-377e-86e4-6bd9c2dd0e1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: 120.232.215.244}, udp: true}
-  - {name: V4-#27|广东-香港HKT|NF|x2.0|V2ray_11, server: 120.232.215.244, port: 40027, type: vmess, uuid: c6cc2661-8d39-377e-86e4-6bd9c2dd0e1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: 120.232.215.244}, udp: true}
-  - {name: V4-#326|广东-台湾|NF|x2.0|V2ray_20, server: 120.232.215.244, port: 40326, type: vmess, uuid: c6cc2661-8d39-377e-86e4-6bd9c2dd0e1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: 120.232.215.244}, udp: true}
-  - {name: V4-#39|上海-日本|NF|x1.0|V2ray_25, server: 139.226.78.46, port: 40039, type: vmess, uuid: c6cc2661-8d39-377e-86e4-6bd9c2dd0e1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: 139.226.78.46}, udp: true}
-  - {name: V4-#47|广港-新加坡|NF|x2.0|V2ray_28, server: 120.232.215.139, port: 40047, type: vmess, uuid: c6cc2661-8d39-377e-86e4-6bd9c2dd0e1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: 120.232.215.139}, udp: true}
-  - {name: V4-#51|广港-新加坡|NF|x2.0@vpnhat, server: 120.232.215.139, port: 40051, type: vmess, uuid: c6cc2661-8d39-377e-86e4-6bd9c2dd0e1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: 120.232.215.139}, udp: true}
-  - {name: V4-#45|广港-新加坡|NF|x2.0|V2ray_27, server: 120.232.215.139, port: 40045, type: vmess, uuid: c6cc2661-8d39-377e-86e4-6bd9c2dd0e1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: 120.232.215.139}, udp: true}
-  - {name: V4-#49|广港-新加坡|NF|x2.0|V2ray_29, server: 120.232.215.139, port: 40049, type: vmess, uuid: c6cc2661-8d39-377e-86e4-6bd9c2dd0e1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: 120.232.215.139}, udp: true}
+  - {name: 52283 @WangCai_1, server: 83.wgong.xyz, port: 52283, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@ShareCentrePro+Hongkong", server: cn2.relay.starlink.st, port: 50102, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
+  - {name: CN-120.233.150.200-1127, server: 120.233.150.200, port: 50301, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
+  - {name: 中国_TG@nodesharing, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: togostar.top, server: test.5668888.xyz, port: 50301, type: vmess, uuid: 2c65388b-2ebd-4387-a5b4-503676194e69, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_8, server: 120.233.150.200, port: 50103, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
+  - {name: 香港_TG@nodesharing_29, server: 93.179.124.32, port: 48051, type: vmess, uuid: c5884056-d5b0-49c0-f45a-84555a12434e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dsgsf, ws-headers: {Host: 93.179.124.32}, udp: true}
+  - {name: 香港_TG@nodesharing_41, server: cs.mimon.cc, port: 43025, type: trojan, password: 5178f452-4e09-4fbc-b6d7-75975b310f78, sni: cs.mimon.cc, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_62, server: ah.cm.01.211129.xyz, port: 46305, type: trojan, password: 5178f452-4e09-4fbc-b6d7-75975b310f78, sni: ah.cm.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_64, server: 120.233.150.200, port: 50302, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
+  - {name: 中国_TG@nodesharing_66, server: wndjw.ezydfdd.com, port: 443, type: vmess, uuid: 03ab2300-a054-4e6f-bfeb-16864375c44e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: wndjw.ezydfdd.com}, udp: true}
+  - {name: 中国_TG@nodesharing_70, server: hzcu.rymv2rayssl.xyz, port: 44645, type: trojan, password: 5178f452-4e09-4fbc-b6d7-75975b310f78, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_328, server: 120.233.150.200, port: 50101, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
+  - {name: 香港10|长沙入口|原生, server: cs.mimon.cc, port: 43025, type: trojan, password: 95400b32-ed74-4dc3-a163-9412069f652a, sni: cs.mimon.cc, skip-cert-verify: true, udp: true}
+  - {name: 香港7|安徽入口|原生 3, server: ah.cm.01.211129.xyz, port: 46305, type: trojan, password: 92d853dd-ea5d-4578-87ff-2de1cc4a405a, sni: ah.cm.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 5, server: cs.mimon.cc, port: 43025, type: trojan, password: 173e9015-3869-4d19-9c7a-9515f6cf1995, sni: cs.mimon.cc, skip-cert-verify: true, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 6, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public), server: cs.mimon.cc, port: 44640, type: trojan, password: 173e9015-3869-4d19-9c7a-9515f6cf1995, sni: cs.mimon.cc, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 2, server: 116.162.32.200, port: 18009, type: vmess, uuid: 5b6dbb06-c330-4508-9653-7fdec8cc124d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.200}, udp: true}
+  - {name: 新加坡(绿头外网集团)(Public), server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: 173e9015-3869-4d19-9c7a-9515f6cf1995, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_8 2, server: iepl.naigai1.club, port: 11895, type: ss, cipher: aes-128-gcm, password: b2e37e3b-d651-46d1-81a8-bb61246de20a, udp: true}
+  - {name: V1 | SG B1, server: x-fs.gotout.work, port: 31421, type: vmess, uuid: c8c858ff-972a-3cf5-acb1-0ab0804ca9b8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: AWS新加坡|AZ中转, server: 20.205.43.134, port: 63410, type: vmess, uuid: 813c2b94-7d99-4924-8fb3-d66fd393eed3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}, udp: true}
+  - {name: YouTube由零开始-日本, server: 81.wgong.xyz, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡5 | SSR - 20002 单端口
-      - 中国 香港-A1-CM中继
-      - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
-      - 台湾 台北-A1-CM中继
-      - 新加坡-SG-A1-CM中继
-      - 新加坡-SG-A2-CM中继
-      - 日本 东京-A2-CU中继
-      - 美国 洛杉矶-A1-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - SG-Nerocloud
-      - LAX-DMIT
-      - 香港HKT
-      - 503
-      - 52298 @WangCai_1
       - Lv2新加坡2|V2Ray|中转优化
       - Lv2新加坡4|V2Ray|中转优化
       - Lv2日本3|V2Ray|中转优化
       - Lv2日本4 | V2Ray|中转优化
-      - 52226 @WangCai_1
-      - 香港高速公益节点(有限流量)2.0
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
-      - 【新鸟免费】新加坡SG-AWS 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 07 1.0x
       - 韩国|V2Ray|中转优化
       - 香港1| V2Ray | 流媒体优选
-      - 【新鸟免费】台湾TW-Hinet 04 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x
-      - 【新鸟免费】日本JP-AWS 04 1.0x
-      - v2-香港HKBGP-hk3-g2
-      - 【新鸟免费】日本JP-AWS 04 1.0x 2
-      - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 52282 @WangCai_1
-      - 香港_TG@nodesharing_13
-      - ---v2节点-香港h5-稳定-cn2
-      - 日本千兆-09号
-      - 日本千兆-10号
-      - n_52207 好兄弟，新年快乐
-      - n_52215 好兄弟，新年快乐_25
-      - n_52221 好兄弟，新年快乐
-      - n_52226 好兄弟，新年快乐
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 【低延迟】中转*广州移动-香港*03
       - v2-日本hk1-g5
-      - 【新鸟免费】日本JP-AWS 01 1.0x 2
       - 【新鸟免费】日本JP-AWS 02 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x 2
-      - 【新鸟免费】日本JP-AWS 02 1.0x 2
       - 美国高速公益节点2.0
       - 美国高速公益节点
-      - 【新鸟免费】日本JP-AWS 06 1.0x
-      - 【新鸟免费】日本JP-AWS 08 1.0x 2
-      - 【新鸟免费】日本JP-AWS 10 1.0x
-      - 中国_TG@nodesharing_488
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
+      - 【新鸟免费】日本JP-AWS 08 1.0x
       - "[联通直连]-美国西雅图06"
-      - FREE_V2ray_US_A 倍率*1
-      - FREE_V2ray_US_B 倍率*1
       - 香港(绿头外网集团)(Public)
       - 香港(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 3
-      - 韩国(绿头外网集团)(Public)
-      - 韩国(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 4
-      - 中国_TG@nodesharing_14
-      - 每次连接前用国内网络更新订阅
-      - 中转|新加坡Singtel01|华南隧道[流媒体解锁]
       - 中转|日本GMO07|华南隧道[流媒体解锁]
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生
-      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF
       - 日本2|杭州入口|原生|NF
-      - 日本3|长沙入口|原生|NF
       - 新加坡2|广州入口
       - 新加坡3|广州入口
-      - 汕头联通=>HK-HGC-500Mbps
-      - 香港2|广州入口|原生|NF 2
+      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生 2
       - 日本1|杭州入口|原生|NF 2
       - 日本2|杭州入口|原生|NF 2
-      - 日本5|杭州入口|原生|NF
-      - 新加坡2|广州入口 2
+      - 日本3|长沙入口|原生|NF
       - 新加坡3|广州入口 2
       - 香港3|广州入口|原生 2
-      - 香港5|长沙入口|原生 3
       - 日本1|杭州入口|原生|NF 3
       - 日本2|杭州入口|原生|NF 3
       - 日本3|长沙入口|原生|NF 2
-      - 新加坡2|广州入口 3
+      - 新加坡2|广州入口 2
       - 新加坡3|广州入口 3
-      - 美国2|原生|去广告|NF
-      - 香港3|广州入口|原生 3
+      - 香港2|广州入口|原生|NF
+      - 香港5|长沙入口|原生 3
+      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF 4
       - 日本2|杭州入口|原生|NF 4
       - 日本3|长沙入口|原生|NF 3
-      - 新加坡2|广州入口 4
+      - 新加坡2|广州入口 3
       - 新加坡3|广州入口 4
-      - 香港2|广州入口|原生|NF 3
-      - 香港5|长沙入口|原生 4
       - 香港7|安徽入口|原生 2
       - 日本1|杭州入口|原生|NF 5
-      - 日本2|杭州入口|原生|NF 5
-      - 日本3|长沙入口|原生|NF 4
-      - 新加坡2|广州入口 5
+      - 新加坡2|广州入口 4
       - 新加坡3|广州入口 5
-      - 香港7|安徽入口|原生 3
-      - 日本1|杭州入口|原生|NF 6
-      - 日本2|杭州入口|原生|NF 6
-      - 新加坡2|广州入口 6
-      - 新加坡3|广州入口 6
       - 香港千兆-04号
-      - 新加坡千兆-06号
-      - 翻墙党fanqiangdang.com@0123_CN_56
-      - 翻墙党fanqiangdang.com@0123_CN_62
-      - 翻墙党fanqiangdang.com@0123_CN_27
-      - 香港千兆-04号 2
-      - 52296 @WangCai_1
       - 52221 @WangCai_1
       - 52215 @WangCai_1
-      - 香港7|安徽入口|原生 4
-      - 香港7|安徽入口|原生 5
-      - 香港5|长沙入口|原生 5
-      - 香港3|广州入口|原生 4
-      - 香港3|广州入口|原生 5
-      - VIP1新加坡-佛移-2号线路-tr
-      - VIP1新加坡-佛移-3号线路-tr
-      - VIP1新加坡-佛移-4号线路-tr
-      - VIP1新加坡-佛移多线路负载均衡-tr
+      - 香港5|长沙入口|原生 4
       - VIP1美国 洛杉矶 | 佛移多线路负载均衡
       - VIP1美国 洛杉矶 | 广移多线路负载均衡
       - VIP1越南-原生IP-佛移-tr
       - VIP1越南-原生IP-广移-tr
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x 3
-      - 【新鸟免费】日本JP-AWS 06 1.0x 2
+      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 日本千兆-15号
       - 日本千兆-17号
       - 日本千兆-20号
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x 2
-      - 【新鸟免费】台湾TW-Hinet 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 01 1.0x
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x
       - youtube:8度科技_美国
       - youtube:8度科技_美国 2
       - youtube:8度科技_美国 3
-      - youtube:8度科技_美国 4
-      - youtube:8度科技_加拿大
-      - youtube:8度科技_美国 5
-      - youtube:8度科技_美国 6
-      - youtube:8度科技_美国 7
-      - youtube:8度科技_美国 8
-      - youtube:8度科技_加拿大 2
-      - youtube:8度科技_加拿大 3
-      - youtube:8度科技_美国 9
-      - youtube:8度科技_美国 10
-      - youtube:8度科技_美国 11
-      - youtube:8度科技_加拿大 4
-      - youtube:8度科技_美国 12
-      - youtube:8度科技_加拿大 5
-      - youtube:8度科技_美国 13
-      - youtube:8度科技_美国 14
-      - youtube:8度科技_加拿大 6
-      - youtube:8度科技_美国 15
-      - youtube:8度科技_加拿大 7
-      - youtube:8度科技_美国 16
-      - youtube:8度科技_加拿大 8
-      - youtube:8度科技_美国 17
-      - youtube:8度科技_加拿大 9
-      - youtube:8度科技_美国 18
-      - 美国千兆-16号
       - 日本千兆-20号 2
       - 香港Azure-Tokyo-Linode
       - 香港Azure-SG-DigitalOcean
       - 香港Azure-SG-DigitalOcean 2
       - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean 3
-      - 香港Azure-SG-DigitalOcean 4
       - 香港Azure-Tokyo-Linode 2
       - 香港Azure-Columbus-EC2-dip
-      - HK-HGC-500Mbps
       - 美国_阿伟科技-油管
-      - 翻墙党fanqiangdang.com@0123_CN_40
-      - Ytb:鹏哥分享_US_美国_56
-      - 美国_阿伟科技-油管 2
-      - Ytb:鹏哥分享_US_美国_19
-      - Ytb:鹏哥分享_CA_加拿大_131
-      - Ytb:鹏哥分享_GB_英国_97
-      - 翻墙党fanqiangdang.com@0123_70
-      - US_2359 |52.03Mb
-      - 翻墙党fanqiangdang.com@0123_US_65
-      - Ytb:鹏哥分享_CA_加拿大_177
-      - 美国_阿伟科技-油管 3
-      - Ytb:鹏哥分享_CA_加拿大_112
-      - Ytb:鹏哥分享_US_美国_7
-      - Ytb:鹏哥分享_CA_加拿大_139
-      - 美国_阿伟科技-油管 4
-      - Ytb:鹏哥分享_CA_加拿大_211
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国_阿伟科技-油管 5
-      - US_1159+|65.72Mb
-      - Ytb:鹏哥分享_CA_加拿大_174
-      - Ytb:鹏哥分享_CA_加拿大_148
-      - Ytb:鹏哥分享_CA_加拿大_194
-      - Ytb:鹏哥分享_CA_加拿大_85
-      - 日本|03|LINODE|0.7x|流解
-      - Ytb:鹏哥分享_CA_加拿大_217
-      - Ytb:鹏哥分享_CA_加拿大_115
-      - Ytb:鹏哥分享_CA_加拿大_126
-      - 美国_阿伟科技-油管 6
-      - 香港8|AZ直连
-      - +_KR_韩国_233
-      - 美国_TG@nodesharing_14
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - V4-#248|广东-香港HKT|x2.0|V2ray_7
-      - V4-#27|广东-香港HKT|NF|x2.0|V2ray_11
-      - V4-#326|广东-台湾|NF|x2.0|V2ray_20
-      - V4-#39|上海-日本|NF|x1.0|V2ray_25
-      - V4-#47|广港-新加坡|NF|x2.0|V2ray_28
-      - V4-#51|广港-新加坡|NF|x2.0@vpnhat
-      - V4-#45|广港-新加坡|NF|x2.0|V2ray_27
-      - V4-#49|广港-新加坡|NF|x2.0|V2ray_29
+      - 52283 @WangCai_1
+      - "@ShareCentrePro+Hongkong"
+      - CN-120.233.150.200-1127
+      - 中国_TG@nodesharing
+      - togostar.top
+      - 中国_TG@nodesharing_8
+      - 香港_TG@nodesharing_29
+      - 香港_TG@nodesharing_41
+      - 中国_TG@nodesharing_62
+      - 中国_TG@nodesharing_64
+      - 中国_TG@nodesharing_66
+      - 中国_TG@nodesharing_70
+      - 中国_TG@nodesharing_328
+      - 香港10|长沙入口|原生
+      - 香港7|安徽入口|原生 3
+      - 香港(绿头外网集团)(Public) 5
+      - 香港(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public)
+      - 中国_TG@nodesharing_8 2
+      - V1 | SG B1
+      - AWS新加坡|AZ中转
+      - YouTube由零开始-日本
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡5 | SSR - 20002 单端口
-      - 中国 香港-A1-CM中继
-      - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
-      - 台湾 台北-A1-CM中继
-      - 新加坡-SG-A1-CM中继
-      - 新加坡-SG-A2-CM中继
-      - 日本 东京-A2-CU中继
-      - 美国 洛杉矶-A1-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - SG-Nerocloud
-      - LAX-DMIT
-      - 香港HKT
-      - 503
-      - 52298 @WangCai_1
       - Lv2新加坡2|V2Ray|中转优化
       - Lv2新加坡4|V2Ray|中转优化
       - Lv2日本3|V2Ray|中转优化
       - Lv2日本4 | V2Ray|中转优化
-      - 52226 @WangCai_1
-      - 香港高速公益节点(有限流量)2.0
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
-      - 【新鸟免费】新加坡SG-AWS 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 07 1.0x
       - 韩国|V2Ray|中转优化
       - 香港1| V2Ray | 流媒体优选
-      - 【新鸟免费】台湾TW-Hinet 04 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x
-      - 【新鸟免费】日本JP-AWS 04 1.0x
-      - v2-香港HKBGP-hk3-g2
-      - 【新鸟免费】日本JP-AWS 04 1.0x 2
-      - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 52282 @WangCai_1
-      - 香港_TG@nodesharing_13
-      - ---v2节点-香港h5-稳定-cn2
-      - 日本千兆-09号
-      - 日本千兆-10号
-      - n_52207 好兄弟，新年快乐
-      - n_52215 好兄弟，新年快乐_25
-      - n_52221 好兄弟，新年快乐
-      - n_52226 好兄弟，新年快乐
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 【低延迟】中转*广州移动-香港*03
       - v2-日本hk1-g5
-      - 【新鸟免费】日本JP-AWS 01 1.0x 2
       - 【新鸟免费】日本JP-AWS 02 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x 2
-      - 【新鸟免费】日本JP-AWS 02 1.0x 2
       - 美国高速公益节点2.0
       - 美国高速公益节点
-      - 【新鸟免费】日本JP-AWS 06 1.0x
-      - 【新鸟免费】日本JP-AWS 08 1.0x 2
-      - 【新鸟免费】日本JP-AWS 10 1.0x
-      - 中国_TG@nodesharing_488
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
+      - 【新鸟免费】日本JP-AWS 08 1.0x
       - "[联通直连]-美国西雅图06"
-      - FREE_V2ray_US_A 倍率*1
-      - FREE_V2ray_US_B 倍率*1
       - 香港(绿头外网集团)(Public)
       - 香港(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 3
-      - 韩国(绿头外网集团)(Public)
-      - 韩国(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 4
-      - 中国_TG@nodesharing_14
-      - 每次连接前用国内网络更新订阅
-      - 中转|新加坡Singtel01|华南隧道[流媒体解锁]
       - 中转|日本GMO07|华南隧道[流媒体解锁]
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生
-      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF
       - 日本2|杭州入口|原生|NF
-      - 日本3|长沙入口|原生|NF
       - 新加坡2|广州入口
       - 新加坡3|广州入口
-      - 汕头联通=>HK-HGC-500Mbps
-      - 香港2|广州入口|原生|NF 2
+      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生 2
       - 日本1|杭州入口|原生|NF 2
       - 日本2|杭州入口|原生|NF 2
-      - 日本5|杭州入口|原生|NF
-      - 新加坡2|广州入口 2
+      - 日本3|长沙入口|原生|NF
       - 新加坡3|广州入口 2
       - 香港3|广州入口|原生 2
-      - 香港5|长沙入口|原生 3
       - 日本1|杭州入口|原生|NF 3
       - 日本2|杭州入口|原生|NF 3
       - 日本3|长沙入口|原生|NF 2
-      - 新加坡2|广州入口 3
+      - 新加坡2|广州入口 2
       - 新加坡3|广州入口 3
-      - 美国2|原生|去广告|NF
-      - 香港3|广州入口|原生 3
+      - 香港2|广州入口|原生|NF
+      - 香港5|长沙入口|原生 3
+      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF 4
       - 日本2|杭州入口|原生|NF 4
       - 日本3|长沙入口|原生|NF 3
-      - 新加坡2|广州入口 4
+      - 新加坡2|广州入口 3
       - 新加坡3|广州入口 4
-      - 香港2|广州入口|原生|NF 3
-      - 香港5|长沙入口|原生 4
       - 香港7|安徽入口|原生 2
       - 日本1|杭州入口|原生|NF 5
-      - 日本2|杭州入口|原生|NF 5
-      - 日本3|长沙入口|原生|NF 4
-      - 新加坡2|广州入口 5
+      - 新加坡2|广州入口 4
       - 新加坡3|广州入口 5
-      - 香港7|安徽入口|原生 3
-      - 日本1|杭州入口|原生|NF 6
-      - 日本2|杭州入口|原生|NF 6
-      - 新加坡2|广州入口 6
-      - 新加坡3|广州入口 6
       - 香港千兆-04号
-      - 新加坡千兆-06号
-      - 翻墙党fanqiangdang.com@0123_CN_56
-      - 翻墙党fanqiangdang.com@0123_CN_62
-      - 翻墙党fanqiangdang.com@0123_CN_27
-      - 香港千兆-04号 2
-      - 52296 @WangCai_1
       - 52221 @WangCai_1
       - 52215 @WangCai_1
-      - 香港7|安徽入口|原生 4
-      - 香港7|安徽入口|原生 5
-      - 香港5|长沙入口|原生 5
-      - 香港3|广州入口|原生 4
-      - 香港3|广州入口|原生 5
-      - VIP1新加坡-佛移-2号线路-tr
-      - VIP1新加坡-佛移-3号线路-tr
-      - VIP1新加坡-佛移-4号线路-tr
-      - VIP1新加坡-佛移多线路负载均衡-tr
+      - 香港5|长沙入口|原生 4
       - VIP1美国 洛杉矶 | 佛移多线路负载均衡
       - VIP1美国 洛杉矶 | 广移多线路负载均衡
       - VIP1越南-原生IP-佛移-tr
       - VIP1越南-原生IP-广移-tr
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x 3
-      - 【新鸟免费】日本JP-AWS 06 1.0x 2
+      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 日本千兆-15号
       - 日本千兆-17号
       - 日本千兆-20号
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x 2
-      - 【新鸟免费】台湾TW-Hinet 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 01 1.0x
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x
       - youtube:8度科技_美国
       - youtube:8度科技_美国 2
       - youtube:8度科技_美国 3
-      - youtube:8度科技_美国 4
-      - youtube:8度科技_加拿大
-      - youtube:8度科技_美国 5
-      - youtube:8度科技_美国 6
-      - youtube:8度科技_美国 7
-      - youtube:8度科技_美国 8
-      - youtube:8度科技_加拿大 2
-      - youtube:8度科技_加拿大 3
-      - youtube:8度科技_美国 9
-      - youtube:8度科技_美国 10
-      - youtube:8度科技_美国 11
-      - youtube:8度科技_加拿大 4
-      - youtube:8度科技_美国 12
-      - youtube:8度科技_加拿大 5
-      - youtube:8度科技_美国 13
-      - youtube:8度科技_美国 14
-      - youtube:8度科技_加拿大 6
-      - youtube:8度科技_美国 15
-      - youtube:8度科技_加拿大 7
-      - youtube:8度科技_美国 16
-      - youtube:8度科技_加拿大 8
-      - youtube:8度科技_美国 17
-      - youtube:8度科技_加拿大 9
-      - youtube:8度科技_美国 18
-      - 美国千兆-16号
       - 日本千兆-20号 2
       - 香港Azure-Tokyo-Linode
       - 香港Azure-SG-DigitalOcean
       - 香港Azure-SG-DigitalOcean 2
       - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean 3
-      - 香港Azure-SG-DigitalOcean 4
       - 香港Azure-Tokyo-Linode 2
       - 香港Azure-Columbus-EC2-dip
-      - HK-HGC-500Mbps
       - 美国_阿伟科技-油管
-      - 翻墙党fanqiangdang.com@0123_CN_40
-      - Ytb:鹏哥分享_US_美国_56
-      - 美国_阿伟科技-油管 2
-      - Ytb:鹏哥分享_US_美国_19
-      - Ytb:鹏哥分享_CA_加拿大_131
-      - Ytb:鹏哥分享_GB_英国_97
-      - 翻墙党fanqiangdang.com@0123_70
-      - US_2359 |52.03Mb
-      - 翻墙党fanqiangdang.com@0123_US_65
-      - Ytb:鹏哥分享_CA_加拿大_177
-      - 美国_阿伟科技-油管 3
-      - Ytb:鹏哥分享_CA_加拿大_112
-      - Ytb:鹏哥分享_US_美国_7
-      - Ytb:鹏哥分享_CA_加拿大_139
-      - 美国_阿伟科技-油管 4
-      - Ytb:鹏哥分享_CA_加拿大_211
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国_阿伟科技-油管 5
-      - US_1159+|65.72Mb
-      - Ytb:鹏哥分享_CA_加拿大_174
-      - Ytb:鹏哥分享_CA_加拿大_148
-      - Ytb:鹏哥分享_CA_加拿大_194
-      - Ytb:鹏哥分享_CA_加拿大_85
-      - 日本|03|LINODE|0.7x|流解
-      - Ytb:鹏哥分享_CA_加拿大_217
-      - Ytb:鹏哥分享_CA_加拿大_115
-      - Ytb:鹏哥分享_CA_加拿大_126
-      - 美国_阿伟科技-油管 6
-      - 香港8|AZ直连
-      - +_KR_韩国_233
-      - 美国_TG@nodesharing_14
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - V4-#248|广东-香港HKT|x2.0|V2ray_7
-      - V4-#27|广东-香港HKT|NF|x2.0|V2ray_11
-      - V4-#326|广东-台湾|NF|x2.0|V2ray_20
-      - V4-#39|上海-日本|NF|x1.0|V2ray_25
-      - V4-#47|广港-新加坡|NF|x2.0|V2ray_28
-      - V4-#51|广港-新加坡|NF|x2.0@vpnhat
-      - V4-#45|广港-新加坡|NF|x2.0|V2ray_27
-      - V4-#49|广港-新加坡|NF|x2.0|V2ray_29
+      - 52283 @WangCai_1
+      - "@ShareCentrePro+Hongkong"
+      - CN-120.233.150.200-1127
+      - 中国_TG@nodesharing
+      - togostar.top
+      - 中国_TG@nodesharing_8
+      - 香港_TG@nodesharing_29
+      - 香港_TG@nodesharing_41
+      - 中国_TG@nodesharing_62
+      - 中国_TG@nodesharing_64
+      - 中国_TG@nodesharing_66
+      - 中国_TG@nodesharing_70
+      - 中国_TG@nodesharing_328
+      - 香港10|长沙入口|原生
+      - 香港7|安徽入口|原生 3
+      - 香港(绿头外网集团)(Public) 5
+      - 香港(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public)
+      - 中国_TG@nodesharing_8 2
+      - V1 | SG B1
+      - AWS新加坡|AZ中转
+      - YouTube由零开始-日本
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡5 | SSR - 20002 单端口
-      - 中国 香港-A1-CM中继
-      - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
-      - 台湾 台北-A1-CM中继
-      - 新加坡-SG-A1-CM中继
-      - 新加坡-SG-A2-CM中继
-      - 日本 东京-A2-CU中继
-      - 美国 洛杉矶-A1-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - SG-Nerocloud
-      - LAX-DMIT
-      - 香港HKT
-      - 503
-      - 52298 @WangCai_1
       - Lv2新加坡2|V2Ray|中转优化
       - Lv2新加坡4|V2Ray|中转优化
       - Lv2日本3|V2Ray|中转优化
       - Lv2日本4 | V2Ray|中转优化
-      - 52226 @WangCai_1
-      - 香港高速公益节点(有限流量)2.0
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
-      - 【新鸟免费】新加坡SG-AWS 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 07 1.0x
       - 韩国|V2Ray|中转优化
       - 香港1| V2Ray | 流媒体优选
-      - 【新鸟免费】台湾TW-Hinet 04 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x
-      - 【新鸟免费】日本JP-AWS 04 1.0x
-      - v2-香港HKBGP-hk3-g2
-      - 【新鸟免费】日本JP-AWS 04 1.0x 2
-      - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 52282 @WangCai_1
-      - 香港_TG@nodesharing_13
-      - ---v2节点-香港h5-稳定-cn2
-      - 日本千兆-09号
-      - 日本千兆-10号
-      - n_52207 好兄弟，新年快乐
-      - n_52215 好兄弟，新年快乐_25
-      - n_52221 好兄弟，新年快乐
-      - n_52226 好兄弟，新年快乐
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 【低延迟】中转*广州移动-香港*03
       - v2-日本hk1-g5
-      - 【新鸟免费】日本JP-AWS 01 1.0x 2
       - 【新鸟免费】日本JP-AWS 02 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x 2
-      - 【新鸟免费】日本JP-AWS 02 1.0x 2
       - 美国高速公益节点2.0
       - 美国高速公益节点
-      - 【新鸟免费】日本JP-AWS 06 1.0x
-      - 【新鸟免费】日本JP-AWS 08 1.0x 2
-      - 【新鸟免费】日本JP-AWS 10 1.0x
-      - 中国_TG@nodesharing_488
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
+      - 【新鸟免费】日本JP-AWS 08 1.0x
       - "[联通直连]-美国西雅图06"
-      - FREE_V2ray_US_A 倍率*1
-      - FREE_V2ray_US_B 倍率*1
       - 香港(绿头外网集团)(Public)
       - 香港(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 3
-      - 韩国(绿头外网集团)(Public)
-      - 韩国(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 4
-      - 中国_TG@nodesharing_14
-      - 每次连接前用国内网络更新订阅
-      - 中转|新加坡Singtel01|华南隧道[流媒体解锁]
       - 中转|日本GMO07|华南隧道[流媒体解锁]
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生
-      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF
       - 日本2|杭州入口|原生|NF
-      - 日本3|长沙入口|原生|NF
       - 新加坡2|广州入口
       - 新加坡3|广州入口
-      - 汕头联通=>HK-HGC-500Mbps
-      - 香港2|广州入口|原生|NF 2
+      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生 2
       - 日本1|杭州入口|原生|NF 2
       - 日本2|杭州入口|原生|NF 2
-      - 日本5|杭州入口|原生|NF
-      - 新加坡2|广州入口 2
+      - 日本3|长沙入口|原生|NF
       - 新加坡3|广州入口 2
       - 香港3|广州入口|原生 2
-      - 香港5|长沙入口|原生 3
       - 日本1|杭州入口|原生|NF 3
       - 日本2|杭州入口|原生|NF 3
       - 日本3|长沙入口|原生|NF 2
-      - 新加坡2|广州入口 3
+      - 新加坡2|广州入口 2
       - 新加坡3|广州入口 3
-      - 美国2|原生|去广告|NF
-      - 香港3|广州入口|原生 3
+      - 香港2|广州入口|原生|NF
+      - 香港5|长沙入口|原生 3
+      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF 4
       - 日本2|杭州入口|原生|NF 4
       - 日本3|长沙入口|原生|NF 3
-      - 新加坡2|广州入口 4
+      - 新加坡2|广州入口 3
       - 新加坡3|广州入口 4
-      - 香港2|广州入口|原生|NF 3
-      - 香港5|长沙入口|原生 4
       - 香港7|安徽入口|原生 2
       - 日本1|杭州入口|原生|NF 5
-      - 日本2|杭州入口|原生|NF 5
-      - 日本3|长沙入口|原生|NF 4
-      - 新加坡2|广州入口 5
+      - 新加坡2|广州入口 4
       - 新加坡3|广州入口 5
-      - 香港7|安徽入口|原生 3
-      - 日本1|杭州入口|原生|NF 6
-      - 日本2|杭州入口|原生|NF 6
-      - 新加坡2|广州入口 6
-      - 新加坡3|广州入口 6
       - 香港千兆-04号
-      - 新加坡千兆-06号
-      - 翻墙党fanqiangdang.com@0123_CN_56
-      - 翻墙党fanqiangdang.com@0123_CN_62
-      - 翻墙党fanqiangdang.com@0123_CN_27
-      - 香港千兆-04号 2
-      - 52296 @WangCai_1
       - 52221 @WangCai_1
       - 52215 @WangCai_1
-      - 香港7|安徽入口|原生 4
-      - 香港7|安徽入口|原生 5
-      - 香港5|长沙入口|原生 5
-      - 香港3|广州入口|原生 4
-      - 香港3|广州入口|原生 5
-      - VIP1新加坡-佛移-2号线路-tr
-      - VIP1新加坡-佛移-3号线路-tr
-      - VIP1新加坡-佛移-4号线路-tr
-      - VIP1新加坡-佛移多线路负载均衡-tr
+      - 香港5|长沙入口|原生 4
       - VIP1美国 洛杉矶 | 佛移多线路负载均衡
       - VIP1美国 洛杉矶 | 广移多线路负载均衡
       - VIP1越南-原生IP-佛移-tr
       - VIP1越南-原生IP-广移-tr
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x 3
-      - 【新鸟免费】日本JP-AWS 06 1.0x 2
+      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 日本千兆-15号
       - 日本千兆-17号
       - 日本千兆-20号
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x 2
-      - 【新鸟免费】台湾TW-Hinet 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 01 1.0x
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x
       - youtube:8度科技_美国
       - youtube:8度科技_美国 2
       - youtube:8度科技_美国 3
-      - youtube:8度科技_美国 4
-      - youtube:8度科技_加拿大
-      - youtube:8度科技_美国 5
-      - youtube:8度科技_美国 6
-      - youtube:8度科技_美国 7
-      - youtube:8度科技_美国 8
-      - youtube:8度科技_加拿大 2
-      - youtube:8度科技_加拿大 3
-      - youtube:8度科技_美国 9
-      - youtube:8度科技_美国 10
-      - youtube:8度科技_美国 11
-      - youtube:8度科技_加拿大 4
-      - youtube:8度科技_美国 12
-      - youtube:8度科技_加拿大 5
-      - youtube:8度科技_美国 13
-      - youtube:8度科技_美国 14
-      - youtube:8度科技_加拿大 6
-      - youtube:8度科技_美国 15
-      - youtube:8度科技_加拿大 7
-      - youtube:8度科技_美国 16
-      - youtube:8度科技_加拿大 8
-      - youtube:8度科技_美国 17
-      - youtube:8度科技_加拿大 9
-      - youtube:8度科技_美国 18
-      - 美国千兆-16号
       - 日本千兆-20号 2
       - 香港Azure-Tokyo-Linode
       - 香港Azure-SG-DigitalOcean
       - 香港Azure-SG-DigitalOcean 2
       - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean 3
-      - 香港Azure-SG-DigitalOcean 4
       - 香港Azure-Tokyo-Linode 2
       - 香港Azure-Columbus-EC2-dip
-      - HK-HGC-500Mbps
       - 美国_阿伟科技-油管
-      - 翻墙党fanqiangdang.com@0123_CN_40
-      - Ytb:鹏哥分享_US_美国_56
-      - 美国_阿伟科技-油管 2
-      - Ytb:鹏哥分享_US_美国_19
-      - Ytb:鹏哥分享_CA_加拿大_131
-      - Ytb:鹏哥分享_GB_英国_97
-      - 翻墙党fanqiangdang.com@0123_70
-      - US_2359 |52.03Mb
-      - 翻墙党fanqiangdang.com@0123_US_65
-      - Ytb:鹏哥分享_CA_加拿大_177
-      - 美国_阿伟科技-油管 3
-      - Ytb:鹏哥分享_CA_加拿大_112
-      - Ytb:鹏哥分享_US_美国_7
-      - Ytb:鹏哥分享_CA_加拿大_139
-      - 美国_阿伟科技-油管 4
-      - Ytb:鹏哥分享_CA_加拿大_211
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国_阿伟科技-油管 5
-      - US_1159+|65.72Mb
-      - Ytb:鹏哥分享_CA_加拿大_174
-      - Ytb:鹏哥分享_CA_加拿大_148
-      - Ytb:鹏哥分享_CA_加拿大_194
-      - Ytb:鹏哥分享_CA_加拿大_85
-      - 日本|03|LINODE|0.7x|流解
-      - Ytb:鹏哥分享_CA_加拿大_217
-      - Ytb:鹏哥分享_CA_加拿大_115
-      - Ytb:鹏哥分享_CA_加拿大_126
-      - 美国_阿伟科技-油管 6
-      - 香港8|AZ直连
-      - +_KR_韩国_233
-      - 美国_TG@nodesharing_14
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - V4-#248|广东-香港HKT|x2.0|V2ray_7
-      - V4-#27|广东-香港HKT|NF|x2.0|V2ray_11
-      - V4-#326|广东-台湾|NF|x2.0|V2ray_20
-      - V4-#39|上海-日本|NF|x1.0|V2ray_25
-      - V4-#47|广港-新加坡|NF|x2.0|V2ray_28
-      - V4-#51|广港-新加坡|NF|x2.0@vpnhat
-      - V4-#45|广港-新加坡|NF|x2.0|V2ray_27
-      - V4-#49|广港-新加坡|NF|x2.0|V2ray_29
+      - 52283 @WangCai_1
+      - "@ShareCentrePro+Hongkong"
+      - CN-120.233.150.200-1127
+      - 中国_TG@nodesharing
+      - togostar.top
+      - 中国_TG@nodesharing_8
+      - 香港_TG@nodesharing_29
+      - 香港_TG@nodesharing_41
+      - 中国_TG@nodesharing_62
+      - 中国_TG@nodesharing_64
+      - 中国_TG@nodesharing_66
+      - 中国_TG@nodesharing_70
+      - 中国_TG@nodesharing_328
+      - 香港10|长沙入口|原生
+      - 香港7|安徽入口|原生 3
+      - 香港(绿头外网集团)(Public) 5
+      - 香港(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public)
+      - 中国_TG@nodesharing_8 2
+      - V1 | SG B1
+      - AWS新加坡|AZ中转
+      - YouTube由零开始-日本
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -960,1009 +444,465 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡5 | SSR - 20002 单端口
-      - 中国 香港-A1-CM中继
-      - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
-      - 台湾 台北-A1-CM中继
-      - 新加坡-SG-A1-CM中继
-      - 新加坡-SG-A2-CM中继
-      - 日本 东京-A2-CU中继
-      - 美国 洛杉矶-A1-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - SG-Nerocloud
-      - LAX-DMIT
-      - 香港HKT
-      - 503
-      - 52298 @WangCai_1
       - Lv2新加坡2|V2Ray|中转优化
       - Lv2新加坡4|V2Ray|中转优化
       - Lv2日本3|V2Ray|中转优化
       - Lv2日本4 | V2Ray|中转优化
-      - 52226 @WangCai_1
-      - 香港高速公益节点(有限流量)2.0
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
-      - 【新鸟免费】新加坡SG-AWS 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 07 1.0x
       - 韩国|V2Ray|中转优化
       - 香港1| V2Ray | 流媒体优选
-      - 【新鸟免费】台湾TW-Hinet 04 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x
-      - 【新鸟免费】日本JP-AWS 04 1.0x
-      - v2-香港HKBGP-hk3-g2
-      - 【新鸟免费】日本JP-AWS 04 1.0x 2
-      - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 52282 @WangCai_1
-      - 香港_TG@nodesharing_13
-      - ---v2节点-香港h5-稳定-cn2
-      - 日本千兆-09号
-      - 日本千兆-10号
-      - n_52207 好兄弟，新年快乐
-      - n_52215 好兄弟，新年快乐_25
-      - n_52221 好兄弟，新年快乐
-      - n_52226 好兄弟，新年快乐
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 【低延迟】中转*广州移动-香港*03
       - v2-日本hk1-g5
-      - 【新鸟免费】日本JP-AWS 01 1.0x 2
       - 【新鸟免费】日本JP-AWS 02 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x 2
-      - 【新鸟免费】日本JP-AWS 02 1.0x 2
       - 美国高速公益节点2.0
       - 美国高速公益节点
-      - 【新鸟免费】日本JP-AWS 06 1.0x
-      - 【新鸟免费】日本JP-AWS 08 1.0x 2
-      - 【新鸟免费】日本JP-AWS 10 1.0x
-      - 中国_TG@nodesharing_488
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
+      - 【新鸟免费】日本JP-AWS 08 1.0x
       - "[联通直连]-美国西雅图06"
-      - FREE_V2ray_US_A 倍率*1
-      - FREE_V2ray_US_B 倍率*1
       - 香港(绿头外网集团)(Public)
       - 香港(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 3
-      - 韩国(绿头外网集团)(Public)
-      - 韩国(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 4
-      - 中国_TG@nodesharing_14
-      - 每次连接前用国内网络更新订阅
-      - 中转|新加坡Singtel01|华南隧道[流媒体解锁]
       - 中转|日本GMO07|华南隧道[流媒体解锁]
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生
-      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF
       - 日本2|杭州入口|原生|NF
-      - 日本3|长沙入口|原生|NF
       - 新加坡2|广州入口
       - 新加坡3|广州入口
-      - 汕头联通=>HK-HGC-500Mbps
-      - 香港2|广州入口|原生|NF 2
+      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生 2
       - 日本1|杭州入口|原生|NF 2
       - 日本2|杭州入口|原生|NF 2
-      - 日本5|杭州入口|原生|NF
-      - 新加坡2|广州入口 2
+      - 日本3|长沙入口|原生|NF
       - 新加坡3|广州入口 2
       - 香港3|广州入口|原生 2
-      - 香港5|长沙入口|原生 3
       - 日本1|杭州入口|原生|NF 3
       - 日本2|杭州入口|原生|NF 3
       - 日本3|长沙入口|原生|NF 2
-      - 新加坡2|广州入口 3
+      - 新加坡2|广州入口 2
       - 新加坡3|广州入口 3
-      - 美国2|原生|去广告|NF
-      - 香港3|广州入口|原生 3
+      - 香港2|广州入口|原生|NF
+      - 香港5|长沙入口|原生 3
+      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF 4
       - 日本2|杭州入口|原生|NF 4
       - 日本3|长沙入口|原生|NF 3
-      - 新加坡2|广州入口 4
+      - 新加坡2|广州入口 3
       - 新加坡3|广州入口 4
-      - 香港2|广州入口|原生|NF 3
-      - 香港5|长沙入口|原生 4
       - 香港7|安徽入口|原生 2
       - 日本1|杭州入口|原生|NF 5
-      - 日本2|杭州入口|原生|NF 5
-      - 日本3|长沙入口|原生|NF 4
-      - 新加坡2|广州入口 5
+      - 新加坡2|广州入口 4
       - 新加坡3|广州入口 5
-      - 香港7|安徽入口|原生 3
-      - 日本1|杭州入口|原生|NF 6
-      - 日本2|杭州入口|原生|NF 6
-      - 新加坡2|广州入口 6
-      - 新加坡3|广州入口 6
       - 香港千兆-04号
-      - 新加坡千兆-06号
-      - 翻墙党fanqiangdang.com@0123_CN_56
-      - 翻墙党fanqiangdang.com@0123_CN_62
-      - 翻墙党fanqiangdang.com@0123_CN_27
-      - 香港千兆-04号 2
-      - 52296 @WangCai_1
       - 52221 @WangCai_1
       - 52215 @WangCai_1
-      - 香港7|安徽入口|原生 4
-      - 香港7|安徽入口|原生 5
-      - 香港5|长沙入口|原生 5
-      - 香港3|广州入口|原生 4
-      - 香港3|广州入口|原生 5
-      - VIP1新加坡-佛移-2号线路-tr
-      - VIP1新加坡-佛移-3号线路-tr
-      - VIP1新加坡-佛移-4号线路-tr
-      - VIP1新加坡-佛移多线路负载均衡-tr
+      - 香港5|长沙入口|原生 4
       - VIP1美国 洛杉矶 | 佛移多线路负载均衡
       - VIP1美国 洛杉矶 | 广移多线路负载均衡
       - VIP1越南-原生IP-佛移-tr
       - VIP1越南-原生IP-广移-tr
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x 3
-      - 【新鸟免费】日本JP-AWS 06 1.0x 2
+      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 日本千兆-15号
       - 日本千兆-17号
       - 日本千兆-20号
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x 2
-      - 【新鸟免费】台湾TW-Hinet 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 01 1.0x
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x
       - youtube:8度科技_美国
       - youtube:8度科技_美国 2
       - youtube:8度科技_美国 3
-      - youtube:8度科技_美国 4
-      - youtube:8度科技_加拿大
-      - youtube:8度科技_美国 5
-      - youtube:8度科技_美国 6
-      - youtube:8度科技_美国 7
-      - youtube:8度科技_美国 8
-      - youtube:8度科技_加拿大 2
-      - youtube:8度科技_加拿大 3
-      - youtube:8度科技_美国 9
-      - youtube:8度科技_美国 10
-      - youtube:8度科技_美国 11
-      - youtube:8度科技_加拿大 4
-      - youtube:8度科技_美国 12
-      - youtube:8度科技_加拿大 5
-      - youtube:8度科技_美国 13
-      - youtube:8度科技_美国 14
-      - youtube:8度科技_加拿大 6
-      - youtube:8度科技_美国 15
-      - youtube:8度科技_加拿大 7
-      - youtube:8度科技_美国 16
-      - youtube:8度科技_加拿大 8
-      - youtube:8度科技_美国 17
-      - youtube:8度科技_加拿大 9
-      - youtube:8度科技_美国 18
-      - 美国千兆-16号
       - 日本千兆-20号 2
       - 香港Azure-Tokyo-Linode
       - 香港Azure-SG-DigitalOcean
       - 香港Azure-SG-DigitalOcean 2
       - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean 3
-      - 香港Azure-SG-DigitalOcean 4
       - 香港Azure-Tokyo-Linode 2
       - 香港Azure-Columbus-EC2-dip
-      - HK-HGC-500Mbps
       - 美国_阿伟科技-油管
-      - 翻墙党fanqiangdang.com@0123_CN_40
-      - Ytb:鹏哥分享_US_美国_56
-      - 美国_阿伟科技-油管 2
-      - Ytb:鹏哥分享_US_美国_19
-      - Ytb:鹏哥分享_CA_加拿大_131
-      - Ytb:鹏哥分享_GB_英国_97
-      - 翻墙党fanqiangdang.com@0123_70
-      - US_2359 |52.03Mb
-      - 翻墙党fanqiangdang.com@0123_US_65
-      - Ytb:鹏哥分享_CA_加拿大_177
-      - 美国_阿伟科技-油管 3
-      - Ytb:鹏哥分享_CA_加拿大_112
-      - Ytb:鹏哥分享_US_美国_7
-      - Ytb:鹏哥分享_CA_加拿大_139
-      - 美国_阿伟科技-油管 4
-      - Ytb:鹏哥分享_CA_加拿大_211
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国_阿伟科技-油管 5
-      - US_1159+|65.72Mb
-      - Ytb:鹏哥分享_CA_加拿大_174
-      - Ytb:鹏哥分享_CA_加拿大_148
-      - Ytb:鹏哥分享_CA_加拿大_194
-      - Ytb:鹏哥分享_CA_加拿大_85
-      - 日本|03|LINODE|0.7x|流解
-      - Ytb:鹏哥分享_CA_加拿大_217
-      - Ytb:鹏哥分享_CA_加拿大_115
-      - Ytb:鹏哥分享_CA_加拿大_126
-      - 美国_阿伟科技-油管 6
-      - 香港8|AZ直连
-      - +_KR_韩国_233
-      - 美国_TG@nodesharing_14
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - V4-#248|广东-香港HKT|x2.0|V2ray_7
-      - V4-#27|广东-香港HKT|NF|x2.0|V2ray_11
-      - V4-#326|广东-台湾|NF|x2.0|V2ray_20
-      - V4-#39|上海-日本|NF|x1.0|V2ray_25
-      - V4-#47|广港-新加坡|NF|x2.0|V2ray_28
-      - V4-#51|广港-新加坡|NF|x2.0@vpnhat
-      - V4-#45|广港-新加坡|NF|x2.0|V2ray_27
-      - V4-#49|广港-新加坡|NF|x2.0|V2ray_29
+      - 52283 @WangCai_1
+      - "@ShareCentrePro+Hongkong"
+      - CN-120.233.150.200-1127
+      - 中国_TG@nodesharing
+      - togostar.top
+      - 中国_TG@nodesharing_8
+      - 香港_TG@nodesharing_29
+      - 香港_TG@nodesharing_41
+      - 中国_TG@nodesharing_62
+      - 中国_TG@nodesharing_64
+      - 中国_TG@nodesharing_66
+      - 中国_TG@nodesharing_70
+      - 中国_TG@nodesharing_328
+      - 香港10|长沙入口|原生
+      - 香港7|安徽入口|原生 3
+      - 香港(绿头外网集团)(Public) 5
+      - 香港(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public)
+      - 中国_TG@nodesharing_8 2
+      - V1 | SG B1
+      - AWS新加坡|AZ中转
+      - YouTube由零开始-日本
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 中国 香港-A1-CM中继
-      - 中国 香港-A2-CM中继
-      - 台湾 台北-A1-CM中继
-      - 香港HKT
-      - 香港高速公益节点(有限流量)2.0
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
       - 香港1| V2Ray | 流媒体优选
-      - 【新鸟免费】台湾TW-Hinet 04 1.0x
-      - v2-香港HKBGP-hk3-g2
-      - 香港_TG@nodesharing_13
-      - ---v2节点-香港h5-稳定-cn2
-      - 【低延迟】中转*广州移动-香港*03
       - v2-日本hk1-g5
       - 香港(绿头外网集团)(Public)
       - 香港(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 3
       - 香港(绿头外网集团)(Public) 4
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生
-      - 香港7|安徽入口|原生
-      - 汕头联通=>HK-HGC-500Mbps
-      - 香港2|广州入口|原生|NF 2
+      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生 2
       - 香港3|广州入口|原生 2
+      - 香港2|广州入口|原生|NF
       - 香港5|长沙入口|原生 3
-      - 香港3|广州入口|原生 3
-      - 香港2|广州入口|原生|NF 3
-      - 香港5|长沙入口|原生 4
+      - 香港7|安徽入口|原生
       - 香港7|安徽入口|原生 2
-      - 香港7|安徽入口|原生 3
       - 香港千兆-04号
-      - 香港千兆-04号 2
-      - 香港7|安徽入口|原生 4
-      - 香港7|安徽入口|原生 5
-      - 香港5|长沙入口|原生 5
-      - 香港3|广州入口|原生 4
-      - 香港3|广州入口|原生 5
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x 2
-      - 【新鸟免费】台湾TW-Hinet 05 1.0x
+      - 香港5|长沙入口|原生 4
       - 香港Azure-Tokyo-Linode
       - 香港Azure-SG-DigitalOcean
       - 香港Azure-SG-DigitalOcean 2
       - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean 3
-      - 香港Azure-SG-DigitalOcean 4
       - 香港Azure-Tokyo-Linode 2
       - 香港Azure-Columbus-EC2-dip
-      - HK-HGC-500Mbps
-      - 香港8|AZ直连
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - V4-#248|广东-香港HKT|x2.0|V2ray_7
-      - V4-#27|广东-香港HKT|NF|x2.0|V2ray_11
-      - V4-#326|广东-台湾|NF|x2.0|V2ray_20
-      - V4-#47|广港-新加坡|NF|x2.0|V2ray_28
-      - V4-#51|广港-新加坡|NF|x2.0@vpnhat
-      - V4-#45|广港-新加坡|NF|x2.0|V2ray_27
-      - V4-#49|广港-新加坡|NF|x2.0|V2ray_29
+      - 香港_TG@nodesharing_29
+      - 香港_TG@nodesharing_41
+      - 香港10|长沙入口|原生
+      - 香港7|安徽入口|原生 3
+      - 香港(绿头外网集团)(Public) 5
+      - 香港(绿头外网集团)(Public) 6
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡5 | SSR - 20002 单端口
-      - 中国 香港-A1-CM中继
-      - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
-      - 台湾 台北-A1-CM中继
-      - 新加坡-SG-A1-CM中继
-      - 新加坡-SG-A2-CM中继
-      - 日本 东京-A2-CU中继
-      - 美国 洛杉矶-A1-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - SG-Nerocloud
-      - LAX-DMIT
-      - 香港HKT
-      - 503
-      - 52298 @WangCai_1
       - Lv2新加坡2|V2Ray|中转优化
       - Lv2新加坡4|V2Ray|中转优化
       - Lv2日本3|V2Ray|中转优化
       - Lv2日本4 | V2Ray|中转优化
-      - 52226 @WangCai_1
-      - 香港高速公益节点(有限流量)2.0
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
-      - 【新鸟免费】新加坡SG-AWS 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 07 1.0x
       - 韩国|V2Ray|中转优化
       - 香港1| V2Ray | 流媒体优选
-      - 【新鸟免费】台湾TW-Hinet 04 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x
-      - 【新鸟免费】日本JP-AWS 04 1.0x
-      - v2-香港HKBGP-hk3-g2
-      - 【新鸟免费】日本JP-AWS 04 1.0x 2
-      - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 52282 @WangCai_1
-      - 香港_TG@nodesharing_13
-      - ---v2节点-香港h5-稳定-cn2
-      - 日本千兆-09号
-      - 日本千兆-10号
-      - n_52207 好兄弟，新年快乐
-      - n_52215 好兄弟，新年快乐_25
-      - n_52221 好兄弟，新年快乐
-      - n_52226 好兄弟，新年快乐
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 【低延迟】中转*广州移动-香港*03
       - v2-日本hk1-g5
-      - 【新鸟免费】日本JP-AWS 01 1.0x 2
       - 【新鸟免费】日本JP-AWS 02 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x 2
-      - 【新鸟免费】日本JP-AWS 02 1.0x 2
       - 美国高速公益节点2.0
       - 美国高速公益节点
-      - 【新鸟免费】日本JP-AWS 06 1.0x
-      - 【新鸟免费】日本JP-AWS 08 1.0x 2
-      - 【新鸟免费】日本JP-AWS 10 1.0x
-      - 中国_TG@nodesharing_488
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
+      - 【新鸟免费】日本JP-AWS 08 1.0x
       - "[联通直连]-美国西雅图06"
-      - FREE_V2ray_US_A 倍率*1
-      - FREE_V2ray_US_B 倍率*1
       - 香港(绿头外网集团)(Public)
       - 香港(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 3
-      - 韩国(绿头外网集团)(Public)
-      - 韩国(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 4
-      - 中国_TG@nodesharing_14
-      - 每次连接前用国内网络更新订阅
-      - 中转|新加坡Singtel01|华南隧道[流媒体解锁]
       - 中转|日本GMO07|华南隧道[流媒体解锁]
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生
-      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF
       - 日本2|杭州入口|原生|NF
-      - 日本3|长沙入口|原生|NF
       - 新加坡2|广州入口
       - 新加坡3|广州入口
-      - 汕头联通=>HK-HGC-500Mbps
-      - 香港2|广州入口|原生|NF 2
+      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生 2
       - 日本1|杭州入口|原生|NF 2
       - 日本2|杭州入口|原生|NF 2
-      - 日本5|杭州入口|原生|NF
-      - 新加坡2|广州入口 2
+      - 日本3|长沙入口|原生|NF
       - 新加坡3|广州入口 2
       - 香港3|广州入口|原生 2
-      - 香港5|长沙入口|原生 3
       - 日本1|杭州入口|原生|NF 3
       - 日本2|杭州入口|原生|NF 3
       - 日本3|长沙入口|原生|NF 2
-      - 新加坡2|广州入口 3
+      - 新加坡2|广州入口 2
       - 新加坡3|广州入口 3
-      - 美国2|原生|去广告|NF
-      - 香港3|广州入口|原生 3
+      - 香港2|广州入口|原生|NF
+      - 香港5|长沙入口|原生 3
+      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF 4
       - 日本2|杭州入口|原生|NF 4
       - 日本3|长沙入口|原生|NF 3
-      - 新加坡2|广州入口 4
+      - 新加坡2|广州入口 3
       - 新加坡3|广州入口 4
-      - 香港2|广州入口|原生|NF 3
-      - 香港5|长沙入口|原生 4
       - 香港7|安徽入口|原生 2
       - 日本1|杭州入口|原生|NF 5
-      - 日本2|杭州入口|原生|NF 5
-      - 日本3|长沙入口|原生|NF 4
-      - 新加坡2|广州入口 5
+      - 新加坡2|广州入口 4
       - 新加坡3|广州入口 5
-      - 香港7|安徽入口|原生 3
-      - 日本1|杭州入口|原生|NF 6
-      - 日本2|杭州入口|原生|NF 6
-      - 新加坡2|广州入口 6
-      - 新加坡3|广州入口 6
       - 香港千兆-04号
-      - 新加坡千兆-06号
-      - 翻墙党fanqiangdang.com@0123_CN_56
-      - 翻墙党fanqiangdang.com@0123_CN_62
-      - 翻墙党fanqiangdang.com@0123_CN_27
-      - 香港千兆-04号 2
-      - 52296 @WangCai_1
       - 52221 @WangCai_1
       - 52215 @WangCai_1
-      - 香港7|安徽入口|原生 4
-      - 香港7|安徽入口|原生 5
-      - 香港5|长沙入口|原生 5
-      - 香港3|广州入口|原生 4
-      - 香港3|广州入口|原生 5
-      - VIP1新加坡-佛移-2号线路-tr
-      - VIP1新加坡-佛移-3号线路-tr
-      - VIP1新加坡-佛移-4号线路-tr
-      - VIP1新加坡-佛移多线路负载均衡-tr
+      - 香港5|长沙入口|原生 4
       - VIP1美国 洛杉矶 | 佛移多线路负载均衡
       - VIP1美国 洛杉矶 | 广移多线路负载均衡
       - VIP1越南-原生IP-佛移-tr
       - VIP1越南-原生IP-广移-tr
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x 3
-      - 【新鸟免费】日本JP-AWS 06 1.0x 2
+      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 日本千兆-15号
       - 日本千兆-17号
       - 日本千兆-20号
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x 2
-      - 【新鸟免费】台湾TW-Hinet 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 01 1.0x
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x
       - youtube:8度科技_美国
       - youtube:8度科技_美国 2
       - youtube:8度科技_美国 3
-      - youtube:8度科技_美国 4
-      - youtube:8度科技_加拿大
-      - youtube:8度科技_美国 5
-      - youtube:8度科技_美国 6
-      - youtube:8度科技_美国 7
-      - youtube:8度科技_美国 8
-      - youtube:8度科技_加拿大 2
-      - youtube:8度科技_加拿大 3
-      - youtube:8度科技_美国 9
-      - youtube:8度科技_美国 10
-      - youtube:8度科技_美国 11
-      - youtube:8度科技_加拿大 4
-      - youtube:8度科技_美国 12
-      - youtube:8度科技_加拿大 5
-      - youtube:8度科技_美国 13
-      - youtube:8度科技_美国 14
-      - youtube:8度科技_加拿大 6
-      - youtube:8度科技_美国 15
-      - youtube:8度科技_加拿大 7
-      - youtube:8度科技_美国 16
-      - youtube:8度科技_加拿大 8
-      - youtube:8度科技_美国 17
-      - youtube:8度科技_加拿大 9
-      - youtube:8度科技_美国 18
-      - 美国千兆-16号
       - 日本千兆-20号 2
       - 香港Azure-Tokyo-Linode
       - 香港Azure-SG-DigitalOcean
       - 香港Azure-SG-DigitalOcean 2
       - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean 3
-      - 香港Azure-SG-DigitalOcean 4
       - 香港Azure-Tokyo-Linode 2
       - 香港Azure-Columbus-EC2-dip
-      - HK-HGC-500Mbps
       - 美国_阿伟科技-油管
-      - 翻墙党fanqiangdang.com@0123_CN_40
-      - Ytb:鹏哥分享_US_美国_56
-      - 美国_阿伟科技-油管 2
-      - Ytb:鹏哥分享_US_美国_19
-      - Ytb:鹏哥分享_CA_加拿大_131
-      - Ytb:鹏哥分享_GB_英国_97
-      - 翻墙党fanqiangdang.com@0123_70
-      - US_2359 |52.03Mb
-      - 翻墙党fanqiangdang.com@0123_US_65
-      - Ytb:鹏哥分享_CA_加拿大_177
-      - 美国_阿伟科技-油管 3
-      - Ytb:鹏哥分享_CA_加拿大_112
-      - Ytb:鹏哥分享_US_美国_7
-      - Ytb:鹏哥分享_CA_加拿大_139
-      - 美国_阿伟科技-油管 4
-      - Ytb:鹏哥分享_CA_加拿大_211
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国_阿伟科技-油管 5
-      - US_1159+|65.72Mb
-      - Ytb:鹏哥分享_CA_加拿大_174
-      - Ytb:鹏哥分享_CA_加拿大_148
-      - Ytb:鹏哥分享_CA_加拿大_194
-      - Ytb:鹏哥分享_CA_加拿大_85
-      - 日本|03|LINODE|0.7x|流解
-      - Ytb:鹏哥分享_CA_加拿大_217
-      - Ytb:鹏哥分享_CA_加拿大_115
-      - Ytb:鹏哥分享_CA_加拿大_126
-      - 美国_阿伟科技-油管 6
-      - 香港8|AZ直连
-      - +_KR_韩国_233
-      - 美国_TG@nodesharing_14
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - V4-#248|广东-香港HKT|x2.0|V2ray_7
-      - V4-#27|广东-香港HKT|NF|x2.0|V2ray_11
-      - V4-#326|广东-台湾|NF|x2.0|V2ray_20
-      - V4-#39|上海-日本|NF|x1.0|V2ray_25
-      - V4-#47|广港-新加坡|NF|x2.0|V2ray_28
-      - V4-#51|广港-新加坡|NF|x2.0@vpnhat
-      - V4-#45|广港-新加坡|NF|x2.0|V2ray_27
-      - V4-#49|广港-新加坡|NF|x2.0|V2ray_29
+      - 52283 @WangCai_1
+      - "@ShareCentrePro+Hongkong"
+      - CN-120.233.150.200-1127
+      - 中国_TG@nodesharing
+      - togostar.top
+      - 中国_TG@nodesharing_8
+      - 香港_TG@nodesharing_29
+      - 香港_TG@nodesharing_41
+      - 中国_TG@nodesharing_62
+      - 中国_TG@nodesharing_64
+      - 中国_TG@nodesharing_66
+      - 中国_TG@nodesharing_70
+      - 中国_TG@nodesharing_328
+      - 香港10|长沙入口|原生
+      - 香港7|安徽入口|原生 3
+      - 香港(绿头外网集团)(Public) 5
+      - 香港(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public)
+      - 中国_TG@nodesharing_8 2
+      - V1 | SG B1
+      - AWS新加坡|AZ中转
+      - YouTube由零开始-日本
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡5 | SSR - 20002 单端口
-      - 中国 香港-A1-CM中继
-      - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
-      - 台湾 台北-A1-CM中继
-      - 新加坡-SG-A1-CM中继
-      - 新加坡-SG-A2-CM中继
-      - 日本 东京-A2-CU中继
-      - 美国 洛杉矶-A1-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - SG-Nerocloud
-      - LAX-DMIT
-      - 香港HKT
-      - 503
-      - 52298 @WangCai_1
       - Lv2新加坡2|V2Ray|中转优化
       - Lv2新加坡4|V2Ray|中转优化
       - Lv2日本3|V2Ray|中转优化
       - Lv2日本4 | V2Ray|中转优化
-      - 52226 @WangCai_1
-      - 香港高速公益节点(有限流量)2.0
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
-      - 【新鸟免费】新加坡SG-AWS 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 07 1.0x
       - 韩国|V2Ray|中转优化
       - 香港1| V2Ray | 流媒体优选
-      - 【新鸟免费】台湾TW-Hinet 04 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x
-      - 【新鸟免费】日本JP-AWS 04 1.0x
-      - v2-香港HKBGP-hk3-g2
-      - 【新鸟免费】日本JP-AWS 04 1.0x 2
-      - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 52282 @WangCai_1
-      - 香港_TG@nodesharing_13
-      - ---v2节点-香港h5-稳定-cn2
-      - 日本千兆-09号
-      - 日本千兆-10号
-      - n_52207 好兄弟，新年快乐
-      - n_52215 好兄弟，新年快乐_25
-      - n_52221 好兄弟，新年快乐
-      - n_52226 好兄弟，新年快乐
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 【低延迟】中转*广州移动-香港*03
       - v2-日本hk1-g5
-      - 【新鸟免费】日本JP-AWS 01 1.0x 2
       - 【新鸟免费】日本JP-AWS 02 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x 2
-      - 【新鸟免费】日本JP-AWS 02 1.0x 2
       - 美国高速公益节点2.0
       - 美国高速公益节点
-      - 【新鸟免费】日本JP-AWS 06 1.0x
-      - 【新鸟免费】日本JP-AWS 08 1.0x 2
-      - 【新鸟免费】日本JP-AWS 10 1.0x
-      - 中国_TG@nodesharing_488
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
+      - 【新鸟免费】日本JP-AWS 08 1.0x
       - "[联通直连]-美国西雅图06"
-      - FREE_V2ray_US_A 倍率*1
-      - FREE_V2ray_US_B 倍率*1
       - 香港(绿头外网集团)(Public)
       - 香港(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 3
-      - 韩国(绿头外网集团)(Public)
-      - 韩国(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 4
-      - 中国_TG@nodesharing_14
-      - 每次连接前用国内网络更新订阅
-      - 中转|新加坡Singtel01|华南隧道[流媒体解锁]
       - 中转|日本GMO07|华南隧道[流媒体解锁]
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生
-      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF
       - 日本2|杭州入口|原生|NF
-      - 日本3|长沙入口|原生|NF
       - 新加坡2|广州入口
       - 新加坡3|广州入口
-      - 汕头联通=>HK-HGC-500Mbps
-      - 香港2|广州入口|原生|NF 2
+      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生 2
       - 日本1|杭州入口|原生|NF 2
       - 日本2|杭州入口|原生|NF 2
-      - 日本5|杭州入口|原生|NF
-      - 新加坡2|广州入口 2
+      - 日本3|长沙入口|原生|NF
       - 新加坡3|广州入口 2
       - 香港3|广州入口|原生 2
-      - 香港5|长沙入口|原生 3
       - 日本1|杭州入口|原生|NF 3
       - 日本2|杭州入口|原生|NF 3
       - 日本3|长沙入口|原生|NF 2
-      - 新加坡2|广州入口 3
+      - 新加坡2|广州入口 2
       - 新加坡3|广州入口 3
-      - 美国2|原生|去广告|NF
-      - 香港3|广州入口|原生 3
+      - 香港2|广州入口|原生|NF
+      - 香港5|长沙入口|原生 3
+      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF 4
       - 日本2|杭州入口|原生|NF 4
       - 日本3|长沙入口|原生|NF 3
-      - 新加坡2|广州入口 4
+      - 新加坡2|广州入口 3
       - 新加坡3|广州入口 4
-      - 香港2|广州入口|原生|NF 3
-      - 香港5|长沙入口|原生 4
       - 香港7|安徽入口|原生 2
       - 日本1|杭州入口|原生|NF 5
-      - 日本2|杭州入口|原生|NF 5
-      - 日本3|长沙入口|原生|NF 4
-      - 新加坡2|广州入口 5
+      - 新加坡2|广州入口 4
       - 新加坡3|广州入口 5
-      - 香港7|安徽入口|原生 3
-      - 日本1|杭州入口|原生|NF 6
-      - 日本2|杭州入口|原生|NF 6
-      - 新加坡2|广州入口 6
-      - 新加坡3|广州入口 6
       - 香港千兆-04号
-      - 新加坡千兆-06号
-      - 翻墙党fanqiangdang.com@0123_CN_56
-      - 翻墙党fanqiangdang.com@0123_CN_62
-      - 翻墙党fanqiangdang.com@0123_CN_27
-      - 香港千兆-04号 2
-      - 52296 @WangCai_1
       - 52221 @WangCai_1
       - 52215 @WangCai_1
-      - 香港7|安徽入口|原生 4
-      - 香港7|安徽入口|原生 5
-      - 香港5|长沙入口|原生 5
-      - 香港3|广州入口|原生 4
-      - 香港3|广州入口|原生 5
-      - VIP1新加坡-佛移-2号线路-tr
-      - VIP1新加坡-佛移-3号线路-tr
-      - VIP1新加坡-佛移-4号线路-tr
-      - VIP1新加坡-佛移多线路负载均衡-tr
+      - 香港5|长沙入口|原生 4
       - VIP1美国 洛杉矶 | 佛移多线路负载均衡
       - VIP1美国 洛杉矶 | 广移多线路负载均衡
       - VIP1越南-原生IP-佛移-tr
       - VIP1越南-原生IP-广移-tr
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x 3
-      - 【新鸟免费】日本JP-AWS 06 1.0x 2
+      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 日本千兆-15号
       - 日本千兆-17号
       - 日本千兆-20号
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x 2
-      - 【新鸟免费】台湾TW-Hinet 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 01 1.0x
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x
       - youtube:8度科技_美国
       - youtube:8度科技_美国 2
       - youtube:8度科技_美国 3
-      - youtube:8度科技_美国 4
-      - youtube:8度科技_加拿大
-      - youtube:8度科技_美国 5
-      - youtube:8度科技_美国 6
-      - youtube:8度科技_美国 7
-      - youtube:8度科技_美国 8
-      - youtube:8度科技_加拿大 2
-      - youtube:8度科技_加拿大 3
-      - youtube:8度科技_美国 9
-      - youtube:8度科技_美国 10
-      - youtube:8度科技_美国 11
-      - youtube:8度科技_加拿大 4
-      - youtube:8度科技_美国 12
-      - youtube:8度科技_加拿大 5
-      - youtube:8度科技_美国 13
-      - youtube:8度科技_美国 14
-      - youtube:8度科技_加拿大 6
-      - youtube:8度科技_美国 15
-      - youtube:8度科技_加拿大 7
-      - youtube:8度科技_美国 16
-      - youtube:8度科技_加拿大 8
-      - youtube:8度科技_美国 17
-      - youtube:8度科技_加拿大 9
-      - youtube:8度科技_美国 18
-      - 美国千兆-16号
       - 日本千兆-20号 2
       - 香港Azure-Tokyo-Linode
       - 香港Azure-SG-DigitalOcean
       - 香港Azure-SG-DigitalOcean 2
       - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean 3
-      - 香港Azure-SG-DigitalOcean 4
       - 香港Azure-Tokyo-Linode 2
       - 香港Azure-Columbus-EC2-dip
-      - HK-HGC-500Mbps
       - 美国_阿伟科技-油管
-      - 翻墙党fanqiangdang.com@0123_CN_40
-      - Ytb:鹏哥分享_US_美国_56
-      - 美国_阿伟科技-油管 2
-      - Ytb:鹏哥分享_US_美国_19
-      - Ytb:鹏哥分享_CA_加拿大_131
-      - Ytb:鹏哥分享_GB_英国_97
-      - 翻墙党fanqiangdang.com@0123_70
-      - US_2359 |52.03Mb
-      - 翻墙党fanqiangdang.com@0123_US_65
-      - Ytb:鹏哥分享_CA_加拿大_177
-      - 美国_阿伟科技-油管 3
-      - Ytb:鹏哥分享_CA_加拿大_112
-      - Ytb:鹏哥分享_US_美国_7
-      - Ytb:鹏哥分享_CA_加拿大_139
-      - 美国_阿伟科技-油管 4
-      - Ytb:鹏哥分享_CA_加拿大_211
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国_阿伟科技-油管 5
-      - US_1159+|65.72Mb
-      - Ytb:鹏哥分享_CA_加拿大_174
-      - Ytb:鹏哥分享_CA_加拿大_148
-      - Ytb:鹏哥分享_CA_加拿大_194
-      - Ytb:鹏哥分享_CA_加拿大_85
-      - 日本|03|LINODE|0.7x|流解
-      - Ytb:鹏哥分享_CA_加拿大_217
-      - Ytb:鹏哥分享_CA_加拿大_115
-      - Ytb:鹏哥分享_CA_加拿大_126
-      - 美国_阿伟科技-油管 6
-      - 香港8|AZ直连
-      - +_KR_韩国_233
-      - 美国_TG@nodesharing_14
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - V4-#248|广东-香港HKT|x2.0|V2ray_7
-      - V4-#27|广东-香港HKT|NF|x2.0|V2ray_11
-      - V4-#326|广东-台湾|NF|x2.0|V2ray_20
-      - V4-#39|上海-日本|NF|x1.0|V2ray_25
-      - V4-#47|广港-新加坡|NF|x2.0|V2ray_28
-      - V4-#51|广港-新加坡|NF|x2.0@vpnhat
-      - V4-#45|广港-新加坡|NF|x2.0|V2ray_27
-      - V4-#49|广港-新加坡|NF|x2.0|V2ray_29
+      - 52283 @WangCai_1
+      - "@ShareCentrePro+Hongkong"
+      - CN-120.233.150.200-1127
+      - 中国_TG@nodesharing
+      - togostar.top
+      - 中国_TG@nodesharing_8
+      - 香港_TG@nodesharing_29
+      - 香港_TG@nodesharing_41
+      - 中国_TG@nodesharing_62
+      - 中国_TG@nodesharing_64
+      - 中国_TG@nodesharing_66
+      - 中国_TG@nodesharing_70
+      - 中国_TG@nodesharing_328
+      - 香港10|长沙入口|原生
+      - 香港7|安徽入口|原生 3
+      - 香港(绿头外网集团)(Public) 5
+      - 香港(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public)
+      - 中国_TG@nodesharing_8 2
+      - V1 | SG B1
+      - AWS新加坡|AZ中转
+      - YouTube由零开始-日本
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡5 | SSR - 20002 单端口
-      - 中国 香港-A1-CM中继
-      - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
-      - 台湾 台北-A1-CM中继
-      - 新加坡-SG-A1-CM中继
-      - 新加坡-SG-A2-CM中继
-      - 日本 东京-A2-CU中继
-      - 美国 洛杉矶-A1-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - SG-Nerocloud
-      - LAX-DMIT
-      - 香港HKT
-      - 503
-      - 52298 @WangCai_1
       - Lv2新加坡2|V2Ray|中转优化
       - Lv2新加坡4|V2Ray|中转优化
       - Lv2日本3|V2Ray|中转优化
       - Lv2日本4 | V2Ray|中转优化
-      - 52226 @WangCai_1
-      - 香港高速公益节点(有限流量)2.0
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
-      - 【新鸟免费】新加坡SG-AWS 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 07 1.0x
       - 韩国|V2Ray|中转优化
       - 香港1| V2Ray | 流媒体优选
-      - 【新鸟免费】台湾TW-Hinet 04 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x
-      - 【新鸟免费】日本JP-AWS 04 1.0x
-      - v2-香港HKBGP-hk3-g2
-      - 【新鸟免费】日本JP-AWS 04 1.0x 2
-      - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 52282 @WangCai_1
-      - 香港_TG@nodesharing_13
-      - ---v2节点-香港h5-稳定-cn2
-      - 日本千兆-09号
-      - 日本千兆-10号
-      - n_52207 好兄弟，新年快乐
-      - n_52215 好兄弟，新年快乐_25
-      - n_52221 好兄弟，新年快乐
-      - n_52226 好兄弟，新年快乐
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 【低延迟】中转*广州移动-香港*03
       - v2-日本hk1-g5
-      - 【新鸟免费】日本JP-AWS 01 1.0x 2
       - 【新鸟免费】日本JP-AWS 02 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x 2
-      - 【新鸟免费】日本JP-AWS 02 1.0x 2
       - 美国高速公益节点2.0
       - 美国高速公益节点
-      - 【新鸟免费】日本JP-AWS 06 1.0x
-      - 【新鸟免费】日本JP-AWS 08 1.0x 2
-      - 【新鸟免费】日本JP-AWS 10 1.0x
-      - 中国_TG@nodesharing_488
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
+      - 【新鸟免费】日本JP-AWS 08 1.0x
       - "[联通直连]-美国西雅图06"
-      - FREE_V2ray_US_A 倍率*1
-      - FREE_V2ray_US_B 倍率*1
       - 香港(绿头外网集团)(Public)
       - 香港(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 3
-      - 韩国(绿头外网集团)(Public)
-      - 韩国(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 4
-      - 中国_TG@nodesharing_14
-      - 每次连接前用国内网络更新订阅
-      - 中转|新加坡Singtel01|华南隧道[流媒体解锁]
       - 中转|日本GMO07|华南隧道[流媒体解锁]
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生
-      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF
       - 日本2|杭州入口|原生|NF
-      - 日本3|长沙入口|原生|NF
       - 新加坡2|广州入口
       - 新加坡3|广州入口
-      - 汕头联通=>HK-HGC-500Mbps
-      - 香港2|广州入口|原生|NF 2
+      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生 2
       - 日本1|杭州入口|原生|NF 2
       - 日本2|杭州入口|原生|NF 2
-      - 日本5|杭州入口|原生|NF
-      - 新加坡2|广州入口 2
+      - 日本3|长沙入口|原生|NF
       - 新加坡3|广州入口 2
       - 香港3|广州入口|原生 2
-      - 香港5|长沙入口|原生 3
       - 日本1|杭州入口|原生|NF 3
       - 日本2|杭州入口|原生|NF 3
       - 日本3|长沙入口|原生|NF 2
-      - 新加坡2|广州入口 3
+      - 新加坡2|广州入口 2
       - 新加坡3|广州入口 3
-      - 美国2|原生|去广告|NF
-      - 香港3|广州入口|原生 3
+      - 香港2|广州入口|原生|NF
+      - 香港5|长沙入口|原生 3
+      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF 4
       - 日本2|杭州入口|原生|NF 4
       - 日本3|长沙入口|原生|NF 3
-      - 新加坡2|广州入口 4
+      - 新加坡2|广州入口 3
       - 新加坡3|广州入口 4
-      - 香港2|广州入口|原生|NF 3
-      - 香港5|长沙入口|原生 4
       - 香港7|安徽入口|原生 2
       - 日本1|杭州入口|原生|NF 5
-      - 日本2|杭州入口|原生|NF 5
-      - 日本3|长沙入口|原生|NF 4
-      - 新加坡2|广州入口 5
+      - 新加坡2|广州入口 4
       - 新加坡3|广州入口 5
-      - 香港7|安徽入口|原生 3
-      - 日本1|杭州入口|原生|NF 6
-      - 日本2|杭州入口|原生|NF 6
-      - 新加坡2|广州入口 6
-      - 新加坡3|广州入口 6
       - 香港千兆-04号
-      - 新加坡千兆-06号
-      - 翻墙党fanqiangdang.com@0123_CN_56
-      - 翻墙党fanqiangdang.com@0123_CN_62
-      - 翻墙党fanqiangdang.com@0123_CN_27
-      - 香港千兆-04号 2
-      - 52296 @WangCai_1
       - 52221 @WangCai_1
       - 52215 @WangCai_1
-      - 香港7|安徽入口|原生 4
-      - 香港7|安徽入口|原生 5
-      - 香港5|长沙入口|原生 5
-      - 香港3|广州入口|原生 4
-      - 香港3|广州入口|原生 5
-      - VIP1新加坡-佛移-2号线路-tr
-      - VIP1新加坡-佛移-3号线路-tr
-      - VIP1新加坡-佛移-4号线路-tr
-      - VIP1新加坡-佛移多线路负载均衡-tr
+      - 香港5|长沙入口|原生 4
       - VIP1美国 洛杉矶 | 佛移多线路负载均衡
       - VIP1美国 洛杉矶 | 广移多线路负载均衡
       - VIP1越南-原生IP-佛移-tr
       - VIP1越南-原生IP-广移-tr
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x 3
-      - 【新鸟免费】日本JP-AWS 06 1.0x 2
+      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 日本千兆-15号
       - 日本千兆-17号
       - 日本千兆-20号
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x 2
-      - 【新鸟免费】台湾TW-Hinet 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 01 1.0x
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x
       - youtube:8度科技_美国
       - youtube:8度科技_美国 2
       - youtube:8度科技_美国 3
-      - youtube:8度科技_美国 4
-      - youtube:8度科技_加拿大
-      - youtube:8度科技_美国 5
-      - youtube:8度科技_美国 6
-      - youtube:8度科技_美国 7
-      - youtube:8度科技_美国 8
-      - youtube:8度科技_加拿大 2
-      - youtube:8度科技_加拿大 3
-      - youtube:8度科技_美国 9
-      - youtube:8度科技_美国 10
-      - youtube:8度科技_美国 11
-      - youtube:8度科技_加拿大 4
-      - youtube:8度科技_美国 12
-      - youtube:8度科技_加拿大 5
-      - youtube:8度科技_美国 13
-      - youtube:8度科技_美国 14
-      - youtube:8度科技_加拿大 6
-      - youtube:8度科技_美国 15
-      - youtube:8度科技_加拿大 7
-      - youtube:8度科技_美国 16
-      - youtube:8度科技_加拿大 8
-      - youtube:8度科技_美国 17
-      - youtube:8度科技_加拿大 9
-      - youtube:8度科技_美国 18
-      - 美国千兆-16号
       - 日本千兆-20号 2
       - 香港Azure-Tokyo-Linode
       - 香港Azure-SG-DigitalOcean
       - 香港Azure-SG-DigitalOcean 2
       - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean 3
-      - 香港Azure-SG-DigitalOcean 4
       - 香港Azure-Tokyo-Linode 2
       - 香港Azure-Columbus-EC2-dip
-      - HK-HGC-500Mbps
       - 美国_阿伟科技-油管
-      - 翻墙党fanqiangdang.com@0123_CN_40
-      - Ytb:鹏哥分享_US_美国_56
-      - 美国_阿伟科技-油管 2
-      - Ytb:鹏哥分享_US_美国_19
-      - Ytb:鹏哥分享_CA_加拿大_131
-      - Ytb:鹏哥分享_GB_英国_97
-      - 翻墙党fanqiangdang.com@0123_70
-      - US_2359 |52.03Mb
-      - 翻墙党fanqiangdang.com@0123_US_65
-      - Ytb:鹏哥分享_CA_加拿大_177
-      - 美国_阿伟科技-油管 3
-      - Ytb:鹏哥分享_CA_加拿大_112
-      - Ytb:鹏哥分享_US_美国_7
-      - Ytb:鹏哥分享_CA_加拿大_139
-      - 美国_阿伟科技-油管 4
-      - Ytb:鹏哥分享_CA_加拿大_211
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国_阿伟科技-油管 5
-      - US_1159+|65.72Mb
-      - Ytb:鹏哥分享_CA_加拿大_174
-      - Ytb:鹏哥分享_CA_加拿大_148
-      - Ytb:鹏哥分享_CA_加拿大_194
-      - Ytb:鹏哥分享_CA_加拿大_85
-      - 日本|03|LINODE|0.7x|流解
-      - Ytb:鹏哥分享_CA_加拿大_217
-      - Ytb:鹏哥分享_CA_加拿大_115
-      - Ytb:鹏哥分享_CA_加拿大_126
-      - 美国_阿伟科技-油管 6
-      - 香港8|AZ直连
-      - +_KR_韩国_233
-      - 美国_TG@nodesharing_14
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - V4-#248|广东-香港HKT|x2.0|V2ray_7
-      - V4-#27|广东-香港HKT|NF|x2.0|V2ray_11
-      - V4-#326|广东-台湾|NF|x2.0|V2ray_20
-      - V4-#39|上海-日本|NF|x1.0|V2ray_25
-      - V4-#47|广港-新加坡|NF|x2.0|V2ray_28
-      - V4-#51|广港-新加坡|NF|x2.0@vpnhat
-      - V4-#45|广港-新加坡|NF|x2.0|V2ray_27
-      - V4-#49|广港-新加坡|NF|x2.0|V2ray_29
+      - 52283 @WangCai_1
+      - "@ShareCentrePro+Hongkong"
+      - CN-120.233.150.200-1127
+      - 中国_TG@nodesharing
+      - togostar.top
+      - 中国_TG@nodesharing_8
+      - 香港_TG@nodesharing_29
+      - 香港_TG@nodesharing_41
+      - 中国_TG@nodesharing_62
+      - 中国_TG@nodesharing_64
+      - 中国_TG@nodesharing_66
+      - 中国_TG@nodesharing_70
+      - 中国_TG@nodesharing_328
+      - 香港10|长沙入口|原生
+      - 香港7|安徽入口|原生 3
+      - 香港(绿头外网集团)(Public) 5
+      - 香港(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public)
+      - 中国_TG@nodesharing_8 2
+      - V1 | SG B1
+      - AWS新加坡|AZ中转
+      - YouTube由零开始-日本
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1978,236 +918,107 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡5 | SSR - 20002 单端口
-      - 中国 香港-A1-CM中继
-      - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
-      - 台湾 台北-A1-CM中继
-      - 新加坡-SG-A1-CM中继
-      - 新加坡-SG-A2-CM中继
-      - 日本 东京-A2-CU中继
-      - 美国 洛杉矶-A1-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - SG-Nerocloud
-      - LAX-DMIT
-      - 香港HKT
-      - 503
-      - 52298 @WangCai_1
       - Lv2新加坡2|V2Ray|中转优化
       - Lv2新加坡4|V2Ray|中转优化
       - Lv2日本3|V2Ray|中转优化
       - Lv2日本4 | V2Ray|中转优化
-      - 52226 @WangCai_1
-      - 香港高速公益节点(有限流量)2.0
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
-      - 【新鸟免费】新加坡SG-AWS 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 07 1.0x
       - 韩国|V2Ray|中转优化
       - 香港1| V2Ray | 流媒体优选
-      - 【新鸟免费】台湾TW-Hinet 04 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x
-      - 【新鸟免费】日本JP-AWS 04 1.0x
-      - v2-香港HKBGP-hk3-g2
-      - 【新鸟免费】日本JP-AWS 04 1.0x 2
-      - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 52282 @WangCai_1
-      - 香港_TG@nodesharing_13
-      - ---v2节点-香港h5-稳定-cn2
-      - 日本千兆-09号
-      - 日本千兆-10号
-      - n_52207 好兄弟，新年快乐
-      - n_52215 好兄弟，新年快乐_25
-      - n_52221 好兄弟，新年快乐
-      - n_52226 好兄弟，新年快乐
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 【低延迟】中转*广州移动-香港*03
       - v2-日本hk1-g5
-      - 【新鸟免费】日本JP-AWS 01 1.0x 2
       - 【新鸟免费】日本JP-AWS 02 1.0x
-      - 【新鸟免费】日本JP-AWS 07 1.0x 2
-      - 【新鸟免费】日本JP-AWS 02 1.0x 2
       - 美国高速公益节点2.0
       - 美国高速公益节点
-      - 【新鸟免费】日本JP-AWS 06 1.0x
-      - 【新鸟免费】日本JP-AWS 08 1.0x 2
-      - 【新鸟免费】日本JP-AWS 10 1.0x
-      - 中国_TG@nodesharing_488
-      - 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
+      - 【新鸟免费】日本JP-AWS 08 1.0x
       - "[联通直连]-美国西雅图06"
-      - FREE_V2ray_US_A 倍率*1
-      - FREE_V2ray_US_B 倍率*1
       - 香港(绿头外网集团)(Public)
       - 香港(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 3
-      - 韩国(绿头外网集团)(Public)
-      - 韩国(绿头外网集团)(Public) 2
       - 香港(绿头外网集团)(Public) 4
-      - 中国_TG@nodesharing_14
-      - 每次连接前用国内网络更新订阅
-      - 中转|新加坡Singtel01|华南隧道[流媒体解锁]
       - 中转|日本GMO07|华南隧道[流媒体解锁]
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生
-      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF
       - 日本2|杭州入口|原生|NF
-      - 日本3|长沙入口|原生|NF
       - 新加坡2|广州入口
       - 新加坡3|广州入口
-      - 汕头联通=>HK-HGC-500Mbps
-      - 香港2|广州入口|原生|NF 2
+      - 香港3|广州入口|原生
       - 香港5|长沙入口|原生 2
       - 日本1|杭州入口|原生|NF 2
       - 日本2|杭州入口|原生|NF 2
-      - 日本5|杭州入口|原生|NF
-      - 新加坡2|广州入口 2
+      - 日本3|长沙入口|原生|NF
       - 新加坡3|广州入口 2
       - 香港3|广州入口|原生 2
-      - 香港5|长沙入口|原生 3
       - 日本1|杭州入口|原生|NF 3
       - 日本2|杭州入口|原生|NF 3
       - 日本3|长沙入口|原生|NF 2
-      - 新加坡2|广州入口 3
+      - 新加坡2|广州入口 2
       - 新加坡3|广州入口 3
-      - 美国2|原生|去广告|NF
-      - 香港3|广州入口|原生 3
+      - 香港2|广州入口|原生|NF
+      - 香港5|长沙入口|原生 3
+      - 香港7|安徽入口|原生
       - 日本1|杭州入口|原生|NF 4
       - 日本2|杭州入口|原生|NF 4
       - 日本3|长沙入口|原生|NF 3
-      - 新加坡2|广州入口 4
+      - 新加坡2|广州入口 3
       - 新加坡3|广州入口 4
-      - 香港2|广州入口|原生|NF 3
-      - 香港5|长沙入口|原生 4
       - 香港7|安徽入口|原生 2
       - 日本1|杭州入口|原生|NF 5
-      - 日本2|杭州入口|原生|NF 5
-      - 日本3|长沙入口|原生|NF 4
-      - 新加坡2|广州入口 5
+      - 新加坡2|广州入口 4
       - 新加坡3|广州入口 5
-      - 香港7|安徽入口|原生 3
-      - 日本1|杭州入口|原生|NF 6
-      - 日本2|杭州入口|原生|NF 6
-      - 新加坡2|广州入口 6
-      - 新加坡3|广州入口 6
       - 香港千兆-04号
-      - 新加坡千兆-06号
-      - 翻墙党fanqiangdang.com@0123_CN_56
-      - 翻墙党fanqiangdang.com@0123_CN_62
-      - 翻墙党fanqiangdang.com@0123_CN_27
-      - 香港千兆-04号 2
-      - 52296 @WangCai_1
       - 52221 @WangCai_1
       - 52215 @WangCai_1
-      - 香港7|安徽入口|原生 4
-      - 香港7|安徽入口|原生 5
-      - 香港5|长沙入口|原生 5
-      - 香港3|广州入口|原生 4
-      - 香港3|广州入口|原生 5
-      - VIP1新加坡-佛移-2号线路-tr
-      - VIP1新加坡-佛移-3号线路-tr
-      - VIP1新加坡-佛移-4号线路-tr
-      - VIP1新加坡-佛移多线路负载均衡-tr
+      - 香港5|长沙入口|原生 4
       - VIP1美国 洛杉矶 | 佛移多线路负载均衡
       - VIP1美国 洛杉矶 | 广移多线路负载均衡
       - VIP1越南-原生IP-佛移-tr
       - VIP1越南-原生IP-广移-tr
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x
-      - 【新鸟免费】日本JP-AWS 01 1.0x 3
-      - 【新鸟免费】日本JP-AWS 06 1.0x 2
+      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 日本千兆-15号
       - 日本千兆-17号
       - 日本千兆-20号
-      - 【新鸟免费】台湾TW-Hinet 02 1.0x 2
-      - 【新鸟免费】台湾TW-Hinet 05 1.0x
-      - 【新鸟免费】新加坡SG-AWS 01 1.0x
-      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x
       - youtube:8度科技_美国
       - youtube:8度科技_美国 2
       - youtube:8度科技_美国 3
-      - youtube:8度科技_美国 4
-      - youtube:8度科技_加拿大
-      - youtube:8度科技_美国 5
-      - youtube:8度科技_美国 6
-      - youtube:8度科技_美国 7
-      - youtube:8度科技_美国 8
-      - youtube:8度科技_加拿大 2
-      - youtube:8度科技_加拿大 3
-      - youtube:8度科技_美国 9
-      - youtube:8度科技_美国 10
-      - youtube:8度科技_美国 11
-      - youtube:8度科技_加拿大 4
-      - youtube:8度科技_美国 12
-      - youtube:8度科技_加拿大 5
-      - youtube:8度科技_美国 13
-      - youtube:8度科技_美国 14
-      - youtube:8度科技_加拿大 6
-      - youtube:8度科技_美国 15
-      - youtube:8度科技_加拿大 7
-      - youtube:8度科技_美国 16
-      - youtube:8度科技_加拿大 8
-      - youtube:8度科技_美国 17
-      - youtube:8度科技_加拿大 9
-      - youtube:8度科技_美国 18
-      - 美国千兆-16号
       - 日本千兆-20号 2
       - 香港Azure-Tokyo-Linode
       - 香港Azure-SG-DigitalOcean
       - 香港Azure-SG-DigitalOcean 2
       - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean 3
-      - 香港Azure-SG-DigitalOcean 4
       - 香港Azure-Tokyo-Linode 2
       - 香港Azure-Columbus-EC2-dip
-      - HK-HGC-500Mbps
       - 美国_阿伟科技-油管
-      - 翻墙党fanqiangdang.com@0123_CN_40
-      - Ytb:鹏哥分享_US_美国_56
-      - 美国_阿伟科技-油管 2
-      - Ytb:鹏哥分享_US_美国_19
-      - Ytb:鹏哥分享_CA_加拿大_131
-      - Ytb:鹏哥分享_GB_英国_97
-      - 翻墙党fanqiangdang.com@0123_70
-      - US_2359 |52.03Mb
-      - 翻墙党fanqiangdang.com@0123_US_65
-      - Ytb:鹏哥分享_CA_加拿大_177
-      - 美国_阿伟科技-油管 3
-      - Ytb:鹏哥分享_CA_加拿大_112
-      - Ytb:鹏哥分享_US_美国_7
-      - Ytb:鹏哥分享_CA_加拿大_139
-      - 美国_阿伟科技-油管 4
-      - Ytb:鹏哥分享_CA_加拿大_211
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国_阿伟科技-油管 5
-      - US_1159+|65.72Mb
-      - Ytb:鹏哥分享_CA_加拿大_174
-      - Ytb:鹏哥分享_CA_加拿大_148
-      - Ytb:鹏哥分享_CA_加拿大_194
-      - Ytb:鹏哥分享_CA_加拿大_85
-      - 日本|03|LINODE|0.7x|流解
-      - Ytb:鹏哥分享_CA_加拿大_217
-      - Ytb:鹏哥分享_CA_加拿大_115
-      - Ytb:鹏哥分享_CA_加拿大_126
-      - 美国_阿伟科技-油管 6
-      - 香港8|AZ直连
-      - +_KR_韩国_233
-      - 美国_TG@nodesharing_14
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - V4-#248|广东-香港HKT|x2.0|V2ray_7
-      - V4-#27|广东-香港HKT|NF|x2.0|V2ray_11
-      - V4-#326|广东-台湾|NF|x2.0|V2ray_20
-      - V4-#39|上海-日本|NF|x1.0|V2ray_25
-      - V4-#47|广港-新加坡|NF|x2.0|V2ray_28
-      - V4-#51|广港-新加坡|NF|x2.0@vpnhat
-      - V4-#45|广港-新加坡|NF|x2.0|V2ray_27
-      - V4-#49|广港-新加坡|NF|x2.0|V2ray_29
+      - 52283 @WangCai_1
+      - "@ShareCentrePro+Hongkong"
+      - CN-120.233.150.200-1127
+      - 中国_TG@nodesharing
+      - togostar.top
+      - 中国_TG@nodesharing_8
+      - 香港_TG@nodesharing_29
+      - 香港_TG@nodesharing_41
+      - 中国_TG@nodesharing_62
+      - 中国_TG@nodesharing_64
+      - 中国_TG@nodesharing_66
+      - 中国_TG@nodesharing_70
+      - 中国_TG@nodesharing_328
+      - 香港10|长沙入口|原生
+      - 香港7|安徽入口|原生 3
+      - 香港(绿头外网集团)(Public) 5
+      - 香港(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public)
+      - 中国_TG@nodesharing_8 2
+      - V1 | SG B1
+      - AWS新加坡|AZ中转
+      - YouTube由零开始-日本
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
