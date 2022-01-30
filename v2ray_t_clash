@@ -5,727 +5,903 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: vpnpool-Amsterdam-M247-free, server: 183.240.181.27, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Frankfurt-M247-free, server: 183.232.13.63, port: 2101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
   - {name: vpnpool-Jakarta-APIK, server: 183.240.181.27, port: 1104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
   - {name: vpnpool-LAX-DediPath, server: 183.240.181.27, port: 1110, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-LAX-DediPath-free, server: 183.240.181.27, port: 1109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
   - {name: vpnpool-London-GTHost-free, server: 183.232.13.63, port: 2102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Makati-Eastern, server: 183.240.181.27, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Makati-Eastern-free, server: 183.240.181.27, port: 1101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Nonthaburi-CAT, server: 183.232.13.63, port: 2109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Contabo, server: 183.232.13.63, port: 2106, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Tokyo-Iptelecom, server: 183.232.13.63, port: 2107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-香港Azure, server: 183.240.181.27, port: 1114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
   - {name: vpnpool-香港Azure-免费, server: 183.240.181.27, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Amsterdam-M247-free 2, server: 183.240.181.27, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
   - {name: vpnpool-Balashikha-Baxet, server: 183.232.13.63, port: 2103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
   - {name: vpnpool-LAX-DediPath 2, server: 183.240.181.27, port: 1110, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Makati-Eastern-free 2, server: 183.240.181.27, port: 1101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Nonthaburi-CAT 2, server: 183.232.13.63, port: 2109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
   - {name: vpnpool-TR-Ulus-DGN, server: 183.232.13.63, port: 2104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-香港Azure 2, server: 183.240.181.27, port: 1114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Frankfurt-M247-free 2, server: 183.232.13.63, port: 2101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Ho Chi Minh-Cloudcore-free, server: 183.240.181.27, port: 1107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Azure, server: 183.240.181.27, port: 1114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
   - {name: vpnpool-Jakarta-APIK 2, server: 183.240.181.27, port: 1104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Jakarta-APIK-free, server: 183.240.181.27, port: 1103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
-  - {name: CN_中国_TG @ShareCentrePro, server: cm01.paofuvip.xyz, port: 1053, type: ssr, cipher: chacha20-ietf, password: 0yzag5ftrssb, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 129169:4fp40oe08zp, obfs-param: e6b1d129169.microsoft.com, udp: true}
   - {name: 中国 香港-A1-CM中继, server: cn-gz-02.arrc.fun, port: 3001, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
   - {name: 中国 香港-A2-CM中继, server: cn-gz-02.arrc.fun, port: 3000, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
-  - {name: 俄罗斯 伯力-A1-CU中继, server: cn-cz-01.arrc.fun, port: 3022, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
   - {name: 台湾 台北-A1-CM中继, server: cn-gz-02.arrc.fun, port: 3005, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
   - {name: 新加坡-SG-A1-CM中继, server: cn-gz-02.arrc.fun, port: 3007, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
   - {name: 新加坡-SG-A2-CM中继, server: cn-gz-02.arrc.fun, port: 3010, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
   - {name: 美国 洛杉矶-A1-CM中继, server: cn-gz-02.arrc.fun, port: 3009, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
   - {name: 美国 洛杉矶-A2-CM中继, server: cn-gz-02.arrc.fun, port: 3008, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
+  - {name: TG @ShareCentrePro, server: zz10.mcddns02.com, port: 23001, type: ssr, cipher: chacha20-ietf, password: GYAzB9, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 20071:JmauZHTc, obfs-param: 3f7ce20071.microsoft.com, udp: true}
+  - {name: "*🇭🇰HK -1053 t.me/小库订阅", server: 101.89.118.3, port: 44160, type: ssr, cipher: aes-256-cfb, password: wQ16gJrbBvvME3my, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: vpnpool-Ho Chi Minh-Cloudcore, server: 183.240.181.27, port: 1108, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-London-GTHost-free 2, server: 183.232.13.63, port: 2102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-Iptelecom, server: 183.232.13.63, port: 2107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
   - {name: v2-香港h6-g200, server: g200.soow.win, port: 50110, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: h6.faak3.xyz}, udp: true}
   - {name: ---v2节点-香港h5-稳定-g300, server: g300.soow.win, port: 50081, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: h5.wpaa.win}, udp: true}
   - {name: v2-新加坡24-g2, server: g200.soow.win, port: 50089, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 24.faak4.xyz}, udp: true}
   - {name: v2-香港HKBGP5-g5, server: g500.soow.win, port: 50085, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 5.faak3.xyz}, udp: true}
   - {name: v2节点-香港h5-g2, server: g200.soow.win, port: 50081, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: h5.wpaa.win}, udp: true}
   - {name: v2-日本hk1-g5, server: g500.soow.win, port: 50027, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: hk1.wpaa.win}, udp: true}
-  - {name: 美国高速公益节点, server: 3.ezydfdd.com, port: 443, type: vmess, uuid: 7ab3f0d7-164c-4bde-8a45-2d6653da2ad1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 3.ezydfdd.com}, udp: true}
-  - {name: 香港5|长沙入口|原生, server: cs.cu.01.211129.xyz, port: 21062, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本1|杭州入口|原生|NF, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本2|杭州入口|原生|NF, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡2|广州入口, server: gzcm.rymv2rayssl.xyz, port: 44605, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡3|广州入口, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本1|杭州入口|原生|NF 2, server: hzcu.rymv2rayssl.xyz, port: 44636, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡3|广州入口 2, server: gzcm.rymv2rayssl.xyz, port: 44606, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 52215 @WangCai_1, server: 119.wgong.xyz, port: 52219, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: VIP1美国 洛杉矶 | 佛移多线路负载均衡, server: gdfs.xxcv.cc, port: 36660, type: vmess, uuid: 6483539f-5540-3feb-ad94-e5fd6f674553, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/us?ed=2048", ws-headers: {Host: huayun.xyz}, udp: true}
-  - {name: VIP1美国 洛杉矶 | 广移多线路负载均衡, server: gdyd.xxcv.cc, port: 36660, type: vmess, uuid: 6483539f-5540-3feb-ad94-e5fd6f674553, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/us?ed=2048", ws-headers: {Host: huayun.xyz}, udp: true}
-  - {name: VIP1越南-原生IP-佛移-tr, server: gdfs.xxcv.cc, port: 25603, type: trojan, password: 6483539f-5540-3feb-ad94-e5fd6f674553, sni: gdfs.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: VIP1越南-原生IP-广移-tr, server: gdyd.xxcv.cc, port: 25603, type: trojan, password: 6483539f-5540-3feb-ad94-e5fd6f674553, sni: gdyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港Azure-Tokyo-Linode, server: 102.wgong.xyz, port: 11221, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港Azure-Ashburn-EC2-dip, server: 123.wgong.xyz, port: 52223, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港Azure-SG-DigitalOcean, server: v113.wgong.xyz, port: 52213, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管, server: 38.143.66.20, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: 【请尽快更换至新订阅】Azure香港|东莞移动, server: gg.piyun.bid, port: 10651, type: trojan, password: 2803debb-27c4-455f-9bff-46ba0bebb710, sni: gg.piyun.bid, skip-cert-verify: true, udp: true}
-  - {name: "@ShareCentrePro+Hongkong", server: cn2.relay.starlink.st, port: 50102, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
-  - {name: CN-120.233.150.200-1127, server: 120.233.150.200, port: 50301, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
-  - {name: 中国_TG@nodesharing_66, server: wndjw.ezydfdd.com, port: 443, type: vmess, uuid: 03ab2300-a054-4e6f-bfeb-16864375c44e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: wndjw.ezydfdd.com}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 05 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 205, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 06 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 206, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-06.xncloud.xyz}, udp: true}
   - {name: 【新鸟免费】日本JP-AWS 08 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 208, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 【推荐】上海联通-洛杉矶专线21, server: shcu01a.iplc188.com, port: 10003, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本2|杭州入口|原生|NF 2, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本2|杭州入口|原生|NF, server: hzcu.rymv2rayssl.xyz, port: 44637, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
   - {name: 【新鸟免费】新加坡SG-AWS 10 1.0x, server: tunnel-sg-a-01.xncloud.xyz, port: 110, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 美国_TG@nodesharing_9, server: 38.143.66.187, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
   - {name: HK-20.205.120.99-1105, server: az.moeai.cn, port: 32916, type: vmess, uuid: 3aed0e55-aa17-4001-b612-f18b649dfd08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: v2-香港HKBGP-hk3-g2, server: g200.soow.win, port: 50020, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: hk3.faak3.xyz}, udp: true}
-  - {name: YouTube-由零开始-香港, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube-由零开始-香港 2, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube-由零开始-东京, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube-由零开始-香港 3, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube-由零开始-香港 4, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 52220, server: 120.wgong.xyz, port: 52220, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国, server: 38.75.136.49, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 香港2|广州入口|原生|NF, server: gzcm.rymv2rayssl.xyz, port: 44649, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港3|广州入口|原生, server: gzcm.rymv2rayssl.xyz, port: 44602, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港4|杭州入口|原生, server: hzcu.rymv2rayssl.xyz, port: 44638, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港5|长沙入口|原生 2, server: cs.mimon.cc, port: 21062, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: cs.mimon.cc, skip-cert-verify: true, udp: true}
   - {name: 日本3|长沙入口|原生|NF, server: cs.mimon.cc, port: 44640, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: cs.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 新加坡1|杭州入口, server: hzcu.rymv2rayssl.xyz, port: 44646, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港9|长沙入口|原生, server: cs.mimon.cc, port: 39388, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: cs.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港3|广州入口|原生 2, server: gzcm.rymv2rayssl.xyz, port: 44602, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 群:166416961_🇺🇸_US_美国_79, server: 38.143.66.55, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Relay_馃嚚馃嚦CN-馃嚭馃嚫US_510, server: 112.64.69.187, port: 10002, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港千兆-04号, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港(绿头外网集团)(Public), server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube-由零开始-香港 5, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港(绿头外网集团)(Public) 2, server: sxctr.hk2.qiguangyicai.xyz, port: 44143, type: trojan, password: 373c42c8-d608-4974-8d90-6e44db50dc78, sni: sxctr.hk2.qiguangyicai.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港7|安徽入口|原生, server: ah.cm.01.211129.xyz, port: 46305, type: trojan, password: 59b9a546-2aa9-4a19-a0aa-2687bea0186b, sni: ah.cm.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 【新鸟免费】日本JP-AWS 07 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 207, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 中国_TG@nodesharing_488, server: shcu01a.iplc188.com, port: 10003, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港2|广州入口|原生|NF 2, server: gzcm.rymv2rayssl.xyz, port: 44649, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: gzcm.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国_TG@nodesharing_287, server: nmsl.lyzghim.com, port: 443, type: vmess, uuid: 0bbf596c-1623-4bfc-8650-80cf343a8e92, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: nmsl.lyzghim.com}, udp: true}
-  - {name: 中国_TG@nodesharing_20, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港4|杭州入口|原生 2, server: hzcu.rymv2rayssl.xyz, port: 44638, type: trojan, password: 36955f72-b3d0-4c08-ac16-e5928b69964a, sni: hzcu.rymv2rayssl.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_17, server: azhk.pluscloud.top, port: 443, type: trojan, password: b231bb88-b550-4a6d-b36e-41a3d5b50419, sni: azhk.pluscloud.top, skip-cert-verify: true, udp: true}
-  - {name: 美国_TG@nodesharing_83, server: 38.114.114.49, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_TG@nodesharing_177, server: 167.88.62.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国【YouTube由零開始】, server: 38.75.136.45, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国【YouTube由零開始】 2, server: 38.143.66.20, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 加拿大【YouTube由零開始】, server: 134.195.196.128, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 群:166416961_🇨🇦_CA_加拿大_182, server: 198.57.27.241, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_TG@nodesharing_41, server: 38.114.114.49, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: YouTube-由零开始-香港 6, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TG @ShareCentrePro, server: v8.ssrsub.com, port: 443, type: vmess, uuid: 50a90339-8afa-4579-832d-f5d608a6f569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
-  - {name: _CA_加拿大, server: 134.195.196.44, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 香港(绿头外网集团)(Public), server: sxctr.hk2.qiguangyicai.xyz, port: 44143, type: trojan, password: 373c42c8-d608-4974-8d90-6e44db50dc78, sni: sxctr.hk2.qiguangyicai.xyz, skip-cert-verify: true, udp: true}
   - {name: 韩国(绿头外网集团)(Public), server: 120.233.150.200, port: 50401, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
-  - {name: 美国（欢迎订阅YouTube晓柒科技）, server: us10.xqkj.cloud, port: 1119, type: vmess, uuid: 4c79a17e-b544-41b7-9097-cd4bec525301, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us10.xqkj.cloud}, udp: true}
-  - {name: 中国【YouTube由零開始】, server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【YouTube由零開始】 2, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【YouTube由零開始】 3, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【YouTube由零開始】 4, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【YouTube由零開始】 5, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【YouTube由零開始】 6, server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【YouTube由零開始】 7, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国【YouTube由零開始】 3, server: inapus.mooncloud.bike, port: 8443, type: vmess, uuid: 2c42a34e-5f88-492b-8a59-3531090578f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: inapus.mooncloud.bike}, udp: true}
-  - {name: 美国【YouTube由零開始】 4, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国【YouTube由零開始】 5, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国【YouTube由零開始】 6, server: 172.67.209.58, port: 443, type: vmess, uuid: 8e8b5097-1d75-47c4-ff28-eef6609916c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/The-Great-Awakening_vws?ed=2048", ws-headers: {Host: vincent-jackson2021.cf}, udp: true}
-  - {name: 美国【YouTube由零開始】 7, server: 38.143.66.20, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: "@ShareCentrePro+Hongkong 2", server: fs.01.nkeo.top, port: 29082, type: ss, cipher: aes-256-gcm, password: 39742848-a1cf-4304-b069-9334c7339adb, udp: true}
-  - {name: "@ShareCentrePro+Hongkong 3", server: fs.01.nkeo.top, port: 35907, type: ss, cipher: aes-256-gcm, password: 39742848-a1cf-4304-b069-9334c7339adb, udp: true}
-  - {name: 美国_TG@nodesharing_95, server: 169.197.143.29, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_阿伟科技-油管 2, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US_美国 2, server: 167.88.63.79, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_TG@nodesharing_93, server: lsj2.aoyou.pw, port: 10889, type: vmess, uuid: a9dabfbf-5c2b-4c51-afab-ad810723d89e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aoyou, ws-headers: {Host: lsj2.aoyou.pw}, udp: true}
-  - {name: AA-V2ray-HK-HKBN, server: cdn-cn.nekocloud.cn, port: 19085, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: AA-V2ray-HK-HKBN.02, server: cdn-cn.nekocloud.cn, port: 19092, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: AA-V2ray-HK-HKT.01, server: cdn-cn.nekocloud.cn, port: 19094, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: AA-V2ray-HK-NTT.01, server: cdn-cn.nekocloud.cn, port: 19084, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: AA-V2ray-SG-Linode, server: cdn-cn.nekocloud.cn, port: 19057, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: AA-V2ray-TW-HiNet.01, server: cdn-cn.nekocloud.cn, port: 19046, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: AA-V2ray-TW-HiNet.02, server: cdn-cn.nekocloud.cn, port: 19047, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: AA-V2ray-TW-HiNet.03, server: cdn-cn.nekocloud.cn, port: 19048, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: AA-V2ray-TW-HiNet.05, server: cdn-cn.nekocloud.cn, port: 19045, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
   - {name: 新加坡千兆-21号, server: v113.wgong.xyz, port: 52213, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡千兆-10号, server: 136.wgong.xyz, port: 52436, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾千兆-06号, server: v111.wgong.xyz, port: 52211, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国千兆-19号, server: 65.49.214.57, port: 80, type: vmess, uuid: 5d63407e-3a60-4fe9-9fbe-8220165dc00a, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /123, ws-headers: {Host: 65.49.214.57}, udp: true}
-  - {name: +@nfeng6_US_2451, server: 167.88.61.50, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: US_3014, server: az.moeai.cn, port: 32916, type: vmess, uuid: 3aed0e55-aa17-4001-b612-f18b649dfd08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: +@nfeng6_US_2136, server: 38.75.136.45, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: +@nfeng6_US_2129, server: 38.75.136.45, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: +@nfeng6_US_2134, server: 38.75.136.45, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: +@nfeng6_DE_611, server: 193.108.118.36, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: +@nfeng6_US_2132, server: 38.75.136.45, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: "@nfeng6_ZZ_4244", server: 169.197.141.24, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: "@nfeng6_US_3046", server: azjp.pluscloud.top, port: 443, type: trojan, password: 78990d57-2af6-4092-bf6b-f11575db222f, sni: azjp.pluscloud.top, skip-cert-verify: true, udp: true}
-  - {name: +@nfeng6_US_2814, server: 167.88.63.60, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: "@nfeng6_ZZ_3641", server: 134.195.196.81, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: "@nfeng6_ZZ_3638", server: 134.195.196.81, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "@nfeng6_ZZ_3842", server: 169.197.142.99, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: "@nfeng6_ZZ_4028", server: 134.195.196.200, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: "@nfeng6__45", server: 134.195.196.147, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: +@nfeng6_US_3515, server: 38.107.226.48, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: +@nfeng6_US_2701, server: 167.88.62.34, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: "@nfeng6_ZZ_3831", server: 169.197.142.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: +@nfeng6_US_2818, server: 38.68.134.37, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: "@nfeng6_CA_362", server: 198.57.27.247, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: "@nfeng6_ZZ_3694", server: 134.195.196.107, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CN_531, server: 112.64.69.187, port: 10003, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: +@nfeng6_US_2888, server: 167.88.63.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CN_535, server: shcu01a.iplc188.com, port: 10003, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "@nfeng6_ZZ_3845", server: 169.197.142.99, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: "@nfeng6_US_3049", server: azjp.pluscloud.top, port: 443, type: trojan, password: c1698db4-42e2-4901-adad-064bf5a8b558, sni: azjp.pluscloud.top, skip-cert-verify: true, udp: true}
   - {name: 新加坡千兆-21号 2, server: v113.wgong.xyz, port: 52213, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡千兆-10号 2, server: 136.wgong.xyz, port: 52436, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾千兆-06号 2, server: v111.wgong.xyz, port: 52211, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本千兆-24号, server: 117.wgong.xyz, port: 52217, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 荷兰千兆-01号, server: 213.183.51.179, port: 3309, type: vmess, uuid: 07d676a1-903d-4606-93bd-e3522089f951, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 213.183.51.179}, udp: true}
-  - {name: 科技网络_63, server: 172.105.234.211, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 科技网络_171, server: 167.88.61.50, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络_176, server: 167.88.61.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 科技网络_481, server: 38.114.114.49, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 日本千兆-20号, server: 107.wgong.xyz, port: 52207, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 【新鸟免费】新加坡SG-AWS 10 1.0x 2, server: tunnel-sg-a-01.xncloud.xyz, port: 110, type: vmess, uuid: d2b7d8e8-66ec-36b9-9a9c-5e85e198184f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 香港Azure-SG-DigitalOcean 2, server: 107.wgong.xyz, port: 52207, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube由零开始-日本, server: 81.wgong.xyz, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 【新鸟免费】日本JP-AWS 05 1.0x, server: tunnel-jp-a-01.xncloud.xyz, port: 205, type: vmess, uuid: 03e35dd7-fde7-3deb-a124-c95543a94a08, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-05.xncloud.xyz}, udp: true}
+  - {name: _CA_加拿大, server: 134.195.196.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: TG @ShareCentrePro 2, server: 101.89.109.30, port: 10015, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG @ShareCentrePro 3, server: cdn-cn.nekocloud.cn, port: 19057, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: TG @ShareCentrePro 4, server: cm-jm.okvpn.xyz, port: 20001, type: vmess, uuid: 9fcf9f33-407f-40a1-9a32-be97605fd99f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}, udp: true}
+  - {name: +香港01+|+ss, server: 13.94.62.220, port: 36985, type: ss, cipher: aes-256-gcm, password: a4580e63-f0a3-4a19-aef1-1592862eb02d, udp: true}
+  - {name: +香港02+|+ss, server: 13.94.62.220, port: 36999, type: ss, cipher: aes-256-gcm, password: a4580e63-f0a3-4a19-aef1-1592862eb02d, udp: true}
+  - {name: 香港【YouTube由零開始】, server: 127.wgong.xyz, port: 52227, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港【YouTube由零開始】 2, server: 132.wgong.xyz, port: 52332, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港【YouTube由零開始】 3, server: 126.wgong.xyz, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港【YouTube由零開始】 4, server: 86.wgong.xyz, port: 52286, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_1, server: cn2.relay.starlink.st, port: 50103, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
+  - {name: 中国_TG@nodesharing_23, server: 120.233.150.200, port: 50103, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
+  - {name: 香港_TG@nodesharing_26, server: 132.wgong.xyz, port: 52332, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_76, server: 120.232.182.190, port: 19079, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: 120.232.182.190}, udp: true}
+  - {name: 中国_TG@nodesharing_273, server: 120.232.208.195, port: 19085, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: 120.232.208.195}, udp: true}
+  - {name: vpnpool-Hanoi-FPT, server: 120.232.182.190, port: 10007, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-SG-Contabo, server: 120.232.182.190, port: 19057, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-Tokyo-NTT, server: 120.232.40.42, port: 10006, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-Hanoi-FPT 2, server: 120.232.40.42, port: 10007, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-彰化Hinet, server: 120.232.40.42, port: 19047, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-Tokyo-NTT 2, server: 120.232.40.42, port: 19055, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-SG-Kirino, server: 120.232.40.42, port: 19079, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-SG-Contabo 2, server: 112.14.22.104, port: 19057, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-Hanoi-FPT 3, server: 120.232.208.195, port: 10007, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-台北Hinet, server: 120.232.208.195, port: 19046, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-彰化Hinet 2, server: 120.232.208.195, port: 19047, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-Tokyo-NTT 3, server: 120.232.208.195, port: 19050, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-Tokyo-NTT 4, server: 120.232.208.195, port: 19055, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-SG-Contabo 3, server: 120.232.208.195, port: 19057, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-SG-Kirino 2, server: 120.232.208.195, port: 19079, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-香港HKT, server: 120.232.208.195, port: 19084, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-香港HKT 2, server: 120.232.208.195, port: 19085, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-香港HKT 3, server: 120.232.208.195, port: 19092, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: SpeedCentre - AZKR, server: azkr1.tgsc.xyz, port: 443, type: vmess, uuid: 65cdc2af-606c-4d51-a539-c9e6811bba97, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /4videodC, ws-headers: {Host: azkr1.tgsc.xyz}, udp: true}
+  - {name: 翻墙党fanqiangdang.com@0130_3, server: 120.232.208.195, port: 19079, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: 120.232.208.195}, udp: true}
+  - {name: 翻墙党fanqiangdang.com@0130_4, server: 120.232.208.195, port: 19057, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: 120.232.208.195}, udp: true}
+  - {name: 翻墙党fanqiangdang.com@0130_12, server: 120.232.182.190, port: 19057, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: 120.232.182.190}, udp: true}
+  - {name: 翻墙党fanqiangdang.com@0130_13, server: 120.232.214.210, port: 19084, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: 120.232.214.210}, udp: true}
+  - {name: 翻墙党fanqiangdang.com@0130_14, server: 120.232.208.195, port: 19084, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: 120.232.208.195}, udp: true}
+  - {name: 翻墙党fanqiangdang.com@0130_23, server: 120.197.88.216, port: 20001, type: vmess, uuid: 9fcf9f33-407f-40a1-9a32-be97605fd99f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.197.88.216}, udp: true}
+  - {name: 翻墙党fanqiangdang.com@0130_62, server: 120.232.40.42, port: 19094, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: 120.232.40.42}, udp: true}
+  - {name: 翻墙党fanqiangdang.com@0130_66, server: 120.232.40.42, port: 19079, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: 120.232.40.42}, udp: true}
+  - {name: 香港_TG@nodesharing_63, server: 130.wgong.xyz, port: 52330, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 长沙联通-North Kansas City-Misaka@vpnpool, server: 116.162.32.216, port: 1004, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 长沙联通-CA-Castlegar-Limewave@vpnpool, server: 116.162.32.216, port: 1007, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 长沙联通-Seoul-Oracle@vpnpool, server: 116.162.32.216, port: 10890, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 娄底联通-Seoul-Oracle@vpnpool, server: 116.163.10.207, port: 10890, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 长沙联通-Mumbai-Linode@vpnpool, server: 116.162.32.216, port: 10899, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 长沙联通-Sydney-NETPRES@vpnpool, server: 116.162.32.216, port: 10906, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 娄底联通-Sydney-NETPRES@vpnpool, server: 116.163.10.207, port: 10906, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 长沙联通-Seoul-Oracle@vpnpool 2, server: 116.162.32.216, port: 10909, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 长沙联通-Tokyo-Kirino@vpnpool, server: 116.162.32.216, port: 10915, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 娄底联通-Tokyo-Kirino@vpnpool, server: 116.163.10.207, port: 10915, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 长沙联通-Houston-Wowrack@vpnpool, server: 116.162.32.216, port: 10916, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 娄底联通-Houston-Wowrack@vpnpool, server: 116.163.10.207, port: 10916, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 长沙联通-Houston-Wowrack@vpnpool 2, server: 116.162.32.216, port: 10919, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 娄底联通-Houston-Wowrack@vpnpool 2, server: 116.163.10.207, port: 10919, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 长沙联通-Houston-Wowrack@vpnpool 3, server: 116.162.32.216, port: 10925, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 娄底联通-Houston-Wowrack@vpnpool 3, server: 116.163.10.207, port: 10925, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 长沙联通-Seattle-Spartan@vpnpool, server: 116.162.32.216, port: 10943, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 娄底联通-Seattle-Spartan@vpnpool, server: 116.163.10.207, port: 10943, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 长沙联通-Sydney-NetActuate@vpnpool, server: 116.162.32.216, port: 10951, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 娄底联通-Sydney-NetActuate@vpnpool, server: 116.163.10.207, port: 10951, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 长沙联通-Seattle-Spartan@vpnpool 2, server: 116.162.32.216, port: 10952, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 娄底联通-Seattle-Spartan@vpnpool 2, server: 116.163.10.207, port: 10952, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 长沙联通-Houston-Wowrack@vpnpool 4, server: 116.162.32.216, port: 10958, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 娄底联通-Houston-Wowrack@vpnpool 4, server: 116.163.10.207, port: 10958, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 娄底联通-Tokyo-Oracle@vpnpool, server: 116.163.10.207, port: 10959, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 娄底联通-North Kansas City-Misaka@vpnpool 2, server: 116.163.10.207, port: 10966, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 长沙联通-Tokyo-HVC@vpnpool, server: 116.162.32.216, port: 10980, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 娄底联通-Tokyo-HVC@vpnpool, server: 116.163.10.207, port: 10980, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 长沙联通-Tokyo-HVC@vpnpool 2, server: 116.162.32.216, port: 10981, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 娄底联通-Tokyo-HVC@vpnpool 2, server: 116.163.10.207, port: 10981, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 长沙联通-PH-Paranaque-ETPI@vpnpool, server: 116.162.32.216, port: 10986, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.162.32.216}, udp: true}
+  - {name: 娄底联通-PH-Paranaque-ETPI@vpnpool, server: 116.163.10.207, port: 10986, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 娄底联通-Tokyo-Sony@vpnpool, server: 116.163.10.207, port: 10987, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.163.10.207}, udp: true}
+  - {name: 广州移动-Bangkok-CAT@vpnpool, server: 120.232.174.104, port: 1009, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.174.104}, udp: true}
+  - {name: 深圳移动-Bangkok-CAT@vpnpool, server: 183.232.157.90, port: 1009, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 广州移动-香港Kirino@vpnpool, server: 120.232.174.104, port: 10907, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.174.104}, udp: true}
+  - {name: 深圳移动-香港Kirino@vpnpool, server: 183.232.157.90, port: 10907, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 深圳移动-香港HKT@vpnpool, server: 183.232.157.90, port: 10909, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 广州移动-SG-Starhub@vpnpool, server: 120.232.174.104, port: 10910, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.174.104}, udp: true}
+  - {name: 深圳移动-SG-Starhub@vpnpool, server: 183.232.157.90, port: 10910, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 广州移动-澳门Wind@vpnpool, server: 120.232.174.104, port: 10917, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.174.104}, udp: true}
+  - {name: 深圳移动-澳门Wind@vpnpool, server: 183.232.157.90, port: 10917, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 深圳移动-香港HKT@vpnpool 2, server: 183.232.157.90, port: 10919, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 广州移动-香港HKT@vpnpool 3, server: 120.232.174.104, port: 10920, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.174.104}, udp: true}
+  - {name: 深圳移动-香港HKT@vpnpool 3, server: 183.232.157.90, port: 10920, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 广州移动-香港Kirino@vpnpool 2, server: 120.232.174.104, port: 10928, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.174.104}, udp: true}
+  - {name: 深圳移动-香港Kirino@vpnpool 2, server: 183.232.157.90, port: 10928, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 广州移动-SG-Oracle@vpnpool, server: 120.232.174.104, port: 10934, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.174.104}, udp: true}
+  - {name: 深圳移动-SG-Oracle@vpnpool, server: 183.232.157.90, port: 10934, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 广州移动-SG-HVC@vpnpool, server: 120.232.174.104, port: 10942, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.174.104}, udp: true}
+  - {name: 深圳移动-SG-HVC@vpnpool, server: 183.232.157.90, port: 10942, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 广州移动-Tokyo-DMIT@vpnpool, server: 120.232.174.104, port: 10945, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.174.104}, udp: true}
+  - {name: 深圳移动-Tokyo-DMIT@vpnpool, server: 183.232.157.90, port: 10945, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 深圳移动-SG-HVC@vpnpool 2, server: 183.232.157.90, port: 10946, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 广州移动-VN-Hanoi-FPT@vpnpool, server: 120.232.174.104, port: 10950, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.174.104}, udp: true}
+  - {name: 深圳移动-VN-Hanoi-FPT@vpnpool, server: 183.232.157.90, port: 10950, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 广州移动-SG-DigitalOcean@vpnpool, server: 120.232.174.104, port: 10974, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.174.104}, udp: true}
+  - {name: 深圳移动-SG-DigitalOcean@vpnpool, server: 183.232.157.90, port: 10974, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 广州移动-Jakarta-APIK@vpnpool, server: 120.232.174.104, port: 10982, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.174.104}, udp: true}
+  - {name: 深圳移动-Jakarta-APIK@vpnpool, server: 183.232.157.90, port: 10982, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 广州移动-SG-DigitalOcean@vpnpool 2, server: 120.232.174.104, port: 20914, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.174.104}, udp: true}
+  - {name: 深圳移动-SG-DigitalOcean@vpnpool 2, server: 183.232.157.90, port: 20914, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.157.90}, udp: true}
+  - {name: 新加坡, server: 20.187.64.60, port: 61154, type: vmess, uuid: 01f08f76-6ca5-32a4-a5fd-ce297d3e328e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-Contabo 4, server: 120.232.214.210, port: 19057, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-SG-Kirino 3, server: 120.232.214.210, port: 19079, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-香港HKT 4, server: 120.232.214.210, port: 19084, type: vmess, uuid: 1b9b7dfc-d92b-35f0-88a3-587c7798d9e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-North Kansas City-Misaka@vpnpool 2, server: 116.162.32.216, port: 1004, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-CA-Castlegar-Limewave@vpnpool 2, server: 116.162.32.216, port: 1007, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-CA-Castlegar-Limewave@vpnpool, server: 116.163.10.207, port: 1007, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Seoul-Oracle@vpnpool 3, server: 116.162.32.216, port: 10890, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Seoul-Oracle@vpnpool 2, server: 116.163.10.207, port: 10890, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Mumbai-Linode@vpnpool 2, server: 116.162.32.216, port: 10899, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Mumbai-Linode@vpnpool, server: 116.163.10.207, port: 10899, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Sydney-NETPRES@vpnpool 2, server: 116.162.32.216, port: 10906, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Sydney-NETPRES@vpnpool 2, server: 116.163.10.207, port: 10906, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Seoul-Oracle@vpnpool 4, server: 116.162.32.216, port: 10909, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Seoul-Oracle@vpnpool 3, server: 116.163.10.207, port: 10909, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Tokyo-Kirino@vpnpool 2, server: 116.162.32.216, port: 10915, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Tokyo-Kirino@vpnpool 2, server: 116.163.10.207, port: 10915, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Houston-Wowrack@vpnpool 5, server: 116.162.32.216, port: 10916, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Houston-Wowrack@vpnpool 5, server: 116.163.10.207, port: 10916, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Houston-Wowrack@vpnpool 6, server: 116.162.32.216, port: 10919, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Houston-Wowrack@vpnpool 6, server: 116.163.10.207, port: 10919, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Houston-Wowrack@vpnpool 7, server: 116.162.32.216, port: 10925, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Houston-Wowrack@vpnpool 7, server: 116.163.10.207, port: 10925, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Seattle-Spartan@vpnpool 3, server: 116.162.32.216, port: 10943, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Seattle-Spartan@vpnpool 3, server: 116.163.10.207, port: 10943, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Sydney-NetActuate@vpnpool 2, server: 116.162.32.216, port: 10951, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Sydney-NetActuate@vpnpool 2, server: 116.163.10.207, port: 10951, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Seattle-Spartan@vpnpool 4, server: 116.162.32.216, port: 10952, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Seattle-Spartan@vpnpool 4, server: 116.163.10.207, port: 10952, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Houston-Wowrack@vpnpool 8, server: 116.162.32.216, port: 10958, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Houston-Wowrack@vpnpool 8, server: 116.163.10.207, port: 10958, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Tokyo-Oracle@vpnpool, server: 116.162.32.216, port: 10959, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Tokyo-Oracle@vpnpool 2, server: 116.163.10.207, port: 10959, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-North Kansas City-Misaka@vpnpool, server: 116.163.10.207, port: 10966, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Tokyo-HVC@vpnpool 3, server: 116.162.32.216, port: 10980, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Tokyo-HVC@vpnpool 3, server: 116.163.10.207, port: 10980, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Tokyo-HVC@vpnpool 4, server: 116.162.32.216, port: 10981, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-Tokyo-HVC@vpnpool 4, server: 116.163.10.207, port: 10981, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 娄底联通-PH-Paranaque-ETPI@vpnpool 2, server: 116.163.10.207, port: 10986, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 长沙联通-Tokyo-Sony@vpnpool, server: 116.162.32.216, port: 10987, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 广州移动-Bangkok-CAT@vpnpool 2, server: 120.232.174.104, port: 1009, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-Bangkok-CAT@vpnpool 2, server: 183.232.157.90, port: 1009, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 广州移动-香港Kirino@vpnpool 3, server: 120.232.174.104, port: 10907, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-香港Kirino@vpnpool 3, server: 183.232.157.90, port: 10907, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 广州移动-香港HKT@vpnpool, server: 120.232.174.104, port: 10909, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-香港HKT@vpnpool 4, server: 183.232.157.90, port: 10909, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 广州移动-SG-Starhub@vpnpool 2, server: 120.232.174.104, port: 10910, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-SG-Starhub@vpnpool 2, server: 183.232.157.90, port: 10910, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 广州移动-澳门Wind@vpnpool 2, server: 120.232.174.104, port: 10917, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-澳门Wind@vpnpool 2, server: 183.232.157.90, port: 10917, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-香港HKT@vpnpool 5, server: 183.232.157.90, port: 10919, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-香港HKT@vpnpool 6, server: 183.232.157.90, port: 10920, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-香港Kirino@vpnpool 4, server: 183.232.157.90, port: 10928, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-SG-Oracle@vpnpool 2, server: 183.232.157.90, port: 10934, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 广州移动-SG-HVC@vpnpool 2, server: 120.232.174.104, port: 10942, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-SG-HVC@vpnpool 3, server: 183.232.157.90, port: 10942, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 广州移动-Tokyo-DMIT@vpnpool 2, server: 120.232.174.104, port: 10945, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-Tokyo-DMIT@vpnpool 2, server: 183.232.157.90, port: 10945, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 广州移动-SG-HVC@vpnpool 3, server: 120.232.174.104, port: 10946, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-SG-HVC@vpnpool 4, server: 183.232.157.90, port: 10946, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 广州移动-VN-Hanoi-FPT@vpnpool 2, server: 120.232.174.104, port: 10950, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-VN-Hanoi-FPT@vpnpool 2, server: 183.232.157.90, port: 10950, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 广州移动-SG-DigitalOcean@vpnpool 3, server: 120.232.174.104, port: 10974, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-SG-DigitalOcean@vpnpool 3, server: 183.232.157.90, port: 10974, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 广州移动-Jakarta-APIK@vpnpool 2, server: 120.232.174.104, port: 10982, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-Jakarta-APIK@vpnpool 2, server: 183.232.157.90, port: 10982, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 广州移动-SG-DigitalOcean@vpnpool 4, server: 120.232.174.104, port: 20914, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 深圳移动-SG-DigitalOcean@vpnpool 4, server: 183.232.157.90, port: 20914, type: vmess, uuid: e1539093-2ab9-4b1c-b849-cc9a21091f03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnpool-Amsterdam-M247-free
-      - vpnpool-Frankfurt-M247-free
       - vpnpool-Jakarta-APIK
       - vpnpool-LAX-DediPath
-      - vpnpool-LAX-DediPath-free
       - vpnpool-London-GTHost-free
-      - vpnpool-Makati-Eastern
-      - vpnpool-Makati-Eastern-free
-      - vpnpool-Nonthaburi-CAT
-      - vpnpool-SG-Contabo
-      - vpnpool-Tokyo-Iptelecom
-      - vpnpool-香港Azure
       - vpnpool-香港Azure-免费
-      - vpnpool-Amsterdam-M247-free 2
       - vpnpool-Balashikha-Baxet
       - vpnpool-LAX-DediPath 2
-      - vpnpool-Makati-Eastern-free 2
-      - vpnpool-Nonthaburi-CAT 2
       - vpnpool-TR-Ulus-DGN
-      - vpnpool-香港Azure 2
-      - vpnpool-Frankfurt-M247-free 2
-      - vpnpool-Ho Chi Minh-Cloudcore-free
+      - vpnpool-香港Azure
       - vpnpool-Jakarta-APIK 2
-      - vpnpool-Jakarta-APIK-free
-      - CN_中国_TG @ShareCentrePro
       - 中国 香港-A1-CM中继
       - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
       - 台湾 台北-A1-CM中继
       - 新加坡-SG-A1-CM中继
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A1-CM中继
       - 美国 洛杉矶-A2-CM中继
+      - TG @ShareCentrePro
+      - "*🇭🇰HK -1053 t.me/小库订阅"
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-London-GTHost-free 2
+      - vpnpool-Tokyo-Iptelecom
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
       - v2-日本hk1-g5
-      - 美国高速公益节点
-      - 香港5|长沙入口|原生
-      - 日本1|杭州入口|原生|NF
-      - 日本2|杭州入口|原生|NF
-      - 新加坡2|广州入口
-      - 新加坡3|广州入口
-      - 日本1|杭州入口|原生|NF 2
-      - 新加坡3|广州入口 2
-      - 52215 @WangCai_1
-      - VIP1美国 洛杉矶 | 佛移多线路负载均衡
-      - VIP1美国 洛杉矶 | 广移多线路负载均衡
-      - VIP1越南-原生IP-佛移-tr
-      - VIP1越南-原生IP-广移-tr
-      - 香港Azure-Tokyo-Linode
-      - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean
-      - 美国_阿伟科技-油管
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - "@ShareCentrePro+Hongkong"
-      - CN-120.233.150.200-1127
-      - 中国_TG@nodesharing_66
-      - 【新鸟免费】日本JP-AWS 05 1.0x
-      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
-      - 日本2|杭州入口|原生|NF 2
+      - 日本2|杭州入口|原生|NF
       - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 美国_TG@nodesharing_9
       - HK-20.205.120.99-1105
       - v2-香港HKBGP-hk3-g2
-      - YouTube-由零开始-香港
-      - YouTube-由零开始-香港 2
-      - YouTube-由零开始-东京
-      - YouTube-由零开始-香港 3
-      - YouTube-由零开始-香港 4
       - 52220
-      - _US_美国
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
-      - 香港4|杭州入口|原生
-      - 香港5|长沙入口|原生 2
       - 日本3|长沙入口|原生|NF
-      - 新加坡1|杭州入口
-      - 香港9|长沙入口|原生
-      - 香港3|广州入口|原生 2
-      - 群:166416961_🇺🇸_US_美国_79
-      - Relay_馃嚚馃嚦CN-馃嚭馃嚫US_510
-      - 香港千兆-04号
       - 香港(绿头外网集团)(Public)
-      - YouTube-由零开始-香港 5
-      - 香港(绿头外网集团)(Public) 2
-      - 香港7|安徽入口|原生
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 中国_TG@nodesharing_488
-      - 香港2|广州入口|原生|NF 2
-      - 美国_TG@nodesharing_287
-      - 中国_TG@nodesharing_20
-      - 香港4|杭州入口|原生 2
-      - 香港_TG@nodesharing_17
-      - 美国_TG@nodesharing_83
-      - 美国_TG@nodesharing_177
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_182
-      - 美国_TG@nodesharing_41
-      - YouTube-由零开始-香港 6
-      - TG @ShareCentrePro
-      - _CA_加拿大
       - 韩国(绿头外网集团)(Public)
-      - 美国（欢迎订阅YouTube晓柒科技）
-      - 中国【YouTube由零開始】
-      - 中国【YouTube由零開始】 2
-      - 中国【YouTube由零開始】 3
-      - 中国【YouTube由零開始】 4
-      - 中国【YouTube由零開始】 5
-      - 中国【YouTube由零開始】 6
-      - 中国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - "@ShareCentrePro+Hongkong 2"
-      - "@ShareCentrePro+Hongkong 3"
-      - 美国_TG@nodesharing_95
-      - 美国_阿伟科技-油管 2
-      - _US_美国 2
-      - 美国_TG@nodesharing_93
-      - AA-V2ray-HK-HKBN
-      - AA-V2ray-HK-HKBN.02
-      - AA-V2ray-HK-HKT.01
-      - AA-V2ray-HK-NTT.01
-      - AA-V2ray-SG-Linode
-      - AA-V2ray-TW-HiNet.01
-      - AA-V2ray-TW-HiNet.02
-      - AA-V2ray-TW-HiNet.03
-      - AA-V2ray-TW-HiNet.05
       - 新加坡千兆-21号
-      - 新加坡千兆-10号
-      - 台湾千兆-06号
-      - 美国千兆-19号
-      - +@nfeng6_US_2451
       - US_3014
-      - +@nfeng6_US_2136
-      - +@nfeng6_US_2129
-      - +@nfeng6_US_2134
-      - +@nfeng6_DE_611
-      - +@nfeng6_US_2132
-      - "@nfeng6_ZZ_4244"
       - "@nfeng6_US_3046"
-      - +@nfeng6_US_2814
-      - "@nfeng6_ZZ_3641"
-      - "@nfeng6_ZZ_3638"
-      - "@nfeng6_ZZ_3842"
-      - "@nfeng6_ZZ_4028"
-      - "@nfeng6__45"
-      - +@nfeng6_US_3515
-      - +@nfeng6_US_2701
-      - "@nfeng6_ZZ_3831"
-      - +@nfeng6_US_2818
-      - "@nfeng6_CA_362"
-      - "@nfeng6_ZZ_3694"
-      - CN_531
-      - +@nfeng6_US_2888
-      - CN_535
-      - "@nfeng6_ZZ_3845"
-      - "@nfeng6_US_3049"
       - 新加坡千兆-21号 2
-      - 新加坡千兆-10号 2
-      - 台湾千兆-06号 2
-      - 日本千兆-24号
-      - 荷兰千兆-01号
-      - 科技网络_63
-      - 科技网络_171
-      - 科技网络_176
-      - 科技网络_481
+      - 日本千兆-20号
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 香港Azure-SG-DigitalOcean 2
+      - YouTube由零开始-日本
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - _CA_加拿大
+      - TG @ShareCentrePro 2
+      - TG @ShareCentrePro 3
+      - TG @ShareCentrePro 4
+      - +香港01+|+ss
+      - +香港02+|+ss
+      - 香港【YouTube由零開始】
+      - 香港【YouTube由零開始】 2
+      - 香港【YouTube由零開始】 3
+      - 香港【YouTube由零開始】 4
+      - 中国_TG@nodesharing_1
+      - 中国_TG@nodesharing_23
+      - 香港_TG@nodesharing_26
+      - 中国_TG@nodesharing_76
+      - 中国_TG@nodesharing_273
+      - vpnpool-Hanoi-FPT
+      - vpnpool-SG-Contabo
+      - vpnpool-Tokyo-NTT
+      - vpnpool-Hanoi-FPT 2
+      - vpnpool-彰化Hinet
+      - vpnpool-Tokyo-NTT 2
+      - vpnpool-SG-Kirino
+      - vpnpool-SG-Contabo 2
+      - vpnpool-Hanoi-FPT 3
+      - vpnpool-台北Hinet
+      - vpnpool-彰化Hinet 2
+      - vpnpool-Tokyo-NTT 3
+      - vpnpool-Tokyo-NTT 4
+      - vpnpool-SG-Contabo 3
+      - vpnpool-SG-Kirino 2
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - vpnpool-香港HKT 3
+      - SpeedCentre - AZKR
+      - 翻墙党fanqiangdang.com@0130_3
+      - 翻墙党fanqiangdang.com@0130_4
+      - 翻墙党fanqiangdang.com@0130_12
+      - 翻墙党fanqiangdang.com@0130_13
+      - 翻墙党fanqiangdang.com@0130_14
+      - 翻墙党fanqiangdang.com@0130_23
+      - 翻墙党fanqiangdang.com@0130_62
+      - 翻墙党fanqiangdang.com@0130_66
+      - 香港_TG@nodesharing_63
+      - 长沙联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool
+      - 娄底联通-Seoul-Oracle@vpnpool
+      - 长沙联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool
+      - 娄底联通-Sydney-NETPRES@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Tokyo-Kirino@vpnpool
+      - 娄底联通-Tokyo-Kirino@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool
+      - 娄底联通-Houston-Wowrack@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool 2
+      - 娄底联通-Houston-Wowrack@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 3
+      - 娄底联通-Houston-Wowrack@vpnpool 3
+      - 长沙联通-Seattle-Spartan@vpnpool
+      - 娄底联通-Seattle-Spartan@vpnpool
+      - 长沙联通-Sydney-NetActuate@vpnpool
+      - 娄底联通-Sydney-NetActuate@vpnpool
+      - 长沙联通-Seattle-Spartan@vpnpool 2
+      - 娄底联通-Seattle-Spartan@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-Tokyo-HVC@vpnpool
+      - 娄底联通-Tokyo-HVC@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 2
+      - 娄底联通-Tokyo-HVC@vpnpool 2
+      - 长沙联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool
+      - 深圳移动-Bangkok-CAT@vpnpool
+      - 广州移动-香港Kirino@vpnpool
+      - 深圳移动-香港Kirino@vpnpool
+      - 深圳移动-香港HKT@vpnpool
+      - 广州移动-SG-Starhub@vpnpool
+      - 深圳移动-SG-Starhub@vpnpool
+      - 广州移动-澳门Wind@vpnpool
+      - 深圳移动-澳门Wind@vpnpool
+      - 深圳移动-香港HKT@vpnpool 2
+      - 广州移动-香港HKT@vpnpool 3
+      - 深圳移动-香港HKT@vpnpool 3
+      - 广州移动-香港Kirino@vpnpool 2
+      - 深圳移动-香港Kirino@vpnpool 2
+      - 广州移动-SG-Oracle@vpnpool
+      - 深圳移动-SG-Oracle@vpnpool
+      - 广州移动-SG-HVC@vpnpool
+      - 深圳移动-SG-HVC@vpnpool
+      - 广州移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-SG-HVC@vpnpool 2
+      - 广州移动-VN-Hanoi-FPT@vpnpool
+      - 深圳移动-VN-Hanoi-FPT@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool
+      - 深圳移动-SG-DigitalOcean@vpnpool
+      - 广州移动-Jakarta-APIK@vpnpool
+      - 深圳移动-Jakarta-APIK@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool 2
+      - 深圳移动-SG-DigitalOcean@vpnpool 2
+      - 新加坡
+      - vpnpool-SG-Contabo 4
+      - vpnpool-SG-Kirino 3
+      - vpnpool-香港HKT 4
+      - 长沙联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool 2
+      - 娄底联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 3
+      - 娄底联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Mumbai-Linode@vpnpool 2
+      - 娄底联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool 2
+      - 娄底联通-Sydney-NETPRES@vpnpool 2
+      - 长沙联通-Seoul-Oracle@vpnpool 4
+      - 娄底联通-Seoul-Oracle@vpnpool 3
+      - 长沙联通-Tokyo-Kirino@vpnpool 2
+      - 娄底联通-Tokyo-Kirino@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 5
+      - 娄底联通-Houston-Wowrack@vpnpool 5
+      - 长沙联通-Houston-Wowrack@vpnpool 6
+      - 娄底联通-Houston-Wowrack@vpnpool 6
+      - 长沙联通-Houston-Wowrack@vpnpool 7
+      - 娄底联通-Houston-Wowrack@vpnpool 7
+      - 长沙联通-Seattle-Spartan@vpnpool 3
+      - 娄底联通-Seattle-Spartan@vpnpool 3
+      - 长沙联通-Sydney-NetActuate@vpnpool 2
+      - 娄底联通-Sydney-NetActuate@vpnpool 2
+      - 长沙联通-Seattle-Spartan@vpnpool 4
+      - 娄底联通-Seattle-Spartan@vpnpool 4
+      - 长沙联通-Houston-Wowrack@vpnpool 8
+      - 娄底联通-Houston-Wowrack@vpnpool 8
+      - 长沙联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-Tokyo-Oracle@vpnpool 2
+      - 娄底联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 3
+      - 娄底联通-Tokyo-HVC@vpnpool 3
+      - 长沙联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool 2
+      - 长沙联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool 2
+      - 深圳移动-Bangkok-CAT@vpnpool 2
+      - 广州移动-香港Kirino@vpnpool 3
+      - 深圳移动-香港Kirino@vpnpool 3
+      - 广州移动-香港HKT@vpnpool
+      - 深圳移动-香港HKT@vpnpool 4
+      - 广州移动-SG-Starhub@vpnpool 2
+      - 深圳移动-SG-Starhub@vpnpool 2
+      - 广州移动-澳门Wind@vpnpool 2
+      - 深圳移动-澳门Wind@vpnpool 2
+      - 深圳移动-香港HKT@vpnpool 5
+      - 深圳移动-香港HKT@vpnpool 6
+      - 深圳移动-香港Kirino@vpnpool 4
+      - 深圳移动-SG-Oracle@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 2
+      - 深圳移动-SG-HVC@vpnpool 3
+      - 广州移动-Tokyo-DMIT@vpnpool 2
+      - 深圳移动-Tokyo-DMIT@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 3
+      - 深圳移动-SG-HVC@vpnpool 4
+      - 广州移动-VN-Hanoi-FPT@vpnpool 2
+      - 深圳移动-VN-Hanoi-FPT@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 3
+      - 深圳移动-SG-DigitalOcean@vpnpool 3
+      - 广州移动-Jakarta-APIK@vpnpool 2
+      - 深圳移动-Jakarta-APIK@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 4
+      - 深圳移动-SG-DigitalOcean@vpnpool 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - vpnpool-Amsterdam-M247-free
-      - vpnpool-Frankfurt-M247-free
       - vpnpool-Jakarta-APIK
       - vpnpool-LAX-DediPath
-      - vpnpool-LAX-DediPath-free
       - vpnpool-London-GTHost-free
-      - vpnpool-Makati-Eastern
-      - vpnpool-Makati-Eastern-free
-      - vpnpool-Nonthaburi-CAT
-      - vpnpool-SG-Contabo
-      - vpnpool-Tokyo-Iptelecom
-      - vpnpool-香港Azure
       - vpnpool-香港Azure-免费
-      - vpnpool-Amsterdam-M247-free 2
       - vpnpool-Balashikha-Baxet
       - vpnpool-LAX-DediPath 2
-      - vpnpool-Makati-Eastern-free 2
-      - vpnpool-Nonthaburi-CAT 2
       - vpnpool-TR-Ulus-DGN
-      - vpnpool-香港Azure 2
-      - vpnpool-Frankfurt-M247-free 2
-      - vpnpool-Ho Chi Minh-Cloudcore-free
+      - vpnpool-香港Azure
       - vpnpool-Jakarta-APIK 2
-      - vpnpool-Jakarta-APIK-free
-      - CN_中国_TG @ShareCentrePro
       - 中国 香港-A1-CM中继
       - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
       - 台湾 台北-A1-CM中继
       - 新加坡-SG-A1-CM中继
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A1-CM中继
       - 美国 洛杉矶-A2-CM中继
+      - TG @ShareCentrePro
+      - "*🇭🇰HK -1053 t.me/小库订阅"
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-London-GTHost-free 2
+      - vpnpool-Tokyo-Iptelecom
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
       - v2-日本hk1-g5
-      - 美国高速公益节点
-      - 香港5|长沙入口|原生
-      - 日本1|杭州入口|原生|NF
-      - 日本2|杭州入口|原生|NF
-      - 新加坡2|广州入口
-      - 新加坡3|广州入口
-      - 日本1|杭州入口|原生|NF 2
-      - 新加坡3|广州入口 2
-      - 52215 @WangCai_1
-      - VIP1美国 洛杉矶 | 佛移多线路负载均衡
-      - VIP1美国 洛杉矶 | 广移多线路负载均衡
-      - VIP1越南-原生IP-佛移-tr
-      - VIP1越南-原生IP-广移-tr
-      - 香港Azure-Tokyo-Linode
-      - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean
-      - 美国_阿伟科技-油管
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - "@ShareCentrePro+Hongkong"
-      - CN-120.233.150.200-1127
-      - 中国_TG@nodesharing_66
-      - 【新鸟免费】日本JP-AWS 05 1.0x
-      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
-      - 日本2|杭州入口|原生|NF 2
+      - 日本2|杭州入口|原生|NF
       - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 美国_TG@nodesharing_9
       - HK-20.205.120.99-1105
       - v2-香港HKBGP-hk3-g2
-      - YouTube-由零开始-香港
-      - YouTube-由零开始-香港 2
-      - YouTube-由零开始-东京
-      - YouTube-由零开始-香港 3
-      - YouTube-由零开始-香港 4
       - 52220
-      - _US_美国
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
-      - 香港4|杭州入口|原生
-      - 香港5|长沙入口|原生 2
       - 日本3|长沙入口|原生|NF
-      - 新加坡1|杭州入口
-      - 香港9|长沙入口|原生
-      - 香港3|广州入口|原生 2
-      - 群:166416961_🇺🇸_US_美国_79
-      - Relay_馃嚚馃嚦CN-馃嚭馃嚫US_510
-      - 香港千兆-04号
       - 香港(绿头外网集团)(Public)
-      - YouTube-由零开始-香港 5
-      - 香港(绿头外网集团)(Public) 2
-      - 香港7|安徽入口|原生
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 中国_TG@nodesharing_488
-      - 香港2|广州入口|原生|NF 2
-      - 美国_TG@nodesharing_287
-      - 中国_TG@nodesharing_20
-      - 香港4|杭州入口|原生 2
-      - 香港_TG@nodesharing_17
-      - 美国_TG@nodesharing_83
-      - 美国_TG@nodesharing_177
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_182
-      - 美国_TG@nodesharing_41
-      - YouTube-由零开始-香港 6
-      - TG @ShareCentrePro
-      - _CA_加拿大
       - 韩国(绿头外网集团)(Public)
-      - 美国（欢迎订阅YouTube晓柒科技）
-      - 中国【YouTube由零開始】
-      - 中国【YouTube由零開始】 2
-      - 中国【YouTube由零開始】 3
-      - 中国【YouTube由零開始】 4
-      - 中国【YouTube由零開始】 5
-      - 中国【YouTube由零開始】 6
-      - 中国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - "@ShareCentrePro+Hongkong 2"
-      - "@ShareCentrePro+Hongkong 3"
-      - 美国_TG@nodesharing_95
-      - 美国_阿伟科技-油管 2
-      - _US_美国 2
-      - 美国_TG@nodesharing_93
-      - AA-V2ray-HK-HKBN
-      - AA-V2ray-HK-HKBN.02
-      - AA-V2ray-HK-HKT.01
-      - AA-V2ray-HK-NTT.01
-      - AA-V2ray-SG-Linode
-      - AA-V2ray-TW-HiNet.01
-      - AA-V2ray-TW-HiNet.02
-      - AA-V2ray-TW-HiNet.03
-      - AA-V2ray-TW-HiNet.05
       - 新加坡千兆-21号
-      - 新加坡千兆-10号
-      - 台湾千兆-06号
-      - 美国千兆-19号
-      - +@nfeng6_US_2451
       - US_3014
-      - +@nfeng6_US_2136
-      - +@nfeng6_US_2129
-      - +@nfeng6_US_2134
-      - +@nfeng6_DE_611
-      - +@nfeng6_US_2132
-      - "@nfeng6_ZZ_4244"
       - "@nfeng6_US_3046"
-      - +@nfeng6_US_2814
-      - "@nfeng6_ZZ_3641"
-      - "@nfeng6_ZZ_3638"
-      - "@nfeng6_ZZ_3842"
-      - "@nfeng6_ZZ_4028"
-      - "@nfeng6__45"
-      - +@nfeng6_US_3515
-      - +@nfeng6_US_2701
-      - "@nfeng6_ZZ_3831"
-      - +@nfeng6_US_2818
-      - "@nfeng6_CA_362"
-      - "@nfeng6_ZZ_3694"
-      - CN_531
-      - +@nfeng6_US_2888
-      - CN_535
-      - "@nfeng6_ZZ_3845"
-      - "@nfeng6_US_3049"
       - 新加坡千兆-21号 2
-      - 新加坡千兆-10号 2
-      - 台湾千兆-06号 2
-      - 日本千兆-24号
-      - 荷兰千兆-01号
-      - 科技网络_63
-      - 科技网络_171
-      - 科技网络_176
-      - 科技网络_481
+      - 日本千兆-20号
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 香港Azure-SG-DigitalOcean 2
+      - YouTube由零开始-日本
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - _CA_加拿大
+      - TG @ShareCentrePro 2
+      - TG @ShareCentrePro 3
+      - TG @ShareCentrePro 4
+      - +香港01+|+ss
+      - +香港02+|+ss
+      - 香港【YouTube由零開始】
+      - 香港【YouTube由零開始】 2
+      - 香港【YouTube由零開始】 3
+      - 香港【YouTube由零開始】 4
+      - 中国_TG@nodesharing_1
+      - 中国_TG@nodesharing_23
+      - 香港_TG@nodesharing_26
+      - 中国_TG@nodesharing_76
+      - 中国_TG@nodesharing_273
+      - vpnpool-Hanoi-FPT
+      - vpnpool-SG-Contabo
+      - vpnpool-Tokyo-NTT
+      - vpnpool-Hanoi-FPT 2
+      - vpnpool-彰化Hinet
+      - vpnpool-Tokyo-NTT 2
+      - vpnpool-SG-Kirino
+      - vpnpool-SG-Contabo 2
+      - vpnpool-Hanoi-FPT 3
+      - vpnpool-台北Hinet
+      - vpnpool-彰化Hinet 2
+      - vpnpool-Tokyo-NTT 3
+      - vpnpool-Tokyo-NTT 4
+      - vpnpool-SG-Contabo 3
+      - vpnpool-SG-Kirino 2
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - vpnpool-香港HKT 3
+      - SpeedCentre - AZKR
+      - 翻墙党fanqiangdang.com@0130_3
+      - 翻墙党fanqiangdang.com@0130_4
+      - 翻墙党fanqiangdang.com@0130_12
+      - 翻墙党fanqiangdang.com@0130_13
+      - 翻墙党fanqiangdang.com@0130_14
+      - 翻墙党fanqiangdang.com@0130_23
+      - 翻墙党fanqiangdang.com@0130_62
+      - 翻墙党fanqiangdang.com@0130_66
+      - 香港_TG@nodesharing_63
+      - 长沙联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool
+      - 娄底联通-Seoul-Oracle@vpnpool
+      - 长沙联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool
+      - 娄底联通-Sydney-NETPRES@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Tokyo-Kirino@vpnpool
+      - 娄底联通-Tokyo-Kirino@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool
+      - 娄底联通-Houston-Wowrack@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool 2
+      - 娄底联通-Houston-Wowrack@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 3
+      - 娄底联通-Houston-Wowrack@vpnpool 3
+      - 长沙联通-Seattle-Spartan@vpnpool
+      - 娄底联通-Seattle-Spartan@vpnpool
+      - 长沙联通-Sydney-NetActuate@vpnpool
+      - 娄底联通-Sydney-NetActuate@vpnpool
+      - 长沙联通-Seattle-Spartan@vpnpool 2
+      - 娄底联通-Seattle-Spartan@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-Tokyo-HVC@vpnpool
+      - 娄底联通-Tokyo-HVC@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 2
+      - 娄底联通-Tokyo-HVC@vpnpool 2
+      - 长沙联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool
+      - 深圳移动-Bangkok-CAT@vpnpool
+      - 广州移动-香港Kirino@vpnpool
+      - 深圳移动-香港Kirino@vpnpool
+      - 深圳移动-香港HKT@vpnpool
+      - 广州移动-SG-Starhub@vpnpool
+      - 深圳移动-SG-Starhub@vpnpool
+      - 广州移动-澳门Wind@vpnpool
+      - 深圳移动-澳门Wind@vpnpool
+      - 深圳移动-香港HKT@vpnpool 2
+      - 广州移动-香港HKT@vpnpool 3
+      - 深圳移动-香港HKT@vpnpool 3
+      - 广州移动-香港Kirino@vpnpool 2
+      - 深圳移动-香港Kirino@vpnpool 2
+      - 广州移动-SG-Oracle@vpnpool
+      - 深圳移动-SG-Oracle@vpnpool
+      - 广州移动-SG-HVC@vpnpool
+      - 深圳移动-SG-HVC@vpnpool
+      - 广州移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-SG-HVC@vpnpool 2
+      - 广州移动-VN-Hanoi-FPT@vpnpool
+      - 深圳移动-VN-Hanoi-FPT@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool
+      - 深圳移动-SG-DigitalOcean@vpnpool
+      - 广州移动-Jakarta-APIK@vpnpool
+      - 深圳移动-Jakarta-APIK@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool 2
+      - 深圳移动-SG-DigitalOcean@vpnpool 2
+      - 新加坡
+      - vpnpool-SG-Contabo 4
+      - vpnpool-SG-Kirino 3
+      - vpnpool-香港HKT 4
+      - 长沙联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool 2
+      - 娄底联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 3
+      - 娄底联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Mumbai-Linode@vpnpool 2
+      - 娄底联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool 2
+      - 娄底联通-Sydney-NETPRES@vpnpool 2
+      - 长沙联通-Seoul-Oracle@vpnpool 4
+      - 娄底联通-Seoul-Oracle@vpnpool 3
+      - 长沙联通-Tokyo-Kirino@vpnpool 2
+      - 娄底联通-Tokyo-Kirino@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 5
+      - 娄底联通-Houston-Wowrack@vpnpool 5
+      - 长沙联通-Houston-Wowrack@vpnpool 6
+      - 娄底联通-Houston-Wowrack@vpnpool 6
+      - 长沙联通-Houston-Wowrack@vpnpool 7
+      - 娄底联通-Houston-Wowrack@vpnpool 7
+      - 长沙联通-Seattle-Spartan@vpnpool 3
+      - 娄底联通-Seattle-Spartan@vpnpool 3
+      - 长沙联通-Sydney-NetActuate@vpnpool 2
+      - 娄底联通-Sydney-NetActuate@vpnpool 2
+      - 长沙联通-Seattle-Spartan@vpnpool 4
+      - 娄底联通-Seattle-Spartan@vpnpool 4
+      - 长沙联通-Houston-Wowrack@vpnpool 8
+      - 娄底联通-Houston-Wowrack@vpnpool 8
+      - 长沙联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-Tokyo-Oracle@vpnpool 2
+      - 娄底联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 3
+      - 娄底联通-Tokyo-HVC@vpnpool 3
+      - 长沙联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool 2
+      - 长沙联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool 2
+      - 深圳移动-Bangkok-CAT@vpnpool 2
+      - 广州移动-香港Kirino@vpnpool 3
+      - 深圳移动-香港Kirino@vpnpool 3
+      - 广州移动-香港HKT@vpnpool
+      - 深圳移动-香港HKT@vpnpool 4
+      - 广州移动-SG-Starhub@vpnpool 2
+      - 深圳移动-SG-Starhub@vpnpool 2
+      - 广州移动-澳门Wind@vpnpool 2
+      - 深圳移动-澳门Wind@vpnpool 2
+      - 深圳移动-香港HKT@vpnpool 5
+      - 深圳移动-香港HKT@vpnpool 6
+      - 深圳移动-香港Kirino@vpnpool 4
+      - 深圳移动-SG-Oracle@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 2
+      - 深圳移动-SG-HVC@vpnpool 3
+      - 广州移动-Tokyo-DMIT@vpnpool 2
+      - 深圳移动-Tokyo-DMIT@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 3
+      - 深圳移动-SG-HVC@vpnpool 4
+      - 广州移动-VN-Hanoi-FPT@vpnpool 2
+      - 深圳移动-VN-Hanoi-FPT@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 3
+      - 深圳移动-SG-DigitalOcean@vpnpool 3
+      - 广州移动-Jakarta-APIK@vpnpool 2
+      - 深圳移动-Jakarta-APIK@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 4
+      - 深圳移动-SG-DigitalOcean@vpnpool 4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnpool-Amsterdam-M247-free
-      - vpnpool-Frankfurt-M247-free
       - vpnpool-Jakarta-APIK
       - vpnpool-LAX-DediPath
-      - vpnpool-LAX-DediPath-free
       - vpnpool-London-GTHost-free
-      - vpnpool-Makati-Eastern
-      - vpnpool-Makati-Eastern-free
-      - vpnpool-Nonthaburi-CAT
-      - vpnpool-SG-Contabo
-      - vpnpool-Tokyo-Iptelecom
-      - vpnpool-香港Azure
       - vpnpool-香港Azure-免费
-      - vpnpool-Amsterdam-M247-free 2
       - vpnpool-Balashikha-Baxet
       - vpnpool-LAX-DediPath 2
-      - vpnpool-Makati-Eastern-free 2
-      - vpnpool-Nonthaburi-CAT 2
       - vpnpool-TR-Ulus-DGN
-      - vpnpool-香港Azure 2
-      - vpnpool-Frankfurt-M247-free 2
-      - vpnpool-Ho Chi Minh-Cloudcore-free
+      - vpnpool-香港Azure
       - vpnpool-Jakarta-APIK 2
-      - vpnpool-Jakarta-APIK-free
-      - CN_中国_TG @ShareCentrePro
       - 中国 香港-A1-CM中继
       - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
       - 台湾 台北-A1-CM中继
       - 新加坡-SG-A1-CM中继
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A1-CM中继
       - 美国 洛杉矶-A2-CM中继
+      - TG @ShareCentrePro
+      - "*🇭🇰HK -1053 t.me/小库订阅"
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-London-GTHost-free 2
+      - vpnpool-Tokyo-Iptelecom
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
       - v2-日本hk1-g5
-      - 美国高速公益节点
-      - 香港5|长沙入口|原生
-      - 日本1|杭州入口|原生|NF
-      - 日本2|杭州入口|原生|NF
-      - 新加坡2|广州入口
-      - 新加坡3|广州入口
-      - 日本1|杭州入口|原生|NF 2
-      - 新加坡3|广州入口 2
-      - 52215 @WangCai_1
-      - VIP1美国 洛杉矶 | 佛移多线路负载均衡
-      - VIP1美国 洛杉矶 | 广移多线路负载均衡
-      - VIP1越南-原生IP-佛移-tr
-      - VIP1越南-原生IP-广移-tr
-      - 香港Azure-Tokyo-Linode
-      - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean
-      - 美国_阿伟科技-油管
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - "@ShareCentrePro+Hongkong"
-      - CN-120.233.150.200-1127
-      - 中国_TG@nodesharing_66
-      - 【新鸟免费】日本JP-AWS 05 1.0x
-      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
-      - 日本2|杭州入口|原生|NF 2
+      - 日本2|杭州入口|原生|NF
       - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 美国_TG@nodesharing_9
       - HK-20.205.120.99-1105
       - v2-香港HKBGP-hk3-g2
-      - YouTube-由零开始-香港
-      - YouTube-由零开始-香港 2
-      - YouTube-由零开始-东京
-      - YouTube-由零开始-香港 3
-      - YouTube-由零开始-香港 4
       - 52220
-      - _US_美国
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
-      - 香港4|杭州入口|原生
-      - 香港5|长沙入口|原生 2
       - 日本3|长沙入口|原生|NF
-      - 新加坡1|杭州入口
-      - 香港9|长沙入口|原生
-      - 香港3|广州入口|原生 2
-      - 群:166416961_🇺🇸_US_美国_79
-      - Relay_馃嚚馃嚦CN-馃嚭馃嚫US_510
-      - 香港千兆-04号
       - 香港(绿头外网集团)(Public)
-      - YouTube-由零开始-香港 5
-      - 香港(绿头外网集团)(Public) 2
-      - 香港7|安徽入口|原生
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 中国_TG@nodesharing_488
-      - 香港2|广州入口|原生|NF 2
-      - 美国_TG@nodesharing_287
-      - 中国_TG@nodesharing_20
-      - 香港4|杭州入口|原生 2
-      - 香港_TG@nodesharing_17
-      - 美国_TG@nodesharing_83
-      - 美国_TG@nodesharing_177
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_182
-      - 美国_TG@nodesharing_41
-      - YouTube-由零开始-香港 6
-      - TG @ShareCentrePro
-      - _CA_加拿大
       - 韩国(绿头外网集团)(Public)
-      - 美国（欢迎订阅YouTube晓柒科技）
-      - 中国【YouTube由零開始】
-      - 中国【YouTube由零開始】 2
-      - 中国【YouTube由零開始】 3
-      - 中国【YouTube由零開始】 4
-      - 中国【YouTube由零開始】 5
-      - 中国【YouTube由零開始】 6
-      - 中国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - "@ShareCentrePro+Hongkong 2"
-      - "@ShareCentrePro+Hongkong 3"
-      - 美国_TG@nodesharing_95
-      - 美国_阿伟科技-油管 2
-      - _US_美国 2
-      - 美国_TG@nodesharing_93
-      - AA-V2ray-HK-HKBN
-      - AA-V2ray-HK-HKBN.02
-      - AA-V2ray-HK-HKT.01
-      - AA-V2ray-HK-NTT.01
-      - AA-V2ray-SG-Linode
-      - AA-V2ray-TW-HiNet.01
-      - AA-V2ray-TW-HiNet.02
-      - AA-V2ray-TW-HiNet.03
-      - AA-V2ray-TW-HiNet.05
       - 新加坡千兆-21号
-      - 新加坡千兆-10号
-      - 台湾千兆-06号
-      - 美国千兆-19号
-      - +@nfeng6_US_2451
       - US_3014
-      - +@nfeng6_US_2136
-      - +@nfeng6_US_2129
-      - +@nfeng6_US_2134
-      - +@nfeng6_DE_611
-      - +@nfeng6_US_2132
-      - "@nfeng6_ZZ_4244"
       - "@nfeng6_US_3046"
-      - +@nfeng6_US_2814
-      - "@nfeng6_ZZ_3641"
-      - "@nfeng6_ZZ_3638"
-      - "@nfeng6_ZZ_3842"
-      - "@nfeng6_ZZ_4028"
-      - "@nfeng6__45"
-      - +@nfeng6_US_3515
-      - +@nfeng6_US_2701
-      - "@nfeng6_ZZ_3831"
-      - +@nfeng6_US_2818
-      - "@nfeng6_CA_362"
-      - "@nfeng6_ZZ_3694"
-      - CN_531
-      - +@nfeng6_US_2888
-      - CN_535
-      - "@nfeng6_ZZ_3845"
-      - "@nfeng6_US_3049"
       - 新加坡千兆-21号 2
-      - 新加坡千兆-10号 2
-      - 台湾千兆-06号 2
-      - 日本千兆-24号
-      - 荷兰千兆-01号
-      - 科技网络_63
-      - 科技网络_171
-      - 科技网络_176
-      - 科技网络_481
+      - 日本千兆-20号
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 香港Azure-SG-DigitalOcean 2
+      - YouTube由零开始-日本
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - _CA_加拿大
+      - TG @ShareCentrePro 2
+      - TG @ShareCentrePro 3
+      - TG @ShareCentrePro 4
+      - +香港01+|+ss
+      - +香港02+|+ss
+      - 香港【YouTube由零開始】
+      - 香港【YouTube由零開始】 2
+      - 香港【YouTube由零開始】 3
+      - 香港【YouTube由零開始】 4
+      - 中国_TG@nodesharing_1
+      - 中国_TG@nodesharing_23
+      - 香港_TG@nodesharing_26
+      - 中国_TG@nodesharing_76
+      - 中国_TG@nodesharing_273
+      - vpnpool-Hanoi-FPT
+      - vpnpool-SG-Contabo
+      - vpnpool-Tokyo-NTT
+      - vpnpool-Hanoi-FPT 2
+      - vpnpool-彰化Hinet
+      - vpnpool-Tokyo-NTT 2
+      - vpnpool-SG-Kirino
+      - vpnpool-SG-Contabo 2
+      - vpnpool-Hanoi-FPT 3
+      - vpnpool-台北Hinet
+      - vpnpool-彰化Hinet 2
+      - vpnpool-Tokyo-NTT 3
+      - vpnpool-Tokyo-NTT 4
+      - vpnpool-SG-Contabo 3
+      - vpnpool-SG-Kirino 2
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - vpnpool-香港HKT 3
+      - SpeedCentre - AZKR
+      - 翻墙党fanqiangdang.com@0130_3
+      - 翻墙党fanqiangdang.com@0130_4
+      - 翻墙党fanqiangdang.com@0130_12
+      - 翻墙党fanqiangdang.com@0130_13
+      - 翻墙党fanqiangdang.com@0130_14
+      - 翻墙党fanqiangdang.com@0130_23
+      - 翻墙党fanqiangdang.com@0130_62
+      - 翻墙党fanqiangdang.com@0130_66
+      - 香港_TG@nodesharing_63
+      - 长沙联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool
+      - 娄底联通-Seoul-Oracle@vpnpool
+      - 长沙联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool
+      - 娄底联通-Sydney-NETPRES@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Tokyo-Kirino@vpnpool
+      - 娄底联通-Tokyo-Kirino@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool
+      - 娄底联通-Houston-Wowrack@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool 2
+      - 娄底联通-Houston-Wowrack@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 3
+      - 娄底联通-Houston-Wowrack@vpnpool 3
+      - 长沙联通-Seattle-Spartan@vpnpool
+      - 娄底联通-Seattle-Spartan@vpnpool
+      - 长沙联通-Sydney-NetActuate@vpnpool
+      - 娄底联通-Sydney-NetActuate@vpnpool
+      - 长沙联通-Seattle-Spartan@vpnpool 2
+      - 娄底联通-Seattle-Spartan@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-Tokyo-HVC@vpnpool
+      - 娄底联通-Tokyo-HVC@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 2
+      - 娄底联通-Tokyo-HVC@vpnpool 2
+      - 长沙联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool
+      - 深圳移动-Bangkok-CAT@vpnpool
+      - 广州移动-香港Kirino@vpnpool
+      - 深圳移动-香港Kirino@vpnpool
+      - 深圳移动-香港HKT@vpnpool
+      - 广州移动-SG-Starhub@vpnpool
+      - 深圳移动-SG-Starhub@vpnpool
+      - 广州移动-澳门Wind@vpnpool
+      - 深圳移动-澳门Wind@vpnpool
+      - 深圳移动-香港HKT@vpnpool 2
+      - 广州移动-香港HKT@vpnpool 3
+      - 深圳移动-香港HKT@vpnpool 3
+      - 广州移动-香港Kirino@vpnpool 2
+      - 深圳移动-香港Kirino@vpnpool 2
+      - 广州移动-SG-Oracle@vpnpool
+      - 深圳移动-SG-Oracle@vpnpool
+      - 广州移动-SG-HVC@vpnpool
+      - 深圳移动-SG-HVC@vpnpool
+      - 广州移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-SG-HVC@vpnpool 2
+      - 广州移动-VN-Hanoi-FPT@vpnpool
+      - 深圳移动-VN-Hanoi-FPT@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool
+      - 深圳移动-SG-DigitalOcean@vpnpool
+      - 广州移动-Jakarta-APIK@vpnpool
+      - 深圳移动-Jakarta-APIK@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool 2
+      - 深圳移动-SG-DigitalOcean@vpnpool 2
+      - 新加坡
+      - vpnpool-SG-Contabo 4
+      - vpnpool-SG-Kirino 3
+      - vpnpool-香港HKT 4
+      - 长沙联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool 2
+      - 娄底联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 3
+      - 娄底联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Mumbai-Linode@vpnpool 2
+      - 娄底联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool 2
+      - 娄底联通-Sydney-NETPRES@vpnpool 2
+      - 长沙联通-Seoul-Oracle@vpnpool 4
+      - 娄底联通-Seoul-Oracle@vpnpool 3
+      - 长沙联通-Tokyo-Kirino@vpnpool 2
+      - 娄底联通-Tokyo-Kirino@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 5
+      - 娄底联通-Houston-Wowrack@vpnpool 5
+      - 长沙联通-Houston-Wowrack@vpnpool 6
+      - 娄底联通-Houston-Wowrack@vpnpool 6
+      - 长沙联通-Houston-Wowrack@vpnpool 7
+      - 娄底联通-Houston-Wowrack@vpnpool 7
+      - 长沙联通-Seattle-Spartan@vpnpool 3
+      - 娄底联通-Seattle-Spartan@vpnpool 3
+      - 长沙联通-Sydney-NetActuate@vpnpool 2
+      - 娄底联通-Sydney-NetActuate@vpnpool 2
+      - 长沙联通-Seattle-Spartan@vpnpool 4
+      - 娄底联通-Seattle-Spartan@vpnpool 4
+      - 长沙联通-Houston-Wowrack@vpnpool 8
+      - 娄底联通-Houston-Wowrack@vpnpool 8
+      - 长沙联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-Tokyo-Oracle@vpnpool 2
+      - 娄底联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 3
+      - 娄底联通-Tokyo-HVC@vpnpool 3
+      - 长沙联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool 2
+      - 长沙联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool 2
+      - 深圳移动-Bangkok-CAT@vpnpool 2
+      - 广州移动-香港Kirino@vpnpool 3
+      - 深圳移动-香港Kirino@vpnpool 3
+      - 广州移动-香港HKT@vpnpool
+      - 深圳移动-香港HKT@vpnpool 4
+      - 广州移动-SG-Starhub@vpnpool 2
+      - 深圳移动-SG-Starhub@vpnpool 2
+      - 广州移动-澳门Wind@vpnpool 2
+      - 深圳移动-澳门Wind@vpnpool 2
+      - 深圳移动-香港HKT@vpnpool 5
+      - 深圳移动-香港HKT@vpnpool 6
+      - 深圳移动-香港Kirino@vpnpool 4
+      - 深圳移动-SG-Oracle@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 2
+      - 深圳移动-SG-HVC@vpnpool 3
+      - 广州移动-Tokyo-DMIT@vpnpool 2
+      - 深圳移动-Tokyo-DMIT@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 3
+      - 深圳移动-SG-HVC@vpnpool 4
+      - 广州移动-VN-Hanoi-FPT@vpnpool 2
+      - 深圳移动-VN-Hanoi-FPT@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 3
+      - 深圳移动-SG-DigitalOcean@vpnpool 3
+      - 广州移动-Jakarta-APIK@vpnpool 2
+      - 深圳移动-Jakarta-APIK@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 4
+      - 深圳移动-SG-DigitalOcean@vpnpool 4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -744,189 +920,232 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnpool-Amsterdam-M247-free
-      - vpnpool-Frankfurt-M247-free
       - vpnpool-Jakarta-APIK
       - vpnpool-LAX-DediPath
-      - vpnpool-LAX-DediPath-free
       - vpnpool-London-GTHost-free
-      - vpnpool-Makati-Eastern
-      - vpnpool-Makati-Eastern-free
-      - vpnpool-Nonthaburi-CAT
-      - vpnpool-SG-Contabo
-      - vpnpool-Tokyo-Iptelecom
-      - vpnpool-香港Azure
       - vpnpool-香港Azure-免费
-      - vpnpool-Amsterdam-M247-free 2
       - vpnpool-Balashikha-Baxet
       - vpnpool-LAX-DediPath 2
-      - vpnpool-Makati-Eastern-free 2
-      - vpnpool-Nonthaburi-CAT 2
       - vpnpool-TR-Ulus-DGN
-      - vpnpool-香港Azure 2
-      - vpnpool-Frankfurt-M247-free 2
-      - vpnpool-Ho Chi Minh-Cloudcore-free
+      - vpnpool-香港Azure
       - vpnpool-Jakarta-APIK 2
-      - vpnpool-Jakarta-APIK-free
-      - CN_中国_TG @ShareCentrePro
       - 中国 香港-A1-CM中继
       - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
       - 台湾 台北-A1-CM中继
       - 新加坡-SG-A1-CM中继
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A1-CM中继
       - 美国 洛杉矶-A2-CM中继
+      - TG @ShareCentrePro
+      - "*🇭🇰HK -1053 t.me/小库订阅"
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-London-GTHost-free 2
+      - vpnpool-Tokyo-Iptelecom
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
       - v2-日本hk1-g5
-      - 美国高速公益节点
-      - 香港5|长沙入口|原生
-      - 日本1|杭州入口|原生|NF
-      - 日本2|杭州入口|原生|NF
-      - 新加坡2|广州入口
-      - 新加坡3|广州入口
-      - 日本1|杭州入口|原生|NF 2
-      - 新加坡3|广州入口 2
-      - 52215 @WangCai_1
-      - VIP1美国 洛杉矶 | 佛移多线路负载均衡
-      - VIP1美国 洛杉矶 | 广移多线路负载均衡
-      - VIP1越南-原生IP-佛移-tr
-      - VIP1越南-原生IP-广移-tr
-      - 香港Azure-Tokyo-Linode
-      - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean
-      - 美国_阿伟科技-油管
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - "@ShareCentrePro+Hongkong"
-      - CN-120.233.150.200-1127
-      - 中国_TG@nodesharing_66
-      - 【新鸟免费】日本JP-AWS 05 1.0x
-      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
-      - 日本2|杭州入口|原生|NF 2
+      - 日本2|杭州入口|原生|NF
       - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 美国_TG@nodesharing_9
       - HK-20.205.120.99-1105
       - v2-香港HKBGP-hk3-g2
-      - YouTube-由零开始-香港
-      - YouTube-由零开始-香港 2
-      - YouTube-由零开始-东京
-      - YouTube-由零开始-香港 3
-      - YouTube-由零开始-香港 4
       - 52220
-      - _US_美国
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
-      - 香港4|杭州入口|原生
-      - 香港5|长沙入口|原生 2
       - 日本3|长沙入口|原生|NF
-      - 新加坡1|杭州入口
-      - 香港9|长沙入口|原生
-      - 香港3|广州入口|原生 2
-      - 群:166416961_🇺🇸_US_美国_79
-      - Relay_馃嚚馃嚦CN-馃嚭馃嚫US_510
-      - 香港千兆-04号
       - 香港(绿头外网集团)(Public)
-      - YouTube-由零开始-香港 5
-      - 香港(绿头外网集团)(Public) 2
-      - 香港7|安徽入口|原生
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 中国_TG@nodesharing_488
-      - 香港2|广州入口|原生|NF 2
-      - 美国_TG@nodesharing_287
-      - 中国_TG@nodesharing_20
-      - 香港4|杭州入口|原生 2
-      - 香港_TG@nodesharing_17
-      - 美国_TG@nodesharing_83
-      - 美国_TG@nodesharing_177
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_182
-      - 美国_TG@nodesharing_41
-      - YouTube-由零开始-香港 6
-      - TG @ShareCentrePro
-      - _CA_加拿大
       - 韩国(绿头外网集团)(Public)
-      - 美国（欢迎订阅YouTube晓柒科技）
-      - 中国【YouTube由零開始】
-      - 中国【YouTube由零開始】 2
-      - 中国【YouTube由零開始】 3
-      - 中国【YouTube由零開始】 4
-      - 中国【YouTube由零開始】 5
-      - 中国【YouTube由零開始】 6
-      - 中国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - "@ShareCentrePro+Hongkong 2"
-      - "@ShareCentrePro+Hongkong 3"
-      - 美国_TG@nodesharing_95
-      - 美国_阿伟科技-油管 2
-      - _US_美国 2
-      - 美国_TG@nodesharing_93
-      - AA-V2ray-HK-HKBN
-      - AA-V2ray-HK-HKBN.02
-      - AA-V2ray-HK-HKT.01
-      - AA-V2ray-HK-NTT.01
-      - AA-V2ray-SG-Linode
-      - AA-V2ray-TW-HiNet.01
-      - AA-V2ray-TW-HiNet.02
-      - AA-V2ray-TW-HiNet.03
-      - AA-V2ray-TW-HiNet.05
       - 新加坡千兆-21号
-      - 新加坡千兆-10号
-      - 台湾千兆-06号
-      - 美国千兆-19号
-      - +@nfeng6_US_2451
       - US_3014
-      - +@nfeng6_US_2136
-      - +@nfeng6_US_2129
-      - +@nfeng6_US_2134
-      - +@nfeng6_DE_611
-      - +@nfeng6_US_2132
-      - "@nfeng6_ZZ_4244"
       - "@nfeng6_US_3046"
-      - +@nfeng6_US_2814
-      - "@nfeng6_ZZ_3641"
-      - "@nfeng6_ZZ_3638"
-      - "@nfeng6_ZZ_3842"
-      - "@nfeng6_ZZ_4028"
-      - "@nfeng6__45"
-      - +@nfeng6_US_3515
-      - +@nfeng6_US_2701
-      - "@nfeng6_ZZ_3831"
-      - +@nfeng6_US_2818
-      - "@nfeng6_CA_362"
-      - "@nfeng6_ZZ_3694"
-      - CN_531
-      - +@nfeng6_US_2888
-      - CN_535
-      - "@nfeng6_ZZ_3845"
-      - "@nfeng6_US_3049"
       - 新加坡千兆-21号 2
-      - 新加坡千兆-10号 2
-      - 台湾千兆-06号 2
-      - 日本千兆-24号
-      - 荷兰千兆-01号
-      - 科技网络_63
-      - 科技网络_171
-      - 科技网络_176
-      - 科技网络_481
+      - 日本千兆-20号
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 香港Azure-SG-DigitalOcean 2
+      - YouTube由零开始-日本
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - _CA_加拿大
+      - TG @ShareCentrePro 2
+      - TG @ShareCentrePro 3
+      - TG @ShareCentrePro 4
+      - +香港01+|+ss
+      - +香港02+|+ss
+      - 香港【YouTube由零開始】
+      - 香港【YouTube由零開始】 2
+      - 香港【YouTube由零開始】 3
+      - 香港【YouTube由零開始】 4
+      - 中国_TG@nodesharing_1
+      - 中国_TG@nodesharing_23
+      - 香港_TG@nodesharing_26
+      - 中国_TG@nodesharing_76
+      - 中国_TG@nodesharing_273
+      - vpnpool-Hanoi-FPT
+      - vpnpool-SG-Contabo
+      - vpnpool-Tokyo-NTT
+      - vpnpool-Hanoi-FPT 2
+      - vpnpool-彰化Hinet
+      - vpnpool-Tokyo-NTT 2
+      - vpnpool-SG-Kirino
+      - vpnpool-SG-Contabo 2
+      - vpnpool-Hanoi-FPT 3
+      - vpnpool-台北Hinet
+      - vpnpool-彰化Hinet 2
+      - vpnpool-Tokyo-NTT 3
+      - vpnpool-Tokyo-NTT 4
+      - vpnpool-SG-Contabo 3
+      - vpnpool-SG-Kirino 2
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - vpnpool-香港HKT 3
+      - SpeedCentre - AZKR
+      - 翻墙党fanqiangdang.com@0130_3
+      - 翻墙党fanqiangdang.com@0130_4
+      - 翻墙党fanqiangdang.com@0130_12
+      - 翻墙党fanqiangdang.com@0130_13
+      - 翻墙党fanqiangdang.com@0130_14
+      - 翻墙党fanqiangdang.com@0130_23
+      - 翻墙党fanqiangdang.com@0130_62
+      - 翻墙党fanqiangdang.com@0130_66
+      - 香港_TG@nodesharing_63
+      - 长沙联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool
+      - 娄底联通-Seoul-Oracle@vpnpool
+      - 长沙联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool
+      - 娄底联通-Sydney-NETPRES@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Tokyo-Kirino@vpnpool
+      - 娄底联通-Tokyo-Kirino@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool
+      - 娄底联通-Houston-Wowrack@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool 2
+      - 娄底联通-Houston-Wowrack@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 3
+      - 娄底联通-Houston-Wowrack@vpnpool 3
+      - 长沙联通-Seattle-Spartan@vpnpool
+      - 娄底联通-Seattle-Spartan@vpnpool
+      - 长沙联通-Sydney-NetActuate@vpnpool
+      - 娄底联通-Sydney-NetActuate@vpnpool
+      - 长沙联通-Seattle-Spartan@vpnpool 2
+      - 娄底联通-Seattle-Spartan@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-Tokyo-HVC@vpnpool
+      - 娄底联通-Tokyo-HVC@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 2
+      - 娄底联通-Tokyo-HVC@vpnpool 2
+      - 长沙联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool
+      - 深圳移动-Bangkok-CAT@vpnpool
+      - 广州移动-香港Kirino@vpnpool
+      - 深圳移动-香港Kirino@vpnpool
+      - 深圳移动-香港HKT@vpnpool
+      - 广州移动-SG-Starhub@vpnpool
+      - 深圳移动-SG-Starhub@vpnpool
+      - 广州移动-澳门Wind@vpnpool
+      - 深圳移动-澳门Wind@vpnpool
+      - 深圳移动-香港HKT@vpnpool 2
+      - 广州移动-香港HKT@vpnpool 3
+      - 深圳移动-香港HKT@vpnpool 3
+      - 广州移动-香港Kirino@vpnpool 2
+      - 深圳移动-香港Kirino@vpnpool 2
+      - 广州移动-SG-Oracle@vpnpool
+      - 深圳移动-SG-Oracle@vpnpool
+      - 广州移动-SG-HVC@vpnpool
+      - 深圳移动-SG-HVC@vpnpool
+      - 广州移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-SG-HVC@vpnpool 2
+      - 广州移动-VN-Hanoi-FPT@vpnpool
+      - 深圳移动-VN-Hanoi-FPT@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool
+      - 深圳移动-SG-DigitalOcean@vpnpool
+      - 广州移动-Jakarta-APIK@vpnpool
+      - 深圳移动-Jakarta-APIK@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool 2
+      - 深圳移动-SG-DigitalOcean@vpnpool 2
+      - 新加坡
+      - vpnpool-SG-Contabo 4
+      - vpnpool-SG-Kirino 3
+      - vpnpool-香港HKT 4
+      - 长沙联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool 2
+      - 娄底联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 3
+      - 娄底联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Mumbai-Linode@vpnpool 2
+      - 娄底联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool 2
+      - 娄底联通-Sydney-NETPRES@vpnpool 2
+      - 长沙联通-Seoul-Oracle@vpnpool 4
+      - 娄底联通-Seoul-Oracle@vpnpool 3
+      - 长沙联通-Tokyo-Kirino@vpnpool 2
+      - 娄底联通-Tokyo-Kirino@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 5
+      - 娄底联通-Houston-Wowrack@vpnpool 5
+      - 长沙联通-Houston-Wowrack@vpnpool 6
+      - 娄底联通-Houston-Wowrack@vpnpool 6
+      - 长沙联通-Houston-Wowrack@vpnpool 7
+      - 娄底联通-Houston-Wowrack@vpnpool 7
+      - 长沙联通-Seattle-Spartan@vpnpool 3
+      - 娄底联通-Seattle-Spartan@vpnpool 3
+      - 长沙联通-Sydney-NetActuate@vpnpool 2
+      - 娄底联通-Sydney-NetActuate@vpnpool 2
+      - 长沙联通-Seattle-Spartan@vpnpool 4
+      - 娄底联通-Seattle-Spartan@vpnpool 4
+      - 长沙联通-Houston-Wowrack@vpnpool 8
+      - 娄底联通-Houston-Wowrack@vpnpool 8
+      - 长沙联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-Tokyo-Oracle@vpnpool 2
+      - 娄底联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 3
+      - 娄底联通-Tokyo-HVC@vpnpool 3
+      - 长沙联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool 2
+      - 长沙联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool 2
+      - 深圳移动-Bangkok-CAT@vpnpool 2
+      - 广州移动-香港Kirino@vpnpool 3
+      - 深圳移动-香港Kirino@vpnpool 3
+      - 广州移动-香港HKT@vpnpool
+      - 深圳移动-香港HKT@vpnpool 4
+      - 广州移动-SG-Starhub@vpnpool 2
+      - 深圳移动-SG-Starhub@vpnpool 2
+      - 广州移动-澳门Wind@vpnpool 2
+      - 深圳移动-澳门Wind@vpnpool 2
+      - 深圳移动-香港HKT@vpnpool 5
+      - 深圳移动-香港HKT@vpnpool 6
+      - 深圳移动-香港Kirino@vpnpool 4
+      - 深圳移动-SG-Oracle@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 2
+      - 深圳移动-SG-HVC@vpnpool 3
+      - 广州移动-Tokyo-DMIT@vpnpool 2
+      - 深圳移动-Tokyo-DMIT@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 3
+      - 深圳移动-SG-HVC@vpnpool 4
+      - 广州移动-VN-Hanoi-FPT@vpnpool 2
+      - 深圳移动-VN-Hanoi-FPT@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 3
+      - 深圳移动-SG-DigitalOcean@vpnpool 3
+      - 广州移动-Jakarta-APIK@vpnpool 2
+      - 深圳移动-Jakarta-APIK@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 4
+      - 深圳移动-SG-DigitalOcean@vpnpool 4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - vpnpool-香港Azure
       - vpnpool-香港Azure-免费
-      - vpnpool-香港Azure 2
+      - vpnpool-香港Azure
       - 中国 香港-A1-CM中继
       - 中国 香港-A2-CM中继
       - 台湾 台北-A1-CM中继
@@ -935,581 +1154,718 @@ proxy-groups:
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
       - v2-日本hk1-g5
-      - 香港5|长沙入口|原生
-      - 香港Azure-Tokyo-Linode
-      - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean
       - 【请尽快更换至新订阅】Azure香港|东莞移动
       - v2-香港HKBGP-hk3-g2
-      - YouTube-由零开始-香港
-      - YouTube-由零开始-香港 2
-      - YouTube-由零开始-香港 3
-      - YouTube-由零开始-香港 4
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
-      - 香港4|杭州入口|原生
-      - 香港5|长沙入口|原生 2
-      - 香港9|长沙入口|原生
-      - 香港3|广州入口|原生 2
-      - 香港千兆-04号
       - 香港(绿头外网集团)(Public)
-      - YouTube-由零开始-香港 5
-      - 香港(绿头外网集团)(Public) 2
-      - 香港7|安徽入口|原生
-      - 香港2|广州入口|原生|NF 2
-      - 香港4|杭州入口|原生 2
-      - 香港_TG@nodesharing_17
-      - YouTube-由零开始-香港 6
-      - AA-V2ray-HK-HKBN
-      - AA-V2ray-HK-HKBN.02
-      - AA-V2ray-HK-HKT.01
-      - 台湾千兆-06号
-      - 台湾千兆-06号 2
+      - 香港Azure-SG-DigitalOcean 2
+      - +香港01+|+ss
+      - +香港02+|+ss
+      - 香港【YouTube由零開始】
+      - 香港【YouTube由零開始】 2
+      - 香港【YouTube由零開始】 3
+      - 香港【YouTube由零開始】 4
+      - 香港_TG@nodesharing_26
+      - vpnpool-彰化Hinet
+      - vpnpool-台北Hinet
+      - vpnpool-彰化Hinet 2
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - vpnpool-香港HKT 3
+      - 香港_TG@nodesharing_63
+      - 广州移动-香港Kirino@vpnpool
+      - 深圳移动-香港Kirino@vpnpool
+      - 深圳移动-香港HKT@vpnpool
+      - 深圳移动-香港HKT@vpnpool 2
+      - 广州移动-香港HKT@vpnpool 3
+      - 深圳移动-香港HKT@vpnpool 3
+      - 广州移动-香港Kirino@vpnpool 2
+      - 深圳移动-香港Kirino@vpnpool 2
+      - vpnpool-香港HKT 4
+      - 广州移动-香港Kirino@vpnpool 3
+      - 深圳移动-香港Kirino@vpnpool 3
+      - 广州移动-香港HKT@vpnpool
+      - 深圳移动-香港HKT@vpnpool 4
+      - 深圳移动-香港HKT@vpnpool 5
+      - 深圳移动-香港HKT@vpnpool 6
+      - 深圳移动-香港Kirino@vpnpool 4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - vpnpool-Amsterdam-M247-free
-      - vpnpool-Frankfurt-M247-free
       - vpnpool-Jakarta-APIK
       - vpnpool-LAX-DediPath
-      - vpnpool-LAX-DediPath-free
       - vpnpool-London-GTHost-free
-      - vpnpool-Makati-Eastern
-      - vpnpool-Makati-Eastern-free
-      - vpnpool-Nonthaburi-CAT
-      - vpnpool-SG-Contabo
-      - vpnpool-Tokyo-Iptelecom
-      - vpnpool-香港Azure
       - vpnpool-香港Azure-免费
-      - vpnpool-Amsterdam-M247-free 2
       - vpnpool-Balashikha-Baxet
       - vpnpool-LAX-DediPath 2
-      - vpnpool-Makati-Eastern-free 2
-      - vpnpool-Nonthaburi-CAT 2
       - vpnpool-TR-Ulus-DGN
-      - vpnpool-香港Azure 2
-      - vpnpool-Frankfurt-M247-free 2
-      - vpnpool-Ho Chi Minh-Cloudcore-free
+      - vpnpool-香港Azure
       - vpnpool-Jakarta-APIK 2
-      - vpnpool-Jakarta-APIK-free
-      - CN_中国_TG @ShareCentrePro
       - 中国 香港-A1-CM中继
       - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
       - 台湾 台北-A1-CM中继
       - 新加坡-SG-A1-CM中继
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A1-CM中继
       - 美国 洛杉矶-A2-CM中继
+      - TG @ShareCentrePro
+      - "*🇭🇰HK -1053 t.me/小库订阅"
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-London-GTHost-free 2
+      - vpnpool-Tokyo-Iptelecom
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
       - v2-日本hk1-g5
-      - 美国高速公益节点
-      - 香港5|长沙入口|原生
-      - 日本1|杭州入口|原生|NF
-      - 日本2|杭州入口|原生|NF
-      - 新加坡2|广州入口
-      - 新加坡3|广州入口
-      - 日本1|杭州入口|原生|NF 2
-      - 新加坡3|广州入口 2
-      - 52215 @WangCai_1
-      - VIP1美国 洛杉矶 | 佛移多线路负载均衡
-      - VIP1美国 洛杉矶 | 广移多线路负载均衡
-      - VIP1越南-原生IP-佛移-tr
-      - VIP1越南-原生IP-广移-tr
-      - 香港Azure-Tokyo-Linode
-      - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean
-      - 美国_阿伟科技-油管
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - "@ShareCentrePro+Hongkong"
-      - CN-120.233.150.200-1127
-      - 中国_TG@nodesharing_66
-      - 【新鸟免费】日本JP-AWS 05 1.0x
-      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
-      - 日本2|杭州入口|原生|NF 2
+      - 日本2|杭州入口|原生|NF
       - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 美国_TG@nodesharing_9
       - HK-20.205.120.99-1105
       - v2-香港HKBGP-hk3-g2
-      - YouTube-由零开始-香港
-      - YouTube-由零开始-香港 2
-      - YouTube-由零开始-东京
-      - YouTube-由零开始-香港 3
-      - YouTube-由零开始-香港 4
       - 52220
-      - _US_美国
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
-      - 香港4|杭州入口|原生
-      - 香港5|长沙入口|原生 2
       - 日本3|长沙入口|原生|NF
-      - 新加坡1|杭州入口
-      - 香港9|长沙入口|原生
-      - 香港3|广州入口|原生 2
-      - 群:166416961_🇺🇸_US_美国_79
-      - Relay_馃嚚馃嚦CN-馃嚭馃嚫US_510
-      - 香港千兆-04号
       - 香港(绿头外网集团)(Public)
-      - YouTube-由零开始-香港 5
-      - 香港(绿头外网集团)(Public) 2
-      - 香港7|安徽入口|原生
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 中国_TG@nodesharing_488
-      - 香港2|广州入口|原生|NF 2
-      - 美国_TG@nodesharing_287
-      - 中国_TG@nodesharing_20
-      - 香港4|杭州入口|原生 2
-      - 香港_TG@nodesharing_17
-      - 美国_TG@nodesharing_83
-      - 美国_TG@nodesharing_177
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_182
-      - 美国_TG@nodesharing_41
-      - YouTube-由零开始-香港 6
-      - TG @ShareCentrePro
-      - _CA_加拿大
       - 韩国(绿头外网集团)(Public)
-      - 美国（欢迎订阅YouTube晓柒科技）
-      - 中国【YouTube由零開始】
-      - 中国【YouTube由零開始】 2
-      - 中国【YouTube由零開始】 3
-      - 中国【YouTube由零開始】 4
-      - 中国【YouTube由零開始】 5
-      - 中国【YouTube由零開始】 6
-      - 中国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - "@ShareCentrePro+Hongkong 2"
-      - "@ShareCentrePro+Hongkong 3"
-      - 美国_TG@nodesharing_95
-      - 美国_阿伟科技-油管 2
-      - _US_美国 2
-      - 美国_TG@nodesharing_93
-      - AA-V2ray-HK-HKBN
-      - AA-V2ray-HK-HKBN.02
-      - AA-V2ray-HK-HKT.01
-      - AA-V2ray-HK-NTT.01
-      - AA-V2ray-SG-Linode
-      - AA-V2ray-TW-HiNet.01
-      - AA-V2ray-TW-HiNet.02
-      - AA-V2ray-TW-HiNet.03
-      - AA-V2ray-TW-HiNet.05
       - 新加坡千兆-21号
-      - 新加坡千兆-10号
-      - 台湾千兆-06号
-      - 美国千兆-19号
-      - +@nfeng6_US_2451
       - US_3014
-      - +@nfeng6_US_2136
-      - +@nfeng6_US_2129
-      - +@nfeng6_US_2134
-      - +@nfeng6_DE_611
-      - +@nfeng6_US_2132
-      - "@nfeng6_ZZ_4244"
       - "@nfeng6_US_3046"
-      - +@nfeng6_US_2814
-      - "@nfeng6_ZZ_3641"
-      - "@nfeng6_ZZ_3638"
-      - "@nfeng6_ZZ_3842"
-      - "@nfeng6_ZZ_4028"
-      - "@nfeng6__45"
-      - +@nfeng6_US_3515
-      - +@nfeng6_US_2701
-      - "@nfeng6_ZZ_3831"
-      - +@nfeng6_US_2818
-      - "@nfeng6_CA_362"
-      - "@nfeng6_ZZ_3694"
-      - CN_531
-      - +@nfeng6_US_2888
-      - CN_535
-      - "@nfeng6_ZZ_3845"
-      - "@nfeng6_US_3049"
       - 新加坡千兆-21号 2
-      - 新加坡千兆-10号 2
-      - 台湾千兆-06号 2
-      - 日本千兆-24号
-      - 荷兰千兆-01号
-      - 科技网络_63
-      - 科技网络_171
-      - 科技网络_176
-      - 科技网络_481
+      - 日本千兆-20号
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 香港Azure-SG-DigitalOcean 2
+      - YouTube由零开始-日本
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - _CA_加拿大
+      - TG @ShareCentrePro 2
+      - TG @ShareCentrePro 3
+      - TG @ShareCentrePro 4
+      - +香港01+|+ss
+      - +香港02+|+ss
+      - 香港【YouTube由零開始】
+      - 香港【YouTube由零開始】 2
+      - 香港【YouTube由零開始】 3
+      - 香港【YouTube由零開始】 4
+      - 中国_TG@nodesharing_1
+      - 中国_TG@nodesharing_23
+      - 香港_TG@nodesharing_26
+      - 中国_TG@nodesharing_76
+      - 中国_TG@nodesharing_273
+      - vpnpool-Hanoi-FPT
+      - vpnpool-SG-Contabo
+      - vpnpool-Tokyo-NTT
+      - vpnpool-Hanoi-FPT 2
+      - vpnpool-彰化Hinet
+      - vpnpool-Tokyo-NTT 2
+      - vpnpool-SG-Kirino
+      - vpnpool-SG-Contabo 2
+      - vpnpool-Hanoi-FPT 3
+      - vpnpool-台北Hinet
+      - vpnpool-彰化Hinet 2
+      - vpnpool-Tokyo-NTT 3
+      - vpnpool-Tokyo-NTT 4
+      - vpnpool-SG-Contabo 3
+      - vpnpool-SG-Kirino 2
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - vpnpool-香港HKT 3
+      - SpeedCentre - AZKR
+      - 翻墙党fanqiangdang.com@0130_3
+      - 翻墙党fanqiangdang.com@0130_4
+      - 翻墙党fanqiangdang.com@0130_12
+      - 翻墙党fanqiangdang.com@0130_13
+      - 翻墙党fanqiangdang.com@0130_14
+      - 翻墙党fanqiangdang.com@0130_23
+      - 翻墙党fanqiangdang.com@0130_62
+      - 翻墙党fanqiangdang.com@0130_66
+      - 香港_TG@nodesharing_63
+      - 长沙联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool
+      - 娄底联通-Seoul-Oracle@vpnpool
+      - 长沙联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool
+      - 娄底联通-Sydney-NETPRES@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Tokyo-Kirino@vpnpool
+      - 娄底联通-Tokyo-Kirino@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool
+      - 娄底联通-Houston-Wowrack@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool 2
+      - 娄底联通-Houston-Wowrack@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 3
+      - 娄底联通-Houston-Wowrack@vpnpool 3
+      - 长沙联通-Seattle-Spartan@vpnpool
+      - 娄底联通-Seattle-Spartan@vpnpool
+      - 长沙联通-Sydney-NetActuate@vpnpool
+      - 娄底联通-Sydney-NetActuate@vpnpool
+      - 长沙联通-Seattle-Spartan@vpnpool 2
+      - 娄底联通-Seattle-Spartan@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-Tokyo-HVC@vpnpool
+      - 娄底联通-Tokyo-HVC@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 2
+      - 娄底联通-Tokyo-HVC@vpnpool 2
+      - 长沙联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool
+      - 深圳移动-Bangkok-CAT@vpnpool
+      - 广州移动-香港Kirino@vpnpool
+      - 深圳移动-香港Kirino@vpnpool
+      - 深圳移动-香港HKT@vpnpool
+      - 广州移动-SG-Starhub@vpnpool
+      - 深圳移动-SG-Starhub@vpnpool
+      - 广州移动-澳门Wind@vpnpool
+      - 深圳移动-澳门Wind@vpnpool
+      - 深圳移动-香港HKT@vpnpool 2
+      - 广州移动-香港HKT@vpnpool 3
+      - 深圳移动-香港HKT@vpnpool 3
+      - 广州移动-香港Kirino@vpnpool 2
+      - 深圳移动-香港Kirino@vpnpool 2
+      - 广州移动-SG-Oracle@vpnpool
+      - 深圳移动-SG-Oracle@vpnpool
+      - 广州移动-SG-HVC@vpnpool
+      - 深圳移动-SG-HVC@vpnpool
+      - 广州移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-SG-HVC@vpnpool 2
+      - 广州移动-VN-Hanoi-FPT@vpnpool
+      - 深圳移动-VN-Hanoi-FPT@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool
+      - 深圳移动-SG-DigitalOcean@vpnpool
+      - 广州移动-Jakarta-APIK@vpnpool
+      - 深圳移动-Jakarta-APIK@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool 2
+      - 深圳移动-SG-DigitalOcean@vpnpool 2
+      - 新加坡
+      - vpnpool-SG-Contabo 4
+      - vpnpool-SG-Kirino 3
+      - vpnpool-香港HKT 4
+      - 长沙联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool 2
+      - 娄底联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 3
+      - 娄底联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Mumbai-Linode@vpnpool 2
+      - 娄底联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool 2
+      - 娄底联通-Sydney-NETPRES@vpnpool 2
+      - 长沙联通-Seoul-Oracle@vpnpool 4
+      - 娄底联通-Seoul-Oracle@vpnpool 3
+      - 长沙联通-Tokyo-Kirino@vpnpool 2
+      - 娄底联通-Tokyo-Kirino@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 5
+      - 娄底联通-Houston-Wowrack@vpnpool 5
+      - 长沙联通-Houston-Wowrack@vpnpool 6
+      - 娄底联通-Houston-Wowrack@vpnpool 6
+      - 长沙联通-Houston-Wowrack@vpnpool 7
+      - 娄底联通-Houston-Wowrack@vpnpool 7
+      - 长沙联通-Seattle-Spartan@vpnpool 3
+      - 娄底联通-Seattle-Spartan@vpnpool 3
+      - 长沙联通-Sydney-NetActuate@vpnpool 2
+      - 娄底联通-Sydney-NetActuate@vpnpool 2
+      - 长沙联通-Seattle-Spartan@vpnpool 4
+      - 娄底联通-Seattle-Spartan@vpnpool 4
+      - 长沙联通-Houston-Wowrack@vpnpool 8
+      - 娄底联通-Houston-Wowrack@vpnpool 8
+      - 长沙联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-Tokyo-Oracle@vpnpool 2
+      - 娄底联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 3
+      - 娄底联通-Tokyo-HVC@vpnpool 3
+      - 长沙联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool 2
+      - 长沙联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool 2
+      - 深圳移动-Bangkok-CAT@vpnpool 2
+      - 广州移动-香港Kirino@vpnpool 3
+      - 深圳移动-香港Kirino@vpnpool 3
+      - 广州移动-香港HKT@vpnpool
+      - 深圳移动-香港HKT@vpnpool 4
+      - 广州移动-SG-Starhub@vpnpool 2
+      - 深圳移动-SG-Starhub@vpnpool 2
+      - 广州移动-澳门Wind@vpnpool 2
+      - 深圳移动-澳门Wind@vpnpool 2
+      - 深圳移动-香港HKT@vpnpool 5
+      - 深圳移动-香港HKT@vpnpool 6
+      - 深圳移动-香港Kirino@vpnpool 4
+      - 深圳移动-SG-Oracle@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 2
+      - 深圳移动-SG-HVC@vpnpool 3
+      - 广州移动-Tokyo-DMIT@vpnpool 2
+      - 深圳移动-Tokyo-DMIT@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 3
+      - 深圳移动-SG-HVC@vpnpool 4
+      - 广州移动-VN-Hanoi-FPT@vpnpool 2
+      - 深圳移动-VN-Hanoi-FPT@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 3
+      - 深圳移动-SG-DigitalOcean@vpnpool 3
+      - 广州移动-Jakarta-APIK@vpnpool 2
+      - 深圳移动-Jakarta-APIK@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 4
+      - 深圳移动-SG-DigitalOcean@vpnpool 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - vpnpool-Amsterdam-M247-free
-      - vpnpool-Frankfurt-M247-free
       - vpnpool-Jakarta-APIK
       - vpnpool-LAX-DediPath
-      - vpnpool-LAX-DediPath-free
       - vpnpool-London-GTHost-free
-      - vpnpool-Makati-Eastern
-      - vpnpool-Makati-Eastern-free
-      - vpnpool-Nonthaburi-CAT
-      - vpnpool-SG-Contabo
-      - vpnpool-Tokyo-Iptelecom
-      - vpnpool-香港Azure
       - vpnpool-香港Azure-免费
-      - vpnpool-Amsterdam-M247-free 2
       - vpnpool-Balashikha-Baxet
       - vpnpool-LAX-DediPath 2
-      - vpnpool-Makati-Eastern-free 2
-      - vpnpool-Nonthaburi-CAT 2
       - vpnpool-TR-Ulus-DGN
-      - vpnpool-香港Azure 2
-      - vpnpool-Frankfurt-M247-free 2
-      - vpnpool-Ho Chi Minh-Cloudcore-free
+      - vpnpool-香港Azure
       - vpnpool-Jakarta-APIK 2
-      - vpnpool-Jakarta-APIK-free
-      - CN_中国_TG @ShareCentrePro
       - 中国 香港-A1-CM中继
       - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
       - 台湾 台北-A1-CM中继
       - 新加坡-SG-A1-CM中继
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A1-CM中继
       - 美国 洛杉矶-A2-CM中继
+      - TG @ShareCentrePro
+      - "*🇭🇰HK -1053 t.me/小库订阅"
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-London-GTHost-free 2
+      - vpnpool-Tokyo-Iptelecom
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
       - v2-日本hk1-g5
-      - 美国高速公益节点
-      - 香港5|长沙入口|原生
-      - 日本1|杭州入口|原生|NF
-      - 日本2|杭州入口|原生|NF
-      - 新加坡2|广州入口
-      - 新加坡3|广州入口
-      - 日本1|杭州入口|原生|NF 2
-      - 新加坡3|广州入口 2
-      - 52215 @WangCai_1
-      - VIP1美国 洛杉矶 | 佛移多线路负载均衡
-      - VIP1美国 洛杉矶 | 广移多线路负载均衡
-      - VIP1越南-原生IP-佛移-tr
-      - VIP1越南-原生IP-广移-tr
-      - 香港Azure-Tokyo-Linode
-      - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean
-      - 美国_阿伟科技-油管
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - "@ShareCentrePro+Hongkong"
-      - CN-120.233.150.200-1127
-      - 中国_TG@nodesharing_66
-      - 【新鸟免费】日本JP-AWS 05 1.0x
-      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
-      - 日本2|杭州入口|原生|NF 2
+      - 日本2|杭州入口|原生|NF
       - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 美国_TG@nodesharing_9
       - HK-20.205.120.99-1105
       - v2-香港HKBGP-hk3-g2
-      - YouTube-由零开始-香港
-      - YouTube-由零开始-香港 2
-      - YouTube-由零开始-东京
-      - YouTube-由零开始-香港 3
-      - YouTube-由零开始-香港 4
       - 52220
-      - _US_美国
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
-      - 香港4|杭州入口|原生
-      - 香港5|长沙入口|原生 2
       - 日本3|长沙入口|原生|NF
-      - 新加坡1|杭州入口
-      - 香港9|长沙入口|原生
-      - 香港3|广州入口|原生 2
-      - 群:166416961_🇺🇸_US_美国_79
-      - Relay_馃嚚馃嚦CN-馃嚭馃嚫US_510
-      - 香港千兆-04号
       - 香港(绿头外网集团)(Public)
-      - YouTube-由零开始-香港 5
-      - 香港(绿头外网集团)(Public) 2
-      - 香港7|安徽入口|原生
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 中国_TG@nodesharing_488
-      - 香港2|广州入口|原生|NF 2
-      - 美国_TG@nodesharing_287
-      - 中国_TG@nodesharing_20
-      - 香港4|杭州入口|原生 2
-      - 香港_TG@nodesharing_17
-      - 美国_TG@nodesharing_83
-      - 美国_TG@nodesharing_177
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_182
-      - 美国_TG@nodesharing_41
-      - YouTube-由零开始-香港 6
-      - TG @ShareCentrePro
-      - _CA_加拿大
       - 韩国(绿头外网集团)(Public)
-      - 美国（欢迎订阅YouTube晓柒科技）
-      - 中国【YouTube由零開始】
-      - 中国【YouTube由零開始】 2
-      - 中国【YouTube由零開始】 3
-      - 中国【YouTube由零開始】 4
-      - 中国【YouTube由零開始】 5
-      - 中国【YouTube由零開始】 6
-      - 中国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - "@ShareCentrePro+Hongkong 2"
-      - "@ShareCentrePro+Hongkong 3"
-      - 美国_TG@nodesharing_95
-      - 美国_阿伟科技-油管 2
-      - _US_美国 2
-      - 美国_TG@nodesharing_93
-      - AA-V2ray-HK-HKBN
-      - AA-V2ray-HK-HKBN.02
-      - AA-V2ray-HK-HKT.01
-      - AA-V2ray-HK-NTT.01
-      - AA-V2ray-SG-Linode
-      - AA-V2ray-TW-HiNet.01
-      - AA-V2ray-TW-HiNet.02
-      - AA-V2ray-TW-HiNet.03
-      - AA-V2ray-TW-HiNet.05
       - 新加坡千兆-21号
-      - 新加坡千兆-10号
-      - 台湾千兆-06号
-      - 美国千兆-19号
-      - +@nfeng6_US_2451
       - US_3014
-      - +@nfeng6_US_2136
-      - +@nfeng6_US_2129
-      - +@nfeng6_US_2134
-      - +@nfeng6_DE_611
-      - +@nfeng6_US_2132
-      - "@nfeng6_ZZ_4244"
       - "@nfeng6_US_3046"
-      - +@nfeng6_US_2814
-      - "@nfeng6_ZZ_3641"
-      - "@nfeng6_ZZ_3638"
-      - "@nfeng6_ZZ_3842"
-      - "@nfeng6_ZZ_4028"
-      - "@nfeng6__45"
-      - +@nfeng6_US_3515
-      - +@nfeng6_US_2701
-      - "@nfeng6_ZZ_3831"
-      - +@nfeng6_US_2818
-      - "@nfeng6_CA_362"
-      - "@nfeng6_ZZ_3694"
-      - CN_531
-      - +@nfeng6_US_2888
-      - CN_535
-      - "@nfeng6_ZZ_3845"
-      - "@nfeng6_US_3049"
       - 新加坡千兆-21号 2
-      - 新加坡千兆-10号 2
-      - 台湾千兆-06号 2
-      - 日本千兆-24号
-      - 荷兰千兆-01号
-      - 科技网络_63
-      - 科技网络_171
-      - 科技网络_176
-      - 科技网络_481
+      - 日本千兆-20号
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 香港Azure-SG-DigitalOcean 2
+      - YouTube由零开始-日本
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - _CA_加拿大
+      - TG @ShareCentrePro 2
+      - TG @ShareCentrePro 3
+      - TG @ShareCentrePro 4
+      - +香港01+|+ss
+      - +香港02+|+ss
+      - 香港【YouTube由零開始】
+      - 香港【YouTube由零開始】 2
+      - 香港【YouTube由零開始】 3
+      - 香港【YouTube由零開始】 4
+      - 中国_TG@nodesharing_1
+      - 中国_TG@nodesharing_23
+      - 香港_TG@nodesharing_26
+      - 中国_TG@nodesharing_76
+      - 中国_TG@nodesharing_273
+      - vpnpool-Hanoi-FPT
+      - vpnpool-SG-Contabo
+      - vpnpool-Tokyo-NTT
+      - vpnpool-Hanoi-FPT 2
+      - vpnpool-彰化Hinet
+      - vpnpool-Tokyo-NTT 2
+      - vpnpool-SG-Kirino
+      - vpnpool-SG-Contabo 2
+      - vpnpool-Hanoi-FPT 3
+      - vpnpool-台北Hinet
+      - vpnpool-彰化Hinet 2
+      - vpnpool-Tokyo-NTT 3
+      - vpnpool-Tokyo-NTT 4
+      - vpnpool-SG-Contabo 3
+      - vpnpool-SG-Kirino 2
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - vpnpool-香港HKT 3
+      - SpeedCentre - AZKR
+      - 翻墙党fanqiangdang.com@0130_3
+      - 翻墙党fanqiangdang.com@0130_4
+      - 翻墙党fanqiangdang.com@0130_12
+      - 翻墙党fanqiangdang.com@0130_13
+      - 翻墙党fanqiangdang.com@0130_14
+      - 翻墙党fanqiangdang.com@0130_23
+      - 翻墙党fanqiangdang.com@0130_62
+      - 翻墙党fanqiangdang.com@0130_66
+      - 香港_TG@nodesharing_63
+      - 长沙联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool
+      - 娄底联通-Seoul-Oracle@vpnpool
+      - 长沙联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool
+      - 娄底联通-Sydney-NETPRES@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Tokyo-Kirino@vpnpool
+      - 娄底联通-Tokyo-Kirino@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool
+      - 娄底联通-Houston-Wowrack@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool 2
+      - 娄底联通-Houston-Wowrack@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 3
+      - 娄底联通-Houston-Wowrack@vpnpool 3
+      - 长沙联通-Seattle-Spartan@vpnpool
+      - 娄底联通-Seattle-Spartan@vpnpool
+      - 长沙联通-Sydney-NetActuate@vpnpool
+      - 娄底联通-Sydney-NetActuate@vpnpool
+      - 长沙联通-Seattle-Spartan@vpnpool 2
+      - 娄底联通-Seattle-Spartan@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-Tokyo-HVC@vpnpool
+      - 娄底联通-Tokyo-HVC@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 2
+      - 娄底联通-Tokyo-HVC@vpnpool 2
+      - 长沙联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool
+      - 深圳移动-Bangkok-CAT@vpnpool
+      - 广州移动-香港Kirino@vpnpool
+      - 深圳移动-香港Kirino@vpnpool
+      - 深圳移动-香港HKT@vpnpool
+      - 广州移动-SG-Starhub@vpnpool
+      - 深圳移动-SG-Starhub@vpnpool
+      - 广州移动-澳门Wind@vpnpool
+      - 深圳移动-澳门Wind@vpnpool
+      - 深圳移动-香港HKT@vpnpool 2
+      - 广州移动-香港HKT@vpnpool 3
+      - 深圳移动-香港HKT@vpnpool 3
+      - 广州移动-香港Kirino@vpnpool 2
+      - 深圳移动-香港Kirino@vpnpool 2
+      - 广州移动-SG-Oracle@vpnpool
+      - 深圳移动-SG-Oracle@vpnpool
+      - 广州移动-SG-HVC@vpnpool
+      - 深圳移动-SG-HVC@vpnpool
+      - 广州移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-SG-HVC@vpnpool 2
+      - 广州移动-VN-Hanoi-FPT@vpnpool
+      - 深圳移动-VN-Hanoi-FPT@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool
+      - 深圳移动-SG-DigitalOcean@vpnpool
+      - 广州移动-Jakarta-APIK@vpnpool
+      - 深圳移动-Jakarta-APIK@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool 2
+      - 深圳移动-SG-DigitalOcean@vpnpool 2
+      - 新加坡
+      - vpnpool-SG-Contabo 4
+      - vpnpool-SG-Kirino 3
+      - vpnpool-香港HKT 4
+      - 长沙联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool 2
+      - 娄底联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 3
+      - 娄底联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Mumbai-Linode@vpnpool 2
+      - 娄底联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool 2
+      - 娄底联通-Sydney-NETPRES@vpnpool 2
+      - 长沙联通-Seoul-Oracle@vpnpool 4
+      - 娄底联通-Seoul-Oracle@vpnpool 3
+      - 长沙联通-Tokyo-Kirino@vpnpool 2
+      - 娄底联通-Tokyo-Kirino@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 5
+      - 娄底联通-Houston-Wowrack@vpnpool 5
+      - 长沙联通-Houston-Wowrack@vpnpool 6
+      - 娄底联通-Houston-Wowrack@vpnpool 6
+      - 长沙联通-Houston-Wowrack@vpnpool 7
+      - 娄底联通-Houston-Wowrack@vpnpool 7
+      - 长沙联通-Seattle-Spartan@vpnpool 3
+      - 娄底联通-Seattle-Spartan@vpnpool 3
+      - 长沙联通-Sydney-NetActuate@vpnpool 2
+      - 娄底联通-Sydney-NetActuate@vpnpool 2
+      - 长沙联通-Seattle-Spartan@vpnpool 4
+      - 娄底联通-Seattle-Spartan@vpnpool 4
+      - 长沙联通-Houston-Wowrack@vpnpool 8
+      - 娄底联通-Houston-Wowrack@vpnpool 8
+      - 长沙联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-Tokyo-Oracle@vpnpool 2
+      - 娄底联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 3
+      - 娄底联通-Tokyo-HVC@vpnpool 3
+      - 长沙联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool 2
+      - 长沙联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool 2
+      - 深圳移动-Bangkok-CAT@vpnpool 2
+      - 广州移动-香港Kirino@vpnpool 3
+      - 深圳移动-香港Kirino@vpnpool 3
+      - 广州移动-香港HKT@vpnpool
+      - 深圳移动-香港HKT@vpnpool 4
+      - 广州移动-SG-Starhub@vpnpool 2
+      - 深圳移动-SG-Starhub@vpnpool 2
+      - 广州移动-澳门Wind@vpnpool 2
+      - 深圳移动-澳门Wind@vpnpool 2
+      - 深圳移动-香港HKT@vpnpool 5
+      - 深圳移动-香港HKT@vpnpool 6
+      - 深圳移动-香港Kirino@vpnpool 4
+      - 深圳移动-SG-Oracle@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 2
+      - 深圳移动-SG-HVC@vpnpool 3
+      - 广州移动-Tokyo-DMIT@vpnpool 2
+      - 深圳移动-Tokyo-DMIT@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 3
+      - 深圳移动-SG-HVC@vpnpool 4
+      - 广州移动-VN-Hanoi-FPT@vpnpool 2
+      - 深圳移动-VN-Hanoi-FPT@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 3
+      - 深圳移动-SG-DigitalOcean@vpnpool 3
+      - 广州移动-Jakarta-APIK@vpnpool 2
+      - 深圳移动-Jakarta-APIK@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 4
+      - 深圳移动-SG-DigitalOcean@vpnpool 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnpool-Amsterdam-M247-free
-      - vpnpool-Frankfurt-M247-free
       - vpnpool-Jakarta-APIK
       - vpnpool-LAX-DediPath
-      - vpnpool-LAX-DediPath-free
       - vpnpool-London-GTHost-free
-      - vpnpool-Makati-Eastern
-      - vpnpool-Makati-Eastern-free
-      - vpnpool-Nonthaburi-CAT
-      - vpnpool-SG-Contabo
-      - vpnpool-Tokyo-Iptelecom
-      - vpnpool-香港Azure
       - vpnpool-香港Azure-免费
-      - vpnpool-Amsterdam-M247-free 2
       - vpnpool-Balashikha-Baxet
       - vpnpool-LAX-DediPath 2
-      - vpnpool-Makati-Eastern-free 2
-      - vpnpool-Nonthaburi-CAT 2
       - vpnpool-TR-Ulus-DGN
-      - vpnpool-香港Azure 2
-      - vpnpool-Frankfurt-M247-free 2
-      - vpnpool-Ho Chi Minh-Cloudcore-free
+      - vpnpool-香港Azure
       - vpnpool-Jakarta-APIK 2
-      - vpnpool-Jakarta-APIK-free
-      - CN_中国_TG @ShareCentrePro
       - 中国 香港-A1-CM中继
       - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
       - 台湾 台北-A1-CM中继
       - 新加坡-SG-A1-CM中继
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A1-CM中继
       - 美国 洛杉矶-A2-CM中继
+      - TG @ShareCentrePro
+      - "*🇭🇰HK -1053 t.me/小库订阅"
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-London-GTHost-free 2
+      - vpnpool-Tokyo-Iptelecom
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
       - v2-日本hk1-g5
-      - 美国高速公益节点
-      - 香港5|长沙入口|原生
-      - 日本1|杭州入口|原生|NF
-      - 日本2|杭州入口|原生|NF
-      - 新加坡2|广州入口
-      - 新加坡3|广州入口
-      - 日本1|杭州入口|原生|NF 2
-      - 新加坡3|广州入口 2
-      - 52215 @WangCai_1
-      - VIP1美国 洛杉矶 | 佛移多线路负载均衡
-      - VIP1美国 洛杉矶 | 广移多线路负载均衡
-      - VIP1越南-原生IP-佛移-tr
-      - VIP1越南-原生IP-广移-tr
-      - 香港Azure-Tokyo-Linode
-      - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean
-      - 美国_阿伟科技-油管
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - "@ShareCentrePro+Hongkong"
-      - CN-120.233.150.200-1127
-      - 中国_TG@nodesharing_66
-      - 【新鸟免费】日本JP-AWS 05 1.0x
-      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
-      - 日本2|杭州入口|原生|NF 2
+      - 日本2|杭州入口|原生|NF
       - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 美国_TG@nodesharing_9
       - HK-20.205.120.99-1105
       - v2-香港HKBGP-hk3-g2
-      - YouTube-由零开始-香港
-      - YouTube-由零开始-香港 2
-      - YouTube-由零开始-东京
-      - YouTube-由零开始-香港 3
-      - YouTube-由零开始-香港 4
       - 52220
-      - _US_美国
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
-      - 香港4|杭州入口|原生
-      - 香港5|长沙入口|原生 2
       - 日本3|长沙入口|原生|NF
-      - 新加坡1|杭州入口
-      - 香港9|长沙入口|原生
-      - 香港3|广州入口|原生 2
-      - 群:166416961_🇺🇸_US_美国_79
-      - Relay_馃嚚馃嚦CN-馃嚭馃嚫US_510
-      - 香港千兆-04号
       - 香港(绿头外网集团)(Public)
-      - YouTube-由零开始-香港 5
-      - 香港(绿头外网集团)(Public) 2
-      - 香港7|安徽入口|原生
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 中国_TG@nodesharing_488
-      - 香港2|广州入口|原生|NF 2
-      - 美国_TG@nodesharing_287
-      - 中国_TG@nodesharing_20
-      - 香港4|杭州入口|原生 2
-      - 香港_TG@nodesharing_17
-      - 美国_TG@nodesharing_83
-      - 美国_TG@nodesharing_177
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_182
-      - 美国_TG@nodesharing_41
-      - YouTube-由零开始-香港 6
-      - TG @ShareCentrePro
-      - _CA_加拿大
       - 韩国(绿头外网集团)(Public)
-      - 美国（欢迎订阅YouTube晓柒科技）
-      - 中国【YouTube由零開始】
-      - 中国【YouTube由零開始】 2
-      - 中国【YouTube由零開始】 3
-      - 中国【YouTube由零開始】 4
-      - 中国【YouTube由零開始】 5
-      - 中国【YouTube由零開始】 6
-      - 中国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - "@ShareCentrePro+Hongkong 2"
-      - "@ShareCentrePro+Hongkong 3"
-      - 美国_TG@nodesharing_95
-      - 美国_阿伟科技-油管 2
-      - _US_美国 2
-      - 美国_TG@nodesharing_93
-      - AA-V2ray-HK-HKBN
-      - AA-V2ray-HK-HKBN.02
-      - AA-V2ray-HK-HKT.01
-      - AA-V2ray-HK-NTT.01
-      - AA-V2ray-SG-Linode
-      - AA-V2ray-TW-HiNet.01
-      - AA-V2ray-TW-HiNet.02
-      - AA-V2ray-TW-HiNet.03
-      - AA-V2ray-TW-HiNet.05
       - 新加坡千兆-21号
-      - 新加坡千兆-10号
-      - 台湾千兆-06号
-      - 美国千兆-19号
-      - +@nfeng6_US_2451
       - US_3014
-      - +@nfeng6_US_2136
-      - +@nfeng6_US_2129
-      - +@nfeng6_US_2134
-      - +@nfeng6_DE_611
-      - +@nfeng6_US_2132
-      - "@nfeng6_ZZ_4244"
       - "@nfeng6_US_3046"
-      - +@nfeng6_US_2814
-      - "@nfeng6_ZZ_3641"
-      - "@nfeng6_ZZ_3638"
-      - "@nfeng6_ZZ_3842"
-      - "@nfeng6_ZZ_4028"
-      - "@nfeng6__45"
-      - +@nfeng6_US_3515
-      - +@nfeng6_US_2701
-      - "@nfeng6_ZZ_3831"
-      - +@nfeng6_US_2818
-      - "@nfeng6_CA_362"
-      - "@nfeng6_ZZ_3694"
-      - CN_531
-      - +@nfeng6_US_2888
-      - CN_535
-      - "@nfeng6_ZZ_3845"
-      - "@nfeng6_US_3049"
       - 新加坡千兆-21号 2
-      - 新加坡千兆-10号 2
-      - 台湾千兆-06号 2
-      - 日本千兆-24号
-      - 荷兰千兆-01号
-      - 科技网络_63
-      - 科技网络_171
-      - 科技网络_176
-      - 科技网络_481
+      - 日本千兆-20号
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 香港Azure-SG-DigitalOcean 2
+      - YouTube由零开始-日本
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - _CA_加拿大
+      - TG @ShareCentrePro 2
+      - TG @ShareCentrePro 3
+      - TG @ShareCentrePro 4
+      - +香港01+|+ss
+      - +香港02+|+ss
+      - 香港【YouTube由零開始】
+      - 香港【YouTube由零開始】 2
+      - 香港【YouTube由零開始】 3
+      - 香港【YouTube由零開始】 4
+      - 中国_TG@nodesharing_1
+      - 中国_TG@nodesharing_23
+      - 香港_TG@nodesharing_26
+      - 中国_TG@nodesharing_76
+      - 中国_TG@nodesharing_273
+      - vpnpool-Hanoi-FPT
+      - vpnpool-SG-Contabo
+      - vpnpool-Tokyo-NTT
+      - vpnpool-Hanoi-FPT 2
+      - vpnpool-彰化Hinet
+      - vpnpool-Tokyo-NTT 2
+      - vpnpool-SG-Kirino
+      - vpnpool-SG-Contabo 2
+      - vpnpool-Hanoi-FPT 3
+      - vpnpool-台北Hinet
+      - vpnpool-彰化Hinet 2
+      - vpnpool-Tokyo-NTT 3
+      - vpnpool-Tokyo-NTT 4
+      - vpnpool-SG-Contabo 3
+      - vpnpool-SG-Kirino 2
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - vpnpool-香港HKT 3
+      - SpeedCentre - AZKR
+      - 翻墙党fanqiangdang.com@0130_3
+      - 翻墙党fanqiangdang.com@0130_4
+      - 翻墙党fanqiangdang.com@0130_12
+      - 翻墙党fanqiangdang.com@0130_13
+      - 翻墙党fanqiangdang.com@0130_14
+      - 翻墙党fanqiangdang.com@0130_23
+      - 翻墙党fanqiangdang.com@0130_62
+      - 翻墙党fanqiangdang.com@0130_66
+      - 香港_TG@nodesharing_63
+      - 长沙联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool
+      - 娄底联通-Seoul-Oracle@vpnpool
+      - 长沙联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool
+      - 娄底联通-Sydney-NETPRES@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Tokyo-Kirino@vpnpool
+      - 娄底联通-Tokyo-Kirino@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool
+      - 娄底联通-Houston-Wowrack@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool 2
+      - 娄底联通-Houston-Wowrack@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 3
+      - 娄底联通-Houston-Wowrack@vpnpool 3
+      - 长沙联通-Seattle-Spartan@vpnpool
+      - 娄底联通-Seattle-Spartan@vpnpool
+      - 长沙联通-Sydney-NetActuate@vpnpool
+      - 娄底联通-Sydney-NetActuate@vpnpool
+      - 长沙联通-Seattle-Spartan@vpnpool 2
+      - 娄底联通-Seattle-Spartan@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-Tokyo-HVC@vpnpool
+      - 娄底联通-Tokyo-HVC@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 2
+      - 娄底联通-Tokyo-HVC@vpnpool 2
+      - 长沙联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool
+      - 深圳移动-Bangkok-CAT@vpnpool
+      - 广州移动-香港Kirino@vpnpool
+      - 深圳移动-香港Kirino@vpnpool
+      - 深圳移动-香港HKT@vpnpool
+      - 广州移动-SG-Starhub@vpnpool
+      - 深圳移动-SG-Starhub@vpnpool
+      - 广州移动-澳门Wind@vpnpool
+      - 深圳移动-澳门Wind@vpnpool
+      - 深圳移动-香港HKT@vpnpool 2
+      - 广州移动-香港HKT@vpnpool 3
+      - 深圳移动-香港HKT@vpnpool 3
+      - 广州移动-香港Kirino@vpnpool 2
+      - 深圳移动-香港Kirino@vpnpool 2
+      - 广州移动-SG-Oracle@vpnpool
+      - 深圳移动-SG-Oracle@vpnpool
+      - 广州移动-SG-HVC@vpnpool
+      - 深圳移动-SG-HVC@vpnpool
+      - 广州移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-SG-HVC@vpnpool 2
+      - 广州移动-VN-Hanoi-FPT@vpnpool
+      - 深圳移动-VN-Hanoi-FPT@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool
+      - 深圳移动-SG-DigitalOcean@vpnpool
+      - 广州移动-Jakarta-APIK@vpnpool
+      - 深圳移动-Jakarta-APIK@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool 2
+      - 深圳移动-SG-DigitalOcean@vpnpool 2
+      - 新加坡
+      - vpnpool-SG-Contabo 4
+      - vpnpool-SG-Kirino 3
+      - vpnpool-香港HKT 4
+      - 长沙联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool 2
+      - 娄底联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 3
+      - 娄底联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Mumbai-Linode@vpnpool 2
+      - 娄底联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool 2
+      - 娄底联通-Sydney-NETPRES@vpnpool 2
+      - 长沙联通-Seoul-Oracle@vpnpool 4
+      - 娄底联通-Seoul-Oracle@vpnpool 3
+      - 长沙联通-Tokyo-Kirino@vpnpool 2
+      - 娄底联通-Tokyo-Kirino@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 5
+      - 娄底联通-Houston-Wowrack@vpnpool 5
+      - 长沙联通-Houston-Wowrack@vpnpool 6
+      - 娄底联通-Houston-Wowrack@vpnpool 6
+      - 长沙联通-Houston-Wowrack@vpnpool 7
+      - 娄底联通-Houston-Wowrack@vpnpool 7
+      - 长沙联通-Seattle-Spartan@vpnpool 3
+      - 娄底联通-Seattle-Spartan@vpnpool 3
+      - 长沙联通-Sydney-NetActuate@vpnpool 2
+      - 娄底联通-Sydney-NetActuate@vpnpool 2
+      - 长沙联通-Seattle-Spartan@vpnpool 4
+      - 娄底联通-Seattle-Spartan@vpnpool 4
+      - 长沙联通-Houston-Wowrack@vpnpool 8
+      - 娄底联通-Houston-Wowrack@vpnpool 8
+      - 长沙联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-Tokyo-Oracle@vpnpool 2
+      - 娄底联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 3
+      - 娄底联通-Tokyo-HVC@vpnpool 3
+      - 长沙联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool 2
+      - 长沙联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool 2
+      - 深圳移动-Bangkok-CAT@vpnpool 2
+      - 广州移动-香港Kirino@vpnpool 3
+      - 深圳移动-香港Kirino@vpnpool 3
+      - 广州移动-香港HKT@vpnpool
+      - 深圳移动-香港HKT@vpnpool 4
+      - 广州移动-SG-Starhub@vpnpool 2
+      - 深圳移动-SG-Starhub@vpnpool 2
+      - 广州移动-澳门Wind@vpnpool 2
+      - 深圳移动-澳门Wind@vpnpool 2
+      - 深圳移动-香港HKT@vpnpool 5
+      - 深圳移动-香港HKT@vpnpool 6
+      - 深圳移动-香港Kirino@vpnpool 4
+      - 深圳移动-SG-Oracle@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 2
+      - 深圳移动-SG-HVC@vpnpool 3
+      - 广州移动-Tokyo-DMIT@vpnpool 2
+      - 深圳移动-Tokyo-DMIT@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 3
+      - 深圳移动-SG-HVC@vpnpool 4
+      - 广州移动-VN-Hanoi-FPT@vpnpool 2
+      - 深圳移动-VN-Hanoi-FPT@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 3
+      - 深圳移动-SG-DigitalOcean@vpnpool 3
+      - 广州移动-Jakarta-APIK@vpnpool 2
+      - 深圳移动-Jakarta-APIK@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 4
+      - 深圳移动-SG-DigitalOcean@vpnpool 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1525,182 +1881,226 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnpool-Amsterdam-M247-free
-      - vpnpool-Frankfurt-M247-free
       - vpnpool-Jakarta-APIK
       - vpnpool-LAX-DediPath
-      - vpnpool-LAX-DediPath-free
       - vpnpool-London-GTHost-free
-      - vpnpool-Makati-Eastern
-      - vpnpool-Makati-Eastern-free
-      - vpnpool-Nonthaburi-CAT
-      - vpnpool-SG-Contabo
-      - vpnpool-Tokyo-Iptelecom
-      - vpnpool-香港Azure
       - vpnpool-香港Azure-免费
-      - vpnpool-Amsterdam-M247-free 2
       - vpnpool-Balashikha-Baxet
       - vpnpool-LAX-DediPath 2
-      - vpnpool-Makati-Eastern-free 2
-      - vpnpool-Nonthaburi-CAT 2
       - vpnpool-TR-Ulus-DGN
-      - vpnpool-香港Azure 2
-      - vpnpool-Frankfurt-M247-free 2
-      - vpnpool-Ho Chi Minh-Cloudcore-free
+      - vpnpool-香港Azure
       - vpnpool-Jakarta-APIK 2
-      - vpnpool-Jakarta-APIK-free
-      - CN_中国_TG @ShareCentrePro
       - 中国 香港-A1-CM中继
       - 中国 香港-A2-CM中继
-      - 俄罗斯 伯力-A1-CU中继
       - 台湾 台北-A1-CM中继
       - 新加坡-SG-A1-CM中继
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A1-CM中继
       - 美国 洛杉矶-A2-CM中继
+      - TG @ShareCentrePro
+      - "*🇭🇰HK -1053 t.me/小库订阅"
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-London-GTHost-free 2
+      - vpnpool-Tokyo-Iptelecom
       - v2-香港h6-g200
       - ---v2节点-香港h5-稳定-g300
       - v2-新加坡24-g2
       - v2-香港HKBGP5-g5
       - v2节点-香港h5-g2
       - v2-日本hk1-g5
-      - 美国高速公益节点
-      - 香港5|长沙入口|原生
-      - 日本1|杭州入口|原生|NF
-      - 日本2|杭州入口|原生|NF
-      - 新加坡2|广州入口
-      - 新加坡3|广州入口
-      - 日本1|杭州入口|原生|NF 2
-      - 新加坡3|广州入口 2
-      - 52215 @WangCai_1
-      - VIP1美国 洛杉矶 | 佛移多线路负载均衡
-      - VIP1美国 洛杉矶 | 广移多线路负载均衡
-      - VIP1越南-原生IP-佛移-tr
-      - VIP1越南-原生IP-广移-tr
-      - 香港Azure-Tokyo-Linode
-      - 香港Azure-Ashburn-EC2-dip
       - 香港Azure-SG-DigitalOcean
-      - 美国_阿伟科技-油管
       - 【请尽快更换至新订阅】Azure香港|东莞移动
-      - "@ShareCentrePro+Hongkong"
-      - CN-120.233.150.200-1127
-      - 中国_TG@nodesharing_66
-      - 【新鸟免费】日本JP-AWS 05 1.0x
-      - 【新鸟免费】日本JP-AWS 06 1.0x
       - 【新鸟免费】日本JP-AWS 08 1.0x
-      - 【推荐】上海联通-洛杉矶专线21
-      - 日本2|杭州入口|原生|NF 2
+      - 日本2|杭州入口|原生|NF
       - 【新鸟免费】新加坡SG-AWS 10 1.0x
-      - 美国_TG@nodesharing_9
       - HK-20.205.120.99-1105
       - v2-香港HKBGP-hk3-g2
-      - YouTube-由零开始-香港
-      - YouTube-由零开始-香港 2
-      - YouTube-由零开始-东京
-      - YouTube-由零开始-香港 3
-      - YouTube-由零开始-香港 4
       - 52220
-      - _US_美国
-      - 香港2|广州入口|原生|NF
-      - 香港3|广州入口|原生
-      - 香港4|杭州入口|原生
-      - 香港5|长沙入口|原生 2
       - 日本3|长沙入口|原生|NF
-      - 新加坡1|杭州入口
-      - 香港9|长沙入口|原生
-      - 香港3|广州入口|原生 2
-      - 群:166416961_🇺🇸_US_美国_79
-      - Relay_馃嚚馃嚦CN-馃嚭馃嚫US_510
-      - 香港千兆-04号
       - 香港(绿头外网集团)(Public)
-      - YouTube-由零开始-香港 5
-      - 香港(绿头外网集团)(Public) 2
-      - 香港7|安徽入口|原生
-      - 【新鸟免费】日本JP-AWS 07 1.0x
-      - 中国_TG@nodesharing_488
-      - 香港2|广州入口|原生|NF 2
-      - 美国_TG@nodesharing_287
-      - 中国_TG@nodesharing_20
-      - 香港4|杭州入口|原生 2
-      - 香港_TG@nodesharing_17
-      - 美国_TG@nodesharing_83
-      - 美国_TG@nodesharing_177
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 加拿大【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_182
-      - 美国_TG@nodesharing_41
-      - YouTube-由零开始-香港 6
-      - TG @ShareCentrePro
-      - _CA_加拿大
       - 韩国(绿头外网集团)(Public)
-      - 美国（欢迎订阅YouTube晓柒科技）
-      - 中国【YouTube由零開始】
-      - 中国【YouTube由零開始】 2
-      - 中国【YouTube由零開始】 3
-      - 中国【YouTube由零開始】 4
-      - 中国【YouTube由零開始】 5
-      - 中国【YouTube由零開始】 6
-      - 中国【YouTube由零開始】 7
-      - 美国【YouTube由零開始】 3
-      - 美国【YouTube由零開始】 4
-      - 美国【YouTube由零開始】 5
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - "@ShareCentrePro+Hongkong 2"
-      - "@ShareCentrePro+Hongkong 3"
-      - 美国_TG@nodesharing_95
-      - 美国_阿伟科技-油管 2
-      - _US_美国 2
-      - 美国_TG@nodesharing_93
-      - AA-V2ray-HK-HKBN
-      - AA-V2ray-HK-HKBN.02
-      - AA-V2ray-HK-HKT.01
-      - AA-V2ray-HK-NTT.01
-      - AA-V2ray-SG-Linode
-      - AA-V2ray-TW-HiNet.01
-      - AA-V2ray-TW-HiNet.02
-      - AA-V2ray-TW-HiNet.03
-      - AA-V2ray-TW-HiNet.05
       - 新加坡千兆-21号
-      - 新加坡千兆-10号
-      - 台湾千兆-06号
-      - 美国千兆-19号
-      - +@nfeng6_US_2451
       - US_3014
-      - +@nfeng6_US_2136
-      - +@nfeng6_US_2129
-      - +@nfeng6_US_2134
-      - +@nfeng6_DE_611
-      - +@nfeng6_US_2132
-      - "@nfeng6_ZZ_4244"
       - "@nfeng6_US_3046"
-      - +@nfeng6_US_2814
-      - "@nfeng6_ZZ_3641"
-      - "@nfeng6_ZZ_3638"
-      - "@nfeng6_ZZ_3842"
-      - "@nfeng6_ZZ_4028"
-      - "@nfeng6__45"
-      - +@nfeng6_US_3515
-      - +@nfeng6_US_2701
-      - "@nfeng6_ZZ_3831"
-      - +@nfeng6_US_2818
-      - "@nfeng6_CA_362"
-      - "@nfeng6_ZZ_3694"
-      - CN_531
-      - +@nfeng6_US_2888
-      - CN_535
-      - "@nfeng6_ZZ_3845"
-      - "@nfeng6_US_3049"
       - 新加坡千兆-21号 2
-      - 新加坡千兆-10号 2
-      - 台湾千兆-06号 2
-      - 日本千兆-24号
-      - 荷兰千兆-01号
-      - 科技网络_63
-      - 科技网络_171
-      - 科技网络_176
-      - 科技网络_481
+      - 日本千兆-20号
+      - 【新鸟免费】新加坡SG-AWS 10 1.0x 2
+      - 香港Azure-SG-DigitalOcean 2
+      - YouTube由零开始-日本
+      - 【新鸟免费】日本JP-AWS 05 1.0x
+      - _CA_加拿大
+      - TG @ShareCentrePro 2
+      - TG @ShareCentrePro 3
+      - TG @ShareCentrePro 4
+      - +香港01+|+ss
+      - +香港02+|+ss
+      - 香港【YouTube由零開始】
+      - 香港【YouTube由零開始】 2
+      - 香港【YouTube由零開始】 3
+      - 香港【YouTube由零開始】 4
+      - 中国_TG@nodesharing_1
+      - 中国_TG@nodesharing_23
+      - 香港_TG@nodesharing_26
+      - 中国_TG@nodesharing_76
+      - 中国_TG@nodesharing_273
+      - vpnpool-Hanoi-FPT
+      - vpnpool-SG-Contabo
+      - vpnpool-Tokyo-NTT
+      - vpnpool-Hanoi-FPT 2
+      - vpnpool-彰化Hinet
+      - vpnpool-Tokyo-NTT 2
+      - vpnpool-SG-Kirino
+      - vpnpool-SG-Contabo 2
+      - vpnpool-Hanoi-FPT 3
+      - vpnpool-台北Hinet
+      - vpnpool-彰化Hinet 2
+      - vpnpool-Tokyo-NTT 3
+      - vpnpool-Tokyo-NTT 4
+      - vpnpool-SG-Contabo 3
+      - vpnpool-SG-Kirino 2
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - vpnpool-香港HKT 3
+      - SpeedCentre - AZKR
+      - 翻墙党fanqiangdang.com@0130_3
+      - 翻墙党fanqiangdang.com@0130_4
+      - 翻墙党fanqiangdang.com@0130_12
+      - 翻墙党fanqiangdang.com@0130_13
+      - 翻墙党fanqiangdang.com@0130_14
+      - 翻墙党fanqiangdang.com@0130_23
+      - 翻墙党fanqiangdang.com@0130_62
+      - 翻墙党fanqiangdang.com@0130_66
+      - 香港_TG@nodesharing_63
+      - 长沙联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool
+      - 娄底联通-Seoul-Oracle@vpnpool
+      - 长沙联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool
+      - 娄底联通-Sydney-NETPRES@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Tokyo-Kirino@vpnpool
+      - 娄底联通-Tokyo-Kirino@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool
+      - 娄底联通-Houston-Wowrack@vpnpool
+      - 长沙联通-Houston-Wowrack@vpnpool 2
+      - 娄底联通-Houston-Wowrack@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 3
+      - 娄底联通-Houston-Wowrack@vpnpool 3
+      - 长沙联通-Seattle-Spartan@vpnpool
+      - 娄底联通-Seattle-Spartan@vpnpool
+      - 长沙联通-Sydney-NetActuate@vpnpool
+      - 娄底联通-Sydney-NetActuate@vpnpool
+      - 长沙联通-Seattle-Spartan@vpnpool 2
+      - 娄底联通-Seattle-Spartan@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Houston-Wowrack@vpnpool 4
+      - 娄底联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-Tokyo-HVC@vpnpool
+      - 娄底联通-Tokyo-HVC@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 2
+      - 娄底联通-Tokyo-HVC@vpnpool 2
+      - 长沙联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool
+      - 娄底联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool
+      - 深圳移动-Bangkok-CAT@vpnpool
+      - 广州移动-香港Kirino@vpnpool
+      - 深圳移动-香港Kirino@vpnpool
+      - 深圳移动-香港HKT@vpnpool
+      - 广州移动-SG-Starhub@vpnpool
+      - 深圳移动-SG-Starhub@vpnpool
+      - 广州移动-澳门Wind@vpnpool
+      - 深圳移动-澳门Wind@vpnpool
+      - 深圳移动-香港HKT@vpnpool 2
+      - 广州移动-香港HKT@vpnpool 3
+      - 深圳移动-香港HKT@vpnpool 3
+      - 广州移动-香港Kirino@vpnpool 2
+      - 深圳移动-香港Kirino@vpnpool 2
+      - 广州移动-SG-Oracle@vpnpool
+      - 深圳移动-SG-Oracle@vpnpool
+      - 广州移动-SG-HVC@vpnpool
+      - 深圳移动-SG-HVC@vpnpool
+      - 广州移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-Tokyo-DMIT@vpnpool
+      - 深圳移动-SG-HVC@vpnpool 2
+      - 广州移动-VN-Hanoi-FPT@vpnpool
+      - 深圳移动-VN-Hanoi-FPT@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool
+      - 深圳移动-SG-DigitalOcean@vpnpool
+      - 广州移动-Jakarta-APIK@vpnpool
+      - 深圳移动-Jakarta-APIK@vpnpool
+      - 广州移动-SG-DigitalOcean@vpnpool 2
+      - 深圳移动-SG-DigitalOcean@vpnpool 2
+      - 新加坡
+      - vpnpool-SG-Contabo 4
+      - vpnpool-SG-Kirino 3
+      - vpnpool-香港HKT 4
+      - 长沙联通-North Kansas City-Misaka@vpnpool 2
+      - 长沙联通-CA-Castlegar-Limewave@vpnpool 2
+      - 娄底联通-CA-Castlegar-Limewave@vpnpool
+      - 长沙联通-Seoul-Oracle@vpnpool 3
+      - 娄底联通-Seoul-Oracle@vpnpool 2
+      - 长沙联通-Mumbai-Linode@vpnpool 2
+      - 娄底联通-Mumbai-Linode@vpnpool
+      - 长沙联通-Sydney-NETPRES@vpnpool 2
+      - 娄底联通-Sydney-NETPRES@vpnpool 2
+      - 长沙联通-Seoul-Oracle@vpnpool 4
+      - 娄底联通-Seoul-Oracle@vpnpool 3
+      - 长沙联通-Tokyo-Kirino@vpnpool 2
+      - 娄底联通-Tokyo-Kirino@vpnpool 2
+      - 长沙联通-Houston-Wowrack@vpnpool 5
+      - 娄底联通-Houston-Wowrack@vpnpool 5
+      - 长沙联通-Houston-Wowrack@vpnpool 6
+      - 娄底联通-Houston-Wowrack@vpnpool 6
+      - 长沙联通-Houston-Wowrack@vpnpool 7
+      - 娄底联通-Houston-Wowrack@vpnpool 7
+      - 长沙联通-Seattle-Spartan@vpnpool 3
+      - 娄底联通-Seattle-Spartan@vpnpool 3
+      - 长沙联通-Sydney-NetActuate@vpnpool 2
+      - 娄底联通-Sydney-NetActuate@vpnpool 2
+      - 长沙联通-Seattle-Spartan@vpnpool 4
+      - 娄底联通-Seattle-Spartan@vpnpool 4
+      - 长沙联通-Houston-Wowrack@vpnpool 8
+      - 娄底联通-Houston-Wowrack@vpnpool 8
+      - 长沙联通-Tokyo-Oracle@vpnpool
+      - 娄底联通-Tokyo-Oracle@vpnpool 2
+      - 娄底联通-North Kansas City-Misaka@vpnpool
+      - 长沙联通-Tokyo-HVC@vpnpool 3
+      - 娄底联通-Tokyo-HVC@vpnpool 3
+      - 长沙联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-Tokyo-HVC@vpnpool 4
+      - 娄底联通-PH-Paranaque-ETPI@vpnpool 2
+      - 长沙联通-Tokyo-Sony@vpnpool
+      - 广州移动-Bangkok-CAT@vpnpool 2
+      - 深圳移动-Bangkok-CAT@vpnpool 2
+      - 广州移动-香港Kirino@vpnpool 3
+      - 深圳移动-香港Kirino@vpnpool 3
+      - 广州移动-香港HKT@vpnpool
+      - 深圳移动-香港HKT@vpnpool 4
+      - 广州移动-SG-Starhub@vpnpool 2
+      - 深圳移动-SG-Starhub@vpnpool 2
+      - 广州移动-澳门Wind@vpnpool 2
+      - 深圳移动-澳门Wind@vpnpool 2
+      - 深圳移动-香港HKT@vpnpool 5
+      - 深圳移动-香港HKT@vpnpool 6
+      - 深圳移动-香港Kirino@vpnpool 4
+      - 深圳移动-SG-Oracle@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 2
+      - 深圳移动-SG-HVC@vpnpool 3
+      - 广州移动-Tokyo-DMIT@vpnpool 2
+      - 深圳移动-Tokyo-DMIT@vpnpool 2
+      - 广州移动-SG-HVC@vpnpool 3
+      - 深圳移动-SG-HVC@vpnpool 4
+      - 广州移动-VN-Hanoi-FPT@vpnpool 2
+      - 深圳移动-VN-Hanoi-FPT@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 3
+      - 深圳移动-SG-DigitalOcean@vpnpool 3
+      - 广州移动-Jakarta-APIK@vpnpool 2
+      - 深圳移动-Jakarta-APIK@vpnpool 2
+      - 广州移动-SG-DigitalOcean@vpnpool 4
+      - 深圳移动-SG-DigitalOcean@vpnpool 4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
