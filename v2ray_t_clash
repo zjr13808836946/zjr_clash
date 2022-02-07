@@ -7,252 +7,204 @@ external-controller: :9090
 proxies:
   - {name: 新加坡-SG-A2-CM中继, server: cn-gz-02.arrc.fun, port: 3010, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
   - {name: 美国 洛杉矶-A2-CM中继, server: cn-gz-02.arrc.fun, port: 3008, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
-  - {name: 俄罗斯a RT, server: relaypro.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 香港动态 HKT B, server: csdynhkt.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 香港动态 HKT C, server: csdynhkt.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT A", server: shonlinecu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT B", server: cncusouth.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT C", server: shcris03.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT D", server: shonlinecu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT E", server: cncusouth.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT F", server: cusouthcmhk.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT G", server: cusouthcmhk.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT H", server: shonlinecu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT I", server: cusouthcmhk.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT J", server: shonlinesandcu02.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT M", server: shonlinesandcu03.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT N", server: shcris02stand.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN A", server: shonlinesandcu02.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN B", server: shonlinesandcu02.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN C", server: cncusouth.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN D", server: shcris02stand.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 日本 Azure A 2.5x, server: shallaz.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 新加坡B, server: shallaz.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 新加坡C, server: shallaz.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 新加坡D, server: shallaz.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 新加坡E, server: shallaz.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 韩国高速接入A, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 A 3.5, server: usastandard.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 B 3.5, server: usastandard.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 C 3.5, server: usastandard.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 D 3.5, server: usastandard.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 E 3.5, server: usastandard.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 F 3.5, server: usastandard2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 G 3.5, server: usastandard2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 H 3.5, server: usastandard2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 I 3.5, server: usastandard2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 台湾 F, server: cstwrelay.onlineto.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 台湾 I, server: shallaz2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 台湾 M, server: shallaz2.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 意大利, server: relaypro.procncon.xyz, port: 612, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 西班牙, server: relaypro.procncon.xyz, port: 610, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 德国, server: relaypro.procncon.xyz, port: 618, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 香港(绿头外网集团)(Public) 33, server: 104.208.112.68, port: 52227, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-香港HKBN, server: 58.32.11.79, port: 38101, type: vmess, uuid: 52daa138-99b9-3a9c-8f61-d8f13d80563b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool-香港HKT-game, server: 58.32.11.79, port: 38106, type: vmess, uuid: 52daa138-99b9-3a9c-8f61-d8f13d80563b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool-Tokyo-M247, server: 58.32.11.79, port: 38301, type: vmess, uuid: 52daa138-99b9-3a9c-8f61-d8f13d80563b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool-Tokyo-M247 2, server: 58.32.11.79, port: 38303, type: vmess, uuid: 52daa138-99b9-3a9c-8f61-d8f13d80563b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool-SG-Contabo, server: 58.32.11.79, port: 38701, type: vmess, uuid: 52daa138-99b9-3a9c-8f61-d8f13d80563b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool-SG-Contabo 2, server: 58.32.11.79, port: 38702, type: vmess, uuid: 52daa138-99b9-3a9c-8f61-d8f13d80563b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool-香港HKBN 2, server: 183.232.13.19, port: 38104, type: vmess, uuid: 52daa138-99b9-3a9c-8f61-d8f13d80563b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool-香港HKT-game 2, server: 183.232.13.19, port: 38106, type: vmess, uuid: 52daa138-99b9-3a9c-8f61-d8f13d80563b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool-Tokyo-M247 3, server: 183.232.13.19, port: 38303, type: vmess, uuid: 52daa138-99b9-3a9c-8f61-d8f13d80563b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool-LAX-M247, server: 183.232.13.19, port: 38401, type: vmess, uuid: 52daa138-99b9-3a9c-8f61-d8f13d80563b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool-Seoul-Choopa, server: 183.232.13.19, port: 38601, type: vmess, uuid: 52daa138-99b9-3a9c-8f61-d8f13d80563b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: US_5003+@WangCai_1, server: 38.68.135.112, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_0443+@WangCai_1, server: 38.68.135.112, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大, server: 134.195.196.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: +@nfeng6_US_2134, server: 38.75.136.45, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国_TG@nodesharing_155, server: 167.88.62.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国【YouTube由零開始】, server: 167.88.63.28, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 群:166416961_🇨🇦_CA_加拿大_157, server: 134.195.196.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 群:166416961_🇨🇦_CA_加拿大_196, server: 198.57.27.152, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_TG@nodesharing_78, server: 167.88.62.34, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 群:166416961_🇺🇸_US_美国_209, server: 38.107.226.48, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: TG+@ShareCentrePro_CA_加拿大, server: 134.195.196.128, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国【YouTube由零開始】 2, server: 38.121.43.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: +@nfeng6_DE_612, server: 193.108.118.36, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: "@nfeng6_ZZ_3637", server: 134.195.196.81, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: +@nfeng6_DE_615, server: 193.108.118.36, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: +@nfeng6_US_2941, server: 38.68.134.191, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: "@nfeng6_ZZ_3595", server: 134.195.196.227, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: "@nfeng6_ZZ_3587", server: 134.195.196.193, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "@nfeng6_CA_358", server: 198.57.27.188, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: +@nfeng6_US_2250, server: 38.121.43.91, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: "@nfeng6_CA_252", server: 198.57.27.184, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US-38.121.43.91-1127, server: 38.121.43.91, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国, server: 167.88.63.61, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 2, server: 38.121.43.71, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_7002+@WangCai_1, server: 38.68.135.112, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_8090+@WangCai_1, server: 38.68.135.112, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_9101+@WangCai_1, server: 38.68.135.112, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_5500+@WangCai_1, server: 38.68.135.112, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5004+@WangCai_1, server: 38.68.135.112, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_2375+@WangCai_1, server: 38.68.135.112, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_3389+@WangCai_1, server: 38.68.135.112, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 2, server: 134.195.196.193, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: "@nfeng6_ZZ_3677", server: 134.195.196.193, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 3, server: 134.195.196.227, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_TG@nodesharing_260, server: 169.197.143.29, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国【YouTube由零開始】 3, server: 167.88.63.74, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_TG@nodesharing_253, server: 107.155.83.152, port: 443, type: vmess, uuid: 8f469f1b-1fd3-433b-9fd9-b4e041b9df16, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
-  - {name: Dallas-ColoCrossing, server: 192.3.145.143, port: 443, type: vmess, uuid: f2ac5a3b-575f-4888-8997-43958deda5a4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
-  - {name: _US_美国 3, server: 167.88.63.74, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 4, server: 167.88.63.74, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: +美国(绿头外网集团)(Public)+8, server: 167.88.62.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: +美国(绿头外网集团)(Public)+10, server: 167.88.63.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: +美国(绿头外网集团)(Public)+63, server: 38.68.134.191, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: +美国(绿头外网集团)(Public)+74, server: 38.107.226.158, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: +加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开）+35, server: 134.195.196.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+57, server: 38.91.100.102, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+60, server: 38.91.100.102, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: vpnpool-Novosibirsk-Adman, server: 183.232.13.19, port: 38501, type: vmess, uuid: 52daa138-99b9-3a9c-8f61-d8f13d80563b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool-Novosibirsk-Adman 2, server: 183.232.13.19, port: 38502, type: vmess, uuid: 52daa138-99b9-3a9c-8f61-d8f13d80563b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港_TG@nodesharing_12, server: ssl.tcpbbr.net, port: 443, type: trojan, password: 5c7b33c6-6d83-11eb-b77b-f23c913c8d2b, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 美国_TG@nodesharing_19, server: 38.91.102.124, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_TG@nodesharing_20, server: 38.114.114.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_TG@nodesharing_21, server: 167.88.61.175, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_TG@nodesharing_22, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_TG@nodesharing_23, server: 167.88.61.175, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国_TG@nodesharing_24, server: 38.114.114.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_TG@nodesharing_27, server: 167.88.61.175, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_TG@nodesharing_28, server: 38.114.114.19, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_TG@nodesharing_29, server: 38.91.102.124, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_TG@nodesharing_30, server: 167.88.61.175, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_TG@nodesharing_32, server: 167.88.61.175, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_TG@nodesharing_35, server: 38.91.102.123, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_TG@nodesharing_38, server: 169.197.143.29, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国_TG@nodesharing_44, server: 38.114.114.19, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_TG@nodesharing_45, server: 38.91.102.123, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_TG@nodesharing_48, server: 38.143.66.20, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国_TG@nodesharing_54, server: 167.88.61.175, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_TG@nodesharing_57, server: 38.114.114.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_TG@nodesharing_60, server: 167.88.61.14, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国_TG@nodesharing_62, server: 167.88.61.14, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国_TG@nodesharing_64, server: 167.88.61.14, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_TG@nodesharing_66, server: 38.143.66.20, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_TG@nodesharing_78 2, server: 169.197.143.29, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_TG@nodesharing_79, server: 167.88.61.14, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国_TG@nodesharing_80, server: 167.88.61.14, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_TG@nodesharing_82, server: 38.143.66.187, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国_TG@nodesharing_85, server: 167.88.61.14, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国_TG@nodesharing_88, server: 167.88.61.14, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国_TG@nodesharing_93, server: 167.88.61.175, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国_TG@nodesharing_102, server: 38.114.114.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_TG@nodesharing_105, server: 169.197.143.29, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_TG@nodesharing_106, server: 167.88.61.175, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_TG@nodesharing_107, server: 167.88.61.14, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_TG@nodesharing_109, server: 167.88.61.14, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_TG@nodesharing_112, server: 169.197.143.29, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国_TG@nodesharing_115, server: 169.197.143.29, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国_TG@nodesharing_117, server: 38.143.66.20, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_TG@nodesharing_118, server: 38.114.114.19, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国_TG@nodesharing_122, server: 167.88.61.175, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_TG@nodesharing_123, server: 167.88.61.14, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_TG@nodesharing_127, server: 38.114.114.19, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_TG@nodesharing_143, server: 167.88.61.14, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_TG@nodesharing_160, server: 169.197.143.29, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_TG@nodesharing_169, server: 38.68.134.191, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国_TG@nodesharing_175, server: 169.197.143.29, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_TG@nodesharing_177, server: 38.91.102.124, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_TG@nodesharing_178, server: 167.88.61.14, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_TG@nodesharing_179, server: 38.68.135.112, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国_TG@nodesharing_182, server: 38.68.135.112, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_TG@nodesharing_184, server: 38.143.66.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_TG@nodesharing_188, server: 169.197.143.29, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_TG@nodesharing_197, server: 38.68.134.71, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国_TG@nodesharing_209, server: 38.68.134.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国_TG@nodesharing_215, server: 38.68.134.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_TG@nodesharing_220, server: 38.68.134.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_TG@nodesharing_229, server: 38.68.134.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_TG@nodesharing_238, server: 38.68.134.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 加拿大_TG@nodesharing_252, server: 198.57.27.152, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国_TG@nodesharing_254, server: 38.68.134.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国_TG@nodesharing_260 2, server: 38.68.134.71, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国_TG@nodesharing_261, server: 38.91.100.134, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 加拿大_TG@nodesharing_269, server: 134.195.196.147, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_TG@nodesharing_275, server: 38.68.134.71, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国_TG@nodesharing_282, server: 38.68.134.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_TG@nodesharing_285, server: 38.68.134.191, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CA, server: 198.57.27.184, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CA 2, server: 198.57.27.184, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 韩国【YouTube由零開始】, server: 141.164.57.134, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 韩国【YouTube由零開始】 2, server: 158.247.203.168, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国【YouTube由零開始】 4, server: 167.88.63.74, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 英国【YouTube由零開始】, server: 172.99.190.109, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国【YouTube由零開始】 5, server: 38.91.100.102, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国【YouTube由零開始】 2, server: 172.99.190.109, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国【YouTube由零開始】 6, server: 38.91.100.102, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国【YouTube由零開始】 7, server: 169.197.141.91, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 加拿大【YouTube由零開始】, server: 134.195.196.193, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国【YouTube-由零開始】, server: 169.197.141.91, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国【YouTube由零開始】 8, server: 38.75.136.45, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国【YouTube由零開始】 9, server: 38.91.100.102, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 加拿大【YouTube由零開始】 2, server: 134.195.196.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国【YouTube由零開始】 10, server: 169.197.141.91, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国【YouTube由零開始】 11, server: 167.88.63.61, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国【YouTube由零開始】 12, server: 142.202.48.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 【YouTube由零開始】, server: oz1.mooncloud.bike, port: 8443, type: vmess, uuid: 2c42a34e-5f88-492b-8a59-3531090578f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: oz1.mooncloud.bike}, udp: true}
-  - {name: 【YouTube由零開始】 2, server: 198.41.212.15, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
-  - {name: 韩国【YouTube由零開始】 3, server: 158.247.199.253, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大 4, server: 198.57.27.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国 5, server: 142.202.48.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 5, server: 198.57.27.172, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美國-费利蒙, server: us2.tcpbbr.net, port: 443, type: trojan, password: 5c7b33c6-6d83-11eb-b77b-f23c913c8d2b, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
   - {name: 科技网络, server: 51.79.176.48, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 科技网络 2, server: 139.162.24.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 科技网络 3, server: 167.88.63.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 科技网络 4, server: 38.75.136.45, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 科技网络 5, server: 139.162.24.50, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 科技网络 6, server: 38.91.100.102, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 7, server: 198.57.27.184, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 8, server: 198.57.27.172, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: "@ShareCentrePro Hongkong", server: hk17.holiganfan.com, port: 10088, type: trojan, password: 8ce38f17-b2be-453a-8d25-deec1a0aabba, sni: hk17.holiganfan.com, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 6, server: 38.75.136.45, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 7, server: 38.68.134.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 6, server: 198.57.27.184, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _KR_韩国, server: 158.247.203.168, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 8, server: 38.75.136.45, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 9, server: 167.88.62.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 10, server: 38.68.134.23, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大 7, server: 198.57.27.152, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: "@nfeng6 🇭🇰", server: 120.232.214.89, port: 108, type: vmess, uuid: 248f3c5b-b015-3858-9b21-6ca9a06db7d1, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vvv, ws-headers: {Host: 120.232.214.89}, udp: true}
-  - {name: "@nfeng6 🇭🇰 3", server: 120.232.214.89, port: 110, type: vmess, uuid: 248f3c5b-b015-3858-9b21-6ca9a06db7d1, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vvv, ws-headers: {Host: 120.232.214.89}, udp: true}
-  - {name: "@nfeng6 🇭🇰 7", server: 120.232.214.89, port: 114, type: vmess, uuid: 248f3c5b-b015-3858-9b21-6ca9a06db7d1, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vvv, ws-headers: {Host: 120.232.214.89}, udp: true}
-  - {name: "@nfeng6 🇯🇵 13", server: 120.232.215.132, port: 3005, type: vmess, uuid: 248f3c5b-b015-3858-9b21-6ca9a06db7d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yingyun, ws-headers: {Host: 120.232.215.132}, udp: true}
-  - {name: "@nfeng6 🇯🇵 14", server: 120.232.215.132, port: 3006, type: vmess, uuid: 248f3c5b-b015-3858-9b21-6ca9a06db7d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yingyun, ws-headers: {Host: 120.232.215.132}, udp: true}
-  - {name: "@nfeng6 🇯🇵 16", server: 120.232.215.132, port: 3008, type: vmess, uuid: 248f3c5b-b015-3858-9b21-6ca9a06db7d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yingyun, ws-headers: {Host: 120.232.215.132}, udp: true}
+  - {name: "@nfeng6 SG_1517", server: 139.162.52.177, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: "@nfeng6 SG_1525", server: 139.162.52.177, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "@nfeng6 SG_1516", server: 139.162.52.177, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: "@nfeng6 【VIP】Singapore 9", server: 139.99.68.127, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: vpnpool-SG-DigitalOcean, server: 120.233.10.62, port: 52203, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-DigitalOcean 2, server: 120.233.10.62, port: 52203, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode, server: 120.233.10.62, port: 52201, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Linode 2, server: 104.208.96.193, port: 11221, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-DigitalOcean, server: 20.205.96.106, port: 52207, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-DigitalOcean 2, server: 20.24.99.222, port: 11224, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-DigitalOcean 3, server: 20.187.109.44, port: 52214, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-EC2, server: 20.24.77.141, port: 52219, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Ashburn-EC2-dip, server: 20.24.73.65, port: 52223, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-DigitalOcean 3, server: 20.205.116.165, port: 52333, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-DigitalOcean 4, server: 120.233.10.62, port: 52205, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-DigitalOcean 5, server: 20.205.116.165, port: 52333, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-Linode 2, server: 20.24.84.144, port: 52221, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-DigitalOcean 6, server: 120.233.10.62, port: 52205, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-香港腾讯云, server: 20.24.66.67, port: 52332, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 3, server: 104.208.64.48, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-香港腾讯云, server: 104.208.64.48, port: 52329, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-香港腾讯云 2, server: 20.24.66.67, port: 52332, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-DigitalOcean 4, server: 20.205.116.165, port: 52333, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-DigitalOcean 5, server: 20.187.81.194, port: 52334, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-DigitalOcean 6, server: 104.208.76.110, port: 52283, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-DigitalOcean 7, server: 20.24.73.65, port: 52285, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Linode 4, server: 104.208.96.193, port: 11221, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-DigitalOcean 8, server: 104.208.96.193, port: 11223, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-DigitalOcean 9, server: 20.24.99.222, port: 11224, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-EC2 2, server: 20.24.77.141, port: 52219, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Linode 5, server: 20.24.77.141, port: 52220, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Linode 6, server: 20.24.84.144, port: 52221, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Ashburn-EC2-dip 2, server: 20.24.73.65, port: 52223, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Linode 7, server: 104.208.64.48, port: 52226, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-香港腾讯云 3, server: 20.24.66.67, port: 52332, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-DigitalOcean 10, server: 20.205.116.165, port: 52333, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港阿里云@vpnpool, server: 47.242.204.96, port: 88, type: vmess, uuid: 85ec7307-9a30-3bb4-ae50-e54d3318d56f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港阿里云@vpnpool 2, server: 47.242.246.254, port: 88, type: vmess, uuid: 85ec7307-9a30-3bb4-ae50-e54d3318d56f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港阿里云@vpnpool 3, server: 47.243.122.9, port: 87, type: vmess, uuid: 85ec7307-9a30-3bb4-ae50-e54d3318d56f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港腾讯云@vpnpool, server: 43.132.238.118, port: 89, type: vmess, uuid: 85ec7307-9a30-3bb4-ae50-e54d3318d56f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港腾讯云@vpnpool 2, server: 43.132.239.174, port: 90, type: vmess, uuid: 85ec7307-9a30-3bb4-ae50-e54d3318d56f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港腾讯云@vpnpool 3, server: 43.132.251.69, port: 91, type: vmess, uuid: 85ec7307-9a30-3bb4-ae50-e54d3318d56f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港腾讯云@vpnpool 4, server: 43.132.253.182, port: 85, type: vmess, uuid: 85ec7307-9a30-3bb4-ae50-e54d3318d56f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: "@nfeng6🇯🇵 日本02", server: 183.232.56.161, port: 1202, type: vmess, uuid: 7ff41058-b662-3352-9e7f-643ef2d78344, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: vpnpool-香港腾讯云 2, server: 20.24.66.67, port: 52332, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-DigitalOcean 7, server: 20.187.81.194, port: 52334, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-DigitalOcean 8, server: 20.187.81.194, port: 52334, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-Linode 4, server: 104.208.64.48, port: 52226, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-DigitalOcean 9, server: 104.208.76.110, port: 52283, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-DigitalOcean 10, server: 104.208.76.110, port: 52283, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-香港腾讯云 3, server: 104.208.64.48, port: 52329, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[VIP]香港2|负载均衡|BGP|1.2x", server: azhk.node.qchwnd.moe, port: 44609, type: trojan, password: b6676f64-fff6-4489-a04e-26d9092f6599, sni: azhk.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: "@nfeng6🇮🇳 印度03", server: 183.232.56.161, port: 8003, type: vmess, uuid: 7ff41058-b662-3352-9e7f-643ef2d78344, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: vpnpool-Tokyo-Linode 5, server: 20.24.84.144, port: 52221, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[VIP]台湾|广港链路|Netflix", server: gdcm2.relay.qchwnd.moe, port: 44608, type: trojan, password: b6676f64-fff6-4489-a04e-26d9092f6599, sni: gdcm2.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 德国(绿头外网集团)(Public), server: 193.108.118.36, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_TG@nodesharing_48, server: 38.143.66.20, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 美国_TG@nodesharing_260, server: 65.49.210.120, port: 28700, type: ss, cipher: aes-256-gcm, password: fMpVNm2u6i, udp: true}
+  - {name: 美国_TG@nodesharing_38, server: 169.197.143.29, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国_TG@nodesharing_35, server: 38.91.102.123, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_TG@nodesharing_45, server: 38.91.102.123, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 69, server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "@nfeng6 DE_691", server: 193.108.118.36, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国_TG@nodesharing_46, server: 169.197.143.29, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: "@nfeng6_DE_612", server: 193.108.118.36, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国节点更新https://bit.ly/3oOSZUc-请订阅我的频道, server: 167.88.63.74, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国【YouTube由零開始】, server: 167.88.63.74, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国, server: 169.197.142.48, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 美国(绿头外网集团)(Public), server: 169.197.142.48, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "@nfeng6 DE_589", server: 193.108.118.2, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_TG@nodesharing_188, server: 169.197.143.29, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 美国_TG@nodesharing_260 2, server: 169.197.143.29, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 2, server: 169.197.142.48, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _US_美国 2, server: 169.197.142.48, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: "@nfeng6 US_1798", server: 167.88.63.28, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: "@nfeng6_DE_615", server: 193.108.118.36, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 83, server: 167.88.63.74, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 3, server: 167.88.63.74, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_TG@nodesharing_160, server: 169.197.143.29, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 10, server: 167.88.63.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 3, server: 167.88.63.28, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "@nfeng6 US_2459", server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国_TG@nodesharing_29, server: 38.91.102.123, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_TG@nodesharing_126, server: 167.88.62.34, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "@nfeng6 US_1746", server: 167.88.63.28, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "@nfeng6 US_2458", server: 38.121.43.91, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_TG@nodesharing_117, server: 38.143.66.20, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 科技网络 2, server: 167.88.63.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国_TG@nodesharing_277, server: 38.68.134.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "@nfeng6 US_2464", server: 38.121.43.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 美国_TG@nodesharing_276, server: 167.88.63.61, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 14, server: 134.195.196.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "@nfeng6_ZZ_4019", server: 134.195.196.200, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 53, server: 134.195.196.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国_TG@nodesharing_262, server: 167.88.63.61, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: "@nfeng6_US_2250", server: 38.121.43.91, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US-38.121.43.91-1127, server: 38.121.43.91, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: "@nfeng6_US_2251", server: 38.121.43.91, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国 4, server: 167.88.63.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 4, server: 169.197.142.48, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 5, server: 169.197.142.48, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 11, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 6, server: 38.121.43.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: "@nfeng6 US_2867", server: 38.121.43.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国【YouTube由零開始】 2, server: 167.88.63.28, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_TG@nodesharing_175, server: 169.197.143.29, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大【YouTube由零開始】, server: 134.195.196.227, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国【YouTube由零開始】 3, server: 167.88.63.61, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_2375 @WangCai_1, server: 38.68.135.112, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国_TG@nodesharing_195, server: 38.68.134.191, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 科技网络 3, server: 38.121.43.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 5, server: 167.88.63.74, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 6, server: 167.88.63.28, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 7, server: 169.197.142.48, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大_TG@nodesharing_269, server: 134.195.196.147, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 8, server: 167.88.62.34, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 7, server: 167.88.63.74, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_9101 @WangCai_1, server: 38.68.135.112, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国_TG@nodesharing_254, server: 38.68.134.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 美国_TG@nodesharing_266, server: 167.88.63.61, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国_TG@nodesharing_112, server: 169.197.143.29, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: "[VIP]台湾|BGP中转|Netflix", server: azhk.relay.qchwnd.moe, port: 44608, type: trojan, password: b6676f64-fff6-4489-a04e-26d9092f6599, sni: azhk.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 美国_TG@nodesharing_260 3, server: 38.68.134.71, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: "@nfeng6 US_2466", server: 38.121.43.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "@nfeng6 ZZ_3853", server: 134.195.196.110, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_加拿大, server: 198.57.27.184, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "@nfeng6 ZZ_3840", server: 134.195.196.200, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "@nfeng6 ZZ_4194", server: 134.195.196.147, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public), server: 134.195.196.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 美国_TG@nodesharing_278, server: 38.68.134.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 科技网络 4, server: 134.195.196.227, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_TG@nodesharing_219, server: 167.88.63.74, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: "@nfeng6 ZZ_3797", server: 134.195.196.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国 8, server: 38.121.43.71, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国_TG@nodesharing_186, server: 38.68.134.23, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: "@nfeng6 US_2455", server: 38.121.43.91, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: "@nfeng6 ZZ_3778", server: 134.195.196.81, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国【YouTube由零開始】 4, server: 167.88.63.61, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 9, server: 172.99.188.99, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 9, server: 167.88.63.28, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "@nfeng6 ZZ_4014", server: 134.195.196.200, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 2, server: 198.57.27.172, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国_TG@nodesharing_220, server: 38.68.134.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 美国【YouTube由零開始】 5, server: 167.88.63.61, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 59, server: 134.195.196.71, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国_TG@nodesharing_265, server: 38.68.134.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 3, server: 134.195.196.110, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_8090 @WangCai_1, server: 38.68.135.112, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_TG@nodesharing_209, server: 38.68.134.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国_TG@nodesharing_229, server: 38.68.134.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "@nfeng6 ZZ_3824", server: 134.195.196.200, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_5004 @WangCai_1, server: 38.68.134.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "@nfeng6 ZZ_3783", server: 134.195.196.81, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 2, server: 134.195.196.193, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 科技网络 5, server: 134.195.196.227, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 11, server: 38.86.135.169, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "@nfeng6_ZZ_3595", server: 134.195.196.227, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 科技网络 6, server: 134.195.196.193, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大 3, server: 134.195.196.227, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: "@nfeng6_US_3263", server: 172.99.190.149, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 加拿大【YouTube由零開始】 2, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 4, server: 134.195.196.81, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 5, server: 198.57.27.241, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 12, server: 169.197.142.48, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "@nfeng6 ZZ_3789", server: 134.195.196.81, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: "@nfeng6 CA_377", server: 198.57.27.152, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国_TG@nodesharing_115, server: 169.197.143.29, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 37, server: 134.195.196.71, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 6, server: 134.195.196.193, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国_TG@nodesharing_275, server: 38.68.134.71, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: "@nfeng6 US_2434", server: 38.121.43.91, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 35, server: 134.195.196.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国【YouTube由零開始】 6, server: 167.88.63.74, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大【YouTube由零開始】 3, server: 198.57.27.172, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 7, server: 134.195.196.81, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 10, server: 38.68.134.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 科技网络_72, server: 142.202.48.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大 4, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: "@nfeng6 ZZ_3845", server: 134.195.196.193, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: "@nfeng6 US_2825", server: 38.68.134.191, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: "@nfeng6 US_2620", server: 167.88.63.61, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: "@nfeng6 US_2814", server: 167.88.63.28, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: "@nfeng6_ZZ_3637", server: 134.195.196.81, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大【YouTube由零開始】 4, server: 198.57.27.172, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_加拿大 5, server: 134.195.196.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 13, server: 169.197.142.48, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _CA_加拿大 6, server: 134.195.196.200, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "@nfeng6 US_1612", server: 38.121.43.91, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: "@nfeng6 CA_216", server: 198.57.27.152, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国_TG@nodesharing_282, server: 38.68.134.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 法国【YouTube由零開始】, server: 145.239.1.100, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国【YouTube由零開始】 7, server: 167.88.63.74, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 科技网络 7, server: 198.57.27.172, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 英国(绿头外网集团)(Public), server: 172.99.190.39, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "@nfeng6_ZZ_3662", server: 134.195.196.193, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_6379 @WangCai_1, server: 38.68.135.112, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _US_美国 11, server: 142.202.48.34, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _GB_英国, server: 172.99.190.84, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 加拿大【YouTube由零開始】 5, server: 134.195.196.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 8, server: 134.195.196.200, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "@nfeng6 ZZ_3870", server: 134.195.196.227, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA, server: 198.57.27.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 12, server: 38.68.134.23, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_2512, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 13, server: 169.197.141.91, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国 14, server: 142.202.48.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 58, server: 134.195.196.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: "@nfeng6 ZZ_3790", server: 134.195.196.81, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 群:166416961_🇨🇦_CA_加拿大_157, server: 134.195.196.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大 7, server: 134.195.196.193, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国【YouTube由零開始】 8, server: 142.202.48.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大 8, server: 134.195.196.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_0116节点_79, server: 167.88.63.61, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 9, server: 134.195.196.81, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: "@nfeng6 US_3431", server: 142.202.48.34, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 10, server: 134.195.196.81, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 科技网络 8, server: 172.99.190.188, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 科技网络 9, server: 172.99.190.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大 9, server: 198.57.27.241, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 12, server: 198.57.27.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 8 2, server: 167.88.62.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 英国【YouTube由零開始】, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大 10, server: 198.57.27.152, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 群:166416961_🇨🇦_CA_加拿大_187, server: 198.57.27.184, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 11, server: 134.195.196.71, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 13, server: 134.195.196.43, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -261,252 +213,204 @@ proxy-groups:
       - 🎯 全球直连
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
-      - 香港(绿头外网集团)(Public) 33
-      - vpnpool-香港HKBN
-      - vpnpool-香港HKT-game
-      - vpnpool-Tokyo-M247
-      - vpnpool-Tokyo-M247 2
-      - vpnpool-SG-Contabo
-      - vpnpool-SG-Contabo 2
-      - vpnpool-香港HKBN 2
-      - vpnpool-香港HKT-game 2
-      - vpnpool-Tokyo-M247 3
-      - vpnpool-LAX-M247
-      - vpnpool-Seoul-Choopa
-      - US_5003+@WangCai_1
-      - US_0443+@WangCai_1
-      - _CA_加拿大
-      - +@nfeng6_US_2134
-      - 美国_TG@nodesharing_155
-      - 美国【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_157
-      - 群:166416961_🇨🇦_CA_加拿大_196
-      - 美国_TG@nodesharing_78
-      - 群:166416961_🇺🇸_US_美国_209
-      - TG+@ShareCentrePro_CA_加拿大
-      - 美国【YouTube由零開始】 2
-      - +@nfeng6_DE_612
-      - "@nfeng6_ZZ_3637"
-      - +@nfeng6_DE_615
-      - +@nfeng6_US_2941
-      - "@nfeng6_ZZ_3595"
-      - "@nfeng6_ZZ_3587"
-      - "@nfeng6_CA_358"
-      - +@nfeng6_US_2250
-      - "@nfeng6_CA_252"
-      - US-38.121.43.91-1127
-      - _US_美国
-      - _US_美国 2
-      - US_7002+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_2375+@WangCai_1
-      - US_3389+@WangCai_1
-      - _CA_加拿大 2
-      - "@nfeng6_ZZ_3677"
-      - _CA_加拿大 3
-      - 美国_TG@nodesharing_260
-      - 美国【YouTube由零開始】 3
-      - 美国_TG@nodesharing_253
-      - Dallas-ColoCrossing
-      - _US_美国 3
-      - _US_美国 4
-      - +美国(绿头外网集团)(Public)+8
-      - +美国(绿头外网集团)(Public)+10
-      - +美国(绿头外网集团)(Public)+63
-      - +美国(绿头外网集团)(Public)+74
-      - +加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开）+35
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+57
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+60
-      - vpnpool-Novosibirsk-Adman
-      - vpnpool-Novosibirsk-Adman 2
-      - 香港_TG@nodesharing_12
-      - 美国_TG@nodesharing_19
-      - 美国_TG@nodesharing_20
-      - 美国_TG@nodesharing_21
-      - 美国_TG@nodesharing_22
-      - 美国_TG@nodesharing_23
-      - 美国_TG@nodesharing_24
-      - 美国_TG@nodesharing_27
-      - 美国_TG@nodesharing_28
-      - 美国_TG@nodesharing_29
-      - 美国_TG@nodesharing_30
-      - 美国_TG@nodesharing_32
-      - 美国_TG@nodesharing_35
-      - 美国_TG@nodesharing_38
-      - 美国_TG@nodesharing_44
-      - 美国_TG@nodesharing_45
-      - 美国_TG@nodesharing_48
-      - 美国_TG@nodesharing_54
-      - 美国_TG@nodesharing_57
-      - 美国_TG@nodesharing_60
-      - 美国_TG@nodesharing_62
-      - 美国_TG@nodesharing_64
-      - 美国_TG@nodesharing_66
-      - 美国_TG@nodesharing_78 2
-      - 美国_TG@nodesharing_79
-      - 美国_TG@nodesharing_80
-      - 美国_TG@nodesharing_82
-      - 美国_TG@nodesharing_85
-      - 美国_TG@nodesharing_88
-      - 美国_TG@nodesharing_93
-      - 美国_TG@nodesharing_102
-      - 美国_TG@nodesharing_105
-      - 美国_TG@nodesharing_106
-      - 美国_TG@nodesharing_107
-      - 美国_TG@nodesharing_109
-      - 美国_TG@nodesharing_112
-      - 美国_TG@nodesharing_115
-      - 美国_TG@nodesharing_117
-      - 美国_TG@nodesharing_118
-      - 美国_TG@nodesharing_122
-      - 美国_TG@nodesharing_123
-      - 美国_TG@nodesharing_127
-      - 美国_TG@nodesharing_143
-      - 美国_TG@nodesharing_160
-      - 美国_TG@nodesharing_169
-      - 美国_TG@nodesharing_175
-      - 美国_TG@nodesharing_177
-      - 美国_TG@nodesharing_178
-      - 美国_TG@nodesharing_179
-      - 美国_TG@nodesharing_182
-      - 美国_TG@nodesharing_184
-      - 美国_TG@nodesharing_188
-      - 美国_TG@nodesharing_197
-      - 美国_TG@nodesharing_209
-      - 美国_TG@nodesharing_215
-      - 美国_TG@nodesharing_220
-      - 美国_TG@nodesharing_229
-      - 美国_TG@nodesharing_238
-      - 加拿大_TG@nodesharing_252
-      - 美国_TG@nodesharing_254
-      - 美国_TG@nodesharing_260 2
-      - 美国_TG@nodesharing_261
-      - 加拿大_TG@nodesharing_269
-      - 美国_TG@nodesharing_275
-      - 美国_TG@nodesharing_282
-      - 美国_TG@nodesharing_285
-      - CA
-      - CA 2
-      - 韩国【YouTube由零開始】
-      - 韩国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 美国【YouTube由零開始】 5
-      - 英国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - 加拿大【YouTube由零開始】
-      - 美国【YouTube-由零開始】
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 美国【YouTube由零開始】 12
-      - 【YouTube由零開始】
-      - 【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 3
-      - _CA_加拿大 4
-      - _US_美国 5
-      - _CA_加拿大 5
-      - 美國-费利蒙
       - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - "@ShareCentrePro Hongkong"
-      - _US_美国 6
-      - _US_美国 7
-      - _CA_加拿大 6
-      - _KR_韩国
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _CA_加拿大 7
-      - "@nfeng6 🇭🇰"
-      - "@nfeng6 🇭🇰 3"
-      - "@nfeng6 🇭🇰 7"
-      - "@nfeng6 🇯🇵 13"
-      - "@nfeng6 🇯🇵 14"
-      - "@nfeng6 🇯🇵 16"
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
+      - "@nfeng6 SG_1517"
+      - "@nfeng6 SG_1525"
+      - "@nfeng6 SG_1516"
+      - "@nfeng6 【VIP】Singapore 9"
       - vpnpool-SG-DigitalOcean
       - vpnpool-SG-DigitalOcean 2
+      - vpnpool-Tokyo-Linode
       - vpnpool-SG-DigitalOcean 3
-      - vpnpool-Tokyo-EC2
-      - vpnpool-Ashburn-EC2-dip
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-香港腾讯云
-      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 4
       - vpnpool-SG-DigitalOcean 5
+      - vpnpool-Tokyo-Linode 2
       - vpnpool-SG-DigitalOcean 6
+      - vpnpool-香港腾讯云
+      - vpnpool-Tokyo-Linode 3
+      - "@nfeng6🇯🇵 日本02"
+      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 7
-      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 8
+      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 9
-      - vpnpool-Tokyo-EC2 2
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-Ashburn-EC2-dip 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-香港腾讯云 3
       - vpnpool-SG-DigitalOcean 10
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 香港腾讯云@vpnpool
-      - 香港腾讯云@vpnpool 2
-      - 香港腾讯云@vpnpool 3
-      - 香港腾讯云@vpnpool 4
+      - vpnpool-香港腾讯云 3
+      - "[VIP]香港2|负载均衡|BGP|1.2x"
+      - "@nfeng6🇮🇳 印度03"
+      - vpnpool-Tokyo-Linode 5
+      - "[VIP]台湾|广港链路|Netflix"
+      - 德国(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_48
+      - 美国_TG@nodesharing_260
+      - 美国_TG@nodesharing_38
+      - 美国_TG@nodesharing_35
+      - 美国_TG@nodesharing_45
+      - 美国(绿头外网集团)(Public) 69
+      - "@nfeng6 DE_691"
+      - 美国_TG@nodesharing_46
+      - "@nfeng6_DE_612"
+      - 美国节点更新https://bit.ly/3oOSZUc-请订阅我的频道
+      - 美国【YouTube由零開始】
+      - _US_美国
+      - 美国(绿头外网集团)(Public)
+      - "@nfeng6 DE_589"
+      - 美国_TG@nodesharing_188
+      - 美国_TG@nodesharing_260 2
+      - 美国(绿头外网集团)(Public) 2
+      - _US_美国 2
+      - "@nfeng6 US_1798"
+      - "@nfeng6_DE_615"
+      - 美国(绿头外网集团)(Public) 83
+      - _US_美国 3
+      - 美国_TG@nodesharing_160
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 3
+      - "@nfeng6 US_2459"
+      - 美国_TG@nodesharing_29
+      - 美国_TG@nodesharing_126
+      - "@nfeng6 US_1746"
+      - "@nfeng6 US_2458"
+      - 美国_TG@nodesharing_117
+      - 科技网络 2
+      - 美国_TG@nodesharing_277
+      - "@nfeng6 US_2464"
+      - 美国_TG@nodesharing_276
+      - 加拿大(绿头外网集团)(Public) 14
+      - "@nfeng6_ZZ_4019"
+      - 加拿大(绿头外网集团)(Public) 53
+      - 美国_TG@nodesharing_262
+      - "@nfeng6_US_2250"
+      - US-38.121.43.91-1127
+      - "@nfeng6_US_2251"
+      - _US_美国 4
+      - 美国(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 5
+      - 加拿大(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 6
+      - "@nfeng6 US_2867"
+      - 美国【YouTube由零開始】 2
+      - 美国_TG@nodesharing_175
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 3
+      - US_2375 @WangCai_1
+      - 美国_TG@nodesharing_195
+      - 科技网络 3
+      - _US_美国 5
+      - _US_美国 6
+      - 美国(绿头外网集团)(Public) 7
+      - 加拿大_TG@nodesharing_269
+      - 美国(绿头外网集团)(Public) 8
+      - _US_美国 7
+      - US_9101 @WangCai_1
+      - 美国_TG@nodesharing_254
+      - 美国_TG@nodesharing_266
+      - 美国_TG@nodesharing_112
+      - "[VIP]台湾|BGP中转|Netflix"
+      - 美国_TG@nodesharing_260 3
+      - "@nfeng6 US_2466"
+      - "@nfeng6 ZZ_3853"
+      - _CA_加拿大
+      - "@nfeng6 ZZ_3840"
+      - "@nfeng6 ZZ_4194"
+      - 加拿大(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_278
+      - 科技网络 4
+      - 美国_TG@nodesharing_219
+      - "@nfeng6 ZZ_3797"
+      - _US_美国 8
+      - 美国_TG@nodesharing_186
+      - "@nfeng6 US_2455"
+      - "@nfeng6 ZZ_3778"
+      - 美国【YouTube由零開始】 4
+      - _US_美国 9
+      - 美国(绿头外网集团)(Public) 9
+      - "@nfeng6 ZZ_4014"
+      - 加拿大(绿头外网集团)(Public) 2
+      - 美国_TG@nodesharing_220
+      - 美国【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 59
+      - 美国_TG@nodesharing_265
+      - 加拿大(绿头外网集团)(Public) 3
+      - US_8090 @WangCai_1
+      - 美国_TG@nodesharing_209
+      - 美国_TG@nodesharing_229
+      - "@nfeng6 ZZ_3824"
+      - US_5004 @WangCai_1
+      - "@nfeng6 ZZ_3783"
+      - _CA_加拿大 2
+      - 科技网络 5
+      - 美国(绿头外网集团)(Public) 11
+      - "@nfeng6_ZZ_3595"
+      - 科技网络 6
+      - _CA_加拿大 3
+      - "@nfeng6_US_3263"
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 12
+      - "@nfeng6 ZZ_3789"
+      - "@nfeng6 CA_377"
+      - 美国_TG@nodesharing_115
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 37
+      - 加拿大(绿头外网集团)(Public) 6
+      - 美国_TG@nodesharing_275
+      - "@nfeng6 US_2434"
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 35
+      - 美国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 3
+      - 加拿大(绿头外网集团)(Public) 7
+      - _US_美国 10
+      - 科技网络_72
+      - _CA_加拿大 4
+      - "@nfeng6 ZZ_3845"
+      - "@nfeng6 US_2825"
+      - "@nfeng6 US_2620"
+      - "@nfeng6 US_2814"
+      - "@nfeng6_ZZ_3637"
+      - 加拿大【YouTube由零開始】 4
+      - _CA_加拿大 5
+      - 美国(绿头外网集团)(Public) 13
+      - _CA_加拿大 6
+      - "@nfeng6 US_1612"
+      - "@nfeng6 CA_216"
+      - 美国_TG@nodesharing_282
+      - 法国【YouTube由零開始】
+      - 美国【YouTube由零開始】 7
+      - 科技网络 7
+      - 英国(绿头外网集团)(Public)
+      - "@nfeng6_ZZ_3662"
+      - US_6379 @WangCai_1
+      - _US_美国 11
+      - _GB_英国
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 8
+      - "@nfeng6 ZZ_3870"
+      - CA
+      - _US_美国 12
+      - ZZ_2512
+      - _US_美国 13
+      - _US_美国 14
+      - 加拿大(绿头外网集团)(Public) 58
+      - "@nfeng6 ZZ_3790"
+      - 群:166416961_🇨🇦_CA_加拿大_157
+      - _CA_加拿大 7
+      - 美国【YouTube由零開始】 8
+      - _CA_加拿大 8
+      - _US_0116节点_79
+      - 加拿大(绿头外网集团)(Public) 9
+      - "@nfeng6 US_3431"
+      - 加拿大(绿头外网集团)(Public) 10
+      - 科技网络 8
+      - 科技网络 9
+      - _CA_加拿大 9
+      - 加拿大(绿头外网集团)(Public) 12
+      - 美国(绿头外网集团)(Public) 8 2
+      - 英国【YouTube由零開始】
+      - _CA_加拿大 10
+      - 群:166416961_🇨🇦_CA_加拿大_187
+      - _CA_加拿大 11
+      - 加拿大(绿头外网集团)(Public) 13
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -514,252 +418,204 @@ proxy-groups:
     proxies:
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
-      - 香港(绿头外网集团)(Public) 33
-      - vpnpool-香港HKBN
-      - vpnpool-香港HKT-game
-      - vpnpool-Tokyo-M247
-      - vpnpool-Tokyo-M247 2
-      - vpnpool-SG-Contabo
-      - vpnpool-SG-Contabo 2
-      - vpnpool-香港HKBN 2
-      - vpnpool-香港HKT-game 2
-      - vpnpool-Tokyo-M247 3
-      - vpnpool-LAX-M247
-      - vpnpool-Seoul-Choopa
-      - US_5003+@WangCai_1
-      - US_0443+@WangCai_1
-      - _CA_加拿大
-      - +@nfeng6_US_2134
-      - 美国_TG@nodesharing_155
-      - 美国【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_157
-      - 群:166416961_🇨🇦_CA_加拿大_196
-      - 美国_TG@nodesharing_78
-      - 群:166416961_🇺🇸_US_美国_209
-      - TG+@ShareCentrePro_CA_加拿大
-      - 美国【YouTube由零開始】 2
-      - +@nfeng6_DE_612
-      - "@nfeng6_ZZ_3637"
-      - +@nfeng6_DE_615
-      - +@nfeng6_US_2941
-      - "@nfeng6_ZZ_3595"
-      - "@nfeng6_ZZ_3587"
-      - "@nfeng6_CA_358"
-      - +@nfeng6_US_2250
-      - "@nfeng6_CA_252"
-      - US-38.121.43.91-1127
-      - _US_美国
-      - _US_美国 2
-      - US_7002+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_2375+@WangCai_1
-      - US_3389+@WangCai_1
-      - _CA_加拿大 2
-      - "@nfeng6_ZZ_3677"
-      - _CA_加拿大 3
-      - 美国_TG@nodesharing_260
-      - 美国【YouTube由零開始】 3
-      - 美国_TG@nodesharing_253
-      - Dallas-ColoCrossing
-      - _US_美国 3
-      - _US_美国 4
-      - +美国(绿头外网集团)(Public)+8
-      - +美国(绿头外网集团)(Public)+10
-      - +美国(绿头外网集团)(Public)+63
-      - +美国(绿头外网集团)(Public)+74
-      - +加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开）+35
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+57
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+60
-      - vpnpool-Novosibirsk-Adman
-      - vpnpool-Novosibirsk-Adman 2
-      - 香港_TG@nodesharing_12
-      - 美国_TG@nodesharing_19
-      - 美国_TG@nodesharing_20
-      - 美国_TG@nodesharing_21
-      - 美国_TG@nodesharing_22
-      - 美国_TG@nodesharing_23
-      - 美国_TG@nodesharing_24
-      - 美国_TG@nodesharing_27
-      - 美国_TG@nodesharing_28
-      - 美国_TG@nodesharing_29
-      - 美国_TG@nodesharing_30
-      - 美国_TG@nodesharing_32
-      - 美国_TG@nodesharing_35
-      - 美国_TG@nodesharing_38
-      - 美国_TG@nodesharing_44
-      - 美国_TG@nodesharing_45
-      - 美国_TG@nodesharing_48
-      - 美国_TG@nodesharing_54
-      - 美国_TG@nodesharing_57
-      - 美国_TG@nodesharing_60
-      - 美国_TG@nodesharing_62
-      - 美国_TG@nodesharing_64
-      - 美国_TG@nodesharing_66
-      - 美国_TG@nodesharing_78 2
-      - 美国_TG@nodesharing_79
-      - 美国_TG@nodesharing_80
-      - 美国_TG@nodesharing_82
-      - 美国_TG@nodesharing_85
-      - 美国_TG@nodesharing_88
-      - 美国_TG@nodesharing_93
-      - 美国_TG@nodesharing_102
-      - 美国_TG@nodesharing_105
-      - 美国_TG@nodesharing_106
-      - 美国_TG@nodesharing_107
-      - 美国_TG@nodesharing_109
-      - 美国_TG@nodesharing_112
-      - 美国_TG@nodesharing_115
-      - 美国_TG@nodesharing_117
-      - 美国_TG@nodesharing_118
-      - 美国_TG@nodesharing_122
-      - 美国_TG@nodesharing_123
-      - 美国_TG@nodesharing_127
-      - 美国_TG@nodesharing_143
-      - 美国_TG@nodesharing_160
-      - 美国_TG@nodesharing_169
-      - 美国_TG@nodesharing_175
-      - 美国_TG@nodesharing_177
-      - 美国_TG@nodesharing_178
-      - 美国_TG@nodesharing_179
-      - 美国_TG@nodesharing_182
-      - 美国_TG@nodesharing_184
-      - 美国_TG@nodesharing_188
-      - 美国_TG@nodesharing_197
-      - 美国_TG@nodesharing_209
-      - 美国_TG@nodesharing_215
-      - 美国_TG@nodesharing_220
-      - 美国_TG@nodesharing_229
-      - 美国_TG@nodesharing_238
-      - 加拿大_TG@nodesharing_252
-      - 美国_TG@nodesharing_254
-      - 美国_TG@nodesharing_260 2
-      - 美国_TG@nodesharing_261
-      - 加拿大_TG@nodesharing_269
-      - 美国_TG@nodesharing_275
-      - 美国_TG@nodesharing_282
-      - 美国_TG@nodesharing_285
-      - CA
-      - CA 2
-      - 韩国【YouTube由零開始】
-      - 韩国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 美国【YouTube由零開始】 5
-      - 英国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - 加拿大【YouTube由零開始】
-      - 美国【YouTube-由零開始】
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 美国【YouTube由零開始】 12
-      - 【YouTube由零開始】
-      - 【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 3
-      - _CA_加拿大 4
-      - _US_美国 5
-      - _CA_加拿大 5
-      - 美國-费利蒙
       - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - "@ShareCentrePro Hongkong"
-      - _US_美国 6
-      - _US_美国 7
-      - _CA_加拿大 6
-      - _KR_韩国
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _CA_加拿大 7
-      - "@nfeng6 🇭🇰"
-      - "@nfeng6 🇭🇰 3"
-      - "@nfeng6 🇭🇰 7"
-      - "@nfeng6 🇯🇵 13"
-      - "@nfeng6 🇯🇵 14"
-      - "@nfeng6 🇯🇵 16"
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
+      - "@nfeng6 SG_1517"
+      - "@nfeng6 SG_1525"
+      - "@nfeng6 SG_1516"
+      - "@nfeng6 【VIP】Singapore 9"
       - vpnpool-SG-DigitalOcean
       - vpnpool-SG-DigitalOcean 2
+      - vpnpool-Tokyo-Linode
       - vpnpool-SG-DigitalOcean 3
-      - vpnpool-Tokyo-EC2
-      - vpnpool-Ashburn-EC2-dip
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-香港腾讯云
-      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 4
       - vpnpool-SG-DigitalOcean 5
+      - vpnpool-Tokyo-Linode 2
       - vpnpool-SG-DigitalOcean 6
+      - vpnpool-香港腾讯云
+      - vpnpool-Tokyo-Linode 3
+      - "@nfeng6🇯🇵 日本02"
+      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 7
-      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 8
+      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 9
-      - vpnpool-Tokyo-EC2 2
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-Ashburn-EC2-dip 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-香港腾讯云 3
       - vpnpool-SG-DigitalOcean 10
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 香港腾讯云@vpnpool
-      - 香港腾讯云@vpnpool 2
-      - 香港腾讯云@vpnpool 3
-      - 香港腾讯云@vpnpool 4
+      - vpnpool-香港腾讯云 3
+      - "[VIP]香港2|负载均衡|BGP|1.2x"
+      - "@nfeng6🇮🇳 印度03"
+      - vpnpool-Tokyo-Linode 5
+      - "[VIP]台湾|广港链路|Netflix"
+      - 德国(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_48
+      - 美国_TG@nodesharing_260
+      - 美国_TG@nodesharing_38
+      - 美国_TG@nodesharing_35
+      - 美国_TG@nodesharing_45
+      - 美国(绿头外网集团)(Public) 69
+      - "@nfeng6 DE_691"
+      - 美国_TG@nodesharing_46
+      - "@nfeng6_DE_612"
+      - 美国节点更新https://bit.ly/3oOSZUc-请订阅我的频道
+      - 美国【YouTube由零開始】
+      - _US_美国
+      - 美国(绿头外网集团)(Public)
+      - "@nfeng6 DE_589"
+      - 美国_TG@nodesharing_188
+      - 美国_TG@nodesharing_260 2
+      - 美国(绿头外网集团)(Public) 2
+      - _US_美国 2
+      - "@nfeng6 US_1798"
+      - "@nfeng6_DE_615"
+      - 美国(绿头外网集团)(Public) 83
+      - _US_美国 3
+      - 美国_TG@nodesharing_160
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 3
+      - "@nfeng6 US_2459"
+      - 美国_TG@nodesharing_29
+      - 美国_TG@nodesharing_126
+      - "@nfeng6 US_1746"
+      - "@nfeng6 US_2458"
+      - 美国_TG@nodesharing_117
+      - 科技网络 2
+      - 美国_TG@nodesharing_277
+      - "@nfeng6 US_2464"
+      - 美国_TG@nodesharing_276
+      - 加拿大(绿头外网集团)(Public) 14
+      - "@nfeng6_ZZ_4019"
+      - 加拿大(绿头外网集团)(Public) 53
+      - 美国_TG@nodesharing_262
+      - "@nfeng6_US_2250"
+      - US-38.121.43.91-1127
+      - "@nfeng6_US_2251"
+      - _US_美国 4
+      - 美国(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 5
+      - 加拿大(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 6
+      - "@nfeng6 US_2867"
+      - 美国【YouTube由零開始】 2
+      - 美国_TG@nodesharing_175
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 3
+      - US_2375 @WangCai_1
+      - 美国_TG@nodesharing_195
+      - 科技网络 3
+      - _US_美国 5
+      - _US_美国 6
+      - 美国(绿头外网集团)(Public) 7
+      - 加拿大_TG@nodesharing_269
+      - 美国(绿头外网集团)(Public) 8
+      - _US_美国 7
+      - US_9101 @WangCai_1
+      - 美国_TG@nodesharing_254
+      - 美国_TG@nodesharing_266
+      - 美国_TG@nodesharing_112
+      - "[VIP]台湾|BGP中转|Netflix"
+      - 美国_TG@nodesharing_260 3
+      - "@nfeng6 US_2466"
+      - "@nfeng6 ZZ_3853"
+      - _CA_加拿大
+      - "@nfeng6 ZZ_3840"
+      - "@nfeng6 ZZ_4194"
+      - 加拿大(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_278
+      - 科技网络 4
+      - 美国_TG@nodesharing_219
+      - "@nfeng6 ZZ_3797"
+      - _US_美国 8
+      - 美国_TG@nodesharing_186
+      - "@nfeng6 US_2455"
+      - "@nfeng6 ZZ_3778"
+      - 美国【YouTube由零開始】 4
+      - _US_美国 9
+      - 美国(绿头外网集团)(Public) 9
+      - "@nfeng6 ZZ_4014"
+      - 加拿大(绿头外网集团)(Public) 2
+      - 美国_TG@nodesharing_220
+      - 美国【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 59
+      - 美国_TG@nodesharing_265
+      - 加拿大(绿头外网集团)(Public) 3
+      - US_8090 @WangCai_1
+      - 美国_TG@nodesharing_209
+      - 美国_TG@nodesharing_229
+      - "@nfeng6 ZZ_3824"
+      - US_5004 @WangCai_1
+      - "@nfeng6 ZZ_3783"
+      - _CA_加拿大 2
+      - 科技网络 5
+      - 美国(绿头外网集团)(Public) 11
+      - "@nfeng6_ZZ_3595"
+      - 科技网络 6
+      - _CA_加拿大 3
+      - "@nfeng6_US_3263"
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 12
+      - "@nfeng6 ZZ_3789"
+      - "@nfeng6 CA_377"
+      - 美国_TG@nodesharing_115
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 37
+      - 加拿大(绿头外网集团)(Public) 6
+      - 美国_TG@nodesharing_275
+      - "@nfeng6 US_2434"
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 35
+      - 美国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 3
+      - 加拿大(绿头外网集团)(Public) 7
+      - _US_美国 10
+      - 科技网络_72
+      - _CA_加拿大 4
+      - "@nfeng6 ZZ_3845"
+      - "@nfeng6 US_2825"
+      - "@nfeng6 US_2620"
+      - "@nfeng6 US_2814"
+      - "@nfeng6_ZZ_3637"
+      - 加拿大【YouTube由零開始】 4
+      - _CA_加拿大 5
+      - 美国(绿头外网集团)(Public) 13
+      - _CA_加拿大 6
+      - "@nfeng6 US_1612"
+      - "@nfeng6 CA_216"
+      - 美国_TG@nodesharing_282
+      - 法国【YouTube由零開始】
+      - 美国【YouTube由零開始】 7
+      - 科技网络 7
+      - 英国(绿头外网集团)(Public)
+      - "@nfeng6_ZZ_3662"
+      - US_6379 @WangCai_1
+      - _US_美国 11
+      - _GB_英国
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 8
+      - "@nfeng6 ZZ_3870"
+      - CA
+      - _US_美国 12
+      - ZZ_2512
+      - _US_美国 13
+      - _US_美国 14
+      - 加拿大(绿头外网集团)(Public) 58
+      - "@nfeng6 ZZ_3790"
+      - 群:166416961_🇨🇦_CA_加拿大_157
+      - _CA_加拿大 7
+      - 美国【YouTube由零開始】 8
+      - _CA_加拿大 8
+      - _US_0116节点_79
+      - 加拿大(绿头外网集团)(Public) 9
+      - "@nfeng6 US_3431"
+      - 加拿大(绿头外网集团)(Public) 10
+      - 科技网络 8
+      - 科技网络 9
+      - _CA_加拿大 9
+      - 加拿大(绿头外网集团)(Public) 12
+      - 美国(绿头外网集团)(Public) 8 2
+      - 英国【YouTube由零開始】
+      - _CA_加拿大 10
+      - 群:166416961_🇨🇦_CA_加拿大_187
+      - _CA_加拿大 11
+      - 加拿大(绿头外网集团)(Public) 13
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -768,252 +624,204 @@ proxy-groups:
       - 🎯 全球直连
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
-      - 香港(绿头外网集团)(Public) 33
-      - vpnpool-香港HKBN
-      - vpnpool-香港HKT-game
-      - vpnpool-Tokyo-M247
-      - vpnpool-Tokyo-M247 2
-      - vpnpool-SG-Contabo
-      - vpnpool-SG-Contabo 2
-      - vpnpool-香港HKBN 2
-      - vpnpool-香港HKT-game 2
-      - vpnpool-Tokyo-M247 3
-      - vpnpool-LAX-M247
-      - vpnpool-Seoul-Choopa
-      - US_5003+@WangCai_1
-      - US_0443+@WangCai_1
-      - _CA_加拿大
-      - +@nfeng6_US_2134
-      - 美国_TG@nodesharing_155
-      - 美国【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_157
-      - 群:166416961_🇨🇦_CA_加拿大_196
-      - 美国_TG@nodesharing_78
-      - 群:166416961_🇺🇸_US_美国_209
-      - TG+@ShareCentrePro_CA_加拿大
-      - 美国【YouTube由零開始】 2
-      - +@nfeng6_DE_612
-      - "@nfeng6_ZZ_3637"
-      - +@nfeng6_DE_615
-      - +@nfeng6_US_2941
-      - "@nfeng6_ZZ_3595"
-      - "@nfeng6_ZZ_3587"
-      - "@nfeng6_CA_358"
-      - +@nfeng6_US_2250
-      - "@nfeng6_CA_252"
-      - US-38.121.43.91-1127
-      - _US_美国
-      - _US_美国 2
-      - US_7002+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_2375+@WangCai_1
-      - US_3389+@WangCai_1
-      - _CA_加拿大 2
-      - "@nfeng6_ZZ_3677"
-      - _CA_加拿大 3
-      - 美国_TG@nodesharing_260
-      - 美国【YouTube由零開始】 3
-      - 美国_TG@nodesharing_253
-      - Dallas-ColoCrossing
-      - _US_美国 3
-      - _US_美国 4
-      - +美国(绿头外网集团)(Public)+8
-      - +美国(绿头外网集团)(Public)+10
-      - +美国(绿头外网集团)(Public)+63
-      - +美国(绿头外网集团)(Public)+74
-      - +加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开）+35
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+57
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+60
-      - vpnpool-Novosibirsk-Adman
-      - vpnpool-Novosibirsk-Adman 2
-      - 香港_TG@nodesharing_12
-      - 美国_TG@nodesharing_19
-      - 美国_TG@nodesharing_20
-      - 美国_TG@nodesharing_21
-      - 美国_TG@nodesharing_22
-      - 美国_TG@nodesharing_23
-      - 美国_TG@nodesharing_24
-      - 美国_TG@nodesharing_27
-      - 美国_TG@nodesharing_28
-      - 美国_TG@nodesharing_29
-      - 美国_TG@nodesharing_30
-      - 美国_TG@nodesharing_32
-      - 美国_TG@nodesharing_35
-      - 美国_TG@nodesharing_38
-      - 美国_TG@nodesharing_44
-      - 美国_TG@nodesharing_45
-      - 美国_TG@nodesharing_48
-      - 美国_TG@nodesharing_54
-      - 美国_TG@nodesharing_57
-      - 美国_TG@nodesharing_60
-      - 美国_TG@nodesharing_62
-      - 美国_TG@nodesharing_64
-      - 美国_TG@nodesharing_66
-      - 美国_TG@nodesharing_78 2
-      - 美国_TG@nodesharing_79
-      - 美国_TG@nodesharing_80
-      - 美国_TG@nodesharing_82
-      - 美国_TG@nodesharing_85
-      - 美国_TG@nodesharing_88
-      - 美国_TG@nodesharing_93
-      - 美国_TG@nodesharing_102
-      - 美国_TG@nodesharing_105
-      - 美国_TG@nodesharing_106
-      - 美国_TG@nodesharing_107
-      - 美国_TG@nodesharing_109
-      - 美国_TG@nodesharing_112
-      - 美国_TG@nodesharing_115
-      - 美国_TG@nodesharing_117
-      - 美国_TG@nodesharing_118
-      - 美国_TG@nodesharing_122
-      - 美国_TG@nodesharing_123
-      - 美国_TG@nodesharing_127
-      - 美国_TG@nodesharing_143
-      - 美国_TG@nodesharing_160
-      - 美国_TG@nodesharing_169
-      - 美国_TG@nodesharing_175
-      - 美国_TG@nodesharing_177
-      - 美国_TG@nodesharing_178
-      - 美国_TG@nodesharing_179
-      - 美国_TG@nodesharing_182
-      - 美国_TG@nodesharing_184
-      - 美国_TG@nodesharing_188
-      - 美国_TG@nodesharing_197
-      - 美国_TG@nodesharing_209
-      - 美国_TG@nodesharing_215
-      - 美国_TG@nodesharing_220
-      - 美国_TG@nodesharing_229
-      - 美国_TG@nodesharing_238
-      - 加拿大_TG@nodesharing_252
-      - 美国_TG@nodesharing_254
-      - 美国_TG@nodesharing_260 2
-      - 美国_TG@nodesharing_261
-      - 加拿大_TG@nodesharing_269
-      - 美国_TG@nodesharing_275
-      - 美国_TG@nodesharing_282
-      - 美国_TG@nodesharing_285
-      - CA
-      - CA 2
-      - 韩国【YouTube由零開始】
-      - 韩国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 美国【YouTube由零開始】 5
-      - 英国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - 加拿大【YouTube由零開始】
-      - 美国【YouTube-由零開始】
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 美国【YouTube由零開始】 12
-      - 【YouTube由零開始】
-      - 【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 3
-      - _CA_加拿大 4
-      - _US_美国 5
-      - _CA_加拿大 5
-      - 美國-费利蒙
       - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - "@ShareCentrePro Hongkong"
-      - _US_美国 6
-      - _US_美国 7
-      - _CA_加拿大 6
-      - _KR_韩国
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _CA_加拿大 7
-      - "@nfeng6 🇭🇰"
-      - "@nfeng6 🇭🇰 3"
-      - "@nfeng6 🇭🇰 7"
-      - "@nfeng6 🇯🇵 13"
-      - "@nfeng6 🇯🇵 14"
-      - "@nfeng6 🇯🇵 16"
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
+      - "@nfeng6 SG_1517"
+      - "@nfeng6 SG_1525"
+      - "@nfeng6 SG_1516"
+      - "@nfeng6 【VIP】Singapore 9"
       - vpnpool-SG-DigitalOcean
       - vpnpool-SG-DigitalOcean 2
+      - vpnpool-Tokyo-Linode
       - vpnpool-SG-DigitalOcean 3
-      - vpnpool-Tokyo-EC2
-      - vpnpool-Ashburn-EC2-dip
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-香港腾讯云
-      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 4
       - vpnpool-SG-DigitalOcean 5
+      - vpnpool-Tokyo-Linode 2
       - vpnpool-SG-DigitalOcean 6
+      - vpnpool-香港腾讯云
+      - vpnpool-Tokyo-Linode 3
+      - "@nfeng6🇯🇵 日本02"
+      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 7
-      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 8
+      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 9
-      - vpnpool-Tokyo-EC2 2
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-Ashburn-EC2-dip 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-香港腾讯云 3
       - vpnpool-SG-DigitalOcean 10
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 香港腾讯云@vpnpool
-      - 香港腾讯云@vpnpool 2
-      - 香港腾讯云@vpnpool 3
-      - 香港腾讯云@vpnpool 4
+      - vpnpool-香港腾讯云 3
+      - "[VIP]香港2|负载均衡|BGP|1.2x"
+      - "@nfeng6🇮🇳 印度03"
+      - vpnpool-Tokyo-Linode 5
+      - "[VIP]台湾|广港链路|Netflix"
+      - 德国(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_48
+      - 美国_TG@nodesharing_260
+      - 美国_TG@nodesharing_38
+      - 美国_TG@nodesharing_35
+      - 美国_TG@nodesharing_45
+      - 美国(绿头外网集团)(Public) 69
+      - "@nfeng6 DE_691"
+      - 美国_TG@nodesharing_46
+      - "@nfeng6_DE_612"
+      - 美国节点更新https://bit.ly/3oOSZUc-请订阅我的频道
+      - 美国【YouTube由零開始】
+      - _US_美国
+      - 美国(绿头外网集团)(Public)
+      - "@nfeng6 DE_589"
+      - 美国_TG@nodesharing_188
+      - 美国_TG@nodesharing_260 2
+      - 美国(绿头外网集团)(Public) 2
+      - _US_美国 2
+      - "@nfeng6 US_1798"
+      - "@nfeng6_DE_615"
+      - 美国(绿头外网集团)(Public) 83
+      - _US_美国 3
+      - 美国_TG@nodesharing_160
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 3
+      - "@nfeng6 US_2459"
+      - 美国_TG@nodesharing_29
+      - 美国_TG@nodesharing_126
+      - "@nfeng6 US_1746"
+      - "@nfeng6 US_2458"
+      - 美国_TG@nodesharing_117
+      - 科技网络 2
+      - 美国_TG@nodesharing_277
+      - "@nfeng6 US_2464"
+      - 美国_TG@nodesharing_276
+      - 加拿大(绿头外网集团)(Public) 14
+      - "@nfeng6_ZZ_4019"
+      - 加拿大(绿头外网集团)(Public) 53
+      - 美国_TG@nodesharing_262
+      - "@nfeng6_US_2250"
+      - US-38.121.43.91-1127
+      - "@nfeng6_US_2251"
+      - _US_美国 4
+      - 美国(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 5
+      - 加拿大(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 6
+      - "@nfeng6 US_2867"
+      - 美国【YouTube由零開始】 2
+      - 美国_TG@nodesharing_175
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 3
+      - US_2375 @WangCai_1
+      - 美国_TG@nodesharing_195
+      - 科技网络 3
+      - _US_美国 5
+      - _US_美国 6
+      - 美国(绿头外网集团)(Public) 7
+      - 加拿大_TG@nodesharing_269
+      - 美国(绿头外网集团)(Public) 8
+      - _US_美国 7
+      - US_9101 @WangCai_1
+      - 美国_TG@nodesharing_254
+      - 美国_TG@nodesharing_266
+      - 美国_TG@nodesharing_112
+      - "[VIP]台湾|BGP中转|Netflix"
+      - 美国_TG@nodesharing_260 3
+      - "@nfeng6 US_2466"
+      - "@nfeng6 ZZ_3853"
+      - _CA_加拿大
+      - "@nfeng6 ZZ_3840"
+      - "@nfeng6 ZZ_4194"
+      - 加拿大(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_278
+      - 科技网络 4
+      - 美国_TG@nodesharing_219
+      - "@nfeng6 ZZ_3797"
+      - _US_美国 8
+      - 美国_TG@nodesharing_186
+      - "@nfeng6 US_2455"
+      - "@nfeng6 ZZ_3778"
+      - 美国【YouTube由零開始】 4
+      - _US_美国 9
+      - 美国(绿头外网集团)(Public) 9
+      - "@nfeng6 ZZ_4014"
+      - 加拿大(绿头外网集团)(Public) 2
+      - 美国_TG@nodesharing_220
+      - 美国【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 59
+      - 美国_TG@nodesharing_265
+      - 加拿大(绿头外网集团)(Public) 3
+      - US_8090 @WangCai_1
+      - 美国_TG@nodesharing_209
+      - 美国_TG@nodesharing_229
+      - "@nfeng6 ZZ_3824"
+      - US_5004 @WangCai_1
+      - "@nfeng6 ZZ_3783"
+      - _CA_加拿大 2
+      - 科技网络 5
+      - 美国(绿头外网集团)(Public) 11
+      - "@nfeng6_ZZ_3595"
+      - 科技网络 6
+      - _CA_加拿大 3
+      - "@nfeng6_US_3263"
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 12
+      - "@nfeng6 ZZ_3789"
+      - "@nfeng6 CA_377"
+      - 美国_TG@nodesharing_115
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 37
+      - 加拿大(绿头外网集团)(Public) 6
+      - 美国_TG@nodesharing_275
+      - "@nfeng6 US_2434"
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 35
+      - 美国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 3
+      - 加拿大(绿头外网集团)(Public) 7
+      - _US_美国 10
+      - 科技网络_72
+      - _CA_加拿大 4
+      - "@nfeng6 ZZ_3845"
+      - "@nfeng6 US_2825"
+      - "@nfeng6 US_2620"
+      - "@nfeng6 US_2814"
+      - "@nfeng6_ZZ_3637"
+      - 加拿大【YouTube由零開始】 4
+      - _CA_加拿大 5
+      - 美国(绿头外网集团)(Public) 13
+      - _CA_加拿大 6
+      - "@nfeng6 US_1612"
+      - "@nfeng6 CA_216"
+      - 美国_TG@nodesharing_282
+      - 法国【YouTube由零開始】
+      - 美国【YouTube由零開始】 7
+      - 科技网络 7
+      - 英国(绿头外网集团)(Public)
+      - "@nfeng6_ZZ_3662"
+      - US_6379 @WangCai_1
+      - _US_美国 11
+      - _GB_英国
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 8
+      - "@nfeng6 ZZ_3870"
+      - CA
+      - _US_美国 12
+      - ZZ_2512
+      - _US_美国 13
+      - _US_美国 14
+      - 加拿大(绿头外网集团)(Public) 58
+      - "@nfeng6 ZZ_3790"
+      - 群:166416961_🇨🇦_CA_加拿大_157
+      - _CA_加拿大 7
+      - 美国【YouTube由零開始】 8
+      - _CA_加拿大 8
+      - _US_0116节点_79
+      - 加拿大(绿头外网集团)(Public) 9
+      - "@nfeng6 US_3431"
+      - 加拿大(绿头外网集团)(Public) 10
+      - 科技网络 8
+      - 科技网络 9
+      - _CA_加拿大 9
+      - 加拿大(绿头外网集团)(Public) 12
+      - 美国(绿头外网集团)(Public) 8 2
+      - 英国【YouTube由零開始】
+      - _CA_加拿大 10
+      - 群:166416961_🇨🇦_CA_加拿大_187
+      - _CA_加拿大 11
+      - 加拿大(绿头外网集团)(Public) 13
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -1034,293 +842,214 @@ proxy-groups:
       - 🎯 全球直连
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
-      - 香港(绿头外网集团)(Public) 33
-      - vpnpool-香港HKBN
-      - vpnpool-香港HKT-game
-      - vpnpool-Tokyo-M247
-      - vpnpool-Tokyo-M247 2
-      - vpnpool-SG-Contabo
-      - vpnpool-SG-Contabo 2
-      - vpnpool-香港HKBN 2
-      - vpnpool-香港HKT-game 2
-      - vpnpool-Tokyo-M247 3
-      - vpnpool-LAX-M247
-      - vpnpool-Seoul-Choopa
-      - US_5003+@WangCai_1
-      - US_0443+@WangCai_1
-      - _CA_加拿大
-      - +@nfeng6_US_2134
-      - 美国_TG@nodesharing_155
-      - 美国【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_157
-      - 群:166416961_🇨🇦_CA_加拿大_196
-      - 美国_TG@nodesharing_78
-      - 群:166416961_🇺🇸_US_美国_209
-      - TG+@ShareCentrePro_CA_加拿大
-      - 美国【YouTube由零開始】 2
-      - +@nfeng6_DE_612
-      - "@nfeng6_ZZ_3637"
-      - +@nfeng6_DE_615
-      - +@nfeng6_US_2941
-      - "@nfeng6_ZZ_3595"
-      - "@nfeng6_ZZ_3587"
-      - "@nfeng6_CA_358"
-      - +@nfeng6_US_2250
-      - "@nfeng6_CA_252"
-      - US-38.121.43.91-1127
-      - _US_美国
-      - _US_美国 2
-      - US_7002+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_2375+@WangCai_1
-      - US_3389+@WangCai_1
-      - _CA_加拿大 2
-      - "@nfeng6_ZZ_3677"
-      - _CA_加拿大 3
-      - 美国_TG@nodesharing_260
-      - 美国【YouTube由零開始】 3
-      - 美国_TG@nodesharing_253
-      - Dallas-ColoCrossing
-      - _US_美国 3
-      - _US_美国 4
-      - +美国(绿头外网集团)(Public)+8
-      - +美国(绿头外网集团)(Public)+10
-      - +美国(绿头外网集团)(Public)+63
-      - +美国(绿头外网集团)(Public)+74
-      - +加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开）+35
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+57
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+60
-      - vpnpool-Novosibirsk-Adman
-      - vpnpool-Novosibirsk-Adman 2
-      - 香港_TG@nodesharing_12
-      - 美国_TG@nodesharing_19
-      - 美国_TG@nodesharing_20
-      - 美国_TG@nodesharing_21
-      - 美国_TG@nodesharing_22
-      - 美国_TG@nodesharing_23
-      - 美国_TG@nodesharing_24
-      - 美国_TG@nodesharing_27
-      - 美国_TG@nodesharing_28
-      - 美国_TG@nodesharing_29
-      - 美国_TG@nodesharing_30
-      - 美国_TG@nodesharing_32
-      - 美国_TG@nodesharing_35
-      - 美国_TG@nodesharing_38
-      - 美国_TG@nodesharing_44
-      - 美国_TG@nodesharing_45
-      - 美国_TG@nodesharing_48
-      - 美国_TG@nodesharing_54
-      - 美国_TG@nodesharing_57
-      - 美国_TG@nodesharing_60
-      - 美国_TG@nodesharing_62
-      - 美国_TG@nodesharing_64
-      - 美国_TG@nodesharing_66
-      - 美国_TG@nodesharing_78 2
-      - 美国_TG@nodesharing_79
-      - 美国_TG@nodesharing_80
-      - 美国_TG@nodesharing_82
-      - 美国_TG@nodesharing_85
-      - 美国_TG@nodesharing_88
-      - 美国_TG@nodesharing_93
-      - 美国_TG@nodesharing_102
-      - 美国_TG@nodesharing_105
-      - 美国_TG@nodesharing_106
-      - 美国_TG@nodesharing_107
-      - 美国_TG@nodesharing_109
-      - 美国_TG@nodesharing_112
-      - 美国_TG@nodesharing_115
-      - 美国_TG@nodesharing_117
-      - 美国_TG@nodesharing_118
-      - 美国_TG@nodesharing_122
-      - 美国_TG@nodesharing_123
-      - 美国_TG@nodesharing_127
-      - 美国_TG@nodesharing_143
-      - 美国_TG@nodesharing_160
-      - 美国_TG@nodesharing_169
-      - 美国_TG@nodesharing_175
-      - 美国_TG@nodesharing_177
-      - 美国_TG@nodesharing_178
-      - 美国_TG@nodesharing_179
-      - 美国_TG@nodesharing_182
-      - 美国_TG@nodesharing_184
-      - 美国_TG@nodesharing_188
-      - 美国_TG@nodesharing_197
-      - 美国_TG@nodesharing_209
-      - 美国_TG@nodesharing_215
-      - 美国_TG@nodesharing_220
-      - 美国_TG@nodesharing_229
-      - 美国_TG@nodesharing_238
-      - 加拿大_TG@nodesharing_252
-      - 美国_TG@nodesharing_254
-      - 美国_TG@nodesharing_260 2
-      - 美国_TG@nodesharing_261
-      - 加拿大_TG@nodesharing_269
-      - 美国_TG@nodesharing_275
-      - 美国_TG@nodesharing_282
-      - 美国_TG@nodesharing_285
-      - CA
-      - CA 2
-      - 韩国【YouTube由零開始】
-      - 韩国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 美国【YouTube由零開始】 5
-      - 英国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - 加拿大【YouTube由零開始】
-      - 美国【YouTube-由零開始】
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 美国【YouTube由零開始】 12
-      - 【YouTube由零開始】
-      - 【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 3
-      - _CA_加拿大 4
-      - _US_美国 5
-      - _CA_加拿大 5
-      - 美國-费利蒙
       - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - "@ShareCentrePro Hongkong"
-      - _US_美国 6
-      - _US_美国 7
-      - _CA_加拿大 6
-      - _KR_韩国
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _CA_加拿大 7
-      - "@nfeng6 🇭🇰"
-      - "@nfeng6 🇭🇰 3"
-      - "@nfeng6 🇭🇰 7"
-      - "@nfeng6 🇯🇵 13"
-      - "@nfeng6 🇯🇵 14"
-      - "@nfeng6 🇯🇵 16"
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
+      - "@nfeng6 SG_1517"
+      - "@nfeng6 SG_1525"
+      - "@nfeng6 SG_1516"
+      - "@nfeng6 【VIP】Singapore 9"
       - vpnpool-SG-DigitalOcean
       - vpnpool-SG-DigitalOcean 2
+      - vpnpool-Tokyo-Linode
       - vpnpool-SG-DigitalOcean 3
-      - vpnpool-Tokyo-EC2
-      - vpnpool-Ashburn-EC2-dip
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-香港腾讯云
-      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 4
       - vpnpool-SG-DigitalOcean 5
+      - vpnpool-Tokyo-Linode 2
       - vpnpool-SG-DigitalOcean 6
+      - vpnpool-香港腾讯云
+      - vpnpool-Tokyo-Linode 3
+      - "@nfeng6🇯🇵 日本02"
+      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 7
-      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 8
+      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 9
-      - vpnpool-Tokyo-EC2 2
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-Ashburn-EC2-dip 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-香港腾讯云 3
       - vpnpool-SG-DigitalOcean 10
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 香港腾讯云@vpnpool
-      - 香港腾讯云@vpnpool 2
-      - 香港腾讯云@vpnpool 3
-      - 香港腾讯云@vpnpool 4
+      - vpnpool-香港腾讯云 3
+      - "[VIP]香港2|负载均衡|BGP|1.2x"
+      - "@nfeng6🇮🇳 印度03"
+      - vpnpool-Tokyo-Linode 5
+      - "[VIP]台湾|广港链路|Netflix"
+      - 德国(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_48
+      - 美国_TG@nodesharing_260
+      - 美国_TG@nodesharing_38
+      - 美国_TG@nodesharing_35
+      - 美国_TG@nodesharing_45
+      - 美国(绿头外网集团)(Public) 69
+      - "@nfeng6 DE_691"
+      - 美国_TG@nodesharing_46
+      - "@nfeng6_DE_612"
+      - 美国节点更新https://bit.ly/3oOSZUc-请订阅我的频道
+      - 美国【YouTube由零開始】
+      - _US_美国
+      - 美国(绿头外网集团)(Public)
+      - "@nfeng6 DE_589"
+      - 美国_TG@nodesharing_188
+      - 美国_TG@nodesharing_260 2
+      - 美国(绿头外网集团)(Public) 2
+      - _US_美国 2
+      - "@nfeng6 US_1798"
+      - "@nfeng6_DE_615"
+      - 美国(绿头外网集团)(Public) 83
+      - _US_美国 3
+      - 美国_TG@nodesharing_160
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 3
+      - "@nfeng6 US_2459"
+      - 美国_TG@nodesharing_29
+      - 美国_TG@nodesharing_126
+      - "@nfeng6 US_1746"
+      - "@nfeng6 US_2458"
+      - 美国_TG@nodesharing_117
+      - 科技网络 2
+      - 美国_TG@nodesharing_277
+      - "@nfeng6 US_2464"
+      - 美国_TG@nodesharing_276
+      - 加拿大(绿头外网集团)(Public) 14
+      - "@nfeng6_ZZ_4019"
+      - 加拿大(绿头外网集团)(Public) 53
+      - 美国_TG@nodesharing_262
+      - "@nfeng6_US_2250"
+      - US-38.121.43.91-1127
+      - "@nfeng6_US_2251"
+      - _US_美国 4
+      - 美国(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 5
+      - 加拿大(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 6
+      - "@nfeng6 US_2867"
+      - 美国【YouTube由零開始】 2
+      - 美国_TG@nodesharing_175
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 3
+      - US_2375 @WangCai_1
+      - 美国_TG@nodesharing_195
+      - 科技网络 3
+      - _US_美国 5
+      - _US_美国 6
+      - 美国(绿头外网集团)(Public) 7
+      - 加拿大_TG@nodesharing_269
+      - 美国(绿头外网集团)(Public) 8
+      - _US_美国 7
+      - US_9101 @WangCai_1
+      - 美国_TG@nodesharing_254
+      - 美国_TG@nodesharing_266
+      - 美国_TG@nodesharing_112
+      - "[VIP]台湾|BGP中转|Netflix"
+      - 美国_TG@nodesharing_260 3
+      - "@nfeng6 US_2466"
+      - "@nfeng6 ZZ_3853"
+      - _CA_加拿大
+      - "@nfeng6 ZZ_3840"
+      - "@nfeng6 ZZ_4194"
+      - 加拿大(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_278
+      - 科技网络 4
+      - 美国_TG@nodesharing_219
+      - "@nfeng6 ZZ_3797"
+      - _US_美国 8
+      - 美国_TG@nodesharing_186
+      - "@nfeng6 US_2455"
+      - "@nfeng6 ZZ_3778"
+      - 美国【YouTube由零開始】 4
+      - _US_美国 9
+      - 美国(绿头外网集团)(Public) 9
+      - "@nfeng6 ZZ_4014"
+      - 加拿大(绿头外网集团)(Public) 2
+      - 美国_TG@nodesharing_220
+      - 美国【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 59
+      - 美国_TG@nodesharing_265
+      - 加拿大(绿头外网集团)(Public) 3
+      - US_8090 @WangCai_1
+      - 美国_TG@nodesharing_209
+      - 美国_TG@nodesharing_229
+      - "@nfeng6 ZZ_3824"
+      - US_5004 @WangCai_1
+      - "@nfeng6 ZZ_3783"
+      - _CA_加拿大 2
+      - 科技网络 5
+      - 美国(绿头外网集团)(Public) 11
+      - "@nfeng6_ZZ_3595"
+      - 科技网络 6
+      - _CA_加拿大 3
+      - "@nfeng6_US_3263"
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 12
+      - "@nfeng6 ZZ_3789"
+      - "@nfeng6 CA_377"
+      - 美国_TG@nodesharing_115
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 37
+      - 加拿大(绿头外网集团)(Public) 6
+      - 美国_TG@nodesharing_275
+      - "@nfeng6 US_2434"
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 35
+      - 美国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 3
+      - 加拿大(绿头外网集团)(Public) 7
+      - _US_美国 10
+      - 科技网络_72
+      - _CA_加拿大 4
+      - "@nfeng6 ZZ_3845"
+      - "@nfeng6 US_2825"
+      - "@nfeng6 US_2620"
+      - "@nfeng6 US_2814"
+      - "@nfeng6_ZZ_3637"
+      - 加拿大【YouTube由零開始】 4
+      - _CA_加拿大 5
+      - 美国(绿头外网集团)(Public) 13
+      - _CA_加拿大 6
+      - "@nfeng6 US_1612"
+      - "@nfeng6 CA_216"
+      - 美国_TG@nodesharing_282
+      - 法国【YouTube由零開始】
+      - 美国【YouTube由零開始】 7
+      - 科技网络 7
+      - 英国(绿头外网集团)(Public)
+      - "@nfeng6_ZZ_3662"
+      - US_6379 @WangCai_1
+      - _US_美国 11
+      - _GB_英国
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 8
+      - "@nfeng6 ZZ_3870"
+      - CA
+      - _US_美国 12
+      - ZZ_2512
+      - _US_美国 13
+      - _US_美国 14
+      - 加拿大(绿头外网集团)(Public) 58
+      - "@nfeng6 ZZ_3790"
+      - 群:166416961_🇨🇦_CA_加拿大_157
+      - _CA_加拿大 7
+      - 美国【YouTube由零開始】 8
+      - _CA_加拿大 8
+      - _US_0116节点_79
+      - 加拿大(绿头外网集团)(Public) 9
+      - "@nfeng6 US_3431"
+      - 加拿大(绿头外网集团)(Public) 10
+      - 科技网络 8
+      - 科技网络 9
+      - _CA_加拿大 9
+      - 加拿大(绿头外网集团)(Public) 12
+      - 美国(绿头外网集团)(Public) 8 2
+      - 英国【YouTube由零開始】
+      - _CA_加拿大 10
+      - 群:166416961_🇨🇦_CA_加拿大_187
+      - _CA_加拿大 11
+      - 加拿大(绿头外网集团)(Public) 13
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 香港(绿头外网集团)(Public) 33
-      - vpnpool-香港HKBN
-      - vpnpool-香港HKT-game
-      - vpnpool-香港HKBN 2
-      - vpnpool-香港HKT-game 2
-      - 香港_TG@nodesharing_12
       - vpnpool-香港腾讯云
       - vpnpool-香港腾讯云 2
       - vpnpool-香港腾讯云 3
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 香港腾讯云@vpnpool
-      - 香港腾讯云@vpnpool 2
-      - 香港腾讯云@vpnpool 3
-      - 香港腾讯云@vpnpool 4
+      - "[VIP]香港2|负载均衡|BGP|1.2x"
+      - "[VIP]台湾|广港链路|Netflix"
+      - "[VIP]台湾|BGP中转|Netflix"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -1329,252 +1058,204 @@ proxy-groups:
       - 🔰 节点选择
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
-      - 香港(绿头外网集团)(Public) 33
-      - vpnpool-香港HKBN
-      - vpnpool-香港HKT-game
-      - vpnpool-Tokyo-M247
-      - vpnpool-Tokyo-M247 2
-      - vpnpool-SG-Contabo
-      - vpnpool-SG-Contabo 2
-      - vpnpool-香港HKBN 2
-      - vpnpool-香港HKT-game 2
-      - vpnpool-Tokyo-M247 3
-      - vpnpool-LAX-M247
-      - vpnpool-Seoul-Choopa
-      - US_5003+@WangCai_1
-      - US_0443+@WangCai_1
-      - _CA_加拿大
-      - +@nfeng6_US_2134
-      - 美国_TG@nodesharing_155
-      - 美国【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_157
-      - 群:166416961_🇨🇦_CA_加拿大_196
-      - 美国_TG@nodesharing_78
-      - 群:166416961_🇺🇸_US_美国_209
-      - TG+@ShareCentrePro_CA_加拿大
-      - 美国【YouTube由零開始】 2
-      - +@nfeng6_DE_612
-      - "@nfeng6_ZZ_3637"
-      - +@nfeng6_DE_615
-      - +@nfeng6_US_2941
-      - "@nfeng6_ZZ_3595"
-      - "@nfeng6_ZZ_3587"
-      - "@nfeng6_CA_358"
-      - +@nfeng6_US_2250
-      - "@nfeng6_CA_252"
-      - US-38.121.43.91-1127
-      - _US_美国
-      - _US_美国 2
-      - US_7002+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_2375+@WangCai_1
-      - US_3389+@WangCai_1
-      - _CA_加拿大 2
-      - "@nfeng6_ZZ_3677"
-      - _CA_加拿大 3
-      - 美国_TG@nodesharing_260
-      - 美国【YouTube由零開始】 3
-      - 美国_TG@nodesharing_253
-      - Dallas-ColoCrossing
-      - _US_美国 3
-      - _US_美国 4
-      - +美国(绿头外网集团)(Public)+8
-      - +美国(绿头外网集团)(Public)+10
-      - +美国(绿头外网集团)(Public)+63
-      - +美国(绿头外网集团)(Public)+74
-      - +加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开）+35
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+57
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+60
-      - vpnpool-Novosibirsk-Adman
-      - vpnpool-Novosibirsk-Adman 2
-      - 香港_TG@nodesharing_12
-      - 美国_TG@nodesharing_19
-      - 美国_TG@nodesharing_20
-      - 美国_TG@nodesharing_21
-      - 美国_TG@nodesharing_22
-      - 美国_TG@nodesharing_23
-      - 美国_TG@nodesharing_24
-      - 美国_TG@nodesharing_27
-      - 美国_TG@nodesharing_28
-      - 美国_TG@nodesharing_29
-      - 美国_TG@nodesharing_30
-      - 美国_TG@nodesharing_32
-      - 美国_TG@nodesharing_35
-      - 美国_TG@nodesharing_38
-      - 美国_TG@nodesharing_44
-      - 美国_TG@nodesharing_45
-      - 美国_TG@nodesharing_48
-      - 美国_TG@nodesharing_54
-      - 美国_TG@nodesharing_57
-      - 美国_TG@nodesharing_60
-      - 美国_TG@nodesharing_62
-      - 美国_TG@nodesharing_64
-      - 美国_TG@nodesharing_66
-      - 美国_TG@nodesharing_78 2
-      - 美国_TG@nodesharing_79
-      - 美国_TG@nodesharing_80
-      - 美国_TG@nodesharing_82
-      - 美国_TG@nodesharing_85
-      - 美国_TG@nodesharing_88
-      - 美国_TG@nodesharing_93
-      - 美国_TG@nodesharing_102
-      - 美国_TG@nodesharing_105
-      - 美国_TG@nodesharing_106
-      - 美国_TG@nodesharing_107
-      - 美国_TG@nodesharing_109
-      - 美国_TG@nodesharing_112
-      - 美国_TG@nodesharing_115
-      - 美国_TG@nodesharing_117
-      - 美国_TG@nodesharing_118
-      - 美国_TG@nodesharing_122
-      - 美国_TG@nodesharing_123
-      - 美国_TG@nodesharing_127
-      - 美国_TG@nodesharing_143
-      - 美国_TG@nodesharing_160
-      - 美国_TG@nodesharing_169
-      - 美国_TG@nodesharing_175
-      - 美国_TG@nodesharing_177
-      - 美国_TG@nodesharing_178
-      - 美国_TG@nodesharing_179
-      - 美国_TG@nodesharing_182
-      - 美国_TG@nodesharing_184
-      - 美国_TG@nodesharing_188
-      - 美国_TG@nodesharing_197
-      - 美国_TG@nodesharing_209
-      - 美国_TG@nodesharing_215
-      - 美国_TG@nodesharing_220
-      - 美国_TG@nodesharing_229
-      - 美国_TG@nodesharing_238
-      - 加拿大_TG@nodesharing_252
-      - 美国_TG@nodesharing_254
-      - 美国_TG@nodesharing_260 2
-      - 美国_TG@nodesharing_261
-      - 加拿大_TG@nodesharing_269
-      - 美国_TG@nodesharing_275
-      - 美国_TG@nodesharing_282
-      - 美国_TG@nodesharing_285
-      - CA
-      - CA 2
-      - 韩国【YouTube由零開始】
-      - 韩国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 美国【YouTube由零開始】 5
-      - 英国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - 加拿大【YouTube由零開始】
-      - 美国【YouTube-由零開始】
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 美国【YouTube由零開始】 12
-      - 【YouTube由零開始】
-      - 【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 3
-      - _CA_加拿大 4
-      - _US_美国 5
-      - _CA_加拿大 5
-      - 美國-费利蒙
       - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - "@ShareCentrePro Hongkong"
-      - _US_美国 6
-      - _US_美国 7
-      - _CA_加拿大 6
-      - _KR_韩国
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _CA_加拿大 7
-      - "@nfeng6 🇭🇰"
-      - "@nfeng6 🇭🇰 3"
-      - "@nfeng6 🇭🇰 7"
-      - "@nfeng6 🇯🇵 13"
-      - "@nfeng6 🇯🇵 14"
-      - "@nfeng6 🇯🇵 16"
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
+      - "@nfeng6 SG_1517"
+      - "@nfeng6 SG_1525"
+      - "@nfeng6 SG_1516"
+      - "@nfeng6 【VIP】Singapore 9"
       - vpnpool-SG-DigitalOcean
       - vpnpool-SG-DigitalOcean 2
+      - vpnpool-Tokyo-Linode
       - vpnpool-SG-DigitalOcean 3
-      - vpnpool-Tokyo-EC2
-      - vpnpool-Ashburn-EC2-dip
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-香港腾讯云
-      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 4
       - vpnpool-SG-DigitalOcean 5
+      - vpnpool-Tokyo-Linode 2
       - vpnpool-SG-DigitalOcean 6
+      - vpnpool-香港腾讯云
+      - vpnpool-Tokyo-Linode 3
+      - "@nfeng6🇯🇵 日本02"
+      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 7
-      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 8
+      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 9
-      - vpnpool-Tokyo-EC2 2
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-Ashburn-EC2-dip 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-香港腾讯云 3
       - vpnpool-SG-DigitalOcean 10
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 香港腾讯云@vpnpool
-      - 香港腾讯云@vpnpool 2
-      - 香港腾讯云@vpnpool 3
-      - 香港腾讯云@vpnpool 4
+      - vpnpool-香港腾讯云 3
+      - "[VIP]香港2|负载均衡|BGP|1.2x"
+      - "@nfeng6🇮🇳 印度03"
+      - vpnpool-Tokyo-Linode 5
+      - "[VIP]台湾|广港链路|Netflix"
+      - 德国(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_48
+      - 美国_TG@nodesharing_260
+      - 美国_TG@nodesharing_38
+      - 美国_TG@nodesharing_35
+      - 美国_TG@nodesharing_45
+      - 美国(绿头外网集团)(Public) 69
+      - "@nfeng6 DE_691"
+      - 美国_TG@nodesharing_46
+      - "@nfeng6_DE_612"
+      - 美国节点更新https://bit.ly/3oOSZUc-请订阅我的频道
+      - 美国【YouTube由零開始】
+      - _US_美国
+      - 美国(绿头外网集团)(Public)
+      - "@nfeng6 DE_589"
+      - 美国_TG@nodesharing_188
+      - 美国_TG@nodesharing_260 2
+      - 美国(绿头外网集团)(Public) 2
+      - _US_美国 2
+      - "@nfeng6 US_1798"
+      - "@nfeng6_DE_615"
+      - 美国(绿头外网集团)(Public) 83
+      - _US_美国 3
+      - 美国_TG@nodesharing_160
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 3
+      - "@nfeng6 US_2459"
+      - 美国_TG@nodesharing_29
+      - 美国_TG@nodesharing_126
+      - "@nfeng6 US_1746"
+      - "@nfeng6 US_2458"
+      - 美国_TG@nodesharing_117
+      - 科技网络 2
+      - 美国_TG@nodesharing_277
+      - "@nfeng6 US_2464"
+      - 美国_TG@nodesharing_276
+      - 加拿大(绿头外网集团)(Public) 14
+      - "@nfeng6_ZZ_4019"
+      - 加拿大(绿头外网集团)(Public) 53
+      - 美国_TG@nodesharing_262
+      - "@nfeng6_US_2250"
+      - US-38.121.43.91-1127
+      - "@nfeng6_US_2251"
+      - _US_美国 4
+      - 美国(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 5
+      - 加拿大(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 6
+      - "@nfeng6 US_2867"
+      - 美国【YouTube由零開始】 2
+      - 美国_TG@nodesharing_175
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 3
+      - US_2375 @WangCai_1
+      - 美国_TG@nodesharing_195
+      - 科技网络 3
+      - _US_美国 5
+      - _US_美国 6
+      - 美国(绿头外网集团)(Public) 7
+      - 加拿大_TG@nodesharing_269
+      - 美国(绿头外网集团)(Public) 8
+      - _US_美国 7
+      - US_9101 @WangCai_1
+      - 美国_TG@nodesharing_254
+      - 美国_TG@nodesharing_266
+      - 美国_TG@nodesharing_112
+      - "[VIP]台湾|BGP中转|Netflix"
+      - 美国_TG@nodesharing_260 3
+      - "@nfeng6 US_2466"
+      - "@nfeng6 ZZ_3853"
+      - _CA_加拿大
+      - "@nfeng6 ZZ_3840"
+      - "@nfeng6 ZZ_4194"
+      - 加拿大(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_278
+      - 科技网络 4
+      - 美国_TG@nodesharing_219
+      - "@nfeng6 ZZ_3797"
+      - _US_美国 8
+      - 美国_TG@nodesharing_186
+      - "@nfeng6 US_2455"
+      - "@nfeng6 ZZ_3778"
+      - 美国【YouTube由零開始】 4
+      - _US_美国 9
+      - 美国(绿头外网集团)(Public) 9
+      - "@nfeng6 ZZ_4014"
+      - 加拿大(绿头外网集团)(Public) 2
+      - 美国_TG@nodesharing_220
+      - 美国【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 59
+      - 美国_TG@nodesharing_265
+      - 加拿大(绿头外网集团)(Public) 3
+      - US_8090 @WangCai_1
+      - 美国_TG@nodesharing_209
+      - 美国_TG@nodesharing_229
+      - "@nfeng6 ZZ_3824"
+      - US_5004 @WangCai_1
+      - "@nfeng6 ZZ_3783"
+      - _CA_加拿大 2
+      - 科技网络 5
+      - 美国(绿头外网集团)(Public) 11
+      - "@nfeng6_ZZ_3595"
+      - 科技网络 6
+      - _CA_加拿大 3
+      - "@nfeng6_US_3263"
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 12
+      - "@nfeng6 ZZ_3789"
+      - "@nfeng6 CA_377"
+      - 美国_TG@nodesharing_115
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 37
+      - 加拿大(绿头外网集团)(Public) 6
+      - 美国_TG@nodesharing_275
+      - "@nfeng6 US_2434"
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 35
+      - 美国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 3
+      - 加拿大(绿头外网集团)(Public) 7
+      - _US_美国 10
+      - 科技网络_72
+      - _CA_加拿大 4
+      - "@nfeng6 ZZ_3845"
+      - "@nfeng6 US_2825"
+      - "@nfeng6 US_2620"
+      - "@nfeng6 US_2814"
+      - "@nfeng6_ZZ_3637"
+      - 加拿大【YouTube由零開始】 4
+      - _CA_加拿大 5
+      - 美国(绿头外网集团)(Public) 13
+      - _CA_加拿大 6
+      - "@nfeng6 US_1612"
+      - "@nfeng6 CA_216"
+      - 美国_TG@nodesharing_282
+      - 法国【YouTube由零開始】
+      - 美国【YouTube由零開始】 7
+      - 科技网络 7
+      - 英国(绿头外网集团)(Public)
+      - "@nfeng6_ZZ_3662"
+      - US_6379 @WangCai_1
+      - _US_美国 11
+      - _GB_英国
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 8
+      - "@nfeng6 ZZ_3870"
+      - CA
+      - _US_美国 12
+      - ZZ_2512
+      - _US_美国 13
+      - _US_美国 14
+      - 加拿大(绿头外网集团)(Public) 58
+      - "@nfeng6 ZZ_3790"
+      - 群:166416961_🇨🇦_CA_加拿大_157
+      - _CA_加拿大 7
+      - 美国【YouTube由零開始】 8
+      - _CA_加拿大 8
+      - _US_0116节点_79
+      - 加拿大(绿头外网集团)(Public) 9
+      - "@nfeng6 US_3431"
+      - 加拿大(绿头外网集团)(Public) 10
+      - 科技网络 8
+      - 科技网络 9
+      - _CA_加拿大 9
+      - 加拿大(绿头外网集团)(Public) 12
+      - 美国(绿头外网集团)(Public) 8 2
+      - 英国【YouTube由零開始】
+      - _CA_加拿大 10
+      - 群:166416961_🇨🇦_CA_加拿大_187
+      - _CA_加拿大 11
+      - 加拿大(绿头外网集团)(Public) 13
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1582,252 +1263,204 @@ proxy-groups:
       - 🎯 全球直连
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
-      - 香港(绿头外网集团)(Public) 33
-      - vpnpool-香港HKBN
-      - vpnpool-香港HKT-game
-      - vpnpool-Tokyo-M247
-      - vpnpool-Tokyo-M247 2
-      - vpnpool-SG-Contabo
-      - vpnpool-SG-Contabo 2
-      - vpnpool-香港HKBN 2
-      - vpnpool-香港HKT-game 2
-      - vpnpool-Tokyo-M247 3
-      - vpnpool-LAX-M247
-      - vpnpool-Seoul-Choopa
-      - US_5003+@WangCai_1
-      - US_0443+@WangCai_1
-      - _CA_加拿大
-      - +@nfeng6_US_2134
-      - 美国_TG@nodesharing_155
-      - 美国【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_157
-      - 群:166416961_🇨🇦_CA_加拿大_196
-      - 美国_TG@nodesharing_78
-      - 群:166416961_🇺🇸_US_美国_209
-      - TG+@ShareCentrePro_CA_加拿大
-      - 美国【YouTube由零開始】 2
-      - +@nfeng6_DE_612
-      - "@nfeng6_ZZ_3637"
-      - +@nfeng6_DE_615
-      - +@nfeng6_US_2941
-      - "@nfeng6_ZZ_3595"
-      - "@nfeng6_ZZ_3587"
-      - "@nfeng6_CA_358"
-      - +@nfeng6_US_2250
-      - "@nfeng6_CA_252"
-      - US-38.121.43.91-1127
-      - _US_美国
-      - _US_美国 2
-      - US_7002+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_2375+@WangCai_1
-      - US_3389+@WangCai_1
-      - _CA_加拿大 2
-      - "@nfeng6_ZZ_3677"
-      - _CA_加拿大 3
-      - 美国_TG@nodesharing_260
-      - 美国【YouTube由零開始】 3
-      - 美国_TG@nodesharing_253
-      - Dallas-ColoCrossing
-      - _US_美国 3
-      - _US_美国 4
-      - +美国(绿头外网集团)(Public)+8
-      - +美国(绿头外网集团)(Public)+10
-      - +美国(绿头外网集团)(Public)+63
-      - +美国(绿头外网集团)(Public)+74
-      - +加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开）+35
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+57
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+60
-      - vpnpool-Novosibirsk-Adman
-      - vpnpool-Novosibirsk-Adman 2
-      - 香港_TG@nodesharing_12
-      - 美国_TG@nodesharing_19
-      - 美国_TG@nodesharing_20
-      - 美国_TG@nodesharing_21
-      - 美国_TG@nodesharing_22
-      - 美国_TG@nodesharing_23
-      - 美国_TG@nodesharing_24
-      - 美国_TG@nodesharing_27
-      - 美国_TG@nodesharing_28
-      - 美国_TG@nodesharing_29
-      - 美国_TG@nodesharing_30
-      - 美国_TG@nodesharing_32
-      - 美国_TG@nodesharing_35
-      - 美国_TG@nodesharing_38
-      - 美国_TG@nodesharing_44
-      - 美国_TG@nodesharing_45
-      - 美国_TG@nodesharing_48
-      - 美国_TG@nodesharing_54
-      - 美国_TG@nodesharing_57
-      - 美国_TG@nodesharing_60
-      - 美国_TG@nodesharing_62
-      - 美国_TG@nodesharing_64
-      - 美国_TG@nodesharing_66
-      - 美国_TG@nodesharing_78 2
-      - 美国_TG@nodesharing_79
-      - 美国_TG@nodesharing_80
-      - 美国_TG@nodesharing_82
-      - 美国_TG@nodesharing_85
-      - 美国_TG@nodesharing_88
-      - 美国_TG@nodesharing_93
-      - 美国_TG@nodesharing_102
-      - 美国_TG@nodesharing_105
-      - 美国_TG@nodesharing_106
-      - 美国_TG@nodesharing_107
-      - 美国_TG@nodesharing_109
-      - 美国_TG@nodesharing_112
-      - 美国_TG@nodesharing_115
-      - 美国_TG@nodesharing_117
-      - 美国_TG@nodesharing_118
-      - 美国_TG@nodesharing_122
-      - 美国_TG@nodesharing_123
-      - 美国_TG@nodesharing_127
-      - 美国_TG@nodesharing_143
-      - 美国_TG@nodesharing_160
-      - 美国_TG@nodesharing_169
-      - 美国_TG@nodesharing_175
-      - 美国_TG@nodesharing_177
-      - 美国_TG@nodesharing_178
-      - 美国_TG@nodesharing_179
-      - 美国_TG@nodesharing_182
-      - 美国_TG@nodesharing_184
-      - 美国_TG@nodesharing_188
-      - 美国_TG@nodesharing_197
-      - 美国_TG@nodesharing_209
-      - 美国_TG@nodesharing_215
-      - 美国_TG@nodesharing_220
-      - 美国_TG@nodesharing_229
-      - 美国_TG@nodesharing_238
-      - 加拿大_TG@nodesharing_252
-      - 美国_TG@nodesharing_254
-      - 美国_TG@nodesharing_260 2
-      - 美国_TG@nodesharing_261
-      - 加拿大_TG@nodesharing_269
-      - 美国_TG@nodesharing_275
-      - 美国_TG@nodesharing_282
-      - 美国_TG@nodesharing_285
-      - CA
-      - CA 2
-      - 韩国【YouTube由零開始】
-      - 韩国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 美国【YouTube由零開始】 5
-      - 英国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - 加拿大【YouTube由零開始】
-      - 美国【YouTube-由零開始】
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 美国【YouTube由零開始】 12
-      - 【YouTube由零開始】
-      - 【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 3
-      - _CA_加拿大 4
-      - _US_美国 5
-      - _CA_加拿大 5
-      - 美國-费利蒙
       - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - "@ShareCentrePro Hongkong"
-      - _US_美国 6
-      - _US_美国 7
-      - _CA_加拿大 6
-      - _KR_韩国
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _CA_加拿大 7
-      - "@nfeng6 🇭🇰"
-      - "@nfeng6 🇭🇰 3"
-      - "@nfeng6 🇭🇰 7"
-      - "@nfeng6 🇯🇵 13"
-      - "@nfeng6 🇯🇵 14"
-      - "@nfeng6 🇯🇵 16"
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
+      - "@nfeng6 SG_1517"
+      - "@nfeng6 SG_1525"
+      - "@nfeng6 SG_1516"
+      - "@nfeng6 【VIP】Singapore 9"
       - vpnpool-SG-DigitalOcean
       - vpnpool-SG-DigitalOcean 2
+      - vpnpool-Tokyo-Linode
       - vpnpool-SG-DigitalOcean 3
-      - vpnpool-Tokyo-EC2
-      - vpnpool-Ashburn-EC2-dip
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-香港腾讯云
-      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 4
       - vpnpool-SG-DigitalOcean 5
+      - vpnpool-Tokyo-Linode 2
       - vpnpool-SG-DigitalOcean 6
+      - vpnpool-香港腾讯云
+      - vpnpool-Tokyo-Linode 3
+      - "@nfeng6🇯🇵 日本02"
+      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 7
-      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 8
+      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 9
-      - vpnpool-Tokyo-EC2 2
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-Ashburn-EC2-dip 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-香港腾讯云 3
       - vpnpool-SG-DigitalOcean 10
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 香港腾讯云@vpnpool
-      - 香港腾讯云@vpnpool 2
-      - 香港腾讯云@vpnpool 3
-      - 香港腾讯云@vpnpool 4
+      - vpnpool-香港腾讯云 3
+      - "[VIP]香港2|负载均衡|BGP|1.2x"
+      - "@nfeng6🇮🇳 印度03"
+      - vpnpool-Tokyo-Linode 5
+      - "[VIP]台湾|广港链路|Netflix"
+      - 德国(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_48
+      - 美国_TG@nodesharing_260
+      - 美国_TG@nodesharing_38
+      - 美国_TG@nodesharing_35
+      - 美国_TG@nodesharing_45
+      - 美国(绿头外网集团)(Public) 69
+      - "@nfeng6 DE_691"
+      - 美国_TG@nodesharing_46
+      - "@nfeng6_DE_612"
+      - 美国节点更新https://bit.ly/3oOSZUc-请订阅我的频道
+      - 美国【YouTube由零開始】
+      - _US_美国
+      - 美国(绿头外网集团)(Public)
+      - "@nfeng6 DE_589"
+      - 美国_TG@nodesharing_188
+      - 美国_TG@nodesharing_260 2
+      - 美国(绿头外网集团)(Public) 2
+      - _US_美国 2
+      - "@nfeng6 US_1798"
+      - "@nfeng6_DE_615"
+      - 美国(绿头外网集团)(Public) 83
+      - _US_美国 3
+      - 美国_TG@nodesharing_160
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 3
+      - "@nfeng6 US_2459"
+      - 美国_TG@nodesharing_29
+      - 美国_TG@nodesharing_126
+      - "@nfeng6 US_1746"
+      - "@nfeng6 US_2458"
+      - 美国_TG@nodesharing_117
+      - 科技网络 2
+      - 美国_TG@nodesharing_277
+      - "@nfeng6 US_2464"
+      - 美国_TG@nodesharing_276
+      - 加拿大(绿头外网集团)(Public) 14
+      - "@nfeng6_ZZ_4019"
+      - 加拿大(绿头外网集团)(Public) 53
+      - 美国_TG@nodesharing_262
+      - "@nfeng6_US_2250"
+      - US-38.121.43.91-1127
+      - "@nfeng6_US_2251"
+      - _US_美国 4
+      - 美国(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 5
+      - 加拿大(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 6
+      - "@nfeng6 US_2867"
+      - 美国【YouTube由零開始】 2
+      - 美国_TG@nodesharing_175
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 3
+      - US_2375 @WangCai_1
+      - 美国_TG@nodesharing_195
+      - 科技网络 3
+      - _US_美国 5
+      - _US_美国 6
+      - 美国(绿头外网集团)(Public) 7
+      - 加拿大_TG@nodesharing_269
+      - 美国(绿头外网集团)(Public) 8
+      - _US_美国 7
+      - US_9101 @WangCai_1
+      - 美国_TG@nodesharing_254
+      - 美国_TG@nodesharing_266
+      - 美国_TG@nodesharing_112
+      - "[VIP]台湾|BGP中转|Netflix"
+      - 美国_TG@nodesharing_260 3
+      - "@nfeng6 US_2466"
+      - "@nfeng6 ZZ_3853"
+      - _CA_加拿大
+      - "@nfeng6 ZZ_3840"
+      - "@nfeng6 ZZ_4194"
+      - 加拿大(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_278
+      - 科技网络 4
+      - 美国_TG@nodesharing_219
+      - "@nfeng6 ZZ_3797"
+      - _US_美国 8
+      - 美国_TG@nodesharing_186
+      - "@nfeng6 US_2455"
+      - "@nfeng6 ZZ_3778"
+      - 美国【YouTube由零開始】 4
+      - _US_美国 9
+      - 美国(绿头外网集团)(Public) 9
+      - "@nfeng6 ZZ_4014"
+      - 加拿大(绿头外网集团)(Public) 2
+      - 美国_TG@nodesharing_220
+      - 美国【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 59
+      - 美国_TG@nodesharing_265
+      - 加拿大(绿头外网集团)(Public) 3
+      - US_8090 @WangCai_1
+      - 美国_TG@nodesharing_209
+      - 美国_TG@nodesharing_229
+      - "@nfeng6 ZZ_3824"
+      - US_5004 @WangCai_1
+      - "@nfeng6 ZZ_3783"
+      - _CA_加拿大 2
+      - 科技网络 5
+      - 美国(绿头外网集团)(Public) 11
+      - "@nfeng6_ZZ_3595"
+      - 科技网络 6
+      - _CA_加拿大 3
+      - "@nfeng6_US_3263"
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 12
+      - "@nfeng6 ZZ_3789"
+      - "@nfeng6 CA_377"
+      - 美国_TG@nodesharing_115
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 37
+      - 加拿大(绿头外网集团)(Public) 6
+      - 美国_TG@nodesharing_275
+      - "@nfeng6 US_2434"
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 35
+      - 美国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 3
+      - 加拿大(绿头外网集团)(Public) 7
+      - _US_美国 10
+      - 科技网络_72
+      - _CA_加拿大 4
+      - "@nfeng6 ZZ_3845"
+      - "@nfeng6 US_2825"
+      - "@nfeng6 US_2620"
+      - "@nfeng6 US_2814"
+      - "@nfeng6_ZZ_3637"
+      - 加拿大【YouTube由零開始】 4
+      - _CA_加拿大 5
+      - 美国(绿头外网集团)(Public) 13
+      - _CA_加拿大 6
+      - "@nfeng6 US_1612"
+      - "@nfeng6 CA_216"
+      - 美国_TG@nodesharing_282
+      - 法国【YouTube由零開始】
+      - 美国【YouTube由零開始】 7
+      - 科技网络 7
+      - 英国(绿头外网集团)(Public)
+      - "@nfeng6_ZZ_3662"
+      - US_6379 @WangCai_1
+      - _US_美国 11
+      - _GB_英国
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 8
+      - "@nfeng6 ZZ_3870"
+      - CA
+      - _US_美国 12
+      - ZZ_2512
+      - _US_美国 13
+      - _US_美国 14
+      - 加拿大(绿头外网集团)(Public) 58
+      - "@nfeng6 ZZ_3790"
+      - 群:166416961_🇨🇦_CA_加拿大_157
+      - _CA_加拿大 7
+      - 美国【YouTube由零開始】 8
+      - _CA_加拿大 8
+      - _US_0116节点_79
+      - 加拿大(绿头外网集团)(Public) 9
+      - "@nfeng6 US_3431"
+      - 加拿大(绿头外网集团)(Public) 10
+      - 科技网络 8
+      - 科技网络 9
+      - _CA_加拿大 9
+      - 加拿大(绿头外网集团)(Public) 12
+      - 美国(绿头外网集团)(Public) 8 2
+      - 英国【YouTube由零開始】
+      - _CA_加拿大 10
+      - 群:166416961_🇨🇦_CA_加拿大_187
+      - _CA_加拿大 11
+      - 加拿大(绿头外网集团)(Public) 13
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1836,252 +1469,204 @@ proxy-groups:
       - ♻️ 自动选择
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
-      - 香港(绿头外网集团)(Public) 33
-      - vpnpool-香港HKBN
-      - vpnpool-香港HKT-game
-      - vpnpool-Tokyo-M247
-      - vpnpool-Tokyo-M247 2
-      - vpnpool-SG-Contabo
-      - vpnpool-SG-Contabo 2
-      - vpnpool-香港HKBN 2
-      - vpnpool-香港HKT-game 2
-      - vpnpool-Tokyo-M247 3
-      - vpnpool-LAX-M247
-      - vpnpool-Seoul-Choopa
-      - US_5003+@WangCai_1
-      - US_0443+@WangCai_1
-      - _CA_加拿大
-      - +@nfeng6_US_2134
-      - 美国_TG@nodesharing_155
-      - 美国【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_157
-      - 群:166416961_🇨🇦_CA_加拿大_196
-      - 美国_TG@nodesharing_78
-      - 群:166416961_🇺🇸_US_美国_209
-      - TG+@ShareCentrePro_CA_加拿大
-      - 美国【YouTube由零開始】 2
-      - +@nfeng6_DE_612
-      - "@nfeng6_ZZ_3637"
-      - +@nfeng6_DE_615
-      - +@nfeng6_US_2941
-      - "@nfeng6_ZZ_3595"
-      - "@nfeng6_ZZ_3587"
-      - "@nfeng6_CA_358"
-      - +@nfeng6_US_2250
-      - "@nfeng6_CA_252"
-      - US-38.121.43.91-1127
-      - _US_美国
-      - _US_美国 2
-      - US_7002+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_2375+@WangCai_1
-      - US_3389+@WangCai_1
-      - _CA_加拿大 2
-      - "@nfeng6_ZZ_3677"
-      - _CA_加拿大 3
-      - 美国_TG@nodesharing_260
-      - 美国【YouTube由零開始】 3
-      - 美国_TG@nodesharing_253
-      - Dallas-ColoCrossing
-      - _US_美国 3
-      - _US_美国 4
-      - +美国(绿头外网集团)(Public)+8
-      - +美国(绿头外网集团)(Public)+10
-      - +美国(绿头外网集团)(Public)+63
-      - +美国(绿头外网集团)(Public)+74
-      - +加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开）+35
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+57
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+60
-      - vpnpool-Novosibirsk-Adman
-      - vpnpool-Novosibirsk-Adman 2
-      - 香港_TG@nodesharing_12
-      - 美国_TG@nodesharing_19
-      - 美国_TG@nodesharing_20
-      - 美国_TG@nodesharing_21
-      - 美国_TG@nodesharing_22
-      - 美国_TG@nodesharing_23
-      - 美国_TG@nodesharing_24
-      - 美国_TG@nodesharing_27
-      - 美国_TG@nodesharing_28
-      - 美国_TG@nodesharing_29
-      - 美国_TG@nodesharing_30
-      - 美国_TG@nodesharing_32
-      - 美国_TG@nodesharing_35
-      - 美国_TG@nodesharing_38
-      - 美国_TG@nodesharing_44
-      - 美国_TG@nodesharing_45
-      - 美国_TG@nodesharing_48
-      - 美国_TG@nodesharing_54
-      - 美国_TG@nodesharing_57
-      - 美国_TG@nodesharing_60
-      - 美国_TG@nodesharing_62
-      - 美国_TG@nodesharing_64
-      - 美国_TG@nodesharing_66
-      - 美国_TG@nodesharing_78 2
-      - 美国_TG@nodesharing_79
-      - 美国_TG@nodesharing_80
-      - 美国_TG@nodesharing_82
-      - 美国_TG@nodesharing_85
-      - 美国_TG@nodesharing_88
-      - 美国_TG@nodesharing_93
-      - 美国_TG@nodesharing_102
-      - 美国_TG@nodesharing_105
-      - 美国_TG@nodesharing_106
-      - 美国_TG@nodesharing_107
-      - 美国_TG@nodesharing_109
-      - 美国_TG@nodesharing_112
-      - 美国_TG@nodesharing_115
-      - 美国_TG@nodesharing_117
-      - 美国_TG@nodesharing_118
-      - 美国_TG@nodesharing_122
-      - 美国_TG@nodesharing_123
-      - 美国_TG@nodesharing_127
-      - 美国_TG@nodesharing_143
-      - 美国_TG@nodesharing_160
-      - 美国_TG@nodesharing_169
-      - 美国_TG@nodesharing_175
-      - 美国_TG@nodesharing_177
-      - 美国_TG@nodesharing_178
-      - 美国_TG@nodesharing_179
-      - 美国_TG@nodesharing_182
-      - 美国_TG@nodesharing_184
-      - 美国_TG@nodesharing_188
-      - 美国_TG@nodesharing_197
-      - 美国_TG@nodesharing_209
-      - 美国_TG@nodesharing_215
-      - 美国_TG@nodesharing_220
-      - 美国_TG@nodesharing_229
-      - 美国_TG@nodesharing_238
-      - 加拿大_TG@nodesharing_252
-      - 美国_TG@nodesharing_254
-      - 美国_TG@nodesharing_260 2
-      - 美国_TG@nodesharing_261
-      - 加拿大_TG@nodesharing_269
-      - 美国_TG@nodesharing_275
-      - 美国_TG@nodesharing_282
-      - 美国_TG@nodesharing_285
-      - CA
-      - CA 2
-      - 韩国【YouTube由零開始】
-      - 韩国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 美国【YouTube由零開始】 5
-      - 英国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - 加拿大【YouTube由零開始】
-      - 美国【YouTube-由零開始】
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 美国【YouTube由零開始】 12
-      - 【YouTube由零開始】
-      - 【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 3
-      - _CA_加拿大 4
-      - _US_美国 5
-      - _CA_加拿大 5
-      - 美國-费利蒙
       - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - "@ShareCentrePro Hongkong"
-      - _US_美国 6
-      - _US_美国 7
-      - _CA_加拿大 6
-      - _KR_韩国
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _CA_加拿大 7
-      - "@nfeng6 🇭🇰"
-      - "@nfeng6 🇭🇰 3"
-      - "@nfeng6 🇭🇰 7"
-      - "@nfeng6 🇯🇵 13"
-      - "@nfeng6 🇯🇵 14"
-      - "@nfeng6 🇯🇵 16"
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
+      - "@nfeng6 SG_1517"
+      - "@nfeng6 SG_1525"
+      - "@nfeng6 SG_1516"
+      - "@nfeng6 【VIP】Singapore 9"
       - vpnpool-SG-DigitalOcean
       - vpnpool-SG-DigitalOcean 2
+      - vpnpool-Tokyo-Linode
       - vpnpool-SG-DigitalOcean 3
-      - vpnpool-Tokyo-EC2
-      - vpnpool-Ashburn-EC2-dip
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-香港腾讯云
-      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 4
       - vpnpool-SG-DigitalOcean 5
+      - vpnpool-Tokyo-Linode 2
       - vpnpool-SG-DigitalOcean 6
+      - vpnpool-香港腾讯云
+      - vpnpool-Tokyo-Linode 3
+      - "@nfeng6🇯🇵 日本02"
+      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 7
-      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 8
+      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 9
-      - vpnpool-Tokyo-EC2 2
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-Ashburn-EC2-dip 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-香港腾讯云 3
       - vpnpool-SG-DigitalOcean 10
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 香港腾讯云@vpnpool
-      - 香港腾讯云@vpnpool 2
-      - 香港腾讯云@vpnpool 3
-      - 香港腾讯云@vpnpool 4
+      - vpnpool-香港腾讯云 3
+      - "[VIP]香港2|负载均衡|BGP|1.2x"
+      - "@nfeng6🇮🇳 印度03"
+      - vpnpool-Tokyo-Linode 5
+      - "[VIP]台湾|广港链路|Netflix"
+      - 德国(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_48
+      - 美国_TG@nodesharing_260
+      - 美国_TG@nodesharing_38
+      - 美国_TG@nodesharing_35
+      - 美国_TG@nodesharing_45
+      - 美国(绿头外网集团)(Public) 69
+      - "@nfeng6 DE_691"
+      - 美国_TG@nodesharing_46
+      - "@nfeng6_DE_612"
+      - 美国节点更新https://bit.ly/3oOSZUc-请订阅我的频道
+      - 美国【YouTube由零開始】
+      - _US_美国
+      - 美国(绿头外网集团)(Public)
+      - "@nfeng6 DE_589"
+      - 美国_TG@nodesharing_188
+      - 美国_TG@nodesharing_260 2
+      - 美国(绿头外网集团)(Public) 2
+      - _US_美国 2
+      - "@nfeng6 US_1798"
+      - "@nfeng6_DE_615"
+      - 美国(绿头外网集团)(Public) 83
+      - _US_美国 3
+      - 美国_TG@nodesharing_160
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 3
+      - "@nfeng6 US_2459"
+      - 美国_TG@nodesharing_29
+      - 美国_TG@nodesharing_126
+      - "@nfeng6 US_1746"
+      - "@nfeng6 US_2458"
+      - 美国_TG@nodesharing_117
+      - 科技网络 2
+      - 美国_TG@nodesharing_277
+      - "@nfeng6 US_2464"
+      - 美国_TG@nodesharing_276
+      - 加拿大(绿头外网集团)(Public) 14
+      - "@nfeng6_ZZ_4019"
+      - 加拿大(绿头外网集团)(Public) 53
+      - 美国_TG@nodesharing_262
+      - "@nfeng6_US_2250"
+      - US-38.121.43.91-1127
+      - "@nfeng6_US_2251"
+      - _US_美国 4
+      - 美国(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 5
+      - 加拿大(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 6
+      - "@nfeng6 US_2867"
+      - 美国【YouTube由零開始】 2
+      - 美国_TG@nodesharing_175
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 3
+      - US_2375 @WangCai_1
+      - 美国_TG@nodesharing_195
+      - 科技网络 3
+      - _US_美国 5
+      - _US_美国 6
+      - 美国(绿头外网集团)(Public) 7
+      - 加拿大_TG@nodesharing_269
+      - 美国(绿头外网集团)(Public) 8
+      - _US_美国 7
+      - US_9101 @WangCai_1
+      - 美国_TG@nodesharing_254
+      - 美国_TG@nodesharing_266
+      - 美国_TG@nodesharing_112
+      - "[VIP]台湾|BGP中转|Netflix"
+      - 美国_TG@nodesharing_260 3
+      - "@nfeng6 US_2466"
+      - "@nfeng6 ZZ_3853"
+      - _CA_加拿大
+      - "@nfeng6 ZZ_3840"
+      - "@nfeng6 ZZ_4194"
+      - 加拿大(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_278
+      - 科技网络 4
+      - 美国_TG@nodesharing_219
+      - "@nfeng6 ZZ_3797"
+      - _US_美国 8
+      - 美国_TG@nodesharing_186
+      - "@nfeng6 US_2455"
+      - "@nfeng6 ZZ_3778"
+      - 美国【YouTube由零開始】 4
+      - _US_美国 9
+      - 美国(绿头外网集团)(Public) 9
+      - "@nfeng6 ZZ_4014"
+      - 加拿大(绿头外网集团)(Public) 2
+      - 美国_TG@nodesharing_220
+      - 美国【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 59
+      - 美国_TG@nodesharing_265
+      - 加拿大(绿头外网集团)(Public) 3
+      - US_8090 @WangCai_1
+      - 美国_TG@nodesharing_209
+      - 美国_TG@nodesharing_229
+      - "@nfeng6 ZZ_3824"
+      - US_5004 @WangCai_1
+      - "@nfeng6 ZZ_3783"
+      - _CA_加拿大 2
+      - 科技网络 5
+      - 美国(绿头外网集团)(Public) 11
+      - "@nfeng6_ZZ_3595"
+      - 科技网络 6
+      - _CA_加拿大 3
+      - "@nfeng6_US_3263"
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 12
+      - "@nfeng6 ZZ_3789"
+      - "@nfeng6 CA_377"
+      - 美国_TG@nodesharing_115
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 37
+      - 加拿大(绿头外网集团)(Public) 6
+      - 美国_TG@nodesharing_275
+      - "@nfeng6 US_2434"
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 35
+      - 美国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 3
+      - 加拿大(绿头外网集团)(Public) 7
+      - _US_美国 10
+      - 科技网络_72
+      - _CA_加拿大 4
+      - "@nfeng6 ZZ_3845"
+      - "@nfeng6 US_2825"
+      - "@nfeng6 US_2620"
+      - "@nfeng6 US_2814"
+      - "@nfeng6_ZZ_3637"
+      - 加拿大【YouTube由零開始】 4
+      - _CA_加拿大 5
+      - 美国(绿头外网集团)(Public) 13
+      - _CA_加拿大 6
+      - "@nfeng6 US_1612"
+      - "@nfeng6 CA_216"
+      - 美国_TG@nodesharing_282
+      - 法国【YouTube由零開始】
+      - 美国【YouTube由零開始】 7
+      - 科技网络 7
+      - 英国(绿头外网集团)(Public)
+      - "@nfeng6_ZZ_3662"
+      - US_6379 @WangCai_1
+      - _US_美国 11
+      - _GB_英国
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 8
+      - "@nfeng6 ZZ_3870"
+      - CA
+      - _US_美国 12
+      - ZZ_2512
+      - _US_美国 13
+      - _US_美国 14
+      - 加拿大(绿头外网集团)(Public) 58
+      - "@nfeng6 ZZ_3790"
+      - 群:166416961_🇨🇦_CA_加拿大_157
+      - _CA_加拿大 7
+      - 美国【YouTube由零開始】 8
+      - _CA_加拿大 8
+      - _US_0116节点_79
+      - 加拿大(绿头外网集团)(Public) 9
+      - "@nfeng6 US_3431"
+      - 加拿大(绿头外网集团)(Public) 10
+      - 科技网络 8
+      - 科技网络 9
+      - _CA_加拿大 9
+      - 加拿大(绿头外网集团)(Public) 12
+      - 美国(绿头外网集团)(Public) 8 2
+      - 英国【YouTube由零開始】
+      - _CA_加拿大 10
+      - 群:166416961_🇨🇦_CA_加拿大_187
+      - _CA_加拿大 11
+      - 加拿大(绿头外网集团)(Public) 13
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2099,252 +1684,204 @@ proxy-groups:
       - ♻️ 自动选择
       - 新加坡-SG-A2-CM中继
       - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
-      - 香港(绿头外网集团)(Public) 33
-      - vpnpool-香港HKBN
-      - vpnpool-香港HKT-game
-      - vpnpool-Tokyo-M247
-      - vpnpool-Tokyo-M247 2
-      - vpnpool-SG-Contabo
-      - vpnpool-SG-Contabo 2
-      - vpnpool-香港HKBN 2
-      - vpnpool-香港HKT-game 2
-      - vpnpool-Tokyo-M247 3
-      - vpnpool-LAX-M247
-      - vpnpool-Seoul-Choopa
-      - US_5003+@WangCai_1
-      - US_0443+@WangCai_1
-      - _CA_加拿大
-      - +@nfeng6_US_2134
-      - 美国_TG@nodesharing_155
-      - 美国【YouTube由零開始】
-      - 群:166416961_🇨🇦_CA_加拿大_157
-      - 群:166416961_🇨🇦_CA_加拿大_196
-      - 美国_TG@nodesharing_78
-      - 群:166416961_🇺🇸_US_美国_209
-      - TG+@ShareCentrePro_CA_加拿大
-      - 美国【YouTube由零開始】 2
-      - +@nfeng6_DE_612
-      - "@nfeng6_ZZ_3637"
-      - +@nfeng6_DE_615
-      - +@nfeng6_US_2941
-      - "@nfeng6_ZZ_3595"
-      - "@nfeng6_ZZ_3587"
-      - "@nfeng6_CA_358"
-      - +@nfeng6_US_2250
-      - "@nfeng6_CA_252"
-      - US-38.121.43.91-1127
-      - _US_美国
-      - _US_美国 2
-      - US_7002+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_2375+@WangCai_1
-      - US_3389+@WangCai_1
-      - _CA_加拿大 2
-      - "@nfeng6_ZZ_3677"
-      - _CA_加拿大 3
-      - 美国_TG@nodesharing_260
-      - 美国【YouTube由零開始】 3
-      - 美国_TG@nodesharing_253
-      - Dallas-ColoCrossing
-      - _US_美国 3
-      - _US_美国 4
-      - +美国(绿头外网集团)(Public)+8
-      - +美国(绿头外网集团)(Public)+10
-      - +美国(绿头外网集团)(Public)+63
-      - +美国(绿头外网集团)(Public)+74
-      - +加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开）+35
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+57
-      - +美国-高速节点购买：suo.yt/gvip（复制到浏览器打开）+60
-      - vpnpool-Novosibirsk-Adman
-      - vpnpool-Novosibirsk-Adman 2
-      - 香港_TG@nodesharing_12
-      - 美国_TG@nodesharing_19
-      - 美国_TG@nodesharing_20
-      - 美国_TG@nodesharing_21
-      - 美国_TG@nodesharing_22
-      - 美国_TG@nodesharing_23
-      - 美国_TG@nodesharing_24
-      - 美国_TG@nodesharing_27
-      - 美国_TG@nodesharing_28
-      - 美国_TG@nodesharing_29
-      - 美国_TG@nodesharing_30
-      - 美国_TG@nodesharing_32
-      - 美国_TG@nodesharing_35
-      - 美国_TG@nodesharing_38
-      - 美国_TG@nodesharing_44
-      - 美国_TG@nodesharing_45
-      - 美国_TG@nodesharing_48
-      - 美国_TG@nodesharing_54
-      - 美国_TG@nodesharing_57
-      - 美国_TG@nodesharing_60
-      - 美国_TG@nodesharing_62
-      - 美国_TG@nodesharing_64
-      - 美国_TG@nodesharing_66
-      - 美国_TG@nodesharing_78 2
-      - 美国_TG@nodesharing_79
-      - 美国_TG@nodesharing_80
-      - 美国_TG@nodesharing_82
-      - 美国_TG@nodesharing_85
-      - 美国_TG@nodesharing_88
-      - 美国_TG@nodesharing_93
-      - 美国_TG@nodesharing_102
-      - 美国_TG@nodesharing_105
-      - 美国_TG@nodesharing_106
-      - 美国_TG@nodesharing_107
-      - 美国_TG@nodesharing_109
-      - 美国_TG@nodesharing_112
-      - 美国_TG@nodesharing_115
-      - 美国_TG@nodesharing_117
-      - 美国_TG@nodesharing_118
-      - 美国_TG@nodesharing_122
-      - 美国_TG@nodesharing_123
-      - 美国_TG@nodesharing_127
-      - 美国_TG@nodesharing_143
-      - 美国_TG@nodesharing_160
-      - 美国_TG@nodesharing_169
-      - 美国_TG@nodesharing_175
-      - 美国_TG@nodesharing_177
-      - 美国_TG@nodesharing_178
-      - 美国_TG@nodesharing_179
-      - 美国_TG@nodesharing_182
-      - 美国_TG@nodesharing_184
-      - 美国_TG@nodesharing_188
-      - 美国_TG@nodesharing_197
-      - 美国_TG@nodesharing_209
-      - 美国_TG@nodesharing_215
-      - 美国_TG@nodesharing_220
-      - 美国_TG@nodesharing_229
-      - 美国_TG@nodesharing_238
-      - 加拿大_TG@nodesharing_252
-      - 美国_TG@nodesharing_254
-      - 美国_TG@nodesharing_260 2
-      - 美国_TG@nodesharing_261
-      - 加拿大_TG@nodesharing_269
-      - 美国_TG@nodesharing_275
-      - 美国_TG@nodesharing_282
-      - 美国_TG@nodesharing_285
-      - CA
-      - CA 2
-      - 韩国【YouTube由零開始】
-      - 韩国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 4
-      - 英国【YouTube由零開始】
-      - 美国【YouTube由零開始】 5
-      - 英国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 6
-      - 美国【YouTube由零開始】 7
-      - 加拿大【YouTube由零開始】
-      - 美国【YouTube-由零開始】
-      - 美国【YouTube由零開始】 8
-      - 美国【YouTube由零開始】 9
-      - 加拿大【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 10
-      - 美国【YouTube由零開始】 11
-      - 美国【YouTube由零開始】 12
-      - 【YouTube由零開始】
-      - 【YouTube由零開始】 2
-      - 韩国【YouTube由零開始】 3
-      - _CA_加拿大 4
-      - _US_美国 5
-      - _CA_加拿大 5
-      - 美國-费利蒙
       - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - "@ShareCentrePro Hongkong"
-      - _US_美国 6
-      - _US_美国 7
-      - _CA_加拿大 6
-      - _KR_韩国
-      - _US_美国 8
-      - _US_美国 9
-      - _US_美国 10
-      - _CA_加拿大 7
-      - "@nfeng6 🇭🇰"
-      - "@nfeng6 🇭🇰 3"
-      - "@nfeng6 🇭🇰 7"
-      - "@nfeng6 🇯🇵 13"
-      - "@nfeng6 🇯🇵 14"
-      - "@nfeng6 🇯🇵 16"
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
+      - "@nfeng6 SG_1517"
+      - "@nfeng6 SG_1525"
+      - "@nfeng6 SG_1516"
+      - "@nfeng6 【VIP】Singapore 9"
       - vpnpool-SG-DigitalOcean
       - vpnpool-SG-DigitalOcean 2
+      - vpnpool-Tokyo-Linode
       - vpnpool-SG-DigitalOcean 3
-      - vpnpool-Tokyo-EC2
-      - vpnpool-Ashburn-EC2-dip
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-香港腾讯云
-      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 4
       - vpnpool-SG-DigitalOcean 5
+      - vpnpool-Tokyo-Linode 2
       - vpnpool-SG-DigitalOcean 6
+      - vpnpool-香港腾讯云
+      - vpnpool-Tokyo-Linode 3
+      - "@nfeng6🇯🇵 日本02"
+      - vpnpool-香港腾讯云 2
       - vpnpool-SG-DigitalOcean 7
-      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 8
+      - vpnpool-Tokyo-Linode 4
       - vpnpool-SG-DigitalOcean 9
-      - vpnpool-Tokyo-EC2 2
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-Ashburn-EC2-dip 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-香港腾讯云 3
       - vpnpool-SG-DigitalOcean 10
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 香港腾讯云@vpnpool
-      - 香港腾讯云@vpnpool 2
-      - 香港腾讯云@vpnpool 3
-      - 香港腾讯云@vpnpool 4
+      - vpnpool-香港腾讯云 3
+      - "[VIP]香港2|负载均衡|BGP|1.2x"
+      - "@nfeng6🇮🇳 印度03"
+      - vpnpool-Tokyo-Linode 5
+      - "[VIP]台湾|广港链路|Netflix"
+      - 德国(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_48
+      - 美国_TG@nodesharing_260
+      - 美国_TG@nodesharing_38
+      - 美国_TG@nodesharing_35
+      - 美国_TG@nodesharing_45
+      - 美国(绿头外网集团)(Public) 69
+      - "@nfeng6 DE_691"
+      - 美国_TG@nodesharing_46
+      - "@nfeng6_DE_612"
+      - 美国节点更新https://bit.ly/3oOSZUc-请订阅我的频道
+      - 美国【YouTube由零開始】
+      - _US_美国
+      - 美国(绿头外网集团)(Public)
+      - "@nfeng6 DE_589"
+      - 美国_TG@nodesharing_188
+      - 美国_TG@nodesharing_260 2
+      - 美国(绿头外网集团)(Public) 2
+      - _US_美国 2
+      - "@nfeng6 US_1798"
+      - "@nfeng6_DE_615"
+      - 美国(绿头外网集团)(Public) 83
+      - _US_美国 3
+      - 美国_TG@nodesharing_160
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 3
+      - "@nfeng6 US_2459"
+      - 美国_TG@nodesharing_29
+      - 美国_TG@nodesharing_126
+      - "@nfeng6 US_1746"
+      - "@nfeng6 US_2458"
+      - 美国_TG@nodesharing_117
+      - 科技网络 2
+      - 美国_TG@nodesharing_277
+      - "@nfeng6 US_2464"
+      - 美国_TG@nodesharing_276
+      - 加拿大(绿头外网集团)(Public) 14
+      - "@nfeng6_ZZ_4019"
+      - 加拿大(绿头外网集团)(Public) 53
+      - 美国_TG@nodesharing_262
+      - "@nfeng6_US_2250"
+      - US-38.121.43.91-1127
+      - "@nfeng6_US_2251"
+      - _US_美国 4
+      - 美国(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 5
+      - 加拿大(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 6
+      - "@nfeng6 US_2867"
+      - 美国【YouTube由零開始】 2
+      - 美国_TG@nodesharing_175
+      - 加拿大【YouTube由零開始】
+      - 美国【YouTube由零開始】 3
+      - US_2375 @WangCai_1
+      - 美国_TG@nodesharing_195
+      - 科技网络 3
+      - _US_美国 5
+      - _US_美国 6
+      - 美国(绿头外网集团)(Public) 7
+      - 加拿大_TG@nodesharing_269
+      - 美国(绿头外网集团)(Public) 8
+      - _US_美国 7
+      - US_9101 @WangCai_1
+      - 美国_TG@nodesharing_254
+      - 美国_TG@nodesharing_266
+      - 美国_TG@nodesharing_112
+      - "[VIP]台湾|BGP中转|Netflix"
+      - 美国_TG@nodesharing_260 3
+      - "@nfeng6 US_2466"
+      - "@nfeng6 ZZ_3853"
+      - _CA_加拿大
+      - "@nfeng6 ZZ_3840"
+      - "@nfeng6 ZZ_4194"
+      - 加拿大(绿头外网集团)(Public)
+      - 美国_TG@nodesharing_278
+      - 科技网络 4
+      - 美国_TG@nodesharing_219
+      - "@nfeng6 ZZ_3797"
+      - _US_美国 8
+      - 美国_TG@nodesharing_186
+      - "@nfeng6 US_2455"
+      - "@nfeng6 ZZ_3778"
+      - 美国【YouTube由零開始】 4
+      - _US_美国 9
+      - 美国(绿头外网集团)(Public) 9
+      - "@nfeng6 ZZ_4014"
+      - 加拿大(绿头外网集团)(Public) 2
+      - 美国_TG@nodesharing_220
+      - 美国【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 59
+      - 美国_TG@nodesharing_265
+      - 加拿大(绿头外网集团)(Public) 3
+      - US_8090 @WangCai_1
+      - 美国_TG@nodesharing_209
+      - 美国_TG@nodesharing_229
+      - "@nfeng6 ZZ_3824"
+      - US_5004 @WangCai_1
+      - "@nfeng6 ZZ_3783"
+      - _CA_加拿大 2
+      - 科技网络 5
+      - 美国(绿头外网集团)(Public) 11
+      - "@nfeng6_ZZ_3595"
+      - 科技网络 6
+      - _CA_加拿大 3
+      - "@nfeng6_US_3263"
+      - 加拿大【YouTube由零開始】 2
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 12
+      - "@nfeng6 ZZ_3789"
+      - "@nfeng6 CA_377"
+      - 美国_TG@nodesharing_115
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 37
+      - 加拿大(绿头外网集团)(Public) 6
+      - 美国_TG@nodesharing_275
+      - "@nfeng6 US_2434"
+      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 35
+      - 美国【YouTube由零開始】 6
+      - 加拿大【YouTube由零開始】 3
+      - 加拿大(绿头外网集团)(Public) 7
+      - _US_美国 10
+      - 科技网络_72
+      - _CA_加拿大 4
+      - "@nfeng6 ZZ_3845"
+      - "@nfeng6 US_2825"
+      - "@nfeng6 US_2620"
+      - "@nfeng6 US_2814"
+      - "@nfeng6_ZZ_3637"
+      - 加拿大【YouTube由零開始】 4
+      - _CA_加拿大 5
+      - 美国(绿头外网集团)(Public) 13
+      - _CA_加拿大 6
+      - "@nfeng6 US_1612"
+      - "@nfeng6 CA_216"
+      - 美国_TG@nodesharing_282
+      - 法国【YouTube由零開始】
+      - 美国【YouTube由零開始】 7
+      - 科技网络 7
+      - 英国(绿头外网集团)(Public)
+      - "@nfeng6_ZZ_3662"
+      - US_6379 @WangCai_1
+      - _US_美国 11
+      - _GB_英国
+      - 加拿大【YouTube由零開始】 5
+      - 加拿大(绿头外网集团)(Public) 8
+      - "@nfeng6 ZZ_3870"
+      - CA
+      - _US_美国 12
+      - ZZ_2512
+      - _US_美国 13
+      - _US_美国 14
+      - 加拿大(绿头外网集团)(Public) 58
+      - "@nfeng6 ZZ_3790"
+      - 群:166416961_🇨🇦_CA_加拿大_157
+      - _CA_加拿大 7
+      - 美国【YouTube由零開始】 8
+      - _CA_加拿大 8
+      - _US_0116节点_79
+      - 加拿大(绿头外网集团)(Public) 9
+      - "@nfeng6 US_3431"
+      - 加拿大(绿头外网集团)(Public) 10
+      - 科技网络 8
+      - 科技网络 9
+      - _CA_加拿大 9
+      - 加拿大(绿头外网集团)(Public) 12
+      - 美国(绿头外网集团)(Public) 8 2
+      - 英国【YouTube由零開始】
+      - _CA_加拿大 10
+      - 群:166416961_🇨🇦_CA_加拿大_187
+      - _CA_加拿大 11
+      - 加拿大(绿头外网集团)(Public) 13
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
