@@ -5,191 +5,243 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡-SG-A2-CM中继, server: cn-gz-02.arrc.fun, port: 3010, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
-  - {name: 美国 洛杉矶-A2-CM中继, server: cn-gz-02.arrc.fun, port: 3008, type: ssr, cipher: aes-256-cfb, password: uBExJe, protocol: auth_aes128_md5, obfs: plain, protocol-param: 22754:kN8qVG, obfs-param: f7a3d22754.microsoft.com, udp: true}
-  - {name: 俄罗斯a RT, server: relaypro.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 香港动态 HKT B, server: csdynhkt.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 香港动态 HKT C, server: csdynhkt.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT A", server: shonlinecu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT B", server: cncusouth.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT C", server: shcris03.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT D", server: shonlinecu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT E", server: cncusouth.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT F", server: cusouthcmhk.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT G", server: cusouthcmhk.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT H", server: shonlinecu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT I", server: cusouthcmhk.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT J", server: shonlinesandcu02.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT M", server: shonlinesandcu03.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT N", server: shcris02stand.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN A", server: shonlinesandcu02.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN B", server: shonlinesandcu02.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN C", server: cncusouth.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN D", server: shcris02stand.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 日本 Azure A 2.5x, server: shallaz.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 新加坡B, server: shallaz.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 新加坡C, server: shallaz.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 新加坡D, server: shallaz.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 新加坡E, server: shallaz.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 韩国高速接入A, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 A 3.5, server: usastandard.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 B 3.5, server: usastandard.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 C 3.5, server: usastandard.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 D 3.5, server: usastandard.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 E 3.5, server: usastandard.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 F 3.5, server: usastandard2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 G 3.5, server: usastandard2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 H 3.5, server: usastandard2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 美国 优化 I 3.5, server: usastandard2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 台湾 F, server: cstwrelay.onlineto.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 台湾 I, server: shallaz2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 台湾 M, server: shallaz2.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 意大利, server: relaypro.procncon.xyz, port: 612, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 西班牙, server: relaypro.procncon.xyz, port: 610, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
-  - {name: 德国, server: relaypro.procncon.xyz, port: 618, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 43009:ㅤ, obfs-param: "", udp: true}
+  - {name: vpnpool-Amsterdam-M247-free, server: 183.240.181.20, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Ho Chi Minh-Cloudcore, server: 183.240.181.20, port: 1108, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Kuala Lumpur-Gigabit, server: 183.240.181.20, port: 1106, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Kuala Lumpur-Gigabit-free, server: 183.240.181.20, port: 1105, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-LAX-DediPath-free, server: 183.240.181.20, port: 1109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Makati-Eastern, server: 183.240.181.20, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Makati-Eastern-free, server: 183.240.181.20, port: 1101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-TR-Ulus-DGN, server: 183.240.181.20, port: 1115, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Zurich-M247-free, server: 183.240.181.20, port: 1116, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Azure, server: 183.240.181.20, port: 1114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Azure-免费, server: 183.240.181.20, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKBN, server: 183.240.181.20, port: 1113, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT, server: 183.240.181.20, port: 1112, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-OVH, server: 120.233.10.182, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-OVH 2, server: 120.233.10.182, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-OVH 3, server: 120.233.10.182, port: 6706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-OVH 4, server: 120.233.10.182, port: 6704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-OVH 5, server: 120.233.10.182, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-OVH 6, server: 120.233.10.182, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-OVH 7, server: 120.233.10.182, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-OVH 8, server: 120.233.10.182, port: 6700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Seoul-Choopa, server: 120.233.10.182, port: 4003, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Seoul-Choopa 2, server: 120.233.10.182, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Seoul-Choopa 3, server: 120.233.10.182, port: 4001, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Seoul-Choopa 4, server: 120.233.10.182, port: 4000, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-M247, server: 120.233.10.182, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-M247 2, server: 120.233.10.182, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-M247 3, server: 120.233.10.182, port: 3707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-M247 4, server: 120.233.10.182, port: 3706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-M247 5, server: 120.233.10.182, port: 3705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-M247 6, server: 120.233.10.182, port: 3704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-M247 7, server: 120.233.10.182, port: 3703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-M247 8, server: 120.233.10.182, port: 3702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-M247 9, server: 120.233.10.182, port: 3701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-M247 10, server: 120.233.10.182, port: 3700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US-Hillsboro-OVH, server: 120.233.10.182, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US-Hillsboro-OVH 2, server: 120.233.10.182, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US-Hillsboro-OVH 3, server: 120.233.10.182, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US-Hillsboro-OVH 4, server: 120.233.10.182, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US-Hillsboro-OVH 5, server: 120.233.10.182, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US-Hillsboro-OVH 6, server: 120.233.10.182, port: 7701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US-Hillsboro-OVH 7, server: 120.233.10.182, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US-Reston-OVH, server: 120.233.10.182, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US-Reston-OVH 2, server: 120.233.10.182, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US-Reston-OVH 3, server: 120.233.10.182, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Kirino, server: 120.233.10.182, port: 2709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Kirino 2, server: 120.233.10.182, port: 2708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Kirino 3, server: 120.233.10.182, port: 2707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Kirino 4, server: 120.233.10.182, port: 2706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Kirino 5, server: 120.233.10.182, port: 2705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Kirino 6, server: 120.233.10.182, port: 2704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Kirino 7, server: 120.233.10.182, port: 2703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Kirino 8, server: 120.233.10.182, port: 2702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Kirino 9, server: 120.233.10.182, port: 2701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Kirino 10, server: 120.233.10.182, port: 2700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62538:pzmWXd, obfs-param: t.me/vpnhat, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡-SG-A2-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
+      - vpnpool-Amsterdam-M247-free
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-Kuala Lumpur-Gigabit
+      - vpnpool-Kuala Lumpur-Gigabit-free
+      - vpnpool-LAX-DediPath-free
+      - vpnpool-Makati-Eastern
+      - vpnpool-Makati-Eastern-free
+      - vpnpool-TR-Ulus-DGN
+      - vpnpool-Zurich-M247-free
+      - vpnpool-香港Azure
+      - vpnpool-香港Azure-免费
+      - vpnpool-香港HKBN
+      - vpnpool-香港HKT
+      - vpnpool-SG-OVH
+      - vpnpool-SG-OVH 2
+      - vpnpool-SG-OVH 3
+      - vpnpool-SG-OVH 4
+      - vpnpool-SG-OVH 5
+      - vpnpool-SG-OVH 6
+      - vpnpool-SG-OVH 7
+      - vpnpool-SG-OVH 8
+      - vpnpool-Seoul-Choopa
+      - vpnpool-Seoul-Choopa 2
+      - vpnpool-Seoul-Choopa 3
+      - vpnpool-Seoul-Choopa 4
+      - vpnpool-Tokyo-M247
+      - vpnpool-Tokyo-M247 2
+      - vpnpool-Tokyo-M247 3
+      - vpnpool-Tokyo-M247 4
+      - vpnpool-Tokyo-M247 5
+      - vpnpool-Tokyo-M247 6
+      - vpnpool-Tokyo-M247 7
+      - vpnpool-Tokyo-M247 8
+      - vpnpool-Tokyo-M247 9
+      - vpnpool-Tokyo-M247 10
+      - vpnpool-US-Hillsboro-OVH
+      - vpnpool-US-Hillsboro-OVH 2
+      - vpnpool-US-Hillsboro-OVH 3
+      - vpnpool-US-Hillsboro-OVH 4
+      - vpnpool-US-Hillsboro-OVH 5
+      - vpnpool-US-Hillsboro-OVH 6
+      - vpnpool-US-Hillsboro-OVH 7
+      - vpnpool-US-Reston-OVH
+      - vpnpool-US-Reston-OVH 2
+      - vpnpool-US-Reston-OVH 3
+      - vpnpool-香港Kirino
+      - vpnpool-香港Kirino 2
+      - vpnpool-香港Kirino 3
+      - vpnpool-香港Kirino 4
+      - vpnpool-香港Kirino 5
+      - vpnpool-香港Kirino 6
+      - vpnpool-香港Kirino 7
+      - vpnpool-香港Kirino 8
+      - vpnpool-香港Kirino 9
+      - vpnpool-香港Kirino 10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡-SG-A2-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
+      - vpnpool-Amsterdam-M247-free
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-Kuala Lumpur-Gigabit
+      - vpnpool-Kuala Lumpur-Gigabit-free
+      - vpnpool-LAX-DediPath-free
+      - vpnpool-Makati-Eastern
+      - vpnpool-Makati-Eastern-free
+      - vpnpool-TR-Ulus-DGN
+      - vpnpool-Zurich-M247-free
+      - vpnpool-香港Azure
+      - vpnpool-香港Azure-免费
+      - vpnpool-香港HKBN
+      - vpnpool-香港HKT
+      - vpnpool-SG-OVH
+      - vpnpool-SG-OVH 2
+      - vpnpool-SG-OVH 3
+      - vpnpool-SG-OVH 4
+      - vpnpool-SG-OVH 5
+      - vpnpool-SG-OVH 6
+      - vpnpool-SG-OVH 7
+      - vpnpool-SG-OVH 8
+      - vpnpool-Seoul-Choopa
+      - vpnpool-Seoul-Choopa 2
+      - vpnpool-Seoul-Choopa 3
+      - vpnpool-Seoul-Choopa 4
+      - vpnpool-Tokyo-M247
+      - vpnpool-Tokyo-M247 2
+      - vpnpool-Tokyo-M247 3
+      - vpnpool-Tokyo-M247 4
+      - vpnpool-Tokyo-M247 5
+      - vpnpool-Tokyo-M247 6
+      - vpnpool-Tokyo-M247 7
+      - vpnpool-Tokyo-M247 8
+      - vpnpool-Tokyo-M247 9
+      - vpnpool-Tokyo-M247 10
+      - vpnpool-US-Hillsboro-OVH
+      - vpnpool-US-Hillsboro-OVH 2
+      - vpnpool-US-Hillsboro-OVH 3
+      - vpnpool-US-Hillsboro-OVH 4
+      - vpnpool-US-Hillsboro-OVH 5
+      - vpnpool-US-Hillsboro-OVH 6
+      - vpnpool-US-Hillsboro-OVH 7
+      - vpnpool-US-Reston-OVH
+      - vpnpool-US-Reston-OVH 2
+      - vpnpool-US-Reston-OVH 3
+      - vpnpool-香港Kirino
+      - vpnpool-香港Kirino 2
+      - vpnpool-香港Kirino 3
+      - vpnpool-香港Kirino 4
+      - vpnpool-香港Kirino 5
+      - vpnpool-香港Kirino 6
+      - vpnpool-香港Kirino 7
+      - vpnpool-香港Kirino 8
+      - vpnpool-香港Kirino 9
+      - vpnpool-香港Kirino 10
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡-SG-A2-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
+      - vpnpool-Amsterdam-M247-free
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-Kuala Lumpur-Gigabit
+      - vpnpool-Kuala Lumpur-Gigabit-free
+      - vpnpool-LAX-DediPath-free
+      - vpnpool-Makati-Eastern
+      - vpnpool-Makati-Eastern-free
+      - vpnpool-TR-Ulus-DGN
+      - vpnpool-Zurich-M247-free
+      - vpnpool-香港Azure
+      - vpnpool-香港Azure-免费
+      - vpnpool-香港HKBN
+      - vpnpool-香港HKT
+      - vpnpool-SG-OVH
+      - vpnpool-SG-OVH 2
+      - vpnpool-SG-OVH 3
+      - vpnpool-SG-OVH 4
+      - vpnpool-SG-OVH 5
+      - vpnpool-SG-OVH 6
+      - vpnpool-SG-OVH 7
+      - vpnpool-SG-OVH 8
+      - vpnpool-Seoul-Choopa
+      - vpnpool-Seoul-Choopa 2
+      - vpnpool-Seoul-Choopa 3
+      - vpnpool-Seoul-Choopa 4
+      - vpnpool-Tokyo-M247
+      - vpnpool-Tokyo-M247 2
+      - vpnpool-Tokyo-M247 3
+      - vpnpool-Tokyo-M247 4
+      - vpnpool-Tokyo-M247 5
+      - vpnpool-Tokyo-M247 6
+      - vpnpool-Tokyo-M247 7
+      - vpnpool-Tokyo-M247 8
+      - vpnpool-Tokyo-M247 9
+      - vpnpool-Tokyo-M247 10
+      - vpnpool-US-Hillsboro-OVH
+      - vpnpool-US-Hillsboro-OVH 2
+      - vpnpool-US-Hillsboro-OVH 3
+      - vpnpool-US-Hillsboro-OVH 4
+      - vpnpool-US-Hillsboro-OVH 5
+      - vpnpool-US-Hillsboro-OVH 6
+      - vpnpool-US-Hillsboro-OVH 7
+      - vpnpool-US-Reston-OVH
+      - vpnpool-US-Reston-OVH 2
+      - vpnpool-US-Reston-OVH 3
+      - vpnpool-香港Kirino
+      - vpnpool-香港Kirino 2
+      - vpnpool-香港Kirino 3
+      - vpnpool-香港Kirino 4
+      - vpnpool-香港Kirino 5
+      - vpnpool-香港Kirino 6
+      - vpnpool-香港Kirino 7
+      - vpnpool-香港Kirino 8
+      - vpnpool-香港Kirino 9
+      - vpnpool-香港Kirino 10
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -208,216 +260,261 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡-SG-A2-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
+      - vpnpool-Amsterdam-M247-free
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-Kuala Lumpur-Gigabit
+      - vpnpool-Kuala Lumpur-Gigabit-free
+      - vpnpool-LAX-DediPath-free
+      - vpnpool-Makati-Eastern
+      - vpnpool-Makati-Eastern-free
+      - vpnpool-TR-Ulus-DGN
+      - vpnpool-Zurich-M247-free
+      - vpnpool-香港Azure
+      - vpnpool-香港Azure-免费
+      - vpnpool-香港HKBN
+      - vpnpool-香港HKT
+      - vpnpool-SG-OVH
+      - vpnpool-SG-OVH 2
+      - vpnpool-SG-OVH 3
+      - vpnpool-SG-OVH 4
+      - vpnpool-SG-OVH 5
+      - vpnpool-SG-OVH 6
+      - vpnpool-SG-OVH 7
+      - vpnpool-SG-OVH 8
+      - vpnpool-Seoul-Choopa
+      - vpnpool-Seoul-Choopa 2
+      - vpnpool-Seoul-Choopa 3
+      - vpnpool-Seoul-Choopa 4
+      - vpnpool-Tokyo-M247
+      - vpnpool-Tokyo-M247 2
+      - vpnpool-Tokyo-M247 3
+      - vpnpool-Tokyo-M247 4
+      - vpnpool-Tokyo-M247 5
+      - vpnpool-Tokyo-M247 6
+      - vpnpool-Tokyo-M247 7
+      - vpnpool-Tokyo-M247 8
+      - vpnpool-Tokyo-M247 9
+      - vpnpool-Tokyo-M247 10
+      - vpnpool-US-Hillsboro-OVH
+      - vpnpool-US-Hillsboro-OVH 2
+      - vpnpool-US-Hillsboro-OVH 3
+      - vpnpool-US-Hillsboro-OVH 4
+      - vpnpool-US-Hillsboro-OVH 5
+      - vpnpool-US-Hillsboro-OVH 6
+      - vpnpool-US-Hillsboro-OVH 7
+      - vpnpool-US-Reston-OVH
+      - vpnpool-US-Reston-OVH 2
+      - vpnpool-US-Reston-OVH 3
+      - vpnpool-香港Kirino
+      - vpnpool-香港Kirino 2
+      - vpnpool-香港Kirino 3
+      - vpnpool-香港Kirino 4
+      - vpnpool-香港Kirino 5
+      - vpnpool-香港Kirino 6
+      - vpnpool-香港Kirino 7
+      - vpnpool-香港Kirino 8
+      - vpnpool-香港Kirino 9
+      - vpnpool-香港Kirino 10
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
+      - vpnpool-香港Azure
+      - vpnpool-香港Azure-免费
+      - vpnpool-香港HKBN
+      - vpnpool-香港HKT
+      - vpnpool-香港Kirino
+      - vpnpool-香港Kirino 2
+      - vpnpool-香港Kirino 3
+      - vpnpool-香港Kirino 4
+      - vpnpool-香港Kirino 5
+      - vpnpool-香港Kirino 6
+      - vpnpool-香港Kirino 7
+      - vpnpool-香港Kirino 8
+      - vpnpool-香港Kirino 9
+      - vpnpool-香港Kirino 10
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡-SG-A2-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
+      - vpnpool-Amsterdam-M247-free
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-Kuala Lumpur-Gigabit
+      - vpnpool-Kuala Lumpur-Gigabit-free
+      - vpnpool-LAX-DediPath-free
+      - vpnpool-Makati-Eastern
+      - vpnpool-Makati-Eastern-free
+      - vpnpool-TR-Ulus-DGN
+      - vpnpool-Zurich-M247-free
+      - vpnpool-香港Azure
+      - vpnpool-香港Azure-免费
+      - vpnpool-香港HKBN
+      - vpnpool-香港HKT
+      - vpnpool-SG-OVH
+      - vpnpool-SG-OVH 2
+      - vpnpool-SG-OVH 3
+      - vpnpool-SG-OVH 4
+      - vpnpool-SG-OVH 5
+      - vpnpool-SG-OVH 6
+      - vpnpool-SG-OVH 7
+      - vpnpool-SG-OVH 8
+      - vpnpool-Seoul-Choopa
+      - vpnpool-Seoul-Choopa 2
+      - vpnpool-Seoul-Choopa 3
+      - vpnpool-Seoul-Choopa 4
+      - vpnpool-Tokyo-M247
+      - vpnpool-Tokyo-M247 2
+      - vpnpool-Tokyo-M247 3
+      - vpnpool-Tokyo-M247 4
+      - vpnpool-Tokyo-M247 5
+      - vpnpool-Tokyo-M247 6
+      - vpnpool-Tokyo-M247 7
+      - vpnpool-Tokyo-M247 8
+      - vpnpool-Tokyo-M247 9
+      - vpnpool-Tokyo-M247 10
+      - vpnpool-US-Hillsboro-OVH
+      - vpnpool-US-Hillsboro-OVH 2
+      - vpnpool-US-Hillsboro-OVH 3
+      - vpnpool-US-Hillsboro-OVH 4
+      - vpnpool-US-Hillsboro-OVH 5
+      - vpnpool-US-Hillsboro-OVH 6
+      - vpnpool-US-Hillsboro-OVH 7
+      - vpnpool-US-Reston-OVH
+      - vpnpool-US-Reston-OVH 2
+      - vpnpool-US-Reston-OVH 3
+      - vpnpool-香港Kirino
+      - vpnpool-香港Kirino 2
+      - vpnpool-香港Kirino 3
+      - vpnpool-香港Kirino 4
+      - vpnpool-香港Kirino 5
+      - vpnpool-香港Kirino 6
+      - vpnpool-香港Kirino 7
+      - vpnpool-香港Kirino 8
+      - vpnpool-香港Kirino 9
+      - vpnpool-香港Kirino 10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡-SG-A2-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
+      - vpnpool-Amsterdam-M247-free
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-Kuala Lumpur-Gigabit
+      - vpnpool-Kuala Lumpur-Gigabit-free
+      - vpnpool-LAX-DediPath-free
+      - vpnpool-Makati-Eastern
+      - vpnpool-Makati-Eastern-free
+      - vpnpool-TR-Ulus-DGN
+      - vpnpool-Zurich-M247-free
+      - vpnpool-香港Azure
+      - vpnpool-香港Azure-免费
+      - vpnpool-香港HKBN
+      - vpnpool-香港HKT
+      - vpnpool-SG-OVH
+      - vpnpool-SG-OVH 2
+      - vpnpool-SG-OVH 3
+      - vpnpool-SG-OVH 4
+      - vpnpool-SG-OVH 5
+      - vpnpool-SG-OVH 6
+      - vpnpool-SG-OVH 7
+      - vpnpool-SG-OVH 8
+      - vpnpool-Seoul-Choopa
+      - vpnpool-Seoul-Choopa 2
+      - vpnpool-Seoul-Choopa 3
+      - vpnpool-Seoul-Choopa 4
+      - vpnpool-Tokyo-M247
+      - vpnpool-Tokyo-M247 2
+      - vpnpool-Tokyo-M247 3
+      - vpnpool-Tokyo-M247 4
+      - vpnpool-Tokyo-M247 5
+      - vpnpool-Tokyo-M247 6
+      - vpnpool-Tokyo-M247 7
+      - vpnpool-Tokyo-M247 8
+      - vpnpool-Tokyo-M247 9
+      - vpnpool-Tokyo-M247 10
+      - vpnpool-US-Hillsboro-OVH
+      - vpnpool-US-Hillsboro-OVH 2
+      - vpnpool-US-Hillsboro-OVH 3
+      - vpnpool-US-Hillsboro-OVH 4
+      - vpnpool-US-Hillsboro-OVH 5
+      - vpnpool-US-Hillsboro-OVH 6
+      - vpnpool-US-Hillsboro-OVH 7
+      - vpnpool-US-Reston-OVH
+      - vpnpool-US-Reston-OVH 2
+      - vpnpool-US-Reston-OVH 3
+      - vpnpool-香港Kirino
+      - vpnpool-香港Kirino 2
+      - vpnpool-香港Kirino 3
+      - vpnpool-香港Kirino 4
+      - vpnpool-香港Kirino 5
+      - vpnpool-香港Kirino 6
+      - vpnpool-香港Kirino 7
+      - vpnpool-香港Kirino 8
+      - vpnpool-香港Kirino 9
+      - vpnpool-香港Kirino 10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡-SG-A2-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
+      - vpnpool-Amsterdam-M247-free
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-Kuala Lumpur-Gigabit
+      - vpnpool-Kuala Lumpur-Gigabit-free
+      - vpnpool-LAX-DediPath-free
+      - vpnpool-Makati-Eastern
+      - vpnpool-Makati-Eastern-free
+      - vpnpool-TR-Ulus-DGN
+      - vpnpool-Zurich-M247-free
+      - vpnpool-香港Azure
+      - vpnpool-香港Azure-免费
+      - vpnpool-香港HKBN
+      - vpnpool-香港HKT
+      - vpnpool-SG-OVH
+      - vpnpool-SG-OVH 2
+      - vpnpool-SG-OVH 3
+      - vpnpool-SG-OVH 4
+      - vpnpool-SG-OVH 5
+      - vpnpool-SG-OVH 6
+      - vpnpool-SG-OVH 7
+      - vpnpool-SG-OVH 8
+      - vpnpool-Seoul-Choopa
+      - vpnpool-Seoul-Choopa 2
+      - vpnpool-Seoul-Choopa 3
+      - vpnpool-Seoul-Choopa 4
+      - vpnpool-Tokyo-M247
+      - vpnpool-Tokyo-M247 2
+      - vpnpool-Tokyo-M247 3
+      - vpnpool-Tokyo-M247 4
+      - vpnpool-Tokyo-M247 5
+      - vpnpool-Tokyo-M247 6
+      - vpnpool-Tokyo-M247 7
+      - vpnpool-Tokyo-M247 8
+      - vpnpool-Tokyo-M247 9
+      - vpnpool-Tokyo-M247 10
+      - vpnpool-US-Hillsboro-OVH
+      - vpnpool-US-Hillsboro-OVH 2
+      - vpnpool-US-Hillsboro-OVH 3
+      - vpnpool-US-Hillsboro-OVH 4
+      - vpnpool-US-Hillsboro-OVH 5
+      - vpnpool-US-Hillsboro-OVH 6
+      - vpnpool-US-Hillsboro-OVH 7
+      - vpnpool-US-Reston-OVH
+      - vpnpool-US-Reston-OVH 2
+      - vpnpool-US-Reston-OVH 3
+      - vpnpool-香港Kirino
+      - vpnpool-香港Kirino 2
+      - vpnpool-香港Kirino 3
+      - vpnpool-香港Kirino 4
+      - vpnpool-香港Kirino 5
+      - vpnpool-香港Kirino 6
+      - vpnpool-香港Kirino 7
+      - vpnpool-香港Kirino 8
+      - vpnpool-香港Kirino 9
+      - vpnpool-香港Kirino 10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -433,48 +530,61 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡-SG-A2-CM中继
-      - 美国 洛杉矶-A2-CM中继
-      - 俄罗斯a RT
-      - 香港动态 HKT B
-      - 香港动态 HKT C
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT C"
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKT F"
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKT H"
-      - "[CT/CM] HKT I"
-      - "[CT/CM] HKT J"
-      - "[CT/CM] HKT M"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKBN A"
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKBN D"
-      - 日本 Azure A 2.5x
-      - 新加坡B
-      - 新加坡C
-      - 新加坡D
-      - 新加坡E
-      - 韩国高速接入A
-      - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 美国 优化 C 3.5
-      - 美国 优化 D 3.5
-      - 美国 优化 E 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 台湾 F
-      - 台湾 I
-      - 台湾 M
-      - 意大利
-      - 西班牙
-      - 德国
+      - vpnpool-Amsterdam-M247-free
+      - vpnpool-Ho Chi Minh-Cloudcore
+      - vpnpool-Kuala Lumpur-Gigabit
+      - vpnpool-Kuala Lumpur-Gigabit-free
+      - vpnpool-LAX-DediPath-free
+      - vpnpool-Makati-Eastern
+      - vpnpool-Makati-Eastern-free
+      - vpnpool-TR-Ulus-DGN
+      - vpnpool-Zurich-M247-free
+      - vpnpool-香港Azure
+      - vpnpool-香港Azure-免费
+      - vpnpool-香港HKBN
+      - vpnpool-香港HKT
+      - vpnpool-SG-OVH
+      - vpnpool-SG-OVH 2
+      - vpnpool-SG-OVH 3
+      - vpnpool-SG-OVH 4
+      - vpnpool-SG-OVH 5
+      - vpnpool-SG-OVH 6
+      - vpnpool-SG-OVH 7
+      - vpnpool-SG-OVH 8
+      - vpnpool-Seoul-Choopa
+      - vpnpool-Seoul-Choopa 2
+      - vpnpool-Seoul-Choopa 3
+      - vpnpool-Seoul-Choopa 4
+      - vpnpool-Tokyo-M247
+      - vpnpool-Tokyo-M247 2
+      - vpnpool-Tokyo-M247 3
+      - vpnpool-Tokyo-M247 4
+      - vpnpool-Tokyo-M247 5
+      - vpnpool-Tokyo-M247 6
+      - vpnpool-Tokyo-M247 7
+      - vpnpool-Tokyo-M247 8
+      - vpnpool-Tokyo-M247 9
+      - vpnpool-Tokyo-M247 10
+      - vpnpool-US-Hillsboro-OVH
+      - vpnpool-US-Hillsboro-OVH 2
+      - vpnpool-US-Hillsboro-OVH 3
+      - vpnpool-US-Hillsboro-OVH 4
+      - vpnpool-US-Hillsboro-OVH 5
+      - vpnpool-US-Hillsboro-OVH 6
+      - vpnpool-US-Hillsboro-OVH 7
+      - vpnpool-US-Reston-OVH
+      - vpnpool-US-Reston-OVH 2
+      - vpnpool-US-Reston-OVH 3
+      - vpnpool-香港Kirino
+      - vpnpool-香港Kirino 2
+      - vpnpool-香港Kirino 3
+      - vpnpool-香港Kirino 4
+      - vpnpool-香港Kirino 5
+      - vpnpool-香港Kirino 6
+      - vpnpool-香港Kirino 7
+      - vpnpool-香港Kirino 8
+      - vpnpool-香港Kirino 9
+      - vpnpool-香港Kirino 10
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
