@@ -5,243 +5,139 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: vpnpool-JP, server: 120.232.215.251, port: 1126, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-JP 2, server: 120.232.215.196, port: 1126, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-JP 3, server: 120.232.214.247, port: 1126, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG, server: 120.232.215.251, port: 1125, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG 2, server: 120.232.215.196, port: 1125, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG 3, server: 120.232.214.247, port: 1125, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG 4, server: 120.232.214.247, port: 1004, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG 5, server: 120.232.214.247, port: 1003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG 6, server: 120.232.214.247, port: 1002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG 7, server: 120.232.214.247, port: 1001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Choopa, server: 120.232.214.29, port: 2203, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Choopa 2, server: 120.232.214.29, port: 2202, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Choopa 3, server: 120.232.214.29, port: 2201, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Choopa 4, server: 120.232.215.251, port: 2003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Choopa 5, server: 120.232.215.196, port: 2003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Choopa 6, server: 120.232.215.147, port: 2003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Choopa 7, server: 120.232.214.247, port: 2003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Choopa 8, server: 120.232.215.251, port: 2002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Choopa 9, server: 120.232.215.196, port: 2002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Choopa 10, server: 120.232.215.147, port: 2002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Choopa 11, server: 120.232.214.247, port: 2002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Linode, server: 120.232.215.251, port: 1128, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Linode 2, server: 120.232.215.196, port: 1128, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Linode 3, server: 120.232.215.147, port: 1128, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Linode 4, server: 120.232.214.247, port: 1128, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Seoul-Choopa, server: 120.232.214.29, port: 2303, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Seoul-Choopa 2, server: 120.232.214.29, port: 2302, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Seoul-Choopa 3, server: 120.232.214.29, port: 2301, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Tokyo-Linode, server: 120.232.215.251, port: 1129, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Tokyo-Linode 2, server: 120.232.215.196, port: 1129, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Tokyo-Linode 3, server: 120.232.215.147, port: 1129, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Tokyo-Linode 4, server: 120.232.214.247, port: 1129, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-新北Hinet, server: 120.232.215.251, port: 1131, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-新北Hinet 2, server: 120.232.215.147, port: 1131, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-新北Hinet 3, server: 120.232.214.247, port: 1131, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-新北Hinet 4, server: 120.232.215.251, port: 1130, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-新北Hinet 5, server: 120.232.215.196, port: 1130, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-彰化Hinet, server: 120.232.215.251, port: 1122, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-彰化Hinet 2, server: 120.232.215.196, port: 1122, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-彰化Hinet 3, server: 120.232.214.247, port: 1122, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-台湾, server: 120.232.214.29, port: 1116, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-台湾 2, server: 120.232.214.29, port: 1115, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-台湾 3, server: 120.232.214.29, port: 1114, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-台湾 4, server: 120.232.214.29, port: 1113, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-香港, server: 120.232.214.29, port: 2110, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-香港 2, server: 120.232.214.29, port: 2109, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-香港 3, server: 120.232.214.29, port: 2107, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-香港 4, server: 183.232.56.176, port: 2105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-香港 5, server: 183.232.56.176, port: 2103, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-香港 6, server: 120.232.214.29, port: 2102, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-香港 7, server: 120.232.214.29, port: 2101, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-苗栗Hinet, server: 120.232.215.251, port: 1123, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-苗栗Hinet 2, server: 120.232.215.196, port: 1123, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-苗栗Hinet 3, server: 120.232.215.147, port: 1123, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-苗栗Hinet 4, server: 120.232.214.247, port: 1123, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 196103:3iK6Ik, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "*@nfeng6 香港-中继-05", server: 120.233.10.182, port: 2704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6台湾 -中继-04", server: 120.233.10.182, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6新加坡-中继-03", server: 120.233.10.182, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6新加坡-中继-05", server: 120.233.10.182, port: 6704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: 日本-中继-03, server: 120.233.10.182, port: 3702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: 日本-中继-05, server: 120.233.10.182, port: 3704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: 日本-中继-08, server: 120.233.10.182, port: 3707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6韩国-中继-01", server: 120.233.10.182, port: 4000, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6韩国-中继-03", server: 120.233.10.182, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6台湾 -中继-02", server: 120.233.10.182, port: 5701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63277:a4XecS, obfs-param: e167063277.microsoft.com, udp: true}
+  - {name: "@nfeng6台湾 -中继-05", server: 120.233.10.182, port: 5704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63277:a4XecS, obfs-param: e167063277.microsoft.com, udp: true}
+  - {name: "@nfeng6新加坡-中继-02", server: 120.233.10.182, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63277:a4XecS, obfs-param: e167063277.microsoft.com, udp: true}
+  - {name: "@nfeng6新加坡-中继-10", server: 120.233.10.182, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63277:a4XecS, obfs-param: e167063277.microsoft.com, udp: true}
+  - {name: 日本-中继-10, server: 120.233.10.182, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63277:a4XecS, obfs-param: e167063277.microsoft.com, udp: true}
+  - {name: "*@nfeng6 香港-中继-08", server: 120.233.10.182, port: 2707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "*@nfeng6 香港-中继-10", server: 120.233.10.182, port: 2709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6新加坡-中继-06", server: 120.233.10.182, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: 香港, server: 120.233.10.182, port: 2700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6新加坡-中继-04", server: 120.233.10.182, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63277:a4XecS, obfs-param: e167063277.microsoft.com, udp: true}
+  - {name: sunny03日本jp2, server: yii3.vipvip11.top, port: 20002, type: ssr, cipher: chacha20-ietf, password: 7mtHSG, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22572:w3eXom, obfs-param: f249922572.microsoft.com, udp: true}
+  - {name: sunny09香港hk2, server: yii9.vipvip11.top, port: 30019, type: ssr, cipher: chacha20-ietf, password: 7mtHSG, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22572:w3eXom, obfs-param: f249922572.microsoft.com, udp: true}
+  - {name: sunny16香港hk2, server: yii16.vipvip11.top, port: 30016, type: ssr, cipher: chacha20-ietf, password: 7mtHSG, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22572:w3eXom, obfs-param: f249922572.microsoft.com, udp: true}
+  - {name: sunny21香港hkc, server: yii21.vipvip11.top, port: 20279, type: ssr, cipher: chacha20-ietf, password: 7mtHSG, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22572:w3eXom, obfs-param: f249922572.microsoft.com, udp: true}
+  - {name: sunny26日本jp, server: yii26.vipvip11.top, port: 20026, type: ssr, cipher: chacha20-ietf, password: 7mtHSG, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22572:w3eXom, obfs-param: f249922572.microsoft.com, udp: true}
+  - {name: sunny29Hk, server: yii29.vipvip11.top, port: 26001, type: ssr, cipher: chacha20-ietf, password: 7mtHSG, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22572:w3eXom, obfs-param: f249922572.microsoft.com, udp: true}
+  - {name: sunny32日本Jp, server: yii32.vipvip11.top, port: 20179, type: ssr, cipher: chacha20-ietf, password: 7mtHSG, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22572:w3eXom, obfs-param: f249922572.microsoft.com, udp: true}
+  - {name: "@nfeng6新加坡-中继-01", server: 120.233.10.182, port: 6700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6新加坡-中继-04 2", server: 120.233.10.182, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "*@nfeng6 香港-中继-07", server: 120.233.10.182, port: 2706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnpool-JP
-      - vpnpool-JP 2
-      - vpnpool-JP 3
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - vpnpool-SG 3
-      - vpnpool-SG 4
-      - vpnpool-SG 5
-      - vpnpool-SG 6
-      - vpnpool-SG 7
-      - vpnpool-SG-Choopa
-      - vpnpool-SG-Choopa 2
-      - vpnpool-SG-Choopa 3
-      - vpnpool-SG-Choopa 4
-      - vpnpool-SG-Choopa 5
-      - vpnpool-SG-Choopa 6
-      - vpnpool-SG-Choopa 7
-      - vpnpool-SG-Choopa 8
-      - vpnpool-SG-Choopa 9
-      - vpnpool-SG-Choopa 10
-      - vpnpool-SG-Choopa 11
-      - vpnpool-SG-Linode
-      - vpnpool-SG-Linode 2
-      - vpnpool-SG-Linode 3
-      - vpnpool-SG-Linode 4
-      - vpnpool-Seoul-Choopa
-      - vpnpool-Seoul-Choopa 2
-      - vpnpool-Seoul-Choopa 3
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-新北Hinet
-      - vpnpool-新北Hinet 2
-      - vpnpool-新北Hinet 3
-      - vpnpool-新北Hinet 4
-      - vpnpool-新北Hinet 5
-      - vpnpool-彰化Hinet
-      - vpnpool-彰化Hinet 2
-      - vpnpool-彰化Hinet 3
-      - vpnpool-台湾
-      - vpnpool-台湾 2
-      - vpnpool-台湾 3
-      - vpnpool-台湾 4
-      - vpnpool-香港
-      - vpnpool-香港 2
-      - vpnpool-香港 3
-      - vpnpool-香港 4
-      - vpnpool-香港 5
-      - vpnpool-香港 6
-      - vpnpool-香港 7
-      - vpnpool-苗栗Hinet
-      - vpnpool-苗栗Hinet 2
-      - vpnpool-苗栗Hinet 3
-      - vpnpool-苗栗Hinet 4
+      - "*@nfeng6 香港-中继-05"
+      - "@nfeng6台湾 -中继-04"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6新加坡-中继-05"
+      - 日本-中继-03
+      - 日本-中继-05
+      - 日本-中继-08
+      - "@nfeng6韩国-中继-01"
+      - "@nfeng6韩国-中继-03"
+      - "@nfeng6台湾 -中继-02"
+      - "@nfeng6台湾 -中继-05"
+      - "@nfeng6新加坡-中继-02"
+      - "@nfeng6新加坡-中继-10"
+      - 日本-中继-10
+      - "*@nfeng6 香港-中继-08"
+      - "*@nfeng6 香港-中继-10"
+      - "@nfeng6新加坡-中继-06"
+      - 香港
+      - "@nfeng6新加坡-中继-04"
+      - sunny03日本jp2
+      - sunny09香港hk2
+      - sunny16香港hk2
+      - sunny21香港hkc
+      - sunny26日本jp
+      - sunny29Hk
+      - sunny32日本Jp
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-04 2"
+      - "*@nfeng6 香港-中继-07"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - vpnpool-JP
-      - vpnpool-JP 2
-      - vpnpool-JP 3
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - vpnpool-SG 3
-      - vpnpool-SG 4
-      - vpnpool-SG 5
-      - vpnpool-SG 6
-      - vpnpool-SG 7
-      - vpnpool-SG-Choopa
-      - vpnpool-SG-Choopa 2
-      - vpnpool-SG-Choopa 3
-      - vpnpool-SG-Choopa 4
-      - vpnpool-SG-Choopa 5
-      - vpnpool-SG-Choopa 6
-      - vpnpool-SG-Choopa 7
-      - vpnpool-SG-Choopa 8
-      - vpnpool-SG-Choopa 9
-      - vpnpool-SG-Choopa 10
-      - vpnpool-SG-Choopa 11
-      - vpnpool-SG-Linode
-      - vpnpool-SG-Linode 2
-      - vpnpool-SG-Linode 3
-      - vpnpool-SG-Linode 4
-      - vpnpool-Seoul-Choopa
-      - vpnpool-Seoul-Choopa 2
-      - vpnpool-Seoul-Choopa 3
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-新北Hinet
-      - vpnpool-新北Hinet 2
-      - vpnpool-新北Hinet 3
-      - vpnpool-新北Hinet 4
-      - vpnpool-新北Hinet 5
-      - vpnpool-彰化Hinet
-      - vpnpool-彰化Hinet 2
-      - vpnpool-彰化Hinet 3
-      - vpnpool-台湾
-      - vpnpool-台湾 2
-      - vpnpool-台湾 3
-      - vpnpool-台湾 4
-      - vpnpool-香港
-      - vpnpool-香港 2
-      - vpnpool-香港 3
-      - vpnpool-香港 4
-      - vpnpool-香港 5
-      - vpnpool-香港 6
-      - vpnpool-香港 7
-      - vpnpool-苗栗Hinet
-      - vpnpool-苗栗Hinet 2
-      - vpnpool-苗栗Hinet 3
-      - vpnpool-苗栗Hinet 4
+      - "*@nfeng6 香港-中继-05"
+      - "@nfeng6台湾 -中继-04"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6新加坡-中继-05"
+      - 日本-中继-03
+      - 日本-中继-05
+      - 日本-中继-08
+      - "@nfeng6韩国-中继-01"
+      - "@nfeng6韩国-中继-03"
+      - "@nfeng6台湾 -中继-02"
+      - "@nfeng6台湾 -中继-05"
+      - "@nfeng6新加坡-中继-02"
+      - "@nfeng6新加坡-中继-10"
+      - 日本-中继-10
+      - "*@nfeng6 香港-中继-08"
+      - "*@nfeng6 香港-中继-10"
+      - "@nfeng6新加坡-中继-06"
+      - 香港
+      - "@nfeng6新加坡-中继-04"
+      - sunny03日本jp2
+      - sunny09香港hk2
+      - sunny16香港hk2
+      - sunny21香港hkc
+      - sunny26日本jp
+      - sunny29Hk
+      - sunny32日本Jp
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-04 2"
+      - "*@nfeng6 香港-中继-07"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnpool-JP
-      - vpnpool-JP 2
-      - vpnpool-JP 3
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - vpnpool-SG 3
-      - vpnpool-SG 4
-      - vpnpool-SG 5
-      - vpnpool-SG 6
-      - vpnpool-SG 7
-      - vpnpool-SG-Choopa
-      - vpnpool-SG-Choopa 2
-      - vpnpool-SG-Choopa 3
-      - vpnpool-SG-Choopa 4
-      - vpnpool-SG-Choopa 5
-      - vpnpool-SG-Choopa 6
-      - vpnpool-SG-Choopa 7
-      - vpnpool-SG-Choopa 8
-      - vpnpool-SG-Choopa 9
-      - vpnpool-SG-Choopa 10
-      - vpnpool-SG-Choopa 11
-      - vpnpool-SG-Linode
-      - vpnpool-SG-Linode 2
-      - vpnpool-SG-Linode 3
-      - vpnpool-SG-Linode 4
-      - vpnpool-Seoul-Choopa
-      - vpnpool-Seoul-Choopa 2
-      - vpnpool-Seoul-Choopa 3
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-新北Hinet
-      - vpnpool-新北Hinet 2
-      - vpnpool-新北Hinet 3
-      - vpnpool-新北Hinet 4
-      - vpnpool-新北Hinet 5
-      - vpnpool-彰化Hinet
-      - vpnpool-彰化Hinet 2
-      - vpnpool-彰化Hinet 3
-      - vpnpool-台湾
-      - vpnpool-台湾 2
-      - vpnpool-台湾 3
-      - vpnpool-台湾 4
-      - vpnpool-香港
-      - vpnpool-香港 2
-      - vpnpool-香港 3
-      - vpnpool-香港 4
-      - vpnpool-香港 5
-      - vpnpool-香港 6
-      - vpnpool-香港 7
-      - vpnpool-苗栗Hinet
-      - vpnpool-苗栗Hinet 2
-      - vpnpool-苗栗Hinet 3
-      - vpnpool-苗栗Hinet 4
+      - "*@nfeng6 香港-中继-05"
+      - "@nfeng6台湾 -中继-04"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6新加坡-中继-05"
+      - 日本-中继-03
+      - 日本-中继-05
+      - 日本-中继-08
+      - "@nfeng6韩国-中继-01"
+      - "@nfeng6韩国-中继-03"
+      - "@nfeng6台湾 -中继-02"
+      - "@nfeng6台湾 -中继-05"
+      - "@nfeng6新加坡-中继-02"
+      - "@nfeng6新加坡-中继-10"
+      - 日本-中继-10
+      - "*@nfeng6 香港-中继-08"
+      - "*@nfeng6 香港-中继-10"
+      - "@nfeng6新加坡-中继-06"
+      - 香港
+      - "@nfeng6新加坡-中继-04"
+      - sunny03日本jp2
+      - sunny09香港hk2
+      - sunny16香港hk2
+      - sunny21香港hkc
+      - sunny26日本jp
+      - sunny29Hk
+      - sunny32日本Jp
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-04 2"
+      - "*@nfeng6 香港-中继-07"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -260,266 +156,154 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnpool-JP
-      - vpnpool-JP 2
-      - vpnpool-JP 3
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - vpnpool-SG 3
-      - vpnpool-SG 4
-      - vpnpool-SG 5
-      - vpnpool-SG 6
-      - vpnpool-SG 7
-      - vpnpool-SG-Choopa
-      - vpnpool-SG-Choopa 2
-      - vpnpool-SG-Choopa 3
-      - vpnpool-SG-Choopa 4
-      - vpnpool-SG-Choopa 5
-      - vpnpool-SG-Choopa 6
-      - vpnpool-SG-Choopa 7
-      - vpnpool-SG-Choopa 8
-      - vpnpool-SG-Choopa 9
-      - vpnpool-SG-Choopa 10
-      - vpnpool-SG-Choopa 11
-      - vpnpool-SG-Linode
-      - vpnpool-SG-Linode 2
-      - vpnpool-SG-Linode 3
-      - vpnpool-SG-Linode 4
-      - vpnpool-Seoul-Choopa
-      - vpnpool-Seoul-Choopa 2
-      - vpnpool-Seoul-Choopa 3
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-新北Hinet
-      - vpnpool-新北Hinet 2
-      - vpnpool-新北Hinet 3
-      - vpnpool-新北Hinet 4
-      - vpnpool-新北Hinet 5
-      - vpnpool-彰化Hinet
-      - vpnpool-彰化Hinet 2
-      - vpnpool-彰化Hinet 3
-      - vpnpool-台湾
-      - vpnpool-台湾 2
-      - vpnpool-台湾 3
-      - vpnpool-台湾 4
-      - vpnpool-香港
-      - vpnpool-香港 2
-      - vpnpool-香港 3
-      - vpnpool-香港 4
-      - vpnpool-香港 5
-      - vpnpool-香港 6
-      - vpnpool-香港 7
-      - vpnpool-苗栗Hinet
-      - vpnpool-苗栗Hinet 2
-      - vpnpool-苗栗Hinet 3
-      - vpnpool-苗栗Hinet 4
+      - "*@nfeng6 香港-中继-05"
+      - "@nfeng6台湾 -中继-04"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6新加坡-中继-05"
+      - 日本-中继-03
+      - 日本-中继-05
+      - 日本-中继-08
+      - "@nfeng6韩国-中继-01"
+      - "@nfeng6韩国-中继-03"
+      - "@nfeng6台湾 -中继-02"
+      - "@nfeng6台湾 -中继-05"
+      - "@nfeng6新加坡-中继-02"
+      - "@nfeng6新加坡-中继-10"
+      - 日本-中继-10
+      - "*@nfeng6 香港-中继-08"
+      - "*@nfeng6 香港-中继-10"
+      - "@nfeng6新加坡-中继-06"
+      - 香港
+      - "@nfeng6新加坡-中继-04"
+      - sunny03日本jp2
+      - sunny09香港hk2
+      - sunny16香港hk2
+      - sunny21香港hkc
+      - sunny26日本jp
+      - sunny29Hk
+      - sunny32日本Jp
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-04 2"
+      - "*@nfeng6 香港-中继-07"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - vpnpool-新北Hinet
-      - vpnpool-新北Hinet 2
-      - vpnpool-新北Hinet 3
-      - vpnpool-新北Hinet 4
-      - vpnpool-新北Hinet 5
-      - vpnpool-彰化Hinet
-      - vpnpool-彰化Hinet 2
-      - vpnpool-彰化Hinet 3
-      - vpnpool-台湾
-      - vpnpool-台湾 2
-      - vpnpool-台湾 3
-      - vpnpool-台湾 4
-      - vpnpool-香港
-      - vpnpool-香港 2
-      - vpnpool-香港 3
-      - vpnpool-香港 4
-      - vpnpool-香港 5
-      - vpnpool-香港 6
-      - vpnpool-香港 7
+      - "*@nfeng6 香港-中继-05"
+      - "@nfeng6台湾 -中继-04"
+      - "@nfeng6台湾 -中继-02"
+      - "@nfeng6台湾 -中继-05"
+      - "*@nfeng6 香港-中继-08"
+      - "*@nfeng6 香港-中继-10"
+      - 香港
+      - sunny09香港hk2
+      - sunny16香港hk2
+      - sunny21香港hkc
+      - "*@nfeng6 香港-中继-07"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - vpnpool-JP
-      - vpnpool-JP 2
-      - vpnpool-JP 3
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - vpnpool-SG 3
-      - vpnpool-SG 4
-      - vpnpool-SG 5
-      - vpnpool-SG 6
-      - vpnpool-SG 7
-      - vpnpool-SG-Choopa
-      - vpnpool-SG-Choopa 2
-      - vpnpool-SG-Choopa 3
-      - vpnpool-SG-Choopa 4
-      - vpnpool-SG-Choopa 5
-      - vpnpool-SG-Choopa 6
-      - vpnpool-SG-Choopa 7
-      - vpnpool-SG-Choopa 8
-      - vpnpool-SG-Choopa 9
-      - vpnpool-SG-Choopa 10
-      - vpnpool-SG-Choopa 11
-      - vpnpool-SG-Linode
-      - vpnpool-SG-Linode 2
-      - vpnpool-SG-Linode 3
-      - vpnpool-SG-Linode 4
-      - vpnpool-Seoul-Choopa
-      - vpnpool-Seoul-Choopa 2
-      - vpnpool-Seoul-Choopa 3
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-新北Hinet
-      - vpnpool-新北Hinet 2
-      - vpnpool-新北Hinet 3
-      - vpnpool-新北Hinet 4
-      - vpnpool-新北Hinet 5
-      - vpnpool-彰化Hinet
-      - vpnpool-彰化Hinet 2
-      - vpnpool-彰化Hinet 3
-      - vpnpool-台湾
-      - vpnpool-台湾 2
-      - vpnpool-台湾 3
-      - vpnpool-台湾 4
-      - vpnpool-香港
-      - vpnpool-香港 2
-      - vpnpool-香港 3
-      - vpnpool-香港 4
-      - vpnpool-香港 5
-      - vpnpool-香港 6
-      - vpnpool-香港 7
-      - vpnpool-苗栗Hinet
-      - vpnpool-苗栗Hinet 2
-      - vpnpool-苗栗Hinet 3
-      - vpnpool-苗栗Hinet 4
+      - "*@nfeng6 香港-中继-05"
+      - "@nfeng6台湾 -中继-04"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6新加坡-中继-05"
+      - 日本-中继-03
+      - 日本-中继-05
+      - 日本-中继-08
+      - "@nfeng6韩国-中继-01"
+      - "@nfeng6韩国-中继-03"
+      - "@nfeng6台湾 -中继-02"
+      - "@nfeng6台湾 -中继-05"
+      - "@nfeng6新加坡-中继-02"
+      - "@nfeng6新加坡-中继-10"
+      - 日本-中继-10
+      - "*@nfeng6 香港-中继-08"
+      - "*@nfeng6 香港-中继-10"
+      - "@nfeng6新加坡-中继-06"
+      - 香港
+      - "@nfeng6新加坡-中继-04"
+      - sunny03日本jp2
+      - sunny09香港hk2
+      - sunny16香港hk2
+      - sunny21香港hkc
+      - sunny26日本jp
+      - sunny29Hk
+      - sunny32日本Jp
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-04 2"
+      - "*@nfeng6 香港-中继-07"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - vpnpool-JP
-      - vpnpool-JP 2
-      - vpnpool-JP 3
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - vpnpool-SG 3
-      - vpnpool-SG 4
-      - vpnpool-SG 5
-      - vpnpool-SG 6
-      - vpnpool-SG 7
-      - vpnpool-SG-Choopa
-      - vpnpool-SG-Choopa 2
-      - vpnpool-SG-Choopa 3
-      - vpnpool-SG-Choopa 4
-      - vpnpool-SG-Choopa 5
-      - vpnpool-SG-Choopa 6
-      - vpnpool-SG-Choopa 7
-      - vpnpool-SG-Choopa 8
-      - vpnpool-SG-Choopa 9
-      - vpnpool-SG-Choopa 10
-      - vpnpool-SG-Choopa 11
-      - vpnpool-SG-Linode
-      - vpnpool-SG-Linode 2
-      - vpnpool-SG-Linode 3
-      - vpnpool-SG-Linode 4
-      - vpnpool-Seoul-Choopa
-      - vpnpool-Seoul-Choopa 2
-      - vpnpool-Seoul-Choopa 3
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-新北Hinet
-      - vpnpool-新北Hinet 2
-      - vpnpool-新北Hinet 3
-      - vpnpool-新北Hinet 4
-      - vpnpool-新北Hinet 5
-      - vpnpool-彰化Hinet
-      - vpnpool-彰化Hinet 2
-      - vpnpool-彰化Hinet 3
-      - vpnpool-台湾
-      - vpnpool-台湾 2
-      - vpnpool-台湾 3
-      - vpnpool-台湾 4
-      - vpnpool-香港
-      - vpnpool-香港 2
-      - vpnpool-香港 3
-      - vpnpool-香港 4
-      - vpnpool-香港 5
-      - vpnpool-香港 6
-      - vpnpool-香港 7
-      - vpnpool-苗栗Hinet
-      - vpnpool-苗栗Hinet 2
-      - vpnpool-苗栗Hinet 3
-      - vpnpool-苗栗Hinet 4
+      - "*@nfeng6 香港-中继-05"
+      - "@nfeng6台湾 -中继-04"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6新加坡-中继-05"
+      - 日本-中继-03
+      - 日本-中继-05
+      - 日本-中继-08
+      - "@nfeng6韩国-中继-01"
+      - "@nfeng6韩国-中继-03"
+      - "@nfeng6台湾 -中继-02"
+      - "@nfeng6台湾 -中继-05"
+      - "@nfeng6新加坡-中继-02"
+      - "@nfeng6新加坡-中继-10"
+      - 日本-中继-10
+      - "*@nfeng6 香港-中继-08"
+      - "*@nfeng6 香港-中继-10"
+      - "@nfeng6新加坡-中继-06"
+      - 香港
+      - "@nfeng6新加坡-中继-04"
+      - sunny03日本jp2
+      - sunny09香港hk2
+      - sunny16香港hk2
+      - sunny21香港hkc
+      - sunny26日本jp
+      - sunny29Hk
+      - sunny32日本Jp
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-04 2"
+      - "*@nfeng6 香港-中继-07"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnpool-JP
-      - vpnpool-JP 2
-      - vpnpool-JP 3
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - vpnpool-SG 3
-      - vpnpool-SG 4
-      - vpnpool-SG 5
-      - vpnpool-SG 6
-      - vpnpool-SG 7
-      - vpnpool-SG-Choopa
-      - vpnpool-SG-Choopa 2
-      - vpnpool-SG-Choopa 3
-      - vpnpool-SG-Choopa 4
-      - vpnpool-SG-Choopa 5
-      - vpnpool-SG-Choopa 6
-      - vpnpool-SG-Choopa 7
-      - vpnpool-SG-Choopa 8
-      - vpnpool-SG-Choopa 9
-      - vpnpool-SG-Choopa 10
-      - vpnpool-SG-Choopa 11
-      - vpnpool-SG-Linode
-      - vpnpool-SG-Linode 2
-      - vpnpool-SG-Linode 3
-      - vpnpool-SG-Linode 4
-      - vpnpool-Seoul-Choopa
-      - vpnpool-Seoul-Choopa 2
-      - vpnpool-Seoul-Choopa 3
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-新北Hinet
-      - vpnpool-新北Hinet 2
-      - vpnpool-新北Hinet 3
-      - vpnpool-新北Hinet 4
-      - vpnpool-新北Hinet 5
-      - vpnpool-彰化Hinet
-      - vpnpool-彰化Hinet 2
-      - vpnpool-彰化Hinet 3
-      - vpnpool-台湾
-      - vpnpool-台湾 2
-      - vpnpool-台湾 3
-      - vpnpool-台湾 4
-      - vpnpool-香港
-      - vpnpool-香港 2
-      - vpnpool-香港 3
-      - vpnpool-香港 4
-      - vpnpool-香港 5
-      - vpnpool-香港 6
-      - vpnpool-香港 7
-      - vpnpool-苗栗Hinet
-      - vpnpool-苗栗Hinet 2
-      - vpnpool-苗栗Hinet 3
-      - vpnpool-苗栗Hinet 4
+      - "*@nfeng6 香港-中继-05"
+      - "@nfeng6台湾 -中继-04"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6新加坡-中继-05"
+      - 日本-中继-03
+      - 日本-中继-05
+      - 日本-中继-08
+      - "@nfeng6韩国-中继-01"
+      - "@nfeng6韩国-中继-03"
+      - "@nfeng6台湾 -中继-02"
+      - "@nfeng6台湾 -中继-05"
+      - "@nfeng6新加坡-中继-02"
+      - "@nfeng6新加坡-中继-10"
+      - 日本-中继-10
+      - "*@nfeng6 香港-中继-08"
+      - "*@nfeng6 香港-中继-10"
+      - "@nfeng6新加坡-中继-06"
+      - 香港
+      - "@nfeng6新加坡-中继-04"
+      - sunny03日本jp2
+      - sunny09香港hk2
+      - sunny16香港hk2
+      - sunny21香港hkc
+      - sunny26日本jp
+      - sunny29Hk
+      - sunny32日本Jp
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-04 2"
+      - "*@nfeng6 香港-中继-07"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -535,61 +319,35 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnpool-JP
-      - vpnpool-JP 2
-      - vpnpool-JP 3
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - vpnpool-SG 3
-      - vpnpool-SG 4
-      - vpnpool-SG 5
-      - vpnpool-SG 6
-      - vpnpool-SG 7
-      - vpnpool-SG-Choopa
-      - vpnpool-SG-Choopa 2
-      - vpnpool-SG-Choopa 3
-      - vpnpool-SG-Choopa 4
-      - vpnpool-SG-Choopa 5
-      - vpnpool-SG-Choopa 6
-      - vpnpool-SG-Choopa 7
-      - vpnpool-SG-Choopa 8
-      - vpnpool-SG-Choopa 9
-      - vpnpool-SG-Choopa 10
-      - vpnpool-SG-Choopa 11
-      - vpnpool-SG-Linode
-      - vpnpool-SG-Linode 2
-      - vpnpool-SG-Linode 3
-      - vpnpool-SG-Linode 4
-      - vpnpool-Seoul-Choopa
-      - vpnpool-Seoul-Choopa 2
-      - vpnpool-Seoul-Choopa 3
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-新北Hinet
-      - vpnpool-新北Hinet 2
-      - vpnpool-新北Hinet 3
-      - vpnpool-新北Hinet 4
-      - vpnpool-新北Hinet 5
-      - vpnpool-彰化Hinet
-      - vpnpool-彰化Hinet 2
-      - vpnpool-彰化Hinet 3
-      - vpnpool-台湾
-      - vpnpool-台湾 2
-      - vpnpool-台湾 3
-      - vpnpool-台湾 4
-      - vpnpool-香港
-      - vpnpool-香港 2
-      - vpnpool-香港 3
-      - vpnpool-香港 4
-      - vpnpool-香港 5
-      - vpnpool-香港 6
-      - vpnpool-香港 7
-      - vpnpool-苗栗Hinet
-      - vpnpool-苗栗Hinet 2
-      - vpnpool-苗栗Hinet 3
-      - vpnpool-苗栗Hinet 4
+      - "*@nfeng6 香港-中继-05"
+      - "@nfeng6台湾 -中继-04"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6新加坡-中继-05"
+      - 日本-中继-03
+      - 日本-中继-05
+      - 日本-中继-08
+      - "@nfeng6韩国-中继-01"
+      - "@nfeng6韩国-中继-03"
+      - "@nfeng6台湾 -中继-02"
+      - "@nfeng6台湾 -中继-05"
+      - "@nfeng6新加坡-中继-02"
+      - "@nfeng6新加坡-中继-10"
+      - 日本-中继-10
+      - "*@nfeng6 香港-中继-08"
+      - "*@nfeng6 香港-中继-10"
+      - "@nfeng6新加坡-中继-06"
+      - 香港
+      - "@nfeng6新加坡-中继-04"
+      - sunny03日本jp2
+      - sunny09香港hk2
+      - sunny16香港hk2
+      - sunny21香港hkc
+      - sunny26日本jp
+      - sunny29Hk
+      - sunny32日本Jp
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-04 2"
+      - "*@nfeng6 香港-中继-07"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
