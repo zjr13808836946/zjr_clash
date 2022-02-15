@@ -5,75 +5,171 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港_TG@nodesharing_2, server: 88.wowogg.cyou, port: 52288, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本_TG@nodesharing_24, server: greencloud.jp.tgproxy.wtf, port: 28888, type: vmess, uuid: 061a5ca3-09f7-413e-8d4d-35775bb5c0eb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: greencloud.jp.tgproxy.wtf}, udp: true}
-  - {name: 中国_TG@nodesharing_157, server: styd.sf66.cf, port: 53503, type: vmess, uuid: 061a5ca3-09f7-413e-8d4d-35775bb5c0eb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: greencloud.jp.tgproxy.wtf}, udp: true}
-  - {name: 法国_YouTube：8度科技, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 由@appviper搜集_🇺🇸_US_美国_13, server: 209.141.35.147, port: 48919, type: trojan, password: 52911320-db53-40ff-917a-e5de797c28e7, skip-cert-verify: true, udp: true}
-  - {name: 中国_TG@nodesharing_238, server: styd.sf66.cf, port: 52412, type: vmess, uuid: 061a5ca3-09f7-413e-8d4d-35775bb5c0eb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: vds.sgp.tgproxy.wtf}, udp: true}
-  - {name: 台湾_TG@nodesharing_64, server: tfn.tw.tgproxy.wtf, port: 8888, type: vmess, uuid: 061a5ca3-09f7-413e-8d4d-35775bb5c0eb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: tfn.tw.tgproxy.wtf}, udp: true}
-  - {name: 【中转】JPN/日本 A - 4 广州, server: 119.147.182.164, port: 80, type: vmess, uuid: 020943ab-32f5-4e35-91dd-11121c7266ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cdn.cloudfront.rui77.com}, udp: true}
-  - {name: 【中转】JPN/日本 A - 7 宁夏, server: 116.129.226.35, port: 80, type: vmess, uuid: 020943ab-32f5-4e35-91dd-11121c7266ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cdn.cloudfront.rui77.com}, udp: true}
-  - {name: 【中转】JPN/日本 A - 8 宁夏, server: 36.103.232.160, port: 80, type: vmess, uuid: 020943ab-32f5-4e35-91dd-11121c7266ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cdn.cloudfront.rui77.com}, udp: true}
-  - {name: 【中转】JPN/日本 A - 9 北京, server: 223.71.71.233, port: 80, type: vmess, uuid: 020943ab-32f5-4e35-91dd-11121c7266ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cdn.cloudfront.rui77.com}, udp: true}
-  - {name: 【中转】JPN/日本 A - 6 宁夏, server: 111.51.66.166, port: 80, type: vmess, uuid: 020943ab-32f5-4e35-91dd-11121c7266ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cdn.cloudfront.rui77.com}, udp: true}
-  - {name: 【中转】JPN/日本 A - 10 北京, server: 118.193.97.166, port: 80, type: vmess, uuid: 020943ab-32f5-4e35-91dd-11121c7266ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cdn.cloudfront.rui77.com}, udp: true}
+  - {name: 广东省广州市腾讯云 2, server: 159.75.50.77, port: 40016, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 3, server: 106.52.33.67, port: 40378, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 4, server: 106.52.33.67, port: 40374, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 5, server: 159.75.50.77, port: 40051, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 6, server: 159.75.50.77, port: 40034, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 7, server: 106.52.33.67, port: 40371, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 8, server: 159.75.50.77, port: 40091, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 9, server: 1.14.165.96, port: 40297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 10, server: 106.52.33.67, port: 40368, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 11, server: 159.75.50.77, port: 40097, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 12, server: 1.14.165.96, port: 40262, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 13, server: 106.52.33.67, port: 40325, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 14, server: 1.14.165.96, port: 40259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 15, server: 159.75.50.77, port: 40028, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 16, server: 1.14.165.96, port: 40277, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 17, server: 159.75.50.77, port: 40092, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 18, server: 106.52.33.67, port: 40322, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 19, server: 1.14.165.96, port: 40252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 20, server: 106.52.33.67, port: 40344, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 21, server: 106.52.33.67, port: 40394, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 22, server: 159.75.50.77, port: 40026, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 23, server: 1.14.165.96, port: 40281, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 24, server: 159.75.50.77, port: 40038, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 25, server: 159.75.50.77, port: 40065, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 26, server: 1.14.165.96, port: 40254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 27, server: 159.75.50.77, port: 40046, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 28, server: 159.75.50.77, port: 40099, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 29, server: 1.14.165.96, port: 40258, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 30, server: 106.52.33.67, port: 40306, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 31, server: 159.75.50.77, port: 40060, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 32, server: 1.14.165.96, port: 40239, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 33, server: 106.52.33.67, port: 40396, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 34, server: 1.14.165.96, port: 40207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 35, server: 159.75.50.77, port: 40095, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 广东省广州市腾讯云 36, server: 106.52.33.67, port: 40326, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 新加坡Amazon数据中心 37, server: 54.169.137.68, port: 8181, type: ssr, cipher: aes-256-cfb, password: kKdNNt2HZ, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 广东省广州市腾讯云 38, server: 159.75.50.77, port: 40020, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港_TG@nodesharing_2
-      - 日本_TG@nodesharing_24
-      - 中国_TG@nodesharing_157
-      - 法国_YouTube：8度科技
-      - 由@appviper搜集_🇺🇸_US_美国_13
-      - 中国_TG@nodesharing_238
-      - 台湾_TG@nodesharing_64
-      - 【中转】JPN/日本 A - 4 广州
-      - 【中转】JPN/日本 A - 7 宁夏
-      - 【中转】JPN/日本 A - 8 宁夏
-      - 【中转】JPN/日本 A - 9 北京
-      - 【中转】JPN/日本 A - 6 宁夏
-      - 【中转】JPN/日本 A - 10 北京
+      - 广东省广州市腾讯云 2
+      - 广东省广州市腾讯云 3
+      - 广东省广州市腾讯云 4
+      - 广东省广州市腾讯云 5
+      - 广东省广州市腾讯云 6
+      - 广东省广州市腾讯云 7
+      - 广东省广州市腾讯云 8
+      - 广东省广州市腾讯云 9
+      - 广东省广州市腾讯云 10
+      - 广东省广州市腾讯云 11
+      - 广东省广州市腾讯云 12
+      - 广东省广州市腾讯云 13
+      - 广东省广州市腾讯云 14
+      - 广东省广州市腾讯云 15
+      - 广东省广州市腾讯云 16
+      - 广东省广州市腾讯云 17
+      - 广东省广州市腾讯云 18
+      - 广东省广州市腾讯云 19
+      - 广东省广州市腾讯云 20
+      - 广东省广州市腾讯云 21
+      - 广东省广州市腾讯云 22
+      - 广东省广州市腾讯云 23
+      - 广东省广州市腾讯云 24
+      - 广东省广州市腾讯云 25
+      - 广东省广州市腾讯云 26
+      - 广东省广州市腾讯云 27
+      - 广东省广州市腾讯云 28
+      - 广东省广州市腾讯云 29
+      - 广东省广州市腾讯云 30
+      - 广东省广州市腾讯云 31
+      - 广东省广州市腾讯云 32
+      - 广东省广州市腾讯云 33
+      - 广东省广州市腾讯云 34
+      - 广东省广州市腾讯云 35
+      - 广东省广州市腾讯云 36
+      - 新加坡Amazon数据中心 37
+      - 广东省广州市腾讯云 38
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港_TG@nodesharing_2
-      - 日本_TG@nodesharing_24
-      - 中国_TG@nodesharing_157
-      - 法国_YouTube：8度科技
-      - 由@appviper搜集_🇺🇸_US_美国_13
-      - 中国_TG@nodesharing_238
-      - 台湾_TG@nodesharing_64
-      - 【中转】JPN/日本 A - 4 广州
-      - 【中转】JPN/日本 A - 7 宁夏
-      - 【中转】JPN/日本 A - 8 宁夏
-      - 【中转】JPN/日本 A - 9 北京
-      - 【中转】JPN/日本 A - 6 宁夏
-      - 【中转】JPN/日本 A - 10 北京
+      - 广东省广州市腾讯云 2
+      - 广东省广州市腾讯云 3
+      - 广东省广州市腾讯云 4
+      - 广东省广州市腾讯云 5
+      - 广东省广州市腾讯云 6
+      - 广东省广州市腾讯云 7
+      - 广东省广州市腾讯云 8
+      - 广东省广州市腾讯云 9
+      - 广东省广州市腾讯云 10
+      - 广东省广州市腾讯云 11
+      - 广东省广州市腾讯云 12
+      - 广东省广州市腾讯云 13
+      - 广东省广州市腾讯云 14
+      - 广东省广州市腾讯云 15
+      - 广东省广州市腾讯云 16
+      - 广东省广州市腾讯云 17
+      - 广东省广州市腾讯云 18
+      - 广东省广州市腾讯云 19
+      - 广东省广州市腾讯云 20
+      - 广东省广州市腾讯云 21
+      - 广东省广州市腾讯云 22
+      - 广东省广州市腾讯云 23
+      - 广东省广州市腾讯云 24
+      - 广东省广州市腾讯云 25
+      - 广东省广州市腾讯云 26
+      - 广东省广州市腾讯云 27
+      - 广东省广州市腾讯云 28
+      - 广东省广州市腾讯云 29
+      - 广东省广州市腾讯云 30
+      - 广东省广州市腾讯云 31
+      - 广东省广州市腾讯云 32
+      - 广东省广州市腾讯云 33
+      - 广东省广州市腾讯云 34
+      - 广东省广州市腾讯云 35
+      - 广东省广州市腾讯云 36
+      - 新加坡Amazon数据中心 37
+      - 广东省广州市腾讯云 38
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港_TG@nodesharing_2
-      - 日本_TG@nodesharing_24
-      - 中国_TG@nodesharing_157
-      - 法国_YouTube：8度科技
-      - 由@appviper搜集_🇺🇸_US_美国_13
-      - 中国_TG@nodesharing_238
-      - 台湾_TG@nodesharing_64
-      - 【中转】JPN/日本 A - 4 广州
-      - 【中转】JPN/日本 A - 7 宁夏
-      - 【中转】JPN/日本 A - 8 宁夏
-      - 【中转】JPN/日本 A - 9 北京
-      - 【中转】JPN/日本 A - 6 宁夏
-      - 【中转】JPN/日本 A - 10 北京
+      - 广东省广州市腾讯云 2
+      - 广东省广州市腾讯云 3
+      - 广东省广州市腾讯云 4
+      - 广东省广州市腾讯云 5
+      - 广东省广州市腾讯云 6
+      - 广东省广州市腾讯云 7
+      - 广东省广州市腾讯云 8
+      - 广东省广州市腾讯云 9
+      - 广东省广州市腾讯云 10
+      - 广东省广州市腾讯云 11
+      - 广东省广州市腾讯云 12
+      - 广东省广州市腾讯云 13
+      - 广东省广州市腾讯云 14
+      - 广东省广州市腾讯云 15
+      - 广东省广州市腾讯云 16
+      - 广东省广州市腾讯云 17
+      - 广东省广州市腾讯云 18
+      - 广东省广州市腾讯云 19
+      - 广东省广州市腾讯云 20
+      - 广东省广州市腾讯云 21
+      - 广东省广州市腾讯云 22
+      - 广东省广州市腾讯云 23
+      - 广东省广州市腾讯云 24
+      - 广东省广州市腾讯云 25
+      - 广东省广州市腾讯云 26
+      - 广东省广州市腾讯云 27
+      - 广东省广州市腾讯云 28
+      - 广东省广州市腾讯云 29
+      - 广东省广州市腾讯云 30
+      - 广东省广州市腾讯云 31
+      - 广东省广州市腾讯云 32
+      - 广东省广州市腾讯云 33
+      - 广东省广州市腾讯云 34
+      - 广东省广州市腾讯云 35
+      - 广东省广州市腾讯云 36
+      - 新加坡Amazon数据中心 37
+      - 广东省广州市腾讯云 38
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,81 +188,175 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港_TG@nodesharing_2
-      - 日本_TG@nodesharing_24
-      - 中国_TG@nodesharing_157
-      - 法国_YouTube：8度科技
-      - 由@appviper搜集_🇺🇸_US_美国_13
-      - 中国_TG@nodesharing_238
-      - 台湾_TG@nodesharing_64
-      - 【中转】JPN/日本 A - 4 广州
-      - 【中转】JPN/日本 A - 7 宁夏
-      - 【中转】JPN/日本 A - 8 宁夏
-      - 【中转】JPN/日本 A - 9 北京
-      - 【中转】JPN/日本 A - 6 宁夏
-      - 【中转】JPN/日本 A - 10 北京
+      - 广东省广州市腾讯云 2
+      - 广东省广州市腾讯云 3
+      - 广东省广州市腾讯云 4
+      - 广东省广州市腾讯云 5
+      - 广东省广州市腾讯云 6
+      - 广东省广州市腾讯云 7
+      - 广东省广州市腾讯云 8
+      - 广东省广州市腾讯云 9
+      - 广东省广州市腾讯云 10
+      - 广东省广州市腾讯云 11
+      - 广东省广州市腾讯云 12
+      - 广东省广州市腾讯云 13
+      - 广东省广州市腾讯云 14
+      - 广东省广州市腾讯云 15
+      - 广东省广州市腾讯云 16
+      - 广东省广州市腾讯云 17
+      - 广东省广州市腾讯云 18
+      - 广东省广州市腾讯云 19
+      - 广东省广州市腾讯云 20
+      - 广东省广州市腾讯云 21
+      - 广东省广州市腾讯云 22
+      - 广东省广州市腾讯云 23
+      - 广东省广州市腾讯云 24
+      - 广东省广州市腾讯云 25
+      - 广东省广州市腾讯云 26
+      - 广东省广州市腾讯云 27
+      - 广东省广州市腾讯云 28
+      - 广东省广州市腾讯云 29
+      - 广东省广州市腾讯云 30
+      - 广东省广州市腾讯云 31
+      - 广东省广州市腾讯云 32
+      - 广东省广州市腾讯云 33
+      - 广东省广州市腾讯云 34
+      - 广东省广州市腾讯云 35
+      - 广东省广州市腾讯云 36
+      - 新加坡Amazon数据中心 37
+      - 广东省广州市腾讯云 38
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港_TG@nodesharing_2
-      - 台湾_TG@nodesharing_64
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港_TG@nodesharing_2
-      - 日本_TG@nodesharing_24
-      - 中国_TG@nodesharing_157
-      - 法国_YouTube：8度科技
-      - 由@appviper搜集_🇺🇸_US_美国_13
-      - 中国_TG@nodesharing_238
-      - 台湾_TG@nodesharing_64
-      - 【中转】JPN/日本 A - 4 广州
-      - 【中转】JPN/日本 A - 7 宁夏
-      - 【中转】JPN/日本 A - 8 宁夏
-      - 【中转】JPN/日本 A - 9 北京
-      - 【中转】JPN/日本 A - 6 宁夏
-      - 【中转】JPN/日本 A - 10 北京
+      - 广东省广州市腾讯云 2
+      - 广东省广州市腾讯云 3
+      - 广东省广州市腾讯云 4
+      - 广东省广州市腾讯云 5
+      - 广东省广州市腾讯云 6
+      - 广东省广州市腾讯云 7
+      - 广东省广州市腾讯云 8
+      - 广东省广州市腾讯云 9
+      - 广东省广州市腾讯云 10
+      - 广东省广州市腾讯云 11
+      - 广东省广州市腾讯云 12
+      - 广东省广州市腾讯云 13
+      - 广东省广州市腾讯云 14
+      - 广东省广州市腾讯云 15
+      - 广东省广州市腾讯云 16
+      - 广东省广州市腾讯云 17
+      - 广东省广州市腾讯云 18
+      - 广东省广州市腾讯云 19
+      - 广东省广州市腾讯云 20
+      - 广东省广州市腾讯云 21
+      - 广东省广州市腾讯云 22
+      - 广东省广州市腾讯云 23
+      - 广东省广州市腾讯云 24
+      - 广东省广州市腾讯云 25
+      - 广东省广州市腾讯云 26
+      - 广东省广州市腾讯云 27
+      - 广东省广州市腾讯云 28
+      - 广东省广州市腾讯云 29
+      - 广东省广州市腾讯云 30
+      - 广东省广州市腾讯云 31
+      - 广东省广州市腾讯云 32
+      - 广东省广州市腾讯云 33
+      - 广东省广州市腾讯云 34
+      - 广东省广州市腾讯云 35
+      - 广东省广州市腾讯云 36
+      - 新加坡Amazon数据中心 37
+      - 广东省广州市腾讯云 38
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港_TG@nodesharing_2
-      - 日本_TG@nodesharing_24
-      - 中国_TG@nodesharing_157
-      - 法国_YouTube：8度科技
-      - 由@appviper搜集_🇺🇸_US_美国_13
-      - 中国_TG@nodesharing_238
-      - 台湾_TG@nodesharing_64
-      - 【中转】JPN/日本 A - 4 广州
-      - 【中转】JPN/日本 A - 7 宁夏
-      - 【中转】JPN/日本 A - 8 宁夏
-      - 【中转】JPN/日本 A - 9 北京
-      - 【中转】JPN/日本 A - 6 宁夏
-      - 【中转】JPN/日本 A - 10 北京
+      - 广东省广州市腾讯云 2
+      - 广东省广州市腾讯云 3
+      - 广东省广州市腾讯云 4
+      - 广东省广州市腾讯云 5
+      - 广东省广州市腾讯云 6
+      - 广东省广州市腾讯云 7
+      - 广东省广州市腾讯云 8
+      - 广东省广州市腾讯云 9
+      - 广东省广州市腾讯云 10
+      - 广东省广州市腾讯云 11
+      - 广东省广州市腾讯云 12
+      - 广东省广州市腾讯云 13
+      - 广东省广州市腾讯云 14
+      - 广东省广州市腾讯云 15
+      - 广东省广州市腾讯云 16
+      - 广东省广州市腾讯云 17
+      - 广东省广州市腾讯云 18
+      - 广东省广州市腾讯云 19
+      - 广东省广州市腾讯云 20
+      - 广东省广州市腾讯云 21
+      - 广东省广州市腾讯云 22
+      - 广东省广州市腾讯云 23
+      - 广东省广州市腾讯云 24
+      - 广东省广州市腾讯云 25
+      - 广东省广州市腾讯云 26
+      - 广东省广州市腾讯云 27
+      - 广东省广州市腾讯云 28
+      - 广东省广州市腾讯云 29
+      - 广东省广州市腾讯云 30
+      - 广东省广州市腾讯云 31
+      - 广东省广州市腾讯云 32
+      - 广东省广州市腾讯云 33
+      - 广东省广州市腾讯云 34
+      - 广东省广州市腾讯云 35
+      - 广东省广州市腾讯云 36
+      - 新加坡Amazon数据中心 37
+      - 广东省广州市腾讯云 38
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港_TG@nodesharing_2
-      - 日本_TG@nodesharing_24
-      - 中国_TG@nodesharing_157
-      - 法国_YouTube：8度科技
-      - 由@appviper搜集_🇺🇸_US_美国_13
-      - 中国_TG@nodesharing_238
-      - 台湾_TG@nodesharing_64
-      - 【中转】JPN/日本 A - 4 广州
-      - 【中转】JPN/日本 A - 7 宁夏
-      - 【中转】JPN/日本 A - 8 宁夏
-      - 【中转】JPN/日本 A - 9 北京
-      - 【中转】JPN/日本 A - 6 宁夏
-      - 【中转】JPN/日本 A - 10 北京
+      - 广东省广州市腾讯云 2
+      - 广东省广州市腾讯云 3
+      - 广东省广州市腾讯云 4
+      - 广东省广州市腾讯云 5
+      - 广东省广州市腾讯云 6
+      - 广东省广州市腾讯云 7
+      - 广东省广州市腾讯云 8
+      - 广东省广州市腾讯云 9
+      - 广东省广州市腾讯云 10
+      - 广东省广州市腾讯云 11
+      - 广东省广州市腾讯云 12
+      - 广东省广州市腾讯云 13
+      - 广东省广州市腾讯云 14
+      - 广东省广州市腾讯云 15
+      - 广东省广州市腾讯云 16
+      - 广东省广州市腾讯云 17
+      - 广东省广州市腾讯云 18
+      - 广东省广州市腾讯云 19
+      - 广东省广州市腾讯云 20
+      - 广东省广州市腾讯云 21
+      - 广东省广州市腾讯云 22
+      - 广东省广州市腾讯云 23
+      - 广东省广州市腾讯云 24
+      - 广东省广州市腾讯云 25
+      - 广东省广州市腾讯云 26
+      - 广东省广州市腾讯云 27
+      - 广东省广州市腾讯云 28
+      - 广东省广州市腾讯云 29
+      - 广东省广州市腾讯云 30
+      - 广东省广州市腾讯云 31
+      - 广东省广州市腾讯云 32
+      - 广东省广州市腾讯云 33
+      - 广东省广州市腾讯云 34
+      - 广东省广州市腾讯云 35
+      - 广东省广州市腾讯云 36
+      - 新加坡Amazon数据中心 37
+      - 广东省广州市腾讯云 38
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -182,19 +372,43 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港_TG@nodesharing_2
-      - 日本_TG@nodesharing_24
-      - 中国_TG@nodesharing_157
-      - 法国_YouTube：8度科技
-      - 由@appviper搜集_🇺🇸_US_美国_13
-      - 中国_TG@nodesharing_238
-      - 台湾_TG@nodesharing_64
-      - 【中转】JPN/日本 A - 4 广州
-      - 【中转】JPN/日本 A - 7 宁夏
-      - 【中转】JPN/日本 A - 8 宁夏
-      - 【中转】JPN/日本 A - 9 北京
-      - 【中转】JPN/日本 A - 6 宁夏
-      - 【中转】JPN/日本 A - 10 北京
+      - 广东省广州市腾讯云 2
+      - 广东省广州市腾讯云 3
+      - 广东省广州市腾讯云 4
+      - 广东省广州市腾讯云 5
+      - 广东省广州市腾讯云 6
+      - 广东省广州市腾讯云 7
+      - 广东省广州市腾讯云 8
+      - 广东省广州市腾讯云 9
+      - 广东省广州市腾讯云 10
+      - 广东省广州市腾讯云 11
+      - 广东省广州市腾讯云 12
+      - 广东省广州市腾讯云 13
+      - 广东省广州市腾讯云 14
+      - 广东省广州市腾讯云 15
+      - 广东省广州市腾讯云 16
+      - 广东省广州市腾讯云 17
+      - 广东省广州市腾讯云 18
+      - 广东省广州市腾讯云 19
+      - 广东省广州市腾讯云 20
+      - 广东省广州市腾讯云 21
+      - 广东省广州市腾讯云 22
+      - 广东省广州市腾讯云 23
+      - 广东省广州市腾讯云 24
+      - 广东省广州市腾讯云 25
+      - 广东省广州市腾讯云 26
+      - 广东省广州市腾讯云 27
+      - 广东省广州市腾讯云 28
+      - 广东省广州市腾讯云 29
+      - 广东省广州市腾讯云 30
+      - 广东省广州市腾讯云 31
+      - 广东省广州市腾讯云 32
+      - 广东省广州市腾讯云 33
+      - 广东省广州市腾讯云 34
+      - 广东省广州市腾讯云 35
+      - 广东省广州市腾讯云 36
+      - 新加坡Amazon数据中心 37
+      - 广东省广州市腾讯云 38
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
