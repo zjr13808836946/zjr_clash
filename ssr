@@ -6,115 +6,60 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: _CN_中国_133, server: 120.233.10.182, port: 3706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_134, server: 120.233.10.182, port: 3707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_132, server: 120.233.10.182, port: 3705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@vpnpool-tw26602", server: 183.240.60.84, port: 26002, type: ssr, cipher: chacha20-ietf, password: 7mtHSG, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22540:iS6Did, obfs-param: t.me/vpnhat, udp: true}
-  - {name: "@vpnpool-hk30017", server: 183.249.172.157, port: 30017, type: ssr, cipher: chacha20-ietf, password: 7mtHSG, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22540:iS6Did, obfs-param: t.me/vpnhat, udp: true}
-  - {name: _CN_中国_118, server: 120.233.10.182, port: 5704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: _CN_中国_116, server: 120.233.10.182, port: 5702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: "@nfeng6台湾 -中继-03", server: 120.233.10.182, port: 5702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: "@nfeng6台湾 -中继-02", server: 120.233.10.182, port: 5701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: "@nfeng6台湾 -中继-01", server: 120.233.10.182, port: 5700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: _CN_中国_1, server: shonlinesandcu03.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: _CN_中国_2, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: _CN_中国_3, server: shcris02stand.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: _CN_中国_5, server: shallaz.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: _CN_中国_6, server: shonlinesandcu03.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_4 @WangCai_1, server: csdynhkt.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_5 @WangCai_1, server: shonlinecu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_8 @WangCai_1, server: shonlinecu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_9 @WangCai_1, server: cncusouth.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_11 @WangCai_1, server: cusouthcmhk.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_12 @WangCai_1, server: shonlinecu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_13 @WangCai_1, server: cusouthcmhk.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_14 @WangCai_1, server: shonlinesandcu02.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_15 @WangCai_1, server: shonlinesandcu03.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_16 @WangCai_1, server: shonlinesandcu03.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_17 @WangCai_1, server: shonlinesandcu03.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_18 @WangCai_1, server: shcris02stand.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_19 @WangCai_1, server: shonlinesandcu02.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_20 @WangCai_1, server: shonlinesandcu02.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_21 @WangCai_1, server: cncusouth.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_22 @WangCai_1, server: shcris02stand.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: JP_1 @WangCai_1, server: shallaz.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: JP_2 @WangCai_1, server: shallaz.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: SG_2 @WangCai_1, server: shallaz.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: SG_3 @WangCai_1, server: shallaz.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: SG_4 @WangCai_1, server: shallaz.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: KR_1 @WangCai_1, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: TW_2 @WangCai_1, server: cstwrelay.onlineto.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: TW_3 @WangCai_1, server: cstwrelay.onlineto.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: TW_6 @WangCai_1, server: cstwrelay.onlineto.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: TW_7 @WangCai_1, server: cstwrelay.onlineto.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: TW_9 @WangCai_1, server: shallaz2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: TW_10 @WangCai_1, server: shallaz2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: TW_11 @WangCai_1, server: shallaz2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: TW_12 @WangCai_1, server: shallaz2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: TW_15 @WangCai_1, server: shallaz2.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: TW_16 @WangCai_1, server: shallaz2.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: "@nfeng6台湾 -中继-06", server: 120.233.10.182, port: 5705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: "@nfeng6台湾 -中继-04", server: 120.233.10.182, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: US_1 @WangCai_1, server: usastandard.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: US_2 @WangCai_1, server: usastandard.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: US_3 @WangCai_1, server: usastandard.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: US_4 @WangCai_1, server: usastandard.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: US_5 @WangCai_1, server: usastandard.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: US_6 @WangCai_1, server: usastandard2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: DE_1 @WangCai_1, server: relaypro.procncon.xyz, port: 618, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_117.28.243.173:2173, server: 117.28.243.173, port: 2173, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: "@nfeng6新加坡-中继-01", server: 120.233.10.182, port: 6700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: SG_5 @WangCai_1, server: shallaz.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: US_6 @WangCai_1 2, server: usastandard2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: US_7 @WangCai_1, server: usastandard2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: US_8 @WangCai_1, server: usastandard2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: TR_1 @WangCai_1, server: relaypro.procncon.xyz, port: 620, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
   - {name: _CN_中国_128, server: 120.233.10.182, port: 3701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_130, server: 120.233.10.182, port: 3703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: _CN_中国_127, server: 120.233.10.182, port: 3700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@vpnpool-hk30016", server: 120.232.41.123, port: 30016, type: ssr, cipher: chacha20-ietf, password: 7mtHSG, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22540:iS6Did, obfs-param: t.me/vpnhat, udp: true}
   - {name: "@nfeng6美国-中继-01", server: 120.233.10.182, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: _CN_中国_126, server: 120.233.10.182, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: "@nfeng6美国-中继-08", server: 120.233.10.182, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: _CN_中国_147, server: 120.233.10.182, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: _CN_中国_146, server: 120.233.10.182, port: 4001, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: _CN_中国_143, server: 120.233.10.182, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: _CN_中国_131, server: 120.233.10.182, port: 3704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: "@nfeng6新加坡-中继-09", server: 120.233.10.182, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: _CN_中国_121, server: 120.233.10.182, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: "@nfeng6新加坡-中继-06", server: 120.233.10.182, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: _CN_中国_138, server: 120.233.10.182, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@nfeng6新加坡-中继-08", server: 120.233.10.182, port: 6707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: _CN_中国_124, server: 120.233.10.182, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: Amsterdam-M247-free, server: 183.240.181.20, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
-  - {name: RU_1 @WangCai_1, server: relaypro.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: HK_117.28.243.165:8051, server: 117.28.243.165, port: 8051, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_中国_135, server: 120.233.10.182, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: _CN_中国_129, server: 120.233.10.182, port: 3702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@nfeng6韩国-中继-01", server: 120.233.10.182, port: 4000, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: "@nfeng6韩国-中继-03", server: 120.233.10.182, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: "@nfeng6美国-中继-09", server: 120.233.10.182, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: _CN_中国_148, server: 120.233.10.182, port: 4003, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: _CN_中国_140, server: 120.233.10.182, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@nfeng6美国-中继-07", server: 120.233.10.182, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: "@nfeng6韩国-中继-02", server: 120.233.10.182, port: 4001, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: Makati-Eastern, server: 183.240.181.20, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
   - {name: "@nfeng6韩国-中继-04", server: 120.233.10.182, port: 4003, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: RU_3 @WangCai_1, server: relaypro.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: ‌🇨🇦CA_1 @WangCai_1, server: relaypro.procncon.xyz, port: 615, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: TW_14 @WangCai_1, server: shallaz2.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52030:ff778899, obfs-param: "", udp: true}
-  - {name: _CN_中国_122, server: 120.233.10.182, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: "@nfeng6美国-中继-03", server: 120.233.10.182, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: _CN_中国_137, server: 120.233.10.182, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@nfeng6新加坡-中继-03", server: 120.233.10.182, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: _CN_中国_139, server: 120.233.10.182, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_141, server: 120.233.10.182, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: _CN_中国_123, server: 120.233.10.182, port: 6704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_125, server: 120.233.10.182, port: 6706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: _CN_中国_136, server: 120.233.10.182, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_142, server: 120.233.10.182, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: _CN_中国_145, server: 120.233.10.182, port: 4000, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@nfeng6美国-中继-06", server: 120.233.10.182, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: _CN_中国_144, server: 120.233.10.182, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: _CN_中国_115, server: 120.233.10.182, port: 5701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: jp-am48-9.eqnode.net, server: jp-am48-9.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: 3H2aN5Gnm, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: _CN_中国_114, server: 120.233.10.182, port: 5700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: "@nfeng6韩国-中继-01", server: 120.233.10.182, port: 4000, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: _CN_中国_141, server: 120.233.10.182, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: _CN_中国_125, server: 120.233.10.182, port: 6706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: "@nfeng6美国-中继-06", server: 120.233.10.182, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: _CN_中国_117, server: 120.233.10.182, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: "@nfeng6台湾 -中继-04", server: 120.233.10.182, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: HK_117.28.243.165:8051, server: 117.28.243.165, port: 8051, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: _CN_中国_122, server: 120.233.10.182, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: _CN_中国_126, server: 120.233.10.182, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: _CN_中国_134, server: 120.233.10.182, port: 3707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: _CN_中国_132, server: 120.233.10.182, port: 3705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: "@nfeng6新加坡-中继-01", server: 120.233.10.182, port: 6700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6新加坡-中继-08", server: 120.233.10.182, port: 6707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: _CN_中国_135, server: 120.233.10.182, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: _CN_中国_137, server: 120.233.10.182, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: _CN_中国_120, server: 120.233.10.182, port: 6700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: "@nfeng6美国-中继-07", server: 120.233.10.182, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: _CN_中国_142, server: 120.233.10.182, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: "@nfeng6台湾 -中继-01", server: 120.233.10.182, port: 5700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6新加坡-中继-03", server: 120.233.10.182, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6台湾 -中继-06", server: 120.233.10.182, port: 5705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: _CN_中国_121, server: 120.233.10.182, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: _CN_中国_130, server: 120.233.10.182, port: 3703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -122,230 +67,120 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - _CN_中国_133
-      - _CN_中国_134
-      - _CN_中国_132
-      - "@vpnpool-tw26602"
-      - "@vpnpool-hk30017"
-      - _CN_中国_118
       - _CN_中国_116
       - "@nfeng6台湾 -中继-03"
       - "@nfeng6台湾 -中继-02"
-      - "@nfeng6台湾 -中继-01"
-      - _CN_中国_1
-      - _CN_中国_2
-      - _CN_中国_3
-      - _CN_中国_5
-      - _CN_中国_6
-      - HK_4 @WangCai_1
-      - HK_5 @WangCai_1
-      - HK_8 @WangCai_1
-      - HK_9 @WangCai_1
-      - HK_11 @WangCai_1
-      - HK_12 @WangCai_1
-      - HK_13 @WangCai_1
-      - HK_14 @WangCai_1
-      - HK_15 @WangCai_1
-      - HK_16 @WangCai_1
-      - HK_17 @WangCai_1
-      - HK_18 @WangCai_1
-      - HK_19 @WangCai_1
-      - HK_20 @WangCai_1
-      - HK_21 @WangCai_1
-      - HK_22 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_2 @WangCai_1
-      - SG_2 @WangCai_1
-      - SG_3 @WangCai_1
-      - SG_4 @WangCai_1
-      - KR_1 @WangCai_1
-      - TW_2 @WangCai_1
-      - TW_3 @WangCai_1
-      - TW_6 @WangCai_1
-      - TW_7 @WangCai_1
-      - TW_9 @WangCai_1
-      - TW_10 @WangCai_1
-      - TW_11 @WangCai_1
-      - TW_12 @WangCai_1
-      - TW_15 @WangCai_1
-      - TW_16 @WangCai_1
-      - "@nfeng6台湾 -中继-06"
-      - "@nfeng6台湾 -中继-04"
-      - US_1 @WangCai_1
-      - US_2 @WangCai_1
-      - US_3 @WangCai_1
-      - US_4 @WangCai_1
-      - US_5 @WangCai_1
-      - US_6 @WangCai_1
-      - DE_1 @WangCai_1
-      - HK_117.28.243.173:2173
-      - "@nfeng6新加坡-中继-01"
-      - SG_5 @WangCai_1
-      - US_6 @WangCai_1 2
-      - US_7 @WangCai_1
-      - US_8 @WangCai_1
-      - TR_1 @WangCai_1
       - _CN_中国_128
-      - _CN_中国_130
       - _CN_中国_127
-      - "@vpnpool-hk30016"
       - "@nfeng6美国-中继-01"
-      - _CN_中国_126
       - "@nfeng6美国-中继-08"
       - _CN_中国_147
       - _CN_中国_146
       - _CN_中国_143
       - _CN_中国_131
       - "@nfeng6新加坡-中继-09"
-      - _CN_中国_121
       - "@nfeng6新加坡-中继-06"
       - _CN_中国_138
-      - "@nfeng6新加坡-中继-08"
       - _CN_中国_124
-      - Amsterdam-M247-free
-      - RU_1 @WangCai_1
-      - HK_117.28.243.165:8051
-      - _CN_中国_135
       - _CN_中国_129
-      - "@nfeng6韩国-中继-01"
       - "@nfeng6韩国-中继-03"
       - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - _CN_中国_140
-      - "@nfeng6美国-中继-07"
       - "@nfeng6韩国-中继-02"
-      - Makati-Eastern
       - "@nfeng6韩国-中继-04"
-      - RU_3 @WangCai_1
-      - ‌🇨🇦CA_1 @WangCai_1
-      - TW_14 @WangCai_1
-      - _CN_中国_122
       - "@nfeng6美国-中继-03"
-      - _CN_中国_137
-      - "@nfeng6新加坡-中继-03"
       - _CN_中国_139
-      - _CN_中国_141
       - _CN_中国_123
-      - _CN_中国_125
       - _CN_中国_136
-      - _CN_中国_142
       - _CN_中国_145
-      - "@nfeng6美国-中继-06"
       - _CN_中国_144
+      - _CN_中国_115
+      - jp-am48-9.eqnode.net
+      - _CN_中国_114
+      - "@nfeng6韩国-中继-01"
+      - _CN_中国_141
+      - _CN_中国_125
+      - "@nfeng6美国-中继-06"
+      - _CN_中国_117
+      - "@nfeng6台湾 -中继-04"
+      - HK_117.28.243.165:8051
+      - _CN_中国_122
+      - _CN_中国_126
+      - _CN_中国_134
+      - _CN_中国_132
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-08"
+      - _CN_中国_135
+      - _CN_中国_137
+      - _CN_中国_120
+      - "@nfeng6美国-中继-07"
+      - _CN_中国_142
+      - "@nfeng6台湾 -中继-01"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6台湾 -中继-06"
+      - _CN_中国_121
+      - _CN_中国_130
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - _CN_中国_133
-      - _CN_中国_134
-      - _CN_中国_132
-      - "@vpnpool-tw26602"
-      - "@vpnpool-hk30017"
-      - _CN_中国_118
       - _CN_中国_116
       - "@nfeng6台湾 -中继-03"
       - "@nfeng6台湾 -中继-02"
-      - "@nfeng6台湾 -中继-01"
-      - _CN_中国_1
-      - _CN_中国_2
-      - _CN_中国_3
-      - _CN_中国_5
-      - _CN_中国_6
-      - HK_4 @WangCai_1
-      - HK_5 @WangCai_1
-      - HK_8 @WangCai_1
-      - HK_9 @WangCai_1
-      - HK_11 @WangCai_1
-      - HK_12 @WangCai_1
-      - HK_13 @WangCai_1
-      - HK_14 @WangCai_1
-      - HK_15 @WangCai_1
-      - HK_16 @WangCai_1
-      - HK_17 @WangCai_1
-      - HK_18 @WangCai_1
-      - HK_19 @WangCai_1
-      - HK_20 @WangCai_1
-      - HK_21 @WangCai_1
-      - HK_22 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_2 @WangCai_1
-      - SG_2 @WangCai_1
-      - SG_3 @WangCai_1
-      - SG_4 @WangCai_1
-      - KR_1 @WangCai_1
-      - TW_2 @WangCai_1
-      - TW_3 @WangCai_1
-      - TW_6 @WangCai_1
-      - TW_7 @WangCai_1
-      - TW_9 @WangCai_1
-      - TW_10 @WangCai_1
-      - TW_11 @WangCai_1
-      - TW_12 @WangCai_1
-      - TW_15 @WangCai_1
-      - TW_16 @WangCai_1
-      - "@nfeng6台湾 -中继-06"
-      - "@nfeng6台湾 -中继-04"
-      - US_1 @WangCai_1
-      - US_2 @WangCai_1
-      - US_3 @WangCai_1
-      - US_4 @WangCai_1
-      - US_5 @WangCai_1
-      - US_6 @WangCai_1
-      - DE_1 @WangCai_1
-      - HK_117.28.243.173:2173
-      - "@nfeng6新加坡-中继-01"
-      - SG_5 @WangCai_1
-      - US_6 @WangCai_1 2
-      - US_7 @WangCai_1
-      - US_8 @WangCai_1
-      - TR_1 @WangCai_1
       - _CN_中国_128
-      - _CN_中国_130
       - _CN_中国_127
-      - "@vpnpool-hk30016"
       - "@nfeng6美国-中继-01"
-      - _CN_中国_126
       - "@nfeng6美国-中继-08"
       - _CN_中国_147
       - _CN_中国_146
       - _CN_中国_143
       - _CN_中国_131
       - "@nfeng6新加坡-中继-09"
-      - _CN_中国_121
       - "@nfeng6新加坡-中继-06"
       - _CN_中国_138
-      - "@nfeng6新加坡-中继-08"
       - _CN_中国_124
-      - Amsterdam-M247-free
-      - RU_1 @WangCai_1
-      - HK_117.28.243.165:8051
-      - _CN_中国_135
       - _CN_中国_129
-      - "@nfeng6韩国-中继-01"
       - "@nfeng6韩国-中继-03"
       - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - _CN_中国_140
-      - "@nfeng6美国-中继-07"
       - "@nfeng6韩国-中继-02"
-      - Makati-Eastern
       - "@nfeng6韩国-中继-04"
-      - RU_3 @WangCai_1
-      - ‌🇨🇦CA_1 @WangCai_1
-      - TW_14 @WangCai_1
-      - _CN_中国_122
       - "@nfeng6美国-中继-03"
-      - _CN_中国_137
-      - "@nfeng6新加坡-中继-03"
       - _CN_中国_139
-      - _CN_中国_141
       - _CN_中国_123
-      - _CN_中国_125
       - _CN_中国_136
-      - _CN_中国_142
       - _CN_中国_145
-      - "@nfeng6美国-中继-06"
       - _CN_中国_144
+      - _CN_中国_115
+      - jp-am48-9.eqnode.net
+      - _CN_中国_114
+      - "@nfeng6韩国-中继-01"
+      - _CN_中国_141
+      - _CN_中国_125
+      - "@nfeng6美国-中继-06"
+      - _CN_中国_117
+      - "@nfeng6台湾 -中继-04"
+      - HK_117.28.243.165:8051
+      - _CN_中国_122
+      - _CN_中国_126
+      - _CN_中国_134
+      - _CN_中国_132
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-08"
+      - _CN_中国_135
+      - _CN_中国_137
+      - _CN_中国_120
+      - "@nfeng6美国-中继-07"
+      - _CN_中国_142
+      - "@nfeng6台湾 -中继-01"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6台湾 -中继-06"
+      - _CN_中国_121
+      - _CN_中国_130
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -353,115 +188,60 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - _CN_中国_133
-      - _CN_中国_134
-      - _CN_中国_132
-      - "@vpnpool-tw26602"
-      - "@vpnpool-hk30017"
-      - _CN_中国_118
       - _CN_中国_116
       - "@nfeng6台湾 -中继-03"
       - "@nfeng6台湾 -中继-02"
-      - "@nfeng6台湾 -中继-01"
-      - _CN_中国_1
-      - _CN_中国_2
-      - _CN_中国_3
-      - _CN_中国_5
-      - _CN_中国_6
-      - HK_4 @WangCai_1
-      - HK_5 @WangCai_1
-      - HK_8 @WangCai_1
-      - HK_9 @WangCai_1
-      - HK_11 @WangCai_1
-      - HK_12 @WangCai_1
-      - HK_13 @WangCai_1
-      - HK_14 @WangCai_1
-      - HK_15 @WangCai_1
-      - HK_16 @WangCai_1
-      - HK_17 @WangCai_1
-      - HK_18 @WangCai_1
-      - HK_19 @WangCai_1
-      - HK_20 @WangCai_1
-      - HK_21 @WangCai_1
-      - HK_22 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_2 @WangCai_1
-      - SG_2 @WangCai_1
-      - SG_3 @WangCai_1
-      - SG_4 @WangCai_1
-      - KR_1 @WangCai_1
-      - TW_2 @WangCai_1
-      - TW_3 @WangCai_1
-      - TW_6 @WangCai_1
-      - TW_7 @WangCai_1
-      - TW_9 @WangCai_1
-      - TW_10 @WangCai_1
-      - TW_11 @WangCai_1
-      - TW_12 @WangCai_1
-      - TW_15 @WangCai_1
-      - TW_16 @WangCai_1
-      - "@nfeng6台湾 -中继-06"
-      - "@nfeng6台湾 -中继-04"
-      - US_1 @WangCai_1
-      - US_2 @WangCai_1
-      - US_3 @WangCai_1
-      - US_4 @WangCai_1
-      - US_5 @WangCai_1
-      - US_6 @WangCai_1
-      - DE_1 @WangCai_1
-      - HK_117.28.243.173:2173
-      - "@nfeng6新加坡-中继-01"
-      - SG_5 @WangCai_1
-      - US_6 @WangCai_1 2
-      - US_7 @WangCai_1
-      - US_8 @WangCai_1
-      - TR_1 @WangCai_1
       - _CN_中国_128
-      - _CN_中国_130
       - _CN_中国_127
-      - "@vpnpool-hk30016"
       - "@nfeng6美国-中继-01"
-      - _CN_中国_126
       - "@nfeng6美国-中继-08"
       - _CN_中国_147
       - _CN_中国_146
       - _CN_中国_143
       - _CN_中国_131
       - "@nfeng6新加坡-中继-09"
-      - _CN_中国_121
       - "@nfeng6新加坡-中继-06"
       - _CN_中国_138
-      - "@nfeng6新加坡-中继-08"
       - _CN_中国_124
-      - Amsterdam-M247-free
-      - RU_1 @WangCai_1
-      - HK_117.28.243.165:8051
-      - _CN_中国_135
       - _CN_中国_129
-      - "@nfeng6韩国-中继-01"
       - "@nfeng6韩国-中继-03"
       - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - _CN_中国_140
-      - "@nfeng6美国-中继-07"
       - "@nfeng6韩国-中继-02"
-      - Makati-Eastern
       - "@nfeng6韩国-中继-04"
-      - RU_3 @WangCai_1
-      - ‌🇨🇦CA_1 @WangCai_1
-      - TW_14 @WangCai_1
-      - _CN_中国_122
       - "@nfeng6美国-中继-03"
-      - _CN_中国_137
-      - "@nfeng6新加坡-中继-03"
       - _CN_中国_139
-      - _CN_中国_141
       - _CN_中国_123
-      - _CN_中国_125
       - _CN_中国_136
-      - _CN_中国_142
       - _CN_中国_145
-      - "@nfeng6美国-中继-06"
       - _CN_中国_144
+      - _CN_中国_115
+      - jp-am48-9.eqnode.net
+      - _CN_中国_114
+      - "@nfeng6韩国-中继-01"
+      - _CN_中国_141
+      - _CN_中国_125
+      - "@nfeng6美国-中继-06"
+      - _CN_中国_117
+      - "@nfeng6台湾 -中继-04"
+      - HK_117.28.243.165:8051
+      - _CN_中国_122
+      - _CN_中国_126
+      - _CN_中国_134
+      - _CN_中国_132
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-08"
+      - _CN_中国_135
+      - _CN_中国_137
+      - _CN_中国_120
+      - "@nfeng6美国-中继-07"
+      - _CN_中国_142
+      - "@nfeng6台湾 -中继-01"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6台湾 -中继-06"
+      - _CN_中国_121
+      - _CN_中国_130
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -481,127 +261,69 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - _CN_中国_133
-      - _CN_中国_134
-      - _CN_中国_132
-      - "@vpnpool-tw26602"
-      - "@vpnpool-hk30017"
-      - _CN_中国_118
       - _CN_中国_116
       - "@nfeng6台湾 -中继-03"
       - "@nfeng6台湾 -中继-02"
-      - "@nfeng6台湾 -中继-01"
-      - _CN_中国_1
-      - _CN_中国_2
-      - _CN_中国_3
-      - _CN_中国_5
-      - _CN_中国_6
-      - HK_4 @WangCai_1
-      - HK_5 @WangCai_1
-      - HK_8 @WangCai_1
-      - HK_9 @WangCai_1
-      - HK_11 @WangCai_1
-      - HK_12 @WangCai_1
-      - HK_13 @WangCai_1
-      - HK_14 @WangCai_1
-      - HK_15 @WangCai_1
-      - HK_16 @WangCai_1
-      - HK_17 @WangCai_1
-      - HK_18 @WangCai_1
-      - HK_19 @WangCai_1
-      - HK_20 @WangCai_1
-      - HK_21 @WangCai_1
-      - HK_22 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_2 @WangCai_1
-      - SG_2 @WangCai_1
-      - SG_3 @WangCai_1
-      - SG_4 @WangCai_1
-      - KR_1 @WangCai_1
-      - TW_2 @WangCai_1
-      - TW_3 @WangCai_1
-      - TW_6 @WangCai_1
-      - TW_7 @WangCai_1
-      - TW_9 @WangCai_1
-      - TW_10 @WangCai_1
-      - TW_11 @WangCai_1
-      - TW_12 @WangCai_1
-      - TW_15 @WangCai_1
-      - TW_16 @WangCai_1
-      - "@nfeng6台湾 -中继-06"
-      - "@nfeng6台湾 -中继-04"
-      - US_1 @WangCai_1
-      - US_2 @WangCai_1
-      - US_3 @WangCai_1
-      - US_4 @WangCai_1
-      - US_5 @WangCai_1
-      - US_6 @WangCai_1
-      - DE_1 @WangCai_1
-      - HK_117.28.243.173:2173
-      - "@nfeng6新加坡-中继-01"
-      - SG_5 @WangCai_1
-      - US_6 @WangCai_1 2
-      - US_7 @WangCai_1
-      - US_8 @WangCai_1
-      - TR_1 @WangCai_1
       - _CN_中国_128
-      - _CN_中国_130
       - _CN_中国_127
-      - "@vpnpool-hk30016"
       - "@nfeng6美国-中继-01"
-      - _CN_中国_126
       - "@nfeng6美国-中继-08"
       - _CN_中国_147
       - _CN_中国_146
       - _CN_中国_143
       - _CN_中国_131
       - "@nfeng6新加坡-中继-09"
-      - _CN_中国_121
       - "@nfeng6新加坡-中继-06"
       - _CN_中国_138
-      - "@nfeng6新加坡-中继-08"
       - _CN_中国_124
-      - Amsterdam-M247-free
-      - RU_1 @WangCai_1
-      - HK_117.28.243.165:8051
-      - _CN_中国_135
       - _CN_中国_129
-      - "@nfeng6韩国-中继-01"
       - "@nfeng6韩国-中继-03"
       - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - _CN_中国_140
-      - "@nfeng6美国-中继-07"
       - "@nfeng6韩国-中继-02"
-      - Makati-Eastern
       - "@nfeng6韩国-中继-04"
-      - RU_3 @WangCai_1
-      - ‌🇨🇦CA_1 @WangCai_1
-      - TW_14 @WangCai_1
-      - _CN_中国_122
       - "@nfeng6美国-中继-03"
-      - _CN_中国_137
-      - "@nfeng6新加坡-中继-03"
       - _CN_中国_139
-      - _CN_中国_141
       - _CN_中国_123
-      - _CN_中国_125
       - _CN_中国_136
-      - _CN_中国_142
       - _CN_中国_145
-      - "@nfeng6美国-中继-06"
       - _CN_中国_144
+      - _CN_中国_115
+      - jp-am48-9.eqnode.net
+      - _CN_中国_114
+      - "@nfeng6韩国-中继-01"
+      - _CN_中国_141
+      - _CN_中国_125
+      - "@nfeng6美国-中继-06"
+      - _CN_中国_117
+      - "@nfeng6台湾 -中继-04"
+      - HK_117.28.243.165:8051
+      - _CN_中国_122
+      - _CN_中国_126
+      - _CN_中国_134
+      - _CN_中国_132
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-08"
+      - _CN_中国_135
+      - _CN_中国_137
+      - _CN_中国_120
+      - "@nfeng6美国-中继-07"
+      - _CN_中国_142
+      - "@nfeng6台湾 -中继-01"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6台湾 -中继-06"
+      - _CN_中国_121
+      - _CN_中国_130
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "@vpnpool-tw26602"
-      - "@vpnpool-hk30017"
       - "@nfeng6台湾 -中继-03"
       - "@nfeng6台湾 -中继-02"
+      - "@nfeng6台湾 -中继-04"
       - "@nfeng6台湾 -中继-01"
       - "@nfeng6台湾 -中继-06"
-      - "@nfeng6台湾 -中继-04"
-      - "@vpnpool-hk30016"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -609,230 +331,120 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - _CN_中国_133
-      - _CN_中国_134
-      - _CN_中国_132
-      - "@vpnpool-tw26602"
-      - "@vpnpool-hk30017"
-      - _CN_中国_118
       - _CN_中国_116
       - "@nfeng6台湾 -中继-03"
       - "@nfeng6台湾 -中继-02"
-      - "@nfeng6台湾 -中继-01"
-      - _CN_中国_1
-      - _CN_中国_2
-      - _CN_中国_3
-      - _CN_中国_5
-      - _CN_中国_6
-      - HK_4 @WangCai_1
-      - HK_5 @WangCai_1
-      - HK_8 @WangCai_1
-      - HK_9 @WangCai_1
-      - HK_11 @WangCai_1
-      - HK_12 @WangCai_1
-      - HK_13 @WangCai_1
-      - HK_14 @WangCai_1
-      - HK_15 @WangCai_1
-      - HK_16 @WangCai_1
-      - HK_17 @WangCai_1
-      - HK_18 @WangCai_1
-      - HK_19 @WangCai_1
-      - HK_20 @WangCai_1
-      - HK_21 @WangCai_1
-      - HK_22 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_2 @WangCai_1
-      - SG_2 @WangCai_1
-      - SG_3 @WangCai_1
-      - SG_4 @WangCai_1
-      - KR_1 @WangCai_1
-      - TW_2 @WangCai_1
-      - TW_3 @WangCai_1
-      - TW_6 @WangCai_1
-      - TW_7 @WangCai_1
-      - TW_9 @WangCai_1
-      - TW_10 @WangCai_1
-      - TW_11 @WangCai_1
-      - TW_12 @WangCai_1
-      - TW_15 @WangCai_1
-      - TW_16 @WangCai_1
-      - "@nfeng6台湾 -中继-06"
-      - "@nfeng6台湾 -中继-04"
-      - US_1 @WangCai_1
-      - US_2 @WangCai_1
-      - US_3 @WangCai_1
-      - US_4 @WangCai_1
-      - US_5 @WangCai_1
-      - US_6 @WangCai_1
-      - DE_1 @WangCai_1
-      - HK_117.28.243.173:2173
-      - "@nfeng6新加坡-中继-01"
-      - SG_5 @WangCai_1
-      - US_6 @WangCai_1 2
-      - US_7 @WangCai_1
-      - US_8 @WangCai_1
-      - TR_1 @WangCai_1
       - _CN_中国_128
-      - _CN_中国_130
       - _CN_中国_127
-      - "@vpnpool-hk30016"
       - "@nfeng6美国-中继-01"
-      - _CN_中国_126
       - "@nfeng6美国-中继-08"
       - _CN_中国_147
       - _CN_中国_146
       - _CN_中国_143
       - _CN_中国_131
       - "@nfeng6新加坡-中继-09"
-      - _CN_中国_121
       - "@nfeng6新加坡-中继-06"
       - _CN_中国_138
-      - "@nfeng6新加坡-中继-08"
       - _CN_中国_124
-      - Amsterdam-M247-free
-      - RU_1 @WangCai_1
-      - HK_117.28.243.165:8051
-      - _CN_中国_135
       - _CN_中国_129
-      - "@nfeng6韩国-中继-01"
       - "@nfeng6韩国-中继-03"
       - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - _CN_中国_140
-      - "@nfeng6美国-中继-07"
       - "@nfeng6韩国-中继-02"
-      - Makati-Eastern
       - "@nfeng6韩国-中继-04"
-      - RU_3 @WangCai_1
-      - ‌🇨🇦CA_1 @WangCai_1
-      - TW_14 @WangCai_1
-      - _CN_中国_122
       - "@nfeng6美国-中继-03"
-      - _CN_中国_137
-      - "@nfeng6新加坡-中继-03"
       - _CN_中国_139
-      - _CN_中国_141
       - _CN_中国_123
-      - _CN_中国_125
       - _CN_中国_136
-      - _CN_中国_142
       - _CN_中国_145
-      - "@nfeng6美国-中继-06"
       - _CN_中国_144
+      - _CN_中国_115
+      - jp-am48-9.eqnode.net
+      - _CN_中国_114
+      - "@nfeng6韩国-中继-01"
+      - _CN_中国_141
+      - _CN_中国_125
+      - "@nfeng6美国-中继-06"
+      - _CN_中国_117
+      - "@nfeng6台湾 -中继-04"
+      - HK_117.28.243.165:8051
+      - _CN_中国_122
+      - _CN_中国_126
+      - _CN_中国_134
+      - _CN_中国_132
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-08"
+      - _CN_中国_135
+      - _CN_中国_137
+      - _CN_中国_120
+      - "@nfeng6美国-中继-07"
+      - _CN_中国_142
+      - "@nfeng6台湾 -中继-01"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6台湾 -中继-06"
+      - _CN_中国_121
+      - _CN_中国_130
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - _CN_中国_133
-      - _CN_中国_134
-      - _CN_中国_132
-      - "@vpnpool-tw26602"
-      - "@vpnpool-hk30017"
-      - _CN_中国_118
       - _CN_中国_116
       - "@nfeng6台湾 -中继-03"
       - "@nfeng6台湾 -中继-02"
-      - "@nfeng6台湾 -中继-01"
-      - _CN_中国_1
-      - _CN_中国_2
-      - _CN_中国_3
-      - _CN_中国_5
-      - _CN_中国_6
-      - HK_4 @WangCai_1
-      - HK_5 @WangCai_1
-      - HK_8 @WangCai_1
-      - HK_9 @WangCai_1
-      - HK_11 @WangCai_1
-      - HK_12 @WangCai_1
-      - HK_13 @WangCai_1
-      - HK_14 @WangCai_1
-      - HK_15 @WangCai_1
-      - HK_16 @WangCai_1
-      - HK_17 @WangCai_1
-      - HK_18 @WangCai_1
-      - HK_19 @WangCai_1
-      - HK_20 @WangCai_1
-      - HK_21 @WangCai_1
-      - HK_22 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_2 @WangCai_1
-      - SG_2 @WangCai_1
-      - SG_3 @WangCai_1
-      - SG_4 @WangCai_1
-      - KR_1 @WangCai_1
-      - TW_2 @WangCai_1
-      - TW_3 @WangCai_1
-      - TW_6 @WangCai_1
-      - TW_7 @WangCai_1
-      - TW_9 @WangCai_1
-      - TW_10 @WangCai_1
-      - TW_11 @WangCai_1
-      - TW_12 @WangCai_1
-      - TW_15 @WangCai_1
-      - TW_16 @WangCai_1
-      - "@nfeng6台湾 -中继-06"
-      - "@nfeng6台湾 -中继-04"
-      - US_1 @WangCai_1
-      - US_2 @WangCai_1
-      - US_3 @WangCai_1
-      - US_4 @WangCai_1
-      - US_5 @WangCai_1
-      - US_6 @WangCai_1
-      - DE_1 @WangCai_1
-      - HK_117.28.243.173:2173
-      - "@nfeng6新加坡-中继-01"
-      - SG_5 @WangCai_1
-      - US_6 @WangCai_1 2
-      - US_7 @WangCai_1
-      - US_8 @WangCai_1
-      - TR_1 @WangCai_1
       - _CN_中国_128
-      - _CN_中国_130
       - _CN_中国_127
-      - "@vpnpool-hk30016"
       - "@nfeng6美国-中继-01"
-      - _CN_中国_126
       - "@nfeng6美国-中继-08"
       - _CN_中国_147
       - _CN_中国_146
       - _CN_中国_143
       - _CN_中国_131
       - "@nfeng6新加坡-中继-09"
-      - _CN_中国_121
       - "@nfeng6新加坡-中继-06"
       - _CN_中国_138
-      - "@nfeng6新加坡-中继-08"
       - _CN_中国_124
-      - Amsterdam-M247-free
-      - RU_1 @WangCai_1
-      - HK_117.28.243.165:8051
-      - _CN_中国_135
       - _CN_中国_129
-      - "@nfeng6韩国-中继-01"
       - "@nfeng6韩国-中继-03"
       - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - _CN_中国_140
-      - "@nfeng6美国-中继-07"
       - "@nfeng6韩国-中继-02"
-      - Makati-Eastern
       - "@nfeng6韩国-中继-04"
-      - RU_3 @WangCai_1
-      - ‌🇨🇦CA_1 @WangCai_1
-      - TW_14 @WangCai_1
-      - _CN_中国_122
       - "@nfeng6美国-中继-03"
-      - _CN_中国_137
-      - "@nfeng6新加坡-中继-03"
       - _CN_中国_139
-      - _CN_中国_141
       - _CN_中国_123
-      - _CN_中国_125
       - _CN_中国_136
-      - _CN_中国_142
       - _CN_中国_145
-      - "@nfeng6美国-中继-06"
       - _CN_中国_144
+      - _CN_中国_115
+      - jp-am48-9.eqnode.net
+      - _CN_中国_114
+      - "@nfeng6韩国-中继-01"
+      - _CN_中国_141
+      - _CN_中国_125
+      - "@nfeng6美国-中继-06"
+      - _CN_中国_117
+      - "@nfeng6台湾 -中继-04"
+      - HK_117.28.243.165:8051
+      - _CN_中国_122
+      - _CN_中国_126
+      - _CN_中国_134
+      - _CN_中国_132
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-08"
+      - _CN_中国_135
+      - _CN_中国_137
+      - _CN_中国_120
+      - "@nfeng6美国-中继-07"
+      - _CN_中国_142
+      - "@nfeng6台湾 -中继-01"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6台湾 -中继-06"
+      - _CN_中国_121
+      - _CN_中国_130
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -840,115 +452,60 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - _CN_中国_133
-      - _CN_中国_134
-      - _CN_中国_132
-      - "@vpnpool-tw26602"
-      - "@vpnpool-hk30017"
-      - _CN_中国_118
       - _CN_中国_116
       - "@nfeng6台湾 -中继-03"
       - "@nfeng6台湾 -中继-02"
-      - "@nfeng6台湾 -中继-01"
-      - _CN_中国_1
-      - _CN_中国_2
-      - _CN_中国_3
-      - _CN_中国_5
-      - _CN_中国_6
-      - HK_4 @WangCai_1
-      - HK_5 @WangCai_1
-      - HK_8 @WangCai_1
-      - HK_9 @WangCai_1
-      - HK_11 @WangCai_1
-      - HK_12 @WangCai_1
-      - HK_13 @WangCai_1
-      - HK_14 @WangCai_1
-      - HK_15 @WangCai_1
-      - HK_16 @WangCai_1
-      - HK_17 @WangCai_1
-      - HK_18 @WangCai_1
-      - HK_19 @WangCai_1
-      - HK_20 @WangCai_1
-      - HK_21 @WangCai_1
-      - HK_22 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_2 @WangCai_1
-      - SG_2 @WangCai_1
-      - SG_3 @WangCai_1
-      - SG_4 @WangCai_1
-      - KR_1 @WangCai_1
-      - TW_2 @WangCai_1
-      - TW_3 @WangCai_1
-      - TW_6 @WangCai_1
-      - TW_7 @WangCai_1
-      - TW_9 @WangCai_1
-      - TW_10 @WangCai_1
-      - TW_11 @WangCai_1
-      - TW_12 @WangCai_1
-      - TW_15 @WangCai_1
-      - TW_16 @WangCai_1
-      - "@nfeng6台湾 -中继-06"
-      - "@nfeng6台湾 -中继-04"
-      - US_1 @WangCai_1
-      - US_2 @WangCai_1
-      - US_3 @WangCai_1
-      - US_4 @WangCai_1
-      - US_5 @WangCai_1
-      - US_6 @WangCai_1
-      - DE_1 @WangCai_1
-      - HK_117.28.243.173:2173
-      - "@nfeng6新加坡-中继-01"
-      - SG_5 @WangCai_1
-      - US_6 @WangCai_1 2
-      - US_7 @WangCai_1
-      - US_8 @WangCai_1
-      - TR_1 @WangCai_1
       - _CN_中国_128
-      - _CN_中国_130
       - _CN_中国_127
-      - "@vpnpool-hk30016"
       - "@nfeng6美国-中继-01"
-      - _CN_中国_126
       - "@nfeng6美国-中继-08"
       - _CN_中国_147
       - _CN_中国_146
       - _CN_中国_143
       - _CN_中国_131
       - "@nfeng6新加坡-中继-09"
-      - _CN_中国_121
       - "@nfeng6新加坡-中继-06"
       - _CN_中国_138
-      - "@nfeng6新加坡-中继-08"
       - _CN_中国_124
-      - Amsterdam-M247-free
-      - RU_1 @WangCai_1
-      - HK_117.28.243.165:8051
-      - _CN_中国_135
       - _CN_中国_129
-      - "@nfeng6韩国-中继-01"
       - "@nfeng6韩国-中继-03"
       - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - _CN_中国_140
-      - "@nfeng6美国-中继-07"
       - "@nfeng6韩国-中继-02"
-      - Makati-Eastern
       - "@nfeng6韩国-中继-04"
-      - RU_3 @WangCai_1
-      - ‌🇨🇦CA_1 @WangCai_1
-      - TW_14 @WangCai_1
-      - _CN_中国_122
       - "@nfeng6美国-中继-03"
-      - _CN_中国_137
-      - "@nfeng6新加坡-中继-03"
       - _CN_中国_139
-      - _CN_中国_141
       - _CN_中国_123
-      - _CN_中国_125
       - _CN_中国_136
-      - _CN_中国_142
       - _CN_中国_145
-      - "@nfeng6美国-中继-06"
       - _CN_中国_144
+      - _CN_中国_115
+      - jp-am48-9.eqnode.net
+      - _CN_中国_114
+      - "@nfeng6韩国-中继-01"
+      - _CN_中国_141
+      - _CN_中国_125
+      - "@nfeng6美国-中继-06"
+      - _CN_中国_117
+      - "@nfeng6台湾 -中继-04"
+      - HK_117.28.243.165:8051
+      - _CN_中国_122
+      - _CN_中国_126
+      - _CN_中国_134
+      - _CN_中国_132
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-08"
+      - _CN_中国_135
+      - _CN_中国_137
+      - _CN_中国_120
+      - "@nfeng6美国-中继-07"
+      - _CN_中国_142
+      - "@nfeng6台湾 -中继-01"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6台湾 -中继-06"
+      - _CN_中国_121
+      - _CN_中国_130
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -965,115 +522,60 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - _CN_中国_133
-      - _CN_中国_134
-      - _CN_中国_132
-      - "@vpnpool-tw26602"
-      - "@vpnpool-hk30017"
-      - _CN_中国_118
       - _CN_中国_116
       - "@nfeng6台湾 -中继-03"
       - "@nfeng6台湾 -中继-02"
-      - "@nfeng6台湾 -中继-01"
-      - _CN_中国_1
-      - _CN_中国_2
-      - _CN_中国_3
-      - _CN_中国_5
-      - _CN_中国_6
-      - HK_4 @WangCai_1
-      - HK_5 @WangCai_1
-      - HK_8 @WangCai_1
-      - HK_9 @WangCai_1
-      - HK_11 @WangCai_1
-      - HK_12 @WangCai_1
-      - HK_13 @WangCai_1
-      - HK_14 @WangCai_1
-      - HK_15 @WangCai_1
-      - HK_16 @WangCai_1
-      - HK_17 @WangCai_1
-      - HK_18 @WangCai_1
-      - HK_19 @WangCai_1
-      - HK_20 @WangCai_1
-      - HK_21 @WangCai_1
-      - HK_22 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_2 @WangCai_1
-      - SG_2 @WangCai_1
-      - SG_3 @WangCai_1
-      - SG_4 @WangCai_1
-      - KR_1 @WangCai_1
-      - TW_2 @WangCai_1
-      - TW_3 @WangCai_1
-      - TW_6 @WangCai_1
-      - TW_7 @WangCai_1
-      - TW_9 @WangCai_1
-      - TW_10 @WangCai_1
-      - TW_11 @WangCai_1
-      - TW_12 @WangCai_1
-      - TW_15 @WangCai_1
-      - TW_16 @WangCai_1
-      - "@nfeng6台湾 -中继-06"
-      - "@nfeng6台湾 -中继-04"
-      - US_1 @WangCai_1
-      - US_2 @WangCai_1
-      - US_3 @WangCai_1
-      - US_4 @WangCai_1
-      - US_5 @WangCai_1
-      - US_6 @WangCai_1
-      - DE_1 @WangCai_1
-      - HK_117.28.243.173:2173
-      - "@nfeng6新加坡-中继-01"
-      - SG_5 @WangCai_1
-      - US_6 @WangCai_1 2
-      - US_7 @WangCai_1
-      - US_8 @WangCai_1
-      - TR_1 @WangCai_1
       - _CN_中国_128
-      - _CN_中国_130
       - _CN_中国_127
-      - "@vpnpool-hk30016"
       - "@nfeng6美国-中继-01"
-      - _CN_中国_126
       - "@nfeng6美国-中继-08"
       - _CN_中国_147
       - _CN_中国_146
       - _CN_中国_143
       - _CN_中国_131
       - "@nfeng6新加坡-中继-09"
-      - _CN_中国_121
       - "@nfeng6新加坡-中继-06"
       - _CN_中国_138
-      - "@nfeng6新加坡-中继-08"
       - _CN_中国_124
-      - Amsterdam-M247-free
-      - RU_1 @WangCai_1
-      - HK_117.28.243.165:8051
-      - _CN_中国_135
       - _CN_中国_129
-      - "@nfeng6韩国-中继-01"
       - "@nfeng6韩国-中继-03"
       - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - _CN_中国_140
-      - "@nfeng6美国-中继-07"
       - "@nfeng6韩国-中继-02"
-      - Makati-Eastern
       - "@nfeng6韩国-中继-04"
-      - RU_3 @WangCai_1
-      - ‌🇨🇦CA_1 @WangCai_1
-      - TW_14 @WangCai_1
-      - _CN_中国_122
       - "@nfeng6美国-中继-03"
-      - _CN_中国_137
-      - "@nfeng6新加坡-中继-03"
       - _CN_中国_139
-      - _CN_中国_141
       - _CN_中国_123
-      - _CN_中国_125
       - _CN_中国_136
-      - _CN_中国_142
       - _CN_中国_145
-      - "@nfeng6美国-中继-06"
       - _CN_中国_144
+      - _CN_中国_115
+      - jp-am48-9.eqnode.net
+      - _CN_中国_114
+      - "@nfeng6韩国-中继-01"
+      - _CN_中国_141
+      - _CN_中国_125
+      - "@nfeng6美国-中继-06"
+      - _CN_中国_117
+      - "@nfeng6台湾 -中继-04"
+      - HK_117.28.243.165:8051
+      - _CN_中国_122
+      - _CN_中国_126
+      - _CN_中国_134
+      - _CN_中国_132
+      - "@nfeng6新加坡-中继-01"
+      - "@nfeng6新加坡-中继-08"
+      - _CN_中国_135
+      - _CN_中国_137
+      - _CN_中国_120
+      - "@nfeng6美国-中继-07"
+      - _CN_中国_142
+      - "@nfeng6台湾 -中继-01"
+      - "@nfeng6新加坡-中继-03"
+      - "@nfeng6台湾 -中继-06"
+      - _CN_中国_121
+      - _CN_中国_130
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
