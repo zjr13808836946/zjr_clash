@@ -5,707 +5,303 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_中国_127, server: 120.233.10.182, port: 3700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@nfeng6美国-中继-08", server: 120.233.10.182, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: 专线 韩国 02, server: iepl03.xbxb1122.xyz, port: 8551, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 44cbe97237.microsoft.com}, udp: true}
+  - {name: 专线 香港 04, server: iepl01.xbxb1122.xyz, port: 8564, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 44cbe97237.microsoft.com}, udp: true}
+  - {name: 标准-台湾-1, server: south-ingress.from.element.mxnodes.cc, port: 52620, type: ss, cipher: aes-256-gcm, password: 3aea57a2-bcff-44b3-8867-45d42a68b3b6, udp: true}
+  - {name: 标准-日本-1, server: east-ingress.from.element.mxnodes.cc, port: 52630, type: ss, cipher: aes-256-gcm, password: 3aea57a2-bcff-44b3-8867-45d42a68b3b6, udp: true}
+  - {name: 标准-日本-2, server: east-ingress.from.element.mxnodes.cc, port: 52631, type: ss, cipher: aes-256-gcm, password: 3aea57a2-bcff-44b3-8867-45d42a68b3b6, udp: true}
+  - {name: 标准-日本-4, server: east-ingress.from.element.mxnodes.cc, port: 52633, type: ss, cipher: aes-256-gcm, password: 3aea57a2-bcff-44b3-8867-45d42a68b3b6, udp: true}
+  - {name: "@nfeng6韩国-中继-04", server: 120.233.10.182, port: 4003, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: 专线 马来西亚 01, server: iepl01.xbxb1122.xyz, port: 8521, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 44cbe97237.microsoft.com}, udp: true}
+  - {name: 香港 01, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292464:93DWZTu7LU, obfs-param: "", udp: true}
+  - {name: _HK_香港_tg频道：@bpjzx2_5, server: vpnpool.xiaocai.ga, port: 443, type: trojan, password: Vpnpoolzhuanshu, sni: vpnpool.xiaocai.ga, skip-cert-verify: true, udp: true}
+  - {name: 香港, server: 00178641680d4f73a85ff60e4cd27629.jkcloud.xyz, port: 6389, type: ss, cipher: chacha20-ietf-poly1305, password: b62bc77c-b2f2-4b6f-b48b-d872ecc83848, udp: true}
+  - {name: 香港 2, server: 02b8176c05bf44698ab04428526a213e.jkcloud.xyz, port: 6598, type: ss, cipher: chacha20-ietf-poly1305, password: b62bc77c-b2f2-4b6f-b48b-d872ecc83848, udp: true}
+  - {name: 新加坡, server: 00178641680d4f73a85ff60e4cd27629.jkcloud.xyz, port: 6701, type: ss, cipher: chacha20-ietf-poly1305, password: b62bc77c-b2f2-4b6f-b48b-d872ecc83848, udp: true}
+  - {name: 香港 3, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6389, type: ss, cipher: chacha20-ietf-poly1305, password: b62bc77c-b2f2-4b6f-b48b-d872ecc83848, udp: true}
+  - {name: 新加坡 2, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6700, type: ss, cipher: chacha20-ietf-poly1305, password: b62bc77c-b2f2-4b6f-b48b-d872ecc83848, udp: true}
+  - {name: 首尔, server: 02b8176c05bf44698ab04428526a213e.jkcloud.xyz, port: 6592, type: ss, cipher: chacha20-ietf-poly1305, password: b62bc77c-b2f2-4b6f-b48b-d872ecc83848, udp: true}
+  - {name: 香港 01 2, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292690:o7iqlcUakC, obfs-param: "", udp: true}
+  - {name: 专线 香港 03, server: iepl03.xbxb1122.xyz, port: 8563, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: bf45419206.microsoft.com}, udp: true}
+  - {name: 专线 香港 04 2, server: iepl01.xbxb1122.xyz, port: 8564, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: bf45419206.microsoft.com}, udp: true}
+  - {name: 专线 马来西亚 01 2, server: iepl01.xbxb1122.xyz, port: 8521, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: bf45419206.microsoft.com}, udp: true}
+  - {name: +专线+香港+03, server: iepl03.xbxb1122.xyz, port: 8563, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 44cbe97237.microsoft.com}, udp: true}
+  - {name: 标准-台湾-2, server: south-ingress.from.element.mxnodes.cc, port: 52621, type: ss, cipher: aes-256-gcm, password: 3aea57a2-bcff-44b3-8867-45d42a68b3b6, udp: true}
+  - {name: +专线+新加坡+03, server: iepl01.xbxb1122.xyz, port: 8523, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 44cbe97237.microsoft.com}, udp: true}
+  - {name: 香港 4, server: 00178641680d4f73a85ff60e4cd27629.jkcloud.xyz, port: 6598, type: ss, cipher: chacha20-ietf-poly1305, password: b62bc77c-b2f2-4b6f-b48b-d872ecc83848, udp: true}
+  - {name: +中继+新加坡+04, server: in02.xbxb1122.xyz, port: 8723, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: bf45419206.microsoft.com}, udp: true}
+  - {name: +中继+日本+03, server: in04.xbxb1122.xyz, port: 8713, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: bf45419206.microsoft.com}, udp: true}
+  - {name: +中继+香港+01, server: in05.xbxb1122.xyz, port: 8761, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 44cbe97237.microsoft.com}, udp: true}
+  - {name: +专线+新加坡+03 2, server: iepl01.xbxb1122.xyz, port: 8523, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: bf45419206.microsoft.com}, udp: true}
   - {name: _CN_中国_147, server: 120.233.10.182, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_143, server: 120.233.10.182, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_131, server: 120.233.10.182, port: 3704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@nfeng6新加坡-中继-09", server: 120.233.10.182, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: _CN_中国_138, server: 120.233.10.182, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_124, server: 120.233.10.182, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_129, server: 120.233.10.182, port: 3702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@nfeng6韩国-中继-03", server: 120.233.10.182, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: _CN_中国_136, server: 120.233.10.182, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_117, server: 120.233.10.182, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@nfeng6台湾 -中继-04", server: 120.233.10.182, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: _CN_中国_134, server: 120.233.10.182, port: 3707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_132, server: 120.233.10.182, port: 3705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_135, server: 120.233.10.182, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_142, server: 120.233.10.182, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@nfeng6台湾 -中继-06", server: 120.233.10.182, port: 5705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: _CN_中国_146, server: 120.233.10.182, port: 4001, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@nfeng6美国-中继-09", server: 120.233.10.182, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: _CN_中国_148, server: 120.233.10.182, port: 4003, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: "@nfeng6韩国-中继-02", server: 120.233.10.182, port: 4001, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: "@nfeng6韩国-中继-04", server: 120.233.10.182, port: 4003, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: _CN_中国_145, server: 120.233.10.182, port: 4000, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_144, server: 120.233.10.182, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_141, server: 120.233.10.182, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_126, server: 120.233.10.182, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@nfeng6美国-中继-07", server: 120.233.10.182, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: "@nfeng6新加坡-中继-03", server: 120.233.10.182, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: _CN_中国_133, server: 120.233.10.182, port: 3706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_128, server: 120.233.10.182, port: 3701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_139, server: 120.233.10.182, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: "@nfeng6韩国-中继-01", server: 120.233.10.182, port: 4000, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: _CN_中国_125, server: 120.233.10.182, port: 6706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_121, server: 120.233.10.182, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: _CN_中国_tg频道：@bpjzx2_125, server: gz2.52168.xyz, port: 2105, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
-  - {name: "@nfeng6美国-中继-01", server: 120.233.10.182, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: "@nfeng6新加坡-中继-06", server: 120.233.10.182, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: _CN_中国_140, server: 120.233.10.182, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@nfeng6美国-中继-06", server: 120.233.10.182, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: "@nfeng6新加坡-中继-01", server: 120.233.10.182, port: 6700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: "@nfeng6新加坡-中继-08", server: 120.233.10.182, port: 6707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
-  - {name: _CN_中国_130, server: 120.233.10.182, port: 3703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: "@nfeng6美国-中继-03", server: 120.233.10.182, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: _CN_中国_122, server: 120.233.10.182, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
   - {name: _CN_中国_123, server: 120.233.10.182, port: 6704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: +专线+马来西亚+02, server: iepl02.xbxb1122.xyz, port: 8522, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 44cbe97237.microsoft.com}, udp: true}
+  - {name: 香港01, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292395:UXZgcH2Vmq, obfs-param: "", udp: true}
+  - {name: +专线+新加坡+01, server: iepl02.xbxb1122.xyz, port: 8521, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: bf45419206.microsoft.com}, udp: true}
+  - {name: +专线+马来西亚+02 2, server: iepl02.xbxb1122.xyz, port: 8522, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: bf45419206.microsoft.com}, udp: true}
+  - {name: +香港+HK-Y01, server: 7704d818-78e5-471a-a1d6-655c4d79f662.1c5f5adf-a6ce-4066-b318-fa7eb97f68c8.xn--9kq12xdq7a.com, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: d399ffaf-fe84-4c88-a38d-50eaa8300186, udp: true}
+  - {name: +香港+HK-Y02, server: 7704d818-78e5-471a-a1d6-655c4d79f662.1c5f5adf-a6ce-4066-b318-fa7eb97f68c8.xn--9kq12xdq7a.com, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: d399ffaf-fe84-4c88-a38d-50eaa8300186, udp: true}
+  - {name: +香港+HK-Y03, server: 7704d818-78e5-471a-a1d6-655c4d79f662.1c5f5adf-a6ce-4066-b318-fa7eb97f68c8.xn--9kq12xdq7a.com, port: 30003, type: ss, cipher: chacha20-ietf-poly1305, password: d399ffaf-fe84-4c88-a38d-50eaa8300186, udp: true}
+  - {name: +香港+HK-Y04, server: 7704d818-78e5-471a-a1d6-655c4d79f662.1c5f5adf-a6ce-4066-b318-fa7eb97f68c8.xn--9kq12xdq7a.com, port: 30004, type: ss, cipher: chacha20-ietf-poly1305, password: d399ffaf-fe84-4c88-a38d-50eaa8300186, udp: true}
+  - {name: _CN_中国_126, server: 120.233.10.182, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: "@nfeng6新加坡-中继-08", server: 120.233.10.182, port: 6707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6美国-中继-08", server: 120.233.10.182, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: _CN_中国_143, server: 120.233.10.182, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: _CN_中国_138, server: 120.233.10.182, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: "@nfeng6韩国-中继-03", server: 120.233.10.182, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: _CN_中国_142, server: 120.233.10.182, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: "@nfeng6美国-中继-09", server: 120.233.10.182, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: _CN_中国_144, server: 120.233.10.182, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: _CN_中国_139, server: 120.233.10.182, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: _CN_中国_121, server: 120.233.10.182, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: "@nfeng6美国-中继-01", server: 120.233.10.182, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6美国-中继-06", server: 120.233.10.182, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: "@nfeng6美国-中继-03", server: 120.233.10.182, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
   - {name: _CN_中国_137, server: 120.233.10.182, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
-  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01, server: pvcc01.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-印度 马哈拉施特拉 IPLC D02, server: in02.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-印度 马哈拉施特拉 IPLC D03, server: in03.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-印度 马哈拉施特拉 IPLC D04, server: in04.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-印度 马哈拉施特拉 IPLC D07, server: in07.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-印度 马哈拉施特拉 IPLC D08, server: in08.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-印度 马哈拉施特拉 IPLC D10, server: in10.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-印度 马哈拉施特拉 IPLC D11, server: in11.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-印度 马哈拉施特拉 IPLC D12, server: in12.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾IEPL Hinet固接  D01, server: tw11.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾IEPL Hinet固接  D02, server: tw12.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾IEPL Hinet固接  D03, server: tw13.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾IEPL Hinet固接  D04, server: tw14.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾IEPL Hinet固接  D05, server: tw15.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾IEPL Hinet固接  D06, server: tw16.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾IEPL Hinet固接 D07, server: tw17.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾IEPL Hinet固接 D08, server: tw18.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾IEPL Hinet固接 D09, server: tw19.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾IEPL Hinet固接 D10, server: tw20.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾IEPL Hinet固接 D11, server: tw21.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾IEPL Hinet固接 D12, server: tw22.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾宜兰 IPLC D01, server: tw01.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾宜兰 IPLC D02, server: tw02.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾宜兰 IPLC D03, server: tw03.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾宜兰 IPLC D04, server: tw04.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾宜兰 IPLC D05, server: tw05.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾宜兰 IPLC D06, server: tw06.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾宜兰 IPLC D07, server: tw07.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾宜兰 IPLC D08, server: tw08.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾宜兰 IPLC D09, server: tw09.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-台湾宜兰 IPLC D10, server: tw10.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps, server: hr01.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps, server: hr10.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-日本 多协议标签交换虚拟专用网 D11 1000Mbps, server: hr11.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps, server: hr12.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps, server: hr02.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps, server: hr03.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps, server: hr04.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps, server: hr05.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps, server: hr07.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps, server: hr08.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps, server: hr09.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-法国 IPLC D01, server: fr01.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-法国 IPLC D02, server: fr02.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-法国 IPLC D03, server: fr03.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-法国 IPLC D04, server: fr04.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-法国 IPLC D05, server: fr05.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-澳大利亚 IPLC 悉尼 D02, server: au02.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-爱尔兰 IPLC D01, server: ir01.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-爱尔兰 IPLC D03, server: ir03.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-英国伦敦电信 IEPL D2, server: uk02.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-英国伦敦电信 IEPL D3, server: uk03.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-英国伦敦电信 IEPL D5, server: uk05.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-韩国 IPLC D01 Netflix, server: kr01.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-韩国 IPLC D02 Netflix, server: kr02.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-韩国 IPLC D03 Netflix, server: kr03.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-韩国 IPLC D04 Netflix, server: kr04.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-韩国 IPLC D05 Netflix, server: kr05.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-韩国 IPLC D06 Netflix, server: kr06.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-韩国 IPLC D07 Netflix, server: kr07.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-韩国 IPLC D08 Netflix, server: kr08.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-韩国 IPLC D09 Netflix, server: kr09.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-韩国 IPLC D10 Netflix, server: kr10.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB, server: hk04.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK2 D 05 1Gbps HBO TVB, server: hk05.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB, server: hk06.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB, server: hk08.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB, server: hk09.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB, server: sg02.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB, server: sg03.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB, server: sg04.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 D 05 1Gbps HBO TVB, server: sg05.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB, server: sg06.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB, server: sg07.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB, server: sg08.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB, server: sg09.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB, server: sg10.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB, server: sg11.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 D 12 1Gbps HBO TVB, server: sg12.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 新加坡 Legacy Magic IEPL 中继 D01 Netflix, server: sgp01.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 新加坡 Magic IEPL 中继 D01 Netflix, server: sgp06.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 新加坡 Magic IEPL 中继 D02 Netflix, server: sgp07.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 新加坡 Magic IEPL 中继 D03 Netflix, server: sgp08.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 新加坡高级 IEPL 中继 D01 Netflix, server: sgp11.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 新加坡高级 IEPL 中继 D02 Netflix, server: sgp12.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 日本 まつやまし auひかり ホーム1ギガ D 01, server: jp01.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 日本 まつやまし auひかり ホーム1ギガ D 03, server: jp03.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 日本 まつやまし auひかり ホーム1ギガ D 04, server: jp04.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 日本 まつやまし auひかり ホーム1ギガ D 05, server: jp05.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 日本 まつやまし auひかり ホーム1ギガ D 06, server: jp06.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 日本 まつやまし auひかり ホーム1ギガ D 07, server: jp07.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 日本 まつやまし auひかり ホーム1ギガ D 08, server: jp08.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 日本 まつやまし auひかり ホーム1ギガ D 09, server: jp09.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 日本 まつやまし auひかり ホーム1ギガ D 10, server: jp10.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 精简 31, server: 31.sapphirerapids.com, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 精简 33, server: 33.sapphirerapids.com, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 精简 34, server: 34.sapphirerapids.com, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 精简 35, server: 35.sapphirerapids.com, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 精简 36, server: 36.sapphirerapids.com, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 精简 37, server: 37.sapphirerapids.com, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 精简 38, server: 38.sapphirerapids.com, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 精简 39, server: 39.sapphirerapids.com, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 精简 40, server: 40.sapphirerapids.com, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 美国实验性 IEPL 中继 D04, server: us09.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 美国高级 IEPL 中继 D01, server: us01.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 美国高级 IEPL 中继 D02, server: us02.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 D 01, server: kr11.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 D 02, server: kr12.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 D 03, server: kr13.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 D 04, server: kr14.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 D 06, server: kr16.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 D 07, server: kr17.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 D 08, server: kr18.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 D 09, server: kr19.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 D 10, server: kr20.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 D 11, server: kr21.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 D 12, server: kr22.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 D 13, server: kr23.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 香港 油尖旺御金·国峯 網上行寬頻 D01, server: hkt01.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 香港 油尖旺御金·国峯 網上行寬頻 D02, server: hkt02.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 香港 油尖旺御金·国峯 網上行寬頻 D03, server: hkt03.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 香港 油尖旺御金·国峯 網上行寬頻 D04, server: hkt04.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 香港 油尖旺御金·国峯 網上行寬頻 D05, server: hkt05.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 香港 油尖旺御金·国峯 網上行寬頻 D06, server: hkt06.clashcloud.tech, port: 61320, type: ssr, cipher: rc4-md5, password: lbLnUz, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: _CN_中国_133, server: 120.233.10.182, port: 3706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: _CN_中国_128, server: 120.233.10.182, port: 3701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: _CN_中国_140, server: 120.233.10.182, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: _CN_中国_141, server: 120.233.10.182, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: e167062611.microsoft.com, udp: true}
+  - {name: "@nfeng6台湾 -中继-04", server: 120.233.10.182, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: e167063343.microsoft.com, udp: true}
+  - {name: 标准-香港-3, server: south-ingress.from.element.mxnodes.cc, port: 52612, type: ss, cipher: aes-256-gcm, password: 3aea57a2-bcff-44b3-8867-45d42a68b3b6, udp: true}
+  - {name: 标准-香港-4, server: south-ingress.from.element.mxnodes.cc, port: 52613, type: ss, cipher: aes-256-gcm, password: 3aea57a2-bcff-44b3-8867-45d42a68b3b6, udp: true}
+  - {name: 标准-香港-5, server: south-ingress.from.element.mxnodes.cc, port: 52614, type: ss, cipher: aes-256-gcm, password: 3aea57a2-bcff-44b3-8867-45d42a68b3b6, udp: true}
+  - {name: 标准-日本-3, server: east-ingress.from.element.mxnodes.cc, port: 52632, type: ss, cipher: aes-256-gcm, password: 3aea57a2-bcff-44b3-8867-45d42a68b3b6, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国_127
-      - "@nfeng6美国-中继-08"
+      - 专线 韩国 02
+      - 专线 香港 04
+      - 标准-台湾-1
+      - 标准-日本-1
+      - 标准-日本-2
+      - 标准-日本-4
+      - "@nfeng6韩国-中继-04"
+      - 专线 马来西亚 01
+      - 香港 01
+      - _HK_香港_tg频道：@bpjzx2_5
+      - 香港
+      - 香港 2
+      - 新加坡
+      - 香港 3
+      - 新加坡 2
+      - 首尔
+      - 香港 01 2
+      - 专线 香港 03
+      - 专线 香港 04 2
+      - 专线 马来西亚 01 2
+      - +专线+香港+03
+      - 标准-台湾-2
+      - +专线+新加坡+03
+      - 香港 4
+      - +中继+新加坡+04
+      - +中继+日本+03
+      - +中继+香港+01
+      - +专线+新加坡+03 2
       - _CN_中国_147
-      - _CN_中国_143
-      - _CN_中国_131
-      - "@nfeng6新加坡-中继-09"
-      - _CN_中国_138
-      - _CN_中国_124
-      - _CN_中国_129
-      - "@nfeng6韩国-中继-03"
-      - _CN_中国_136
-      - _CN_中国_117
-      - "@nfeng6台湾 -中继-04"
-      - _CN_中国_134
-      - _CN_中国_132
-      - _CN_中国_135
-      - _CN_中国_142
-      - "@nfeng6台湾 -中继-06"
       - _CN_中国_146
-      - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - "@nfeng6韩国-中继-02"
-      - "@nfeng6韩国-中继-04"
       - _CN_中国_145
-      - _CN_中国_144
-      - _CN_中国_141
-      - _CN_中国_126
-      - "@nfeng6美国-中继-07"
       - "@nfeng6新加坡-中继-03"
-      - _CN_中国_133
-      - _CN_中国_128
-      - _CN_中国_139
       - "@nfeng6韩国-中继-01"
       - _CN_中国_125
-      - _CN_中国_121
-      - _CN_中国_tg频道：@bpjzx2_125
-      - "@nfeng6美国-中继-01"
-      - "@nfeng6新加坡-中继-06"
-      - _CN_中国_140
-      - "@nfeng6美国-中继-06"
-      - "@nfeng6新加坡-中继-01"
-      - "@nfeng6新加坡-中继-08"
-      - _CN_中国_130
-      - "@nfeng6美国-中继-03"
       - _CN_中国_122
       - _CN_中国_123
+      - +专线+马来西亚+02
+      - 香港01
+      - +专线+新加坡+01
+      - +专线+马来西亚+02 2
+      - +香港+HK-Y01
+      - +香港+HK-Y02
+      - +香港+HK-Y03
+      - +香港+HK-Y04
+      - _CN_中国_126
+      - "@nfeng6新加坡-中继-08"
+      - "@nfeng6美国-中继-08"
+      - _CN_中国_143
+      - _CN_中国_138
+      - "@nfeng6韩国-中继-03"
+      - _CN_中国_142
+      - "@nfeng6美国-中继-09"
+      - _CN_中国_144
+      - _CN_中国_139
+      - _CN_中国_121
+      - "@nfeng6美国-中继-01"
+      - "@nfeng6美国-中继-06"
+      - "@nfeng6美国-中继-03"
       - _CN_中国_137
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
-      - 中国-印度 马哈拉施特拉 IPLC D02
-      - 中国-印度 马哈拉施特拉 IPLC D03
-      - 中国-印度 马哈拉施特拉 IPLC D04
-      - 中国-印度 马哈拉施特拉 IPLC D07
-      - 中国-印度 马哈拉施特拉 IPLC D08
-      - 中国-印度 马哈拉施特拉 IPLC D10
-      - 中国-印度 马哈拉施特拉 IPLC D11
-      - 中国-印度 马哈拉施特拉 IPLC D12
-      - 中国-台湾IEPL Hinet固接  D01
-      - 中国-台湾IEPL Hinet固接  D02
-      - 中国-台湾IEPL Hinet固接  D03
-      - 中国-台湾IEPL Hinet固接  D04
-      - 中国-台湾IEPL Hinet固接  D05
-      - 中国-台湾IEPL Hinet固接  D06
-      - 中国-台湾IEPL Hinet固接 D07
-      - 中国-台湾IEPL Hinet固接 D08
-      - 中国-台湾IEPL Hinet固接 D09
-      - 中国-台湾IEPL Hinet固接 D10
-      - 中国-台湾IEPL Hinet固接 D11
-      - 中国-台湾IEPL Hinet固接 D12
-      - 中国-台湾宜兰 IPLC D01
-      - 中国-台湾宜兰 IPLC D02
-      - 中国-台湾宜兰 IPLC D03
-      - 中国-台湾宜兰 IPLC D04
-      - 中国-台湾宜兰 IPLC D05
-      - 中国-台湾宜兰 IPLC D06
-      - 中国-台湾宜兰 IPLC D07
-      - 中国-台湾宜兰 IPLC D08
-      - 中国-台湾宜兰 IPLC D09
-      - 中国-台湾宜兰 IPLC D10
-      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D11 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
-      - 中国-法国 IPLC D01
-      - 中国-法国 IPLC D02
-      - 中国-法国 IPLC D03
-      - 中国-法国 IPLC D04
-      - 中国-法国 IPLC D05
-      - 中国-澳大利亚 IPLC 悉尼 D02
-      - 中国-爱尔兰 IPLC D01
-      - 中国-爱尔兰 IPLC D03
-      - 中国-英国伦敦电信 IEPL D2
-      - 中国-英国伦敦电信 IEPL D3
-      - 中国-英国伦敦电信 IEPL D5
-      - 中国-韩国 IPLC D01 Netflix
-      - 中国-韩国 IPLC D02 Netflix
-      - 中国-韩国 IPLC D03 Netflix
-      - 中国-韩国 IPLC D04 Netflix
-      - 中国-韩国 IPLC D05 Netflix
-      - 中国-韩国 IPLC D06 Netflix
-      - 中国-韩国 IPLC D07 Netflix
-      - 中国-韩国 IPLC D08 Netflix
-      - 中国-韩国 IPLC D09 Netflix
-      - 中国-韩国 IPLC D10 Netflix
-      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 12 1Gbps HBO TVB
-      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D02 Netflix
-      - 新加坡 Magic IEPL 中继 D03 Netflix
-      - 新加坡高级 IEPL 中继 D01 Netflix
-      - 新加坡高级 IEPL 中继 D02 Netflix
-      - 日本 まつやまし auひかり ホーム1ギガ D 01
-      - 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 日本 まつやまし auひかり ホーム1ギガ D 04
-      - 日本 まつやまし auひかり ホーム1ギガ D 05
-      - 日本 まつやまし auひかり ホーム1ギガ D 06
-      - 日本 まつやまし auひかり ホーム1ギガ D 07
-      - 日本 まつやまし auひかり ホーム1ギガ D 08
-      - 日本 まつやまし auひかり ホーム1ギガ D 09
-      - 日本 まつやまし auひかり ホーム1ギガ D 10
-      - 精简 31
-      - 精简 33
-      - 精简 34
-      - 精简 35
-      - 精简 36
-      - 精简 37
-      - 精简 38
-      - 精简 39
-      - 精简 40
-      - 美国实验性 IEPL 中继 D04
-      - 美国高级 IEPL 中继 D01
-      - 美国高级 IEPL 中继 D02
-      - 韩国 전라북도 전주시 商宽 D 01
-      - 韩国 전라북도 전주시 商宽 D 02
-      - 韩国 전라북도 전주시 商宽 D 03
-      - 韩国 전라북도 전주시 商宽 D 04
-      - 韩国 전라북도 전주시 商宽 D 06
-      - 韩国 전라북도 전주시 商宽 D 07
-      - 韩国 전라북도 전주시 商宽 D 08
-      - 韩国 전라북도 전주시 商宽 D 09
-      - 韩国 전라북도 전주시 商宽 D 10
-      - 韩国 전라북도 전주시 商宽 D 11
-      - 韩国 전라북도 전주시 商宽 D 12
-      - 韩国 전라북도 전주시 商宽 D 13
-      - 香港 油尖旺御金·国峯 網上行寬頻 D01
-      - 香港 油尖旺御金·国峯 網上行寬頻 D02
-      - 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 香港 油尖旺御金·国峯 網上行寬頻 D04
-      - 香港 油尖旺御金·国峯 網上行寬頻 D05
-      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - _CN_中国_133
+      - _CN_中国_128
+      - _CN_中国_140
+      - _CN_中国_141
+      - "@nfeng6台湾 -中继-04"
+      - 标准-香港-3
+      - 标准-香港-4
+      - 标准-香港-5
+      - 标准-日本-3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_中国_127
-      - "@nfeng6美国-中继-08"
+      - 专线 韩国 02
+      - 专线 香港 04
+      - 标准-台湾-1
+      - 标准-日本-1
+      - 标准-日本-2
+      - 标准-日本-4
+      - "@nfeng6韩国-中继-04"
+      - 专线 马来西亚 01
+      - 香港 01
+      - _HK_香港_tg频道：@bpjzx2_5
+      - 香港
+      - 香港 2
+      - 新加坡
+      - 香港 3
+      - 新加坡 2
+      - 首尔
+      - 香港 01 2
+      - 专线 香港 03
+      - 专线 香港 04 2
+      - 专线 马来西亚 01 2
+      - +专线+香港+03
+      - 标准-台湾-2
+      - +专线+新加坡+03
+      - 香港 4
+      - +中继+新加坡+04
+      - +中继+日本+03
+      - +中继+香港+01
+      - +专线+新加坡+03 2
       - _CN_中国_147
-      - _CN_中国_143
-      - _CN_中国_131
-      - "@nfeng6新加坡-中继-09"
-      - _CN_中国_138
-      - _CN_中国_124
-      - _CN_中国_129
-      - "@nfeng6韩国-中继-03"
-      - _CN_中国_136
-      - _CN_中国_117
-      - "@nfeng6台湾 -中继-04"
-      - _CN_中国_134
-      - _CN_中国_132
-      - _CN_中国_135
-      - _CN_中国_142
-      - "@nfeng6台湾 -中继-06"
       - _CN_中国_146
-      - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - "@nfeng6韩国-中继-02"
-      - "@nfeng6韩国-中继-04"
       - _CN_中国_145
-      - _CN_中国_144
-      - _CN_中国_141
-      - _CN_中国_126
-      - "@nfeng6美国-中继-07"
       - "@nfeng6新加坡-中继-03"
-      - _CN_中国_133
-      - _CN_中国_128
-      - _CN_中国_139
       - "@nfeng6韩国-中继-01"
       - _CN_中国_125
-      - _CN_中国_121
-      - _CN_中国_tg频道：@bpjzx2_125
-      - "@nfeng6美国-中继-01"
-      - "@nfeng6新加坡-中继-06"
-      - _CN_中国_140
-      - "@nfeng6美国-中继-06"
-      - "@nfeng6新加坡-中继-01"
-      - "@nfeng6新加坡-中继-08"
-      - _CN_中国_130
-      - "@nfeng6美国-中继-03"
       - _CN_中国_122
       - _CN_中国_123
+      - +专线+马来西亚+02
+      - 香港01
+      - +专线+新加坡+01
+      - +专线+马来西亚+02 2
+      - +香港+HK-Y01
+      - +香港+HK-Y02
+      - +香港+HK-Y03
+      - +香港+HK-Y04
+      - _CN_中国_126
+      - "@nfeng6新加坡-中继-08"
+      - "@nfeng6美国-中继-08"
+      - _CN_中国_143
+      - _CN_中国_138
+      - "@nfeng6韩国-中继-03"
+      - _CN_中国_142
+      - "@nfeng6美国-中继-09"
+      - _CN_中国_144
+      - _CN_中国_139
+      - _CN_中国_121
+      - "@nfeng6美国-中继-01"
+      - "@nfeng6美国-中继-06"
+      - "@nfeng6美国-中继-03"
       - _CN_中国_137
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
-      - 中国-印度 马哈拉施特拉 IPLC D02
-      - 中国-印度 马哈拉施特拉 IPLC D03
-      - 中国-印度 马哈拉施特拉 IPLC D04
-      - 中国-印度 马哈拉施特拉 IPLC D07
-      - 中国-印度 马哈拉施特拉 IPLC D08
-      - 中国-印度 马哈拉施特拉 IPLC D10
-      - 中国-印度 马哈拉施特拉 IPLC D11
-      - 中国-印度 马哈拉施特拉 IPLC D12
-      - 中国-台湾IEPL Hinet固接  D01
-      - 中国-台湾IEPL Hinet固接  D02
-      - 中国-台湾IEPL Hinet固接  D03
-      - 中国-台湾IEPL Hinet固接  D04
-      - 中国-台湾IEPL Hinet固接  D05
-      - 中国-台湾IEPL Hinet固接  D06
-      - 中国-台湾IEPL Hinet固接 D07
-      - 中国-台湾IEPL Hinet固接 D08
-      - 中国-台湾IEPL Hinet固接 D09
-      - 中国-台湾IEPL Hinet固接 D10
-      - 中国-台湾IEPL Hinet固接 D11
-      - 中国-台湾IEPL Hinet固接 D12
-      - 中国-台湾宜兰 IPLC D01
-      - 中国-台湾宜兰 IPLC D02
-      - 中国-台湾宜兰 IPLC D03
-      - 中国-台湾宜兰 IPLC D04
-      - 中国-台湾宜兰 IPLC D05
-      - 中国-台湾宜兰 IPLC D06
-      - 中国-台湾宜兰 IPLC D07
-      - 中国-台湾宜兰 IPLC D08
-      - 中国-台湾宜兰 IPLC D09
-      - 中国-台湾宜兰 IPLC D10
-      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D11 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
-      - 中国-法国 IPLC D01
-      - 中国-法国 IPLC D02
-      - 中国-法国 IPLC D03
-      - 中国-法国 IPLC D04
-      - 中国-法国 IPLC D05
-      - 中国-澳大利亚 IPLC 悉尼 D02
-      - 中国-爱尔兰 IPLC D01
-      - 中国-爱尔兰 IPLC D03
-      - 中国-英国伦敦电信 IEPL D2
-      - 中国-英国伦敦电信 IEPL D3
-      - 中国-英国伦敦电信 IEPL D5
-      - 中国-韩国 IPLC D01 Netflix
-      - 中国-韩国 IPLC D02 Netflix
-      - 中国-韩国 IPLC D03 Netflix
-      - 中国-韩国 IPLC D04 Netflix
-      - 中国-韩国 IPLC D05 Netflix
-      - 中国-韩国 IPLC D06 Netflix
-      - 中国-韩国 IPLC D07 Netflix
-      - 中国-韩国 IPLC D08 Netflix
-      - 中国-韩国 IPLC D09 Netflix
-      - 中国-韩国 IPLC D10 Netflix
-      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 12 1Gbps HBO TVB
-      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D02 Netflix
-      - 新加坡 Magic IEPL 中继 D03 Netflix
-      - 新加坡高级 IEPL 中继 D01 Netflix
-      - 新加坡高级 IEPL 中继 D02 Netflix
-      - 日本 まつやまし auひかり ホーム1ギガ D 01
-      - 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 日本 まつやまし auひかり ホーム1ギガ D 04
-      - 日本 まつやまし auひかり ホーム1ギガ D 05
-      - 日本 まつやまし auひかり ホーム1ギガ D 06
-      - 日本 まつやまし auひかり ホーム1ギガ D 07
-      - 日本 まつやまし auひかり ホーム1ギガ D 08
-      - 日本 まつやまし auひかり ホーム1ギガ D 09
-      - 日本 まつやまし auひかり ホーム1ギガ D 10
-      - 精简 31
-      - 精简 33
-      - 精简 34
-      - 精简 35
-      - 精简 36
-      - 精简 37
-      - 精简 38
-      - 精简 39
-      - 精简 40
-      - 美国实验性 IEPL 中继 D04
-      - 美国高级 IEPL 中继 D01
-      - 美国高级 IEPL 中继 D02
-      - 韩国 전라북도 전주시 商宽 D 01
-      - 韩国 전라북도 전주시 商宽 D 02
-      - 韩国 전라북도 전주시 商宽 D 03
-      - 韩国 전라북도 전주시 商宽 D 04
-      - 韩国 전라북도 전주시 商宽 D 06
-      - 韩国 전라북도 전주시 商宽 D 07
-      - 韩国 전라북도 전주시 商宽 D 08
-      - 韩国 전라북도 전주시 商宽 D 09
-      - 韩国 전라북도 전주시 商宽 D 10
-      - 韩国 전라북도 전주시 商宽 D 11
-      - 韩国 전라북도 전주시 商宽 D 12
-      - 韩国 전라북도 전주시 商宽 D 13
-      - 香港 油尖旺御金·国峯 網上行寬頻 D01
-      - 香港 油尖旺御金·国峯 網上行寬頻 D02
-      - 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 香港 油尖旺御金·国峯 網上行寬頻 D04
-      - 香港 油尖旺御金·国峯 網上行寬頻 D05
-      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - _CN_中国_133
+      - _CN_中国_128
+      - _CN_中国_140
+      - _CN_中国_141
+      - "@nfeng6台湾 -中继-04"
+      - 标准-香港-3
+      - 标准-香港-4
+      - 标准-香港-5
+      - 标准-日本-3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国_127
-      - "@nfeng6美国-中继-08"
+      - 专线 韩国 02
+      - 专线 香港 04
+      - 标准-台湾-1
+      - 标准-日本-1
+      - 标准-日本-2
+      - 标准-日本-4
+      - "@nfeng6韩国-中继-04"
+      - 专线 马来西亚 01
+      - 香港 01
+      - _HK_香港_tg频道：@bpjzx2_5
+      - 香港
+      - 香港 2
+      - 新加坡
+      - 香港 3
+      - 新加坡 2
+      - 首尔
+      - 香港 01 2
+      - 专线 香港 03
+      - 专线 香港 04 2
+      - 专线 马来西亚 01 2
+      - +专线+香港+03
+      - 标准-台湾-2
+      - +专线+新加坡+03
+      - 香港 4
+      - +中继+新加坡+04
+      - +中继+日本+03
+      - +中继+香港+01
+      - +专线+新加坡+03 2
       - _CN_中国_147
-      - _CN_中国_143
-      - _CN_中国_131
-      - "@nfeng6新加坡-中继-09"
-      - _CN_中国_138
-      - _CN_中国_124
-      - _CN_中国_129
-      - "@nfeng6韩国-中继-03"
-      - _CN_中国_136
-      - _CN_中国_117
-      - "@nfeng6台湾 -中继-04"
-      - _CN_中国_134
-      - _CN_中国_132
-      - _CN_中国_135
-      - _CN_中国_142
-      - "@nfeng6台湾 -中继-06"
       - _CN_中国_146
-      - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - "@nfeng6韩国-中继-02"
-      - "@nfeng6韩国-中继-04"
       - _CN_中国_145
-      - _CN_中国_144
-      - _CN_中国_141
-      - _CN_中国_126
-      - "@nfeng6美国-中继-07"
       - "@nfeng6新加坡-中继-03"
-      - _CN_中国_133
-      - _CN_中国_128
-      - _CN_中国_139
       - "@nfeng6韩国-中继-01"
       - _CN_中国_125
-      - _CN_中国_121
-      - _CN_中国_tg频道：@bpjzx2_125
-      - "@nfeng6美国-中继-01"
-      - "@nfeng6新加坡-中继-06"
-      - _CN_中国_140
-      - "@nfeng6美国-中继-06"
-      - "@nfeng6新加坡-中继-01"
-      - "@nfeng6新加坡-中继-08"
-      - _CN_中国_130
-      - "@nfeng6美国-中继-03"
       - _CN_中国_122
       - _CN_中国_123
+      - +专线+马来西亚+02
+      - 香港01
+      - +专线+新加坡+01
+      - +专线+马来西亚+02 2
+      - +香港+HK-Y01
+      - +香港+HK-Y02
+      - +香港+HK-Y03
+      - +香港+HK-Y04
+      - _CN_中国_126
+      - "@nfeng6新加坡-中继-08"
+      - "@nfeng6美国-中继-08"
+      - _CN_中国_143
+      - _CN_中国_138
+      - "@nfeng6韩国-中继-03"
+      - _CN_中国_142
+      - "@nfeng6美国-中继-09"
+      - _CN_中国_144
+      - _CN_中国_139
+      - _CN_中国_121
+      - "@nfeng6美国-中继-01"
+      - "@nfeng6美国-中继-06"
+      - "@nfeng6美国-中继-03"
       - _CN_中国_137
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
-      - 中国-印度 马哈拉施特拉 IPLC D02
-      - 中国-印度 马哈拉施特拉 IPLC D03
-      - 中国-印度 马哈拉施特拉 IPLC D04
-      - 中国-印度 马哈拉施特拉 IPLC D07
-      - 中国-印度 马哈拉施特拉 IPLC D08
-      - 中国-印度 马哈拉施特拉 IPLC D10
-      - 中国-印度 马哈拉施特拉 IPLC D11
-      - 中国-印度 马哈拉施特拉 IPLC D12
-      - 中国-台湾IEPL Hinet固接  D01
-      - 中国-台湾IEPL Hinet固接  D02
-      - 中国-台湾IEPL Hinet固接  D03
-      - 中国-台湾IEPL Hinet固接  D04
-      - 中国-台湾IEPL Hinet固接  D05
-      - 中国-台湾IEPL Hinet固接  D06
-      - 中国-台湾IEPL Hinet固接 D07
-      - 中国-台湾IEPL Hinet固接 D08
-      - 中国-台湾IEPL Hinet固接 D09
-      - 中国-台湾IEPL Hinet固接 D10
-      - 中国-台湾IEPL Hinet固接 D11
-      - 中国-台湾IEPL Hinet固接 D12
-      - 中国-台湾宜兰 IPLC D01
-      - 中国-台湾宜兰 IPLC D02
-      - 中国-台湾宜兰 IPLC D03
-      - 中国-台湾宜兰 IPLC D04
-      - 中国-台湾宜兰 IPLC D05
-      - 中国-台湾宜兰 IPLC D06
-      - 中国-台湾宜兰 IPLC D07
-      - 中国-台湾宜兰 IPLC D08
-      - 中国-台湾宜兰 IPLC D09
-      - 中国-台湾宜兰 IPLC D10
-      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D11 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
-      - 中国-法国 IPLC D01
-      - 中国-法国 IPLC D02
-      - 中国-法国 IPLC D03
-      - 中国-法国 IPLC D04
-      - 中国-法国 IPLC D05
-      - 中国-澳大利亚 IPLC 悉尼 D02
-      - 中国-爱尔兰 IPLC D01
-      - 中国-爱尔兰 IPLC D03
-      - 中国-英国伦敦电信 IEPL D2
-      - 中国-英国伦敦电信 IEPL D3
-      - 中国-英国伦敦电信 IEPL D5
-      - 中国-韩国 IPLC D01 Netflix
-      - 中国-韩国 IPLC D02 Netflix
-      - 中国-韩国 IPLC D03 Netflix
-      - 中国-韩国 IPLC D04 Netflix
-      - 中国-韩国 IPLC D05 Netflix
-      - 中国-韩国 IPLC D06 Netflix
-      - 中国-韩国 IPLC D07 Netflix
-      - 中国-韩国 IPLC D08 Netflix
-      - 中国-韩国 IPLC D09 Netflix
-      - 中国-韩国 IPLC D10 Netflix
-      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 12 1Gbps HBO TVB
-      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D02 Netflix
-      - 新加坡 Magic IEPL 中继 D03 Netflix
-      - 新加坡高级 IEPL 中继 D01 Netflix
-      - 新加坡高级 IEPL 中继 D02 Netflix
-      - 日本 まつやまし auひかり ホーム1ギガ D 01
-      - 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 日本 まつやまし auひかり ホーム1ギガ D 04
-      - 日本 まつやまし auひかり ホーム1ギガ D 05
-      - 日本 まつやまし auひかり ホーム1ギガ D 06
-      - 日本 まつやまし auひかり ホーム1ギガ D 07
-      - 日本 まつやまし auひかり ホーム1ギガ D 08
-      - 日本 まつやまし auひかり ホーム1ギガ D 09
-      - 日本 まつやまし auひかり ホーム1ギガ D 10
-      - 精简 31
-      - 精简 33
-      - 精简 34
-      - 精简 35
-      - 精简 36
-      - 精简 37
-      - 精简 38
-      - 精简 39
-      - 精简 40
-      - 美国实验性 IEPL 中继 D04
-      - 美国高级 IEPL 中继 D01
-      - 美国高级 IEPL 中继 D02
-      - 韩国 전라북도 전주시 商宽 D 01
-      - 韩国 전라북도 전주시 商宽 D 02
-      - 韩国 전라북도 전주시 商宽 D 03
-      - 韩国 전라북도 전주시 商宽 D 04
-      - 韩国 전라북도 전주시 商宽 D 06
-      - 韩国 전라북도 전주시 商宽 D 07
-      - 韩国 전라북도 전주시 商宽 D 08
-      - 韩国 전라북도 전주시 商宽 D 09
-      - 韩国 전라북도 전주시 商宽 D 10
-      - 韩国 전라북도 전주시 商宽 D 11
-      - 韩国 전라북도 전주시 商宽 D 12
-      - 韩国 전라북도 전주시 商宽 D 13
-      - 香港 油尖旺御金·国峯 網上行寬頻 D01
-      - 香港 油尖旺御金·国峯 網上行寬頻 D02
-      - 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 香港 油尖旺御金·国峯 網上行寬頻 D04
-      - 香港 油尖旺御金·国峯 網上行寬頻 D05
-      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - _CN_中国_133
+      - _CN_中国_128
+      - _CN_中国_140
+      - _CN_中国_141
+      - "@nfeng6台湾 -中继-04"
+      - 标准-香港-3
+      - 标准-香港-4
+      - 标准-香港-5
+      - 标准-日本-3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -724,757 +320,330 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国_127
-      - "@nfeng6美国-中继-08"
+      - 专线 韩国 02
+      - 专线 香港 04
+      - 标准-台湾-1
+      - 标准-日本-1
+      - 标准-日本-2
+      - 标准-日本-4
+      - "@nfeng6韩国-中继-04"
+      - 专线 马来西亚 01
+      - 香港 01
+      - _HK_香港_tg频道：@bpjzx2_5
+      - 香港
+      - 香港 2
+      - 新加坡
+      - 香港 3
+      - 新加坡 2
+      - 首尔
+      - 香港 01 2
+      - 专线 香港 03
+      - 专线 香港 04 2
+      - 专线 马来西亚 01 2
+      - +专线+香港+03
+      - 标准-台湾-2
+      - +专线+新加坡+03
+      - 香港 4
+      - +中继+新加坡+04
+      - +中继+日本+03
+      - +中继+香港+01
+      - +专线+新加坡+03 2
       - _CN_中国_147
-      - _CN_中国_143
-      - _CN_中国_131
-      - "@nfeng6新加坡-中继-09"
-      - _CN_中国_138
-      - _CN_中国_124
-      - _CN_中国_129
-      - "@nfeng6韩国-中继-03"
-      - _CN_中国_136
-      - _CN_中国_117
-      - "@nfeng6台湾 -中继-04"
-      - _CN_中国_134
-      - _CN_中国_132
-      - _CN_中国_135
-      - _CN_中国_142
-      - "@nfeng6台湾 -中继-06"
       - _CN_中国_146
-      - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - "@nfeng6韩国-中继-02"
-      - "@nfeng6韩国-中继-04"
       - _CN_中国_145
-      - _CN_中国_144
-      - _CN_中国_141
-      - _CN_中国_126
-      - "@nfeng6美国-中继-07"
       - "@nfeng6新加坡-中继-03"
-      - _CN_中国_133
-      - _CN_中国_128
-      - _CN_中国_139
       - "@nfeng6韩国-中继-01"
       - _CN_中国_125
-      - _CN_中国_121
-      - _CN_中国_tg频道：@bpjzx2_125
-      - "@nfeng6美国-中继-01"
-      - "@nfeng6新加坡-中继-06"
-      - _CN_中国_140
-      - "@nfeng6美国-中继-06"
-      - "@nfeng6新加坡-中继-01"
-      - "@nfeng6新加坡-中继-08"
-      - _CN_中国_130
-      - "@nfeng6美国-中继-03"
       - _CN_中国_122
       - _CN_中国_123
+      - +专线+马来西亚+02
+      - 香港01
+      - +专线+新加坡+01
+      - +专线+马来西亚+02 2
+      - +香港+HK-Y01
+      - +香港+HK-Y02
+      - +香港+HK-Y03
+      - +香港+HK-Y04
+      - _CN_中国_126
+      - "@nfeng6新加坡-中继-08"
+      - "@nfeng6美国-中继-08"
+      - _CN_中国_143
+      - _CN_中国_138
+      - "@nfeng6韩国-中继-03"
+      - _CN_中国_142
+      - "@nfeng6美国-中继-09"
+      - _CN_中国_144
+      - _CN_中国_139
+      - _CN_中国_121
+      - "@nfeng6美国-中继-01"
+      - "@nfeng6美国-中继-06"
+      - "@nfeng6美国-中继-03"
       - _CN_中国_137
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
-      - 中国-印度 马哈拉施特拉 IPLC D02
-      - 中国-印度 马哈拉施特拉 IPLC D03
-      - 中国-印度 马哈拉施特拉 IPLC D04
-      - 中国-印度 马哈拉施特拉 IPLC D07
-      - 中国-印度 马哈拉施特拉 IPLC D08
-      - 中国-印度 马哈拉施特拉 IPLC D10
-      - 中国-印度 马哈拉施特拉 IPLC D11
-      - 中国-印度 马哈拉施特拉 IPLC D12
-      - 中国-台湾IEPL Hinet固接  D01
-      - 中国-台湾IEPL Hinet固接  D02
-      - 中国-台湾IEPL Hinet固接  D03
-      - 中国-台湾IEPL Hinet固接  D04
-      - 中国-台湾IEPL Hinet固接  D05
-      - 中国-台湾IEPL Hinet固接  D06
-      - 中国-台湾IEPL Hinet固接 D07
-      - 中国-台湾IEPL Hinet固接 D08
-      - 中国-台湾IEPL Hinet固接 D09
-      - 中国-台湾IEPL Hinet固接 D10
-      - 中国-台湾IEPL Hinet固接 D11
-      - 中国-台湾IEPL Hinet固接 D12
-      - 中国-台湾宜兰 IPLC D01
-      - 中国-台湾宜兰 IPLC D02
-      - 中国-台湾宜兰 IPLC D03
-      - 中国-台湾宜兰 IPLC D04
-      - 中国-台湾宜兰 IPLC D05
-      - 中国-台湾宜兰 IPLC D06
-      - 中国-台湾宜兰 IPLC D07
-      - 中国-台湾宜兰 IPLC D08
-      - 中国-台湾宜兰 IPLC D09
-      - 中国-台湾宜兰 IPLC D10
-      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D11 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
-      - 中国-法国 IPLC D01
-      - 中国-法国 IPLC D02
-      - 中国-法国 IPLC D03
-      - 中国-法国 IPLC D04
-      - 中国-法国 IPLC D05
-      - 中国-澳大利亚 IPLC 悉尼 D02
-      - 中国-爱尔兰 IPLC D01
-      - 中国-爱尔兰 IPLC D03
-      - 中国-英国伦敦电信 IEPL D2
-      - 中国-英国伦敦电信 IEPL D3
-      - 中国-英国伦敦电信 IEPL D5
-      - 中国-韩国 IPLC D01 Netflix
-      - 中国-韩国 IPLC D02 Netflix
-      - 中国-韩国 IPLC D03 Netflix
-      - 中国-韩国 IPLC D04 Netflix
-      - 中国-韩国 IPLC D05 Netflix
-      - 中国-韩国 IPLC D06 Netflix
-      - 中国-韩国 IPLC D07 Netflix
-      - 中国-韩国 IPLC D08 Netflix
-      - 中国-韩国 IPLC D09 Netflix
-      - 中国-韩国 IPLC D10 Netflix
-      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 12 1Gbps HBO TVB
-      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D02 Netflix
-      - 新加坡 Magic IEPL 中继 D03 Netflix
-      - 新加坡高级 IEPL 中继 D01 Netflix
-      - 新加坡高级 IEPL 中继 D02 Netflix
-      - 日本 まつやまし auひかり ホーム1ギガ D 01
-      - 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 日本 まつやまし auひかり ホーム1ギガ D 04
-      - 日本 まつやまし auひかり ホーム1ギガ D 05
-      - 日本 まつやまし auひかり ホーム1ギガ D 06
-      - 日本 まつやまし auひかり ホーム1ギガ D 07
-      - 日本 まつやまし auひかり ホーム1ギガ D 08
-      - 日本 まつやまし auひかり ホーム1ギガ D 09
-      - 日本 まつやまし auひかり ホーム1ギガ D 10
-      - 精简 31
-      - 精简 33
-      - 精简 34
-      - 精简 35
-      - 精简 36
-      - 精简 37
-      - 精简 38
-      - 精简 39
-      - 精简 40
-      - 美国实验性 IEPL 中继 D04
-      - 美国高级 IEPL 中继 D01
-      - 美国高级 IEPL 中继 D02
-      - 韩国 전라북도 전주시 商宽 D 01
-      - 韩国 전라북도 전주시 商宽 D 02
-      - 韩国 전라북도 전주시 商宽 D 03
-      - 韩国 전라북도 전주시 商宽 D 04
-      - 韩国 전라북도 전주시 商宽 D 06
-      - 韩国 전라북도 전주시 商宽 D 07
-      - 韩国 전라북도 전주시 商宽 D 08
-      - 韩国 전라북도 전주시 商宽 D 09
-      - 韩国 전라북도 전주시 商宽 D 10
-      - 韩国 전라북도 전주시 商宽 D 11
-      - 韩国 전라북도 전주시 商宽 D 12
-      - 韩国 전라북도 전주시 商宽 D 13
-      - 香港 油尖旺御金·国峯 網上行寬頻 D01
-      - 香港 油尖旺御金·国峯 網上行寬頻 D02
-      - 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 香港 油尖旺御金·国峯 網上行寬頻 D04
-      - 香港 油尖旺御金·国峯 網上行寬頻 D05
-      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - _CN_中国_133
+      - _CN_中国_128
+      - _CN_中国_140
+      - _CN_中国_141
+      - "@nfeng6台湾 -中继-04"
+      - 标准-香港-3
+      - 标准-香港-4
+      - 标准-香港-5
+      - 标准-日本-3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 专线 香港 04
+      - 标准-台湾-1
+      - 香港 01
+      - _HK_香港_tg频道：@bpjzx2_5
+      - 香港
+      - 香港 2
+      - 香港 3
+      - 香港 01 2
+      - 专线 香港 03
+      - 专线 香港 04 2
+      - +专线+香港+03
+      - 标准-台湾-2
+      - 香港 4
+      - +中继+香港+01
+      - 香港01
+      - +香港+HK-Y01
+      - +香港+HK-Y02
+      - +香港+HK-Y03
+      - +香港+HK-Y04
       - "@nfeng6台湾 -中继-04"
-      - "@nfeng6台湾 -中继-06"
-      - 中国-台湾IEPL Hinet固接  D01
-      - 中国-台湾IEPL Hinet固接  D02
-      - 中国-台湾IEPL Hinet固接  D03
-      - 中国-台湾IEPL Hinet固接  D04
-      - 中国-台湾IEPL Hinet固接  D05
-      - 中国-台湾IEPL Hinet固接  D06
-      - 中国-台湾IEPL Hinet固接 D07
-      - 中国-台湾IEPL Hinet固接 D08
-      - 中国-台湾IEPL Hinet固接 D09
-      - 中国-台湾IEPL Hinet固接 D10
-      - 中国-台湾IEPL Hinet固接 D11
-      - 中国-台湾IEPL Hinet固接 D12
-      - 中国-台湾宜兰 IPLC D01
-      - 中国-台湾宜兰 IPLC D02
-      - 中国-台湾宜兰 IPLC D03
-      - 中国-台湾宜兰 IPLC D04
-      - 中国-台湾宜兰 IPLC D05
-      - 中国-台湾宜兰 IPLC D06
-      - 中国-台湾宜兰 IPLC D07
-      - 中国-台湾宜兰 IPLC D08
-      - 中国-台湾宜兰 IPLC D09
-      - 中国-台湾宜兰 IPLC D10
-      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 12 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 網上行寬頻 D01
-      - 香港 油尖旺御金·国峯 網上行寬頻 D02
-      - 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 香港 油尖旺御金·国峯 網上行寬頻 D04
-      - 香港 油尖旺御金·国峯 網上行寬頻 D05
-      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - 标准-香港-3
+      - 标准-香港-4
+      - 标准-香港-5
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_中国_127
-      - "@nfeng6美国-中继-08"
+      - 专线 韩国 02
+      - 专线 香港 04
+      - 标准-台湾-1
+      - 标准-日本-1
+      - 标准-日本-2
+      - 标准-日本-4
+      - "@nfeng6韩国-中继-04"
+      - 专线 马来西亚 01
+      - 香港 01
+      - _HK_香港_tg频道：@bpjzx2_5
+      - 香港
+      - 香港 2
+      - 新加坡
+      - 香港 3
+      - 新加坡 2
+      - 首尔
+      - 香港 01 2
+      - 专线 香港 03
+      - 专线 香港 04 2
+      - 专线 马来西亚 01 2
+      - +专线+香港+03
+      - 标准-台湾-2
+      - +专线+新加坡+03
+      - 香港 4
+      - +中继+新加坡+04
+      - +中继+日本+03
+      - +中继+香港+01
+      - +专线+新加坡+03 2
       - _CN_中国_147
-      - _CN_中国_143
-      - _CN_中国_131
-      - "@nfeng6新加坡-中继-09"
-      - _CN_中国_138
-      - _CN_中国_124
-      - _CN_中国_129
-      - "@nfeng6韩国-中继-03"
-      - _CN_中国_136
-      - _CN_中国_117
-      - "@nfeng6台湾 -中继-04"
-      - _CN_中国_134
-      - _CN_中国_132
-      - _CN_中国_135
-      - _CN_中国_142
-      - "@nfeng6台湾 -中继-06"
       - _CN_中国_146
-      - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - "@nfeng6韩国-中继-02"
-      - "@nfeng6韩国-中继-04"
       - _CN_中国_145
-      - _CN_中国_144
-      - _CN_中国_141
-      - _CN_中国_126
-      - "@nfeng6美国-中继-07"
       - "@nfeng6新加坡-中继-03"
-      - _CN_中国_133
-      - _CN_中国_128
-      - _CN_中国_139
       - "@nfeng6韩国-中继-01"
       - _CN_中国_125
-      - _CN_中国_121
-      - _CN_中国_tg频道：@bpjzx2_125
-      - "@nfeng6美国-中继-01"
-      - "@nfeng6新加坡-中继-06"
-      - _CN_中国_140
-      - "@nfeng6美国-中继-06"
-      - "@nfeng6新加坡-中继-01"
-      - "@nfeng6新加坡-中继-08"
-      - _CN_中国_130
-      - "@nfeng6美国-中继-03"
       - _CN_中国_122
       - _CN_中国_123
+      - +专线+马来西亚+02
+      - 香港01
+      - +专线+新加坡+01
+      - +专线+马来西亚+02 2
+      - +香港+HK-Y01
+      - +香港+HK-Y02
+      - +香港+HK-Y03
+      - +香港+HK-Y04
+      - _CN_中国_126
+      - "@nfeng6新加坡-中继-08"
+      - "@nfeng6美国-中继-08"
+      - _CN_中国_143
+      - _CN_中国_138
+      - "@nfeng6韩国-中继-03"
+      - _CN_中国_142
+      - "@nfeng6美国-中继-09"
+      - _CN_中国_144
+      - _CN_中国_139
+      - _CN_中国_121
+      - "@nfeng6美国-中继-01"
+      - "@nfeng6美国-中继-06"
+      - "@nfeng6美国-中继-03"
       - _CN_中国_137
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
-      - 中国-印度 马哈拉施特拉 IPLC D02
-      - 中国-印度 马哈拉施特拉 IPLC D03
-      - 中国-印度 马哈拉施特拉 IPLC D04
-      - 中国-印度 马哈拉施特拉 IPLC D07
-      - 中国-印度 马哈拉施特拉 IPLC D08
-      - 中国-印度 马哈拉施特拉 IPLC D10
-      - 中国-印度 马哈拉施特拉 IPLC D11
-      - 中国-印度 马哈拉施特拉 IPLC D12
-      - 中国-台湾IEPL Hinet固接  D01
-      - 中国-台湾IEPL Hinet固接  D02
-      - 中国-台湾IEPL Hinet固接  D03
-      - 中国-台湾IEPL Hinet固接  D04
-      - 中国-台湾IEPL Hinet固接  D05
-      - 中国-台湾IEPL Hinet固接  D06
-      - 中国-台湾IEPL Hinet固接 D07
-      - 中国-台湾IEPL Hinet固接 D08
-      - 中国-台湾IEPL Hinet固接 D09
-      - 中国-台湾IEPL Hinet固接 D10
-      - 中国-台湾IEPL Hinet固接 D11
-      - 中国-台湾IEPL Hinet固接 D12
-      - 中国-台湾宜兰 IPLC D01
-      - 中国-台湾宜兰 IPLC D02
-      - 中国-台湾宜兰 IPLC D03
-      - 中国-台湾宜兰 IPLC D04
-      - 中国-台湾宜兰 IPLC D05
-      - 中国-台湾宜兰 IPLC D06
-      - 中国-台湾宜兰 IPLC D07
-      - 中国-台湾宜兰 IPLC D08
-      - 中国-台湾宜兰 IPLC D09
-      - 中国-台湾宜兰 IPLC D10
-      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D11 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
-      - 中国-法国 IPLC D01
-      - 中国-法国 IPLC D02
-      - 中国-法国 IPLC D03
-      - 中国-法国 IPLC D04
-      - 中国-法国 IPLC D05
-      - 中国-澳大利亚 IPLC 悉尼 D02
-      - 中国-爱尔兰 IPLC D01
-      - 中国-爱尔兰 IPLC D03
-      - 中国-英国伦敦电信 IEPL D2
-      - 中国-英国伦敦电信 IEPL D3
-      - 中国-英国伦敦电信 IEPL D5
-      - 中国-韩国 IPLC D01 Netflix
-      - 中国-韩国 IPLC D02 Netflix
-      - 中国-韩国 IPLC D03 Netflix
-      - 中国-韩国 IPLC D04 Netflix
-      - 中国-韩国 IPLC D05 Netflix
-      - 中国-韩国 IPLC D06 Netflix
-      - 中国-韩国 IPLC D07 Netflix
-      - 中国-韩国 IPLC D08 Netflix
-      - 中国-韩国 IPLC D09 Netflix
-      - 中国-韩国 IPLC D10 Netflix
-      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 12 1Gbps HBO TVB
-      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D02 Netflix
-      - 新加坡 Magic IEPL 中继 D03 Netflix
-      - 新加坡高级 IEPL 中继 D01 Netflix
-      - 新加坡高级 IEPL 中继 D02 Netflix
-      - 日本 まつやまし auひかり ホーム1ギガ D 01
-      - 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 日本 まつやまし auひかり ホーム1ギガ D 04
-      - 日本 まつやまし auひかり ホーム1ギガ D 05
-      - 日本 まつやまし auひかり ホーム1ギガ D 06
-      - 日本 まつやまし auひかり ホーム1ギガ D 07
-      - 日本 まつやまし auひかり ホーム1ギガ D 08
-      - 日本 まつやまし auひかり ホーム1ギガ D 09
-      - 日本 まつやまし auひかり ホーム1ギガ D 10
-      - 精简 31
-      - 精简 33
-      - 精简 34
-      - 精简 35
-      - 精简 36
-      - 精简 37
-      - 精简 38
-      - 精简 39
-      - 精简 40
-      - 美国实验性 IEPL 中继 D04
-      - 美国高级 IEPL 中继 D01
-      - 美国高级 IEPL 中继 D02
-      - 韩国 전라북도 전주시 商宽 D 01
-      - 韩国 전라북도 전주시 商宽 D 02
-      - 韩国 전라북도 전주시 商宽 D 03
-      - 韩国 전라북도 전주시 商宽 D 04
-      - 韩国 전라북도 전주시 商宽 D 06
-      - 韩国 전라북도 전주시 商宽 D 07
-      - 韩国 전라북도 전주시 商宽 D 08
-      - 韩国 전라북도 전주시 商宽 D 09
-      - 韩国 전라북도 전주시 商宽 D 10
-      - 韩国 전라북도 전주시 商宽 D 11
-      - 韩国 전라북도 전주시 商宽 D 12
-      - 韩国 전라북도 전주시 商宽 D 13
-      - 香港 油尖旺御金·国峯 網上行寬頻 D01
-      - 香港 油尖旺御金·国峯 網上行寬頻 D02
-      - 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 香港 油尖旺御金·国峯 網上行寬頻 D04
-      - 香港 油尖旺御金·国峯 網上行寬頻 D05
-      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - _CN_中国_133
+      - _CN_中国_128
+      - _CN_中国_140
+      - _CN_中国_141
+      - "@nfeng6台湾 -中继-04"
+      - 标准-香港-3
+      - 标准-香港-4
+      - 标准-香港-5
+      - 标准-日本-3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_中国_127
-      - "@nfeng6美国-中继-08"
+      - 专线 韩国 02
+      - 专线 香港 04
+      - 标准-台湾-1
+      - 标准-日本-1
+      - 标准-日本-2
+      - 标准-日本-4
+      - "@nfeng6韩国-中继-04"
+      - 专线 马来西亚 01
+      - 香港 01
+      - _HK_香港_tg频道：@bpjzx2_5
+      - 香港
+      - 香港 2
+      - 新加坡
+      - 香港 3
+      - 新加坡 2
+      - 首尔
+      - 香港 01 2
+      - 专线 香港 03
+      - 专线 香港 04 2
+      - 专线 马来西亚 01 2
+      - +专线+香港+03
+      - 标准-台湾-2
+      - +专线+新加坡+03
+      - 香港 4
+      - +中继+新加坡+04
+      - +中继+日本+03
+      - +中继+香港+01
+      - +专线+新加坡+03 2
       - _CN_中国_147
-      - _CN_中国_143
-      - _CN_中国_131
-      - "@nfeng6新加坡-中继-09"
-      - _CN_中国_138
-      - _CN_中国_124
-      - _CN_中国_129
-      - "@nfeng6韩国-中继-03"
-      - _CN_中国_136
-      - _CN_中国_117
-      - "@nfeng6台湾 -中继-04"
-      - _CN_中国_134
-      - _CN_中国_132
-      - _CN_中国_135
-      - _CN_中国_142
-      - "@nfeng6台湾 -中继-06"
       - _CN_中国_146
-      - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - "@nfeng6韩国-中继-02"
-      - "@nfeng6韩国-中继-04"
       - _CN_中国_145
-      - _CN_中国_144
-      - _CN_中国_141
-      - _CN_中国_126
-      - "@nfeng6美国-中继-07"
       - "@nfeng6新加坡-中继-03"
-      - _CN_中国_133
-      - _CN_中国_128
-      - _CN_中国_139
       - "@nfeng6韩国-中继-01"
       - _CN_中国_125
-      - _CN_中国_121
-      - _CN_中国_tg频道：@bpjzx2_125
-      - "@nfeng6美国-中继-01"
-      - "@nfeng6新加坡-中继-06"
-      - _CN_中国_140
-      - "@nfeng6美国-中继-06"
-      - "@nfeng6新加坡-中继-01"
-      - "@nfeng6新加坡-中继-08"
-      - _CN_中国_130
-      - "@nfeng6美国-中继-03"
       - _CN_中国_122
       - _CN_中国_123
+      - +专线+马来西亚+02
+      - 香港01
+      - +专线+新加坡+01
+      - +专线+马来西亚+02 2
+      - +香港+HK-Y01
+      - +香港+HK-Y02
+      - +香港+HK-Y03
+      - +香港+HK-Y04
+      - _CN_中国_126
+      - "@nfeng6新加坡-中继-08"
+      - "@nfeng6美国-中继-08"
+      - _CN_中国_143
+      - _CN_中国_138
+      - "@nfeng6韩国-中继-03"
+      - _CN_中国_142
+      - "@nfeng6美国-中继-09"
+      - _CN_中国_144
+      - _CN_中国_139
+      - _CN_中国_121
+      - "@nfeng6美国-中继-01"
+      - "@nfeng6美国-中继-06"
+      - "@nfeng6美国-中继-03"
       - _CN_中国_137
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
-      - 中国-印度 马哈拉施特拉 IPLC D02
-      - 中国-印度 马哈拉施特拉 IPLC D03
-      - 中国-印度 马哈拉施特拉 IPLC D04
-      - 中国-印度 马哈拉施特拉 IPLC D07
-      - 中国-印度 马哈拉施特拉 IPLC D08
-      - 中国-印度 马哈拉施特拉 IPLC D10
-      - 中国-印度 马哈拉施特拉 IPLC D11
-      - 中国-印度 马哈拉施特拉 IPLC D12
-      - 中国-台湾IEPL Hinet固接  D01
-      - 中国-台湾IEPL Hinet固接  D02
-      - 中国-台湾IEPL Hinet固接  D03
-      - 中国-台湾IEPL Hinet固接  D04
-      - 中国-台湾IEPL Hinet固接  D05
-      - 中国-台湾IEPL Hinet固接  D06
-      - 中国-台湾IEPL Hinet固接 D07
-      - 中国-台湾IEPL Hinet固接 D08
-      - 中国-台湾IEPL Hinet固接 D09
-      - 中国-台湾IEPL Hinet固接 D10
-      - 中国-台湾IEPL Hinet固接 D11
-      - 中国-台湾IEPL Hinet固接 D12
-      - 中国-台湾宜兰 IPLC D01
-      - 中国-台湾宜兰 IPLC D02
-      - 中国-台湾宜兰 IPLC D03
-      - 中国-台湾宜兰 IPLC D04
-      - 中国-台湾宜兰 IPLC D05
-      - 中国-台湾宜兰 IPLC D06
-      - 中国-台湾宜兰 IPLC D07
-      - 中国-台湾宜兰 IPLC D08
-      - 中国-台湾宜兰 IPLC D09
-      - 中国-台湾宜兰 IPLC D10
-      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D11 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
-      - 中国-法国 IPLC D01
-      - 中国-法国 IPLC D02
-      - 中国-法国 IPLC D03
-      - 中国-法国 IPLC D04
-      - 中国-法国 IPLC D05
-      - 中国-澳大利亚 IPLC 悉尼 D02
-      - 中国-爱尔兰 IPLC D01
-      - 中国-爱尔兰 IPLC D03
-      - 中国-英国伦敦电信 IEPL D2
-      - 中国-英国伦敦电信 IEPL D3
-      - 中国-英国伦敦电信 IEPL D5
-      - 中国-韩国 IPLC D01 Netflix
-      - 中国-韩国 IPLC D02 Netflix
-      - 中国-韩国 IPLC D03 Netflix
-      - 中国-韩国 IPLC D04 Netflix
-      - 中国-韩国 IPLC D05 Netflix
-      - 中国-韩国 IPLC D06 Netflix
-      - 中国-韩国 IPLC D07 Netflix
-      - 中国-韩国 IPLC D08 Netflix
-      - 中国-韩国 IPLC D09 Netflix
-      - 中国-韩国 IPLC D10 Netflix
-      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 12 1Gbps HBO TVB
-      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D02 Netflix
-      - 新加坡 Magic IEPL 中继 D03 Netflix
-      - 新加坡高级 IEPL 中继 D01 Netflix
-      - 新加坡高级 IEPL 中继 D02 Netflix
-      - 日本 まつやまし auひかり ホーム1ギガ D 01
-      - 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 日本 まつやまし auひかり ホーム1ギガ D 04
-      - 日本 まつやまし auひかり ホーム1ギガ D 05
-      - 日本 まつやまし auひかり ホーム1ギガ D 06
-      - 日本 まつやまし auひかり ホーム1ギガ D 07
-      - 日本 まつやまし auひかり ホーム1ギガ D 08
-      - 日本 まつやまし auひかり ホーム1ギガ D 09
-      - 日本 まつやまし auひかり ホーム1ギガ D 10
-      - 精简 31
-      - 精简 33
-      - 精简 34
-      - 精简 35
-      - 精简 36
-      - 精简 37
-      - 精简 38
-      - 精简 39
-      - 精简 40
-      - 美国实验性 IEPL 中继 D04
-      - 美国高级 IEPL 中继 D01
-      - 美国高级 IEPL 中继 D02
-      - 韩国 전라북도 전주시 商宽 D 01
-      - 韩国 전라북도 전주시 商宽 D 02
-      - 韩国 전라북도 전주시 商宽 D 03
-      - 韩国 전라북도 전주시 商宽 D 04
-      - 韩国 전라북도 전주시 商宽 D 06
-      - 韩国 전라북도 전주시 商宽 D 07
-      - 韩国 전라북도 전주시 商宽 D 08
-      - 韩国 전라북도 전주시 商宽 D 09
-      - 韩国 전라북도 전주시 商宽 D 10
-      - 韩国 전라북도 전주시 商宽 D 11
-      - 韩国 전라북도 전주시 商宽 D 12
-      - 韩国 전라북도 전주시 商宽 D 13
-      - 香港 油尖旺御金·国峯 網上行寬頻 D01
-      - 香港 油尖旺御金·国峯 網上行寬頻 D02
-      - 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 香港 油尖旺御金·国峯 網上行寬頻 D04
-      - 香港 油尖旺御金·国峯 網上行寬頻 D05
-      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - _CN_中国_133
+      - _CN_中国_128
+      - _CN_中国_140
+      - _CN_中国_141
+      - "@nfeng6台湾 -中继-04"
+      - 标准-香港-3
+      - 标准-香港-4
+      - 标准-香港-5
+      - 标准-日本-3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国_127
-      - "@nfeng6美国-中继-08"
+      - 专线 韩国 02
+      - 专线 香港 04
+      - 标准-台湾-1
+      - 标准-日本-1
+      - 标准-日本-2
+      - 标准-日本-4
+      - "@nfeng6韩国-中继-04"
+      - 专线 马来西亚 01
+      - 香港 01
+      - _HK_香港_tg频道：@bpjzx2_5
+      - 香港
+      - 香港 2
+      - 新加坡
+      - 香港 3
+      - 新加坡 2
+      - 首尔
+      - 香港 01 2
+      - 专线 香港 03
+      - 专线 香港 04 2
+      - 专线 马来西亚 01 2
+      - +专线+香港+03
+      - 标准-台湾-2
+      - +专线+新加坡+03
+      - 香港 4
+      - +中继+新加坡+04
+      - +中继+日本+03
+      - +中继+香港+01
+      - +专线+新加坡+03 2
       - _CN_中国_147
-      - _CN_中国_143
-      - _CN_中国_131
-      - "@nfeng6新加坡-中继-09"
-      - _CN_中国_138
-      - _CN_中国_124
-      - _CN_中国_129
-      - "@nfeng6韩国-中继-03"
-      - _CN_中国_136
-      - _CN_中国_117
-      - "@nfeng6台湾 -中继-04"
-      - _CN_中国_134
-      - _CN_中国_132
-      - _CN_中国_135
-      - _CN_中国_142
-      - "@nfeng6台湾 -中继-06"
       - _CN_中国_146
-      - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - "@nfeng6韩国-中继-02"
-      - "@nfeng6韩国-中继-04"
       - _CN_中国_145
-      - _CN_中国_144
-      - _CN_中国_141
-      - _CN_中国_126
-      - "@nfeng6美国-中继-07"
       - "@nfeng6新加坡-中继-03"
-      - _CN_中国_133
-      - _CN_中国_128
-      - _CN_中国_139
       - "@nfeng6韩国-中继-01"
       - _CN_中国_125
-      - _CN_中国_121
-      - _CN_中国_tg频道：@bpjzx2_125
-      - "@nfeng6美国-中继-01"
-      - "@nfeng6新加坡-中继-06"
-      - _CN_中国_140
-      - "@nfeng6美国-中继-06"
-      - "@nfeng6新加坡-中继-01"
-      - "@nfeng6新加坡-中继-08"
-      - _CN_中国_130
-      - "@nfeng6美国-中继-03"
       - _CN_中国_122
       - _CN_中国_123
+      - +专线+马来西亚+02
+      - 香港01
+      - +专线+新加坡+01
+      - +专线+马来西亚+02 2
+      - +香港+HK-Y01
+      - +香港+HK-Y02
+      - +香港+HK-Y03
+      - +香港+HK-Y04
+      - _CN_中国_126
+      - "@nfeng6新加坡-中继-08"
+      - "@nfeng6美国-中继-08"
+      - _CN_中国_143
+      - _CN_中国_138
+      - "@nfeng6韩国-中继-03"
+      - _CN_中国_142
+      - "@nfeng6美国-中继-09"
+      - _CN_中国_144
+      - _CN_中国_139
+      - _CN_中国_121
+      - "@nfeng6美国-中继-01"
+      - "@nfeng6美国-中继-06"
+      - "@nfeng6美国-中继-03"
       - _CN_中国_137
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
-      - 中国-印度 马哈拉施特拉 IPLC D02
-      - 中国-印度 马哈拉施特拉 IPLC D03
-      - 中国-印度 马哈拉施特拉 IPLC D04
-      - 中国-印度 马哈拉施特拉 IPLC D07
-      - 中国-印度 马哈拉施特拉 IPLC D08
-      - 中国-印度 马哈拉施特拉 IPLC D10
-      - 中国-印度 马哈拉施特拉 IPLC D11
-      - 中国-印度 马哈拉施特拉 IPLC D12
-      - 中国-台湾IEPL Hinet固接  D01
-      - 中国-台湾IEPL Hinet固接  D02
-      - 中国-台湾IEPL Hinet固接  D03
-      - 中国-台湾IEPL Hinet固接  D04
-      - 中国-台湾IEPL Hinet固接  D05
-      - 中国-台湾IEPL Hinet固接  D06
-      - 中国-台湾IEPL Hinet固接 D07
-      - 中国-台湾IEPL Hinet固接 D08
-      - 中国-台湾IEPL Hinet固接 D09
-      - 中国-台湾IEPL Hinet固接 D10
-      - 中国-台湾IEPL Hinet固接 D11
-      - 中国-台湾IEPL Hinet固接 D12
-      - 中国-台湾宜兰 IPLC D01
-      - 中国-台湾宜兰 IPLC D02
-      - 中国-台湾宜兰 IPLC D03
-      - 中国-台湾宜兰 IPLC D04
-      - 中国-台湾宜兰 IPLC D05
-      - 中国-台湾宜兰 IPLC D06
-      - 中国-台湾宜兰 IPLC D07
-      - 中国-台湾宜兰 IPLC D08
-      - 中国-台湾宜兰 IPLC D09
-      - 中国-台湾宜兰 IPLC D10
-      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D11 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
-      - 中国-法国 IPLC D01
-      - 中国-法国 IPLC D02
-      - 中国-法国 IPLC D03
-      - 中国-法国 IPLC D04
-      - 中国-法国 IPLC D05
-      - 中国-澳大利亚 IPLC 悉尼 D02
-      - 中国-爱尔兰 IPLC D01
-      - 中国-爱尔兰 IPLC D03
-      - 中国-英国伦敦电信 IEPL D2
-      - 中国-英国伦敦电信 IEPL D3
-      - 中国-英国伦敦电信 IEPL D5
-      - 中国-韩国 IPLC D01 Netflix
-      - 中国-韩国 IPLC D02 Netflix
-      - 中国-韩国 IPLC D03 Netflix
-      - 中国-韩国 IPLC D04 Netflix
-      - 中国-韩国 IPLC D05 Netflix
-      - 中国-韩国 IPLC D06 Netflix
-      - 中国-韩国 IPLC D07 Netflix
-      - 中国-韩国 IPLC D08 Netflix
-      - 中国-韩国 IPLC D09 Netflix
-      - 中国-韩国 IPLC D10 Netflix
-      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 12 1Gbps HBO TVB
-      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D02 Netflix
-      - 新加坡 Magic IEPL 中继 D03 Netflix
-      - 新加坡高级 IEPL 中继 D01 Netflix
-      - 新加坡高级 IEPL 中继 D02 Netflix
-      - 日本 まつやまし auひかり ホーム1ギガ D 01
-      - 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 日本 まつやまし auひかり ホーム1ギガ D 04
-      - 日本 まつやまし auひかり ホーム1ギガ D 05
-      - 日本 まつやまし auひかり ホーム1ギガ D 06
-      - 日本 まつやまし auひかり ホーム1ギガ D 07
-      - 日本 まつやまし auひかり ホーム1ギガ D 08
-      - 日本 まつやまし auひかり ホーム1ギガ D 09
-      - 日本 まつやまし auひかり ホーム1ギガ D 10
-      - 精简 31
-      - 精简 33
-      - 精简 34
-      - 精简 35
-      - 精简 36
-      - 精简 37
-      - 精简 38
-      - 精简 39
-      - 精简 40
-      - 美国实验性 IEPL 中继 D04
-      - 美国高级 IEPL 中继 D01
-      - 美国高级 IEPL 中继 D02
-      - 韩国 전라북도 전주시 商宽 D 01
-      - 韩国 전라북도 전주시 商宽 D 02
-      - 韩国 전라북도 전주시 商宽 D 03
-      - 韩国 전라북도 전주시 商宽 D 04
-      - 韩国 전라북도 전주시 商宽 D 06
-      - 韩国 전라북도 전주시 商宽 D 07
-      - 韩国 전라북도 전주시 商宽 D 08
-      - 韩国 전라북도 전주시 商宽 D 09
-      - 韩国 전라북도 전주시 商宽 D 10
-      - 韩国 전라북도 전주시 商宽 D 11
-      - 韩国 전라북도 전주시 商宽 D 12
-      - 韩国 전라북도 전주시 商宽 D 13
-      - 香港 油尖旺御金·国峯 網上行寬頻 D01
-      - 香港 油尖旺御金·国峯 網上行寬頻 D02
-      - 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 香港 油尖旺御金·国峯 網上行寬頻 D04
-      - 香港 油尖旺御金·国峯 網上行寬頻 D05
-      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - _CN_中国_133
+      - _CN_中国_128
+      - _CN_中国_140
+      - _CN_中国_141
+      - "@nfeng6台湾 -中继-04"
+      - 标准-香港-3
+      - 标准-香港-4
+      - 标准-香港-5
+      - 标准-日本-3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1490,177 +659,76 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国_127
-      - "@nfeng6美国-中继-08"
+      - 专线 韩国 02
+      - 专线 香港 04
+      - 标准-台湾-1
+      - 标准-日本-1
+      - 标准-日本-2
+      - 标准-日本-4
+      - "@nfeng6韩国-中继-04"
+      - 专线 马来西亚 01
+      - 香港 01
+      - _HK_香港_tg频道：@bpjzx2_5
+      - 香港
+      - 香港 2
+      - 新加坡
+      - 香港 3
+      - 新加坡 2
+      - 首尔
+      - 香港 01 2
+      - 专线 香港 03
+      - 专线 香港 04 2
+      - 专线 马来西亚 01 2
+      - +专线+香港+03
+      - 标准-台湾-2
+      - +专线+新加坡+03
+      - 香港 4
+      - +中继+新加坡+04
+      - +中继+日本+03
+      - +中继+香港+01
+      - +专线+新加坡+03 2
       - _CN_中国_147
-      - _CN_中国_143
-      - _CN_中国_131
-      - "@nfeng6新加坡-中继-09"
-      - _CN_中国_138
-      - _CN_中国_124
-      - _CN_中国_129
-      - "@nfeng6韩国-中继-03"
-      - _CN_中国_136
-      - _CN_中国_117
-      - "@nfeng6台湾 -中继-04"
-      - _CN_中国_134
-      - _CN_中国_132
-      - _CN_中国_135
-      - _CN_中国_142
-      - "@nfeng6台湾 -中继-06"
       - _CN_中国_146
-      - "@nfeng6美国-中继-09"
       - _CN_中国_148
       - "@nfeng6韩国-中继-02"
-      - "@nfeng6韩国-中继-04"
       - _CN_中国_145
-      - _CN_中国_144
-      - _CN_中国_141
-      - _CN_中国_126
-      - "@nfeng6美国-中继-07"
       - "@nfeng6新加坡-中继-03"
-      - _CN_中国_133
-      - _CN_中国_128
-      - _CN_中国_139
       - "@nfeng6韩国-中继-01"
       - _CN_中国_125
-      - _CN_中国_121
-      - _CN_中国_tg频道：@bpjzx2_125
-      - "@nfeng6美国-中继-01"
-      - "@nfeng6新加坡-中继-06"
-      - _CN_中国_140
-      - "@nfeng6美国-中继-06"
-      - "@nfeng6新加坡-中继-01"
-      - "@nfeng6新加坡-中继-08"
-      - _CN_中国_130
-      - "@nfeng6美国-中继-03"
       - _CN_中国_122
       - _CN_中国_123
+      - +专线+马来西亚+02
+      - 香港01
+      - +专线+新加坡+01
+      - +专线+马来西亚+02 2
+      - +香港+HK-Y01
+      - +香港+HK-Y02
+      - +香港+HK-Y03
+      - +香港+HK-Y04
+      - _CN_中国_126
+      - "@nfeng6新加坡-中继-08"
+      - "@nfeng6美国-中继-08"
+      - _CN_中国_143
+      - _CN_中国_138
+      - "@nfeng6韩国-中继-03"
+      - _CN_中国_142
+      - "@nfeng6美国-中继-09"
+      - _CN_中国_144
+      - _CN_中国_139
+      - _CN_中国_121
+      - "@nfeng6美国-中继-01"
+      - "@nfeng6美国-中继-06"
+      - "@nfeng6美国-中继-03"
       - _CN_中国_137
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC D01
-      - 中国-印度 马哈拉施特拉 IPLC D02
-      - 中国-印度 马哈拉施特拉 IPLC D03
-      - 中国-印度 马哈拉施特拉 IPLC D04
-      - 中国-印度 马哈拉施特拉 IPLC D07
-      - 中国-印度 马哈拉施特拉 IPLC D08
-      - 中国-印度 马哈拉施特拉 IPLC D10
-      - 中国-印度 马哈拉施特拉 IPLC D11
-      - 中国-印度 马哈拉施特拉 IPLC D12
-      - 中国-台湾IEPL Hinet固接  D01
-      - 中国-台湾IEPL Hinet固接  D02
-      - 中国-台湾IEPL Hinet固接  D03
-      - 中国-台湾IEPL Hinet固接  D04
-      - 中国-台湾IEPL Hinet固接  D05
-      - 中国-台湾IEPL Hinet固接  D06
-      - 中国-台湾IEPL Hinet固接 D07
-      - 中国-台湾IEPL Hinet固接 D08
-      - 中国-台湾IEPL Hinet固接 D09
-      - 中国-台湾IEPL Hinet固接 D10
-      - 中国-台湾IEPL Hinet固接 D11
-      - 中国-台湾IEPL Hinet固接 D12
-      - 中国-台湾宜兰 IPLC D01
-      - 中国-台湾宜兰 IPLC D02
-      - 中国-台湾宜兰 IPLC D03
-      - 中国-台湾宜兰 IPLC D04
-      - 中国-台湾宜兰 IPLC D05
-      - 中国-台湾宜兰 IPLC D06
-      - 中国-台湾宜兰 IPLC D07
-      - 中国-台湾宜兰 IPLC D08
-      - 中国-台湾宜兰 IPLC D09
-      - 中国-台湾宜兰 IPLC D10
-      - 中国-日本 多协议标签交换虚拟专用网 D1 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D10 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D11 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D12 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D2 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D3 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D4 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D5 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D7 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D8 1000Mbps
-      - 中国-日本 多协议标签交换虚拟专用网 D9 1000Mbps
-      - 中国-法国 IPLC D01
-      - 中国-法国 IPLC D02
-      - 中国-法国 IPLC D03
-      - 中国-法国 IPLC D04
-      - 中国-法国 IPLC D05
-      - 中国-澳大利亚 IPLC 悉尼 D02
-      - 中国-爱尔兰 IPLC D01
-      - 中国-爱尔兰 IPLC D03
-      - 中国-英国伦敦电信 IEPL D2
-      - 中国-英国伦敦电信 IEPL D3
-      - 中国-英国伦敦电信 IEPL D5
-      - 中国-韩国 IPLC D01 Netflix
-      - 中国-韩国 IPLC D02 Netflix
-      - 中国-韩国 IPLC D03 Netflix
-      - 中国-韩国 IPLC D04 Netflix
-      - 中国-韩国 IPLC D05 Netflix
-      - 中国-韩国 IPLC D06 Netflix
-      - 中国-韩国 IPLC D07 Netflix
-      - 中国-韩国 IPLC D08 Netflix
-      - 中国-韩国 IPLC D09 Netflix
-      - 中国-韩国 IPLC D10 Netflix
-      - 中国-香港 IEPL Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 02 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 03 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 04 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 05 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 06 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 09 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 10 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 11 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 D 12 1Gbps HBO TVB
-      - 新加坡 Legacy Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D01 Netflix
-      - 新加坡 Magic IEPL 中继 D02 Netflix
-      - 新加坡 Magic IEPL 中继 D03 Netflix
-      - 新加坡高级 IEPL 中继 D01 Netflix
-      - 新加坡高级 IEPL 中继 D02 Netflix
-      - 日本 まつやまし auひかり ホーム1ギガ D 01
-      - 日本 まつやまし auひかり ホーム1ギガ D 03
-      - 日本 まつやまし auひかり ホーム1ギガ D 04
-      - 日本 まつやまし auひかり ホーム1ギガ D 05
-      - 日本 まつやまし auひかり ホーム1ギガ D 06
-      - 日本 まつやまし auひかり ホーム1ギガ D 07
-      - 日本 まつやまし auひかり ホーム1ギガ D 08
-      - 日本 まつやまし auひかり ホーム1ギガ D 09
-      - 日本 まつやまし auひかり ホーム1ギガ D 10
-      - 精简 31
-      - 精简 33
-      - 精简 34
-      - 精简 35
-      - 精简 36
-      - 精简 37
-      - 精简 38
-      - 精简 39
-      - 精简 40
-      - 美国实验性 IEPL 中继 D04
-      - 美国高级 IEPL 中继 D01
-      - 美国高级 IEPL 中继 D02
-      - 韩国 전라북도 전주시 商宽 D 01
-      - 韩国 전라북도 전주시 商宽 D 02
-      - 韩国 전라북도 전주시 商宽 D 03
-      - 韩国 전라북도 전주시 商宽 D 04
-      - 韩国 전라북도 전주시 商宽 D 06
-      - 韩国 전라북도 전주시 商宽 D 07
-      - 韩国 전라북도 전주시 商宽 D 08
-      - 韩国 전라북도 전주시 商宽 D 09
-      - 韩国 전라북도 전주시 商宽 D 10
-      - 韩国 전라북도 전주시 商宽 D 11
-      - 韩国 전라북도 전주시 商宽 D 12
-      - 韩国 전라북도 전주시 商宽 D 13
-      - 香港 油尖旺御金·国峯 網上行寬頻 D01
-      - 香港 油尖旺御金·国峯 網上行寬頻 D02
-      - 香港 油尖旺御金·国峯 網上行寬頻 D03
-      - 香港 油尖旺御金·国峯 網上行寬頻 D04
-      - 香港 油尖旺御金·国峯 網上行寬頻 D05
-      - 香港 油尖旺御金·国峯 網上行寬頻 D06
+      - _CN_中国_133
+      - _CN_中国_128
+      - _CN_中国_140
+      - _CN_中国_141
+      - "@nfeng6台湾 -中继-04"
+      - 标准-香港-3
+      - 标准-香港-4
+      - 标准-香港-5
+      - 标准-日本-3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
