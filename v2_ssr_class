@@ -5,471 +5,127 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Lv1.广移A->日本B3, server: node1.lmars.top, port: 10003, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
-  - {name: Lv1.广移A->日本B4, server: node1.lmars.top, port: 10004, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
-  - {name: Lv1.广移A->日本A1, server: node1.lmars.top, port: 10001, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
   - {name: 香港01, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292395:UXZgcH2Vmq, obfs-param: "", udp: true}
   - {name: HK1(IEPL)+-+沪港国际专线, server: cn2.relay.starlink.st, port: 50101, type: ss, cipher: aes-128-gcm, password: e90acc75-5dbe-4203-873e-fbfdc8af9ba2, udp: true}
+  - {name: 華人社區_經紀人CC🍄🍄_1026, server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
   - {name: 香港 01, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292464:93DWZTu7LU, obfs-param: "", udp: true}
   - {name: 香港 01 2, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292690:o7iqlcUakC, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇬🇧GB_304 | 4.74Mb, server: gz1.52168.xyz, port: 1116, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
-  - {name: Lv1.广移A->香港HKT, server: node1.lmars.top, port: 10015, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: +USA, server: 62.216.91.229, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
   - {name: Netherlands, server: 213.183.51.171, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: 星河节点, server: 178.18.241.125, port: 9595, type: ssr, cipher: aes-256-cfb, password: sk80Likez95, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 新加坡|61001-61004端口可用, server: sg.az66.ml, port: 61001, type: vmess, uuid: cb8ab285-fafc-45f6-87bc-97a7a2f27f9f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: vod3.nty.tv189.cn}, udp: true}
-  - {name: Singapore-A2-AZHK-3x, server: azure-f4s-hk-1.forwardserver.xyz, port: 44986, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: azure-f4s-hk-1.forwardserver.xyz}, udp: true}
-  - {name: 公告|所求皆所愿！所行皆坦途, server: az1.nodrop.bike, port: 10131, type: vmess, uuid: f11b4711-9a16-46ea-9847-8cdeefc7793d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: az1.nodrop.bike}, udp: true}
-  - {name: 马来西亚 | 2, server: azhk520.greenyun.tk, port: 10002, type: vmess, uuid: f11b4711-9a16-46ea-9847-8cdeefc7793d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: azhk520.greenyun.tk}, udp: true}
-  - {name: 韩国 | 1, server: KR.nodrop.bike, port: 32123, type: vmess, uuid: f11b4711-9a16-46ea-9847-8cdeefc7793d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: KR.nodrop.bike}, udp: true}
-  - {name: 韩国 | 2 皖港隧道 STCP, server: cs.cu.01.211129.xyz, port: 32123, type: vmess, uuid: f11b4711-9a16-46ea-9847-8cdeefc7793d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: cs.cu.01.211129.xyz}, udp: true}
-  - {name: 美国 | 1 奈飞, server: us.nodrop.bike, port: 47891, type: vmess, uuid: f11b4711-9a16-46ea-9847-8cdeefc7793d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: us.nodrop.bike}, udp: true}
-  - {name: 美国 | 4, server: rnus.nodrop.bike, port: 47891, type: vmess, uuid: f11b4711-9a16-46ea-9847-8cdeefc7793d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: rnus.nodrop.bike}, udp: true}
-  - {name: 日本 | 3 杭日隧道 STCP GAME, server: cs.cu.01.211129.xyz, port: 52312, type: vmess, uuid: f11b4711-9a16-46ea-9847-8cdeefc7793d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: cs.cu.01.211129.xyz}, udp: true}
-  - {name: "台湾公益 01 解锁NF [1.5x]", server: 20.219.1.62, port: 25559, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 瑞士 Switzerland●, server: gz1.52168.xyz, port: 1116, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
-  - {name: 专线 台湾 01, server: iepl03.xbxb1122.xyz, port: 8541, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 台湾 02, server: iepl01.xbxb1122.xyz, port: 8541, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 新加坡 01, server: iepl02.xbxb1122.xyz, port: 8521, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 新加坡 02, server: iepl03.xbxb1122.xyz, port: 8522, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 新加坡 03, server: iepl01.xbxb1122.xyz, port: 8523, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 日本 01, server: iepl02.xbxb1122.xyz, port: 8511, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 日本 02, server: iepl03.xbxb1122.xyz, port: 8512, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 日本 03, server: iepl01.xbxb1122.xyz, port: 8513, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 美国 03, server: iepl01.xbxb1122.xyz, port: 8533, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 韩国 01, server: iepl02.xbxb1122.xyz, port: 8551, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 韩国 02, server: iepl03.xbxb1122.xyz, port: 8551, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 香港 01, server: iepl01.xbxb1122.xyz, port: 8561, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 香港 02, server: iepl02.xbxb1122.xyz, port: 8562, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 香港 04, server: iepl01.xbxb1122.xyz, port: 8564, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 马来西亚 01, server: iepl01.xbxb1122.xyz, port: 8521, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 专线 马来西亚 02, server: iepl02.xbxb1122.xyz, port: 8522, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 中继 日本 02, server: in03.xbxb1122.xyz, port: 8712, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: 中继 香港 04, server: in03.xbxb1122.xyz, port: 8764, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: ️‍🌈 V2/A 香港 A线 国际优化 微软轻量极速节点 不限流量线, server: Microsoft.a.sefa.bar, port: 443, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /y381, ws-headers: {Host: flyam.sefa.bar}, udp: true}
-  - {name: V2/A 香港中转CN2 美国 数字海洋 旧金山 A线 163国际路由, server: usa.aog404.xyz, port: 48274, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /u27, ws-headers: {Host: usa.aog404.xyz}, udp: true}
-  - {name: "V2/A 香港首选高速 A线  微软数据云中心 千兆宽频 速度无上限节点  - [2.5x]", server: microsoft.a.srcgo.co, port: 443, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /y323, ws-headers: {Host: soct.aot.bar}, udp: true}
-  - {name: "V2/A 香港高速 B线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]", server: microsoft.b.aot.bar, port: 443, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /y253, ws-headers: {Host: microso.aot.bar}, udp: true}
-  - {name: "V2/A 香港高速 C线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]", server: microsoft.c.aot.bar, port: 443, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /y253, ws-headers: {Host: microso.aot.bar}, udp: true}
-  - {name: "V2/A 香港高速 D线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]", server: microsoft.d.aot.bar, port: 443, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /y253, ws-headers: {Host: microso.aot.bar}, udp: true}
-  - {name: "V2/B 新加坡 ALi轻量极速 A线 GIA CN2 三线优化 国际优化 - [2x]", server: aliayc.a.sty.quest, port: 443, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a341, ws-headers: {Host: am.sty.quest}, udp: true}
-  - {name: "V2/B 新加坡 ALi轻量极速 B线 GIA CN2 三线优化 国际优化 - [2x]", server: aliayc.b.sty.quest, port: 443, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a341, ws-headers: {Host: am.sty.quest}, udp: true}
-  - {name: "V2/B 新加坡 ALi轻量极速 C线 GIA CN2 三线优化 国际优化 - [2x]", server: aliayc.c.sty.quest, port: 443, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a341, ws-headers: {Host: am.sty.quest}, udp: true}
-  - {name: "V2/B 新加坡 ALi轻量极速 D线 GIA CN2 三线优化 国际优化 - [2x]", server: aliayc.d.sty.quest, port: 443, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a341, ws-headers: {Host: am.sty.quest}, udp: true}
-  - {name: "V2/B 日本 A线 联通电信 软银路由优化 高速1Gbps - [1x]", server: Japan.a.aog404.xyz, port: 31261, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /y94, ws-headers: {Host: Japan.a.aog404.xyz}, udp: true}
-  - {name: "V2/B 日本 B线 联通电信 软银路由优化 高速1Gbps - [1x]", server: Japan.b.aog404.xyz, port: 31261, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /y94, ws-headers: {Host: Japan.b.aog404.xyz}, udp: true}
-  - {name: "V2/B 日本 C线 联通电信 软银路由优化 高速1Gbps - [1x]", server: Japan.d.aog404.xyz, port: 12391, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /y613, ws-headers: {Host: Japan.d.aog404.xyz}, udp: true}
-  - {name: V2/B 美国 数字海洋 旧金山 A线 163国际路由, server: usa.sty.quest, port: 48274, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /u27, ws-headers: {Host: usa.sty.quest}, udp: true}
-  - {name: "新加坡 A组 移动单线路由 移动默认 公益节点 华南线路 - [2x]", server: 165.232.153.156, port: 3212, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /y34, ws-headers: {Host: 165.232.153.156}, udp: true}
-  - {name: "日本 公益节点 Lv.A  SSL加密 Cloudflare 公益节点  -  [1x]  付费高速解锁", server: srtweb.samrt.website, port: 443, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /y84, ws-headers: {Host: srtweb.samrt.website}, udp: true}
-  - {name: 香港-星河, server: 117.185.229.8, port: 20158, type: ss, cipher: aes-256-gcm, password: bc80ff25-744f-4ddf-abe8-fc871cf561a6, udp: true}
-  - {name: 美国 | 3 奈飞, server: usnf.nodrop.bike, port: 443, type: vmess, uuid: f11b4711-9a16-46ea-9847-8cdeefc7793d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: usnf.nodrop.bike}, udp: true}
-  - {name: cf-洛杉矶, server: oioooo.tk, port: 443, type: vmess, uuid: c15dcbbb-3cb8-4227-86b5-b34171872290, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cctvvws, ws-headers: {Host: oioooo.tk}, udp: true}
-  - {name: V1 | HK B1, server: z-b.aaxc.icu, port: 51121, type: vmess, uuid: b66aba1b-67ed-3c5a-af97-0b5de382b262, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aaxc, ws-headers: {Host: z-b.aaxc.icu}, udp: true}
-  - {name: V1 | JP B1, server: z-b.aaxc.icu, port: 51321, type: vmess, uuid: b66aba1b-67ed-3c5a-af97-0b5de382b262, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aaxc, ws-headers: {Host: z-b.aaxc.icu}, udp: true}
-  - {name: V1 | SG A3, server: z-a.aaxc.icu, port: 51413, type: vmess, uuid: b66aba1b-67ed-3c5a-af97-0b5de382b262, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aaxc, ws-headers: {Host: z-a.aaxc.icu}, udp: true}
-  - {name: V1 | JP A1, server: z-a.aaxc.icu, port: 51311, type: vmess, uuid: 9c5bf4f0-d1ec-30f6-b0d3-99ae4e85155c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aaxc, ws-headers: {Host: z-a.aaxc.icu}, udp: true}
-  - {name: V1 | SG A1, server: z-a.aaxc.icu, port: 51411, type: vmess, uuid: 9c5bf4f0-d1ec-30f6-b0d3-99ae4e85155c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aaxc, ws-headers: {Host: z-a.aaxc.icu}, udp: true}
-  - {name: V1 | SG B1, server: z-b.aaxc.icu, port: 51422, type: vmess, uuid: 9c5bf4f0-d1ec-30f6-b0d3-99ae4e85155c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aaxc, ws-headers: {Host: z-b.aaxc.icu}, udp: true}
-  - {name: 香港_TG@nodesharing_4, server: 4.paopaoyun.xyz, port: 19104, type: vmess, uuid: 157dbb7a-ddc9-3208-9a30-9c767d7b6392, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_5, server: 18.paopaoyun.xyz, port: 19118, type: vmess, uuid: d6a116bc-10f6-3cd4-ab57-0e8b4a2ba9e6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_8, server: 17.paopaoyun.xyz, port: 19117, type: vmess, uuid: d6a116bc-10f6-3cd4-ab57-0e8b4a2ba9e6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_9, server: 13.paopaoyun.xyz, port: 19113, type: vmess, uuid: 157dbb7a-ddc9-3208-9a30-9c767d7b6392, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_10, server: 12.paopaoyun.xyz, port: 19112, type: vmess, uuid: 157dbb7a-ddc9-3208-9a30-9c767d7b6392, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_11, server: 11.paopaoyun.xyz, port: 19111, type: vmess, uuid: 157dbb7a-ddc9-3208-9a30-9c767d7b6392, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_TG@nodesharing_12, server: 22.paopaoyun.xyz, port: 19122, type: vmess, uuid: d6a116bc-10f6-3cd4-ab57-0e8b4a2ba9e6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_13, server: 21.paopaoyun.xyz, port: 19121, type: vmess, uuid: d6a116bc-10f6-3cd4-ab57-0e8b4a2ba9e6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_15, server: 10.paopaoyun.xyz, port: 19110, type: vmess, uuid: 157dbb7a-ddc9-3208-9a30-9c767d7b6392, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_16, server: 15.paopaoyun.xyz, port: 19115, type: vmess, uuid: d6a116bc-10f6-3cd4-ab57-0e8b4a2ba9e6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_17, server: 16.paopaoyun.xyz, port: 19116, type: vmess, uuid: d6a116bc-10f6-3cd4-ab57-0e8b4a2ba9e6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_18, server: 9.paopaoyun.xyz, port: 19109, type: vmess, uuid: 157dbb7a-ddc9-3208-9a30-9c767d7b6392, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_20, server: 5.paopaoyun.xyz, port: 19105, type: vmess, uuid: 157dbb7a-ddc9-3208-9a30-9c767d7b6392, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_39, server: 24.paopaoyun.xyz, port: 19124, type: vmess, uuid: d6a116bc-10f6-3cd4-ab57-0e8b4a2ba9e6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_42, server: 6.paopaoyun.xyz, port: 19106, type: vmess, uuid: 157dbb7a-ddc9-3208-9a30-9c767d7b6392, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_TG@nodesharing_43, server: 14.paopaoyun.xyz, port: 19114, type: vmess, uuid: d6a116bc-10f6-3cd4-ab57-0e8b4a2ba9e6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_TG@nodesharing_55, server: 20.paopaoyun.xyz, port: 19120, type: vmess, uuid: d6a116bc-10f6-3cd4-ab57-0e8b4a2ba9e6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港 01 3, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 293770:r5sLI3kqOD, obfs-param: "", udp: true}
   - {name: "电报群: https://t.me/emovpn x5", server: n1.emovpn.xyz, port: 1251, type: ss, cipher: chacha20-ietf-poly1305, password: 3ebc28da-d4fa-47f3-a466-529f51fee004, udp: true}
-  - {name: 「🇸🇬」EMO | 金灵子 x5, server: n25.emovpn.xyz, port: 1256, type: ss, cipher: chacha20-ietf-poly1305, password: 3ebc28da-d4fa-47f3-a466-529f51fee004, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 14, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
-  - {name: 土耳其 | 1 无限流量！, server: rq.nodrop.bike, port: 443, type: vmess, uuid: f11b4711-9a16-46ea-9847-8cdeefc7793d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: rq.nodrop.bike}, udp: true}
+  - {name: 美国【YouTube由零開始】, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国【YouTube由零開始】 2, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国【YouTube由零開始】 3, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Relay_中国-荷兰_412, server: gz1.52168.xyz, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: jp, server: zz03.mcddns02.com, port: 17101, type: ssr, cipher: chacha20-ietf, password: GYAzB9, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 20071:CUoqXuxltNm1fo6Y, obfs-param: cd1a920071.microsoft.com, udp: true}
+  - {name: Azure.US.Vpnpool专属, server: vpnpool.us.xiaocai.ga, port: 443, type: trojan, password: fJMxoPGtPw, sni: vpnpool.us.xiaocai.ga, skip-cert-verify: true, udp: true}
+  - {name: Azure.HongKong.2.Vpnpool专属, server: vpnpool.hongkong.2.xiaocai.ga, port: 443, type: trojan, password: 5IGrvisqug, sni: vpnpool.hongkong.2.xiaocai.ga, skip-cert-verify: true, udp: true}
+  - {name: 保加利亚 Bulgaria●, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
+  - {name: 土耳其 Turkey★, server: gz2.52168.xyz, port: 2104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
+  - {name: 泰国 Thailand★, server: gz2.52168.xyz, port: 2109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
+  - {name: 澳大利亚 Australia●, server: gz1.52168.xyz, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
+  - {name: 荷兰 Netherlands●, server: gz1.52168.xyz, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
+  - {name: Relay_中国-德国_355, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: AZ转移动01-28, server: sl201.jdxx1.com, port: 25985, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 34:qf3R2I, obfs-param: 9455c5822.microsoft.com, udp: true}
+  - {name: 02加拿大∞中转, server: gz1.52168.xyz, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
   - {name: 越南 Vietnam●, server: gz1.52168.xyz, port: 1107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
-  - {name: "V2/A 香港高速 A线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]", server: microsoft.a.aot.bar, port: 443, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /y253, ws-headers: {Host: microso.aot.bar}, udp: true}
-  - {name: 香港, server: 117.18.13.140, port: 62103, type: ss, cipher: aes-128-gcm, password: !<str> 123, udp: true}
-  - {name: 极速-星河, server: 52.175.74.188, port: 11151, type: vmess, uuid: c7de6538-7914-419c-e7c4-91b71f812e9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 52.175.74.188}, udp: true}
-  - {name: default_name, server: icook.hk, port: 443, type: vmess, uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: xmlinodejp2.aifx.eu.org}, udp: true}
-  - {name: az-hk, server: 52.175.74.188, port: 11151, type: vmess, uuid: c7de6538-7914-419c-e7c4-91b71f812e9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 52.175.74.188}, udp: true}
-  - {name: 极速-星河 2, server: 52.175.74.188, port: 11151, type: vmess, uuid: c7de6538-7914-419c-e7c4-91b71f812e9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 52.175.74.188}, udp: true}
-  - {name: 美国阿伟科技@TG/油管 15, server: linodeusfree1.galaxycloud.buzz, port: 443, type: vmess, uuid: 66bb5472-f36e-4ba7-873f-8766637e70ad, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xnzogRmfh, ws-headers: {Host: linodeusfree1.galaxycloud.buzz}, udp: true}
-  - {name: 美国阿伟科技@TG/油管 17, server: gcusfree.galaxycloud.buzz, port: 443, type: vmess, uuid: e629b652-d2fd-4d97-b389-f99ea836f4c7, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /0DGCTPQ, ws-headers: {Host: gcusfree.galaxycloud.buzz}, udp: true}
-  - {name: 韩国阿伟科技@TG/油管 2, server: 129.154.50.0, port: 29363, type: vmess, uuid: c71ba6b4-98c0-4e7c-b8a1-4b074a44933c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 星河节点 2, server: 161.97.173.211, port: 9595, type: ssr, cipher: aes-256-cfb, password: sk80Likez95, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 星河节点 3, server: 141.94.37.133, port: 9595, type: ssr, cipher: aes-256-cfb, password: sk80Likez95, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 香港-日本 | 5 GAME, server: azhk520.greenyun.tk, port: 10007, type: vmess, uuid: f11b4711-9a16-46ea-9847-8cdeefc7793d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: azhk520.greenyun.tk}, udp: true}
   - {name: 俄罗斯 Russia★, server: gz2.52168.xyz, port: 2103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
-  - {name: +专线+香港+03, server: iepl03.xbxb1122.xyz, port: 8563, type: ss, cipher: aes-128-gcm, password: 9CU44I, plugin: obfs, plugin-opts: {mode: http, host: 5a37119826.microsoft.com}, udp: true}
-  - {name: "V2/A 香港轻量 浏览 A线 GIA CN2 线路 三线路由优化 - [2x]", server: aliyun.a.aog404.xyz, port: 443, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ru341, ws-headers: {Host: aliyun.aog404.xyz}, udp: true}
-  - {name: "V2/A 香港轻量 浏览 B线 GIA CN2 线路 三线路由优化 - [2x]", server: aliyun.b.aog404.xyz, port: 443, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ru341, ws-headers: {Host: aliyun.aog404.xyz}, udp: true}
-  - {name: "V2/B 日本 D线 联通电信 软银路由优化 高速1Gbps - [1x]", server: Japan.c.aog404.xyz, port: 12391, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /y613, ws-headers: {Host: Japan.c.aog404.xyz}, udp: true}
-  - {name: "V2/B 洛杉矶 A线 Bsai 高速节点 数字海洋 SSL哈希加密 - [2x]", server: api.sty.rest, port: 443, type: vmess, uuid: 9c87319c-18ea-3283-aa1a-d2961a77c34d, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a341, ws-headers: {Host: api.sty.rest}, udp: true}
-  - {name: V1 | HK A1, server: z-a.aaxc.icu, port: 51111, type: vmess, uuid: b66aba1b-67ed-3c5a-af97-0b5de382b262, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aaxc, ws-headers: {Host: z-a.aaxc.icu}, udp: true}
-  - {name: V1 | HK A1 2, server: z-a.aaxc.icu, port: 51111, type: vmess, uuid: 9c5bf4f0-d1ec-30f6-b0d3-99ae4e85155c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aaxc, ws-headers: {Host: z-a.aaxc.icu}, udp: true}
-  - {name: V1 | JP B1 2, server: z-b.aaxc.icu, port: 51321, type: vmess, uuid: 9c5bf4f0-d1ec-30f6-b0d3-99ae4e85155c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aaxc, ws-headers: {Host: z-b.aaxc.icu}, udp: true}
-  - {name: 香港_TG@nodesharing_7, server: 3.paopaoyun.xyz, port: 19103, type: vmess, uuid: 157dbb7a-ddc9-3208-9a30-9c767d7b6392, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK, server: hkaz2.scsevers.cf, port: 28384, type: vmess, uuid: 99edaf0e-a24c-432c-edb4-ed0f2bd01af1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkaz2.scsevers.cf}, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡, server: cloudflare.a-yu.xyz, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero2.a-yu.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Lv1.广移A->日本B3
-      - Lv1.广移A->日本B4
-      - Lv1.广移A->日本A1
       - 香港01
       - HK1(IEPL)+-+沪港国际专线
+      - 華人社區_經紀人CC🍄🍄_1026
       - 香港 01
       - 香港 01 2
-      - Relay_🇨🇳CN-🇬🇧GB_304 | 4.74Mb
-      - Lv1.广移A->香港HKT
+      - +USA
       - Netherlands
-      - 星河节点
-      - 新加坡|61001-61004端口可用
-      - Singapore-A2-AZHK-3x
-      - 公告|所求皆所愿！所行皆坦途
-      - 马来西亚 | 2
-      - 韩国 | 1
-      - 韩国 | 2 皖港隧道 STCP
-      - 美国 | 1 奈飞
-      - 美国 | 4
-      - 日本 | 3 杭日隧道 STCP GAME
-      - 台湾公益 01 解锁NF [1.5x]
-      - 瑞士 Switzerland●
-      - 专线 台湾 01
-      - 专线 台湾 02
-      - 专线 新加坡 01
-      - 专线 新加坡 02
-      - 专线 新加坡 03
-      - 专线 日本 01
-      - 专线 日本 02
-      - 专线 日本 03
-      - 专线 美国 03
-      - 专线 韩国 01
-      - 专线 韩国 02
-      - 专线 香港 01
-      - 专线 香港 02
-      - 专线 香港 04
-      - 专线 马来西亚 01
-      - 专线 马来西亚 02
-      - 中继 日本 02
-      - 中继 香港 04
-      - ️‍🌈 V2/A 香港 A线 国际优化 微软轻量极速节点 不限流量线
-      - V2/A 香港中转CN2 美国 数字海洋 旧金山 A线 163国际路由
-      - V2/A 香港首选高速 A线  微软数据云中心 千兆宽频 速度无上限节点  - [2.5x]
-      - V2/A 香港高速 B线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 C线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 D线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/B 新加坡 ALi轻量极速 A线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 B线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 C线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 D线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 日本 A线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 B线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 C线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 美国 数字海洋 旧金山 A线 163国际路由
-      - 新加坡 A组 移动单线路由 移动默认 公益节点 华南线路 - [2x]
-      - 日本 公益节点 Lv.A  SSL加密 Cloudflare 公益节点  -  [1x]  付费高速解锁
-      - 香港-星河
-      - 美国 | 3 奈飞
-      - cf-洛杉矶
-      - V1 | HK B1
-      - V1 | JP B1
-      - V1 | SG A3
-      - V1 | JP A1
-      - V1 | SG A1
-      - V1 | SG B1
-      - 香港_TG@nodesharing_4
-      - 香港_TG@nodesharing_5
-      - 香港_TG@nodesharing_8
-      - 香港_TG@nodesharing_9
-      - 香港_TG@nodesharing_10
-      - 香港_TG@nodesharing_11
-      - 美国_TG@nodesharing_12
-      - 香港_TG@nodesharing_13
-      - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_16
-      - 香港_TG@nodesharing_17
-      - 香港_TG@nodesharing_18
-      - 香港_TG@nodesharing_20
-      - 香港_TG@nodesharing_39
-      - 香港_TG@nodesharing_42
-      - 香港_TG@nodesharing_43
-      - 美国_TG@nodesharing_55
       - 香港 01 3
       - "电报群: https://t.me/emovpn x5"
-      - 「🇸🇬」EMO | 金灵子 x5
-      - github.com/freefq - 美国CloudFlare节点 14
-      - 土耳其 | 1 无限流量！
+      - 美国【YouTube由零開始】
+      - 美国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - Relay_中国-荷兰_412
+      - jp
+      - Azure.US.Vpnpool专属
+      - Azure.HongKong.2.Vpnpool专属
+      - 保加利亚 Bulgaria●
+      - 土耳其 Turkey★
+      - 泰国 Thailand★
+      - 澳大利亚 Australia●
+      - 荷兰 Netherlands●
+      - Relay_中国-德国_355
+      - AZ转移动01-28
+      - 02加拿大∞中转
       - 越南 Vietnam●
-      - V2/A 香港高速 A线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - 香港
-      - 极速-星河
-      - default_name
-      - az-hk
-      - 极速-星河 2
-      - 美国阿伟科技@TG/油管 15
-      - 美国阿伟科技@TG/油管 17
-      - 韩国阿伟科技@TG/油管 2
-      - 星河节点 2
-      - 星河节点 3
-      - 香港-日本 | 5 GAME
       - 俄罗斯 Russia★
-      - +专线+香港+03
-      - V2/A 香港轻量 浏览 A线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/A 香港轻量 浏览 B线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/B 日本 D线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 洛杉矶 A线 Bsai 高速节点 数字海洋 SSL哈希加密 - [2x]
-      - V1 | HK A1
-      - V1 | HK A1 2
-      - V1 | JP B1 2
-      - 香港_TG@nodesharing_7
-      - HK
-      - _US_美国->🇸🇬_SG_新加坡
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Lv1.广移A->日本B3
-      - Lv1.广移A->日本B4
-      - Lv1.广移A->日本A1
       - 香港01
       - HK1(IEPL)+-+沪港国际专线
+      - 華人社區_經紀人CC🍄🍄_1026
       - 香港 01
       - 香港 01 2
-      - Relay_🇨🇳CN-🇬🇧GB_304 | 4.74Mb
-      - Lv1.广移A->香港HKT
+      - +USA
       - Netherlands
-      - 星河节点
-      - 新加坡|61001-61004端口可用
-      - Singapore-A2-AZHK-3x
-      - 公告|所求皆所愿！所行皆坦途
-      - 马来西亚 | 2
-      - 韩国 | 1
-      - 韩国 | 2 皖港隧道 STCP
-      - 美国 | 1 奈飞
-      - 美国 | 4
-      - 日本 | 3 杭日隧道 STCP GAME
-      - 台湾公益 01 解锁NF [1.5x]
-      - 瑞士 Switzerland●
-      - 专线 台湾 01
-      - 专线 台湾 02
-      - 专线 新加坡 01
-      - 专线 新加坡 02
-      - 专线 新加坡 03
-      - 专线 日本 01
-      - 专线 日本 02
-      - 专线 日本 03
-      - 专线 美国 03
-      - 专线 韩国 01
-      - 专线 韩国 02
-      - 专线 香港 01
-      - 专线 香港 02
-      - 专线 香港 04
-      - 专线 马来西亚 01
-      - 专线 马来西亚 02
-      - 中继 日本 02
-      - 中继 香港 04
-      - ️‍🌈 V2/A 香港 A线 国际优化 微软轻量极速节点 不限流量线
-      - V2/A 香港中转CN2 美国 数字海洋 旧金山 A线 163国际路由
-      - V2/A 香港首选高速 A线  微软数据云中心 千兆宽频 速度无上限节点  - [2.5x]
-      - V2/A 香港高速 B线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 C线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 D线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/B 新加坡 ALi轻量极速 A线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 B线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 C线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 D线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 日本 A线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 B线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 C线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 美国 数字海洋 旧金山 A线 163国际路由
-      - 新加坡 A组 移动单线路由 移动默认 公益节点 华南线路 - [2x]
-      - 日本 公益节点 Lv.A  SSL加密 Cloudflare 公益节点  -  [1x]  付费高速解锁
-      - 香港-星河
-      - 美国 | 3 奈飞
-      - cf-洛杉矶
-      - V1 | HK B1
-      - V1 | JP B1
-      - V1 | SG A3
-      - V1 | JP A1
-      - V1 | SG A1
-      - V1 | SG B1
-      - 香港_TG@nodesharing_4
-      - 香港_TG@nodesharing_5
-      - 香港_TG@nodesharing_8
-      - 香港_TG@nodesharing_9
-      - 香港_TG@nodesharing_10
-      - 香港_TG@nodesharing_11
-      - 美国_TG@nodesharing_12
-      - 香港_TG@nodesharing_13
-      - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_16
-      - 香港_TG@nodesharing_17
-      - 香港_TG@nodesharing_18
-      - 香港_TG@nodesharing_20
-      - 香港_TG@nodesharing_39
-      - 香港_TG@nodesharing_42
-      - 香港_TG@nodesharing_43
-      - 美国_TG@nodesharing_55
       - 香港 01 3
       - "电报群: https://t.me/emovpn x5"
-      - 「🇸🇬」EMO | 金灵子 x5
-      - github.com/freefq - 美国CloudFlare节点 14
-      - 土耳其 | 1 无限流量！
+      - 美国【YouTube由零開始】
+      - 美国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - Relay_中国-荷兰_412
+      - jp
+      - Azure.US.Vpnpool专属
+      - Azure.HongKong.2.Vpnpool专属
+      - 保加利亚 Bulgaria●
+      - 土耳其 Turkey★
+      - 泰国 Thailand★
+      - 澳大利亚 Australia●
+      - 荷兰 Netherlands●
+      - Relay_中国-德国_355
+      - AZ转移动01-28
+      - 02加拿大∞中转
       - 越南 Vietnam●
-      - V2/A 香港高速 A线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - 香港
-      - 极速-星河
-      - default_name
-      - az-hk
-      - 极速-星河 2
-      - 美国阿伟科技@TG/油管 15
-      - 美国阿伟科技@TG/油管 17
-      - 韩国阿伟科技@TG/油管 2
-      - 星河节点 2
-      - 星河节点 3
-      - 香港-日本 | 5 GAME
       - 俄罗斯 Russia★
-      - +专线+香港+03
-      - V2/A 香港轻量 浏览 A线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/A 香港轻量 浏览 B线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/B 日本 D线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 洛杉矶 A线 Bsai 高速节点 数字海洋 SSL哈希加密 - [2x]
-      - V1 | HK A1
-      - V1 | HK A1 2
-      - V1 | JP B1 2
-      - 香港_TG@nodesharing_7
-      - HK
-      - _US_美国->🇸🇬_SG_新加坡
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Lv1.广移A->日本B3
-      - Lv1.广移A->日本B4
-      - Lv1.广移A->日本A1
       - 香港01
       - HK1(IEPL)+-+沪港国际专线
+      - 華人社區_經紀人CC🍄🍄_1026
       - 香港 01
       - 香港 01 2
-      - Relay_🇨🇳CN-🇬🇧GB_304 | 4.74Mb
-      - Lv1.广移A->香港HKT
+      - +USA
       - Netherlands
-      - 星河节点
-      - 新加坡|61001-61004端口可用
-      - Singapore-A2-AZHK-3x
-      - 公告|所求皆所愿！所行皆坦途
-      - 马来西亚 | 2
-      - 韩国 | 1
-      - 韩国 | 2 皖港隧道 STCP
-      - 美国 | 1 奈飞
-      - 美国 | 4
-      - 日本 | 3 杭日隧道 STCP GAME
-      - 台湾公益 01 解锁NF [1.5x]
-      - 瑞士 Switzerland●
-      - 专线 台湾 01
-      - 专线 台湾 02
-      - 专线 新加坡 01
-      - 专线 新加坡 02
-      - 专线 新加坡 03
-      - 专线 日本 01
-      - 专线 日本 02
-      - 专线 日本 03
-      - 专线 美国 03
-      - 专线 韩国 01
-      - 专线 韩国 02
-      - 专线 香港 01
-      - 专线 香港 02
-      - 专线 香港 04
-      - 专线 马来西亚 01
-      - 专线 马来西亚 02
-      - 中继 日本 02
-      - 中继 香港 04
-      - ️‍🌈 V2/A 香港 A线 国际优化 微软轻量极速节点 不限流量线
-      - V2/A 香港中转CN2 美国 数字海洋 旧金山 A线 163国际路由
-      - V2/A 香港首选高速 A线  微软数据云中心 千兆宽频 速度无上限节点  - [2.5x]
-      - V2/A 香港高速 B线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 C线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 D线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/B 新加坡 ALi轻量极速 A线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 B线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 C线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 D线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 日本 A线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 B线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 C线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 美国 数字海洋 旧金山 A线 163国际路由
-      - 新加坡 A组 移动单线路由 移动默认 公益节点 华南线路 - [2x]
-      - 日本 公益节点 Lv.A  SSL加密 Cloudflare 公益节点  -  [1x]  付费高速解锁
-      - 香港-星河
-      - 美国 | 3 奈飞
-      - cf-洛杉矶
-      - V1 | HK B1
-      - V1 | JP B1
-      - V1 | SG A3
-      - V1 | JP A1
-      - V1 | SG A1
-      - V1 | SG B1
-      - 香港_TG@nodesharing_4
-      - 香港_TG@nodesharing_5
-      - 香港_TG@nodesharing_8
-      - 香港_TG@nodesharing_9
-      - 香港_TG@nodesharing_10
-      - 香港_TG@nodesharing_11
-      - 美国_TG@nodesharing_12
-      - 香港_TG@nodesharing_13
-      - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_16
-      - 香港_TG@nodesharing_17
-      - 香港_TG@nodesharing_18
-      - 香港_TG@nodesharing_20
-      - 香港_TG@nodesharing_39
-      - 香港_TG@nodesharing_42
-      - 香港_TG@nodesharing_43
-      - 美国_TG@nodesharing_55
       - 香港 01 3
       - "电报群: https://t.me/emovpn x5"
-      - 「🇸🇬」EMO | 金灵子 x5
-      - github.com/freefq - 美国CloudFlare节点 14
-      - 土耳其 | 1 无限流量！
+      - 美国【YouTube由零開始】
+      - 美国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - Relay_中国-荷兰_412
+      - jp
+      - Azure.US.Vpnpool专属
+      - Azure.HongKong.2.Vpnpool专属
+      - 保加利亚 Bulgaria●
+      - 土耳其 Turkey★
+      - 泰国 Thailand★
+      - 澳大利亚 Australia●
+      - 荷兰 Netherlands●
+      - Relay_中国-德国_355
+      - AZ转移动01-28
+      - 02加拿大∞中转
       - 越南 Vietnam●
-      - V2/A 香港高速 A线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - 香港
-      - 极速-星河
-      - default_name
-      - az-hk
-      - 极速-星河 2
-      - 美国阿伟科技@TG/油管 15
-      - 美国阿伟科技@TG/油管 17
-      - 韩国阿伟科技@TG/油管 2
-      - 星河节点 2
-      - 星河节点 3
-      - 香港-日本 | 5 GAME
       - 俄罗斯 Russia★
-      - +专线+香港+03
-      - V2/A 香港轻量 浏览 A线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/A 香港轻量 浏览 B线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/B 日本 D线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 洛杉矶 A线 Bsai 高速节点 数字海洋 SSL哈希加密 - [2x]
-      - V1 | HK A1
-      - V1 | HK A1 2
-      - V1 | JP B1 2
-      - 香港_TG@nodesharing_7
-      - HK
-      - _US_美国->🇸🇬_SG_新加坡
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -488,118 +144,32 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Lv1.广移A->日本B3
-      - Lv1.广移A->日本B4
-      - Lv1.广移A->日本A1
       - 香港01
       - HK1(IEPL)+-+沪港国际专线
+      - 華人社區_經紀人CC🍄🍄_1026
       - 香港 01
       - 香港 01 2
-      - Relay_🇨🇳CN-🇬🇧GB_304 | 4.74Mb
-      - Lv1.广移A->香港HKT
+      - +USA
       - Netherlands
-      - 星河节点
-      - 新加坡|61001-61004端口可用
-      - Singapore-A2-AZHK-3x
-      - 公告|所求皆所愿！所行皆坦途
-      - 马来西亚 | 2
-      - 韩国 | 1
-      - 韩国 | 2 皖港隧道 STCP
-      - 美国 | 1 奈飞
-      - 美国 | 4
-      - 日本 | 3 杭日隧道 STCP GAME
-      - 台湾公益 01 解锁NF [1.5x]
-      - 瑞士 Switzerland●
-      - 专线 台湾 01
-      - 专线 台湾 02
-      - 专线 新加坡 01
-      - 专线 新加坡 02
-      - 专线 新加坡 03
-      - 专线 日本 01
-      - 专线 日本 02
-      - 专线 日本 03
-      - 专线 美国 03
-      - 专线 韩国 01
-      - 专线 韩国 02
-      - 专线 香港 01
-      - 专线 香港 02
-      - 专线 香港 04
-      - 专线 马来西亚 01
-      - 专线 马来西亚 02
-      - 中继 日本 02
-      - 中继 香港 04
-      - ️‍🌈 V2/A 香港 A线 国际优化 微软轻量极速节点 不限流量线
-      - V2/A 香港中转CN2 美国 数字海洋 旧金山 A线 163国际路由
-      - V2/A 香港首选高速 A线  微软数据云中心 千兆宽频 速度无上限节点  - [2.5x]
-      - V2/A 香港高速 B线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 C线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 D线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/B 新加坡 ALi轻量极速 A线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 B线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 C线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 D线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 日本 A线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 B线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 C线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 美国 数字海洋 旧金山 A线 163国际路由
-      - 新加坡 A组 移动单线路由 移动默认 公益节点 华南线路 - [2x]
-      - 日本 公益节点 Lv.A  SSL加密 Cloudflare 公益节点  -  [1x]  付费高速解锁
-      - 香港-星河
-      - 美国 | 3 奈飞
-      - cf-洛杉矶
-      - V1 | HK B1
-      - V1 | JP B1
-      - V1 | SG A3
-      - V1 | JP A1
-      - V1 | SG A1
-      - V1 | SG B1
-      - 香港_TG@nodesharing_4
-      - 香港_TG@nodesharing_5
-      - 香港_TG@nodesharing_8
-      - 香港_TG@nodesharing_9
-      - 香港_TG@nodesharing_10
-      - 香港_TG@nodesharing_11
-      - 美国_TG@nodesharing_12
-      - 香港_TG@nodesharing_13
-      - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_16
-      - 香港_TG@nodesharing_17
-      - 香港_TG@nodesharing_18
-      - 香港_TG@nodesharing_20
-      - 香港_TG@nodesharing_39
-      - 香港_TG@nodesharing_42
-      - 香港_TG@nodesharing_43
-      - 美国_TG@nodesharing_55
       - 香港 01 3
       - "电报群: https://t.me/emovpn x5"
-      - 「🇸🇬」EMO | 金灵子 x5
-      - github.com/freefq - 美国CloudFlare节点 14
-      - 土耳其 | 1 无限流量！
+      - 美国【YouTube由零開始】
+      - 美国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - Relay_中国-荷兰_412
+      - jp
+      - Azure.US.Vpnpool专属
+      - Azure.HongKong.2.Vpnpool专属
+      - 保加利亚 Bulgaria●
+      - 土耳其 Turkey★
+      - 泰国 Thailand★
+      - 澳大利亚 Australia●
+      - 荷兰 Netherlands●
+      - Relay_中国-德国_355
+      - AZ转移动01-28
+      - 02加拿大∞中转
       - 越南 Vietnam●
-      - V2/A 香港高速 A线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - 香港
-      - 极速-星河
-      - default_name
-      - az-hk
-      - 极速-星河 2
-      - 美国阿伟科技@TG/油管 15
-      - 美国阿伟科技@TG/油管 17
-      - 韩国阿伟科技@TG/油管 2
-      - 星河节点 2
-      - 星河节点 3
-      - 香港-日本 | 5 GAME
       - 俄罗斯 Russia★
-      - +专线+香港+03
-      - V2/A 香港轻量 浏览 A线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/A 香港轻量 浏览 B线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/B 日本 D线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 洛杉矶 A线 Bsai 高速节点 数字海洋 SSL哈希加密 - [2x]
-      - V1 | HK A1
-      - V1 | HK A1 2
-      - V1 | JP B1 2
-      - 香港_TG@nodesharing_7
-      - HK
-      - _US_美国->🇸🇬_SG_新加坡
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -608,399 +178,102 @@ proxy-groups:
       - HK1(IEPL)+-+沪港国际专线
       - 香港 01
       - 香港 01 2
-      - Lv1.广移A->香港HKT
-      - 韩国 | 2 皖港隧道 STCP
-      - 台湾公益 01 解锁NF [1.5x]
-      - 专线 台湾 01
-      - 专线 台湾 02
-      - 专线 香港 01
-      - 专线 香港 02
-      - 专线 香港 04
-      - 中继 香港 04
-      - ️‍🌈 V2/A 香港 A线 国际优化 微软轻量极速节点 不限流量线
-      - V2/A 香港中转CN2 美国 数字海洋 旧金山 A线 163国际路由
-      - V2/A 香港首选高速 A线  微软数据云中心 千兆宽频 速度无上限节点  - [2.5x]
-      - V2/A 香港高速 B线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 C线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 D线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - 香港-星河
-      - 香港_TG@nodesharing_4
-      - 香港_TG@nodesharing_5
-      - 香港_TG@nodesharing_8
-      - 香港_TG@nodesharing_9
-      - 香港_TG@nodesharing_10
-      - 香港_TG@nodesharing_11
-      - 香港_TG@nodesharing_13
-      - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_16
-      - 香港_TG@nodesharing_17
-      - 香港_TG@nodesharing_18
-      - 香港_TG@nodesharing_20
-      - 香港_TG@nodesharing_39
-      - 香港_TG@nodesharing_42
-      - 香港_TG@nodesharing_43
       - 香港 01 3
-      - V2/A 香港高速 A线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - 香港
-      - az-hk
-      - 香港-日本 | 5 GAME
-      - +专线+香港+03
-      - V2/A 香港轻量 浏览 A线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/A 香港轻量 浏览 B线 GIA CN2 线路 三线路由优化 - [2x]
-      - 香港_TG@nodesharing_7
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Lv1.广移A->日本B3
-      - Lv1.广移A->日本B4
-      - Lv1.广移A->日本A1
       - 香港01
       - HK1(IEPL)+-+沪港国际专线
+      - 華人社區_經紀人CC🍄🍄_1026
       - 香港 01
       - 香港 01 2
-      - Relay_🇨🇳CN-🇬🇧GB_304 | 4.74Mb
-      - Lv1.广移A->香港HKT
+      - +USA
       - Netherlands
-      - 星河节点
-      - 新加坡|61001-61004端口可用
-      - Singapore-A2-AZHK-3x
-      - 公告|所求皆所愿！所行皆坦途
-      - 马来西亚 | 2
-      - 韩国 | 1
-      - 韩国 | 2 皖港隧道 STCP
-      - 美国 | 1 奈飞
-      - 美国 | 4
-      - 日本 | 3 杭日隧道 STCP GAME
-      - 台湾公益 01 解锁NF [1.5x]
-      - 瑞士 Switzerland●
-      - 专线 台湾 01
-      - 专线 台湾 02
-      - 专线 新加坡 01
-      - 专线 新加坡 02
-      - 专线 新加坡 03
-      - 专线 日本 01
-      - 专线 日本 02
-      - 专线 日本 03
-      - 专线 美国 03
-      - 专线 韩国 01
-      - 专线 韩国 02
-      - 专线 香港 01
-      - 专线 香港 02
-      - 专线 香港 04
-      - 专线 马来西亚 01
-      - 专线 马来西亚 02
-      - 中继 日本 02
-      - 中继 香港 04
-      - ️‍🌈 V2/A 香港 A线 国际优化 微软轻量极速节点 不限流量线
-      - V2/A 香港中转CN2 美国 数字海洋 旧金山 A线 163国际路由
-      - V2/A 香港首选高速 A线  微软数据云中心 千兆宽频 速度无上限节点  - [2.5x]
-      - V2/A 香港高速 B线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 C线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 D线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/B 新加坡 ALi轻量极速 A线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 B线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 C线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 D线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 日本 A线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 B线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 C线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 美国 数字海洋 旧金山 A线 163国际路由
-      - 新加坡 A组 移动单线路由 移动默认 公益节点 华南线路 - [2x]
-      - 日本 公益节点 Lv.A  SSL加密 Cloudflare 公益节点  -  [1x]  付费高速解锁
-      - 香港-星河
-      - 美国 | 3 奈飞
-      - cf-洛杉矶
-      - V1 | HK B1
-      - V1 | JP B1
-      - V1 | SG A3
-      - V1 | JP A1
-      - V1 | SG A1
-      - V1 | SG B1
-      - 香港_TG@nodesharing_4
-      - 香港_TG@nodesharing_5
-      - 香港_TG@nodesharing_8
-      - 香港_TG@nodesharing_9
-      - 香港_TG@nodesharing_10
-      - 香港_TG@nodesharing_11
-      - 美国_TG@nodesharing_12
-      - 香港_TG@nodesharing_13
-      - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_16
-      - 香港_TG@nodesharing_17
-      - 香港_TG@nodesharing_18
-      - 香港_TG@nodesharing_20
-      - 香港_TG@nodesharing_39
-      - 香港_TG@nodesharing_42
-      - 香港_TG@nodesharing_43
-      - 美国_TG@nodesharing_55
       - 香港 01 3
       - "电报群: https://t.me/emovpn x5"
-      - 「🇸🇬」EMO | 金灵子 x5
-      - github.com/freefq - 美国CloudFlare节点 14
-      - 土耳其 | 1 无限流量！
+      - 美国【YouTube由零開始】
+      - 美国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - Relay_中国-荷兰_412
+      - jp
+      - Azure.US.Vpnpool专属
+      - Azure.HongKong.2.Vpnpool专属
+      - 保加利亚 Bulgaria●
+      - 土耳其 Turkey★
+      - 泰国 Thailand★
+      - 澳大利亚 Australia●
+      - 荷兰 Netherlands●
+      - Relay_中国-德国_355
+      - AZ转移动01-28
+      - 02加拿大∞中转
       - 越南 Vietnam●
-      - V2/A 香港高速 A线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - 香港
-      - 极速-星河
-      - default_name
-      - az-hk
-      - 极速-星河 2
-      - 美国阿伟科技@TG/油管 15
-      - 美国阿伟科技@TG/油管 17
-      - 韩国阿伟科技@TG/油管 2
-      - 星河节点 2
-      - 星河节点 3
-      - 香港-日本 | 5 GAME
       - 俄罗斯 Russia★
-      - +专线+香港+03
-      - V2/A 香港轻量 浏览 A线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/A 香港轻量 浏览 B线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/B 日本 D线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 洛杉矶 A线 Bsai 高速节点 数字海洋 SSL哈希加密 - [2x]
-      - V1 | HK A1
-      - V1 | HK A1 2
-      - V1 | JP B1 2
-      - 香港_TG@nodesharing_7
-      - HK
-      - _US_美国->🇸🇬_SG_新加坡
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Lv1.广移A->日本B3
-      - Lv1.广移A->日本B4
-      - Lv1.广移A->日本A1
       - 香港01
       - HK1(IEPL)+-+沪港国际专线
+      - 華人社區_經紀人CC🍄🍄_1026
       - 香港 01
       - 香港 01 2
-      - Relay_🇨🇳CN-🇬🇧GB_304 | 4.74Mb
-      - Lv1.广移A->香港HKT
+      - +USA
       - Netherlands
-      - 星河节点
-      - 新加坡|61001-61004端口可用
-      - Singapore-A2-AZHK-3x
-      - 公告|所求皆所愿！所行皆坦途
-      - 马来西亚 | 2
-      - 韩国 | 1
-      - 韩国 | 2 皖港隧道 STCP
-      - 美国 | 1 奈飞
-      - 美国 | 4
-      - 日本 | 3 杭日隧道 STCP GAME
-      - 台湾公益 01 解锁NF [1.5x]
-      - 瑞士 Switzerland●
-      - 专线 台湾 01
-      - 专线 台湾 02
-      - 专线 新加坡 01
-      - 专线 新加坡 02
-      - 专线 新加坡 03
-      - 专线 日本 01
-      - 专线 日本 02
-      - 专线 日本 03
-      - 专线 美国 03
-      - 专线 韩国 01
-      - 专线 韩国 02
-      - 专线 香港 01
-      - 专线 香港 02
-      - 专线 香港 04
-      - 专线 马来西亚 01
-      - 专线 马来西亚 02
-      - 中继 日本 02
-      - 中继 香港 04
-      - ️‍🌈 V2/A 香港 A线 国际优化 微软轻量极速节点 不限流量线
-      - V2/A 香港中转CN2 美国 数字海洋 旧金山 A线 163国际路由
-      - V2/A 香港首选高速 A线  微软数据云中心 千兆宽频 速度无上限节点  - [2.5x]
-      - V2/A 香港高速 B线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 C线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 D线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/B 新加坡 ALi轻量极速 A线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 B线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 C线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 D线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 日本 A线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 B线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 C线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 美国 数字海洋 旧金山 A线 163国际路由
-      - 新加坡 A组 移动单线路由 移动默认 公益节点 华南线路 - [2x]
-      - 日本 公益节点 Lv.A  SSL加密 Cloudflare 公益节点  -  [1x]  付费高速解锁
-      - 香港-星河
-      - 美国 | 3 奈飞
-      - cf-洛杉矶
-      - V1 | HK B1
-      - V1 | JP B1
-      - V1 | SG A3
-      - V1 | JP A1
-      - V1 | SG A1
-      - V1 | SG B1
-      - 香港_TG@nodesharing_4
-      - 香港_TG@nodesharing_5
-      - 香港_TG@nodesharing_8
-      - 香港_TG@nodesharing_9
-      - 香港_TG@nodesharing_10
-      - 香港_TG@nodesharing_11
-      - 美国_TG@nodesharing_12
-      - 香港_TG@nodesharing_13
-      - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_16
-      - 香港_TG@nodesharing_17
-      - 香港_TG@nodesharing_18
-      - 香港_TG@nodesharing_20
-      - 香港_TG@nodesharing_39
-      - 香港_TG@nodesharing_42
-      - 香港_TG@nodesharing_43
-      - 美国_TG@nodesharing_55
       - 香港 01 3
       - "电报群: https://t.me/emovpn x5"
-      - 「🇸🇬」EMO | 金灵子 x5
-      - github.com/freefq - 美国CloudFlare节点 14
-      - 土耳其 | 1 无限流量！
+      - 美国【YouTube由零開始】
+      - 美国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - Relay_中国-荷兰_412
+      - jp
+      - Azure.US.Vpnpool专属
+      - Azure.HongKong.2.Vpnpool专属
+      - 保加利亚 Bulgaria●
+      - 土耳其 Turkey★
+      - 泰国 Thailand★
+      - 澳大利亚 Australia●
+      - 荷兰 Netherlands●
+      - Relay_中国-德国_355
+      - AZ转移动01-28
+      - 02加拿大∞中转
       - 越南 Vietnam●
-      - V2/A 香港高速 A线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - 香港
-      - 极速-星河
-      - default_name
-      - az-hk
-      - 极速-星河 2
-      - 美国阿伟科技@TG/油管 15
-      - 美国阿伟科技@TG/油管 17
-      - 韩国阿伟科技@TG/油管 2
-      - 星河节点 2
-      - 星河节点 3
-      - 香港-日本 | 5 GAME
       - 俄罗斯 Russia★
-      - +专线+香港+03
-      - V2/A 香港轻量 浏览 A线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/A 香港轻量 浏览 B线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/B 日本 D线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 洛杉矶 A线 Bsai 高速节点 数字海洋 SSL哈希加密 - [2x]
-      - V1 | HK A1
-      - V1 | HK A1 2
-      - V1 | JP B1 2
-      - 香港_TG@nodesharing_7
-      - HK
-      - _US_美国->🇸🇬_SG_新加坡
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Lv1.广移A->日本B3
-      - Lv1.广移A->日本B4
-      - Lv1.广移A->日本A1
       - 香港01
       - HK1(IEPL)+-+沪港国际专线
+      - 華人社區_經紀人CC🍄🍄_1026
       - 香港 01
       - 香港 01 2
-      - Relay_🇨🇳CN-🇬🇧GB_304 | 4.74Mb
-      - Lv1.广移A->香港HKT
+      - +USA
       - Netherlands
-      - 星河节点
-      - 新加坡|61001-61004端口可用
-      - Singapore-A2-AZHK-3x
-      - 公告|所求皆所愿！所行皆坦途
-      - 马来西亚 | 2
-      - 韩国 | 1
-      - 韩国 | 2 皖港隧道 STCP
-      - 美国 | 1 奈飞
-      - 美国 | 4
-      - 日本 | 3 杭日隧道 STCP GAME
-      - 台湾公益 01 解锁NF [1.5x]
-      - 瑞士 Switzerland●
-      - 专线 台湾 01
-      - 专线 台湾 02
-      - 专线 新加坡 01
-      - 专线 新加坡 02
-      - 专线 新加坡 03
-      - 专线 日本 01
-      - 专线 日本 02
-      - 专线 日本 03
-      - 专线 美国 03
-      - 专线 韩国 01
-      - 专线 韩国 02
-      - 专线 香港 01
-      - 专线 香港 02
-      - 专线 香港 04
-      - 专线 马来西亚 01
-      - 专线 马来西亚 02
-      - 中继 日本 02
-      - 中继 香港 04
-      - ️‍🌈 V2/A 香港 A线 国际优化 微软轻量极速节点 不限流量线
-      - V2/A 香港中转CN2 美国 数字海洋 旧金山 A线 163国际路由
-      - V2/A 香港首选高速 A线  微软数据云中心 千兆宽频 速度无上限节点  - [2.5x]
-      - V2/A 香港高速 B线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 C线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 D线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/B 新加坡 ALi轻量极速 A线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 B线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 C线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 D线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 日本 A线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 B线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 C线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 美国 数字海洋 旧金山 A线 163国际路由
-      - 新加坡 A组 移动单线路由 移动默认 公益节点 华南线路 - [2x]
-      - 日本 公益节点 Lv.A  SSL加密 Cloudflare 公益节点  -  [1x]  付费高速解锁
-      - 香港-星河
-      - 美国 | 3 奈飞
-      - cf-洛杉矶
-      - V1 | HK B1
-      - V1 | JP B1
-      - V1 | SG A3
-      - V1 | JP A1
-      - V1 | SG A1
-      - V1 | SG B1
-      - 香港_TG@nodesharing_4
-      - 香港_TG@nodesharing_5
-      - 香港_TG@nodesharing_8
-      - 香港_TG@nodesharing_9
-      - 香港_TG@nodesharing_10
-      - 香港_TG@nodesharing_11
-      - 美国_TG@nodesharing_12
-      - 香港_TG@nodesharing_13
-      - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_16
-      - 香港_TG@nodesharing_17
-      - 香港_TG@nodesharing_18
-      - 香港_TG@nodesharing_20
-      - 香港_TG@nodesharing_39
-      - 香港_TG@nodesharing_42
-      - 香港_TG@nodesharing_43
-      - 美国_TG@nodesharing_55
       - 香港 01 3
       - "电报群: https://t.me/emovpn x5"
-      - 「🇸🇬」EMO | 金灵子 x5
-      - github.com/freefq - 美国CloudFlare节点 14
-      - 土耳其 | 1 无限流量！
+      - 美国【YouTube由零開始】
+      - 美国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - Relay_中国-荷兰_412
+      - jp
+      - Azure.US.Vpnpool专属
+      - Azure.HongKong.2.Vpnpool专属
+      - 保加利亚 Bulgaria●
+      - 土耳其 Turkey★
+      - 泰国 Thailand★
+      - 澳大利亚 Australia●
+      - 荷兰 Netherlands●
+      - Relay_中国-德国_355
+      - AZ转移动01-28
+      - 02加拿大∞中转
       - 越南 Vietnam●
-      - V2/A 香港高速 A线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - 香港
-      - 极速-星河
-      - default_name
-      - az-hk
-      - 极速-星河 2
-      - 美国阿伟科技@TG/油管 15
-      - 美国阿伟科技@TG/油管 17
-      - 韩国阿伟科技@TG/油管 2
-      - 星河节点 2
-      - 星河节点 3
-      - 香港-日本 | 5 GAME
       - 俄罗斯 Russia★
-      - +专线+香港+03
-      - V2/A 香港轻量 浏览 A线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/A 香港轻量 浏览 B线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/B 日本 D线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 洛杉矶 A线 Bsai 高速节点 数字海洋 SSL哈希加密 - [2x]
-      - V1 | HK A1
-      - V1 | HK A1 2
-      - V1 | JP B1 2
-      - 香港_TG@nodesharing_7
-      - HK
-      - _US_美国->🇸🇬_SG_新加坡
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1016,118 +289,32 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Lv1.广移A->日本B3
-      - Lv1.广移A->日本B4
-      - Lv1.广移A->日本A1
       - 香港01
       - HK1(IEPL)+-+沪港国际专线
+      - 華人社區_經紀人CC🍄🍄_1026
       - 香港 01
       - 香港 01 2
-      - Relay_🇨🇳CN-🇬🇧GB_304 | 4.74Mb
-      - Lv1.广移A->香港HKT
+      - +USA
       - Netherlands
-      - 星河节点
-      - 新加坡|61001-61004端口可用
-      - Singapore-A2-AZHK-3x
-      - 公告|所求皆所愿！所行皆坦途
-      - 马来西亚 | 2
-      - 韩国 | 1
-      - 韩国 | 2 皖港隧道 STCP
-      - 美国 | 1 奈飞
-      - 美国 | 4
-      - 日本 | 3 杭日隧道 STCP GAME
-      - 台湾公益 01 解锁NF [1.5x]
-      - 瑞士 Switzerland●
-      - 专线 台湾 01
-      - 专线 台湾 02
-      - 专线 新加坡 01
-      - 专线 新加坡 02
-      - 专线 新加坡 03
-      - 专线 日本 01
-      - 专线 日本 02
-      - 专线 日本 03
-      - 专线 美国 03
-      - 专线 韩国 01
-      - 专线 韩国 02
-      - 专线 香港 01
-      - 专线 香港 02
-      - 专线 香港 04
-      - 专线 马来西亚 01
-      - 专线 马来西亚 02
-      - 中继 日本 02
-      - 中继 香港 04
-      - ️‍🌈 V2/A 香港 A线 国际优化 微软轻量极速节点 不限流量线
-      - V2/A 香港中转CN2 美国 数字海洋 旧金山 A线 163国际路由
-      - V2/A 香港首选高速 A线  微软数据云中心 千兆宽频 速度无上限节点  - [2.5x]
-      - V2/A 香港高速 B线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 C线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/A 香港高速 D线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - V2/B 新加坡 ALi轻量极速 A线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 B线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 C线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 新加坡 ALi轻量极速 D线 GIA CN2 三线优化 国际优化 - [2x]
-      - V2/B 日本 A线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 B线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 日本 C线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 美国 数字海洋 旧金山 A线 163国际路由
-      - 新加坡 A组 移动单线路由 移动默认 公益节点 华南线路 - [2x]
-      - 日本 公益节点 Lv.A  SSL加密 Cloudflare 公益节点  -  [1x]  付费高速解锁
-      - 香港-星河
-      - 美国 | 3 奈飞
-      - cf-洛杉矶
-      - V1 | HK B1
-      - V1 | JP B1
-      - V1 | SG A3
-      - V1 | JP A1
-      - V1 | SG A1
-      - V1 | SG B1
-      - 香港_TG@nodesharing_4
-      - 香港_TG@nodesharing_5
-      - 香港_TG@nodesharing_8
-      - 香港_TG@nodesharing_9
-      - 香港_TG@nodesharing_10
-      - 香港_TG@nodesharing_11
-      - 美国_TG@nodesharing_12
-      - 香港_TG@nodesharing_13
-      - 香港_TG@nodesharing_15
-      - 香港_TG@nodesharing_16
-      - 香港_TG@nodesharing_17
-      - 香港_TG@nodesharing_18
-      - 香港_TG@nodesharing_20
-      - 香港_TG@nodesharing_39
-      - 香港_TG@nodesharing_42
-      - 香港_TG@nodesharing_43
-      - 美国_TG@nodesharing_55
       - 香港 01 3
       - "电报群: https://t.me/emovpn x5"
-      - 「🇸🇬」EMO | 金灵子 x5
-      - github.com/freefq - 美国CloudFlare节点 14
-      - 土耳其 | 1 无限流量！
+      - 美国【YouTube由零開始】
+      - 美国【YouTube由零開始】 2
+      - 美国【YouTube由零開始】 3
+      - Relay_中国-荷兰_412
+      - jp
+      - Azure.US.Vpnpool专属
+      - Azure.HongKong.2.Vpnpool专属
+      - 保加利亚 Bulgaria●
+      - 土耳其 Turkey★
+      - 泰国 Thailand★
+      - 澳大利亚 Australia●
+      - 荷兰 Netherlands●
+      - Relay_中国-德国_355
+      - AZ转移动01-28
+      - 02加拿大∞中转
       - 越南 Vietnam●
-      - V2/A 香港高速 A线 GIA CN2 线路 三线路由优化 微软千兆宽频  - [3x]
-      - 香港
-      - 极速-星河
-      - default_name
-      - az-hk
-      - 极速-星河 2
-      - 美国阿伟科技@TG/油管 15
-      - 美国阿伟科技@TG/油管 17
-      - 韩国阿伟科技@TG/油管 2
-      - 星河节点 2
-      - 星河节点 3
-      - 香港-日本 | 5 GAME
       - 俄罗斯 Russia★
-      - +专线+香港+03
-      - V2/A 香港轻量 浏览 A线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/A 香港轻量 浏览 B线 GIA CN2 线路 三线路由优化 - [2x]
-      - V2/B 日本 D线 联通电信 软银路由优化 高速1Gbps - [1x]
-      - V2/B 洛杉矶 A线 Bsai 高速节点 数字海洋 SSL哈希加密 - [2x]
-      - V1 | HK A1
-      - V1 | HK A1 2
-      - V1 | JP B1 2
-      - 香港_TG@nodesharing_7
-      - HK
-      - _US_美国->🇸🇬_SG_新加坡
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
