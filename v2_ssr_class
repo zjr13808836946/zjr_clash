@@ -1,263 +1,207 @@
-port: 7890 
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港01, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292395:UXZgcH2Vmq, obfs-param: "", udp: true}
-  - {name: HK1(IEPL)+-+沪港国际专线, server: cn2.relay.starlink.st, port: 50101, type: ss, cipher: aes-128-gcm, password: e90acc75-5dbe-4203-873e-fbfdc8af9ba2, udp: true}
-  - {name: 華人社區_經紀人CC🍄🍄_1026, server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: 香港 01, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292464:93DWZTu7LU, obfs-param: "", udp: true}
-  - {name: 香港 01 2, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292690:o7iqlcUakC, obfs-param: "", udp: true}
   - {name: +USA, server: 62.216.91.229, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: Netherlands, server: 213.183.51.171, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: 香港 01 3, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 293770:r5sLI3kqOD, obfs-param: "", udp: true}
-  - {name: "电报群: https://t.me/emovpn x5", server: n1.emovpn.xyz, port: 1251, type: ss, cipher: chacha20-ietf-poly1305, password: 3ebc28da-d4fa-47f3-a466-529f51fee004, udp: true}
-  - {name: 美国【YouTube由零開始】, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国【YouTube由零開始】 2, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国【YouTube由零開始】 3, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: Relay_中国-荷兰_412, server: gz1.52168.xyz, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
-  - {name: jp, server: zz03.mcddns02.com, port: 17101, type: ssr, cipher: chacha20-ietf, password: GYAzB9, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 20071:CUoqXuxltNm1fo6Y, obfs-param: cd1a920071.microsoft.com, udp: true}
+  - {name: +Netherlands, server: 213.183.51.171, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
   - {name: Azure.US.Vpnpool专属, server: vpnpool.us.xiaocai.ga, port: 443, type: trojan, password: fJMxoPGtPw, sni: vpnpool.us.xiaocai.ga, skip-cert-verify: true, udp: true}
   - {name: Azure.HongKong.2.Vpnpool专属, server: vpnpool.hongkong.2.xiaocai.ga, port: 443, type: trojan, password: 5IGrvisqug, sni: vpnpool.hongkong.2.xiaocai.ga, skip-cert-verify: true, udp: true}
   - {name: 保加利亚 Bulgaria●, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
-  - {name: 土耳其 Turkey★, server: gz2.52168.xyz, port: 2104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
-  - {name: 泰国 Thailand★, server: gz2.52168.xyz, port: 2109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
-  - {name: 澳大利亚 Australia●, server: gz1.52168.xyz, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
-  - {name: 荷兰 Netherlands●, server: gz1.52168.xyz, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
-  - {name: Relay_中国-德国_355, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
   - {name: AZ转移动01-28, server: sl201.jdxx1.com, port: 25985, type: ssr, cipher: chacha20-ietf, password: MaOKEa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 34:qf3R2I, obfs-param: 9455c5822.microsoft.com, udp: true}
-  - {name: 02加拿大∞中转, server: gz1.52168.xyz, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
   - {name: 越南 Vietnam●, server: gz1.52168.xyz, port: 1107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
-  - {name: 俄罗斯 Russia★, server: gz2.52168.xyz, port: 2103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
+  - {name: "[VIP]香港2|广港链路|Netflix", server: gdcm2.relay.qchwnd.moe, port: 44609, type: trojan, password: 3fde9791-48b4-4fc3-841f-6fdf1e73bfa5, sni: gdcm2.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 韩国1, server: kr1.alinkrelay.com, port: 44600, type: trojan, password: 3fde9791-48b4-4fc3-841f-6fdf1e73bfa5, sni: kr1.alinkrelay.com, skip-cert-verify: true, udp: true}
+  - {name: 日本1|BGP|Netflix|1.5x, server: jp.relay.qchwnd.moe, port: 44602, type: trojan, password: 3fde9791-48b4-4fc3-841f-6fdf1e73bfa5, sni: jp.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 日本3|BGP|Netflix, server: jp.relay.qchwnd.moe, port: 44616, type: trojan, password: 3fde9791-48b4-4fc3-841f-6fdf1e73bfa5, sni: jp.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 印度|广港链路, server: gdcm2.relay.qchwnd.moe, port: 44604, type: trojan, password: 3fde9791-48b4-4fc3-841f-6fdf1e73bfa5, sni: gdcm2.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯|BGP|Netflix, server: jp.relay.qchwnd.moe, port: 44606, type: trojan, password: 3fde9791-48b4-4fc3-841f-6fdf1e73bfa5, sni: jp.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: "[VIP]印度尼西亚|广港链路l|Netflix", server: gdcm2.relay.qchwnd.moe, port: 44607, type: trojan, password: 3fde9791-48b4-4fc3-841f-6fdf1e73bfa5, sni: gdcm2.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 台湾|Netflix, server: tw.node.qchwnd.moe, port: 44608, type: trojan, password: 3fde9791-48b4-4fc3-841f-6fdf1e73bfa5, sni: tw.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: "[VIP]台湾|广港链路|Netflix", server: gdcm2.relay.qchwnd.moe, port: 44608, type: trojan, password: 3fde9791-48b4-4fc3-841f-6fdf1e73bfa5, sni: gdcm2.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 美国1|BGP|Netflix|1.5x, server: jp.relay.qchwnd.moe, port: 44610, type: trojan, password: 3fde9791-48b4-4fc3-841f-6fdf1e73bfa5, sni: jp.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: "[VIP]法国|BGP|Netflix", server: jp.relay.qchwnd.moe, port: 44612, type: trojan, password: 3fde9791-48b4-4fc3-841f-6fdf1e73bfa5, sni: jp.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 加拿大, server: ca1.alink.qchwnd.moe, port: 44613, type: trojan, password: 3fde9791-48b4-4fc3-841f-6fdf1e73bfa5, sni: ca1.alink.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: "[VIP]加拿大|BGP", server: jp.relay.qchwnd.moe, port: 44613, type: trojan, password: 3fde9791-48b4-4fc3-841f-6fdf1e73bfa5, sni: jp.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: +日本标准中继+01, server: 120.232.174.85, port: 29147, type: ss, cipher: aes-128-gcm, password: zYkw4mDvUaQLg6xq, udp: true}
+  - {name: +香港标准中继+01^, server: 120.232.174.85, port: 25081, type: ss, cipher: aes-128-gcm, password: zYkw4mDvUaQLg6xq, udp: true}
+  - {name: +香港标准中继+02^, server: 120.232.174.85, port: 24089, type: ss, cipher: aes-128-gcm, password: zYkw4mDvUaQLg6xq, udp: true}
+  - {name: +香港标准中继+03^, server: 120.232.174.85, port: 47985, type: ss, cipher: aes-128-gcm, password: zYkw4mDvUaQLg6xq, udp: true}
+  - {name: +香港标准中继+05^, server: 120.232.174.85, port: 45647, type: ss, cipher: aes-128-gcm, password: zYkw4mDvUaQLg6xq, udp: true}
+  - {name: "[VIP]香港1|广港链路|Netflix", server: gdcm2.relay.qchwnd.moe, port: 44601, type: trojan, password: 3fde9791-48b4-4fc3-841f-6fdf1e73bfa5, sni: gdcm2.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: IS+冰岛Hafnarfjordur, server: 37.235.49.158, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 星河节点, server: 13.70.56.108, port: 19711, type: ss, cipher: chacha20-ietf-poly1305, password: MvZA2RCjAtbY, udp: true}
+  - {name: 春川_Trojan_1, server: www.gomacau.gq, port: 443, type: trojan, password: b5fc9fa9-796d-4185-a316-395ecac04a85, sni: www.gomacau.gq, skip-cert-verify: true, udp: true}
+  - {name: 春川arm1_Trojan_2, server: www.ggchk.ga, port: 443, type: trojan, password: 4ae98d26-b209-4dd5-8e91-bf11d4f10801, sni: www.ggchk.ga, skip-cert-verify: true, udp: true}
+  - {name: 斯巴达_Trojan_4, server: www.nyc3000.ga, port: 443, type: trojan, password: 10fd99c2-c26d-42e2-b73c-601ed051e5f3, sni: www.nyc3000.ga, skip-cert-verify: true, udp: true}
+  - {name: 腾讯云_5, server: www.tokyo2021.ga, port: 443, type: trojan, password: 7a990132-cf76-4ac2-8a3c-681743fa8627, sni: www.tokyo2021.ga, skip-cert-verify: true, udp: true}
+  - {name: 香港 01, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292464:93DWZTu7LU, obfs-param: "", udp: true}
+  - {name: 香港 01 2, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292690:o7iqlcUakC, obfs-param: "", udp: true}
+  - {name: +韩国标准中继+02, server: 120.232.174.85, port: 33201, type: ss, cipher: aes-128-gcm, password: zYkw4mDvUaQLg6xq, udp: true}
+  - {name: 甲骨文东京1_6, server: www.tokyo2023.ga, port: 443, type: trojan, password: 4f7dc540-d244-4e64-af21-4b5bb300add3, sni: www.tokyo2023.ga, skip-cert-verify: true, udp: true}
+  - {name: 甲骨文东京2_7, server: www.seetheworldjp.ga, port: 443, type: trojan, password: f42e1a2e-e650-44f4-8d17-bcb68663da18, sni: www.seetheworldjp.ga, skip-cert-verify: true, udp: true}
+  - {name: 香港01, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292395:UXZgcH2Vmq, obfs-param: "", udp: true}
+  - {name: 香港 01 3, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292464:93DWZTu7LU, obfs-param: "", udp: true}
+  - {name: 香港 01 2 2, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292690:o7iqlcUakC, obfs-param: "", udp: true}
+  - {name: 保加利亚 Bulgaria● 2, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
+  - {name: Relay_中国-德国_355, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
   - {name: 伊朗(绿头外网集团)(Public), server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true, udp: true}
-  - {name: 免费|美国|Youtube专线, server: www.ubear.cyou, port: 443, type: trojan, password: OcI60nd5IrpWe92b, sni: www.ubear.cyou, skip-cert-verify: true, udp: true}
-  - {name: 喵哥美国甲骨文（ss节点）, server: 158.101.23.126, port: 1149, type: ss, cipher: aes-256-gcm, password: miaoge110, udp: true}
-  - {name: gz1.52168.xyz:1111, server: gz1.52168.xyz, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
-  - {name: US_940, server: 142.202.48.7, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1357, server: 142.202.48.7, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1426, server: 142.202.48.7, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1543, server: 142.202.48.7, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1702, server: 142.202.48.7, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: gz2.52168.xyz:2101, server: gz2.52168.xyz, port: 2101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
-  - {name: ZZ_2595, server: 134.195.196.3, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: (Youtube技术分享室)🇩🇪德国, server: 193.108.117.75, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: (Youtube技术分享室)🇩🇪德国 2, server: 193.108.117.75, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: (Youtube技术分享室)🇩🇪德国 3, server: 193.108.117.75, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: (Youtube技术分享室)🇩🇪德国 4, server: 193.108.117.75, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: (Youtube技术分享室)🇩🇪德国 5, server: 193.108.117.75, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: (Youtube技术分享室)🇩🇪德国 6, server: 193.108.117.75, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: (Youtube技术分享室)🇩🇪德国 7, server: 193.108.117.75, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: (Youtube技术分享室)🇩🇪德国 8, server: 193.108.117.75, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 澳大利亚(Youtube技术分享室整理), server: 172.105.187.158, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 香港阿伟科技@TG/油管 14, server: azhk01.cafeisgood.ml, port: 10001, type: ss, cipher: aes-256-gcm, password: 49d8ab2b-4c9f-40d0-9d01-c26bf29be6f7, udp: true}
-  - {name: 香港阿伟科技@TG/油管 15, server: azhk01.cafeisgood.ml, port: 10001, type: ss, cipher: aes-256-gcm, password: 6bce3783-87ae-4bcc-8be3-5bf7c4da3e56, udp: true}
   - {name: "[vip②] 2 新加坡  @nfeng6", server: nn02.nfeng6.pp.ua, port: 60014, type: vmess, uuid: 30fc1a7f-adc2-394f-af55-d876af83fb38, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
   - {name: "[vip②] 7 新加坡 @nfeng6", server: nn03.nfeng6.pp.ua, port: 60024, type: vmess, uuid: 30fc1a7f-adc2-394f-af55-d876af83fb38, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
-  - {name: "[Vip1][V2ray]② 广移中转新加坡", server: 4.paopaoyun.xyz, port: 19104, type: vmess, uuid: 691a7e6a-ba45-30a0-9cf4-e6c0f6d46527, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[Vip1][V2ray]③ 江门中转新加坡", server: 5.paopaoyun.xyz, port: 19105, type: vmess, uuid: 691a7e6a-ba45-30a0-9cf4-e6c0f6d46527, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[Vip1][V2ray]⑫ 电信中转日本", server: 14.paopaoyun.xyz, port: 19114, type: vmess, uuid: 691a7e6a-ba45-30a0-9cf4-e6c0f6d46527, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[Vip1][V2ray]⑯ 广移中转日本", server: 18.paopaoyun.xyz, port: 19118, type: vmess, uuid: 691a7e6a-ba45-30a0-9cf4-e6c0f6d46527, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[Vip1][V2ray]㉑ 电信中转日本", server: 23.paopaoyun.xyz, port: 19123, type: vmess, uuid: 691a7e6a-ba45-30a0-9cf4-e6c0f6d46527, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "⑬ [Vip2][V2ray]广移-中转Azure|日本|动画疯-极速", server: 46.paopaoyun.xyz, port: 19146, type: vmess, uuid: 691a7e6a-ba45-30a0-9cf4-e6c0f6d46527, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡_星河, server: ap.01.ysdns.cyou, port: 22001, type: ss, cipher: aes-128-gcm, password: ac41f43a-452e-49eb-a0ba-3e3c0e6671ed, udp: true}
-  - {name: "[V2ray]Vip3 IPLC专线-游戏|深圳|日本⑦-游戏-极速8K", server: 57.paopaoyun.xyz, port: 19157, type: vmess, uuid: 691a7e6a-ba45-30a0-9cf4-e6c0f6d46527, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[Vip1][V2ray]② 广移中转新加坡 2", server: 4.paopaoyun.xyz, port: 19104, type: vmess, uuid: 691a7e6a-ba45-30a0-9cf4-e6c0f6d46527, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01
-      - HK1(IEPL)+-+沪港国际专线
-      - 華人社區_經紀人CC🍄🍄_1026
-      - 香港 01
-      - 香港 01 2
       - +USA
-      - Netherlands
-      - 香港 01 3
-      - "电报群: https://t.me/emovpn x5"
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - Relay_中国-荷兰_412
-      - jp
+      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
-      - 土耳其 Turkey★
-      - 泰国 Thailand★
-      - 澳大利亚 Australia●
-      - 荷兰 Netherlands●
-      - Relay_中国-德国_355
       - AZ转移动01-28
-      - 02加拿大∞中转
       - 越南 Vietnam●
-      - 俄罗斯 Russia★
+      - "[VIP]香港2|广港链路|Netflix"
+      - 韩国1
+      - 日本1|BGP|Netflix|1.5x
+      - 日本3|BGP|Netflix
+      - 印度|广港链路
+      - 俄罗斯|BGP|Netflix
+      - "[VIP]印度尼西亚|广港链路l|Netflix"
+      - 台湾|Netflix
+      - "[VIP]台湾|广港链路|Netflix"
+      - 美国1|BGP|Netflix|1.5x
+      - "[VIP]法国|BGP|Netflix"
+      - 加拿大
+      - "[VIP]加拿大|BGP"
+      - +日本标准中继+01
+      - +香港标准中继+01^
+      - +香港标准中继+02^
+      - +香港标准中继+03^
+      - +香港标准中继+05^
+      - "[VIP]香港1|广港链路|Netflix"
+      - IS+冰岛Hafnarfjordur
+      - 星河节点
+      - 春川_Trojan_1
+      - 春川arm1_Trojan_2
+      - 斯巴达_Trojan_4
+      - 腾讯云_5
+      - 香港 01
+      - 香港 01 2
+      - +韩国标准中继+02
+      - 甲骨文东京1_6
+      - 甲骨文东京2_7
+      - 香港01
+      - 香港 01 3
+      - 香港 01 2 2
+      - 保加利亚 Bulgaria● 2
+      - Relay_中国-德国_355
       - 伊朗(绿头外网集团)(Public)
-      - 免费|美国|Youtube专线
-      - 喵哥美国甲骨文（ss节点）
-      - gz1.52168.xyz:1111
-      - US_940
-      - US_1357
-      - US_1426
-      - US_1543
-      - US_1702
-      - gz2.52168.xyz:2101
-      - ZZ_2595
-      - (Youtube技术分享室)🇩🇪德国
-      - (Youtube技术分享室)🇩🇪德国 2
-      - (Youtube技术分享室)🇩🇪德国 3
-      - (Youtube技术分享室)🇩🇪德国 4
-      - (Youtube技术分享室)🇩🇪德国 5
-      - (Youtube技术分享室)🇩🇪德国 6
-      - (Youtube技术分享室)🇩🇪德国 7
-      - (Youtube技术分享室)🇩🇪德国 8
-      - 澳大利亚(Youtube技术分享室整理)
-      - 香港阿伟科技@TG/油管 14
-      - 香港阿伟科技@TG/油管 15
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
-      - "[Vip1][V2ray]② 广移中转新加坡"
-      - "[Vip1][V2ray]③ 江门中转新加坡"
-      - "[Vip1][V2ray]⑫ 电信中转日本"
-      - "[Vip1][V2ray]⑯ 广移中转日本"
-      - "[Vip1][V2ray]㉑ 电信中转日本"
-      - ⑬ [Vip2][V2ray]广移-中转Azure|日本|动画疯-极速
-      - 新加坡_星河
-      - "[V2ray]Vip3 IPLC专线-游戏|深圳|日本⑦-游戏-极速8K"
-      - "[Vip1][V2ray]② 广移中转新加坡 2"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港01
-      - HK1(IEPL)+-+沪港国际专线
-      - 華人社區_經紀人CC🍄🍄_1026
-      - 香港 01
-      - 香港 01 2
       - +USA
-      - Netherlands
-      - 香港 01 3
-      - "电报群: https://t.me/emovpn x5"
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - Relay_中国-荷兰_412
-      - jp
+      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
-      - 土耳其 Turkey★
-      - 泰国 Thailand★
-      - 澳大利亚 Australia●
-      - 荷兰 Netherlands●
-      - Relay_中国-德国_355
       - AZ转移动01-28
-      - 02加拿大∞中转
       - 越南 Vietnam●
-      - 俄罗斯 Russia★
+      - "[VIP]香港2|广港链路|Netflix"
+      - 韩国1
+      - 日本1|BGP|Netflix|1.5x
+      - 日本3|BGP|Netflix
+      - 印度|广港链路
+      - 俄罗斯|BGP|Netflix
+      - "[VIP]印度尼西亚|广港链路l|Netflix"
+      - 台湾|Netflix
+      - "[VIP]台湾|广港链路|Netflix"
+      - 美国1|BGP|Netflix|1.5x
+      - "[VIP]法国|BGP|Netflix"
+      - 加拿大
+      - "[VIP]加拿大|BGP"
+      - +日本标准中继+01
+      - +香港标准中继+01^
+      - +香港标准中继+02^
+      - +香港标准中继+03^
+      - +香港标准中继+05^
+      - "[VIP]香港1|广港链路|Netflix"
+      - IS+冰岛Hafnarfjordur
+      - 星河节点
+      - 春川_Trojan_1
+      - 春川arm1_Trojan_2
+      - 斯巴达_Trojan_4
+      - 腾讯云_5
+      - 香港 01
+      - 香港 01 2
+      - +韩国标准中继+02
+      - 甲骨文东京1_6
+      - 甲骨文东京2_7
+      - 香港01
+      - 香港 01 3
+      - 香港 01 2 2
+      - 保加利亚 Bulgaria● 2
+      - Relay_中国-德国_355
       - 伊朗(绿头外网集团)(Public)
-      - 免费|美国|Youtube专线
-      - 喵哥美国甲骨文（ss节点）
-      - gz1.52168.xyz:1111
-      - US_940
-      - US_1357
-      - US_1426
-      - US_1543
-      - US_1702
-      - gz2.52168.xyz:2101
-      - ZZ_2595
-      - (Youtube技术分享室)🇩🇪德国
-      - (Youtube技术分享室)🇩🇪德国 2
-      - (Youtube技术分享室)🇩🇪德国 3
-      - (Youtube技术分享室)🇩🇪德国 4
-      - (Youtube技术分享室)🇩🇪德国 5
-      - (Youtube技术分享室)🇩🇪德国 6
-      - (Youtube技术分享室)🇩🇪德国 7
-      - (Youtube技术分享室)🇩🇪德国 8
-      - 澳大利亚(Youtube技术分享室整理)
-      - 香港阿伟科技@TG/油管 14
-      - 香港阿伟科技@TG/油管 15
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
-      - "[Vip1][V2ray]② 广移中转新加坡"
-      - "[Vip1][V2ray]③ 江门中转新加坡"
-      - "[Vip1][V2ray]⑫ 电信中转日本"
-      - "[Vip1][V2ray]⑯ 广移中转日本"
-      - "[Vip1][V2ray]㉑ 电信中转日本"
-      - ⑬ [Vip2][V2ray]广移-中转Azure|日本|动画疯-极速
-      - 新加坡_星河
-      - "[V2ray]Vip3 IPLC专线-游戏|深圳|日本⑦-游戏-极速8K"
-      - "[Vip1][V2ray]② 广移中转新加坡 2"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01
-      - HK1(IEPL)+-+沪港国际专线
-      - 華人社區_經紀人CC🍄🍄_1026
-      - 香港 01
-      - 香港 01 2
       - +USA
-      - Netherlands
-      - 香港 01 3
-      - "电报群: https://t.me/emovpn x5"
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - Relay_中国-荷兰_412
-      - jp
+      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
-      - 土耳其 Turkey★
-      - 泰国 Thailand★
-      - 澳大利亚 Australia●
-      - 荷兰 Netherlands●
-      - Relay_中国-德国_355
       - AZ转移动01-28
-      - 02加拿大∞中转
       - 越南 Vietnam●
-      - 俄罗斯 Russia★
+      - "[VIP]香港2|广港链路|Netflix"
+      - 韩国1
+      - 日本1|BGP|Netflix|1.5x
+      - 日本3|BGP|Netflix
+      - 印度|广港链路
+      - 俄罗斯|BGP|Netflix
+      - "[VIP]印度尼西亚|广港链路l|Netflix"
+      - 台湾|Netflix
+      - "[VIP]台湾|广港链路|Netflix"
+      - 美国1|BGP|Netflix|1.5x
+      - "[VIP]法国|BGP|Netflix"
+      - 加拿大
+      - "[VIP]加拿大|BGP"
+      - +日本标准中继+01
+      - +香港标准中继+01^
+      - +香港标准中继+02^
+      - +香港标准中继+03^
+      - +香港标准中继+05^
+      - "[VIP]香港1|广港链路|Netflix"
+      - IS+冰岛Hafnarfjordur
+      - 星河节点
+      - 春川_Trojan_1
+      - 春川arm1_Trojan_2
+      - 斯巴达_Trojan_4
+      - 腾讯云_5
+      - 香港 01
+      - 香港 01 2
+      - +韩国标准中继+02
+      - 甲骨文东京1_6
+      - 甲骨文东京2_7
+      - 香港01
+      - 香港 01 3
+      - 香港 01 2 2
+      - 保加利亚 Bulgaria● 2
+      - Relay_中国-德国_355
       - 伊朗(绿头外网集团)(Public)
-      - 免费|美国|Youtube专线
-      - 喵哥美国甲骨文（ss节点）
-      - gz1.52168.xyz:1111
-      - US_940
-      - US_1357
-      - US_1426
-      - US_1543
-      - US_1702
-      - gz2.52168.xyz:2101
-      - ZZ_2595
-      - (Youtube技术分享室)🇩🇪德国
-      - (Youtube技术分享室)🇩🇪德国 2
-      - (Youtube技术分享室)🇩🇪德国 3
-      - (Youtube技术分享室)🇩🇪德国 4
-      - (Youtube技术分享室)🇩🇪德国 5
-      - (Youtube技术分享室)🇩🇪德国 6
-      - (Youtube技术分享室)🇩🇪德国 7
-      - (Youtube技术分享室)🇩🇪德国 8
-      - 澳大利亚(Youtube技术分享室整理)
-      - 香港阿伟科技@TG/油管 14
-      - 香港阿伟科技@TG/油管 15
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
-      - "[Vip1][V2ray]② 广移中转新加坡"
-      - "[Vip1][V2ray]③ 江门中转新加坡"
-      - "[Vip1][V2ray]⑫ 电信中转日本"
-      - "[Vip1][V2ray]⑯ 广移中转日本"
-      - "[Vip1][V2ray]㉑ 电信中转日本"
-      - ⑬ [Vip2][V2ray]广移-中转Azure|日本|动画疯-极速
-      - 新加坡_星河
-      - "[V2ray]Vip3 IPLC专线-游戏|深圳|日本⑦-游戏-极速8K"
-      - "[Vip1][V2ray]② 广移中转新加坡 2"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -276,270 +220,222 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港01
-      - HK1(IEPL)+-+沪港国际专线
-      - 華人社區_經紀人CC🍄🍄_1026
-      - 香港 01
-      - 香港 01 2
       - +USA
-      - Netherlands
-      - 香港 01 3
-      - "电报群: https://t.me/emovpn x5"
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - Relay_中国-荷兰_412
-      - jp
+      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
-      - 土耳其 Turkey★
-      - 泰国 Thailand★
-      - 澳大利亚 Australia●
-      - 荷兰 Netherlands●
-      - Relay_中国-德国_355
       - AZ转移动01-28
-      - 02加拿大∞中转
       - 越南 Vietnam●
-      - 俄罗斯 Russia★
+      - "[VIP]香港2|广港链路|Netflix"
+      - 韩国1
+      - 日本1|BGP|Netflix|1.5x
+      - 日本3|BGP|Netflix
+      - 印度|广港链路
+      - 俄罗斯|BGP|Netflix
+      - "[VIP]印度尼西亚|广港链路l|Netflix"
+      - 台湾|Netflix
+      - "[VIP]台湾|广港链路|Netflix"
+      - 美国1|BGP|Netflix|1.5x
+      - "[VIP]法国|BGP|Netflix"
+      - 加拿大
+      - "[VIP]加拿大|BGP"
+      - +日本标准中继+01
+      - +香港标准中继+01^
+      - +香港标准中继+02^
+      - +香港标准中继+03^
+      - +香港标准中继+05^
+      - "[VIP]香港1|广港链路|Netflix"
+      - IS+冰岛Hafnarfjordur
+      - 星河节点
+      - 春川_Trojan_1
+      - 春川arm1_Trojan_2
+      - 斯巴达_Trojan_4
+      - 腾讯云_5
+      - 香港 01
+      - 香港 01 2
+      - +韩国标准中继+02
+      - 甲骨文东京1_6
+      - 甲骨文东京2_7
+      - 香港01
+      - 香港 01 3
+      - 香港 01 2 2
+      - 保加利亚 Bulgaria● 2
+      - Relay_中国-德国_355
       - 伊朗(绿头外网集团)(Public)
-      - 免费|美国|Youtube专线
-      - 喵哥美国甲骨文（ss节点）
-      - gz1.52168.xyz:1111
-      - US_940
-      - US_1357
-      - US_1426
-      - US_1543
-      - US_1702
-      - gz2.52168.xyz:2101
-      - ZZ_2595
-      - (Youtube技术分享室)🇩🇪德国
-      - (Youtube技术分享室)🇩🇪德国 2
-      - (Youtube技术分享室)🇩🇪德国 3
-      - (Youtube技术分享室)🇩🇪德国 4
-      - (Youtube技术分享室)🇩🇪德国 5
-      - (Youtube技术分享室)🇩🇪德国 6
-      - (Youtube技术分享室)🇩🇪德国 7
-      - (Youtube技术分享室)🇩🇪德国 8
-      - 澳大利亚(Youtube技术分享室整理)
-      - 香港阿伟科技@TG/油管 14
-      - 香港阿伟科技@TG/油管 15
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
-      - "[Vip1][V2ray]② 广移中转新加坡"
-      - "[Vip1][V2ray]③ 江门中转新加坡"
-      - "[Vip1][V2ray]⑫ 电信中转日本"
-      - "[Vip1][V2ray]⑯ 广移中转日本"
-      - "[Vip1][V2ray]㉑ 电信中转日本"
-      - ⑬ [Vip2][V2ray]广移-中转Azure|日本|动画疯-极速
-      - 新加坡_星河
-      - "[V2ray]Vip3 IPLC专线-游戏|深圳|日本⑦-游戏-极速8K"
-      - "[Vip1][V2ray]② 广移中转新加坡 2"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港01
-      - HK1(IEPL)+-+沪港国际专线
+      - "[VIP]香港2|广港链路|Netflix"
+      - 印度|广港链路
+      - "[VIP]印度尼西亚|广港链路l|Netflix"
+      - 台湾|Netflix
+      - "[VIP]台湾|广港链路|Netflix"
+      - +香港标准中继+01^
+      - +香港标准中继+02^
+      - +香港标准中继+03^
+      - +香港标准中继+05^
+      - "[VIP]香港1|广港链路|Netflix"
       - 香港 01
       - 香港 01 2
+      - 香港01
       - 香港 01 3
-      - 香港阿伟科技@TG/油管 14
-      - 香港阿伟科技@TG/油管 15
+      - 香港 01 2 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港01
-      - HK1(IEPL)+-+沪港国际专线
-      - 華人社區_經紀人CC🍄🍄_1026
-      - 香港 01
-      - 香港 01 2
       - +USA
-      - Netherlands
-      - 香港 01 3
-      - "电报群: https://t.me/emovpn x5"
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - Relay_中国-荷兰_412
-      - jp
+      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
-      - 土耳其 Turkey★
-      - 泰国 Thailand★
-      - 澳大利亚 Australia●
-      - 荷兰 Netherlands●
-      - Relay_中国-德国_355
       - AZ转移动01-28
-      - 02加拿大∞中转
       - 越南 Vietnam●
-      - 俄罗斯 Russia★
+      - "[VIP]香港2|广港链路|Netflix"
+      - 韩国1
+      - 日本1|BGP|Netflix|1.5x
+      - 日本3|BGP|Netflix
+      - 印度|广港链路
+      - 俄罗斯|BGP|Netflix
+      - "[VIP]印度尼西亚|广港链路l|Netflix"
+      - 台湾|Netflix
+      - "[VIP]台湾|广港链路|Netflix"
+      - 美国1|BGP|Netflix|1.5x
+      - "[VIP]法国|BGP|Netflix"
+      - 加拿大
+      - "[VIP]加拿大|BGP"
+      - +日本标准中继+01
+      - +香港标准中继+01^
+      - +香港标准中继+02^
+      - +香港标准中继+03^
+      - +香港标准中继+05^
+      - "[VIP]香港1|广港链路|Netflix"
+      - IS+冰岛Hafnarfjordur
+      - 星河节点
+      - 春川_Trojan_1
+      - 春川arm1_Trojan_2
+      - 斯巴达_Trojan_4
+      - 腾讯云_5
+      - 香港 01
+      - 香港 01 2
+      - +韩国标准中继+02
+      - 甲骨文东京1_6
+      - 甲骨文东京2_7
+      - 香港01
+      - 香港 01 3
+      - 香港 01 2 2
+      - 保加利亚 Bulgaria● 2
+      - Relay_中国-德国_355
       - 伊朗(绿头外网集团)(Public)
-      - 免费|美国|Youtube专线
-      - 喵哥美国甲骨文（ss节点）
-      - gz1.52168.xyz:1111
-      - US_940
-      - US_1357
-      - US_1426
-      - US_1543
-      - US_1702
-      - gz2.52168.xyz:2101
-      - ZZ_2595
-      - (Youtube技术分享室)🇩🇪德国
-      - (Youtube技术分享室)🇩🇪德国 2
-      - (Youtube技术分享室)🇩🇪德国 3
-      - (Youtube技术分享室)🇩🇪德国 4
-      - (Youtube技术分享室)🇩🇪德国 5
-      - (Youtube技术分享室)🇩🇪德国 6
-      - (Youtube技术分享室)🇩🇪德国 7
-      - (Youtube技术分享室)🇩🇪德国 8
-      - 澳大利亚(Youtube技术分享室整理)
-      - 香港阿伟科技@TG/油管 14
-      - 香港阿伟科技@TG/油管 15
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
-      - "[Vip1][V2ray]② 广移中转新加坡"
-      - "[Vip1][V2ray]③ 江门中转新加坡"
-      - "[Vip1][V2ray]⑫ 电信中转日本"
-      - "[Vip1][V2ray]⑯ 广移中转日本"
-      - "[Vip1][V2ray]㉑ 电信中转日本"
-      - ⑬ [Vip2][V2ray]广移-中转Azure|日本|动画疯-极速
-      - 新加坡_星河
-      - "[V2ray]Vip3 IPLC专线-游戏|深圳|日本⑦-游戏-极速8K"
-      - "[Vip1][V2ray]② 广移中转新加坡 2"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港01
-      - HK1(IEPL)+-+沪港国际专线
-      - 華人社區_經紀人CC🍄🍄_1026
-      - 香港 01
-      - 香港 01 2
       - +USA
-      - Netherlands
-      - 香港 01 3
-      - "电报群: https://t.me/emovpn x5"
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - Relay_中国-荷兰_412
-      - jp
+      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
-      - 土耳其 Turkey★
-      - 泰国 Thailand★
-      - 澳大利亚 Australia●
-      - 荷兰 Netherlands●
-      - Relay_中国-德国_355
       - AZ转移动01-28
-      - 02加拿大∞中转
       - 越南 Vietnam●
-      - 俄罗斯 Russia★
+      - "[VIP]香港2|广港链路|Netflix"
+      - 韩国1
+      - 日本1|BGP|Netflix|1.5x
+      - 日本3|BGP|Netflix
+      - 印度|广港链路
+      - 俄罗斯|BGP|Netflix
+      - "[VIP]印度尼西亚|广港链路l|Netflix"
+      - 台湾|Netflix
+      - "[VIP]台湾|广港链路|Netflix"
+      - 美国1|BGP|Netflix|1.5x
+      - "[VIP]法国|BGP|Netflix"
+      - 加拿大
+      - "[VIP]加拿大|BGP"
+      - +日本标准中继+01
+      - +香港标准中继+01^
+      - +香港标准中继+02^
+      - +香港标准中继+03^
+      - +香港标准中继+05^
+      - "[VIP]香港1|广港链路|Netflix"
+      - IS+冰岛Hafnarfjordur
+      - 星河节点
+      - 春川_Trojan_1
+      - 春川arm1_Trojan_2
+      - 斯巴达_Trojan_4
+      - 腾讯云_5
+      - 香港 01
+      - 香港 01 2
+      - +韩国标准中继+02
+      - 甲骨文东京1_6
+      - 甲骨文东京2_7
+      - 香港01
+      - 香港 01 3
+      - 香港 01 2 2
+      - 保加利亚 Bulgaria● 2
+      - Relay_中国-德国_355
       - 伊朗(绿头外网集团)(Public)
-      - 免费|美国|Youtube专线
-      - 喵哥美国甲骨文（ss节点）
-      - gz1.52168.xyz:1111
-      - US_940
-      - US_1357
-      - US_1426
-      - US_1543
-      - US_1702
-      - gz2.52168.xyz:2101
-      - ZZ_2595
-      - (Youtube技术分享室)🇩🇪德国
-      - (Youtube技术分享室)🇩🇪德国 2
-      - (Youtube技术分享室)🇩🇪德国 3
-      - (Youtube技术分享室)🇩🇪德国 4
-      - (Youtube技术分享室)🇩🇪德国 5
-      - (Youtube技术分享室)🇩🇪德国 6
-      - (Youtube技术分享室)🇩🇪德国 7
-      - (Youtube技术分享室)🇩🇪德国 8
-      - 澳大利亚(Youtube技术分享室整理)
-      - 香港阿伟科技@TG/油管 14
-      - 香港阿伟科技@TG/油管 15
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
-      - "[Vip1][V2ray]② 广移中转新加坡"
-      - "[Vip1][V2ray]③ 江门中转新加坡"
-      - "[Vip1][V2ray]⑫ 电信中转日本"
-      - "[Vip1][V2ray]⑯ 广移中转日本"
-      - "[Vip1][V2ray]㉑ 电信中转日本"
-      - ⑬ [Vip2][V2ray]广移-中转Azure|日本|动画疯-极速
-      - 新加坡_星河
-      - "[V2ray]Vip3 IPLC专线-游戏|深圳|日本⑦-游戏-极速8K"
-      - "[Vip1][V2ray]② 广移中转新加坡 2"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港01
-      - HK1(IEPL)+-+沪港国际专线
-      - 華人社區_經紀人CC🍄🍄_1026
-      - 香港 01
-      - 香港 01 2
       - +USA
-      - Netherlands
-      - 香港 01 3
-      - "电报群: https://t.me/emovpn x5"
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - Relay_中国-荷兰_412
-      - jp
+      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
-      - 土耳其 Turkey★
-      - 泰国 Thailand★
-      - 澳大利亚 Australia●
-      - 荷兰 Netherlands●
-      - Relay_中国-德国_355
       - AZ转移动01-28
-      - 02加拿大∞中转
       - 越南 Vietnam●
-      - 俄罗斯 Russia★
+      - "[VIP]香港2|广港链路|Netflix"
+      - 韩国1
+      - 日本1|BGP|Netflix|1.5x
+      - 日本3|BGP|Netflix
+      - 印度|广港链路
+      - 俄罗斯|BGP|Netflix
+      - "[VIP]印度尼西亚|广港链路l|Netflix"
+      - 台湾|Netflix
+      - "[VIP]台湾|广港链路|Netflix"
+      - 美国1|BGP|Netflix|1.5x
+      - "[VIP]法国|BGP|Netflix"
+      - 加拿大
+      - "[VIP]加拿大|BGP"
+      - +日本标准中继+01
+      - +香港标准中继+01^
+      - +香港标准中继+02^
+      - +香港标准中继+03^
+      - +香港标准中继+05^
+      - "[VIP]香港1|广港链路|Netflix"
+      - IS+冰岛Hafnarfjordur
+      - 星河节点
+      - 春川_Trojan_1
+      - 春川arm1_Trojan_2
+      - 斯巴达_Trojan_4
+      - 腾讯云_5
+      - 香港 01
+      - 香港 01 2
+      - +韩国标准中继+02
+      - 甲骨文东京1_6
+      - 甲骨文东京2_7
+      - 香港01
+      - 香港 01 3
+      - 香港 01 2 2
+      - 保加利亚 Bulgaria● 2
+      - Relay_中国-德国_355
       - 伊朗(绿头外网集团)(Public)
-      - 免费|美国|Youtube专线
-      - 喵哥美国甲骨文（ss节点）
-      - gz1.52168.xyz:1111
-      - US_940
-      - US_1357
-      - US_1426
-      - US_1543
-      - US_1702
-      - gz2.52168.xyz:2101
-      - ZZ_2595
-      - (Youtube技术分享室)🇩🇪德国
-      - (Youtube技术分享室)🇩🇪德国 2
-      - (Youtube技术分享室)🇩🇪德国 3
-      - (Youtube技术分享室)🇩🇪德国 4
-      - (Youtube技术分享室)🇩🇪德国 5
-      - (Youtube技术分享室)🇩🇪德国 6
-      - (Youtube技术分享室)🇩🇪德国 7
-      - (Youtube技术分享室)🇩🇪德国 8
-      - 澳大利亚(Youtube技术分享室整理)
-      - 香港阿伟科技@TG/油管 14
-      - 香港阿伟科技@TG/油管 15
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
-      - "[Vip1][V2ray]② 广移中转新加坡"
-      - "[Vip1][V2ray]③ 江门中转新加坡"
-      - "[Vip1][V2ray]⑫ 电信中转日本"
-      - "[Vip1][V2ray]⑯ 广移中转日本"
-      - "[Vip1][V2ray]㉑ 电信中转日本"
-      - ⑬ [Vip2][V2ray]广移-中转Azure|日本|动画疯-极速
-      - 新加坡_星河
-      - "[V2ray]Vip3 IPLC专线-游戏|深圳|日本⑦-游戏-极速8K"
-      - "[Vip1][V2ray]② 广移中转新加坡 2"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -555,65 +451,51 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港01
-      - HK1(IEPL)+-+沪港国际专线
-      - 華人社區_經紀人CC🍄🍄_1026
-      - 香港 01
-      - 香港 01 2
       - +USA
-      - Netherlands
-      - 香港 01 3
-      - "电报群: https://t.me/emovpn x5"
-      - 美国【YouTube由零開始】
-      - 美国【YouTube由零開始】 2
-      - 美国【YouTube由零開始】 3
-      - Relay_中国-荷兰_412
-      - jp
+      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
-      - 土耳其 Turkey★
-      - 泰国 Thailand★
-      - 澳大利亚 Australia●
-      - 荷兰 Netherlands●
-      - Relay_中国-德国_355
       - AZ转移动01-28
-      - 02加拿大∞中转
       - 越南 Vietnam●
-      - 俄罗斯 Russia★
+      - "[VIP]香港2|广港链路|Netflix"
+      - 韩国1
+      - 日本1|BGP|Netflix|1.5x
+      - 日本3|BGP|Netflix
+      - 印度|广港链路
+      - 俄罗斯|BGP|Netflix
+      - "[VIP]印度尼西亚|广港链路l|Netflix"
+      - 台湾|Netflix
+      - "[VIP]台湾|广港链路|Netflix"
+      - 美国1|BGP|Netflix|1.5x
+      - "[VIP]法国|BGP|Netflix"
+      - 加拿大
+      - "[VIP]加拿大|BGP"
+      - +日本标准中继+01
+      - +香港标准中继+01^
+      - +香港标准中继+02^
+      - +香港标准中继+03^
+      - +香港标准中继+05^
+      - "[VIP]香港1|广港链路|Netflix"
+      - IS+冰岛Hafnarfjordur
+      - 星河节点
+      - 春川_Trojan_1
+      - 春川arm1_Trojan_2
+      - 斯巴达_Trojan_4
+      - 腾讯云_5
+      - 香港 01
+      - 香港 01 2
+      - +韩国标准中继+02
+      - 甲骨文东京1_6
+      - 甲骨文东京2_7
+      - 香港01
+      - 香港 01 3
+      - 香港 01 2 2
+      - 保加利亚 Bulgaria● 2
+      - Relay_中国-德国_355
       - 伊朗(绿头外网集团)(Public)
-      - 免费|美国|Youtube专线
-      - 喵哥美国甲骨文（ss节点）
-      - gz1.52168.xyz:1111
-      - US_940
-      - US_1357
-      - US_1426
-      - US_1543
-      - US_1702
-      - gz2.52168.xyz:2101
-      - ZZ_2595
-      - (Youtube技术分享室)🇩🇪德国
-      - (Youtube技术分享室)🇩🇪德国 2
-      - (Youtube技术分享室)🇩🇪德国 3
-      - (Youtube技术分享室)🇩🇪德国 4
-      - (Youtube技术分享室)🇩🇪德国 5
-      - (Youtube技术分享室)🇩🇪德国 6
-      - (Youtube技术分享室)🇩🇪德国 7
-      - (Youtube技术分享室)🇩🇪德国 8
-      - 澳大利亚(Youtube技术分享室整理)
-      - 香港阿伟科技@TG/油管 14
-      - 香港阿伟科技@TG/油管 15
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
-      - "[Vip1][V2ray]② 广移中转新加坡"
-      - "[Vip1][V2ray]③ 江门中转新加坡"
-      - "[Vip1][V2ray]⑫ 电信中转日本"
-      - "[Vip1][V2ray]⑯ 广移中转日本"
-      - "[Vip1][V2ray]㉑ 电信中转日本"
-      - ⑬ [Vip2][V2ray]广移-中转Azure|日本|动画疯-极速
-      - 新加坡_星河
-      - "[V2ray]Vip3 IPLC专线-游戏|深圳|日本⑦-游戏-极速8K"
-      - "[Vip1][V2ray]② 广移中转新加坡 2"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
