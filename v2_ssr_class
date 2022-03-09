@@ -6,7 +6,6 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: +USA, server: 62.216.91.229, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: +Netherlands, server: 213.183.51.171, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
   - {name: Azure.US.Vpnpool专属, server: vpnpool.us.xiaocai.ga, port: 443, type: trojan, password: fJMxoPGtPw, sni: vpnpool.us.xiaocai.ga, skip-cert-verify: true, udp: true}
   - {name: Azure.HongKong.2.Vpnpool专属, server: vpnpool.hongkong.2.xiaocai.ga, port: 443, type: trojan, password: 5IGrvisqug, sni: vpnpool.hongkong.2.xiaocai.ga, skip-cert-verify: true, udp: true}
   - {name: 保加利亚 Bulgaria●, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
@@ -19,19 +18,11 @@ proxies:
   - {name: IS+冰岛Hafnarfjordur, server: 37.235.49.158, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: 星河节点, server: 13.70.56.108, port: 19711, type: ss, cipher: chacha20-ietf-poly1305, password: MvZA2RCjAtbY, udp: true}
   - {name: 春川_Trojan_1, server: www.gomacau.gq, port: 443, type: trojan, password: b5fc9fa9-796d-4185-a316-395ecac04a85, sni: www.gomacau.gq, skip-cert-verify: true, udp: true}
-  - {name: 春川arm1_Trojan_2, server: www.ggchk.ga, port: 443, type: trojan, password: 4ae98d26-b209-4dd5-8e91-bf11d4f10801, sni: www.ggchk.ga, skip-cert-verify: true, udp: true}
-  - {name: 斯巴达_Trojan_4, server: www.nyc3000.ga, port: 443, type: trojan, password: 10fd99c2-c26d-42e2-b73c-601ed051e5f3, sni: www.nyc3000.ga, skip-cert-verify: true, udp: true}
   - {name: 腾讯云_5, server: www.tokyo2021.ga, port: 443, type: trojan, password: 7a990132-cf76-4ac2-8a3c-681743fa8627, sni: www.tokyo2021.ga, skip-cert-verify: true, udp: true}
-  - {name: +韩国标准中继+02, server: 120.232.174.85, port: 33201, type: ss, cipher: aes-128-gcm, password: zYkw4mDvUaQLg6xq, udp: true}
-  - {name: 甲骨文东京1_6, server: www.tokyo2023.ga, port: 443, type: trojan, password: 4f7dc540-d244-4e64-af21-4b5bb300add3, sni: www.tokyo2023.ga, skip-cert-verify: true, udp: true}
-  - {name: 甲骨文东京2_7, server: www.seetheworldjp.ga, port: 443, type: trojan, password: f42e1a2e-e650-44f4-8d17-bcb68663da18, sni: www.seetheworldjp.ga, skip-cert-verify: true, udp: true}
-  - {name: Relay_中国-德国_355, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
   - {name: "[vip②] 2 新加坡  @nfeng6", server: nn02.nfeng6.pp.ua, port: 60014, type: vmess, uuid: 30fc1a7f-adc2-394f-af55-d876af83fb38, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
   - {name: "[vip②] 7 新加坡 @nfeng6", server: nn03.nfeng6.pp.ua, port: 60024, type: vmess, uuid: 30fc1a7f-adc2-394f-af55-d876af83fb38, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
   - {name: Lv1.广移A->日本B4, server: node1.lmars.top, port: 10004, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
   - {name: 華人社區_經紀人CC🍄🍄_1026, server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: 保加利亚 Bulgaria● 2, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
-  - {name: 越南 Vietnam● 2, server: gz1.52168.xyz, port: 1107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
   - {name: "[vip①] ⑮ 日本 @nfeng6", server: nn02.nfeng6.pp.ua, port: 60031, type: vmess, uuid: 30fc1a7f-adc2-394f-af55-d876af83fb38, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
   - {name: "[vip②] ⑩ 香港 @nfeng6", server: nn03.nfeng6.pp.ua, port: 60029, type: vmess, uuid: 30fc1a7f-adc2-394f-af55-d876af83fb38, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
   - {name: "[vip②] ⑭ 新加坡 @nfeng6", server: nn01.nfeng6.pp.ua, port: 60038, type: vmess, uuid: 30fc1a7f-adc2-394f-af55-d876af83fb38, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/nfeng6}, udp: true}
@@ -44,17 +35,9 @@ proxies:
   - {name: 动态BGP+IPLC_新加坡02(原生)_3x_12, server: flbgpi.yixuedianzishu.com, port: 58522, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 动态BGP+IPLC_台湾08(原生)_3x_21, server: flbgpi.yixuedianzishu.com, port: 58538, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: _星河, server: iepl04.zerohost.live, port: 11003, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl04.zerohost.live}, udp: true}
-  - {name: +韩国标准中继+01, server: 120.232.174.85, port: 33200, type: ss, cipher: aes-128-gcm, password: zYkw4mDvUaQLg6xq, udp: true}
   - {name: MK+北马其顿Skopje, server: 46.183.185.15, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: 动态BGP+IPLC_香港02(原生)_3x_7 2, server: flbgpi.yixuedianzishu.com, port: 58502, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 动态BGP+IPLC_台湾07(原生)_3x_20, server: flbgpi.yixuedianzishu.com, port: 58537, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-SG-DigitalOcean, server: 168.63.132.78, port: 52213, type: vmess, uuid: 517bc975-c1c4-3815-9c52-a26d401b43b3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-SG-DigitalOcean 2, server: 13.75.80.253, port: 52215, type: vmess, uuid: 517bc975-c1c4-3815-9c52-a26d401b43b3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-SG-DigitalOcean 3, server: 20.24.103.128, port: 52299, type: vmess, uuid: 517bc975-c1c4-3815-9c52-a26d401b43b3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-Tokyo-Linode, server: 20.187.85.198, port: 52226, type: vmess, uuid: 517bc975-c1c4-3815-9c52-a26d401b43b3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-Tokyo-Linode 2, server: 20.187.85.198, port: 11221, type: vmess, uuid: 517bc975-c1c4-3815-9c52-a26d401b43b3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-香港腾讯云, server: 13.72.192.117, port: 52329, type: vmess, uuid: 517bc975-c1c4-3815-9c52-a26d401b43b3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-香港腾讯云 2, server: 20.24.72.11, port: 52332, type: vmess, uuid: 517bc975-c1c4-3815-9c52-a26d401b43b3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: _CA_加拿大, server: 134.195.196.81, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: _CA_加拿大 2, server: 134.195.196.81, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: _CA_加拿大 3, server: 134.195.196.81, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
@@ -63,23 +46,78 @@ proxies:
   - {name: 免费|美国, server: www.ubear.cyou, port: 443, type: trojan, password: lfALK7T70o0tnsn4, sni: www.ubear.cyou, skip-cert-verify: true, udp: true}
   - {name: 香港 01, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292464:93DWZTu7LU, obfs-param: "", udp: true}
   - {name: 香港 01 2, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292690:o7iqlcUakC, obfs-param: "", udp: true}
-  - {name: 标准|香港04解锁|Z214, server: zfd-cn4.ddnsnode.com, port: 16114, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-Tokyo-Linode 3, server: 20.205.40.15, port: 52227, type: vmess, uuid: 517bc975-c1c4-3815-9c52-a26d401b43b3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-Tokyo-Linode 4, server: 20.205.32.206, port: 52281, type: vmess, uuid: 517bc975-c1c4-3815-9c52-a26d401b43b3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CA_加拿大 6, server: 134.195.196.81, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "[Vip1][V2ray]④ BGB中转新加坡", server: 6.paopaoyun.xyz, port: 19106, type: vmess, uuid: a2c5ffbc-95c2-3a54-8637-9e9c8e0e5fa4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: _CA_加拿大 7, server: 134.195.196.81, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 香港01, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292395:UXZgcH2Vmq, obfs-param: "", udp: true}
   - {name: 印度阿伟科技@TG/油管, server: in02.holiganfan.com, port: 10088, type: trojan, password: cbb104a6-a43f-42d6-b897-474906361501, sni: in02.holiganfan.com, skip-cert-verify: true, udp: true}
-  - {name: 香港阿伟科技@TG/油管, server: tj-04.t8737.shop, port: 11223, type: trojan, password: 8bc20f77-e398-4802-977f-dfad280a3763, sni: tj-04.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 香港阿伟科技@TG/油管 2, server: azhk01.cafeisgood.ml, port: 10001, type: ss, cipher: aes-256-gcm, password: b6fdada2-dfef-414b-b663-026f1b73600b, udp: true}
   - {name: 香港阿伟科技@TG/油管 3, server: azhk01.cafeisgood.ml, port: 10001, type: ss, cipher: aes-256-gcm, password: 871dae08-bc44-4879-8216-ef34bcf762ca, udp: true}
-  - {name: 香港阿伟科技@TG/油管 4, server: tj-01.t8737.shop, port: 11223, type: trojan, password: 685a6f31-346b-4df0-9b9f-f222e9bf45bd, sni: tj-01.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: 香港阿伟科技@TG/油管 5, server: azhk01.cafeisgood.ml, port: 10001, type: ss, cipher: aes-256-gcm, password: 07ef7546-97a9-4fce-87eb-d57c782f16e2, udp: true}
   - {name: 香港阿伟科技@TG/油管 6, server: tj-02.t8737.shop, port: 11223, type: trojan, password: 686b0d42-1938-4dc0-bb06-df1342199c58, sni: tj-02.t8737.shop, skip-cert-verify: true, udp: true}
   - {name: 香港阿伟科技@TG/油管 7, server: azhk01.cafeisgood.ml, port: 10001, type: ss, cipher: aes-256-gcm, password: 26330633-9053-48af-829f-5d0f3f65653b, udp: true}
-  - {name: 韩国阿伟科技@TG/油管, server: tj-08.t8737.shop, port: 11223, type: trojan, password: 8bc20f77-e398-4802-977f-dfad280a3763, sni: tj-08.t8737.shop, skip-cert-verify: true, udp: true}
   - {name: 韩国阿伟科技@TG/油管 2, server: tj-07.t8737.shop, port: 11223, type: trojan, password: d1fcee5c-da23-4343-b98a-6b822e341669, sni: tj-07.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: Azure.HongKong.2.Vpnpool专属 2, server: vpnpool.hongkong.2.xiaocai.ga, port: 80, type: vmess, uuid: f6fffc7f-ab53-4ab7-af70-50923a525798, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: vpnpool.hongkong.2.xiaocai.ga}, udp: true}
+  - {name: 保加利亚 Bulgaria● 2, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
+  - {name: 越南 Vietnam● 2, server: gz1.52168.xyz, port: 1107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
+  - {name: 动态BGP+IPLC_香港01_3x_1, server: flbgpi.yixuedianzishu.com, port: 58511, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港02_3x_2, server: flbgpi.yixuedianzishu.com, port: 58512, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港03_3x_3, server: flbgpi.yixuedianzishu.com, port: 58513, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港04_3x_4, server: flbgpi.yixuedianzishu.com, port: 58514, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港05_3x_5, server: flbgpi.yixuedianzishu.com, port: 58515, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港01(原生)_3x_6 2, server: flbgpi.yixuedianzishu.com, port: 58501, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港02(原生)_3x_7 3, server: flbgpi.yixuedianzishu.com, port: 58502, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港04(原生)_3x_9 2, server: flbgpi.yixuedianzishu.com, port: 58504, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港05(原生)_3x_10 2, server: flbgpi.yixuedianzishu.com, port: 58505, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾01(原生)_3x_14, server: flbgpi.yixuedianzishu.com, port: 58531, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾02(原生)_3x_15, server: flbgpi.yixuedianzishu.com, port: 58532, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾04(原生)_3x_17, server: flbgpi.yixuedianzishu.com, port: 58534, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾05(原生)_3x_18, server: flbgpi.yixuedianzishu.com, port: 58535, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾06(原生)_3x_19, server: flbgpi.yixuedianzishu.com, port: 58536, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾07(原生)_3x_20 2, server: flbgpi.yixuedianzishu.com, port: 58537, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾08(原生)_3x_21 2, server: flbgpi.yixuedianzishu.com, port: 58538, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾09(原生)_3x_22, server: flbgpi.yixuedianzishu.com, port: 58539, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾10(原生)_3x_23, server: flbgpi.yixuedianzishu.com, port: 58540, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港01_3x_1 2, server: flbgpi.yixuedianzishu.com, port: 58511, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港02_3x_2 2, server: flbgpi.yixuedianzishu.com, port: 58512, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港03_3x_3 2, server: flbgpi.yixuedianzishu.com, port: 58513, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港04_3x_4 2, server: flbgpi.yixuedianzishu.com, port: 58514, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港05_3x_5 2, server: flbgpi.yixuedianzishu.com, port: 58515, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港01(原生)_3x_6 3, server: flbgpi.yixuedianzishu.com, port: 58501, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港02(原生)_3x_7 4, server: flbgpi.yixuedianzishu.com, port: 58502, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港03(原生)_3x_8 2, server: flbgpi.yixuedianzishu.com, port: 58503, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港04(原生)_3x_9 3, server: flbgpi.yixuedianzishu.com, port: 58504, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_香港05(原生)_3x_10 3, server: flbgpi.yixuedianzishu.com, port: 58505, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_新加坡02(原生)_3x_12 2, server: flbgpi.yixuedianzishu.com, port: 58522, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾01(原生)_3x_14 2, server: flbgpi.yixuedianzishu.com, port: 58531, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾02(原生)_3x_15 2, server: flbgpi.yixuedianzishu.com, port: 58532, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾03(原生)_3x_16, server: flbgpi.yixuedianzishu.com, port: 58533, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾06(原生)_3x_19 2, server: flbgpi.yixuedianzishu.com, port: 58536, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾07(原生)_3x_20 3, server: flbgpi.yixuedianzishu.com, port: 58537, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾08(原生)_3x_21 3, server: flbgpi.yixuedianzishu.com, port: 58538, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾09(原生)_3x_22 2, server: flbgpi.yixuedianzishu.com, port: 58539, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 动态BGP+IPLC_台湾10(原生)_3x_23 2, server: flbgpi.yixuedianzishu.com, port: 58540, type: vmess, uuid: b3184351-0436-30bf-abc1-a9b551b1cb99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 01 3, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292464:93DWZTu7LU, obfs-param: "", udp: true}
+  - {name: 香港 01 4, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292690:o7iqlcUakC, obfs-param: "", udp: true}
+  - {name: 狮城 | Azure InfiniPort, server: 20.212.150.16, port: 11610, type: vmess, uuid: dd57bb2b-a9d4-4c6b-9a83-1c4289e70a65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_🇭🇰, server: 104.208.109.91, port: 10119, type: ss, cipher: chacha20-ietf-poly1305, password: dRUCE7YmtoVp, udp: true}
+  - {name: _CN_中国->🇸🇬_SG_新加坡, server: 120.197.85.73, port: 2061, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
+  - {name: _CN_中国->🇯🇵_JP_日本, server: 120.197.85.73, port: 5016, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
+  - {name: _US_美国, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国 2, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 3, server: 38.143.66.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _CN_中国->🇸🇬_SG_新加坡 2, server: 120.197.85.73, port: 2065, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港, server: 120.197.85.73, port: 2041, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
+  - {name: _US_美国 4, server: 142.202.48.81, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾, server: 120.197.85.73, port: 5012, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
+  - {name: _US_美国 5, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港 2, server: 120.197.85.73, port: 2092, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国, server: 120.197.85.73, port: 5009, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港 3, server: 120.197.85.73, port: 2040, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国 2, server: 120.197.85.73, port: 2064, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国 3, server: 120.197.85.73, port: 5010, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
+  - {name: _CA_加拿大 6, server: 134.195.196.81, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CA_加拿大 8, server: 134.195.196.81, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国 4, server: 120.197.85.73, port: 2063, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
+  - {name: _CA_加拿大 9, server: 134.195.196.81, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _CN_中国->🇸🇬_SG_新加坡 3, server: 120.197.85.73, port: 2062, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
+  - {name: _CN_中国->🇺🇸_US_美国 5, server: 120.197.85.73, port: 5019, type: ss, cipher: chacha20-ietf-poly1305, password: 708de56e-ada7-4bab-86ce-dadd4beabd62, udp: true}
+  - {name: _CA_加拿大 10, server: 134.195.196.81, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -87,7 +125,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - +USA
-      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
@@ -100,19 +137,11 @@ proxy-groups:
       - IS+冰岛Hafnarfjordur
       - 星河节点
       - 春川_Trojan_1
-      - 春川arm1_Trojan_2
-      - 斯巴达_Trojan_4
       - 腾讯云_5
-      - +韩国标准中继+02
-      - 甲骨文东京1_6
-      - 甲骨文东京2_7
-      - Relay_中国-德国_355
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
       - Lv1.广移A->日本B4
       - 華人社區_經紀人CC🍄🍄_1026
-      - 保加利亚 Bulgaria● 2
-      - 越南 Vietnam● 2
       - "[vip①] ⑮ 日本 @nfeng6"
       - "[vip②] ⑩ 香港 @nfeng6"
       - "[vip②] ⑭ 新加坡 @nfeng6"
@@ -125,17 +154,9 @@ proxy-groups:
       - 动态BGP+IPLC_新加坡02(原生)_3x_12
       - 动态BGP+IPLC_台湾08(原生)_3x_21
       - _星河
-      - +韩国标准中继+01
       - MK+北马其顿Skopje
       - 动态BGP+IPLC_香港02(原生)_3x_7 2
       - 动态BGP+IPLC_台湾07(原生)_3x_20
-      - vpnhat-SG-DigitalOcean
-      - vpnhat-SG-DigitalOcean 2
-      - vpnhat-SG-DigitalOcean 3
-      - vpnhat-Tokyo-Linode
-      - vpnhat-Tokyo-Linode 2
-      - vpnhat-香港腾讯云
-      - vpnhat-香港腾讯云 2
       - _CA_加拿大
       - _CA_加拿大 2
       - _CA_加拿大 3
@@ -144,30 +165,84 @@ proxy-groups:
       - 免费|美国
       - 香港 01
       - 香港 01 2
-      - 标准|香港04解锁|Z214
-      - vpnhat-Tokyo-Linode 3
-      - vpnhat-Tokyo-Linode 4
-      - _CA_加拿大 6
-      - "[Vip1][V2ray]④ BGB中转新加坡"
       - _CA_加拿大 7
-      - 香港01
       - 印度阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管 2
       - 香港阿伟科技@TG/油管 3
-      - 香港阿伟科技@TG/油管 4
-      - 香港阿伟科技@TG/油管 5
       - 香港阿伟科技@TG/油管 6
       - 香港阿伟科技@TG/油管 7
-      - 韩国阿伟科技@TG/油管
       - 韩国阿伟科技@TG/油管 2
+      - Azure.HongKong.2.Vpnpool专属 2
+      - 保加利亚 Bulgaria● 2
+      - 越南 Vietnam● 2
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6 2
+      - 动态BGP+IPLC_香港02(原生)_3x_7 3
+      - 动态BGP+IPLC_香港04(原生)_3x_9 2
+      - 动态BGP+IPLC_香港05(原生)_3x_10 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 2
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 2
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_香港01_3x_1 2
+      - 动态BGP+IPLC_香港02_3x_2 2
+      - 动态BGP+IPLC_香港03_3x_3 2
+      - 动态BGP+IPLC_香港04_3x_4 2
+      - 动态BGP+IPLC_香港05_3x_5 2
+      - 动态BGP+IPLC_香港01(原生)_3x_6 3
+      - 动态BGP+IPLC_香港02(原生)_3x_7 4
+      - 动态BGP+IPLC_香港03(原生)_3x_8 2
+      - 动态BGP+IPLC_香港04(原生)_3x_9 3
+      - 动态BGP+IPLC_香港05(原生)_3x_10 3
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14 2
+      - 动态BGP+IPLC_台湾02(原生)_3x_15 2
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾06(原生)_3x_19 2
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 3
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 3
+      - 动态BGP+IPLC_台湾09(原生)_3x_22 2
+      - 动态BGP+IPLC_台湾10(原生)_3x_23 2
+      - 香港 01 3
+      - 香港 01 4
+      - 狮城 | Azure InfiniPort
+      - HK_🇭🇰
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇯🇵_JP_日本
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _CN_中国->🇸🇬_SG_新加坡 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _US_美国 4
+      - _CN_中国->🇹🇼_TW_台湾
+      - _US_美国 5
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇺🇸_US_美国 2
+      - _CN_中国->🇺🇸_US_美国 3
+      - _CA_加拿大 6
+      - _CA_加拿大 8
+      - _CN_中国->🇺🇸_US_美国 4
+      - _CA_加拿大 9
+      - _CN_中国->🇸🇬_SG_新加坡 3
+      - _CN_中国->🇺🇸_US_美国 5
+      - _CA_加拿大 10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - +USA
-      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
@@ -180,19 +255,11 @@ proxy-groups:
       - IS+冰岛Hafnarfjordur
       - 星河节点
       - 春川_Trojan_1
-      - 春川arm1_Trojan_2
-      - 斯巴达_Trojan_4
       - 腾讯云_5
-      - +韩国标准中继+02
-      - 甲骨文东京1_6
-      - 甲骨文东京2_7
-      - Relay_中国-德国_355
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
       - Lv1.广移A->日本B4
       - 華人社區_經紀人CC🍄🍄_1026
-      - 保加利亚 Bulgaria● 2
-      - 越南 Vietnam● 2
       - "[vip①] ⑮ 日本 @nfeng6"
       - "[vip②] ⑩ 香港 @nfeng6"
       - "[vip②] ⑭ 新加坡 @nfeng6"
@@ -205,17 +272,9 @@ proxy-groups:
       - 动态BGP+IPLC_新加坡02(原生)_3x_12
       - 动态BGP+IPLC_台湾08(原生)_3x_21
       - _星河
-      - +韩国标准中继+01
       - MK+北马其顿Skopje
       - 动态BGP+IPLC_香港02(原生)_3x_7 2
       - 动态BGP+IPLC_台湾07(原生)_3x_20
-      - vpnhat-SG-DigitalOcean
-      - vpnhat-SG-DigitalOcean 2
-      - vpnhat-SG-DigitalOcean 3
-      - vpnhat-Tokyo-Linode
-      - vpnhat-Tokyo-Linode 2
-      - vpnhat-香港腾讯云
-      - vpnhat-香港腾讯云 2
       - _CA_加拿大
       - _CA_加拿大 2
       - _CA_加拿大 3
@@ -224,23 +283,78 @@ proxy-groups:
       - 免费|美国
       - 香港 01
       - 香港 01 2
-      - 标准|香港04解锁|Z214
-      - vpnhat-Tokyo-Linode 3
-      - vpnhat-Tokyo-Linode 4
-      - _CA_加拿大 6
-      - "[Vip1][V2ray]④ BGB中转新加坡"
       - _CA_加拿大 7
-      - 香港01
       - 印度阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管 2
       - 香港阿伟科技@TG/油管 3
-      - 香港阿伟科技@TG/油管 4
-      - 香港阿伟科技@TG/油管 5
       - 香港阿伟科技@TG/油管 6
       - 香港阿伟科技@TG/油管 7
-      - 韩国阿伟科技@TG/油管
       - 韩国阿伟科技@TG/油管 2
+      - Azure.HongKong.2.Vpnpool专属 2
+      - 保加利亚 Bulgaria● 2
+      - 越南 Vietnam● 2
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6 2
+      - 动态BGP+IPLC_香港02(原生)_3x_7 3
+      - 动态BGP+IPLC_香港04(原生)_3x_9 2
+      - 动态BGP+IPLC_香港05(原生)_3x_10 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 2
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 2
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_香港01_3x_1 2
+      - 动态BGP+IPLC_香港02_3x_2 2
+      - 动态BGP+IPLC_香港03_3x_3 2
+      - 动态BGP+IPLC_香港04_3x_4 2
+      - 动态BGP+IPLC_香港05_3x_5 2
+      - 动态BGP+IPLC_香港01(原生)_3x_6 3
+      - 动态BGP+IPLC_香港02(原生)_3x_7 4
+      - 动态BGP+IPLC_香港03(原生)_3x_8 2
+      - 动态BGP+IPLC_香港04(原生)_3x_9 3
+      - 动态BGP+IPLC_香港05(原生)_3x_10 3
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14 2
+      - 动态BGP+IPLC_台湾02(原生)_3x_15 2
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾06(原生)_3x_19 2
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 3
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 3
+      - 动态BGP+IPLC_台湾09(原生)_3x_22 2
+      - 动态BGP+IPLC_台湾10(原生)_3x_23 2
+      - 香港 01 3
+      - 香港 01 4
+      - 狮城 | Azure InfiniPort
+      - HK_🇭🇰
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇯🇵_JP_日本
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _CN_中国->🇸🇬_SG_新加坡 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _US_美国 4
+      - _CN_中国->🇹🇼_TW_台湾
+      - _US_美国 5
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇺🇸_US_美国 2
+      - _CN_中国->🇺🇸_US_美国 3
+      - _CA_加拿大 6
+      - _CA_加拿大 8
+      - _CN_中国->🇺🇸_US_美国 4
+      - _CA_加拿大 9
+      - _CN_中国->🇸🇬_SG_新加坡 3
+      - _CN_中国->🇺🇸_US_美国 5
+      - _CA_加拿大 10
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -248,7 +362,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - +USA
-      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
@@ -261,19 +374,11 @@ proxy-groups:
       - IS+冰岛Hafnarfjordur
       - 星河节点
       - 春川_Trojan_1
-      - 春川arm1_Trojan_2
-      - 斯巴达_Trojan_4
       - 腾讯云_5
-      - +韩国标准中继+02
-      - 甲骨文东京1_6
-      - 甲骨文东京2_7
-      - Relay_中国-德国_355
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
       - Lv1.广移A->日本B4
       - 華人社區_經紀人CC🍄🍄_1026
-      - 保加利亚 Bulgaria● 2
-      - 越南 Vietnam● 2
       - "[vip①] ⑮ 日本 @nfeng6"
       - "[vip②] ⑩ 香港 @nfeng6"
       - "[vip②] ⑭ 新加坡 @nfeng6"
@@ -286,17 +391,9 @@ proxy-groups:
       - 动态BGP+IPLC_新加坡02(原生)_3x_12
       - 动态BGP+IPLC_台湾08(原生)_3x_21
       - _星河
-      - +韩国标准中继+01
       - MK+北马其顿Skopje
       - 动态BGP+IPLC_香港02(原生)_3x_7 2
       - 动态BGP+IPLC_台湾07(原生)_3x_20
-      - vpnhat-SG-DigitalOcean
-      - vpnhat-SG-DigitalOcean 2
-      - vpnhat-SG-DigitalOcean 3
-      - vpnhat-Tokyo-Linode
-      - vpnhat-Tokyo-Linode 2
-      - vpnhat-香港腾讯云
-      - vpnhat-香港腾讯云 2
       - _CA_加拿大
       - _CA_加拿大 2
       - _CA_加拿大 3
@@ -305,23 +402,78 @@ proxy-groups:
       - 免费|美国
       - 香港 01
       - 香港 01 2
-      - 标准|香港04解锁|Z214
-      - vpnhat-Tokyo-Linode 3
-      - vpnhat-Tokyo-Linode 4
-      - _CA_加拿大 6
-      - "[Vip1][V2ray]④ BGB中转新加坡"
       - _CA_加拿大 7
-      - 香港01
       - 印度阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管 2
       - 香港阿伟科技@TG/油管 3
-      - 香港阿伟科技@TG/油管 4
-      - 香港阿伟科技@TG/油管 5
       - 香港阿伟科技@TG/油管 6
       - 香港阿伟科技@TG/油管 7
-      - 韩国阿伟科技@TG/油管
       - 韩国阿伟科技@TG/油管 2
+      - Azure.HongKong.2.Vpnpool专属 2
+      - 保加利亚 Bulgaria● 2
+      - 越南 Vietnam● 2
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6 2
+      - 动态BGP+IPLC_香港02(原生)_3x_7 3
+      - 动态BGP+IPLC_香港04(原生)_3x_9 2
+      - 动态BGP+IPLC_香港05(原生)_3x_10 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 2
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 2
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_香港01_3x_1 2
+      - 动态BGP+IPLC_香港02_3x_2 2
+      - 动态BGP+IPLC_香港03_3x_3 2
+      - 动态BGP+IPLC_香港04_3x_4 2
+      - 动态BGP+IPLC_香港05_3x_5 2
+      - 动态BGP+IPLC_香港01(原生)_3x_6 3
+      - 动态BGP+IPLC_香港02(原生)_3x_7 4
+      - 动态BGP+IPLC_香港03(原生)_3x_8 2
+      - 动态BGP+IPLC_香港04(原生)_3x_9 3
+      - 动态BGP+IPLC_香港05(原生)_3x_10 3
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14 2
+      - 动态BGP+IPLC_台湾02(原生)_3x_15 2
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾06(原生)_3x_19 2
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 3
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 3
+      - 动态BGP+IPLC_台湾09(原生)_3x_22 2
+      - 动态BGP+IPLC_台湾10(原生)_3x_23 2
+      - 香港 01 3
+      - 香港 01 4
+      - 狮城 | Azure InfiniPort
+      - HK_🇭🇰
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇯🇵_JP_日本
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _CN_中国->🇸🇬_SG_新加坡 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _US_美国 4
+      - _CN_中国->🇹🇼_TW_台湾
+      - _US_美国 5
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇺🇸_US_美国 2
+      - _CN_中国->🇺🇸_US_美国 3
+      - _CA_加拿大 6
+      - _CA_加拿大 8
+      - _CN_中国->🇺🇸_US_美国 4
+      - _CA_加拿大 9
+      - _CN_中国->🇸🇬_SG_新加坡 3
+      - _CN_中国->🇺🇸_US_美国 5
+      - _CA_加拿大 10
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -341,7 +493,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - +USA
-      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
@@ -354,19 +505,11 @@ proxy-groups:
       - IS+冰岛Hafnarfjordur
       - 星河节点
       - 春川_Trojan_1
-      - 春川arm1_Trojan_2
-      - 斯巴达_Trojan_4
       - 腾讯云_5
-      - +韩国标准中继+02
-      - 甲骨文东京1_6
-      - 甲骨文东京2_7
-      - Relay_中国-德国_355
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
       - Lv1.广移A->日本B4
       - 華人社區_經紀人CC🍄🍄_1026
-      - 保加利亚 Bulgaria● 2
-      - 越南 Vietnam● 2
       - "[vip①] ⑮ 日本 @nfeng6"
       - "[vip②] ⑩ 香港 @nfeng6"
       - "[vip②] ⑭ 新加坡 @nfeng6"
@@ -379,17 +522,9 @@ proxy-groups:
       - 动态BGP+IPLC_新加坡02(原生)_3x_12
       - 动态BGP+IPLC_台湾08(原生)_3x_21
       - _星河
-      - +韩国标准中继+01
       - MK+北马其顿Skopje
       - 动态BGP+IPLC_香港02(原生)_3x_7 2
       - 动态BGP+IPLC_台湾07(原生)_3x_20
-      - vpnhat-SG-DigitalOcean
-      - vpnhat-SG-DigitalOcean 2
-      - vpnhat-SG-DigitalOcean 3
-      - vpnhat-Tokyo-Linode
-      - vpnhat-Tokyo-Linode 2
-      - vpnhat-香港腾讯云
-      - vpnhat-香港腾讯云 2
       - _CA_加拿大
       - _CA_加拿大 2
       - _CA_加拿大 3
@@ -398,23 +533,78 @@ proxy-groups:
       - 免费|美国
       - 香港 01
       - 香港 01 2
-      - 标准|香港04解锁|Z214
-      - vpnhat-Tokyo-Linode 3
-      - vpnhat-Tokyo-Linode 4
-      - _CA_加拿大 6
-      - "[Vip1][V2ray]④ BGB中转新加坡"
       - _CA_加拿大 7
-      - 香港01
       - 印度阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管 2
       - 香港阿伟科技@TG/油管 3
-      - 香港阿伟科技@TG/油管 4
-      - 香港阿伟科技@TG/油管 5
       - 香港阿伟科技@TG/油管 6
       - 香港阿伟科技@TG/油管 7
-      - 韩国阿伟科技@TG/油管
       - 韩国阿伟科技@TG/油管 2
+      - Azure.HongKong.2.Vpnpool专属 2
+      - 保加利亚 Bulgaria● 2
+      - 越南 Vietnam● 2
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6 2
+      - 动态BGP+IPLC_香港02(原生)_3x_7 3
+      - 动态BGP+IPLC_香港04(原生)_3x_9 2
+      - 动态BGP+IPLC_香港05(原生)_3x_10 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 2
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 2
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_香港01_3x_1 2
+      - 动态BGP+IPLC_香港02_3x_2 2
+      - 动态BGP+IPLC_香港03_3x_3 2
+      - 动态BGP+IPLC_香港04_3x_4 2
+      - 动态BGP+IPLC_香港05_3x_5 2
+      - 动态BGP+IPLC_香港01(原生)_3x_6 3
+      - 动态BGP+IPLC_香港02(原生)_3x_7 4
+      - 动态BGP+IPLC_香港03(原生)_3x_8 2
+      - 动态BGP+IPLC_香港04(原生)_3x_9 3
+      - 动态BGP+IPLC_香港05(原生)_3x_10 3
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14 2
+      - 动态BGP+IPLC_台湾02(原生)_3x_15 2
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾06(原生)_3x_19 2
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 3
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 3
+      - 动态BGP+IPLC_台湾09(原生)_3x_22 2
+      - 动态BGP+IPLC_台湾10(原生)_3x_23 2
+      - 香港 01 3
+      - 香港 01 4
+      - 狮城 | Azure InfiniPort
+      - HK_🇭🇰
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇯🇵_JP_日本
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _CN_中国->🇸🇬_SG_新加坡 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _US_美国 4
+      - _CN_中国->🇹🇼_TW_台湾
+      - _US_美国 5
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇺🇸_US_美国 2
+      - _CN_中国->🇺🇸_US_美国 3
+      - _CA_加拿大 6
+      - _CA_加拿大 8
+      - _CN_中国->🇺🇸_US_美国 4
+      - _CA_加拿大 9
+      - _CN_中国->🇸🇬_SG_新加坡 3
+      - _CN_中国->🇺🇸_US_美国 5
+      - _CA_加拿大 10
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -432,19 +622,53 @@ proxy-groups:
       - 动态BGP+IPLC_台湾08(原生)_3x_21
       - 动态BGP+IPLC_香港02(原生)_3x_7 2
       - 动态BGP+IPLC_台湾07(原生)_3x_20
-      - vpnhat-香港腾讯云
-      - vpnhat-香港腾讯云 2
       - 香港 01
       - 香港 01 2
-      - 标准|香港04解锁|Z214
-      - 香港01
-      - 香港阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管 2
       - 香港阿伟科技@TG/油管 3
-      - 香港阿伟科技@TG/油管 4
-      - 香港阿伟科技@TG/油管 5
       - 香港阿伟科技@TG/油管 6
       - 香港阿伟科技@TG/油管 7
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6 2
+      - 动态BGP+IPLC_香港02(原生)_3x_7 3
+      - 动态BGP+IPLC_香港04(原生)_3x_9 2
+      - 动态BGP+IPLC_香港05(原生)_3x_10 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 2
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 2
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_香港01_3x_1 2
+      - 动态BGP+IPLC_香港02_3x_2 2
+      - 动态BGP+IPLC_香港03_3x_3 2
+      - 动态BGP+IPLC_香港04_3x_4 2
+      - 动态BGP+IPLC_香港05_3x_5 2
+      - 动态BGP+IPLC_香港01(原生)_3x_6 3
+      - 动态BGP+IPLC_香港02(原生)_3x_7 4
+      - 动态BGP+IPLC_香港03(原生)_3x_8 2
+      - 动态BGP+IPLC_香港04(原生)_3x_9 3
+      - 动态BGP+IPLC_香港05(原生)_3x_10 3
+      - 动态BGP+IPLC_台湾01(原生)_3x_14 2
+      - 动态BGP+IPLC_台湾02(原生)_3x_15 2
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾06(原生)_3x_19 2
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 3
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 3
+      - 动态BGP+IPLC_台湾09(原生)_3x_22 2
+      - 动态BGP+IPLC_台湾10(原生)_3x_23 2
+      - 香港 01 3
+      - 香港 01 4
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇹🇼_TW_台湾
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇭🇰_HK_香港 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -452,7 +676,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - +USA
-      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
@@ -465,19 +688,11 @@ proxy-groups:
       - IS+冰岛Hafnarfjordur
       - 星河节点
       - 春川_Trojan_1
-      - 春川arm1_Trojan_2
-      - 斯巴达_Trojan_4
       - 腾讯云_5
-      - +韩国标准中继+02
-      - 甲骨文东京1_6
-      - 甲骨文东京2_7
-      - Relay_中国-德国_355
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
       - Lv1.广移A->日本B4
       - 華人社區_經紀人CC🍄🍄_1026
-      - 保加利亚 Bulgaria● 2
-      - 越南 Vietnam● 2
       - "[vip①] ⑮ 日本 @nfeng6"
       - "[vip②] ⑩ 香港 @nfeng6"
       - "[vip②] ⑭ 新加坡 @nfeng6"
@@ -490,17 +705,9 @@ proxy-groups:
       - 动态BGP+IPLC_新加坡02(原生)_3x_12
       - 动态BGP+IPLC_台湾08(原生)_3x_21
       - _星河
-      - +韩国标准中继+01
       - MK+北马其顿Skopje
       - 动态BGP+IPLC_香港02(原生)_3x_7 2
       - 动态BGP+IPLC_台湾07(原生)_3x_20
-      - vpnhat-SG-DigitalOcean
-      - vpnhat-SG-DigitalOcean 2
-      - vpnhat-SG-DigitalOcean 3
-      - vpnhat-Tokyo-Linode
-      - vpnhat-Tokyo-Linode 2
-      - vpnhat-香港腾讯云
-      - vpnhat-香港腾讯云 2
       - _CA_加拿大
       - _CA_加拿大 2
       - _CA_加拿大 3
@@ -509,30 +716,84 @@ proxy-groups:
       - 免费|美国
       - 香港 01
       - 香港 01 2
-      - 标准|香港04解锁|Z214
-      - vpnhat-Tokyo-Linode 3
-      - vpnhat-Tokyo-Linode 4
-      - _CA_加拿大 6
-      - "[Vip1][V2ray]④ BGB中转新加坡"
       - _CA_加拿大 7
-      - 香港01
       - 印度阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管 2
       - 香港阿伟科技@TG/油管 3
-      - 香港阿伟科技@TG/油管 4
-      - 香港阿伟科技@TG/油管 5
       - 香港阿伟科技@TG/油管 6
       - 香港阿伟科技@TG/油管 7
-      - 韩国阿伟科技@TG/油管
       - 韩国阿伟科技@TG/油管 2
+      - Azure.HongKong.2.Vpnpool专属 2
+      - 保加利亚 Bulgaria● 2
+      - 越南 Vietnam● 2
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6 2
+      - 动态BGP+IPLC_香港02(原生)_3x_7 3
+      - 动态BGP+IPLC_香港04(原生)_3x_9 2
+      - 动态BGP+IPLC_香港05(原生)_3x_10 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 2
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 2
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_香港01_3x_1 2
+      - 动态BGP+IPLC_香港02_3x_2 2
+      - 动态BGP+IPLC_香港03_3x_3 2
+      - 动态BGP+IPLC_香港04_3x_4 2
+      - 动态BGP+IPLC_香港05_3x_5 2
+      - 动态BGP+IPLC_香港01(原生)_3x_6 3
+      - 动态BGP+IPLC_香港02(原生)_3x_7 4
+      - 动态BGP+IPLC_香港03(原生)_3x_8 2
+      - 动态BGP+IPLC_香港04(原生)_3x_9 3
+      - 动态BGP+IPLC_香港05(原生)_3x_10 3
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14 2
+      - 动态BGP+IPLC_台湾02(原生)_3x_15 2
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾06(原生)_3x_19 2
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 3
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 3
+      - 动态BGP+IPLC_台湾09(原生)_3x_22 2
+      - 动态BGP+IPLC_台湾10(原生)_3x_23 2
+      - 香港 01 3
+      - 香港 01 4
+      - 狮城 | Azure InfiniPort
+      - HK_🇭🇰
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇯🇵_JP_日本
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _CN_中国->🇸🇬_SG_新加坡 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _US_美国 4
+      - _CN_中国->🇹🇼_TW_台湾
+      - _US_美国 5
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇺🇸_US_美国 2
+      - _CN_中国->🇺🇸_US_美国 3
+      - _CA_加拿大 6
+      - _CA_加拿大 8
+      - _CN_中国->🇺🇸_US_美国 4
+      - _CA_加拿大 9
+      - _CN_中国->🇸🇬_SG_新加坡 3
+      - _CN_中国->🇺🇸_US_美国 5
+      - _CA_加拿大 10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - +USA
-      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
@@ -545,19 +806,11 @@ proxy-groups:
       - IS+冰岛Hafnarfjordur
       - 星河节点
       - 春川_Trojan_1
-      - 春川arm1_Trojan_2
-      - 斯巴达_Trojan_4
       - 腾讯云_5
-      - +韩国标准中继+02
-      - 甲骨文东京1_6
-      - 甲骨文东京2_7
-      - Relay_中国-德国_355
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
       - Lv1.广移A->日本B4
       - 華人社區_經紀人CC🍄🍄_1026
-      - 保加利亚 Bulgaria● 2
-      - 越南 Vietnam● 2
       - "[vip①] ⑮ 日本 @nfeng6"
       - "[vip②] ⑩ 香港 @nfeng6"
       - "[vip②] ⑭ 新加坡 @nfeng6"
@@ -570,17 +823,9 @@ proxy-groups:
       - 动态BGP+IPLC_新加坡02(原生)_3x_12
       - 动态BGP+IPLC_台湾08(原生)_3x_21
       - _星河
-      - +韩国标准中继+01
       - MK+北马其顿Skopje
       - 动态BGP+IPLC_香港02(原生)_3x_7 2
       - 动态BGP+IPLC_台湾07(原生)_3x_20
-      - vpnhat-SG-DigitalOcean
-      - vpnhat-SG-DigitalOcean 2
-      - vpnhat-SG-DigitalOcean 3
-      - vpnhat-Tokyo-Linode
-      - vpnhat-Tokyo-Linode 2
-      - vpnhat-香港腾讯云
-      - vpnhat-香港腾讯云 2
       - _CA_加拿大
       - _CA_加拿大 2
       - _CA_加拿大 3
@@ -589,23 +834,78 @@ proxy-groups:
       - 免费|美国
       - 香港 01
       - 香港 01 2
-      - 标准|香港04解锁|Z214
-      - vpnhat-Tokyo-Linode 3
-      - vpnhat-Tokyo-Linode 4
-      - _CA_加拿大 6
-      - "[Vip1][V2ray]④ BGB中转新加坡"
       - _CA_加拿大 7
-      - 香港01
       - 印度阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管 2
       - 香港阿伟科技@TG/油管 3
-      - 香港阿伟科技@TG/油管 4
-      - 香港阿伟科技@TG/油管 5
       - 香港阿伟科技@TG/油管 6
       - 香港阿伟科技@TG/油管 7
-      - 韩国阿伟科技@TG/油管
       - 韩国阿伟科技@TG/油管 2
+      - Azure.HongKong.2.Vpnpool专属 2
+      - 保加利亚 Bulgaria● 2
+      - 越南 Vietnam● 2
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6 2
+      - 动态BGP+IPLC_香港02(原生)_3x_7 3
+      - 动态BGP+IPLC_香港04(原生)_3x_9 2
+      - 动态BGP+IPLC_香港05(原生)_3x_10 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 2
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 2
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_香港01_3x_1 2
+      - 动态BGP+IPLC_香港02_3x_2 2
+      - 动态BGP+IPLC_香港03_3x_3 2
+      - 动态BGP+IPLC_香港04_3x_4 2
+      - 动态BGP+IPLC_香港05_3x_5 2
+      - 动态BGP+IPLC_香港01(原生)_3x_6 3
+      - 动态BGP+IPLC_香港02(原生)_3x_7 4
+      - 动态BGP+IPLC_香港03(原生)_3x_8 2
+      - 动态BGP+IPLC_香港04(原生)_3x_9 3
+      - 动态BGP+IPLC_香港05(原生)_3x_10 3
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14 2
+      - 动态BGP+IPLC_台湾02(原生)_3x_15 2
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾06(原生)_3x_19 2
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 3
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 3
+      - 动态BGP+IPLC_台湾09(原生)_3x_22 2
+      - 动态BGP+IPLC_台湾10(原生)_3x_23 2
+      - 香港 01 3
+      - 香港 01 4
+      - 狮城 | Azure InfiniPort
+      - HK_🇭🇰
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇯🇵_JP_日本
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _CN_中国->🇸🇬_SG_新加坡 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _US_美国 4
+      - _CN_中国->🇹🇼_TW_台湾
+      - _US_美国 5
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇺🇸_US_美国 2
+      - _CN_中国->🇺🇸_US_美国 3
+      - _CA_加拿大 6
+      - _CA_加拿大 8
+      - _CN_中国->🇺🇸_US_美国 4
+      - _CA_加拿大 9
+      - _CN_中国->🇸🇬_SG_新加坡 3
+      - _CN_中国->🇺🇸_US_美国 5
+      - _CA_加拿大 10
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -613,7 +913,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - +USA
-      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
@@ -626,19 +925,11 @@ proxy-groups:
       - IS+冰岛Hafnarfjordur
       - 星河节点
       - 春川_Trojan_1
-      - 春川arm1_Trojan_2
-      - 斯巴达_Trojan_4
       - 腾讯云_5
-      - +韩国标准中继+02
-      - 甲骨文东京1_6
-      - 甲骨文东京2_7
-      - Relay_中国-德国_355
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
       - Lv1.广移A->日本B4
       - 華人社區_經紀人CC🍄🍄_1026
-      - 保加利亚 Bulgaria● 2
-      - 越南 Vietnam● 2
       - "[vip①] ⑮ 日本 @nfeng6"
       - "[vip②] ⑩ 香港 @nfeng6"
       - "[vip②] ⑭ 新加坡 @nfeng6"
@@ -651,17 +942,9 @@ proxy-groups:
       - 动态BGP+IPLC_新加坡02(原生)_3x_12
       - 动态BGP+IPLC_台湾08(原生)_3x_21
       - _星河
-      - +韩国标准中继+01
       - MK+北马其顿Skopje
       - 动态BGP+IPLC_香港02(原生)_3x_7 2
       - 动态BGP+IPLC_台湾07(原生)_3x_20
-      - vpnhat-SG-DigitalOcean
-      - vpnhat-SG-DigitalOcean 2
-      - vpnhat-SG-DigitalOcean 3
-      - vpnhat-Tokyo-Linode
-      - vpnhat-Tokyo-Linode 2
-      - vpnhat-香港腾讯云
-      - vpnhat-香港腾讯云 2
       - _CA_加拿大
       - _CA_加拿大 2
       - _CA_加拿大 3
@@ -670,23 +953,78 @@ proxy-groups:
       - 免费|美国
       - 香港 01
       - 香港 01 2
-      - 标准|香港04解锁|Z214
-      - vpnhat-Tokyo-Linode 3
-      - vpnhat-Tokyo-Linode 4
-      - _CA_加拿大 6
-      - "[Vip1][V2ray]④ BGB中转新加坡"
       - _CA_加拿大 7
-      - 香港01
       - 印度阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管 2
       - 香港阿伟科技@TG/油管 3
-      - 香港阿伟科技@TG/油管 4
-      - 香港阿伟科技@TG/油管 5
       - 香港阿伟科技@TG/油管 6
       - 香港阿伟科技@TG/油管 7
-      - 韩国阿伟科技@TG/油管
       - 韩国阿伟科技@TG/油管 2
+      - Azure.HongKong.2.Vpnpool专属 2
+      - 保加利亚 Bulgaria● 2
+      - 越南 Vietnam● 2
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6 2
+      - 动态BGP+IPLC_香港02(原生)_3x_7 3
+      - 动态BGP+IPLC_香港04(原生)_3x_9 2
+      - 动态BGP+IPLC_香港05(原生)_3x_10 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 2
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 2
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_香港01_3x_1 2
+      - 动态BGP+IPLC_香港02_3x_2 2
+      - 动态BGP+IPLC_香港03_3x_3 2
+      - 动态BGP+IPLC_香港04_3x_4 2
+      - 动态BGP+IPLC_香港05_3x_5 2
+      - 动态BGP+IPLC_香港01(原生)_3x_6 3
+      - 动态BGP+IPLC_香港02(原生)_3x_7 4
+      - 动态BGP+IPLC_香港03(原生)_3x_8 2
+      - 动态BGP+IPLC_香港04(原生)_3x_9 3
+      - 动态BGP+IPLC_香港05(原生)_3x_10 3
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14 2
+      - 动态BGP+IPLC_台湾02(原生)_3x_15 2
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾06(原生)_3x_19 2
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 3
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 3
+      - 动态BGP+IPLC_台湾09(原生)_3x_22 2
+      - 动态BGP+IPLC_台湾10(原生)_3x_23 2
+      - 香港 01 3
+      - 香港 01 4
+      - 狮城 | Azure InfiniPort
+      - HK_🇭🇰
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇯🇵_JP_日本
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _CN_中国->🇸🇬_SG_新加坡 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _US_美国 4
+      - _CN_中国->🇹🇼_TW_台湾
+      - _US_美国 5
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇺🇸_US_美国 2
+      - _CN_中国->🇺🇸_US_美国 3
+      - _CA_加拿大 6
+      - _CA_加拿大 8
+      - _CN_中国->🇺🇸_US_美国 4
+      - _CA_加拿大 9
+      - _CN_中国->🇸🇬_SG_新加坡 3
+      - _CN_中国->🇺🇸_US_美国 5
+      - _CA_加拿大 10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -703,7 +1041,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - +USA
-      - +Netherlands
       - Azure.US.Vpnpool专属
       - Azure.HongKong.2.Vpnpool专属
       - 保加利亚 Bulgaria●
@@ -716,19 +1053,11 @@ proxy-groups:
       - IS+冰岛Hafnarfjordur
       - 星河节点
       - 春川_Trojan_1
-      - 春川arm1_Trojan_2
-      - 斯巴达_Trojan_4
       - 腾讯云_5
-      - +韩国标准中继+02
-      - 甲骨文东京1_6
-      - 甲骨文东京2_7
-      - Relay_中国-德国_355
       - "[vip②] 2 新加坡  @nfeng6"
       - "[vip②] 7 新加坡 @nfeng6"
       - Lv1.广移A->日本B4
       - 華人社區_經紀人CC🍄🍄_1026
-      - 保加利亚 Bulgaria● 2
-      - 越南 Vietnam● 2
       - "[vip①] ⑮ 日本 @nfeng6"
       - "[vip②] ⑩ 香港 @nfeng6"
       - "[vip②] ⑭ 新加坡 @nfeng6"
@@ -741,17 +1070,9 @@ proxy-groups:
       - 动态BGP+IPLC_新加坡02(原生)_3x_12
       - 动态BGP+IPLC_台湾08(原生)_3x_21
       - _星河
-      - +韩国标准中继+01
       - MK+北马其顿Skopje
       - 动态BGP+IPLC_香港02(原生)_3x_7 2
       - 动态BGP+IPLC_台湾07(原生)_3x_20
-      - vpnhat-SG-DigitalOcean
-      - vpnhat-SG-DigitalOcean 2
-      - vpnhat-SG-DigitalOcean 3
-      - vpnhat-Tokyo-Linode
-      - vpnhat-Tokyo-Linode 2
-      - vpnhat-香港腾讯云
-      - vpnhat-香港腾讯云 2
       - _CA_加拿大
       - _CA_加拿大 2
       - _CA_加拿大 3
@@ -760,23 +1081,78 @@ proxy-groups:
       - 免费|美国
       - 香港 01
       - 香港 01 2
-      - 标准|香港04解锁|Z214
-      - vpnhat-Tokyo-Linode 3
-      - vpnhat-Tokyo-Linode 4
-      - _CA_加拿大 6
-      - "[Vip1][V2ray]④ BGB中转新加坡"
       - _CA_加拿大 7
-      - 香港01
       - 印度阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管
-      - 香港阿伟科技@TG/油管 2
       - 香港阿伟科技@TG/油管 3
-      - 香港阿伟科技@TG/油管 4
-      - 香港阿伟科技@TG/油管 5
       - 香港阿伟科技@TG/油管 6
       - 香港阿伟科技@TG/油管 7
-      - 韩国阿伟科技@TG/油管
       - 韩国阿伟科技@TG/油管 2
+      - Azure.HongKong.2.Vpnpool专属 2
+      - 保加利亚 Bulgaria● 2
+      - 越南 Vietnam● 2
+      - 动态BGP+IPLC_香港01_3x_1
+      - 动态BGP+IPLC_香港02_3x_2
+      - 动态BGP+IPLC_香港03_3x_3
+      - 动态BGP+IPLC_香港04_3x_4
+      - 动态BGP+IPLC_香港05_3x_5
+      - 动态BGP+IPLC_香港01(原生)_3x_6 2
+      - 动态BGP+IPLC_香港02(原生)_3x_7 3
+      - 动态BGP+IPLC_香港04(原生)_3x_9 2
+      - 动态BGP+IPLC_香港05(原生)_3x_10 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14
+      - 动态BGP+IPLC_台湾02(原生)_3x_15
+      - 动态BGP+IPLC_台湾04(原生)_3x_17
+      - 动态BGP+IPLC_台湾05(原生)_3x_18
+      - 动态BGP+IPLC_台湾06(原生)_3x_19
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 2
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 2
+      - 动态BGP+IPLC_台湾09(原生)_3x_22
+      - 动态BGP+IPLC_台湾10(原生)_3x_23
+      - 动态BGP+IPLC_香港01_3x_1 2
+      - 动态BGP+IPLC_香港02_3x_2 2
+      - 动态BGP+IPLC_香港03_3x_3 2
+      - 动态BGP+IPLC_香港04_3x_4 2
+      - 动态BGP+IPLC_香港05_3x_5 2
+      - 动态BGP+IPLC_香港01(原生)_3x_6 3
+      - 动态BGP+IPLC_香港02(原生)_3x_7 4
+      - 动态BGP+IPLC_香港03(原生)_3x_8 2
+      - 动态BGP+IPLC_香港04(原生)_3x_9 3
+      - 动态BGP+IPLC_香港05(原生)_3x_10 3
+      - 动态BGP+IPLC_新加坡02(原生)_3x_12 2
+      - 动态BGP+IPLC_台湾01(原生)_3x_14 2
+      - 动态BGP+IPLC_台湾02(原生)_3x_15 2
+      - 动态BGP+IPLC_台湾03(原生)_3x_16
+      - 动态BGP+IPLC_台湾06(原生)_3x_19 2
+      - 动态BGP+IPLC_台湾07(原生)_3x_20 3
+      - 动态BGP+IPLC_台湾08(原生)_3x_21 3
+      - 动态BGP+IPLC_台湾09(原生)_3x_22 2
+      - 动态BGP+IPLC_台湾10(原生)_3x_23 2
+      - 香港 01 3
+      - 香港 01 4
+      - 狮城 | Azure InfiniPort
+      - HK_🇭🇰
+      - _CN_中国->🇸🇬_SG_新加坡
+      - _CN_中国->🇯🇵_JP_日本
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _CN_中国->🇸🇬_SG_新加坡 2
+      - _CN_中国->🇭🇰_HK_香港
+      - _US_美国 4
+      - _CN_中国->🇹🇼_TW_台湾
+      - _US_美国 5
+      - _CN_中国->🇭🇰_HK_香港 2
+      - _CN_中国->🇺🇸_US_美国
+      - _CN_中国->🇭🇰_HK_香港 3
+      - _CN_中国->🇺🇸_US_美国 2
+      - _CN_中国->🇺🇸_US_美国 3
+      - _CA_加拿大 6
+      - _CA_加拿大 8
+      - _CN_中国->🇺🇸_US_美国 4
+      - _CA_加拿大 9
+      - _CN_中国->🇸🇬_SG_新加坡 3
+      - _CN_中国->🇺🇸_US_美国 5
+      - _CA_加拿大 10
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
