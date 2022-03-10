@@ -5,191 +5,134 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Lv1.广移A->日本B4, server: node1.lmars.top, port: 10004, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
-  - {name: Azure.HongKong.2.Vpnpool专属, server: vpnpool.hongkong.2.xiaocai.ga, port: 443, type: trojan, password: 5IGrvisqug, sni: vpnpool.hongkong.2.xiaocai.ga, skip-cert-verify: true, udp: true}
-  - {name: 保加利亚 Bulgaria●, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
-  - {name: +香港标准中继+01^, server: 120.232.174.85, port: 25081, type: ss, cipher: aes-128-gcm, password: zYkw4mDvUaQLg6xq, udp: true}
-  - {name: +香港标准中继+02^, server: 120.232.174.85, port: 24089, type: ss, cipher: aes-128-gcm, password: zYkw4mDvUaQLg6xq, udp: true}
-  - {name: +香港标准中继+03^, server: 120.232.174.85, port: 47985, type: ss, cipher: aes-128-gcm, password: zYkw4mDvUaQLg6xq, udp: true}
-  - {name: +香港标准中继+05^, server: 120.232.174.85, port: 45647, type: ss, cipher: aes-128-gcm, password: zYkw4mDvUaQLg6xq, udp: true}
-  - {name: 香港 01, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292464:93DWZTu7LU, obfs-param: "", udp: true}
-  - {name: 香港 01 2, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292690:o7iqlcUakC, obfs-param: "", udp: true}
+  - {name: vpnpool-SG-DigitalOcean, server: 183.240.132.27, port: 21223, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: Azure.HongKong.2.Vpnpool专属 2, server: vpnpool.hongkong.2.xiaocai.ga, port: 80, type: vmess, uuid: f6fffc7f-ab53-4ab7-af70-50923a525798, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: vpnpool.hongkong.2.xiaocai.ga}, udp: true}
+  - {name: vpnpool-香港Azure, server: 104.208.112.171, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: 标准|香港04解锁|Z214, server: zfd-cn4.ddnsnode.com, port: 16114, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-香港Azure 2, server: 13.70.31.16, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: 星河, server: iepl.hk.stohb.nodeg.cloud, port: 30023, type: vmess, uuid: 23a3db66-2651-3fae-b042-83b437e871fc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_ |16.37Mb, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
   - {name: HK_🇭🇰, server: 104.208.109.91, port: 10119, type: ss, cipher: chacha20-ietf-poly1305, password: dRUCE7YmtoVp, udp: true}
-  - {name: _US_美国, server: 38.143.66.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _US_美国 2, server: 142.202.48.81, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国【YouTube由零開始】, server: 38.143.66.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 高速6, server: g9.gs1024.com, port: 21223, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g9.gs1024.com, skip-cert-verify: true, udp: true}
-  - {name: 高速BBB, server: g3.gs1024.com, port: 21228, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g3.gs1024.com, skip-cert-verify: true, udp: true}
-  - {name: 高速7, server: g6.gs1024.com, port: 61232, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g6.gs1024.com, skip-cert-verify: true, udp: true}
-  - {name: "+KR,", server: 52.193.99.239, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "+JP,+3", server: 13.214.213.199, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: vpnpool-台中Hinet, server: 60.249.3.226, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: Alien, server: 47.241.191.179, port: 46104, type: vmess, uuid: 5b7f1d0e-4821-4108-e4bf-fa765ab28f2e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-台中Hinet 2, server: 211.72.35.153, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: 美国 139, server: 20.212.150.16, port: 11610, type: vmess, uuid: dd57bb2b-a9d4-4c6b-9a83-1c4289e70a65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 狮城 | Azure InfiniPort, server: 20.212.150.16, port: 11610, type: vmess, uuid: dd57bb2b-a9d4-4c6b-9a83-1c4289e70a65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "+SG,", server: 13.250.35.171, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "+JP,+2", server: 13.250.2.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: "+TW,", server: 13.250.32.154, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: vpnpool-SG-Melbicom, server: 5.44.249.43, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-香港Azure, server: 13.70.31.16, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Linode, server: 106.75.154.24, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Linode 2, server: 106.75.168.104, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Linode 3, server: 106.75.233.91, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-Melbicom 2, server: 112.15.9.129, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-台中Hinet 3, server: 60.249.3.231, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: "+JP,", server: 13.250.126.43, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: vpnpool-台中Hinet 4, server: 60.249.3.125, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-台中Hinet 5, server: 116.129.253.191, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: 标准|日本01解锁|Z217, server: zfd-cn1.ddnsnode.com, port: 16119, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 高速AAA, server: iplc.gs1024.com, port: 20227, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: iplc.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: 星河 2, server: iepl.hk.stohb.nodeg.cloud, port: 30001, type: vmess, uuid: 23a3db66-2651-3fae-b042-83b437e871fc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK-183.240.132.27-4214, server: 183.240.132.27, port: 20227, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-台中Hinet 6, server: 60.249.3.231, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-台中Hinet 7, server: 211.72.35.153, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: 香港 01, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292464:93DWZTu7LU, obfs-param: "", udp: true}
+  - {name: 中国2, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
+  - {name: vpnpool-Tokyo-EDCL, server: 116.129.253.177, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: 星河 3, server: iepl.hk.stohb.nodeg.cloud, port: 30021, type: vmess, uuid: 23a3db66-2651-3fae-b042-83b437e871fc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 01 2, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292464:93DWZTu7LU, obfs-param: "", udp: true}
+  - {name: vpnpool-Tokyo-EDCL 2, server: 116.129.253.187, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-EDCL 3, server: 116.129.253.245, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-EDCL 4, server: 116.129.253.177, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: Alien 2, server: 8.210.127.214, port: 1036, type: vmess, uuid: 5b00bd34-a2a7-4471-8b17-3f4768ac0330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "+JP,+3", server: 13.214.213.199, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: vpnpool-SG-DigitalOcean 2, server: 101.67.8.178, port: 61232, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: 星河 4, server: iepl.hk.stohb.nodeg.cloud, port: 30010, type: vmess, uuid: 23a3db66-2651-3fae-b042-83b437e871fc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-EDCL 5, server: 116.129.253.245, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-EDCL 6, server: 116.129.253.187, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-台中Hinet 8, server: 116.129.253.134, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: Azure.HongKong.2.Vpnpool专属, server: vpnpool.hongkong.2.xiaocai.ga, port: 443, type: trojan, password: 5IGrvisqug, sni: vpnpool.hongkong.2.xiaocai.ga, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-台中Hinet 9, server: 116.129.253.201, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-香港Azure 3, server: 13.70.31.16, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-EDCL 7, server: 116.129.253.227, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: Alien 3, server: 34.80.188.10, port: 14993, type: vmess, uuid: c6284930-46b3-44a2-cef3-1bff26a6f129, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 01 2 2, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292690:o7iqlcUakC, obfs-param: "", udp: true}
+  - {name: Lv1.广移A->日本A1, server: node1.lmars.top, port: 10001, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: 星河 5, server: iepl.hk.stohb.nodeg.cloud, port: 30004, type: vmess, uuid: 23a3db66-2651-3fae-b042-83b437e871fc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-香港Azure 4, server: 104.208.112.171, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: Alien 4, server: 8.210.62.222, port: 45140, type: vmess, uuid: 197a0629-07a3-4a3f-b641-6fa9ea88a752, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 5, server: 93.179.126.79, port: 39955, type: vmess, uuid: ad7ee8a4-2657-4a16-e3be-40afe9956de6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 星河 6, server: iepl.hk.stohb.nodeg.cloud, port: 30020, type: vmess, uuid: 23a3db66-2651-3fae-b042-83b437e871fc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 6, server: 8.210.250.2, port: 15342, type: vmess, uuid: bb26a82b-ba6b-422a-8c5d-f35e671a4898, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK-117.185.229.24-4213, server: 117.185.229.24, port: 20227, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-台中Hinet 10, server: 120.232.192.67, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-台中Hinet 11, server: 116.129.253.134, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-台中Hinet 12, server: 120.232.192.67, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-台中Hinet 13, server: 116.129.253.201, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-Melbicom, server: 120.232.192.119, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Osaka-Azure, server: 20.89.238.230, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: CN_423 | 8.64Mb, server: 183.240.132.27, port: 21228, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: CN_410 | 2.04Mb, server: g3.gs1024.com, port: 21228, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g3.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-EDCL 8, server: 116.129.253.227, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: 高速5, server: g9.gs1024.com, port: 61233, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g9.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: 狮城 | LINODE SUDA 02, server: bilibili.azhk.bili.cat, port: 20011, type: vmess, uuid: 348c48d4-1722-37a6-8484-aba37ff7b16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /soda, ws-headers: {Host: bilibili.azhk.bili.cat}, udp: true}
+  - {name: Alien 7, server: 8.210.55.7, port: 46353, type: vmess, uuid: e78a8677-f7b0-4be4-b76f-3b91176f37c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 8, server: 43.132.181.104, port: 52740, type: vmess, uuid: 915dddf1-48ba-436e-974e-00564767039c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Lv1.广移A->日本B3, server: node1.lmars.top, port: 10003, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: Alien 9, server: 43.128.12.51, port: 18951, type: vmess, uuid: ecac12eb-6c18-4fab-fca1-5fec47b5bb15, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien 10, server: 8.210.36.54, port: 56992, type: vmess, uuid: 52071cd1-a3ec-4351-82de-43ee29ae7811, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-Linode, server: 123.59.87.29, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _10, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_03, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-Melbicom 2, server: 120.232.192.119, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-Oracle, server: 117.185.229.24, port: 21230, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-DigitalOcean 3, server: 117.185.229.24, port: 61233, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-Melbicom 3, server: 120.232.192.115, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: "+US,", server: 97.64.122.63, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
+  - {name: gz1.52168.xyz:1109, server: gz1.52168.xyz, port: 1109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: vpnpool-台中Hinet 14, server: 112.15.9.146, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: US_🇺🇸, server: 192.9.232.93, port: 9425, type: ss, cipher: chacha20-ietf-poly1305, password: pJ0oBC4dcpvU, udp: true}
+  - {name: vpnpool-台中Hinet 15, server: 116.129.253.191, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-San Jose-ColoCrossing, server: 117.185.229.24, port: 21224, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-台中Hinet 16, server: 112.15.9.146, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: "+US,+3", server: 104.243.30.59, port: 247, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
+  - {name: 中国【YouTube由零開始】, server: www.tokyo2021.ga, port: 443, type: trojan, password: 7a990132-cf76-4ac2-8a3c-681743fa8627, sni: www.tokyo2021.ga, skip-cert-verify: true, udp: true}
+  - {name: 香港02 1x trojan加速, server: g6.gs1024.com, port: 61232, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g6.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚【YouTube由零開始】, server: www.ggchk.ga, port: 443, type: trojan, password: 4ae98d26-b209-4dd5-8e91-bf11d4f10801, sni: www.ggchk.ga, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-Melbicom 4, server: 183.232.163.147, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: "+US,+5", server: 54.190.158.209, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: HK-183.240.132.27-2086, server: g3.gs1024.com, port: 21225, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g3.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: gz1.52168.xyz:1115, server: gz1.52168.xyz, port: 1115, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: "+US,+4", server: 52.11.250.183, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: vpnpool-台中Hinet 17, server: 60.249.3.125, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-Melbicom 5, server: 112.15.9.129, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-Linode 2, server: 123.59.87.29, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: Relay_中国-荷兰_393, server: gz1.52168.xyz, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: vpnpool-SG-Melbicom 6, server: 183.232.163.147, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: CN_419 | 6.24Mb, server: jp.gs1024.com, port: 21229, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: jp.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: 保加利亚 Bulgaria●, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
+  - {name: 保加利亚 Bulgaria● 2, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
+  - {name: Lv1.广移A->日本B4, server: node1.lmars.top, port: 10004, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: vpnpool-SG-Melbicom 7, server: 5.44.249.43, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-Linode 3, server: 106.75.154.24, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-Linode 2 2, server: 106.75.168.104, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Tokyo-Linode 3 2, server: 106.75.233.91, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 4, server: 113.31.109.30, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 5, server: 113.31.155.165, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-台中Hinet, server: 116.129.253.134, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-EDCL, server: 116.129.253.227, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-EDCL 2, server: 116.129.253.245, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
   - {name: vpnpool-香港DMIT, server: 117.50.106.86, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 6, server: 120.132.50.158, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-Melbicom 3, server: 120.232.192.115, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-Melbicom 4, server: 120.232.192.119, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-台中Hinet 2, server: 120.232.192.67, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 7, server: 123.59.72.193, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Osaka-Azure, server: 20.89.238.230, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-台中Hinet 3, server: 211.72.35.153, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-台中Hinet 4, server: 60.249.3.231, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-香港Azure 2, server: 104.208.112.171, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-香港Azure 3, server: 13.70.31.16, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-Osaka-Azure 2, server: 20.89.238.230, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 8, server: 106.75.154.24, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 9, server: 106.75.168.104, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 10, server: 106.75.233.91, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-台中Hinet 5, server: 112.15.9.146, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 11, server: 113.31.109.30, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 12, server: 113.31.155.165, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-台中Hinet 6, server: 116.129.253.134, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-EDCL 3, server: 116.129.253.177, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-EDCL 4, server: 116.129.253.187, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-台中Hinet 7, server: 116.129.253.191, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-台中Hinet 8, server: 116.129.253.201, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-EDCL 5, server: 116.129.253.227, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-EDCL 6, server: 116.129.253.245, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 13, server: 120.132.50.158, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-Melbicom 5, server: 120.232.192.115, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-Melbicom 6, server: 120.232.192.119, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-台中Hinet 9, server: 120.232.192.67, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-Melbicom 5 2, server: 120.232.192.115, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
   - {name: vpnpool-Tokyo-Linode 14, server: 123.59.72.193, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Linode 15, server: 123.59.87.29, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-Melbicom 7, server: 183.232.163.147, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Osaka-Azure 2, server: 20.89.238.230, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-台中Hinet 10, server: 211.72.35.153, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-台中Hinet 11, server: 60.249.3.226, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-台中Hinet 12, server: 60.249.3.231, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: LAX-Cnservers, server: 23.225.165.245, port: 443, type: vmess, uuid: 95f388b3-68c9-421a-9de2-d8ab2e414a5e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/120306182525, ws-headers: {Host: www.19241194.xyz}, udp: true}
-  - {name: HKT-Detour 06, server: hkt-detour-06.wallthefool.org, port: 15106, type: vmess, uuid: 3b85387c-ae6d-4156-b541-95f770d639ed, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HKT-Detour 19, server: hkt-detour-19.wallthefool.org, port: 15119, type: vmess, uuid: 3b85387c-ae6d-4156-b541-95f770d639ed, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IEPL SZ-HK 02, server: sz-hk-02.wallthefool.org, port: 15122, type: vmess, uuid: 3b85387c-ae6d-4156-b541-95f770d639ed, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IEPL SZ-HK 10, server: sz-hk-10.wallthefool.org, port: 15130, type: vmess, uuid: 3b85387c-ae6d-4156-b541-95f770d639ed, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IEPL SZ-SG 05, server: sz-sg-05.wallthefool.org, port: 15705, type: vmess, uuid: 3b85387c-ae6d-4156-b541-95f770d639ed, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IEPL SZ-SG 06, server: sz-sg-06.wallthefool.org, port: 15706, type: vmess, uuid: 3b85387c-ae6d-4156-b541-95f770d639ed, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TW-Detour 02, server: tw-detour-02.wallthefool.org, port: 15202, type: vmess, uuid: 3b85387c-ae6d-4156-b541-95f770d639ed, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-DigitalOcean, server: 117.185.229.24, port: 21223, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Oracle, server: 117.185.229.24, port: 21230, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Oracle 2, server: 117.185.229.24, port: 21231, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Bengaluru-DigitalOcean, server: 183.240.132.27, port: 21228, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
-  - {name: US【tg@freevpn8】545, server: fr-am1-1.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: gVWc0WaJn, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: US【tg@freevpn8】545 2, server: fr-am1-1.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: gVWc0WaJn, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 【tg@freevpn8】CN_371, server: gz1.52168.xyz, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
-  - {name: vpnpool-Tokyo-EDCL 7, server: 116.129.253.177, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-EDCL 8, server: 116.129.253.187, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-台中Hinet 13, server: 116.129.253.191, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-台中Hinet 14, server: 116.129.253.201, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: "+US,+3", server: 104.243.30.59, port: 247, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
-  - {name: 【tg@freevpn8】CN_363, server: gz1.52168.xyz, port: 1105, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
-  - {name: 台湾Hinet01|优选原生IP|1x, server: gz.baibianxiaoying.top, port: 20630, type: vmess, uuid: 8b4b3e56-6e8e-3ffb-a3fb-7b42e6c36826, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hinet01, ws-headers: {Host: gz.baibianxiaoying.top}, udp: true}
-  - {name: 香港HKT01|优选原生IP|1x, server: gz.baibianxiaoying.top, port: 20630, type: vmess, uuid: 8b4b3e56-6e8e-3ffb-a3fb-7b42e6c36826, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt3, ws-headers: {Host: gz.baibianxiaoying.top}, udp: true}
-  - {name: 香港HKT02|优选原生IP|1x, server: gz.baibianxiaoying.top, port: 20630, type: vmess, uuid: 8b4b3e56-6e8e-3ffb-a3fb-7b42e6c36826, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt2, ws-headers: {Host: gz.baibianxiaoying.top}, udp: true}
-  - {name: 香港HKT03|优选原生IP|1x, server: gz.baibianxiaoying.top, port: 20630, type: vmess, uuid: 8b4b3e56-6e8e-3ffb-a3fb-7b42e6c36826, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt1, ws-headers: {Host: gz.baibianxiaoying.top}, udp: true}
-  - {name: 香港2 | 免费节点 | 限速10M, server: hk2.342401.xyz, port: 80, type: vmess, uuid: 5ef82146-77d2-4e88-a1ed-459f7bba8601, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 香港6 | 付费节点 | 可刷流量, server: hk6.342401.xyz, port: 80, type: vmess, uuid: 5ef82146-77d2-4e88-a1ed-459f7bba8601, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 香港8 | 日用节点 | 刷流量封禁, server: hk8.342401.xyz, port: 443, type: vmess, uuid: 5ef82146-77d2-4e88-a1ed-459f7bba8601, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk8.342401.xyz}, udp: true}
-  - {name: 香港 HKT|中转|NF|, server: 197.dxmax.co, port: 52104, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 197.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 香港 HKT|临时CN2中转|NF|, server: cs.anoob.icu, port: 25260, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: cs.anoob.icu, skip-cert-verify: true, udp: true}
-  - {name: 香港 Nero|移动入口01|NF|, server: 197.dxmax.co, port: 52105, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 197.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 香港 Nero|移动入口02|NF|, server: 183.dxmax.co, port: 17202, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 香港 AWS|中转|月抛|0.5x流量消耗, server: 183.dxmax.co, port: 17204, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 台湾+Hinet|中转|NF.动漫疯|, server: 183.dxmax.co, port: 17200, type: ss, cipher: aes-256-gcm, password: 9cfda557-221e-4383-a9ba-84735f055c28, udp: true}
-  - {name: 台湾 Scloud|中转|动漫疯|, server: 183.dxmax.co, port: 17205, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 日本 Nero|广移入口01|, server: 197.dxmax.co, port: 52107, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 197.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 日本 Nero|国内入口02|, server: 183.dxmax.co, port: 17206, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 日本 AWS月抛|广州移动|, server: 183.dxmax.co, port: 17207, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 日本 AWS月抛|郴州联通|, server: 116.129.253.80, port: 13386, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, skip-cert-verify: true, udp: true}
-  - {name: 韩国 Oracle|中转|0.5x流量消耗|, server: 183.dxmax.co, port: 17208, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 Vu|V1-2|中转|NF|, server: 183.dxmax.co, port: 17209, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 雅加达 AWS月抛|SG-NF|广移|X0.7, server: 183.dxmax.co, port: 17213, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 美国 GTT|中转|NF.Hulu.HBO|, server: cn2.anoob.icu, port: 24144, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: cn2.anoob.icu, skip-cert-verify: true, udp: true}
-  - {name: 美国 Oracle|中转|NF.Hulu.HBO|, server: cn2.anoob.icu, port: 49758, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: cn2.anoob.icu, skip-cert-verify: true, udp: true}
-  - {name: 美国 GGC|中转|HBO|, server: cn2.anoob.icu, port: 30454, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: cn2.anoob.icu, skip-cert-verify: true, udp: true}
-  - {name: 美国 San Jose|中转|NF.Hulu.HBO|, server: cn2.anoob.icu, port: 29307, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: cn2.anoob.icu, skip-cert-verify: true, udp: true}
-  - {name: 英国 Do|中转|BBC|, server: 120.232.192.211, port: 9938, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 01|中转|, server: shct2.forgebukkit.com, port: 35731, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: shct2.forgebukkit.com, skip-cert-verify: true, udp: true}
-  - {name: "[VIP]中国香港 NO.1", server: cm.leadingto.link, port: 21020, type: vmess, uuid: 9171f5d6-0a02-4ffd-b650-64739972e6ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[VIP]中国香港 NO.2", server: cm.leadingto.link, port: 21021, type: vmess, uuid: 9171f5d6-0a02-4ffd-b650-64739972e6ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 专线+香港05, server: 111.28.3.110, port: 47765, type: ss, cipher: chacha20-ietf-poly1305, password: ca78a3fd-bb73-4171-937f-62783bd38315, udp: true}
-  - {name: 香港+06+*, server: cn.lianlun.nttss.com, port: 45263, type: ss, cipher: chacha20-ietf-poly1305, password: ca78a3fd-bb73-4171-937f-62783bd38315, udp: true}
-  - {name: 日本+01+*, server: cn.changsha.ddns.nttss.com, port: 25090, type: ss, cipher: chacha20-ietf-poly1305, password: ca78a3fd-bb73-4171-937f-62783bd38315, udp: true}
-  - {name: 日本+02+*, server: cn.changsha.ddns.nttss.com, port: 25086, type: ss, cipher: chacha20-ietf-poly1305, password: ca78a3fd-bb73-4171-937f-62783bd38315, udp: true}
-  - {name: 美国+01+*, server: cn.hangzhoucu.ddns.nttss.com, port: 25039, type: ss, cipher: chacha20-ietf-poly1305, password: ca78a3fd-bb73-4171-937f-62783bd38315, udp: true}
-  - {name: 香港01|长沙|×1.0, server: hk.mimon.cc, port: 40030, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: hk.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港07|南昌|×1.0, server: hk.mimon.cc, port: 40033, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: hk.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港11|南昌|×1.0, server: hk.mimon.cc, port: 40034, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: hk.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港17|直连|×1.0, server: 104.208.106.80, port: 21062, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, skip-cert-verify: true, udp: true}
-  - {name: 香港19|香港|×1.0|NF, server: hk.mimon.cc, port: 40042, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: hk.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 狮城06|广州|×1.0, server: gz.mimon.cc, port: 51845, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: gz.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 狮城07|香港|×1.0, server: hk.mimon.cc, port: 40041, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: hk.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 大马01|长沙|×1.0, server: hk.mimon.cc, port: 40038, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: hk.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 日本07|长沙|×1.0, server: 45.142.166.15, port: 33340, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, skip-cert-verify: true, udp: true}
-  - {name: 日本08|上海|×1.0, server: 54.238.143.10, port: 54000, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, skip-cert-verify: true, udp: true}
-  - {name: 美国01|长沙|×1.0, server: 172.83.155.193, port: 58888, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, skip-cert-verify: true, udp: true}
-  - {name: 美国02|广州|×1.0, server: gz.mimon.cc, port: 19290, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: gz.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 美国03|广州|×1.0, server: gz.mimon.cc, port: 18863, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: gz.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 美国04|长沙|×1.0, server: 172.83.155.164, port: 40000, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, skip-cert-verify: true, udp: true}
-  - {name: 美国08|上海|×1.0, server: shcu.mimon.cc, port: 57792, type: ss, cipher: chacha20-ietf-poly1305, password: af97428a-6760-4925-9990-b5916d711bae, udp: true}
-  - {name: 上海+-+香港02【SS】, server: gyhk.v2bees.net, port: 26002, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 上海+-+香港03【SS】, server: gyhk.v2bees.net, port: 26003, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 江门+-+新加坡01【SS】, server: jmsg.v2bees.net, port: 43991, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 江门+-+新加坡02【SS】, server: jmsg.v2bees.net, port: 43992, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 江门+-+新加坡03【SS】, server: jmsg.v2bees.net, port: 43993, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 江门 - 新加坡04【vmess】, server: jmsg.v2bees.net, port: 43994, type: vmess, uuid: 47848b82-f2a7-4a28-a9cb-2196c3d19655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: 安徽+-+日本01【SS】, server: jp.v2bees.net, port: 28001, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 安徽+-+日本02【SS】, server: jp.v2bees.net, port: 28002, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 上海+-+韩国01【SS】, server: kr.v2bees.net, port: 38001, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 广州+-+美国03【SS】, server: us.v2bees.net, port: 31103, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 广州+-+台湾01（流媒体解锁）【SS】「2x」, server: native.v2bees.net, port: 62002, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 广州+-+台湾02（流媒体解锁）【SS】「2x」, server: native.v2bees.net, port: 62003, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 广港丨狮城01丨2x, server: cm.xrayport.one, port: 53001, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广港丨香港02丨2x, server: cm.xrayport.one, port: 16302, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: IEPL丨香港04丨3x, server: cm.xrayport.one, port: 10005, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广港丨香港05丨2x, server: cm.xrayport.one, port: 33897, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广港丨香港06丨2x, server: cm.xrayport.one, port: 33896, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: IEPL丨香港07丨3x, server: cm.xrayport.one, port: 44559, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广港丨香港09丨2x, server: cm.xrayport.one, port: 40047, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广港丨越南01丨2x, server: cm.xrayport.one, port: 53398, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广港丨美国03丨2x, server: cm.xrayport.one, port: 54548, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广港丨台湾01丨2x, server: cm.xrayport.one, port: 36009, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广港丨英国01丨2x, server: cm.xrayport.one, port: 15016, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广港丨德国01丨2x, server: cm.xrayport.one, port: 11755, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: +日本标准中继+01, server: 120.232.174.85, port: 29147, type: ss, cipher: aes-128-gcm, password: zYkw4mDvUaQLg6xq, udp: true}
-  - {name: vpnpool-香港Azure 4, server: 104.208.112.171, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-DigitalOcean 2, server: 183.240.132.27, port: 20227, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
-  - {name: 香港02|广州|×1.0, server: gz.mimon.cc, port: 38003, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: gz.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港03|广州|×1.0, server: gz.mimon.cc, port: 27763, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: gz.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港10|广州|×1.0, server: gz.mimon.cc, port: 46656, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: gz.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港11|广州|×1.0, server: gz.mimon.cc, port: 50833, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: gz.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港13|广州|×1.0|NF, server: gz.mimon.cc, port: 19214, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: gz.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港14|广州|×1.0, server: gz.mimon.cc, port: 53442, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: gz.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港16|广州|×1.0, server: gz.mimon.cc, port: 50617, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: gz.mimon.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港18|长沙|×1.0, server: csbgp.mimon.cc, port: 19378, type: trojan, password: af97428a-6760-4925-9990-b5916d711bae, sni: csbgp.mimon.cc, skip-cert-verify: true, udp: true}
   - {name: 测试1, server: hl.44044.xyz, port: 25101, type: ss, cipher: aes-256-gcm, password: a7997951-8649-4e93-a727-2e1945b96f6c, udp: true}
   - {name: +USA, server: 62.216.91.229, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: 保加利亚 Bulgaria● 2, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
   - {name: 越南 Vietnam●, server: gz1.52168.xyz, port: 1107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
   - {name: IS+冰岛Hafnarfjordur, server: 37.235.49.158, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 腾讯云_5, server: www.tokyo2021.ga, port: 443, type: trojan, password: 7a990132-cf76-4ac2-8a3c-681743fa8627, sni: www.tokyo2021.ga, skip-cert-verify: true, udp: true}
-  - {name: _星河, server: iepl04.zerohost.live, port: 11003, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl04.zerohost.live}, udp: true}
   - {name: MK+北马其顿Skopje, server: 46.183.185.15, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: _CA_加拿大, server: 134.195.196.81, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 香港 01 3, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292464:93DWZTu7LU, obfs-param: "", udp: true}
-  - {name: 香港 01 2 2, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292690:o7iqlcUakC, obfs-param: "", udp: true}
-  - {name: Azure.HongKong.2.Vpnpool专属 2, server: vpnpool.hongkong.2.xiaocai.ga, port: 80, type: vmess, uuid: f6fffc7f-ab53-4ab7-af70-50923a525798, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: vpnpool.hongkong.2.xiaocai.ga}, udp: true}
-  - {name: 狮城 | Azure InfiniPort, server: 20.212.150.16, port: 11610, type: vmess, uuid: dd57bb2b-a9d4-4c6b-9a83-1c4289e70a65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 2 2, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国 5, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 狮城 | Azure InfiniPort 2, server: 20.212.150.16, port: 11610, type: vmess, uuid: dd57bb2b-a9d4-4c6b-9a83-1c4289e70a65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: _CA_加拿大 9, server: 134.195.196.81, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
@@ -197,382 +140,268 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Lv1.广移A->日本B4
-      - Azure.HongKong.2.Vpnpool专属
-      - 保加利亚 Bulgaria●
-      - +香港标准中继+01^
-      - +香港标准中继+02^
-      - +香港标准中继+03^
-      - +香港标准中继+05^
-      - 香港 01
-      - 香港 01 2
-      - HK_🇭🇰
-      - _US_美国
-      - _US_美国 2
-      - 美国【YouTube由零開始】
-      - 高速6
-      - 高速BBB
-      - 高速7
-      - +KR,
-      - +JP,+3
-      - +TW,
-      - vpnpool-SG-Melbicom
+      - vpnpool-SG-DigitalOcean
+      - Azure.HongKong.2.Vpnpool专属 2
       - vpnpool-香港Azure
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-SG-Melbicom 2
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-台中Hinet
-      - vpnpool-Tokyo-EDCL
-      - vpnpool-Tokyo-EDCL 2
-      - vpnpool-香港DMIT
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-SG-Melbicom 3
-      - vpnpool-SG-Melbicom 4
-      - vpnpool-台中Hinet 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-Osaka-Azure
-      - vpnpool-台中Hinet 3
-      - vpnpool-台中Hinet 4
+      - 标准|香港04解锁|Z214
       - vpnpool-香港Azure 2
-      - vpnpool-香港Azure 3
-      - vpnpool-Tokyo-Linode 8
-      - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
+      - 星河
+      - Relay_ |16.37Mb
+      - HK_🇭🇰
+      - vpnpool-台中Hinet
+      - Alien
+      - vpnpool-台中Hinet 2
+      - 美国 139
+      - 狮城 | Azure InfiniPort
+      - +SG,
+      - +JP,+2
+      - +TW,
+      - vpnpool-台中Hinet 3
+      - +JP,
+      - vpnpool-台中Hinet 4
       - vpnpool-台中Hinet 5
-      - vpnpool-Tokyo-Linode 11
-      - vpnpool-Tokyo-Linode 12
+      - 标准|日本01解锁|Z217
+      - 高速AAA
+      - 星河 2
+      - HK-183.240.132.27-4214
       - vpnpool-台中Hinet 6
+      - vpnpool-台中Hinet 7
+      - 香港 01
+      - 中国2
+      - vpnpool-Tokyo-EDCL
+      - 星河 3
+      - 香港 01 2
+      - vpnpool-Tokyo-EDCL 2
       - vpnpool-Tokyo-EDCL 3
       - vpnpool-Tokyo-EDCL 4
-      - vpnpool-台中Hinet 7
-      - vpnpool-台中Hinet 8
+      - Alien 2
+      - +JP,+3
+      - vpnpool-SG-DigitalOcean 2
+      - 星河 4
       - vpnpool-Tokyo-EDCL 5
       - vpnpool-Tokyo-EDCL 6
-      - vpnpool-Tokyo-Linode 13
-      - vpnpool-SG-Melbicom 5
-      - vpnpool-SG-Melbicom 6
+      - vpnpool-台中Hinet 8
+      - Azure.HongKong.2.Vpnpool专属
       - vpnpool-台中Hinet 9
-      - vpnpool-Tokyo-Linode 14
-      - vpnpool-Tokyo-Linode 15
-      - vpnpool-SG-Melbicom 7
-      - vpnpool-Osaka-Azure 2
+      - vpnpool-香港Azure 3
+      - vpnpool-Tokyo-EDCL 7
+      - Alien 3
+      - 香港 01 2 2
+      - Lv1.广移A->日本A1
+      - 星河 5
+      - vpnpool-香港Azure 4
+      - Alien 4
+      - Alien 5
+      - 星河 6
+      - Alien 6
+      - HK-117.185.229.24-4213
       - vpnpool-台中Hinet 10
       - vpnpool-台中Hinet 11
       - vpnpool-台中Hinet 12
-      - LAX-Cnservers
-      - HKT-Detour 06
-      - HKT-Detour 19
-      - IEPL SZ-HK 02
-      - IEPL SZ-HK 10
-      - IEPL SZ-SG 05
-      - IEPL SZ-SG 06
-      - TW-Detour 02
-      - vpnpool-SG-DigitalOcean
-      - vpnpool-Tokyo-Oracle
-      - vpnpool-Tokyo-Oracle 2
-      - vpnpool-Bengaluru-DigitalOcean
-      - US【tg@freevpn8】545
-      - US【tg@freevpn8】545 2
-      - 【tg@freevpn8】CN_371
-      - vpnpool-Tokyo-EDCL 7
-      - vpnpool-Tokyo-EDCL 8
       - vpnpool-台中Hinet 13
+      - vpnpool-SG-Melbicom
+      - vpnpool-Osaka-Azure
+      - CN_423 | 8.64Mb
+      - CN_410 | 2.04Mb
+      - vpnpool-Tokyo-EDCL 8
+      - 高速5
+      - 狮城 | LINODE SUDA 02
+      - Alien 7
+      - Alien 8
+      - Lv1.广移A->日本B3
+      - Alien 9
+      - Alien 10
+      - vpnpool-Tokyo-Linode
+      - _10
+      - 中国_03
+      - vpnpool-SG-Melbicom 2
+      - vpnpool-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean 3
+      - vpnpool-SG-Melbicom 3
+      - +US,
+      - gz1.52168.xyz:1109
       - vpnpool-台中Hinet 14
+      - US_🇺🇸
+      - vpnpool-台中Hinet 15
+      - vpnpool-San Jose-ColoCrossing
+      - vpnpool-台中Hinet 16
       - +US,+3
-      - 【tg@freevpn8】CN_363
-      - 台湾Hinet01|优选原生IP|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港2 | 免费节点 | 限速10M
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港8 | 日用节点 | 刷流量封禁
-      - 香港 HKT|中转|NF|
-      - 香港 HKT|临时CN2中转|NF|
-      - 香港 Nero|移动入口01|NF|
-      - 香港 Nero|移动入口02|NF|
-      - 香港 AWS|中转|月抛|0.5x流量消耗
-      - 台湾+Hinet|中转|NF.动漫疯|
-      - 台湾 Scloud|中转|动漫疯|
-      - 日本 Nero|广移入口01|
-      - 日本 Nero|国内入口02|
-      - 日本 AWS月抛|广州移动|
-      - 日本 AWS月抛|郴州联通|
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 新加坡 Vu|V1-2|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - 美国 GGC|中转|HBO|
-      - 美国 San Jose|中转|NF.Hulu.HBO|
-      - 英国 Do|中转|BBC|
-      - 俄罗斯 01|中转|
-      - "[VIP]中国香港 NO.1"
-      - "[VIP]中国香港 NO.2"
-      - 专线+香港05
-      - 香港+06+*
-      - 日本+01+*
-      - 日本+02+*
-      - 美国+01+*
-      - 香港01|长沙|×1.0
-      - 香港07|南昌|×1.0
-      - 香港11|南昌|×1.0
-      - 香港17|直连|×1.0
-      - 香港19|香港|×1.0|NF
-      - 狮城06|广州|×1.0
-      - 狮城07|香港|×1.0
-      - 大马01|长沙|×1.0
-      - 日本07|长沙|×1.0
-      - 日本08|上海|×1.0
-      - 美国01|长沙|×1.0
-      - 美国02|广州|×1.0
-      - 美国03|广州|×1.0
-      - 美国04|长沙|×1.0
-      - 美国08|上海|×1.0
-      - 上海+-+香港02【SS】
-      - 上海+-+香港03【SS】
-      - 江门+-+新加坡01【SS】
-      - 江门+-+新加坡02【SS】
-      - 江门+-+新加坡03【SS】
-      - 江门 - 新加坡04【vmess】
-      - 安徽+-+日本01【SS】
-      - 安徽+-+日本02【SS】
-      - 上海+-+韩国01【SS】
-      - 广州+-+美国03【SS】
-      - 广州+-+台湾01（流媒体解锁）【SS】「2x」
-      - 广州+-+台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨狮城01丨2x
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港05丨2x
-      - 广港丨香港06丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨香港09丨2x
-      - 广港丨越南01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨台湾01丨2x
-      - 广港丨英国01丨2x
-      - 广港丨德国01丨2x
-      - +日本标准中继+01
-      - vpnpool-香港Azure 4
-      - vpnpool-SG-DigitalOcean 2
-      - 香港02|广州|×1.0
-      - 香港03|广州|×1.0
-      - 香港10|广州|×1.0
-      - 香港11|广州|×1.0
-      - 香港13|广州|×1.0|NF
-      - 香港14|广州|×1.0
-      - 香港16|广州|×1.0
-      - 香港18|长沙|×1.0
+      - 中国【YouTube由零開始】
+      - 香港02 1x trojan加速
+      - 澳大利亚【YouTube由零開始】
+      - vpnpool-SG-Melbicom 4
+      - +US,+5
+      - HK-183.240.132.27-2086
+      - gz1.52168.xyz:1115
+      - +US,+4
+      - vpnpool-台中Hinet 17
+      - vpnpool-SG-Melbicom 5
+      - vpnpool-Tokyo-Linode 2
+      - Relay_中国-荷兰_393
+      - vpnpool-SG-Melbicom 6
+      - CN_419 | 6.24Mb
+      - 保加利亚 Bulgaria●
+      - 保加利亚 Bulgaria● 2
+      - Lv1.广移A->日本B4
+      - vpnpool-SG-Melbicom 7
+      - vpnpool-Tokyo-Linode 3
+      - vpnpool-Tokyo-Linode 2 2
+      - vpnpool-Tokyo-Linode 3 2
+      - vpnpool-Tokyo-Linode 4
+      - vpnpool-Tokyo-Linode 5
+      - vpnpool-香港DMIT
+      - vpnpool-Tokyo-Linode 6
+      - vpnpool-Tokyo-Linode 7
+      - vpnpool-Osaka-Azure 2
+      - vpnpool-Tokyo-Linode 8
+      - vpnpool-Tokyo-Linode 9
+      - vpnpool-Tokyo-Linode 10
+      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 13
+      - vpnpool-SG-Melbicom 5 2
+      - vpnpool-Tokyo-Linode 14
       - 测试1
       - +USA
-      - 保加利亚 Bulgaria● 2
       - 越南 Vietnam●
       - IS+冰岛Hafnarfjordur
-      - 腾讯云_5
-      - _星河
       - MK+北马其顿Skopje
       - _CA_加拿大
-      - 香港 01 3
-      - 香港 01 2 2
-      - Azure.HongKong.2.Vpnpool专属 2
-      - 狮城 | Azure InfiniPort
-      - _US_美国 2 2
-      - _US_美国 5
+      - 狮城 | Azure InfiniPort 2
       - _CA_加拿大 9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Lv1.广移A->日本B4
-      - Azure.HongKong.2.Vpnpool专属
-      - 保加利亚 Bulgaria●
-      - +香港标准中继+01^
-      - +香港标准中继+02^
-      - +香港标准中继+03^
-      - +香港标准中继+05^
-      - 香港 01
-      - 香港 01 2
-      - HK_🇭🇰
-      - _US_美国
-      - _US_美国 2
-      - 美国【YouTube由零開始】
-      - 高速6
-      - 高速BBB
-      - 高速7
-      - +KR,
-      - +JP,+3
-      - +TW,
-      - vpnpool-SG-Melbicom
+      - vpnpool-SG-DigitalOcean
+      - Azure.HongKong.2.Vpnpool专属 2
       - vpnpool-香港Azure
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-SG-Melbicom 2
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-台中Hinet
-      - vpnpool-Tokyo-EDCL
-      - vpnpool-Tokyo-EDCL 2
-      - vpnpool-香港DMIT
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-SG-Melbicom 3
-      - vpnpool-SG-Melbicom 4
-      - vpnpool-台中Hinet 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-Osaka-Azure
-      - vpnpool-台中Hinet 3
-      - vpnpool-台中Hinet 4
+      - 标准|香港04解锁|Z214
       - vpnpool-香港Azure 2
-      - vpnpool-香港Azure 3
-      - vpnpool-Tokyo-Linode 8
-      - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
+      - 星河
+      - Relay_ |16.37Mb
+      - HK_🇭🇰
+      - vpnpool-台中Hinet
+      - Alien
+      - vpnpool-台中Hinet 2
+      - 美国 139
+      - 狮城 | Azure InfiniPort
+      - +SG,
+      - +JP,+2
+      - +TW,
+      - vpnpool-台中Hinet 3
+      - +JP,
+      - vpnpool-台中Hinet 4
       - vpnpool-台中Hinet 5
-      - vpnpool-Tokyo-Linode 11
-      - vpnpool-Tokyo-Linode 12
+      - 标准|日本01解锁|Z217
+      - 高速AAA
+      - 星河 2
+      - HK-183.240.132.27-4214
       - vpnpool-台中Hinet 6
+      - vpnpool-台中Hinet 7
+      - 香港 01
+      - 中国2
+      - vpnpool-Tokyo-EDCL
+      - 星河 3
+      - 香港 01 2
+      - vpnpool-Tokyo-EDCL 2
       - vpnpool-Tokyo-EDCL 3
       - vpnpool-Tokyo-EDCL 4
-      - vpnpool-台中Hinet 7
-      - vpnpool-台中Hinet 8
+      - Alien 2
+      - +JP,+3
+      - vpnpool-SG-DigitalOcean 2
+      - 星河 4
       - vpnpool-Tokyo-EDCL 5
       - vpnpool-Tokyo-EDCL 6
-      - vpnpool-Tokyo-Linode 13
-      - vpnpool-SG-Melbicom 5
-      - vpnpool-SG-Melbicom 6
+      - vpnpool-台中Hinet 8
+      - Azure.HongKong.2.Vpnpool专属
       - vpnpool-台中Hinet 9
-      - vpnpool-Tokyo-Linode 14
-      - vpnpool-Tokyo-Linode 15
-      - vpnpool-SG-Melbicom 7
-      - vpnpool-Osaka-Azure 2
+      - vpnpool-香港Azure 3
+      - vpnpool-Tokyo-EDCL 7
+      - Alien 3
+      - 香港 01 2 2
+      - Lv1.广移A->日本A1
+      - 星河 5
+      - vpnpool-香港Azure 4
+      - Alien 4
+      - Alien 5
+      - 星河 6
+      - Alien 6
+      - HK-117.185.229.24-4213
       - vpnpool-台中Hinet 10
       - vpnpool-台中Hinet 11
       - vpnpool-台中Hinet 12
-      - LAX-Cnservers
-      - HKT-Detour 06
-      - HKT-Detour 19
-      - IEPL SZ-HK 02
-      - IEPL SZ-HK 10
-      - IEPL SZ-SG 05
-      - IEPL SZ-SG 06
-      - TW-Detour 02
-      - vpnpool-SG-DigitalOcean
-      - vpnpool-Tokyo-Oracle
-      - vpnpool-Tokyo-Oracle 2
-      - vpnpool-Bengaluru-DigitalOcean
-      - US【tg@freevpn8】545
-      - US【tg@freevpn8】545 2
-      - 【tg@freevpn8】CN_371
-      - vpnpool-Tokyo-EDCL 7
-      - vpnpool-Tokyo-EDCL 8
       - vpnpool-台中Hinet 13
+      - vpnpool-SG-Melbicom
+      - vpnpool-Osaka-Azure
+      - CN_423 | 8.64Mb
+      - CN_410 | 2.04Mb
+      - vpnpool-Tokyo-EDCL 8
+      - 高速5
+      - 狮城 | LINODE SUDA 02
+      - Alien 7
+      - Alien 8
+      - Lv1.广移A->日本B3
+      - Alien 9
+      - Alien 10
+      - vpnpool-Tokyo-Linode
+      - _10
+      - 中国_03
+      - vpnpool-SG-Melbicom 2
+      - vpnpool-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean 3
+      - vpnpool-SG-Melbicom 3
+      - +US,
+      - gz1.52168.xyz:1109
       - vpnpool-台中Hinet 14
+      - US_🇺🇸
+      - vpnpool-台中Hinet 15
+      - vpnpool-San Jose-ColoCrossing
+      - vpnpool-台中Hinet 16
       - +US,+3
-      - 【tg@freevpn8】CN_363
-      - 台湾Hinet01|优选原生IP|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港2 | 免费节点 | 限速10M
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港8 | 日用节点 | 刷流量封禁
-      - 香港 HKT|中转|NF|
-      - 香港 HKT|临时CN2中转|NF|
-      - 香港 Nero|移动入口01|NF|
-      - 香港 Nero|移动入口02|NF|
-      - 香港 AWS|中转|月抛|0.5x流量消耗
-      - 台湾+Hinet|中转|NF.动漫疯|
-      - 台湾 Scloud|中转|动漫疯|
-      - 日本 Nero|广移入口01|
-      - 日本 Nero|国内入口02|
-      - 日本 AWS月抛|广州移动|
-      - 日本 AWS月抛|郴州联通|
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 新加坡 Vu|V1-2|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - 美国 GGC|中转|HBO|
-      - 美国 San Jose|中转|NF.Hulu.HBO|
-      - 英国 Do|中转|BBC|
-      - 俄罗斯 01|中转|
-      - "[VIP]中国香港 NO.1"
-      - "[VIP]中国香港 NO.2"
-      - 专线+香港05
-      - 香港+06+*
-      - 日本+01+*
-      - 日本+02+*
-      - 美国+01+*
-      - 香港01|长沙|×1.0
-      - 香港07|南昌|×1.0
-      - 香港11|南昌|×1.0
-      - 香港17|直连|×1.0
-      - 香港19|香港|×1.0|NF
-      - 狮城06|广州|×1.0
-      - 狮城07|香港|×1.0
-      - 大马01|长沙|×1.0
-      - 日本07|长沙|×1.0
-      - 日本08|上海|×1.0
-      - 美国01|长沙|×1.0
-      - 美国02|广州|×1.0
-      - 美国03|广州|×1.0
-      - 美国04|长沙|×1.0
-      - 美国08|上海|×1.0
-      - 上海+-+香港02【SS】
-      - 上海+-+香港03【SS】
-      - 江门+-+新加坡01【SS】
-      - 江门+-+新加坡02【SS】
-      - 江门+-+新加坡03【SS】
-      - 江门 - 新加坡04【vmess】
-      - 安徽+-+日本01【SS】
-      - 安徽+-+日本02【SS】
-      - 上海+-+韩国01【SS】
-      - 广州+-+美国03【SS】
-      - 广州+-+台湾01（流媒体解锁）【SS】「2x」
-      - 广州+-+台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨狮城01丨2x
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港05丨2x
-      - 广港丨香港06丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨香港09丨2x
-      - 广港丨越南01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨台湾01丨2x
-      - 广港丨英国01丨2x
-      - 广港丨德国01丨2x
-      - +日本标准中继+01
-      - vpnpool-香港Azure 4
-      - vpnpool-SG-DigitalOcean 2
-      - 香港02|广州|×1.0
-      - 香港03|广州|×1.0
-      - 香港10|广州|×1.0
-      - 香港11|广州|×1.0
-      - 香港13|广州|×1.0|NF
-      - 香港14|广州|×1.0
-      - 香港16|广州|×1.0
-      - 香港18|长沙|×1.0
+      - 中国【YouTube由零開始】
+      - 香港02 1x trojan加速
+      - 澳大利亚【YouTube由零開始】
+      - vpnpool-SG-Melbicom 4
+      - +US,+5
+      - HK-183.240.132.27-2086
+      - gz1.52168.xyz:1115
+      - +US,+4
+      - vpnpool-台中Hinet 17
+      - vpnpool-SG-Melbicom 5
+      - vpnpool-Tokyo-Linode 2
+      - Relay_中国-荷兰_393
+      - vpnpool-SG-Melbicom 6
+      - CN_419 | 6.24Mb
+      - 保加利亚 Bulgaria●
+      - 保加利亚 Bulgaria● 2
+      - Lv1.广移A->日本B4
+      - vpnpool-SG-Melbicom 7
+      - vpnpool-Tokyo-Linode 3
+      - vpnpool-Tokyo-Linode 2 2
+      - vpnpool-Tokyo-Linode 3 2
+      - vpnpool-Tokyo-Linode 4
+      - vpnpool-Tokyo-Linode 5
+      - vpnpool-香港DMIT
+      - vpnpool-Tokyo-Linode 6
+      - vpnpool-Tokyo-Linode 7
+      - vpnpool-Osaka-Azure 2
+      - vpnpool-Tokyo-Linode 8
+      - vpnpool-Tokyo-Linode 9
+      - vpnpool-Tokyo-Linode 10
+      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 13
+      - vpnpool-SG-Melbicom 5 2
+      - vpnpool-Tokyo-Linode 14
       - 测试1
       - +USA
-      - 保加利亚 Bulgaria● 2
       - 越南 Vietnam●
       - IS+冰岛Hafnarfjordur
-      - 腾讯云_5
-      - _星河
       - MK+北马其顿Skopje
       - _CA_加拿大
-      - 香港 01 3
-      - 香港 01 2 2
-      - Azure.HongKong.2.Vpnpool专属 2
-      - 狮城 | Azure InfiniPort
-      - _US_美国 2 2
-      - _US_美国 5
+      - 狮城 | Azure InfiniPort 2
       - _CA_加拿大 9
   - name: 🎥 NETFLIX
     type: select
@@ -580,191 +409,134 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Lv1.广移A->日本B4
-      - Azure.HongKong.2.Vpnpool专属
-      - 保加利亚 Bulgaria●
-      - +香港标准中继+01^
-      - +香港标准中继+02^
-      - +香港标准中继+03^
-      - +香港标准中继+05^
-      - 香港 01
-      - 香港 01 2
-      - HK_🇭🇰
-      - _US_美国
-      - _US_美国 2
-      - 美国【YouTube由零開始】
-      - 高速6
-      - 高速BBB
-      - 高速7
-      - +KR,
-      - +JP,+3
-      - +TW,
-      - vpnpool-SG-Melbicom
+      - vpnpool-SG-DigitalOcean
+      - Azure.HongKong.2.Vpnpool专属 2
       - vpnpool-香港Azure
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-SG-Melbicom 2
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-台中Hinet
-      - vpnpool-Tokyo-EDCL
-      - vpnpool-Tokyo-EDCL 2
-      - vpnpool-香港DMIT
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-SG-Melbicom 3
-      - vpnpool-SG-Melbicom 4
-      - vpnpool-台中Hinet 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-Osaka-Azure
-      - vpnpool-台中Hinet 3
-      - vpnpool-台中Hinet 4
+      - 标准|香港04解锁|Z214
       - vpnpool-香港Azure 2
-      - vpnpool-香港Azure 3
-      - vpnpool-Tokyo-Linode 8
-      - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
+      - 星河
+      - Relay_ |16.37Mb
+      - HK_🇭🇰
+      - vpnpool-台中Hinet
+      - Alien
+      - vpnpool-台中Hinet 2
+      - 美国 139
+      - 狮城 | Azure InfiniPort
+      - +SG,
+      - +JP,+2
+      - +TW,
+      - vpnpool-台中Hinet 3
+      - +JP,
+      - vpnpool-台中Hinet 4
       - vpnpool-台中Hinet 5
-      - vpnpool-Tokyo-Linode 11
-      - vpnpool-Tokyo-Linode 12
+      - 标准|日本01解锁|Z217
+      - 高速AAA
+      - 星河 2
+      - HK-183.240.132.27-4214
       - vpnpool-台中Hinet 6
+      - vpnpool-台中Hinet 7
+      - 香港 01
+      - 中国2
+      - vpnpool-Tokyo-EDCL
+      - 星河 3
+      - 香港 01 2
+      - vpnpool-Tokyo-EDCL 2
       - vpnpool-Tokyo-EDCL 3
       - vpnpool-Tokyo-EDCL 4
-      - vpnpool-台中Hinet 7
-      - vpnpool-台中Hinet 8
+      - Alien 2
+      - +JP,+3
+      - vpnpool-SG-DigitalOcean 2
+      - 星河 4
       - vpnpool-Tokyo-EDCL 5
       - vpnpool-Tokyo-EDCL 6
-      - vpnpool-Tokyo-Linode 13
-      - vpnpool-SG-Melbicom 5
-      - vpnpool-SG-Melbicom 6
+      - vpnpool-台中Hinet 8
+      - Azure.HongKong.2.Vpnpool专属
       - vpnpool-台中Hinet 9
-      - vpnpool-Tokyo-Linode 14
-      - vpnpool-Tokyo-Linode 15
-      - vpnpool-SG-Melbicom 7
-      - vpnpool-Osaka-Azure 2
+      - vpnpool-香港Azure 3
+      - vpnpool-Tokyo-EDCL 7
+      - Alien 3
+      - 香港 01 2 2
+      - Lv1.广移A->日本A1
+      - 星河 5
+      - vpnpool-香港Azure 4
+      - Alien 4
+      - Alien 5
+      - 星河 6
+      - Alien 6
+      - HK-117.185.229.24-4213
       - vpnpool-台中Hinet 10
       - vpnpool-台中Hinet 11
       - vpnpool-台中Hinet 12
-      - LAX-Cnservers
-      - HKT-Detour 06
-      - HKT-Detour 19
-      - IEPL SZ-HK 02
-      - IEPL SZ-HK 10
-      - IEPL SZ-SG 05
-      - IEPL SZ-SG 06
-      - TW-Detour 02
-      - vpnpool-SG-DigitalOcean
-      - vpnpool-Tokyo-Oracle
-      - vpnpool-Tokyo-Oracle 2
-      - vpnpool-Bengaluru-DigitalOcean
-      - US【tg@freevpn8】545
-      - US【tg@freevpn8】545 2
-      - 【tg@freevpn8】CN_371
-      - vpnpool-Tokyo-EDCL 7
-      - vpnpool-Tokyo-EDCL 8
       - vpnpool-台中Hinet 13
+      - vpnpool-SG-Melbicom
+      - vpnpool-Osaka-Azure
+      - CN_423 | 8.64Mb
+      - CN_410 | 2.04Mb
+      - vpnpool-Tokyo-EDCL 8
+      - 高速5
+      - 狮城 | LINODE SUDA 02
+      - Alien 7
+      - Alien 8
+      - Lv1.广移A->日本B3
+      - Alien 9
+      - Alien 10
+      - vpnpool-Tokyo-Linode
+      - _10
+      - 中国_03
+      - vpnpool-SG-Melbicom 2
+      - vpnpool-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean 3
+      - vpnpool-SG-Melbicom 3
+      - +US,
+      - gz1.52168.xyz:1109
       - vpnpool-台中Hinet 14
+      - US_🇺🇸
+      - vpnpool-台中Hinet 15
+      - vpnpool-San Jose-ColoCrossing
+      - vpnpool-台中Hinet 16
       - +US,+3
-      - 【tg@freevpn8】CN_363
-      - 台湾Hinet01|优选原生IP|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港2 | 免费节点 | 限速10M
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港8 | 日用节点 | 刷流量封禁
-      - 香港 HKT|中转|NF|
-      - 香港 HKT|临时CN2中转|NF|
-      - 香港 Nero|移动入口01|NF|
-      - 香港 Nero|移动入口02|NF|
-      - 香港 AWS|中转|月抛|0.5x流量消耗
-      - 台湾+Hinet|中转|NF.动漫疯|
-      - 台湾 Scloud|中转|动漫疯|
-      - 日本 Nero|广移入口01|
-      - 日本 Nero|国内入口02|
-      - 日本 AWS月抛|广州移动|
-      - 日本 AWS月抛|郴州联通|
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 新加坡 Vu|V1-2|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - 美国 GGC|中转|HBO|
-      - 美国 San Jose|中转|NF.Hulu.HBO|
-      - 英国 Do|中转|BBC|
-      - 俄罗斯 01|中转|
-      - "[VIP]中国香港 NO.1"
-      - "[VIP]中国香港 NO.2"
-      - 专线+香港05
-      - 香港+06+*
-      - 日本+01+*
-      - 日本+02+*
-      - 美国+01+*
-      - 香港01|长沙|×1.0
-      - 香港07|南昌|×1.0
-      - 香港11|南昌|×1.0
-      - 香港17|直连|×1.0
-      - 香港19|香港|×1.0|NF
-      - 狮城06|广州|×1.0
-      - 狮城07|香港|×1.0
-      - 大马01|长沙|×1.0
-      - 日本07|长沙|×1.0
-      - 日本08|上海|×1.0
-      - 美国01|长沙|×1.0
-      - 美国02|广州|×1.0
-      - 美国03|广州|×1.0
-      - 美国04|长沙|×1.0
-      - 美国08|上海|×1.0
-      - 上海+-+香港02【SS】
-      - 上海+-+香港03【SS】
-      - 江门+-+新加坡01【SS】
-      - 江门+-+新加坡02【SS】
-      - 江门+-+新加坡03【SS】
-      - 江门 - 新加坡04【vmess】
-      - 安徽+-+日本01【SS】
-      - 安徽+-+日本02【SS】
-      - 上海+-+韩国01【SS】
-      - 广州+-+美国03【SS】
-      - 广州+-+台湾01（流媒体解锁）【SS】「2x」
-      - 广州+-+台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨狮城01丨2x
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港05丨2x
-      - 广港丨香港06丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨香港09丨2x
-      - 广港丨越南01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨台湾01丨2x
-      - 广港丨英国01丨2x
-      - 广港丨德国01丨2x
-      - +日本标准中继+01
-      - vpnpool-香港Azure 4
-      - vpnpool-SG-DigitalOcean 2
-      - 香港02|广州|×1.0
-      - 香港03|广州|×1.0
-      - 香港10|广州|×1.0
-      - 香港11|广州|×1.0
-      - 香港13|广州|×1.0|NF
-      - 香港14|广州|×1.0
-      - 香港16|广州|×1.0
-      - 香港18|长沙|×1.0
+      - 中国【YouTube由零開始】
+      - 香港02 1x trojan加速
+      - 澳大利亚【YouTube由零開始】
+      - vpnpool-SG-Melbicom 4
+      - +US,+5
+      - HK-183.240.132.27-2086
+      - gz1.52168.xyz:1115
+      - +US,+4
+      - vpnpool-台中Hinet 17
+      - vpnpool-SG-Melbicom 5
+      - vpnpool-Tokyo-Linode 2
+      - Relay_中国-荷兰_393
+      - vpnpool-SG-Melbicom 6
+      - CN_419 | 6.24Mb
+      - 保加利亚 Bulgaria●
+      - 保加利亚 Bulgaria● 2
+      - Lv1.广移A->日本B4
+      - vpnpool-SG-Melbicom 7
+      - vpnpool-Tokyo-Linode 3
+      - vpnpool-Tokyo-Linode 2 2
+      - vpnpool-Tokyo-Linode 3 2
+      - vpnpool-Tokyo-Linode 4
+      - vpnpool-Tokyo-Linode 5
+      - vpnpool-香港DMIT
+      - vpnpool-Tokyo-Linode 6
+      - vpnpool-Tokyo-Linode 7
+      - vpnpool-Osaka-Azure 2
+      - vpnpool-Tokyo-Linode 8
+      - vpnpool-Tokyo-Linode 9
+      - vpnpool-Tokyo-Linode 10
+      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 13
+      - vpnpool-SG-Melbicom 5 2
+      - vpnpool-Tokyo-Linode 14
       - 测试1
       - +USA
-      - 保加利亚 Bulgaria● 2
       - 越南 Vietnam●
       - IS+冰岛Hafnarfjordur
-      - 腾讯云_5
-      - _星河
       - MK+北马其顿Skopje
       - _CA_加拿大
-      - 香港 01 3
-      - 香港 01 2 2
-      - Azure.HongKong.2.Vpnpool专属 2
-      - 狮城 | Azure InfiniPort
-      - _US_美国 2 2
-      - _US_美国 5
+      - 狮城 | Azure InfiniPort 2
       - _CA_加拿大 9
   - name: ⛔️ 广告拦截
     type: select
@@ -784,655 +556,434 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Lv1.广移A->日本B4
-      - Azure.HongKong.2.Vpnpool专属
-      - 保加利亚 Bulgaria●
-      - +香港标准中继+01^
-      - +香港标准中继+02^
-      - +香港标准中继+03^
-      - +香港标准中继+05^
-      - 香港 01
-      - 香港 01 2
-      - HK_🇭🇰
-      - _US_美国
-      - _US_美国 2
-      - 美国【YouTube由零開始】
-      - 高速6
-      - 高速BBB
-      - 高速7
-      - +KR,
-      - +JP,+3
-      - +TW,
-      - vpnpool-SG-Melbicom
+      - vpnpool-SG-DigitalOcean
+      - Azure.HongKong.2.Vpnpool专属 2
       - vpnpool-香港Azure
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-SG-Melbicom 2
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-台中Hinet
-      - vpnpool-Tokyo-EDCL
-      - vpnpool-Tokyo-EDCL 2
-      - vpnpool-香港DMIT
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-SG-Melbicom 3
-      - vpnpool-SG-Melbicom 4
-      - vpnpool-台中Hinet 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-Osaka-Azure
-      - vpnpool-台中Hinet 3
-      - vpnpool-台中Hinet 4
+      - 标准|香港04解锁|Z214
       - vpnpool-香港Azure 2
-      - vpnpool-香港Azure 3
-      - vpnpool-Tokyo-Linode 8
-      - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
+      - 星河
+      - Relay_ |16.37Mb
+      - HK_🇭🇰
+      - vpnpool-台中Hinet
+      - Alien
+      - vpnpool-台中Hinet 2
+      - 美国 139
+      - 狮城 | Azure InfiniPort
+      - +SG,
+      - +JP,+2
+      - +TW,
+      - vpnpool-台中Hinet 3
+      - +JP,
+      - vpnpool-台中Hinet 4
       - vpnpool-台中Hinet 5
-      - vpnpool-Tokyo-Linode 11
-      - vpnpool-Tokyo-Linode 12
+      - 标准|日本01解锁|Z217
+      - 高速AAA
+      - 星河 2
+      - HK-183.240.132.27-4214
       - vpnpool-台中Hinet 6
+      - vpnpool-台中Hinet 7
+      - 香港 01
+      - 中国2
+      - vpnpool-Tokyo-EDCL
+      - 星河 3
+      - 香港 01 2
+      - vpnpool-Tokyo-EDCL 2
       - vpnpool-Tokyo-EDCL 3
       - vpnpool-Tokyo-EDCL 4
-      - vpnpool-台中Hinet 7
-      - vpnpool-台中Hinet 8
+      - Alien 2
+      - +JP,+3
+      - vpnpool-SG-DigitalOcean 2
+      - 星河 4
       - vpnpool-Tokyo-EDCL 5
       - vpnpool-Tokyo-EDCL 6
-      - vpnpool-Tokyo-Linode 13
-      - vpnpool-SG-Melbicom 5
-      - vpnpool-SG-Melbicom 6
+      - vpnpool-台中Hinet 8
+      - Azure.HongKong.2.Vpnpool专属
       - vpnpool-台中Hinet 9
-      - vpnpool-Tokyo-Linode 14
-      - vpnpool-Tokyo-Linode 15
-      - vpnpool-SG-Melbicom 7
-      - vpnpool-Osaka-Azure 2
+      - vpnpool-香港Azure 3
+      - vpnpool-Tokyo-EDCL 7
+      - Alien 3
+      - 香港 01 2 2
+      - Lv1.广移A->日本A1
+      - 星河 5
+      - vpnpool-香港Azure 4
+      - Alien 4
+      - Alien 5
+      - 星河 6
+      - Alien 6
+      - HK-117.185.229.24-4213
       - vpnpool-台中Hinet 10
       - vpnpool-台中Hinet 11
       - vpnpool-台中Hinet 12
-      - LAX-Cnservers
-      - HKT-Detour 06
-      - HKT-Detour 19
-      - IEPL SZ-HK 02
-      - IEPL SZ-HK 10
-      - IEPL SZ-SG 05
-      - IEPL SZ-SG 06
-      - TW-Detour 02
-      - vpnpool-SG-DigitalOcean
-      - vpnpool-Tokyo-Oracle
-      - vpnpool-Tokyo-Oracle 2
-      - vpnpool-Bengaluru-DigitalOcean
-      - US【tg@freevpn8】545
-      - US【tg@freevpn8】545 2
-      - 【tg@freevpn8】CN_371
-      - vpnpool-Tokyo-EDCL 7
-      - vpnpool-Tokyo-EDCL 8
       - vpnpool-台中Hinet 13
+      - vpnpool-SG-Melbicom
+      - vpnpool-Osaka-Azure
+      - CN_423 | 8.64Mb
+      - CN_410 | 2.04Mb
+      - vpnpool-Tokyo-EDCL 8
+      - 高速5
+      - 狮城 | LINODE SUDA 02
+      - Alien 7
+      - Alien 8
+      - Lv1.广移A->日本B3
+      - Alien 9
+      - Alien 10
+      - vpnpool-Tokyo-Linode
+      - _10
+      - 中国_03
+      - vpnpool-SG-Melbicom 2
+      - vpnpool-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean 3
+      - vpnpool-SG-Melbicom 3
+      - +US,
+      - gz1.52168.xyz:1109
       - vpnpool-台中Hinet 14
+      - US_🇺🇸
+      - vpnpool-台中Hinet 15
+      - vpnpool-San Jose-ColoCrossing
+      - vpnpool-台中Hinet 16
       - +US,+3
-      - 【tg@freevpn8】CN_363
-      - 台湾Hinet01|优选原生IP|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港2 | 免费节点 | 限速10M
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港8 | 日用节点 | 刷流量封禁
-      - 香港 HKT|中转|NF|
-      - 香港 HKT|临时CN2中转|NF|
-      - 香港 Nero|移动入口01|NF|
-      - 香港 Nero|移动入口02|NF|
-      - 香港 AWS|中转|月抛|0.5x流量消耗
-      - 台湾+Hinet|中转|NF.动漫疯|
-      - 台湾 Scloud|中转|动漫疯|
-      - 日本 Nero|广移入口01|
-      - 日本 Nero|国内入口02|
-      - 日本 AWS月抛|广州移动|
-      - 日本 AWS月抛|郴州联通|
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 新加坡 Vu|V1-2|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - 美国 GGC|中转|HBO|
-      - 美国 San Jose|中转|NF.Hulu.HBO|
-      - 英国 Do|中转|BBC|
-      - 俄罗斯 01|中转|
-      - "[VIP]中国香港 NO.1"
-      - "[VIP]中国香港 NO.2"
-      - 专线+香港05
-      - 香港+06+*
-      - 日本+01+*
-      - 日本+02+*
-      - 美国+01+*
-      - 香港01|长沙|×1.0
-      - 香港07|南昌|×1.0
-      - 香港11|南昌|×1.0
-      - 香港17|直连|×1.0
-      - 香港19|香港|×1.0|NF
-      - 狮城06|广州|×1.0
-      - 狮城07|香港|×1.0
-      - 大马01|长沙|×1.0
-      - 日本07|长沙|×1.0
-      - 日本08|上海|×1.0
-      - 美国01|长沙|×1.0
-      - 美国02|广州|×1.0
-      - 美国03|广州|×1.0
-      - 美国04|长沙|×1.0
-      - 美国08|上海|×1.0
-      - 上海+-+香港02【SS】
-      - 上海+-+香港03【SS】
-      - 江门+-+新加坡01【SS】
-      - 江门+-+新加坡02【SS】
-      - 江门+-+新加坡03【SS】
-      - 江门 - 新加坡04【vmess】
-      - 安徽+-+日本01【SS】
-      - 安徽+-+日本02【SS】
-      - 上海+-+韩国01【SS】
-      - 广州+-+美国03【SS】
-      - 广州+-+台湾01（流媒体解锁）【SS】「2x」
-      - 广州+-+台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨狮城01丨2x
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港05丨2x
-      - 广港丨香港06丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨香港09丨2x
-      - 广港丨越南01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨台湾01丨2x
-      - 广港丨英国01丨2x
-      - 广港丨德国01丨2x
-      - +日本标准中继+01
-      - vpnpool-香港Azure 4
-      - vpnpool-SG-DigitalOcean 2
-      - 香港02|广州|×1.0
-      - 香港03|广州|×1.0
-      - 香港10|广州|×1.0
-      - 香港11|广州|×1.0
-      - 香港13|广州|×1.0|NF
-      - 香港14|广州|×1.0
-      - 香港16|广州|×1.0
-      - 香港18|长沙|×1.0
+      - 中国【YouTube由零開始】
+      - 香港02 1x trojan加速
+      - 澳大利亚【YouTube由零開始】
+      - vpnpool-SG-Melbicom 4
+      - +US,+5
+      - HK-183.240.132.27-2086
+      - gz1.52168.xyz:1115
+      - +US,+4
+      - vpnpool-台中Hinet 17
+      - vpnpool-SG-Melbicom 5
+      - vpnpool-Tokyo-Linode 2
+      - Relay_中国-荷兰_393
+      - vpnpool-SG-Melbicom 6
+      - CN_419 | 6.24Mb
+      - 保加利亚 Bulgaria●
+      - 保加利亚 Bulgaria● 2
+      - Lv1.广移A->日本B4
+      - vpnpool-SG-Melbicom 7
+      - vpnpool-Tokyo-Linode 3
+      - vpnpool-Tokyo-Linode 2 2
+      - vpnpool-Tokyo-Linode 3 2
+      - vpnpool-Tokyo-Linode 4
+      - vpnpool-Tokyo-Linode 5
+      - vpnpool-香港DMIT
+      - vpnpool-Tokyo-Linode 6
+      - vpnpool-Tokyo-Linode 7
+      - vpnpool-Osaka-Azure 2
+      - vpnpool-Tokyo-Linode 8
+      - vpnpool-Tokyo-Linode 9
+      - vpnpool-Tokyo-Linode 10
+      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 13
+      - vpnpool-SG-Melbicom 5 2
+      - vpnpool-Tokyo-Linode 14
       - 测试1
       - +USA
-      - 保加利亚 Bulgaria● 2
       - 越南 Vietnam●
       - IS+冰岛Hafnarfjordur
-      - 腾讯云_5
-      - _星河
       - MK+北马其顿Skopje
       - _CA_加拿大
-      - 香港 01 3
-      - 香港 01 2 2
-      - Azure.HongKong.2.Vpnpool专属 2
-      - 狮城 | Azure InfiniPort
-      - _US_美国 2 2
-      - _US_美国 5
+      - 狮城 | Azure InfiniPort 2
       - _CA_加拿大 9
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - +香港标准中继+01^
-      - +香港标准中继+02^
-      - +香港标准中继+03^
-      - +香港标准中继+05^
-      - 香港 01
-      - 香港 01 2
       - vpnpool-香港Azure
+      - 标准|香港04解锁|Z214
+      - vpnpool-香港Azure 2
       - vpnpool-台中Hinet
-      - vpnpool-香港DMIT
       - vpnpool-台中Hinet 2
       - vpnpool-台中Hinet 3
       - vpnpool-台中Hinet 4
-      - vpnpool-香港Azure 2
-      - vpnpool-香港Azure 3
       - vpnpool-台中Hinet 5
       - vpnpool-台中Hinet 6
       - vpnpool-台中Hinet 7
+      - 香港 01
+      - 香港 01 2
       - vpnpool-台中Hinet 8
       - vpnpool-台中Hinet 9
+      - vpnpool-香港Azure 3
+      - 香港 01 2 2
+      - vpnpool-香港Azure 4
       - vpnpool-台中Hinet 10
       - vpnpool-台中Hinet 11
       - vpnpool-台中Hinet 12
-      - HKT-Detour 06
-      - HKT-Detour 19
       - vpnpool-台中Hinet 13
       - vpnpool-台中Hinet 14
-      - 台湾Hinet01|优选原生IP|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港2 | 免费节点 | 限速10M
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港8 | 日用节点 | 刷流量封禁
-      - 香港 HKT|中转|NF|
-      - 香港 HKT|临时CN2中转|NF|
-      - 香港 Nero|移动入口01|NF|
-      - 香港 Nero|移动入口02|NF|
-      - 香港 AWS|中转|月抛|0.5x流量消耗
-      - 台湾+Hinet|中转|NF.动漫疯|
-      - 台湾 Scloud|中转|动漫疯|
-      - "[VIP]中国香港 NO.1"
-      - "[VIP]中国香港 NO.2"
-      - 专线+香港05
-      - 香港+06+*
-      - 香港01|长沙|×1.0
-      - 香港07|南昌|×1.0
-      - 香港11|南昌|×1.0
-      - 香港17|直连|×1.0
-      - 香港19|香港|×1.0|NF
-      - 狮城07|香港|×1.0
-      - 上海+-+香港02【SS】
-      - 上海+-+香港03【SS】
-      - 广州+-+台湾01（流媒体解锁）【SS】「2x」
-      - 广州+-+台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨狮城01丨2x
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港05丨2x
-      - 广港丨香港06丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨香港09丨2x
-      - 广港丨越南01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨台湾01丨2x
-      - 广港丨英国01丨2x
-      - 广港丨德国01丨2x
-      - vpnpool-香港Azure 4
-      - 香港02|广州|×1.0
-      - 香港03|广州|×1.0
-      - 香港10|广州|×1.0
-      - 香港11|广州|×1.0
-      - 香港13|广州|×1.0|NF
-      - 香港14|广州|×1.0
-      - 香港16|广州|×1.0
-      - 香港18|长沙|×1.0
-      - 香港 01 3
-      - 香港 01 2 2
+      - vpnpool-台中Hinet 15
+      - vpnpool-台中Hinet 16
+      - 香港02 1x trojan加速
+      - vpnpool-台中Hinet 17
+      - vpnpool-香港DMIT
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Lv1.广移A->日本B4
-      - Azure.HongKong.2.Vpnpool专属
-      - 保加利亚 Bulgaria●
-      - +香港标准中继+01^
-      - +香港标准中继+02^
-      - +香港标准中继+03^
-      - +香港标准中继+05^
-      - 香港 01
-      - 香港 01 2
-      - HK_🇭🇰
-      - _US_美国
-      - _US_美国 2
-      - 美国【YouTube由零開始】
-      - 高速6
-      - 高速BBB
-      - 高速7
-      - +KR,
-      - +JP,+3
-      - +TW,
-      - vpnpool-SG-Melbicom
+      - vpnpool-SG-DigitalOcean
+      - Azure.HongKong.2.Vpnpool专属 2
       - vpnpool-香港Azure
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-SG-Melbicom 2
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-台中Hinet
-      - vpnpool-Tokyo-EDCL
-      - vpnpool-Tokyo-EDCL 2
-      - vpnpool-香港DMIT
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-SG-Melbicom 3
-      - vpnpool-SG-Melbicom 4
-      - vpnpool-台中Hinet 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-Osaka-Azure
-      - vpnpool-台中Hinet 3
-      - vpnpool-台中Hinet 4
+      - 标准|香港04解锁|Z214
       - vpnpool-香港Azure 2
-      - vpnpool-香港Azure 3
-      - vpnpool-Tokyo-Linode 8
-      - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
+      - 星河
+      - Relay_ |16.37Mb
+      - HK_🇭🇰
+      - vpnpool-台中Hinet
+      - Alien
+      - vpnpool-台中Hinet 2
+      - 美国 139
+      - 狮城 | Azure InfiniPort
+      - +SG,
+      - +JP,+2
+      - +TW,
+      - vpnpool-台中Hinet 3
+      - +JP,
+      - vpnpool-台中Hinet 4
       - vpnpool-台中Hinet 5
-      - vpnpool-Tokyo-Linode 11
-      - vpnpool-Tokyo-Linode 12
+      - 标准|日本01解锁|Z217
+      - 高速AAA
+      - 星河 2
+      - HK-183.240.132.27-4214
       - vpnpool-台中Hinet 6
+      - vpnpool-台中Hinet 7
+      - 香港 01
+      - 中国2
+      - vpnpool-Tokyo-EDCL
+      - 星河 3
+      - 香港 01 2
+      - vpnpool-Tokyo-EDCL 2
       - vpnpool-Tokyo-EDCL 3
       - vpnpool-Tokyo-EDCL 4
-      - vpnpool-台中Hinet 7
-      - vpnpool-台中Hinet 8
+      - Alien 2
+      - +JP,+3
+      - vpnpool-SG-DigitalOcean 2
+      - 星河 4
       - vpnpool-Tokyo-EDCL 5
       - vpnpool-Tokyo-EDCL 6
-      - vpnpool-Tokyo-Linode 13
-      - vpnpool-SG-Melbicom 5
-      - vpnpool-SG-Melbicom 6
+      - vpnpool-台中Hinet 8
+      - Azure.HongKong.2.Vpnpool专属
       - vpnpool-台中Hinet 9
-      - vpnpool-Tokyo-Linode 14
-      - vpnpool-Tokyo-Linode 15
-      - vpnpool-SG-Melbicom 7
-      - vpnpool-Osaka-Azure 2
+      - vpnpool-香港Azure 3
+      - vpnpool-Tokyo-EDCL 7
+      - Alien 3
+      - 香港 01 2 2
+      - Lv1.广移A->日本A1
+      - 星河 5
+      - vpnpool-香港Azure 4
+      - Alien 4
+      - Alien 5
+      - 星河 6
+      - Alien 6
+      - HK-117.185.229.24-4213
       - vpnpool-台中Hinet 10
       - vpnpool-台中Hinet 11
       - vpnpool-台中Hinet 12
-      - LAX-Cnservers
-      - HKT-Detour 06
-      - HKT-Detour 19
-      - IEPL SZ-HK 02
-      - IEPL SZ-HK 10
-      - IEPL SZ-SG 05
-      - IEPL SZ-SG 06
-      - TW-Detour 02
-      - vpnpool-SG-DigitalOcean
-      - vpnpool-Tokyo-Oracle
-      - vpnpool-Tokyo-Oracle 2
-      - vpnpool-Bengaluru-DigitalOcean
-      - US【tg@freevpn8】545
-      - US【tg@freevpn8】545 2
-      - 【tg@freevpn8】CN_371
-      - vpnpool-Tokyo-EDCL 7
-      - vpnpool-Tokyo-EDCL 8
       - vpnpool-台中Hinet 13
+      - vpnpool-SG-Melbicom
+      - vpnpool-Osaka-Azure
+      - CN_423 | 8.64Mb
+      - CN_410 | 2.04Mb
+      - vpnpool-Tokyo-EDCL 8
+      - 高速5
+      - 狮城 | LINODE SUDA 02
+      - Alien 7
+      - Alien 8
+      - Lv1.广移A->日本B3
+      - Alien 9
+      - Alien 10
+      - vpnpool-Tokyo-Linode
+      - _10
+      - 中国_03
+      - vpnpool-SG-Melbicom 2
+      - vpnpool-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean 3
+      - vpnpool-SG-Melbicom 3
+      - +US,
+      - gz1.52168.xyz:1109
       - vpnpool-台中Hinet 14
+      - US_🇺🇸
+      - vpnpool-台中Hinet 15
+      - vpnpool-San Jose-ColoCrossing
+      - vpnpool-台中Hinet 16
       - +US,+3
-      - 【tg@freevpn8】CN_363
-      - 台湾Hinet01|优选原生IP|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港2 | 免费节点 | 限速10M
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港8 | 日用节点 | 刷流量封禁
-      - 香港 HKT|中转|NF|
-      - 香港 HKT|临时CN2中转|NF|
-      - 香港 Nero|移动入口01|NF|
-      - 香港 Nero|移动入口02|NF|
-      - 香港 AWS|中转|月抛|0.5x流量消耗
-      - 台湾+Hinet|中转|NF.动漫疯|
-      - 台湾 Scloud|中转|动漫疯|
-      - 日本 Nero|广移入口01|
-      - 日本 Nero|国内入口02|
-      - 日本 AWS月抛|广州移动|
-      - 日本 AWS月抛|郴州联通|
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 新加坡 Vu|V1-2|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - 美国 GGC|中转|HBO|
-      - 美国 San Jose|中转|NF.Hulu.HBO|
-      - 英国 Do|中转|BBC|
-      - 俄罗斯 01|中转|
-      - "[VIP]中国香港 NO.1"
-      - "[VIP]中国香港 NO.2"
-      - 专线+香港05
-      - 香港+06+*
-      - 日本+01+*
-      - 日本+02+*
-      - 美国+01+*
-      - 香港01|长沙|×1.0
-      - 香港07|南昌|×1.0
-      - 香港11|南昌|×1.0
-      - 香港17|直连|×1.0
-      - 香港19|香港|×1.0|NF
-      - 狮城06|广州|×1.0
-      - 狮城07|香港|×1.0
-      - 大马01|长沙|×1.0
-      - 日本07|长沙|×1.0
-      - 日本08|上海|×1.0
-      - 美国01|长沙|×1.0
-      - 美国02|广州|×1.0
-      - 美国03|广州|×1.0
-      - 美国04|长沙|×1.0
-      - 美国08|上海|×1.0
-      - 上海+-+香港02【SS】
-      - 上海+-+香港03【SS】
-      - 江门+-+新加坡01【SS】
-      - 江门+-+新加坡02【SS】
-      - 江门+-+新加坡03【SS】
-      - 江门 - 新加坡04【vmess】
-      - 安徽+-+日本01【SS】
-      - 安徽+-+日本02【SS】
-      - 上海+-+韩国01【SS】
-      - 广州+-+美国03【SS】
-      - 广州+-+台湾01（流媒体解锁）【SS】「2x」
-      - 广州+-+台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨狮城01丨2x
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港05丨2x
-      - 广港丨香港06丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨香港09丨2x
-      - 广港丨越南01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨台湾01丨2x
-      - 广港丨英国01丨2x
-      - 广港丨德国01丨2x
-      - +日本标准中继+01
-      - vpnpool-香港Azure 4
-      - vpnpool-SG-DigitalOcean 2
-      - 香港02|广州|×1.0
-      - 香港03|广州|×1.0
-      - 香港10|广州|×1.0
-      - 香港11|广州|×1.0
-      - 香港13|广州|×1.0|NF
-      - 香港14|广州|×1.0
-      - 香港16|广州|×1.0
-      - 香港18|长沙|×1.0
+      - 中国【YouTube由零開始】
+      - 香港02 1x trojan加速
+      - 澳大利亚【YouTube由零開始】
+      - vpnpool-SG-Melbicom 4
+      - +US,+5
+      - HK-183.240.132.27-2086
+      - gz1.52168.xyz:1115
+      - +US,+4
+      - vpnpool-台中Hinet 17
+      - vpnpool-SG-Melbicom 5
+      - vpnpool-Tokyo-Linode 2
+      - Relay_中国-荷兰_393
+      - vpnpool-SG-Melbicom 6
+      - CN_419 | 6.24Mb
+      - 保加利亚 Bulgaria●
+      - 保加利亚 Bulgaria● 2
+      - Lv1.广移A->日本B4
+      - vpnpool-SG-Melbicom 7
+      - vpnpool-Tokyo-Linode 3
+      - vpnpool-Tokyo-Linode 2 2
+      - vpnpool-Tokyo-Linode 3 2
+      - vpnpool-Tokyo-Linode 4
+      - vpnpool-Tokyo-Linode 5
+      - vpnpool-香港DMIT
+      - vpnpool-Tokyo-Linode 6
+      - vpnpool-Tokyo-Linode 7
+      - vpnpool-Osaka-Azure 2
+      - vpnpool-Tokyo-Linode 8
+      - vpnpool-Tokyo-Linode 9
+      - vpnpool-Tokyo-Linode 10
+      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 13
+      - vpnpool-SG-Melbicom 5 2
+      - vpnpool-Tokyo-Linode 14
       - 测试1
       - +USA
-      - 保加利亚 Bulgaria● 2
       - 越南 Vietnam●
       - IS+冰岛Hafnarfjordur
-      - 腾讯云_5
-      - _星河
       - MK+北马其顿Skopje
       - _CA_加拿大
-      - 香港 01 3
-      - 香港 01 2 2
-      - Azure.HongKong.2.Vpnpool专属 2
-      - 狮城 | Azure InfiniPort
-      - _US_美国 2 2
-      - _US_美国 5
+      - 狮城 | Azure InfiniPort 2
       - _CA_加拿大 9
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Lv1.广移A->日本B4
-      - Azure.HongKong.2.Vpnpool专属
-      - 保加利亚 Bulgaria●
-      - +香港标准中继+01^
-      - +香港标准中继+02^
-      - +香港标准中继+03^
-      - +香港标准中继+05^
-      - 香港 01
-      - 香港 01 2
-      - HK_🇭🇰
-      - _US_美国
-      - _US_美国 2
-      - 美国【YouTube由零開始】
-      - 高速6
-      - 高速BBB
-      - 高速7
-      - +KR,
-      - +JP,+3
-      - +TW,
-      - vpnpool-SG-Melbicom
+      - vpnpool-SG-DigitalOcean
+      - Azure.HongKong.2.Vpnpool专属 2
       - vpnpool-香港Azure
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-SG-Melbicom 2
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-台中Hinet
-      - vpnpool-Tokyo-EDCL
-      - vpnpool-Tokyo-EDCL 2
-      - vpnpool-香港DMIT
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-SG-Melbicom 3
-      - vpnpool-SG-Melbicom 4
-      - vpnpool-台中Hinet 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-Osaka-Azure
-      - vpnpool-台中Hinet 3
-      - vpnpool-台中Hinet 4
+      - 标准|香港04解锁|Z214
       - vpnpool-香港Azure 2
-      - vpnpool-香港Azure 3
-      - vpnpool-Tokyo-Linode 8
-      - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
+      - 星河
+      - Relay_ |16.37Mb
+      - HK_🇭🇰
+      - vpnpool-台中Hinet
+      - Alien
+      - vpnpool-台中Hinet 2
+      - 美国 139
+      - 狮城 | Azure InfiniPort
+      - +SG,
+      - +JP,+2
+      - +TW,
+      - vpnpool-台中Hinet 3
+      - +JP,
+      - vpnpool-台中Hinet 4
       - vpnpool-台中Hinet 5
-      - vpnpool-Tokyo-Linode 11
-      - vpnpool-Tokyo-Linode 12
+      - 标准|日本01解锁|Z217
+      - 高速AAA
+      - 星河 2
+      - HK-183.240.132.27-4214
       - vpnpool-台中Hinet 6
+      - vpnpool-台中Hinet 7
+      - 香港 01
+      - 中国2
+      - vpnpool-Tokyo-EDCL
+      - 星河 3
+      - 香港 01 2
+      - vpnpool-Tokyo-EDCL 2
       - vpnpool-Tokyo-EDCL 3
       - vpnpool-Tokyo-EDCL 4
-      - vpnpool-台中Hinet 7
-      - vpnpool-台中Hinet 8
+      - Alien 2
+      - +JP,+3
+      - vpnpool-SG-DigitalOcean 2
+      - 星河 4
       - vpnpool-Tokyo-EDCL 5
       - vpnpool-Tokyo-EDCL 6
-      - vpnpool-Tokyo-Linode 13
-      - vpnpool-SG-Melbicom 5
-      - vpnpool-SG-Melbicom 6
+      - vpnpool-台中Hinet 8
+      - Azure.HongKong.2.Vpnpool专属
       - vpnpool-台中Hinet 9
-      - vpnpool-Tokyo-Linode 14
-      - vpnpool-Tokyo-Linode 15
-      - vpnpool-SG-Melbicom 7
-      - vpnpool-Osaka-Azure 2
+      - vpnpool-香港Azure 3
+      - vpnpool-Tokyo-EDCL 7
+      - Alien 3
+      - 香港 01 2 2
+      - Lv1.广移A->日本A1
+      - 星河 5
+      - vpnpool-香港Azure 4
+      - Alien 4
+      - Alien 5
+      - 星河 6
+      - Alien 6
+      - HK-117.185.229.24-4213
       - vpnpool-台中Hinet 10
       - vpnpool-台中Hinet 11
       - vpnpool-台中Hinet 12
-      - LAX-Cnservers
-      - HKT-Detour 06
-      - HKT-Detour 19
-      - IEPL SZ-HK 02
-      - IEPL SZ-HK 10
-      - IEPL SZ-SG 05
-      - IEPL SZ-SG 06
-      - TW-Detour 02
-      - vpnpool-SG-DigitalOcean
-      - vpnpool-Tokyo-Oracle
-      - vpnpool-Tokyo-Oracle 2
-      - vpnpool-Bengaluru-DigitalOcean
-      - US【tg@freevpn8】545
-      - US【tg@freevpn8】545 2
-      - 【tg@freevpn8】CN_371
-      - vpnpool-Tokyo-EDCL 7
-      - vpnpool-Tokyo-EDCL 8
       - vpnpool-台中Hinet 13
+      - vpnpool-SG-Melbicom
+      - vpnpool-Osaka-Azure
+      - CN_423 | 8.64Mb
+      - CN_410 | 2.04Mb
+      - vpnpool-Tokyo-EDCL 8
+      - 高速5
+      - 狮城 | LINODE SUDA 02
+      - Alien 7
+      - Alien 8
+      - Lv1.广移A->日本B3
+      - Alien 9
+      - Alien 10
+      - vpnpool-Tokyo-Linode
+      - _10
+      - 中国_03
+      - vpnpool-SG-Melbicom 2
+      - vpnpool-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean 3
+      - vpnpool-SG-Melbicom 3
+      - +US,
+      - gz1.52168.xyz:1109
       - vpnpool-台中Hinet 14
+      - US_🇺🇸
+      - vpnpool-台中Hinet 15
+      - vpnpool-San Jose-ColoCrossing
+      - vpnpool-台中Hinet 16
       - +US,+3
-      - 【tg@freevpn8】CN_363
-      - 台湾Hinet01|优选原生IP|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港2 | 免费节点 | 限速10M
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港8 | 日用节点 | 刷流量封禁
-      - 香港 HKT|中转|NF|
-      - 香港 HKT|临时CN2中转|NF|
-      - 香港 Nero|移动入口01|NF|
-      - 香港 Nero|移动入口02|NF|
-      - 香港 AWS|中转|月抛|0.5x流量消耗
-      - 台湾+Hinet|中转|NF.动漫疯|
-      - 台湾 Scloud|中转|动漫疯|
-      - 日本 Nero|广移入口01|
-      - 日本 Nero|国内入口02|
-      - 日本 AWS月抛|广州移动|
-      - 日本 AWS月抛|郴州联通|
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 新加坡 Vu|V1-2|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - 美国 GGC|中转|HBO|
-      - 美国 San Jose|中转|NF.Hulu.HBO|
-      - 英国 Do|中转|BBC|
-      - 俄罗斯 01|中转|
-      - "[VIP]中国香港 NO.1"
-      - "[VIP]中国香港 NO.2"
-      - 专线+香港05
-      - 香港+06+*
-      - 日本+01+*
-      - 日本+02+*
-      - 美国+01+*
-      - 香港01|长沙|×1.0
-      - 香港07|南昌|×1.0
-      - 香港11|南昌|×1.0
-      - 香港17|直连|×1.0
-      - 香港19|香港|×1.0|NF
-      - 狮城06|广州|×1.0
-      - 狮城07|香港|×1.0
-      - 大马01|长沙|×1.0
-      - 日本07|长沙|×1.0
-      - 日本08|上海|×1.0
-      - 美国01|长沙|×1.0
-      - 美国02|广州|×1.0
-      - 美国03|广州|×1.0
-      - 美国04|长沙|×1.0
-      - 美国08|上海|×1.0
-      - 上海+-+香港02【SS】
-      - 上海+-+香港03【SS】
-      - 江门+-+新加坡01【SS】
-      - 江门+-+新加坡02【SS】
-      - 江门+-+新加坡03【SS】
-      - 江门 - 新加坡04【vmess】
-      - 安徽+-+日本01【SS】
-      - 安徽+-+日本02【SS】
-      - 上海+-+韩国01【SS】
-      - 广州+-+美国03【SS】
-      - 广州+-+台湾01（流媒体解锁）【SS】「2x」
-      - 广州+-+台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨狮城01丨2x
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港05丨2x
-      - 广港丨香港06丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨香港09丨2x
-      - 广港丨越南01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨台湾01丨2x
-      - 广港丨英国01丨2x
-      - 广港丨德国01丨2x
-      - +日本标准中继+01
-      - vpnpool-香港Azure 4
-      - vpnpool-SG-DigitalOcean 2
-      - 香港02|广州|×1.0
-      - 香港03|广州|×1.0
-      - 香港10|广州|×1.0
-      - 香港11|广州|×1.0
-      - 香港13|广州|×1.0|NF
-      - 香港14|广州|×1.0
-      - 香港16|广州|×1.0
-      - 香港18|长沙|×1.0
+      - 中国【YouTube由零開始】
+      - 香港02 1x trojan加速
+      - 澳大利亚【YouTube由零開始】
+      - vpnpool-SG-Melbicom 4
+      - +US,+5
+      - HK-183.240.132.27-2086
+      - gz1.52168.xyz:1115
+      - +US,+4
+      - vpnpool-台中Hinet 17
+      - vpnpool-SG-Melbicom 5
+      - vpnpool-Tokyo-Linode 2
+      - Relay_中国-荷兰_393
+      - vpnpool-SG-Melbicom 6
+      - CN_419 | 6.24Mb
+      - 保加利亚 Bulgaria●
+      - 保加利亚 Bulgaria● 2
+      - Lv1.广移A->日本B4
+      - vpnpool-SG-Melbicom 7
+      - vpnpool-Tokyo-Linode 3
+      - vpnpool-Tokyo-Linode 2 2
+      - vpnpool-Tokyo-Linode 3 2
+      - vpnpool-Tokyo-Linode 4
+      - vpnpool-Tokyo-Linode 5
+      - vpnpool-香港DMIT
+      - vpnpool-Tokyo-Linode 6
+      - vpnpool-Tokyo-Linode 7
+      - vpnpool-Osaka-Azure 2
+      - vpnpool-Tokyo-Linode 8
+      - vpnpool-Tokyo-Linode 9
+      - vpnpool-Tokyo-Linode 10
+      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 13
+      - vpnpool-SG-Melbicom 5 2
+      - vpnpool-Tokyo-Linode 14
       - 测试1
       - +USA
-      - 保加利亚 Bulgaria● 2
       - 越南 Vietnam●
       - IS+冰岛Hafnarfjordur
-      - 腾讯云_5
-      - _星河
       - MK+北马其顿Skopje
       - _CA_加拿大
-      - 香港 01 3
-      - 香港 01 2 2
-      - Azure.HongKong.2.Vpnpool专属 2
-      - 狮城 | Azure InfiniPort
-      - _US_美国 2 2
-      - _US_美国 5
+      - 狮城 | Azure InfiniPort 2
       - _CA_加拿大 9
   - name: 🍎 苹果服务
     type: select
@@ -1440,191 +991,134 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Lv1.广移A->日本B4
-      - Azure.HongKong.2.Vpnpool专属
-      - 保加利亚 Bulgaria●
-      - +香港标准中继+01^
-      - +香港标准中继+02^
-      - +香港标准中继+03^
-      - +香港标准中继+05^
-      - 香港 01
-      - 香港 01 2
-      - HK_🇭🇰
-      - _US_美国
-      - _US_美国 2
-      - 美国【YouTube由零開始】
-      - 高速6
-      - 高速BBB
-      - 高速7
-      - +KR,
-      - +JP,+3
-      - +TW,
-      - vpnpool-SG-Melbicom
+      - vpnpool-SG-DigitalOcean
+      - Azure.HongKong.2.Vpnpool专属 2
       - vpnpool-香港Azure
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-SG-Melbicom 2
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-台中Hinet
-      - vpnpool-Tokyo-EDCL
-      - vpnpool-Tokyo-EDCL 2
-      - vpnpool-香港DMIT
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-SG-Melbicom 3
-      - vpnpool-SG-Melbicom 4
-      - vpnpool-台中Hinet 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-Osaka-Azure
-      - vpnpool-台中Hinet 3
-      - vpnpool-台中Hinet 4
+      - 标准|香港04解锁|Z214
       - vpnpool-香港Azure 2
-      - vpnpool-香港Azure 3
-      - vpnpool-Tokyo-Linode 8
-      - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
+      - 星河
+      - Relay_ |16.37Mb
+      - HK_🇭🇰
+      - vpnpool-台中Hinet
+      - Alien
+      - vpnpool-台中Hinet 2
+      - 美国 139
+      - 狮城 | Azure InfiniPort
+      - +SG,
+      - +JP,+2
+      - +TW,
+      - vpnpool-台中Hinet 3
+      - +JP,
+      - vpnpool-台中Hinet 4
       - vpnpool-台中Hinet 5
-      - vpnpool-Tokyo-Linode 11
-      - vpnpool-Tokyo-Linode 12
+      - 标准|日本01解锁|Z217
+      - 高速AAA
+      - 星河 2
+      - HK-183.240.132.27-4214
       - vpnpool-台中Hinet 6
+      - vpnpool-台中Hinet 7
+      - 香港 01
+      - 中国2
+      - vpnpool-Tokyo-EDCL
+      - 星河 3
+      - 香港 01 2
+      - vpnpool-Tokyo-EDCL 2
       - vpnpool-Tokyo-EDCL 3
       - vpnpool-Tokyo-EDCL 4
-      - vpnpool-台中Hinet 7
-      - vpnpool-台中Hinet 8
+      - Alien 2
+      - +JP,+3
+      - vpnpool-SG-DigitalOcean 2
+      - 星河 4
       - vpnpool-Tokyo-EDCL 5
       - vpnpool-Tokyo-EDCL 6
-      - vpnpool-Tokyo-Linode 13
-      - vpnpool-SG-Melbicom 5
-      - vpnpool-SG-Melbicom 6
+      - vpnpool-台中Hinet 8
+      - Azure.HongKong.2.Vpnpool专属
       - vpnpool-台中Hinet 9
-      - vpnpool-Tokyo-Linode 14
-      - vpnpool-Tokyo-Linode 15
-      - vpnpool-SG-Melbicom 7
-      - vpnpool-Osaka-Azure 2
+      - vpnpool-香港Azure 3
+      - vpnpool-Tokyo-EDCL 7
+      - Alien 3
+      - 香港 01 2 2
+      - Lv1.广移A->日本A1
+      - 星河 5
+      - vpnpool-香港Azure 4
+      - Alien 4
+      - Alien 5
+      - 星河 6
+      - Alien 6
+      - HK-117.185.229.24-4213
       - vpnpool-台中Hinet 10
       - vpnpool-台中Hinet 11
       - vpnpool-台中Hinet 12
-      - LAX-Cnservers
-      - HKT-Detour 06
-      - HKT-Detour 19
-      - IEPL SZ-HK 02
-      - IEPL SZ-HK 10
-      - IEPL SZ-SG 05
-      - IEPL SZ-SG 06
-      - TW-Detour 02
-      - vpnpool-SG-DigitalOcean
-      - vpnpool-Tokyo-Oracle
-      - vpnpool-Tokyo-Oracle 2
-      - vpnpool-Bengaluru-DigitalOcean
-      - US【tg@freevpn8】545
-      - US【tg@freevpn8】545 2
-      - 【tg@freevpn8】CN_371
-      - vpnpool-Tokyo-EDCL 7
-      - vpnpool-Tokyo-EDCL 8
       - vpnpool-台中Hinet 13
+      - vpnpool-SG-Melbicom
+      - vpnpool-Osaka-Azure
+      - CN_423 | 8.64Mb
+      - CN_410 | 2.04Mb
+      - vpnpool-Tokyo-EDCL 8
+      - 高速5
+      - 狮城 | LINODE SUDA 02
+      - Alien 7
+      - Alien 8
+      - Lv1.广移A->日本B3
+      - Alien 9
+      - Alien 10
+      - vpnpool-Tokyo-Linode
+      - _10
+      - 中国_03
+      - vpnpool-SG-Melbicom 2
+      - vpnpool-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean 3
+      - vpnpool-SG-Melbicom 3
+      - +US,
+      - gz1.52168.xyz:1109
       - vpnpool-台中Hinet 14
+      - US_🇺🇸
+      - vpnpool-台中Hinet 15
+      - vpnpool-San Jose-ColoCrossing
+      - vpnpool-台中Hinet 16
       - +US,+3
-      - 【tg@freevpn8】CN_363
-      - 台湾Hinet01|优选原生IP|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港2 | 免费节点 | 限速10M
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港8 | 日用节点 | 刷流量封禁
-      - 香港 HKT|中转|NF|
-      - 香港 HKT|临时CN2中转|NF|
-      - 香港 Nero|移动入口01|NF|
-      - 香港 Nero|移动入口02|NF|
-      - 香港 AWS|中转|月抛|0.5x流量消耗
-      - 台湾+Hinet|中转|NF.动漫疯|
-      - 台湾 Scloud|中转|动漫疯|
-      - 日本 Nero|广移入口01|
-      - 日本 Nero|国内入口02|
-      - 日本 AWS月抛|广州移动|
-      - 日本 AWS月抛|郴州联通|
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 新加坡 Vu|V1-2|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - 美国 GGC|中转|HBO|
-      - 美国 San Jose|中转|NF.Hulu.HBO|
-      - 英国 Do|中转|BBC|
-      - 俄罗斯 01|中转|
-      - "[VIP]中国香港 NO.1"
-      - "[VIP]中国香港 NO.2"
-      - 专线+香港05
-      - 香港+06+*
-      - 日本+01+*
-      - 日本+02+*
-      - 美国+01+*
-      - 香港01|长沙|×1.0
-      - 香港07|南昌|×1.0
-      - 香港11|南昌|×1.0
-      - 香港17|直连|×1.0
-      - 香港19|香港|×1.0|NF
-      - 狮城06|广州|×1.0
-      - 狮城07|香港|×1.0
-      - 大马01|长沙|×1.0
-      - 日本07|长沙|×1.0
-      - 日本08|上海|×1.0
-      - 美国01|长沙|×1.0
-      - 美国02|广州|×1.0
-      - 美国03|广州|×1.0
-      - 美国04|长沙|×1.0
-      - 美国08|上海|×1.0
-      - 上海+-+香港02【SS】
-      - 上海+-+香港03【SS】
-      - 江门+-+新加坡01【SS】
-      - 江门+-+新加坡02【SS】
-      - 江门+-+新加坡03【SS】
-      - 江门 - 新加坡04【vmess】
-      - 安徽+-+日本01【SS】
-      - 安徽+-+日本02【SS】
-      - 上海+-+韩国01【SS】
-      - 广州+-+美国03【SS】
-      - 广州+-+台湾01（流媒体解锁）【SS】「2x」
-      - 广州+-+台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨狮城01丨2x
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港05丨2x
-      - 广港丨香港06丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨香港09丨2x
-      - 广港丨越南01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨台湾01丨2x
-      - 广港丨英国01丨2x
-      - 广港丨德国01丨2x
-      - +日本标准中继+01
-      - vpnpool-香港Azure 4
-      - vpnpool-SG-DigitalOcean 2
-      - 香港02|广州|×1.0
-      - 香港03|广州|×1.0
-      - 香港10|广州|×1.0
-      - 香港11|广州|×1.0
-      - 香港13|广州|×1.0|NF
-      - 香港14|广州|×1.0
-      - 香港16|广州|×1.0
-      - 香港18|长沙|×1.0
+      - 中国【YouTube由零開始】
+      - 香港02 1x trojan加速
+      - 澳大利亚【YouTube由零開始】
+      - vpnpool-SG-Melbicom 4
+      - +US,+5
+      - HK-183.240.132.27-2086
+      - gz1.52168.xyz:1115
+      - +US,+4
+      - vpnpool-台中Hinet 17
+      - vpnpool-SG-Melbicom 5
+      - vpnpool-Tokyo-Linode 2
+      - Relay_中国-荷兰_393
+      - vpnpool-SG-Melbicom 6
+      - CN_419 | 6.24Mb
+      - 保加利亚 Bulgaria●
+      - 保加利亚 Bulgaria● 2
+      - Lv1.广移A->日本B4
+      - vpnpool-SG-Melbicom 7
+      - vpnpool-Tokyo-Linode 3
+      - vpnpool-Tokyo-Linode 2 2
+      - vpnpool-Tokyo-Linode 3 2
+      - vpnpool-Tokyo-Linode 4
+      - vpnpool-Tokyo-Linode 5
+      - vpnpool-香港DMIT
+      - vpnpool-Tokyo-Linode 6
+      - vpnpool-Tokyo-Linode 7
+      - vpnpool-Osaka-Azure 2
+      - vpnpool-Tokyo-Linode 8
+      - vpnpool-Tokyo-Linode 9
+      - vpnpool-Tokyo-Linode 10
+      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 13
+      - vpnpool-SG-Melbicom 5 2
+      - vpnpool-Tokyo-Linode 14
       - 测试1
       - +USA
-      - 保加利亚 Bulgaria● 2
       - 越南 Vietnam●
       - IS+冰岛Hafnarfjordur
-      - 腾讯云_5
-      - _星河
       - MK+北马其顿Skopje
       - _CA_加拿大
-      - 香港 01 3
-      - 香港 01 2 2
-      - Azure.HongKong.2.Vpnpool专属 2
-      - 狮城 | Azure InfiniPort
-      - _US_美国 2 2
-      - _US_美国 5
+      - 狮城 | Azure InfiniPort 2
       - _CA_加拿大 9
   - name: 🎯 全球直连
     type: select
@@ -1641,191 +1135,134 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Lv1.广移A->日本B4
-      - Azure.HongKong.2.Vpnpool专属
-      - 保加利亚 Bulgaria●
-      - +香港标准中继+01^
-      - +香港标准中继+02^
-      - +香港标准中继+03^
-      - +香港标准中继+05^
-      - 香港 01
-      - 香港 01 2
-      - HK_🇭🇰
-      - _US_美国
-      - _US_美国 2
-      - 美国【YouTube由零開始】
-      - 高速6
-      - 高速BBB
-      - 高速7
-      - +KR,
-      - +JP,+3
-      - +TW,
-      - vpnpool-SG-Melbicom
+      - vpnpool-SG-DigitalOcean
+      - Azure.HongKong.2.Vpnpool专属 2
       - vpnpool-香港Azure
-      - vpnpool-Tokyo-Linode
-      - vpnpool-Tokyo-Linode 2
-      - vpnpool-Tokyo-Linode 3
-      - vpnpool-SG-Melbicom 2
-      - vpnpool-Tokyo-Linode 4
-      - vpnpool-Tokyo-Linode 5
-      - vpnpool-台中Hinet
-      - vpnpool-Tokyo-EDCL
-      - vpnpool-Tokyo-EDCL 2
-      - vpnpool-香港DMIT
-      - vpnpool-Tokyo-Linode 6
-      - vpnpool-SG-Melbicom 3
-      - vpnpool-SG-Melbicom 4
-      - vpnpool-台中Hinet 2
-      - vpnpool-Tokyo-Linode 7
-      - vpnpool-Osaka-Azure
-      - vpnpool-台中Hinet 3
-      - vpnpool-台中Hinet 4
+      - 标准|香港04解锁|Z214
       - vpnpool-香港Azure 2
-      - vpnpool-香港Azure 3
-      - vpnpool-Tokyo-Linode 8
-      - vpnpool-Tokyo-Linode 9
-      - vpnpool-Tokyo-Linode 10
+      - 星河
+      - Relay_ |16.37Mb
+      - HK_🇭🇰
+      - vpnpool-台中Hinet
+      - Alien
+      - vpnpool-台中Hinet 2
+      - 美国 139
+      - 狮城 | Azure InfiniPort
+      - +SG,
+      - +JP,+2
+      - +TW,
+      - vpnpool-台中Hinet 3
+      - +JP,
+      - vpnpool-台中Hinet 4
       - vpnpool-台中Hinet 5
-      - vpnpool-Tokyo-Linode 11
-      - vpnpool-Tokyo-Linode 12
+      - 标准|日本01解锁|Z217
+      - 高速AAA
+      - 星河 2
+      - HK-183.240.132.27-4214
       - vpnpool-台中Hinet 6
+      - vpnpool-台中Hinet 7
+      - 香港 01
+      - 中国2
+      - vpnpool-Tokyo-EDCL
+      - 星河 3
+      - 香港 01 2
+      - vpnpool-Tokyo-EDCL 2
       - vpnpool-Tokyo-EDCL 3
       - vpnpool-Tokyo-EDCL 4
-      - vpnpool-台中Hinet 7
-      - vpnpool-台中Hinet 8
+      - Alien 2
+      - +JP,+3
+      - vpnpool-SG-DigitalOcean 2
+      - 星河 4
       - vpnpool-Tokyo-EDCL 5
       - vpnpool-Tokyo-EDCL 6
-      - vpnpool-Tokyo-Linode 13
-      - vpnpool-SG-Melbicom 5
-      - vpnpool-SG-Melbicom 6
+      - vpnpool-台中Hinet 8
+      - Azure.HongKong.2.Vpnpool专属
       - vpnpool-台中Hinet 9
-      - vpnpool-Tokyo-Linode 14
-      - vpnpool-Tokyo-Linode 15
-      - vpnpool-SG-Melbicom 7
-      - vpnpool-Osaka-Azure 2
+      - vpnpool-香港Azure 3
+      - vpnpool-Tokyo-EDCL 7
+      - Alien 3
+      - 香港 01 2 2
+      - Lv1.广移A->日本A1
+      - 星河 5
+      - vpnpool-香港Azure 4
+      - Alien 4
+      - Alien 5
+      - 星河 6
+      - Alien 6
+      - HK-117.185.229.24-4213
       - vpnpool-台中Hinet 10
       - vpnpool-台中Hinet 11
       - vpnpool-台中Hinet 12
-      - LAX-Cnservers
-      - HKT-Detour 06
-      - HKT-Detour 19
-      - IEPL SZ-HK 02
-      - IEPL SZ-HK 10
-      - IEPL SZ-SG 05
-      - IEPL SZ-SG 06
-      - TW-Detour 02
-      - vpnpool-SG-DigitalOcean
-      - vpnpool-Tokyo-Oracle
-      - vpnpool-Tokyo-Oracle 2
-      - vpnpool-Bengaluru-DigitalOcean
-      - US【tg@freevpn8】545
-      - US【tg@freevpn8】545 2
-      - 【tg@freevpn8】CN_371
-      - vpnpool-Tokyo-EDCL 7
-      - vpnpool-Tokyo-EDCL 8
       - vpnpool-台中Hinet 13
+      - vpnpool-SG-Melbicom
+      - vpnpool-Osaka-Azure
+      - CN_423 | 8.64Mb
+      - CN_410 | 2.04Mb
+      - vpnpool-Tokyo-EDCL 8
+      - 高速5
+      - 狮城 | LINODE SUDA 02
+      - Alien 7
+      - Alien 8
+      - Lv1.广移A->日本B3
+      - Alien 9
+      - Alien 10
+      - vpnpool-Tokyo-Linode
+      - _10
+      - 中国_03
+      - vpnpool-SG-Melbicom 2
+      - vpnpool-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean 3
+      - vpnpool-SG-Melbicom 3
+      - +US,
+      - gz1.52168.xyz:1109
       - vpnpool-台中Hinet 14
+      - US_🇺🇸
+      - vpnpool-台中Hinet 15
+      - vpnpool-San Jose-ColoCrossing
+      - vpnpool-台中Hinet 16
       - +US,+3
-      - 【tg@freevpn8】CN_363
-      - 台湾Hinet01|优选原生IP|1x
-      - 香港HKT01|优选原生IP|1x
-      - 香港HKT02|优选原生IP|1x
-      - 香港HKT03|优选原生IP|1x
-      - 香港2 | 免费节点 | 限速10M
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港8 | 日用节点 | 刷流量封禁
-      - 香港 HKT|中转|NF|
-      - 香港 HKT|临时CN2中转|NF|
-      - 香港 Nero|移动入口01|NF|
-      - 香港 Nero|移动入口02|NF|
-      - 香港 AWS|中转|月抛|0.5x流量消耗
-      - 台湾+Hinet|中转|NF.动漫疯|
-      - 台湾 Scloud|中转|动漫疯|
-      - 日本 Nero|广移入口01|
-      - 日本 Nero|国内入口02|
-      - 日本 AWS月抛|广州移动|
-      - 日本 AWS月抛|郴州联通|
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 新加坡 Vu|V1-2|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - 美国 GGC|中转|HBO|
-      - 美国 San Jose|中转|NF.Hulu.HBO|
-      - 英国 Do|中转|BBC|
-      - 俄罗斯 01|中转|
-      - "[VIP]中国香港 NO.1"
-      - "[VIP]中国香港 NO.2"
-      - 专线+香港05
-      - 香港+06+*
-      - 日本+01+*
-      - 日本+02+*
-      - 美国+01+*
-      - 香港01|长沙|×1.0
-      - 香港07|南昌|×1.0
-      - 香港11|南昌|×1.0
-      - 香港17|直连|×1.0
-      - 香港19|香港|×1.0|NF
-      - 狮城06|广州|×1.0
-      - 狮城07|香港|×1.0
-      - 大马01|长沙|×1.0
-      - 日本07|长沙|×1.0
-      - 日本08|上海|×1.0
-      - 美国01|长沙|×1.0
-      - 美国02|广州|×1.0
-      - 美国03|广州|×1.0
-      - 美国04|长沙|×1.0
-      - 美国08|上海|×1.0
-      - 上海+-+香港02【SS】
-      - 上海+-+香港03【SS】
-      - 江门+-+新加坡01【SS】
-      - 江门+-+新加坡02【SS】
-      - 江门+-+新加坡03【SS】
-      - 江门 - 新加坡04【vmess】
-      - 安徽+-+日本01【SS】
-      - 安徽+-+日本02【SS】
-      - 上海+-+韩国01【SS】
-      - 广州+-+美国03【SS】
-      - 广州+-+台湾01（流媒体解锁）【SS】「2x」
-      - 广州+-+台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨狮城01丨2x
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港05丨2x
-      - 广港丨香港06丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨香港09丨2x
-      - 广港丨越南01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨台湾01丨2x
-      - 广港丨英国01丨2x
-      - 广港丨德国01丨2x
-      - +日本标准中继+01
-      - vpnpool-香港Azure 4
-      - vpnpool-SG-DigitalOcean 2
-      - 香港02|广州|×1.0
-      - 香港03|广州|×1.0
-      - 香港10|广州|×1.0
-      - 香港11|广州|×1.0
-      - 香港13|广州|×1.0|NF
-      - 香港14|广州|×1.0
-      - 香港16|广州|×1.0
-      - 香港18|长沙|×1.0
+      - 中国【YouTube由零開始】
+      - 香港02 1x trojan加速
+      - 澳大利亚【YouTube由零開始】
+      - vpnpool-SG-Melbicom 4
+      - +US,+5
+      - HK-183.240.132.27-2086
+      - gz1.52168.xyz:1115
+      - +US,+4
+      - vpnpool-台中Hinet 17
+      - vpnpool-SG-Melbicom 5
+      - vpnpool-Tokyo-Linode 2
+      - Relay_中国-荷兰_393
+      - vpnpool-SG-Melbicom 6
+      - CN_419 | 6.24Mb
+      - 保加利亚 Bulgaria●
+      - 保加利亚 Bulgaria● 2
+      - Lv1.广移A->日本B4
+      - vpnpool-SG-Melbicom 7
+      - vpnpool-Tokyo-Linode 3
+      - vpnpool-Tokyo-Linode 2 2
+      - vpnpool-Tokyo-Linode 3 2
+      - vpnpool-Tokyo-Linode 4
+      - vpnpool-Tokyo-Linode 5
+      - vpnpool-香港DMIT
+      - vpnpool-Tokyo-Linode 6
+      - vpnpool-Tokyo-Linode 7
+      - vpnpool-Osaka-Azure 2
+      - vpnpool-Tokyo-Linode 8
+      - vpnpool-Tokyo-Linode 9
+      - vpnpool-Tokyo-Linode 10
+      - vpnpool-Tokyo-Linode 11
+      - vpnpool-Tokyo-Linode 12
+      - vpnpool-Tokyo-Linode 13
+      - vpnpool-SG-Melbicom 5 2
+      - vpnpool-Tokyo-Linode 14
       - 测试1
       - +USA
-      - 保加利亚 Bulgaria● 2
       - 越南 Vietnam●
       - IS+冰岛Hafnarfjordur
-      - 腾讯云_5
-      - _星河
       - MK+北马其顿Skopje
       - _CA_加拿大
-      - 香港 01 3
-      - 香港 01 2 2
-      - Azure.HongKong.2.Vpnpool专属 2
-      - 狮城 | Azure InfiniPort
-      - _US_美国 2 2
-      - _US_美国 5
+      - 狮城 | Azure InfiniPort 2
       - _CA_加拿大 9
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
