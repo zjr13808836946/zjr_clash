@@ -5,423 +5,815 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: gz1.52168.xyz:1111, server: gz1.52168.xyz, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
-  - {name: 136.243.191.85:443, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
   - {name: 【tg@freevpn8】CN_371, server: gz1.52168.xyz, port: 1117, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
-  - {name: 美国, server: tj-15.t8737.shop, port: 11223, type: trojan, password: 1798abbe-04f8-4102-ab36-18cd46fea25f, sni: tj-15.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: LAX-DMIT, server: loslite.doubledou.win, port: 6529, type: trojan, password: c031e096-2d02-39da-8d81-c651e09ed0d1, sni: loslite.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: 美国 2, server: tj-13.t8737.shop, port: 11223, type: trojan, password: 1798abbe-04f8-4102-ab36-18cd46fea25f, sni: tj-13.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: Frankfurt-M247, server: gerv2.doubledou.win, port: 8080, type: trojan, password: c031e096-2d02-39da-8d81-c651e09ed0d1, sni: gerv2.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: LAX-DMIT 2, server: loslite2.doubledou.win, port: 6519, type: trojan, password: c031e096-2d02-39da-8d81-c651e09ed0d1, sni: loslite2.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: JP_6 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: JP_2 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: HK_7 @WangCai_1, server: cn2relay01.yiyorelay.xyz, port: 2706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: HK_4 @WangCai_1, server: cn2relay01.yiyorelay.xyz, port: 2703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: HK_1 @WangCai_1, server: cn2relay01.yiyorelay.xyz, port: 2700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: JP_3 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: US_9 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: US_3 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: US_6 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: JP_5 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: SG_9 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: gz2.52168.xyz:2101, server: gz2.52168.xyz, port: 2101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: KR_4 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 4003, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: gz1.52168.xyz:1111, server: gz1.52168.xyz, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: KR_2 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 4001, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: KR_3 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: FR_936, server: fr-am1-1.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: gVWc0WaJn, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: SG_4 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: HK_6 @WangCai_1, server: cn2relay01.yiyorelay.xyz, port: 2705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: SG3_ @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: JP_1 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 64641:3LNaSS, obfs-param: microsoft.com, udp: true}
+  - {name: _HK_香港_tg频道:@bpjzx2_1, server: 104.208.112.171, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港_tg频道:@bpjzx2_25, server: 104.208.112.171, port: 3389, type: trojan, password: 0437e2b78115adc2, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-00, server: 104.208.112.171, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-08, server: 60.249.3.226, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-00 2, server: 104.208.112.171, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
+  - {name: _HK_香港_tg频道:@bpjzx2_48, server: 104.208.112.171, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
+  - {name: _TW_台湾_tg频道:@bpjzx2_8, server: 60.249.3.229, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
+  - {name: _TW_台湾_tg频道:@bpjzx2_55, server: 60.249.3.226, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
+  - {name: _TW_台湾_tg频道:@bpjzx2_54, server: 60.249.3.229, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
+  - {name: _TW_台湾_tg频道:@bpjzx2_9, server: 60.249.3.226, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
+  - {name: _TW_台湾_tg频道:@bpjzx2_32, server: 60.249.3.226, port: 3389, type: trojan, password: 0437e2b78115adc2, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国_tg频道:@bpjzx2_4, server: 120.232.192.119, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-03, server: 120.232.192.119, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-05, server: 116.129.253.177, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-07, server: 60.249.3.229, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国_tg频道:@bpjzx2_29, server: 116.129.253.177, port: 3389, type: trojan, password: 0437e2b78115adc2, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-03 2, server: 120.232.192.119, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国_tg频道:@bpjzx2_27, server: 120.232.192.119, port: 3389, type: trojan, password: 0437e2b78115adc2, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国_tg频道:@bpjzx2_52, server: 116.129.253.177, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国_tg频道:@bpjzx2_6, server: 116.129.253.177, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国_tg频道:@bpjzx2_50, server: 120.232.192.119, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
+  - {name: NONE, server: de-01.fireplay.io, port: 443, type: trojan, password: lo3TmsNaLWUXpuoE, sni: de-01.fireplay.io, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-Melbicom, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG-Melbicom 2, server: 5.44.249.43, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡_tg频道:@bpjzx2_49, server: 5.44.249.43, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-02, server: 5.44.249.43, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡_tg频道:@bpjzx2_26, server: 5.44.249.43, port: 3389, type: trojan, password: 0437e2b78115adc2, skip-cert-verify: true, udp: true}
+  - {name: _SG_新加坡_tg频道:@bpjzx2_3, server: 5.44.249.43, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
+  - {name: 美国阿伟科技@TG/油管, server: hk-v.apqiang.com, port: 12001, type: trojan, password: 87efa979-6931-3795-b26b-c4c93fdc9bd3, sni: hk-v.apqiang.com, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-02 2, server: 5.44.249.43, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
   - {name: SG_@baipiao02, server: 139.162.29.186, port: 54869, type: trojan, password: HqNAQ9UBJN, skip-cert-verify: true, udp: true}
-  - {name: Amsterdam-Liteserver, server: helan.doubledou.win, port: 4586, type: trojan, password: c031e096-2d02-39da-8d81-c651e09ed0d1, sni: helan.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-Melbicom, server: 5.44.249.43, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: 加拿大阿伟科技@TG/油管, server: ca02.holiganfan.com, port: 10088, type: trojan, password: 17882ef6-b07d-401c-8cee-636e512c77ba, sni: ca02.holiganfan.com, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-Melbicom 2, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: Montreal-RicaWeb, server: ca1.doubledou.win, port: 4586, type: trojan, password: c031e096-2d02-39da-8d81-c651e09ed0d1, sni: ca1.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: Istanbul-SiberDC-dip, server: tu.doubledou.win, port: 470, type: trojan, password: c031e096-2d02-39da-8d81-c651e09ed0d1, sni: tu.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: 香港Azure-London-M247, server: shanghai.doubledou.win, port: 50018, type: trojan, password: c031e096-2d02-39da-8d81-c651e09ed0d1, sni: shanghai.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: 甲骨文东京2_7, server: www.seetheworldjp.ga, port: 443, type: trojan, password: f42e1a2e-e650-44f4-8d17-bcb68663da18, sni: www.seetheworldjp.ga, skip-cert-verify: true, udp: true}
-  - {name: mattkaydiary.com|韩国(KR)Korea/Chuncheon-si_24, server: www.ggchk.ga, port: 443, type: trojan, password: 4ae98d26-b209-4dd5-8e91-bf11d4f10801, sni: www.ggchk.ga, skip-cert-verify: true, udp: true}
-  - {name: 香港Azure, server: 104.208.90.114, port: 23009, type: ss, cipher: chacha20-ietf-poly1305, password: ㅤ, udp: true}
-  - {name: "US,", server: 107.182.24.225, port: 255, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
-  - {name: "US, 5", server: 97.64.31.80, port: 247, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
-  - {name: "CA,", server: 3.36.121.97, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "HK, 2", server: 3.39.6.141, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 荷兰【YouTube由零開始】, server: 21.earths.team, port: 443, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, sni: 21.earths.team, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-07 2, server: 60.249.3.229, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-08 2, server: 60.249.3.226, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: 中国_TGatnodesharing_1, server: 120.232.174.85, port: 45647, type: ss, cipher: aes-128-gcm, password: xoz6KQ, udp: true}
+  - {name: _CN_中国->🇯🇵_JP_日本, server: 120.232.174.85, port: 27938, type: ss, cipher: aes-128-gcm, password: xoz6KQ, udp: true}
+  - {name: "US,+5", server: 97.64.31.80, port: 247, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
   - {name: "JP,", server: 52.77.242.162, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 加拿大_TG@nodesharing_53, server: 134.195.196.81, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "TW,", server: 13.212.10.179, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "JP, 2", server: 54.151.244.16, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "HK,", server: 3.0.50.223, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: _新加坡_FMYC-220311_274, server: 13.214.213.199, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: (ios小火箭软件|ioskaka.com)🇩🇪德国, server: 193.108.117.75, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 日本, server: 35.74.65.35, port: 33212, type: ss, cipher: chacha20-ietf-poly1305, password: df67bf22-a72a-4856-bb2b-b862219d0bf1, udp: true}
-  - {name: +Netherlands, server: 213.183.51.171, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: 德国 008, server: 46.183.185.15, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: (ios小火箭软件|ioskaka.com)🇩🇪德国 4, server: 193.108.117.75, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "CA,", server: 3.36.121.97, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "TW,", server: 13.212.10.179, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "HK, 2", server: 3.39.6.141, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "HK,", server: 3.0.50.223, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: "SG,", server: 13.125.239.214, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "US, 4", server: 65.49.223.117, port: 239, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
-  - {name: "KR,", server: 13.229.95.243, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 27美国∞中转, server: 117.28.243.165, port: 8050, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
   - {name: 華人社區_經紀人CC🍄🍄_1026, server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: "JP,+3", server: 13.229.132.31, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港, server: 120.232.174.85, port: 47985, type: ss, cipher: aes-128-gcm, password: xoz6KQ, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港 2, server: 120.232.174.85, port: 24089, type: ss, cipher: aes-128-gcm, password: xoz6KQ, udp: true}
   - {name: _中国_FMYC-220311_9, server: 117.28.243.154, port: 6150, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: 新加坡linode | 中转 | 1x, server: zz.195382.xyz, port: 10008, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
-  - {name: 香港Azure | 直连 | 1x, server: hk.195382.xyz, port: 1001, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk.195382.xyz}, udp: true}
-  - {name: 韩国Azure | 中转 | 1x, server: zz.195382.xyz, port: 10001, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
-  - {name: 香港-高速节点购买：v1_mk/vip（浏览器打开）_11, server: gy.linghun1.xyz, port: 40067, type: vmess, uuid: 5799f439-e33d-4127-985c-902119388c09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gy.linghun1.xyz}, udp: true}
-  - {name: 1.26|新加坡linode  中转  1x, server: zz.195382.xyz, port: 10008, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
-  - {name: 这个世界不要俺了_指莹为梅_🇨🇳_CN_中国_33, server: zfd-cn1.ddnsnode.com, port: 16119, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 1.73|孟买linode  中转  1x, server: zz.195382.xyz, port: 10007, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
-  - {name: 香港_TG@nodesharing_12, server: hkaz3.xmrth-node.xyz, port: 10035, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: "JP,+3", server: 13.229.132.31, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "US,", server: 107.182.24.225, port: 255, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
+  - {name: "JP, 2", server: 54.151.244.16, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: KR A 006, server: hkaz6.xmrth-node.xyz, port: 10154, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: _SG_新加坡_tg频道:@bpjzx2_4, server: 172.105.117.177, port: 6588, type: vmess, uuid: 79902e3a-6c8f-40f8-a367-74079db1fa32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 星河, server: 20.24.84.81, port: 5061, type: vmess, uuid: 9c2bb7cd-f29d-4766-9c73-6706f6b39362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 ➤ 04, server: hk04.startmy.cc, port: 80, type: vmess, uuid: c5c2f840-468d-3cc0-8a8d-8b9f5855c682, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 香港星河, server: 23.102.234.10, port: 42374, type: vmess, uuid: eaf865c1-2c3a-4c1a-bc94-9df418736ff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: SG A 006, server: hkaz6.xmrth-node.xyz, port: 10153, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 60044 @WangCai_1, server: 13.94.33.57, port: 60044, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.94.33.57}, udp: true}
+  - {name: 香港 ➤ 05, server: hk05.startmy.cc, port: 80, type: vmess, uuid: c5c2f840-468d-3cc0-8a8d-8b9f5855c682, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 60014 @WangCai_1, server: 13.72.192.219, port: 60014, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.72.192.219}, udp: true}
+  - {name: 5, server: 23.102.234.10, port: 42374, type: vmess, uuid: eaf865c1-2c3a-4c1a-bc94-9df418736ff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 23.102.234.10}, udp: true}
+  - {name: 1, server: 13.75.105.89, port: 30554, type: vmess, uuid: 10087c2b-3d3e-40e1-a75b-e4f34bc1cf08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.75.105.89}, udp: true}
+  - {name: 专线|新加坡01解锁|Z271, server: zfd-unicom.ddnsnode.com, port: 16227, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 专线|新加坡03解锁|Z273, server: zfd-unicom.ddnsnode.com, port: 16229, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|新加坡03解锁|Z209, server: zfd-unicom.ddnsnode.com, port: 16109, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 60037 @WangCai_1, server: 13.94.42.185, port: 60037, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.94.42.185}, udp: true}
+  - {name: 6, server: 23.102.234.10, port: 41197, type: vmess, uuid: 28a567de-65d9-40fb-eb45-8d8664553303, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 23.102.234.10}, udp: true}
+  - {name: 60016 @WangCai_1, server: 13.72.192.219, port: 60016, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.72.192.219}, udp: true}
+  - {name: 60020 @WangCai_1, server: 65.52.171.156, port: 60020, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 65.52.171.156}, udp: true}
+  - {name: 香港 ➤ 01, server: hk01.startmy.cc, port: 80, type: vmess, uuid: c5c2f840-468d-3cc0-8a8d-8b9f5855c682, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 60017 @WangCai_1, server: 13.72.192.219, port: 60017, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.72.192.219}, udp: true}
+  - {name: 新加坡阿伟科技@TG/油管, server: 20.212.220.101, port: 8009, type: vmess, uuid: ad1ac0fd-dcfd-4ca4-b35e-61d5b72698de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.212.220.101}, udp: true}
+  - {name: Lv1.广移A->日本A1, server: node1.lmars.top, port: 10001, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: 60010 @WangCai_1, server: 13.72.192.219, port: 60010, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.72.192.219}, udp: true}
+  - {name: 60031 @WangCai_1, server: 13.72.192.219, port: 60031, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.72.192.219}, udp: true}
+  - {name: 60029 @WangCai_1, server: 13.94.42.185, port: 60029, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.94.42.185}, udp: true}
+  - {name: 60042 @WangCai_1, server: 13.94.33.57, port: 60042, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.94.33.57}, udp: true}
+  - {name: 60034 @WangCai_1, server: 13.72.192.219, port: 60034, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.72.192.219}, udp: true}
+  - {name: 60024 @WangCai_1, server: 13.94.42.185, port: 60024, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.94.42.185}, udp: true}
+  - {name: _JP_日本_tg频道:@bpjzx2_3, server: 40.74.119.112, port: 4256, type: vmess, uuid: 79902e3a-6c8f-40f8-a367-74079db1fa32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本星河, server: n.cloudoo.xyz, port: 4001, type: vmess, uuid: e17c63c9-d21d-4a84-a7a6-28f7c00eecec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /upload, ws-headers: {Host: n.cloudoo.xyz}, udp: true}
+  - {name: 60012 @WangCai_1, server: 20.205.47.95, port: 60012, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.47.95}, udp: true}
+  - {name: 60043 @WangCai_1, server: 13.94.33.57, port: 60043, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.94.33.57}, udp: true}
+  - {name: 60025 @WangCai_1, server: 13.94.42.185, port: 60025, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.94.42.185}, udp: true}
+  - {name: Lv1.广移A->日本B4, server: node1.lmars.top, port: 10004, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: 60008 @WangCai_1, server: 20.205.47.95, port: 60008, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.47.95}, udp: true}
+  - {name: 60021 @WangCai_1, server: 20.205.47.95, port: 60021, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.47.95}, udp: true}
+  - {name: 香港Azure-Seoul-AWS, server: hkaz3.xmrth-node.xyz, port: 10019, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
+  - {name: 60026 @WangCai_1, server: 20.205.47.95, port: 60026, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.47.95}, udp: true}
+  - {name: 香港_TG@nodesharing_11, server: hkaz1.xmrth-node.xyz, port: 10033, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 香港Azure-Mumbai-Linode, server: hkaz1.xmrth-node.xyz, port: 10033, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
+  - {name: Lv1.广移A->日本B3, server: node1.lmars.top, port: 10003, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: 香港Azure-Mumbai-Linode 2, server: hkaz3.xmrth-node.xyz, port: 10035, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
+  - {name: 60005 @WangCai_1, server: 20.205.47.95, port: 60005, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.47.95}, udp: true}
+  - {name: 60022 @WangCai_1, server: 20.205.47.95, port: 60022, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.47.95}, udp: true}
+  - {name: 关注电报免费梯子https://t.me/mftizi, server: 168.63.219.147, port: 10033, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 60015 @WangCai_1, server: 13.72.192.219, port: 60015, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.72.192.219}, udp: true}
+  - {name: 60013 @WangCai_1, server: 20.205.47.95, port: 60013, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.47.95}, udp: true}
+  - {name: 60038 @WangCai_1, server: 20.205.47.95, port: 60038, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.47.95}, udp: true}
+  - {name: "|23.20Mb", server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 60018 @WangCai_1, server: 20.205.47.95, port: 60018, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.47.95}, udp: true}
+  - {name: 香港Azure-新北Hinet, server: hkaz1.xmrth-node.xyz, port: 10062, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
+  - {name: Relay_ |16.37Mb, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
+  - {name: 60041 @WangCai_1, server: 20.205.47.95, port: 60041, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.47.95}, udp: true}
+  - {name: 60011 @WangCai_1, server: 65.52.171.156, port: 60011, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 65.52.171.156}, udp: true}
+  - {name: 60027 @WangCai_1, server: 13.94.42.185, port: 60027, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.94.42.185}, udp: true}
+  - {name: 60028 @WangCai_1, server: 13.72.192.219, port: 60028, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.72.192.219}, udp: true}
+  - {name: Tokyo-Azure-Tokyo-AWS, server: jpaz3.xmrth-node.xyz, port: 10051, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
   - {name: "@SSRSUB-V08-付费推荐:suo.yt/ssrsub", server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
   - {name: 香港阿里云@vpnhat, server: 47.243.198.57, port: 80, type: vmess, uuid: 4dd6cbf5-7ff5-3aeb-b5ac-8cff4b21d0e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 47.243.198.57}, udp: true}
-  - {name: 伦敦linode | 中转 | 1x, server: zz.195382.xyz, port: 10006, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
-  - {name: Alien, server: zero-pointenergy.net, port: 30293, type: vmess, uuid: 6344efcc-4147-41d2-ae94-b00ce20555b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|日本01解锁|Z217, server: zfd-cn1.ddnsnode.com, port: 16119, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港阿里云@vpnhat 2, server: 47.243.227.181, port: 80, type: vmess, uuid: 4df7092c-aeea-3256-a156-f8ca3d094f2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 47.243.227.181}, udp: true}
-  - {name: SG Mbi, server: 13.228.27.114, port: 80, type: vmess, uuid: 881dc00d-59e2-4223-bf98-234854616831, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
-  - {name: 美国阿伟科技@TG/油管, server: 120.233.147.118, port: 56390, type: vmess, uuid: 538ca283-9f27-4535-b30a-7cf41447f316, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.233.147.118}, udp: true}
-  - {name: 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_142, server: 71.72vpn.xyz, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: 71.72vpn.xyz}, udp: true}
-  - {name: 孟买linode | 中转 | 1x, server: zz.195382.xyz, port: 10007, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
-  - {name: 香港阿里云@vpnhat 3, server: 8.210.175.111, port: 80, type: vmess, uuid: 4dd6cbf5-7ff5-3aeb-b5ac-8cff4b21d0e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 8.210.175.111}, udp: true}
-  - {name: 美国Azure | 中转 | 1x, server: zz.195382.xyz, port: 20002, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
-  - {name: 翻墙党fanqiangdang.com, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港阿伟科技@TG/油管, server: sg.az66.ml, port: 61001, type: vmess, uuid: cb8ab285-fafc-45f6-87bc-97a7a2f27f9f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
-  - {name: 香港阿里云@vpnhat 4, server: 47.243.198.57, port: 80, type: vmess, uuid: 4df7092c-aeea-3256-a156-f8ca3d094f2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 47.243.198.57}, udp: true}
-  - {name: 香港Azure-Tokyo-FDCservers, server: 52.184.12.166, port: 50007, type: vmess, uuid: c031e096-2d02-39da-8d81-c651e09ed0d1, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: v2iijjp2.doubledou.win}, udp: true}
-  - {name: 0.76|美国Azure  中转  1x, server: zz.195382.xyz, port: 20002, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
-  - {name: by@bpjzx2群友专享, server: bpjzx2.cainiao.tk, port: 443, type: vmess, uuid: 24b4b1e1-7a89-45f6-858c-242cf53b5bdb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess, ws-headers: {Host: orange-mode-ac6a.xjp0mx2cp.workers.dev}, udp: true}
-  - {name: Lv1.广移A->日本B3, server: node1.lmars.top, port: 10003, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
-  - {name: 香港阿里云@vpnhat 5, server: 47.243.92.214, port: 80, type: vmess, uuid: 4df7092c-aeea-3256-a156-f8ca3d094f2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 47.243.92.214}, udp: true}
-  - {name: 专线|新加坡01解锁|Z271, server: zfd-unicom.ddnsnode.com, port: 16227, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 1.45|日本linode  中转  1x, server: zz.195382.xyz, port: 10005, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
-  - {name: 美国阿伟科技@TG/油管 2, server: cat.heimei.cloud, port: 443, type: vmess, uuid: fc695027-72c0-4bd0-9fb1-f25203154297, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /c60b0fb16cf/, ws-headers: {Host: cat.heimei.cloud}, udp: true}
-  - {name: 美国阿伟科技@TG/油管 3, server: 20.212.220.101, port: 8006, type: vmess, uuid: 538ca283-9f27-4535-b30a-7cf41447f316, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.212.220.101}, udp: true}
-  - {name: 1.07|香港Azure  直连  1x, server: hk.195382.xyz, port: 1001, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk.195382.xyz}, udp: true}
-  - {name: 巴西Azure | 中转 | 1x, server: zz.195382.xyz, port: 10003, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
-  - {name: Lv1.广移A->日本B4, server: node1.lmars.top, port: 10004, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
-  - {name: 美国阿伟科技@TG/油管 56, server: 209.94.56.152, port: 443, type: vmess, uuid: 3033e157-fdc3-47c0-ae32-fc4fe65fc64d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /9apQabyg9le, ws-headers: {Host: 209.94.56.152}, udp: true}
-  - {name: Lv1.广移A->日本A1, server: node1.lmars.top, port: 10001, type: vmess, uuid: 29fa4ec6-19cc-3e65-be49-29c62d236d8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /server, ws-headers: {Host: microsoft.com}, udp: true}
-  - {name: "Incheon,V2_31", server: V2-NODE-2.GFWAIRPORT.NET, port: 50001, type: vmess, uuid: 65170c32-4896-41c2-8b89-0b802688ce5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: V2-NODE-2.GFWAIRPORT.NET}, udp: true}
-  - {name: 标准|新加坡03解锁|Z209, server: zfd-unicom.ddnsnode.com, port: 16109, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-FDCservers, server: 50.7.159.155, port: 443, type: vmess, uuid: c031e096-2d02-39da-8d81-c651e09ed0d1, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: v2iijjp2.doubledou.win}, udp: true}
-  - {name: 珠珠节点2, server: 35.153.162.49, port: 27080, type: vmess, uuid: 6334db00-f39b-49d7-d12a-2e3c037c5d97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [35.153.162.49]}}, udp: true}
-  - {name: 专线|新加坡03解锁|Z273, server: zfd-unicom.ddnsnode.com, port: 16229, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本linode | 中转 | 1x, server: zz.195382.xyz, port: 10005, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
-  - {name: 美国 179, server: 152.70.188.10, port: 443, type: vmess, uuid: 6ae16454-de6a-4113-c64e-0549be488f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "|23.20Mb", server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: LAX-QuadraNet, server: 107.150.5.136, port: 4565, type: vmess, uuid: c031e096-2d02-39da-8d81-c651e09ed0d1, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /doudou, ws-headers: {Host: pr.doubledou.win}, udp: true}
-  - {name: 南非Azure | 中转 | 1x, server: zz.195382.xyz, port: 10004, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
-  - {name: 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141, server: 74.72vpn.xyz, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: 74.72vpn.xyz}, udp: true}
-  - {name: 313更新_29, server: ipv6-2.nsxz.ml, port: 443, type: vmess, uuid: f176fc84-01ca-44fd-9e86-9ef456673858, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ipv6-2.nsxz.ml}, udp: true}
-  - {name: DE_二爷翻墙网https://1808.ga_409, server: 152.70.188.10, port: 443, type: vmess, uuid: 6ae16454-de6a-4113-c64e-0549be488f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _美国_FMYC-220311_304, server: sg.az66.ml, port: 61001, type: vmess, uuid: cb8ab285-fafc-45f6-87bc-97a7a2f27f9f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg.az66.ml}, udp: true}
-  - {name: 0.79|巴西Azure  中转  1x, server: zz.195382.xyz, port: 10003, type: vmess, uuid: 30d602fe-d0c1-4dbc-beb6-3a8c65462789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zz.195382.xyz}, udp: true}
-  - {name: HK, server: 168.63.201.205, port: 80, type: vmess, uuid: f6fffc7f-ab53-4ab7-af70-50923a525798, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 168.63.201.205}, udp: true}
-  - {name: HK_二爷翻墙网https://1808.ga_538, server: 168.63.201.205, port: 80, type: vmess, uuid: f6fffc7f-ab53-4ab7-af70-50923a525798, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 168.63.201.205}, udp: true}
-  - {name: Relay_ |16.37Mb, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
+  - {name: 香港星河 2, server: 13.75.105.89, port: 30554, type: vmess, uuid: 10087c2b-3d3e-40e1-a75b-e4f34bc1cf08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: 迪拜阿伟科技@TG/油管, server: 120.233.147.118, port: 41435, type: vmess, uuid: 35ffe46b-6c50-467e-9940-832deede23ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.233.147.118}, udp: true}
   - {name: 中国2, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
-  - {name: 香港阿里云@vpnhat 6, server: 47.243.92.214, port: 80, type: vmess, uuid: 4dd6cbf5-7ff5-3aeb-b5ac-8cff4b21d0e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 47.243.92.214}, udp: true}
-  - {name: 313更新_21, server: fqtest.nsxz.ml, port: 443, type: vmess, uuid: 8f7b3776-e05b-4b2c-d266-2d2b30db4051, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fqtest.nsxz.ml}, udp: true}
-  - {name: US_2843 |15.28Mb, server: cloudflare.a-yu.xyz, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero2.a-yu.xyz}, udp: true}
+  - {name: 迪拜阿伟科技@TG/油管 2, server: 120.233.147.118, port: 41435, type: vmess, uuid: cf77d84f-98e3-4f0f-8174-414a3e97e406, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.233.147.118}, udp: true}
+  - {name: 香港阿里云@vpnhat 2, server: 8.210.175.111, port: 80, type: vmess, uuid: 4dd6cbf5-7ff5-3aeb-b5ac-8cff4b21d0e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 8.210.175.111}, udp: true}
+  - {name: _美国_FMYC-220314_63, server: 45.32.94.166, port: 31676, type: vmess, uuid: 6f3ec45c-5283-40e8-aea9-7749f4c75753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [45.32.94.166]}}, udp: true}
+  - {name: Tokyo-Azure-Mumbai-Linode, server: jpaz3.xmrth-node.xyz, port: 10135, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
+  - {name: Dubai-Oracle, server: 139.185.47.141, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 60030 @WangCai_1, server: 143.198.108.237, port: 60030, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 143.198.108.237}, udp: true}
+  - {name: 美国_TG@nodesharing_36, server: 20.212.220.101, port: 8010, type: vmess, uuid: b266714b-cfbb-4ded-b780-4d91d4bd1e63, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.212.220.101}, udp: true}
+  - {name: 香港阿伟科技@TG/油管, server: sg.az66.ml, port: 61001, type: vmess, uuid: cb8ab285-fafc-45f6-87bc-97a7a2f27f9f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: by@bpjzx2群友专享, server: bpjzx2.cainiao.tk, port: 443, type: vmess, uuid: 24b4b1e1-7a89-45f6-858c-242cf53b5bdb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess, ws-headers: {Host: orange-mode-ac6a.xjp0mx2cp.workers.dev}, udp: true}
+  - {name: Dubai-Oracle 2, server: 139.185.35.157, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 美国阿伟科技@TG/油管 2, server: linodeusfree1.galaxycloud.buzz, port: 443, type: vmess, uuid: aa2a0ea3-406c-4e24-bda6-59ed285bd83f, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /BEWePj62, ws-headers: {Host: linodeusfree1.galaxycloud.buzz}, udp: true}
+  - {name: 喵哥甲骨文美国, server: 129.146.86.84, port: 55897, type: vmess, uuid: e98f3831-0e43-43f6-d498-d85c59fc03d6, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 阿联酋_TG@nodesharing_51, server: 71.72vpn.xyz, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: 71.72vpn.xyz}, udp: true}
+  - {name: CF-Tokyo-Alibaba, server: 104.21.65.46, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: 6.72vpn.xyz}, udp: true}
+  - {name: _KR_韩国_tg频道:@bpjzx2_8, server: 141.164.42.64, port: 45238, type: vmess, uuid: 79902e3a-6c8f-40f8-a367-74079db1fa32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国阿伟科技@TG/油管 3, server: gcusfree.galaxycloud.buzz, port: 443, type: vmess, uuid: 5b595b3a-b97a-46db-a3e2-5b94423355fb, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /0DGCTPQ, ws-headers: {Host: gcusfree.galaxycloud.buzz}, udp: true}
+  - {name: Phoenix-Oracle, server: 129.146.103.173, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 美国_TG@nodesharing_52, server: 20.212.220.101, port: 8000, type: vmess, uuid: f023f6e9-44c2-4ade-92e1-a32e81a85500, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.212.220.101}, udp: true}
+  - {name: 美国【YouTube由零開始】, server: mb22.ml, port: 53143, type: vmess, uuid: 04f2a2c2-d6a2-4e82-9862-a1aa008dc6d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK A 006, server: hkaz6.xmrth-node.xyz, port: 10152, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: Phoenix-Oracle 2, server: 129.153.198.41, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 香港Azure, server: hkaz1.xmrth-node.xyz, port: 10128, type: vmess, uuid: a9f0d12e-fa68-3880-b3cd-6e5ad3f97b94, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: xn--r1a.website/s/vpnhat}, udp: true}
+  - {name: CF-Moscow-Firstbyte-dip, server: 172.67.140.165, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: 2.72vpn.xyz}, udp: true}
+  - {name: 瑞士阿伟科技@TG/油管, server: 20.212.220.101, port: 8012, type: vmess, uuid: ad1ac0fd-dcfd-4ca4-b35e-61d5b72698de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.212.220.101}, udp: true}
+  - {name: 美国【YouTube由零開始】 2, server: mb22.ml, port: 53143, type: vmess, uuid: 04f2a2c2-d6a2-4e82-9862-a1aa008dc6d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CF-SG-Alibaba, server: 104.21.65.46, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: 3.72vpn.xyz}, udp: true}
+  - {name: CF-Moscow-Firstbyte, server: 172.67.140.165, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: 30.72vpn.xyz}, udp: true}
+  - {name: 美国_TG@nodesharing_48, server: 107.167.20.188, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/120306182525, ws-headers: {Host: www.19036987.xyz}, udp: true}
+  - {name: HK_684 | 9.55Mb, server: 13.75.115.207, port: 10035, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: CF-SG-Alibaba 2, server: 172.67.140.165, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: 3.72vpn.xyz}, udp: true}
+  - {name: Frankfurt-Oracle, server: 130.162.42.184, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: Phoenix-Oracle 3, server: 132.226.150.141, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 美国阿伟科技@TG/油管 56, server: 209.94.56.152, port: 443, type: vmess, uuid: 3033e157-fdc3-47c0-ae32-fc4fe65fc64d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /9apQabyg9le, ws-headers: {Host: 209.94.56.152}, udp: true}
+  - {name: _GB_英国_tg频道:@bpjzx2_5, server: 151.236.222.18, port: 2568, type: vmess, uuid: 79902e3a-6c8f-40f8-a367-74079db1fa32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_TG@nodesharing_90, server: nl.oracleusa.ml, port: 2053, type: vmess, uuid: b266714b-cfbb-4ded-b780-4d91d4bd1e63, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: nl.oracleusa.ml}, udp: true}
+  - {name: 翻墙党fanqiangdang.com, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国_tg频道:@bpjzx2_6, server: 45.77.207.163, port: 42135, type: vmess, uuid: 79902e3a-6c8f-40f8-a367-74079db1fa32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 1 2, server: az.pikap.one, port: 30003, type: vmess, uuid: 75bcadc0-ba18-4778-834f-d40c6ef55a96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: az.pikap.one}, udp: true}
+  - {name: Frankfurt-Oracle 2, server: 130.61.246.115, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: Montreal-Oracle, server: 155.248.224.189, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 香港阿里云@vpnhat 3, server: 47.243.227.181, port: 80, type: vmess, uuid: 4df7092c-aeea-3256-a156-f8ca3d094f2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 47.243.227.181}, udp: true}
+  - {name: Montreal-Oracle 2, server: 168.138.94.194, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 阿联酋_TG@nodesharing_61, server: uae.oracleusa.ml, port: 2053, type: vmess, uuid: cf77d84f-98e3-4f0f-8174-414a3e97e406, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: uae.oracleusa.ml}, udp: true}
+  - {name: 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141, server: 74.72vpn.xyz, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: 74.72vpn.xyz}, udp: true}
+  - {name: 珠珠节点2, server: 35.153.162.49, port: 27080, type: vmess, uuid: 6334db00-f39b-49d7-d12a-2e3c037c5d97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [35.153.162.49]}}, udp: true}
+  - {name: 香港阿伟科技@TG/油管 2, server: 207.46.131.81, port: 53780, type: vmess, uuid: f955d089-add5-40e2-fb53-948154cba564, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: Osaka-Oracle, server: 152.69.196.94, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CF-Moscow-Firstbyte 2, server: 104.21.65.46, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: 30.72vpn.xyz}, udp: true}
+  - {name: 美国【由零開始】, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: Hyderabad-Oracle, server: 144.24.141.74, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: _IN_印度_tg频道:@bpjzx2_7, server: 170.187.232.64, port: 42356, type: vmess, uuid: 79902e3a-6c8f-40f8-a367-74079db1fa32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡阿伟科技@TG/油管 2, server: sg.oracleusa.ml, port: 2053, type: vmess, uuid: d416d0e9-4753-4fa5-b80d-2be742b4478d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg.oracleusa.ml}, udp: true}
+  - {name: 60035 @WangCai_1, server: 137.184.39.14, port: 60035, type: vmess, uuid: 75112da9-8874-3814-bdee-fc6fc5b6eed9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 137.184.39.14}, udp: true}
+  - {name: 新加坡星河, server: n.cloudoo.xyz, port: 4002, type: vmess, uuid: e17c63c9-d21d-4a84-a7a6-28f7c00eecec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /upload, ws-headers: {Host: n.cloudoo.xyz}, udp: true}
+  - {name: 美国阿伟科技@TG/油管 4, server: cat.heimei.cloud, port: 443, type: vmess, uuid: fc695027-72c0-4bd0-9fb1-f25203154297, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /c60b0fb16cf/, ws-headers: {Host: cat.heimei.cloud}, udp: true}
+  - {name: 【由零開始】, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
+  - {name: 星河 2, server: 20.24.84.81, port: 5060, type: vmess, uuid: 9c2bb7cd-f29d-4766-9c73-6706f6b39362, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国阿伟科技@TG/油管 5, server: rbzf.moonfree.top, port: 10083, type: vmess, uuid: d0ff23a4-37fb-4b37-810f-f16aa829a6f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: linodemx0303.moonfree.top}, udp: true}
+  - {name: 香港Azure-Seoul-AWS 2, server: hkaz1.xmrth-node.xyz, port: 10017, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
+  - {name: FMYC-220314_4, server: test.0dc.cn, port: 443, type: vmess, uuid: ebe5703b-c18e-4664-c3a7-9fcf52453898, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: test.0dc.cn}, udp: true}
+  - {name: Hyderabad-Oracle 2, server: 150.230.137.120, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: _美国_FMYC-220311_304, server: sg.az66.ml, port: 61001, type: vmess, uuid: cb8ab285-fafc-45f6-87bc-97a7a2f27f9f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg.az66.ml}, udp: true}
+  - {name: 日本_TG@nodesharing_71, server: rbzf.moonfree.top, port: 10080, type: vmess, uuid: d0ff23a4-37fb-4b37-810f-f16aa829a6f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v6fr.moonfree.top}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - gz1.52168.xyz:1111
-      - 136.243.191.85:443
       - 【tg@freevpn8】CN_371
-      - 美国
-      - LAX-DMIT
-      - 美国 2
-      - Frankfurt-M247
-      - LAX-DMIT 2
-      - SG_@baipiao02
-      - Amsterdam-Liteserver
+      - JP_6 @WangCai_1
+      - JP_2 @WangCai_1
+      - HK_7 @WangCai_1
+      - HK_4 @WangCai_1
+      - HK_1 @WangCai_1
+      - JP_3 @WangCai_1
+      - US_9 @WangCai_1
+      - US_3 @WangCai_1
+      - US_6 @WangCai_1
+      - JP_5 @WangCai_1
+      - SG_9 @WangCai_1
+      - gz2.52168.xyz:2101
+      - KR_4 @WangCai_1
+      - gz1.52168.xyz:1111
+      - KR_2 @WangCai_1
+      - KR_3 @WangCai_1
+      - FR_936
+      - SG_4 @WangCai_1
+      - HK_6 @WangCai_1
+      - SG3_ @WangCai_1
+      - JP_1 @WangCai_1
+      - _HK_香港_tg频道:@bpjzx2_1
+      - _HK_香港_tg频道:@bpjzx2_25
+      - GLaDOS-N2-00
+      - GLaDOS-N2-08
+      - GLaDOS-N2-00 2
+      - _HK_香港_tg频道:@bpjzx2_48
+      - _TW_台湾_tg频道:@bpjzx2_8
+      - _TW_台湾_tg频道:@bpjzx2_55
+      - _TW_台湾_tg频道:@bpjzx2_54
+      - _TW_台湾_tg频道:@bpjzx2_9
+      - _TW_台湾_tg频道:@bpjzx2_32
+      - _CN_中国_tg频道:@bpjzx2_4
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-07
+      - _CN_中国_tg频道:@bpjzx2_29
+      - GLaDOS-N2-03 2
+      - _CN_中国_tg频道:@bpjzx2_27
+      - _CN_中国_tg频道:@bpjzx2_52
+      - _CN_中国_tg频道:@bpjzx2_6
+      - _CN_中国_tg频道:@bpjzx2_50
+      - NONE
       - vpnpool-SG-Melbicom
-      - 加拿大阿伟科技@TG/油管
       - vpnpool-SG-Melbicom 2
-      - Montreal-RicaWeb
-      - Istanbul-SiberDC-dip
-      - 香港Azure-London-M247
-      - 甲骨文东京2_7
-      - mattkaydiary.com|韩国(KR)Korea/Chuncheon-si_24
-      - 香港Azure
-      - US,
-      - US, 5
-      - CA,
-      - HK, 2
+      - _SG_新加坡_tg频道:@bpjzx2_49
+      - GLaDOS-N2-02
+      - _SG_新加坡_tg频道:@bpjzx2_26
+      - _SG_新加坡_tg频道:@bpjzx2_3
+      - 美国阿伟科技@TG/油管
+      - GLaDOS-N2-02 2
+      - SG_@baipiao02
+      - 荷兰【YouTube由零開始】
+      - GLaDOS-N2-07 2
+      - GLaDOS-N2-08 2
+      - 中国_TGatnodesharing_1
+      - _CN_中国->🇯🇵_JP_日本
+      - US,+5
       - JP,
-      - 加拿大_TG@nodesharing_53
-      - TW,
-      - JP, 2
-      - HK,
       - _新加坡_FMYC-220311_274
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国
-      - 日本
-      - +Netherlands
-      - 德国 008
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国 4
+      - CA,
+      - TW,
+      - HK, 2
+      - HK,
       - SG,
-      - US, 4
-      - KR,
-      - 27美国∞中转
       - 華人社區_經紀人CC🍄🍄_1026
-      - JP,+3
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇭🇰_HK_香港 2
       - _中国_FMYC-220311_9
-      - 新加坡linode | 中转 | 1x
-      - 香港Azure | 直连 | 1x
-      - 韩国Azure | 中转 | 1x
-      - 香港-高速节点购买：v1_mk/vip（浏览器打开）_11
-      - 1.26|新加坡linode  中转  1x
-      - 这个世界不要俺了_指莹为梅_🇨🇳_CN_中国_33
-      - 1.73|孟买linode  中转  1x
-      - 香港_TG@nodesharing_12
+      - JP,+3
+      - US,
+      - JP, 2
+      - KR A 006
+      - _SG_新加坡_tg频道:@bpjzx2_4
+      - 星河
+      - 香港 ➤ 04
+      - 香港星河
+      - SG A 006
+      - 60044 @WangCai_1
+      - 香港 ➤ 05
+      - 60014 @WangCai_1
+      - 5
+      - 1
+      - 专线|新加坡01解锁|Z271
+      - 专线|新加坡03解锁|Z273
+      - 标准|新加坡03解锁|Z209
+      - 60037 @WangCai_1
+      - 6
+      - 60016 @WangCai_1
+      - 60020 @WangCai_1
+      - 香港 ➤ 01
+      - 60017 @WangCai_1
+      - 新加坡阿伟科技@TG/油管
+      - Lv1.广移A->日本A1
+      - 60010 @WangCai_1
+      - 60031 @WangCai_1
+      - 60029 @WangCai_1
+      - 60042 @WangCai_1
+      - 60034 @WangCai_1
+      - 60024 @WangCai_1
+      - _JP_日本_tg频道:@bpjzx2_3
+      - 日本星河
+      - 60012 @WangCai_1
+      - 60043 @WangCai_1
+      - 60025 @WangCai_1
+      - Lv1.广移A->日本B4
+      - 60008 @WangCai_1
+      - 60021 @WangCai_1
+      - 香港Azure-Seoul-AWS
+      - 60026 @WangCai_1
+      - 香港_TG@nodesharing_11
+      - 香港Azure-Mumbai-Linode
+      - Lv1.广移A->日本B3
+      - 香港Azure-Mumbai-Linode 2
+      - 60005 @WangCai_1
+      - 60022 @WangCai_1
+      - 关注电报免费梯子https://t.me/mftizi
+      - 60015 @WangCai_1
+      - 60013 @WangCai_1
+      - 60038 @WangCai_1
+      - "|23.20Mb"
+      - 60018 @WangCai_1
+      - 香港Azure-新北Hinet
+      - Relay_ |16.37Mb
+      - 60041 @WangCai_1
+      - 60011 @WangCai_1
+      - 60027 @WangCai_1
+      - 60028 @WangCai_1
+      - Tokyo-Azure-Tokyo-AWS
       - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
       - 香港阿里云@vpnhat
-      - 伦敦linode | 中转 | 1x
-      - Alien
-      - 标准|日本01解锁|Z217
-      - 香港阿里云@vpnhat 2
-      - SG Mbi
-      - 美国阿伟科技@TG/油管
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_142
-      - 孟买linode | 中转 | 1x
-      - 香港阿里云@vpnhat 3
-      - 美国Azure | 中转 | 1x
-      - 翻墙党fanqiangdang.com
-      - 香港阿伟科技@TG/油管
-      - 香港阿里云@vpnhat 4
-      - 香港Azure-Tokyo-FDCservers
-      - 0.76|美国Azure  中转  1x
-      - by@bpjzx2群友专享
-      - Lv1.广移A->日本B3
-      - 香港阿里云@vpnhat 5
-      - 专线|新加坡01解锁|Z271
-      - 1.45|日本linode  中转  1x
-      - 美国阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管 3
-      - 1.07|香港Azure  直连  1x
-      - 巴西Azure | 中转 | 1x
-      - Lv1.广移A->日本B4
-      - 美国阿伟科技@TG/油管 56
-      - Lv1.广移A->日本A1
-      - Incheon,V2_31
-      - 标准|新加坡03解锁|Z209
-      - vpnpool-Tokyo-FDCservers
-      - 珠珠节点2
-      - 专线|新加坡03解锁|Z273
-      - 日本linode | 中转 | 1x
-      - 美国 179
-      - "|23.20Mb"
-      - LAX-QuadraNet
-      - 南非Azure | 中转 | 1x
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
-      - 313更新_29
-      - DE_二爷翻墙网https://1808.ga_409
-      - _美国_FMYC-220311_304
-      - 0.79|巴西Azure  中转  1x
-      - HK
-      - HK_二爷翻墙网https://1808.ga_538
-      - Relay_ |16.37Mb
+      - 香港星河 2
+      - 迪拜阿伟科技@TG/油管
       - 中国2
-      - 香港阿里云@vpnhat 6
-      - 313更新_21
-      - US_2843 |15.28Mb
+      - 迪拜阿伟科技@TG/油管 2
+      - 香港阿里云@vpnhat 2
+      - _美国_FMYC-220314_63
+      - Tokyo-Azure-Mumbai-Linode
+      - Dubai-Oracle
+      - 60030 @WangCai_1
+      - 美国_TG@nodesharing_36
+      - 香港阿伟科技@TG/油管
+      - by@bpjzx2群友专享
+      - Dubai-Oracle 2
+      - 美国阿伟科技@TG/油管 2
+      - 喵哥甲骨文美国
+      - 阿联酋_TG@nodesharing_51
+      - CF-Tokyo-Alibaba
+      - _KR_韩国_tg频道:@bpjzx2_8
+      - 美国阿伟科技@TG/油管 3
+      - Phoenix-Oracle
+      - 美国_TG@nodesharing_52
+      - 美国【YouTube由零開始】
+      - HK A 006
+      - Phoenix-Oracle 2
+      - 香港Azure
+      - CF-Moscow-Firstbyte-dip
+      - 瑞士阿伟科技@TG/油管
+      - 美国【YouTube由零開始】 2
+      - CF-SG-Alibaba
+      - CF-Moscow-Firstbyte
+      - 美国_TG@nodesharing_48
+      - HK_684 | 9.55Mb
+      - CF-SG-Alibaba 2
+      - Frankfurt-Oracle
+      - Phoenix-Oracle 3
+      - 美国阿伟科技@TG/油管 56
+      - _GB_英国_tg频道:@bpjzx2_5
+      - 美国_TG@nodesharing_90
+      - 翻墙党fanqiangdang.com
+      - _US_美国_tg频道:@bpjzx2_6
+      - 1 2
+      - Frankfurt-Oracle 2
+      - Montreal-Oracle
+      - 香港阿里云@vpnhat 3
+      - Montreal-Oracle 2
+      - 阿联酋_TG@nodesharing_61
+      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
+      - 珠珠节点2
+      - 香港阿伟科技@TG/油管 2
+      - Osaka-Oracle
+      - CF-Moscow-Firstbyte 2
+      - 美国【由零開始】
+      - Hyderabad-Oracle
+      - _IN_印度_tg频道:@bpjzx2_7
+      - 新加坡阿伟科技@TG/油管 2
+      - 60035 @WangCai_1
+      - 新加坡星河
+      - 美国阿伟科技@TG/油管 4
+      - 【由零開始】
+      - 星河 2
+      - 美国阿伟科技@TG/油管 5
+      - 香港Azure-Seoul-AWS 2
+      - FMYC-220314_4
+      - Hyderabad-Oracle 2
+      - _美国_FMYC-220311_304
+      - 日本_TG@nodesharing_71
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - gz1.52168.xyz:1111
-      - 136.243.191.85:443
       - 【tg@freevpn8】CN_371
-      - 美国
-      - LAX-DMIT
-      - 美国 2
-      - Frankfurt-M247
-      - LAX-DMIT 2
-      - SG_@baipiao02
-      - Amsterdam-Liteserver
+      - JP_6 @WangCai_1
+      - JP_2 @WangCai_1
+      - HK_7 @WangCai_1
+      - HK_4 @WangCai_1
+      - HK_1 @WangCai_1
+      - JP_3 @WangCai_1
+      - US_9 @WangCai_1
+      - US_3 @WangCai_1
+      - US_6 @WangCai_1
+      - JP_5 @WangCai_1
+      - SG_9 @WangCai_1
+      - gz2.52168.xyz:2101
+      - KR_4 @WangCai_1
+      - gz1.52168.xyz:1111
+      - KR_2 @WangCai_1
+      - KR_3 @WangCai_1
+      - FR_936
+      - SG_4 @WangCai_1
+      - HK_6 @WangCai_1
+      - SG3_ @WangCai_1
+      - JP_1 @WangCai_1
+      - _HK_香港_tg频道:@bpjzx2_1
+      - _HK_香港_tg频道:@bpjzx2_25
+      - GLaDOS-N2-00
+      - GLaDOS-N2-08
+      - GLaDOS-N2-00 2
+      - _HK_香港_tg频道:@bpjzx2_48
+      - _TW_台湾_tg频道:@bpjzx2_8
+      - _TW_台湾_tg频道:@bpjzx2_55
+      - _TW_台湾_tg频道:@bpjzx2_54
+      - _TW_台湾_tg频道:@bpjzx2_9
+      - _TW_台湾_tg频道:@bpjzx2_32
+      - _CN_中国_tg频道:@bpjzx2_4
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-07
+      - _CN_中国_tg频道:@bpjzx2_29
+      - GLaDOS-N2-03 2
+      - _CN_中国_tg频道:@bpjzx2_27
+      - _CN_中国_tg频道:@bpjzx2_52
+      - _CN_中国_tg频道:@bpjzx2_6
+      - _CN_中国_tg频道:@bpjzx2_50
+      - NONE
       - vpnpool-SG-Melbicom
-      - 加拿大阿伟科技@TG/油管
       - vpnpool-SG-Melbicom 2
-      - Montreal-RicaWeb
-      - Istanbul-SiberDC-dip
-      - 香港Azure-London-M247
-      - 甲骨文东京2_7
-      - mattkaydiary.com|韩国(KR)Korea/Chuncheon-si_24
-      - 香港Azure
-      - US,
-      - US, 5
-      - CA,
-      - HK, 2
+      - _SG_新加坡_tg频道:@bpjzx2_49
+      - GLaDOS-N2-02
+      - _SG_新加坡_tg频道:@bpjzx2_26
+      - _SG_新加坡_tg频道:@bpjzx2_3
+      - 美国阿伟科技@TG/油管
+      - GLaDOS-N2-02 2
+      - SG_@baipiao02
+      - 荷兰【YouTube由零開始】
+      - GLaDOS-N2-07 2
+      - GLaDOS-N2-08 2
+      - 中国_TGatnodesharing_1
+      - _CN_中国->🇯🇵_JP_日本
+      - US,+5
       - JP,
-      - 加拿大_TG@nodesharing_53
-      - TW,
-      - JP, 2
-      - HK,
       - _新加坡_FMYC-220311_274
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国
-      - 日本
-      - +Netherlands
-      - 德国 008
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国 4
+      - CA,
+      - TW,
+      - HK, 2
+      - HK,
       - SG,
-      - US, 4
-      - KR,
-      - 27美国∞中转
       - 華人社區_經紀人CC🍄🍄_1026
-      - JP,+3
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇭🇰_HK_香港 2
       - _中国_FMYC-220311_9
-      - 新加坡linode | 中转 | 1x
-      - 香港Azure | 直连 | 1x
-      - 韩国Azure | 中转 | 1x
-      - 香港-高速节点购买：v1_mk/vip（浏览器打开）_11
-      - 1.26|新加坡linode  中转  1x
-      - 这个世界不要俺了_指莹为梅_🇨🇳_CN_中国_33
-      - 1.73|孟买linode  中转  1x
-      - 香港_TG@nodesharing_12
+      - JP,+3
+      - US,
+      - JP, 2
+      - KR A 006
+      - _SG_新加坡_tg频道:@bpjzx2_4
+      - 星河
+      - 香港 ➤ 04
+      - 香港星河
+      - SG A 006
+      - 60044 @WangCai_1
+      - 香港 ➤ 05
+      - 60014 @WangCai_1
+      - 5
+      - 1
+      - 专线|新加坡01解锁|Z271
+      - 专线|新加坡03解锁|Z273
+      - 标准|新加坡03解锁|Z209
+      - 60037 @WangCai_1
+      - 6
+      - 60016 @WangCai_1
+      - 60020 @WangCai_1
+      - 香港 ➤ 01
+      - 60017 @WangCai_1
+      - 新加坡阿伟科技@TG/油管
+      - Lv1.广移A->日本A1
+      - 60010 @WangCai_1
+      - 60031 @WangCai_1
+      - 60029 @WangCai_1
+      - 60042 @WangCai_1
+      - 60034 @WangCai_1
+      - 60024 @WangCai_1
+      - _JP_日本_tg频道:@bpjzx2_3
+      - 日本星河
+      - 60012 @WangCai_1
+      - 60043 @WangCai_1
+      - 60025 @WangCai_1
+      - Lv1.广移A->日本B4
+      - 60008 @WangCai_1
+      - 60021 @WangCai_1
+      - 香港Azure-Seoul-AWS
+      - 60026 @WangCai_1
+      - 香港_TG@nodesharing_11
+      - 香港Azure-Mumbai-Linode
+      - Lv1.广移A->日本B3
+      - 香港Azure-Mumbai-Linode 2
+      - 60005 @WangCai_1
+      - 60022 @WangCai_1
+      - 关注电报免费梯子https://t.me/mftizi
+      - 60015 @WangCai_1
+      - 60013 @WangCai_1
+      - 60038 @WangCai_1
+      - "|23.20Mb"
+      - 60018 @WangCai_1
+      - 香港Azure-新北Hinet
+      - Relay_ |16.37Mb
+      - 60041 @WangCai_1
+      - 60011 @WangCai_1
+      - 60027 @WangCai_1
+      - 60028 @WangCai_1
+      - Tokyo-Azure-Tokyo-AWS
       - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
       - 香港阿里云@vpnhat
-      - 伦敦linode | 中转 | 1x
-      - Alien
-      - 标准|日本01解锁|Z217
-      - 香港阿里云@vpnhat 2
-      - SG Mbi
-      - 美国阿伟科技@TG/油管
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_142
-      - 孟买linode | 中转 | 1x
-      - 香港阿里云@vpnhat 3
-      - 美国Azure | 中转 | 1x
-      - 翻墙党fanqiangdang.com
-      - 香港阿伟科技@TG/油管
-      - 香港阿里云@vpnhat 4
-      - 香港Azure-Tokyo-FDCservers
-      - 0.76|美国Azure  中转  1x
-      - by@bpjzx2群友专享
-      - Lv1.广移A->日本B3
-      - 香港阿里云@vpnhat 5
-      - 专线|新加坡01解锁|Z271
-      - 1.45|日本linode  中转  1x
-      - 美国阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管 3
-      - 1.07|香港Azure  直连  1x
-      - 巴西Azure | 中转 | 1x
-      - Lv1.广移A->日本B4
-      - 美国阿伟科技@TG/油管 56
-      - Lv1.广移A->日本A1
-      - Incheon,V2_31
-      - 标准|新加坡03解锁|Z209
-      - vpnpool-Tokyo-FDCservers
-      - 珠珠节点2
-      - 专线|新加坡03解锁|Z273
-      - 日本linode | 中转 | 1x
-      - 美国 179
-      - "|23.20Mb"
-      - LAX-QuadraNet
-      - 南非Azure | 中转 | 1x
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
-      - 313更新_29
-      - DE_二爷翻墙网https://1808.ga_409
-      - _美国_FMYC-220311_304
-      - 0.79|巴西Azure  中转  1x
-      - HK
-      - HK_二爷翻墙网https://1808.ga_538
-      - Relay_ |16.37Mb
+      - 香港星河 2
+      - 迪拜阿伟科技@TG/油管
       - 中国2
-      - 香港阿里云@vpnhat 6
-      - 313更新_21
-      - US_2843 |15.28Mb
+      - 迪拜阿伟科技@TG/油管 2
+      - 香港阿里云@vpnhat 2
+      - _美国_FMYC-220314_63
+      - Tokyo-Azure-Mumbai-Linode
+      - Dubai-Oracle
+      - 60030 @WangCai_1
+      - 美国_TG@nodesharing_36
+      - 香港阿伟科技@TG/油管
+      - by@bpjzx2群友专享
+      - Dubai-Oracle 2
+      - 美国阿伟科技@TG/油管 2
+      - 喵哥甲骨文美国
+      - 阿联酋_TG@nodesharing_51
+      - CF-Tokyo-Alibaba
+      - _KR_韩国_tg频道:@bpjzx2_8
+      - 美国阿伟科技@TG/油管 3
+      - Phoenix-Oracle
+      - 美国_TG@nodesharing_52
+      - 美国【YouTube由零開始】
+      - HK A 006
+      - Phoenix-Oracle 2
+      - 香港Azure
+      - CF-Moscow-Firstbyte-dip
+      - 瑞士阿伟科技@TG/油管
+      - 美国【YouTube由零開始】 2
+      - CF-SG-Alibaba
+      - CF-Moscow-Firstbyte
+      - 美国_TG@nodesharing_48
+      - HK_684 | 9.55Mb
+      - CF-SG-Alibaba 2
+      - Frankfurt-Oracle
+      - Phoenix-Oracle 3
+      - 美国阿伟科技@TG/油管 56
+      - _GB_英国_tg频道:@bpjzx2_5
+      - 美国_TG@nodesharing_90
+      - 翻墙党fanqiangdang.com
+      - _US_美国_tg频道:@bpjzx2_6
+      - 1 2
+      - Frankfurt-Oracle 2
+      - Montreal-Oracle
+      - 香港阿里云@vpnhat 3
+      - Montreal-Oracle 2
+      - 阿联酋_TG@nodesharing_61
+      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
+      - 珠珠节点2
+      - 香港阿伟科技@TG/油管 2
+      - Osaka-Oracle
+      - CF-Moscow-Firstbyte 2
+      - 美国【由零開始】
+      - Hyderabad-Oracle
+      - _IN_印度_tg频道:@bpjzx2_7
+      - 新加坡阿伟科技@TG/油管 2
+      - 60035 @WangCai_1
+      - 新加坡星河
+      - 美国阿伟科技@TG/油管 4
+      - 【由零開始】
+      - 星河 2
+      - 美国阿伟科技@TG/油管 5
+      - 香港Azure-Seoul-AWS 2
+      - FMYC-220314_4
+      - Hyderabad-Oracle 2
+      - _美国_FMYC-220311_304
+      - 日本_TG@nodesharing_71
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - gz1.52168.xyz:1111
-      - 136.243.191.85:443
       - 【tg@freevpn8】CN_371
-      - 美国
-      - LAX-DMIT
-      - 美国 2
-      - Frankfurt-M247
-      - LAX-DMIT 2
-      - SG_@baipiao02
-      - Amsterdam-Liteserver
+      - JP_6 @WangCai_1
+      - JP_2 @WangCai_1
+      - HK_7 @WangCai_1
+      - HK_4 @WangCai_1
+      - HK_1 @WangCai_1
+      - JP_3 @WangCai_1
+      - US_9 @WangCai_1
+      - US_3 @WangCai_1
+      - US_6 @WangCai_1
+      - JP_5 @WangCai_1
+      - SG_9 @WangCai_1
+      - gz2.52168.xyz:2101
+      - KR_4 @WangCai_1
+      - gz1.52168.xyz:1111
+      - KR_2 @WangCai_1
+      - KR_3 @WangCai_1
+      - FR_936
+      - SG_4 @WangCai_1
+      - HK_6 @WangCai_1
+      - SG3_ @WangCai_1
+      - JP_1 @WangCai_1
+      - _HK_香港_tg频道:@bpjzx2_1
+      - _HK_香港_tg频道:@bpjzx2_25
+      - GLaDOS-N2-00
+      - GLaDOS-N2-08
+      - GLaDOS-N2-00 2
+      - _HK_香港_tg频道:@bpjzx2_48
+      - _TW_台湾_tg频道:@bpjzx2_8
+      - _TW_台湾_tg频道:@bpjzx2_55
+      - _TW_台湾_tg频道:@bpjzx2_54
+      - _TW_台湾_tg频道:@bpjzx2_9
+      - _TW_台湾_tg频道:@bpjzx2_32
+      - _CN_中国_tg频道:@bpjzx2_4
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-07
+      - _CN_中国_tg频道:@bpjzx2_29
+      - GLaDOS-N2-03 2
+      - _CN_中国_tg频道:@bpjzx2_27
+      - _CN_中国_tg频道:@bpjzx2_52
+      - _CN_中国_tg频道:@bpjzx2_6
+      - _CN_中国_tg频道:@bpjzx2_50
+      - NONE
       - vpnpool-SG-Melbicom
-      - 加拿大阿伟科技@TG/油管
       - vpnpool-SG-Melbicom 2
-      - Montreal-RicaWeb
-      - Istanbul-SiberDC-dip
-      - 香港Azure-London-M247
-      - 甲骨文东京2_7
-      - mattkaydiary.com|韩国(KR)Korea/Chuncheon-si_24
-      - 香港Azure
-      - US,
-      - US, 5
-      - CA,
-      - HK, 2
+      - _SG_新加坡_tg频道:@bpjzx2_49
+      - GLaDOS-N2-02
+      - _SG_新加坡_tg频道:@bpjzx2_26
+      - _SG_新加坡_tg频道:@bpjzx2_3
+      - 美国阿伟科技@TG/油管
+      - GLaDOS-N2-02 2
+      - SG_@baipiao02
+      - 荷兰【YouTube由零開始】
+      - GLaDOS-N2-07 2
+      - GLaDOS-N2-08 2
+      - 中国_TGatnodesharing_1
+      - _CN_中国->🇯🇵_JP_日本
+      - US,+5
       - JP,
-      - 加拿大_TG@nodesharing_53
-      - TW,
-      - JP, 2
-      - HK,
       - _新加坡_FMYC-220311_274
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国
-      - 日本
-      - +Netherlands
-      - 德国 008
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国 4
+      - CA,
+      - TW,
+      - HK, 2
+      - HK,
       - SG,
-      - US, 4
-      - KR,
-      - 27美国∞中转
       - 華人社區_經紀人CC🍄🍄_1026
-      - JP,+3
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇭🇰_HK_香港 2
       - _中国_FMYC-220311_9
-      - 新加坡linode | 中转 | 1x
-      - 香港Azure | 直连 | 1x
-      - 韩国Azure | 中转 | 1x
-      - 香港-高速节点购买：v1_mk/vip（浏览器打开）_11
-      - 1.26|新加坡linode  中转  1x
-      - 这个世界不要俺了_指莹为梅_🇨🇳_CN_中国_33
-      - 1.73|孟买linode  中转  1x
-      - 香港_TG@nodesharing_12
+      - JP,+3
+      - US,
+      - JP, 2
+      - KR A 006
+      - _SG_新加坡_tg频道:@bpjzx2_4
+      - 星河
+      - 香港 ➤ 04
+      - 香港星河
+      - SG A 006
+      - 60044 @WangCai_1
+      - 香港 ➤ 05
+      - 60014 @WangCai_1
+      - 5
+      - 1
+      - 专线|新加坡01解锁|Z271
+      - 专线|新加坡03解锁|Z273
+      - 标准|新加坡03解锁|Z209
+      - 60037 @WangCai_1
+      - 6
+      - 60016 @WangCai_1
+      - 60020 @WangCai_1
+      - 香港 ➤ 01
+      - 60017 @WangCai_1
+      - 新加坡阿伟科技@TG/油管
+      - Lv1.广移A->日本A1
+      - 60010 @WangCai_1
+      - 60031 @WangCai_1
+      - 60029 @WangCai_1
+      - 60042 @WangCai_1
+      - 60034 @WangCai_1
+      - 60024 @WangCai_1
+      - _JP_日本_tg频道:@bpjzx2_3
+      - 日本星河
+      - 60012 @WangCai_1
+      - 60043 @WangCai_1
+      - 60025 @WangCai_1
+      - Lv1.广移A->日本B4
+      - 60008 @WangCai_1
+      - 60021 @WangCai_1
+      - 香港Azure-Seoul-AWS
+      - 60026 @WangCai_1
+      - 香港_TG@nodesharing_11
+      - 香港Azure-Mumbai-Linode
+      - Lv1.广移A->日本B3
+      - 香港Azure-Mumbai-Linode 2
+      - 60005 @WangCai_1
+      - 60022 @WangCai_1
+      - 关注电报免费梯子https://t.me/mftizi
+      - 60015 @WangCai_1
+      - 60013 @WangCai_1
+      - 60038 @WangCai_1
+      - "|23.20Mb"
+      - 60018 @WangCai_1
+      - 香港Azure-新北Hinet
+      - Relay_ |16.37Mb
+      - 60041 @WangCai_1
+      - 60011 @WangCai_1
+      - 60027 @WangCai_1
+      - 60028 @WangCai_1
+      - Tokyo-Azure-Tokyo-AWS
       - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
       - 香港阿里云@vpnhat
-      - 伦敦linode | 中转 | 1x
-      - Alien
-      - 标准|日本01解锁|Z217
-      - 香港阿里云@vpnhat 2
-      - SG Mbi
-      - 美国阿伟科技@TG/油管
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_142
-      - 孟买linode | 中转 | 1x
-      - 香港阿里云@vpnhat 3
-      - 美国Azure | 中转 | 1x
-      - 翻墙党fanqiangdang.com
-      - 香港阿伟科技@TG/油管
-      - 香港阿里云@vpnhat 4
-      - 香港Azure-Tokyo-FDCservers
-      - 0.76|美国Azure  中转  1x
-      - by@bpjzx2群友专享
-      - Lv1.广移A->日本B3
-      - 香港阿里云@vpnhat 5
-      - 专线|新加坡01解锁|Z271
-      - 1.45|日本linode  中转  1x
-      - 美国阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管 3
-      - 1.07|香港Azure  直连  1x
-      - 巴西Azure | 中转 | 1x
-      - Lv1.广移A->日本B4
-      - 美国阿伟科技@TG/油管 56
-      - Lv1.广移A->日本A1
-      - Incheon,V2_31
-      - 标准|新加坡03解锁|Z209
-      - vpnpool-Tokyo-FDCservers
-      - 珠珠节点2
-      - 专线|新加坡03解锁|Z273
-      - 日本linode | 中转 | 1x
-      - 美国 179
-      - "|23.20Mb"
-      - LAX-QuadraNet
-      - 南非Azure | 中转 | 1x
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
-      - 313更新_29
-      - DE_二爷翻墙网https://1808.ga_409
-      - _美国_FMYC-220311_304
-      - 0.79|巴西Azure  中转  1x
-      - HK
-      - HK_二爷翻墙网https://1808.ga_538
-      - Relay_ |16.37Mb
+      - 香港星河 2
+      - 迪拜阿伟科技@TG/油管
       - 中国2
-      - 香港阿里云@vpnhat 6
-      - 313更新_21
-      - US_2843 |15.28Mb
+      - 迪拜阿伟科技@TG/油管 2
+      - 香港阿里云@vpnhat 2
+      - _美国_FMYC-220314_63
+      - Tokyo-Azure-Mumbai-Linode
+      - Dubai-Oracle
+      - 60030 @WangCai_1
+      - 美国_TG@nodesharing_36
+      - 香港阿伟科技@TG/油管
+      - by@bpjzx2群友专享
+      - Dubai-Oracle 2
+      - 美国阿伟科技@TG/油管 2
+      - 喵哥甲骨文美国
+      - 阿联酋_TG@nodesharing_51
+      - CF-Tokyo-Alibaba
+      - _KR_韩国_tg频道:@bpjzx2_8
+      - 美国阿伟科技@TG/油管 3
+      - Phoenix-Oracle
+      - 美国_TG@nodesharing_52
+      - 美国【YouTube由零開始】
+      - HK A 006
+      - Phoenix-Oracle 2
+      - 香港Azure
+      - CF-Moscow-Firstbyte-dip
+      - 瑞士阿伟科技@TG/油管
+      - 美国【YouTube由零開始】 2
+      - CF-SG-Alibaba
+      - CF-Moscow-Firstbyte
+      - 美国_TG@nodesharing_48
+      - HK_684 | 9.55Mb
+      - CF-SG-Alibaba 2
+      - Frankfurt-Oracle
+      - Phoenix-Oracle 3
+      - 美国阿伟科技@TG/油管 56
+      - _GB_英国_tg频道:@bpjzx2_5
+      - 美国_TG@nodesharing_90
+      - 翻墙党fanqiangdang.com
+      - _US_美国_tg频道:@bpjzx2_6
+      - 1 2
+      - Frankfurt-Oracle 2
+      - Montreal-Oracle
+      - 香港阿里云@vpnhat 3
+      - Montreal-Oracle 2
+      - 阿联酋_TG@nodesharing_61
+      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
+      - 珠珠节点2
+      - 香港阿伟科技@TG/油管 2
+      - Osaka-Oracle
+      - CF-Moscow-Firstbyte 2
+      - 美国【由零開始】
+      - Hyderabad-Oracle
+      - _IN_印度_tg频道:@bpjzx2_7
+      - 新加坡阿伟科技@TG/油管 2
+      - 60035 @WangCai_1
+      - 新加坡星河
+      - 美国阿伟科技@TG/油管 4
+      - 【由零開始】
+      - 星河 2
+      - 美国阿伟科技@TG/油管 5
+      - 香港Azure-Seoul-AWS 2
+      - FMYC-220314_4
+      - Hyderabad-Oracle 2
+      - _美国_FMYC-220311_304
+      - 日本_TG@nodesharing_71
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -440,441 +832,846 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - gz1.52168.xyz:1111
-      - 136.243.191.85:443
       - 【tg@freevpn8】CN_371
-      - 美国
-      - LAX-DMIT
-      - 美国 2
-      - Frankfurt-M247
-      - LAX-DMIT 2
-      - SG_@baipiao02
-      - Amsterdam-Liteserver
+      - JP_6 @WangCai_1
+      - JP_2 @WangCai_1
+      - HK_7 @WangCai_1
+      - HK_4 @WangCai_1
+      - HK_1 @WangCai_1
+      - JP_3 @WangCai_1
+      - US_9 @WangCai_1
+      - US_3 @WangCai_1
+      - US_6 @WangCai_1
+      - JP_5 @WangCai_1
+      - SG_9 @WangCai_1
+      - gz2.52168.xyz:2101
+      - KR_4 @WangCai_1
+      - gz1.52168.xyz:1111
+      - KR_2 @WangCai_1
+      - KR_3 @WangCai_1
+      - FR_936
+      - SG_4 @WangCai_1
+      - HK_6 @WangCai_1
+      - SG3_ @WangCai_1
+      - JP_1 @WangCai_1
+      - _HK_香港_tg频道:@bpjzx2_1
+      - _HK_香港_tg频道:@bpjzx2_25
+      - GLaDOS-N2-00
+      - GLaDOS-N2-08
+      - GLaDOS-N2-00 2
+      - _HK_香港_tg频道:@bpjzx2_48
+      - _TW_台湾_tg频道:@bpjzx2_8
+      - _TW_台湾_tg频道:@bpjzx2_55
+      - _TW_台湾_tg频道:@bpjzx2_54
+      - _TW_台湾_tg频道:@bpjzx2_9
+      - _TW_台湾_tg频道:@bpjzx2_32
+      - _CN_中国_tg频道:@bpjzx2_4
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-07
+      - _CN_中国_tg频道:@bpjzx2_29
+      - GLaDOS-N2-03 2
+      - _CN_中国_tg频道:@bpjzx2_27
+      - _CN_中国_tg频道:@bpjzx2_52
+      - _CN_中国_tg频道:@bpjzx2_6
+      - _CN_中国_tg频道:@bpjzx2_50
+      - NONE
       - vpnpool-SG-Melbicom
-      - 加拿大阿伟科技@TG/油管
       - vpnpool-SG-Melbicom 2
-      - Montreal-RicaWeb
-      - Istanbul-SiberDC-dip
-      - 香港Azure-London-M247
-      - 甲骨文东京2_7
-      - mattkaydiary.com|韩国(KR)Korea/Chuncheon-si_24
-      - 香港Azure
-      - US,
-      - US, 5
-      - CA,
-      - HK, 2
+      - _SG_新加坡_tg频道:@bpjzx2_49
+      - GLaDOS-N2-02
+      - _SG_新加坡_tg频道:@bpjzx2_26
+      - _SG_新加坡_tg频道:@bpjzx2_3
+      - 美国阿伟科技@TG/油管
+      - GLaDOS-N2-02 2
+      - SG_@baipiao02
+      - 荷兰【YouTube由零開始】
+      - GLaDOS-N2-07 2
+      - GLaDOS-N2-08 2
+      - 中国_TGatnodesharing_1
+      - _CN_中国->🇯🇵_JP_日本
+      - US,+5
       - JP,
-      - 加拿大_TG@nodesharing_53
-      - TW,
-      - JP, 2
-      - HK,
       - _新加坡_FMYC-220311_274
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国
-      - 日本
-      - +Netherlands
-      - 德国 008
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国 4
+      - CA,
+      - TW,
+      - HK, 2
+      - HK,
       - SG,
-      - US, 4
-      - KR,
-      - 27美国∞中转
       - 華人社區_經紀人CC🍄🍄_1026
-      - JP,+3
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇭🇰_HK_香港 2
       - _中国_FMYC-220311_9
-      - 新加坡linode | 中转 | 1x
-      - 香港Azure | 直连 | 1x
-      - 韩国Azure | 中转 | 1x
-      - 香港-高速节点购买：v1_mk/vip（浏览器打开）_11
-      - 1.26|新加坡linode  中转  1x
-      - 这个世界不要俺了_指莹为梅_🇨🇳_CN_中国_33
-      - 1.73|孟买linode  中转  1x
-      - 香港_TG@nodesharing_12
+      - JP,+3
+      - US,
+      - JP, 2
+      - KR A 006
+      - _SG_新加坡_tg频道:@bpjzx2_4
+      - 星河
+      - 香港 ➤ 04
+      - 香港星河
+      - SG A 006
+      - 60044 @WangCai_1
+      - 香港 ➤ 05
+      - 60014 @WangCai_1
+      - 5
+      - 1
+      - 专线|新加坡01解锁|Z271
+      - 专线|新加坡03解锁|Z273
+      - 标准|新加坡03解锁|Z209
+      - 60037 @WangCai_1
+      - 6
+      - 60016 @WangCai_1
+      - 60020 @WangCai_1
+      - 香港 ➤ 01
+      - 60017 @WangCai_1
+      - 新加坡阿伟科技@TG/油管
+      - Lv1.广移A->日本A1
+      - 60010 @WangCai_1
+      - 60031 @WangCai_1
+      - 60029 @WangCai_1
+      - 60042 @WangCai_1
+      - 60034 @WangCai_1
+      - 60024 @WangCai_1
+      - _JP_日本_tg频道:@bpjzx2_3
+      - 日本星河
+      - 60012 @WangCai_1
+      - 60043 @WangCai_1
+      - 60025 @WangCai_1
+      - Lv1.广移A->日本B4
+      - 60008 @WangCai_1
+      - 60021 @WangCai_1
+      - 香港Azure-Seoul-AWS
+      - 60026 @WangCai_1
+      - 香港_TG@nodesharing_11
+      - 香港Azure-Mumbai-Linode
+      - Lv1.广移A->日本B3
+      - 香港Azure-Mumbai-Linode 2
+      - 60005 @WangCai_1
+      - 60022 @WangCai_1
+      - 关注电报免费梯子https://t.me/mftizi
+      - 60015 @WangCai_1
+      - 60013 @WangCai_1
+      - 60038 @WangCai_1
+      - "|23.20Mb"
+      - 60018 @WangCai_1
+      - 香港Azure-新北Hinet
+      - Relay_ |16.37Mb
+      - 60041 @WangCai_1
+      - 60011 @WangCai_1
+      - 60027 @WangCai_1
+      - 60028 @WangCai_1
+      - Tokyo-Azure-Tokyo-AWS
       - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
       - 香港阿里云@vpnhat
-      - 伦敦linode | 中转 | 1x
-      - Alien
-      - 标准|日本01解锁|Z217
-      - 香港阿里云@vpnhat 2
-      - SG Mbi
-      - 美国阿伟科技@TG/油管
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_142
-      - 孟买linode | 中转 | 1x
-      - 香港阿里云@vpnhat 3
-      - 美国Azure | 中转 | 1x
-      - 翻墙党fanqiangdang.com
-      - 香港阿伟科技@TG/油管
-      - 香港阿里云@vpnhat 4
-      - 香港Azure-Tokyo-FDCservers
-      - 0.76|美国Azure  中转  1x
-      - by@bpjzx2群友专享
-      - Lv1.广移A->日本B3
-      - 香港阿里云@vpnhat 5
-      - 专线|新加坡01解锁|Z271
-      - 1.45|日本linode  中转  1x
-      - 美国阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管 3
-      - 1.07|香港Azure  直连  1x
-      - 巴西Azure | 中转 | 1x
-      - Lv1.广移A->日本B4
-      - 美国阿伟科技@TG/油管 56
-      - Lv1.广移A->日本A1
-      - Incheon,V2_31
-      - 标准|新加坡03解锁|Z209
-      - vpnpool-Tokyo-FDCservers
-      - 珠珠节点2
-      - 专线|新加坡03解锁|Z273
-      - 日本linode | 中转 | 1x
-      - 美国 179
-      - "|23.20Mb"
-      - LAX-QuadraNet
-      - 南非Azure | 中转 | 1x
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
-      - 313更新_29
-      - DE_二爷翻墙网https://1808.ga_409
-      - _美国_FMYC-220311_304
-      - 0.79|巴西Azure  中转  1x
-      - HK
-      - HK_二爷翻墙网https://1808.ga_538
-      - Relay_ |16.37Mb
+      - 香港星河 2
+      - 迪拜阿伟科技@TG/油管
       - 中国2
-      - 香港阿里云@vpnhat 6
-      - 313更新_21
-      - US_2843 |15.28Mb
+      - 迪拜阿伟科技@TG/油管 2
+      - 香港阿里云@vpnhat 2
+      - _美国_FMYC-220314_63
+      - Tokyo-Azure-Mumbai-Linode
+      - Dubai-Oracle
+      - 60030 @WangCai_1
+      - 美国_TG@nodesharing_36
+      - 香港阿伟科技@TG/油管
+      - by@bpjzx2群友专享
+      - Dubai-Oracle 2
+      - 美国阿伟科技@TG/油管 2
+      - 喵哥甲骨文美国
+      - 阿联酋_TG@nodesharing_51
+      - CF-Tokyo-Alibaba
+      - _KR_韩国_tg频道:@bpjzx2_8
+      - 美国阿伟科技@TG/油管 3
+      - Phoenix-Oracle
+      - 美国_TG@nodesharing_52
+      - 美国【YouTube由零開始】
+      - HK A 006
+      - Phoenix-Oracle 2
+      - 香港Azure
+      - CF-Moscow-Firstbyte-dip
+      - 瑞士阿伟科技@TG/油管
+      - 美国【YouTube由零開始】 2
+      - CF-SG-Alibaba
+      - CF-Moscow-Firstbyte
+      - 美国_TG@nodesharing_48
+      - HK_684 | 9.55Mb
+      - CF-SG-Alibaba 2
+      - Frankfurt-Oracle
+      - Phoenix-Oracle 3
+      - 美国阿伟科技@TG/油管 56
+      - _GB_英国_tg频道:@bpjzx2_5
+      - 美国_TG@nodesharing_90
+      - 翻墙党fanqiangdang.com
+      - _US_美国_tg频道:@bpjzx2_6
+      - 1 2
+      - Frankfurt-Oracle 2
+      - Montreal-Oracle
+      - 香港阿里云@vpnhat 3
+      - Montreal-Oracle 2
+      - 阿联酋_TG@nodesharing_61
+      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
+      - 珠珠节点2
+      - 香港阿伟科技@TG/油管 2
+      - Osaka-Oracle
+      - CF-Moscow-Firstbyte 2
+      - 美国【由零開始】
+      - Hyderabad-Oracle
+      - _IN_印度_tg频道:@bpjzx2_7
+      - 新加坡阿伟科技@TG/油管 2
+      - 60035 @WangCai_1
+      - 新加坡星河
+      - 美国阿伟科技@TG/油管 4
+      - 【由零開始】
+      - 星河 2
+      - 美国阿伟科技@TG/油管 5
+      - 香港Azure-Seoul-AWS 2
+      - FMYC-220314_4
+      - Hyderabad-Oracle 2
+      - _美国_FMYC-220311_304
+      - 日本_TG@nodesharing_71
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港Azure-London-M247
-      - 香港Azure
-      - 香港Azure | 直连 | 1x
-      - 香港-高速节点购买：v1_mk/vip（浏览器打开）_11
-      - 香港_TG@nodesharing_12
+      - _HK_香港_tg频道:@bpjzx2_1
+      - _HK_香港_tg频道:@bpjzx2_25
+      - _HK_香港_tg频道:@bpjzx2_48
+      - _TW_台湾_tg频道:@bpjzx2_8
+      - _TW_台湾_tg频道:@bpjzx2_55
+      - _TW_台湾_tg频道:@bpjzx2_54
+      - _TW_台湾_tg频道:@bpjzx2_9
+      - _TW_台湾_tg频道:@bpjzx2_32
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇭🇰_HK_香港 2
+      - 香港 ➤ 04
+      - 香港星河
+      - 香港 ➤ 05
+      - 香港 ➤ 01
+      - 香港Azure-Seoul-AWS
+      - 香港_TG@nodesharing_11
+      - 香港Azure-Mumbai-Linode
+      - 香港Azure-Mumbai-Linode 2
+      - 香港Azure-新北Hinet
       - 香港阿里云@vpnhat
+      - 香港星河 2
       - 香港阿里云@vpnhat 2
-      - 香港阿里云@vpnhat 3
       - 香港阿伟科技@TG/油管
-      - 香港阿里云@vpnhat 4
-      - 香港Azure-Tokyo-FDCservers
-      - 香港阿里云@vpnhat 5
-      - 1.07|香港Azure  直连  1x
-      - 香港阿里云@vpnhat 6
+      - 香港Azure
+      - 香港阿里云@vpnhat 3
+      - 香港阿伟科技@TG/油管 2
+      - 香港Azure-Seoul-AWS 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - gz1.52168.xyz:1111
-      - 136.243.191.85:443
       - 【tg@freevpn8】CN_371
-      - 美国
-      - LAX-DMIT
-      - 美国 2
-      - Frankfurt-M247
-      - LAX-DMIT 2
-      - SG_@baipiao02
-      - Amsterdam-Liteserver
+      - JP_6 @WangCai_1
+      - JP_2 @WangCai_1
+      - HK_7 @WangCai_1
+      - HK_4 @WangCai_1
+      - HK_1 @WangCai_1
+      - JP_3 @WangCai_1
+      - US_9 @WangCai_1
+      - US_3 @WangCai_1
+      - US_6 @WangCai_1
+      - JP_5 @WangCai_1
+      - SG_9 @WangCai_1
+      - gz2.52168.xyz:2101
+      - KR_4 @WangCai_1
+      - gz1.52168.xyz:1111
+      - KR_2 @WangCai_1
+      - KR_3 @WangCai_1
+      - FR_936
+      - SG_4 @WangCai_1
+      - HK_6 @WangCai_1
+      - SG3_ @WangCai_1
+      - JP_1 @WangCai_1
+      - _HK_香港_tg频道:@bpjzx2_1
+      - _HK_香港_tg频道:@bpjzx2_25
+      - GLaDOS-N2-00
+      - GLaDOS-N2-08
+      - GLaDOS-N2-00 2
+      - _HK_香港_tg频道:@bpjzx2_48
+      - _TW_台湾_tg频道:@bpjzx2_8
+      - _TW_台湾_tg频道:@bpjzx2_55
+      - _TW_台湾_tg频道:@bpjzx2_54
+      - _TW_台湾_tg频道:@bpjzx2_9
+      - _TW_台湾_tg频道:@bpjzx2_32
+      - _CN_中国_tg频道:@bpjzx2_4
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-07
+      - _CN_中国_tg频道:@bpjzx2_29
+      - GLaDOS-N2-03 2
+      - _CN_中国_tg频道:@bpjzx2_27
+      - _CN_中国_tg频道:@bpjzx2_52
+      - _CN_中国_tg频道:@bpjzx2_6
+      - _CN_中国_tg频道:@bpjzx2_50
+      - NONE
       - vpnpool-SG-Melbicom
-      - 加拿大阿伟科技@TG/油管
       - vpnpool-SG-Melbicom 2
-      - Montreal-RicaWeb
-      - Istanbul-SiberDC-dip
-      - 香港Azure-London-M247
-      - 甲骨文东京2_7
-      - mattkaydiary.com|韩国(KR)Korea/Chuncheon-si_24
-      - 香港Azure
-      - US,
-      - US, 5
-      - CA,
-      - HK, 2
+      - _SG_新加坡_tg频道:@bpjzx2_49
+      - GLaDOS-N2-02
+      - _SG_新加坡_tg频道:@bpjzx2_26
+      - _SG_新加坡_tg频道:@bpjzx2_3
+      - 美国阿伟科技@TG/油管
+      - GLaDOS-N2-02 2
+      - SG_@baipiao02
+      - 荷兰【YouTube由零開始】
+      - GLaDOS-N2-07 2
+      - GLaDOS-N2-08 2
+      - 中国_TGatnodesharing_1
+      - _CN_中国->🇯🇵_JP_日本
+      - US,+5
       - JP,
-      - 加拿大_TG@nodesharing_53
-      - TW,
-      - JP, 2
-      - HK,
       - _新加坡_FMYC-220311_274
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国
-      - 日本
-      - +Netherlands
-      - 德国 008
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国 4
+      - CA,
+      - TW,
+      - HK, 2
+      - HK,
       - SG,
-      - US, 4
-      - KR,
-      - 27美国∞中转
       - 華人社區_經紀人CC🍄🍄_1026
-      - JP,+3
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇭🇰_HK_香港 2
       - _中国_FMYC-220311_9
-      - 新加坡linode | 中转 | 1x
-      - 香港Azure | 直连 | 1x
-      - 韩国Azure | 中转 | 1x
-      - 香港-高速节点购买：v1_mk/vip（浏览器打开）_11
-      - 1.26|新加坡linode  中转  1x
-      - 这个世界不要俺了_指莹为梅_🇨🇳_CN_中国_33
-      - 1.73|孟买linode  中转  1x
-      - 香港_TG@nodesharing_12
+      - JP,+3
+      - US,
+      - JP, 2
+      - KR A 006
+      - _SG_新加坡_tg频道:@bpjzx2_4
+      - 星河
+      - 香港 ➤ 04
+      - 香港星河
+      - SG A 006
+      - 60044 @WangCai_1
+      - 香港 ➤ 05
+      - 60014 @WangCai_1
+      - 5
+      - 1
+      - 专线|新加坡01解锁|Z271
+      - 专线|新加坡03解锁|Z273
+      - 标准|新加坡03解锁|Z209
+      - 60037 @WangCai_1
+      - 6
+      - 60016 @WangCai_1
+      - 60020 @WangCai_1
+      - 香港 ➤ 01
+      - 60017 @WangCai_1
+      - 新加坡阿伟科技@TG/油管
+      - Lv1.广移A->日本A1
+      - 60010 @WangCai_1
+      - 60031 @WangCai_1
+      - 60029 @WangCai_1
+      - 60042 @WangCai_1
+      - 60034 @WangCai_1
+      - 60024 @WangCai_1
+      - _JP_日本_tg频道:@bpjzx2_3
+      - 日本星河
+      - 60012 @WangCai_1
+      - 60043 @WangCai_1
+      - 60025 @WangCai_1
+      - Lv1.广移A->日本B4
+      - 60008 @WangCai_1
+      - 60021 @WangCai_1
+      - 香港Azure-Seoul-AWS
+      - 60026 @WangCai_1
+      - 香港_TG@nodesharing_11
+      - 香港Azure-Mumbai-Linode
+      - Lv1.广移A->日本B3
+      - 香港Azure-Mumbai-Linode 2
+      - 60005 @WangCai_1
+      - 60022 @WangCai_1
+      - 关注电报免费梯子https://t.me/mftizi
+      - 60015 @WangCai_1
+      - 60013 @WangCai_1
+      - 60038 @WangCai_1
+      - "|23.20Mb"
+      - 60018 @WangCai_1
+      - 香港Azure-新北Hinet
+      - Relay_ |16.37Mb
+      - 60041 @WangCai_1
+      - 60011 @WangCai_1
+      - 60027 @WangCai_1
+      - 60028 @WangCai_1
+      - Tokyo-Azure-Tokyo-AWS
       - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
       - 香港阿里云@vpnhat
-      - 伦敦linode | 中转 | 1x
-      - Alien
-      - 标准|日本01解锁|Z217
-      - 香港阿里云@vpnhat 2
-      - SG Mbi
-      - 美国阿伟科技@TG/油管
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_142
-      - 孟买linode | 中转 | 1x
-      - 香港阿里云@vpnhat 3
-      - 美国Azure | 中转 | 1x
-      - 翻墙党fanqiangdang.com
-      - 香港阿伟科技@TG/油管
-      - 香港阿里云@vpnhat 4
-      - 香港Azure-Tokyo-FDCservers
-      - 0.76|美国Azure  中转  1x
-      - by@bpjzx2群友专享
-      - Lv1.广移A->日本B3
-      - 香港阿里云@vpnhat 5
-      - 专线|新加坡01解锁|Z271
-      - 1.45|日本linode  中转  1x
-      - 美国阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管 3
-      - 1.07|香港Azure  直连  1x
-      - 巴西Azure | 中转 | 1x
-      - Lv1.广移A->日本B4
-      - 美国阿伟科技@TG/油管 56
-      - Lv1.广移A->日本A1
-      - Incheon,V2_31
-      - 标准|新加坡03解锁|Z209
-      - vpnpool-Tokyo-FDCservers
-      - 珠珠节点2
-      - 专线|新加坡03解锁|Z273
-      - 日本linode | 中转 | 1x
-      - 美国 179
-      - "|23.20Mb"
-      - LAX-QuadraNet
-      - 南非Azure | 中转 | 1x
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
-      - 313更新_29
-      - DE_二爷翻墙网https://1808.ga_409
-      - _美国_FMYC-220311_304
-      - 0.79|巴西Azure  中转  1x
-      - HK
-      - HK_二爷翻墙网https://1808.ga_538
-      - Relay_ |16.37Mb
+      - 香港星河 2
+      - 迪拜阿伟科技@TG/油管
       - 中国2
-      - 香港阿里云@vpnhat 6
-      - 313更新_21
-      - US_2843 |15.28Mb
+      - 迪拜阿伟科技@TG/油管 2
+      - 香港阿里云@vpnhat 2
+      - _美国_FMYC-220314_63
+      - Tokyo-Azure-Mumbai-Linode
+      - Dubai-Oracle
+      - 60030 @WangCai_1
+      - 美国_TG@nodesharing_36
+      - 香港阿伟科技@TG/油管
+      - by@bpjzx2群友专享
+      - Dubai-Oracle 2
+      - 美国阿伟科技@TG/油管 2
+      - 喵哥甲骨文美国
+      - 阿联酋_TG@nodesharing_51
+      - CF-Tokyo-Alibaba
+      - _KR_韩国_tg频道:@bpjzx2_8
+      - 美国阿伟科技@TG/油管 3
+      - Phoenix-Oracle
+      - 美国_TG@nodesharing_52
+      - 美国【YouTube由零開始】
+      - HK A 006
+      - Phoenix-Oracle 2
+      - 香港Azure
+      - CF-Moscow-Firstbyte-dip
+      - 瑞士阿伟科技@TG/油管
+      - 美国【YouTube由零開始】 2
+      - CF-SG-Alibaba
+      - CF-Moscow-Firstbyte
+      - 美国_TG@nodesharing_48
+      - HK_684 | 9.55Mb
+      - CF-SG-Alibaba 2
+      - Frankfurt-Oracle
+      - Phoenix-Oracle 3
+      - 美国阿伟科技@TG/油管 56
+      - _GB_英国_tg频道:@bpjzx2_5
+      - 美国_TG@nodesharing_90
+      - 翻墙党fanqiangdang.com
+      - _US_美国_tg频道:@bpjzx2_6
+      - 1 2
+      - Frankfurt-Oracle 2
+      - Montreal-Oracle
+      - 香港阿里云@vpnhat 3
+      - Montreal-Oracle 2
+      - 阿联酋_TG@nodesharing_61
+      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
+      - 珠珠节点2
+      - 香港阿伟科技@TG/油管 2
+      - Osaka-Oracle
+      - CF-Moscow-Firstbyte 2
+      - 美国【由零開始】
+      - Hyderabad-Oracle
+      - _IN_印度_tg频道:@bpjzx2_7
+      - 新加坡阿伟科技@TG/油管 2
+      - 60035 @WangCai_1
+      - 新加坡星河
+      - 美国阿伟科技@TG/油管 4
+      - 【由零開始】
+      - 星河 2
+      - 美国阿伟科技@TG/油管 5
+      - 香港Azure-Seoul-AWS 2
+      - FMYC-220314_4
+      - Hyderabad-Oracle 2
+      - _美国_FMYC-220311_304
+      - 日本_TG@nodesharing_71
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - gz1.52168.xyz:1111
-      - 136.243.191.85:443
       - 【tg@freevpn8】CN_371
-      - 美国
-      - LAX-DMIT
-      - 美国 2
-      - Frankfurt-M247
-      - LAX-DMIT 2
-      - SG_@baipiao02
-      - Amsterdam-Liteserver
+      - JP_6 @WangCai_1
+      - JP_2 @WangCai_1
+      - HK_7 @WangCai_1
+      - HK_4 @WangCai_1
+      - HK_1 @WangCai_1
+      - JP_3 @WangCai_1
+      - US_9 @WangCai_1
+      - US_3 @WangCai_1
+      - US_6 @WangCai_1
+      - JP_5 @WangCai_1
+      - SG_9 @WangCai_1
+      - gz2.52168.xyz:2101
+      - KR_4 @WangCai_1
+      - gz1.52168.xyz:1111
+      - KR_2 @WangCai_1
+      - KR_3 @WangCai_1
+      - FR_936
+      - SG_4 @WangCai_1
+      - HK_6 @WangCai_1
+      - SG3_ @WangCai_1
+      - JP_1 @WangCai_1
+      - _HK_香港_tg频道:@bpjzx2_1
+      - _HK_香港_tg频道:@bpjzx2_25
+      - GLaDOS-N2-00
+      - GLaDOS-N2-08
+      - GLaDOS-N2-00 2
+      - _HK_香港_tg频道:@bpjzx2_48
+      - _TW_台湾_tg频道:@bpjzx2_8
+      - _TW_台湾_tg频道:@bpjzx2_55
+      - _TW_台湾_tg频道:@bpjzx2_54
+      - _TW_台湾_tg频道:@bpjzx2_9
+      - _TW_台湾_tg频道:@bpjzx2_32
+      - _CN_中国_tg频道:@bpjzx2_4
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-07
+      - _CN_中国_tg频道:@bpjzx2_29
+      - GLaDOS-N2-03 2
+      - _CN_中国_tg频道:@bpjzx2_27
+      - _CN_中国_tg频道:@bpjzx2_52
+      - _CN_中国_tg频道:@bpjzx2_6
+      - _CN_中国_tg频道:@bpjzx2_50
+      - NONE
       - vpnpool-SG-Melbicom
-      - 加拿大阿伟科技@TG/油管
       - vpnpool-SG-Melbicom 2
-      - Montreal-RicaWeb
-      - Istanbul-SiberDC-dip
-      - 香港Azure-London-M247
-      - 甲骨文东京2_7
-      - mattkaydiary.com|韩国(KR)Korea/Chuncheon-si_24
-      - 香港Azure
-      - US,
-      - US, 5
-      - CA,
-      - HK, 2
+      - _SG_新加坡_tg频道:@bpjzx2_49
+      - GLaDOS-N2-02
+      - _SG_新加坡_tg频道:@bpjzx2_26
+      - _SG_新加坡_tg频道:@bpjzx2_3
+      - 美国阿伟科技@TG/油管
+      - GLaDOS-N2-02 2
+      - SG_@baipiao02
+      - 荷兰【YouTube由零開始】
+      - GLaDOS-N2-07 2
+      - GLaDOS-N2-08 2
+      - 中国_TGatnodesharing_1
+      - _CN_中国->🇯🇵_JP_日本
+      - US,+5
       - JP,
-      - 加拿大_TG@nodesharing_53
-      - TW,
-      - JP, 2
-      - HK,
       - _新加坡_FMYC-220311_274
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国
-      - 日本
-      - +Netherlands
-      - 德国 008
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国 4
+      - CA,
+      - TW,
+      - HK, 2
+      - HK,
       - SG,
-      - US, 4
-      - KR,
-      - 27美国∞中转
       - 華人社區_經紀人CC🍄🍄_1026
-      - JP,+3
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇭🇰_HK_香港 2
       - _中国_FMYC-220311_9
-      - 新加坡linode | 中转 | 1x
-      - 香港Azure | 直连 | 1x
-      - 韩国Azure | 中转 | 1x
-      - 香港-高速节点购买：v1_mk/vip（浏览器打开）_11
-      - 1.26|新加坡linode  中转  1x
-      - 这个世界不要俺了_指莹为梅_🇨🇳_CN_中国_33
-      - 1.73|孟买linode  中转  1x
-      - 香港_TG@nodesharing_12
+      - JP,+3
+      - US,
+      - JP, 2
+      - KR A 006
+      - _SG_新加坡_tg频道:@bpjzx2_4
+      - 星河
+      - 香港 ➤ 04
+      - 香港星河
+      - SG A 006
+      - 60044 @WangCai_1
+      - 香港 ➤ 05
+      - 60014 @WangCai_1
+      - 5
+      - 1
+      - 专线|新加坡01解锁|Z271
+      - 专线|新加坡03解锁|Z273
+      - 标准|新加坡03解锁|Z209
+      - 60037 @WangCai_1
+      - 6
+      - 60016 @WangCai_1
+      - 60020 @WangCai_1
+      - 香港 ➤ 01
+      - 60017 @WangCai_1
+      - 新加坡阿伟科技@TG/油管
+      - Lv1.广移A->日本A1
+      - 60010 @WangCai_1
+      - 60031 @WangCai_1
+      - 60029 @WangCai_1
+      - 60042 @WangCai_1
+      - 60034 @WangCai_1
+      - 60024 @WangCai_1
+      - _JP_日本_tg频道:@bpjzx2_3
+      - 日本星河
+      - 60012 @WangCai_1
+      - 60043 @WangCai_1
+      - 60025 @WangCai_1
+      - Lv1.广移A->日本B4
+      - 60008 @WangCai_1
+      - 60021 @WangCai_1
+      - 香港Azure-Seoul-AWS
+      - 60026 @WangCai_1
+      - 香港_TG@nodesharing_11
+      - 香港Azure-Mumbai-Linode
+      - Lv1.广移A->日本B3
+      - 香港Azure-Mumbai-Linode 2
+      - 60005 @WangCai_1
+      - 60022 @WangCai_1
+      - 关注电报免费梯子https://t.me/mftizi
+      - 60015 @WangCai_1
+      - 60013 @WangCai_1
+      - 60038 @WangCai_1
+      - "|23.20Mb"
+      - 60018 @WangCai_1
+      - 香港Azure-新北Hinet
+      - Relay_ |16.37Mb
+      - 60041 @WangCai_1
+      - 60011 @WangCai_1
+      - 60027 @WangCai_1
+      - 60028 @WangCai_1
+      - Tokyo-Azure-Tokyo-AWS
       - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
       - 香港阿里云@vpnhat
-      - 伦敦linode | 中转 | 1x
-      - Alien
-      - 标准|日本01解锁|Z217
-      - 香港阿里云@vpnhat 2
-      - SG Mbi
-      - 美国阿伟科技@TG/油管
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_142
-      - 孟买linode | 中转 | 1x
-      - 香港阿里云@vpnhat 3
-      - 美国Azure | 中转 | 1x
-      - 翻墙党fanqiangdang.com
-      - 香港阿伟科技@TG/油管
-      - 香港阿里云@vpnhat 4
-      - 香港Azure-Tokyo-FDCservers
-      - 0.76|美国Azure  中转  1x
-      - by@bpjzx2群友专享
-      - Lv1.广移A->日本B3
-      - 香港阿里云@vpnhat 5
-      - 专线|新加坡01解锁|Z271
-      - 1.45|日本linode  中转  1x
-      - 美国阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管 3
-      - 1.07|香港Azure  直连  1x
-      - 巴西Azure | 中转 | 1x
-      - Lv1.广移A->日本B4
-      - 美国阿伟科技@TG/油管 56
-      - Lv1.广移A->日本A1
-      - Incheon,V2_31
-      - 标准|新加坡03解锁|Z209
-      - vpnpool-Tokyo-FDCservers
-      - 珠珠节点2
-      - 专线|新加坡03解锁|Z273
-      - 日本linode | 中转 | 1x
-      - 美国 179
-      - "|23.20Mb"
-      - LAX-QuadraNet
-      - 南非Azure | 中转 | 1x
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
-      - 313更新_29
-      - DE_二爷翻墙网https://1808.ga_409
-      - _美国_FMYC-220311_304
-      - 0.79|巴西Azure  中转  1x
-      - HK
-      - HK_二爷翻墙网https://1808.ga_538
-      - Relay_ |16.37Mb
+      - 香港星河 2
+      - 迪拜阿伟科技@TG/油管
       - 中国2
-      - 香港阿里云@vpnhat 6
-      - 313更新_21
-      - US_2843 |15.28Mb
+      - 迪拜阿伟科技@TG/油管 2
+      - 香港阿里云@vpnhat 2
+      - _美国_FMYC-220314_63
+      - Tokyo-Azure-Mumbai-Linode
+      - Dubai-Oracle
+      - 60030 @WangCai_1
+      - 美国_TG@nodesharing_36
+      - 香港阿伟科技@TG/油管
+      - by@bpjzx2群友专享
+      - Dubai-Oracle 2
+      - 美国阿伟科技@TG/油管 2
+      - 喵哥甲骨文美国
+      - 阿联酋_TG@nodesharing_51
+      - CF-Tokyo-Alibaba
+      - _KR_韩国_tg频道:@bpjzx2_8
+      - 美国阿伟科技@TG/油管 3
+      - Phoenix-Oracle
+      - 美国_TG@nodesharing_52
+      - 美国【YouTube由零開始】
+      - HK A 006
+      - Phoenix-Oracle 2
+      - 香港Azure
+      - CF-Moscow-Firstbyte-dip
+      - 瑞士阿伟科技@TG/油管
+      - 美国【YouTube由零開始】 2
+      - CF-SG-Alibaba
+      - CF-Moscow-Firstbyte
+      - 美国_TG@nodesharing_48
+      - HK_684 | 9.55Mb
+      - CF-SG-Alibaba 2
+      - Frankfurt-Oracle
+      - Phoenix-Oracle 3
+      - 美国阿伟科技@TG/油管 56
+      - _GB_英国_tg频道:@bpjzx2_5
+      - 美国_TG@nodesharing_90
+      - 翻墙党fanqiangdang.com
+      - _US_美国_tg频道:@bpjzx2_6
+      - 1 2
+      - Frankfurt-Oracle 2
+      - Montreal-Oracle
+      - 香港阿里云@vpnhat 3
+      - Montreal-Oracle 2
+      - 阿联酋_TG@nodesharing_61
+      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
+      - 珠珠节点2
+      - 香港阿伟科技@TG/油管 2
+      - Osaka-Oracle
+      - CF-Moscow-Firstbyte 2
+      - 美国【由零開始】
+      - Hyderabad-Oracle
+      - _IN_印度_tg频道:@bpjzx2_7
+      - 新加坡阿伟科技@TG/油管 2
+      - 60035 @WangCai_1
+      - 新加坡星河
+      - 美国阿伟科技@TG/油管 4
+      - 【由零開始】
+      - 星河 2
+      - 美国阿伟科技@TG/油管 5
+      - 香港Azure-Seoul-AWS 2
+      - FMYC-220314_4
+      - Hyderabad-Oracle 2
+      - _美国_FMYC-220311_304
+      - 日本_TG@nodesharing_71
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - gz1.52168.xyz:1111
-      - 136.243.191.85:443
       - 【tg@freevpn8】CN_371
-      - 美国
-      - LAX-DMIT
-      - 美国 2
-      - Frankfurt-M247
-      - LAX-DMIT 2
-      - SG_@baipiao02
-      - Amsterdam-Liteserver
+      - JP_6 @WangCai_1
+      - JP_2 @WangCai_1
+      - HK_7 @WangCai_1
+      - HK_4 @WangCai_1
+      - HK_1 @WangCai_1
+      - JP_3 @WangCai_1
+      - US_9 @WangCai_1
+      - US_3 @WangCai_1
+      - US_6 @WangCai_1
+      - JP_5 @WangCai_1
+      - SG_9 @WangCai_1
+      - gz2.52168.xyz:2101
+      - KR_4 @WangCai_1
+      - gz1.52168.xyz:1111
+      - KR_2 @WangCai_1
+      - KR_3 @WangCai_1
+      - FR_936
+      - SG_4 @WangCai_1
+      - HK_6 @WangCai_1
+      - SG3_ @WangCai_1
+      - JP_1 @WangCai_1
+      - _HK_香港_tg频道:@bpjzx2_1
+      - _HK_香港_tg频道:@bpjzx2_25
+      - GLaDOS-N2-00
+      - GLaDOS-N2-08
+      - GLaDOS-N2-00 2
+      - _HK_香港_tg频道:@bpjzx2_48
+      - _TW_台湾_tg频道:@bpjzx2_8
+      - _TW_台湾_tg频道:@bpjzx2_55
+      - _TW_台湾_tg频道:@bpjzx2_54
+      - _TW_台湾_tg频道:@bpjzx2_9
+      - _TW_台湾_tg频道:@bpjzx2_32
+      - _CN_中国_tg频道:@bpjzx2_4
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-07
+      - _CN_中国_tg频道:@bpjzx2_29
+      - GLaDOS-N2-03 2
+      - _CN_中国_tg频道:@bpjzx2_27
+      - _CN_中国_tg频道:@bpjzx2_52
+      - _CN_中国_tg频道:@bpjzx2_6
+      - _CN_中国_tg频道:@bpjzx2_50
+      - NONE
       - vpnpool-SG-Melbicom
-      - 加拿大阿伟科技@TG/油管
       - vpnpool-SG-Melbicom 2
-      - Montreal-RicaWeb
-      - Istanbul-SiberDC-dip
-      - 香港Azure-London-M247
-      - 甲骨文东京2_7
-      - mattkaydiary.com|韩国(KR)Korea/Chuncheon-si_24
-      - 香港Azure
-      - US,
-      - US, 5
-      - CA,
-      - HK, 2
+      - _SG_新加坡_tg频道:@bpjzx2_49
+      - GLaDOS-N2-02
+      - _SG_新加坡_tg频道:@bpjzx2_26
+      - _SG_新加坡_tg频道:@bpjzx2_3
+      - 美国阿伟科技@TG/油管
+      - GLaDOS-N2-02 2
+      - SG_@baipiao02
+      - 荷兰【YouTube由零開始】
+      - GLaDOS-N2-07 2
+      - GLaDOS-N2-08 2
+      - 中国_TGatnodesharing_1
+      - _CN_中国->🇯🇵_JP_日本
+      - US,+5
       - JP,
-      - 加拿大_TG@nodesharing_53
-      - TW,
-      - JP, 2
-      - HK,
       - _新加坡_FMYC-220311_274
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国
-      - 日本
-      - +Netherlands
-      - 德国 008
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国 4
+      - CA,
+      - TW,
+      - HK, 2
+      - HK,
       - SG,
-      - US, 4
-      - KR,
-      - 27美国∞中转
       - 華人社區_經紀人CC🍄🍄_1026
-      - JP,+3
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇭🇰_HK_香港 2
       - _中国_FMYC-220311_9
-      - 新加坡linode | 中转 | 1x
-      - 香港Azure | 直连 | 1x
-      - 韩国Azure | 中转 | 1x
-      - 香港-高速节点购买：v1_mk/vip（浏览器打开）_11
-      - 1.26|新加坡linode  中转  1x
-      - 这个世界不要俺了_指莹为梅_🇨🇳_CN_中国_33
-      - 1.73|孟买linode  中转  1x
-      - 香港_TG@nodesharing_12
+      - JP,+3
+      - US,
+      - JP, 2
+      - KR A 006
+      - _SG_新加坡_tg频道:@bpjzx2_4
+      - 星河
+      - 香港 ➤ 04
+      - 香港星河
+      - SG A 006
+      - 60044 @WangCai_1
+      - 香港 ➤ 05
+      - 60014 @WangCai_1
+      - 5
+      - 1
+      - 专线|新加坡01解锁|Z271
+      - 专线|新加坡03解锁|Z273
+      - 标准|新加坡03解锁|Z209
+      - 60037 @WangCai_1
+      - 6
+      - 60016 @WangCai_1
+      - 60020 @WangCai_1
+      - 香港 ➤ 01
+      - 60017 @WangCai_1
+      - 新加坡阿伟科技@TG/油管
+      - Lv1.广移A->日本A1
+      - 60010 @WangCai_1
+      - 60031 @WangCai_1
+      - 60029 @WangCai_1
+      - 60042 @WangCai_1
+      - 60034 @WangCai_1
+      - 60024 @WangCai_1
+      - _JP_日本_tg频道:@bpjzx2_3
+      - 日本星河
+      - 60012 @WangCai_1
+      - 60043 @WangCai_1
+      - 60025 @WangCai_1
+      - Lv1.广移A->日本B4
+      - 60008 @WangCai_1
+      - 60021 @WangCai_1
+      - 香港Azure-Seoul-AWS
+      - 60026 @WangCai_1
+      - 香港_TG@nodesharing_11
+      - 香港Azure-Mumbai-Linode
+      - Lv1.广移A->日本B3
+      - 香港Azure-Mumbai-Linode 2
+      - 60005 @WangCai_1
+      - 60022 @WangCai_1
+      - 关注电报免费梯子https://t.me/mftizi
+      - 60015 @WangCai_1
+      - 60013 @WangCai_1
+      - 60038 @WangCai_1
+      - "|23.20Mb"
+      - 60018 @WangCai_1
+      - 香港Azure-新北Hinet
+      - Relay_ |16.37Mb
+      - 60041 @WangCai_1
+      - 60011 @WangCai_1
+      - 60027 @WangCai_1
+      - 60028 @WangCai_1
+      - Tokyo-Azure-Tokyo-AWS
       - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
       - 香港阿里云@vpnhat
-      - 伦敦linode | 中转 | 1x
-      - Alien
-      - 标准|日本01解锁|Z217
-      - 香港阿里云@vpnhat 2
-      - SG Mbi
-      - 美国阿伟科技@TG/油管
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_142
-      - 孟买linode | 中转 | 1x
-      - 香港阿里云@vpnhat 3
-      - 美国Azure | 中转 | 1x
-      - 翻墙党fanqiangdang.com
-      - 香港阿伟科技@TG/油管
-      - 香港阿里云@vpnhat 4
-      - 香港Azure-Tokyo-FDCservers
-      - 0.76|美国Azure  中转  1x
-      - by@bpjzx2群友专享
-      - Lv1.广移A->日本B3
-      - 香港阿里云@vpnhat 5
-      - 专线|新加坡01解锁|Z271
-      - 1.45|日本linode  中转  1x
-      - 美国阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管 3
-      - 1.07|香港Azure  直连  1x
-      - 巴西Azure | 中转 | 1x
-      - Lv1.广移A->日本B4
-      - 美国阿伟科技@TG/油管 56
-      - Lv1.广移A->日本A1
-      - Incheon,V2_31
-      - 标准|新加坡03解锁|Z209
-      - vpnpool-Tokyo-FDCservers
-      - 珠珠节点2
-      - 专线|新加坡03解锁|Z273
-      - 日本linode | 中转 | 1x
-      - 美国 179
-      - "|23.20Mb"
-      - LAX-QuadraNet
-      - 南非Azure | 中转 | 1x
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
-      - 313更新_29
-      - DE_二爷翻墙网https://1808.ga_409
-      - _美国_FMYC-220311_304
-      - 0.79|巴西Azure  中转  1x
-      - HK
-      - HK_二爷翻墙网https://1808.ga_538
-      - Relay_ |16.37Mb
+      - 香港星河 2
+      - 迪拜阿伟科技@TG/油管
       - 中国2
-      - 香港阿里云@vpnhat 6
-      - 313更新_21
-      - US_2843 |15.28Mb
+      - 迪拜阿伟科技@TG/油管 2
+      - 香港阿里云@vpnhat 2
+      - _美国_FMYC-220314_63
+      - Tokyo-Azure-Mumbai-Linode
+      - Dubai-Oracle
+      - 60030 @WangCai_1
+      - 美国_TG@nodesharing_36
+      - 香港阿伟科技@TG/油管
+      - by@bpjzx2群友专享
+      - Dubai-Oracle 2
+      - 美国阿伟科技@TG/油管 2
+      - 喵哥甲骨文美国
+      - 阿联酋_TG@nodesharing_51
+      - CF-Tokyo-Alibaba
+      - _KR_韩国_tg频道:@bpjzx2_8
+      - 美国阿伟科技@TG/油管 3
+      - Phoenix-Oracle
+      - 美国_TG@nodesharing_52
+      - 美国【YouTube由零開始】
+      - HK A 006
+      - Phoenix-Oracle 2
+      - 香港Azure
+      - CF-Moscow-Firstbyte-dip
+      - 瑞士阿伟科技@TG/油管
+      - 美国【YouTube由零開始】 2
+      - CF-SG-Alibaba
+      - CF-Moscow-Firstbyte
+      - 美国_TG@nodesharing_48
+      - HK_684 | 9.55Mb
+      - CF-SG-Alibaba 2
+      - Frankfurt-Oracle
+      - Phoenix-Oracle 3
+      - 美国阿伟科技@TG/油管 56
+      - _GB_英国_tg频道:@bpjzx2_5
+      - 美国_TG@nodesharing_90
+      - 翻墙党fanqiangdang.com
+      - _US_美国_tg频道:@bpjzx2_6
+      - 1 2
+      - Frankfurt-Oracle 2
+      - Montreal-Oracle
+      - 香港阿里云@vpnhat 3
+      - Montreal-Oracle 2
+      - 阿联酋_TG@nodesharing_61
+      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
+      - 珠珠节点2
+      - 香港阿伟科技@TG/油管 2
+      - Osaka-Oracle
+      - CF-Moscow-Firstbyte 2
+      - 美国【由零開始】
+      - Hyderabad-Oracle
+      - _IN_印度_tg频道:@bpjzx2_7
+      - 新加坡阿伟科技@TG/油管 2
+      - 60035 @WangCai_1
+      - 新加坡星河
+      - 美国阿伟科技@TG/油管 4
+      - 【由零開始】
+      - 星河 2
+      - 美国阿伟科技@TG/油管 5
+      - 香港Azure-Seoul-AWS 2
+      - FMYC-220314_4
+      - Hyderabad-Oracle 2
+      - _美国_FMYC-220311_304
+      - 日本_TG@nodesharing_71
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -890,106 +1687,204 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - gz1.52168.xyz:1111
-      - 136.243.191.85:443
       - 【tg@freevpn8】CN_371
-      - 美国
-      - LAX-DMIT
-      - 美国 2
-      - Frankfurt-M247
-      - LAX-DMIT 2
-      - SG_@baipiao02
-      - Amsterdam-Liteserver
+      - JP_6 @WangCai_1
+      - JP_2 @WangCai_1
+      - HK_7 @WangCai_1
+      - HK_4 @WangCai_1
+      - HK_1 @WangCai_1
+      - JP_3 @WangCai_1
+      - US_9 @WangCai_1
+      - US_3 @WangCai_1
+      - US_6 @WangCai_1
+      - JP_5 @WangCai_1
+      - SG_9 @WangCai_1
+      - gz2.52168.xyz:2101
+      - KR_4 @WangCai_1
+      - gz1.52168.xyz:1111
+      - KR_2 @WangCai_1
+      - KR_3 @WangCai_1
+      - FR_936
+      - SG_4 @WangCai_1
+      - HK_6 @WangCai_1
+      - SG3_ @WangCai_1
+      - JP_1 @WangCai_1
+      - _HK_香港_tg频道:@bpjzx2_1
+      - _HK_香港_tg频道:@bpjzx2_25
+      - GLaDOS-N2-00
+      - GLaDOS-N2-08
+      - GLaDOS-N2-00 2
+      - _HK_香港_tg频道:@bpjzx2_48
+      - _TW_台湾_tg频道:@bpjzx2_8
+      - _TW_台湾_tg频道:@bpjzx2_55
+      - _TW_台湾_tg频道:@bpjzx2_54
+      - _TW_台湾_tg频道:@bpjzx2_9
+      - _TW_台湾_tg频道:@bpjzx2_32
+      - _CN_中国_tg频道:@bpjzx2_4
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-07
+      - _CN_中国_tg频道:@bpjzx2_29
+      - GLaDOS-N2-03 2
+      - _CN_中国_tg频道:@bpjzx2_27
+      - _CN_中国_tg频道:@bpjzx2_52
+      - _CN_中国_tg频道:@bpjzx2_6
+      - _CN_中国_tg频道:@bpjzx2_50
+      - NONE
       - vpnpool-SG-Melbicom
-      - 加拿大阿伟科技@TG/油管
       - vpnpool-SG-Melbicom 2
-      - Montreal-RicaWeb
-      - Istanbul-SiberDC-dip
-      - 香港Azure-London-M247
-      - 甲骨文东京2_7
-      - mattkaydiary.com|韩国(KR)Korea/Chuncheon-si_24
-      - 香港Azure
-      - US,
-      - US, 5
-      - CA,
-      - HK, 2
+      - _SG_新加坡_tg频道:@bpjzx2_49
+      - GLaDOS-N2-02
+      - _SG_新加坡_tg频道:@bpjzx2_26
+      - _SG_新加坡_tg频道:@bpjzx2_3
+      - 美国阿伟科技@TG/油管
+      - GLaDOS-N2-02 2
+      - SG_@baipiao02
+      - 荷兰【YouTube由零開始】
+      - GLaDOS-N2-07 2
+      - GLaDOS-N2-08 2
+      - 中国_TGatnodesharing_1
+      - _CN_中国->🇯🇵_JP_日本
+      - US,+5
       - JP,
-      - 加拿大_TG@nodesharing_53
-      - TW,
-      - JP, 2
-      - HK,
       - _新加坡_FMYC-220311_274
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国
-      - 日本
-      - +Netherlands
-      - 德国 008
-      - (ios小火箭软件|ioskaka.com)🇩🇪德国 4
+      - CA,
+      - TW,
+      - HK, 2
+      - HK,
       - SG,
-      - US, 4
-      - KR,
-      - 27美国∞中转
       - 華人社區_經紀人CC🍄🍄_1026
-      - JP,+3
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇭🇰_HK_香港 2
       - _中国_FMYC-220311_9
-      - 新加坡linode | 中转 | 1x
-      - 香港Azure | 直连 | 1x
-      - 韩国Azure | 中转 | 1x
-      - 香港-高速节点购买：v1_mk/vip（浏览器打开）_11
-      - 1.26|新加坡linode  中转  1x
-      - 这个世界不要俺了_指莹为梅_🇨🇳_CN_中国_33
-      - 1.73|孟买linode  中转  1x
-      - 香港_TG@nodesharing_12
+      - JP,+3
+      - US,
+      - JP, 2
+      - KR A 006
+      - _SG_新加坡_tg频道:@bpjzx2_4
+      - 星河
+      - 香港 ➤ 04
+      - 香港星河
+      - SG A 006
+      - 60044 @WangCai_1
+      - 香港 ➤ 05
+      - 60014 @WangCai_1
+      - 5
+      - 1
+      - 专线|新加坡01解锁|Z271
+      - 专线|新加坡03解锁|Z273
+      - 标准|新加坡03解锁|Z209
+      - 60037 @WangCai_1
+      - 6
+      - 60016 @WangCai_1
+      - 60020 @WangCai_1
+      - 香港 ➤ 01
+      - 60017 @WangCai_1
+      - 新加坡阿伟科技@TG/油管
+      - Lv1.广移A->日本A1
+      - 60010 @WangCai_1
+      - 60031 @WangCai_1
+      - 60029 @WangCai_1
+      - 60042 @WangCai_1
+      - 60034 @WangCai_1
+      - 60024 @WangCai_1
+      - _JP_日本_tg频道:@bpjzx2_3
+      - 日本星河
+      - 60012 @WangCai_1
+      - 60043 @WangCai_1
+      - 60025 @WangCai_1
+      - Lv1.广移A->日本B4
+      - 60008 @WangCai_1
+      - 60021 @WangCai_1
+      - 香港Azure-Seoul-AWS
+      - 60026 @WangCai_1
+      - 香港_TG@nodesharing_11
+      - 香港Azure-Mumbai-Linode
+      - Lv1.广移A->日本B3
+      - 香港Azure-Mumbai-Linode 2
+      - 60005 @WangCai_1
+      - 60022 @WangCai_1
+      - 关注电报免费梯子https://t.me/mftizi
+      - 60015 @WangCai_1
+      - 60013 @WangCai_1
+      - 60038 @WangCai_1
+      - "|23.20Mb"
+      - 60018 @WangCai_1
+      - 香港Azure-新北Hinet
+      - Relay_ |16.37Mb
+      - 60041 @WangCai_1
+      - 60011 @WangCai_1
+      - 60027 @WangCai_1
+      - 60028 @WangCai_1
+      - Tokyo-Azure-Tokyo-AWS
       - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
       - 香港阿里云@vpnhat
-      - 伦敦linode | 中转 | 1x
-      - Alien
-      - 标准|日本01解锁|Z217
-      - 香港阿里云@vpnhat 2
-      - SG Mbi
-      - 美国阿伟科技@TG/油管
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_142
-      - 孟买linode | 中转 | 1x
-      - 香港阿里云@vpnhat 3
-      - 美国Azure | 中转 | 1x
-      - 翻墙党fanqiangdang.com
-      - 香港阿伟科技@TG/油管
-      - 香港阿里云@vpnhat 4
-      - 香港Azure-Tokyo-FDCservers
-      - 0.76|美国Azure  中转  1x
-      - by@bpjzx2群友专享
-      - Lv1.广移A->日本B3
-      - 香港阿里云@vpnhat 5
-      - 专线|新加坡01解锁|Z271
-      - 1.45|日本linode  中转  1x
-      - 美国阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管 3
-      - 1.07|香港Azure  直连  1x
-      - 巴西Azure | 中转 | 1x
-      - Lv1.广移A->日本B4
-      - 美国阿伟科技@TG/油管 56
-      - Lv1.广移A->日本A1
-      - Incheon,V2_31
-      - 标准|新加坡03解锁|Z209
-      - vpnpool-Tokyo-FDCservers
-      - 珠珠节点2
-      - 专线|新加坡03解锁|Z273
-      - 日本linode | 中转 | 1x
-      - 美国 179
-      - "|23.20Mb"
-      - LAX-QuadraNet
-      - 南非Azure | 中转 | 1x
-      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
-      - 313更新_29
-      - DE_二爷翻墙网https://1808.ga_409
-      - _美国_FMYC-220311_304
-      - 0.79|巴西Azure  中转  1x
-      - HK
-      - HK_二爷翻墙网https://1808.ga_538
-      - Relay_ |16.37Mb
+      - 香港星河 2
+      - 迪拜阿伟科技@TG/油管
       - 中国2
-      - 香港阿里云@vpnhat 6
-      - 313更新_21
-      - US_2843 |15.28Mb
+      - 迪拜阿伟科技@TG/油管 2
+      - 香港阿里云@vpnhat 2
+      - _美国_FMYC-220314_63
+      - Tokyo-Azure-Mumbai-Linode
+      - Dubai-Oracle
+      - 60030 @WangCai_1
+      - 美国_TG@nodesharing_36
+      - 香港阿伟科技@TG/油管
+      - by@bpjzx2群友专享
+      - Dubai-Oracle 2
+      - 美国阿伟科技@TG/油管 2
+      - 喵哥甲骨文美国
+      - 阿联酋_TG@nodesharing_51
+      - CF-Tokyo-Alibaba
+      - _KR_韩国_tg频道:@bpjzx2_8
+      - 美国阿伟科技@TG/油管 3
+      - Phoenix-Oracle
+      - 美国_TG@nodesharing_52
+      - 美国【YouTube由零開始】
+      - HK A 006
+      - Phoenix-Oracle 2
+      - 香港Azure
+      - CF-Moscow-Firstbyte-dip
+      - 瑞士阿伟科技@TG/油管
+      - 美国【YouTube由零開始】 2
+      - CF-SG-Alibaba
+      - CF-Moscow-Firstbyte
+      - 美国_TG@nodesharing_48
+      - HK_684 | 9.55Mb
+      - CF-SG-Alibaba 2
+      - Frankfurt-Oracle
+      - Phoenix-Oracle 3
+      - 美国阿伟科技@TG/油管 56
+      - _GB_英国_tg频道:@bpjzx2_5
+      - 美国_TG@nodesharing_90
+      - 翻墙党fanqiangdang.com
+      - _US_美国_tg频道:@bpjzx2_6
+      - 1 2
+      - Frankfurt-Oracle 2
+      - Montreal-Oracle
+      - 香港阿里云@vpnhat 3
+      - Montreal-Oracle 2
+      - 阿联酋_TG@nodesharing_61
+      - 迪拜-高速节点购买：v1_mk/vip（浏览器打开）_141
+      - 珠珠节点2
+      - 香港阿伟科技@TG/油管 2
+      - Osaka-Oracle
+      - CF-Moscow-Firstbyte 2
+      - 美国【由零開始】
+      - Hyderabad-Oracle
+      - _IN_印度_tg频道:@bpjzx2_7
+      - 新加坡阿伟科技@TG/油管 2
+      - 60035 @WangCai_1
+      - 新加坡星河
+      - 美国阿伟科技@TG/油管 4
+      - 【由零開始】
+      - 星河 2
+      - 美国阿伟科技@TG/油管 5
+      - 香港Azure-Seoul-AWS 2
+      - FMYC-220314_4
+      - Hyderabad-Oracle 2
+      - _美国_FMYC-220311_304
+      - 日本_TG@nodesharing_71
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
