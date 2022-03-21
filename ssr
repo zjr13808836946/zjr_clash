@@ -5,103 +5,187 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 魔戒.net2, server: cn05.mynode.me, port: 8121, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: ^🇲🇴MO 1141 *hi-moon.pw, server: cn05.mynode.me, port: 8121, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 魔戒.net7, server: cn05.mynode.me, port: 8123, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 魔戒.net6, server: cn02.mynode.me, port: 8110, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 魔戒.net4, server: cn03.mynode.me, port: 8114, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 魔戒.net1, server: cn05.mynode.me, port: 8125, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 魔戒.net8, server: cn02.mynode.me, port: 8108, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 油管 TG 8度科技, server: cn03.mynode.me, port: 8112, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 魔戒.net3, server: cn02.mynode.me, port: 8107, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 油管 TG 8度科技 2, server: cn02.mynode.me, port: 8107, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 油管 TG 8度科技 3, server: cn02.mynode.me, port: 8110, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 魔戒.net9, server: cn03.mynode.me, port: 8112, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 魔戒.net5, server: cn05.mynode.me, port: 8124, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 油管 TG 8度科技 4, server: cn03.mynode.me, port: 8114, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 油管 TG 8度科技 5, server: cn05.mynode.me, port: 8125, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 油管 TG 8度科技 6, server: cn02.mynode.me, port: 8108, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: 油管 TG 8度科技 7, server: cn05.mynode.me, port: 8124, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: IPLC 🇸🇬SG, server: iepl02.123ccc.xyz, port: 9041, type: ssr, cipher: chacha20-ietf, password: ygUo3W, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 11418:mhr2001, obfs-param: 89c2711418.apple.com, udp: true}
-  - {name: 油管 TG 8度科技 8, server: cn05.mynode.me, port: 8123, type: ssr, cipher: rc4-md5, password: passwd, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: 24451-EtQwZz5m.download.microsoft.com, udp: true}
-  - {name: IPLC 🇸🇬SG 2, server: iepl02.123ccc.xyz, port: 9041, type: ssr, cipher: chacha20-ietf, password: ygUo3W, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 11418:mhr2001, obfs-param: 89c2711418.apple.com, udp: true}
+  - {name: Premium|广港|IEPL|13, server: iepl-premium-2.ninjarelay.pro, port: 3502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|19, server: iepl-premium-2.ninjarelay.pro, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|12, server: iepl-premium-2.ninjarelay.pro, port: 3501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|20, server: iepl-premium-2.ninjarelay.pro, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|16, server: iepl-premium-2.ninjarelay.pro, port: 3505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|14, server: iepl-premium-2.ninjarelay.pro, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|04, server: iepl-premium-1.ninjarelay.pro, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广新|IEPL|01, server: iepl-premium-1.ninjarelay.pro, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|11, server: iepl-premium-2.ninjarelay.pro, port: 3500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|09, server: iepl-premium-1.ninjarelay.pro, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|17, server: iepl-premium-2.ninjarelay.pro, port: 3506, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广新|IEPL|03, server: iepl-premium-2.ninjarelay.pro, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广新|IEPL|04, server: iepl-premium-2.ninjarelay.pro, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|08, server: iepl-premium-1.ninjarelay.pro, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|10, server: iepl-premium-1.ninjarelay.pro, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|18, server: iepl-premium-2.ninjarelay.pro, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广日|IEPL|03, server: iepl-premium-2.ninjarelay.pro, port: 4500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广日|IEPL|04, server: iepl-premium-2.ninjarelay.pro, port: 4501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|02, server: iepl-premium-1.ninjarelay.pro, port: 3501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广日|IEPL|02, server: iepl-premium-1.ninjarelay.pro, port: 4501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|03, server: iepl-premium-1.ninjarelay.pro, port: 3502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|07, server: iepl-premium-1.ninjarelay.pro, port: 3506, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广韩|IEPL|04, server: iepl-premium-2.ninjarelay.pro, port: 7501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广港|IEPL|06, server: iepl-premium-1.ninjarelay.pro, port: 3505, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广日|IEPL|01, server: iepl-premium-1.ninjarelay.pro, port: 4500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广韩|IEPL|03, server: iepl-premium-2.ninjarelay.pro, port: 7500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广韩|IEPL|02, server: iepl-premium-1.ninjarelay.pro, port: 7501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: SSR_20220315_CN_中国_04, server: gz1.52168.xyz, port: 1101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: Premium|广韩|IEPL|01, server: iepl-premium-1.ninjarelay.pro, port: 7500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广新|IEPL|02, server: iepl-premium-1.ninjarelay.pro, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: /CN/中国/tg频道:@bpjzx2/13, server: gz1.52168.xyz, port: 1109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: 德国 Germany★, server: gz2.52168.xyz, port: 2101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: Premium|广美|IEPL|02, server: iepl-premium-1.ninjarelay.pro, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广美|IEPL|04, server: iepl-premium-2.ninjarelay.pro, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: 美国 America(VIP)★, server: gz2.52168.xyz, port: 2108, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: Premium|广美|IEPL|03, server: iepl-premium-2.ninjarelay.pro, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: Premium|广美|IEPL|01, server: iepl-premium-1.ninjarelay.pro, port: 5500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 173571:YiiplM, obfs-param: "\"238ef173571.microsoft.com", udp: true}
+  - {name: "[Vip2] 香港01 [1.0|移动|ssr]", server: gkdcm.gkdcn.top, port: 23803, type: ssr, cipher: chacha20-ietf, password: bagz04mllt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4802:7wa98mgl3fw, obfs-param: .microsoft.com, udp: true}
+  - {name: 保加利亚 Bulgaria●, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: SSR_20220318_CN_中国_07, server: gz1.52168.xyz, port: 1107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: 2f712623.baidu.com, udp: true}
+  - {name: SSR_20220320_CN_中国_04, server: gz1.52168.xyz, port: 1107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 魔戒.net2
-      - ^🇲🇴MO 1141 *hi-moon.pw
-      - 魔戒.net7
-      - 魔戒.net6
-      - 魔戒.net4
-      - 魔戒.net1
-      - 魔戒.net8
-      - 油管 TG 8度科技
-      - 魔戒.net3
-      - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 魔戒.net9
-      - 魔戒.net5
-      - 油管 TG 8度科技 4
-      - 油管 TG 8度科技 5
-      - 油管 TG 8度科技 6
-      - 油管 TG 8度科技 7
-      - IPLC 🇸🇬SG
-      - 油管 TG 8度科技 8
-      - IPLC 🇸🇬SG 2
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|19
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|16
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|04
+      - Premium|广新|IEPL|01
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|17
+      - Premium|广新|IEPL|03
+      - Premium|广新|IEPL|04
+      - Premium|广港|IEPL|08
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|18
+      - Premium|广日|IEPL|03
+      - Premium|广日|IEPL|04
+      - Premium|广港|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|07
+      - Premium|广韩|IEPL|04
+      - Premium|广港|IEPL|06
+      - Premium|广日|IEPL|01
+      - Premium|广韩|IEPL|03
+      - Premium|广韩|IEPL|02
+      - SSR_20220315_CN_中国_04
+      - Premium|广韩|IEPL|01
+      - Premium|广新|IEPL|02
+      - /CN/中国/tg频道:@bpjzx2/13
+      - 德国 Germany★
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|04
+      - 美国 America(VIP)★
+      - Premium|广美|IEPL|03
+      - Premium|广美|IEPL|01
+      - "[Vip2] 香港01 [1.0|移动|ssr]"
+      - 保加利亚 Bulgaria●
+      - SSR_20220318_CN_中国_07
+      - SSR_20220320_CN_中国_04
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 魔戒.net2
-      - ^🇲🇴MO 1141 *hi-moon.pw
-      - 魔戒.net7
-      - 魔戒.net6
-      - 魔戒.net4
-      - 魔戒.net1
-      - 魔戒.net8
-      - 油管 TG 8度科技
-      - 魔戒.net3
-      - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 魔戒.net9
-      - 魔戒.net5
-      - 油管 TG 8度科技 4
-      - 油管 TG 8度科技 5
-      - 油管 TG 8度科技 6
-      - 油管 TG 8度科技 7
-      - IPLC 🇸🇬SG
-      - 油管 TG 8度科技 8
-      - IPLC 🇸🇬SG 2
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|19
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|16
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|04
+      - Premium|广新|IEPL|01
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|17
+      - Premium|广新|IEPL|03
+      - Premium|广新|IEPL|04
+      - Premium|广港|IEPL|08
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|18
+      - Premium|广日|IEPL|03
+      - Premium|广日|IEPL|04
+      - Premium|广港|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|07
+      - Premium|广韩|IEPL|04
+      - Premium|广港|IEPL|06
+      - Premium|广日|IEPL|01
+      - Premium|广韩|IEPL|03
+      - Premium|广韩|IEPL|02
+      - SSR_20220315_CN_中国_04
+      - Premium|广韩|IEPL|01
+      - Premium|广新|IEPL|02
+      - /CN/中国/tg频道:@bpjzx2/13
+      - 德国 Germany★
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|04
+      - 美国 America(VIP)★
+      - Premium|广美|IEPL|03
+      - Premium|广美|IEPL|01
+      - "[Vip2] 香港01 [1.0|移动|ssr]"
+      - 保加利亚 Bulgaria●
+      - SSR_20220318_CN_中国_07
+      - SSR_20220320_CN_中国_04
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 魔戒.net2
-      - ^🇲🇴MO 1141 *hi-moon.pw
-      - 魔戒.net7
-      - 魔戒.net6
-      - 魔戒.net4
-      - 魔戒.net1
-      - 魔戒.net8
-      - 油管 TG 8度科技
-      - 魔戒.net3
-      - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 魔戒.net9
-      - 魔戒.net5
-      - 油管 TG 8度科技 4
-      - 油管 TG 8度科技 5
-      - 油管 TG 8度科技 6
-      - 油管 TG 8度科技 7
-      - IPLC 🇸🇬SG
-      - 油管 TG 8度科技 8
-      - IPLC 🇸🇬SG 2
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|19
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|16
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|04
+      - Premium|广新|IEPL|01
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|17
+      - Premium|广新|IEPL|03
+      - Premium|广新|IEPL|04
+      - Premium|广港|IEPL|08
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|18
+      - Premium|广日|IEPL|03
+      - Premium|广日|IEPL|04
+      - Premium|广港|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|07
+      - Premium|广韩|IEPL|04
+      - Premium|广港|IEPL|06
+      - Premium|广日|IEPL|01
+      - Premium|广韩|IEPL|03
+      - Premium|广韩|IEPL|02
+      - SSR_20220315_CN_中国_04
+      - Premium|广韩|IEPL|01
+      - Premium|广新|IEPL|02
+      - /CN/中国/tg频道:@bpjzx2/13
+      - 德国 Germany★
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|04
+      - 美国 America(VIP)★
+      - Premium|广美|IEPL|03
+      - Premium|广美|IEPL|01
+      - "[Vip2] 香港01 [1.0|移动|ssr]"
+      - 保加利亚 Bulgaria●
+      - SSR_20220318_CN_中国_07
+      - SSR_20220320_CN_中国_04
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -120,107 +204,209 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 魔戒.net2
-      - ^🇲🇴MO 1141 *hi-moon.pw
-      - 魔戒.net7
-      - 魔戒.net6
-      - 魔戒.net4
-      - 魔戒.net1
-      - 魔戒.net8
-      - 油管 TG 8度科技
-      - 魔戒.net3
-      - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 魔戒.net9
-      - 魔戒.net5
-      - 油管 TG 8度科技 4
-      - 油管 TG 8度科技 5
-      - 油管 TG 8度科技 6
-      - 油管 TG 8度科技 7
-      - IPLC 🇸🇬SG
-      - 油管 TG 8度科技 8
-      - IPLC 🇸🇬SG 2
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|19
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|16
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|04
+      - Premium|广新|IEPL|01
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|17
+      - Premium|广新|IEPL|03
+      - Premium|广新|IEPL|04
+      - Premium|广港|IEPL|08
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|18
+      - Premium|广日|IEPL|03
+      - Premium|广日|IEPL|04
+      - Premium|广港|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|07
+      - Premium|广韩|IEPL|04
+      - Premium|广港|IEPL|06
+      - Premium|广日|IEPL|01
+      - Premium|广韩|IEPL|03
+      - Premium|广韩|IEPL|02
+      - SSR_20220315_CN_中国_04
+      - Premium|广韩|IEPL|01
+      - Premium|广新|IEPL|02
+      - /CN/中国/tg频道:@bpjzx2/13
+      - 德国 Germany★
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|04
+      - 美国 America(VIP)★
+      - Premium|广美|IEPL|03
+      - Premium|广美|IEPL|01
+      - "[Vip2] 香港01 [1.0|移动|ssr]"
+      - 保加利亚 Bulgaria●
+      - SSR_20220318_CN_中国_07
+      - SSR_20220320_CN_中国_04
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|19
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|16
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|04
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|17
+      - Premium|广港|IEPL|08
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|18
+      - Premium|广港|IEPL|02
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|07
+      - Premium|广港|IEPL|06
+      - "[Vip2] 香港01 [1.0|移动|ssr]"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 魔戒.net2
-      - ^🇲🇴MO 1141 *hi-moon.pw
-      - 魔戒.net7
-      - 魔戒.net6
-      - 魔戒.net4
-      - 魔戒.net1
-      - 魔戒.net8
-      - 油管 TG 8度科技
-      - 魔戒.net3
-      - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 魔戒.net9
-      - 魔戒.net5
-      - 油管 TG 8度科技 4
-      - 油管 TG 8度科技 5
-      - 油管 TG 8度科技 6
-      - 油管 TG 8度科技 7
-      - IPLC 🇸🇬SG
-      - 油管 TG 8度科技 8
-      - IPLC 🇸🇬SG 2
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|19
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|16
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|04
+      - Premium|广新|IEPL|01
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|17
+      - Premium|广新|IEPL|03
+      - Premium|广新|IEPL|04
+      - Premium|广港|IEPL|08
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|18
+      - Premium|广日|IEPL|03
+      - Premium|广日|IEPL|04
+      - Premium|广港|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|07
+      - Premium|广韩|IEPL|04
+      - Premium|广港|IEPL|06
+      - Premium|广日|IEPL|01
+      - Premium|广韩|IEPL|03
+      - Premium|广韩|IEPL|02
+      - SSR_20220315_CN_中国_04
+      - Premium|广韩|IEPL|01
+      - Premium|广新|IEPL|02
+      - /CN/中国/tg频道:@bpjzx2/13
+      - 德国 Germany★
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|04
+      - 美国 America(VIP)★
+      - Premium|广美|IEPL|03
+      - Premium|广美|IEPL|01
+      - "[Vip2] 香港01 [1.0|移动|ssr]"
+      - 保加利亚 Bulgaria●
+      - SSR_20220318_CN_中国_07
+      - SSR_20220320_CN_中国_04
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 魔戒.net2
-      - ^🇲🇴MO 1141 *hi-moon.pw
-      - 魔戒.net7
-      - 魔戒.net6
-      - 魔戒.net4
-      - 魔戒.net1
-      - 魔戒.net8
-      - 油管 TG 8度科技
-      - 魔戒.net3
-      - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 魔戒.net9
-      - 魔戒.net5
-      - 油管 TG 8度科技 4
-      - 油管 TG 8度科技 5
-      - 油管 TG 8度科技 6
-      - 油管 TG 8度科技 7
-      - IPLC 🇸🇬SG
-      - 油管 TG 8度科技 8
-      - IPLC 🇸🇬SG 2
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|19
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|16
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|04
+      - Premium|广新|IEPL|01
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|17
+      - Premium|广新|IEPL|03
+      - Premium|广新|IEPL|04
+      - Premium|广港|IEPL|08
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|18
+      - Premium|广日|IEPL|03
+      - Premium|广日|IEPL|04
+      - Premium|广港|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|07
+      - Premium|广韩|IEPL|04
+      - Premium|广港|IEPL|06
+      - Premium|广日|IEPL|01
+      - Premium|广韩|IEPL|03
+      - Premium|广韩|IEPL|02
+      - SSR_20220315_CN_中国_04
+      - Premium|广韩|IEPL|01
+      - Premium|广新|IEPL|02
+      - /CN/中国/tg频道:@bpjzx2/13
+      - 德国 Germany★
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|04
+      - 美国 America(VIP)★
+      - Premium|广美|IEPL|03
+      - Premium|广美|IEPL|01
+      - "[Vip2] 香港01 [1.0|移动|ssr]"
+      - 保加利亚 Bulgaria●
+      - SSR_20220318_CN_中国_07
+      - SSR_20220320_CN_中国_04
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 魔戒.net2
-      - ^🇲🇴MO 1141 *hi-moon.pw
-      - 魔戒.net7
-      - 魔戒.net6
-      - 魔戒.net4
-      - 魔戒.net1
-      - 魔戒.net8
-      - 油管 TG 8度科技
-      - 魔戒.net3
-      - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 魔戒.net9
-      - 魔戒.net5
-      - 油管 TG 8度科技 4
-      - 油管 TG 8度科技 5
-      - 油管 TG 8度科技 6
-      - 油管 TG 8度科技 7
-      - IPLC 🇸🇬SG
-      - 油管 TG 8度科技 8
-      - IPLC 🇸🇬SG 2
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|19
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|16
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|04
+      - Premium|广新|IEPL|01
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|17
+      - Premium|广新|IEPL|03
+      - Premium|广新|IEPL|04
+      - Premium|广港|IEPL|08
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|18
+      - Premium|广日|IEPL|03
+      - Premium|广日|IEPL|04
+      - Premium|广港|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|07
+      - Premium|广韩|IEPL|04
+      - Premium|广港|IEPL|06
+      - Premium|广日|IEPL|01
+      - Premium|广韩|IEPL|03
+      - Premium|广韩|IEPL|02
+      - SSR_20220315_CN_中国_04
+      - Premium|广韩|IEPL|01
+      - Premium|广新|IEPL|02
+      - /CN/中国/tg频道:@bpjzx2/13
+      - 德国 Germany★
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|04
+      - 美国 America(VIP)★
+      - Premium|广美|IEPL|03
+      - Premium|广美|IEPL|01
+      - "[Vip2] 香港01 [1.0|移动|ssr]"
+      - 保加利亚 Bulgaria●
+      - SSR_20220318_CN_中国_07
+      - SSR_20220320_CN_中国_04
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -236,26 +422,47 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 魔戒.net2
-      - ^🇲🇴MO 1141 *hi-moon.pw
-      - 魔戒.net7
-      - 魔戒.net6
-      - 魔戒.net4
-      - 魔戒.net1
-      - 魔戒.net8
-      - 油管 TG 8度科技
-      - 魔戒.net3
-      - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 魔戒.net9
-      - 魔戒.net5
-      - 油管 TG 8度科技 4
-      - 油管 TG 8度科技 5
-      - 油管 TG 8度科技 6
-      - 油管 TG 8度科技 7
-      - IPLC 🇸🇬SG
-      - 油管 TG 8度科技 8
-      - IPLC 🇸🇬SG 2
+      - Premium|广港|IEPL|13
+      - Premium|广港|IEPL|19
+      - Premium|广港|IEPL|12
+      - Premium|广港|IEPL|20
+      - Premium|广港|IEPL|16
+      - Premium|广港|IEPL|14
+      - Premium|广港|IEPL|04
+      - Premium|广新|IEPL|01
+      - Premium|广港|IEPL|11
+      - Premium|广港|IEPL|09
+      - Premium|广港|IEPL|17
+      - Premium|广新|IEPL|03
+      - Premium|广新|IEPL|04
+      - Premium|广港|IEPL|08
+      - Premium|广港|IEPL|10
+      - Premium|广港|IEPL|18
+      - Premium|广日|IEPL|03
+      - Premium|广日|IEPL|04
+      - Premium|广港|IEPL|02
+      - Premium|广日|IEPL|02
+      - Premium|广港|IEPL|03
+      - Premium|广港|IEPL|07
+      - Premium|广韩|IEPL|04
+      - Premium|广港|IEPL|06
+      - Premium|广日|IEPL|01
+      - Premium|广韩|IEPL|03
+      - Premium|广韩|IEPL|02
+      - SSR_20220315_CN_中国_04
+      - Premium|广韩|IEPL|01
+      - Premium|广新|IEPL|02
+      - /CN/中国/tg频道:@bpjzx2/13
+      - 德国 Germany★
+      - Premium|广美|IEPL|02
+      - Premium|广美|IEPL|04
+      - 美国 America(VIP)★
+      - Premium|广美|IEPL|03
+      - Premium|广美|IEPL|01
+      - "[Vip2] 香港01 [1.0|移动|ssr]"
+      - 保加利亚 Bulgaria●
+      - SSR_20220318_CN_中国_07
+      - SSR_20220320_CN_中国_04
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
