@@ -5,191 +5,847 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[v1] 香港・12", server: cm08.paofuvip.xyz, port: 5951, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 香港・11", server: cm08.paofuvip.xyz, port: 5950, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 香港・18", server: cm08.paofuvip.xyz, port: 5957, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 香港・07", server: cm07.paofuvip.xyz, port: 5956, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 香港・02", server: cm07.paofuvip.xyz, port: 5951, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 香港・14", server: cm08.paofuvip.xyz, port: 5953, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 香港・05", server: cm07.paofuvip.xyz, port: 5954, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 香港・09", server: cm07.paofuvip.xyz, port: 5958, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 香港・03", server: cm07.paofuvip.xyz, port: 5952, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 香港・16", server: cm08.paofuvip.xyz, port: 5955, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: vpnpool-香港HKBN, server: 183.236.60.181, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_21, server: 183.236.60.181, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港1_2, server: cnrelaycm.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: "", udp: true}
+  - {name: "[CT/CM] HKT D", server: shonlinecu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_4, server: 120.236.180.14, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT, server: 120.236.180.14, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT 2, server: 183.236.60.181, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_18, server: 183.236.60.181, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _中国_东方不败Cow Vagina_25, server: cm07.paofuvip.xyz, port: 5953, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: "[CT/CM] HKT E", server: cncusouth.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: _中国_东方不败Cow Vagina_12, server: cm08.paofuvip.xyz, port: 5952, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
   - {name: "[v1] 香港・15", server: cm08.paofuvip.xyz, port: 5954, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: _中国_东方不败Cow Vagina_3, server: cm07.paofuvip.xyz, port: 5954, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: "[v1] 香港・02", server: cm07.paofuvip.xyz, port: 5951, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: "[CT/CM] HKT I", server: cusouthcmhk.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-香港HKT 3, server: 183.236.60.178, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_26, server: 183.236.60.145, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国1_6, server: shcu001online.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: "", udp: true}
+  - {name: "[CT/CM] HKBN C", server: cmrelayhk.dnsflix.com, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-香港HKBN 2, server: 183.236.60.145, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _中国_东方不败Cow Vagina_20, server: cm08.paofuvip.xyz, port: 5954, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: _中国_东方不败Cow Vagina_17, server: cm07.paofuvip.xyz, port: 5958, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: vpnpool-香港HKT 4, server: 183.236.60.181, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[CT/CM] HKBN A", server: shonlinesandcu02.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: "[CT/CM] HKT L", server: shonlinesandcu03.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: "[CT/CM] HKT K", server: shonlinesandcu03.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: "[CT/CM] HKBN B", server: shonlinesandcu02.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: _中国_东方不败Cow Vagina_9, server: cm08.paofuvip.xyz, port: 5956, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_20, server: 183.236.60.134, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[CT/CM] HKT N", server: shcris02stand.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: "[CT/CM] HKBN D", server: shcris02stand.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-香港, server: 183.236.60.134, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _中国_东方不败Cow Vagina_1, server: cm08.paofuvip.xyz, port: 5950, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: "[CT/CM] HKT A", server: shonlinecu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_13, server: 183.236.60.179, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港 2, server: 183.236.60.179, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港 3, server: 183.236.60.178, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT 5, server: 183.236.60.136, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_24, server: 183.236.60.136, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港 4, server: 183.236.60.179, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT 6, server: 183.236.60.145, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT 7, server: 183.236.60.182, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT 8, server: 183.236.60.182, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_14, server: 183.236.60.136, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[CT/CM] HKT J", server: cmrelayhk.dnsflix.com, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_22, server: 183.236.60.182, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 微信tutoov_1, server: shcu001online.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: "", udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_17, server: 183.236.60.178, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[CT/CM] HKT F", server: cusouthcmhk.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
   - {name: "[v1] 香港・13", server: cm08.paofuvip.xyz, port: 5952, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 香港・08", server: cm07.paofuvip.xyz, port: 5957, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 台湾・04", server: cm05.paofuvip.xyz, port: 1073, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "@nfeng6 香港-中继-02", server: yy02.nfeng6.pp.ua, port: 2701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 65199:xMcKnc, obfs-param: e167065199.microsoft.com, udp: true}
-  - {name: "[v1] 香港・17", server: cm08.paofuvip.xyz, port: 5956, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 香港・19", server: cm08.paofuvip.xyz, port: 5958, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 日本・02", server: cm05.paofuvip.xyz, port: 1051, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: 台湾 Taiwan★, server: gz2.52168.xyz, port: 2105, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: "[CT/CM] HKT H", server: shonlinecu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-香港 5, server: 183.236.60.179, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _中国_东方不败Cow Vagina_10, server: cm07.paofuvip.xyz, port: 5950, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: _中国_东方不败Cow Vagina_31, server: cm07.paofuvip.xyz, port: 5956, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: "[v1] 新加坡・04", server: cm03.paofuvip.xyz, port: 1093, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: _中国_任我行Ｃow Vagina_45, server: cm05.paofuvip.xyz, port: 1051, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: 美国2_7, server: hzrelaycu.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: "", udp: true}
+  - {name: vpnpool-香港HKT 9, server: 183.236.60.136, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港 6, server: 183.236.60.178, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_3, server: 183.236.60.179, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_11, server: 183.236.60.134, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[v1] 香港・12", server: cm08.paofuvip.xyz, port: 5951, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: vpnpool-香港HKT 10, server: 58.152.141.209, port: 443, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_7, server: 183.236.60.136, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKBN 3, server: 183.236.60.153, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
   - {name: "[v1] 香港・01", server: cm07.paofuvip.xyz, port: 5950, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: 香港 Hongkong (AZ)●, server: gz1.52168.xyz, port: 1114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 菲律宾 Philippine●, server: gz1.52168.xyz, port: 1101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: "[v1] 新加坡・03", server: cm03.paofuvip.xyz, port: 1092, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_12, server: 183.236.60.153, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT 11, server: 120.236.180.14, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT 12, server: 183.236.60.153, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 德国_Tg频道:https://t.me/bpjzx2, server: 116.162.32.163, port: 618, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[CT/CM] HKT G", server: cusouthcmhk.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-香港 7, server: 183.236.60.134, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_19, server: 183.236.60.145, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKBN 4, server: 183.236.60.153, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_28, server: 183.236.60.153, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[v1] 香港・09", server: cm07.paofuvip.xyz, port: 5958, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: "[v1] 新加坡・05", server: cm03.paofuvip.xyz, port: 1094, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
   - {name: "[v1] 日本・01", server: cm05.paofuvip.xyz, port: 1050, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: vpnpool-香港 8, server: 139.227.78.183, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _中国_东方不败Cow Vagina_26, server: cm03.paofuvip.xyz, port: 1092, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: 韩国高速接入A, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 日本4_13, server: shusacu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: "", udp: true}
+  - {name: _中国_东方不败Cow Vagina_23, server: cm08.paofuvip.xyz, port: 5953, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: "[CT/CM] HKT B", server: cncusouth.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: _中国_东方不败Cow Vagina_15, server: cm07.paofuvip.xyz, port: 5957, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: 新加坡3_16, server: shusacu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: "", udp: true}
+  - {name: vpnpool-香港 9, server: 101.67.8.220, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[v1] 香港・07", server: cm07.paofuvip.xyz, port: 5956, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: _中国_任我行Ｃow Vagina_23, server: cm05.paofuvip.xyz, port: 1073, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
   - {name: "[v1] 香港・04", server: cm07.paofuvip.xyz, port: 5953, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: 俄罗斯 Russia★, server: gz2.52168.xyz, port: 2103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 德国 Germany★, server: gz2.52168.xyz, port: 2101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 美国 America●, server: gz1.52168.xyz, port: 1109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 澳大利亚 Australia●, server: gz1.52168.xyz, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 乌克兰 Ukraine★, server: gz2.52168.xyz, port: 2110, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 土耳其 Turkey★, server: gz2.52168.xyz, port: 2104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: "[v1] 香港・05", server: cm07.paofuvip.xyz, port: 5954, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: vpnpool-香港HKT 13, server: 183.236.60.136, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _中国_东方不败Cow Vagina_30, server: cm05.paofuvip.xyz, port: 1052, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: 新加坡2_15, server: shcu002online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: "", udp: true}
+  - {name: "[v1] 香港・19", server: cm08.paofuvip.xyz, port: 5958, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: _中国_东方不败Cow Vagina_29, server: cm03.paofuvip.xyz, port: 1091, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_29, server: 183.236.60.134, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡1_14, server: cnrelaycm.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: "", udp: true}
+  - {name: vpnpool-香港HKBN 5, server: 101.67.8.220, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[v1] 香港・03", server: cm07.paofuvip.xyz, port: 5952, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: 台湾 J, server: shallaz2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-EC2, server: 52.66.186.195, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 台湾 N, server: shallaz2.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 台湾 I, server: shallaz2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: "[v1] 新加坡・01", server: cm03.paofuvip.xyz, port: 1090, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_23, server: 183.236.60.178, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 台湾 P, server: shallaz2.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
   - {name: 香港SSR tg频道:@ripaojiedian, server: gz1.52168.xyz, port: 1114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: "[v1] 美国・05", server: cm05.paofuvip.xyz, port: 1084, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 日本・03", server: cm05.paofuvip.xyz, port: 1052, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: 英国 England★, server: gz2.52168.xyz, port: 2102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: "[v1] 香港・06", server: cm07.paofuvip.xyz, port: 5955, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 台湾・02", server: cm05.paofuvip.xyz, port: 1071, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 台湾・03", server: cm05.paofuvip.xyz, port: 1072, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "@nfeng6 香港-中继-02 2", server: yy02.nfeng6.pp.ua, port: 2701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 65199:xMcKnc, obfs-param: e167065199.microsoft.com, udp: true}
-  - {name: "[v1] 美国・03", server: cm05.paofuvip.xyz, port: 1082, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 美国・01", server: cm05.paofuvip.xyz, port: 1080, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
-  - {name: "[v1] 美国・04", server: cm05.paofuvip.xyz, port: 1083, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: "[v1] 日本・02", server: cm05.paofuvip.xyz, port: 1051, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: 香港3_4, server: hzrelaycu.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: "", udp: true}
+  - {name: 日本 Azure B 2.5x, server: shallaz.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_8, server: 120.236.180.14, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 日本 Azure A 2.5x, server: shallaz.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 俄罗斯c RT, server: relaypro.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 菲律宾 Philippine●, server: gz1.52168.xyz, port: 1101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: vpnpool-RU, server: 116.162.32.163, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港 Hongkong (AZ)●, server: gz1.52168.xyz, port: 1114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: vpnpool-香港 10, server: 183.236.60.134, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_25, server: 139.227.78.183, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 台湾 K, server: shallaz2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 香港 Hongkong (AZ)● 2, server: gz1.52168.xyz, port: 1114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: _中国_东方不败Cow Vagina_28, server: cm05.paofuvip.xyz, port: 1071, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: 台湾 L, server: shallaz2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_30, server: 183.236.60.182, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _中国_东方不败Cow Vagina_7, server: cm08.paofuvip.xyz, port: 5958, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: vpnpool-台湾, server: 223.166.21.184, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国 优化 A 3.5, server: usastandard.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-US, server: 112.64.105.119, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-台湾 2, server: 223.166.21.184, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 俄罗斯a RT, server: relaypro.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-RU 2, server: 116.162.32.163, port: 544, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡C, server: shallaz.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 新加坡E, server: shallaz.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-RU-Podosinki-Melbicom, server: 116.162.32.163, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-台湾 3, server: 223.166.21.184, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡D, server: shallaz.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 美国_Tg频道:https://t.me/bpjzx2_11, server: 112.64.105.119, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US 2, server: 112.64.105.119, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国_Tg频道:https://t.me/bpjzx2_11 2, server: 112.64.105.119, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国 优化 E 3.5, server: usastandard.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 美国 优化 B 3.5, server: usastandard.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_1, server: 223.166.21.184, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 澳大利亚 Australia●, server: gz1.52168.xyz, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: _中国_东方不败Cow Vagina_13, server: cm03.paofuvip.xyz, port: 1093, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: vpnpool-US 3, server: 112.64.105.119, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国_Tg频道:https://t.me/bpjzx2_8, server: 112.65.53.161, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国 优化 C 3.5, server: usastandard.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 美国 优化 I 3.5, server: usastandard2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 美国 America●, server: gz1.52168.xyz, port: 1109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 台湾 F, server: cstwrelay.onlineto.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_15, server: 183.236.60.181, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国 优化 F 3.5, server: usastandard2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-台湾 4, server: 223.166.21.184, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_2, server: 223.166.21.184, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US 4, server: 223.166.145.206, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国 优化 H 3.5, server: usastandard2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-US 5, server: 223.166.145.206, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国_Tg频道:https://t.me/bpjzx2_3, server: 112.65.53.161, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 澳大利亚 Australia● 2, server: gz1.52168.xyz, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 新加坡4_17, server: shsuconpro.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: "", udp: true}
+  - {name: 美国 优化 G 3.5, server: usastandard2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 美国 America● 2, server: gz1.52168.xyz, port: 1109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: vpnpool-US 6, server: 223.166.145.206, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-台湾 5, server: 223.166.21.184, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 台湾 O, server: shallaz2.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 美国_Tg频道:https://t.me/bpjzx2_1, server: 112.65.53.161, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_27, server: 139.227.78.183, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[v1] 香港・11", server: cm08.paofuvip.xyz, port: 5950, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: 台湾 C, server: cstwrelay.onlineto.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-US 7, server: 112.65.53.161, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国_Tg频道:https://t.me/bpjzx2_9, server: 112.65.53.161, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[v1] 香港・14", server: cm08.paofuvip.xyz, port: 5953, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: 美国_Tg频道:https://t.me/bpjzx2_9 2, server: 112.65.53.161, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_5, server: 183.236.60.178, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 厄瓜多尔_Tg频道:https://t.me/bpjzx2, server: 52.66.186.195, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-台湾 6, server: 223.166.21.184, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国4_9, server: hzrelaycu.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: "", udp: true}
+  - {name: 乌克兰 Ukraine★, server: gz2.52168.xyz, port: 2110, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
   - {name: 保加利亚 Bulgaria●, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_9, server: 183.236.60.153, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 台湾 B, server: cstwrelay.onlineto.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 乌克兰 Ukraine★ 2, server: gz2.52168.xyz, port: 2110, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 台湾 A, server: cstwrelay.onlineto.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-CA, server: 116.162.32.163, port: 615, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国_Tg频道:https://t.me/bpjzx2_2, server: 112.65.53.161, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 台湾 G, server: cstwrelay.onlineto.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-Auburn-WestConnect, server: 116.162.32.163, port: 617, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[v1] 美国・04", server: cm05.paofuvip.xyz, port: 1083, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: vpnpool-US 8, server: 112.65.53.161, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-TR-Bursa-Bursabil, server: 116.162.32.163, port: 620, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 加拿大, server: relaypro.procncon.xyz, port: 615, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 俄罗斯 Russia★, server: gz2.52168.xyz, port: 2103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 俄罗斯 Russia★ 2, server: gz2.52168.xyz, port: 2103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 美国_Tg频道:https://t.me/bpjzx2_8 2, server: 112.65.53.161, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国_Tg频道:https://t.me/bpjzx2_10, server: 112.65.53.161, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国 优化 D 3.5, server: usastandard.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 美国_Tg频道:https://t.me/bpjzx2_10 2, server: 112.65.53.161, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[v1] 台湾・03", server: cm05.paofuvip.xyz, port: 1072, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: 美国_Tg频道:https://t.me/bpjzx2_4, server: 112.65.53.161, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 土耳其 Turkey★, server: gz2.52168.xyz, port: 2104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: "[v1] 新加坡・02", server: cm03.paofuvip.xyz, port: 1091, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: vpnpool-US 9, server: 112.65.53.161, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 3360:dhdhdgv, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _中国_东方不败Cow Vagina_6, server: cm07.paofuvip.xyz, port: 5952, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: "[v1] 美国・05", server: cm05.paofuvip.xyz, port: 1084, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
+  - {name: _中国_东方不败Cow Vagina_14, server: cm07.paofuvip.xyz, port: 5951, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 193061:KOAiCn, obfs-param: 0efd4193061.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[v1] 香港・12"
-      - "[v1] 香港・11"
-      - "[v1] 香港・18"
-      - "[v1] 香港・07"
-      - "[v1] 香港・02"
-      - "[v1] 香港・14"
-      - "[v1] 香港・05"
-      - "[v1] 香港・09"
-      - "[v1] 香港・03"
-      - "[v1] 香港・16"
+      - vpnpool-香港HKBN
+      - 香港_Tg频道:https://t.me/bpjzx2_21
+      - 香港1_2
+      - "[CT/CM] HKT D"
+      - 香港_Tg频道:https://t.me/bpjzx2_4
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - 香港_Tg频道:https://t.me/bpjzx2_18
+      - _中国_东方不败Cow Vagina_25
+      - "[CT/CM] HKT E"
+      - _中国_东方不败Cow Vagina_12
       - "[v1] 香港・15"
+      - _中国_东方不败Cow Vagina_3
+      - "[v1] 香港・02"
+      - "[CT/CM] HKT I"
+      - vpnpool-香港HKT 3
+      - 香港_Tg频道:https://t.me/bpjzx2_26
+      - 美国1_6
+      - "[CT/CM] HKBN C"
+      - vpnpool-香港HKBN 2
+      - _中国_东方不败Cow Vagina_20
+      - _中国_东方不败Cow Vagina_17
+      - vpnpool-香港HKT 4
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT L"
+      - "[CT/CM] HKT K"
+      - "[CT/CM] HKBN B"
+      - _中国_东方不败Cow Vagina_9
+      - 香港_Tg频道:https://t.me/bpjzx2_20
+      - "[CT/CM] HKT N"
+      - "[CT/CM] HKBN D"
+      - vpnpool-香港
+      - _中国_东方不败Cow Vagina_1
+      - "[CT/CM] HKT A"
+      - 香港_Tg频道:https://t.me/bpjzx2_13
+      - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港HKT 5
+      - 香港_Tg频道:https://t.me/bpjzx2_24
+      - vpnpool-香港 4
+      - vpnpool-香港HKT 6
+      - vpnpool-香港HKT 7
+      - vpnpool-香港HKT 8
+      - 香港_Tg频道:https://t.me/bpjzx2_14
+      - "[CT/CM] HKT J"
+      - 香港_Tg频道:https://t.me/bpjzx2_22
+      - 微信tutoov_1
+      - 香港_Tg频道:https://t.me/bpjzx2_17
+      - "[CT/CM] HKT F"
       - "[v1] 香港・13"
-      - "[v1] 香港・08"
-      - "[v1] 台湾・04"
-      - "@nfeng6 香港-中继-02"
-      - "[v1] 香港・17"
-      - "[v1] 香港・19"
-      - "[v1] 日本・02"
-      - 台湾 Taiwan★
+      - "[CT/CM] HKT H"
+      - vpnpool-香港 5
+      - _中国_东方不败Cow Vagina_10
+      - _中国_东方不败Cow Vagina_31
+      - "[v1] 新加坡・04"
+      - _中国_任我行Ｃow Vagina_45
+      - 美国2_7
+      - vpnpool-香港HKT 9
+      - vpnpool-香港 6
+      - 香港_Tg频道:https://t.me/bpjzx2_3
+      - 香港_Tg频道:https://t.me/bpjzx2_11
+      - "[v1] 香港・12"
+      - vpnpool-香港HKT 10
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnpool-香港HKBN 3
       - "[v1] 香港・01"
-      - 香港 Hongkong (AZ)●
-      - 菲律宾 Philippine●
+      - "[v1] 新加坡・03"
+      - 香港_Tg频道:https://t.me/bpjzx2_12
+      - vpnpool-香港HKT 11
+      - vpnpool-香港HKT 12
+      - 德国_Tg频道:https://t.me/bpjzx2
+      - "[CT/CM] HKT G"
+      - vpnpool-香港 7
+      - 香港_Tg频道:https://t.me/bpjzx2_19
+      - vpnpool-香港HKBN 4
+      - 香港_Tg频道:https://t.me/bpjzx2_28
+      - "[v1] 香港・09"
+      - "[v1] 新加坡・05"
       - "[v1] 日本・01"
+      - vpnpool-香港 8
+      - _中国_东方不败Cow Vagina_26
+      - 韩国高速接入A
+      - 日本4_13
+      - _中国_东方不败Cow Vagina_23
+      - "[CT/CM] HKT B"
+      - _中国_东方不败Cow Vagina_15
+      - 新加坡3_16
+      - vpnpool-香港 9
+      - "[v1] 香港・07"
+      - _中国_任我行Ｃow Vagina_23
       - "[v1] 香港・04"
-      - 俄罗斯 Russia★
-      - 德国 Germany★
-      - 美国 America●
-      - 澳大利亚 Australia●
-      - 乌克兰 Ukraine★
-      - 土耳其 Turkey★
+      - "[v1] 香港・05"
+      - vpnpool-香港HKT 13
+      - _中国_东方不败Cow Vagina_30
+      - 新加坡2_15
+      - "[v1] 香港・19"
+      - _中国_东方不败Cow Vagina_29
+      - 香港_Tg频道:https://t.me/bpjzx2_29
+      - 新加坡1_14
+      - vpnpool-香港HKBN 5
+      - "[v1] 香港・03"
+      - 台湾 J
+      - vpnpool-EC2
+      - 台湾 N
+      - 台湾 I
+      - "[v1] 新加坡・01"
+      - 香港_Tg频道:https://t.me/bpjzx2_23
+      - 台湾 P
       - 香港SSR tg频道:@ripaojiedian
-      - "[v1] 美国・05"
-      - "[v1] 日本・03"
-      - 英国 England★
-      - "[v1] 香港・06"
-      - "[v1] 台湾・02"
-      - "[v1] 台湾・03"
-      - "@nfeng6 香港-中继-02 2"
-      - "[v1] 美国・03"
-      - "[v1] 美国・01"
-      - "[v1] 美国・04"
+      - "[v1] 日本・02"
+      - 香港3_4
+      - 日本 Azure B 2.5x
+      - 香港_Tg频道:https://t.me/bpjzx2_8
+      - 日本 Azure A 2.5x
+      - 俄罗斯c RT
+      - 菲律宾 Philippine●
+      - vpnpool-RU
+      - 香港 Hongkong (AZ)●
+      - vpnpool-香港 10
+      - 香港_Tg频道:https://t.me/bpjzx2_25
+      - 台湾 K
+      - 香港 Hongkong (AZ)● 2
+      - _中国_东方不败Cow Vagina_28
+      - 台湾 L
+      - 香港_Tg频道:https://t.me/bpjzx2_30
+      - _中国_东方不败Cow Vagina_7
+      - vpnpool-台湾
+      - 美国 优化 A 3.5
+      - vpnpool-US
+      - vpnpool-台湾 2
+      - 俄罗斯a RT
+      - vpnpool-RU 2
+      - 新加坡C
+      - 新加坡E
+      - vpnpool-RU-Podosinki-Melbicom
+      - vpnpool-台湾 3
+      - 新加坡D
+      - 美国_Tg频道:https://t.me/bpjzx2_11
+      - vpnpool-US 2
+      - 美国_Tg频道:https://t.me/bpjzx2_11 2
+      - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 香港_Tg频道:https://t.me/bpjzx2_1
+      - 澳大利亚 Australia●
+      - _中国_东方不败Cow Vagina_13
+      - vpnpool-US 3
+      - 美国_Tg频道:https://t.me/bpjzx2_8
+      - 美国 优化 C 3.5
+      - 美国 优化 I 3.5
+      - 美国 America●
+      - 台湾 F
+      - 香港_Tg频道:https://t.me/bpjzx2_15
+      - 美国 优化 F 3.5
+      - vpnpool-台湾 4
+      - 香港_Tg频道:https://t.me/bpjzx2_2
+      - vpnpool-US 4
+      - 美国 优化 H 3.5
+      - vpnpool-US 5
+      - 美国_Tg频道:https://t.me/bpjzx2_3
+      - 澳大利亚 Australia● 2
+      - 新加坡4_17
+      - 美国 优化 G 3.5
+      - 美国 America● 2
+      - vpnpool-US 6
+      - vpnpool-台湾 5
+      - 台湾 O
+      - 美国_Tg频道:https://t.me/bpjzx2_1
+      - 香港_Tg频道:https://t.me/bpjzx2_27
+      - "[v1] 香港・11"
+      - 台湾 C
+      - vpnpool-US 7
+      - 美国_Tg频道:https://t.me/bpjzx2_9
+      - "[v1] 香港・14"
+      - 美国_Tg频道:https://t.me/bpjzx2_9 2
+      - 香港_Tg频道:https://t.me/bpjzx2_5
+      - 厄瓜多尔_Tg频道:https://t.me/bpjzx2
+      - vpnpool-台湾 6
+      - 美国4_9
+      - 乌克兰 Ukraine★
       - 保加利亚 Bulgaria●
+      - 香港_Tg频道:https://t.me/bpjzx2_9
+      - 台湾 B
+      - 乌克兰 Ukraine★ 2
+      - 台湾 A
+      - vpnpool-CA
+      - 美国_Tg频道:https://t.me/bpjzx2_2
+      - 台湾 G
+      - vpnpool-Auburn-WestConnect
+      - "[v1] 美国・04"
+      - vpnpool-US 8
+      - vpnpool-TR-Bursa-Bursabil
+      - 加拿大
+      - 俄罗斯 Russia★
+      - 俄罗斯 Russia★ 2
+      - 美国_Tg频道:https://t.me/bpjzx2_8 2
+      - 美国_Tg频道:https://t.me/bpjzx2_10
+      - 美国 优化 D 3.5
+      - 美国_Tg频道:https://t.me/bpjzx2_10 2
+      - "[v1] 台湾・03"
+      - 美国_Tg频道:https://t.me/bpjzx2_4
+      - 土耳其 Turkey★
+      - "[v1] 新加坡・02"
+      - vpnpool-US 9
+      - _中国_东方不败Cow Vagina_6
+      - "[v1] 美国・05"
+      - _中国_东方不败Cow Vagina_14
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[v1] 香港・12"
-      - "[v1] 香港・11"
-      - "[v1] 香港・18"
-      - "[v1] 香港・07"
-      - "[v1] 香港・02"
-      - "[v1] 香港・14"
-      - "[v1] 香港・05"
-      - "[v1] 香港・09"
-      - "[v1] 香港・03"
-      - "[v1] 香港・16"
+      - vpnpool-香港HKBN
+      - 香港_Tg频道:https://t.me/bpjzx2_21
+      - 香港1_2
+      - "[CT/CM] HKT D"
+      - 香港_Tg频道:https://t.me/bpjzx2_4
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - 香港_Tg频道:https://t.me/bpjzx2_18
+      - _中国_东方不败Cow Vagina_25
+      - "[CT/CM] HKT E"
+      - _中国_东方不败Cow Vagina_12
       - "[v1] 香港・15"
+      - _中国_东方不败Cow Vagina_3
+      - "[v1] 香港・02"
+      - "[CT/CM] HKT I"
+      - vpnpool-香港HKT 3
+      - 香港_Tg频道:https://t.me/bpjzx2_26
+      - 美国1_6
+      - "[CT/CM] HKBN C"
+      - vpnpool-香港HKBN 2
+      - _中国_东方不败Cow Vagina_20
+      - _中国_东方不败Cow Vagina_17
+      - vpnpool-香港HKT 4
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT L"
+      - "[CT/CM] HKT K"
+      - "[CT/CM] HKBN B"
+      - _中国_东方不败Cow Vagina_9
+      - 香港_Tg频道:https://t.me/bpjzx2_20
+      - "[CT/CM] HKT N"
+      - "[CT/CM] HKBN D"
+      - vpnpool-香港
+      - _中国_东方不败Cow Vagina_1
+      - "[CT/CM] HKT A"
+      - 香港_Tg频道:https://t.me/bpjzx2_13
+      - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港HKT 5
+      - 香港_Tg频道:https://t.me/bpjzx2_24
+      - vpnpool-香港 4
+      - vpnpool-香港HKT 6
+      - vpnpool-香港HKT 7
+      - vpnpool-香港HKT 8
+      - 香港_Tg频道:https://t.me/bpjzx2_14
+      - "[CT/CM] HKT J"
+      - 香港_Tg频道:https://t.me/bpjzx2_22
+      - 微信tutoov_1
+      - 香港_Tg频道:https://t.me/bpjzx2_17
+      - "[CT/CM] HKT F"
       - "[v1] 香港・13"
-      - "[v1] 香港・08"
-      - "[v1] 台湾・04"
-      - "@nfeng6 香港-中继-02"
-      - "[v1] 香港・17"
-      - "[v1] 香港・19"
-      - "[v1] 日本・02"
-      - 台湾 Taiwan★
+      - "[CT/CM] HKT H"
+      - vpnpool-香港 5
+      - _中国_东方不败Cow Vagina_10
+      - _中国_东方不败Cow Vagina_31
+      - "[v1] 新加坡・04"
+      - _中国_任我行Ｃow Vagina_45
+      - 美国2_7
+      - vpnpool-香港HKT 9
+      - vpnpool-香港 6
+      - 香港_Tg频道:https://t.me/bpjzx2_3
+      - 香港_Tg频道:https://t.me/bpjzx2_11
+      - "[v1] 香港・12"
+      - vpnpool-香港HKT 10
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnpool-香港HKBN 3
       - "[v1] 香港・01"
-      - 香港 Hongkong (AZ)●
-      - 菲律宾 Philippine●
+      - "[v1] 新加坡・03"
+      - 香港_Tg频道:https://t.me/bpjzx2_12
+      - vpnpool-香港HKT 11
+      - vpnpool-香港HKT 12
+      - 德国_Tg频道:https://t.me/bpjzx2
+      - "[CT/CM] HKT G"
+      - vpnpool-香港 7
+      - 香港_Tg频道:https://t.me/bpjzx2_19
+      - vpnpool-香港HKBN 4
+      - 香港_Tg频道:https://t.me/bpjzx2_28
+      - "[v1] 香港・09"
+      - "[v1] 新加坡・05"
       - "[v1] 日本・01"
+      - vpnpool-香港 8
+      - _中国_东方不败Cow Vagina_26
+      - 韩国高速接入A
+      - 日本4_13
+      - _中国_东方不败Cow Vagina_23
+      - "[CT/CM] HKT B"
+      - _中国_东方不败Cow Vagina_15
+      - 新加坡3_16
+      - vpnpool-香港 9
+      - "[v1] 香港・07"
+      - _中国_任我行Ｃow Vagina_23
       - "[v1] 香港・04"
-      - 俄罗斯 Russia★
-      - 德国 Germany★
-      - 美国 America●
-      - 澳大利亚 Australia●
-      - 乌克兰 Ukraine★
-      - 土耳其 Turkey★
+      - "[v1] 香港・05"
+      - vpnpool-香港HKT 13
+      - _中国_东方不败Cow Vagina_30
+      - 新加坡2_15
+      - "[v1] 香港・19"
+      - _中国_东方不败Cow Vagina_29
+      - 香港_Tg频道:https://t.me/bpjzx2_29
+      - 新加坡1_14
+      - vpnpool-香港HKBN 5
+      - "[v1] 香港・03"
+      - 台湾 J
+      - vpnpool-EC2
+      - 台湾 N
+      - 台湾 I
+      - "[v1] 新加坡・01"
+      - 香港_Tg频道:https://t.me/bpjzx2_23
+      - 台湾 P
       - 香港SSR tg频道:@ripaojiedian
-      - "[v1] 美国・05"
-      - "[v1] 日本・03"
-      - 英国 England★
-      - "[v1] 香港・06"
-      - "[v1] 台湾・02"
-      - "[v1] 台湾・03"
-      - "@nfeng6 香港-中继-02 2"
-      - "[v1] 美国・03"
-      - "[v1] 美国・01"
-      - "[v1] 美国・04"
+      - "[v1] 日本・02"
+      - 香港3_4
+      - 日本 Azure B 2.5x
+      - 香港_Tg频道:https://t.me/bpjzx2_8
+      - 日本 Azure A 2.5x
+      - 俄罗斯c RT
+      - 菲律宾 Philippine●
+      - vpnpool-RU
+      - 香港 Hongkong (AZ)●
+      - vpnpool-香港 10
+      - 香港_Tg频道:https://t.me/bpjzx2_25
+      - 台湾 K
+      - 香港 Hongkong (AZ)● 2
+      - _中国_东方不败Cow Vagina_28
+      - 台湾 L
+      - 香港_Tg频道:https://t.me/bpjzx2_30
+      - _中国_东方不败Cow Vagina_7
+      - vpnpool-台湾
+      - 美国 优化 A 3.5
+      - vpnpool-US
+      - vpnpool-台湾 2
+      - 俄罗斯a RT
+      - vpnpool-RU 2
+      - 新加坡C
+      - 新加坡E
+      - vpnpool-RU-Podosinki-Melbicom
+      - vpnpool-台湾 3
+      - 新加坡D
+      - 美国_Tg频道:https://t.me/bpjzx2_11
+      - vpnpool-US 2
+      - 美国_Tg频道:https://t.me/bpjzx2_11 2
+      - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 香港_Tg频道:https://t.me/bpjzx2_1
+      - 澳大利亚 Australia●
+      - _中国_东方不败Cow Vagina_13
+      - vpnpool-US 3
+      - 美国_Tg频道:https://t.me/bpjzx2_8
+      - 美国 优化 C 3.5
+      - 美国 优化 I 3.5
+      - 美国 America●
+      - 台湾 F
+      - 香港_Tg频道:https://t.me/bpjzx2_15
+      - 美国 优化 F 3.5
+      - vpnpool-台湾 4
+      - 香港_Tg频道:https://t.me/bpjzx2_2
+      - vpnpool-US 4
+      - 美国 优化 H 3.5
+      - vpnpool-US 5
+      - 美国_Tg频道:https://t.me/bpjzx2_3
+      - 澳大利亚 Australia● 2
+      - 新加坡4_17
+      - 美国 优化 G 3.5
+      - 美国 America● 2
+      - vpnpool-US 6
+      - vpnpool-台湾 5
+      - 台湾 O
+      - 美国_Tg频道:https://t.me/bpjzx2_1
+      - 香港_Tg频道:https://t.me/bpjzx2_27
+      - "[v1] 香港・11"
+      - 台湾 C
+      - vpnpool-US 7
+      - 美国_Tg频道:https://t.me/bpjzx2_9
+      - "[v1] 香港・14"
+      - 美国_Tg频道:https://t.me/bpjzx2_9 2
+      - 香港_Tg频道:https://t.me/bpjzx2_5
+      - 厄瓜多尔_Tg频道:https://t.me/bpjzx2
+      - vpnpool-台湾 6
+      - 美国4_9
+      - 乌克兰 Ukraine★
       - 保加利亚 Bulgaria●
+      - 香港_Tg频道:https://t.me/bpjzx2_9
+      - 台湾 B
+      - 乌克兰 Ukraine★ 2
+      - 台湾 A
+      - vpnpool-CA
+      - 美国_Tg频道:https://t.me/bpjzx2_2
+      - 台湾 G
+      - vpnpool-Auburn-WestConnect
+      - "[v1] 美国・04"
+      - vpnpool-US 8
+      - vpnpool-TR-Bursa-Bursabil
+      - 加拿大
+      - 俄罗斯 Russia★
+      - 俄罗斯 Russia★ 2
+      - 美国_Tg频道:https://t.me/bpjzx2_8 2
+      - 美国_Tg频道:https://t.me/bpjzx2_10
+      - 美国 优化 D 3.5
+      - 美国_Tg频道:https://t.me/bpjzx2_10 2
+      - "[v1] 台湾・03"
+      - 美国_Tg频道:https://t.me/bpjzx2_4
+      - 土耳其 Turkey★
+      - "[v1] 新加坡・02"
+      - vpnpool-US 9
+      - _中国_东方不败Cow Vagina_6
+      - "[v1] 美国・05"
+      - _中国_东方不败Cow Vagina_14
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[v1] 香港・12"
-      - "[v1] 香港・11"
-      - "[v1] 香港・18"
-      - "[v1] 香港・07"
-      - "[v1] 香港・02"
-      - "[v1] 香港・14"
-      - "[v1] 香港・05"
-      - "[v1] 香港・09"
-      - "[v1] 香港・03"
-      - "[v1] 香港・16"
+      - vpnpool-香港HKBN
+      - 香港_Tg频道:https://t.me/bpjzx2_21
+      - 香港1_2
+      - "[CT/CM] HKT D"
+      - 香港_Tg频道:https://t.me/bpjzx2_4
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - 香港_Tg频道:https://t.me/bpjzx2_18
+      - _中国_东方不败Cow Vagina_25
+      - "[CT/CM] HKT E"
+      - _中国_东方不败Cow Vagina_12
       - "[v1] 香港・15"
+      - _中国_东方不败Cow Vagina_3
+      - "[v1] 香港・02"
+      - "[CT/CM] HKT I"
+      - vpnpool-香港HKT 3
+      - 香港_Tg频道:https://t.me/bpjzx2_26
+      - 美国1_6
+      - "[CT/CM] HKBN C"
+      - vpnpool-香港HKBN 2
+      - _中国_东方不败Cow Vagina_20
+      - _中国_东方不败Cow Vagina_17
+      - vpnpool-香港HKT 4
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT L"
+      - "[CT/CM] HKT K"
+      - "[CT/CM] HKBN B"
+      - _中国_东方不败Cow Vagina_9
+      - 香港_Tg频道:https://t.me/bpjzx2_20
+      - "[CT/CM] HKT N"
+      - "[CT/CM] HKBN D"
+      - vpnpool-香港
+      - _中国_东方不败Cow Vagina_1
+      - "[CT/CM] HKT A"
+      - 香港_Tg频道:https://t.me/bpjzx2_13
+      - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港HKT 5
+      - 香港_Tg频道:https://t.me/bpjzx2_24
+      - vpnpool-香港 4
+      - vpnpool-香港HKT 6
+      - vpnpool-香港HKT 7
+      - vpnpool-香港HKT 8
+      - 香港_Tg频道:https://t.me/bpjzx2_14
+      - "[CT/CM] HKT J"
+      - 香港_Tg频道:https://t.me/bpjzx2_22
+      - 微信tutoov_1
+      - 香港_Tg频道:https://t.me/bpjzx2_17
+      - "[CT/CM] HKT F"
       - "[v1] 香港・13"
-      - "[v1] 香港・08"
-      - "[v1] 台湾・04"
-      - "@nfeng6 香港-中继-02"
-      - "[v1] 香港・17"
-      - "[v1] 香港・19"
-      - "[v1] 日本・02"
-      - 台湾 Taiwan★
+      - "[CT/CM] HKT H"
+      - vpnpool-香港 5
+      - _中国_东方不败Cow Vagina_10
+      - _中国_东方不败Cow Vagina_31
+      - "[v1] 新加坡・04"
+      - _中国_任我行Ｃow Vagina_45
+      - 美国2_7
+      - vpnpool-香港HKT 9
+      - vpnpool-香港 6
+      - 香港_Tg频道:https://t.me/bpjzx2_3
+      - 香港_Tg频道:https://t.me/bpjzx2_11
+      - "[v1] 香港・12"
+      - vpnpool-香港HKT 10
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnpool-香港HKBN 3
       - "[v1] 香港・01"
-      - 香港 Hongkong (AZ)●
-      - 菲律宾 Philippine●
+      - "[v1] 新加坡・03"
+      - 香港_Tg频道:https://t.me/bpjzx2_12
+      - vpnpool-香港HKT 11
+      - vpnpool-香港HKT 12
+      - 德国_Tg频道:https://t.me/bpjzx2
+      - "[CT/CM] HKT G"
+      - vpnpool-香港 7
+      - 香港_Tg频道:https://t.me/bpjzx2_19
+      - vpnpool-香港HKBN 4
+      - 香港_Tg频道:https://t.me/bpjzx2_28
+      - "[v1] 香港・09"
+      - "[v1] 新加坡・05"
       - "[v1] 日本・01"
+      - vpnpool-香港 8
+      - _中国_东方不败Cow Vagina_26
+      - 韩国高速接入A
+      - 日本4_13
+      - _中国_东方不败Cow Vagina_23
+      - "[CT/CM] HKT B"
+      - _中国_东方不败Cow Vagina_15
+      - 新加坡3_16
+      - vpnpool-香港 9
+      - "[v1] 香港・07"
+      - _中国_任我行Ｃow Vagina_23
       - "[v1] 香港・04"
-      - 俄罗斯 Russia★
-      - 德国 Germany★
-      - 美国 America●
-      - 澳大利亚 Australia●
-      - 乌克兰 Ukraine★
-      - 土耳其 Turkey★
+      - "[v1] 香港・05"
+      - vpnpool-香港HKT 13
+      - _中国_东方不败Cow Vagina_30
+      - 新加坡2_15
+      - "[v1] 香港・19"
+      - _中国_东方不败Cow Vagina_29
+      - 香港_Tg频道:https://t.me/bpjzx2_29
+      - 新加坡1_14
+      - vpnpool-香港HKBN 5
+      - "[v1] 香港・03"
+      - 台湾 J
+      - vpnpool-EC2
+      - 台湾 N
+      - 台湾 I
+      - "[v1] 新加坡・01"
+      - 香港_Tg频道:https://t.me/bpjzx2_23
+      - 台湾 P
       - 香港SSR tg频道:@ripaojiedian
-      - "[v1] 美国・05"
-      - "[v1] 日本・03"
-      - 英国 England★
-      - "[v1] 香港・06"
-      - "[v1] 台湾・02"
-      - "[v1] 台湾・03"
-      - "@nfeng6 香港-中继-02 2"
-      - "[v1] 美国・03"
-      - "[v1] 美国・01"
-      - "[v1] 美国・04"
+      - "[v1] 日本・02"
+      - 香港3_4
+      - 日本 Azure B 2.5x
+      - 香港_Tg频道:https://t.me/bpjzx2_8
+      - 日本 Azure A 2.5x
+      - 俄罗斯c RT
+      - 菲律宾 Philippine●
+      - vpnpool-RU
+      - 香港 Hongkong (AZ)●
+      - vpnpool-香港 10
+      - 香港_Tg频道:https://t.me/bpjzx2_25
+      - 台湾 K
+      - 香港 Hongkong (AZ)● 2
+      - _中国_东方不败Cow Vagina_28
+      - 台湾 L
+      - 香港_Tg频道:https://t.me/bpjzx2_30
+      - _中国_东方不败Cow Vagina_7
+      - vpnpool-台湾
+      - 美国 优化 A 3.5
+      - vpnpool-US
+      - vpnpool-台湾 2
+      - 俄罗斯a RT
+      - vpnpool-RU 2
+      - 新加坡C
+      - 新加坡E
+      - vpnpool-RU-Podosinki-Melbicom
+      - vpnpool-台湾 3
+      - 新加坡D
+      - 美国_Tg频道:https://t.me/bpjzx2_11
+      - vpnpool-US 2
+      - 美国_Tg频道:https://t.me/bpjzx2_11 2
+      - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 香港_Tg频道:https://t.me/bpjzx2_1
+      - 澳大利亚 Australia●
+      - _中国_东方不败Cow Vagina_13
+      - vpnpool-US 3
+      - 美国_Tg频道:https://t.me/bpjzx2_8
+      - 美国 优化 C 3.5
+      - 美国 优化 I 3.5
+      - 美国 America●
+      - 台湾 F
+      - 香港_Tg频道:https://t.me/bpjzx2_15
+      - 美国 优化 F 3.5
+      - vpnpool-台湾 4
+      - 香港_Tg频道:https://t.me/bpjzx2_2
+      - vpnpool-US 4
+      - 美国 优化 H 3.5
+      - vpnpool-US 5
+      - 美国_Tg频道:https://t.me/bpjzx2_3
+      - 澳大利亚 Australia● 2
+      - 新加坡4_17
+      - 美国 优化 G 3.5
+      - 美国 America● 2
+      - vpnpool-US 6
+      - vpnpool-台湾 5
+      - 台湾 O
+      - 美国_Tg频道:https://t.me/bpjzx2_1
+      - 香港_Tg频道:https://t.me/bpjzx2_27
+      - "[v1] 香港・11"
+      - 台湾 C
+      - vpnpool-US 7
+      - 美国_Tg频道:https://t.me/bpjzx2_9
+      - "[v1] 香港・14"
+      - 美国_Tg频道:https://t.me/bpjzx2_9 2
+      - 香港_Tg频道:https://t.me/bpjzx2_5
+      - 厄瓜多尔_Tg频道:https://t.me/bpjzx2
+      - vpnpool-台湾 6
+      - 美国4_9
+      - 乌克兰 Ukraine★
       - 保加利亚 Bulgaria●
+      - 香港_Tg频道:https://t.me/bpjzx2_9
+      - 台湾 B
+      - 乌克兰 Ukraine★ 2
+      - 台湾 A
+      - vpnpool-CA
+      - 美国_Tg频道:https://t.me/bpjzx2_2
+      - 台湾 G
+      - vpnpool-Auburn-WestConnect
+      - "[v1] 美国・04"
+      - vpnpool-US 8
+      - vpnpool-TR-Bursa-Bursabil
+      - 加拿大
+      - 俄罗斯 Russia★
+      - 俄罗斯 Russia★ 2
+      - 美国_Tg频道:https://t.me/bpjzx2_8 2
+      - 美国_Tg频道:https://t.me/bpjzx2_10
+      - 美国 优化 D 3.5
+      - 美国_Tg频道:https://t.me/bpjzx2_10 2
+      - "[v1] 台湾・03"
+      - 美国_Tg频道:https://t.me/bpjzx2_4
+      - 土耳其 Turkey★
+      - "[v1] 新加坡・02"
+      - vpnpool-US 9
+      - _中国_东方不败Cow Vagina_6
+      - "[v1] 美国・05"
+      - _中国_东方不败Cow Vagina_14
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -208,221 +864,959 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[v1] 香港・12"
-      - "[v1] 香港・11"
-      - "[v1] 香港・18"
-      - "[v1] 香港・07"
-      - "[v1] 香港・02"
-      - "[v1] 香港・14"
-      - "[v1] 香港・05"
-      - "[v1] 香港・09"
-      - "[v1] 香港・03"
-      - "[v1] 香港・16"
+      - vpnpool-香港HKBN
+      - 香港_Tg频道:https://t.me/bpjzx2_21
+      - 香港1_2
+      - "[CT/CM] HKT D"
+      - 香港_Tg频道:https://t.me/bpjzx2_4
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - 香港_Tg频道:https://t.me/bpjzx2_18
+      - _中国_东方不败Cow Vagina_25
+      - "[CT/CM] HKT E"
+      - _中国_东方不败Cow Vagina_12
       - "[v1] 香港・15"
+      - _中国_东方不败Cow Vagina_3
+      - "[v1] 香港・02"
+      - "[CT/CM] HKT I"
+      - vpnpool-香港HKT 3
+      - 香港_Tg频道:https://t.me/bpjzx2_26
+      - 美国1_6
+      - "[CT/CM] HKBN C"
+      - vpnpool-香港HKBN 2
+      - _中国_东方不败Cow Vagina_20
+      - _中国_东方不败Cow Vagina_17
+      - vpnpool-香港HKT 4
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT L"
+      - "[CT/CM] HKT K"
+      - "[CT/CM] HKBN B"
+      - _中国_东方不败Cow Vagina_9
+      - 香港_Tg频道:https://t.me/bpjzx2_20
+      - "[CT/CM] HKT N"
+      - "[CT/CM] HKBN D"
+      - vpnpool-香港
+      - _中国_东方不败Cow Vagina_1
+      - "[CT/CM] HKT A"
+      - 香港_Tg频道:https://t.me/bpjzx2_13
+      - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港HKT 5
+      - 香港_Tg频道:https://t.me/bpjzx2_24
+      - vpnpool-香港 4
+      - vpnpool-香港HKT 6
+      - vpnpool-香港HKT 7
+      - vpnpool-香港HKT 8
+      - 香港_Tg频道:https://t.me/bpjzx2_14
+      - "[CT/CM] HKT J"
+      - 香港_Tg频道:https://t.me/bpjzx2_22
+      - 微信tutoov_1
+      - 香港_Tg频道:https://t.me/bpjzx2_17
+      - "[CT/CM] HKT F"
       - "[v1] 香港・13"
-      - "[v1] 香港・08"
-      - "[v1] 台湾・04"
-      - "@nfeng6 香港-中继-02"
-      - "[v1] 香港・17"
-      - "[v1] 香港・19"
-      - "[v1] 日本・02"
-      - 台湾 Taiwan★
+      - "[CT/CM] HKT H"
+      - vpnpool-香港 5
+      - _中国_东方不败Cow Vagina_10
+      - _中国_东方不败Cow Vagina_31
+      - "[v1] 新加坡・04"
+      - _中国_任我行Ｃow Vagina_45
+      - 美国2_7
+      - vpnpool-香港HKT 9
+      - vpnpool-香港 6
+      - 香港_Tg频道:https://t.me/bpjzx2_3
+      - 香港_Tg频道:https://t.me/bpjzx2_11
+      - "[v1] 香港・12"
+      - vpnpool-香港HKT 10
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnpool-香港HKBN 3
       - "[v1] 香港・01"
-      - 香港 Hongkong (AZ)●
-      - 菲律宾 Philippine●
+      - "[v1] 新加坡・03"
+      - 香港_Tg频道:https://t.me/bpjzx2_12
+      - vpnpool-香港HKT 11
+      - vpnpool-香港HKT 12
+      - 德国_Tg频道:https://t.me/bpjzx2
+      - "[CT/CM] HKT G"
+      - vpnpool-香港 7
+      - 香港_Tg频道:https://t.me/bpjzx2_19
+      - vpnpool-香港HKBN 4
+      - 香港_Tg频道:https://t.me/bpjzx2_28
+      - "[v1] 香港・09"
+      - "[v1] 新加坡・05"
       - "[v1] 日本・01"
+      - vpnpool-香港 8
+      - _中国_东方不败Cow Vagina_26
+      - 韩国高速接入A
+      - 日本4_13
+      - _中国_东方不败Cow Vagina_23
+      - "[CT/CM] HKT B"
+      - _中国_东方不败Cow Vagina_15
+      - 新加坡3_16
+      - vpnpool-香港 9
+      - "[v1] 香港・07"
+      - _中国_任我行Ｃow Vagina_23
       - "[v1] 香港・04"
-      - 俄罗斯 Russia★
-      - 德国 Germany★
-      - 美国 America●
-      - 澳大利亚 Australia●
-      - 乌克兰 Ukraine★
-      - 土耳其 Turkey★
+      - "[v1] 香港・05"
+      - vpnpool-香港HKT 13
+      - _中国_东方不败Cow Vagina_30
+      - 新加坡2_15
+      - "[v1] 香港・19"
+      - _中国_东方不败Cow Vagina_29
+      - 香港_Tg频道:https://t.me/bpjzx2_29
+      - 新加坡1_14
+      - vpnpool-香港HKBN 5
+      - "[v1] 香港・03"
+      - 台湾 J
+      - vpnpool-EC2
+      - 台湾 N
+      - 台湾 I
+      - "[v1] 新加坡・01"
+      - 香港_Tg频道:https://t.me/bpjzx2_23
+      - 台湾 P
       - 香港SSR tg频道:@ripaojiedian
-      - "[v1] 美国・05"
-      - "[v1] 日本・03"
-      - 英国 England★
-      - "[v1] 香港・06"
-      - "[v1] 台湾・02"
-      - "[v1] 台湾・03"
-      - "@nfeng6 香港-中继-02 2"
-      - "[v1] 美国・03"
-      - "[v1] 美国・01"
-      - "[v1] 美国・04"
+      - "[v1] 日本・02"
+      - 香港3_4
+      - 日本 Azure B 2.5x
+      - 香港_Tg频道:https://t.me/bpjzx2_8
+      - 日本 Azure A 2.5x
+      - 俄罗斯c RT
+      - 菲律宾 Philippine●
+      - vpnpool-RU
+      - 香港 Hongkong (AZ)●
+      - vpnpool-香港 10
+      - 香港_Tg频道:https://t.me/bpjzx2_25
+      - 台湾 K
+      - 香港 Hongkong (AZ)● 2
+      - _中国_东方不败Cow Vagina_28
+      - 台湾 L
+      - 香港_Tg频道:https://t.me/bpjzx2_30
+      - _中国_东方不败Cow Vagina_7
+      - vpnpool-台湾
+      - 美国 优化 A 3.5
+      - vpnpool-US
+      - vpnpool-台湾 2
+      - 俄罗斯a RT
+      - vpnpool-RU 2
+      - 新加坡C
+      - 新加坡E
+      - vpnpool-RU-Podosinki-Melbicom
+      - vpnpool-台湾 3
+      - 新加坡D
+      - 美国_Tg频道:https://t.me/bpjzx2_11
+      - vpnpool-US 2
+      - 美国_Tg频道:https://t.me/bpjzx2_11 2
+      - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 香港_Tg频道:https://t.me/bpjzx2_1
+      - 澳大利亚 Australia●
+      - _中国_东方不败Cow Vagina_13
+      - vpnpool-US 3
+      - 美国_Tg频道:https://t.me/bpjzx2_8
+      - 美国 优化 C 3.5
+      - 美国 优化 I 3.5
+      - 美国 America●
+      - 台湾 F
+      - 香港_Tg频道:https://t.me/bpjzx2_15
+      - 美国 优化 F 3.5
+      - vpnpool-台湾 4
+      - 香港_Tg频道:https://t.me/bpjzx2_2
+      - vpnpool-US 4
+      - 美国 优化 H 3.5
+      - vpnpool-US 5
+      - 美国_Tg频道:https://t.me/bpjzx2_3
+      - 澳大利亚 Australia● 2
+      - 新加坡4_17
+      - 美国 优化 G 3.5
+      - 美国 America● 2
+      - vpnpool-US 6
+      - vpnpool-台湾 5
+      - 台湾 O
+      - 美国_Tg频道:https://t.me/bpjzx2_1
+      - 香港_Tg频道:https://t.me/bpjzx2_27
+      - "[v1] 香港・11"
+      - 台湾 C
+      - vpnpool-US 7
+      - 美国_Tg频道:https://t.me/bpjzx2_9
+      - "[v1] 香港・14"
+      - 美国_Tg频道:https://t.me/bpjzx2_9 2
+      - 香港_Tg频道:https://t.me/bpjzx2_5
+      - 厄瓜多尔_Tg频道:https://t.me/bpjzx2
+      - vpnpool-台湾 6
+      - 美国4_9
+      - 乌克兰 Ukraine★
       - 保加利亚 Bulgaria●
+      - 香港_Tg频道:https://t.me/bpjzx2_9
+      - 台湾 B
+      - 乌克兰 Ukraine★ 2
+      - 台湾 A
+      - vpnpool-CA
+      - 美国_Tg频道:https://t.me/bpjzx2_2
+      - 台湾 G
+      - vpnpool-Auburn-WestConnect
+      - "[v1] 美国・04"
+      - vpnpool-US 8
+      - vpnpool-TR-Bursa-Bursabil
+      - 加拿大
+      - 俄罗斯 Russia★
+      - 俄罗斯 Russia★ 2
+      - 美国_Tg频道:https://t.me/bpjzx2_8 2
+      - 美国_Tg频道:https://t.me/bpjzx2_10
+      - 美国 优化 D 3.5
+      - 美国_Tg频道:https://t.me/bpjzx2_10 2
+      - "[v1] 台湾・03"
+      - 美国_Tg频道:https://t.me/bpjzx2_4
+      - 土耳其 Turkey★
+      - "[v1] 新加坡・02"
+      - vpnpool-US 9
+      - _中国_东方不败Cow Vagina_6
+      - "[v1] 美国・05"
+      - _中国_东方不败Cow Vagina_14
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[v1] 香港・12"
-      - "[v1] 香港・11"
-      - "[v1] 香港・18"
-      - "[v1] 香港・07"
-      - "[v1] 香港・02"
-      - "[v1] 香港・14"
-      - "[v1] 香港・05"
-      - "[v1] 香港・09"
-      - "[v1] 香港・03"
-      - "[v1] 香港・16"
+      - vpnpool-香港HKBN
+      - 香港_Tg频道:https://t.me/bpjzx2_21
+      - 香港1_2
+      - "[CT/CM] HKT D"
+      - 香港_Tg频道:https://t.me/bpjzx2_4
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - 香港_Tg频道:https://t.me/bpjzx2_18
+      - "[CT/CM] HKT E"
       - "[v1] 香港・15"
+      - "[v1] 香港・02"
+      - "[CT/CM] HKT I"
+      - vpnpool-香港HKT 3
+      - 香港_Tg频道:https://t.me/bpjzx2_26
+      - "[CT/CM] HKBN C"
+      - vpnpool-香港HKBN 2
+      - vpnpool-香港HKT 4
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT L"
+      - "[CT/CM] HKT K"
+      - "[CT/CM] HKBN B"
+      - 香港_Tg频道:https://t.me/bpjzx2_20
+      - "[CT/CM] HKT N"
+      - "[CT/CM] HKBN D"
+      - vpnpool-香港
+      - "[CT/CM] HKT A"
+      - 香港_Tg频道:https://t.me/bpjzx2_13
+      - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港HKT 5
+      - 香港_Tg频道:https://t.me/bpjzx2_24
+      - vpnpool-香港 4
+      - vpnpool-香港HKT 6
+      - vpnpool-香港HKT 7
+      - vpnpool-香港HKT 8
+      - 香港_Tg频道:https://t.me/bpjzx2_14
+      - "[CT/CM] HKT J"
+      - 香港_Tg频道:https://t.me/bpjzx2_22
+      - 香港_Tg频道:https://t.me/bpjzx2_17
+      - "[CT/CM] HKT F"
       - "[v1] 香港・13"
-      - "[v1] 香港・08"
-      - "[v1] 台湾・04"
-      - "@nfeng6 香港-中继-02"
-      - "[v1] 香港・17"
-      - "[v1] 香港・19"
-      - 台湾 Taiwan★
+      - "[CT/CM] HKT H"
+      - vpnpool-香港 5
+      - vpnpool-香港HKT 9
+      - vpnpool-香港 6
+      - 香港_Tg频道:https://t.me/bpjzx2_3
+      - 香港_Tg频道:https://t.me/bpjzx2_11
+      - "[v1] 香港・12"
+      - vpnpool-香港HKT 10
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnpool-香港HKBN 3
       - "[v1] 香港・01"
-      - 香港 Hongkong (AZ)●
+      - 香港_Tg频道:https://t.me/bpjzx2_12
+      - vpnpool-香港HKT 11
+      - vpnpool-香港HKT 12
+      - "[CT/CM] HKT G"
+      - vpnpool-香港 7
+      - 香港_Tg频道:https://t.me/bpjzx2_19
+      - vpnpool-香港HKBN 4
+      - 香港_Tg频道:https://t.me/bpjzx2_28
+      - "[v1] 香港・09"
+      - vpnpool-香港 8
+      - "[CT/CM] HKT B"
+      - vpnpool-香港 9
+      - "[v1] 香港・07"
       - "[v1] 香港・04"
+      - "[v1] 香港・05"
+      - vpnpool-香港HKT 13
+      - "[v1] 香港・19"
+      - 香港_Tg频道:https://t.me/bpjzx2_29
+      - vpnpool-香港HKBN 5
+      - "[v1] 香港・03"
+      - 台湾 J
+      - 台湾 N
+      - 台湾 I
+      - 香港_Tg频道:https://t.me/bpjzx2_23
+      - 台湾 P
       - 香港SSR tg频道:@ripaojiedian
-      - "[v1] 香港・06"
-      - "[v1] 台湾・02"
+      - 香港3_4
+      - 香港_Tg频道:https://t.me/bpjzx2_8
+      - 香港 Hongkong (AZ)●
+      - vpnpool-香港 10
+      - 香港_Tg频道:https://t.me/bpjzx2_25
+      - 台湾 K
+      - 香港 Hongkong (AZ)● 2
+      - 台湾 L
+      - 香港_Tg频道:https://t.me/bpjzx2_30
+      - vpnpool-台湾
+      - vpnpool-台湾 2
+      - vpnpool-台湾 3
+      - 香港_Tg频道:https://t.me/bpjzx2_1
+      - 台湾 F
+      - 香港_Tg频道:https://t.me/bpjzx2_15
+      - vpnpool-台湾 4
+      - 香港_Tg频道:https://t.me/bpjzx2_2
+      - vpnpool-台湾 5
+      - 台湾 O
+      - 香港_Tg频道:https://t.me/bpjzx2_27
+      - "[v1] 香港・11"
+      - 台湾 C
+      - "[v1] 香港・14"
+      - 香港_Tg频道:https://t.me/bpjzx2_5
+      - vpnpool-台湾 6
+      - 香港_Tg频道:https://t.me/bpjzx2_9
+      - 台湾 B
+      - 台湾 A
+      - 台湾 G
       - "[v1] 台湾・03"
-      - "@nfeng6 香港-中继-02 2"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[v1] 香港・12"
-      - "[v1] 香港・11"
-      - "[v1] 香港・18"
-      - "[v1] 香港・07"
-      - "[v1] 香港・02"
-      - "[v1] 香港・14"
-      - "[v1] 香港・05"
-      - "[v1] 香港・09"
-      - "[v1] 香港・03"
-      - "[v1] 香港・16"
+      - vpnpool-香港HKBN
+      - 香港_Tg频道:https://t.me/bpjzx2_21
+      - 香港1_2
+      - "[CT/CM] HKT D"
+      - 香港_Tg频道:https://t.me/bpjzx2_4
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - 香港_Tg频道:https://t.me/bpjzx2_18
+      - _中国_东方不败Cow Vagina_25
+      - "[CT/CM] HKT E"
+      - _中国_东方不败Cow Vagina_12
       - "[v1] 香港・15"
+      - _中国_东方不败Cow Vagina_3
+      - "[v1] 香港・02"
+      - "[CT/CM] HKT I"
+      - vpnpool-香港HKT 3
+      - 香港_Tg频道:https://t.me/bpjzx2_26
+      - 美国1_6
+      - "[CT/CM] HKBN C"
+      - vpnpool-香港HKBN 2
+      - _中国_东方不败Cow Vagina_20
+      - _中国_东方不败Cow Vagina_17
+      - vpnpool-香港HKT 4
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT L"
+      - "[CT/CM] HKT K"
+      - "[CT/CM] HKBN B"
+      - _中国_东方不败Cow Vagina_9
+      - 香港_Tg频道:https://t.me/bpjzx2_20
+      - "[CT/CM] HKT N"
+      - "[CT/CM] HKBN D"
+      - vpnpool-香港
+      - _中国_东方不败Cow Vagina_1
+      - "[CT/CM] HKT A"
+      - 香港_Tg频道:https://t.me/bpjzx2_13
+      - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港HKT 5
+      - 香港_Tg频道:https://t.me/bpjzx2_24
+      - vpnpool-香港 4
+      - vpnpool-香港HKT 6
+      - vpnpool-香港HKT 7
+      - vpnpool-香港HKT 8
+      - 香港_Tg频道:https://t.me/bpjzx2_14
+      - "[CT/CM] HKT J"
+      - 香港_Tg频道:https://t.me/bpjzx2_22
+      - 微信tutoov_1
+      - 香港_Tg频道:https://t.me/bpjzx2_17
+      - "[CT/CM] HKT F"
       - "[v1] 香港・13"
-      - "[v1] 香港・08"
-      - "[v1] 台湾・04"
-      - "@nfeng6 香港-中继-02"
-      - "[v1] 香港・17"
-      - "[v1] 香港・19"
-      - "[v1] 日本・02"
-      - 台湾 Taiwan★
+      - "[CT/CM] HKT H"
+      - vpnpool-香港 5
+      - _中国_东方不败Cow Vagina_10
+      - _中国_东方不败Cow Vagina_31
+      - "[v1] 新加坡・04"
+      - _中国_任我行Ｃow Vagina_45
+      - 美国2_7
+      - vpnpool-香港HKT 9
+      - vpnpool-香港 6
+      - 香港_Tg频道:https://t.me/bpjzx2_3
+      - 香港_Tg频道:https://t.me/bpjzx2_11
+      - "[v1] 香港・12"
+      - vpnpool-香港HKT 10
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnpool-香港HKBN 3
       - "[v1] 香港・01"
-      - 香港 Hongkong (AZ)●
-      - 菲律宾 Philippine●
+      - "[v1] 新加坡・03"
+      - 香港_Tg频道:https://t.me/bpjzx2_12
+      - vpnpool-香港HKT 11
+      - vpnpool-香港HKT 12
+      - 德国_Tg频道:https://t.me/bpjzx2
+      - "[CT/CM] HKT G"
+      - vpnpool-香港 7
+      - 香港_Tg频道:https://t.me/bpjzx2_19
+      - vpnpool-香港HKBN 4
+      - 香港_Tg频道:https://t.me/bpjzx2_28
+      - "[v1] 香港・09"
+      - "[v1] 新加坡・05"
       - "[v1] 日本・01"
+      - vpnpool-香港 8
+      - _中国_东方不败Cow Vagina_26
+      - 韩国高速接入A
+      - 日本4_13
+      - _中国_东方不败Cow Vagina_23
+      - "[CT/CM] HKT B"
+      - _中国_东方不败Cow Vagina_15
+      - 新加坡3_16
+      - vpnpool-香港 9
+      - "[v1] 香港・07"
+      - _中国_任我行Ｃow Vagina_23
       - "[v1] 香港・04"
-      - 俄罗斯 Russia★
-      - 德国 Germany★
-      - 美国 America●
-      - 澳大利亚 Australia●
-      - 乌克兰 Ukraine★
-      - 土耳其 Turkey★
+      - "[v1] 香港・05"
+      - vpnpool-香港HKT 13
+      - _中国_东方不败Cow Vagina_30
+      - 新加坡2_15
+      - "[v1] 香港・19"
+      - _中国_东方不败Cow Vagina_29
+      - 香港_Tg频道:https://t.me/bpjzx2_29
+      - 新加坡1_14
+      - vpnpool-香港HKBN 5
+      - "[v1] 香港・03"
+      - 台湾 J
+      - vpnpool-EC2
+      - 台湾 N
+      - 台湾 I
+      - "[v1] 新加坡・01"
+      - 香港_Tg频道:https://t.me/bpjzx2_23
+      - 台湾 P
       - 香港SSR tg频道:@ripaojiedian
-      - "[v1] 美国・05"
-      - "[v1] 日本・03"
-      - 英国 England★
-      - "[v1] 香港・06"
-      - "[v1] 台湾・02"
-      - "[v1] 台湾・03"
-      - "@nfeng6 香港-中继-02 2"
-      - "[v1] 美国・03"
-      - "[v1] 美国・01"
-      - "[v1] 美国・04"
+      - "[v1] 日本・02"
+      - 香港3_4
+      - 日本 Azure B 2.5x
+      - 香港_Tg频道:https://t.me/bpjzx2_8
+      - 日本 Azure A 2.5x
+      - 俄罗斯c RT
+      - 菲律宾 Philippine●
+      - vpnpool-RU
+      - 香港 Hongkong (AZ)●
+      - vpnpool-香港 10
+      - 香港_Tg频道:https://t.me/bpjzx2_25
+      - 台湾 K
+      - 香港 Hongkong (AZ)● 2
+      - _中国_东方不败Cow Vagina_28
+      - 台湾 L
+      - 香港_Tg频道:https://t.me/bpjzx2_30
+      - _中国_东方不败Cow Vagina_7
+      - vpnpool-台湾
+      - 美国 优化 A 3.5
+      - vpnpool-US
+      - vpnpool-台湾 2
+      - 俄罗斯a RT
+      - vpnpool-RU 2
+      - 新加坡C
+      - 新加坡E
+      - vpnpool-RU-Podosinki-Melbicom
+      - vpnpool-台湾 3
+      - 新加坡D
+      - 美国_Tg频道:https://t.me/bpjzx2_11
+      - vpnpool-US 2
+      - 美国_Tg频道:https://t.me/bpjzx2_11 2
+      - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 香港_Tg频道:https://t.me/bpjzx2_1
+      - 澳大利亚 Australia●
+      - _中国_东方不败Cow Vagina_13
+      - vpnpool-US 3
+      - 美国_Tg频道:https://t.me/bpjzx2_8
+      - 美国 优化 C 3.5
+      - 美国 优化 I 3.5
+      - 美国 America●
+      - 台湾 F
+      - 香港_Tg频道:https://t.me/bpjzx2_15
+      - 美国 优化 F 3.5
+      - vpnpool-台湾 4
+      - 香港_Tg频道:https://t.me/bpjzx2_2
+      - vpnpool-US 4
+      - 美国 优化 H 3.5
+      - vpnpool-US 5
+      - 美国_Tg频道:https://t.me/bpjzx2_3
+      - 澳大利亚 Australia● 2
+      - 新加坡4_17
+      - 美国 优化 G 3.5
+      - 美国 America● 2
+      - vpnpool-US 6
+      - vpnpool-台湾 5
+      - 台湾 O
+      - 美国_Tg频道:https://t.me/bpjzx2_1
+      - 香港_Tg频道:https://t.me/bpjzx2_27
+      - "[v1] 香港・11"
+      - 台湾 C
+      - vpnpool-US 7
+      - 美国_Tg频道:https://t.me/bpjzx2_9
+      - "[v1] 香港・14"
+      - 美国_Tg频道:https://t.me/bpjzx2_9 2
+      - 香港_Tg频道:https://t.me/bpjzx2_5
+      - 厄瓜多尔_Tg频道:https://t.me/bpjzx2
+      - vpnpool-台湾 6
+      - 美国4_9
+      - 乌克兰 Ukraine★
       - 保加利亚 Bulgaria●
+      - 香港_Tg频道:https://t.me/bpjzx2_9
+      - 台湾 B
+      - 乌克兰 Ukraine★ 2
+      - 台湾 A
+      - vpnpool-CA
+      - 美国_Tg频道:https://t.me/bpjzx2_2
+      - 台湾 G
+      - vpnpool-Auburn-WestConnect
+      - "[v1] 美国・04"
+      - vpnpool-US 8
+      - vpnpool-TR-Bursa-Bursabil
+      - 加拿大
+      - 俄罗斯 Russia★
+      - 俄罗斯 Russia★ 2
+      - 美国_Tg频道:https://t.me/bpjzx2_8 2
+      - 美国_Tg频道:https://t.me/bpjzx2_10
+      - 美国 优化 D 3.5
+      - 美国_Tg频道:https://t.me/bpjzx2_10 2
+      - "[v1] 台湾・03"
+      - 美国_Tg频道:https://t.me/bpjzx2_4
+      - 土耳其 Turkey★
+      - "[v1] 新加坡・02"
+      - vpnpool-US 9
+      - _中国_东方不败Cow Vagina_6
+      - "[v1] 美国・05"
+      - _中国_东方不败Cow Vagina_14
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[v1] 香港・12"
-      - "[v1] 香港・11"
-      - "[v1] 香港・18"
-      - "[v1] 香港・07"
-      - "[v1] 香港・02"
-      - "[v1] 香港・14"
-      - "[v1] 香港・05"
-      - "[v1] 香港・09"
-      - "[v1] 香港・03"
-      - "[v1] 香港・16"
+      - vpnpool-香港HKBN
+      - 香港_Tg频道:https://t.me/bpjzx2_21
+      - 香港1_2
+      - "[CT/CM] HKT D"
+      - 香港_Tg频道:https://t.me/bpjzx2_4
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - 香港_Tg频道:https://t.me/bpjzx2_18
+      - _中国_东方不败Cow Vagina_25
+      - "[CT/CM] HKT E"
+      - _中国_东方不败Cow Vagina_12
       - "[v1] 香港・15"
+      - _中国_东方不败Cow Vagina_3
+      - "[v1] 香港・02"
+      - "[CT/CM] HKT I"
+      - vpnpool-香港HKT 3
+      - 香港_Tg频道:https://t.me/bpjzx2_26
+      - 美国1_6
+      - "[CT/CM] HKBN C"
+      - vpnpool-香港HKBN 2
+      - _中国_东方不败Cow Vagina_20
+      - _中国_东方不败Cow Vagina_17
+      - vpnpool-香港HKT 4
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT L"
+      - "[CT/CM] HKT K"
+      - "[CT/CM] HKBN B"
+      - _中国_东方不败Cow Vagina_9
+      - 香港_Tg频道:https://t.me/bpjzx2_20
+      - "[CT/CM] HKT N"
+      - "[CT/CM] HKBN D"
+      - vpnpool-香港
+      - _中国_东方不败Cow Vagina_1
+      - "[CT/CM] HKT A"
+      - 香港_Tg频道:https://t.me/bpjzx2_13
+      - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港HKT 5
+      - 香港_Tg频道:https://t.me/bpjzx2_24
+      - vpnpool-香港 4
+      - vpnpool-香港HKT 6
+      - vpnpool-香港HKT 7
+      - vpnpool-香港HKT 8
+      - 香港_Tg频道:https://t.me/bpjzx2_14
+      - "[CT/CM] HKT J"
+      - 香港_Tg频道:https://t.me/bpjzx2_22
+      - 微信tutoov_1
+      - 香港_Tg频道:https://t.me/bpjzx2_17
+      - "[CT/CM] HKT F"
       - "[v1] 香港・13"
-      - "[v1] 香港・08"
-      - "[v1] 台湾・04"
-      - "@nfeng6 香港-中继-02"
-      - "[v1] 香港・17"
-      - "[v1] 香港・19"
-      - "[v1] 日本・02"
-      - 台湾 Taiwan★
+      - "[CT/CM] HKT H"
+      - vpnpool-香港 5
+      - _中国_东方不败Cow Vagina_10
+      - _中国_东方不败Cow Vagina_31
+      - "[v1] 新加坡・04"
+      - _中国_任我行Ｃow Vagina_45
+      - 美国2_7
+      - vpnpool-香港HKT 9
+      - vpnpool-香港 6
+      - 香港_Tg频道:https://t.me/bpjzx2_3
+      - 香港_Tg频道:https://t.me/bpjzx2_11
+      - "[v1] 香港・12"
+      - vpnpool-香港HKT 10
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnpool-香港HKBN 3
       - "[v1] 香港・01"
-      - 香港 Hongkong (AZ)●
-      - 菲律宾 Philippine●
+      - "[v1] 新加坡・03"
+      - 香港_Tg频道:https://t.me/bpjzx2_12
+      - vpnpool-香港HKT 11
+      - vpnpool-香港HKT 12
+      - 德国_Tg频道:https://t.me/bpjzx2
+      - "[CT/CM] HKT G"
+      - vpnpool-香港 7
+      - 香港_Tg频道:https://t.me/bpjzx2_19
+      - vpnpool-香港HKBN 4
+      - 香港_Tg频道:https://t.me/bpjzx2_28
+      - "[v1] 香港・09"
+      - "[v1] 新加坡・05"
       - "[v1] 日本・01"
+      - vpnpool-香港 8
+      - _中国_东方不败Cow Vagina_26
+      - 韩国高速接入A
+      - 日本4_13
+      - _中国_东方不败Cow Vagina_23
+      - "[CT/CM] HKT B"
+      - _中国_东方不败Cow Vagina_15
+      - 新加坡3_16
+      - vpnpool-香港 9
+      - "[v1] 香港・07"
+      - _中国_任我行Ｃow Vagina_23
       - "[v1] 香港・04"
-      - 俄罗斯 Russia★
-      - 德国 Germany★
-      - 美国 America●
-      - 澳大利亚 Australia●
-      - 乌克兰 Ukraine★
-      - 土耳其 Turkey★
+      - "[v1] 香港・05"
+      - vpnpool-香港HKT 13
+      - _中国_东方不败Cow Vagina_30
+      - 新加坡2_15
+      - "[v1] 香港・19"
+      - _中国_东方不败Cow Vagina_29
+      - 香港_Tg频道:https://t.me/bpjzx2_29
+      - 新加坡1_14
+      - vpnpool-香港HKBN 5
+      - "[v1] 香港・03"
+      - 台湾 J
+      - vpnpool-EC2
+      - 台湾 N
+      - 台湾 I
+      - "[v1] 新加坡・01"
+      - 香港_Tg频道:https://t.me/bpjzx2_23
+      - 台湾 P
       - 香港SSR tg频道:@ripaojiedian
-      - "[v1] 美国・05"
-      - "[v1] 日本・03"
-      - 英国 England★
-      - "[v1] 香港・06"
-      - "[v1] 台湾・02"
-      - "[v1] 台湾・03"
-      - "@nfeng6 香港-中继-02 2"
-      - "[v1] 美国・03"
-      - "[v1] 美国・01"
-      - "[v1] 美国・04"
+      - "[v1] 日本・02"
+      - 香港3_4
+      - 日本 Azure B 2.5x
+      - 香港_Tg频道:https://t.me/bpjzx2_8
+      - 日本 Azure A 2.5x
+      - 俄罗斯c RT
+      - 菲律宾 Philippine●
+      - vpnpool-RU
+      - 香港 Hongkong (AZ)●
+      - vpnpool-香港 10
+      - 香港_Tg频道:https://t.me/bpjzx2_25
+      - 台湾 K
+      - 香港 Hongkong (AZ)● 2
+      - _中国_东方不败Cow Vagina_28
+      - 台湾 L
+      - 香港_Tg频道:https://t.me/bpjzx2_30
+      - _中国_东方不败Cow Vagina_7
+      - vpnpool-台湾
+      - 美国 优化 A 3.5
+      - vpnpool-US
+      - vpnpool-台湾 2
+      - 俄罗斯a RT
+      - vpnpool-RU 2
+      - 新加坡C
+      - 新加坡E
+      - vpnpool-RU-Podosinki-Melbicom
+      - vpnpool-台湾 3
+      - 新加坡D
+      - 美国_Tg频道:https://t.me/bpjzx2_11
+      - vpnpool-US 2
+      - 美国_Tg频道:https://t.me/bpjzx2_11 2
+      - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 香港_Tg频道:https://t.me/bpjzx2_1
+      - 澳大利亚 Australia●
+      - _中国_东方不败Cow Vagina_13
+      - vpnpool-US 3
+      - 美国_Tg频道:https://t.me/bpjzx2_8
+      - 美国 优化 C 3.5
+      - 美国 优化 I 3.5
+      - 美国 America●
+      - 台湾 F
+      - 香港_Tg频道:https://t.me/bpjzx2_15
+      - 美国 优化 F 3.5
+      - vpnpool-台湾 4
+      - 香港_Tg频道:https://t.me/bpjzx2_2
+      - vpnpool-US 4
+      - 美国 优化 H 3.5
+      - vpnpool-US 5
+      - 美国_Tg频道:https://t.me/bpjzx2_3
+      - 澳大利亚 Australia● 2
+      - 新加坡4_17
+      - 美国 优化 G 3.5
+      - 美国 America● 2
+      - vpnpool-US 6
+      - vpnpool-台湾 5
+      - 台湾 O
+      - 美国_Tg频道:https://t.me/bpjzx2_1
+      - 香港_Tg频道:https://t.me/bpjzx2_27
+      - "[v1] 香港・11"
+      - 台湾 C
+      - vpnpool-US 7
+      - 美国_Tg频道:https://t.me/bpjzx2_9
+      - "[v1] 香港・14"
+      - 美国_Tg频道:https://t.me/bpjzx2_9 2
+      - 香港_Tg频道:https://t.me/bpjzx2_5
+      - 厄瓜多尔_Tg频道:https://t.me/bpjzx2
+      - vpnpool-台湾 6
+      - 美国4_9
+      - 乌克兰 Ukraine★
       - 保加利亚 Bulgaria●
+      - 香港_Tg频道:https://t.me/bpjzx2_9
+      - 台湾 B
+      - 乌克兰 Ukraine★ 2
+      - 台湾 A
+      - vpnpool-CA
+      - 美国_Tg频道:https://t.me/bpjzx2_2
+      - 台湾 G
+      - vpnpool-Auburn-WestConnect
+      - "[v1] 美国・04"
+      - vpnpool-US 8
+      - vpnpool-TR-Bursa-Bursabil
+      - 加拿大
+      - 俄罗斯 Russia★
+      - 俄罗斯 Russia★ 2
+      - 美国_Tg频道:https://t.me/bpjzx2_8 2
+      - 美国_Tg频道:https://t.me/bpjzx2_10
+      - 美国 优化 D 3.5
+      - 美国_Tg频道:https://t.me/bpjzx2_10 2
+      - "[v1] 台湾・03"
+      - 美国_Tg频道:https://t.me/bpjzx2_4
+      - 土耳其 Turkey★
+      - "[v1] 新加坡・02"
+      - vpnpool-US 9
+      - _中国_东方不败Cow Vagina_6
+      - "[v1] 美国・05"
+      - _中国_东方不败Cow Vagina_14
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[v1] 香港・12"
-      - "[v1] 香港・11"
-      - "[v1] 香港・18"
-      - "[v1] 香港・07"
-      - "[v1] 香港・02"
-      - "[v1] 香港・14"
-      - "[v1] 香港・05"
-      - "[v1] 香港・09"
-      - "[v1] 香港・03"
-      - "[v1] 香港・16"
+      - vpnpool-香港HKBN
+      - 香港_Tg频道:https://t.me/bpjzx2_21
+      - 香港1_2
+      - "[CT/CM] HKT D"
+      - 香港_Tg频道:https://t.me/bpjzx2_4
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - 香港_Tg频道:https://t.me/bpjzx2_18
+      - _中国_东方不败Cow Vagina_25
+      - "[CT/CM] HKT E"
+      - _中国_东方不败Cow Vagina_12
       - "[v1] 香港・15"
+      - _中国_东方不败Cow Vagina_3
+      - "[v1] 香港・02"
+      - "[CT/CM] HKT I"
+      - vpnpool-香港HKT 3
+      - 香港_Tg频道:https://t.me/bpjzx2_26
+      - 美国1_6
+      - "[CT/CM] HKBN C"
+      - vpnpool-香港HKBN 2
+      - _中国_东方不败Cow Vagina_20
+      - _中国_东方不败Cow Vagina_17
+      - vpnpool-香港HKT 4
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT L"
+      - "[CT/CM] HKT K"
+      - "[CT/CM] HKBN B"
+      - _中国_东方不败Cow Vagina_9
+      - 香港_Tg频道:https://t.me/bpjzx2_20
+      - "[CT/CM] HKT N"
+      - "[CT/CM] HKBN D"
+      - vpnpool-香港
+      - _中国_东方不败Cow Vagina_1
+      - "[CT/CM] HKT A"
+      - 香港_Tg频道:https://t.me/bpjzx2_13
+      - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港HKT 5
+      - 香港_Tg频道:https://t.me/bpjzx2_24
+      - vpnpool-香港 4
+      - vpnpool-香港HKT 6
+      - vpnpool-香港HKT 7
+      - vpnpool-香港HKT 8
+      - 香港_Tg频道:https://t.me/bpjzx2_14
+      - "[CT/CM] HKT J"
+      - 香港_Tg频道:https://t.me/bpjzx2_22
+      - 微信tutoov_1
+      - 香港_Tg频道:https://t.me/bpjzx2_17
+      - "[CT/CM] HKT F"
       - "[v1] 香港・13"
-      - "[v1] 香港・08"
-      - "[v1] 台湾・04"
-      - "@nfeng6 香港-中继-02"
-      - "[v1] 香港・17"
-      - "[v1] 香港・19"
-      - "[v1] 日本・02"
-      - 台湾 Taiwan★
+      - "[CT/CM] HKT H"
+      - vpnpool-香港 5
+      - _中国_东方不败Cow Vagina_10
+      - _中国_东方不败Cow Vagina_31
+      - "[v1] 新加坡・04"
+      - _中国_任我行Ｃow Vagina_45
+      - 美国2_7
+      - vpnpool-香港HKT 9
+      - vpnpool-香港 6
+      - 香港_Tg频道:https://t.me/bpjzx2_3
+      - 香港_Tg频道:https://t.me/bpjzx2_11
+      - "[v1] 香港・12"
+      - vpnpool-香港HKT 10
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnpool-香港HKBN 3
       - "[v1] 香港・01"
-      - 香港 Hongkong (AZ)●
-      - 菲律宾 Philippine●
+      - "[v1] 新加坡・03"
+      - 香港_Tg频道:https://t.me/bpjzx2_12
+      - vpnpool-香港HKT 11
+      - vpnpool-香港HKT 12
+      - 德国_Tg频道:https://t.me/bpjzx2
+      - "[CT/CM] HKT G"
+      - vpnpool-香港 7
+      - 香港_Tg频道:https://t.me/bpjzx2_19
+      - vpnpool-香港HKBN 4
+      - 香港_Tg频道:https://t.me/bpjzx2_28
+      - "[v1] 香港・09"
+      - "[v1] 新加坡・05"
       - "[v1] 日本・01"
+      - vpnpool-香港 8
+      - _中国_东方不败Cow Vagina_26
+      - 韩国高速接入A
+      - 日本4_13
+      - _中国_东方不败Cow Vagina_23
+      - "[CT/CM] HKT B"
+      - _中国_东方不败Cow Vagina_15
+      - 新加坡3_16
+      - vpnpool-香港 9
+      - "[v1] 香港・07"
+      - _中国_任我行Ｃow Vagina_23
       - "[v1] 香港・04"
-      - 俄罗斯 Russia★
-      - 德国 Germany★
-      - 美国 America●
-      - 澳大利亚 Australia●
-      - 乌克兰 Ukraine★
-      - 土耳其 Turkey★
+      - "[v1] 香港・05"
+      - vpnpool-香港HKT 13
+      - _中国_东方不败Cow Vagina_30
+      - 新加坡2_15
+      - "[v1] 香港・19"
+      - _中国_东方不败Cow Vagina_29
+      - 香港_Tg频道:https://t.me/bpjzx2_29
+      - 新加坡1_14
+      - vpnpool-香港HKBN 5
+      - "[v1] 香港・03"
+      - 台湾 J
+      - vpnpool-EC2
+      - 台湾 N
+      - 台湾 I
+      - "[v1] 新加坡・01"
+      - 香港_Tg频道:https://t.me/bpjzx2_23
+      - 台湾 P
       - 香港SSR tg频道:@ripaojiedian
-      - "[v1] 美国・05"
-      - "[v1] 日本・03"
-      - 英国 England★
-      - "[v1] 香港・06"
-      - "[v1] 台湾・02"
-      - "[v1] 台湾・03"
-      - "@nfeng6 香港-中继-02 2"
-      - "[v1] 美国・03"
-      - "[v1] 美国・01"
-      - "[v1] 美国・04"
+      - "[v1] 日本・02"
+      - 香港3_4
+      - 日本 Azure B 2.5x
+      - 香港_Tg频道:https://t.me/bpjzx2_8
+      - 日本 Azure A 2.5x
+      - 俄罗斯c RT
+      - 菲律宾 Philippine●
+      - vpnpool-RU
+      - 香港 Hongkong (AZ)●
+      - vpnpool-香港 10
+      - 香港_Tg频道:https://t.me/bpjzx2_25
+      - 台湾 K
+      - 香港 Hongkong (AZ)● 2
+      - _中国_东方不败Cow Vagina_28
+      - 台湾 L
+      - 香港_Tg频道:https://t.me/bpjzx2_30
+      - _中国_东方不败Cow Vagina_7
+      - vpnpool-台湾
+      - 美国 优化 A 3.5
+      - vpnpool-US
+      - vpnpool-台湾 2
+      - 俄罗斯a RT
+      - vpnpool-RU 2
+      - 新加坡C
+      - 新加坡E
+      - vpnpool-RU-Podosinki-Melbicom
+      - vpnpool-台湾 3
+      - 新加坡D
+      - 美国_Tg频道:https://t.me/bpjzx2_11
+      - vpnpool-US 2
+      - 美国_Tg频道:https://t.me/bpjzx2_11 2
+      - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 香港_Tg频道:https://t.me/bpjzx2_1
+      - 澳大利亚 Australia●
+      - _中国_东方不败Cow Vagina_13
+      - vpnpool-US 3
+      - 美国_Tg频道:https://t.me/bpjzx2_8
+      - 美国 优化 C 3.5
+      - 美国 优化 I 3.5
+      - 美国 America●
+      - 台湾 F
+      - 香港_Tg频道:https://t.me/bpjzx2_15
+      - 美国 优化 F 3.5
+      - vpnpool-台湾 4
+      - 香港_Tg频道:https://t.me/bpjzx2_2
+      - vpnpool-US 4
+      - 美国 优化 H 3.5
+      - vpnpool-US 5
+      - 美国_Tg频道:https://t.me/bpjzx2_3
+      - 澳大利亚 Australia● 2
+      - 新加坡4_17
+      - 美国 优化 G 3.5
+      - 美国 America● 2
+      - vpnpool-US 6
+      - vpnpool-台湾 5
+      - 台湾 O
+      - 美国_Tg频道:https://t.me/bpjzx2_1
+      - 香港_Tg频道:https://t.me/bpjzx2_27
+      - "[v1] 香港・11"
+      - 台湾 C
+      - vpnpool-US 7
+      - 美国_Tg频道:https://t.me/bpjzx2_9
+      - "[v1] 香港・14"
+      - 美国_Tg频道:https://t.me/bpjzx2_9 2
+      - 香港_Tg频道:https://t.me/bpjzx2_5
+      - 厄瓜多尔_Tg频道:https://t.me/bpjzx2
+      - vpnpool-台湾 6
+      - 美国4_9
+      - 乌克兰 Ukraine★
       - 保加利亚 Bulgaria●
+      - 香港_Tg频道:https://t.me/bpjzx2_9
+      - 台湾 B
+      - 乌克兰 Ukraine★ 2
+      - 台湾 A
+      - vpnpool-CA
+      - 美国_Tg频道:https://t.me/bpjzx2_2
+      - 台湾 G
+      - vpnpool-Auburn-WestConnect
+      - "[v1] 美国・04"
+      - vpnpool-US 8
+      - vpnpool-TR-Bursa-Bursabil
+      - 加拿大
+      - 俄罗斯 Russia★
+      - 俄罗斯 Russia★ 2
+      - 美国_Tg频道:https://t.me/bpjzx2_8 2
+      - 美国_Tg频道:https://t.me/bpjzx2_10
+      - 美国 优化 D 3.5
+      - 美国_Tg频道:https://t.me/bpjzx2_10 2
+      - "[v1] 台湾・03"
+      - 美国_Tg频道:https://t.me/bpjzx2_4
+      - 土耳其 Turkey★
+      - "[v1] 新加坡・02"
+      - vpnpool-US 9
+      - _中国_东方不败Cow Vagina_6
+      - "[v1] 美国・05"
+      - _中国_东方不败Cow Vagina_14
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -438,48 +1832,212 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[v1] 香港・12"
-      - "[v1] 香港・11"
-      - "[v1] 香港・18"
-      - "[v1] 香港・07"
-      - "[v1] 香港・02"
-      - "[v1] 香港・14"
-      - "[v1] 香港・05"
-      - "[v1] 香港・09"
-      - "[v1] 香港・03"
-      - "[v1] 香港・16"
+      - vpnpool-香港HKBN
+      - 香港_Tg频道:https://t.me/bpjzx2_21
+      - 香港1_2
+      - "[CT/CM] HKT D"
+      - 香港_Tg频道:https://t.me/bpjzx2_4
+      - vpnpool-香港HKT
+      - vpnpool-香港HKT 2
+      - 香港_Tg频道:https://t.me/bpjzx2_18
+      - _中国_东方不败Cow Vagina_25
+      - "[CT/CM] HKT E"
+      - _中国_东方不败Cow Vagina_12
       - "[v1] 香港・15"
+      - _中国_东方不败Cow Vagina_3
+      - "[v1] 香港・02"
+      - "[CT/CM] HKT I"
+      - vpnpool-香港HKT 3
+      - 香港_Tg频道:https://t.me/bpjzx2_26
+      - 美国1_6
+      - "[CT/CM] HKBN C"
+      - vpnpool-香港HKBN 2
+      - _中国_东方不败Cow Vagina_20
+      - _中国_东方不败Cow Vagina_17
+      - vpnpool-香港HKT 4
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT L"
+      - "[CT/CM] HKT K"
+      - "[CT/CM] HKBN B"
+      - _中国_东方不败Cow Vagina_9
+      - 香港_Tg频道:https://t.me/bpjzx2_20
+      - "[CT/CM] HKT N"
+      - "[CT/CM] HKBN D"
+      - vpnpool-香港
+      - _中国_东方不败Cow Vagina_1
+      - "[CT/CM] HKT A"
+      - 香港_Tg频道:https://t.me/bpjzx2_13
+      - vpnpool-香港 2
+      - vpnpool-香港 3
+      - vpnpool-香港HKT 5
+      - 香港_Tg频道:https://t.me/bpjzx2_24
+      - vpnpool-香港 4
+      - vpnpool-香港HKT 6
+      - vpnpool-香港HKT 7
+      - vpnpool-香港HKT 8
+      - 香港_Tg频道:https://t.me/bpjzx2_14
+      - "[CT/CM] HKT J"
+      - 香港_Tg频道:https://t.me/bpjzx2_22
+      - 微信tutoov_1
+      - 香港_Tg频道:https://t.me/bpjzx2_17
+      - "[CT/CM] HKT F"
       - "[v1] 香港・13"
-      - "[v1] 香港・08"
-      - "[v1] 台湾・04"
-      - "@nfeng6 香港-中继-02"
-      - "[v1] 香港・17"
-      - "[v1] 香港・19"
-      - "[v1] 日本・02"
-      - 台湾 Taiwan★
+      - "[CT/CM] HKT H"
+      - vpnpool-香港 5
+      - _中国_东方不败Cow Vagina_10
+      - _中国_东方不败Cow Vagina_31
+      - "[v1] 新加坡・04"
+      - _中国_任我行Ｃow Vagina_45
+      - 美国2_7
+      - vpnpool-香港HKT 9
+      - vpnpool-香港 6
+      - 香港_Tg频道:https://t.me/bpjzx2_3
+      - 香港_Tg频道:https://t.me/bpjzx2_11
+      - "[v1] 香港・12"
+      - vpnpool-香港HKT 10
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnpool-香港HKBN 3
       - "[v1] 香港・01"
-      - 香港 Hongkong (AZ)●
-      - 菲律宾 Philippine●
+      - "[v1] 新加坡・03"
+      - 香港_Tg频道:https://t.me/bpjzx2_12
+      - vpnpool-香港HKT 11
+      - vpnpool-香港HKT 12
+      - 德国_Tg频道:https://t.me/bpjzx2
+      - "[CT/CM] HKT G"
+      - vpnpool-香港 7
+      - 香港_Tg频道:https://t.me/bpjzx2_19
+      - vpnpool-香港HKBN 4
+      - 香港_Tg频道:https://t.me/bpjzx2_28
+      - "[v1] 香港・09"
+      - "[v1] 新加坡・05"
       - "[v1] 日本・01"
+      - vpnpool-香港 8
+      - _中国_东方不败Cow Vagina_26
+      - 韩国高速接入A
+      - 日本4_13
+      - _中国_东方不败Cow Vagina_23
+      - "[CT/CM] HKT B"
+      - _中国_东方不败Cow Vagina_15
+      - 新加坡3_16
+      - vpnpool-香港 9
+      - "[v1] 香港・07"
+      - _中国_任我行Ｃow Vagina_23
       - "[v1] 香港・04"
-      - 俄罗斯 Russia★
-      - 德国 Germany★
-      - 美国 America●
-      - 澳大利亚 Australia●
-      - 乌克兰 Ukraine★
-      - 土耳其 Turkey★
+      - "[v1] 香港・05"
+      - vpnpool-香港HKT 13
+      - _中国_东方不败Cow Vagina_30
+      - 新加坡2_15
+      - "[v1] 香港・19"
+      - _中国_东方不败Cow Vagina_29
+      - 香港_Tg频道:https://t.me/bpjzx2_29
+      - 新加坡1_14
+      - vpnpool-香港HKBN 5
+      - "[v1] 香港・03"
+      - 台湾 J
+      - vpnpool-EC2
+      - 台湾 N
+      - 台湾 I
+      - "[v1] 新加坡・01"
+      - 香港_Tg频道:https://t.me/bpjzx2_23
+      - 台湾 P
       - 香港SSR tg频道:@ripaojiedian
-      - "[v1] 美国・05"
-      - "[v1] 日本・03"
-      - 英国 England★
-      - "[v1] 香港・06"
-      - "[v1] 台湾・02"
-      - "[v1] 台湾・03"
-      - "@nfeng6 香港-中继-02 2"
-      - "[v1] 美国・03"
-      - "[v1] 美国・01"
-      - "[v1] 美国・04"
+      - "[v1] 日本・02"
+      - 香港3_4
+      - 日本 Azure B 2.5x
+      - 香港_Tg频道:https://t.me/bpjzx2_8
+      - 日本 Azure A 2.5x
+      - 俄罗斯c RT
+      - 菲律宾 Philippine●
+      - vpnpool-RU
+      - 香港 Hongkong (AZ)●
+      - vpnpool-香港 10
+      - 香港_Tg频道:https://t.me/bpjzx2_25
+      - 台湾 K
+      - 香港 Hongkong (AZ)● 2
+      - _中国_东方不败Cow Vagina_28
+      - 台湾 L
+      - 香港_Tg频道:https://t.me/bpjzx2_30
+      - _中国_东方不败Cow Vagina_7
+      - vpnpool-台湾
+      - 美国 优化 A 3.5
+      - vpnpool-US
+      - vpnpool-台湾 2
+      - 俄罗斯a RT
+      - vpnpool-RU 2
+      - 新加坡C
+      - 新加坡E
+      - vpnpool-RU-Podosinki-Melbicom
+      - vpnpool-台湾 3
+      - 新加坡D
+      - 美国_Tg频道:https://t.me/bpjzx2_11
+      - vpnpool-US 2
+      - 美国_Tg频道:https://t.me/bpjzx2_11 2
+      - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 香港_Tg频道:https://t.me/bpjzx2_1
+      - 澳大利亚 Australia●
+      - _中国_东方不败Cow Vagina_13
+      - vpnpool-US 3
+      - 美国_Tg频道:https://t.me/bpjzx2_8
+      - 美国 优化 C 3.5
+      - 美国 优化 I 3.5
+      - 美国 America●
+      - 台湾 F
+      - 香港_Tg频道:https://t.me/bpjzx2_15
+      - 美国 优化 F 3.5
+      - vpnpool-台湾 4
+      - 香港_Tg频道:https://t.me/bpjzx2_2
+      - vpnpool-US 4
+      - 美国 优化 H 3.5
+      - vpnpool-US 5
+      - 美国_Tg频道:https://t.me/bpjzx2_3
+      - 澳大利亚 Australia● 2
+      - 新加坡4_17
+      - 美国 优化 G 3.5
+      - 美国 America● 2
+      - vpnpool-US 6
+      - vpnpool-台湾 5
+      - 台湾 O
+      - 美国_Tg频道:https://t.me/bpjzx2_1
+      - 香港_Tg频道:https://t.me/bpjzx2_27
+      - "[v1] 香港・11"
+      - 台湾 C
+      - vpnpool-US 7
+      - 美国_Tg频道:https://t.me/bpjzx2_9
+      - "[v1] 香港・14"
+      - 美国_Tg频道:https://t.me/bpjzx2_9 2
+      - 香港_Tg频道:https://t.me/bpjzx2_5
+      - 厄瓜多尔_Tg频道:https://t.me/bpjzx2
+      - vpnpool-台湾 6
+      - 美国4_9
+      - 乌克兰 Ukraine★
       - 保加利亚 Bulgaria●
+      - 香港_Tg频道:https://t.me/bpjzx2_9
+      - 台湾 B
+      - 乌克兰 Ukraine★ 2
+      - 台湾 A
+      - vpnpool-CA
+      - 美国_Tg频道:https://t.me/bpjzx2_2
+      - 台湾 G
+      - vpnpool-Auburn-WestConnect
+      - "[v1] 美国・04"
+      - vpnpool-US 8
+      - vpnpool-TR-Bursa-Bursabil
+      - 加拿大
+      - 俄罗斯 Russia★
+      - 俄罗斯 Russia★ 2
+      - 美国_Tg频道:https://t.me/bpjzx2_8 2
+      - 美国_Tg频道:https://t.me/bpjzx2_10
+      - 美国 优化 D 3.5
+      - 美国_Tg频道:https://t.me/bpjzx2_10 2
+      - "[v1] 台湾・03"
+      - 美国_Tg频道:https://t.me/bpjzx2_4
+      - 土耳其 Turkey★
+      - "[v1] 新加坡・02"
+      - vpnpool-US 9
+      - _中国_东方不败Cow Vagina_6
+      - "[v1] 美国・05"
+      - _中国_东方不败Cow Vagina_14
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
