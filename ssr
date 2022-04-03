@@ -5,271 +5,551 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[CT/CM] HKT D", server: shonlinecu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN C", server: cmrelayhk.dnsflix.com, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
   - {name: "[CT/CM] HKT K", server: shonlinesandcu03.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT A", server: shonlinecu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT L", server: shonlinesandcu03.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT J", server: cmrelayhk.dnsflix.com, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnhat-Novosibirsk-Baxet-nf, server: 183.232.56.163, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-Tokyo-DMIT-nf, server: 183.232.56.163, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-SG-Nerocloud-nf, server: 183.232.56.163, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-SG-Nerocloud-nf 2, server: 183.232.56.163, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-Nerocloud-nf, server: 183.232.29.152, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-LAX-DMIT-nf, server: 183.232.29.152, port: 11805, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港_Tg频道:https://t.me/bpjzx2_7, server: 223.166.21.33, port: 30004, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港HKT-nf, server: 183.232.56.163, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-Chuncheon-Oracle-nf, server: 183.232.56.163, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-LAX-DMIT-nf 2, server: 183.232.29.152, port: 35247, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-SG-Nerocloud-nf 3, server: 183.232.56.163, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州-新加坡 NeroCloud丨全解锁丨A3, server: gzydddns.xyz, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
+  - {name: vpnhat-台中Hinet-dip, server: 183.232.56.163, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Santa Clara-Tencent-nf, server: 183.232.29.152, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州-新加坡 NeroCloud丨全解锁丨A1, server: gzydddns.xyz, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
+  - {name: vpnhat-香港Nerocloud-dip, server: 183.232.56.163, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州-新加坡 NeroCloud丨全解锁丨A2, server: gzydddns.xyz, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
+  - {name: vpnpool-London-Misaka-dip, server: 183.232.29.152, port: 11005, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[CT/CM] HKT E", server: cncusouth.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-Novosibirsk-Baxet-nf, server: 183.232.29.152, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-DMIT-nf, server: 183.232.29.152, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 韩国高速接入A, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnhat-Santa Clara-Tencent-nf, server: 183.232.56.163, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[CT/CM] HKBN B", server: shonlinesandcu02.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnhat-LAX-DMIT-nf, server: 183.232.56.163, port: 35247, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-London-GTHost-nf, server: 183.232.56.163, port: 11005, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
   - {name: "[CT/CM] HKBN A", server: shonlinesandcu02.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
   - {name: "[CT/CM] HKT G", server: cusouthcmhk.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT N", server: shcris02stand.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT E", server: cncusouth.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN D", server: shcris02stand.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 香港 Hongkong (AZ)●, server: gz1.52168.xyz, port: 1114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 韩国高速接入A, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 菲律宾 Philippine●, server: gz1.52168.xyz, port: 1101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: "[CT/CM] HKT B", server: cncusouth.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT F", server: cusouthcmhk.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 台湾 J, server: shallaz2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 台湾 L, server: shallaz2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 台湾 O, server: shallaz2.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 台湾 N, server: shallaz2.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 台湾 I, server: shallaz2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 美国 优化 D 3.5, server: usastandard.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 美国 优化 C 3.5, server: usastandard.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-SG-Nerocloud-nf 2, server: 183.232.29.152, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT-dip, server: 183.232.29.152, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
   - {name: 美国 优化 A 3.5, server: usastandard.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 美国 优化 B 3.5, server: usastandard.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 台湾 B, server: cstwrelay.onlineto.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 日本 Azure B 2.5x, server: shallaz.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 香港SSR tg频道:@ripaojiedian, server: gz1.52168.xyz, port: 1114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
   - {name: 美国 优化 E 3.5, server: usastandard.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 美国 优化 B 3.5, server: usastandard.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 日本 Azure B 2.5x, server: shallaz.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
   - {name: 台湾 G, server: cstwrelay.onlineto.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN B", server: shonlinesandcu02.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 广州-韩国|tg频道:@ripaojiedian, server: gzydddns.xyz, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
-  - {name: 美国 优化 G 3.5, server: usastandard2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 美国 优化 H 3.5, server: usastandard2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 美国 优化 I 3.5, server: usastandard2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 美国 优化 F 3.5, server: usastandard2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 澳大利亚 Australia●, server: gz1.52168.xyz, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 新加坡C, server: shallaz.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 俄罗斯a RT, server: relaypro.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 新加坡D, server: shallaz.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 新加坡E, server: shallaz.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_487, server: gz1.52168.xyz, port: 1109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 台湾 K, server: shallaz2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 台湾 C, server: cstwrelay.onlineto.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 台湾 A, server: cstwrelay.onlineto.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
   - {name: 日本 Azure A 2.5x, server: shallaz.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 台湾 F, server: cstwrelay.onlineto.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇦UA_489, server: gz2.52168.xyz, port: 2110, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 加拿大, server: relaypro.procncon.xyz, port: 615, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT H", server: shonlinecu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: Relay_🇨🇳CN-🇩🇪DE_493, server: gz1.52168.xyz, port: 1102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 美国 优化 D 3.5, server: usastandard.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 台湾 A, server: cstwrelay.onlineto.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 台湾 B, server: cstwrelay.onlineto.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnhat-香港HKT-dip, server: 183.232.56.163, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[CT/CM] HKT L", server: shonlinesandcu03.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-Tokyo-M247, server: 101.230.149.20, port: 49048, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-SG-Tencent-nf, server: 183.232.56.163, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Chuncheon-Oracle-nf, server: 183.232.29.152, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 广州-日本 DMIT丨全解锁丨A2, server: gzydddns.xyz, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
+  - {name: 广州-香港 HKG丨全解锁丨A1, server: gzydddns.xyz, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
+  - {name: 广州-台湾 HiNet丨全解锁丨A1, server: gzydddns.xyz, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
+  - {name: vpnpool-SG-Contabo, server: 101.230.149.20, port: 30908, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-Contabo 2, server: 101.230.149.20, port: 30819, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡 G, server: mmwagakr.ggboynextdoor.best, port: 49047, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: vpnpool-SG-Contabo 3, server: 101.230.149.20, port: 49047, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-云林Hinet, server: 101.230.149.20, port: 50202, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-Contabo 4, server: 101.230.149.20, port: 37995, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-云林Hinet 2, server: 101.230.149.20, port: 49044, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Kuala Lumpur-Tmnet, server: 101.230.149.20, port: 65116, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 韩国 C, server: mmwagauk.ggboynextdoor.best, port: 49050, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 广州-台湾 HiNet丨全解锁丨A1 2, server: gzydddns.xyz, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
+  - {name: vpnpool-彰化Hinet, server: 101.230.149.20, port: 38995, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡E, server: shallaz.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 新加坡C, server: shallaz.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 新加坡D, server: shallaz.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-Seoul+Choopa, server: 101.230.149.20, port: 23401, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 台湾 E, server: cnctfstohkt11.ggboynextdoor.best, port: 32000, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: vpnpool-云林Hinet 3, server: 101.230.149.20, port: 21309, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡 E, server: bgptovn2.ggboynextdoor.best, port: 30819, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 广州-美国 DMIT丨全解锁丨A2, server: gzydddns.xyz, port: 35247, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
+  - {name: 广州-新加坡 Tencent丨全解锁丨A1, server: gzydddns.xyz, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
+  - {name: vpnpool-香港HKT-nf, server: 183.232.29.152, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Nerocloud-dip, server: 183.232.29.152, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 澳大利亚_69, server: 45.77.48.44, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D, udp: true}
+  - {name: 广州-英国 Misaka丨全解锁丨A1, server: gzydddns.xyz, port: 11005, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
+  - {name: 俄罗斯 B, server: mmwagahk.ggboynextdoor.best, port: 49049, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: vpnhat-LAX-DMIT-nf 2, server: 183.232.56.163, port: 11805, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 俄罗斯 A, server: cnru.ggboynextdoor.best, port: 49045, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 广州-韩国|tg频道:@ripaojiedian, server: gzydddns.xyz, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
+  - {name: "香港(中国)🚀[极速稳定&解锁流媒体]①", server: 154.9.204.30, port: 50000, type: ssr, cipher: dummy, password: server_ipv6, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 广州-美国 Tencent丨全解锁丨A1, server: gzydddns.xyz, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
+  - {name: 韩国 B, server: kriplcnat.ggboynextdoor.best, port: 23401, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 德国 A, server: cnde.ggboynextdoor.best, port: 65050, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: vpnpool-香港HKT, server: 101.230.149.20, port: 42510, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: EXTM3U-香港HKT, server: 223.166.21.33, port: 30002, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-DMIT-nf 2, server: 183.232.29.152, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国 B, server: cnshcn1-1toushe.ggboynextdoor.best, port: 30910, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: vpnpool-香港HKT 2, server: 101.230.149.20, port: 42510, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港 C, server: cnctfstohkt44.ggboynextdoor.best, port: 33000, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: EXTM3U-香港HKT 2, server: 223.166.21.33, port: 30003, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港 A, server: shcn2tohkt66.ggboynextdoor.best, port: 49041, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: EXTM3U-香港HKT 3, server: 223.166.21.33, port: 49042, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 45.77.48.44:8099-SSR-1798072000, server: 45.77.48.44, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D, udp: true}
+  - {name: 广州-俄罗斯 LLC BAXET丨半解锁丨A1, server: gzydddns.xyz, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
+  - {name: 香港 G, server: bgphktvds.ggboynextdoor.best, port: 20411, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: EXTM3U-香港HKT 4, server: 223.166.21.33, port: 20411, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 土耳其 A, server: cnis.ggboynextdoor.best, port: 65110, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: EXTM3U-香港HKT 5, server: 223.166.21.33, port: 33000, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: EXTM3U-香港HKT 6, server: 223.166.21.33, port: 49041, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT 3, server: 101.230.149.20, port: 34000, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: EXTM3U-香港HKT 7, server: 223.166.21.33, port: 34000, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US-Philadelphia-HON, server: 101.230.149.20, port: 30909, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
   - {name: 友情分享, server: 103.172.116.7, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: 土耳其 Turkey★, server: gz2.52168.xyz, port: 2104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 俄罗斯c RT, server: relaypro.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 新加坡02, server: zz05.mcddns02.com, port: 18502, type: ssr, cipher: chacha20-ietf, password: GYAzB9, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 20071:HeKshuSElOWJmoXu, obfs-param: b813b20071.microsoft.com, udp: true}
-  - {name: 日本2| tg频道:@ripaojiedian, server: gzydddns.xyz, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
-  - {name: 土耳其 Turkey★ 2, server: gz2.52168.xyz, port: 2104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 美国 America●, server: gz1.52168.xyz, port: 1109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 美国 America● 2, server: gz1.52168.xyz, port: 1109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 香港 Hongkong (AZ)● 2, server: gz1.52168.xyz, port: 1114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 澳大利亚 Australia● 2, server: gz1.52168.xyz, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 乌克兰 Ukraine★, server: gz2.52168.xyz, port: 2110, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: EXTM3U-香港HKT 8, server: 223.166.21.33, port: 35000, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Moscow-Melbicom, server: 101.230.149.20, port: 49049, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港 D, server: cnctfstohkt55.ggboynextdoor.best, port: 34000, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: vpnpool-Moscow-Melbicom 2, server: 101.230.149.20, port: 49045, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Moscow-Melbicom 3, server: 101.230.149.20, port: 49051, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: EXTM3U-香港HKT 9, server: 223.166.21.33, port: 42510, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Bangkok-Metrabyte, server: 101.230.149.20, port: 65111, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-Nerocloud-nf 3, server: 183.232.29.152, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-Contabo 5, server: 101.230.149.20, port: 49046, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT 4, server: 101.230.149.20, port: 30004, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: t.me/vpnhat, udp: true}
+  - {name: HK1, server: iepl1.ggboynextdoor.best, port: 65115, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 美国 D, server: cnshcn1-1toushe.ggboynextdoor.best, port: 30912, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 台湾 K, server: shallaz2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 台湾 I, server: shallaz2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 美国 优化 C 3.5, server: usastandard.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 日本 E, server: cncufstoonevpsjpiij.ggboynextdoor.best, port: 30005, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 美国 优化 F 3.5, server: usastandard2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 台湾 D, server: cncmgztohkt22.ggboynextdoor.best, port: 42481, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 新加坡 F, server: bgptovn3.ggboynextdoor.best, port: 30820, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 美国 优化 G 3.5, server: usastandard2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 美国 优化 I 3.5, server: usastandard2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: "[CT/CM] HKBN D", server: shcris02stand.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 台湾 H, server: bgphk.ggboynextdoor.best, port: 21309, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 美国 优化 H 3.5, server: usastandard2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 台湾 B 2, server: cncmgztotwkvm.ggboynextdoor.best, port: 38995, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 新加坡 A, server: cnshcn2-1totcsgp.ggboynextdoor.best, port: 30908, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 台湾 F, server: shcn2tohkt3.ggboynextdoor.best, port: 49044, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 台湾 A 2, server: sqbgptohkt3totwkvm.ggboynextdoor.best, port: 50202, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 泰国 A, server: cntai.ggboynextdoor.best, port: 65111, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: 台湾 N, server: shallaz2.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: ^🇰🇷韩国KR 2667 *hi-moon.pw, server: gzydddns.xyz, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
+  - {name: 广州-美国 Tencent丨全解锁丨A1 2, server: gzydddns.xyz, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 12703:Lmyki3J6NeM, obfs-param: a446412703.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKBN C"
       - "[CT/CM] HKT K"
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT L"
-      - "[CT/CM] HKT J"
+      - vpnhat-Novosibirsk-Baxet-nf
+      - vpnhat-Tokyo-DMIT-nf
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-LAX-DMIT-nf
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnhat-香港HKT-nf
+      - vpnhat-Chuncheon-Oracle-nf
+      - vpnpool-LAX-DMIT-nf 2
+      - vpnhat-SG-Nerocloud-nf 3
+      - 广州-新加坡 NeroCloud丨全解锁丨A3
+      - vpnhat-台中Hinet-dip
+      - vpnpool-Santa Clara-Tencent-nf
+      - 广州-新加坡 NeroCloud丨全解锁丨A1
+      - vpnhat-香港Nerocloud-dip
+      - 广州-新加坡 NeroCloud丨全解锁丨A2
+      - vpnpool-London-Misaka-dip
+      - "[CT/CM] HKT E"
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-Tokyo-DMIT-nf
+      - 韩国高速接入A
+      - vpnhat-Santa Clara-Tencent-nf
+      - "[CT/CM] HKBN B"
+      - vpnhat-LAX-DMIT-nf
+      - vpnhat-London-GTHost-nf
       - "[CT/CM] HKBN A"
       - "[CT/CM] HKT G"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKBN D"
-      - 香港 Hongkong (AZ)●
-      - 韩国高速接入A
-      - 菲律宾 Philippine●
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT F"
-      - 台湾 J
-      - 台湾 L
-      - 台湾 O
-      - 台湾 N
-      - 台湾 I
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-香港HKT-dip
       - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 台湾 B
-      - 日本 Azure B 2.5x
-      - 香港SSR tg频道:@ripaojiedian
       - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 日本 Azure B 2.5x
       - 台湾 G
-      - "[CT/CM] HKBN B"
-      - 广州-韩国|tg频道:@ripaojiedian
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 澳大利亚 Australia●
-      - 新加坡C
-      - 俄罗斯a RT
-      - 新加坡D
-      - 新加坡E
-      - Relay_🇨🇳CN-🇺🇸US_487
-      - 台湾 K
-      - 台湾 C
-      - 台湾 A
       - 日本 Azure A 2.5x
-      - 台湾 F
-      - Relay_🇨🇳CN-🇺🇦UA_489
-      - 加拿大
-      - "[CT/CM] HKT H"
-      - Relay_🇨🇳CN-🇩🇪DE_493
+      - 美国 优化 D 3.5
+      - 台湾 A
+      - 台湾 B
+      - vpnhat-香港HKT-dip
+      - "[CT/CM] HKT L"
+      - vpnpool-Tokyo-M247
+      - vpnhat-SG-Tencent-nf
+      - vpnpool-Chuncheon-Oracle-nf
+      - 广州-日本 DMIT丨全解锁丨A2
+      - 广州-香港 HKG丨全解锁丨A1
+      - 广州-台湾 HiNet丨全解锁丨A1
+      - vpnpool-SG-Contabo
+      - vpnpool-SG-Contabo 2
+      - 新加坡 G
+      - vpnpool-SG-Contabo 3
+      - vpnpool-云林Hinet
+      - vpnpool-SG-Contabo 4
+      - vpnpool-云林Hinet 2
+      - vpnpool-Kuala Lumpur-Tmnet
+      - 韩国 C
+      - 广州-台湾 HiNet丨全解锁丨A1 2
+      - vpnpool-彰化Hinet
+      - 新加坡E
+      - 新加坡C
+      - 新加坡D
+      - vpnpool-Seoul+Choopa
+      - 台湾 E
+      - vpnpool-云林Hinet 3
+      - 新加坡 E
+      - 广州-美国 DMIT丨全解锁丨A2
+      - 广州-新加坡 Tencent丨全解锁丨A1
+      - vpnpool-香港HKT-nf
+      - vpnpool-香港Nerocloud-dip
+      - 澳大利亚_69
+      - 广州-英国 Misaka丨全解锁丨A1
+      - 俄罗斯 B
+      - vpnhat-LAX-DMIT-nf 2
+      - 俄罗斯 A
+      - 广州-韩国|tg频道:@ripaojiedian
+      - 香港(中国)🚀[极速稳定&解锁流媒体]①
+      - 广州-美国 Tencent丨全解锁丨A1
+      - 韩国 B
+      - 德国 A
+      - vpnpool-香港HKT
+      - EXTM3U-香港HKT
+      - vpnpool-Tokyo-DMIT-nf 2
+      - 美国 B
+      - vpnpool-香港HKT 2
+      - 香港 C
+      - EXTM3U-香港HKT 2
+      - 香港 A
+      - EXTM3U-香港HKT 3
+      - 45.77.48.44:8099-SSR-1798072000
+      - 广州-俄罗斯 LLC BAXET丨半解锁丨A1
+      - 香港 G
+      - EXTM3U-香港HKT 4
+      - 土耳其 A
+      - EXTM3U-香港HKT 5
+      - EXTM3U-香港HKT 6
+      - vpnpool-香港HKT 3
+      - EXTM3U-香港HKT 7
+      - vpnpool-US-Philadelphia-HON
       - 友情分享
-      - 土耳其 Turkey★
-      - 俄罗斯c RT
-      - 新加坡02
-      - 日本2| tg频道:@ripaojiedian
-      - 土耳其 Turkey★ 2
-      - 美国 America●
-      - 美国 America● 2
-      - 香港 Hongkong (AZ)● 2
-      - 澳大利亚 Australia● 2
-      - 乌克兰 Ukraine★
+      - EXTM3U-香港HKT 8
+      - vpnpool-Moscow-Melbicom
+      - 香港 D
+      - vpnpool-Moscow-Melbicom 2
+      - vpnpool-Moscow-Melbicom 3
+      - EXTM3U-香港HKT 9
+      - vpnpool-Bangkok-Metrabyte
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnpool-SG-Contabo 5
+      - vpnpool-香港HKT 4
+      - HK1
+      - 美国 D
+      - 台湾 K
+      - 台湾 I
+      - 美国 优化 C 3.5
+      - 日本 E
+      - 美国 优化 F 3.5
+      - 台湾 D
+      - 新加坡 F
+      - 美国 优化 G 3.5
+      - 美国 优化 I 3.5
+      - "[CT/CM] HKBN D"
+      - 台湾 H
+      - 美国 优化 H 3.5
+      - 台湾 B 2
+      - 新加坡 A
+      - 台湾 F
+      - 台湾 A 2
+      - 泰国 A
+      - 台湾 N
+      - ^🇰🇷韩国KR 2667 *hi-moon.pw
+      - 广州-美国 Tencent丨全解锁丨A1 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKBN C"
       - "[CT/CM] HKT K"
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT L"
-      - "[CT/CM] HKT J"
+      - vpnhat-Novosibirsk-Baxet-nf
+      - vpnhat-Tokyo-DMIT-nf
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-LAX-DMIT-nf
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnhat-香港HKT-nf
+      - vpnhat-Chuncheon-Oracle-nf
+      - vpnpool-LAX-DMIT-nf 2
+      - vpnhat-SG-Nerocloud-nf 3
+      - 广州-新加坡 NeroCloud丨全解锁丨A3
+      - vpnhat-台中Hinet-dip
+      - vpnpool-Santa Clara-Tencent-nf
+      - 广州-新加坡 NeroCloud丨全解锁丨A1
+      - vpnhat-香港Nerocloud-dip
+      - 广州-新加坡 NeroCloud丨全解锁丨A2
+      - vpnpool-London-Misaka-dip
+      - "[CT/CM] HKT E"
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-Tokyo-DMIT-nf
+      - 韩国高速接入A
+      - vpnhat-Santa Clara-Tencent-nf
+      - "[CT/CM] HKBN B"
+      - vpnhat-LAX-DMIT-nf
+      - vpnhat-London-GTHost-nf
       - "[CT/CM] HKBN A"
       - "[CT/CM] HKT G"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKBN D"
-      - 香港 Hongkong (AZ)●
-      - 韩国高速接入A
-      - 菲律宾 Philippine●
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT F"
-      - 台湾 J
-      - 台湾 L
-      - 台湾 O
-      - 台湾 N
-      - 台湾 I
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-香港HKT-dip
       - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 台湾 B
-      - 日本 Azure B 2.5x
-      - 香港SSR tg频道:@ripaojiedian
       - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 日本 Azure B 2.5x
       - 台湾 G
-      - "[CT/CM] HKBN B"
-      - 广州-韩国|tg频道:@ripaojiedian
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 澳大利亚 Australia●
-      - 新加坡C
-      - 俄罗斯a RT
-      - 新加坡D
-      - 新加坡E
-      - Relay_🇨🇳CN-🇺🇸US_487
-      - 台湾 K
-      - 台湾 C
-      - 台湾 A
       - 日本 Azure A 2.5x
-      - 台湾 F
-      - Relay_🇨🇳CN-🇺🇦UA_489
-      - 加拿大
-      - "[CT/CM] HKT H"
-      - Relay_🇨🇳CN-🇩🇪DE_493
+      - 美国 优化 D 3.5
+      - 台湾 A
+      - 台湾 B
+      - vpnhat-香港HKT-dip
+      - "[CT/CM] HKT L"
+      - vpnpool-Tokyo-M247
+      - vpnhat-SG-Tencent-nf
+      - vpnpool-Chuncheon-Oracle-nf
+      - 广州-日本 DMIT丨全解锁丨A2
+      - 广州-香港 HKG丨全解锁丨A1
+      - 广州-台湾 HiNet丨全解锁丨A1
+      - vpnpool-SG-Contabo
+      - vpnpool-SG-Contabo 2
+      - 新加坡 G
+      - vpnpool-SG-Contabo 3
+      - vpnpool-云林Hinet
+      - vpnpool-SG-Contabo 4
+      - vpnpool-云林Hinet 2
+      - vpnpool-Kuala Lumpur-Tmnet
+      - 韩国 C
+      - 广州-台湾 HiNet丨全解锁丨A1 2
+      - vpnpool-彰化Hinet
+      - 新加坡E
+      - 新加坡C
+      - 新加坡D
+      - vpnpool-Seoul+Choopa
+      - 台湾 E
+      - vpnpool-云林Hinet 3
+      - 新加坡 E
+      - 广州-美国 DMIT丨全解锁丨A2
+      - 广州-新加坡 Tencent丨全解锁丨A1
+      - vpnpool-香港HKT-nf
+      - vpnpool-香港Nerocloud-dip
+      - 澳大利亚_69
+      - 广州-英国 Misaka丨全解锁丨A1
+      - 俄罗斯 B
+      - vpnhat-LAX-DMIT-nf 2
+      - 俄罗斯 A
+      - 广州-韩国|tg频道:@ripaojiedian
+      - 香港(中国)🚀[极速稳定&解锁流媒体]①
+      - 广州-美国 Tencent丨全解锁丨A1
+      - 韩国 B
+      - 德国 A
+      - vpnpool-香港HKT
+      - EXTM3U-香港HKT
+      - vpnpool-Tokyo-DMIT-nf 2
+      - 美国 B
+      - vpnpool-香港HKT 2
+      - 香港 C
+      - EXTM3U-香港HKT 2
+      - 香港 A
+      - EXTM3U-香港HKT 3
+      - 45.77.48.44:8099-SSR-1798072000
+      - 广州-俄罗斯 LLC BAXET丨半解锁丨A1
+      - 香港 G
+      - EXTM3U-香港HKT 4
+      - 土耳其 A
+      - EXTM3U-香港HKT 5
+      - EXTM3U-香港HKT 6
+      - vpnpool-香港HKT 3
+      - EXTM3U-香港HKT 7
+      - vpnpool-US-Philadelphia-HON
       - 友情分享
-      - 土耳其 Turkey★
-      - 俄罗斯c RT
-      - 新加坡02
-      - 日本2| tg频道:@ripaojiedian
-      - 土耳其 Turkey★ 2
-      - 美国 America●
-      - 美国 America● 2
-      - 香港 Hongkong (AZ)● 2
-      - 澳大利亚 Australia● 2
-      - 乌克兰 Ukraine★
+      - EXTM3U-香港HKT 8
+      - vpnpool-Moscow-Melbicom
+      - 香港 D
+      - vpnpool-Moscow-Melbicom 2
+      - vpnpool-Moscow-Melbicom 3
+      - EXTM3U-香港HKT 9
+      - vpnpool-Bangkok-Metrabyte
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnpool-SG-Contabo 5
+      - vpnpool-香港HKT 4
+      - HK1
+      - 美国 D
+      - 台湾 K
+      - 台湾 I
+      - 美国 优化 C 3.5
+      - 日本 E
+      - 美国 优化 F 3.5
+      - 台湾 D
+      - 新加坡 F
+      - 美国 优化 G 3.5
+      - 美国 优化 I 3.5
+      - "[CT/CM] HKBN D"
+      - 台湾 H
+      - 美国 优化 H 3.5
+      - 台湾 B 2
+      - 新加坡 A
+      - 台湾 F
+      - 台湾 A 2
+      - 泰国 A
+      - 台湾 N
+      - ^🇰🇷韩国KR 2667 *hi-moon.pw
+      - 广州-美国 Tencent丨全解锁丨A1 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKBN C"
       - "[CT/CM] HKT K"
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT L"
-      - "[CT/CM] HKT J"
+      - vpnhat-Novosibirsk-Baxet-nf
+      - vpnhat-Tokyo-DMIT-nf
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-LAX-DMIT-nf
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnhat-香港HKT-nf
+      - vpnhat-Chuncheon-Oracle-nf
+      - vpnpool-LAX-DMIT-nf 2
+      - vpnhat-SG-Nerocloud-nf 3
+      - 广州-新加坡 NeroCloud丨全解锁丨A3
+      - vpnhat-台中Hinet-dip
+      - vpnpool-Santa Clara-Tencent-nf
+      - 广州-新加坡 NeroCloud丨全解锁丨A1
+      - vpnhat-香港Nerocloud-dip
+      - 广州-新加坡 NeroCloud丨全解锁丨A2
+      - vpnpool-London-Misaka-dip
+      - "[CT/CM] HKT E"
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-Tokyo-DMIT-nf
+      - 韩国高速接入A
+      - vpnhat-Santa Clara-Tencent-nf
+      - "[CT/CM] HKBN B"
+      - vpnhat-LAX-DMIT-nf
+      - vpnhat-London-GTHost-nf
       - "[CT/CM] HKBN A"
       - "[CT/CM] HKT G"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKBN D"
-      - 香港 Hongkong (AZ)●
-      - 韩国高速接入A
-      - 菲律宾 Philippine●
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT F"
-      - 台湾 J
-      - 台湾 L
-      - 台湾 O
-      - 台湾 N
-      - 台湾 I
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-香港HKT-dip
       - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 台湾 B
-      - 日本 Azure B 2.5x
-      - 香港SSR tg频道:@ripaojiedian
       - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 日本 Azure B 2.5x
       - 台湾 G
-      - "[CT/CM] HKBN B"
-      - 广州-韩国|tg频道:@ripaojiedian
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 澳大利亚 Australia●
-      - 新加坡C
-      - 俄罗斯a RT
-      - 新加坡D
-      - 新加坡E
-      - Relay_🇨🇳CN-🇺🇸US_487
-      - 台湾 K
-      - 台湾 C
-      - 台湾 A
       - 日本 Azure A 2.5x
-      - 台湾 F
-      - Relay_🇨🇳CN-🇺🇦UA_489
-      - 加拿大
-      - "[CT/CM] HKT H"
-      - Relay_🇨🇳CN-🇩🇪DE_493
+      - 美国 优化 D 3.5
+      - 台湾 A
+      - 台湾 B
+      - vpnhat-香港HKT-dip
+      - "[CT/CM] HKT L"
+      - vpnpool-Tokyo-M247
+      - vpnhat-SG-Tencent-nf
+      - vpnpool-Chuncheon-Oracle-nf
+      - 广州-日本 DMIT丨全解锁丨A2
+      - 广州-香港 HKG丨全解锁丨A1
+      - 广州-台湾 HiNet丨全解锁丨A1
+      - vpnpool-SG-Contabo
+      - vpnpool-SG-Contabo 2
+      - 新加坡 G
+      - vpnpool-SG-Contabo 3
+      - vpnpool-云林Hinet
+      - vpnpool-SG-Contabo 4
+      - vpnpool-云林Hinet 2
+      - vpnpool-Kuala Lumpur-Tmnet
+      - 韩国 C
+      - 广州-台湾 HiNet丨全解锁丨A1 2
+      - vpnpool-彰化Hinet
+      - 新加坡E
+      - 新加坡C
+      - 新加坡D
+      - vpnpool-Seoul+Choopa
+      - 台湾 E
+      - vpnpool-云林Hinet 3
+      - 新加坡 E
+      - 广州-美国 DMIT丨全解锁丨A2
+      - 广州-新加坡 Tencent丨全解锁丨A1
+      - vpnpool-香港HKT-nf
+      - vpnpool-香港Nerocloud-dip
+      - 澳大利亚_69
+      - 广州-英国 Misaka丨全解锁丨A1
+      - 俄罗斯 B
+      - vpnhat-LAX-DMIT-nf 2
+      - 俄罗斯 A
+      - 广州-韩国|tg频道:@ripaojiedian
+      - 香港(中国)🚀[极速稳定&解锁流媒体]①
+      - 广州-美国 Tencent丨全解锁丨A1
+      - 韩国 B
+      - 德国 A
+      - vpnpool-香港HKT
+      - EXTM3U-香港HKT
+      - vpnpool-Tokyo-DMIT-nf 2
+      - 美国 B
+      - vpnpool-香港HKT 2
+      - 香港 C
+      - EXTM3U-香港HKT 2
+      - 香港 A
+      - EXTM3U-香港HKT 3
+      - 45.77.48.44:8099-SSR-1798072000
+      - 广州-俄罗斯 LLC BAXET丨半解锁丨A1
+      - 香港 G
+      - EXTM3U-香港HKT 4
+      - 土耳其 A
+      - EXTM3U-香港HKT 5
+      - EXTM3U-香港HKT 6
+      - vpnpool-香港HKT 3
+      - EXTM3U-香港HKT 7
+      - vpnpool-US-Philadelphia-HON
       - 友情分享
-      - 土耳其 Turkey★
-      - 俄罗斯c RT
-      - 新加坡02
-      - 日本2| tg频道:@ripaojiedian
-      - 土耳其 Turkey★ 2
-      - 美国 America●
-      - 美国 America● 2
-      - 香港 Hongkong (AZ)● 2
-      - 澳大利亚 Australia● 2
-      - 乌克兰 Ukraine★
+      - EXTM3U-香港HKT 8
+      - vpnpool-Moscow-Melbicom
+      - 香港 D
+      - vpnpool-Moscow-Melbicom 2
+      - vpnpool-Moscow-Melbicom 3
+      - EXTM3U-香港HKT 9
+      - vpnpool-Bangkok-Metrabyte
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnpool-SG-Contabo 5
+      - vpnpool-香港HKT 4
+      - HK1
+      - 美国 D
+      - 台湾 K
+      - 台湾 I
+      - 美国 优化 C 3.5
+      - 日本 E
+      - 美国 优化 F 3.5
+      - 台湾 D
+      - 新加坡 F
+      - 美国 优化 G 3.5
+      - 美国 优化 I 3.5
+      - "[CT/CM] HKBN D"
+      - 台湾 H
+      - 美国 优化 H 3.5
+      - 台湾 B 2
+      - 新加坡 A
+      - 台湾 F
+      - 台湾 A 2
+      - 泰国 A
+      - 台湾 N
+      - ^🇰🇷韩国KR 2667 *hi-moon.pw
+      - 广州-美国 Tencent丨全解锁丨A1 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -288,304 +568,604 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKBN C"
       - "[CT/CM] HKT K"
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT L"
-      - "[CT/CM] HKT J"
+      - vpnhat-Novosibirsk-Baxet-nf
+      - vpnhat-Tokyo-DMIT-nf
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-LAX-DMIT-nf
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnhat-香港HKT-nf
+      - vpnhat-Chuncheon-Oracle-nf
+      - vpnpool-LAX-DMIT-nf 2
+      - vpnhat-SG-Nerocloud-nf 3
+      - 广州-新加坡 NeroCloud丨全解锁丨A3
+      - vpnhat-台中Hinet-dip
+      - vpnpool-Santa Clara-Tencent-nf
+      - 广州-新加坡 NeroCloud丨全解锁丨A1
+      - vpnhat-香港Nerocloud-dip
+      - 广州-新加坡 NeroCloud丨全解锁丨A2
+      - vpnpool-London-Misaka-dip
+      - "[CT/CM] HKT E"
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-Tokyo-DMIT-nf
+      - 韩国高速接入A
+      - vpnhat-Santa Clara-Tencent-nf
+      - "[CT/CM] HKBN B"
+      - vpnhat-LAX-DMIT-nf
+      - vpnhat-London-GTHost-nf
       - "[CT/CM] HKBN A"
       - "[CT/CM] HKT G"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKBN D"
-      - 香港 Hongkong (AZ)●
-      - 韩国高速接入A
-      - 菲律宾 Philippine●
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT F"
-      - 台湾 J
-      - 台湾 L
-      - 台湾 O
-      - 台湾 N
-      - 台湾 I
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-香港HKT-dip
       - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 台湾 B
-      - 日本 Azure B 2.5x
-      - 香港SSR tg频道:@ripaojiedian
       - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 日本 Azure B 2.5x
       - 台湾 G
-      - "[CT/CM] HKBN B"
-      - 广州-韩国|tg频道:@ripaojiedian
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 澳大利亚 Australia●
-      - 新加坡C
-      - 俄罗斯a RT
-      - 新加坡D
-      - 新加坡E
-      - Relay_🇨🇳CN-🇺🇸US_487
-      - 台湾 K
-      - 台湾 C
-      - 台湾 A
       - 日本 Azure A 2.5x
-      - 台湾 F
-      - Relay_🇨🇳CN-🇺🇦UA_489
-      - 加拿大
-      - "[CT/CM] HKT H"
-      - Relay_🇨🇳CN-🇩🇪DE_493
+      - 美国 优化 D 3.5
+      - 台湾 A
+      - 台湾 B
+      - vpnhat-香港HKT-dip
+      - "[CT/CM] HKT L"
+      - vpnpool-Tokyo-M247
+      - vpnhat-SG-Tencent-nf
+      - vpnpool-Chuncheon-Oracle-nf
+      - 广州-日本 DMIT丨全解锁丨A2
+      - 广州-香港 HKG丨全解锁丨A1
+      - 广州-台湾 HiNet丨全解锁丨A1
+      - vpnpool-SG-Contabo
+      - vpnpool-SG-Contabo 2
+      - 新加坡 G
+      - vpnpool-SG-Contabo 3
+      - vpnpool-云林Hinet
+      - vpnpool-SG-Contabo 4
+      - vpnpool-云林Hinet 2
+      - vpnpool-Kuala Lumpur-Tmnet
+      - 韩国 C
+      - 广州-台湾 HiNet丨全解锁丨A1 2
+      - vpnpool-彰化Hinet
+      - 新加坡E
+      - 新加坡C
+      - 新加坡D
+      - vpnpool-Seoul+Choopa
+      - 台湾 E
+      - vpnpool-云林Hinet 3
+      - 新加坡 E
+      - 广州-美国 DMIT丨全解锁丨A2
+      - 广州-新加坡 Tencent丨全解锁丨A1
+      - vpnpool-香港HKT-nf
+      - vpnpool-香港Nerocloud-dip
+      - 澳大利亚_69
+      - 广州-英国 Misaka丨全解锁丨A1
+      - 俄罗斯 B
+      - vpnhat-LAX-DMIT-nf 2
+      - 俄罗斯 A
+      - 广州-韩国|tg频道:@ripaojiedian
+      - 香港(中国)🚀[极速稳定&解锁流媒体]①
+      - 广州-美国 Tencent丨全解锁丨A1
+      - 韩国 B
+      - 德国 A
+      - vpnpool-香港HKT
+      - EXTM3U-香港HKT
+      - vpnpool-Tokyo-DMIT-nf 2
+      - 美国 B
+      - vpnpool-香港HKT 2
+      - 香港 C
+      - EXTM3U-香港HKT 2
+      - 香港 A
+      - EXTM3U-香港HKT 3
+      - 45.77.48.44:8099-SSR-1798072000
+      - 广州-俄罗斯 LLC BAXET丨半解锁丨A1
+      - 香港 G
+      - EXTM3U-香港HKT 4
+      - 土耳其 A
+      - EXTM3U-香港HKT 5
+      - EXTM3U-香港HKT 6
+      - vpnpool-香港HKT 3
+      - EXTM3U-香港HKT 7
+      - vpnpool-US-Philadelphia-HON
       - 友情分享
-      - 土耳其 Turkey★
-      - 俄罗斯c RT
-      - 新加坡02
-      - 日本2| tg频道:@ripaojiedian
-      - 土耳其 Turkey★ 2
-      - 美国 America●
-      - 美国 America● 2
-      - 香港 Hongkong (AZ)● 2
-      - 澳大利亚 Australia● 2
-      - 乌克兰 Ukraine★
+      - EXTM3U-香港HKT 8
+      - vpnpool-Moscow-Melbicom
+      - 香港 D
+      - vpnpool-Moscow-Melbicom 2
+      - vpnpool-Moscow-Melbicom 3
+      - EXTM3U-香港HKT 9
+      - vpnpool-Bangkok-Metrabyte
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnpool-SG-Contabo 5
+      - vpnpool-香港HKT 4
+      - HK1
+      - 美国 D
+      - 台湾 K
+      - 台湾 I
+      - 美国 优化 C 3.5
+      - 日本 E
+      - 美国 优化 F 3.5
+      - 台湾 D
+      - 新加坡 F
+      - 美国 优化 G 3.5
+      - 美国 优化 I 3.5
+      - "[CT/CM] HKBN D"
+      - 台湾 H
+      - 美国 优化 H 3.5
+      - 台湾 B 2
+      - 新加坡 A
+      - 台湾 F
+      - 台湾 A 2
+      - 泰国 A
+      - 台湾 N
+      - ^🇰🇷韩国KR 2667 *hi-moon.pw
+      - 广州-美国 Tencent丨全解锁丨A1 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKBN C"
       - "[CT/CM] HKT K"
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT L"
-      - "[CT/CM] HKT J"
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnhat-香港HKT-nf
+      - vpnhat-台中Hinet-dip
+      - vpnhat-香港Nerocloud-dip
+      - "[CT/CM] HKT E"
+      - "[CT/CM] HKBN B"
       - "[CT/CM] HKBN A"
       - "[CT/CM] HKT G"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKBN D"
-      - 香港 Hongkong (AZ)●
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT F"
-      - 台湾 J
-      - 台湾 L
-      - 台湾 O
-      - 台湾 N
-      - 台湾 I
-      - 台湾 B
-      - 香港SSR tg频道:@ripaojiedian
+      - vpnpool-香港HKT-dip
       - 台湾 G
-      - "[CT/CM] HKBN B"
-      - 台湾 K
-      - 台湾 C
       - 台湾 A
+      - 台湾 B
+      - vpnhat-香港HKT-dip
+      - "[CT/CM] HKT L"
+      - 广州-香港 HKG丨全解锁丨A1
+      - 广州-台湾 HiNet丨全解锁丨A1
+      - 广州-台湾 HiNet丨全解锁丨A1 2
+      - vpnpool-彰化Hinet
+      - 台湾 E
+      - vpnpool-香港HKT-nf
+      - vpnpool-香港Nerocloud-dip
+      - 香港(中国)🚀[极速稳定&解锁流媒体]①
+      - vpnpool-香港HKT
+      - EXTM3U-香港HKT
+      - vpnpool-香港HKT 2
+      - 香港 C
+      - EXTM3U-香港HKT 2
+      - 香港 A
+      - EXTM3U-香港HKT 3
+      - 香港 G
+      - EXTM3U-香港HKT 4
+      - EXTM3U-香港HKT 5
+      - EXTM3U-香港HKT 6
+      - vpnpool-香港HKT 3
+      - EXTM3U-香港HKT 7
+      - EXTM3U-香港HKT 8
+      - 香港 D
+      - EXTM3U-香港HKT 9
+      - vpnpool-香港HKT 4
+      - 台湾 K
+      - 台湾 I
+      - 台湾 D
+      - "[CT/CM] HKBN D"
+      - 台湾 H
+      - 台湾 B 2
       - 台湾 F
-      - "[CT/CM] HKT H"
-      - 香港 Hongkong (AZ)● 2
+      - 台湾 A 2
+      - 台湾 N
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKBN C"
       - "[CT/CM] HKT K"
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT L"
-      - "[CT/CM] HKT J"
+      - vpnhat-Novosibirsk-Baxet-nf
+      - vpnhat-Tokyo-DMIT-nf
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-LAX-DMIT-nf
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnhat-香港HKT-nf
+      - vpnhat-Chuncheon-Oracle-nf
+      - vpnpool-LAX-DMIT-nf 2
+      - vpnhat-SG-Nerocloud-nf 3
+      - 广州-新加坡 NeroCloud丨全解锁丨A3
+      - vpnhat-台中Hinet-dip
+      - vpnpool-Santa Clara-Tencent-nf
+      - 广州-新加坡 NeroCloud丨全解锁丨A1
+      - vpnhat-香港Nerocloud-dip
+      - 广州-新加坡 NeroCloud丨全解锁丨A2
+      - vpnpool-London-Misaka-dip
+      - "[CT/CM] HKT E"
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-Tokyo-DMIT-nf
+      - 韩国高速接入A
+      - vpnhat-Santa Clara-Tencent-nf
+      - "[CT/CM] HKBN B"
+      - vpnhat-LAX-DMIT-nf
+      - vpnhat-London-GTHost-nf
       - "[CT/CM] HKBN A"
       - "[CT/CM] HKT G"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKBN D"
-      - 香港 Hongkong (AZ)●
-      - 韩国高速接入A
-      - 菲律宾 Philippine●
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT F"
-      - 台湾 J
-      - 台湾 L
-      - 台湾 O
-      - 台湾 N
-      - 台湾 I
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-香港HKT-dip
       - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 台湾 B
-      - 日本 Azure B 2.5x
-      - 香港SSR tg频道:@ripaojiedian
       - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 日本 Azure B 2.5x
       - 台湾 G
-      - "[CT/CM] HKBN B"
-      - 广州-韩国|tg频道:@ripaojiedian
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 澳大利亚 Australia●
-      - 新加坡C
-      - 俄罗斯a RT
-      - 新加坡D
-      - 新加坡E
-      - Relay_🇨🇳CN-🇺🇸US_487
-      - 台湾 K
-      - 台湾 C
-      - 台湾 A
       - 日本 Azure A 2.5x
-      - 台湾 F
-      - Relay_🇨🇳CN-🇺🇦UA_489
-      - 加拿大
-      - "[CT/CM] HKT H"
-      - Relay_🇨🇳CN-🇩🇪DE_493
+      - 美国 优化 D 3.5
+      - 台湾 A
+      - 台湾 B
+      - vpnhat-香港HKT-dip
+      - "[CT/CM] HKT L"
+      - vpnpool-Tokyo-M247
+      - vpnhat-SG-Tencent-nf
+      - vpnpool-Chuncheon-Oracle-nf
+      - 广州-日本 DMIT丨全解锁丨A2
+      - 广州-香港 HKG丨全解锁丨A1
+      - 广州-台湾 HiNet丨全解锁丨A1
+      - vpnpool-SG-Contabo
+      - vpnpool-SG-Contabo 2
+      - 新加坡 G
+      - vpnpool-SG-Contabo 3
+      - vpnpool-云林Hinet
+      - vpnpool-SG-Contabo 4
+      - vpnpool-云林Hinet 2
+      - vpnpool-Kuala Lumpur-Tmnet
+      - 韩国 C
+      - 广州-台湾 HiNet丨全解锁丨A1 2
+      - vpnpool-彰化Hinet
+      - 新加坡E
+      - 新加坡C
+      - 新加坡D
+      - vpnpool-Seoul+Choopa
+      - 台湾 E
+      - vpnpool-云林Hinet 3
+      - 新加坡 E
+      - 广州-美国 DMIT丨全解锁丨A2
+      - 广州-新加坡 Tencent丨全解锁丨A1
+      - vpnpool-香港HKT-nf
+      - vpnpool-香港Nerocloud-dip
+      - 澳大利亚_69
+      - 广州-英国 Misaka丨全解锁丨A1
+      - 俄罗斯 B
+      - vpnhat-LAX-DMIT-nf 2
+      - 俄罗斯 A
+      - 广州-韩国|tg频道:@ripaojiedian
+      - 香港(中国)🚀[极速稳定&解锁流媒体]①
+      - 广州-美国 Tencent丨全解锁丨A1
+      - 韩国 B
+      - 德国 A
+      - vpnpool-香港HKT
+      - EXTM3U-香港HKT
+      - vpnpool-Tokyo-DMIT-nf 2
+      - 美国 B
+      - vpnpool-香港HKT 2
+      - 香港 C
+      - EXTM3U-香港HKT 2
+      - 香港 A
+      - EXTM3U-香港HKT 3
+      - 45.77.48.44:8099-SSR-1798072000
+      - 广州-俄罗斯 LLC BAXET丨半解锁丨A1
+      - 香港 G
+      - EXTM3U-香港HKT 4
+      - 土耳其 A
+      - EXTM3U-香港HKT 5
+      - EXTM3U-香港HKT 6
+      - vpnpool-香港HKT 3
+      - EXTM3U-香港HKT 7
+      - vpnpool-US-Philadelphia-HON
       - 友情分享
-      - 土耳其 Turkey★
-      - 俄罗斯c RT
-      - 新加坡02
-      - 日本2| tg频道:@ripaojiedian
-      - 土耳其 Turkey★ 2
-      - 美国 America●
-      - 美国 America● 2
-      - 香港 Hongkong (AZ)● 2
-      - 澳大利亚 Australia● 2
-      - 乌克兰 Ukraine★
+      - EXTM3U-香港HKT 8
+      - vpnpool-Moscow-Melbicom
+      - 香港 D
+      - vpnpool-Moscow-Melbicom 2
+      - vpnpool-Moscow-Melbicom 3
+      - EXTM3U-香港HKT 9
+      - vpnpool-Bangkok-Metrabyte
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnpool-SG-Contabo 5
+      - vpnpool-香港HKT 4
+      - HK1
+      - 美国 D
+      - 台湾 K
+      - 台湾 I
+      - 美国 优化 C 3.5
+      - 日本 E
+      - 美国 优化 F 3.5
+      - 台湾 D
+      - 新加坡 F
+      - 美国 优化 G 3.5
+      - 美国 优化 I 3.5
+      - "[CT/CM] HKBN D"
+      - 台湾 H
+      - 美国 优化 H 3.5
+      - 台湾 B 2
+      - 新加坡 A
+      - 台湾 F
+      - 台湾 A 2
+      - 泰国 A
+      - 台湾 N
+      - ^🇰🇷韩国KR 2667 *hi-moon.pw
+      - 广州-美国 Tencent丨全解锁丨A1 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKBN C"
       - "[CT/CM] HKT K"
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT L"
-      - "[CT/CM] HKT J"
+      - vpnhat-Novosibirsk-Baxet-nf
+      - vpnhat-Tokyo-DMIT-nf
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-LAX-DMIT-nf
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnhat-香港HKT-nf
+      - vpnhat-Chuncheon-Oracle-nf
+      - vpnpool-LAX-DMIT-nf 2
+      - vpnhat-SG-Nerocloud-nf 3
+      - 广州-新加坡 NeroCloud丨全解锁丨A3
+      - vpnhat-台中Hinet-dip
+      - vpnpool-Santa Clara-Tencent-nf
+      - 广州-新加坡 NeroCloud丨全解锁丨A1
+      - vpnhat-香港Nerocloud-dip
+      - 广州-新加坡 NeroCloud丨全解锁丨A2
+      - vpnpool-London-Misaka-dip
+      - "[CT/CM] HKT E"
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-Tokyo-DMIT-nf
+      - 韩国高速接入A
+      - vpnhat-Santa Clara-Tencent-nf
+      - "[CT/CM] HKBN B"
+      - vpnhat-LAX-DMIT-nf
+      - vpnhat-London-GTHost-nf
       - "[CT/CM] HKBN A"
       - "[CT/CM] HKT G"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKBN D"
-      - 香港 Hongkong (AZ)●
-      - 韩国高速接入A
-      - 菲律宾 Philippine●
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT F"
-      - 台湾 J
-      - 台湾 L
-      - 台湾 O
-      - 台湾 N
-      - 台湾 I
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-香港HKT-dip
       - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 台湾 B
-      - 日本 Azure B 2.5x
-      - 香港SSR tg频道:@ripaojiedian
       - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 日本 Azure B 2.5x
       - 台湾 G
-      - "[CT/CM] HKBN B"
-      - 广州-韩国|tg频道:@ripaojiedian
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 澳大利亚 Australia●
-      - 新加坡C
-      - 俄罗斯a RT
-      - 新加坡D
-      - 新加坡E
-      - Relay_🇨🇳CN-🇺🇸US_487
-      - 台湾 K
-      - 台湾 C
-      - 台湾 A
       - 日本 Azure A 2.5x
-      - 台湾 F
-      - Relay_🇨🇳CN-🇺🇦UA_489
-      - 加拿大
-      - "[CT/CM] HKT H"
-      - Relay_🇨🇳CN-🇩🇪DE_493
+      - 美国 优化 D 3.5
+      - 台湾 A
+      - 台湾 B
+      - vpnhat-香港HKT-dip
+      - "[CT/CM] HKT L"
+      - vpnpool-Tokyo-M247
+      - vpnhat-SG-Tencent-nf
+      - vpnpool-Chuncheon-Oracle-nf
+      - 广州-日本 DMIT丨全解锁丨A2
+      - 广州-香港 HKG丨全解锁丨A1
+      - 广州-台湾 HiNet丨全解锁丨A1
+      - vpnpool-SG-Contabo
+      - vpnpool-SG-Contabo 2
+      - 新加坡 G
+      - vpnpool-SG-Contabo 3
+      - vpnpool-云林Hinet
+      - vpnpool-SG-Contabo 4
+      - vpnpool-云林Hinet 2
+      - vpnpool-Kuala Lumpur-Tmnet
+      - 韩国 C
+      - 广州-台湾 HiNet丨全解锁丨A1 2
+      - vpnpool-彰化Hinet
+      - 新加坡E
+      - 新加坡C
+      - 新加坡D
+      - vpnpool-Seoul+Choopa
+      - 台湾 E
+      - vpnpool-云林Hinet 3
+      - 新加坡 E
+      - 广州-美国 DMIT丨全解锁丨A2
+      - 广州-新加坡 Tencent丨全解锁丨A1
+      - vpnpool-香港HKT-nf
+      - vpnpool-香港Nerocloud-dip
+      - 澳大利亚_69
+      - 广州-英国 Misaka丨全解锁丨A1
+      - 俄罗斯 B
+      - vpnhat-LAX-DMIT-nf 2
+      - 俄罗斯 A
+      - 广州-韩国|tg频道:@ripaojiedian
+      - 香港(中国)🚀[极速稳定&解锁流媒体]①
+      - 广州-美国 Tencent丨全解锁丨A1
+      - 韩国 B
+      - 德国 A
+      - vpnpool-香港HKT
+      - EXTM3U-香港HKT
+      - vpnpool-Tokyo-DMIT-nf 2
+      - 美国 B
+      - vpnpool-香港HKT 2
+      - 香港 C
+      - EXTM3U-香港HKT 2
+      - 香港 A
+      - EXTM3U-香港HKT 3
+      - 45.77.48.44:8099-SSR-1798072000
+      - 广州-俄罗斯 LLC BAXET丨半解锁丨A1
+      - 香港 G
+      - EXTM3U-香港HKT 4
+      - 土耳其 A
+      - EXTM3U-香港HKT 5
+      - EXTM3U-香港HKT 6
+      - vpnpool-香港HKT 3
+      - EXTM3U-香港HKT 7
+      - vpnpool-US-Philadelphia-HON
       - 友情分享
-      - 土耳其 Turkey★
-      - 俄罗斯c RT
-      - 新加坡02
-      - 日本2| tg频道:@ripaojiedian
-      - 土耳其 Turkey★ 2
-      - 美国 America●
-      - 美国 America● 2
-      - 香港 Hongkong (AZ)● 2
-      - 澳大利亚 Australia● 2
-      - 乌克兰 Ukraine★
+      - EXTM3U-香港HKT 8
+      - vpnpool-Moscow-Melbicom
+      - 香港 D
+      - vpnpool-Moscow-Melbicom 2
+      - vpnpool-Moscow-Melbicom 3
+      - EXTM3U-香港HKT 9
+      - vpnpool-Bangkok-Metrabyte
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnpool-SG-Contabo 5
+      - vpnpool-香港HKT 4
+      - HK1
+      - 美国 D
+      - 台湾 K
+      - 台湾 I
+      - 美国 优化 C 3.5
+      - 日本 E
+      - 美国 优化 F 3.5
+      - 台湾 D
+      - 新加坡 F
+      - 美国 优化 G 3.5
+      - 美国 优化 I 3.5
+      - "[CT/CM] HKBN D"
+      - 台湾 H
+      - 美国 优化 H 3.5
+      - 台湾 B 2
+      - 新加坡 A
+      - 台湾 F
+      - 台湾 A 2
+      - 泰国 A
+      - 台湾 N
+      - ^🇰🇷韩国KR 2667 *hi-moon.pw
+      - 广州-美国 Tencent丨全解锁丨A1 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKBN C"
       - "[CT/CM] HKT K"
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT L"
-      - "[CT/CM] HKT J"
+      - vpnhat-Novosibirsk-Baxet-nf
+      - vpnhat-Tokyo-DMIT-nf
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-LAX-DMIT-nf
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnhat-香港HKT-nf
+      - vpnhat-Chuncheon-Oracle-nf
+      - vpnpool-LAX-DMIT-nf 2
+      - vpnhat-SG-Nerocloud-nf 3
+      - 广州-新加坡 NeroCloud丨全解锁丨A3
+      - vpnhat-台中Hinet-dip
+      - vpnpool-Santa Clara-Tencent-nf
+      - 广州-新加坡 NeroCloud丨全解锁丨A1
+      - vpnhat-香港Nerocloud-dip
+      - 广州-新加坡 NeroCloud丨全解锁丨A2
+      - vpnpool-London-Misaka-dip
+      - "[CT/CM] HKT E"
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-Tokyo-DMIT-nf
+      - 韩国高速接入A
+      - vpnhat-Santa Clara-Tencent-nf
+      - "[CT/CM] HKBN B"
+      - vpnhat-LAX-DMIT-nf
+      - vpnhat-London-GTHost-nf
       - "[CT/CM] HKBN A"
       - "[CT/CM] HKT G"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKBN D"
-      - 香港 Hongkong (AZ)●
-      - 韩国高速接入A
-      - 菲律宾 Philippine●
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT F"
-      - 台湾 J
-      - 台湾 L
-      - 台湾 O
-      - 台湾 N
-      - 台湾 I
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-香港HKT-dip
       - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 台湾 B
-      - 日本 Azure B 2.5x
-      - 香港SSR tg频道:@ripaojiedian
       - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 日本 Azure B 2.5x
       - 台湾 G
-      - "[CT/CM] HKBN B"
-      - 广州-韩国|tg频道:@ripaojiedian
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 澳大利亚 Australia●
-      - 新加坡C
-      - 俄罗斯a RT
-      - 新加坡D
-      - 新加坡E
-      - Relay_🇨🇳CN-🇺🇸US_487
-      - 台湾 K
-      - 台湾 C
-      - 台湾 A
       - 日本 Azure A 2.5x
-      - 台湾 F
-      - Relay_🇨🇳CN-🇺🇦UA_489
-      - 加拿大
-      - "[CT/CM] HKT H"
-      - Relay_🇨🇳CN-🇩🇪DE_493
+      - 美国 优化 D 3.5
+      - 台湾 A
+      - 台湾 B
+      - vpnhat-香港HKT-dip
+      - "[CT/CM] HKT L"
+      - vpnpool-Tokyo-M247
+      - vpnhat-SG-Tencent-nf
+      - vpnpool-Chuncheon-Oracle-nf
+      - 广州-日本 DMIT丨全解锁丨A2
+      - 广州-香港 HKG丨全解锁丨A1
+      - 广州-台湾 HiNet丨全解锁丨A1
+      - vpnpool-SG-Contabo
+      - vpnpool-SG-Contabo 2
+      - 新加坡 G
+      - vpnpool-SG-Contabo 3
+      - vpnpool-云林Hinet
+      - vpnpool-SG-Contabo 4
+      - vpnpool-云林Hinet 2
+      - vpnpool-Kuala Lumpur-Tmnet
+      - 韩国 C
+      - 广州-台湾 HiNet丨全解锁丨A1 2
+      - vpnpool-彰化Hinet
+      - 新加坡E
+      - 新加坡C
+      - 新加坡D
+      - vpnpool-Seoul+Choopa
+      - 台湾 E
+      - vpnpool-云林Hinet 3
+      - 新加坡 E
+      - 广州-美国 DMIT丨全解锁丨A2
+      - 广州-新加坡 Tencent丨全解锁丨A1
+      - vpnpool-香港HKT-nf
+      - vpnpool-香港Nerocloud-dip
+      - 澳大利亚_69
+      - 广州-英国 Misaka丨全解锁丨A1
+      - 俄罗斯 B
+      - vpnhat-LAX-DMIT-nf 2
+      - 俄罗斯 A
+      - 广州-韩国|tg频道:@ripaojiedian
+      - 香港(中国)🚀[极速稳定&解锁流媒体]①
+      - 广州-美国 Tencent丨全解锁丨A1
+      - 韩国 B
+      - 德国 A
+      - vpnpool-香港HKT
+      - EXTM3U-香港HKT
+      - vpnpool-Tokyo-DMIT-nf 2
+      - 美国 B
+      - vpnpool-香港HKT 2
+      - 香港 C
+      - EXTM3U-香港HKT 2
+      - 香港 A
+      - EXTM3U-香港HKT 3
+      - 45.77.48.44:8099-SSR-1798072000
+      - 广州-俄罗斯 LLC BAXET丨半解锁丨A1
+      - 香港 G
+      - EXTM3U-香港HKT 4
+      - 土耳其 A
+      - EXTM3U-香港HKT 5
+      - EXTM3U-香港HKT 6
+      - vpnpool-香港HKT 3
+      - EXTM3U-香港HKT 7
+      - vpnpool-US-Philadelphia-HON
       - 友情分享
-      - 土耳其 Turkey★
-      - 俄罗斯c RT
-      - 新加坡02
-      - 日本2| tg频道:@ripaojiedian
-      - 土耳其 Turkey★ 2
-      - 美国 America●
-      - 美国 America● 2
-      - 香港 Hongkong (AZ)● 2
-      - 澳大利亚 Australia● 2
-      - 乌克兰 Ukraine★
+      - EXTM3U-香港HKT 8
+      - vpnpool-Moscow-Melbicom
+      - 香港 D
+      - vpnpool-Moscow-Melbicom 2
+      - vpnpool-Moscow-Melbicom 3
+      - EXTM3U-香港HKT 9
+      - vpnpool-Bangkok-Metrabyte
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnpool-SG-Contabo 5
+      - vpnpool-香港HKT 4
+      - HK1
+      - 美国 D
+      - 台湾 K
+      - 台湾 I
+      - 美国 优化 C 3.5
+      - 日本 E
+      - 美国 优化 F 3.5
+      - 台湾 D
+      - 新加坡 F
+      - 美国 优化 G 3.5
+      - 美国 优化 I 3.5
+      - "[CT/CM] HKBN D"
+      - 台湾 H
+      - 美国 优化 H 3.5
+      - 台湾 B 2
+      - 新加坡 A
+      - 台湾 F
+      - 台湾 A 2
+      - 泰国 A
+      - 台湾 N
+      - ^🇰🇷韩国KR 2667 *hi-moon.pw
+      - 广州-美国 Tencent丨全解锁丨A1 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -601,68 +1181,138 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[CT/CM] HKT D"
-      - "[CT/CM] HKBN C"
       - "[CT/CM] HKT K"
-      - "[CT/CM] HKT A"
-      - "[CT/CM] HKT L"
-      - "[CT/CM] HKT J"
+      - vpnhat-Novosibirsk-Baxet-nf
+      - vpnhat-Tokyo-DMIT-nf
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-LAX-DMIT-nf
+      - 香港_Tg频道:https://t.me/bpjzx2_7
+      - vpnhat-香港HKT-nf
+      - vpnhat-Chuncheon-Oracle-nf
+      - vpnpool-LAX-DMIT-nf 2
+      - vpnhat-SG-Nerocloud-nf 3
+      - 广州-新加坡 NeroCloud丨全解锁丨A3
+      - vpnhat-台中Hinet-dip
+      - vpnpool-Santa Clara-Tencent-nf
+      - 广州-新加坡 NeroCloud丨全解锁丨A1
+      - vpnhat-香港Nerocloud-dip
+      - 广州-新加坡 NeroCloud丨全解锁丨A2
+      - vpnpool-London-Misaka-dip
+      - "[CT/CM] HKT E"
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-Tokyo-DMIT-nf
+      - 韩国高速接入A
+      - vpnhat-Santa Clara-Tencent-nf
+      - "[CT/CM] HKBN B"
+      - vpnhat-LAX-DMIT-nf
+      - vpnhat-London-GTHost-nf
       - "[CT/CM] HKBN A"
       - "[CT/CM] HKT G"
-      - "[CT/CM] HKT N"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKBN D"
-      - 香港 Hongkong (AZ)●
-      - 韩国高速接入A
-      - 菲律宾 Philippine●
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT F"
-      - 台湾 J
-      - 台湾 L
-      - 台湾 O
-      - 台湾 N
-      - 台湾 I
-      - 美国 优化 D 3.5
-      - 美国 优化 C 3.5
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-香港HKT-dip
       - 美国 优化 A 3.5
-      - 美国 优化 B 3.5
-      - 台湾 B
-      - 日本 Azure B 2.5x
-      - 香港SSR tg频道:@ripaojiedian
       - 美国 优化 E 3.5
+      - 美国 优化 B 3.5
+      - 日本 Azure B 2.5x
       - 台湾 G
-      - "[CT/CM] HKBN B"
-      - 广州-韩国|tg频道:@ripaojiedian
-      - 美国 优化 G 3.5
-      - 美国 优化 H 3.5
-      - 美国 优化 I 3.5
-      - 美国 优化 F 3.5
-      - 澳大利亚 Australia●
-      - 新加坡C
-      - 俄罗斯a RT
-      - 新加坡D
-      - 新加坡E
-      - Relay_🇨🇳CN-🇺🇸US_487
-      - 台湾 K
-      - 台湾 C
-      - 台湾 A
       - 日本 Azure A 2.5x
-      - 台湾 F
-      - Relay_🇨🇳CN-🇺🇦UA_489
-      - 加拿大
-      - "[CT/CM] HKT H"
-      - Relay_🇨🇳CN-🇩🇪DE_493
+      - 美国 优化 D 3.5
+      - 台湾 A
+      - 台湾 B
+      - vpnhat-香港HKT-dip
+      - "[CT/CM] HKT L"
+      - vpnpool-Tokyo-M247
+      - vpnhat-SG-Tencent-nf
+      - vpnpool-Chuncheon-Oracle-nf
+      - 广州-日本 DMIT丨全解锁丨A2
+      - 广州-香港 HKG丨全解锁丨A1
+      - 广州-台湾 HiNet丨全解锁丨A1
+      - vpnpool-SG-Contabo
+      - vpnpool-SG-Contabo 2
+      - 新加坡 G
+      - vpnpool-SG-Contabo 3
+      - vpnpool-云林Hinet
+      - vpnpool-SG-Contabo 4
+      - vpnpool-云林Hinet 2
+      - vpnpool-Kuala Lumpur-Tmnet
+      - 韩国 C
+      - 广州-台湾 HiNet丨全解锁丨A1 2
+      - vpnpool-彰化Hinet
+      - 新加坡E
+      - 新加坡C
+      - 新加坡D
+      - vpnpool-Seoul+Choopa
+      - 台湾 E
+      - vpnpool-云林Hinet 3
+      - 新加坡 E
+      - 广州-美国 DMIT丨全解锁丨A2
+      - 广州-新加坡 Tencent丨全解锁丨A1
+      - vpnpool-香港HKT-nf
+      - vpnpool-香港Nerocloud-dip
+      - 澳大利亚_69
+      - 广州-英国 Misaka丨全解锁丨A1
+      - 俄罗斯 B
+      - vpnhat-LAX-DMIT-nf 2
+      - 俄罗斯 A
+      - 广州-韩国|tg频道:@ripaojiedian
+      - 香港(中国)🚀[极速稳定&解锁流媒体]①
+      - 广州-美国 Tencent丨全解锁丨A1
+      - 韩国 B
+      - 德国 A
+      - vpnpool-香港HKT
+      - EXTM3U-香港HKT
+      - vpnpool-Tokyo-DMIT-nf 2
+      - 美国 B
+      - vpnpool-香港HKT 2
+      - 香港 C
+      - EXTM3U-香港HKT 2
+      - 香港 A
+      - EXTM3U-香港HKT 3
+      - 45.77.48.44:8099-SSR-1798072000
+      - 广州-俄罗斯 LLC BAXET丨半解锁丨A1
+      - 香港 G
+      - EXTM3U-香港HKT 4
+      - 土耳其 A
+      - EXTM3U-香港HKT 5
+      - EXTM3U-香港HKT 6
+      - vpnpool-香港HKT 3
+      - EXTM3U-香港HKT 7
+      - vpnpool-US-Philadelphia-HON
       - 友情分享
-      - 土耳其 Turkey★
-      - 俄罗斯c RT
-      - 新加坡02
-      - 日本2| tg频道:@ripaojiedian
-      - 土耳其 Turkey★ 2
-      - 美国 America●
-      - 美国 America● 2
-      - 香港 Hongkong (AZ)● 2
-      - 澳大利亚 Australia● 2
-      - 乌克兰 Ukraine★
+      - EXTM3U-香港HKT 8
+      - vpnpool-Moscow-Melbicom
+      - 香港 D
+      - vpnpool-Moscow-Melbicom 2
+      - vpnpool-Moscow-Melbicom 3
+      - EXTM3U-香港HKT 9
+      - vpnpool-Bangkok-Metrabyte
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnpool-SG-Contabo 5
+      - vpnpool-香港HKT 4
+      - HK1
+      - 美国 D
+      - 台湾 K
+      - 台湾 I
+      - 美国 优化 C 3.5
+      - 日本 E
+      - 美国 优化 F 3.5
+      - 台湾 D
+      - 新加坡 F
+      - 美国 优化 G 3.5
+      - 美国 优化 I 3.5
+      - "[CT/CM] HKBN D"
+      - 台湾 H
+      - 美国 优化 H 3.5
+      - 台湾 B 2
+      - 新加坡 A
+      - 台湾 F
+      - 台湾 A 2
+      - 泰国 A
+      - 台湾 N
+      - ^🇰🇷韩国KR 2667 *hi-moon.pw
+      - 广州-美国 Tencent丨全解锁丨A1 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
