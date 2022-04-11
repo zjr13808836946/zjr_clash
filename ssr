@@ -5,423 +5,899 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[CT/CM] HKT K", server: shonlinesandcu03.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
   - {name: "[CT/CM] HKT L", server: shonlinesandcu03.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN A", server: shonlinesandcu02.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnhat-香港HKT, server: 183.236.60.145, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
   - {name: "[CT/CM] HKBN B", server: shonlinesandcu02.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT E", server: cncusouth.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 韩国高速接入A, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 日本 Azure A 2.5x, server: shallaz.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN D", server: shcris02stand.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 日本 Azure B 2.5x, server: shallaz.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 美国 优化 E 3.5, server: usastandard.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 美国 优化 A 3.5, server: usastandard.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 美国 优化 F 3.5, server: usastandard2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 美国 优化 D 3.5, server: usastandard.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnhat-香港, server: 120.236.180.12, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港 2, server: 120.236.180.12, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港 3, server: 120.236.180.12, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港HKT 2, server: 183.236.60.153, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港HKT 3, server: 183.236.60.136, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港 4, server: 120.232.190.30, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[CT/CM] HKT K", server: shonlinesandcu03.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnhat-香港HKT 4, server: 183.236.60.182, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港 5, server: 183.236.60.134, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港HKBN, server: 183.236.60.153, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港HKBN 2, server: 183.236.60.153, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 深圳电信-台湾, server: 119.147.20.248, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Chuncheon-Oracle, server: 116.163.31.19, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 深圳电信-台湾 2, server: 119.147.20.248, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-KR, server: 116.163.31.19, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT, server: 223.166.21.184, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港HKT, server: 1.65.176.94, port: 443, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG, server: 116.163.31.19, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG 2, server: 116.163.31.19, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 深圳电信-台湾 3, server: 119.147.20.248, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港HKBN 3, server: 120.232.190.30, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 深圳电信-台湾 4, server: 119.147.20.248, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港HKT 5, server: 183.236.60.136, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 深圳电信-台湾 5, server: 119.147.20.248, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
   - {name: 台湾 G, server: cstwrelay.onlineto.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: "[CT/CM] HKBN D", server: shcris02stand.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnhat-香港HKT 6, server: 183.236.60.182, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "[CT/CM] HKBN A", server: shonlinesandcu02.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: "[CT/CM] HKT E", server: cncusouth.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnhat-香港HKT 7, server: 183.236.60.136, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国 优化 A 3.5, server: usastandard.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 美国 优化 B 3.5, server: usastandard.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 韩国高速接入A, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
   - {name: 美国 优化 I 3.5, server: usastandard2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 美国 优化 G 3.5, server: usastandard2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 103.172.116.8:9019, server: 103.172.116.8, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: 上海CN2丨日本丨解锁流媒体丨A1, server: ddns.defucloud.xyz, port: 41982, type: ssr, cipher: chacha20-ietf, password: uHfpkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 705:areyFR, obfs-param: ae510705.microsoft.com, udp: true}
-  - {name: 广州丨美国北加州丨解锁流媒体丨A2, server: adns.defucloud.xyz, port: 30988, type: ssr, cipher: chacha20-ietf, password: uHfpkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 705:areyFR, obfs-param: ae510705.microsoft.com, udp: true}
+  - {name: vpnpool-US, server: 112.64.105.119, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US 2, server: 223.166.145.206, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
   - {name: 美国 优化 C 3.5, server: usastandard.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: _AU_澳大利亚_1245, server: 185.167.116.250, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: 103.172.116.9:9037, server: 103.172.116.9, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: 103.172.116.8:9032, server: 103.172.116.8, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
   - {name: 美国 优化 H 3.5, server: usastandard2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: 广州丨日本EC2丨解锁流媒体丨A1, server: adns.defucloud.xyz, port: 30904, type: ssr, cipher: chacha20-ietf, password: uHfpkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 705:areyFR, obfs-param: ae510705.microsoft.com, udp: true}
-  - {name: 广州丨美国北加州丨解锁流媒体丨A1, server: adns.defucloud.xyz, port: 30987, type: ssr, cipher: chacha20-ietf, password: uHfpkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 705:areyFR, obfs-param: ae510705.microsoft.com, udp: true}
-  - {name: 103.172.116.8:9041, server: 103.172.116.8, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: _AU_澳大利亚_1279, server: 185.167.116.252, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: 广州丨日本丨解锁流媒体丨A1, server: adns.defucloud.xyz, port: 31986, type: ssr, cipher: chacha20-ietf, password: uHfpkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 705:areyFR, obfs-param: ae510705.microsoft.com, udp: true}
-  - {name: _AU_澳大利亚_1215, server: 185.167.116.250, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: 上海CN2丨香港EC2丨解锁流媒体丨A1, server: ddns.defucloud.xyz, port: 43020, type: ssr, cipher: chacha20-ietf, password: uHfpkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 705:areyFR, obfs-param: ae510705.microsoft.com, udp: true}
-  - {name: 紧急线路 站点故障时优先恢复, server: zxl.defucloud.xyz, port: 23018, type: ssr, cipher: chacha20-ietf, password: uHfpkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 705:areyFR, obfs-param: ae510705.microsoft.com, udp: true}
-  - {name: _AU_澳大利亚_1221, server: 185.167.116.250, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: 103.172.116.8:9093, server: 103.172.116.8, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: _AU_澳大利亚_1235, server: 185.167.116.250, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: 上海CN2丨俄罗斯丨解锁流媒体丨A2, server: ddns.defucloud.xyz, port: 33013, type: ssr, cipher: chacha20-ietf, password: uHfpkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 705:areyFR, obfs-param: ae510705.microsoft.com, udp: true}
-  - {name: 103.172.116.8:9011, server: 103.172.116.8, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: _AU_澳大利亚_1230, server: 185.167.116.250, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: _AU_澳大利亚_1334, server: 185.167.116.253, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: _AU_澳大利亚_1285, server: 185.167.116.252, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: 103.172.116.8:9008, server: 103.172.116.8, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 103.172.116.8:9079, server: 103.172.116.8, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: _AU_澳大利亚_1277, server: 185.167.116.252, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: _AU_澳大利亚_1276, server: 185.167.116.252, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: _AU_澳大利亚_1224, server: 185.167.116.250, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: _AU_澳大利亚_1342, server: 185.167.116.253, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: 广州丨新加坡丨解锁流媒体丨A1, server: adns.defucloud.xyz, port: 30891, type: ssr, cipher: chacha20-ietf, password: uHfpkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 705:areyFR, obfs-param: ae510705.microsoft.com, udp: true}
-  - {name: 103.172.116.8:9097, server: 103.172.116.8, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: _PL_波兰_1735, server: 217.30.10.65, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: _PL_波兰_1817, server: 217.30.10.67, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: _PL_波兰_1840, server: 217.30.10.68, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: _AU_澳大利亚_1228, server: 185.167.116.250, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: _PL_波兰_1725, server: 217.30.10.65, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: _DE_德国_895, server: 5.183.179.166, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: _PL_波兰_1856, server: 217.30.10.68, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: _PL_波兰_1805, server: 217.30.10.67, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: _PL_波兰_1839, server: 217.30.10.68, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: _AU_澳大利亚_1225, server: 185.167.116.250, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: _CH_瑞士_2256, server: 185.126.116.117, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: _PL_波兰_1809, server: 217.30.10.67, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: _PL_波兰_1827, server: 217.30.10.67, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: _PL_波兰_1837, server: 217.30.10.68, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: _AU_澳大利亚_1247, server: 185.167.116.250, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: _PL_波兰_1810, server: 217.30.10.67, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: _AU_澳大利亚_1241, server: 185.167.116.250, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: _PL_波兰_1778, server: 217.30.10.66, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: _DE_德国_670, server: 5.183.179.140, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: _PL_波兰_1846, server: 217.30.10.68, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: _PL_波兰_1863, server: 217.30.10.68, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: _PL_波兰_1864, server: 217.30.10.68, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: _AU_澳大利亚_1337, server: 185.167.116.253, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: _PL_波兰_1847, server: 217.30.10.68, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: vpnpool-US 3, server: 112.64.105.119, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 日本 Azure B 2.5x, server: shallaz.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-US 4, server: 223.166.145.206, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US 5, server: 112.64.105.119, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-US 6, server: 223.166.145.206, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国 优化 E 3.5, server: usastandard.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 日本 Azure A 2.5x, server: shallaz.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-US 7, server: 223.166.145.206, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国 优化 F 3.5, server: usastandard2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnhat-香港HKT 8, server: 183.236.60.178, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国 优化 G 3.5, server: usastandard2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 稳定④关注公众号：ios黑科技_17, server: 45.142.157.69, port: 40002, type: ssr, cipher: dummy, password: sealplus001, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: ajax.microsoft.com, udp: true}
+  - {name: vpnpool-香港HKT 2, server: 223.167.159.98, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡C, server: shallaz.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: 新加坡E, server: shallaz.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
   - {name: 新加坡D, server: shallaz.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
-  - {name: _DE_德国_659, server: 5.183.179.140, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: _PL_波兰_1709, server: 217.30.10.65, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: _PL_波兰_1830, server: 217.30.10.68, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: _PL_波兰_1832, server: 217.30.10.68, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: _CH_瑞士_2270, server: 185.126.116.117, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: _AU_澳大利亚_1308, server: 185.167.116.253, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: _PL_波兰_1739, server: 217.30.10.66, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: _PL_波兰_1833, server: 217.30.10.68, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: _PL_波兰_1850, server: 217.30.10.68, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_62, server: 213.183.51.171, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: _DE_德国_976, server: 5.183.179.170, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: _PL_波兰_1706, server: 217.30.10.65, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: _PL_波兰_1736, server: 217.30.10.65, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: _PL_波兰_1779, server: 217.30.10.66, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: _PL_波兰_1852, server: 217.30.10.68, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: _AU_澳大利亚_1236, server: 185.167.116.250, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: _AU_澳大利亚_1286, server: 185.167.116.252, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: _PL_波兰_1750, server: 217.30.10.66, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: _PL_波兰_1757, server: 217.30.10.66, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: _PL_波兰_1860, server: 217.30.10.68, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: _CH_瑞士_2281, server: 185.126.116.124, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: _DE_德国_938, server: 5.183.179.167, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: _PL_波兰_1756, server: 217.30.10.66, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: vpnpool-US 8, server: 223.166.21.37, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: EXTM3U-RU, server: 117.50.31.208, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_68, server: 213.183.51.171, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: vpnpool-US 9, server: 223.166.21.37, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 深圳电信-台湾 6, server: 119.147.20.248, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _DE_德国_665, server: 5.183.179.140, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: 英国_Tg频道:https://t.me/bpjzx2_203, server: 152.89.210.84, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_53, server: 213.183.51.171, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: vpnpool-JP, server: 116.163.31.19, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_63, server: 213.183.51.171, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_89, server: 213.183.51.171, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: _DE_德国_911, server: 5.183.179.167, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_48, server: 213.183.51.171, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: _DE_德国_647, server: 5.183.179.140, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_46, server: 213.183.51.171, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: _DE_德国_666, server: 5.183.179.140, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: _DE_德国_687, server: 5.183.179.141, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: _DE_德国_644, server: 5.183.179.140, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: EXTM3U-RU 2, server: 117.50.31.208, port: 544, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_75, server: 213.183.51.171, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_65, server: 213.183.51.171, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_47, server: 213.183.51.171, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_61, server: 213.183.51.171, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
   - {name: 英国_Tg频道:https://t.me/bpjzx2_195, server: 152.89.210.84, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: _AU_澳大利亚_1312, server: 185.167.116.253, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: _AU_澳大利亚_1231, server: 185.167.116.250, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: _PL_波兰_1702, server: 217.30.10.65, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: EXTM3U-RU-Podosinki-Melbicom, server: 117.50.31.208, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_80, server: 213.183.51.171, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: _DE_德国_982, server: 5.183.179.170, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_87, server: 213.183.51.171, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: _PL_波兰_1824, server: 217.30.10.67, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_88, server: 213.183.51.171, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_82, server: 213.183.51.171, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_59, server: 213.183.51.171, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_137, server: 213.183.51.172, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: 英国_Tg频道:https://t.me/bpjzx2_220, server: 152.89.210.84, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: EXTM3U-TR-Bursa-Bursabil, server: 117.50.31.208, port: 620, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_57, server: 213.183.51.171, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: 英国_Tg频道:https://t.me/bpjzx2_204, server: 152.89.210.84, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_157, server: 213.183.51.172, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: _PL_波兰_1866, server: 217.30.10.68, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_153, server: 213.183.51.172, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: 英国_Tg频道:https://t.me/bpjzx2_225, server: 152.89.210.84, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: _DE_德国_968, server: 5.183.179.170, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: _DE_德国_954, server: 5.183.179.170, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: _DE_德国_638, server: 5.183.179.140, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_73, server: 213.183.51.171, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_174, server: 213.183.51.172, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: _PL_波兰_1818, server: 217.30.10.67, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: _PL_波兰_1699, server: 217.30.10.65, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: _PL_波兰_1801, server: 217.30.10.67, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_71, server: 213.183.51.171, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: _PL_波兰_1784, server: 217.30.10.67, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: _PL_波兰_1809, server: 217.30.10.67, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: _PL_波兰_1852, server: 217.30.10.68, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: 英国_Tg频道:https://t.me/bpjzx2_192, server: 152.89.210.84, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_141, server: 213.183.51.172, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_50, server: 213.183.51.171, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: _PL_波兰_1737, server: 217.30.10.65, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: _PL_波兰_1735, server: 217.30.10.65, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_85, server: 213.183.51.171, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_72, server: 213.183.51.171, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_165, server: 213.183.51.172, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: _PL_波兰_1820, server: 217.30.10.67, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_139, server: 213.183.51.172, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_55, server: 213.183.51.171, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: _PL_波兰_1743, server: 217.30.10.66, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: _PL_波兰_1791, server: 217.30.10.67, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: _PL_波兰_1799, server: 217.30.10.67, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: _DE_德国_646, server: 5.183.179.140, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: _PL_波兰_1806, server: 217.30.10.67, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: _PL_波兰_1787, server: 217.30.10.67, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: _PL_波兰_1815, server: 217.30.10.67, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: _PL_波兰_1693, server: 217.30.10.65, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_173, server: 213.183.51.172, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: _PL_波兰_1810, server: 217.30.10.67, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: _PL_波兰_1835, server: 217.30.10.68, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: _PL_波兰_1870, server: 217.30.10.68, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: _PL_波兰_1836, server: 217.30.10.68, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: _PL_波兰_1751, server: 217.30.10.66, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: _PL_波兰_1753, server: 217.30.10.66, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: _PL_波兰_1778, server: 217.30.10.66, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: _PL_波兰_1771, server: 217.30.10.66, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: _PL_波兰_1854, server: 217.30.10.68, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: _PL_波兰_1807, server: 217.30.10.67, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: 英国_Tg频道:https://t.me/bpjzx2_191, server: 152.89.210.84, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: _PL_波兰_1790, server: 217.30.10.67, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: _PL_波兰_1739, server: 217.30.10.66, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: _PL_波兰_1796, server: 217.30.10.67, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: _PL_波兰_1678, server: 217.30.10.64, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: _PL_波兰_1785, server: 217.30.10.67, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: _PL_波兰_1822, server: 217.30.10.67, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: _PL_波兰_1768, server: 217.30.10.66, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: _PL_波兰_1839, server: 217.30.10.68, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: _PL_波兰_1742, server: 217.30.10.66, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: _PL_波兰_1755, server: 217.30.10.66, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: _PL_波兰_1729, server: 217.30.10.65, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: _PL_波兰_1827, server: 217.30.10.67, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: _PL_波兰_1714, server: 217.30.10.65, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: _PL_波兰_1741, server: 217.30.10.66, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: _PL_波兰_1794, server: 217.30.10.67, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: _PL_波兰_1833, server: 217.30.10.68, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: _AU_澳大利亚_1335, server: 185.167.116.253, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: _PL_波兰_1757, server: 217.30.10.66, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: _DE_德国_983, server: 5.183.179.170, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_176, server: 213.183.51.172, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_51, server: 213.183.51.171, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: _PL_波兰_1860, server: 217.30.10.68, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: _AU_澳大利亚_1317, server: 185.167.116.253, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: _AU_澳大利亚_1313, server: 185.167.116.253, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: _AU_澳大利亚_1310, server: 185.167.116.253, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: _PL_波兰_1837, server: 217.30.10.68, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: _AU_澳大利亚_1334, server: 185.167.116.253, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: _AU_澳大利亚_1330, server: 185.167.116.253, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: _AU_澳大利亚_1309, server: 185.167.116.253, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: _AU_澳大利亚_1277, server: 185.167.116.252, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: _PL_波兰_1740, server: 217.30.10.66, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: _PL_波兰_1701, server: 217.30.10.65, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: _PL_波兰_1795, server: 217.30.10.67, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: _PL_波兰_1803, server: 217.30.10.67, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_84, server: 213.183.51.171, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_60, server: 213.183.51.171, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: _AU_澳大利亚_1333, server: 185.167.116.253, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: _PL_波兰_1733, server: 217.30.10.65, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: _PL_波兰_1706, server: 217.30.10.65, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: _PL_波兰_1817, server: 217.30.10.67, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: _PL_波兰_1825, server: 217.30.10.67, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: _PL_波兰_1847, server: 217.30.10.68, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: _AU_澳大利亚_1264, server: 185.167.116.252, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: _AU_澳大利亚_1340, server: 185.167.116.253, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: _PL_波兰_1773, server: 217.30.10.66, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_76, server: 213.183.51.171, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: _AU_澳大利亚_1301, server: 185.167.116.253, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: _PL_波兰_1717, server: 217.30.10.65, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: _PL_波兰_1830, server: 217.30.10.68, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: _AU_澳大利亚_1280, server: 185.167.116.252, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: _PL_波兰_1676, server: 217.30.10.64, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: _PL_波兰_1772, server: 217.30.10.66, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: _PL_波兰_1748, server: 217.30.10.66, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: _PL_波兰_1703, server: 217.30.10.65, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: _PL_波兰_1680, server: 217.30.10.64, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: _PL_波兰_1769, server: 217.30.10.66, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_77, server: 213.183.51.171, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_49, server: 213.183.51.171, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: _PL_波兰_1668, server: 217.30.10.64, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: _PL_波兰_1684, server: 217.30.10.64, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_83, server: 213.183.51.171, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: _PL_波兰_1805, server: 217.30.10.67, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: _PL_波兰_1850, server: 217.30.10.68, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: _PL_波兰_1718, server: 217.30.10.65, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: _PL_波兰_1722, server: 217.30.10.65, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: _PL_波兰_1732, server: 217.30.10.65, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: _AU_澳大利亚_1305, server: 185.167.116.253, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: _AU_澳大利亚_1332, server: 185.167.116.253, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: _PL_波兰_1840, server: 217.30.10.68, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: _PL_波兰_1654, server: 217.30.10.64, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: _PL_波兰_1774, server: 217.30.10.66, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: _PL_波兰_1846, server: 217.30.10.68, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: _AU_澳大利亚_1320, server: 185.167.116.253, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: 荷兰_Tg频道:https://t.me/bpjzx2_67, server: 213.183.51.171, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: _PL_波兰_1727, server: 217.30.10.65, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: vpnpool-US 10, server: 112.64.105.119, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国 优化 D 3.5, server: usastandard.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34787:junchiji, obfs-param: "", udp: true}
+  - {name: vpnpool-US 11, server: 112.64.105.119, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 47403:qwertyuiop, obfs-param: t.me/vpnhat, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM] HKT K"
       - "[CT/CM] HKT L"
-      - "[CT/CM] HKBN A"
+      - vpnhat-香港HKT
       - "[CT/CM] HKBN B"
-      - "[CT/CM] HKT E"
-      - 韩国高速接入A
-      - 日本 Azure A 2.5x
-      - "[CT/CM] HKBN D"
-      - 日本 Azure B 2.5x
-      - 美国 优化 E 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 D 3.5
+      - vpnhat-香港
+      - vpnhat-香港 2
+      - vpnhat-香港 3
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-香港 4
+      - "[CT/CM] HKT K"
+      - vpnhat-香港HKT 4
+      - vpnhat-香港 5
+      - vpnhat-香港HKBN
+      - vpnhat-香港HKBN 2
+      - 深圳电信-台湾
+      - vpnpool-Chuncheon-Oracle
+      - 深圳电信-台湾 2
+      - vpnpool-KR
+      - vpnpool-香港HKT
+      - 香港HKT
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - 深圳电信-台湾 3
+      - vpnhat-香港HKBN 3
+      - 深圳电信-台湾 4
+      - vpnhat-香港HKT 5
+      - 深圳电信-台湾 5
       - 台湾 G
+      - "[CT/CM] HKBN D"
+      - vpnhat-香港HKT 6
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT E"
+      - vpnhat-香港HKT 7
+      - 美国 优化 A 3.5
+      - 美国 优化 B 3.5
+      - 韩国高速接入A
       - 美国 优化 I 3.5
-      - 美国 优化 G 3.5
-      - 103.172.116.8:9019
-      - 上海CN2丨日本丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A2
+      - vpnpool-US
+      - vpnpool-US 2
       - 美国 优化 C 3.5
-      - _AU_澳大利亚_1245
-      - 103.172.116.9:9037
-      - 103.172.116.8:9032
       - 美国 优化 H 3.5
-      - 广州丨日本EC2丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A1
-      - 103.172.116.8:9041
-      - _AU_澳大利亚_1279
-      - 广州丨日本丨解锁流媒体丨A1
-      - _AU_澳大利亚_1215
-      - 上海CN2丨香港EC2丨解锁流媒体丨A1
-      - 紧急线路 站点故障时优先恢复
-      - _AU_澳大利亚_1221
-      - 103.172.116.8:9093
-      - _AU_澳大利亚_1235
-      - 上海CN2丨俄罗斯丨解锁流媒体丨A2
-      - 103.172.116.8:9011
-      - _AU_澳大利亚_1230
-      - _AU_澳大利亚_1334
-      - _AU_澳大利亚_1285
-      - 103.172.116.8:9008
-      - 103.172.116.8:9079
-      - _AU_澳大利亚_1277
-      - _AU_澳大利亚_1276
-      - _AU_澳大利亚_1224
-      - _AU_澳大利亚_1342
-      - 广州丨新加坡丨解锁流媒体丨A1
-      - 103.172.116.8:9097
-      - _PL_波兰_1735
-      - _PL_波兰_1817
-      - _PL_波兰_1840
-      - _AU_澳大利亚_1228
-      - _PL_波兰_1725
-      - _DE_德国_895
-      - _PL_波兰_1856
-      - _PL_波兰_1805
-      - _PL_波兰_1839
-      - _AU_澳大利亚_1225
-      - _CH_瑞士_2256
-      - _PL_波兰_1809
-      - _PL_波兰_1827
-      - _PL_波兰_1837
-      - _AU_澳大利亚_1247
-      - _PL_波兰_1810
-      - _AU_澳大利亚_1241
-      - _PL_波兰_1778
-      - _DE_德国_670
-      - _PL_波兰_1846
-      - _PL_波兰_1863
-      - _PL_波兰_1864
-      - _AU_澳大利亚_1337
-      - _PL_波兰_1847
+      - vpnpool-US 3
+      - 日本 Azure B 2.5x
+      - vpnpool-US 4
+      - vpnpool-US 5
+      - vpnpool-US 6
+      - 美国 优化 E 3.5
+      - 日本 Azure A 2.5x
+      - vpnpool-US 7
+      - 美国 优化 F 3.5
+      - vpnhat-香港HKT 8
+      - 美国 优化 G 3.5
+      - 稳定④关注公众号：ios黑科技_17
+      - vpnpool-香港HKT 2
+      - 新加坡C
+      - 新加坡E
       - 新加坡D
-      - _DE_德国_659
-      - _PL_波兰_1709
-      - _PL_波兰_1830
-      - _PL_波兰_1832
-      - _CH_瑞士_2270
-      - _AU_澳大利亚_1308
-      - _PL_波兰_1739
-      - _PL_波兰_1833
-      - _PL_波兰_1850
-      - 荷兰_Tg频道:https://t.me/bpjzx2_62
-      - _DE_德国_976
-      - _PL_波兰_1706
-      - _PL_波兰_1736
-      - _PL_波兰_1779
-      - _PL_波兰_1852
-      - _AU_澳大利亚_1236
-      - _AU_澳大利亚_1286
-      - _PL_波兰_1750
-      - _PL_波兰_1757
-      - _PL_波兰_1860
-      - _CH_瑞士_2281
-      - _DE_德国_938
-      - _PL_波兰_1756
+      - vpnpool-US 8
+      - EXTM3U-RU
+      - 荷兰_Tg频道:https://t.me/bpjzx2_68
+      - vpnpool-US 9
+      - 深圳电信-台湾 6
+      - _DE_德国_665
+      - 英国_Tg频道:https://t.me/bpjzx2_203
+      - 荷兰_Tg频道:https://t.me/bpjzx2_53
+      - vpnpool-JP
+      - 荷兰_Tg频道:https://t.me/bpjzx2_63
+      - 荷兰_Tg频道:https://t.me/bpjzx2_89
+      - _DE_德国_911
+      - 荷兰_Tg频道:https://t.me/bpjzx2_48
+      - _DE_德国_647
+      - 荷兰_Tg频道:https://t.me/bpjzx2_46
+      - _DE_德国_666
+      - _DE_德国_687
+      - _DE_德国_644
+      - EXTM3U-RU 2
+      - 荷兰_Tg频道:https://t.me/bpjzx2_75
+      - 荷兰_Tg频道:https://t.me/bpjzx2_65
+      - 荷兰_Tg频道:https://t.me/bpjzx2_47
+      - 荷兰_Tg频道:https://t.me/bpjzx2_61
       - 英国_Tg频道:https://t.me/bpjzx2_195
-      - _AU_澳大利亚_1312
-      - _AU_澳大利亚_1231
-      - _PL_波兰_1702
+      - EXTM3U-RU-Podosinki-Melbicom
+      - 荷兰_Tg频道:https://t.me/bpjzx2_80
+      - _DE_德国_982
+      - 荷兰_Tg频道:https://t.me/bpjzx2_87
+      - _PL_波兰_1824
+      - 荷兰_Tg频道:https://t.me/bpjzx2_88
+      - 荷兰_Tg频道:https://t.me/bpjzx2_82
+      - 荷兰_Tg频道:https://t.me/bpjzx2_59
+      - 荷兰_Tg频道:https://t.me/bpjzx2_137
+      - 英国_Tg频道:https://t.me/bpjzx2_220
+      - EXTM3U-TR-Bursa-Bursabil
+      - 荷兰_Tg频道:https://t.me/bpjzx2_57
+      - 英国_Tg频道:https://t.me/bpjzx2_204
+      - 荷兰_Tg频道:https://t.me/bpjzx2_157
+      - _PL_波兰_1866
+      - 荷兰_Tg频道:https://t.me/bpjzx2_153
+      - 英国_Tg频道:https://t.me/bpjzx2_225
+      - _DE_德国_968
+      - _DE_德国_954
+      - _DE_德国_638
+      - 荷兰_Tg频道:https://t.me/bpjzx2_73
+      - 荷兰_Tg频道:https://t.me/bpjzx2_174
+      - _PL_波兰_1818
+      - _PL_波兰_1699
+      - _PL_波兰_1801
+      - 荷兰_Tg频道:https://t.me/bpjzx2_71
+      - _PL_波兰_1784
+      - _PL_波兰_1809
+      - _PL_波兰_1852
+      - 英国_Tg频道:https://t.me/bpjzx2_192
+      - 荷兰_Tg频道:https://t.me/bpjzx2_141
+      - 荷兰_Tg频道:https://t.me/bpjzx2_50
+      - _PL_波兰_1737
+      - _PL_波兰_1735
+      - 荷兰_Tg频道:https://t.me/bpjzx2_85
+      - 荷兰_Tg频道:https://t.me/bpjzx2_72
+      - 荷兰_Tg频道:https://t.me/bpjzx2_165
+      - _PL_波兰_1820
+      - 荷兰_Tg频道:https://t.me/bpjzx2_139
+      - 荷兰_Tg频道:https://t.me/bpjzx2_55
+      - _PL_波兰_1743
+      - _PL_波兰_1791
+      - _PL_波兰_1799
+      - _DE_德国_646
+      - _PL_波兰_1806
+      - _PL_波兰_1787
+      - _PL_波兰_1815
+      - _PL_波兰_1693
+      - 荷兰_Tg频道:https://t.me/bpjzx2_173
+      - _PL_波兰_1810
+      - _PL_波兰_1835
+      - _PL_波兰_1870
+      - _PL_波兰_1836
+      - _PL_波兰_1751
+      - _PL_波兰_1753
+      - _PL_波兰_1778
+      - _PL_波兰_1771
+      - _PL_波兰_1854
+      - _PL_波兰_1807
+      - 英国_Tg频道:https://t.me/bpjzx2_191
+      - _PL_波兰_1790
+      - _PL_波兰_1739
+      - _PL_波兰_1796
+      - _PL_波兰_1678
+      - _PL_波兰_1785
+      - _PL_波兰_1822
+      - _PL_波兰_1768
+      - _PL_波兰_1839
+      - _PL_波兰_1742
+      - _PL_波兰_1755
+      - _PL_波兰_1729
+      - _PL_波兰_1827
+      - _PL_波兰_1714
+      - _PL_波兰_1741
+      - _PL_波兰_1794
+      - _PL_波兰_1833
+      - _AU_澳大利亚_1335
+      - _PL_波兰_1757
+      - _DE_德国_983
+      - 荷兰_Tg频道:https://t.me/bpjzx2_176
+      - 荷兰_Tg频道:https://t.me/bpjzx2_51
+      - _PL_波兰_1860
+      - _AU_澳大利亚_1317
+      - _AU_澳大利亚_1313
+      - _AU_澳大利亚_1310
+      - _PL_波兰_1837
+      - _AU_澳大利亚_1334
+      - _AU_澳大利亚_1330
+      - _AU_澳大利亚_1309
+      - _AU_澳大利亚_1277
+      - _PL_波兰_1740
+      - _PL_波兰_1701
+      - _PL_波兰_1795
+      - _PL_波兰_1803
+      - 荷兰_Tg频道:https://t.me/bpjzx2_84
+      - 荷兰_Tg频道:https://t.me/bpjzx2_60
+      - _AU_澳大利亚_1333
+      - _PL_波兰_1733
+      - _PL_波兰_1706
+      - _PL_波兰_1817
+      - _PL_波兰_1825
+      - _PL_波兰_1847
+      - _AU_澳大利亚_1264
+      - _AU_澳大利亚_1340
+      - _PL_波兰_1773
+      - 荷兰_Tg频道:https://t.me/bpjzx2_76
+      - _AU_澳大利亚_1301
+      - _PL_波兰_1717
+      - _PL_波兰_1830
+      - _AU_澳大利亚_1280
+      - _PL_波兰_1676
+      - _PL_波兰_1772
+      - _PL_波兰_1748
+      - _PL_波兰_1703
+      - _PL_波兰_1680
+      - _PL_波兰_1769
+      - 荷兰_Tg频道:https://t.me/bpjzx2_77
+      - 荷兰_Tg频道:https://t.me/bpjzx2_49
+      - _PL_波兰_1668
+      - _PL_波兰_1684
+      - 荷兰_Tg频道:https://t.me/bpjzx2_83
+      - _PL_波兰_1805
+      - _PL_波兰_1850
+      - _PL_波兰_1718
+      - _PL_波兰_1722
+      - _PL_波兰_1732
+      - _AU_澳大利亚_1305
+      - _AU_澳大利亚_1332
+      - _PL_波兰_1840
+      - _PL_波兰_1654
+      - _PL_波兰_1774
+      - _PL_波兰_1846
+      - _AU_澳大利亚_1320
+      - 荷兰_Tg频道:https://t.me/bpjzx2_67
+      - _PL_波兰_1727
+      - vpnpool-US 10
+      - 美国 优化 D 3.5
+      - vpnpool-US 11
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[CT/CM] HKT K"
       - "[CT/CM] HKT L"
-      - "[CT/CM] HKBN A"
+      - vpnhat-香港HKT
       - "[CT/CM] HKBN B"
-      - "[CT/CM] HKT E"
-      - 韩国高速接入A
-      - 日本 Azure A 2.5x
-      - "[CT/CM] HKBN D"
-      - 日本 Azure B 2.5x
-      - 美国 优化 E 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 D 3.5
+      - vpnhat-香港
+      - vpnhat-香港 2
+      - vpnhat-香港 3
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-香港 4
+      - "[CT/CM] HKT K"
+      - vpnhat-香港HKT 4
+      - vpnhat-香港 5
+      - vpnhat-香港HKBN
+      - vpnhat-香港HKBN 2
+      - 深圳电信-台湾
+      - vpnpool-Chuncheon-Oracle
+      - 深圳电信-台湾 2
+      - vpnpool-KR
+      - vpnpool-香港HKT
+      - 香港HKT
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - 深圳电信-台湾 3
+      - vpnhat-香港HKBN 3
+      - 深圳电信-台湾 4
+      - vpnhat-香港HKT 5
+      - 深圳电信-台湾 5
       - 台湾 G
+      - "[CT/CM] HKBN D"
+      - vpnhat-香港HKT 6
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT E"
+      - vpnhat-香港HKT 7
+      - 美国 优化 A 3.5
+      - 美国 优化 B 3.5
+      - 韩国高速接入A
       - 美国 优化 I 3.5
-      - 美国 优化 G 3.5
-      - 103.172.116.8:9019
-      - 上海CN2丨日本丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A2
+      - vpnpool-US
+      - vpnpool-US 2
       - 美国 优化 C 3.5
-      - _AU_澳大利亚_1245
-      - 103.172.116.9:9037
-      - 103.172.116.8:9032
       - 美国 优化 H 3.5
-      - 广州丨日本EC2丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A1
-      - 103.172.116.8:9041
-      - _AU_澳大利亚_1279
-      - 广州丨日本丨解锁流媒体丨A1
-      - _AU_澳大利亚_1215
-      - 上海CN2丨香港EC2丨解锁流媒体丨A1
-      - 紧急线路 站点故障时优先恢复
-      - _AU_澳大利亚_1221
-      - 103.172.116.8:9093
-      - _AU_澳大利亚_1235
-      - 上海CN2丨俄罗斯丨解锁流媒体丨A2
-      - 103.172.116.8:9011
-      - _AU_澳大利亚_1230
-      - _AU_澳大利亚_1334
-      - _AU_澳大利亚_1285
-      - 103.172.116.8:9008
-      - 103.172.116.8:9079
-      - _AU_澳大利亚_1277
-      - _AU_澳大利亚_1276
-      - _AU_澳大利亚_1224
-      - _AU_澳大利亚_1342
-      - 广州丨新加坡丨解锁流媒体丨A1
-      - 103.172.116.8:9097
-      - _PL_波兰_1735
-      - _PL_波兰_1817
-      - _PL_波兰_1840
-      - _AU_澳大利亚_1228
-      - _PL_波兰_1725
-      - _DE_德国_895
-      - _PL_波兰_1856
-      - _PL_波兰_1805
-      - _PL_波兰_1839
-      - _AU_澳大利亚_1225
-      - _CH_瑞士_2256
-      - _PL_波兰_1809
-      - _PL_波兰_1827
-      - _PL_波兰_1837
-      - _AU_澳大利亚_1247
-      - _PL_波兰_1810
-      - _AU_澳大利亚_1241
-      - _PL_波兰_1778
-      - _DE_德国_670
-      - _PL_波兰_1846
-      - _PL_波兰_1863
-      - _PL_波兰_1864
-      - _AU_澳大利亚_1337
-      - _PL_波兰_1847
+      - vpnpool-US 3
+      - 日本 Azure B 2.5x
+      - vpnpool-US 4
+      - vpnpool-US 5
+      - vpnpool-US 6
+      - 美国 优化 E 3.5
+      - 日本 Azure A 2.5x
+      - vpnpool-US 7
+      - 美国 优化 F 3.5
+      - vpnhat-香港HKT 8
+      - 美国 优化 G 3.5
+      - 稳定④关注公众号：ios黑科技_17
+      - vpnpool-香港HKT 2
+      - 新加坡C
+      - 新加坡E
       - 新加坡D
-      - _DE_德国_659
-      - _PL_波兰_1709
-      - _PL_波兰_1830
-      - _PL_波兰_1832
-      - _CH_瑞士_2270
-      - _AU_澳大利亚_1308
-      - _PL_波兰_1739
-      - _PL_波兰_1833
-      - _PL_波兰_1850
-      - 荷兰_Tg频道:https://t.me/bpjzx2_62
-      - _DE_德国_976
-      - _PL_波兰_1706
-      - _PL_波兰_1736
-      - _PL_波兰_1779
-      - _PL_波兰_1852
-      - _AU_澳大利亚_1236
-      - _AU_澳大利亚_1286
-      - _PL_波兰_1750
-      - _PL_波兰_1757
-      - _PL_波兰_1860
-      - _CH_瑞士_2281
-      - _DE_德国_938
-      - _PL_波兰_1756
+      - vpnpool-US 8
+      - EXTM3U-RU
+      - 荷兰_Tg频道:https://t.me/bpjzx2_68
+      - vpnpool-US 9
+      - 深圳电信-台湾 6
+      - _DE_德国_665
+      - 英国_Tg频道:https://t.me/bpjzx2_203
+      - 荷兰_Tg频道:https://t.me/bpjzx2_53
+      - vpnpool-JP
+      - 荷兰_Tg频道:https://t.me/bpjzx2_63
+      - 荷兰_Tg频道:https://t.me/bpjzx2_89
+      - _DE_德国_911
+      - 荷兰_Tg频道:https://t.me/bpjzx2_48
+      - _DE_德国_647
+      - 荷兰_Tg频道:https://t.me/bpjzx2_46
+      - _DE_德国_666
+      - _DE_德国_687
+      - _DE_德国_644
+      - EXTM3U-RU 2
+      - 荷兰_Tg频道:https://t.me/bpjzx2_75
+      - 荷兰_Tg频道:https://t.me/bpjzx2_65
+      - 荷兰_Tg频道:https://t.me/bpjzx2_47
+      - 荷兰_Tg频道:https://t.me/bpjzx2_61
       - 英国_Tg频道:https://t.me/bpjzx2_195
-      - _AU_澳大利亚_1312
-      - _AU_澳大利亚_1231
-      - _PL_波兰_1702
+      - EXTM3U-RU-Podosinki-Melbicom
+      - 荷兰_Tg频道:https://t.me/bpjzx2_80
+      - _DE_德国_982
+      - 荷兰_Tg频道:https://t.me/bpjzx2_87
+      - _PL_波兰_1824
+      - 荷兰_Tg频道:https://t.me/bpjzx2_88
+      - 荷兰_Tg频道:https://t.me/bpjzx2_82
+      - 荷兰_Tg频道:https://t.me/bpjzx2_59
+      - 荷兰_Tg频道:https://t.me/bpjzx2_137
+      - 英国_Tg频道:https://t.me/bpjzx2_220
+      - EXTM3U-TR-Bursa-Bursabil
+      - 荷兰_Tg频道:https://t.me/bpjzx2_57
+      - 英国_Tg频道:https://t.me/bpjzx2_204
+      - 荷兰_Tg频道:https://t.me/bpjzx2_157
+      - _PL_波兰_1866
+      - 荷兰_Tg频道:https://t.me/bpjzx2_153
+      - 英国_Tg频道:https://t.me/bpjzx2_225
+      - _DE_德国_968
+      - _DE_德国_954
+      - _DE_德国_638
+      - 荷兰_Tg频道:https://t.me/bpjzx2_73
+      - 荷兰_Tg频道:https://t.me/bpjzx2_174
+      - _PL_波兰_1818
+      - _PL_波兰_1699
+      - _PL_波兰_1801
+      - 荷兰_Tg频道:https://t.me/bpjzx2_71
+      - _PL_波兰_1784
+      - _PL_波兰_1809
+      - _PL_波兰_1852
+      - 英国_Tg频道:https://t.me/bpjzx2_192
+      - 荷兰_Tg频道:https://t.me/bpjzx2_141
+      - 荷兰_Tg频道:https://t.me/bpjzx2_50
+      - _PL_波兰_1737
+      - _PL_波兰_1735
+      - 荷兰_Tg频道:https://t.me/bpjzx2_85
+      - 荷兰_Tg频道:https://t.me/bpjzx2_72
+      - 荷兰_Tg频道:https://t.me/bpjzx2_165
+      - _PL_波兰_1820
+      - 荷兰_Tg频道:https://t.me/bpjzx2_139
+      - 荷兰_Tg频道:https://t.me/bpjzx2_55
+      - _PL_波兰_1743
+      - _PL_波兰_1791
+      - _PL_波兰_1799
+      - _DE_德国_646
+      - _PL_波兰_1806
+      - _PL_波兰_1787
+      - _PL_波兰_1815
+      - _PL_波兰_1693
+      - 荷兰_Tg频道:https://t.me/bpjzx2_173
+      - _PL_波兰_1810
+      - _PL_波兰_1835
+      - _PL_波兰_1870
+      - _PL_波兰_1836
+      - _PL_波兰_1751
+      - _PL_波兰_1753
+      - _PL_波兰_1778
+      - _PL_波兰_1771
+      - _PL_波兰_1854
+      - _PL_波兰_1807
+      - 英国_Tg频道:https://t.me/bpjzx2_191
+      - _PL_波兰_1790
+      - _PL_波兰_1739
+      - _PL_波兰_1796
+      - _PL_波兰_1678
+      - _PL_波兰_1785
+      - _PL_波兰_1822
+      - _PL_波兰_1768
+      - _PL_波兰_1839
+      - _PL_波兰_1742
+      - _PL_波兰_1755
+      - _PL_波兰_1729
+      - _PL_波兰_1827
+      - _PL_波兰_1714
+      - _PL_波兰_1741
+      - _PL_波兰_1794
+      - _PL_波兰_1833
+      - _AU_澳大利亚_1335
+      - _PL_波兰_1757
+      - _DE_德国_983
+      - 荷兰_Tg频道:https://t.me/bpjzx2_176
+      - 荷兰_Tg频道:https://t.me/bpjzx2_51
+      - _PL_波兰_1860
+      - _AU_澳大利亚_1317
+      - _AU_澳大利亚_1313
+      - _AU_澳大利亚_1310
+      - _PL_波兰_1837
+      - _AU_澳大利亚_1334
+      - _AU_澳大利亚_1330
+      - _AU_澳大利亚_1309
+      - _AU_澳大利亚_1277
+      - _PL_波兰_1740
+      - _PL_波兰_1701
+      - _PL_波兰_1795
+      - _PL_波兰_1803
+      - 荷兰_Tg频道:https://t.me/bpjzx2_84
+      - 荷兰_Tg频道:https://t.me/bpjzx2_60
+      - _AU_澳大利亚_1333
+      - _PL_波兰_1733
+      - _PL_波兰_1706
+      - _PL_波兰_1817
+      - _PL_波兰_1825
+      - _PL_波兰_1847
+      - _AU_澳大利亚_1264
+      - _AU_澳大利亚_1340
+      - _PL_波兰_1773
+      - 荷兰_Tg频道:https://t.me/bpjzx2_76
+      - _AU_澳大利亚_1301
+      - _PL_波兰_1717
+      - _PL_波兰_1830
+      - _AU_澳大利亚_1280
+      - _PL_波兰_1676
+      - _PL_波兰_1772
+      - _PL_波兰_1748
+      - _PL_波兰_1703
+      - _PL_波兰_1680
+      - _PL_波兰_1769
+      - 荷兰_Tg频道:https://t.me/bpjzx2_77
+      - 荷兰_Tg频道:https://t.me/bpjzx2_49
+      - _PL_波兰_1668
+      - _PL_波兰_1684
+      - 荷兰_Tg频道:https://t.me/bpjzx2_83
+      - _PL_波兰_1805
+      - _PL_波兰_1850
+      - _PL_波兰_1718
+      - _PL_波兰_1722
+      - _PL_波兰_1732
+      - _AU_澳大利亚_1305
+      - _AU_澳大利亚_1332
+      - _PL_波兰_1840
+      - _PL_波兰_1654
+      - _PL_波兰_1774
+      - _PL_波兰_1846
+      - _AU_澳大利亚_1320
+      - 荷兰_Tg频道:https://t.me/bpjzx2_67
+      - _PL_波兰_1727
+      - vpnpool-US 10
+      - 美国 优化 D 3.5
+      - vpnpool-US 11
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM] HKT K"
       - "[CT/CM] HKT L"
-      - "[CT/CM] HKBN A"
+      - vpnhat-香港HKT
       - "[CT/CM] HKBN B"
-      - "[CT/CM] HKT E"
-      - 韩国高速接入A
-      - 日本 Azure A 2.5x
-      - "[CT/CM] HKBN D"
-      - 日本 Azure B 2.5x
-      - 美国 优化 E 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 D 3.5
+      - vpnhat-香港
+      - vpnhat-香港 2
+      - vpnhat-香港 3
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-香港 4
+      - "[CT/CM] HKT K"
+      - vpnhat-香港HKT 4
+      - vpnhat-香港 5
+      - vpnhat-香港HKBN
+      - vpnhat-香港HKBN 2
+      - 深圳电信-台湾
+      - vpnpool-Chuncheon-Oracle
+      - 深圳电信-台湾 2
+      - vpnpool-KR
+      - vpnpool-香港HKT
+      - 香港HKT
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - 深圳电信-台湾 3
+      - vpnhat-香港HKBN 3
+      - 深圳电信-台湾 4
+      - vpnhat-香港HKT 5
+      - 深圳电信-台湾 5
       - 台湾 G
+      - "[CT/CM] HKBN D"
+      - vpnhat-香港HKT 6
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT E"
+      - vpnhat-香港HKT 7
+      - 美国 优化 A 3.5
+      - 美国 优化 B 3.5
+      - 韩国高速接入A
       - 美国 优化 I 3.5
-      - 美国 优化 G 3.5
-      - 103.172.116.8:9019
-      - 上海CN2丨日本丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A2
+      - vpnpool-US
+      - vpnpool-US 2
       - 美国 优化 C 3.5
-      - _AU_澳大利亚_1245
-      - 103.172.116.9:9037
-      - 103.172.116.8:9032
       - 美国 优化 H 3.5
-      - 广州丨日本EC2丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A1
-      - 103.172.116.8:9041
-      - _AU_澳大利亚_1279
-      - 广州丨日本丨解锁流媒体丨A1
-      - _AU_澳大利亚_1215
-      - 上海CN2丨香港EC2丨解锁流媒体丨A1
-      - 紧急线路 站点故障时优先恢复
-      - _AU_澳大利亚_1221
-      - 103.172.116.8:9093
-      - _AU_澳大利亚_1235
-      - 上海CN2丨俄罗斯丨解锁流媒体丨A2
-      - 103.172.116.8:9011
-      - _AU_澳大利亚_1230
-      - _AU_澳大利亚_1334
-      - _AU_澳大利亚_1285
-      - 103.172.116.8:9008
-      - 103.172.116.8:9079
-      - _AU_澳大利亚_1277
-      - _AU_澳大利亚_1276
-      - _AU_澳大利亚_1224
-      - _AU_澳大利亚_1342
-      - 广州丨新加坡丨解锁流媒体丨A1
-      - 103.172.116.8:9097
-      - _PL_波兰_1735
-      - _PL_波兰_1817
-      - _PL_波兰_1840
-      - _AU_澳大利亚_1228
-      - _PL_波兰_1725
-      - _DE_德国_895
-      - _PL_波兰_1856
-      - _PL_波兰_1805
-      - _PL_波兰_1839
-      - _AU_澳大利亚_1225
-      - _CH_瑞士_2256
-      - _PL_波兰_1809
-      - _PL_波兰_1827
-      - _PL_波兰_1837
-      - _AU_澳大利亚_1247
-      - _PL_波兰_1810
-      - _AU_澳大利亚_1241
-      - _PL_波兰_1778
-      - _DE_德国_670
-      - _PL_波兰_1846
-      - _PL_波兰_1863
-      - _PL_波兰_1864
-      - _AU_澳大利亚_1337
-      - _PL_波兰_1847
+      - vpnpool-US 3
+      - 日本 Azure B 2.5x
+      - vpnpool-US 4
+      - vpnpool-US 5
+      - vpnpool-US 6
+      - 美国 优化 E 3.5
+      - 日本 Azure A 2.5x
+      - vpnpool-US 7
+      - 美国 优化 F 3.5
+      - vpnhat-香港HKT 8
+      - 美国 优化 G 3.5
+      - 稳定④关注公众号：ios黑科技_17
+      - vpnpool-香港HKT 2
+      - 新加坡C
+      - 新加坡E
       - 新加坡D
-      - _DE_德国_659
-      - _PL_波兰_1709
-      - _PL_波兰_1830
-      - _PL_波兰_1832
-      - _CH_瑞士_2270
-      - _AU_澳大利亚_1308
-      - _PL_波兰_1739
-      - _PL_波兰_1833
-      - _PL_波兰_1850
-      - 荷兰_Tg频道:https://t.me/bpjzx2_62
-      - _DE_德国_976
-      - _PL_波兰_1706
-      - _PL_波兰_1736
-      - _PL_波兰_1779
-      - _PL_波兰_1852
-      - _AU_澳大利亚_1236
-      - _AU_澳大利亚_1286
-      - _PL_波兰_1750
-      - _PL_波兰_1757
-      - _PL_波兰_1860
-      - _CH_瑞士_2281
-      - _DE_德国_938
-      - _PL_波兰_1756
+      - vpnpool-US 8
+      - EXTM3U-RU
+      - 荷兰_Tg频道:https://t.me/bpjzx2_68
+      - vpnpool-US 9
+      - 深圳电信-台湾 6
+      - _DE_德国_665
+      - 英国_Tg频道:https://t.me/bpjzx2_203
+      - 荷兰_Tg频道:https://t.me/bpjzx2_53
+      - vpnpool-JP
+      - 荷兰_Tg频道:https://t.me/bpjzx2_63
+      - 荷兰_Tg频道:https://t.me/bpjzx2_89
+      - _DE_德国_911
+      - 荷兰_Tg频道:https://t.me/bpjzx2_48
+      - _DE_德国_647
+      - 荷兰_Tg频道:https://t.me/bpjzx2_46
+      - _DE_德国_666
+      - _DE_德国_687
+      - _DE_德国_644
+      - EXTM3U-RU 2
+      - 荷兰_Tg频道:https://t.me/bpjzx2_75
+      - 荷兰_Tg频道:https://t.me/bpjzx2_65
+      - 荷兰_Tg频道:https://t.me/bpjzx2_47
+      - 荷兰_Tg频道:https://t.me/bpjzx2_61
       - 英国_Tg频道:https://t.me/bpjzx2_195
-      - _AU_澳大利亚_1312
-      - _AU_澳大利亚_1231
-      - _PL_波兰_1702
+      - EXTM3U-RU-Podosinki-Melbicom
+      - 荷兰_Tg频道:https://t.me/bpjzx2_80
+      - _DE_德国_982
+      - 荷兰_Tg频道:https://t.me/bpjzx2_87
+      - _PL_波兰_1824
+      - 荷兰_Tg频道:https://t.me/bpjzx2_88
+      - 荷兰_Tg频道:https://t.me/bpjzx2_82
+      - 荷兰_Tg频道:https://t.me/bpjzx2_59
+      - 荷兰_Tg频道:https://t.me/bpjzx2_137
+      - 英国_Tg频道:https://t.me/bpjzx2_220
+      - EXTM3U-TR-Bursa-Bursabil
+      - 荷兰_Tg频道:https://t.me/bpjzx2_57
+      - 英国_Tg频道:https://t.me/bpjzx2_204
+      - 荷兰_Tg频道:https://t.me/bpjzx2_157
+      - _PL_波兰_1866
+      - 荷兰_Tg频道:https://t.me/bpjzx2_153
+      - 英国_Tg频道:https://t.me/bpjzx2_225
+      - _DE_德国_968
+      - _DE_德国_954
+      - _DE_德国_638
+      - 荷兰_Tg频道:https://t.me/bpjzx2_73
+      - 荷兰_Tg频道:https://t.me/bpjzx2_174
+      - _PL_波兰_1818
+      - _PL_波兰_1699
+      - _PL_波兰_1801
+      - 荷兰_Tg频道:https://t.me/bpjzx2_71
+      - _PL_波兰_1784
+      - _PL_波兰_1809
+      - _PL_波兰_1852
+      - 英国_Tg频道:https://t.me/bpjzx2_192
+      - 荷兰_Tg频道:https://t.me/bpjzx2_141
+      - 荷兰_Tg频道:https://t.me/bpjzx2_50
+      - _PL_波兰_1737
+      - _PL_波兰_1735
+      - 荷兰_Tg频道:https://t.me/bpjzx2_85
+      - 荷兰_Tg频道:https://t.me/bpjzx2_72
+      - 荷兰_Tg频道:https://t.me/bpjzx2_165
+      - _PL_波兰_1820
+      - 荷兰_Tg频道:https://t.me/bpjzx2_139
+      - 荷兰_Tg频道:https://t.me/bpjzx2_55
+      - _PL_波兰_1743
+      - _PL_波兰_1791
+      - _PL_波兰_1799
+      - _DE_德国_646
+      - _PL_波兰_1806
+      - _PL_波兰_1787
+      - _PL_波兰_1815
+      - _PL_波兰_1693
+      - 荷兰_Tg频道:https://t.me/bpjzx2_173
+      - _PL_波兰_1810
+      - _PL_波兰_1835
+      - _PL_波兰_1870
+      - _PL_波兰_1836
+      - _PL_波兰_1751
+      - _PL_波兰_1753
+      - _PL_波兰_1778
+      - _PL_波兰_1771
+      - _PL_波兰_1854
+      - _PL_波兰_1807
+      - 英国_Tg频道:https://t.me/bpjzx2_191
+      - _PL_波兰_1790
+      - _PL_波兰_1739
+      - _PL_波兰_1796
+      - _PL_波兰_1678
+      - _PL_波兰_1785
+      - _PL_波兰_1822
+      - _PL_波兰_1768
+      - _PL_波兰_1839
+      - _PL_波兰_1742
+      - _PL_波兰_1755
+      - _PL_波兰_1729
+      - _PL_波兰_1827
+      - _PL_波兰_1714
+      - _PL_波兰_1741
+      - _PL_波兰_1794
+      - _PL_波兰_1833
+      - _AU_澳大利亚_1335
+      - _PL_波兰_1757
+      - _DE_德国_983
+      - 荷兰_Tg频道:https://t.me/bpjzx2_176
+      - 荷兰_Tg频道:https://t.me/bpjzx2_51
+      - _PL_波兰_1860
+      - _AU_澳大利亚_1317
+      - _AU_澳大利亚_1313
+      - _AU_澳大利亚_1310
+      - _PL_波兰_1837
+      - _AU_澳大利亚_1334
+      - _AU_澳大利亚_1330
+      - _AU_澳大利亚_1309
+      - _AU_澳大利亚_1277
+      - _PL_波兰_1740
+      - _PL_波兰_1701
+      - _PL_波兰_1795
+      - _PL_波兰_1803
+      - 荷兰_Tg频道:https://t.me/bpjzx2_84
+      - 荷兰_Tg频道:https://t.me/bpjzx2_60
+      - _AU_澳大利亚_1333
+      - _PL_波兰_1733
+      - _PL_波兰_1706
+      - _PL_波兰_1817
+      - _PL_波兰_1825
+      - _PL_波兰_1847
+      - _AU_澳大利亚_1264
+      - _AU_澳大利亚_1340
+      - _PL_波兰_1773
+      - 荷兰_Tg频道:https://t.me/bpjzx2_76
+      - _AU_澳大利亚_1301
+      - _PL_波兰_1717
+      - _PL_波兰_1830
+      - _AU_澳大利亚_1280
+      - _PL_波兰_1676
+      - _PL_波兰_1772
+      - _PL_波兰_1748
+      - _PL_波兰_1703
+      - _PL_波兰_1680
+      - _PL_波兰_1769
+      - 荷兰_Tg频道:https://t.me/bpjzx2_77
+      - 荷兰_Tg频道:https://t.me/bpjzx2_49
+      - _PL_波兰_1668
+      - _PL_波兰_1684
+      - 荷兰_Tg频道:https://t.me/bpjzx2_83
+      - _PL_波兰_1805
+      - _PL_波兰_1850
+      - _PL_波兰_1718
+      - _PL_波兰_1722
+      - _PL_波兰_1732
+      - _AU_澳大利亚_1305
+      - _AU_澳大利亚_1332
+      - _PL_波兰_1840
+      - _PL_波兰_1654
+      - _PL_波兰_1774
+      - _PL_波兰_1846
+      - _AU_澳大利亚_1320
+      - 荷兰_Tg频道:https://t.me/bpjzx2_67
+      - _PL_波兰_1727
+      - vpnpool-US 10
+      - 美国 优化 D 3.5
+      - vpnpool-US 11
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -440,435 +916,935 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM] HKT K"
       - "[CT/CM] HKT L"
-      - "[CT/CM] HKBN A"
+      - vpnhat-香港HKT
       - "[CT/CM] HKBN B"
-      - "[CT/CM] HKT E"
-      - 韩国高速接入A
-      - 日本 Azure A 2.5x
-      - "[CT/CM] HKBN D"
-      - 日本 Azure B 2.5x
-      - 美国 优化 E 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 D 3.5
+      - vpnhat-香港
+      - vpnhat-香港 2
+      - vpnhat-香港 3
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-香港 4
+      - "[CT/CM] HKT K"
+      - vpnhat-香港HKT 4
+      - vpnhat-香港 5
+      - vpnhat-香港HKBN
+      - vpnhat-香港HKBN 2
+      - 深圳电信-台湾
+      - vpnpool-Chuncheon-Oracle
+      - 深圳电信-台湾 2
+      - vpnpool-KR
+      - vpnpool-香港HKT
+      - 香港HKT
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - 深圳电信-台湾 3
+      - vpnhat-香港HKBN 3
+      - 深圳电信-台湾 4
+      - vpnhat-香港HKT 5
+      - 深圳电信-台湾 5
       - 台湾 G
+      - "[CT/CM] HKBN D"
+      - vpnhat-香港HKT 6
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT E"
+      - vpnhat-香港HKT 7
+      - 美国 优化 A 3.5
+      - 美国 优化 B 3.5
+      - 韩国高速接入A
       - 美国 优化 I 3.5
-      - 美国 优化 G 3.5
-      - 103.172.116.8:9019
-      - 上海CN2丨日本丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A2
+      - vpnpool-US
+      - vpnpool-US 2
       - 美国 优化 C 3.5
-      - _AU_澳大利亚_1245
-      - 103.172.116.9:9037
-      - 103.172.116.8:9032
       - 美国 优化 H 3.5
-      - 广州丨日本EC2丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A1
-      - 103.172.116.8:9041
-      - _AU_澳大利亚_1279
-      - 广州丨日本丨解锁流媒体丨A1
-      - _AU_澳大利亚_1215
-      - 上海CN2丨香港EC2丨解锁流媒体丨A1
-      - 紧急线路 站点故障时优先恢复
-      - _AU_澳大利亚_1221
-      - 103.172.116.8:9093
-      - _AU_澳大利亚_1235
-      - 上海CN2丨俄罗斯丨解锁流媒体丨A2
-      - 103.172.116.8:9011
-      - _AU_澳大利亚_1230
-      - _AU_澳大利亚_1334
-      - _AU_澳大利亚_1285
-      - 103.172.116.8:9008
-      - 103.172.116.8:9079
-      - _AU_澳大利亚_1277
-      - _AU_澳大利亚_1276
-      - _AU_澳大利亚_1224
-      - _AU_澳大利亚_1342
-      - 广州丨新加坡丨解锁流媒体丨A1
-      - 103.172.116.8:9097
-      - _PL_波兰_1735
-      - _PL_波兰_1817
-      - _PL_波兰_1840
-      - _AU_澳大利亚_1228
-      - _PL_波兰_1725
-      - _DE_德国_895
-      - _PL_波兰_1856
-      - _PL_波兰_1805
-      - _PL_波兰_1839
-      - _AU_澳大利亚_1225
-      - _CH_瑞士_2256
-      - _PL_波兰_1809
-      - _PL_波兰_1827
-      - _PL_波兰_1837
-      - _AU_澳大利亚_1247
-      - _PL_波兰_1810
-      - _AU_澳大利亚_1241
-      - _PL_波兰_1778
-      - _DE_德国_670
-      - _PL_波兰_1846
-      - _PL_波兰_1863
-      - _PL_波兰_1864
-      - _AU_澳大利亚_1337
-      - _PL_波兰_1847
+      - vpnpool-US 3
+      - 日本 Azure B 2.5x
+      - vpnpool-US 4
+      - vpnpool-US 5
+      - vpnpool-US 6
+      - 美国 优化 E 3.5
+      - 日本 Azure A 2.5x
+      - vpnpool-US 7
+      - 美国 优化 F 3.5
+      - vpnhat-香港HKT 8
+      - 美国 优化 G 3.5
+      - 稳定④关注公众号：ios黑科技_17
+      - vpnpool-香港HKT 2
+      - 新加坡C
+      - 新加坡E
       - 新加坡D
-      - _DE_德国_659
-      - _PL_波兰_1709
-      - _PL_波兰_1830
-      - _PL_波兰_1832
-      - _CH_瑞士_2270
-      - _AU_澳大利亚_1308
-      - _PL_波兰_1739
-      - _PL_波兰_1833
-      - _PL_波兰_1850
-      - 荷兰_Tg频道:https://t.me/bpjzx2_62
-      - _DE_德国_976
-      - _PL_波兰_1706
-      - _PL_波兰_1736
-      - _PL_波兰_1779
-      - _PL_波兰_1852
-      - _AU_澳大利亚_1236
-      - _AU_澳大利亚_1286
-      - _PL_波兰_1750
-      - _PL_波兰_1757
-      - _PL_波兰_1860
-      - _CH_瑞士_2281
-      - _DE_德国_938
-      - _PL_波兰_1756
+      - vpnpool-US 8
+      - EXTM3U-RU
+      - 荷兰_Tg频道:https://t.me/bpjzx2_68
+      - vpnpool-US 9
+      - 深圳电信-台湾 6
+      - _DE_德国_665
+      - 英国_Tg频道:https://t.me/bpjzx2_203
+      - 荷兰_Tg频道:https://t.me/bpjzx2_53
+      - vpnpool-JP
+      - 荷兰_Tg频道:https://t.me/bpjzx2_63
+      - 荷兰_Tg频道:https://t.me/bpjzx2_89
+      - _DE_德国_911
+      - 荷兰_Tg频道:https://t.me/bpjzx2_48
+      - _DE_德国_647
+      - 荷兰_Tg频道:https://t.me/bpjzx2_46
+      - _DE_德国_666
+      - _DE_德国_687
+      - _DE_德国_644
+      - EXTM3U-RU 2
+      - 荷兰_Tg频道:https://t.me/bpjzx2_75
+      - 荷兰_Tg频道:https://t.me/bpjzx2_65
+      - 荷兰_Tg频道:https://t.me/bpjzx2_47
+      - 荷兰_Tg频道:https://t.me/bpjzx2_61
       - 英国_Tg频道:https://t.me/bpjzx2_195
-      - _AU_澳大利亚_1312
-      - _AU_澳大利亚_1231
-      - _PL_波兰_1702
+      - EXTM3U-RU-Podosinki-Melbicom
+      - 荷兰_Tg频道:https://t.me/bpjzx2_80
+      - _DE_德国_982
+      - 荷兰_Tg频道:https://t.me/bpjzx2_87
+      - _PL_波兰_1824
+      - 荷兰_Tg频道:https://t.me/bpjzx2_88
+      - 荷兰_Tg频道:https://t.me/bpjzx2_82
+      - 荷兰_Tg频道:https://t.me/bpjzx2_59
+      - 荷兰_Tg频道:https://t.me/bpjzx2_137
+      - 英国_Tg频道:https://t.me/bpjzx2_220
+      - EXTM3U-TR-Bursa-Bursabil
+      - 荷兰_Tg频道:https://t.me/bpjzx2_57
+      - 英国_Tg频道:https://t.me/bpjzx2_204
+      - 荷兰_Tg频道:https://t.me/bpjzx2_157
+      - _PL_波兰_1866
+      - 荷兰_Tg频道:https://t.me/bpjzx2_153
+      - 英国_Tg频道:https://t.me/bpjzx2_225
+      - _DE_德国_968
+      - _DE_德国_954
+      - _DE_德国_638
+      - 荷兰_Tg频道:https://t.me/bpjzx2_73
+      - 荷兰_Tg频道:https://t.me/bpjzx2_174
+      - _PL_波兰_1818
+      - _PL_波兰_1699
+      - _PL_波兰_1801
+      - 荷兰_Tg频道:https://t.me/bpjzx2_71
+      - _PL_波兰_1784
+      - _PL_波兰_1809
+      - _PL_波兰_1852
+      - 英国_Tg频道:https://t.me/bpjzx2_192
+      - 荷兰_Tg频道:https://t.me/bpjzx2_141
+      - 荷兰_Tg频道:https://t.me/bpjzx2_50
+      - _PL_波兰_1737
+      - _PL_波兰_1735
+      - 荷兰_Tg频道:https://t.me/bpjzx2_85
+      - 荷兰_Tg频道:https://t.me/bpjzx2_72
+      - 荷兰_Tg频道:https://t.me/bpjzx2_165
+      - _PL_波兰_1820
+      - 荷兰_Tg频道:https://t.me/bpjzx2_139
+      - 荷兰_Tg频道:https://t.me/bpjzx2_55
+      - _PL_波兰_1743
+      - _PL_波兰_1791
+      - _PL_波兰_1799
+      - _DE_德国_646
+      - _PL_波兰_1806
+      - _PL_波兰_1787
+      - _PL_波兰_1815
+      - _PL_波兰_1693
+      - 荷兰_Tg频道:https://t.me/bpjzx2_173
+      - _PL_波兰_1810
+      - _PL_波兰_1835
+      - _PL_波兰_1870
+      - _PL_波兰_1836
+      - _PL_波兰_1751
+      - _PL_波兰_1753
+      - _PL_波兰_1778
+      - _PL_波兰_1771
+      - _PL_波兰_1854
+      - _PL_波兰_1807
+      - 英国_Tg频道:https://t.me/bpjzx2_191
+      - _PL_波兰_1790
+      - _PL_波兰_1739
+      - _PL_波兰_1796
+      - _PL_波兰_1678
+      - _PL_波兰_1785
+      - _PL_波兰_1822
+      - _PL_波兰_1768
+      - _PL_波兰_1839
+      - _PL_波兰_1742
+      - _PL_波兰_1755
+      - _PL_波兰_1729
+      - _PL_波兰_1827
+      - _PL_波兰_1714
+      - _PL_波兰_1741
+      - _PL_波兰_1794
+      - _PL_波兰_1833
+      - _AU_澳大利亚_1335
+      - _PL_波兰_1757
+      - _DE_德国_983
+      - 荷兰_Tg频道:https://t.me/bpjzx2_176
+      - 荷兰_Tg频道:https://t.me/bpjzx2_51
+      - _PL_波兰_1860
+      - _AU_澳大利亚_1317
+      - _AU_澳大利亚_1313
+      - _AU_澳大利亚_1310
+      - _PL_波兰_1837
+      - _AU_澳大利亚_1334
+      - _AU_澳大利亚_1330
+      - _AU_澳大利亚_1309
+      - _AU_澳大利亚_1277
+      - _PL_波兰_1740
+      - _PL_波兰_1701
+      - _PL_波兰_1795
+      - _PL_波兰_1803
+      - 荷兰_Tg频道:https://t.me/bpjzx2_84
+      - 荷兰_Tg频道:https://t.me/bpjzx2_60
+      - _AU_澳大利亚_1333
+      - _PL_波兰_1733
+      - _PL_波兰_1706
+      - _PL_波兰_1817
+      - _PL_波兰_1825
+      - _PL_波兰_1847
+      - _AU_澳大利亚_1264
+      - _AU_澳大利亚_1340
+      - _PL_波兰_1773
+      - 荷兰_Tg频道:https://t.me/bpjzx2_76
+      - _AU_澳大利亚_1301
+      - _PL_波兰_1717
+      - _PL_波兰_1830
+      - _AU_澳大利亚_1280
+      - _PL_波兰_1676
+      - _PL_波兰_1772
+      - _PL_波兰_1748
+      - _PL_波兰_1703
+      - _PL_波兰_1680
+      - _PL_波兰_1769
+      - 荷兰_Tg频道:https://t.me/bpjzx2_77
+      - 荷兰_Tg频道:https://t.me/bpjzx2_49
+      - _PL_波兰_1668
+      - _PL_波兰_1684
+      - 荷兰_Tg频道:https://t.me/bpjzx2_83
+      - _PL_波兰_1805
+      - _PL_波兰_1850
+      - _PL_波兰_1718
+      - _PL_波兰_1722
+      - _PL_波兰_1732
+      - _AU_澳大利亚_1305
+      - _AU_澳大利亚_1332
+      - _PL_波兰_1840
+      - _PL_波兰_1654
+      - _PL_波兰_1774
+      - _PL_波兰_1846
+      - _AU_澳大利亚_1320
+      - 荷兰_Tg频道:https://t.me/bpjzx2_67
+      - _PL_波兰_1727
+      - vpnpool-US 10
+      - 美国 优化 D 3.5
+      - vpnpool-US 11
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[CT/CM] HKT K"
       - "[CT/CM] HKT L"
-      - "[CT/CM] HKBN A"
+      - vpnhat-香港HKT
       - "[CT/CM] HKBN B"
-      - "[CT/CM] HKT E"
-      - "[CT/CM] HKBN D"
+      - vpnhat-香港
+      - vpnhat-香港 2
+      - vpnhat-香港 3
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-香港 4
+      - "[CT/CM] HKT K"
+      - vpnhat-香港HKT 4
+      - vpnhat-香港 5
+      - vpnhat-香港HKBN
+      - vpnhat-香港HKBN 2
+      - 深圳电信-台湾
+      - 深圳电信-台湾 2
+      - vpnpool-香港HKT
+      - 香港HKT
+      - 深圳电信-台湾 3
+      - vpnhat-香港HKBN 3
+      - 深圳电信-台湾 4
+      - vpnhat-香港HKT 5
+      - 深圳电信-台湾 5
       - 台湾 G
-      - 上海CN2丨香港EC2丨解锁流媒体丨A1
+      - "[CT/CM] HKBN D"
+      - vpnhat-香港HKT 6
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT E"
+      - vpnhat-香港HKT 7
+      - vpnhat-香港HKT 8
+      - vpnpool-香港HKT 2
+      - 深圳电信-台湾 6
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[CT/CM] HKT K"
       - "[CT/CM] HKT L"
-      - "[CT/CM] HKBN A"
+      - vpnhat-香港HKT
       - "[CT/CM] HKBN B"
-      - "[CT/CM] HKT E"
-      - 韩国高速接入A
-      - 日本 Azure A 2.5x
-      - "[CT/CM] HKBN D"
-      - 日本 Azure B 2.5x
-      - 美国 优化 E 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 D 3.5
+      - vpnhat-香港
+      - vpnhat-香港 2
+      - vpnhat-香港 3
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-香港 4
+      - "[CT/CM] HKT K"
+      - vpnhat-香港HKT 4
+      - vpnhat-香港 5
+      - vpnhat-香港HKBN
+      - vpnhat-香港HKBN 2
+      - 深圳电信-台湾
+      - vpnpool-Chuncheon-Oracle
+      - 深圳电信-台湾 2
+      - vpnpool-KR
+      - vpnpool-香港HKT
+      - 香港HKT
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - 深圳电信-台湾 3
+      - vpnhat-香港HKBN 3
+      - 深圳电信-台湾 4
+      - vpnhat-香港HKT 5
+      - 深圳电信-台湾 5
       - 台湾 G
+      - "[CT/CM] HKBN D"
+      - vpnhat-香港HKT 6
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT E"
+      - vpnhat-香港HKT 7
+      - 美国 优化 A 3.5
+      - 美国 优化 B 3.5
+      - 韩国高速接入A
       - 美国 优化 I 3.5
-      - 美国 优化 G 3.5
-      - 103.172.116.8:9019
-      - 上海CN2丨日本丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A2
+      - vpnpool-US
+      - vpnpool-US 2
       - 美国 优化 C 3.5
-      - _AU_澳大利亚_1245
-      - 103.172.116.9:9037
-      - 103.172.116.8:9032
       - 美国 优化 H 3.5
-      - 广州丨日本EC2丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A1
-      - 103.172.116.8:9041
-      - _AU_澳大利亚_1279
-      - 广州丨日本丨解锁流媒体丨A1
-      - _AU_澳大利亚_1215
-      - 上海CN2丨香港EC2丨解锁流媒体丨A1
-      - 紧急线路 站点故障时优先恢复
-      - _AU_澳大利亚_1221
-      - 103.172.116.8:9093
-      - _AU_澳大利亚_1235
-      - 上海CN2丨俄罗斯丨解锁流媒体丨A2
-      - 103.172.116.8:9011
-      - _AU_澳大利亚_1230
-      - _AU_澳大利亚_1334
-      - _AU_澳大利亚_1285
-      - 103.172.116.8:9008
-      - 103.172.116.8:9079
-      - _AU_澳大利亚_1277
-      - _AU_澳大利亚_1276
-      - _AU_澳大利亚_1224
-      - _AU_澳大利亚_1342
-      - 广州丨新加坡丨解锁流媒体丨A1
-      - 103.172.116.8:9097
-      - _PL_波兰_1735
-      - _PL_波兰_1817
-      - _PL_波兰_1840
-      - _AU_澳大利亚_1228
-      - _PL_波兰_1725
-      - _DE_德国_895
-      - _PL_波兰_1856
-      - _PL_波兰_1805
-      - _PL_波兰_1839
-      - _AU_澳大利亚_1225
-      - _CH_瑞士_2256
-      - _PL_波兰_1809
-      - _PL_波兰_1827
-      - _PL_波兰_1837
-      - _AU_澳大利亚_1247
-      - _PL_波兰_1810
-      - _AU_澳大利亚_1241
-      - _PL_波兰_1778
-      - _DE_德国_670
-      - _PL_波兰_1846
-      - _PL_波兰_1863
-      - _PL_波兰_1864
-      - _AU_澳大利亚_1337
-      - _PL_波兰_1847
+      - vpnpool-US 3
+      - 日本 Azure B 2.5x
+      - vpnpool-US 4
+      - vpnpool-US 5
+      - vpnpool-US 6
+      - 美国 优化 E 3.5
+      - 日本 Azure A 2.5x
+      - vpnpool-US 7
+      - 美国 优化 F 3.5
+      - vpnhat-香港HKT 8
+      - 美国 优化 G 3.5
+      - 稳定④关注公众号：ios黑科技_17
+      - vpnpool-香港HKT 2
+      - 新加坡C
+      - 新加坡E
       - 新加坡D
-      - _DE_德国_659
-      - _PL_波兰_1709
-      - _PL_波兰_1830
-      - _PL_波兰_1832
-      - _CH_瑞士_2270
-      - _AU_澳大利亚_1308
-      - _PL_波兰_1739
-      - _PL_波兰_1833
-      - _PL_波兰_1850
-      - 荷兰_Tg频道:https://t.me/bpjzx2_62
-      - _DE_德国_976
-      - _PL_波兰_1706
-      - _PL_波兰_1736
-      - _PL_波兰_1779
-      - _PL_波兰_1852
-      - _AU_澳大利亚_1236
-      - _AU_澳大利亚_1286
-      - _PL_波兰_1750
-      - _PL_波兰_1757
-      - _PL_波兰_1860
-      - _CH_瑞士_2281
-      - _DE_德国_938
-      - _PL_波兰_1756
+      - vpnpool-US 8
+      - EXTM3U-RU
+      - 荷兰_Tg频道:https://t.me/bpjzx2_68
+      - vpnpool-US 9
+      - 深圳电信-台湾 6
+      - _DE_德国_665
+      - 英国_Tg频道:https://t.me/bpjzx2_203
+      - 荷兰_Tg频道:https://t.me/bpjzx2_53
+      - vpnpool-JP
+      - 荷兰_Tg频道:https://t.me/bpjzx2_63
+      - 荷兰_Tg频道:https://t.me/bpjzx2_89
+      - _DE_德国_911
+      - 荷兰_Tg频道:https://t.me/bpjzx2_48
+      - _DE_德国_647
+      - 荷兰_Tg频道:https://t.me/bpjzx2_46
+      - _DE_德国_666
+      - _DE_德国_687
+      - _DE_德国_644
+      - EXTM3U-RU 2
+      - 荷兰_Tg频道:https://t.me/bpjzx2_75
+      - 荷兰_Tg频道:https://t.me/bpjzx2_65
+      - 荷兰_Tg频道:https://t.me/bpjzx2_47
+      - 荷兰_Tg频道:https://t.me/bpjzx2_61
       - 英国_Tg频道:https://t.me/bpjzx2_195
-      - _AU_澳大利亚_1312
-      - _AU_澳大利亚_1231
-      - _PL_波兰_1702
+      - EXTM3U-RU-Podosinki-Melbicom
+      - 荷兰_Tg频道:https://t.me/bpjzx2_80
+      - _DE_德国_982
+      - 荷兰_Tg频道:https://t.me/bpjzx2_87
+      - _PL_波兰_1824
+      - 荷兰_Tg频道:https://t.me/bpjzx2_88
+      - 荷兰_Tg频道:https://t.me/bpjzx2_82
+      - 荷兰_Tg频道:https://t.me/bpjzx2_59
+      - 荷兰_Tg频道:https://t.me/bpjzx2_137
+      - 英国_Tg频道:https://t.me/bpjzx2_220
+      - EXTM3U-TR-Bursa-Bursabil
+      - 荷兰_Tg频道:https://t.me/bpjzx2_57
+      - 英国_Tg频道:https://t.me/bpjzx2_204
+      - 荷兰_Tg频道:https://t.me/bpjzx2_157
+      - _PL_波兰_1866
+      - 荷兰_Tg频道:https://t.me/bpjzx2_153
+      - 英国_Tg频道:https://t.me/bpjzx2_225
+      - _DE_德国_968
+      - _DE_德国_954
+      - _DE_德国_638
+      - 荷兰_Tg频道:https://t.me/bpjzx2_73
+      - 荷兰_Tg频道:https://t.me/bpjzx2_174
+      - _PL_波兰_1818
+      - _PL_波兰_1699
+      - _PL_波兰_1801
+      - 荷兰_Tg频道:https://t.me/bpjzx2_71
+      - _PL_波兰_1784
+      - _PL_波兰_1809
+      - _PL_波兰_1852
+      - 英国_Tg频道:https://t.me/bpjzx2_192
+      - 荷兰_Tg频道:https://t.me/bpjzx2_141
+      - 荷兰_Tg频道:https://t.me/bpjzx2_50
+      - _PL_波兰_1737
+      - _PL_波兰_1735
+      - 荷兰_Tg频道:https://t.me/bpjzx2_85
+      - 荷兰_Tg频道:https://t.me/bpjzx2_72
+      - 荷兰_Tg频道:https://t.me/bpjzx2_165
+      - _PL_波兰_1820
+      - 荷兰_Tg频道:https://t.me/bpjzx2_139
+      - 荷兰_Tg频道:https://t.me/bpjzx2_55
+      - _PL_波兰_1743
+      - _PL_波兰_1791
+      - _PL_波兰_1799
+      - _DE_德国_646
+      - _PL_波兰_1806
+      - _PL_波兰_1787
+      - _PL_波兰_1815
+      - _PL_波兰_1693
+      - 荷兰_Tg频道:https://t.me/bpjzx2_173
+      - _PL_波兰_1810
+      - _PL_波兰_1835
+      - _PL_波兰_1870
+      - _PL_波兰_1836
+      - _PL_波兰_1751
+      - _PL_波兰_1753
+      - _PL_波兰_1778
+      - _PL_波兰_1771
+      - _PL_波兰_1854
+      - _PL_波兰_1807
+      - 英国_Tg频道:https://t.me/bpjzx2_191
+      - _PL_波兰_1790
+      - _PL_波兰_1739
+      - _PL_波兰_1796
+      - _PL_波兰_1678
+      - _PL_波兰_1785
+      - _PL_波兰_1822
+      - _PL_波兰_1768
+      - _PL_波兰_1839
+      - _PL_波兰_1742
+      - _PL_波兰_1755
+      - _PL_波兰_1729
+      - _PL_波兰_1827
+      - _PL_波兰_1714
+      - _PL_波兰_1741
+      - _PL_波兰_1794
+      - _PL_波兰_1833
+      - _AU_澳大利亚_1335
+      - _PL_波兰_1757
+      - _DE_德国_983
+      - 荷兰_Tg频道:https://t.me/bpjzx2_176
+      - 荷兰_Tg频道:https://t.me/bpjzx2_51
+      - _PL_波兰_1860
+      - _AU_澳大利亚_1317
+      - _AU_澳大利亚_1313
+      - _AU_澳大利亚_1310
+      - _PL_波兰_1837
+      - _AU_澳大利亚_1334
+      - _AU_澳大利亚_1330
+      - _AU_澳大利亚_1309
+      - _AU_澳大利亚_1277
+      - _PL_波兰_1740
+      - _PL_波兰_1701
+      - _PL_波兰_1795
+      - _PL_波兰_1803
+      - 荷兰_Tg频道:https://t.me/bpjzx2_84
+      - 荷兰_Tg频道:https://t.me/bpjzx2_60
+      - _AU_澳大利亚_1333
+      - _PL_波兰_1733
+      - _PL_波兰_1706
+      - _PL_波兰_1817
+      - _PL_波兰_1825
+      - _PL_波兰_1847
+      - _AU_澳大利亚_1264
+      - _AU_澳大利亚_1340
+      - _PL_波兰_1773
+      - 荷兰_Tg频道:https://t.me/bpjzx2_76
+      - _AU_澳大利亚_1301
+      - _PL_波兰_1717
+      - _PL_波兰_1830
+      - _AU_澳大利亚_1280
+      - _PL_波兰_1676
+      - _PL_波兰_1772
+      - _PL_波兰_1748
+      - _PL_波兰_1703
+      - _PL_波兰_1680
+      - _PL_波兰_1769
+      - 荷兰_Tg频道:https://t.me/bpjzx2_77
+      - 荷兰_Tg频道:https://t.me/bpjzx2_49
+      - _PL_波兰_1668
+      - _PL_波兰_1684
+      - 荷兰_Tg频道:https://t.me/bpjzx2_83
+      - _PL_波兰_1805
+      - _PL_波兰_1850
+      - _PL_波兰_1718
+      - _PL_波兰_1722
+      - _PL_波兰_1732
+      - _AU_澳大利亚_1305
+      - _AU_澳大利亚_1332
+      - _PL_波兰_1840
+      - _PL_波兰_1654
+      - _PL_波兰_1774
+      - _PL_波兰_1846
+      - _AU_澳大利亚_1320
+      - 荷兰_Tg频道:https://t.me/bpjzx2_67
+      - _PL_波兰_1727
+      - vpnpool-US 10
+      - 美国 优化 D 3.5
+      - vpnpool-US 11
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[CT/CM] HKT K"
       - "[CT/CM] HKT L"
-      - "[CT/CM] HKBN A"
+      - vpnhat-香港HKT
       - "[CT/CM] HKBN B"
-      - "[CT/CM] HKT E"
-      - 韩国高速接入A
-      - 日本 Azure A 2.5x
-      - "[CT/CM] HKBN D"
-      - 日本 Azure B 2.5x
-      - 美国 优化 E 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 D 3.5
+      - vpnhat-香港
+      - vpnhat-香港 2
+      - vpnhat-香港 3
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-香港 4
+      - "[CT/CM] HKT K"
+      - vpnhat-香港HKT 4
+      - vpnhat-香港 5
+      - vpnhat-香港HKBN
+      - vpnhat-香港HKBN 2
+      - 深圳电信-台湾
+      - vpnpool-Chuncheon-Oracle
+      - 深圳电信-台湾 2
+      - vpnpool-KR
+      - vpnpool-香港HKT
+      - 香港HKT
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - 深圳电信-台湾 3
+      - vpnhat-香港HKBN 3
+      - 深圳电信-台湾 4
+      - vpnhat-香港HKT 5
+      - 深圳电信-台湾 5
       - 台湾 G
+      - "[CT/CM] HKBN D"
+      - vpnhat-香港HKT 6
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT E"
+      - vpnhat-香港HKT 7
+      - 美国 优化 A 3.5
+      - 美国 优化 B 3.5
+      - 韩国高速接入A
       - 美国 优化 I 3.5
-      - 美国 优化 G 3.5
-      - 103.172.116.8:9019
-      - 上海CN2丨日本丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A2
+      - vpnpool-US
+      - vpnpool-US 2
       - 美国 优化 C 3.5
-      - _AU_澳大利亚_1245
-      - 103.172.116.9:9037
-      - 103.172.116.8:9032
       - 美国 优化 H 3.5
-      - 广州丨日本EC2丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A1
-      - 103.172.116.8:9041
-      - _AU_澳大利亚_1279
-      - 广州丨日本丨解锁流媒体丨A1
-      - _AU_澳大利亚_1215
-      - 上海CN2丨香港EC2丨解锁流媒体丨A1
-      - 紧急线路 站点故障时优先恢复
-      - _AU_澳大利亚_1221
-      - 103.172.116.8:9093
-      - _AU_澳大利亚_1235
-      - 上海CN2丨俄罗斯丨解锁流媒体丨A2
-      - 103.172.116.8:9011
-      - _AU_澳大利亚_1230
-      - _AU_澳大利亚_1334
-      - _AU_澳大利亚_1285
-      - 103.172.116.8:9008
-      - 103.172.116.8:9079
-      - _AU_澳大利亚_1277
-      - _AU_澳大利亚_1276
-      - _AU_澳大利亚_1224
-      - _AU_澳大利亚_1342
-      - 广州丨新加坡丨解锁流媒体丨A1
-      - 103.172.116.8:9097
-      - _PL_波兰_1735
-      - _PL_波兰_1817
-      - _PL_波兰_1840
-      - _AU_澳大利亚_1228
-      - _PL_波兰_1725
-      - _DE_德国_895
-      - _PL_波兰_1856
-      - _PL_波兰_1805
-      - _PL_波兰_1839
-      - _AU_澳大利亚_1225
-      - _CH_瑞士_2256
-      - _PL_波兰_1809
-      - _PL_波兰_1827
-      - _PL_波兰_1837
-      - _AU_澳大利亚_1247
-      - _PL_波兰_1810
-      - _AU_澳大利亚_1241
-      - _PL_波兰_1778
-      - _DE_德国_670
-      - _PL_波兰_1846
-      - _PL_波兰_1863
-      - _PL_波兰_1864
-      - _AU_澳大利亚_1337
-      - _PL_波兰_1847
+      - vpnpool-US 3
+      - 日本 Azure B 2.5x
+      - vpnpool-US 4
+      - vpnpool-US 5
+      - vpnpool-US 6
+      - 美国 优化 E 3.5
+      - 日本 Azure A 2.5x
+      - vpnpool-US 7
+      - 美国 优化 F 3.5
+      - vpnhat-香港HKT 8
+      - 美国 优化 G 3.5
+      - 稳定④关注公众号：ios黑科技_17
+      - vpnpool-香港HKT 2
+      - 新加坡C
+      - 新加坡E
       - 新加坡D
-      - _DE_德国_659
-      - _PL_波兰_1709
-      - _PL_波兰_1830
-      - _PL_波兰_1832
-      - _CH_瑞士_2270
-      - _AU_澳大利亚_1308
-      - _PL_波兰_1739
-      - _PL_波兰_1833
-      - _PL_波兰_1850
-      - 荷兰_Tg频道:https://t.me/bpjzx2_62
-      - _DE_德国_976
-      - _PL_波兰_1706
-      - _PL_波兰_1736
-      - _PL_波兰_1779
-      - _PL_波兰_1852
-      - _AU_澳大利亚_1236
-      - _AU_澳大利亚_1286
-      - _PL_波兰_1750
-      - _PL_波兰_1757
-      - _PL_波兰_1860
-      - _CH_瑞士_2281
-      - _DE_德国_938
-      - _PL_波兰_1756
+      - vpnpool-US 8
+      - EXTM3U-RU
+      - 荷兰_Tg频道:https://t.me/bpjzx2_68
+      - vpnpool-US 9
+      - 深圳电信-台湾 6
+      - _DE_德国_665
+      - 英国_Tg频道:https://t.me/bpjzx2_203
+      - 荷兰_Tg频道:https://t.me/bpjzx2_53
+      - vpnpool-JP
+      - 荷兰_Tg频道:https://t.me/bpjzx2_63
+      - 荷兰_Tg频道:https://t.me/bpjzx2_89
+      - _DE_德国_911
+      - 荷兰_Tg频道:https://t.me/bpjzx2_48
+      - _DE_德国_647
+      - 荷兰_Tg频道:https://t.me/bpjzx2_46
+      - _DE_德国_666
+      - _DE_德国_687
+      - _DE_德国_644
+      - EXTM3U-RU 2
+      - 荷兰_Tg频道:https://t.me/bpjzx2_75
+      - 荷兰_Tg频道:https://t.me/bpjzx2_65
+      - 荷兰_Tg频道:https://t.me/bpjzx2_47
+      - 荷兰_Tg频道:https://t.me/bpjzx2_61
       - 英国_Tg频道:https://t.me/bpjzx2_195
-      - _AU_澳大利亚_1312
-      - _AU_澳大利亚_1231
-      - _PL_波兰_1702
+      - EXTM3U-RU-Podosinki-Melbicom
+      - 荷兰_Tg频道:https://t.me/bpjzx2_80
+      - _DE_德国_982
+      - 荷兰_Tg频道:https://t.me/bpjzx2_87
+      - _PL_波兰_1824
+      - 荷兰_Tg频道:https://t.me/bpjzx2_88
+      - 荷兰_Tg频道:https://t.me/bpjzx2_82
+      - 荷兰_Tg频道:https://t.me/bpjzx2_59
+      - 荷兰_Tg频道:https://t.me/bpjzx2_137
+      - 英国_Tg频道:https://t.me/bpjzx2_220
+      - EXTM3U-TR-Bursa-Bursabil
+      - 荷兰_Tg频道:https://t.me/bpjzx2_57
+      - 英国_Tg频道:https://t.me/bpjzx2_204
+      - 荷兰_Tg频道:https://t.me/bpjzx2_157
+      - _PL_波兰_1866
+      - 荷兰_Tg频道:https://t.me/bpjzx2_153
+      - 英国_Tg频道:https://t.me/bpjzx2_225
+      - _DE_德国_968
+      - _DE_德国_954
+      - _DE_德国_638
+      - 荷兰_Tg频道:https://t.me/bpjzx2_73
+      - 荷兰_Tg频道:https://t.me/bpjzx2_174
+      - _PL_波兰_1818
+      - _PL_波兰_1699
+      - _PL_波兰_1801
+      - 荷兰_Tg频道:https://t.me/bpjzx2_71
+      - _PL_波兰_1784
+      - _PL_波兰_1809
+      - _PL_波兰_1852
+      - 英国_Tg频道:https://t.me/bpjzx2_192
+      - 荷兰_Tg频道:https://t.me/bpjzx2_141
+      - 荷兰_Tg频道:https://t.me/bpjzx2_50
+      - _PL_波兰_1737
+      - _PL_波兰_1735
+      - 荷兰_Tg频道:https://t.me/bpjzx2_85
+      - 荷兰_Tg频道:https://t.me/bpjzx2_72
+      - 荷兰_Tg频道:https://t.me/bpjzx2_165
+      - _PL_波兰_1820
+      - 荷兰_Tg频道:https://t.me/bpjzx2_139
+      - 荷兰_Tg频道:https://t.me/bpjzx2_55
+      - _PL_波兰_1743
+      - _PL_波兰_1791
+      - _PL_波兰_1799
+      - _DE_德国_646
+      - _PL_波兰_1806
+      - _PL_波兰_1787
+      - _PL_波兰_1815
+      - _PL_波兰_1693
+      - 荷兰_Tg频道:https://t.me/bpjzx2_173
+      - _PL_波兰_1810
+      - _PL_波兰_1835
+      - _PL_波兰_1870
+      - _PL_波兰_1836
+      - _PL_波兰_1751
+      - _PL_波兰_1753
+      - _PL_波兰_1778
+      - _PL_波兰_1771
+      - _PL_波兰_1854
+      - _PL_波兰_1807
+      - 英国_Tg频道:https://t.me/bpjzx2_191
+      - _PL_波兰_1790
+      - _PL_波兰_1739
+      - _PL_波兰_1796
+      - _PL_波兰_1678
+      - _PL_波兰_1785
+      - _PL_波兰_1822
+      - _PL_波兰_1768
+      - _PL_波兰_1839
+      - _PL_波兰_1742
+      - _PL_波兰_1755
+      - _PL_波兰_1729
+      - _PL_波兰_1827
+      - _PL_波兰_1714
+      - _PL_波兰_1741
+      - _PL_波兰_1794
+      - _PL_波兰_1833
+      - _AU_澳大利亚_1335
+      - _PL_波兰_1757
+      - _DE_德国_983
+      - 荷兰_Tg频道:https://t.me/bpjzx2_176
+      - 荷兰_Tg频道:https://t.me/bpjzx2_51
+      - _PL_波兰_1860
+      - _AU_澳大利亚_1317
+      - _AU_澳大利亚_1313
+      - _AU_澳大利亚_1310
+      - _PL_波兰_1837
+      - _AU_澳大利亚_1334
+      - _AU_澳大利亚_1330
+      - _AU_澳大利亚_1309
+      - _AU_澳大利亚_1277
+      - _PL_波兰_1740
+      - _PL_波兰_1701
+      - _PL_波兰_1795
+      - _PL_波兰_1803
+      - 荷兰_Tg频道:https://t.me/bpjzx2_84
+      - 荷兰_Tg频道:https://t.me/bpjzx2_60
+      - _AU_澳大利亚_1333
+      - _PL_波兰_1733
+      - _PL_波兰_1706
+      - _PL_波兰_1817
+      - _PL_波兰_1825
+      - _PL_波兰_1847
+      - _AU_澳大利亚_1264
+      - _AU_澳大利亚_1340
+      - _PL_波兰_1773
+      - 荷兰_Tg频道:https://t.me/bpjzx2_76
+      - _AU_澳大利亚_1301
+      - _PL_波兰_1717
+      - _PL_波兰_1830
+      - _AU_澳大利亚_1280
+      - _PL_波兰_1676
+      - _PL_波兰_1772
+      - _PL_波兰_1748
+      - _PL_波兰_1703
+      - _PL_波兰_1680
+      - _PL_波兰_1769
+      - 荷兰_Tg频道:https://t.me/bpjzx2_77
+      - 荷兰_Tg频道:https://t.me/bpjzx2_49
+      - _PL_波兰_1668
+      - _PL_波兰_1684
+      - 荷兰_Tg频道:https://t.me/bpjzx2_83
+      - _PL_波兰_1805
+      - _PL_波兰_1850
+      - _PL_波兰_1718
+      - _PL_波兰_1722
+      - _PL_波兰_1732
+      - _AU_澳大利亚_1305
+      - _AU_澳大利亚_1332
+      - _PL_波兰_1840
+      - _PL_波兰_1654
+      - _PL_波兰_1774
+      - _PL_波兰_1846
+      - _AU_澳大利亚_1320
+      - 荷兰_Tg频道:https://t.me/bpjzx2_67
+      - _PL_波兰_1727
+      - vpnpool-US 10
+      - 美国 优化 D 3.5
+      - vpnpool-US 11
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[CT/CM] HKT K"
       - "[CT/CM] HKT L"
-      - "[CT/CM] HKBN A"
+      - vpnhat-香港HKT
       - "[CT/CM] HKBN B"
-      - "[CT/CM] HKT E"
-      - 韩国高速接入A
-      - 日本 Azure A 2.5x
-      - "[CT/CM] HKBN D"
-      - 日本 Azure B 2.5x
-      - 美国 优化 E 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 D 3.5
+      - vpnhat-香港
+      - vpnhat-香港 2
+      - vpnhat-香港 3
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-香港 4
+      - "[CT/CM] HKT K"
+      - vpnhat-香港HKT 4
+      - vpnhat-香港 5
+      - vpnhat-香港HKBN
+      - vpnhat-香港HKBN 2
+      - 深圳电信-台湾
+      - vpnpool-Chuncheon-Oracle
+      - 深圳电信-台湾 2
+      - vpnpool-KR
+      - vpnpool-香港HKT
+      - 香港HKT
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - 深圳电信-台湾 3
+      - vpnhat-香港HKBN 3
+      - 深圳电信-台湾 4
+      - vpnhat-香港HKT 5
+      - 深圳电信-台湾 5
       - 台湾 G
+      - "[CT/CM] HKBN D"
+      - vpnhat-香港HKT 6
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT E"
+      - vpnhat-香港HKT 7
+      - 美国 优化 A 3.5
+      - 美国 优化 B 3.5
+      - 韩国高速接入A
       - 美国 优化 I 3.5
-      - 美国 优化 G 3.5
-      - 103.172.116.8:9019
-      - 上海CN2丨日本丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A2
+      - vpnpool-US
+      - vpnpool-US 2
       - 美国 优化 C 3.5
-      - _AU_澳大利亚_1245
-      - 103.172.116.9:9037
-      - 103.172.116.8:9032
       - 美国 优化 H 3.5
-      - 广州丨日本EC2丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A1
-      - 103.172.116.8:9041
-      - _AU_澳大利亚_1279
-      - 广州丨日本丨解锁流媒体丨A1
-      - _AU_澳大利亚_1215
-      - 上海CN2丨香港EC2丨解锁流媒体丨A1
-      - 紧急线路 站点故障时优先恢复
-      - _AU_澳大利亚_1221
-      - 103.172.116.8:9093
-      - _AU_澳大利亚_1235
-      - 上海CN2丨俄罗斯丨解锁流媒体丨A2
-      - 103.172.116.8:9011
-      - _AU_澳大利亚_1230
-      - _AU_澳大利亚_1334
-      - _AU_澳大利亚_1285
-      - 103.172.116.8:9008
-      - 103.172.116.8:9079
-      - _AU_澳大利亚_1277
-      - _AU_澳大利亚_1276
-      - _AU_澳大利亚_1224
-      - _AU_澳大利亚_1342
-      - 广州丨新加坡丨解锁流媒体丨A1
-      - 103.172.116.8:9097
-      - _PL_波兰_1735
-      - _PL_波兰_1817
-      - _PL_波兰_1840
-      - _AU_澳大利亚_1228
-      - _PL_波兰_1725
-      - _DE_德国_895
-      - _PL_波兰_1856
-      - _PL_波兰_1805
-      - _PL_波兰_1839
-      - _AU_澳大利亚_1225
-      - _CH_瑞士_2256
-      - _PL_波兰_1809
-      - _PL_波兰_1827
-      - _PL_波兰_1837
-      - _AU_澳大利亚_1247
-      - _PL_波兰_1810
-      - _AU_澳大利亚_1241
-      - _PL_波兰_1778
-      - _DE_德国_670
-      - _PL_波兰_1846
-      - _PL_波兰_1863
-      - _PL_波兰_1864
-      - _AU_澳大利亚_1337
-      - _PL_波兰_1847
+      - vpnpool-US 3
+      - 日本 Azure B 2.5x
+      - vpnpool-US 4
+      - vpnpool-US 5
+      - vpnpool-US 6
+      - 美国 优化 E 3.5
+      - 日本 Azure A 2.5x
+      - vpnpool-US 7
+      - 美国 优化 F 3.5
+      - vpnhat-香港HKT 8
+      - 美国 优化 G 3.5
+      - 稳定④关注公众号：ios黑科技_17
+      - vpnpool-香港HKT 2
+      - 新加坡C
+      - 新加坡E
       - 新加坡D
-      - _DE_德国_659
-      - _PL_波兰_1709
-      - _PL_波兰_1830
-      - _PL_波兰_1832
-      - _CH_瑞士_2270
-      - _AU_澳大利亚_1308
-      - _PL_波兰_1739
-      - _PL_波兰_1833
-      - _PL_波兰_1850
-      - 荷兰_Tg频道:https://t.me/bpjzx2_62
-      - _DE_德国_976
-      - _PL_波兰_1706
-      - _PL_波兰_1736
-      - _PL_波兰_1779
-      - _PL_波兰_1852
-      - _AU_澳大利亚_1236
-      - _AU_澳大利亚_1286
-      - _PL_波兰_1750
-      - _PL_波兰_1757
-      - _PL_波兰_1860
-      - _CH_瑞士_2281
-      - _DE_德国_938
-      - _PL_波兰_1756
+      - vpnpool-US 8
+      - EXTM3U-RU
+      - 荷兰_Tg频道:https://t.me/bpjzx2_68
+      - vpnpool-US 9
+      - 深圳电信-台湾 6
+      - _DE_德国_665
+      - 英国_Tg频道:https://t.me/bpjzx2_203
+      - 荷兰_Tg频道:https://t.me/bpjzx2_53
+      - vpnpool-JP
+      - 荷兰_Tg频道:https://t.me/bpjzx2_63
+      - 荷兰_Tg频道:https://t.me/bpjzx2_89
+      - _DE_德国_911
+      - 荷兰_Tg频道:https://t.me/bpjzx2_48
+      - _DE_德国_647
+      - 荷兰_Tg频道:https://t.me/bpjzx2_46
+      - _DE_德国_666
+      - _DE_德国_687
+      - _DE_德国_644
+      - EXTM3U-RU 2
+      - 荷兰_Tg频道:https://t.me/bpjzx2_75
+      - 荷兰_Tg频道:https://t.me/bpjzx2_65
+      - 荷兰_Tg频道:https://t.me/bpjzx2_47
+      - 荷兰_Tg频道:https://t.me/bpjzx2_61
       - 英国_Tg频道:https://t.me/bpjzx2_195
-      - _AU_澳大利亚_1312
-      - _AU_澳大利亚_1231
-      - _PL_波兰_1702
+      - EXTM3U-RU-Podosinki-Melbicom
+      - 荷兰_Tg频道:https://t.me/bpjzx2_80
+      - _DE_德国_982
+      - 荷兰_Tg频道:https://t.me/bpjzx2_87
+      - _PL_波兰_1824
+      - 荷兰_Tg频道:https://t.me/bpjzx2_88
+      - 荷兰_Tg频道:https://t.me/bpjzx2_82
+      - 荷兰_Tg频道:https://t.me/bpjzx2_59
+      - 荷兰_Tg频道:https://t.me/bpjzx2_137
+      - 英国_Tg频道:https://t.me/bpjzx2_220
+      - EXTM3U-TR-Bursa-Bursabil
+      - 荷兰_Tg频道:https://t.me/bpjzx2_57
+      - 英国_Tg频道:https://t.me/bpjzx2_204
+      - 荷兰_Tg频道:https://t.me/bpjzx2_157
+      - _PL_波兰_1866
+      - 荷兰_Tg频道:https://t.me/bpjzx2_153
+      - 英国_Tg频道:https://t.me/bpjzx2_225
+      - _DE_德国_968
+      - _DE_德国_954
+      - _DE_德国_638
+      - 荷兰_Tg频道:https://t.me/bpjzx2_73
+      - 荷兰_Tg频道:https://t.me/bpjzx2_174
+      - _PL_波兰_1818
+      - _PL_波兰_1699
+      - _PL_波兰_1801
+      - 荷兰_Tg频道:https://t.me/bpjzx2_71
+      - _PL_波兰_1784
+      - _PL_波兰_1809
+      - _PL_波兰_1852
+      - 英国_Tg频道:https://t.me/bpjzx2_192
+      - 荷兰_Tg频道:https://t.me/bpjzx2_141
+      - 荷兰_Tg频道:https://t.me/bpjzx2_50
+      - _PL_波兰_1737
+      - _PL_波兰_1735
+      - 荷兰_Tg频道:https://t.me/bpjzx2_85
+      - 荷兰_Tg频道:https://t.me/bpjzx2_72
+      - 荷兰_Tg频道:https://t.me/bpjzx2_165
+      - _PL_波兰_1820
+      - 荷兰_Tg频道:https://t.me/bpjzx2_139
+      - 荷兰_Tg频道:https://t.me/bpjzx2_55
+      - _PL_波兰_1743
+      - _PL_波兰_1791
+      - _PL_波兰_1799
+      - _DE_德国_646
+      - _PL_波兰_1806
+      - _PL_波兰_1787
+      - _PL_波兰_1815
+      - _PL_波兰_1693
+      - 荷兰_Tg频道:https://t.me/bpjzx2_173
+      - _PL_波兰_1810
+      - _PL_波兰_1835
+      - _PL_波兰_1870
+      - _PL_波兰_1836
+      - _PL_波兰_1751
+      - _PL_波兰_1753
+      - _PL_波兰_1778
+      - _PL_波兰_1771
+      - _PL_波兰_1854
+      - _PL_波兰_1807
+      - 英国_Tg频道:https://t.me/bpjzx2_191
+      - _PL_波兰_1790
+      - _PL_波兰_1739
+      - _PL_波兰_1796
+      - _PL_波兰_1678
+      - _PL_波兰_1785
+      - _PL_波兰_1822
+      - _PL_波兰_1768
+      - _PL_波兰_1839
+      - _PL_波兰_1742
+      - _PL_波兰_1755
+      - _PL_波兰_1729
+      - _PL_波兰_1827
+      - _PL_波兰_1714
+      - _PL_波兰_1741
+      - _PL_波兰_1794
+      - _PL_波兰_1833
+      - _AU_澳大利亚_1335
+      - _PL_波兰_1757
+      - _DE_德国_983
+      - 荷兰_Tg频道:https://t.me/bpjzx2_176
+      - 荷兰_Tg频道:https://t.me/bpjzx2_51
+      - _PL_波兰_1860
+      - _AU_澳大利亚_1317
+      - _AU_澳大利亚_1313
+      - _AU_澳大利亚_1310
+      - _PL_波兰_1837
+      - _AU_澳大利亚_1334
+      - _AU_澳大利亚_1330
+      - _AU_澳大利亚_1309
+      - _AU_澳大利亚_1277
+      - _PL_波兰_1740
+      - _PL_波兰_1701
+      - _PL_波兰_1795
+      - _PL_波兰_1803
+      - 荷兰_Tg频道:https://t.me/bpjzx2_84
+      - 荷兰_Tg频道:https://t.me/bpjzx2_60
+      - _AU_澳大利亚_1333
+      - _PL_波兰_1733
+      - _PL_波兰_1706
+      - _PL_波兰_1817
+      - _PL_波兰_1825
+      - _PL_波兰_1847
+      - _AU_澳大利亚_1264
+      - _AU_澳大利亚_1340
+      - _PL_波兰_1773
+      - 荷兰_Tg频道:https://t.me/bpjzx2_76
+      - _AU_澳大利亚_1301
+      - _PL_波兰_1717
+      - _PL_波兰_1830
+      - _AU_澳大利亚_1280
+      - _PL_波兰_1676
+      - _PL_波兰_1772
+      - _PL_波兰_1748
+      - _PL_波兰_1703
+      - _PL_波兰_1680
+      - _PL_波兰_1769
+      - 荷兰_Tg频道:https://t.me/bpjzx2_77
+      - 荷兰_Tg频道:https://t.me/bpjzx2_49
+      - _PL_波兰_1668
+      - _PL_波兰_1684
+      - 荷兰_Tg频道:https://t.me/bpjzx2_83
+      - _PL_波兰_1805
+      - _PL_波兰_1850
+      - _PL_波兰_1718
+      - _PL_波兰_1722
+      - _PL_波兰_1732
+      - _AU_澳大利亚_1305
+      - _AU_澳大利亚_1332
+      - _PL_波兰_1840
+      - _PL_波兰_1654
+      - _PL_波兰_1774
+      - _PL_波兰_1846
+      - _AU_澳大利亚_1320
+      - 荷兰_Tg频道:https://t.me/bpjzx2_67
+      - _PL_波兰_1727
+      - vpnpool-US 10
+      - 美国 优化 D 3.5
+      - vpnpool-US 11
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -884,106 +1860,225 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[CT/CM] HKT K"
       - "[CT/CM] HKT L"
-      - "[CT/CM] HKBN A"
+      - vpnhat-香港HKT
       - "[CT/CM] HKBN B"
-      - "[CT/CM] HKT E"
-      - 韩国高速接入A
-      - 日本 Azure A 2.5x
-      - "[CT/CM] HKBN D"
-      - 日本 Azure B 2.5x
-      - 美国 优化 E 3.5
-      - 美国 优化 A 3.5
-      - 美国 优化 F 3.5
-      - 美国 优化 D 3.5
+      - vpnhat-香港
+      - vpnhat-香港 2
+      - vpnhat-香港 3
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-香港 4
+      - "[CT/CM] HKT K"
+      - vpnhat-香港HKT 4
+      - vpnhat-香港 5
+      - vpnhat-香港HKBN
+      - vpnhat-香港HKBN 2
+      - 深圳电信-台湾
+      - vpnpool-Chuncheon-Oracle
+      - 深圳电信-台湾 2
+      - vpnpool-KR
+      - vpnpool-香港HKT
+      - 香港HKT
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - 深圳电信-台湾 3
+      - vpnhat-香港HKBN 3
+      - 深圳电信-台湾 4
+      - vpnhat-香港HKT 5
+      - 深圳电信-台湾 5
       - 台湾 G
+      - "[CT/CM] HKBN D"
+      - vpnhat-香港HKT 6
+      - "[CT/CM] HKBN A"
+      - "[CT/CM] HKT E"
+      - vpnhat-香港HKT 7
+      - 美国 优化 A 3.5
+      - 美国 优化 B 3.5
+      - 韩国高速接入A
       - 美国 优化 I 3.5
-      - 美国 优化 G 3.5
-      - 103.172.116.8:9019
-      - 上海CN2丨日本丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A2
+      - vpnpool-US
+      - vpnpool-US 2
       - 美国 优化 C 3.5
-      - _AU_澳大利亚_1245
-      - 103.172.116.9:9037
-      - 103.172.116.8:9032
       - 美国 优化 H 3.5
-      - 广州丨日本EC2丨解锁流媒体丨A1
-      - 广州丨美国北加州丨解锁流媒体丨A1
-      - 103.172.116.8:9041
-      - _AU_澳大利亚_1279
-      - 广州丨日本丨解锁流媒体丨A1
-      - _AU_澳大利亚_1215
-      - 上海CN2丨香港EC2丨解锁流媒体丨A1
-      - 紧急线路 站点故障时优先恢复
-      - _AU_澳大利亚_1221
-      - 103.172.116.8:9093
-      - _AU_澳大利亚_1235
-      - 上海CN2丨俄罗斯丨解锁流媒体丨A2
-      - 103.172.116.8:9011
-      - _AU_澳大利亚_1230
-      - _AU_澳大利亚_1334
-      - _AU_澳大利亚_1285
-      - 103.172.116.8:9008
-      - 103.172.116.8:9079
-      - _AU_澳大利亚_1277
-      - _AU_澳大利亚_1276
-      - _AU_澳大利亚_1224
-      - _AU_澳大利亚_1342
-      - 广州丨新加坡丨解锁流媒体丨A1
-      - 103.172.116.8:9097
-      - _PL_波兰_1735
-      - _PL_波兰_1817
-      - _PL_波兰_1840
-      - _AU_澳大利亚_1228
-      - _PL_波兰_1725
-      - _DE_德国_895
-      - _PL_波兰_1856
-      - _PL_波兰_1805
-      - _PL_波兰_1839
-      - _AU_澳大利亚_1225
-      - _CH_瑞士_2256
-      - _PL_波兰_1809
-      - _PL_波兰_1827
-      - _PL_波兰_1837
-      - _AU_澳大利亚_1247
-      - _PL_波兰_1810
-      - _AU_澳大利亚_1241
-      - _PL_波兰_1778
-      - _DE_德国_670
-      - _PL_波兰_1846
-      - _PL_波兰_1863
-      - _PL_波兰_1864
-      - _AU_澳大利亚_1337
-      - _PL_波兰_1847
+      - vpnpool-US 3
+      - 日本 Azure B 2.5x
+      - vpnpool-US 4
+      - vpnpool-US 5
+      - vpnpool-US 6
+      - 美国 优化 E 3.5
+      - 日本 Azure A 2.5x
+      - vpnpool-US 7
+      - 美国 优化 F 3.5
+      - vpnhat-香港HKT 8
+      - 美国 优化 G 3.5
+      - 稳定④关注公众号：ios黑科技_17
+      - vpnpool-香港HKT 2
+      - 新加坡C
+      - 新加坡E
       - 新加坡D
-      - _DE_德国_659
-      - _PL_波兰_1709
-      - _PL_波兰_1830
-      - _PL_波兰_1832
-      - _CH_瑞士_2270
-      - _AU_澳大利亚_1308
-      - _PL_波兰_1739
-      - _PL_波兰_1833
-      - _PL_波兰_1850
-      - 荷兰_Tg频道:https://t.me/bpjzx2_62
-      - _DE_德国_976
-      - _PL_波兰_1706
-      - _PL_波兰_1736
-      - _PL_波兰_1779
-      - _PL_波兰_1852
-      - _AU_澳大利亚_1236
-      - _AU_澳大利亚_1286
-      - _PL_波兰_1750
-      - _PL_波兰_1757
-      - _PL_波兰_1860
-      - _CH_瑞士_2281
-      - _DE_德国_938
-      - _PL_波兰_1756
+      - vpnpool-US 8
+      - EXTM3U-RU
+      - 荷兰_Tg频道:https://t.me/bpjzx2_68
+      - vpnpool-US 9
+      - 深圳电信-台湾 6
+      - _DE_德国_665
+      - 英国_Tg频道:https://t.me/bpjzx2_203
+      - 荷兰_Tg频道:https://t.me/bpjzx2_53
+      - vpnpool-JP
+      - 荷兰_Tg频道:https://t.me/bpjzx2_63
+      - 荷兰_Tg频道:https://t.me/bpjzx2_89
+      - _DE_德国_911
+      - 荷兰_Tg频道:https://t.me/bpjzx2_48
+      - _DE_德国_647
+      - 荷兰_Tg频道:https://t.me/bpjzx2_46
+      - _DE_德国_666
+      - _DE_德国_687
+      - _DE_德国_644
+      - EXTM3U-RU 2
+      - 荷兰_Tg频道:https://t.me/bpjzx2_75
+      - 荷兰_Tg频道:https://t.me/bpjzx2_65
+      - 荷兰_Tg频道:https://t.me/bpjzx2_47
+      - 荷兰_Tg频道:https://t.me/bpjzx2_61
       - 英国_Tg频道:https://t.me/bpjzx2_195
-      - _AU_澳大利亚_1312
-      - _AU_澳大利亚_1231
-      - _PL_波兰_1702
+      - EXTM3U-RU-Podosinki-Melbicom
+      - 荷兰_Tg频道:https://t.me/bpjzx2_80
+      - _DE_德国_982
+      - 荷兰_Tg频道:https://t.me/bpjzx2_87
+      - _PL_波兰_1824
+      - 荷兰_Tg频道:https://t.me/bpjzx2_88
+      - 荷兰_Tg频道:https://t.me/bpjzx2_82
+      - 荷兰_Tg频道:https://t.me/bpjzx2_59
+      - 荷兰_Tg频道:https://t.me/bpjzx2_137
+      - 英国_Tg频道:https://t.me/bpjzx2_220
+      - EXTM3U-TR-Bursa-Bursabil
+      - 荷兰_Tg频道:https://t.me/bpjzx2_57
+      - 英国_Tg频道:https://t.me/bpjzx2_204
+      - 荷兰_Tg频道:https://t.me/bpjzx2_157
+      - _PL_波兰_1866
+      - 荷兰_Tg频道:https://t.me/bpjzx2_153
+      - 英国_Tg频道:https://t.me/bpjzx2_225
+      - _DE_德国_968
+      - _DE_德国_954
+      - _DE_德国_638
+      - 荷兰_Tg频道:https://t.me/bpjzx2_73
+      - 荷兰_Tg频道:https://t.me/bpjzx2_174
+      - _PL_波兰_1818
+      - _PL_波兰_1699
+      - _PL_波兰_1801
+      - 荷兰_Tg频道:https://t.me/bpjzx2_71
+      - _PL_波兰_1784
+      - _PL_波兰_1809
+      - _PL_波兰_1852
+      - 英国_Tg频道:https://t.me/bpjzx2_192
+      - 荷兰_Tg频道:https://t.me/bpjzx2_141
+      - 荷兰_Tg频道:https://t.me/bpjzx2_50
+      - _PL_波兰_1737
+      - _PL_波兰_1735
+      - 荷兰_Tg频道:https://t.me/bpjzx2_85
+      - 荷兰_Tg频道:https://t.me/bpjzx2_72
+      - 荷兰_Tg频道:https://t.me/bpjzx2_165
+      - _PL_波兰_1820
+      - 荷兰_Tg频道:https://t.me/bpjzx2_139
+      - 荷兰_Tg频道:https://t.me/bpjzx2_55
+      - _PL_波兰_1743
+      - _PL_波兰_1791
+      - _PL_波兰_1799
+      - _DE_德国_646
+      - _PL_波兰_1806
+      - _PL_波兰_1787
+      - _PL_波兰_1815
+      - _PL_波兰_1693
+      - 荷兰_Tg频道:https://t.me/bpjzx2_173
+      - _PL_波兰_1810
+      - _PL_波兰_1835
+      - _PL_波兰_1870
+      - _PL_波兰_1836
+      - _PL_波兰_1751
+      - _PL_波兰_1753
+      - _PL_波兰_1778
+      - _PL_波兰_1771
+      - _PL_波兰_1854
+      - _PL_波兰_1807
+      - 英国_Tg频道:https://t.me/bpjzx2_191
+      - _PL_波兰_1790
+      - _PL_波兰_1739
+      - _PL_波兰_1796
+      - _PL_波兰_1678
+      - _PL_波兰_1785
+      - _PL_波兰_1822
+      - _PL_波兰_1768
+      - _PL_波兰_1839
+      - _PL_波兰_1742
+      - _PL_波兰_1755
+      - _PL_波兰_1729
+      - _PL_波兰_1827
+      - _PL_波兰_1714
+      - _PL_波兰_1741
+      - _PL_波兰_1794
+      - _PL_波兰_1833
+      - _AU_澳大利亚_1335
+      - _PL_波兰_1757
+      - _DE_德国_983
+      - 荷兰_Tg频道:https://t.me/bpjzx2_176
+      - 荷兰_Tg频道:https://t.me/bpjzx2_51
+      - _PL_波兰_1860
+      - _AU_澳大利亚_1317
+      - _AU_澳大利亚_1313
+      - _AU_澳大利亚_1310
+      - _PL_波兰_1837
+      - _AU_澳大利亚_1334
+      - _AU_澳大利亚_1330
+      - _AU_澳大利亚_1309
+      - _AU_澳大利亚_1277
+      - _PL_波兰_1740
+      - _PL_波兰_1701
+      - _PL_波兰_1795
+      - _PL_波兰_1803
+      - 荷兰_Tg频道:https://t.me/bpjzx2_84
+      - 荷兰_Tg频道:https://t.me/bpjzx2_60
+      - _AU_澳大利亚_1333
+      - _PL_波兰_1733
+      - _PL_波兰_1706
+      - _PL_波兰_1817
+      - _PL_波兰_1825
+      - _PL_波兰_1847
+      - _AU_澳大利亚_1264
+      - _AU_澳大利亚_1340
+      - _PL_波兰_1773
+      - 荷兰_Tg频道:https://t.me/bpjzx2_76
+      - _AU_澳大利亚_1301
+      - _PL_波兰_1717
+      - _PL_波兰_1830
+      - _AU_澳大利亚_1280
+      - _PL_波兰_1676
+      - _PL_波兰_1772
+      - _PL_波兰_1748
+      - _PL_波兰_1703
+      - _PL_波兰_1680
+      - _PL_波兰_1769
+      - 荷兰_Tg频道:https://t.me/bpjzx2_77
+      - 荷兰_Tg频道:https://t.me/bpjzx2_49
+      - _PL_波兰_1668
+      - _PL_波兰_1684
+      - 荷兰_Tg频道:https://t.me/bpjzx2_83
+      - _PL_波兰_1805
+      - _PL_波兰_1850
+      - _PL_波兰_1718
+      - _PL_波兰_1722
+      - _PL_波兰_1732
+      - _AU_澳大利亚_1305
+      - _AU_澳大利亚_1332
+      - _PL_波兰_1840
+      - _PL_波兰_1654
+      - _PL_波兰_1774
+      - _PL_波兰_1846
+      - _AU_澳大利亚_1320
+      - 荷兰_Tg频道:https://t.me/bpjzx2_67
+      - _PL_波兰_1727
+      - vpnpool-US 10
+      - 美国 优化 D 3.5
+      - vpnpool-US 11
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
