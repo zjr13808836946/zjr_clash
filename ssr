@@ -5,983 +5,591 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK04-香港04, server: cmrelay02.yiyorelay.xyz, port: 2703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: "[CT/CM]香港 07", server: shcu001online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 09", server: shcu001online.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: 香港IEPL-4 HK-1x, server: hk-iepl-01.517318.cc, port: 29004, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 香港IEPL-10 HK-1x, server: hk-iepl-02.517318.cc, port: 29010, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 香港IEPL-5 HK-1x, server: hk-iepl-01.517318.cc, port: 29005, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 03", server: curelayhk.dnsflix.com, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: 香港IEPL-6 HK-1x, server: hk-iepl-02.517318.cc, port: 29006, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 香港IEPL-7 HK-1x, server: hk-iepl-02.517318.cc, port: 29007, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 新加坡 - SS/SSR - 01, server: cm1-sg.hutaonode.xyz, port: 12301, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 香港 HK 07, server: dajbxhk.naikonode.top, port: 15007, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: 韩国 - SS/SSR - 02, server: cm1-kr.hutaonode.xyz, port: 12102, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 新加坡 - SS/SSR - 06, server: cm1-sg.hutaonode.xyz, port: 12306, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 新加坡 - SS/SSR - 05, server: cm1-sg.hutaonode.xyz, port: 12305, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 香港 HK 05, server: dajbxhk.naikonode.top, port: 15005, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: 香港IEPL-3 HK-1x, server: hk-iepl-01.517318.cc, port: 29003, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 新加坡B, server: shallaz.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: SG 03-新加坡03, server: cmrelay01.yiyorelay.xyz, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 美国 优化-2, server: shusa.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: SG 01-新加坡01, server: cmrelay01.yiyorelay.xyz, port: 6700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: SG 05-新加坡05, server: cmrelay01.yiyorelay.xyz, port: 6704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 日本 - SS/SSR - 05, server: cm1-jp.hutaonode.xyz, port: 12005, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: vpnhat-SG-Linode, server: 120.232.215.142, port: 40046, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnhat-SG-Linode 2, server: 120.232.215.142, port: 40044, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 台湾IEPL-3 TW-1x, server: hinet-iepl-1.517318.cc, port: 50107, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: vpnhat-香港HKT, server: 120.232.82.221, port: 40026, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 韩国 - SS/SSR - 05, server: cm1-kr.hutaonode.xyz, port: 12105, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: vpnhat-SG-Linode 3, server: 120.232.215.142, port: 40048, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: "[CT/CM]香港 08", server: cnrelaycm.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: 香港 HK 02, server: dajbxhk.naikonode.top, port: 15002, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: "[CT/CM]香港 10", server: cnrelaycm.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: 韩国 - SS/SSR - 06, server: cm1-kr.hutaonode.xyz, port: 12106, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 新加坡IEPL-2 SG-1x, server: sg-iepl.517318.cc, port: 62673, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: defaultName_59, server: 183.232.56.182, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnhat-SG-Nerocloud-nf, server: 183.232.56.182, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 新加坡IEPL-2 SG-1x 2, server: sg-iepl.517318.cc, port: 62673, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
-  - {name: vpnhat-SG-Nerocloud-nf 2, server: 183.232.56.182, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnhat-香港HKT-dip, server: 120.232.215.142, port: 40335, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: HK05-香港05, server: cmrelay02.yiyorelay.xyz, port: 2704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 台湾IEPL-1 TW-1x, server: hinet-iepl-1.517318.cc, port: 50105, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
-  - {name: vpnhat-香港HKT-dip 2, server: 120.232.82.221, port: 40245, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 台湾IEPL-5 TW-1x, server: hinet-iepl-1.517318.cc, port: 50109, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: vpnhat-SG-Nerocloud-nf 3, server: 183.232.56.182, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnhat-香港HKT-dip 3, server: 120.232.82.221, port: 40243, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
   - {name: HK07-香港07, server: cmrelay02.yiyorelay.xyz, port: 2706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 183.232.56.182:11846, server: 183.232.56.182, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: defaultName_45, server: 183.232.56.182, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港 HK 10, server: dajbxhk.naikonode.top, port: 15010, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: 香港 Hongkong HKBGP(VIP)●, server: gz1.52168.xyz, port: 11106, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 香港 HK 04, server: dajbxhk.naikonode.top, port: 15004, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: vpnhat-香港HKT 2, server: 120.232.82.221, port: 40244, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: HK03-香港03, server: cmrelay02.yiyorelay.xyz, port: 2702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: vpnhat-新北Hinet-dip, server: 120.232.82.221, port: 40316, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港 HK 01, server: dajbxhk.naikonode.top, port: 15001, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: JP 10-日本10, server: cmrelay01.yiyorelay.xyz, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 台湾IEPL-1 TW-1x 2, server: hinet-iepl-1.517318.cc, port: 50105, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 韩国 - SS/SSR - 01, server: cm1-kr.hutaonode.xyz, port: 12101, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 韩国 - SS/SSR - 04, server: cm1-kr.hutaonode.xyz, port: 12104, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 韩国 - SS/SSR - 03, server: cm1-kr.hutaonode.xyz, port: 12103, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: "[CT/CM]香港 11", server: shusacu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: tg频道:univstar_9, server: 183.232.56.182, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港 - SS/SSR - 04, server: cm1-hk.hutaonode.xyz, port: 12404, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: JP 09-日本09, server: cmrelay01.yiyorelay.xyz, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 183.232.56.182:11842, server: 183.232.56.182, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnhat-Tokyo-DMIT-nf, server: 183.232.56.182, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: HK06-香港06, server: cmrelay02.yiyorelay.xyz, port: 2705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: "[CT/CM]香港 05", server: shusacu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: 香港 - SS/SSR - 01, server: cm1-hk.hutaonode.xyz, port: 12401, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 台湾 Taiwan★, server: gz2.52168.xyz, port: 12105, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 香港 - SS/SSR - 10, server: cm1-hk.hutaonode.xyz, port: 12410, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: KR 02-韩国02, server: cmrelay01.yiyorelay.xyz, port: 4001, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 日本IEPL-1 JP-1x, server: jp-iepl-01.517318.cc, port: 51901, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 日本IEPL-1 JP-1x 2, server: jp-iepl-01.517318.cc, port: 51901, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
-  - {name: KR 04-韩国04, server: cmrelay01.yiyorelay.xyz, port: 4003, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: vpnhat-台北Hinet-dip, server: 120.232.82.221, port: 40317, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 日本IEPL-2 JP-1x, server: jp-iepl-01.517318.cc, port: 51902, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 日本IEPL-3 JP-1x, server: jp-iepl-01.517318.cc, port: 51903, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 日本IEPL-4 JP-1x, server: jp-iepl-01.517318.cc, port: 51904, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 台湾 - SS/SSR - 02, server: cm1-tw.hutaonode.xyz, port: 12502, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 香港1 奈飞, server: gdcm-1.onescloud.top, port: 50005, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
-  - {name: 日本IEPL-7 JP-1x, server: jp-iepl-01.517318.cc, port: 51907, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: vpnhat-香港HKT-dip 4, server: 183.232.56.182, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: EXTM3U-Tokyo-M247, server: 139.227.190.204, port: 40040, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港 - SS/SSR - 07, server: cm1-hk.hutaonode.xyz, port: 12407, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 香港 - SS/SSR - 09, server: cm1-hk.hutaonode.xyz, port: 12409, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 俄罗斯IEPL RU-1x, server: ru-iepl.517318.cc, port: 62531, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 06", server: hzrelaycu.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: HK.广州香港-1.移动.300M.NF, server: gdcm-1.onescloud.top, port: 20015, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
-  - {name: Lv2.广州->香港HGC, server: gdcm-3.onescloud.top, port: 20007, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
-  - {name: 183.232.56.182:11810, server: 183.232.56.182, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnhat-香港Nerocloud-nf, server: 183.232.56.182, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港 - SS/SSR - 08, server: cm1-hk.hutaonode.xyz, port: 12408, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 日本 - SS/SSR - 04, server: cm1-jp.hutaonode.xyz, port: 12004, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: EXTM3U-Tokyo-M247 2, server: 139.227.190.204, port: 40038, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnhat-Novosibirsk-Baxet-nf, server: 183.232.56.182, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 韩国IEPL-1 KR-1x, server: sg-iepl.517318.cc, port: 50112, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
-  - {name: 新加坡C, server: shallaz4.dnsflix.com, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: 台湾 - SS/SSR - 06, server: cm1-tw.hutaonode.xyz, port: 12506, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 香港 - SS/SSR - 03, server: cm1-hk.hutaonode.xyz, port: 12403, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 香港 HK 09, server: dajbxhk.naikonode.top, port: 15009, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: 俄罗斯IEPL RU-1x 2, server: ru-iepl.517318.cc, port: 62531, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: tg频道:univstar_3, server: 183.232.56.182, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 新加坡IEPL-1 SG-1x, server: sg-iepl.517318.cc, port: 62672, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 01", server: hzrelaycu.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 04", server: shcu001online.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: 泰国 Thailand★, server: gz2.52168.xyz, port: 12109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: "[CT/CM]香港 13", server: shcu002online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: 日本 B, server: shallaz.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: 俄罗斯c RT, server: relaypro.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: 美国 America●, server: gz1.52168.xyz, port: 11109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: 美国 优化-1, server: shusa.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: Lv2.广州->美国-2, server: gdcm-3.onescloud.top, port: 20002, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
-  - {name: US.广州美国-2.移动.200M, server: gdcm-1.onescloud.top, port: 20010, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 22811:DVlUD1, obfs-param: 977b222811.microsoft.com, udp: true}
-  - {name: 美国 优化-4, server: shusa.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: US.广州美国-2.移动.200M 2, server: gdcm-1.onescloud.top, port: 20010, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
-  - {name: US.广州美国-1.移动.300M, server: gdcm-1.onescloud.top, port: 20012, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 22811:DVlUD1, obfs-param: 977b222811.microsoft.com, udp: true}
-  - {name: 香港 - SS/SSR - 05, server: cm1-hk.hutaonode.xyz, port: 12405, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 美国 - SS/SSR - 05, server: cm1-us.hutaonode.xyz, port: 12205, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 美国IEPL-1 US-1x, server: usa-iepl.517318.cc, port: 57016, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: JP 08-日本08, server: cmrelay01.yiyorelay.xyz, port: 3707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: JP 03-日本03, server: cmrelay01.yiyorelay.xyz, port: 3702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: USA08-美国08, server: cmrelay01.yiyorelay.xyz, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 日本 - SS/SSR - 01, server: cm1-jp.hutaonode.xyz, port: 12001, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: JP 07-日本07, server: cmrelay01.yiyorelay.xyz, port: 3706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: vpnhat-台北Hinet-dip 2, server: 120.232.82.221, port: 40318, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 美国IEPL-4 US-1x, server: usa-iepl.517318.cc, port: 57046, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: Lv2.广州->美国-1, server: gdcm-3.onescloud.top, port: 20001, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
-  - {name: 新加坡E, server: shallaz4.dnsflix.com, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: JP 04-日本04, server: cmrelay01.yiyorelay.xyz, port: 3703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 美国IEPL-2 US-1x, server: usa-iepl.517318.cc, port: 57026, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: vpnhat-香港有线-dip, server: 120.232.82.221, port: 40018, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 183.232.56.182:11814, server: 183.232.56.182, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 美国 优化-6, server: usastart.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 14", server: shusacu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: 美国 优化-3, server: shusa.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: JP 05-日本05, server: cmrelay01.yiyorelay.xyz, port: 3704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 美国IEPL-6 US-1x, server: usa-iepl.517318.cc, port: 57066, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
-  - {name: 美国IEPL-5 US-1x, server: usa-iepl.517318.cc, port: 57056, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 香港 - SS/SSR - 02, server: cm1-hk.hutaonode.xyz, port: 12402, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 俄罗斯b RT, server: relaypro.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: JP 06-日本06, server: cmrelay01.yiyorelay.xyz, port: 3705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: "[CT/CM]香港 02", server: shcu002online.proconcn.xyz, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: USA06-美国06, server: cmrelay01.yiyorelay.xyz, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 香港IEPL-10 HK-1x, server: hk-iepl-02.517318.cc, port: 29010, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
   - {name: 香港IEPL-2 HK-1x, server: hk-iepl-01.517318.cc, port: 29002, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 澳大利亚IEPL AU-1x, server: au-iepl.517318.cc, port: 62541, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 美国 优化-7, server: usastart.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: tg频道:univstar_10, server: 183.232.56.182, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 美国 US 07, server: dajbxus.naikonode.top, port: 15107, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: 台湾 - SS/SSR - 05, server: cm1-tw.hutaonode.xyz, port: 12505, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: EXTM3U-Zelenograd-Baxet-dip, server: 139.227.190.204, port: 40280, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: VN.广州印度-1.移动.300M, server: gdcm-2.onescloud.top, port: 22021, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
-  - {name: 美国 优化-8, server: usastart.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: TG@阿伟科技/油管 24, server: ssr.ssrfree1.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: USA04-美国04, server: cmrelay01.yiyorelay.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 澳大利亚IEPL AU-1x 2, server: au-iepl.517318.cc, port: 62541, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
-  - {name: vpnhat-LAX-DMIT-nf, server: 183.232.56.182, port: 11805, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 美国 优化-9, server: usastart.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: 美国 - SS/SSR - 06, server: cm1-us.hutaonode.xyz, port: 12206, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: USA09-美国09, server: cmrelay01.yiyorelay.xyz, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 香港IEPL-10 HK-1x 2, server: hk-iepl-02.517318.cc, port: 29010, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
-  - {name: HK08-香港08, server: cmrelay02.yiyorelay.xyz, port: 2707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: US.广州美国-1.移动.300M 2, server: gdcm-1.onescloud.top, port: 20012, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
-  - {name: 日本 A, server: shallaz.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: US.广州美国-3.移动.200M, server: gdcm-1.onescloud.top, port: 20011, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
-  - {name: USA03-美国03, server: cmrelay01.yiyorelay.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 俄罗斯 Russia★, server: gz2.52168.xyz, port: 12103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 香港IEPL-7 HK-1x, server: hk-iepl-02.517318.cc, port: 29007, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: HK06-香港06, server: cmrelay02.yiyorelay.xyz, port: 2705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
   - {name: HK10-香港10, server: cmrelay02.yiyorelay.xyz, port: 2709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: JP 01-日本01, server: cmrelay01.yiyorelay.xyz, port: 3700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 美国 - SS/SSR - 03, server: cm1-us.hutaonode.xyz, port: 12203, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 香港 - SS/SSR - 06, server: cm1-hk.hutaonode.xyz, port: 12406, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 台湾 - SS/SSR - 03, server: cm1-tw.hutaonode.xyz, port: 12503, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: UK.广州英国-1.移动.200M, server: gdcm-2.onescloud.top, port: 22022, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 22811:DVlUD1, obfs-param: 977b222811.microsoft.com, udp: true}
-  - {name: DE.广州德国-1.移动.300M, server: gdcm-2.onescloud.top, port: 22020, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
-  - {name: 美国 优化-5, server: usastart.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: USA07-美国07, server: cmrelay01.yiyorelay.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 英国IEPL UK-1x, server: uk-iepl.517318.cc, port: 62591, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: EXTM3U-Novosibirsk-Baxet, server: 139.227.190.204, port: 40283, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 美国 - SS/SSR - 02, server: cm1-us.hutaonode.xyz, port: 12202, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 香港IEPL-8 HK-1x, server: hk-iepl-02.517318.cc, port: 29008, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: VN.广州印度-1.移动.300M 2, server: gdcm-2.onescloud.top, port: 22021, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 22811:DVlUD1, obfs-param: 977b222811.microsoft.com, udp: true}
-  - {name: tg频道:univstar_4, server: 183.232.56.182, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: UK.广州英国-1.移动.200M 2, server: gdcm-2.onescloud.top, port: 22022, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
-  - {name: EXTM3U-Zelenograd-Baxet-dip 2, server: 139.227.190.204, port: 40036, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: TW.广州台湾-3.移动.200M.NF, server: gdcm-2.onescloud.top, port: 22026, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
-  - {name: Lv2.广州->美国-3, server: gdcm-3.onescloud.top, port: 20003, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
-  - {name: EXTM3U-Zelenograd-Baxet-dip 3, server: 139.227.190.204, port: 40281, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnhat-Santa Clara-Tencent-nf, server: 183.232.56.182, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: EXTM3U-Zelenograd-Baxet-dip 4, server: 139.227.190.204, port: 40282, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 美国 US 04, server: dajbxus.naikonode.top, port: 15104, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: USA02-美国02, server: cmrelay01.yiyorelay.xyz, port: 7701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: USA10-美国10, server: cmrelay01.yiyorelay.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 台湾IEPL-2 TW-1x, server: hinet-iepl-2.517318.cc, port: 50106, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 加拿大IEPL CA-1x, server: ca-iepl.517318.cc, port: 62671, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 日本 JP 04, server: dajbxjp.naikonode.top, port: 15204, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: 德国IEPL DE-1x, server: de-iepl.517318.cc, port: 62551, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
-  - {name: 加拿大IEPL CA-1x 2, server: ca-iepl.517318.cc, port: 62671, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
-  - {name: 台湾 - SS/SSR - 04, server: cm1-tw.hutaonode.xyz, port: 12504, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 德国IEPL DE-1x 2, server: de-iepl.517318.cc, port: 62551, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 韩国 KR 03, server: dajbxkr.naikonode.top, port: 15303, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: 香港 HK 03, server: dajbxhk.naikonode.top, port: 15003, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: 韩国高速接入A, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: vpnhat-SG-Tencent-nf, server: 183.232.56.182, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 183.232.56.182:22848, server: 183.232.56.182, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 美国 - SS/SSR - 01, server: cm1-us.hutaonode.xyz, port: 12201, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 日本IEPL-8 JP-1x, server: jp-iepl-01.517318.cc, port: 51908, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 新加坡 SG 03, server: dajbxsg.naikonode.top, port: 15403, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: EXTM3U-Zelenograd-Baxet-dip 5, server: 139.227.190.204, port: 40034, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 美国IEPL-3 US-1x, server: usa-iepl.517318.cc, port: 57037, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 日本 JP 02, server: dajbxjp.naikonode.top, port: 15202, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: 日本 JP 01, server: dajbxjp.naikonode.top, port: 15201, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: 美国IEPL-6 US-1x 2, server: usa-iepl.517318.cc, port: 57066, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: 土耳其 Turkey★, server: gz2.52168.xyz, port: 12104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: vpnhat-LAX-DMIT-nf 2, server: 183.232.56.182, port: 35247, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnhat-云林Hinet-dip, server: 120.232.82.221, port: 40339, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: "[CT/CM]香港 12", server: curelayhk.dnsflix.com, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: vpnhat-台中Hinet-dip, server: 183.232.56.182, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: tg频道:univstar_11, server: 183.232.56.182, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 土耳其IEPL TR-1x, server: tr-iepl.517318.cc, port: 62674, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
-  - {name: 新加坡 - SS/SSR - 04, server: cm1-sg.hutaonode.xyz, port: 12304, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: EXTM3U-Novosibirsk-Baxet 2, server: 139.227.190.204, port: 40032, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 泰国IEPL TH-1x, server: iepl-th.517318.cc, port: 62601, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
-  - {name: SG 04-新加坡04, server: cmrelay01.yiyorelay.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: HK02-香港02, server: cmrelay02.yiyorelay.xyz, port: 2701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 日本 - SS/SSR - 02, server: cm1-jp.hutaonode.xyz, port: 12002, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 美国 - SS/SSR - 04, server: cm1-us.hutaonode.xyz, port: 12204, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: 日本 JP 05, server: dajbxjp.naikonode.top, port: 15205, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: 日本 - SS/SSR - 03, server: cm1-jp.hutaonode.xyz, port: 12003, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: defaultName_62, server: 183.232.56.182, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 新加坡 SG 01, server: dajbxsg.naikonode.top, port: 15401, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: 韩国 KR 08, server: dajbxkr.naikonode.top, port: 15308, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: 新加坡 - SS/SSR - 03, server: cm1-sg.hutaonode.xyz, port: 12303, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: EXTM3U-Zelenograd-Baxet-dip 6, server: 139.227.190.204, port: 40284, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24088:vBECuZ, obfs-param: t.me/vpnhat, udp: true}
-  - {name: tg频道:univstar_2, server: 183.232.56.182, port: 35247, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港IEPL-6 HK-1x, server: hk-iepl-02.517318.cc, port: 29006, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
   - {name: HK01-香港01, server: cmrelay02.yiyorelay.xyz, port: 2700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 香港IEPL-5 HK-1x, server: hk-iepl-01.517318.cc, port: 29005, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: 香港IEPL-8 HK-1x, server: hk-iepl-02.517318.cc, port: 29008, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: "[CT/CM]香港 03", server: curelayhk.dnsflix.com, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 香港IEPL-4 HK-1x, server: hk-iepl-01.517318.cc, port: 29004, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: 新加坡E, server: shallaz4.dnsflix.com, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 新加坡B, server: shallaz.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
   - {name: 新加坡D, server: shallaz4.dnsflix.com, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
-  - {name: 台湾 - SS/SSR - 01, server: cm1-tw.hutaonode.xyz, port: 12501, type: ssr, cipher: chacha20-ietf, password: HuTaoCloud, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 2097:hb1gZfoWAxGk9GHG, obfs-param: d456c2097.jd.hk, udp: true}
-  - {name: SG 09-新加坡09, server: cmrelay01.yiyorelay.xyz, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
-  - {name: 香港 HK 08, server: dajbxhk.naikonode.top, port: 15008, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
-  - {name: 泰国IEPL TH-1x 2, server: iepl-th.517318.cc, port: 62601, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
   - {name: SG 02-新加坡02, server: cmrelay01.yiyorelay.xyz, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: "[CT/CM]香港 06", server: hzrelaycu.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 新加坡C, server: shallaz4.dnsflix.com, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 新加坡IEPL-1 SG-1x, server: sg-iepl.517318.cc, port: 62672, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: 台湾IEPL-5 TW-1x, server: hinet-iepl-1.517318.cc, port: 50109, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: "[CT/CM]香港 08", server: cnrelaycm.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: JP 06-日本06, server: cmrelay01.yiyorelay.xyz, port: 3705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 台湾IEPL-3 TW-1x, server: hinet-iepl-1.517318.cc, port: 50107, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: JP 04-日本04, server: cmrelay01.yiyorelay.xyz, port: 3703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: JP 09-日本09, server: cmrelay01.yiyorelay.xyz, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 韩国 KR 03, server: dajbxkr.naikonode.top, port: 15303, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
+  - {name: 台湾IEPL-2 TW-1x, server: hinet-iepl-2.517318.cc, port: 50106, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: "[CT/CM]香港 05", server: shusacu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: JP 07-日本07, server: cmrelay01.yiyorelay.xyz, port: 3706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 台湾IEPL-1 TW-1x, server: hinet-iepl-1.517318.cc, port: 50105, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: HK05-香港05, server: cmrelay02.yiyorelay.xyz, port: 2704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: vpnhat-Tokyo-DMIT-nf, server: 183.232.56.182, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: HK04-香港04, server: cmrelay02.yiyorelay.xyz, port: 2703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: "[CT/CM]香港 11", server: shusacu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 日本 JP 01, server: dajbxjp.naikonode.top, port: 15201, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
+  - {name: 韩国高速接入A, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 日本 JP 05, server: dajbxjp.naikonode.top, port: 15205, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
+  - {name: 新加坡IEPL-2 SG-1x, server: sg-iepl.517318.cc, port: 62673, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: "[CT/CM]香港 10", server: cnrelaycm.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 日本IEPL-4 JP-1x, server: jp-iepl-01.517318.cc, port: 51904, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: 日本IEPL-3 JP-1x, server: jp-iepl-01.517318.cc, port: 51903, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: 日本IEPL-7 JP-1x, server: jp-iepl-01.517318.cc, port: 51907, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: "[CT/CM]香港 02", server: shcu002online.proconcn.xyz, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 日本IEPL-8 JP-1x, server: jp-iepl-01.517318.cc, port: 51908, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: 新加坡 SG 01, server: dajbxsg.naikonode.top, port: 15401, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
+  - {name: JP 10-日本10, server: cmrelay01.yiyorelay.xyz, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 日本IEPL-2 JP-1x, server: jp-iepl-01.517318.cc, port: 51902, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: "[CT/CM]香港 14", server: shusacu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: Lv2.广州->香港HGC, server: gdcm-3.onescloud.top, port: 20007, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
+  - {name: 日本IEPL-1 JP-1x, server: jp-iepl-01.517318.cc, port: 51901, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
+  - {name: 台湾IEPL-1 TW-1x 2, server: hinet-iepl-1.517318.cc, port: 50105, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
+  - {name: HK02-香港02, server: cmrelay02.yiyorelay.xyz, port: 2701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: HK03-香港03, server: cmrelay02.yiyorelay.xyz, port: 2702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 新加坡 SG 03, server: dajbxsg.naikonode.top, port: 15403, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
+  - {name: KR 02-韩国02, server: cmrelay01.yiyorelay.xyz, port: 4001, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: KR 04-韩国04, server: cmrelay01.yiyorelay.xyz, port: 4003, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: vpnhat-香港Nerocloud-nf, server: 183.232.56.182, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 俄罗斯b RT, server: relaypro.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 俄罗斯c RT, server: relaypro.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 183.232.56.182:11842, server: 183.232.56.182, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 俄罗斯IEPL RU-1x, server: ru-iepl.517318.cc, port: 62531, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
+  - {name: tg频道:univstar_9, server: 183.232.56.182, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-台中Hinet-dip, server: 183.232.56.182, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: tg频道:univstar_10, server: 183.232.56.182, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-Novosibirsk-Baxet-nf, server: 183.232.56.182, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: HK08-香港08, server: cmrelay02.yiyorelay.xyz, port: 2707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: "[CT/CM]香港 01", server: hzrelaycu.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 美国 优化-3, server: shusa.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: TW.广州台湾-3.移动.200M.NF, server: gdcm-2.onescloud.top, port: 22026, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
+  - {name: VN.广州印度-1.移动.300M, server: gdcm-2.onescloud.top, port: 22021, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
+  - {name: Lv2.广州->美国-2, server: gdcm-3.onescloud.top, port: 20002, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
+  - {name: 日本 A, server: shallaz.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 韩国IEPL-1 KR-1x, server: sg-iepl.517318.cc, port: 50112, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
+  - {name: US.广州美国-1.移动.300M, server: gdcm-1.onescloud.top, port: 20012, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
+  - {name: 美国IEPL-3 US-1x, server: usa-iepl.517318.cc, port: 57037, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: 美国IEPL-6 US-1x, server: usa-iepl.517318.cc, port: 57066, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: 美国IEPL-4 US-1x, server: usa-iepl.517318.cc, port: 57046, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: 美国 优化-1, server: shusa.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 美国IEPL-2 US-1x, server: usa-iepl.517318.cc, port: 57026, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: 美国IEPL-5 US-1x, server: usa-iepl.517318.cc, port: 57056, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: JP 03-日本03, server: cmrelay01.yiyorelay.xyz, port: 3702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 美国 优化-4, server: shusa.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: tg频道:univstar_2, server: 183.232.56.182, port: 35247, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: USA03-美国03, server: cmrelay01.yiyorelay.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: tg频道:univstar_3, server: 183.232.56.182, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: USA07-美国07, server: cmrelay01.yiyorelay.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 俄罗斯 Russia★, server: gz2.52168.xyz, port: 12103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: USA06-美国06, server: cmrelay01.yiyorelay.xyz, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 183.232.56.182:22848, server: 183.232.56.182, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国IEPL-1 US-1x, server: usa-iepl.517318.cc, port: 57016, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: USA10-美国10, server: cmrelay01.yiyorelay.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: JP 05-日本05, server: cmrelay01.yiyorelay.xyz, port: 3704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: USA09-美国09, server: cmrelay01.yiyorelay.xyz, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 美国IEPL-6 US-1x 2, server: usa-iepl.517318.cc, port: 57066, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
+  - {name: DE.广州德国-1.移动.300M, server: gdcm-2.onescloud.top, port: 22020, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
+  - {name: "[CT/CM]香港 13", server: shcu002online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 澳大利亚IEPL AU-1x, server: au-iepl.517318.cc, port: 62541, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: vpnhat-LAX-DMIT-nf, server: 183.232.56.182, port: 11805, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: USA08-美国08, server: cmrelay01.yiyorelay.xyz, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 香港IEPL-3 HK-1x, server: hk-iepl-01.517318.cc, port: 29003, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: vpnhat-LAX-DMIT-nf 2, server: 183.232.56.182, port: 35247, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国 US 07, server: dajbxus.naikonode.top, port: 15107, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
+  - {name: SG 03-新加坡03, server: cmrelay01.yiyorelay.xyz, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: SG 01-新加坡01, server: cmrelay01.yiyorelay.xyz, port: 6700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: JP 01-日本01, server: cmrelay01.yiyorelay.xyz, port: 3700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: vpnhat-Santa Clara-Tencent-nf, server: 183.232.56.182, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 德国IEPL DE-1x, server: de-iepl.517318.cc, port: 62551, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
+  - {name: 香港1 奈飞, server: gdcm-1.onescloud.top, port: 50005, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
+  - {name: 加拿大IEPL CA-1x, server: ca-iepl.517318.cc, port: 62671, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: 加拿大IEPL CA-1x 2, server: ca-iepl.517318.cc, port: 62671, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
+  - {name: 日本 B, server: shallaz.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 德国IEPL DE-1x 2, server: de-iepl.517318.cc, port: 62551, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: 泰国IEPL TH-1x, server: iepl-th.517318.cc, port: 62601, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: SG 05-新加坡05, server: cmrelay01.yiyorelay.xyz, port: 6704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: USA04-美国04, server: cmrelay01.yiyorelay.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 泰国IEPL TH-1x 2, server: iepl-th.517318.cc, port: 62601, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
+  - {name: TG_yudievilla_13, server: cm1.jflashfal.xyz, port: 18352, type: ssr, cipher: chacha20-ietf, password: DXpeG4IEEFY5LQyw, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 802:lBOSxS8OhsN8zyLe, obfs-param: 90ab9802.microsoft.com, udp: true}
+  - {name: 土耳其 Turkey★, server: gz2.52168.xyz, port: 12104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 美国 优化-2, server: shusa.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: USA02-美国02, server: cmrelay01.yiyorelay.xyz, port: 7701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: vpnhat-SG-Tencent-nf, server: 183.232.56.182, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: SG 04-新加坡04, server: cmrelay01.yiyorelay.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 新加坡IEPL-2 SG-1x 2, server: sg-iepl.517318.cc, port: 62673, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
+  - {name: 土耳其IEPL TR-1x, server: tr-iepl.517318.cc, port: 62674, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 17526:r582RhdzI4, obfs-param: "", udp: true}
+  - {name: SG 09-新加坡09, server: cmrelay01.yiyorelay.xyz, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 日本 JP 02, server: dajbxjp.naikonode.top, port: 15202, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
+  - {name: US.广州美国-3.移动.200M, server: gdcm-1.onescloud.top, port: 20011, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
+  - {name: "[CT/CM]香港 12", server: curelayhk.dnsflix.com, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 17298:HXD163, obfs-param: "", udp: true}
+  - {name: 美国 US 04, server: dajbxus.naikonode.top, port: 15104, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
+  - {name: UK.广州英国-1.移动.200M, server: gdcm-2.onescloud.top, port: 22022, type: ssr, cipher: rc4-md5, password: fNqa6f, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1:fm7up0lrk, obfs-param: f9ebf1.microsoft.com, udp: true}
+  - {name: tg频道:univstar_4, server: 183.232.56.182, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: tg频道:univstar_11, server: 183.232.56.182, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 俄罗斯IEPL RU-1x 2, server: ru-iepl.517318.cc, port: 62531, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: 香港 Hongkong HKBGP(VIP)●, server: gz1.52168.xyz, port: 11106, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 183.232.56.182:11810, server: 183.232.56.182, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: JP 08-日本08, server: cmrelay01.yiyorelay.xyz, port: 3707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 45641:165X0406Kza, obfs-param: 781a645641.microsoft.com, udp: true}
+  - {name: 日本 JP 04, server: dajbxjp.naikonode.top, port: 15204, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
+  - {name: 韩国 KR 08, server: dajbxkr.naikonode.top, port: 15308, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 900:4QT2FxtWU8iMCESf, obfs-param: fc6ad900.microsoft.com, udp: true}
+  - {name: 183.232.56.182:11814, server: 183.232.56.182, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港IEPL-10 HK-1x 2, server: hk-iepl-02.517318.cc, port: 29010, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
+  - {name: TG@阿伟科技/油管 24, server: ssr.ssrfree1.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 日本IEPL-1 JP-1x 2, server: jp-iepl-01.517318.cc, port: 51901, type: ssr, cipher: aes-128-ctr, password: MunCloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 16151:iyM9345mYh, obfs-param: "", udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK04-香港04
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - 香港IEPL-4 HK-1x
-      - 香港IEPL-10 HK-1x
-      - 香港IEPL-5 HK-1x
-      - "[CT/CM]香港 03"
-      - 香港IEPL-6 HK-1x
-      - 香港IEPL-7 HK-1x
-      - 新加坡 - SS/SSR - 01
-      - 香港 HK 07
-      - 韩国 - SS/SSR - 02
-      - 新加坡 - SS/SSR - 06
-      - 新加坡 - SS/SSR - 05
-      - 香港 HK 05
-      - 香港IEPL-3 HK-1x
-      - 新加坡B
-      - SG 03-新加坡03
-      - 美国 优化-2
-      - SG 01-新加坡01
-      - SG 05-新加坡05
-      - 日本 - SS/SSR - 05
-      - vpnhat-SG-Linode
-      - vpnhat-SG-Linode 2
-      - 台湾IEPL-3 TW-1x
-      - vpnhat-香港HKT
-      - 韩国 - SS/SSR - 05
-      - vpnhat-SG-Linode 3
-      - "[CT/CM]香港 08"
-      - 香港 HK 02
-      - "[CT/CM]香港 10"
-      - 韩国 - SS/SSR - 06
-      - 新加坡IEPL-2 SG-1x
-      - defaultName_59
-      - vpnhat-SG-Nerocloud-nf
-      - 新加坡IEPL-2 SG-1x 2
-      - vpnhat-SG-Nerocloud-nf 2
-      - vpnhat-香港HKT-dip
-      - HK05-香港05
-      - 台湾IEPL-1 TW-1x
-      - vpnhat-香港HKT-dip 2
-      - 台湾IEPL-5 TW-1x
-      - vpnhat-SG-Nerocloud-nf 3
-      - vpnhat-香港HKT-dip 3
       - HK07-香港07
-      - 183.232.56.182:11846
-      - defaultName_45
-      - 香港 HK 10
-      - 香港 Hongkong HKBGP(VIP)●
-      - 香港 HK 04
-      - vpnhat-香港HKT 2
-      - HK03-香港03
-      - vpnhat-新北Hinet-dip
-      - 香港 HK 01
-      - JP 10-日本10
-      - 台湾IEPL-1 TW-1x 2
-      - 韩国 - SS/SSR - 01
-      - 韩国 - SS/SSR - 04
-      - 韩国 - SS/SSR - 03
-      - "[CT/CM]香港 11"
-      - tg频道:univstar_9
-      - 香港 - SS/SSR - 04
-      - JP 09-日本09
-      - 183.232.56.182:11842
-      - vpnhat-Tokyo-DMIT-nf
-      - HK06-香港06
-      - "[CT/CM]香港 05"
-      - 香港 - SS/SSR - 01
-      - 台湾 Taiwan★
-      - 香港 - SS/SSR - 10
-      - KR 02-韩国02
-      - 日本IEPL-1 JP-1x
-      - 日本IEPL-1 JP-1x 2
-      - KR 04-韩国04
-      - vpnhat-台北Hinet-dip
-      - 日本IEPL-2 JP-1x
-      - 日本IEPL-3 JP-1x
-      - 日本IEPL-4 JP-1x
-      - 台湾 - SS/SSR - 02
-      - 香港1 奈飞
-      - 日本IEPL-7 JP-1x
-      - vpnhat-香港HKT-dip 4
-      - EXTM3U-Tokyo-M247
-      - 香港 - SS/SSR - 07
-      - 香港 - SS/SSR - 09
-      - 俄罗斯IEPL RU-1x
-      - "[CT/CM]香港 06"
-      - HK.广州香港-1.移动.300M.NF
-      - Lv2.广州->香港HGC
-      - 183.232.56.182:11810
-      - vpnhat-香港Nerocloud-nf
-      - 香港 - SS/SSR - 08
-      - 日本 - SS/SSR - 04
-      - EXTM3U-Tokyo-M247 2
-      - vpnhat-Novosibirsk-Baxet-nf
-      - 韩国IEPL-1 KR-1x
-      - 新加坡C
-      - 台湾 - SS/SSR - 06
-      - 香港 - SS/SSR - 03
-      - 香港 HK 09
-      - 俄罗斯IEPL RU-1x 2
-      - tg频道:univstar_3
-      - 新加坡IEPL-1 SG-1x
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 04"
-      - 泰国 Thailand★
-      - "[CT/CM]香港 13"
-      - 日本 B
-      - 俄罗斯c RT
-      - 美国 America●
-      - 美国 优化-1
-      - Lv2.广州->美国-2
-      - US.广州美国-2.移动.200M
-      - 美国 优化-4
-      - US.广州美国-2.移动.200M 2
-      - US.广州美国-1.移动.300M
-      - 香港 - SS/SSR - 05
-      - 美国 - SS/SSR - 05
-      - 美国IEPL-1 US-1x
-      - JP 08-日本08
-      - JP 03-日本03
-      - USA08-美国08
-      - 日本 - SS/SSR - 01
-      - JP 07-日本07
-      - vpnhat-台北Hinet-dip 2
-      - 美国IEPL-4 US-1x
-      - Lv2.广州->美国-1
-      - 新加坡E
-      - JP 04-日本04
-      - 美国IEPL-2 US-1x
-      - vpnhat-香港有线-dip
-      - 183.232.56.182:11814
-      - 美国 优化-6
-      - "[CT/CM]香港 14"
-      - 美国 优化-3
-      - JP 05-日本05
-      - 美国IEPL-6 US-1x
-      - 美国IEPL-5 US-1x
-      - 香港 - SS/SSR - 02
-      - 俄罗斯b RT
-      - JP 06-日本06
-      - "[CT/CM]香港 02"
-      - USA06-美国06
+      - 香港IEPL-10 HK-1x
       - 香港IEPL-2 HK-1x
-      - 澳大利亚IEPL AU-1x
-      - 美国 优化-7
-      - tg频道:univstar_10
-      - 美国 US 07
-      - 台湾 - SS/SSR - 05
-      - EXTM3U-Zelenograd-Baxet-dip
-      - VN.广州印度-1.移动.300M
-      - 美国 优化-8
-      - TG@阿伟科技/油管 24
-      - USA04-美国04
-      - 澳大利亚IEPL AU-1x 2
-      - vpnhat-LAX-DMIT-nf
-      - 美国 优化-9
-      - 美国 - SS/SSR - 06
-      - USA09-美国09
-      - 香港IEPL-10 HK-1x 2
-      - HK08-香港08
-      - US.广州美国-1.移动.300M 2
-      - 日本 A
-      - US.广州美国-3.移动.200M
-      - USA03-美国03
-      - 俄罗斯 Russia★
+      - 香港IEPL-7 HK-1x
+      - HK06-香港06
       - HK10-香港10
-      - JP 01-日本01
-      - 美国 - SS/SSR - 03
-      - 香港 - SS/SSR - 06
-      - 台湾 - SS/SSR - 03
-      - UK.广州英国-1.移动.200M
-      - DE.广州德国-1.移动.300M
-      - 美国 优化-5
-      - USA07-美国07
-      - 英国IEPL UK-1x
-      - EXTM3U-Novosibirsk-Baxet
-      - 美国 - SS/SSR - 02
-      - 香港IEPL-8 HK-1x
-      - VN.广州印度-1.移动.300M 2
-      - tg频道:univstar_4
-      - UK.广州英国-1.移动.200M 2
-      - EXTM3U-Zelenograd-Baxet-dip 2
-      - TW.广州台湾-3.移动.200M.NF
-      - Lv2.广州->美国-3
-      - EXTM3U-Zelenograd-Baxet-dip 3
-      - vpnhat-Santa Clara-Tencent-nf
-      - EXTM3U-Zelenograd-Baxet-dip 4
-      - 美国 US 04
-      - USA02-美国02
-      - USA10-美国10
-      - 台湾IEPL-2 TW-1x
-      - 加拿大IEPL CA-1x
-      - 日本 JP 04
-      - 德国IEPL DE-1x
-      - 加拿大IEPL CA-1x 2
-      - 台湾 - SS/SSR - 04
-      - 德国IEPL DE-1x 2
-      - 韩国 KR 03
-      - 香港 HK 03
-      - 韩国高速接入A
-      - vpnhat-SG-Tencent-nf
-      - 183.232.56.182:22848
-      - 美国 - SS/SSR - 01
-      - 日本IEPL-8 JP-1x
-      - 新加坡 SG 03
-      - EXTM3U-Zelenograd-Baxet-dip 5
-      - 美国IEPL-3 US-1x
-      - 日本 JP 02
-      - 日本 JP 01
-      - 美国IEPL-6 US-1x 2
-      - 土耳其 Turkey★
-      - vpnhat-LAX-DMIT-nf 2
-      - vpnhat-云林Hinet-dip
-      - "[CT/CM]香港 12"
-      - vpnhat-台中Hinet-dip
-      - tg频道:univstar_11
-      - 土耳其IEPL TR-1x
-      - 新加坡 - SS/SSR - 04
-      - EXTM3U-Novosibirsk-Baxet 2
-      - 泰国IEPL TH-1x
-      - SG 04-新加坡04
-      - HK02-香港02
-      - 日本 - SS/SSR - 02
-      - 美国 - SS/SSR - 04
-      - 日本 JP 05
-      - 日本 - SS/SSR - 03
-      - defaultName_62
-      - 新加坡 SG 01
-      - 韩国 KR 08
-      - 新加坡 - SS/SSR - 03
-      - EXTM3U-Zelenograd-Baxet-dip 6
-      - tg频道:univstar_2
+      - 香港IEPL-6 HK-1x
       - HK01-香港01
+      - 香港IEPL-5 HK-1x
+      - 香港IEPL-8 HK-1x
+      - "[CT/CM]香港 03"
+      - 香港IEPL-4 HK-1x
+      - 新加坡E
+      - 新加坡B
       - 新加坡D
-      - 台湾 - SS/SSR - 01
-      - SG 09-新加坡09
-      - 香港 HK 08
-      - 泰国IEPL TH-1x 2
       - SG 02-新加坡02
+      - "[CT/CM]香港 06"
+      - 新加坡C
+      - 新加坡IEPL-1 SG-1x
+      - 台湾IEPL-5 TW-1x
+      - "[CT/CM]香港 08"
+      - JP 06-日本06
+      - 台湾IEPL-3 TW-1x
+      - JP 04-日本04
+      - JP 09-日本09
+      - 韩国 KR 03
+      - 台湾IEPL-2 TW-1x
+      - "[CT/CM]香港 05"
+      - JP 07-日本07
+      - 台湾IEPL-1 TW-1x
+      - HK05-香港05
+      - vpnhat-Tokyo-DMIT-nf
+      - HK04-香港04
+      - "[CT/CM]香港 11"
+      - 日本 JP 01
+      - 韩国高速接入A
+      - 日本 JP 05
+      - 新加坡IEPL-2 SG-1x
+      - "[CT/CM]香港 10"
+      - 日本IEPL-4 JP-1x
+      - 日本IEPL-3 JP-1x
+      - 日本IEPL-7 JP-1x
+      - "[CT/CM]香港 02"
+      - 日本IEPL-8 JP-1x
+      - 新加坡 SG 01
+      - JP 10-日本10
+      - 日本IEPL-2 JP-1x
+      - "[CT/CM]香港 14"
+      - Lv2.广州->香港HGC
+      - 日本IEPL-1 JP-1x
+      - 台湾IEPL-1 TW-1x 2
+      - HK02-香港02
+      - HK03-香港03
+      - 新加坡 SG 03
+      - KR 02-韩国02
+      - KR 04-韩国04
+      - vpnhat-香港Nerocloud-nf
+      - 俄罗斯b RT
+      - 俄罗斯c RT
+      - 183.232.56.182:11842
+      - 俄罗斯IEPL RU-1x
+      - tg频道:univstar_9
+      - vpnhat-台中Hinet-dip
+      - tg频道:univstar_10
+      - vpnhat-Novosibirsk-Baxet-nf
+      - HK08-香港08
+      - "[CT/CM]香港 01"
+      - 美国 优化-3
+      - TW.广州台湾-3.移动.200M.NF
+      - VN.广州印度-1.移动.300M
+      - Lv2.广州->美国-2
+      - 日本 A
+      - 韩国IEPL-1 KR-1x
+      - US.广州美国-1.移动.300M
+      - 美国IEPL-3 US-1x
+      - 美国IEPL-6 US-1x
+      - 美国IEPL-4 US-1x
+      - 美国 优化-1
+      - 美国IEPL-2 US-1x
+      - 美国IEPL-5 US-1x
+      - JP 03-日本03
+      - 美国 优化-4
+      - tg频道:univstar_2
+      - USA03-美国03
+      - tg频道:univstar_3
+      - USA07-美国07
+      - 俄罗斯 Russia★
+      - USA06-美国06
+      - 183.232.56.182:22848
+      - 美国IEPL-1 US-1x
+      - USA10-美国10
+      - JP 05-日本05
+      - USA09-美国09
+      - 美国IEPL-6 US-1x 2
+      - DE.广州德国-1.移动.300M
+      - "[CT/CM]香港 13"
+      - 澳大利亚IEPL AU-1x
+      - vpnhat-LAX-DMIT-nf
+      - USA08-美国08
+      - 香港IEPL-3 HK-1x
+      - vpnhat-LAX-DMIT-nf 2
+      - 美国 US 07
+      - SG 03-新加坡03
+      - SG 01-新加坡01
+      - JP 01-日本01
+      - vpnhat-Santa Clara-Tencent-nf
+      - 德国IEPL DE-1x
+      - 香港1 奈飞
+      - 加拿大IEPL CA-1x
+      - 加拿大IEPL CA-1x 2
+      - 日本 B
+      - 德国IEPL DE-1x 2
+      - 泰国IEPL TH-1x
+      - SG 05-新加坡05
+      - USA04-美国04
+      - 泰国IEPL TH-1x 2
+      - TG_yudievilla_13
+      - 土耳其 Turkey★
+      - 美国 优化-2
+      - USA02-美国02
+      - vpnhat-SG-Tencent-nf
+      - SG 04-新加坡04
+      - 新加坡IEPL-2 SG-1x 2
+      - 土耳其IEPL TR-1x
+      - SG 09-新加坡09
+      - 日本 JP 02
+      - US.广州美国-3.移动.200M
+      - "[CT/CM]香港 12"
+      - 美国 US 04
+      - UK.广州英国-1.移动.200M
+      - tg频道:univstar_4
+      - tg频道:univstar_11
+      - 俄罗斯IEPL RU-1x 2
+      - 香港 Hongkong HKBGP(VIP)●
+      - 183.232.56.182:11810
+      - JP 08-日本08
+      - 日本 JP 04
+      - 韩国 KR 08
+      - 183.232.56.182:11814
+      - 香港IEPL-10 HK-1x 2
+      - TG@阿伟科技/油管 24
+      - 日本IEPL-1 JP-1x 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK04-香港04
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - 香港IEPL-4 HK-1x
-      - 香港IEPL-10 HK-1x
-      - 香港IEPL-5 HK-1x
-      - "[CT/CM]香港 03"
-      - 香港IEPL-6 HK-1x
-      - 香港IEPL-7 HK-1x
-      - 新加坡 - SS/SSR - 01
-      - 香港 HK 07
-      - 韩国 - SS/SSR - 02
-      - 新加坡 - SS/SSR - 06
-      - 新加坡 - SS/SSR - 05
-      - 香港 HK 05
-      - 香港IEPL-3 HK-1x
-      - 新加坡B
-      - SG 03-新加坡03
-      - 美国 优化-2
-      - SG 01-新加坡01
-      - SG 05-新加坡05
-      - 日本 - SS/SSR - 05
-      - vpnhat-SG-Linode
-      - vpnhat-SG-Linode 2
-      - 台湾IEPL-3 TW-1x
-      - vpnhat-香港HKT
-      - 韩国 - SS/SSR - 05
-      - vpnhat-SG-Linode 3
-      - "[CT/CM]香港 08"
-      - 香港 HK 02
-      - "[CT/CM]香港 10"
-      - 韩国 - SS/SSR - 06
-      - 新加坡IEPL-2 SG-1x
-      - defaultName_59
-      - vpnhat-SG-Nerocloud-nf
-      - 新加坡IEPL-2 SG-1x 2
-      - vpnhat-SG-Nerocloud-nf 2
-      - vpnhat-香港HKT-dip
-      - HK05-香港05
-      - 台湾IEPL-1 TW-1x
-      - vpnhat-香港HKT-dip 2
-      - 台湾IEPL-5 TW-1x
-      - vpnhat-SG-Nerocloud-nf 3
-      - vpnhat-香港HKT-dip 3
       - HK07-香港07
-      - 183.232.56.182:11846
-      - defaultName_45
-      - 香港 HK 10
-      - 香港 Hongkong HKBGP(VIP)●
-      - 香港 HK 04
-      - vpnhat-香港HKT 2
-      - HK03-香港03
-      - vpnhat-新北Hinet-dip
-      - 香港 HK 01
-      - JP 10-日本10
-      - 台湾IEPL-1 TW-1x 2
-      - 韩国 - SS/SSR - 01
-      - 韩国 - SS/SSR - 04
-      - 韩国 - SS/SSR - 03
-      - "[CT/CM]香港 11"
-      - tg频道:univstar_9
-      - 香港 - SS/SSR - 04
-      - JP 09-日本09
-      - 183.232.56.182:11842
-      - vpnhat-Tokyo-DMIT-nf
-      - HK06-香港06
-      - "[CT/CM]香港 05"
-      - 香港 - SS/SSR - 01
-      - 台湾 Taiwan★
-      - 香港 - SS/SSR - 10
-      - KR 02-韩国02
-      - 日本IEPL-1 JP-1x
-      - 日本IEPL-1 JP-1x 2
-      - KR 04-韩国04
-      - vpnhat-台北Hinet-dip
-      - 日本IEPL-2 JP-1x
-      - 日本IEPL-3 JP-1x
-      - 日本IEPL-4 JP-1x
-      - 台湾 - SS/SSR - 02
-      - 香港1 奈飞
-      - 日本IEPL-7 JP-1x
-      - vpnhat-香港HKT-dip 4
-      - EXTM3U-Tokyo-M247
-      - 香港 - SS/SSR - 07
-      - 香港 - SS/SSR - 09
-      - 俄罗斯IEPL RU-1x
-      - "[CT/CM]香港 06"
-      - HK.广州香港-1.移动.300M.NF
-      - Lv2.广州->香港HGC
-      - 183.232.56.182:11810
-      - vpnhat-香港Nerocloud-nf
-      - 香港 - SS/SSR - 08
-      - 日本 - SS/SSR - 04
-      - EXTM3U-Tokyo-M247 2
-      - vpnhat-Novosibirsk-Baxet-nf
-      - 韩国IEPL-1 KR-1x
-      - 新加坡C
-      - 台湾 - SS/SSR - 06
-      - 香港 - SS/SSR - 03
-      - 香港 HK 09
-      - 俄罗斯IEPL RU-1x 2
-      - tg频道:univstar_3
-      - 新加坡IEPL-1 SG-1x
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 04"
-      - 泰国 Thailand★
-      - "[CT/CM]香港 13"
-      - 日本 B
-      - 俄罗斯c RT
-      - 美国 America●
-      - 美国 优化-1
-      - Lv2.广州->美国-2
-      - US.广州美国-2.移动.200M
-      - 美国 优化-4
-      - US.广州美国-2.移动.200M 2
-      - US.广州美国-1.移动.300M
-      - 香港 - SS/SSR - 05
-      - 美国 - SS/SSR - 05
-      - 美国IEPL-1 US-1x
-      - JP 08-日本08
-      - JP 03-日本03
-      - USA08-美国08
-      - 日本 - SS/SSR - 01
-      - JP 07-日本07
-      - vpnhat-台北Hinet-dip 2
-      - 美国IEPL-4 US-1x
-      - Lv2.广州->美国-1
-      - 新加坡E
-      - JP 04-日本04
-      - 美国IEPL-2 US-1x
-      - vpnhat-香港有线-dip
-      - 183.232.56.182:11814
-      - 美国 优化-6
-      - "[CT/CM]香港 14"
-      - 美国 优化-3
-      - JP 05-日本05
-      - 美国IEPL-6 US-1x
-      - 美国IEPL-5 US-1x
-      - 香港 - SS/SSR - 02
-      - 俄罗斯b RT
-      - JP 06-日本06
-      - "[CT/CM]香港 02"
-      - USA06-美国06
+      - 香港IEPL-10 HK-1x
       - 香港IEPL-2 HK-1x
-      - 澳大利亚IEPL AU-1x
-      - 美国 优化-7
-      - tg频道:univstar_10
-      - 美国 US 07
-      - 台湾 - SS/SSR - 05
-      - EXTM3U-Zelenograd-Baxet-dip
-      - VN.广州印度-1.移动.300M
-      - 美国 优化-8
-      - TG@阿伟科技/油管 24
-      - USA04-美国04
-      - 澳大利亚IEPL AU-1x 2
-      - vpnhat-LAX-DMIT-nf
-      - 美国 优化-9
-      - 美国 - SS/SSR - 06
-      - USA09-美国09
-      - 香港IEPL-10 HK-1x 2
-      - HK08-香港08
-      - US.广州美国-1.移动.300M 2
-      - 日本 A
-      - US.广州美国-3.移动.200M
-      - USA03-美国03
-      - 俄罗斯 Russia★
+      - 香港IEPL-7 HK-1x
+      - HK06-香港06
       - HK10-香港10
-      - JP 01-日本01
-      - 美国 - SS/SSR - 03
-      - 香港 - SS/SSR - 06
-      - 台湾 - SS/SSR - 03
-      - UK.广州英国-1.移动.200M
-      - DE.广州德国-1.移动.300M
-      - 美国 优化-5
-      - USA07-美国07
-      - 英国IEPL UK-1x
-      - EXTM3U-Novosibirsk-Baxet
-      - 美国 - SS/SSR - 02
-      - 香港IEPL-8 HK-1x
-      - VN.广州印度-1.移动.300M 2
-      - tg频道:univstar_4
-      - UK.广州英国-1.移动.200M 2
-      - EXTM3U-Zelenograd-Baxet-dip 2
-      - TW.广州台湾-3.移动.200M.NF
-      - Lv2.广州->美国-3
-      - EXTM3U-Zelenograd-Baxet-dip 3
-      - vpnhat-Santa Clara-Tencent-nf
-      - EXTM3U-Zelenograd-Baxet-dip 4
-      - 美国 US 04
-      - USA02-美国02
-      - USA10-美国10
-      - 台湾IEPL-2 TW-1x
-      - 加拿大IEPL CA-1x
-      - 日本 JP 04
-      - 德国IEPL DE-1x
-      - 加拿大IEPL CA-1x 2
-      - 台湾 - SS/SSR - 04
-      - 德国IEPL DE-1x 2
-      - 韩国 KR 03
-      - 香港 HK 03
-      - 韩国高速接入A
-      - vpnhat-SG-Tencent-nf
-      - 183.232.56.182:22848
-      - 美国 - SS/SSR - 01
-      - 日本IEPL-8 JP-1x
-      - 新加坡 SG 03
-      - EXTM3U-Zelenograd-Baxet-dip 5
-      - 美国IEPL-3 US-1x
-      - 日本 JP 02
-      - 日本 JP 01
-      - 美国IEPL-6 US-1x 2
-      - 土耳其 Turkey★
-      - vpnhat-LAX-DMIT-nf 2
-      - vpnhat-云林Hinet-dip
-      - "[CT/CM]香港 12"
-      - vpnhat-台中Hinet-dip
-      - tg频道:univstar_11
-      - 土耳其IEPL TR-1x
-      - 新加坡 - SS/SSR - 04
-      - EXTM3U-Novosibirsk-Baxet 2
-      - 泰国IEPL TH-1x
-      - SG 04-新加坡04
-      - HK02-香港02
-      - 日本 - SS/SSR - 02
-      - 美国 - SS/SSR - 04
-      - 日本 JP 05
-      - 日本 - SS/SSR - 03
-      - defaultName_62
-      - 新加坡 SG 01
-      - 韩国 KR 08
-      - 新加坡 - SS/SSR - 03
-      - EXTM3U-Zelenograd-Baxet-dip 6
-      - tg频道:univstar_2
+      - 香港IEPL-6 HK-1x
       - HK01-香港01
+      - 香港IEPL-5 HK-1x
+      - 香港IEPL-8 HK-1x
+      - "[CT/CM]香港 03"
+      - 香港IEPL-4 HK-1x
+      - 新加坡E
+      - 新加坡B
       - 新加坡D
-      - 台湾 - SS/SSR - 01
-      - SG 09-新加坡09
-      - 香港 HK 08
-      - 泰国IEPL TH-1x 2
       - SG 02-新加坡02
+      - "[CT/CM]香港 06"
+      - 新加坡C
+      - 新加坡IEPL-1 SG-1x
+      - 台湾IEPL-5 TW-1x
+      - "[CT/CM]香港 08"
+      - JP 06-日本06
+      - 台湾IEPL-3 TW-1x
+      - JP 04-日本04
+      - JP 09-日本09
+      - 韩国 KR 03
+      - 台湾IEPL-2 TW-1x
+      - "[CT/CM]香港 05"
+      - JP 07-日本07
+      - 台湾IEPL-1 TW-1x
+      - HK05-香港05
+      - vpnhat-Tokyo-DMIT-nf
+      - HK04-香港04
+      - "[CT/CM]香港 11"
+      - 日本 JP 01
+      - 韩国高速接入A
+      - 日本 JP 05
+      - 新加坡IEPL-2 SG-1x
+      - "[CT/CM]香港 10"
+      - 日本IEPL-4 JP-1x
+      - 日本IEPL-3 JP-1x
+      - 日本IEPL-7 JP-1x
+      - "[CT/CM]香港 02"
+      - 日本IEPL-8 JP-1x
+      - 新加坡 SG 01
+      - JP 10-日本10
+      - 日本IEPL-2 JP-1x
+      - "[CT/CM]香港 14"
+      - Lv2.广州->香港HGC
+      - 日本IEPL-1 JP-1x
+      - 台湾IEPL-1 TW-1x 2
+      - HK02-香港02
+      - HK03-香港03
+      - 新加坡 SG 03
+      - KR 02-韩国02
+      - KR 04-韩国04
+      - vpnhat-香港Nerocloud-nf
+      - 俄罗斯b RT
+      - 俄罗斯c RT
+      - 183.232.56.182:11842
+      - 俄罗斯IEPL RU-1x
+      - tg频道:univstar_9
+      - vpnhat-台中Hinet-dip
+      - tg频道:univstar_10
+      - vpnhat-Novosibirsk-Baxet-nf
+      - HK08-香港08
+      - "[CT/CM]香港 01"
+      - 美国 优化-3
+      - TW.广州台湾-3.移动.200M.NF
+      - VN.广州印度-1.移动.300M
+      - Lv2.广州->美国-2
+      - 日本 A
+      - 韩国IEPL-1 KR-1x
+      - US.广州美国-1.移动.300M
+      - 美国IEPL-3 US-1x
+      - 美国IEPL-6 US-1x
+      - 美国IEPL-4 US-1x
+      - 美国 优化-1
+      - 美国IEPL-2 US-1x
+      - 美国IEPL-5 US-1x
+      - JP 03-日本03
+      - 美国 优化-4
+      - tg频道:univstar_2
+      - USA03-美国03
+      - tg频道:univstar_3
+      - USA07-美国07
+      - 俄罗斯 Russia★
+      - USA06-美国06
+      - 183.232.56.182:22848
+      - 美国IEPL-1 US-1x
+      - USA10-美国10
+      - JP 05-日本05
+      - USA09-美国09
+      - 美国IEPL-6 US-1x 2
+      - DE.广州德国-1.移动.300M
+      - "[CT/CM]香港 13"
+      - 澳大利亚IEPL AU-1x
+      - vpnhat-LAX-DMIT-nf
+      - USA08-美国08
+      - 香港IEPL-3 HK-1x
+      - vpnhat-LAX-DMIT-nf 2
+      - 美国 US 07
+      - SG 03-新加坡03
+      - SG 01-新加坡01
+      - JP 01-日本01
+      - vpnhat-Santa Clara-Tencent-nf
+      - 德国IEPL DE-1x
+      - 香港1 奈飞
+      - 加拿大IEPL CA-1x
+      - 加拿大IEPL CA-1x 2
+      - 日本 B
+      - 德国IEPL DE-1x 2
+      - 泰国IEPL TH-1x
+      - SG 05-新加坡05
+      - USA04-美国04
+      - 泰国IEPL TH-1x 2
+      - TG_yudievilla_13
+      - 土耳其 Turkey★
+      - 美国 优化-2
+      - USA02-美国02
+      - vpnhat-SG-Tencent-nf
+      - SG 04-新加坡04
+      - 新加坡IEPL-2 SG-1x 2
+      - 土耳其IEPL TR-1x
+      - SG 09-新加坡09
+      - 日本 JP 02
+      - US.广州美国-3.移动.200M
+      - "[CT/CM]香港 12"
+      - 美国 US 04
+      - UK.广州英国-1.移动.200M
+      - tg频道:univstar_4
+      - tg频道:univstar_11
+      - 俄罗斯IEPL RU-1x 2
+      - 香港 Hongkong HKBGP(VIP)●
+      - 183.232.56.182:11810
+      - JP 08-日本08
+      - 日本 JP 04
+      - 韩国 KR 08
+      - 183.232.56.182:11814
+      - 香港IEPL-10 HK-1x 2
+      - TG@阿伟科技/油管 24
+      - 日本IEPL-1 JP-1x 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK04-香港04
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - 香港IEPL-4 HK-1x
-      - 香港IEPL-10 HK-1x
-      - 香港IEPL-5 HK-1x
-      - "[CT/CM]香港 03"
-      - 香港IEPL-6 HK-1x
-      - 香港IEPL-7 HK-1x
-      - 新加坡 - SS/SSR - 01
-      - 香港 HK 07
-      - 韩国 - SS/SSR - 02
-      - 新加坡 - SS/SSR - 06
-      - 新加坡 - SS/SSR - 05
-      - 香港 HK 05
-      - 香港IEPL-3 HK-1x
-      - 新加坡B
-      - SG 03-新加坡03
-      - 美国 优化-2
-      - SG 01-新加坡01
-      - SG 05-新加坡05
-      - 日本 - SS/SSR - 05
-      - vpnhat-SG-Linode
-      - vpnhat-SG-Linode 2
-      - 台湾IEPL-3 TW-1x
-      - vpnhat-香港HKT
-      - 韩国 - SS/SSR - 05
-      - vpnhat-SG-Linode 3
-      - "[CT/CM]香港 08"
-      - 香港 HK 02
-      - "[CT/CM]香港 10"
-      - 韩国 - SS/SSR - 06
-      - 新加坡IEPL-2 SG-1x
-      - defaultName_59
-      - vpnhat-SG-Nerocloud-nf
-      - 新加坡IEPL-2 SG-1x 2
-      - vpnhat-SG-Nerocloud-nf 2
-      - vpnhat-香港HKT-dip
-      - HK05-香港05
-      - 台湾IEPL-1 TW-1x
-      - vpnhat-香港HKT-dip 2
-      - 台湾IEPL-5 TW-1x
-      - vpnhat-SG-Nerocloud-nf 3
-      - vpnhat-香港HKT-dip 3
       - HK07-香港07
-      - 183.232.56.182:11846
-      - defaultName_45
-      - 香港 HK 10
-      - 香港 Hongkong HKBGP(VIP)●
-      - 香港 HK 04
-      - vpnhat-香港HKT 2
-      - HK03-香港03
-      - vpnhat-新北Hinet-dip
-      - 香港 HK 01
-      - JP 10-日本10
-      - 台湾IEPL-1 TW-1x 2
-      - 韩国 - SS/SSR - 01
-      - 韩国 - SS/SSR - 04
-      - 韩国 - SS/SSR - 03
-      - "[CT/CM]香港 11"
-      - tg频道:univstar_9
-      - 香港 - SS/SSR - 04
-      - JP 09-日本09
-      - 183.232.56.182:11842
-      - vpnhat-Tokyo-DMIT-nf
-      - HK06-香港06
-      - "[CT/CM]香港 05"
-      - 香港 - SS/SSR - 01
-      - 台湾 Taiwan★
-      - 香港 - SS/SSR - 10
-      - KR 02-韩国02
-      - 日本IEPL-1 JP-1x
-      - 日本IEPL-1 JP-1x 2
-      - KR 04-韩国04
-      - vpnhat-台北Hinet-dip
-      - 日本IEPL-2 JP-1x
-      - 日本IEPL-3 JP-1x
-      - 日本IEPL-4 JP-1x
-      - 台湾 - SS/SSR - 02
-      - 香港1 奈飞
-      - 日本IEPL-7 JP-1x
-      - vpnhat-香港HKT-dip 4
-      - EXTM3U-Tokyo-M247
-      - 香港 - SS/SSR - 07
-      - 香港 - SS/SSR - 09
-      - 俄罗斯IEPL RU-1x
-      - "[CT/CM]香港 06"
-      - HK.广州香港-1.移动.300M.NF
-      - Lv2.广州->香港HGC
-      - 183.232.56.182:11810
-      - vpnhat-香港Nerocloud-nf
-      - 香港 - SS/SSR - 08
-      - 日本 - SS/SSR - 04
-      - EXTM3U-Tokyo-M247 2
-      - vpnhat-Novosibirsk-Baxet-nf
-      - 韩国IEPL-1 KR-1x
-      - 新加坡C
-      - 台湾 - SS/SSR - 06
-      - 香港 - SS/SSR - 03
-      - 香港 HK 09
-      - 俄罗斯IEPL RU-1x 2
-      - tg频道:univstar_3
-      - 新加坡IEPL-1 SG-1x
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 04"
-      - 泰国 Thailand★
-      - "[CT/CM]香港 13"
-      - 日本 B
-      - 俄罗斯c RT
-      - 美国 America●
-      - 美国 优化-1
-      - Lv2.广州->美国-2
-      - US.广州美国-2.移动.200M
-      - 美国 优化-4
-      - US.广州美国-2.移动.200M 2
-      - US.广州美国-1.移动.300M
-      - 香港 - SS/SSR - 05
-      - 美国 - SS/SSR - 05
-      - 美国IEPL-1 US-1x
-      - JP 08-日本08
-      - JP 03-日本03
-      - USA08-美国08
-      - 日本 - SS/SSR - 01
-      - JP 07-日本07
-      - vpnhat-台北Hinet-dip 2
-      - 美国IEPL-4 US-1x
-      - Lv2.广州->美国-1
-      - 新加坡E
-      - JP 04-日本04
-      - 美国IEPL-2 US-1x
-      - vpnhat-香港有线-dip
-      - 183.232.56.182:11814
-      - 美国 优化-6
-      - "[CT/CM]香港 14"
-      - 美国 优化-3
-      - JP 05-日本05
-      - 美国IEPL-6 US-1x
-      - 美国IEPL-5 US-1x
-      - 香港 - SS/SSR - 02
-      - 俄罗斯b RT
-      - JP 06-日本06
-      - "[CT/CM]香港 02"
-      - USA06-美国06
+      - 香港IEPL-10 HK-1x
       - 香港IEPL-2 HK-1x
-      - 澳大利亚IEPL AU-1x
-      - 美国 优化-7
-      - tg频道:univstar_10
-      - 美国 US 07
-      - 台湾 - SS/SSR - 05
-      - EXTM3U-Zelenograd-Baxet-dip
-      - VN.广州印度-1.移动.300M
-      - 美国 优化-8
-      - TG@阿伟科技/油管 24
-      - USA04-美国04
-      - 澳大利亚IEPL AU-1x 2
-      - vpnhat-LAX-DMIT-nf
-      - 美国 优化-9
-      - 美国 - SS/SSR - 06
-      - USA09-美国09
-      - 香港IEPL-10 HK-1x 2
-      - HK08-香港08
-      - US.广州美国-1.移动.300M 2
-      - 日本 A
-      - US.广州美国-3.移动.200M
-      - USA03-美国03
-      - 俄罗斯 Russia★
+      - 香港IEPL-7 HK-1x
+      - HK06-香港06
       - HK10-香港10
-      - JP 01-日本01
-      - 美国 - SS/SSR - 03
-      - 香港 - SS/SSR - 06
-      - 台湾 - SS/SSR - 03
-      - UK.广州英国-1.移动.200M
-      - DE.广州德国-1.移动.300M
-      - 美国 优化-5
-      - USA07-美国07
-      - 英国IEPL UK-1x
-      - EXTM3U-Novosibirsk-Baxet
-      - 美国 - SS/SSR - 02
-      - 香港IEPL-8 HK-1x
-      - VN.广州印度-1.移动.300M 2
-      - tg频道:univstar_4
-      - UK.广州英国-1.移动.200M 2
-      - EXTM3U-Zelenograd-Baxet-dip 2
-      - TW.广州台湾-3.移动.200M.NF
-      - Lv2.广州->美国-3
-      - EXTM3U-Zelenograd-Baxet-dip 3
-      - vpnhat-Santa Clara-Tencent-nf
-      - EXTM3U-Zelenograd-Baxet-dip 4
-      - 美国 US 04
-      - USA02-美国02
-      - USA10-美国10
-      - 台湾IEPL-2 TW-1x
-      - 加拿大IEPL CA-1x
-      - 日本 JP 04
-      - 德国IEPL DE-1x
-      - 加拿大IEPL CA-1x 2
-      - 台湾 - SS/SSR - 04
-      - 德国IEPL DE-1x 2
-      - 韩国 KR 03
-      - 香港 HK 03
-      - 韩国高速接入A
-      - vpnhat-SG-Tencent-nf
-      - 183.232.56.182:22848
-      - 美国 - SS/SSR - 01
-      - 日本IEPL-8 JP-1x
-      - 新加坡 SG 03
-      - EXTM3U-Zelenograd-Baxet-dip 5
-      - 美国IEPL-3 US-1x
-      - 日本 JP 02
-      - 日本 JP 01
-      - 美国IEPL-6 US-1x 2
-      - 土耳其 Turkey★
-      - vpnhat-LAX-DMIT-nf 2
-      - vpnhat-云林Hinet-dip
-      - "[CT/CM]香港 12"
-      - vpnhat-台中Hinet-dip
-      - tg频道:univstar_11
-      - 土耳其IEPL TR-1x
-      - 新加坡 - SS/SSR - 04
-      - EXTM3U-Novosibirsk-Baxet 2
-      - 泰国IEPL TH-1x
-      - SG 04-新加坡04
-      - HK02-香港02
-      - 日本 - SS/SSR - 02
-      - 美国 - SS/SSR - 04
-      - 日本 JP 05
-      - 日本 - SS/SSR - 03
-      - defaultName_62
-      - 新加坡 SG 01
-      - 韩国 KR 08
-      - 新加坡 - SS/SSR - 03
-      - EXTM3U-Zelenograd-Baxet-dip 6
-      - tg频道:univstar_2
+      - 香港IEPL-6 HK-1x
       - HK01-香港01
+      - 香港IEPL-5 HK-1x
+      - 香港IEPL-8 HK-1x
+      - "[CT/CM]香港 03"
+      - 香港IEPL-4 HK-1x
+      - 新加坡E
+      - 新加坡B
       - 新加坡D
-      - 台湾 - SS/SSR - 01
-      - SG 09-新加坡09
-      - 香港 HK 08
-      - 泰国IEPL TH-1x 2
       - SG 02-新加坡02
+      - "[CT/CM]香港 06"
+      - 新加坡C
+      - 新加坡IEPL-1 SG-1x
+      - 台湾IEPL-5 TW-1x
+      - "[CT/CM]香港 08"
+      - JP 06-日本06
+      - 台湾IEPL-3 TW-1x
+      - JP 04-日本04
+      - JP 09-日本09
+      - 韩国 KR 03
+      - 台湾IEPL-2 TW-1x
+      - "[CT/CM]香港 05"
+      - JP 07-日本07
+      - 台湾IEPL-1 TW-1x
+      - HK05-香港05
+      - vpnhat-Tokyo-DMIT-nf
+      - HK04-香港04
+      - "[CT/CM]香港 11"
+      - 日本 JP 01
+      - 韩国高速接入A
+      - 日本 JP 05
+      - 新加坡IEPL-2 SG-1x
+      - "[CT/CM]香港 10"
+      - 日本IEPL-4 JP-1x
+      - 日本IEPL-3 JP-1x
+      - 日本IEPL-7 JP-1x
+      - "[CT/CM]香港 02"
+      - 日本IEPL-8 JP-1x
+      - 新加坡 SG 01
+      - JP 10-日本10
+      - 日本IEPL-2 JP-1x
+      - "[CT/CM]香港 14"
+      - Lv2.广州->香港HGC
+      - 日本IEPL-1 JP-1x
+      - 台湾IEPL-1 TW-1x 2
+      - HK02-香港02
+      - HK03-香港03
+      - 新加坡 SG 03
+      - KR 02-韩国02
+      - KR 04-韩国04
+      - vpnhat-香港Nerocloud-nf
+      - 俄罗斯b RT
+      - 俄罗斯c RT
+      - 183.232.56.182:11842
+      - 俄罗斯IEPL RU-1x
+      - tg频道:univstar_9
+      - vpnhat-台中Hinet-dip
+      - tg频道:univstar_10
+      - vpnhat-Novosibirsk-Baxet-nf
+      - HK08-香港08
+      - "[CT/CM]香港 01"
+      - 美国 优化-3
+      - TW.广州台湾-3.移动.200M.NF
+      - VN.广州印度-1.移动.300M
+      - Lv2.广州->美国-2
+      - 日本 A
+      - 韩国IEPL-1 KR-1x
+      - US.广州美国-1.移动.300M
+      - 美国IEPL-3 US-1x
+      - 美国IEPL-6 US-1x
+      - 美国IEPL-4 US-1x
+      - 美国 优化-1
+      - 美国IEPL-2 US-1x
+      - 美国IEPL-5 US-1x
+      - JP 03-日本03
+      - 美国 优化-4
+      - tg频道:univstar_2
+      - USA03-美国03
+      - tg频道:univstar_3
+      - USA07-美国07
+      - 俄罗斯 Russia★
+      - USA06-美国06
+      - 183.232.56.182:22848
+      - 美国IEPL-1 US-1x
+      - USA10-美国10
+      - JP 05-日本05
+      - USA09-美国09
+      - 美国IEPL-6 US-1x 2
+      - DE.广州德国-1.移动.300M
+      - "[CT/CM]香港 13"
+      - 澳大利亚IEPL AU-1x
+      - vpnhat-LAX-DMIT-nf
+      - USA08-美国08
+      - 香港IEPL-3 HK-1x
+      - vpnhat-LAX-DMIT-nf 2
+      - 美国 US 07
+      - SG 03-新加坡03
+      - SG 01-新加坡01
+      - JP 01-日本01
+      - vpnhat-Santa Clara-Tencent-nf
+      - 德国IEPL DE-1x
+      - 香港1 奈飞
+      - 加拿大IEPL CA-1x
+      - 加拿大IEPL CA-1x 2
+      - 日本 B
+      - 德国IEPL DE-1x 2
+      - 泰国IEPL TH-1x
+      - SG 05-新加坡05
+      - USA04-美国04
+      - 泰国IEPL TH-1x 2
+      - TG_yudievilla_13
+      - 土耳其 Turkey★
+      - 美国 优化-2
+      - USA02-美国02
+      - vpnhat-SG-Tencent-nf
+      - SG 04-新加坡04
+      - 新加坡IEPL-2 SG-1x 2
+      - 土耳其IEPL TR-1x
+      - SG 09-新加坡09
+      - 日本 JP 02
+      - US.广州美国-3.移动.200M
+      - "[CT/CM]香港 12"
+      - 美国 US 04
+      - UK.广州英国-1.移动.200M
+      - tg频道:univstar_4
+      - tg频道:univstar_11
+      - 俄罗斯IEPL RU-1x 2
+      - 香港 Hongkong HKBGP(VIP)●
+      - 183.232.56.182:11810
+      - JP 08-日本08
+      - 日本 JP 04
+      - 韩国 KR 08
+      - 183.232.56.182:11814
+      - 香港IEPL-10 HK-1x 2
+      - TG@阿伟科技/油管 24
+      - 日本IEPL-1 JP-1x 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -1000,1067 +608,635 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK04-香港04
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - 香港IEPL-4 HK-1x
-      - 香港IEPL-10 HK-1x
-      - 香港IEPL-5 HK-1x
-      - "[CT/CM]香港 03"
-      - 香港IEPL-6 HK-1x
-      - 香港IEPL-7 HK-1x
-      - 新加坡 - SS/SSR - 01
-      - 香港 HK 07
-      - 韩国 - SS/SSR - 02
-      - 新加坡 - SS/SSR - 06
-      - 新加坡 - SS/SSR - 05
-      - 香港 HK 05
-      - 香港IEPL-3 HK-1x
-      - 新加坡B
-      - SG 03-新加坡03
-      - 美国 优化-2
-      - SG 01-新加坡01
-      - SG 05-新加坡05
-      - 日本 - SS/SSR - 05
-      - vpnhat-SG-Linode
-      - vpnhat-SG-Linode 2
-      - 台湾IEPL-3 TW-1x
-      - vpnhat-香港HKT
-      - 韩国 - SS/SSR - 05
-      - vpnhat-SG-Linode 3
-      - "[CT/CM]香港 08"
-      - 香港 HK 02
-      - "[CT/CM]香港 10"
-      - 韩国 - SS/SSR - 06
-      - 新加坡IEPL-2 SG-1x
-      - defaultName_59
-      - vpnhat-SG-Nerocloud-nf
-      - 新加坡IEPL-2 SG-1x 2
-      - vpnhat-SG-Nerocloud-nf 2
-      - vpnhat-香港HKT-dip
-      - HK05-香港05
-      - 台湾IEPL-1 TW-1x
-      - vpnhat-香港HKT-dip 2
-      - 台湾IEPL-5 TW-1x
-      - vpnhat-SG-Nerocloud-nf 3
-      - vpnhat-香港HKT-dip 3
       - HK07-香港07
-      - 183.232.56.182:11846
-      - defaultName_45
-      - 香港 HK 10
-      - 香港 Hongkong HKBGP(VIP)●
-      - 香港 HK 04
-      - vpnhat-香港HKT 2
-      - HK03-香港03
-      - vpnhat-新北Hinet-dip
-      - 香港 HK 01
-      - JP 10-日本10
-      - 台湾IEPL-1 TW-1x 2
-      - 韩国 - SS/SSR - 01
-      - 韩国 - SS/SSR - 04
-      - 韩国 - SS/SSR - 03
-      - "[CT/CM]香港 11"
-      - tg频道:univstar_9
-      - 香港 - SS/SSR - 04
-      - JP 09-日本09
-      - 183.232.56.182:11842
-      - vpnhat-Tokyo-DMIT-nf
-      - HK06-香港06
-      - "[CT/CM]香港 05"
-      - 香港 - SS/SSR - 01
-      - 台湾 Taiwan★
-      - 香港 - SS/SSR - 10
-      - KR 02-韩国02
-      - 日本IEPL-1 JP-1x
-      - 日本IEPL-1 JP-1x 2
-      - KR 04-韩国04
-      - vpnhat-台北Hinet-dip
-      - 日本IEPL-2 JP-1x
-      - 日本IEPL-3 JP-1x
-      - 日本IEPL-4 JP-1x
-      - 台湾 - SS/SSR - 02
-      - 香港1 奈飞
-      - 日本IEPL-7 JP-1x
-      - vpnhat-香港HKT-dip 4
-      - EXTM3U-Tokyo-M247
-      - 香港 - SS/SSR - 07
-      - 香港 - SS/SSR - 09
-      - 俄罗斯IEPL RU-1x
-      - "[CT/CM]香港 06"
-      - HK.广州香港-1.移动.300M.NF
-      - Lv2.广州->香港HGC
-      - 183.232.56.182:11810
-      - vpnhat-香港Nerocloud-nf
-      - 香港 - SS/SSR - 08
-      - 日本 - SS/SSR - 04
-      - EXTM3U-Tokyo-M247 2
-      - vpnhat-Novosibirsk-Baxet-nf
-      - 韩国IEPL-1 KR-1x
-      - 新加坡C
-      - 台湾 - SS/SSR - 06
-      - 香港 - SS/SSR - 03
-      - 香港 HK 09
-      - 俄罗斯IEPL RU-1x 2
-      - tg频道:univstar_3
-      - 新加坡IEPL-1 SG-1x
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 04"
-      - 泰国 Thailand★
-      - "[CT/CM]香港 13"
-      - 日本 B
-      - 俄罗斯c RT
-      - 美国 America●
-      - 美国 优化-1
-      - Lv2.广州->美国-2
-      - US.广州美国-2.移动.200M
-      - 美国 优化-4
-      - US.广州美国-2.移动.200M 2
-      - US.广州美国-1.移动.300M
-      - 香港 - SS/SSR - 05
-      - 美国 - SS/SSR - 05
-      - 美国IEPL-1 US-1x
-      - JP 08-日本08
-      - JP 03-日本03
-      - USA08-美国08
-      - 日本 - SS/SSR - 01
-      - JP 07-日本07
-      - vpnhat-台北Hinet-dip 2
-      - 美国IEPL-4 US-1x
-      - Lv2.广州->美国-1
-      - 新加坡E
-      - JP 04-日本04
-      - 美国IEPL-2 US-1x
-      - vpnhat-香港有线-dip
-      - 183.232.56.182:11814
-      - 美国 优化-6
-      - "[CT/CM]香港 14"
-      - 美国 优化-3
-      - JP 05-日本05
-      - 美国IEPL-6 US-1x
-      - 美国IEPL-5 US-1x
-      - 香港 - SS/SSR - 02
-      - 俄罗斯b RT
-      - JP 06-日本06
-      - "[CT/CM]香港 02"
-      - USA06-美国06
+      - 香港IEPL-10 HK-1x
       - 香港IEPL-2 HK-1x
-      - 澳大利亚IEPL AU-1x
-      - 美国 优化-7
-      - tg频道:univstar_10
-      - 美国 US 07
-      - 台湾 - SS/SSR - 05
-      - EXTM3U-Zelenograd-Baxet-dip
-      - VN.广州印度-1.移动.300M
-      - 美国 优化-8
-      - TG@阿伟科技/油管 24
-      - USA04-美国04
-      - 澳大利亚IEPL AU-1x 2
-      - vpnhat-LAX-DMIT-nf
-      - 美国 优化-9
-      - 美国 - SS/SSR - 06
-      - USA09-美国09
-      - 香港IEPL-10 HK-1x 2
-      - HK08-香港08
-      - US.广州美国-1.移动.300M 2
-      - 日本 A
-      - US.广州美国-3.移动.200M
-      - USA03-美国03
-      - 俄罗斯 Russia★
+      - 香港IEPL-7 HK-1x
+      - HK06-香港06
       - HK10-香港10
-      - JP 01-日本01
-      - 美国 - SS/SSR - 03
-      - 香港 - SS/SSR - 06
-      - 台湾 - SS/SSR - 03
-      - UK.广州英国-1.移动.200M
-      - DE.广州德国-1.移动.300M
-      - 美国 优化-5
-      - USA07-美国07
-      - 英国IEPL UK-1x
-      - EXTM3U-Novosibirsk-Baxet
-      - 美国 - SS/SSR - 02
-      - 香港IEPL-8 HK-1x
-      - VN.广州印度-1.移动.300M 2
-      - tg频道:univstar_4
-      - UK.广州英国-1.移动.200M 2
-      - EXTM3U-Zelenograd-Baxet-dip 2
-      - TW.广州台湾-3.移动.200M.NF
-      - Lv2.广州->美国-3
-      - EXTM3U-Zelenograd-Baxet-dip 3
-      - vpnhat-Santa Clara-Tencent-nf
-      - EXTM3U-Zelenograd-Baxet-dip 4
-      - 美国 US 04
-      - USA02-美国02
-      - USA10-美国10
-      - 台湾IEPL-2 TW-1x
-      - 加拿大IEPL CA-1x
-      - 日本 JP 04
-      - 德国IEPL DE-1x
-      - 加拿大IEPL CA-1x 2
-      - 台湾 - SS/SSR - 04
-      - 德国IEPL DE-1x 2
-      - 韩国 KR 03
-      - 香港 HK 03
-      - 韩国高速接入A
-      - vpnhat-SG-Tencent-nf
-      - 183.232.56.182:22848
-      - 美国 - SS/SSR - 01
-      - 日本IEPL-8 JP-1x
-      - 新加坡 SG 03
-      - EXTM3U-Zelenograd-Baxet-dip 5
-      - 美国IEPL-3 US-1x
-      - 日本 JP 02
-      - 日本 JP 01
-      - 美国IEPL-6 US-1x 2
-      - 土耳其 Turkey★
-      - vpnhat-LAX-DMIT-nf 2
-      - vpnhat-云林Hinet-dip
-      - "[CT/CM]香港 12"
-      - vpnhat-台中Hinet-dip
-      - tg频道:univstar_11
-      - 土耳其IEPL TR-1x
-      - 新加坡 - SS/SSR - 04
-      - EXTM3U-Novosibirsk-Baxet 2
-      - 泰国IEPL TH-1x
-      - SG 04-新加坡04
-      - HK02-香港02
-      - 日本 - SS/SSR - 02
-      - 美国 - SS/SSR - 04
-      - 日本 JP 05
-      - 日本 - SS/SSR - 03
-      - defaultName_62
-      - 新加坡 SG 01
-      - 韩国 KR 08
-      - 新加坡 - SS/SSR - 03
-      - EXTM3U-Zelenograd-Baxet-dip 6
-      - tg频道:univstar_2
+      - 香港IEPL-6 HK-1x
       - HK01-香港01
+      - 香港IEPL-5 HK-1x
+      - 香港IEPL-8 HK-1x
+      - "[CT/CM]香港 03"
+      - 香港IEPL-4 HK-1x
+      - 新加坡E
+      - 新加坡B
       - 新加坡D
-      - 台湾 - SS/SSR - 01
-      - SG 09-新加坡09
-      - 香港 HK 08
-      - 泰国IEPL TH-1x 2
       - SG 02-新加坡02
+      - "[CT/CM]香港 06"
+      - 新加坡C
+      - 新加坡IEPL-1 SG-1x
+      - 台湾IEPL-5 TW-1x
+      - "[CT/CM]香港 08"
+      - JP 06-日本06
+      - 台湾IEPL-3 TW-1x
+      - JP 04-日本04
+      - JP 09-日本09
+      - 韩国 KR 03
+      - 台湾IEPL-2 TW-1x
+      - "[CT/CM]香港 05"
+      - JP 07-日本07
+      - 台湾IEPL-1 TW-1x
+      - HK05-香港05
+      - vpnhat-Tokyo-DMIT-nf
+      - HK04-香港04
+      - "[CT/CM]香港 11"
+      - 日本 JP 01
+      - 韩国高速接入A
+      - 日本 JP 05
+      - 新加坡IEPL-2 SG-1x
+      - "[CT/CM]香港 10"
+      - 日本IEPL-4 JP-1x
+      - 日本IEPL-3 JP-1x
+      - 日本IEPL-7 JP-1x
+      - "[CT/CM]香港 02"
+      - 日本IEPL-8 JP-1x
+      - 新加坡 SG 01
+      - JP 10-日本10
+      - 日本IEPL-2 JP-1x
+      - "[CT/CM]香港 14"
+      - Lv2.广州->香港HGC
+      - 日本IEPL-1 JP-1x
+      - 台湾IEPL-1 TW-1x 2
+      - HK02-香港02
+      - HK03-香港03
+      - 新加坡 SG 03
+      - KR 02-韩国02
+      - KR 04-韩国04
+      - vpnhat-香港Nerocloud-nf
+      - 俄罗斯b RT
+      - 俄罗斯c RT
+      - 183.232.56.182:11842
+      - 俄罗斯IEPL RU-1x
+      - tg频道:univstar_9
+      - vpnhat-台中Hinet-dip
+      - tg频道:univstar_10
+      - vpnhat-Novosibirsk-Baxet-nf
+      - HK08-香港08
+      - "[CT/CM]香港 01"
+      - 美国 优化-3
+      - TW.广州台湾-3.移动.200M.NF
+      - VN.广州印度-1.移动.300M
+      - Lv2.广州->美国-2
+      - 日本 A
+      - 韩国IEPL-1 KR-1x
+      - US.广州美国-1.移动.300M
+      - 美国IEPL-3 US-1x
+      - 美国IEPL-6 US-1x
+      - 美国IEPL-4 US-1x
+      - 美国 优化-1
+      - 美国IEPL-2 US-1x
+      - 美国IEPL-5 US-1x
+      - JP 03-日本03
+      - 美国 优化-4
+      - tg频道:univstar_2
+      - USA03-美国03
+      - tg频道:univstar_3
+      - USA07-美国07
+      - 俄罗斯 Russia★
+      - USA06-美国06
+      - 183.232.56.182:22848
+      - 美国IEPL-1 US-1x
+      - USA10-美国10
+      - JP 05-日本05
+      - USA09-美国09
+      - 美国IEPL-6 US-1x 2
+      - DE.广州德国-1.移动.300M
+      - "[CT/CM]香港 13"
+      - 澳大利亚IEPL AU-1x
+      - vpnhat-LAX-DMIT-nf
+      - USA08-美国08
+      - 香港IEPL-3 HK-1x
+      - vpnhat-LAX-DMIT-nf 2
+      - 美国 US 07
+      - SG 03-新加坡03
+      - SG 01-新加坡01
+      - JP 01-日本01
+      - vpnhat-Santa Clara-Tencent-nf
+      - 德国IEPL DE-1x
+      - 香港1 奈飞
+      - 加拿大IEPL CA-1x
+      - 加拿大IEPL CA-1x 2
+      - 日本 B
+      - 德国IEPL DE-1x 2
+      - 泰国IEPL TH-1x
+      - SG 05-新加坡05
+      - USA04-美国04
+      - 泰国IEPL TH-1x 2
+      - TG_yudievilla_13
+      - 土耳其 Turkey★
+      - 美国 优化-2
+      - USA02-美国02
+      - vpnhat-SG-Tencent-nf
+      - SG 04-新加坡04
+      - 新加坡IEPL-2 SG-1x 2
+      - 土耳其IEPL TR-1x
+      - SG 09-新加坡09
+      - 日本 JP 02
+      - US.广州美国-3.移动.200M
+      - "[CT/CM]香港 12"
+      - 美国 US 04
+      - UK.广州英国-1.移动.200M
+      - tg频道:univstar_4
+      - tg频道:univstar_11
+      - 俄罗斯IEPL RU-1x 2
+      - 香港 Hongkong HKBGP(VIP)●
+      - 183.232.56.182:11810
+      - JP 08-日本08
+      - 日本 JP 04
+      - 韩国 KR 08
+      - 183.232.56.182:11814
+      - 香港IEPL-10 HK-1x 2
+      - TG@阿伟科技/油管 24
+      - 日本IEPL-1 JP-1x 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - HK04-香港04
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - 香港IEPL-4 HK-1x
-      - 香港IEPL-10 HK-1x
-      - 香港IEPL-5 HK-1x
-      - "[CT/CM]香港 03"
-      - 香港IEPL-6 HK-1x
-      - 香港IEPL-7 HK-1x
-      - 香港 HK 07
-      - 香港 HK 05
-      - 香港IEPL-3 HK-1x
-      - 台湾IEPL-3 TW-1x
-      - vpnhat-香港HKT
-      - "[CT/CM]香港 08"
-      - 香港 HK 02
-      - "[CT/CM]香港 10"
-      - vpnhat-香港HKT-dip
-      - HK05-香港05
-      - 台湾IEPL-1 TW-1x
-      - vpnhat-香港HKT-dip 2
-      - 台湾IEPL-5 TW-1x
-      - vpnhat-香港HKT-dip 3
       - HK07-香港07
-      - 香港 HK 10
-      - 香港 Hongkong HKBGP(VIP)●
-      - 香港 HK 04
-      - vpnhat-香港HKT 2
-      - HK03-香港03
-      - vpnhat-新北Hinet-dip
-      - 香港 HK 01
-      - 台湾IEPL-1 TW-1x 2
-      - "[CT/CM]香港 11"
-      - 香港 - SS/SSR - 04
-      - HK06-香港06
-      - "[CT/CM]香港 05"
-      - 香港 - SS/SSR - 01
-      - 台湾 Taiwan★
-      - 香港 - SS/SSR - 10
-      - vpnhat-台北Hinet-dip
-      - 台湾 - SS/SSR - 02
-      - 香港1 奈飞
-      - vpnhat-香港HKT-dip 4
-      - 香港 - SS/SSR - 07
-      - 香港 - SS/SSR - 09
-      - "[CT/CM]香港 06"
-      - HK.广州香港-1.移动.300M.NF
-      - Lv2.广州->香港HGC
-      - vpnhat-香港Nerocloud-nf
-      - 香港 - SS/SSR - 08
-      - 台湾 - SS/SSR - 06
-      - 香港 - SS/SSR - 03
-      - 香港 HK 09
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 04"
-      - "[CT/CM]香港 13"
-      - 香港 - SS/SSR - 05
-      - vpnhat-台北Hinet-dip 2
-      - vpnhat-香港有线-dip
-      - "[CT/CM]香港 14"
-      - 香港 - SS/SSR - 02
-      - "[CT/CM]香港 02"
+      - 香港IEPL-10 HK-1x
       - 香港IEPL-2 HK-1x
-      - 台湾 - SS/SSR - 05
-      - 香港IEPL-10 HK-1x 2
-      - HK08-香港08
+      - 香港IEPL-7 HK-1x
+      - HK06-香港06
       - HK10-香港10
-      - 香港 - SS/SSR - 06
-      - 台湾 - SS/SSR - 03
-      - 香港IEPL-8 HK-1x
-      - TW.广州台湾-3.移动.200M.NF
-      - 台湾IEPL-2 TW-1x
-      - 台湾 - SS/SSR - 04
-      - 香港 HK 03
-      - "[CT/CM]香港 12"
-      - vpnhat-台中Hinet-dip
-      - HK02-香港02
+      - 香港IEPL-6 HK-1x
       - HK01-香港01
-      - 台湾 - SS/SSR - 01
-      - 香港 HK 08
+      - 香港IEPL-5 HK-1x
+      - 香港IEPL-8 HK-1x
+      - "[CT/CM]香港 03"
+      - 香港IEPL-4 HK-1x
+      - "[CT/CM]香港 06"
+      - 台湾IEPL-5 TW-1x
+      - "[CT/CM]香港 08"
+      - 台湾IEPL-3 TW-1x
+      - 台湾IEPL-2 TW-1x
+      - "[CT/CM]香港 05"
+      - 台湾IEPL-1 TW-1x
+      - HK05-香港05
+      - HK04-香港04
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 10"
+      - "[CT/CM]香港 02"
+      - "[CT/CM]香港 14"
+      - Lv2.广州->香港HGC
+      - 台湾IEPL-1 TW-1x 2
+      - HK02-香港02
+      - HK03-香港03
+      - vpnhat-香港Nerocloud-nf
+      - vpnhat-台中Hinet-dip
+      - HK08-香港08
+      - "[CT/CM]香港 01"
+      - TW.广州台湾-3.移动.200M.NF
+      - "[CT/CM]香港 13"
+      - 香港IEPL-3 HK-1x
+      - 香港1 奈飞
+      - "[CT/CM]香港 12"
+      - 香港 Hongkong HKBGP(VIP)●
+      - 香港IEPL-10 HK-1x 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK04-香港04
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - 香港IEPL-4 HK-1x
-      - 香港IEPL-10 HK-1x
-      - 香港IEPL-5 HK-1x
-      - "[CT/CM]香港 03"
-      - 香港IEPL-6 HK-1x
-      - 香港IEPL-7 HK-1x
-      - 新加坡 - SS/SSR - 01
-      - 香港 HK 07
-      - 韩国 - SS/SSR - 02
-      - 新加坡 - SS/SSR - 06
-      - 新加坡 - SS/SSR - 05
-      - 香港 HK 05
-      - 香港IEPL-3 HK-1x
-      - 新加坡B
-      - SG 03-新加坡03
-      - 美国 优化-2
-      - SG 01-新加坡01
-      - SG 05-新加坡05
-      - 日本 - SS/SSR - 05
-      - vpnhat-SG-Linode
-      - vpnhat-SG-Linode 2
-      - 台湾IEPL-3 TW-1x
-      - vpnhat-香港HKT
-      - 韩国 - SS/SSR - 05
-      - vpnhat-SG-Linode 3
-      - "[CT/CM]香港 08"
-      - 香港 HK 02
-      - "[CT/CM]香港 10"
-      - 韩国 - SS/SSR - 06
-      - 新加坡IEPL-2 SG-1x
-      - defaultName_59
-      - vpnhat-SG-Nerocloud-nf
-      - 新加坡IEPL-2 SG-1x 2
-      - vpnhat-SG-Nerocloud-nf 2
-      - vpnhat-香港HKT-dip
-      - HK05-香港05
-      - 台湾IEPL-1 TW-1x
-      - vpnhat-香港HKT-dip 2
-      - 台湾IEPL-5 TW-1x
-      - vpnhat-SG-Nerocloud-nf 3
-      - vpnhat-香港HKT-dip 3
       - HK07-香港07
-      - 183.232.56.182:11846
-      - defaultName_45
-      - 香港 HK 10
-      - 香港 Hongkong HKBGP(VIP)●
-      - 香港 HK 04
-      - vpnhat-香港HKT 2
-      - HK03-香港03
-      - vpnhat-新北Hinet-dip
-      - 香港 HK 01
-      - JP 10-日本10
-      - 台湾IEPL-1 TW-1x 2
-      - 韩国 - SS/SSR - 01
-      - 韩国 - SS/SSR - 04
-      - 韩国 - SS/SSR - 03
-      - "[CT/CM]香港 11"
-      - tg频道:univstar_9
-      - 香港 - SS/SSR - 04
-      - JP 09-日本09
-      - 183.232.56.182:11842
-      - vpnhat-Tokyo-DMIT-nf
-      - HK06-香港06
-      - "[CT/CM]香港 05"
-      - 香港 - SS/SSR - 01
-      - 台湾 Taiwan★
-      - 香港 - SS/SSR - 10
-      - KR 02-韩国02
-      - 日本IEPL-1 JP-1x
-      - 日本IEPL-1 JP-1x 2
-      - KR 04-韩国04
-      - vpnhat-台北Hinet-dip
-      - 日本IEPL-2 JP-1x
-      - 日本IEPL-3 JP-1x
-      - 日本IEPL-4 JP-1x
-      - 台湾 - SS/SSR - 02
-      - 香港1 奈飞
-      - 日本IEPL-7 JP-1x
-      - vpnhat-香港HKT-dip 4
-      - EXTM3U-Tokyo-M247
-      - 香港 - SS/SSR - 07
-      - 香港 - SS/SSR - 09
-      - 俄罗斯IEPL RU-1x
-      - "[CT/CM]香港 06"
-      - HK.广州香港-1.移动.300M.NF
-      - Lv2.广州->香港HGC
-      - 183.232.56.182:11810
-      - vpnhat-香港Nerocloud-nf
-      - 香港 - SS/SSR - 08
-      - 日本 - SS/SSR - 04
-      - EXTM3U-Tokyo-M247 2
-      - vpnhat-Novosibirsk-Baxet-nf
-      - 韩国IEPL-1 KR-1x
-      - 新加坡C
-      - 台湾 - SS/SSR - 06
-      - 香港 - SS/SSR - 03
-      - 香港 HK 09
-      - 俄罗斯IEPL RU-1x 2
-      - tg频道:univstar_3
-      - 新加坡IEPL-1 SG-1x
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 04"
-      - 泰国 Thailand★
-      - "[CT/CM]香港 13"
-      - 日本 B
-      - 俄罗斯c RT
-      - 美国 America●
-      - 美国 优化-1
-      - Lv2.广州->美国-2
-      - US.广州美国-2.移动.200M
-      - 美国 优化-4
-      - US.广州美国-2.移动.200M 2
-      - US.广州美国-1.移动.300M
-      - 香港 - SS/SSR - 05
-      - 美国 - SS/SSR - 05
-      - 美国IEPL-1 US-1x
-      - JP 08-日本08
-      - JP 03-日本03
-      - USA08-美国08
-      - 日本 - SS/SSR - 01
-      - JP 07-日本07
-      - vpnhat-台北Hinet-dip 2
-      - 美国IEPL-4 US-1x
-      - Lv2.广州->美国-1
-      - 新加坡E
-      - JP 04-日本04
-      - 美国IEPL-2 US-1x
-      - vpnhat-香港有线-dip
-      - 183.232.56.182:11814
-      - 美国 优化-6
-      - "[CT/CM]香港 14"
-      - 美国 优化-3
-      - JP 05-日本05
-      - 美国IEPL-6 US-1x
-      - 美国IEPL-5 US-1x
-      - 香港 - SS/SSR - 02
-      - 俄罗斯b RT
-      - JP 06-日本06
-      - "[CT/CM]香港 02"
-      - USA06-美国06
+      - 香港IEPL-10 HK-1x
       - 香港IEPL-2 HK-1x
-      - 澳大利亚IEPL AU-1x
-      - 美国 优化-7
-      - tg频道:univstar_10
-      - 美国 US 07
-      - 台湾 - SS/SSR - 05
-      - EXTM3U-Zelenograd-Baxet-dip
-      - VN.广州印度-1.移动.300M
-      - 美国 优化-8
-      - TG@阿伟科技/油管 24
-      - USA04-美国04
-      - 澳大利亚IEPL AU-1x 2
-      - vpnhat-LAX-DMIT-nf
-      - 美国 优化-9
-      - 美国 - SS/SSR - 06
-      - USA09-美国09
-      - 香港IEPL-10 HK-1x 2
-      - HK08-香港08
-      - US.广州美国-1.移动.300M 2
-      - 日本 A
-      - US.广州美国-3.移动.200M
-      - USA03-美国03
-      - 俄罗斯 Russia★
+      - 香港IEPL-7 HK-1x
+      - HK06-香港06
       - HK10-香港10
-      - JP 01-日本01
-      - 美国 - SS/SSR - 03
-      - 香港 - SS/SSR - 06
-      - 台湾 - SS/SSR - 03
-      - UK.广州英国-1.移动.200M
-      - DE.广州德国-1.移动.300M
-      - 美国 优化-5
-      - USA07-美国07
-      - 英国IEPL UK-1x
-      - EXTM3U-Novosibirsk-Baxet
-      - 美国 - SS/SSR - 02
-      - 香港IEPL-8 HK-1x
-      - VN.广州印度-1.移动.300M 2
-      - tg频道:univstar_4
-      - UK.广州英国-1.移动.200M 2
-      - EXTM3U-Zelenograd-Baxet-dip 2
-      - TW.广州台湾-3.移动.200M.NF
-      - Lv2.广州->美国-3
-      - EXTM3U-Zelenograd-Baxet-dip 3
-      - vpnhat-Santa Clara-Tencent-nf
-      - EXTM3U-Zelenograd-Baxet-dip 4
-      - 美国 US 04
-      - USA02-美国02
-      - USA10-美国10
-      - 台湾IEPL-2 TW-1x
-      - 加拿大IEPL CA-1x
-      - 日本 JP 04
-      - 德国IEPL DE-1x
-      - 加拿大IEPL CA-1x 2
-      - 台湾 - SS/SSR - 04
-      - 德国IEPL DE-1x 2
-      - 韩国 KR 03
-      - 香港 HK 03
-      - 韩国高速接入A
-      - vpnhat-SG-Tencent-nf
-      - 183.232.56.182:22848
-      - 美国 - SS/SSR - 01
-      - 日本IEPL-8 JP-1x
-      - 新加坡 SG 03
-      - EXTM3U-Zelenograd-Baxet-dip 5
-      - 美国IEPL-3 US-1x
-      - 日本 JP 02
-      - 日本 JP 01
-      - 美国IEPL-6 US-1x 2
-      - 土耳其 Turkey★
-      - vpnhat-LAX-DMIT-nf 2
-      - vpnhat-云林Hinet-dip
-      - "[CT/CM]香港 12"
-      - vpnhat-台中Hinet-dip
-      - tg频道:univstar_11
-      - 土耳其IEPL TR-1x
-      - 新加坡 - SS/SSR - 04
-      - EXTM3U-Novosibirsk-Baxet 2
-      - 泰国IEPL TH-1x
-      - SG 04-新加坡04
-      - HK02-香港02
-      - 日本 - SS/SSR - 02
-      - 美国 - SS/SSR - 04
-      - 日本 JP 05
-      - 日本 - SS/SSR - 03
-      - defaultName_62
-      - 新加坡 SG 01
-      - 韩国 KR 08
-      - 新加坡 - SS/SSR - 03
-      - EXTM3U-Zelenograd-Baxet-dip 6
-      - tg频道:univstar_2
+      - 香港IEPL-6 HK-1x
       - HK01-香港01
+      - 香港IEPL-5 HK-1x
+      - 香港IEPL-8 HK-1x
+      - "[CT/CM]香港 03"
+      - 香港IEPL-4 HK-1x
+      - 新加坡E
+      - 新加坡B
       - 新加坡D
-      - 台湾 - SS/SSR - 01
-      - SG 09-新加坡09
-      - 香港 HK 08
-      - 泰国IEPL TH-1x 2
       - SG 02-新加坡02
+      - "[CT/CM]香港 06"
+      - 新加坡C
+      - 新加坡IEPL-1 SG-1x
+      - 台湾IEPL-5 TW-1x
+      - "[CT/CM]香港 08"
+      - JP 06-日本06
+      - 台湾IEPL-3 TW-1x
+      - JP 04-日本04
+      - JP 09-日本09
+      - 韩国 KR 03
+      - 台湾IEPL-2 TW-1x
+      - "[CT/CM]香港 05"
+      - JP 07-日本07
+      - 台湾IEPL-1 TW-1x
+      - HK05-香港05
+      - vpnhat-Tokyo-DMIT-nf
+      - HK04-香港04
+      - "[CT/CM]香港 11"
+      - 日本 JP 01
+      - 韩国高速接入A
+      - 日本 JP 05
+      - 新加坡IEPL-2 SG-1x
+      - "[CT/CM]香港 10"
+      - 日本IEPL-4 JP-1x
+      - 日本IEPL-3 JP-1x
+      - 日本IEPL-7 JP-1x
+      - "[CT/CM]香港 02"
+      - 日本IEPL-8 JP-1x
+      - 新加坡 SG 01
+      - JP 10-日本10
+      - 日本IEPL-2 JP-1x
+      - "[CT/CM]香港 14"
+      - Lv2.广州->香港HGC
+      - 日本IEPL-1 JP-1x
+      - 台湾IEPL-1 TW-1x 2
+      - HK02-香港02
+      - HK03-香港03
+      - 新加坡 SG 03
+      - KR 02-韩国02
+      - KR 04-韩国04
+      - vpnhat-香港Nerocloud-nf
+      - 俄罗斯b RT
+      - 俄罗斯c RT
+      - 183.232.56.182:11842
+      - 俄罗斯IEPL RU-1x
+      - tg频道:univstar_9
+      - vpnhat-台中Hinet-dip
+      - tg频道:univstar_10
+      - vpnhat-Novosibirsk-Baxet-nf
+      - HK08-香港08
+      - "[CT/CM]香港 01"
+      - 美国 优化-3
+      - TW.广州台湾-3.移动.200M.NF
+      - VN.广州印度-1.移动.300M
+      - Lv2.广州->美国-2
+      - 日本 A
+      - 韩国IEPL-1 KR-1x
+      - US.广州美国-1.移动.300M
+      - 美国IEPL-3 US-1x
+      - 美国IEPL-6 US-1x
+      - 美国IEPL-4 US-1x
+      - 美国 优化-1
+      - 美国IEPL-2 US-1x
+      - 美国IEPL-5 US-1x
+      - JP 03-日本03
+      - 美国 优化-4
+      - tg频道:univstar_2
+      - USA03-美国03
+      - tg频道:univstar_3
+      - USA07-美国07
+      - 俄罗斯 Russia★
+      - USA06-美国06
+      - 183.232.56.182:22848
+      - 美国IEPL-1 US-1x
+      - USA10-美国10
+      - JP 05-日本05
+      - USA09-美国09
+      - 美国IEPL-6 US-1x 2
+      - DE.广州德国-1.移动.300M
+      - "[CT/CM]香港 13"
+      - 澳大利亚IEPL AU-1x
+      - vpnhat-LAX-DMIT-nf
+      - USA08-美国08
+      - 香港IEPL-3 HK-1x
+      - vpnhat-LAX-DMIT-nf 2
+      - 美国 US 07
+      - SG 03-新加坡03
+      - SG 01-新加坡01
+      - JP 01-日本01
+      - vpnhat-Santa Clara-Tencent-nf
+      - 德国IEPL DE-1x
+      - 香港1 奈飞
+      - 加拿大IEPL CA-1x
+      - 加拿大IEPL CA-1x 2
+      - 日本 B
+      - 德国IEPL DE-1x 2
+      - 泰国IEPL TH-1x
+      - SG 05-新加坡05
+      - USA04-美国04
+      - 泰国IEPL TH-1x 2
+      - TG_yudievilla_13
+      - 土耳其 Turkey★
+      - 美国 优化-2
+      - USA02-美国02
+      - vpnhat-SG-Tencent-nf
+      - SG 04-新加坡04
+      - 新加坡IEPL-2 SG-1x 2
+      - 土耳其IEPL TR-1x
+      - SG 09-新加坡09
+      - 日本 JP 02
+      - US.广州美国-3.移动.200M
+      - "[CT/CM]香港 12"
+      - 美国 US 04
+      - UK.广州英国-1.移动.200M
+      - tg频道:univstar_4
+      - tg频道:univstar_11
+      - 俄罗斯IEPL RU-1x 2
+      - 香港 Hongkong HKBGP(VIP)●
+      - 183.232.56.182:11810
+      - JP 08-日本08
+      - 日本 JP 04
+      - 韩国 KR 08
+      - 183.232.56.182:11814
+      - 香港IEPL-10 HK-1x 2
+      - TG@阿伟科技/油管 24
+      - 日本IEPL-1 JP-1x 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK04-香港04
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - 香港IEPL-4 HK-1x
-      - 香港IEPL-10 HK-1x
-      - 香港IEPL-5 HK-1x
-      - "[CT/CM]香港 03"
-      - 香港IEPL-6 HK-1x
-      - 香港IEPL-7 HK-1x
-      - 新加坡 - SS/SSR - 01
-      - 香港 HK 07
-      - 韩国 - SS/SSR - 02
-      - 新加坡 - SS/SSR - 06
-      - 新加坡 - SS/SSR - 05
-      - 香港 HK 05
-      - 香港IEPL-3 HK-1x
-      - 新加坡B
-      - SG 03-新加坡03
-      - 美国 优化-2
-      - SG 01-新加坡01
-      - SG 05-新加坡05
-      - 日本 - SS/SSR - 05
-      - vpnhat-SG-Linode
-      - vpnhat-SG-Linode 2
-      - 台湾IEPL-3 TW-1x
-      - vpnhat-香港HKT
-      - 韩国 - SS/SSR - 05
-      - vpnhat-SG-Linode 3
-      - "[CT/CM]香港 08"
-      - 香港 HK 02
-      - "[CT/CM]香港 10"
-      - 韩国 - SS/SSR - 06
-      - 新加坡IEPL-2 SG-1x
-      - defaultName_59
-      - vpnhat-SG-Nerocloud-nf
-      - 新加坡IEPL-2 SG-1x 2
-      - vpnhat-SG-Nerocloud-nf 2
-      - vpnhat-香港HKT-dip
-      - HK05-香港05
-      - 台湾IEPL-1 TW-1x
-      - vpnhat-香港HKT-dip 2
-      - 台湾IEPL-5 TW-1x
-      - vpnhat-SG-Nerocloud-nf 3
-      - vpnhat-香港HKT-dip 3
       - HK07-香港07
-      - 183.232.56.182:11846
-      - defaultName_45
-      - 香港 HK 10
-      - 香港 Hongkong HKBGP(VIP)●
-      - 香港 HK 04
-      - vpnhat-香港HKT 2
-      - HK03-香港03
-      - vpnhat-新北Hinet-dip
-      - 香港 HK 01
-      - JP 10-日本10
-      - 台湾IEPL-1 TW-1x 2
-      - 韩国 - SS/SSR - 01
-      - 韩国 - SS/SSR - 04
-      - 韩国 - SS/SSR - 03
-      - "[CT/CM]香港 11"
-      - tg频道:univstar_9
-      - 香港 - SS/SSR - 04
-      - JP 09-日本09
-      - 183.232.56.182:11842
-      - vpnhat-Tokyo-DMIT-nf
-      - HK06-香港06
-      - "[CT/CM]香港 05"
-      - 香港 - SS/SSR - 01
-      - 台湾 Taiwan★
-      - 香港 - SS/SSR - 10
-      - KR 02-韩国02
-      - 日本IEPL-1 JP-1x
-      - 日本IEPL-1 JP-1x 2
-      - KR 04-韩国04
-      - vpnhat-台北Hinet-dip
-      - 日本IEPL-2 JP-1x
-      - 日本IEPL-3 JP-1x
-      - 日本IEPL-4 JP-1x
-      - 台湾 - SS/SSR - 02
-      - 香港1 奈飞
-      - 日本IEPL-7 JP-1x
-      - vpnhat-香港HKT-dip 4
-      - EXTM3U-Tokyo-M247
-      - 香港 - SS/SSR - 07
-      - 香港 - SS/SSR - 09
-      - 俄罗斯IEPL RU-1x
-      - "[CT/CM]香港 06"
-      - HK.广州香港-1.移动.300M.NF
-      - Lv2.广州->香港HGC
-      - 183.232.56.182:11810
-      - vpnhat-香港Nerocloud-nf
-      - 香港 - SS/SSR - 08
-      - 日本 - SS/SSR - 04
-      - EXTM3U-Tokyo-M247 2
-      - vpnhat-Novosibirsk-Baxet-nf
-      - 韩国IEPL-1 KR-1x
-      - 新加坡C
-      - 台湾 - SS/SSR - 06
-      - 香港 - SS/SSR - 03
-      - 香港 HK 09
-      - 俄罗斯IEPL RU-1x 2
-      - tg频道:univstar_3
-      - 新加坡IEPL-1 SG-1x
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 04"
-      - 泰国 Thailand★
-      - "[CT/CM]香港 13"
-      - 日本 B
-      - 俄罗斯c RT
-      - 美国 America●
-      - 美国 优化-1
-      - Lv2.广州->美国-2
-      - US.广州美国-2.移动.200M
-      - 美国 优化-4
-      - US.广州美国-2.移动.200M 2
-      - US.广州美国-1.移动.300M
-      - 香港 - SS/SSR - 05
-      - 美国 - SS/SSR - 05
-      - 美国IEPL-1 US-1x
-      - JP 08-日本08
-      - JP 03-日本03
-      - USA08-美国08
-      - 日本 - SS/SSR - 01
-      - JP 07-日本07
-      - vpnhat-台北Hinet-dip 2
-      - 美国IEPL-4 US-1x
-      - Lv2.广州->美国-1
-      - 新加坡E
-      - JP 04-日本04
-      - 美国IEPL-2 US-1x
-      - vpnhat-香港有线-dip
-      - 183.232.56.182:11814
-      - 美国 优化-6
-      - "[CT/CM]香港 14"
-      - 美国 优化-3
-      - JP 05-日本05
-      - 美国IEPL-6 US-1x
-      - 美国IEPL-5 US-1x
-      - 香港 - SS/SSR - 02
-      - 俄罗斯b RT
-      - JP 06-日本06
-      - "[CT/CM]香港 02"
-      - USA06-美国06
+      - 香港IEPL-10 HK-1x
       - 香港IEPL-2 HK-1x
-      - 澳大利亚IEPL AU-1x
-      - 美国 优化-7
-      - tg频道:univstar_10
-      - 美国 US 07
-      - 台湾 - SS/SSR - 05
-      - EXTM3U-Zelenograd-Baxet-dip
-      - VN.广州印度-1.移动.300M
-      - 美国 优化-8
-      - TG@阿伟科技/油管 24
-      - USA04-美国04
-      - 澳大利亚IEPL AU-1x 2
-      - vpnhat-LAX-DMIT-nf
-      - 美国 优化-9
-      - 美国 - SS/SSR - 06
-      - USA09-美国09
-      - 香港IEPL-10 HK-1x 2
-      - HK08-香港08
-      - US.广州美国-1.移动.300M 2
-      - 日本 A
-      - US.广州美国-3.移动.200M
-      - USA03-美国03
-      - 俄罗斯 Russia★
+      - 香港IEPL-7 HK-1x
+      - HK06-香港06
       - HK10-香港10
-      - JP 01-日本01
-      - 美国 - SS/SSR - 03
-      - 香港 - SS/SSR - 06
-      - 台湾 - SS/SSR - 03
-      - UK.广州英国-1.移动.200M
-      - DE.广州德国-1.移动.300M
-      - 美国 优化-5
-      - USA07-美国07
-      - 英国IEPL UK-1x
-      - EXTM3U-Novosibirsk-Baxet
-      - 美国 - SS/SSR - 02
-      - 香港IEPL-8 HK-1x
-      - VN.广州印度-1.移动.300M 2
-      - tg频道:univstar_4
-      - UK.广州英国-1.移动.200M 2
-      - EXTM3U-Zelenograd-Baxet-dip 2
-      - TW.广州台湾-3.移动.200M.NF
-      - Lv2.广州->美国-3
-      - EXTM3U-Zelenograd-Baxet-dip 3
-      - vpnhat-Santa Clara-Tencent-nf
-      - EXTM3U-Zelenograd-Baxet-dip 4
-      - 美国 US 04
-      - USA02-美国02
-      - USA10-美国10
-      - 台湾IEPL-2 TW-1x
-      - 加拿大IEPL CA-1x
-      - 日本 JP 04
-      - 德国IEPL DE-1x
-      - 加拿大IEPL CA-1x 2
-      - 台湾 - SS/SSR - 04
-      - 德国IEPL DE-1x 2
-      - 韩国 KR 03
-      - 香港 HK 03
-      - 韩国高速接入A
-      - vpnhat-SG-Tencent-nf
-      - 183.232.56.182:22848
-      - 美国 - SS/SSR - 01
-      - 日本IEPL-8 JP-1x
-      - 新加坡 SG 03
-      - EXTM3U-Zelenograd-Baxet-dip 5
-      - 美国IEPL-3 US-1x
-      - 日本 JP 02
-      - 日本 JP 01
-      - 美国IEPL-6 US-1x 2
-      - 土耳其 Turkey★
-      - vpnhat-LAX-DMIT-nf 2
-      - vpnhat-云林Hinet-dip
-      - "[CT/CM]香港 12"
-      - vpnhat-台中Hinet-dip
-      - tg频道:univstar_11
-      - 土耳其IEPL TR-1x
-      - 新加坡 - SS/SSR - 04
-      - EXTM3U-Novosibirsk-Baxet 2
-      - 泰国IEPL TH-1x
-      - SG 04-新加坡04
-      - HK02-香港02
-      - 日本 - SS/SSR - 02
-      - 美国 - SS/SSR - 04
-      - 日本 JP 05
-      - 日本 - SS/SSR - 03
-      - defaultName_62
-      - 新加坡 SG 01
-      - 韩国 KR 08
-      - 新加坡 - SS/SSR - 03
-      - EXTM3U-Zelenograd-Baxet-dip 6
-      - tg频道:univstar_2
+      - 香港IEPL-6 HK-1x
       - HK01-香港01
+      - 香港IEPL-5 HK-1x
+      - 香港IEPL-8 HK-1x
+      - "[CT/CM]香港 03"
+      - 香港IEPL-4 HK-1x
+      - 新加坡E
+      - 新加坡B
       - 新加坡D
-      - 台湾 - SS/SSR - 01
-      - SG 09-新加坡09
-      - 香港 HK 08
-      - 泰国IEPL TH-1x 2
       - SG 02-新加坡02
+      - "[CT/CM]香港 06"
+      - 新加坡C
+      - 新加坡IEPL-1 SG-1x
+      - 台湾IEPL-5 TW-1x
+      - "[CT/CM]香港 08"
+      - JP 06-日本06
+      - 台湾IEPL-3 TW-1x
+      - JP 04-日本04
+      - JP 09-日本09
+      - 韩国 KR 03
+      - 台湾IEPL-2 TW-1x
+      - "[CT/CM]香港 05"
+      - JP 07-日本07
+      - 台湾IEPL-1 TW-1x
+      - HK05-香港05
+      - vpnhat-Tokyo-DMIT-nf
+      - HK04-香港04
+      - "[CT/CM]香港 11"
+      - 日本 JP 01
+      - 韩国高速接入A
+      - 日本 JP 05
+      - 新加坡IEPL-2 SG-1x
+      - "[CT/CM]香港 10"
+      - 日本IEPL-4 JP-1x
+      - 日本IEPL-3 JP-1x
+      - 日本IEPL-7 JP-1x
+      - "[CT/CM]香港 02"
+      - 日本IEPL-8 JP-1x
+      - 新加坡 SG 01
+      - JP 10-日本10
+      - 日本IEPL-2 JP-1x
+      - "[CT/CM]香港 14"
+      - Lv2.广州->香港HGC
+      - 日本IEPL-1 JP-1x
+      - 台湾IEPL-1 TW-1x 2
+      - HK02-香港02
+      - HK03-香港03
+      - 新加坡 SG 03
+      - KR 02-韩国02
+      - KR 04-韩国04
+      - vpnhat-香港Nerocloud-nf
+      - 俄罗斯b RT
+      - 俄罗斯c RT
+      - 183.232.56.182:11842
+      - 俄罗斯IEPL RU-1x
+      - tg频道:univstar_9
+      - vpnhat-台中Hinet-dip
+      - tg频道:univstar_10
+      - vpnhat-Novosibirsk-Baxet-nf
+      - HK08-香港08
+      - "[CT/CM]香港 01"
+      - 美国 优化-3
+      - TW.广州台湾-3.移动.200M.NF
+      - VN.广州印度-1.移动.300M
+      - Lv2.广州->美国-2
+      - 日本 A
+      - 韩国IEPL-1 KR-1x
+      - US.广州美国-1.移动.300M
+      - 美国IEPL-3 US-1x
+      - 美国IEPL-6 US-1x
+      - 美国IEPL-4 US-1x
+      - 美国 优化-1
+      - 美国IEPL-2 US-1x
+      - 美国IEPL-5 US-1x
+      - JP 03-日本03
+      - 美国 优化-4
+      - tg频道:univstar_2
+      - USA03-美国03
+      - tg频道:univstar_3
+      - USA07-美国07
+      - 俄罗斯 Russia★
+      - USA06-美国06
+      - 183.232.56.182:22848
+      - 美国IEPL-1 US-1x
+      - USA10-美国10
+      - JP 05-日本05
+      - USA09-美国09
+      - 美国IEPL-6 US-1x 2
+      - DE.广州德国-1.移动.300M
+      - "[CT/CM]香港 13"
+      - 澳大利亚IEPL AU-1x
+      - vpnhat-LAX-DMIT-nf
+      - USA08-美国08
+      - 香港IEPL-3 HK-1x
+      - vpnhat-LAX-DMIT-nf 2
+      - 美国 US 07
+      - SG 03-新加坡03
+      - SG 01-新加坡01
+      - JP 01-日本01
+      - vpnhat-Santa Clara-Tencent-nf
+      - 德国IEPL DE-1x
+      - 香港1 奈飞
+      - 加拿大IEPL CA-1x
+      - 加拿大IEPL CA-1x 2
+      - 日本 B
+      - 德国IEPL DE-1x 2
+      - 泰国IEPL TH-1x
+      - SG 05-新加坡05
+      - USA04-美国04
+      - 泰国IEPL TH-1x 2
+      - TG_yudievilla_13
+      - 土耳其 Turkey★
+      - 美国 优化-2
+      - USA02-美国02
+      - vpnhat-SG-Tencent-nf
+      - SG 04-新加坡04
+      - 新加坡IEPL-2 SG-1x 2
+      - 土耳其IEPL TR-1x
+      - SG 09-新加坡09
+      - 日本 JP 02
+      - US.广州美国-3.移动.200M
+      - "[CT/CM]香港 12"
+      - 美国 US 04
+      - UK.广州英国-1.移动.200M
+      - tg频道:univstar_4
+      - tg频道:univstar_11
+      - 俄罗斯IEPL RU-1x 2
+      - 香港 Hongkong HKBGP(VIP)●
+      - 183.232.56.182:11810
+      - JP 08-日本08
+      - 日本 JP 04
+      - 韩国 KR 08
+      - 183.232.56.182:11814
+      - 香港IEPL-10 HK-1x 2
+      - TG@阿伟科技/油管 24
+      - 日本IEPL-1 JP-1x 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK04-香港04
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - 香港IEPL-4 HK-1x
-      - 香港IEPL-10 HK-1x
-      - 香港IEPL-5 HK-1x
-      - "[CT/CM]香港 03"
-      - 香港IEPL-6 HK-1x
-      - 香港IEPL-7 HK-1x
-      - 新加坡 - SS/SSR - 01
-      - 香港 HK 07
-      - 韩国 - SS/SSR - 02
-      - 新加坡 - SS/SSR - 06
-      - 新加坡 - SS/SSR - 05
-      - 香港 HK 05
-      - 香港IEPL-3 HK-1x
-      - 新加坡B
-      - SG 03-新加坡03
-      - 美国 优化-2
-      - SG 01-新加坡01
-      - SG 05-新加坡05
-      - 日本 - SS/SSR - 05
-      - vpnhat-SG-Linode
-      - vpnhat-SG-Linode 2
-      - 台湾IEPL-3 TW-1x
-      - vpnhat-香港HKT
-      - 韩国 - SS/SSR - 05
-      - vpnhat-SG-Linode 3
-      - "[CT/CM]香港 08"
-      - 香港 HK 02
-      - "[CT/CM]香港 10"
-      - 韩国 - SS/SSR - 06
-      - 新加坡IEPL-2 SG-1x
-      - defaultName_59
-      - vpnhat-SG-Nerocloud-nf
-      - 新加坡IEPL-2 SG-1x 2
-      - vpnhat-SG-Nerocloud-nf 2
-      - vpnhat-香港HKT-dip
-      - HK05-香港05
-      - 台湾IEPL-1 TW-1x
-      - vpnhat-香港HKT-dip 2
-      - 台湾IEPL-5 TW-1x
-      - vpnhat-SG-Nerocloud-nf 3
-      - vpnhat-香港HKT-dip 3
       - HK07-香港07
-      - 183.232.56.182:11846
-      - defaultName_45
-      - 香港 HK 10
-      - 香港 Hongkong HKBGP(VIP)●
-      - 香港 HK 04
-      - vpnhat-香港HKT 2
-      - HK03-香港03
-      - vpnhat-新北Hinet-dip
-      - 香港 HK 01
-      - JP 10-日本10
-      - 台湾IEPL-1 TW-1x 2
-      - 韩国 - SS/SSR - 01
-      - 韩国 - SS/SSR - 04
-      - 韩国 - SS/SSR - 03
-      - "[CT/CM]香港 11"
-      - tg频道:univstar_9
-      - 香港 - SS/SSR - 04
-      - JP 09-日本09
-      - 183.232.56.182:11842
-      - vpnhat-Tokyo-DMIT-nf
-      - HK06-香港06
-      - "[CT/CM]香港 05"
-      - 香港 - SS/SSR - 01
-      - 台湾 Taiwan★
-      - 香港 - SS/SSR - 10
-      - KR 02-韩国02
-      - 日本IEPL-1 JP-1x
-      - 日本IEPL-1 JP-1x 2
-      - KR 04-韩国04
-      - vpnhat-台北Hinet-dip
-      - 日本IEPL-2 JP-1x
-      - 日本IEPL-3 JP-1x
-      - 日本IEPL-4 JP-1x
-      - 台湾 - SS/SSR - 02
-      - 香港1 奈飞
-      - 日本IEPL-7 JP-1x
-      - vpnhat-香港HKT-dip 4
-      - EXTM3U-Tokyo-M247
-      - 香港 - SS/SSR - 07
-      - 香港 - SS/SSR - 09
-      - 俄罗斯IEPL RU-1x
-      - "[CT/CM]香港 06"
-      - HK.广州香港-1.移动.300M.NF
-      - Lv2.广州->香港HGC
-      - 183.232.56.182:11810
-      - vpnhat-香港Nerocloud-nf
-      - 香港 - SS/SSR - 08
-      - 日本 - SS/SSR - 04
-      - EXTM3U-Tokyo-M247 2
-      - vpnhat-Novosibirsk-Baxet-nf
-      - 韩国IEPL-1 KR-1x
-      - 新加坡C
-      - 台湾 - SS/SSR - 06
-      - 香港 - SS/SSR - 03
-      - 香港 HK 09
-      - 俄罗斯IEPL RU-1x 2
-      - tg频道:univstar_3
-      - 新加坡IEPL-1 SG-1x
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 04"
-      - 泰国 Thailand★
-      - "[CT/CM]香港 13"
-      - 日本 B
-      - 俄罗斯c RT
-      - 美国 America●
-      - 美国 优化-1
-      - Lv2.广州->美国-2
-      - US.广州美国-2.移动.200M
-      - 美国 优化-4
-      - US.广州美国-2.移动.200M 2
-      - US.广州美国-1.移动.300M
-      - 香港 - SS/SSR - 05
-      - 美国 - SS/SSR - 05
-      - 美国IEPL-1 US-1x
-      - JP 08-日本08
-      - JP 03-日本03
-      - USA08-美国08
-      - 日本 - SS/SSR - 01
-      - JP 07-日本07
-      - vpnhat-台北Hinet-dip 2
-      - 美国IEPL-4 US-1x
-      - Lv2.广州->美国-1
-      - 新加坡E
-      - JP 04-日本04
-      - 美国IEPL-2 US-1x
-      - vpnhat-香港有线-dip
-      - 183.232.56.182:11814
-      - 美国 优化-6
-      - "[CT/CM]香港 14"
-      - 美国 优化-3
-      - JP 05-日本05
-      - 美国IEPL-6 US-1x
-      - 美国IEPL-5 US-1x
-      - 香港 - SS/SSR - 02
-      - 俄罗斯b RT
-      - JP 06-日本06
-      - "[CT/CM]香港 02"
-      - USA06-美国06
+      - 香港IEPL-10 HK-1x
       - 香港IEPL-2 HK-1x
-      - 澳大利亚IEPL AU-1x
-      - 美国 优化-7
-      - tg频道:univstar_10
-      - 美国 US 07
-      - 台湾 - SS/SSR - 05
-      - EXTM3U-Zelenograd-Baxet-dip
-      - VN.广州印度-1.移动.300M
-      - 美国 优化-8
-      - TG@阿伟科技/油管 24
-      - USA04-美国04
-      - 澳大利亚IEPL AU-1x 2
-      - vpnhat-LAX-DMIT-nf
-      - 美国 优化-9
-      - 美国 - SS/SSR - 06
-      - USA09-美国09
-      - 香港IEPL-10 HK-1x 2
-      - HK08-香港08
-      - US.广州美国-1.移动.300M 2
-      - 日本 A
-      - US.广州美国-3.移动.200M
-      - USA03-美国03
-      - 俄罗斯 Russia★
+      - 香港IEPL-7 HK-1x
+      - HK06-香港06
       - HK10-香港10
-      - JP 01-日本01
-      - 美国 - SS/SSR - 03
-      - 香港 - SS/SSR - 06
-      - 台湾 - SS/SSR - 03
-      - UK.广州英国-1.移动.200M
-      - DE.广州德国-1.移动.300M
-      - 美国 优化-5
-      - USA07-美国07
-      - 英国IEPL UK-1x
-      - EXTM3U-Novosibirsk-Baxet
-      - 美国 - SS/SSR - 02
-      - 香港IEPL-8 HK-1x
-      - VN.广州印度-1.移动.300M 2
-      - tg频道:univstar_4
-      - UK.广州英国-1.移动.200M 2
-      - EXTM3U-Zelenograd-Baxet-dip 2
-      - TW.广州台湾-3.移动.200M.NF
-      - Lv2.广州->美国-3
-      - EXTM3U-Zelenograd-Baxet-dip 3
-      - vpnhat-Santa Clara-Tencent-nf
-      - EXTM3U-Zelenograd-Baxet-dip 4
-      - 美国 US 04
-      - USA02-美国02
-      - USA10-美国10
-      - 台湾IEPL-2 TW-1x
-      - 加拿大IEPL CA-1x
-      - 日本 JP 04
-      - 德国IEPL DE-1x
-      - 加拿大IEPL CA-1x 2
-      - 台湾 - SS/SSR - 04
-      - 德国IEPL DE-1x 2
-      - 韩国 KR 03
-      - 香港 HK 03
-      - 韩国高速接入A
-      - vpnhat-SG-Tencent-nf
-      - 183.232.56.182:22848
-      - 美国 - SS/SSR - 01
-      - 日本IEPL-8 JP-1x
-      - 新加坡 SG 03
-      - EXTM3U-Zelenograd-Baxet-dip 5
-      - 美国IEPL-3 US-1x
-      - 日本 JP 02
-      - 日本 JP 01
-      - 美国IEPL-6 US-1x 2
-      - 土耳其 Turkey★
-      - vpnhat-LAX-DMIT-nf 2
-      - vpnhat-云林Hinet-dip
-      - "[CT/CM]香港 12"
-      - vpnhat-台中Hinet-dip
-      - tg频道:univstar_11
-      - 土耳其IEPL TR-1x
-      - 新加坡 - SS/SSR - 04
-      - EXTM3U-Novosibirsk-Baxet 2
-      - 泰国IEPL TH-1x
-      - SG 04-新加坡04
-      - HK02-香港02
-      - 日本 - SS/SSR - 02
-      - 美国 - SS/SSR - 04
-      - 日本 JP 05
-      - 日本 - SS/SSR - 03
-      - defaultName_62
-      - 新加坡 SG 01
-      - 韩国 KR 08
-      - 新加坡 - SS/SSR - 03
-      - EXTM3U-Zelenograd-Baxet-dip 6
-      - tg频道:univstar_2
+      - 香港IEPL-6 HK-1x
       - HK01-香港01
+      - 香港IEPL-5 HK-1x
+      - 香港IEPL-8 HK-1x
+      - "[CT/CM]香港 03"
+      - 香港IEPL-4 HK-1x
+      - 新加坡E
+      - 新加坡B
       - 新加坡D
-      - 台湾 - SS/SSR - 01
-      - SG 09-新加坡09
-      - 香港 HK 08
-      - 泰国IEPL TH-1x 2
       - SG 02-新加坡02
+      - "[CT/CM]香港 06"
+      - 新加坡C
+      - 新加坡IEPL-1 SG-1x
+      - 台湾IEPL-5 TW-1x
+      - "[CT/CM]香港 08"
+      - JP 06-日本06
+      - 台湾IEPL-3 TW-1x
+      - JP 04-日本04
+      - JP 09-日本09
+      - 韩国 KR 03
+      - 台湾IEPL-2 TW-1x
+      - "[CT/CM]香港 05"
+      - JP 07-日本07
+      - 台湾IEPL-1 TW-1x
+      - HK05-香港05
+      - vpnhat-Tokyo-DMIT-nf
+      - HK04-香港04
+      - "[CT/CM]香港 11"
+      - 日本 JP 01
+      - 韩国高速接入A
+      - 日本 JP 05
+      - 新加坡IEPL-2 SG-1x
+      - "[CT/CM]香港 10"
+      - 日本IEPL-4 JP-1x
+      - 日本IEPL-3 JP-1x
+      - 日本IEPL-7 JP-1x
+      - "[CT/CM]香港 02"
+      - 日本IEPL-8 JP-1x
+      - 新加坡 SG 01
+      - JP 10-日本10
+      - 日本IEPL-2 JP-1x
+      - "[CT/CM]香港 14"
+      - Lv2.广州->香港HGC
+      - 日本IEPL-1 JP-1x
+      - 台湾IEPL-1 TW-1x 2
+      - HK02-香港02
+      - HK03-香港03
+      - 新加坡 SG 03
+      - KR 02-韩国02
+      - KR 04-韩国04
+      - vpnhat-香港Nerocloud-nf
+      - 俄罗斯b RT
+      - 俄罗斯c RT
+      - 183.232.56.182:11842
+      - 俄罗斯IEPL RU-1x
+      - tg频道:univstar_9
+      - vpnhat-台中Hinet-dip
+      - tg频道:univstar_10
+      - vpnhat-Novosibirsk-Baxet-nf
+      - HK08-香港08
+      - "[CT/CM]香港 01"
+      - 美国 优化-3
+      - TW.广州台湾-3.移动.200M.NF
+      - VN.广州印度-1.移动.300M
+      - Lv2.广州->美国-2
+      - 日本 A
+      - 韩国IEPL-1 KR-1x
+      - US.广州美国-1.移动.300M
+      - 美国IEPL-3 US-1x
+      - 美国IEPL-6 US-1x
+      - 美国IEPL-4 US-1x
+      - 美国 优化-1
+      - 美国IEPL-2 US-1x
+      - 美国IEPL-5 US-1x
+      - JP 03-日本03
+      - 美国 优化-4
+      - tg频道:univstar_2
+      - USA03-美国03
+      - tg频道:univstar_3
+      - USA07-美国07
+      - 俄罗斯 Russia★
+      - USA06-美国06
+      - 183.232.56.182:22848
+      - 美国IEPL-1 US-1x
+      - USA10-美国10
+      - JP 05-日本05
+      - USA09-美国09
+      - 美国IEPL-6 US-1x 2
+      - DE.广州德国-1.移动.300M
+      - "[CT/CM]香港 13"
+      - 澳大利亚IEPL AU-1x
+      - vpnhat-LAX-DMIT-nf
+      - USA08-美国08
+      - 香港IEPL-3 HK-1x
+      - vpnhat-LAX-DMIT-nf 2
+      - 美国 US 07
+      - SG 03-新加坡03
+      - SG 01-新加坡01
+      - JP 01-日本01
+      - vpnhat-Santa Clara-Tencent-nf
+      - 德国IEPL DE-1x
+      - 香港1 奈飞
+      - 加拿大IEPL CA-1x
+      - 加拿大IEPL CA-1x 2
+      - 日本 B
+      - 德国IEPL DE-1x 2
+      - 泰国IEPL TH-1x
+      - SG 05-新加坡05
+      - USA04-美国04
+      - 泰国IEPL TH-1x 2
+      - TG_yudievilla_13
+      - 土耳其 Turkey★
+      - 美国 优化-2
+      - USA02-美国02
+      - vpnhat-SG-Tencent-nf
+      - SG 04-新加坡04
+      - 新加坡IEPL-2 SG-1x 2
+      - 土耳其IEPL TR-1x
+      - SG 09-新加坡09
+      - 日本 JP 02
+      - US.广州美国-3.移动.200M
+      - "[CT/CM]香港 12"
+      - 美国 US 04
+      - UK.广州英国-1.移动.200M
+      - tg频道:univstar_4
+      - tg频道:univstar_11
+      - 俄罗斯IEPL RU-1x 2
+      - 香港 Hongkong HKBGP(VIP)●
+      - 183.232.56.182:11810
+      - JP 08-日本08
+      - 日本 JP 04
+      - 韩国 KR 08
+      - 183.232.56.182:11814
+      - 香港IEPL-10 HK-1x 2
+      - TG@阿伟科技/油管 24
+      - 日本IEPL-1 JP-1x 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2076,246 +1252,148 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK04-香港04
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 09"
-      - 香港IEPL-4 HK-1x
-      - 香港IEPL-10 HK-1x
-      - 香港IEPL-5 HK-1x
-      - "[CT/CM]香港 03"
-      - 香港IEPL-6 HK-1x
-      - 香港IEPL-7 HK-1x
-      - 新加坡 - SS/SSR - 01
-      - 香港 HK 07
-      - 韩国 - SS/SSR - 02
-      - 新加坡 - SS/SSR - 06
-      - 新加坡 - SS/SSR - 05
-      - 香港 HK 05
-      - 香港IEPL-3 HK-1x
-      - 新加坡B
-      - SG 03-新加坡03
-      - 美国 优化-2
-      - SG 01-新加坡01
-      - SG 05-新加坡05
-      - 日本 - SS/SSR - 05
-      - vpnhat-SG-Linode
-      - vpnhat-SG-Linode 2
-      - 台湾IEPL-3 TW-1x
-      - vpnhat-香港HKT
-      - 韩国 - SS/SSR - 05
-      - vpnhat-SG-Linode 3
-      - "[CT/CM]香港 08"
-      - 香港 HK 02
-      - "[CT/CM]香港 10"
-      - 韩国 - SS/SSR - 06
-      - 新加坡IEPL-2 SG-1x
-      - defaultName_59
-      - vpnhat-SG-Nerocloud-nf
-      - 新加坡IEPL-2 SG-1x 2
-      - vpnhat-SG-Nerocloud-nf 2
-      - vpnhat-香港HKT-dip
-      - HK05-香港05
-      - 台湾IEPL-1 TW-1x
-      - vpnhat-香港HKT-dip 2
-      - 台湾IEPL-5 TW-1x
-      - vpnhat-SG-Nerocloud-nf 3
-      - vpnhat-香港HKT-dip 3
       - HK07-香港07
-      - 183.232.56.182:11846
-      - defaultName_45
-      - 香港 HK 10
-      - 香港 Hongkong HKBGP(VIP)●
-      - 香港 HK 04
-      - vpnhat-香港HKT 2
-      - HK03-香港03
-      - vpnhat-新北Hinet-dip
-      - 香港 HK 01
-      - JP 10-日本10
-      - 台湾IEPL-1 TW-1x 2
-      - 韩国 - SS/SSR - 01
-      - 韩国 - SS/SSR - 04
-      - 韩国 - SS/SSR - 03
-      - "[CT/CM]香港 11"
-      - tg频道:univstar_9
-      - 香港 - SS/SSR - 04
-      - JP 09-日本09
-      - 183.232.56.182:11842
-      - vpnhat-Tokyo-DMIT-nf
-      - HK06-香港06
-      - "[CT/CM]香港 05"
-      - 香港 - SS/SSR - 01
-      - 台湾 Taiwan★
-      - 香港 - SS/SSR - 10
-      - KR 02-韩国02
-      - 日本IEPL-1 JP-1x
-      - 日本IEPL-1 JP-1x 2
-      - KR 04-韩国04
-      - vpnhat-台北Hinet-dip
-      - 日本IEPL-2 JP-1x
-      - 日本IEPL-3 JP-1x
-      - 日本IEPL-4 JP-1x
-      - 台湾 - SS/SSR - 02
-      - 香港1 奈飞
-      - 日本IEPL-7 JP-1x
-      - vpnhat-香港HKT-dip 4
-      - EXTM3U-Tokyo-M247
-      - 香港 - SS/SSR - 07
-      - 香港 - SS/SSR - 09
-      - 俄罗斯IEPL RU-1x
-      - "[CT/CM]香港 06"
-      - HK.广州香港-1.移动.300M.NF
-      - Lv2.广州->香港HGC
-      - 183.232.56.182:11810
-      - vpnhat-香港Nerocloud-nf
-      - 香港 - SS/SSR - 08
-      - 日本 - SS/SSR - 04
-      - EXTM3U-Tokyo-M247 2
-      - vpnhat-Novosibirsk-Baxet-nf
-      - 韩国IEPL-1 KR-1x
-      - 新加坡C
-      - 台湾 - SS/SSR - 06
-      - 香港 - SS/SSR - 03
-      - 香港 HK 09
-      - 俄罗斯IEPL RU-1x 2
-      - tg频道:univstar_3
-      - 新加坡IEPL-1 SG-1x
-      - "[CT/CM]香港 01"
-      - "[CT/CM]香港 04"
-      - 泰国 Thailand★
-      - "[CT/CM]香港 13"
-      - 日本 B
-      - 俄罗斯c RT
-      - 美国 America●
-      - 美国 优化-1
-      - Lv2.广州->美国-2
-      - US.广州美国-2.移动.200M
-      - 美国 优化-4
-      - US.广州美国-2.移动.200M 2
-      - US.广州美国-1.移动.300M
-      - 香港 - SS/SSR - 05
-      - 美国 - SS/SSR - 05
-      - 美国IEPL-1 US-1x
-      - JP 08-日本08
-      - JP 03-日本03
-      - USA08-美国08
-      - 日本 - SS/SSR - 01
-      - JP 07-日本07
-      - vpnhat-台北Hinet-dip 2
-      - 美国IEPL-4 US-1x
-      - Lv2.广州->美国-1
-      - 新加坡E
-      - JP 04-日本04
-      - 美国IEPL-2 US-1x
-      - vpnhat-香港有线-dip
-      - 183.232.56.182:11814
-      - 美国 优化-6
-      - "[CT/CM]香港 14"
-      - 美国 优化-3
-      - JP 05-日本05
-      - 美国IEPL-6 US-1x
-      - 美国IEPL-5 US-1x
-      - 香港 - SS/SSR - 02
-      - 俄罗斯b RT
-      - JP 06-日本06
-      - "[CT/CM]香港 02"
-      - USA06-美国06
+      - 香港IEPL-10 HK-1x
       - 香港IEPL-2 HK-1x
-      - 澳大利亚IEPL AU-1x
-      - 美国 优化-7
-      - tg频道:univstar_10
-      - 美国 US 07
-      - 台湾 - SS/SSR - 05
-      - EXTM3U-Zelenograd-Baxet-dip
-      - VN.广州印度-1.移动.300M
-      - 美国 优化-8
-      - TG@阿伟科技/油管 24
-      - USA04-美国04
-      - 澳大利亚IEPL AU-1x 2
-      - vpnhat-LAX-DMIT-nf
-      - 美国 优化-9
-      - 美国 - SS/SSR - 06
-      - USA09-美国09
-      - 香港IEPL-10 HK-1x 2
-      - HK08-香港08
-      - US.广州美国-1.移动.300M 2
-      - 日本 A
-      - US.广州美国-3.移动.200M
-      - USA03-美国03
-      - 俄罗斯 Russia★
+      - 香港IEPL-7 HK-1x
+      - HK06-香港06
       - HK10-香港10
-      - JP 01-日本01
-      - 美国 - SS/SSR - 03
-      - 香港 - SS/SSR - 06
-      - 台湾 - SS/SSR - 03
-      - UK.广州英国-1.移动.200M
-      - DE.广州德国-1.移动.300M
-      - 美国 优化-5
-      - USA07-美国07
-      - 英国IEPL UK-1x
-      - EXTM3U-Novosibirsk-Baxet
-      - 美国 - SS/SSR - 02
-      - 香港IEPL-8 HK-1x
-      - VN.广州印度-1.移动.300M 2
-      - tg频道:univstar_4
-      - UK.广州英国-1.移动.200M 2
-      - EXTM3U-Zelenograd-Baxet-dip 2
-      - TW.广州台湾-3.移动.200M.NF
-      - Lv2.广州->美国-3
-      - EXTM3U-Zelenograd-Baxet-dip 3
-      - vpnhat-Santa Clara-Tencent-nf
-      - EXTM3U-Zelenograd-Baxet-dip 4
-      - 美国 US 04
-      - USA02-美国02
-      - USA10-美国10
-      - 台湾IEPL-2 TW-1x
-      - 加拿大IEPL CA-1x
-      - 日本 JP 04
-      - 德国IEPL DE-1x
-      - 加拿大IEPL CA-1x 2
-      - 台湾 - SS/SSR - 04
-      - 德国IEPL DE-1x 2
-      - 韩国 KR 03
-      - 香港 HK 03
-      - 韩国高速接入A
-      - vpnhat-SG-Tencent-nf
-      - 183.232.56.182:22848
-      - 美国 - SS/SSR - 01
-      - 日本IEPL-8 JP-1x
-      - 新加坡 SG 03
-      - EXTM3U-Zelenograd-Baxet-dip 5
-      - 美国IEPL-3 US-1x
-      - 日本 JP 02
-      - 日本 JP 01
-      - 美国IEPL-6 US-1x 2
-      - 土耳其 Turkey★
-      - vpnhat-LAX-DMIT-nf 2
-      - vpnhat-云林Hinet-dip
-      - "[CT/CM]香港 12"
-      - vpnhat-台中Hinet-dip
-      - tg频道:univstar_11
-      - 土耳其IEPL TR-1x
-      - 新加坡 - SS/SSR - 04
-      - EXTM3U-Novosibirsk-Baxet 2
-      - 泰国IEPL TH-1x
-      - SG 04-新加坡04
-      - HK02-香港02
-      - 日本 - SS/SSR - 02
-      - 美国 - SS/SSR - 04
-      - 日本 JP 05
-      - 日本 - SS/SSR - 03
-      - defaultName_62
-      - 新加坡 SG 01
-      - 韩国 KR 08
-      - 新加坡 - SS/SSR - 03
-      - EXTM3U-Zelenograd-Baxet-dip 6
-      - tg频道:univstar_2
+      - 香港IEPL-6 HK-1x
       - HK01-香港01
+      - 香港IEPL-5 HK-1x
+      - 香港IEPL-8 HK-1x
+      - "[CT/CM]香港 03"
+      - 香港IEPL-4 HK-1x
+      - 新加坡E
+      - 新加坡B
       - 新加坡D
-      - 台湾 - SS/SSR - 01
-      - SG 09-新加坡09
-      - 香港 HK 08
-      - 泰国IEPL TH-1x 2
       - SG 02-新加坡02
+      - "[CT/CM]香港 06"
+      - 新加坡C
+      - 新加坡IEPL-1 SG-1x
+      - 台湾IEPL-5 TW-1x
+      - "[CT/CM]香港 08"
+      - JP 06-日本06
+      - 台湾IEPL-3 TW-1x
+      - JP 04-日本04
+      - JP 09-日本09
+      - 韩国 KR 03
+      - 台湾IEPL-2 TW-1x
+      - "[CT/CM]香港 05"
+      - JP 07-日本07
+      - 台湾IEPL-1 TW-1x
+      - HK05-香港05
+      - vpnhat-Tokyo-DMIT-nf
+      - HK04-香港04
+      - "[CT/CM]香港 11"
+      - 日本 JP 01
+      - 韩国高速接入A
+      - 日本 JP 05
+      - 新加坡IEPL-2 SG-1x
+      - "[CT/CM]香港 10"
+      - 日本IEPL-4 JP-1x
+      - 日本IEPL-3 JP-1x
+      - 日本IEPL-7 JP-1x
+      - "[CT/CM]香港 02"
+      - 日本IEPL-8 JP-1x
+      - 新加坡 SG 01
+      - JP 10-日本10
+      - 日本IEPL-2 JP-1x
+      - "[CT/CM]香港 14"
+      - Lv2.广州->香港HGC
+      - 日本IEPL-1 JP-1x
+      - 台湾IEPL-1 TW-1x 2
+      - HK02-香港02
+      - HK03-香港03
+      - 新加坡 SG 03
+      - KR 02-韩国02
+      - KR 04-韩国04
+      - vpnhat-香港Nerocloud-nf
+      - 俄罗斯b RT
+      - 俄罗斯c RT
+      - 183.232.56.182:11842
+      - 俄罗斯IEPL RU-1x
+      - tg频道:univstar_9
+      - vpnhat-台中Hinet-dip
+      - tg频道:univstar_10
+      - vpnhat-Novosibirsk-Baxet-nf
+      - HK08-香港08
+      - "[CT/CM]香港 01"
+      - 美国 优化-3
+      - TW.广州台湾-3.移动.200M.NF
+      - VN.广州印度-1.移动.300M
+      - Lv2.广州->美国-2
+      - 日本 A
+      - 韩国IEPL-1 KR-1x
+      - US.广州美国-1.移动.300M
+      - 美国IEPL-3 US-1x
+      - 美国IEPL-6 US-1x
+      - 美国IEPL-4 US-1x
+      - 美国 优化-1
+      - 美国IEPL-2 US-1x
+      - 美国IEPL-5 US-1x
+      - JP 03-日本03
+      - 美国 优化-4
+      - tg频道:univstar_2
+      - USA03-美国03
+      - tg频道:univstar_3
+      - USA07-美国07
+      - 俄罗斯 Russia★
+      - USA06-美国06
+      - 183.232.56.182:22848
+      - 美国IEPL-1 US-1x
+      - USA10-美国10
+      - JP 05-日本05
+      - USA09-美国09
+      - 美国IEPL-6 US-1x 2
+      - DE.广州德国-1.移动.300M
+      - "[CT/CM]香港 13"
+      - 澳大利亚IEPL AU-1x
+      - vpnhat-LAX-DMIT-nf
+      - USA08-美国08
+      - 香港IEPL-3 HK-1x
+      - vpnhat-LAX-DMIT-nf 2
+      - 美国 US 07
+      - SG 03-新加坡03
+      - SG 01-新加坡01
+      - JP 01-日本01
+      - vpnhat-Santa Clara-Tencent-nf
+      - 德国IEPL DE-1x
+      - 香港1 奈飞
+      - 加拿大IEPL CA-1x
+      - 加拿大IEPL CA-1x 2
+      - 日本 B
+      - 德国IEPL DE-1x 2
+      - 泰国IEPL TH-1x
+      - SG 05-新加坡05
+      - USA04-美国04
+      - 泰国IEPL TH-1x 2
+      - TG_yudievilla_13
+      - 土耳其 Turkey★
+      - 美国 优化-2
+      - USA02-美国02
+      - vpnhat-SG-Tencent-nf
+      - SG 04-新加坡04
+      - 新加坡IEPL-2 SG-1x 2
+      - 土耳其IEPL TR-1x
+      - SG 09-新加坡09
+      - 日本 JP 02
+      - US.广州美国-3.移动.200M
+      - "[CT/CM]香港 12"
+      - 美国 US 04
+      - UK.广州英国-1.移动.200M
+      - tg频道:univstar_4
+      - tg频道:univstar_11
+      - 俄罗斯IEPL RU-1x 2
+      - 香港 Hongkong HKBGP(VIP)●
+      - 183.232.56.182:11810
+      - JP 08-日本08
+      - 日本 JP 04
+      - 韩国 KR 08
+      - 183.232.56.182:11814
+      - 香港IEPL-10 HK-1x 2
+      - TG@阿伟科技/油管 24
+      - 日本IEPL-1 JP-1x 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
