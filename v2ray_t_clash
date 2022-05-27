@@ -5,523 +5,391 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国-中继-10, server: cmrelay01.yiyorelay.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
-  - {name: 新加坡-中继-06, server: cmrelay01.yiyorelay.xyz, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
-  - {name: 日本-中继-04, server: cmrelay01.yiyorelay.xyz, port: 3703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
+  - {name: 香港-tg频道:@bpjzx2 9, server: 120.233.10.181, port: 15002, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: "", udp: true}
+  - {name: vpnhat-香港Kirino, server: 120.233.10.181, port: 15008, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港-tg频道:@bpjzx2, server: 120.233.10.181, port: 15010, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: "", udp: true}
+  - {name: vpnhat-香港Kirino 2, server: 120.233.10.181, port: 15007, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT-dip, server: 183.232.56.182, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港-tg频道:@bpjzx2 10, server: 120.233.10.181, port: 15001, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: "", udp: true}
+  - {name: vpnhat-香港Kirino 3, server: 120.233.10.181, port: 15002, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-SG-OVH, server: 120.233.10.181, port: 15402, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-SG-OVH 2, server: 120.233.10.181, port: 15405, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2 5, server: 120.233.10.181, port: 15406, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: "", udp: true}
+  - {name: vpnhat-彰化Hinet-dip, server: 120.233.10.181, port: 15504, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港Kirino 4, server: 120.233.10.181, port: 15010, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-彰化Hinet-dip 2, server: 120.233.10.181, port: 15509, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2 8, server: 120.233.10.181, port: 15403, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: "", udp: true}
+  - {name: 香港-tg频道:@bpjzx2 4, server: 120.233.10.181, port: 15007, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: "", udp: true}
+  - {name: vpnhat-Seoul-Choopa, server: 120.233.10.181, port: 15301, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港Kirino 5, server: 120.233.10.181, port: 15003, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2 2, server: 120.233.10.181, port: 15409, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: "", udp: true}
+  - {name: vpnhat-香港Kirino 6, server: 120.233.10.181, port: 15006, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-Seoul-Choopa 2, server: 120.233.10.181, port: 15309, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-Seoul-Choopa 3, server: 120.233.10.181, port: 15307, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2 4, server: 120.233.10.181, port: 15407, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: "", udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2 6, server: 120.233.10.181, port: 15405, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: "", udp: true}
+  - {name: vpnhat-Seoul-Choopa 4, server: 120.233.10.181, port: 15308, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-SG-OVH 3, server: 120.233.10.181, port: 15401, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-Tokyo-Enzu, server: 120.233.10.181, port: 15203, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-Tokyo-Enzu 2, server: 120.233.10.181, port: 15206, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-Tokyo-Enzu 3, server: 120.233.10.181, port: 15207, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-DMIT-nf, server: 183.232.56.182, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-SG-OVH 4, server: 120.233.10.181, port: 15407, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-Seoul-Choopa 5, server: 120.233.10.181, port: 15310, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-DMIT-nf 2, server: 120.233.185.189, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-彰化Hinet-dip 3, server: 120.233.10.181, port: 15508, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Nerocloud-nf, server: 120.233.185.189, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Nerocloud-nf 2, server: 183.232.56.182, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-台中Hinet-dip, server: 183.232.56.182, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-Tokyo-Enzu 4, server: 120.233.10.181, port: 15208, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-Tokyo-Enzu 5, server: 120.233.10.181, port: 15210, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Azure-nf, server: 116.129.253.86, port: 41512, type: ssr, cipher: chacha20-ietf, password: 44FxbP, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 2366:ixueyao87, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-Nerocloud-nf, server: 183.232.56.182, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-Nerocloud-nf 2, server: 183.232.56.182, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-DMIT-nf 3, server: 183.232.56.182, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港Kirino 7, server: 120.233.10.181, port: 15004, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-Nerocloud-nf 3, server: 120.233.185.189, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-Seoul-Choopa 6, server: 120.233.10.181, port: 15306, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Chuncheon-Oracle-nf, server: 120.233.185.189, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港-tg频道:@bpjzx2 2, server: 120.233.10.181, port: 15009, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: "", udp: true}
+  - {name: vpnpool-香港HKT-dip 2, server: 183.232.56.182, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Azure-nf 2, server: 116.129.253.86, port: 41527, type: ssr, cipher: chacha20-ietf, password: 44FxbP, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 2366:ixueyao87, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-Nerocloud-nf 4, server: 120.233.185.189, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-Seoul-Choopa 7, server: 120.233.10.181, port: 15303, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-Linode, server: 116.129.253.86, port: 43032, type: ssr, cipher: chacha20-ietf, password: 44FxbP, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 2366:ixueyao87, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT-dip 3, server: 120.233.185.189, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Seoul-Oracle, server: 116.129.253.86, port: 40001, type: ssr, cipher: chacha20-ietf, password: 44FxbP, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 2366:ixueyao87, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-彰化Hinet-dip 4, server: 120.233.10.181, port: 15501, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-台中Hinet-dip 2, server: 120.233.185.189, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-SG-Nerocloud-nf 5, server: 120.233.185.189, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-新北Hinet-dip, server: 116.129.253.86, port: 42155, type: ssr, cipher: chacha20-ietf, password: 44FxbP, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 2366:ixueyao87, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-彰化Hinet-dip 5, server: 120.233.10.181, port: 15507, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-彰化Hinet-dip 6, server: 120.233.10.181, port: 15510, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Seoul-Oracle 2, server: 116.129.253.86, port: 40002, type: ssr, cipher: chacha20-ietf, password: 44FxbP, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 2366:ixueyao87, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 中国_0525372, server: cmrelay01.yiyorelay.xyz, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
+  - {name: 韩国-中继-01, server: cmrelay01.yiyorelay.xyz, port: 4000, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
+  - {name: vpnpool-香港Azure-nf 3, server: 116.129.253.86, port: 41524, type: ssr, cipher: chacha20-ietf, password: 44FxbP, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 2366:ixueyao87, obfs-param: t.me/vpnhat, udp: true}
   - {name: 韩国-中继-04, server: cmrelay01.yiyorelay.xyz, port: 4003, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
-  - {name: (youtube阿伟科技) 9, server: ss-v2ray1.free4444.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: cmrelay01.yiyorelay.xyz:7702, server: cmrelay01.yiyorelay.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: "", udp: true}
-  - {name: 日本-中继-03, server: cmrelay01.yiyorelay.xyz, port: 3702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
-  - {name: 新加坡-中继-07, server: cmrelay01.yiyorelay.xyz, port: 6706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
+  - {name: vpnpool-Tokyo-Linode 2, server: 116.129.253.86, port: 43033, type: ssr, cipher: chacha20-ietf, password: 44FxbP, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 2366:ixueyao87, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 韩国-中继-03, server: cmrelay01.yiyorelay.xyz, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
+  - {name: vpnhat-彰化Hinet-dip 7, server: 120.233.10.181, port: 15502, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港Azure-nf 4, server: 116.129.253.86, port: 41526, type: ssr, cipher: chacha20-ietf, password: 44FxbP, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 2366:ixueyao87, obfs-param: t.me/vpnhat, udp: true}
   - {name: 新加坡-中继-02, server: cmrelay01.yiyorelay.xyz, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
-  - {name: 新加坡-中继-04, server: cmrelay01.yiyorelay.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
-  - {name: 52.194.147.44:11114, server: 52.194.147.44, port: 11114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:9bk2i2r4dwm, obfs-param: 78fb6623.baidu.com, udp: true}
-  - {name: 美国-中继-07, server: cmrelay01.yiyorelay.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
   - {name: 香港04, server: twsxxnhk.158801.xyz, port: 30914, type: trojan, password: 775ed92a-4c87-4111-a6cf-fc5e0ac18ae5, sni: twsxxnhk.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: Singapore-C5-佛电, server: fsct.195382.xyz, port: 32287, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: fsct.195382.xyz, skip-cert-verify: true, udp: true}
-  - {name: Japan-C2-沪日, server: china-gy1-axecc.898868.xyz, port: 10535, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: china-gy1-axecc.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: Singapore-C2-广港, server: china-gy-axecc.898868.xyz, port: 47064, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: china-gy-axecc.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: Singapore-C6-广港, server: china-gy-axecc.898868.xyz, port: 11467, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: china-gy-axecc.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: Japan-C6-沪日, server: china-sh.cu01.898868.xyz, port: 26052, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: china-sh.cu01.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: Japan-C3-广港, server: china-gy-axecc.898868.xyz, port: 39440, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: china-gy-axecc.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本 02, server: twsxxnjp.158801.xyz, port: 30912, type: trojan, password: 775ed92a-4c87-4111-a6cf-fc5e0ac18ae5, sni: twsxxnjp.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本 03, server: twsxxnjp.158801.xyz, port: 30913, type: trojan, password: 775ed92a-4c87-4111-a6cf-fc5e0ac18ae5, sni: twsxxnjp.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本 04, server: twsxxnjp.158801.xyz, port: 30914, type: trojan, password: 775ed92a-4c87-4111-a6cf-fc5e0ac18ae5, sni: twsxxnjp.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: Japan-C5-沪日, server: china-sh.cu01.898868.xyz, port: 14594, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: china-sh.cu01.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本 05, server: twsxxnjp.158801.xyz, port: 30915, type: trojan, password: 775ed92a-4c87-4111-a6cf-fc5e0ac18ae5, sni: twsxxnjp.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: Japan-C1-沪日-流媒体解锁, server: china-gy1-axecc.898868.xyz, port: 16575, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: china-gy1-axecc.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: Singapore-C4-沪日, server: china-gy1-axecc.898868.xyz, port: 52164, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: china-gy1-axecc.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: Singapore-C3-沪日, server: china-gy1-axecc.898868.xyz, port: 24418, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: china-gy1-axecc.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: Japan-C4-沪日, server: china-gy1-axecc.898868.xyz, port: 37103, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: china-gy1-axecc.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_韩国-日本_506, server: jgw2.gaox.ml, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, sni: jgw2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: America-C4-沪日, server: china-gy1-axecc.898868.xyz, port: 28058, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: china-gy1-axecc.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: America-C6-沪日, server: china-gy1-axecc.898868.xyz, port: 39271, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: china-gy1-axecc.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: America-C3-沪日, server: china-gy1-axecc.898868.xyz, port: 21779, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: china-gy1-axecc.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: America-C2-广港, server: china-gy-axecc.898868.xyz, port: 55507, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: china-gy-axecc.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: _JP_日本, server: tt6.tjvpn.top, port: 443, type: trojan, password: 0cb2cd1f-870b-485c-914a-60aba39eed39, sni: tt6.tjvpn.top, skip-cert-verify: true, udp: true}
+  - {name: 台湾(youtube阿伟科技) 5, server: bgp01.v2yyds.cc, port: 32134, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, sni: bgp01.v2yyds.cc, skip-cert-verify: true, udp: true}
+  - {name: 台湾(youtube阿伟科技) 4, server: bgp01.v2yyds.cc, port: 32133, type: trojan, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, sni: bgp01.v2yyds.cc, skip-cert-verify: true, udp: true}
+  - {name: V304-1x-Seoul, server: o04.trojan.tel, port: 18443, type: trojan, password: c3c6f754-af67-40fa-9d98-37d3aea3b50a, sni: o04.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V314-1.5x-Seoul, server: o14.trojan.tel, port: 38443, type: trojan, password: 543a952b-2261-4244-a9bb-30f902c19bf7, sni: o14.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V312-1.5x-Chuncheon, server: o12.trojan.tel, port: 38443, type: trojan, password: 543a952b-2261-4244-a9bb-30f902c19bf7, sni: o12.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V313-1.5x-Seoul, server: o13.trojan.tel, port: 38443, type: trojan, password: 543a952b-2261-4244-a9bb-30f902c19bf7, sni: o13.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V314-1.5x-Seoul 2, server: o14.trojan.tel, port: 38443, type: trojan, password: c3c6f754-af67-40fa-9d98-37d3aea3b50a, sni: o14.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V303-1x-Seoul, server: o03.trojan.tel, port: 18443, type: trojan, password: 543a952b-2261-4244-a9bb-30f902c19bf7, sni: o03.trojan.tel, skip-cert-verify: true, udp: true}
   - {name: 香港03, server: twsxxnhk.158801.xyz, port: 30913, type: trojan, password: 775ed92a-4c87-4111-a6cf-fc5e0ac18ae5, sni: twsxxnhk.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港05, server: twsxxnhk.158801.xyz, port: 30915, type: trojan, password: 775ed92a-4c87-4111-a6cf-fc5e0ac18ae5, sni: twsxxnhk.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: lv.5-中国==>日本3, server: zh01lv5jp03.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: dcdf8ff8-e53c-4aa4-97d6-27ce89599ec8, udp: true}
-  - {name: lv.5-中国==>日本4, server: zh01lv5jp04.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: dcdf8ff8-e53c-4aa4-97d6-27ce89599ec8, udp: true}
-  - {name: lv.5-中国==>香港4, server: zh01lv5hk04.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: dcdf8ff8-e53c-4aa4-97d6-27ce89599ec8, udp: true}
-  - {name: lv.5-中国==>英国3, server: zh01lv5uk03.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: dcdf8ff8-e53c-4aa4-97d6-27ce89599ec8, udp: true}
-  - {name: lv.5-中国==>英国1, server: zh01lv5uk01.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: dcdf8ff8-e53c-4aa4-97d6-27ce89599ec8, udp: true}
-  - {name: lv.5-中国==>英国2, server: zh01lv5uk02.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: dcdf8ff8-e53c-4aa4-97d6-27ce89599ec8, udp: true}
-  - {name: 吃宵夜了, server: 54.214.170.7, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: America-A1, server: 104.129.63.65, port: 7383, type: ss, cipher: aes-256-gcm, password: f923621d-9cde-4db2-855f-8947e56db704, udp: true}
+  - {name: 6.78|+新加坡02, server: 54.255.133.25, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: sg, server: rr002.zhuan666.top, port: 11202, type: ss, cipher: chacha20-ietf-poly1305, password: 5527dbd6-5ee2-431d-9c2f-2b818624f4ef, udp: true}
   - {name: BGP-01-香港-多地优化, server: iepl-zebra.19900101.xyz, port: 902, type: ss, cipher: chacha20-ietf, password: Gqre0R, plugin: obfs, plugin-opts: {mode: http, host: 1d2e3501.itunes.apple.com}, udp: true}
-  - {name: 香港 06 移动/深港专线（2x）, server: ba911c47-b38f-4d0b-af5b-3bfc71980995.hk.node.touhou.place, port: 563, type: vmess, uuid: c41d89bc-ccbe-11eb-8aa6-f23c91d8700f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: ba911c47-b38f-4d0b-af5b-3bfc71980995.hk.node.touhou.place}, udp: true}
-  - {name: vpnpool, server: 20.205.118.170, port: 60010, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2, server: 20.187.74.201, port: 60008, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.74.201}, udp: true}
-  - {name: vpnpool 2, server: 20.205.118.170, port: 50009, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 2, server: 20.205.118.170, port: 60031, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.118.170}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 3, server: 20.205.118.170, port: 60034, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.118.170}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 4, server: 20.187.74.201, port: 60021, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.74.201}, udp: true}
-  - {name: vpnpool 3, server: 20.187.74.201, port: 60008, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 5, server: 20.205.118.170, port: 50009, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.118.170}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 6, server: 20.187.74.201, port: 60026, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.74.201}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 7, server: 20.187.120.170, port: 60046, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.120.170}, udp: true}
-  - {name: vpnpool 4, server: 20.187.120.170, port: 60045, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool 5, server: 20.187.74.201, port: 20004, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool 6, server: 20.205.118.170, port: 60031, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool 7, server: 20.205.118.170, port: 60028, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 8, server: 20.187.120.170, port: 60045, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.120.170}, udp: true}
-  - {name: vpnpool 8, server: 20.187.74.201, port: 60026, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 9, server: 20.205.118.170, port: 60028, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.118.170}, udp: true}
-  - {name: vpnpool 9, server: 20.187.74.201, port: 60018, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 10, server: 20.187.120.170, port: 60042, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.120.170}, udp: true}
-  - {name: 美国-tg频道:@bpjzx2, server: 20.247.115.226, port: 60037, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.247.115.226}, udp: true}
-  - {name: vpnpool 10, server: 20.187.74.201, port: 60021, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 11, server: 20.205.118.170, port: 60010, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.118.170}, udp: true}
-  - {name: vpnpool 11, server: 20.247.115.226, port: 60037, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
   - {name: RELAY-117.28.242.156-006, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 117.28.242.156}, udp: true}
-  - {name: vpnpool 12, server: 20.187.74.201, port: 60012, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 12, server: 20.187.74.201, port: 60022, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.74.201}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 13, server: 223.166.82.18, port: 60009, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.82.18}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 14, server: 20.187.74.201, port: 60013, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.74.201}, udp: true}
-  - {name: 美国-tg频道:@bpjzx2 2, server: 20.247.115.226, port: 60029, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.247.115.226}, udp: true}
-  - {name: CN_46 TG@peekfun |19.37Mb, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 117.28.242.156}, udp: true}
-  - {name: vpnpool 13, server: 20.247.115.226, port: 60029, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool 14, server: 20.187.74.201, port: 60022, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 15, server: 20.205.118.170, port: 60015, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.118.170}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 16, server: 20.187.74.201, port: 60012, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.74.201}, udp: true}
-  - {name: Singapore-A1, server: 47.241.13.35, port: 443, type: vmess, uuid: f923621d-9cde-4db2-855f-8947e56db704, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nana, ws-headers: {Host: sg3.qcjs.one}, udp: true}
-  - {name: vpnpool 15, server: 20.205.118.170, port: 60015, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: "[免流]日本 A", server: twsxxnjp.158801.xyz, port: 80, type: vmess, uuid: 775ed92a-4c87-4111-a6cf-fc5e0ac18ae5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: _youtube：全网最强白嫖 50, server: download.cn.connecat.com, port: 60003, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: download.cn.connecat.com}, udp: true}
-  - {name: YouTube@阿阳AYANG, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
-  - {name: 台湾-tg频道:@bpjzx2, server: 223.166.81.240, port: 60003, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.81.240}, udp: true}
-  - {name: 台湾-tg频道:@bpjzx2 2, server: 223.166.82.18, port: 60004, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.82.18}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 17, server: 223.166.81.56, port: 60010, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.81.56}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 18, server: 20.187.74.201, port: 60018, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.74.201}, udp: true}
-  - {name: vpnpool 16, server: 20.205.118.170, port: 60034, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 东京-tg频道:@bpjzx2, server: 223.166.82.18, port: 60021, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.82.18}, udp: true}
-  - {name: 台湾(youtube阿伟科技), server: download.cn.connecat.com, port: 60004, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: download.cn.connecat.com}, udp: true}
-  - {name: vpnpool 17, server: 20.187.120.170, port: 60046, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 19, server: 20.205.118.170, port: 60017, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.118.170}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 20, server: 20.187.74.201, port: 60038, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.74.201}, udp: true}
-  - {name: vpnpool 18, server: 20.187.120.170, port: 60042, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 21, server: 104.208.101.220, port: 60020, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 104.208.101.220}, udp: true}
-  - {name: 中国, server: download.cn.connecat.com, port: 60003, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: download.cn.connecat.com}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 22, server: 20.187.74.201, port: 20004, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.74.201}, udp: true}
-  - {name: vpnpool 19, server: 20.187.74.201, port: 60013, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 台湾-tg频道:@bpjzx2 3, server: 223.166.81.56, port: 60004, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.81.56}, udp: true}
+  - {name: V2 | 日本 EMBY专用 | x1.5, server: gd.cm1.buildyourdream.cyou, port: 30080, type: vmess, uuid: 6636baa2-0dd0-37d4-a377-7c99b4abb3f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /embyjp, ws-headers: {Host: hk.aws-1.fevers.cyou}, udp: true}
   - {name: Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
-  - {name: vpnpool 20, server: 20.247.115.226, port: 60024, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: V2 | 香港 HK 01 | x1.5, server: gd.cm1.buildyourdream.cyou, port: 30080, type: vmess, uuid: 6636baa2-0dd0-37d4-a377-7c99b4abb3f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt-n2, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: V2 | 香港 HK 02 | x1.5, server: gd.cm1.buildyourdream.cyou, port: 30080, type: vmess, uuid: 6636baa2-0dd0-37d4-a377-7c99b4abb3f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt-n2, ws-headers: {Host: hk.aws-1.fevers.cyou}, udp: true}
+  - {name: CN_46 TG@peekfun |19.37Mb, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 117.28.242.156}, udp: true}
   - {name: 亚洲, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2, server: 223.166.82.18, port: 60020, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.82.18}, udp: true}
-  - {name: vpnpool 21, server: 20.187.74.201, port: 60038, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 新加坡-tg频道:@bpjzx2 2, server: 223.166.82.18, port: 60019, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.82.18}, udp: true}
-  - {name: 台湾-tg频道:@bpjzx2 4, server: 223.166.82.18, port: 60003, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.82.18}, udp: true}
-  - {name: vpnhat-Tokyo-DMIT, server: 223.166.80.68, port: 60021, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 23, server: 223.166.81.56, port: 60009, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.81.56}, udp: true}
-  - {name: 台湾-tg频道:@bpjzx2 5, server: 223.166.81.56, port: 60003, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.81.56}, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 24, server: 223.166.82.18, port: 60010, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.82.18}, udp: true}
-  - {name: vpnpool 22, server: 20.247.115.226, port: 60025, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 首尔-tg频道:@bpjzx2, server: 223.166.82.18, port: 60018, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.82.18}, udp: true}
-  - {name: vpnhat-Seoul-AWS, server: 223.166.80.68, port: 60018, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 东京-tg频道:@bpjzx2 2, server: 223.166.82.18, port: 60022, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.82.18}, udp: true}
-  - {name: "v2ray 马来西亚(移动) [vpnpool]", server: cu.cheapv2.xyz, port: 26610, type: vmess, uuid: 9254040a-4600-36bf-9401-27fc9237f5c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.cheapv2.xyz}, udp: true}
-  - {name: 首尔-tg频道:@bpjzx2 2, server: 223.166.82.18, port: 60017, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.82.18}, udp: true}
-  - {name: CN-高速节点推荐：v1.mk/vip, server: gy.moonfree.top, port: 17253, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ocrb2.moonfree.top}, udp: true}
-  - {name: "v2ray 日本(联通) [Netflix]", server: cu.cheapv2.xyz, port: 26601, type: vmess, uuid: 9254040a-4600-36bf-9401-27fc9237f5c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.cheapv2.xyz}, udp: true}
-  - {name: 美国-tg频道:@bpjzx2 3, server: 20.247.115.226, port: 60025, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.247.115.226}, udp: true}
-  - {name: vpnhat-Seoul-AWS 2, server: 223.166.80.68, port: 60017, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 美国-tg频道:@bpjzx2 4, server: 20.247.115.226, port: 60027, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.247.115.226}, udp: true}
-  - {name: vpnpool 23, server: 20.247.115.226, port: 60027, type: vmess, uuid: 28717c2f-724c-353b-ba90-1e191de05824, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: Australia-A1-沪日, server: china-sh.cu01.898868.xyz, port: 32437, type: vmess, uuid: f923621d-9cde-4db2-855f-8947e56db704, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nana, ws-headers: {Host: as1.qcjs.one}, udp: true}
+  - {name: V1 | 印度 | x1.0, server: gd.cm1.buildyourdream.cyou, port: 16335, type: vmess, uuid: 6636baa2-0dd0-37d4-a377-7c99b4abb3f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /in1, ws-headers: {Host: gd.cm1.buildyourdream.cyou}, udp: true}
+  - {name: 香港DC, server: crus10.gzfxd.xyz, port: 16616, type: vmess, uuid: 63156eb1-84ee-4b8b-bab2-67b74705a29a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: crus10.gzfxd.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国-中继-10
-      - 新加坡-中继-06
-      - 日本-中继-04
-      - 韩国-中继-04
-      - (youtube阿伟科技) 9
-      - cmrelay01.yiyorelay.xyz:7702
-      - 日本-中继-03
-      - 新加坡-中继-07
-      - 新加坡-中继-02
-      - 新加坡-中继-04
-      - 52.194.147.44:11114
-      - 美国-中继-07
-      - 香港04
-      - Singapore-C5-佛电
-      - Japan-C2-沪日
-      - Singapore-C2-广港
-      - Singapore-C6-广港
-      - Japan-C6-沪日
-      - Japan-C3-广港
-      - 日本 02
-      - 日本 03
-      - 日本 04
-      - Japan-C5-沪日
-      - 日本 05
-      - Japan-C1-沪日-流媒体解锁
-      - Singapore-C4-沪日
-      - Singapore-C3-沪日
-      - Japan-C4-沪日
-      - Relay_韩国-日本_506
-      - America-C4-沪日
-      - America-C6-沪日
-      - America-C3-沪日
-      - America-C2-广港
-      - _JP_日本
-      - 香港03
-      - 香港05
-      - lv.5-中国==>日本3
-      - lv.5-中国==>日本4
-      - lv.5-中国==>香港4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - 吃宵夜了
-      - America-A1
-      - BGP-01-香港-多地优化
-      - 香港 06 移动/深港专线（2x）
-      - vpnpool
-      - 香港-tg频道:@bpjzx2
-      - vpnpool 2
-      - 香港-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 3
-      - 香港-tg频道:@bpjzx2 4
-      - vpnpool 3
-      - 香港-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 6
-      - 香港-tg频道:@bpjzx2 7
-      - vpnpool 4
-      - vpnpool 5
-      - vpnpool 6
-      - vpnpool 7
-      - 香港-tg频道:@bpjzx2 8
-      - vpnpool 8
       - 香港-tg频道:@bpjzx2 9
-      - vpnpool 9
+      - vpnhat-香港Kirino
+      - 香港-tg频道:@bpjzx2
+      - vpnhat-香港Kirino 2
+      - vpnpool-香港HKT-dip
       - 香港-tg频道:@bpjzx2 10
-      - 美国-tg频道:@bpjzx2
-      - vpnpool 10
-      - 香港-tg频道:@bpjzx2 11
-      - vpnpool 11
-      - RELAY-117.28.242.156-006
-      - vpnpool 12
-      - 香港-tg频道:@bpjzx2 12
-      - 香港-tg频道:@bpjzx2 13
-      - 香港-tg频道:@bpjzx2 14
-      - 美国-tg频道:@bpjzx2 2
-      - CN_46 TG@peekfun |19.37Mb
-      - vpnpool 13
-      - vpnpool 14
-      - 香港-tg频道:@bpjzx2 15
-      - 香港-tg频道:@bpjzx2 16
-      - Singapore-A1
-      - vpnpool 15
-      - "[免流]日本 A"
-      - _youtube：全网最强白嫖 50
-      - YouTube@阿阳AYANG
-      - 台湾-tg频道:@bpjzx2
-      - 台湾-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 17
-      - 香港-tg频道:@bpjzx2 18
-      - vpnpool 16
-      - 东京-tg频道:@bpjzx2
-      - 台湾(youtube阿伟科技)
-      - vpnpool 17
-      - 香港-tg频道:@bpjzx2 19
-      - 香港-tg频道:@bpjzx2 20
-      - vpnpool 18
-      - 香港-tg频道:@bpjzx2 21
-      - 中国
-      - 香港-tg频道:@bpjzx2 22
-      - vpnpool 19
-      - 台湾-tg频道:@bpjzx2 3
-      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
-      - vpnpool 20
-      - 亚洲
-      - 新加坡-tg频道:@bpjzx2
-      - vpnpool 21
+      - vpnhat-香港Kirino 3
+      - vpnhat-SG-OVH
+      - vpnhat-SG-OVH 2
+      - 新加坡-tg频道:@bpjzx2 5
+      - vpnhat-彰化Hinet-dip
+      - vpnhat-香港Kirino 4
+      - vpnhat-彰化Hinet-dip 2
+      - 新加坡-tg频道:@bpjzx2 8
+      - 香港-tg频道:@bpjzx2 4
+      - vpnhat-Seoul-Choopa
+      - vpnhat-香港Kirino 5
       - 新加坡-tg频道:@bpjzx2 2
-      - 台湾-tg频道:@bpjzx2 4
-      - vpnhat-Tokyo-DMIT
-      - 香港-tg频道:@bpjzx2 23
-      - 台湾-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 24
-      - vpnpool 22
-      - 首尔-tg频道:@bpjzx2
-      - vpnhat-Seoul-AWS
-      - 东京-tg频道:@bpjzx2 2
-      - v2ray 马来西亚(移动) [vpnpool]
-      - 首尔-tg频道:@bpjzx2 2
-      - CN-高速节点推荐：v1.mk/vip
-      - v2ray 日本(联通) [Netflix]
-      - 美国-tg频道:@bpjzx2 3
-      - vpnhat-Seoul-AWS 2
-      - 美国-tg频道:@bpjzx2 4
-      - vpnpool 23
-      - Australia-A1-沪日
+      - vpnhat-香港Kirino 6
+      - vpnhat-Seoul-Choopa 2
+      - vpnhat-Seoul-Choopa 3
+      - 新加坡-tg频道:@bpjzx2 4
+      - 新加坡-tg频道:@bpjzx2 6
+      - vpnhat-Seoul-Choopa 4
+      - vpnhat-SG-OVH 3
+      - vpnhat-Tokyo-Enzu
+      - vpnhat-Tokyo-Enzu 2
+      - vpnhat-Tokyo-Enzu 3
+      - vpnpool-Tokyo-DMIT-nf
+      - vpnhat-SG-OVH 4
+      - vpnhat-Seoul-Choopa 5
+      - vpnpool-Tokyo-DMIT-nf 2
+      - vpnhat-彰化Hinet-dip 3
+      - vpnpool-香港Nerocloud-nf
+      - vpnpool-香港Nerocloud-nf 2
+      - vpnpool-台中Hinet-dip
+      - vpnhat-Tokyo-Enzu 4
+      - vpnhat-Tokyo-Enzu 5
+      - vpnpool-香港Azure-nf
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-Tokyo-DMIT-nf 3
+      - vpnhat-香港Kirino 7
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnhat-Seoul-Choopa 6
+      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道:@bpjzx2 2
+      - vpnpool-香港HKT-dip 2
+      - vpnpool-香港Azure-nf 2
+      - vpnpool-SG-Nerocloud-nf 4
+      - vpnhat-Seoul-Choopa 7
+      - vpnpool-Tokyo-Linode
+      - vpnpool-香港HKT-dip 3
+      - vpnpool-Seoul-Oracle
+      - vpnhat-彰化Hinet-dip 4
+      - vpnpool-台中Hinet-dip 2
+      - vpnpool-SG-Nerocloud-nf 5
+      - vpnpool-新北Hinet-dip
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 6
+      - vpnpool-Seoul-Oracle 2
+      - 中国_0525372
+      - 韩国-中继-01
+      - vpnpool-香港Azure-nf 3
+      - 韩国-中继-04
+      - vpnpool-Tokyo-Linode 2
+      - 韩国-中继-03
+      - vpnhat-彰化Hinet-dip 7
+      - vpnpool-香港Azure-nf 4
+      - 新加坡-中继-02
+      - 香港04
+      - 台湾(youtube阿伟科技) 5
+      - 台湾(youtube阿伟科技) 4
+      - V304-1x-Seoul
+      - V314-1.5x-Seoul
+      - V312-1.5x-Chuncheon
+      - V313-1.5x-Seoul
+      - V314-1.5x-Seoul 2
+      - V303-1x-Seoul
+      - 香港03
+      - 6.78|+新加坡02
+      - sg
+      - BGP-01-香港-多地优化
+      - RELAY-117.28.242.156-006
+      - V2 | 日本 EMBY专用 | x1.5
+      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - CN_46 TG@peekfun |19.37Mb
+      - 亚洲
+      - V1 | 印度 | x1.0
+      - 香港DC
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国-中继-10
-      - 新加坡-中继-06
-      - 日本-中继-04
-      - 韩国-中继-04
-      - (youtube阿伟科技) 9
-      - cmrelay01.yiyorelay.xyz:7702
-      - 日本-中继-03
-      - 新加坡-中继-07
-      - 新加坡-中继-02
-      - 新加坡-中继-04
-      - 52.194.147.44:11114
-      - 美国-中继-07
-      - 香港04
-      - Singapore-C5-佛电
-      - Japan-C2-沪日
-      - Singapore-C2-广港
-      - Singapore-C6-广港
-      - Japan-C6-沪日
-      - Japan-C3-广港
-      - 日本 02
-      - 日本 03
-      - 日本 04
-      - Japan-C5-沪日
-      - 日本 05
-      - Japan-C1-沪日-流媒体解锁
-      - Singapore-C4-沪日
-      - Singapore-C3-沪日
-      - Japan-C4-沪日
-      - Relay_韩国-日本_506
-      - America-C4-沪日
-      - America-C6-沪日
-      - America-C3-沪日
-      - America-C2-广港
-      - _JP_日本
-      - 香港03
-      - 香港05
-      - lv.5-中国==>日本3
-      - lv.5-中国==>日本4
-      - lv.5-中国==>香港4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - 吃宵夜了
-      - America-A1
-      - BGP-01-香港-多地优化
-      - 香港 06 移动/深港专线（2x）
-      - vpnpool
-      - 香港-tg频道:@bpjzx2
-      - vpnpool 2
-      - 香港-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 3
-      - 香港-tg频道:@bpjzx2 4
-      - vpnpool 3
-      - 香港-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 6
-      - 香港-tg频道:@bpjzx2 7
-      - vpnpool 4
-      - vpnpool 5
-      - vpnpool 6
-      - vpnpool 7
-      - 香港-tg频道:@bpjzx2 8
-      - vpnpool 8
       - 香港-tg频道:@bpjzx2 9
-      - vpnpool 9
+      - vpnhat-香港Kirino
+      - 香港-tg频道:@bpjzx2
+      - vpnhat-香港Kirino 2
+      - vpnpool-香港HKT-dip
       - 香港-tg频道:@bpjzx2 10
-      - 美国-tg频道:@bpjzx2
-      - vpnpool 10
-      - 香港-tg频道:@bpjzx2 11
-      - vpnpool 11
-      - RELAY-117.28.242.156-006
-      - vpnpool 12
-      - 香港-tg频道:@bpjzx2 12
-      - 香港-tg频道:@bpjzx2 13
-      - 香港-tg频道:@bpjzx2 14
-      - 美国-tg频道:@bpjzx2 2
-      - CN_46 TG@peekfun |19.37Mb
-      - vpnpool 13
-      - vpnpool 14
-      - 香港-tg频道:@bpjzx2 15
-      - 香港-tg频道:@bpjzx2 16
-      - Singapore-A1
-      - vpnpool 15
-      - "[免流]日本 A"
-      - _youtube：全网最强白嫖 50
-      - YouTube@阿阳AYANG
-      - 台湾-tg频道:@bpjzx2
-      - 台湾-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 17
-      - 香港-tg频道:@bpjzx2 18
-      - vpnpool 16
-      - 东京-tg频道:@bpjzx2
-      - 台湾(youtube阿伟科技)
-      - vpnpool 17
-      - 香港-tg频道:@bpjzx2 19
-      - 香港-tg频道:@bpjzx2 20
-      - vpnpool 18
-      - 香港-tg频道:@bpjzx2 21
-      - 中国
-      - 香港-tg频道:@bpjzx2 22
-      - vpnpool 19
-      - 台湾-tg频道:@bpjzx2 3
-      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
-      - vpnpool 20
-      - 亚洲
-      - 新加坡-tg频道:@bpjzx2
-      - vpnpool 21
+      - vpnhat-香港Kirino 3
+      - vpnhat-SG-OVH
+      - vpnhat-SG-OVH 2
+      - 新加坡-tg频道:@bpjzx2 5
+      - vpnhat-彰化Hinet-dip
+      - vpnhat-香港Kirino 4
+      - vpnhat-彰化Hinet-dip 2
+      - 新加坡-tg频道:@bpjzx2 8
+      - 香港-tg频道:@bpjzx2 4
+      - vpnhat-Seoul-Choopa
+      - vpnhat-香港Kirino 5
       - 新加坡-tg频道:@bpjzx2 2
-      - 台湾-tg频道:@bpjzx2 4
-      - vpnhat-Tokyo-DMIT
-      - 香港-tg频道:@bpjzx2 23
-      - 台湾-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 24
-      - vpnpool 22
-      - 首尔-tg频道:@bpjzx2
-      - vpnhat-Seoul-AWS
-      - 东京-tg频道:@bpjzx2 2
-      - v2ray 马来西亚(移动) [vpnpool]
-      - 首尔-tg频道:@bpjzx2 2
-      - CN-高速节点推荐：v1.mk/vip
-      - v2ray 日本(联通) [Netflix]
-      - 美国-tg频道:@bpjzx2 3
-      - vpnhat-Seoul-AWS 2
-      - 美国-tg频道:@bpjzx2 4
-      - vpnpool 23
-      - Australia-A1-沪日
+      - vpnhat-香港Kirino 6
+      - vpnhat-Seoul-Choopa 2
+      - vpnhat-Seoul-Choopa 3
+      - 新加坡-tg频道:@bpjzx2 4
+      - 新加坡-tg频道:@bpjzx2 6
+      - vpnhat-Seoul-Choopa 4
+      - vpnhat-SG-OVH 3
+      - vpnhat-Tokyo-Enzu
+      - vpnhat-Tokyo-Enzu 2
+      - vpnhat-Tokyo-Enzu 3
+      - vpnpool-Tokyo-DMIT-nf
+      - vpnhat-SG-OVH 4
+      - vpnhat-Seoul-Choopa 5
+      - vpnpool-Tokyo-DMIT-nf 2
+      - vpnhat-彰化Hinet-dip 3
+      - vpnpool-香港Nerocloud-nf
+      - vpnpool-香港Nerocloud-nf 2
+      - vpnpool-台中Hinet-dip
+      - vpnhat-Tokyo-Enzu 4
+      - vpnhat-Tokyo-Enzu 5
+      - vpnpool-香港Azure-nf
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-Tokyo-DMIT-nf 3
+      - vpnhat-香港Kirino 7
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnhat-Seoul-Choopa 6
+      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道:@bpjzx2 2
+      - vpnpool-香港HKT-dip 2
+      - vpnpool-香港Azure-nf 2
+      - vpnpool-SG-Nerocloud-nf 4
+      - vpnhat-Seoul-Choopa 7
+      - vpnpool-Tokyo-Linode
+      - vpnpool-香港HKT-dip 3
+      - vpnpool-Seoul-Oracle
+      - vpnhat-彰化Hinet-dip 4
+      - vpnpool-台中Hinet-dip 2
+      - vpnpool-SG-Nerocloud-nf 5
+      - vpnpool-新北Hinet-dip
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 6
+      - vpnpool-Seoul-Oracle 2
+      - 中国_0525372
+      - 韩国-中继-01
+      - vpnpool-香港Azure-nf 3
+      - 韩国-中继-04
+      - vpnpool-Tokyo-Linode 2
+      - 韩国-中继-03
+      - vpnhat-彰化Hinet-dip 7
+      - vpnpool-香港Azure-nf 4
+      - 新加坡-中继-02
+      - 香港04
+      - 台湾(youtube阿伟科技) 5
+      - 台湾(youtube阿伟科技) 4
+      - V304-1x-Seoul
+      - V314-1.5x-Seoul
+      - V312-1.5x-Chuncheon
+      - V313-1.5x-Seoul
+      - V314-1.5x-Seoul 2
+      - V303-1x-Seoul
+      - 香港03
+      - 6.78|+新加坡02
+      - sg
+      - BGP-01-香港-多地优化
+      - RELAY-117.28.242.156-006
+      - V2 | 日本 EMBY专用 | x1.5
+      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - CN_46 TG@peekfun |19.37Mb
+      - 亚洲
+      - V1 | 印度 | x1.0
+      - 香港DC
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国-中继-10
-      - 新加坡-中继-06
-      - 日本-中继-04
-      - 韩国-中继-04
-      - (youtube阿伟科技) 9
-      - cmrelay01.yiyorelay.xyz:7702
-      - 日本-中继-03
-      - 新加坡-中继-07
-      - 新加坡-中继-02
-      - 新加坡-中继-04
-      - 52.194.147.44:11114
-      - 美国-中继-07
-      - 香港04
-      - Singapore-C5-佛电
-      - Japan-C2-沪日
-      - Singapore-C2-广港
-      - Singapore-C6-广港
-      - Japan-C6-沪日
-      - Japan-C3-广港
-      - 日本 02
-      - 日本 03
-      - 日本 04
-      - Japan-C5-沪日
-      - 日本 05
-      - Japan-C1-沪日-流媒体解锁
-      - Singapore-C4-沪日
-      - Singapore-C3-沪日
-      - Japan-C4-沪日
-      - Relay_韩国-日本_506
-      - America-C4-沪日
-      - America-C6-沪日
-      - America-C3-沪日
-      - America-C2-广港
-      - _JP_日本
-      - 香港03
-      - 香港05
-      - lv.5-中国==>日本3
-      - lv.5-中国==>日本4
-      - lv.5-中国==>香港4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - 吃宵夜了
-      - America-A1
-      - BGP-01-香港-多地优化
-      - 香港 06 移动/深港专线（2x）
-      - vpnpool
-      - 香港-tg频道:@bpjzx2
-      - vpnpool 2
-      - 香港-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 3
-      - 香港-tg频道:@bpjzx2 4
-      - vpnpool 3
-      - 香港-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 6
-      - 香港-tg频道:@bpjzx2 7
-      - vpnpool 4
-      - vpnpool 5
-      - vpnpool 6
-      - vpnpool 7
-      - 香港-tg频道:@bpjzx2 8
-      - vpnpool 8
       - 香港-tg频道:@bpjzx2 9
-      - vpnpool 9
+      - vpnhat-香港Kirino
+      - 香港-tg频道:@bpjzx2
+      - vpnhat-香港Kirino 2
+      - vpnpool-香港HKT-dip
       - 香港-tg频道:@bpjzx2 10
-      - 美国-tg频道:@bpjzx2
-      - vpnpool 10
-      - 香港-tg频道:@bpjzx2 11
-      - vpnpool 11
-      - RELAY-117.28.242.156-006
-      - vpnpool 12
-      - 香港-tg频道:@bpjzx2 12
-      - 香港-tg频道:@bpjzx2 13
-      - 香港-tg频道:@bpjzx2 14
-      - 美国-tg频道:@bpjzx2 2
-      - CN_46 TG@peekfun |19.37Mb
-      - vpnpool 13
-      - vpnpool 14
-      - 香港-tg频道:@bpjzx2 15
-      - 香港-tg频道:@bpjzx2 16
-      - Singapore-A1
-      - vpnpool 15
-      - "[免流]日本 A"
-      - _youtube：全网最强白嫖 50
-      - YouTube@阿阳AYANG
-      - 台湾-tg频道:@bpjzx2
-      - 台湾-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 17
-      - 香港-tg频道:@bpjzx2 18
-      - vpnpool 16
-      - 东京-tg频道:@bpjzx2
-      - 台湾(youtube阿伟科技)
-      - vpnpool 17
-      - 香港-tg频道:@bpjzx2 19
-      - 香港-tg频道:@bpjzx2 20
-      - vpnpool 18
-      - 香港-tg频道:@bpjzx2 21
-      - 中国
-      - 香港-tg频道:@bpjzx2 22
-      - vpnpool 19
-      - 台湾-tg频道:@bpjzx2 3
-      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
-      - vpnpool 20
-      - 亚洲
-      - 新加坡-tg频道:@bpjzx2
-      - vpnpool 21
+      - vpnhat-香港Kirino 3
+      - vpnhat-SG-OVH
+      - vpnhat-SG-OVH 2
+      - 新加坡-tg频道:@bpjzx2 5
+      - vpnhat-彰化Hinet-dip
+      - vpnhat-香港Kirino 4
+      - vpnhat-彰化Hinet-dip 2
+      - 新加坡-tg频道:@bpjzx2 8
+      - 香港-tg频道:@bpjzx2 4
+      - vpnhat-Seoul-Choopa
+      - vpnhat-香港Kirino 5
       - 新加坡-tg频道:@bpjzx2 2
-      - 台湾-tg频道:@bpjzx2 4
-      - vpnhat-Tokyo-DMIT
-      - 香港-tg频道:@bpjzx2 23
-      - 台湾-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 24
-      - vpnpool 22
-      - 首尔-tg频道:@bpjzx2
-      - vpnhat-Seoul-AWS
-      - 东京-tg频道:@bpjzx2 2
-      - v2ray 马来西亚(移动) [vpnpool]
-      - 首尔-tg频道:@bpjzx2 2
-      - CN-高速节点推荐：v1.mk/vip
-      - v2ray 日本(联通) [Netflix]
-      - 美国-tg频道:@bpjzx2 3
-      - vpnhat-Seoul-AWS 2
-      - 美国-tg频道:@bpjzx2 4
-      - vpnpool 23
-      - Australia-A1-沪日
+      - vpnhat-香港Kirino 6
+      - vpnhat-Seoul-Choopa 2
+      - vpnhat-Seoul-Choopa 3
+      - 新加坡-tg频道:@bpjzx2 4
+      - 新加坡-tg频道:@bpjzx2 6
+      - vpnhat-Seoul-Choopa 4
+      - vpnhat-SG-OVH 3
+      - vpnhat-Tokyo-Enzu
+      - vpnhat-Tokyo-Enzu 2
+      - vpnhat-Tokyo-Enzu 3
+      - vpnpool-Tokyo-DMIT-nf
+      - vpnhat-SG-OVH 4
+      - vpnhat-Seoul-Choopa 5
+      - vpnpool-Tokyo-DMIT-nf 2
+      - vpnhat-彰化Hinet-dip 3
+      - vpnpool-香港Nerocloud-nf
+      - vpnpool-香港Nerocloud-nf 2
+      - vpnpool-台中Hinet-dip
+      - vpnhat-Tokyo-Enzu 4
+      - vpnhat-Tokyo-Enzu 5
+      - vpnpool-香港Azure-nf
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-Tokyo-DMIT-nf 3
+      - vpnhat-香港Kirino 7
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnhat-Seoul-Choopa 6
+      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道:@bpjzx2 2
+      - vpnpool-香港HKT-dip 2
+      - vpnpool-香港Azure-nf 2
+      - vpnpool-SG-Nerocloud-nf 4
+      - vpnhat-Seoul-Choopa 7
+      - vpnpool-Tokyo-Linode
+      - vpnpool-香港HKT-dip 3
+      - vpnpool-Seoul-Oracle
+      - vpnhat-彰化Hinet-dip 4
+      - vpnpool-台中Hinet-dip 2
+      - vpnpool-SG-Nerocloud-nf 5
+      - vpnpool-新北Hinet-dip
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 6
+      - vpnpool-Seoul-Oracle 2
+      - 中国_0525372
+      - 韩国-中继-01
+      - vpnpool-香港Azure-nf 3
+      - 韩国-中继-04
+      - vpnpool-Tokyo-Linode 2
+      - 韩国-中继-03
+      - vpnhat-彰化Hinet-dip 7
+      - vpnpool-香港Azure-nf 4
+      - 新加坡-中继-02
+      - 香港04
+      - 台湾(youtube阿伟科技) 5
+      - 台湾(youtube阿伟科技) 4
+      - V304-1x-Seoul
+      - V314-1.5x-Seoul
+      - V312-1.5x-Chuncheon
+      - V313-1.5x-Seoul
+      - V314-1.5x-Seoul 2
+      - V303-1x-Seoul
+      - 香港03
+      - 6.78|+新加坡02
+      - sg
+      - BGP-01-香港-多地优化
+      - RELAY-117.28.242.156-006
+      - V2 | 日本 EMBY专用 | x1.5
+      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - CN_46 TG@peekfun |19.37Mb
+      - 亚洲
+      - V1 | 印度 | x1.0
+      - 香港DC
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -540,567 +408,434 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国-中继-10
-      - 新加坡-中继-06
-      - 日本-中继-04
-      - 韩国-中继-04
-      - (youtube阿伟科技) 9
-      - cmrelay01.yiyorelay.xyz:7702
-      - 日本-中继-03
-      - 新加坡-中继-07
-      - 新加坡-中继-02
-      - 新加坡-中继-04
-      - 52.194.147.44:11114
-      - 美国-中继-07
-      - 香港04
-      - Singapore-C5-佛电
-      - Japan-C2-沪日
-      - Singapore-C2-广港
-      - Singapore-C6-广港
-      - Japan-C6-沪日
-      - Japan-C3-广港
-      - 日本 02
-      - 日本 03
-      - 日本 04
-      - Japan-C5-沪日
-      - 日本 05
-      - Japan-C1-沪日-流媒体解锁
-      - Singapore-C4-沪日
-      - Singapore-C3-沪日
-      - Japan-C4-沪日
-      - Relay_韩国-日本_506
-      - America-C4-沪日
-      - America-C6-沪日
-      - America-C3-沪日
-      - America-C2-广港
-      - _JP_日本
-      - 香港03
-      - 香港05
-      - lv.5-中国==>日本3
-      - lv.5-中国==>日本4
-      - lv.5-中国==>香港4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - 吃宵夜了
-      - America-A1
-      - BGP-01-香港-多地优化
-      - 香港 06 移动/深港专线（2x）
-      - vpnpool
-      - 香港-tg频道:@bpjzx2
-      - vpnpool 2
-      - 香港-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 3
-      - 香港-tg频道:@bpjzx2 4
-      - vpnpool 3
-      - 香港-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 6
-      - 香港-tg频道:@bpjzx2 7
-      - vpnpool 4
-      - vpnpool 5
-      - vpnpool 6
-      - vpnpool 7
-      - 香港-tg频道:@bpjzx2 8
-      - vpnpool 8
       - 香港-tg频道:@bpjzx2 9
-      - vpnpool 9
+      - vpnhat-香港Kirino
+      - 香港-tg频道:@bpjzx2
+      - vpnhat-香港Kirino 2
+      - vpnpool-香港HKT-dip
       - 香港-tg频道:@bpjzx2 10
-      - 美国-tg频道:@bpjzx2
-      - vpnpool 10
-      - 香港-tg频道:@bpjzx2 11
-      - vpnpool 11
-      - RELAY-117.28.242.156-006
-      - vpnpool 12
-      - 香港-tg频道:@bpjzx2 12
-      - 香港-tg频道:@bpjzx2 13
-      - 香港-tg频道:@bpjzx2 14
-      - 美国-tg频道:@bpjzx2 2
-      - CN_46 TG@peekfun |19.37Mb
-      - vpnpool 13
-      - vpnpool 14
-      - 香港-tg频道:@bpjzx2 15
-      - 香港-tg频道:@bpjzx2 16
-      - Singapore-A1
-      - vpnpool 15
-      - "[免流]日本 A"
-      - _youtube：全网最强白嫖 50
-      - YouTube@阿阳AYANG
-      - 台湾-tg频道:@bpjzx2
-      - 台湾-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 17
-      - 香港-tg频道:@bpjzx2 18
-      - vpnpool 16
-      - 东京-tg频道:@bpjzx2
-      - 台湾(youtube阿伟科技)
-      - vpnpool 17
-      - 香港-tg频道:@bpjzx2 19
-      - 香港-tg频道:@bpjzx2 20
-      - vpnpool 18
-      - 香港-tg频道:@bpjzx2 21
-      - 中国
-      - 香港-tg频道:@bpjzx2 22
-      - vpnpool 19
-      - 台湾-tg频道:@bpjzx2 3
-      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
-      - vpnpool 20
-      - 亚洲
-      - 新加坡-tg频道:@bpjzx2
-      - vpnpool 21
+      - vpnhat-香港Kirino 3
+      - vpnhat-SG-OVH
+      - vpnhat-SG-OVH 2
+      - 新加坡-tg频道:@bpjzx2 5
+      - vpnhat-彰化Hinet-dip
+      - vpnhat-香港Kirino 4
+      - vpnhat-彰化Hinet-dip 2
+      - 新加坡-tg频道:@bpjzx2 8
+      - 香港-tg频道:@bpjzx2 4
+      - vpnhat-Seoul-Choopa
+      - vpnhat-香港Kirino 5
       - 新加坡-tg频道:@bpjzx2 2
-      - 台湾-tg频道:@bpjzx2 4
-      - vpnhat-Tokyo-DMIT
-      - 香港-tg频道:@bpjzx2 23
-      - 台湾-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 24
-      - vpnpool 22
-      - 首尔-tg频道:@bpjzx2
-      - vpnhat-Seoul-AWS
-      - 东京-tg频道:@bpjzx2 2
-      - v2ray 马来西亚(移动) [vpnpool]
-      - 首尔-tg频道:@bpjzx2 2
-      - CN-高速节点推荐：v1.mk/vip
-      - v2ray 日本(联通) [Netflix]
-      - 美国-tg频道:@bpjzx2 3
-      - vpnhat-Seoul-AWS 2
-      - 美国-tg频道:@bpjzx2 4
-      - vpnpool 23
-      - Australia-A1-沪日
+      - vpnhat-香港Kirino 6
+      - vpnhat-Seoul-Choopa 2
+      - vpnhat-Seoul-Choopa 3
+      - 新加坡-tg频道:@bpjzx2 4
+      - 新加坡-tg频道:@bpjzx2 6
+      - vpnhat-Seoul-Choopa 4
+      - vpnhat-SG-OVH 3
+      - vpnhat-Tokyo-Enzu
+      - vpnhat-Tokyo-Enzu 2
+      - vpnhat-Tokyo-Enzu 3
+      - vpnpool-Tokyo-DMIT-nf
+      - vpnhat-SG-OVH 4
+      - vpnhat-Seoul-Choopa 5
+      - vpnpool-Tokyo-DMIT-nf 2
+      - vpnhat-彰化Hinet-dip 3
+      - vpnpool-香港Nerocloud-nf
+      - vpnpool-香港Nerocloud-nf 2
+      - vpnpool-台中Hinet-dip
+      - vpnhat-Tokyo-Enzu 4
+      - vpnhat-Tokyo-Enzu 5
+      - vpnpool-香港Azure-nf
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-Tokyo-DMIT-nf 3
+      - vpnhat-香港Kirino 7
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnhat-Seoul-Choopa 6
+      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道:@bpjzx2 2
+      - vpnpool-香港HKT-dip 2
+      - vpnpool-香港Azure-nf 2
+      - vpnpool-SG-Nerocloud-nf 4
+      - vpnhat-Seoul-Choopa 7
+      - vpnpool-Tokyo-Linode
+      - vpnpool-香港HKT-dip 3
+      - vpnpool-Seoul-Oracle
+      - vpnhat-彰化Hinet-dip 4
+      - vpnpool-台中Hinet-dip 2
+      - vpnpool-SG-Nerocloud-nf 5
+      - vpnpool-新北Hinet-dip
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 6
+      - vpnpool-Seoul-Oracle 2
+      - 中国_0525372
+      - 韩国-中继-01
+      - vpnpool-香港Azure-nf 3
+      - 韩国-中继-04
+      - vpnpool-Tokyo-Linode 2
+      - 韩国-中继-03
+      - vpnhat-彰化Hinet-dip 7
+      - vpnpool-香港Azure-nf 4
+      - 新加坡-中继-02
+      - 香港04
+      - 台湾(youtube阿伟科技) 5
+      - 台湾(youtube阿伟科技) 4
+      - V304-1x-Seoul
+      - V314-1.5x-Seoul
+      - V312-1.5x-Chuncheon
+      - V313-1.5x-Seoul
+      - V314-1.5x-Seoul 2
+      - V303-1x-Seoul
+      - 香港03
+      - 6.78|+新加坡02
+      - sg
+      - BGP-01-香港-多地优化
+      - RELAY-117.28.242.156-006
+      - V2 | 日本 EMBY专用 | x1.5
+      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - CN_46 TG@peekfun |19.37Mb
+      - 亚洲
+      - V1 | 印度 | x1.0
+      - 香港DC
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港04
-      - Singapore-C2-广港
-      - Singapore-C6-广港
-      - Japan-C3-广港
-      - America-C2-广港
-      - 香港03
-      - 香港05
-      - lv.5-中国==>香港4
-      - BGP-01-香港-多地优化
-      - 香港 06 移动/深港专线（2x）
-      - 香港-tg频道:@bpjzx2
-      - 香港-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 3
-      - 香港-tg频道:@bpjzx2 4
-      - 香港-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 6
-      - 香港-tg频道:@bpjzx2 7
-      - 香港-tg频道:@bpjzx2 8
       - 香港-tg频道:@bpjzx2 9
+      - vpnhat-香港Kirino
+      - 香港-tg频道:@bpjzx2
+      - vpnhat-香港Kirino 2
+      - vpnpool-香港HKT-dip
       - 香港-tg频道:@bpjzx2 10
-      - 香港-tg频道:@bpjzx2 11
-      - 香港-tg频道:@bpjzx2 12
-      - 香港-tg频道:@bpjzx2 13
-      - 香港-tg频道:@bpjzx2 14
-      - 香港-tg频道:@bpjzx2 15
-      - 香港-tg频道:@bpjzx2 16
-      - 台湾-tg频道:@bpjzx2
-      - 台湾-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 17
-      - 香港-tg频道:@bpjzx2 18
-      - 台湾(youtube阿伟科技)
-      - 香港-tg频道:@bpjzx2 19
-      - 香港-tg频道:@bpjzx2 20
-      - 香港-tg频道:@bpjzx2 21
-      - 香港-tg频道:@bpjzx2 22
-      - 台湾-tg频道:@bpjzx2 3
-      - 台湾-tg频道:@bpjzx2 4
-      - 香港-tg频道:@bpjzx2 23
-      - 台湾-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 24
+      - vpnhat-香港Kirino 3
+      - vpnhat-彰化Hinet-dip
+      - vpnhat-香港Kirino 4
+      - vpnhat-彰化Hinet-dip 2
+      - 香港-tg频道:@bpjzx2 4
+      - vpnhat-香港Kirino 5
+      - vpnhat-香港Kirino 6
+      - vpnhat-彰化Hinet-dip 3
+      - vpnpool-香港Nerocloud-nf
+      - vpnpool-香港Nerocloud-nf 2
+      - vpnpool-台中Hinet-dip
+      - vpnpool-香港Azure-nf
+      - vpnhat-香港Kirino 7
+      - 香港-tg频道:@bpjzx2 2
+      - vpnpool-香港HKT-dip 2
+      - vpnpool-香港Azure-nf 2
+      - vpnpool-香港HKT-dip 3
+      - vpnhat-彰化Hinet-dip 4
+      - vpnpool-台中Hinet-dip 2
+      - vpnpool-新北Hinet-dip
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 6
+      - vpnpool-香港Azure-nf 3
+      - vpnhat-彰化Hinet-dip 7
+      - vpnpool-香港Azure-nf 4
+      - 香港04
+      - 台湾(youtube阿伟科技) 5
+      - 台湾(youtube阿伟科技) 4
+      - 香港03
+      - BGP-01-香港-多地优化
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - 香港DC
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国-中继-10
-      - 新加坡-中继-06
-      - 日本-中继-04
-      - 韩国-中继-04
-      - (youtube阿伟科技) 9
-      - cmrelay01.yiyorelay.xyz:7702
-      - 日本-中继-03
-      - 新加坡-中继-07
-      - 新加坡-中继-02
-      - 新加坡-中继-04
-      - 52.194.147.44:11114
-      - 美国-中继-07
-      - 香港04
-      - Singapore-C5-佛电
-      - Japan-C2-沪日
-      - Singapore-C2-广港
-      - Singapore-C6-广港
-      - Japan-C6-沪日
-      - Japan-C3-广港
-      - 日本 02
-      - 日本 03
-      - 日本 04
-      - Japan-C5-沪日
-      - 日本 05
-      - Japan-C1-沪日-流媒体解锁
-      - Singapore-C4-沪日
-      - Singapore-C3-沪日
-      - Japan-C4-沪日
-      - Relay_韩国-日本_506
-      - America-C4-沪日
-      - America-C6-沪日
-      - America-C3-沪日
-      - America-C2-广港
-      - _JP_日本
-      - 香港03
-      - 香港05
-      - lv.5-中国==>日本3
-      - lv.5-中国==>日本4
-      - lv.5-中国==>香港4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - 吃宵夜了
-      - America-A1
-      - BGP-01-香港-多地优化
-      - 香港 06 移动/深港专线（2x）
-      - vpnpool
-      - 香港-tg频道:@bpjzx2
-      - vpnpool 2
-      - 香港-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 3
-      - 香港-tg频道:@bpjzx2 4
-      - vpnpool 3
-      - 香港-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 6
-      - 香港-tg频道:@bpjzx2 7
-      - vpnpool 4
-      - vpnpool 5
-      - vpnpool 6
-      - vpnpool 7
-      - 香港-tg频道:@bpjzx2 8
-      - vpnpool 8
       - 香港-tg频道:@bpjzx2 9
-      - vpnpool 9
+      - vpnhat-香港Kirino
+      - 香港-tg频道:@bpjzx2
+      - vpnhat-香港Kirino 2
+      - vpnpool-香港HKT-dip
       - 香港-tg频道:@bpjzx2 10
-      - 美国-tg频道:@bpjzx2
-      - vpnpool 10
-      - 香港-tg频道:@bpjzx2 11
-      - vpnpool 11
-      - RELAY-117.28.242.156-006
-      - vpnpool 12
-      - 香港-tg频道:@bpjzx2 12
-      - 香港-tg频道:@bpjzx2 13
-      - 香港-tg频道:@bpjzx2 14
-      - 美国-tg频道:@bpjzx2 2
-      - CN_46 TG@peekfun |19.37Mb
-      - vpnpool 13
-      - vpnpool 14
-      - 香港-tg频道:@bpjzx2 15
-      - 香港-tg频道:@bpjzx2 16
-      - Singapore-A1
-      - vpnpool 15
-      - "[免流]日本 A"
-      - _youtube：全网最强白嫖 50
-      - YouTube@阿阳AYANG
-      - 台湾-tg频道:@bpjzx2
-      - 台湾-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 17
-      - 香港-tg频道:@bpjzx2 18
-      - vpnpool 16
-      - 东京-tg频道:@bpjzx2
-      - 台湾(youtube阿伟科技)
-      - vpnpool 17
-      - 香港-tg频道:@bpjzx2 19
-      - 香港-tg频道:@bpjzx2 20
-      - vpnpool 18
-      - 香港-tg频道:@bpjzx2 21
-      - 中国
-      - 香港-tg频道:@bpjzx2 22
-      - vpnpool 19
-      - 台湾-tg频道:@bpjzx2 3
-      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
-      - vpnpool 20
-      - 亚洲
-      - 新加坡-tg频道:@bpjzx2
-      - vpnpool 21
+      - vpnhat-香港Kirino 3
+      - vpnhat-SG-OVH
+      - vpnhat-SG-OVH 2
+      - 新加坡-tg频道:@bpjzx2 5
+      - vpnhat-彰化Hinet-dip
+      - vpnhat-香港Kirino 4
+      - vpnhat-彰化Hinet-dip 2
+      - 新加坡-tg频道:@bpjzx2 8
+      - 香港-tg频道:@bpjzx2 4
+      - vpnhat-Seoul-Choopa
+      - vpnhat-香港Kirino 5
       - 新加坡-tg频道:@bpjzx2 2
-      - 台湾-tg频道:@bpjzx2 4
-      - vpnhat-Tokyo-DMIT
-      - 香港-tg频道:@bpjzx2 23
-      - 台湾-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 24
-      - vpnpool 22
-      - 首尔-tg频道:@bpjzx2
-      - vpnhat-Seoul-AWS
-      - 东京-tg频道:@bpjzx2 2
-      - v2ray 马来西亚(移动) [vpnpool]
-      - 首尔-tg频道:@bpjzx2 2
-      - CN-高速节点推荐：v1.mk/vip
-      - v2ray 日本(联通) [Netflix]
-      - 美国-tg频道:@bpjzx2 3
-      - vpnhat-Seoul-AWS 2
-      - 美国-tg频道:@bpjzx2 4
-      - vpnpool 23
-      - Australia-A1-沪日
+      - vpnhat-香港Kirino 6
+      - vpnhat-Seoul-Choopa 2
+      - vpnhat-Seoul-Choopa 3
+      - 新加坡-tg频道:@bpjzx2 4
+      - 新加坡-tg频道:@bpjzx2 6
+      - vpnhat-Seoul-Choopa 4
+      - vpnhat-SG-OVH 3
+      - vpnhat-Tokyo-Enzu
+      - vpnhat-Tokyo-Enzu 2
+      - vpnhat-Tokyo-Enzu 3
+      - vpnpool-Tokyo-DMIT-nf
+      - vpnhat-SG-OVH 4
+      - vpnhat-Seoul-Choopa 5
+      - vpnpool-Tokyo-DMIT-nf 2
+      - vpnhat-彰化Hinet-dip 3
+      - vpnpool-香港Nerocloud-nf
+      - vpnpool-香港Nerocloud-nf 2
+      - vpnpool-台中Hinet-dip
+      - vpnhat-Tokyo-Enzu 4
+      - vpnhat-Tokyo-Enzu 5
+      - vpnpool-香港Azure-nf
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-Tokyo-DMIT-nf 3
+      - vpnhat-香港Kirino 7
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnhat-Seoul-Choopa 6
+      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道:@bpjzx2 2
+      - vpnpool-香港HKT-dip 2
+      - vpnpool-香港Azure-nf 2
+      - vpnpool-SG-Nerocloud-nf 4
+      - vpnhat-Seoul-Choopa 7
+      - vpnpool-Tokyo-Linode
+      - vpnpool-香港HKT-dip 3
+      - vpnpool-Seoul-Oracle
+      - vpnhat-彰化Hinet-dip 4
+      - vpnpool-台中Hinet-dip 2
+      - vpnpool-SG-Nerocloud-nf 5
+      - vpnpool-新北Hinet-dip
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 6
+      - vpnpool-Seoul-Oracle 2
+      - 中国_0525372
+      - 韩国-中继-01
+      - vpnpool-香港Azure-nf 3
+      - 韩国-中继-04
+      - vpnpool-Tokyo-Linode 2
+      - 韩国-中继-03
+      - vpnhat-彰化Hinet-dip 7
+      - vpnpool-香港Azure-nf 4
+      - 新加坡-中继-02
+      - 香港04
+      - 台湾(youtube阿伟科技) 5
+      - 台湾(youtube阿伟科技) 4
+      - V304-1x-Seoul
+      - V314-1.5x-Seoul
+      - V312-1.5x-Chuncheon
+      - V313-1.5x-Seoul
+      - V314-1.5x-Seoul 2
+      - V303-1x-Seoul
+      - 香港03
+      - 6.78|+新加坡02
+      - sg
+      - BGP-01-香港-多地优化
+      - RELAY-117.28.242.156-006
+      - V2 | 日本 EMBY专用 | x1.5
+      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - CN_46 TG@peekfun |19.37Mb
+      - 亚洲
+      - V1 | 印度 | x1.0
+      - 香港DC
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国-中继-10
-      - 新加坡-中继-06
-      - 日本-中继-04
-      - 韩国-中继-04
-      - (youtube阿伟科技) 9
-      - cmrelay01.yiyorelay.xyz:7702
-      - 日本-中继-03
-      - 新加坡-中继-07
-      - 新加坡-中继-02
-      - 新加坡-中继-04
-      - 52.194.147.44:11114
-      - 美国-中继-07
-      - 香港04
-      - Singapore-C5-佛电
-      - Japan-C2-沪日
-      - Singapore-C2-广港
-      - Singapore-C6-广港
-      - Japan-C6-沪日
-      - Japan-C3-广港
-      - 日本 02
-      - 日本 03
-      - 日本 04
-      - Japan-C5-沪日
-      - 日本 05
-      - Japan-C1-沪日-流媒体解锁
-      - Singapore-C4-沪日
-      - Singapore-C3-沪日
-      - Japan-C4-沪日
-      - Relay_韩国-日本_506
-      - America-C4-沪日
-      - America-C6-沪日
-      - America-C3-沪日
-      - America-C2-广港
-      - _JP_日本
-      - 香港03
-      - 香港05
-      - lv.5-中国==>日本3
-      - lv.5-中国==>日本4
-      - lv.5-中国==>香港4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - 吃宵夜了
-      - America-A1
-      - BGP-01-香港-多地优化
-      - 香港 06 移动/深港专线（2x）
-      - vpnpool
-      - 香港-tg频道:@bpjzx2
-      - vpnpool 2
-      - 香港-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 3
-      - 香港-tg频道:@bpjzx2 4
-      - vpnpool 3
-      - 香港-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 6
-      - 香港-tg频道:@bpjzx2 7
-      - vpnpool 4
-      - vpnpool 5
-      - vpnpool 6
-      - vpnpool 7
-      - 香港-tg频道:@bpjzx2 8
-      - vpnpool 8
       - 香港-tg频道:@bpjzx2 9
-      - vpnpool 9
+      - vpnhat-香港Kirino
+      - 香港-tg频道:@bpjzx2
+      - vpnhat-香港Kirino 2
+      - vpnpool-香港HKT-dip
       - 香港-tg频道:@bpjzx2 10
-      - 美国-tg频道:@bpjzx2
-      - vpnpool 10
-      - 香港-tg频道:@bpjzx2 11
-      - vpnpool 11
-      - RELAY-117.28.242.156-006
-      - vpnpool 12
-      - 香港-tg频道:@bpjzx2 12
-      - 香港-tg频道:@bpjzx2 13
-      - 香港-tg频道:@bpjzx2 14
-      - 美国-tg频道:@bpjzx2 2
-      - CN_46 TG@peekfun |19.37Mb
-      - vpnpool 13
-      - vpnpool 14
-      - 香港-tg频道:@bpjzx2 15
-      - 香港-tg频道:@bpjzx2 16
-      - Singapore-A1
-      - vpnpool 15
-      - "[免流]日本 A"
-      - _youtube：全网最强白嫖 50
-      - YouTube@阿阳AYANG
-      - 台湾-tg频道:@bpjzx2
-      - 台湾-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 17
-      - 香港-tg频道:@bpjzx2 18
-      - vpnpool 16
-      - 东京-tg频道:@bpjzx2
-      - 台湾(youtube阿伟科技)
-      - vpnpool 17
-      - 香港-tg频道:@bpjzx2 19
-      - 香港-tg频道:@bpjzx2 20
-      - vpnpool 18
-      - 香港-tg频道:@bpjzx2 21
-      - 中国
-      - 香港-tg频道:@bpjzx2 22
-      - vpnpool 19
-      - 台湾-tg频道:@bpjzx2 3
-      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
-      - vpnpool 20
-      - 亚洲
-      - 新加坡-tg频道:@bpjzx2
-      - vpnpool 21
+      - vpnhat-香港Kirino 3
+      - vpnhat-SG-OVH
+      - vpnhat-SG-OVH 2
+      - 新加坡-tg频道:@bpjzx2 5
+      - vpnhat-彰化Hinet-dip
+      - vpnhat-香港Kirino 4
+      - vpnhat-彰化Hinet-dip 2
+      - 新加坡-tg频道:@bpjzx2 8
+      - 香港-tg频道:@bpjzx2 4
+      - vpnhat-Seoul-Choopa
+      - vpnhat-香港Kirino 5
       - 新加坡-tg频道:@bpjzx2 2
-      - 台湾-tg频道:@bpjzx2 4
-      - vpnhat-Tokyo-DMIT
-      - 香港-tg频道:@bpjzx2 23
-      - 台湾-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 24
-      - vpnpool 22
-      - 首尔-tg频道:@bpjzx2
-      - vpnhat-Seoul-AWS
-      - 东京-tg频道:@bpjzx2 2
-      - v2ray 马来西亚(移动) [vpnpool]
-      - 首尔-tg频道:@bpjzx2 2
-      - CN-高速节点推荐：v1.mk/vip
-      - v2ray 日本(联通) [Netflix]
-      - 美国-tg频道:@bpjzx2 3
-      - vpnhat-Seoul-AWS 2
-      - 美国-tg频道:@bpjzx2 4
-      - vpnpool 23
-      - Australia-A1-沪日
+      - vpnhat-香港Kirino 6
+      - vpnhat-Seoul-Choopa 2
+      - vpnhat-Seoul-Choopa 3
+      - 新加坡-tg频道:@bpjzx2 4
+      - 新加坡-tg频道:@bpjzx2 6
+      - vpnhat-Seoul-Choopa 4
+      - vpnhat-SG-OVH 3
+      - vpnhat-Tokyo-Enzu
+      - vpnhat-Tokyo-Enzu 2
+      - vpnhat-Tokyo-Enzu 3
+      - vpnpool-Tokyo-DMIT-nf
+      - vpnhat-SG-OVH 4
+      - vpnhat-Seoul-Choopa 5
+      - vpnpool-Tokyo-DMIT-nf 2
+      - vpnhat-彰化Hinet-dip 3
+      - vpnpool-香港Nerocloud-nf
+      - vpnpool-香港Nerocloud-nf 2
+      - vpnpool-台中Hinet-dip
+      - vpnhat-Tokyo-Enzu 4
+      - vpnhat-Tokyo-Enzu 5
+      - vpnpool-香港Azure-nf
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-Tokyo-DMIT-nf 3
+      - vpnhat-香港Kirino 7
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnhat-Seoul-Choopa 6
+      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道:@bpjzx2 2
+      - vpnpool-香港HKT-dip 2
+      - vpnpool-香港Azure-nf 2
+      - vpnpool-SG-Nerocloud-nf 4
+      - vpnhat-Seoul-Choopa 7
+      - vpnpool-Tokyo-Linode
+      - vpnpool-香港HKT-dip 3
+      - vpnpool-Seoul-Oracle
+      - vpnhat-彰化Hinet-dip 4
+      - vpnpool-台中Hinet-dip 2
+      - vpnpool-SG-Nerocloud-nf 5
+      - vpnpool-新北Hinet-dip
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 6
+      - vpnpool-Seoul-Oracle 2
+      - 中国_0525372
+      - 韩国-中继-01
+      - vpnpool-香港Azure-nf 3
+      - 韩国-中继-04
+      - vpnpool-Tokyo-Linode 2
+      - 韩国-中继-03
+      - vpnhat-彰化Hinet-dip 7
+      - vpnpool-香港Azure-nf 4
+      - 新加坡-中继-02
+      - 香港04
+      - 台湾(youtube阿伟科技) 5
+      - 台湾(youtube阿伟科技) 4
+      - V304-1x-Seoul
+      - V314-1.5x-Seoul
+      - V312-1.5x-Chuncheon
+      - V313-1.5x-Seoul
+      - V314-1.5x-Seoul 2
+      - V303-1x-Seoul
+      - 香港03
+      - 6.78|+新加坡02
+      - sg
+      - BGP-01-香港-多地优化
+      - RELAY-117.28.242.156-006
+      - V2 | 日本 EMBY专用 | x1.5
+      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - CN_46 TG@peekfun |19.37Mb
+      - 亚洲
+      - V1 | 印度 | x1.0
+      - 香港DC
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国-中继-10
-      - 新加坡-中继-06
-      - 日本-中继-04
-      - 韩国-中继-04
-      - (youtube阿伟科技) 9
-      - cmrelay01.yiyorelay.xyz:7702
-      - 日本-中继-03
-      - 新加坡-中继-07
-      - 新加坡-中继-02
-      - 新加坡-中继-04
-      - 52.194.147.44:11114
-      - 美国-中继-07
-      - 香港04
-      - Singapore-C5-佛电
-      - Japan-C2-沪日
-      - Singapore-C2-广港
-      - Singapore-C6-广港
-      - Japan-C6-沪日
-      - Japan-C3-广港
-      - 日本 02
-      - 日本 03
-      - 日本 04
-      - Japan-C5-沪日
-      - 日本 05
-      - Japan-C1-沪日-流媒体解锁
-      - Singapore-C4-沪日
-      - Singapore-C3-沪日
-      - Japan-C4-沪日
-      - Relay_韩国-日本_506
-      - America-C4-沪日
-      - America-C6-沪日
-      - America-C3-沪日
-      - America-C2-广港
-      - _JP_日本
-      - 香港03
-      - 香港05
-      - lv.5-中国==>日本3
-      - lv.5-中国==>日本4
-      - lv.5-中国==>香港4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - 吃宵夜了
-      - America-A1
-      - BGP-01-香港-多地优化
-      - 香港 06 移动/深港专线（2x）
-      - vpnpool
-      - 香港-tg频道:@bpjzx2
-      - vpnpool 2
-      - 香港-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 3
-      - 香港-tg频道:@bpjzx2 4
-      - vpnpool 3
-      - 香港-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 6
-      - 香港-tg频道:@bpjzx2 7
-      - vpnpool 4
-      - vpnpool 5
-      - vpnpool 6
-      - vpnpool 7
-      - 香港-tg频道:@bpjzx2 8
-      - vpnpool 8
       - 香港-tg频道:@bpjzx2 9
-      - vpnpool 9
+      - vpnhat-香港Kirino
+      - 香港-tg频道:@bpjzx2
+      - vpnhat-香港Kirino 2
+      - vpnpool-香港HKT-dip
       - 香港-tg频道:@bpjzx2 10
-      - 美国-tg频道:@bpjzx2
-      - vpnpool 10
-      - 香港-tg频道:@bpjzx2 11
-      - vpnpool 11
-      - RELAY-117.28.242.156-006
-      - vpnpool 12
-      - 香港-tg频道:@bpjzx2 12
-      - 香港-tg频道:@bpjzx2 13
-      - 香港-tg频道:@bpjzx2 14
-      - 美国-tg频道:@bpjzx2 2
-      - CN_46 TG@peekfun |19.37Mb
-      - vpnpool 13
-      - vpnpool 14
-      - 香港-tg频道:@bpjzx2 15
-      - 香港-tg频道:@bpjzx2 16
-      - Singapore-A1
-      - vpnpool 15
-      - "[免流]日本 A"
-      - _youtube：全网最强白嫖 50
-      - YouTube@阿阳AYANG
-      - 台湾-tg频道:@bpjzx2
-      - 台湾-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 17
-      - 香港-tg频道:@bpjzx2 18
-      - vpnpool 16
-      - 东京-tg频道:@bpjzx2
-      - 台湾(youtube阿伟科技)
-      - vpnpool 17
-      - 香港-tg频道:@bpjzx2 19
-      - 香港-tg频道:@bpjzx2 20
-      - vpnpool 18
-      - 香港-tg频道:@bpjzx2 21
-      - 中国
-      - 香港-tg频道:@bpjzx2 22
-      - vpnpool 19
-      - 台湾-tg频道:@bpjzx2 3
-      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
-      - vpnpool 20
-      - 亚洲
-      - 新加坡-tg频道:@bpjzx2
-      - vpnpool 21
+      - vpnhat-香港Kirino 3
+      - vpnhat-SG-OVH
+      - vpnhat-SG-OVH 2
+      - 新加坡-tg频道:@bpjzx2 5
+      - vpnhat-彰化Hinet-dip
+      - vpnhat-香港Kirino 4
+      - vpnhat-彰化Hinet-dip 2
+      - 新加坡-tg频道:@bpjzx2 8
+      - 香港-tg频道:@bpjzx2 4
+      - vpnhat-Seoul-Choopa
+      - vpnhat-香港Kirino 5
       - 新加坡-tg频道:@bpjzx2 2
-      - 台湾-tg频道:@bpjzx2 4
-      - vpnhat-Tokyo-DMIT
-      - 香港-tg频道:@bpjzx2 23
-      - 台湾-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 24
-      - vpnpool 22
-      - 首尔-tg频道:@bpjzx2
-      - vpnhat-Seoul-AWS
-      - 东京-tg频道:@bpjzx2 2
-      - v2ray 马来西亚(移动) [vpnpool]
-      - 首尔-tg频道:@bpjzx2 2
-      - CN-高速节点推荐：v1.mk/vip
-      - v2ray 日本(联通) [Netflix]
-      - 美国-tg频道:@bpjzx2 3
-      - vpnhat-Seoul-AWS 2
-      - 美国-tg频道:@bpjzx2 4
-      - vpnpool 23
-      - Australia-A1-沪日
+      - vpnhat-香港Kirino 6
+      - vpnhat-Seoul-Choopa 2
+      - vpnhat-Seoul-Choopa 3
+      - 新加坡-tg频道:@bpjzx2 4
+      - 新加坡-tg频道:@bpjzx2 6
+      - vpnhat-Seoul-Choopa 4
+      - vpnhat-SG-OVH 3
+      - vpnhat-Tokyo-Enzu
+      - vpnhat-Tokyo-Enzu 2
+      - vpnhat-Tokyo-Enzu 3
+      - vpnpool-Tokyo-DMIT-nf
+      - vpnhat-SG-OVH 4
+      - vpnhat-Seoul-Choopa 5
+      - vpnpool-Tokyo-DMIT-nf 2
+      - vpnhat-彰化Hinet-dip 3
+      - vpnpool-香港Nerocloud-nf
+      - vpnpool-香港Nerocloud-nf 2
+      - vpnpool-台中Hinet-dip
+      - vpnhat-Tokyo-Enzu 4
+      - vpnhat-Tokyo-Enzu 5
+      - vpnpool-香港Azure-nf
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-Tokyo-DMIT-nf 3
+      - vpnhat-香港Kirino 7
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnhat-Seoul-Choopa 6
+      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道:@bpjzx2 2
+      - vpnpool-香港HKT-dip 2
+      - vpnpool-香港Azure-nf 2
+      - vpnpool-SG-Nerocloud-nf 4
+      - vpnhat-Seoul-Choopa 7
+      - vpnpool-Tokyo-Linode
+      - vpnpool-香港HKT-dip 3
+      - vpnpool-Seoul-Oracle
+      - vpnhat-彰化Hinet-dip 4
+      - vpnpool-台中Hinet-dip 2
+      - vpnpool-SG-Nerocloud-nf 5
+      - vpnpool-新北Hinet-dip
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 6
+      - vpnpool-Seoul-Oracle 2
+      - 中国_0525372
+      - 韩国-中继-01
+      - vpnpool-香港Azure-nf 3
+      - 韩国-中继-04
+      - vpnpool-Tokyo-Linode 2
+      - 韩国-中继-03
+      - vpnhat-彰化Hinet-dip 7
+      - vpnpool-香港Azure-nf 4
+      - 新加坡-中继-02
+      - 香港04
+      - 台湾(youtube阿伟科技) 5
+      - 台湾(youtube阿伟科技) 4
+      - V304-1x-Seoul
+      - V314-1.5x-Seoul
+      - V312-1.5x-Chuncheon
+      - V313-1.5x-Seoul
+      - V314-1.5x-Seoul 2
+      - V303-1x-Seoul
+      - 香港03
+      - 6.78|+新加坡02
+      - sg
+      - BGP-01-香港-多地优化
+      - RELAY-117.28.242.156-006
+      - V2 | 日本 EMBY专用 | x1.5
+      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - CN_46 TG@peekfun |19.37Mb
+      - 亚洲
+      - V1 | 印度 | x1.0
+      - 香港DC
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1116,131 +851,98 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国-中继-10
-      - 新加坡-中继-06
-      - 日本-中继-04
-      - 韩国-中继-04
-      - (youtube阿伟科技) 9
-      - cmrelay01.yiyorelay.xyz:7702
-      - 日本-中继-03
-      - 新加坡-中继-07
-      - 新加坡-中继-02
-      - 新加坡-中继-04
-      - 52.194.147.44:11114
-      - 美国-中继-07
-      - 香港04
-      - Singapore-C5-佛电
-      - Japan-C2-沪日
-      - Singapore-C2-广港
-      - Singapore-C6-广港
-      - Japan-C6-沪日
-      - Japan-C3-广港
-      - 日本 02
-      - 日本 03
-      - 日本 04
-      - Japan-C5-沪日
-      - 日本 05
-      - Japan-C1-沪日-流媒体解锁
-      - Singapore-C4-沪日
-      - Singapore-C3-沪日
-      - Japan-C4-沪日
-      - Relay_韩国-日本_506
-      - America-C4-沪日
-      - America-C6-沪日
-      - America-C3-沪日
-      - America-C2-广港
-      - _JP_日本
-      - 香港03
-      - 香港05
-      - lv.5-中国==>日本3
-      - lv.5-中国==>日本4
-      - lv.5-中国==>香港4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - 吃宵夜了
-      - America-A1
-      - BGP-01-香港-多地优化
-      - 香港 06 移动/深港专线（2x）
-      - vpnpool
-      - 香港-tg频道:@bpjzx2
-      - vpnpool 2
-      - 香港-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 3
-      - 香港-tg频道:@bpjzx2 4
-      - vpnpool 3
-      - 香港-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 6
-      - 香港-tg频道:@bpjzx2 7
-      - vpnpool 4
-      - vpnpool 5
-      - vpnpool 6
-      - vpnpool 7
-      - 香港-tg频道:@bpjzx2 8
-      - vpnpool 8
       - 香港-tg频道:@bpjzx2 9
-      - vpnpool 9
+      - vpnhat-香港Kirino
+      - 香港-tg频道:@bpjzx2
+      - vpnhat-香港Kirino 2
+      - vpnpool-香港HKT-dip
       - 香港-tg频道:@bpjzx2 10
-      - 美国-tg频道:@bpjzx2
-      - vpnpool 10
-      - 香港-tg频道:@bpjzx2 11
-      - vpnpool 11
-      - RELAY-117.28.242.156-006
-      - vpnpool 12
-      - 香港-tg频道:@bpjzx2 12
-      - 香港-tg频道:@bpjzx2 13
-      - 香港-tg频道:@bpjzx2 14
-      - 美国-tg频道:@bpjzx2 2
-      - CN_46 TG@peekfun |19.37Mb
-      - vpnpool 13
-      - vpnpool 14
-      - 香港-tg频道:@bpjzx2 15
-      - 香港-tg频道:@bpjzx2 16
-      - Singapore-A1
-      - vpnpool 15
-      - "[免流]日本 A"
-      - _youtube：全网最强白嫖 50
-      - YouTube@阿阳AYANG
-      - 台湾-tg频道:@bpjzx2
-      - 台湾-tg频道:@bpjzx2 2
-      - 香港-tg频道:@bpjzx2 17
-      - 香港-tg频道:@bpjzx2 18
-      - vpnpool 16
-      - 东京-tg频道:@bpjzx2
-      - 台湾(youtube阿伟科技)
-      - vpnpool 17
-      - 香港-tg频道:@bpjzx2 19
-      - 香港-tg频道:@bpjzx2 20
-      - vpnpool 18
-      - 香港-tg频道:@bpjzx2 21
-      - 中国
-      - 香港-tg频道:@bpjzx2 22
-      - vpnpool 19
-      - 台湾-tg频道:@bpjzx2 3
-      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
-      - vpnpool 20
-      - 亚洲
-      - 新加坡-tg频道:@bpjzx2
-      - vpnpool 21
+      - vpnhat-香港Kirino 3
+      - vpnhat-SG-OVH
+      - vpnhat-SG-OVH 2
+      - 新加坡-tg频道:@bpjzx2 5
+      - vpnhat-彰化Hinet-dip
+      - vpnhat-香港Kirino 4
+      - vpnhat-彰化Hinet-dip 2
+      - 新加坡-tg频道:@bpjzx2 8
+      - 香港-tg频道:@bpjzx2 4
+      - vpnhat-Seoul-Choopa
+      - vpnhat-香港Kirino 5
       - 新加坡-tg频道:@bpjzx2 2
-      - 台湾-tg频道:@bpjzx2 4
-      - vpnhat-Tokyo-DMIT
-      - 香港-tg频道:@bpjzx2 23
-      - 台湾-tg频道:@bpjzx2 5
-      - 香港-tg频道:@bpjzx2 24
-      - vpnpool 22
-      - 首尔-tg频道:@bpjzx2
-      - vpnhat-Seoul-AWS
-      - 东京-tg频道:@bpjzx2 2
-      - v2ray 马来西亚(移动) [vpnpool]
-      - 首尔-tg频道:@bpjzx2 2
-      - CN-高速节点推荐：v1.mk/vip
-      - v2ray 日本(联通) [Netflix]
-      - 美国-tg频道:@bpjzx2 3
-      - vpnhat-Seoul-AWS 2
-      - 美国-tg频道:@bpjzx2 4
-      - vpnpool 23
-      - Australia-A1-沪日
+      - vpnhat-香港Kirino 6
+      - vpnhat-Seoul-Choopa 2
+      - vpnhat-Seoul-Choopa 3
+      - 新加坡-tg频道:@bpjzx2 4
+      - 新加坡-tg频道:@bpjzx2 6
+      - vpnhat-Seoul-Choopa 4
+      - vpnhat-SG-OVH 3
+      - vpnhat-Tokyo-Enzu
+      - vpnhat-Tokyo-Enzu 2
+      - vpnhat-Tokyo-Enzu 3
+      - vpnpool-Tokyo-DMIT-nf
+      - vpnhat-SG-OVH 4
+      - vpnhat-Seoul-Choopa 5
+      - vpnpool-Tokyo-DMIT-nf 2
+      - vpnhat-彰化Hinet-dip 3
+      - vpnpool-香港Nerocloud-nf
+      - vpnpool-香港Nerocloud-nf 2
+      - vpnpool-台中Hinet-dip
+      - vpnhat-Tokyo-Enzu 4
+      - vpnhat-Tokyo-Enzu 5
+      - vpnpool-香港Azure-nf
+      - vpnpool-SG-Nerocloud-nf
+      - vpnpool-SG-Nerocloud-nf 2
+      - vpnpool-Tokyo-DMIT-nf 3
+      - vpnhat-香港Kirino 7
+      - vpnpool-SG-Nerocloud-nf 3
+      - vpnhat-Seoul-Choopa 6
+      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道:@bpjzx2 2
+      - vpnpool-香港HKT-dip 2
+      - vpnpool-香港Azure-nf 2
+      - vpnpool-SG-Nerocloud-nf 4
+      - vpnhat-Seoul-Choopa 7
+      - vpnpool-Tokyo-Linode
+      - vpnpool-香港HKT-dip 3
+      - vpnpool-Seoul-Oracle
+      - vpnhat-彰化Hinet-dip 4
+      - vpnpool-台中Hinet-dip 2
+      - vpnpool-SG-Nerocloud-nf 5
+      - vpnpool-新北Hinet-dip
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 6
+      - vpnpool-Seoul-Oracle 2
+      - 中国_0525372
+      - 韩国-中继-01
+      - vpnpool-香港Azure-nf 3
+      - 韩国-中继-04
+      - vpnpool-Tokyo-Linode 2
+      - 韩国-中继-03
+      - vpnhat-彰化Hinet-dip 7
+      - vpnpool-香港Azure-nf 4
+      - 新加坡-中继-02
+      - 香港04
+      - 台湾(youtube阿伟科技) 5
+      - 台湾(youtube阿伟科技) 4
+      - V304-1x-Seoul
+      - V314-1.5x-Seoul
+      - V312-1.5x-Chuncheon
+      - V313-1.5x-Seoul
+      - V314-1.5x-Seoul 2
+      - V303-1x-Seoul
+      - 香港03
+      - 6.78|+新加坡02
+      - sg
+      - BGP-01-香港-多地优化
+      - RELAY-117.28.242.156-006
+      - V2 | 日本 EMBY专用 | x1.5
+      - Relay_🇨🇳CN-🇨🇳CN_349 |10.17Mb
+      - V2 | 香港 HK 01 | x1.5
+      - V2 | 香港 HK 02 | x1.5
+      - CN_46 TG@peekfun |19.37Mb
+      - 亚洲
+      - V1 | 印度 | x1.0
+      - 香港DC
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
