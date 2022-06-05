@@ -5,563 +5,355 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: EXTM3U-SG-Nerocloud-nf, server: 23.98.35.135, port: 11422, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: EXTM3U-台中Hinet-dip, server: 23.98.35.135, port: 11428, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Relay__10.86Mb |38.83Mb, server: 120.232.190.86, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: vpnpool-香港HKT-dip, server: 120.232.190.86, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港-tg频道：@bpjzx2 9, server: 120.232.190.86, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 新加坡-tg频道：@bpjzx2 2, server: 23.98.35.135, port: 11422, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: EXTM3U-Tokyo-DMIT-nf, server: 23.98.35.135, port: 11424, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-香港Nerocloud-nf, server: 120.232.190.86, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 台湾-tg频道：@bpjzx2 4, server: 120.233.185.189, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 美国-中继-07, server: cmrelay01.yiyorelay.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
-  - {name: "[CT/CM]香港 14", server: shusacu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 香港-tg频道：@bpjzx2 5, server: 23.98.35.135, port: 11420, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: vpnpool-Tokyo-DMIT-nf, server: 120.232.190.86, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: EXTM3U-香港DMIT-nf, server: 23.98.35.135, port: 11420, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnhat-香港DMIT-nf, server: 58.246.230.202, port: 11420, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 中国_0525372, server: cmrelay01.yiyorelay.xyz, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
-  - {name: 新加坡-tg频道：@bpjzx2 4, server: 58.246.230.202, port: 11422, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: vpnpool-香港HKT-dip 2, server: 120.233.185.189, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 新加坡-tg频道：@bpjzx2 3, server: 58.246.230.202, port: 11429, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: EXTM3U-SG-Nerocloud-nf 2, server: 23.98.35.135, port: 11429, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 新加坡-tg频道：@bpjzx2, server: 23.98.35.135, port: 11429, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 香港-tg频道：@bpjzx2 11, server: 120.233.185.189, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 中国_05291052, server: 120.233.185.189, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 新加坡-tg频道：@bpjzx2 5, server: 120.232.190.86, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 香港-tg频道：@bpjzx2 16, server: 120.233.185.189, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
   - {name: vpnpool-台中Hinet-dip, server: 120.233.185.189, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnhat-SG-Nerocloud-nf, server: 58.246.230.202, port: 11429, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Tokyo-DMIT-nf 2, server: 120.232.190.86, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: EXTM3U-香港HKT-dip, server: 23.98.35.135, port: 11421, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Nerocloud-nf, server: 120.233.185.189, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Nerocloud-nf 2, server: 120.232.190.86, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 新加坡-tg频道：@bpjzx2 7, server: 120.232.190.86, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: vpnpool-SG-Nerocloud-nf 3, server: 120.232.190.86, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 新加坡-tg频道：@bpjzx2 8, server: 120.233.185.189, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 美国 优化-5, server: usastart.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化-8, server: usastart.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: vpnpool-SG-Nerocloud-nf 4, server: 120.232.190.86, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnhat-SG-Nerocloud-nf 2, server: 58.246.230.202, port: 11422, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 新加坡-tg频道：@bpjzx2 10, server: 120.233.185.189, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 香港-tg频道：@bpjzx2 6, server: 23.98.35.135, port: 11421, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 美国 优化-9, server: usastart.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 香港-tg频道：@bpjzx2 15, server: 120.232.190.86, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: vpnpool-Chuncheon-Oracle-nf, server: 120.233.185.189, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 中国_05311124, server: 120.233.185.189, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: 中国(TG频道:@kxswa), server: 120.233.185.189, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ, udp: true}
+  - {name: vpnpool-SG-Nerocloud-nf, server: 120.233.185.189, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港-tg频道：@bpjzx2 16, server: 120.233.185.189, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
   - {name: Relay__ 9.18Mb |44.40Mb, server: 120.233.185.189, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 新加坡-tg频道：@bpjzx2 9, server: 120.233.185.189, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: Relay__10.86Mb |38.83Mb 2, server: 120.232.190.86, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: vpnpool-香港Nerocloud-nf, server: 120.233.185.189, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 中国(TG频道:@kxswa) 2, server: 120.233.185.189, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: ZEM1dFpTOTJjRzVvWVhRPQ, udp: true}
+  - {name: 新加坡-tg频道：@bpjzx2 10, server: 120.233.185.189, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
   - {name: 香港-tg频道：@bpjzx2 12, server: 120.233.185.189, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: TG频道@iosfulishare美国 优化-10, server: usastart.proconcn.xyz, port: 569, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: Relay__ 9.18Mb |44.40Mb 2, server: 120.233.185.189, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: vpnpool-香港Nerocloud-nf 2, server: 120.233.185.189, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-香港HKT-dip 3, server: 120.233.185.189, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-香港HGC-dip, server: 120.232.190.86, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnhat-香港HKT-dip, server: 58.246.230.202, port: 11421, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 美国 优化-7, server: usastart.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: vpnpool-SG-Nerocloud-nf 5, server: 120.233.185.189, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 台湾-tg频道：@bpjzx2 3, server: 120.232.190.86, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 15", server: shsuconpro.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: vpnpool-Chuncheon-Oracle-nf 2, server: 120.232.190.86, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 美国 优化-6, server: usastart.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾-tg频道：@bpjzx2 2, server: 58.246.230.202, port: 11428, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 香港-tg频道：@bpjzx2 8, server: 58.246.230.202, port: 11421, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: EXTM3U-LAX-DMIT-nf, server: 23.98.35.135, port: 11423, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnhat-LAX-DMIT-nf, server: 58.246.230.202, port: 11423, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-SG-Nerocloud-nf 6, server: 120.233.185.189, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
   - {name: vpnpool-LAX-DMIT-nf, server: 120.233.185.189, port: 35247, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港-tg频道：@bpjzx2 7, server: 58.246.230.202, port: 11420, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: vpnpool-LAX-DMIT-nf 2, server: 120.233.185.189, port: 11805, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Tokyo-DMIT-nf 3, server: 120.233.185.189, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-Tokyo-DMIT-nf 4, server: 120.233.185.189, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港 05, server: 123456789.158801.xyz, port: 40005, type: trojan, password: 775ed92a-4c87-4111-a6cf-fc5e0ac18ae5, sni: 123456789.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 02, server: 123456789.158801.xyz, port: 40002, type: trojan, password: 775ed92a-4c87-4111-a6cf-fc5e0ac18ae5, sni: 123456789.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: HINET/AZHK, server: az.gunangzhui.cloud, port: 41534, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, sni: az.gunangzhui.cloud, skip-cert-verify: true, udp: true}
-  - {name: 香港HGC, server: hgc.ddag.xyz, port: 15225, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, sni: hgc.ddag.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港-网飞_0.5#297@662G__okgg.xyz, server: s297.s2022.xyz, port: 32715, type: trojan, password: 4c398437-ba6d-3f30-920a-fe85d23c98ab, sni: s297.s2022.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港-网飞_0.5#297@662G__okgg.xyz 2, server: s297.s2022.xyz, port: 32715, type: trojan, password: b4cd9d4f-8e00-3eba-8693-aaf6bdca8079, sni: s297.s2022.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港-网飞_0.5#297@662G__okgg.xyz 3, server: s297.s2022.xyz, port: 32715, type: trojan, password: 7d46f885-c7e4-30d4-8a00-36aa6530b0cf, sni: s297.s2022.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港-网飞_1.4#69@211G__okgg.xyz, server: s69.s2022.xyz, port: 30661, type: trojan, password: 7d46f885-c7e4-30d4-8a00-36aa6530b0cf, sni: s69.s2022.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港-网飞_1.3#245@263G__okgg.xyz, server: s245.s2022.xyz, port: 32686, type: trojan, password: b4cd9d4f-8e00-3eba-8693-aaf6bdca8079, sni: s245.s2022.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港-网飞_1.4#244@222G__okgg.xyz, server: s244.s2022.xyz, port: 30300, type: trojan, password: 44742458-ae53-3490-aeb6-a1a23d54c2be, sni: s244.s2022.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港, server: 104.208.84.160, port: 12369, type: trojan, password: 75c21921-619c-4f86-acd0-fe4c2ae6a737, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖 313, server: cc.tianxiedaiweige.tk, port: 443, type: trojan, password: 662dde24-c50c-4011-82b0-5c306afc56f2, sni: cc.tianxiedaiweige.tk, skip-cert-verify: true, udp: true}
-  - {name: 油管：最网最强白嫖, server: jgw2.gaox.ml, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, sni: jgw2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 香港 03, server: 123456789.158801.xyz, port: 40003, type: trojan, password: 775ed92a-4c87-4111-a6cf-fc5e0ac18ae5, sni: 123456789.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 04, server: 123456789.158801.xyz, port: 40004, type: trojan, password: 775ed92a-4c87-4111-a6cf-fc5e0ac18ae5, sni: 123456789.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 01, server: 123456789.158801.xyz, port: 40001, type: trojan, password: 775ed92a-4c87-4111-a6cf-fc5e0ac18ae5, sni: 123456789.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港HGC/AZHK, server: az.gunangzhui.cloud, port: 12716, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, sni: az.gunangzhui.cloud, skip-cert-verify: true, udp: true}
-  - {name: BGP-01-香港-多地优化, server: iepl-zebra.19900101.xyz, port: 902, type: ss, cipher: chacha20-ietf, password: Gqre0R, plugin: obfs, plugin-opts: {mode: http, host: 1d2e3501.itunes.apple.com}, udp: true}
-  - {name: 中国_05311078, server: cdn2.myuuusss.com, port: 20011, type: ss, cipher: aes-128-gcm, password: b195963c-2631-442d-ab3a-6e78df25d904, udp: true}
-  - {name: youtube阿伟科技+29, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: youtube阿伟科技+25, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 油管：最网最强白嫖 2, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: youtube阿伟科技+24, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: youtube阿伟科技+28, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: youtube阿伟科技+11, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: youtube阿伟科技+5, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: youtube阿伟科技+8, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: youtube阿伟科技+23, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_104 TG@peekfun |43.50Mb, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: LT_765, server: 213.183.53.214, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: CN_107 TG@peekfun |11.50Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: youtube阿伟科技+18, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: youtube阿伟科技+16, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: youtube阿伟科技+10, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "[免流]香港 B", server: 123456789.158801.xyz, port: 80, type: vmess, uuid: 775ed92a-4c87-4111-a6cf-fc5e0ac18ae5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: _US_美国, server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 日本_0531001, server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 美国_0531042, server: 20.243.71.225, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.243.71.225}, udp: true}
-  - {name: _油管：全网最强白嫖, server: 20.243.69.62, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.243.69.62}, udp: true}
-  - {name: Lv1.V*19 扬港BGP-香港, server: cn.zzv02.infonode.xyz, port: 17011, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv02.infonode.xyz}, udp: true}
-  - {name: Lv1.V15 东莞联通-日本, server: cn.zzv07.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv07.infonode.xyz}, udp: true}
-  - {name: Lv1.V63 广州移动-日本, server: cn.zzv12.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv12.infonode.xyz}, udp: true}
-  - {name: 香港-网飞_1.8#191@1910G__okgg.xyz, server: s191.s2022.xyz, port: 38651, type: vmess, uuid: 4c398437-ba6d-3f30-920a-fe85d23c98ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /panelmyadmin, ws-headers: {Host: s191.s2022.xyz}, udp: true}
-  - {name: 香港-网飞_0.9#55@1162G__okgg.xyz, server: s163.s2022.xyz, port: 8443, type: vmess, uuid: b4cd9d4f-8e00-3eba-8693-aaf6bdca8079, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /panelmyadmin, ws-headers: {Host: s163.s2022.xyz}, udp: true}
-  - {name: Lv1.V39 上海移动-日本, server: cn.zzv05.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv05.infonode.xyz}, udp: true}
-  - {name: Lv1.V43 沪日BGP-香港, server: cn.zzv01.infonode.xyz, port: 17011, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv01.infonode.xyz}, udp: true}
-  - {name: Lv1.V37 上海移动-香港, server: cn.zzv05.infonode.xyz, port: 17011, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv05.infonode.xyz}, udp: true}
-  - {name: Lv1.V17 东莞联通-新加坡, server: cn.zzv07.infonode.xyz, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv07.infonode.xyz}, udp: true}
-  - {name: Lv1.V*13 东莞联通-香港, server: cn.zzv07.infonode.xyz, port: 17011, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv07.infonode.xyz}, udp: true}
-  - {name: Lv1.V*45 沪日BGP-日本, server: cn.zzv01.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv01.infonode.xyz}, udp: true}
-  - {name: Lv1.V05 湘日BGP-新加坡, server: cn.zzv06.infonode.xyz, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv06.infonode.xyz}, udp: true}
-  - {name: Lv1.V21 扬港BGP-日本, server: cn.zzv02.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv02.infonode.xyz}, udp: true}
-  - {name: Lv1.V41 上海移动-新加坡, server: cn.zzv05.infonode.xyz, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv05.infonode.xyz}, udp: true}
-  - {name: Lv1.V*65 广州移动-新加坡, server: cn.zzv12.infonode.xyz, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv12.infonode.xyz}, udp: true}
-  - {name: Lv1.V*03 湘日BGP-日本, server: cn.zzv06.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv06.infonode.xyz}, udp: true}
-  - {name: 美国【YouTube-由零开始】, server: 20.243.69.62, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.243.69.62}, udp: true}
-  - {name: Lv1.V24 扬港BGP-韩国, server: cn.zzv02.infonode.xyz, port: 17016, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv02.infonode.xyz}, udp: true}
-  - {name: Lv1.V14 东莞联通-台湾, server: cn.zzv07.infonode.xyz, port: 17012, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv07.infonode.xyz}, udp: true}
-  - {name: Lv1.V62 广州移动-台湾, server: cn.zzv12.infonode.xyz, port: 17012, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv12.infonode.xyz}, udp: true}
-  - {name: Lv1.V38 上海移动-台湾, server: cn.zzv05.infonode.xyz, port: 17012, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv05.infonode.xyz}, udp: true}
-  - {name: 7day, server: 0o.autosc.me, port: 443, type: vmess, uuid: d156b2b9-3f94-4bad-8e8f-19000b9cedae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: p16-tiktokcdn-com.akamaized.net, grpc-opts: {grpc-service-name: GunService}, udp: true}
-  - {name: 香港-网飞_0.9#55@957G__okgg.xyz, server: s163.s2022.xyz, port: 8443, type: vmess, uuid: 44742458-ae53-3490-aeb6-a1a23d54c2be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /panelmyadmin, ws-headers: {Host: s163.s2022.xyz}, udp: true}
-  - {name: Lv1.V44 沪日BGP-台湾, server: cn.zzv01.infonode.xyz, port: 17012, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv01.infonode.xyz}, udp: true}
-  - {name: 香港-网飞_0.2#193@1680G__okgg.xyz, server: s191.s2022.xyz, port: 35656, type: vmess, uuid: 7d46f885-c7e4-30d4-8a00-36aa6530b0cf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /panelmyadmin, ws-headers: {Host: s191.s2022.xyz}, udp: true}
-  - {name: "v2ray 日本(联通) [Netflix]", server: cu.cheapv2.xyz, port: 26601, type: vmess, uuid: 9254040a-4600-36bf-9401-27fc9237f5c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.cheapv2.xyz}, udp: true}
-  - {name: 香港-网飞_1.9#193@1910G__okgg.xyz, server: s191.s2022.xyz, port: 35656, type: vmess, uuid: 44742458-ae53-3490-aeb6-a1a23d54c2be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /panelmyadmin, ws-headers: {Host: s191.s2022.xyz}, udp: true}
+  - {name: _CN_中国, server: 120.233.185.189, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ=, udp: true}
+  - {name: vpnpool-Tokyo-DMIT-nf, server: 120.233.185.189, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡-tg频道：@bpjzx2 9, server: 120.233.185.189, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: 新加坡-tg频道：@bpjzx2 8, server: 120.233.185.189, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: vpnpool-香港HKT-dip, server: 120.233.185.189, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-Tokyo-DMIT-nf 2, server: 120.233.185.189, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _CN_中国->🇯🇵_JP_日本, server: 120.233.185.189, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ=, udp: true}
+  - {name: _CN_中国->🇷🇺_RU_俄罗斯联邦, server: 120.233.185.189, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ=, udp: true}
+  - {name: vpnpool-Novosibirsk-Baxet-nf, server: 120.233.185.189, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-香港HKT-dip 2, server: 120.233.185.189, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港HGC|直连|1x, server: 210.0.158.220, port: 38443, type: trojan, password: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT|直连, server: hkt.xn--y8jhmm6gn.com, port: 38443, type: trojan, password: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, sni: hkt.xn--y8jhmm6gn.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾 - tg频道:@ripaojiedian, server: dx.yhy520.xyz, port: 58821, type: trojan, password: 1fe66382-fe02-3600-bef8-a5f5ecf4ce83, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: 【极速】台湾 1x 加速专线 V1, server: tw.ssssv2.xyz, port: 17001, type: trojan, password: d2673e07-cfd1-41e4-abc8-2780c1dc9e41, sni: tw.ssssv2.xyz, skip-cert-verify: true, udp: true}
+  - {name: 【极速】新加坡 1x 加速专线 V1, server: sg.ssssv2.xyz, port: 17005, type: trojan, password: d2673e07-cfd1-41e4-abc8-2780c1dc9e41, sni: sg.ssssv2.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[沪日]新加坡", server: shcu.alinkrelay.com, port: 44605, type: trojan, password: 673c8e50-d1c4-4e1f-ae6f-3c694e769006, sni: shcu.alinkrelay.com, skip-cert-verify: true, udp: true}
+  - {name: _油管：全网最强白嫖, server: xjp.ziqiyun.xyz, port: 443, type: trojan, password: 7b561e94-42f3-4f92-979c-4cf97c328025, sni: xjp.ziqiyun.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[沪日]台湾1", server: shcu.alinkrelay.com, port: 44608, type: trojan, password: 673c8e50-d1c4-4e1f-ae6f-3c694e769006, sni: shcu.alinkrelay.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡, server: linsg.n.optage.moe, port: 44605, type: trojan, password: 673c8e50-d1c4-4e1f-ae6f-3c694e769006, sni: linsg.n.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: lindoe日本—中转, server: 165.154.243.157, port: 48003, type: trojan, password: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, skip-cert-verify: true, udp: true}
+  - {name: 香港HGC-中转|1x, server: 165.154.243.157, port: 48001, type: trojan, password: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, skip-cert-verify: true, udp: true}
+  - {name: EXTM3U-香港Azure, server: 20.187.79.61, port: 3389, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
+  - {name: _油管：全网最强白嫖 2, server: 20.187.79.61, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: "[负载均衡]韩国1", server: ocikr.n.optage.moe, port: 44600, type: trojan, password: 673c8e50-d1c4-4e1f-ae6f-3c694e769006, sni: ocikr.n.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: EXTM3U-香港Azure 2, server: 20.187.79.61, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
+  - {name: 【极速】香港 1x 加速专线 V1, server: hk.ssssv2.xyz, port: 17002, type: trojan, password: d2673e07-cfd1-41e4-abc8-2780c1dc9e41, sni: hk.ssssv2.xyz, skip-cert-verify: true, udp: true}
+  - {name: _油管：全网最强白嫖 3, server: 20.187.79.61, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: 【极速】日本 1x 加速专线 V1, server: jp.ssssv2.xyz, port: 17003, type: trojan, password: d2673e07-cfd1-41e4-abc8-2780c1dc9e41, sni: jp.ssssv2.xyz, skip-cert-verify: true, udp: true}
+  - {name: 甲骨文-韩国🇰🇷春川-Tr, server: jgwcc.356930.xyz, port: 10022, type: trojan, password: 7ddb2159-b252-4563-ada2-b928ff4c3a87, sni: jgwcc.356930.xyz, skip-cert-verify: true, udp: true}
+  - {name: _油管：全网最强白嫖 4, server: 120.233.7.76, port: 25022, type: ss, cipher: aes-128-gcm, password: dbd3178f-7ec2-4198-ade0-56fa6227adf8, udp: true}
+  - {name: v2cross.com, server: 14.29.124.174, port: 11013, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 5, server: 120.233.7.76, port: 25002, type: ss, cipher: aes-256-gcm, password: dbd3178f-7ec2-4198-ade0-56fa6227adf8, udp: true}
+  - {name: _油管：全网最强白嫖 6, server: 120.233.7.76, port: 25001, type: ss, cipher: aes-256-gcm, password: dbd3178f-7ec2-4198-ade0-56fa6227adf8, udp: true}
+  - {name: _油管：全网最强白嫖 7, server: 120.233.7.76, port: 25023, type: ss, cipher: aes-128-gcm, password: dbd3178f-7ec2-4198-ade0-56fa6227adf8, udp: true}
+  - {name: _油管：全网最强白嫖 8, server: 120.233.7.76, port: 25018, type: ss, cipher: aes-128-gcm, password: dbd3178f-7ec2-4198-ade0-56fa6227adf8, udp: true}
+  - {name: _油管：全网最强白嫖 9, server: 120.233.7.76, port: 25004, type: ss, cipher: aes-256-gcm, password: dbd3178f-7ec2-4198-ade0-56fa6227adf8, udp: true}
+  - {name: 45.14.107.44-46955, server: 45.14.107.44, port: 46955, type: ss, cipher: chacha20-ietf-poly1305, password: 7F2Vc7ZI6Pon5H76, udp: true}
+  - {name: _油管：全网最强白嫖 10, server: 120.233.7.76, port: 25019, type: ss, cipher: aes-128-gcm, password: dbd3178f-7ec2-4198-ade0-56fa6227adf8, udp: true}
+  - {name: _油管：全网最强白嫖 11, server: 120.233.7.76, port: 25024, type: ss, cipher: aes-128-gcm, password: dbd3178f-7ec2-4198-ade0-56fa6227adf8, udp: true}
+  - {name: _油管：全网最强白嫖 12, server: 120.233.7.76, port: 25006, type: ss, cipher: aes-256-gcm, password: dbd3178f-7ec2-4198-ade0-56fa6227adf8, udp: true}
+  - {name: _油管：全网最强白嫖 13, server: 120.233.7.76, port: 25003, type: ss, cipher: aes-256-gcm, password: dbd3178f-7ec2-4198-ade0-56fa6227adf8, udp: true}
+  - {name: _油管：全网最强白嫖 14, server: 120.233.7.76, port: 25008, type: ss, cipher: aes-256-gcm, password: dbd3178f-7ec2-4198-ade0-56fa6227adf8, udp: true}
+  - {name: _油管：全网最强白嫖 15, server: 120.233.7.76, port: 25009, type: ss, cipher: aes-256-gcm, password: dbd3178f-7ec2-4198-ade0-56fa6227adf8, udp: true}
+  - {name: hpkr907, server: 20.214.188.225, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: HK 008, server: hkaz008.xmrth-node.xyz, port: 15897, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 台湾01|三网优化|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: 日本01|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: 香港HKT01|优选原生IP|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /HKT01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: 韩国|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: SERVER VN 04, server: 103.178.228.100, port: 80, type: vmess, uuid: cbc3ba66-e381-4251-9031-a8d0c89965f4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /GoiFree_4ghatde.com, ws-headers: {Host: 4ghatde.akamaized.net}, udp: true}
+  - {name: HK 008 2, server: hkaz008.xmrth-node.xyz, port: 15897, type: vmess, uuid: e23a5542-8e62-3572-9afb-6640d61d91b1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: JP 1635, server: 212.50.247.44, port: 443, type: vmess, uuid: 41282d6a-5887-40b6-802f-2a02d074f4b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /1D6WqJ, ws-headers: {Host: 212.50.247.44}, udp: true}
+  - {name: 香港(TG频道:@kxswa), server: 47.243.87.171, port: 443, type: vmess, uuid: 4af38112-0854-48d8-9387-5ece4078a599, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /szGxn, ws-headers: {Host: 47.243.87.171}, udp: true}
+  - {name: 日本原生IP|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: 东京|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dj01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: 日本优选原生IP01|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /JPZZ01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: 台湾02|三网优化|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet02, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: Scould台湾01|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: 原生日本.东京 4G带宽 流媒体解锁 可淘宝 1.5, server: 141.147.180.121, port: 80, type: vmess, uuid: 85e632c3-2122-4e0c-95c5-63b02401b40c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dm.toutiao.com}, udp: true}
+  - {name: 台湾04|优选原生IP|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hinet04, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: 新加坡|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp03, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: 原生新加坡 4G带宽 流媒体解锁 可淘宝 X1.5, server: 152.69.219.71, port: 80, type: vmess, uuid: 85e632c3-2122-4e0c-95c5-63b02401b40c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dm.toutiao.com}, udp: true}
+  - {name: Korea-2, server: v2kr-2.freesw.xyz, port: 888, type: vmess, uuid: 5f55425c-0c0c-3e3d-8257-38314e1b8eee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: v2kr-2.freesw.xyz}, udp: true}
+  - {name: 日本02|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp02, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: 马来西亚01|优选原生IP|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mlxy01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: 日本03|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp03, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: Korea-1, server: v2kr-1.freesw.xyz, port: 888, type: vmess, uuid: 5f55425c-0c0c-3e3d-8257-38314e1b8eee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: v2kr-1.freesw.xyz}, udp: true}
+  - {name: 日本 NTT 01, server: lt01.03linecn.xyz, port: 42105, type: vmess, uuid: dd7e8c6c-3c3e-46ad-833f-b1f547fb4dd3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Singapore 01, server: 45.118.132.10, port: 80, type: vmess, uuid: 4bf285db-9258-425c-a137-3cb82231d70c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 4ghatde.akamaized.net}, udp: true}
+  - {name: 日本优选原生IP02|解锁流媒体|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /JPZZ02, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: lindoe日本|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lindoerb01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: 印度|三网优化|注册游戏|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 69e38a0a-2b65-45f5-ae4c-83b78f8d84d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yd01, ws-headers: {Host: cs.daxun.cyou}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - EXTM3U-SG-Nerocloud-nf
-      - EXTM3U-台中Hinet-dip
-      - Relay__10.86Mb |38.83Mb
-      - vpnpool-香港HKT-dip
-      - 香港-tg频道：@bpjzx2 9
-      - 新加坡-tg频道：@bpjzx2 2
-      - EXTM3U-Tokyo-DMIT-nf
-      - vpnpool-香港Nerocloud-nf
-      - 台湾-tg频道：@bpjzx2 4
-      - 美国-中继-07
-      - "[CT/CM]香港 14"
-      - 香港-tg频道：@bpjzx2 5
-      - vpnpool-Tokyo-DMIT-nf
-      - EXTM3U-香港DMIT-nf
-      - vpnhat-香港DMIT-nf
-      - 中国_0525372
-      - 新加坡-tg频道：@bpjzx2 4
-      - vpnpool-香港HKT-dip 2
-      - 新加坡-tg频道：@bpjzx2 3
-      - EXTM3U-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2
-      - 香港-tg频道：@bpjzx2 11
-      - 中国_05291052
-      - 新加坡-tg频道：@bpjzx2 5
-      - 香港-tg频道：@bpjzx2 16
       - vpnpool-台中Hinet-dip
-      - vpnhat-SG-Nerocloud-nf
-      - vpnpool-Tokyo-DMIT-nf 2
-      - EXTM3U-香港HKT-dip
+      - 中国_05311124
+      - 中国(TG频道:@kxswa)
       - vpnpool-SG-Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 7
-      - vpnpool-SG-Nerocloud-nf 3
-      - 新加坡-tg频道：@bpjzx2 8
-      - 美国 优化-5
-      - 美国 优化-8
-      - vpnpool-SG-Nerocloud-nf 4
-      - vpnhat-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 10
-      - 香港-tg频道：@bpjzx2 6
-      - 美国 优化-9
-      - 香港-tg频道：@bpjzx2 15
-      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道：@bpjzx2 16
       - Relay__ 9.18Mb |44.40Mb
-      - 新加坡-tg频道：@bpjzx2 9
-      - Relay__10.86Mb |38.83Mb 2
+      - vpnpool-香港Nerocloud-nf
+      - 中国(TG频道:@kxswa) 2
+      - 新加坡-tg频道：@bpjzx2 10
       - 香港-tg频道：@bpjzx2 12
-      - TG频道@iosfulishare美国 优化-10
-      - Relay__ 9.18Mb |44.40Mb 2
-      - vpnpool-香港Nerocloud-nf 2
-      - vpnpool-香港HKT-dip 3
-      - vpnpool-香港HGC-dip
-      - vpnhat-香港HKT-dip
-      - 美国 优化-7
-      - vpnpool-SG-Nerocloud-nf 5
-      - 台湾-tg频道：@bpjzx2 3
-      - "[CT/CM]香港 15"
-      - vpnpool-Chuncheon-Oracle-nf 2
-      - 美国 优化-6
-      - 台湾-tg频道：@bpjzx2 2
-      - 香港-tg频道：@bpjzx2 8
-      - EXTM3U-LAX-DMIT-nf
-      - vpnhat-LAX-DMIT-nf
-      - vpnpool-SG-Nerocloud-nf 6
       - vpnpool-LAX-DMIT-nf
-      - 香港-tg频道：@bpjzx2 7
-      - vpnpool-LAX-DMIT-nf 2
-      - vpnpool-Tokyo-DMIT-nf 3
-      - vpnpool-Tokyo-DMIT-nf 4
-      - 香港 05
-      - 香港 02
-      - HINET/AZHK
-      - 香港HGC
-      - 香港-网飞_0.5#297@662G__okgg.xyz
-      - 香港-网飞_0.5#297@662G__okgg.xyz 2
-      - 香港-网飞_0.5#297@662G__okgg.xyz 3
-      - 香港-网飞_1.4#69@211G__okgg.xyz
-      - 香港-网飞_1.3#245@263G__okgg.xyz
-      - 香港-网飞_1.4#244@222G__okgg.xyz
-      - 香港
-      - _油管：全网最强白嫖 313
-      - 油管：最网最强白嫖
-      - 香港 03
-      - 香港 04
-      - 香港 01
-      - 香港HGC/AZHK
-      - BGP-01-香港-多地优化
-      - 中国_05311078
-      - youtube阿伟科技+29
-      - youtube阿伟科技+25
-      - 油管：最网最强白嫖 2
-      - youtube阿伟科技+24
-      - youtube阿伟科技+28
-      - youtube阿伟科技+11
-      - youtube阿伟科技+5
-      - youtube阿伟科技+8
-      - youtube阿伟科技+23
-      - CN_104 TG@peekfun |43.50Mb
-      - LT_765
-      - CN_107 TG@peekfun |11.50Mb
-      - youtube阿伟科技+18
-      - youtube阿伟科技+16
-      - youtube阿伟科技+10
-      - "[免流]香港 B"
-      - _US_美国
-      - 日本_0531001
-      - 美国_0531042
+      - _CN_中国
+      - vpnpool-Tokyo-DMIT-nf
+      - 新加坡-tg频道：@bpjzx2 9
+      - 新加坡-tg频道：@bpjzx2 8
+      - vpnpool-香港HKT-dip
+      - vpnpool-Tokyo-DMIT-nf 2
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-香港HKT-dip 2
+      - 香港HGC|直连|1x
+      - 香港HKT|直连
+      - 台湾 - tg频道:@ripaojiedian
+      - 【极速】台湾 1x 加速专线 V1
+      - 【极速】新加坡 1x 加速专线 V1
+      - "[沪日]新加坡"
       - _油管：全网最强白嫖
-      - Lv1.V*19 扬港BGP-香港
-      - Lv1.V15 东莞联通-日本
-      - Lv1.V63 广州移动-日本
-      - 香港-网飞_1.8#191@1910G__okgg.xyz
-      - 香港-网飞_0.9#55@1162G__okgg.xyz
-      - Lv1.V39 上海移动-日本
-      - Lv1.V43 沪日BGP-香港
-      - Lv1.V37 上海移动-香港
-      - Lv1.V17 东莞联通-新加坡
-      - Lv1.V*13 东莞联通-香港
-      - Lv1.V*45 沪日BGP-日本
-      - Lv1.V05 湘日BGP-新加坡
-      - Lv1.V21 扬港BGP-日本
-      - Lv1.V41 上海移动-新加坡
-      - Lv1.V*65 广州移动-新加坡
-      - Lv1.V*03 湘日BGP-日本
-      - 美国【YouTube-由零开始】
-      - Lv1.V24 扬港BGP-韩国
-      - Lv1.V14 东莞联通-台湾
-      - Lv1.V62 广州移动-台湾
-      - Lv1.V38 上海移动-台湾
-      - 7day
-      - 香港-网飞_0.9#55@957G__okgg.xyz
-      - Lv1.V44 沪日BGP-台湾
-      - 香港-网飞_0.2#193@1680G__okgg.xyz
-      - v2ray 日本(联通) [Netflix]
-      - 香港-网飞_1.9#193@1910G__okgg.xyz
+      - "[沪日]台湾1"
+      - 新加坡
+      - lindoe日本—中转
+      - 香港HGC-中转|1x
+      - EXTM3U-香港Azure
+      - _油管：全网最强白嫖 2
+      - "[负载均衡]韩国1"
+      - EXTM3U-香港Azure 2
+      - 【极速】香港 1x 加速专线 V1
+      - _油管：全网最强白嫖 3
+      - 【极速】日本 1x 加速专线 V1
+      - 甲骨文-韩国🇰🇷春川-Tr
+      - _油管：全网最强白嫖 4
+      - v2cross.com
+      - _油管：全网最强白嫖 5
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - 45.14.107.44-46955
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - hpkr907
+      - HK 008
+      - 台湾01|三网优化|解锁流媒体|1x
+      - 日本01|三网优化|1x
+      - 香港HKT01|优选原生IP|1x
+      - 韩国|解锁流媒体|1x
+      - SERVER VN 04
+      - HK 008 2
+      - JP 1635
+      - 香港(TG频道:@kxswa)
+      - 日本原生IP|解锁流媒体|1x
+      - 东京|解锁流媒体|1x
+      - 日本优选原生IP01|解锁流媒体|1x
+      - 台湾02|三网优化|解锁流媒体|1x
+      - Scould台湾01|解锁流媒体|1x
+      - 原生日本.东京 4G带宽 流媒体解锁 可淘宝 1.5
+      - 台湾04|优选原生IP|1x
+      - 新加坡|三网优化|1x
+      - 原生新加坡 4G带宽 流媒体解锁 可淘宝 X1.5
+      - Korea-2
+      - 日本02|三网优化|1x
+      - 马来西亚01|优选原生IP|1x
+      - 日本03|三网优化|1x
+      - Korea-1
+      - 日本 NTT 01
+      - Singapore 01
+      - 日本优选原生IP02|解锁流媒体|1x
+      - lindoe日本|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - EXTM3U-SG-Nerocloud-nf
-      - EXTM3U-台中Hinet-dip
-      - Relay__10.86Mb |38.83Mb
-      - vpnpool-香港HKT-dip
-      - 香港-tg频道：@bpjzx2 9
-      - 新加坡-tg频道：@bpjzx2 2
-      - EXTM3U-Tokyo-DMIT-nf
-      - vpnpool-香港Nerocloud-nf
-      - 台湾-tg频道：@bpjzx2 4
-      - 美国-中继-07
-      - "[CT/CM]香港 14"
-      - 香港-tg频道：@bpjzx2 5
-      - vpnpool-Tokyo-DMIT-nf
-      - EXTM3U-香港DMIT-nf
-      - vpnhat-香港DMIT-nf
-      - 中国_0525372
-      - 新加坡-tg频道：@bpjzx2 4
-      - vpnpool-香港HKT-dip 2
-      - 新加坡-tg频道：@bpjzx2 3
-      - EXTM3U-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2
-      - 香港-tg频道：@bpjzx2 11
-      - 中国_05291052
-      - 新加坡-tg频道：@bpjzx2 5
-      - 香港-tg频道：@bpjzx2 16
       - vpnpool-台中Hinet-dip
-      - vpnhat-SG-Nerocloud-nf
-      - vpnpool-Tokyo-DMIT-nf 2
-      - EXTM3U-香港HKT-dip
+      - 中国_05311124
+      - 中国(TG频道:@kxswa)
       - vpnpool-SG-Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 7
-      - vpnpool-SG-Nerocloud-nf 3
-      - 新加坡-tg频道：@bpjzx2 8
-      - 美国 优化-5
-      - 美国 优化-8
-      - vpnpool-SG-Nerocloud-nf 4
-      - vpnhat-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 10
-      - 香港-tg频道：@bpjzx2 6
-      - 美国 优化-9
-      - 香港-tg频道：@bpjzx2 15
-      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道：@bpjzx2 16
       - Relay__ 9.18Mb |44.40Mb
-      - 新加坡-tg频道：@bpjzx2 9
-      - Relay__10.86Mb |38.83Mb 2
+      - vpnpool-香港Nerocloud-nf
+      - 中国(TG频道:@kxswa) 2
+      - 新加坡-tg频道：@bpjzx2 10
       - 香港-tg频道：@bpjzx2 12
-      - TG频道@iosfulishare美国 优化-10
-      - Relay__ 9.18Mb |44.40Mb 2
-      - vpnpool-香港Nerocloud-nf 2
-      - vpnpool-香港HKT-dip 3
-      - vpnpool-香港HGC-dip
-      - vpnhat-香港HKT-dip
-      - 美国 优化-7
-      - vpnpool-SG-Nerocloud-nf 5
-      - 台湾-tg频道：@bpjzx2 3
-      - "[CT/CM]香港 15"
-      - vpnpool-Chuncheon-Oracle-nf 2
-      - 美国 优化-6
-      - 台湾-tg频道：@bpjzx2 2
-      - 香港-tg频道：@bpjzx2 8
-      - EXTM3U-LAX-DMIT-nf
-      - vpnhat-LAX-DMIT-nf
-      - vpnpool-SG-Nerocloud-nf 6
       - vpnpool-LAX-DMIT-nf
-      - 香港-tg频道：@bpjzx2 7
-      - vpnpool-LAX-DMIT-nf 2
-      - vpnpool-Tokyo-DMIT-nf 3
-      - vpnpool-Tokyo-DMIT-nf 4
-      - 香港 05
-      - 香港 02
-      - HINET/AZHK
-      - 香港HGC
-      - 香港-网飞_0.5#297@662G__okgg.xyz
-      - 香港-网飞_0.5#297@662G__okgg.xyz 2
-      - 香港-网飞_0.5#297@662G__okgg.xyz 3
-      - 香港-网飞_1.4#69@211G__okgg.xyz
-      - 香港-网飞_1.3#245@263G__okgg.xyz
-      - 香港-网飞_1.4#244@222G__okgg.xyz
-      - 香港
-      - _油管：全网最强白嫖 313
-      - 油管：最网最强白嫖
-      - 香港 03
-      - 香港 04
-      - 香港 01
-      - 香港HGC/AZHK
-      - BGP-01-香港-多地优化
-      - 中国_05311078
-      - youtube阿伟科技+29
-      - youtube阿伟科技+25
-      - 油管：最网最强白嫖 2
-      - youtube阿伟科技+24
-      - youtube阿伟科技+28
-      - youtube阿伟科技+11
-      - youtube阿伟科技+5
-      - youtube阿伟科技+8
-      - youtube阿伟科技+23
-      - CN_104 TG@peekfun |43.50Mb
-      - LT_765
-      - CN_107 TG@peekfun |11.50Mb
-      - youtube阿伟科技+18
-      - youtube阿伟科技+16
-      - youtube阿伟科技+10
-      - "[免流]香港 B"
-      - _US_美国
-      - 日本_0531001
-      - 美国_0531042
+      - _CN_中国
+      - vpnpool-Tokyo-DMIT-nf
+      - 新加坡-tg频道：@bpjzx2 9
+      - 新加坡-tg频道：@bpjzx2 8
+      - vpnpool-香港HKT-dip
+      - vpnpool-Tokyo-DMIT-nf 2
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-香港HKT-dip 2
+      - 香港HGC|直连|1x
+      - 香港HKT|直连
+      - 台湾 - tg频道:@ripaojiedian
+      - 【极速】台湾 1x 加速专线 V1
+      - 【极速】新加坡 1x 加速专线 V1
+      - "[沪日]新加坡"
       - _油管：全网最强白嫖
-      - Lv1.V*19 扬港BGP-香港
-      - Lv1.V15 东莞联通-日本
-      - Lv1.V63 广州移动-日本
-      - 香港-网飞_1.8#191@1910G__okgg.xyz
-      - 香港-网飞_0.9#55@1162G__okgg.xyz
-      - Lv1.V39 上海移动-日本
-      - Lv1.V43 沪日BGP-香港
-      - Lv1.V37 上海移动-香港
-      - Lv1.V17 东莞联通-新加坡
-      - Lv1.V*13 东莞联通-香港
-      - Lv1.V*45 沪日BGP-日本
-      - Lv1.V05 湘日BGP-新加坡
-      - Lv1.V21 扬港BGP-日本
-      - Lv1.V41 上海移动-新加坡
-      - Lv1.V*65 广州移动-新加坡
-      - Lv1.V*03 湘日BGP-日本
-      - 美国【YouTube-由零开始】
-      - Lv1.V24 扬港BGP-韩国
-      - Lv1.V14 东莞联通-台湾
-      - Lv1.V62 广州移动-台湾
-      - Lv1.V38 上海移动-台湾
-      - 7day
-      - 香港-网飞_0.9#55@957G__okgg.xyz
-      - Lv1.V44 沪日BGP-台湾
-      - 香港-网飞_0.2#193@1680G__okgg.xyz
-      - v2ray 日本(联通) [Netflix]
-      - 香港-网飞_1.9#193@1910G__okgg.xyz
+      - "[沪日]台湾1"
+      - 新加坡
+      - lindoe日本—中转
+      - 香港HGC-中转|1x
+      - EXTM3U-香港Azure
+      - _油管：全网最强白嫖 2
+      - "[负载均衡]韩国1"
+      - EXTM3U-香港Azure 2
+      - 【极速】香港 1x 加速专线 V1
+      - _油管：全网最强白嫖 3
+      - 【极速】日本 1x 加速专线 V1
+      - 甲骨文-韩国🇰🇷春川-Tr
+      - _油管：全网最强白嫖 4
+      - v2cross.com
+      - _油管：全网最强白嫖 5
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - 45.14.107.44-46955
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - hpkr907
+      - HK 008
+      - 台湾01|三网优化|解锁流媒体|1x
+      - 日本01|三网优化|1x
+      - 香港HKT01|优选原生IP|1x
+      - 韩国|解锁流媒体|1x
+      - SERVER VN 04
+      - HK 008 2
+      - JP 1635
+      - 香港(TG频道:@kxswa)
+      - 日本原生IP|解锁流媒体|1x
+      - 东京|解锁流媒体|1x
+      - 日本优选原生IP01|解锁流媒体|1x
+      - 台湾02|三网优化|解锁流媒体|1x
+      - Scould台湾01|解锁流媒体|1x
+      - 原生日本.东京 4G带宽 流媒体解锁 可淘宝 1.5
+      - 台湾04|优选原生IP|1x
+      - 新加坡|三网优化|1x
+      - 原生新加坡 4G带宽 流媒体解锁 可淘宝 X1.5
+      - Korea-2
+      - 日本02|三网优化|1x
+      - 马来西亚01|优选原生IP|1x
+      - 日本03|三网优化|1x
+      - Korea-1
+      - 日本 NTT 01
+      - Singapore 01
+      - 日本优选原生IP02|解锁流媒体|1x
+      - lindoe日本|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - EXTM3U-SG-Nerocloud-nf
-      - EXTM3U-台中Hinet-dip
-      - Relay__10.86Mb |38.83Mb
-      - vpnpool-香港HKT-dip
-      - 香港-tg频道：@bpjzx2 9
-      - 新加坡-tg频道：@bpjzx2 2
-      - EXTM3U-Tokyo-DMIT-nf
-      - vpnpool-香港Nerocloud-nf
-      - 台湾-tg频道：@bpjzx2 4
-      - 美国-中继-07
-      - "[CT/CM]香港 14"
-      - 香港-tg频道：@bpjzx2 5
-      - vpnpool-Tokyo-DMIT-nf
-      - EXTM3U-香港DMIT-nf
-      - vpnhat-香港DMIT-nf
-      - 中国_0525372
-      - 新加坡-tg频道：@bpjzx2 4
-      - vpnpool-香港HKT-dip 2
-      - 新加坡-tg频道：@bpjzx2 3
-      - EXTM3U-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2
-      - 香港-tg频道：@bpjzx2 11
-      - 中国_05291052
-      - 新加坡-tg频道：@bpjzx2 5
-      - 香港-tg频道：@bpjzx2 16
       - vpnpool-台中Hinet-dip
-      - vpnhat-SG-Nerocloud-nf
-      - vpnpool-Tokyo-DMIT-nf 2
-      - EXTM3U-香港HKT-dip
+      - 中国_05311124
+      - 中国(TG频道:@kxswa)
       - vpnpool-SG-Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 7
-      - vpnpool-SG-Nerocloud-nf 3
-      - 新加坡-tg频道：@bpjzx2 8
-      - 美国 优化-5
-      - 美国 优化-8
-      - vpnpool-SG-Nerocloud-nf 4
-      - vpnhat-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 10
-      - 香港-tg频道：@bpjzx2 6
-      - 美国 优化-9
-      - 香港-tg频道：@bpjzx2 15
-      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道：@bpjzx2 16
       - Relay__ 9.18Mb |44.40Mb
-      - 新加坡-tg频道：@bpjzx2 9
-      - Relay__10.86Mb |38.83Mb 2
+      - vpnpool-香港Nerocloud-nf
+      - 中国(TG频道:@kxswa) 2
+      - 新加坡-tg频道：@bpjzx2 10
       - 香港-tg频道：@bpjzx2 12
-      - TG频道@iosfulishare美国 优化-10
-      - Relay__ 9.18Mb |44.40Mb 2
-      - vpnpool-香港Nerocloud-nf 2
-      - vpnpool-香港HKT-dip 3
-      - vpnpool-香港HGC-dip
-      - vpnhat-香港HKT-dip
-      - 美国 优化-7
-      - vpnpool-SG-Nerocloud-nf 5
-      - 台湾-tg频道：@bpjzx2 3
-      - "[CT/CM]香港 15"
-      - vpnpool-Chuncheon-Oracle-nf 2
-      - 美国 优化-6
-      - 台湾-tg频道：@bpjzx2 2
-      - 香港-tg频道：@bpjzx2 8
-      - EXTM3U-LAX-DMIT-nf
-      - vpnhat-LAX-DMIT-nf
-      - vpnpool-SG-Nerocloud-nf 6
       - vpnpool-LAX-DMIT-nf
-      - 香港-tg频道：@bpjzx2 7
-      - vpnpool-LAX-DMIT-nf 2
-      - vpnpool-Tokyo-DMIT-nf 3
-      - vpnpool-Tokyo-DMIT-nf 4
-      - 香港 05
-      - 香港 02
-      - HINET/AZHK
-      - 香港HGC
-      - 香港-网飞_0.5#297@662G__okgg.xyz
-      - 香港-网飞_0.5#297@662G__okgg.xyz 2
-      - 香港-网飞_0.5#297@662G__okgg.xyz 3
-      - 香港-网飞_1.4#69@211G__okgg.xyz
-      - 香港-网飞_1.3#245@263G__okgg.xyz
-      - 香港-网飞_1.4#244@222G__okgg.xyz
-      - 香港
-      - _油管：全网最强白嫖 313
-      - 油管：最网最强白嫖
-      - 香港 03
-      - 香港 04
-      - 香港 01
-      - 香港HGC/AZHK
-      - BGP-01-香港-多地优化
-      - 中国_05311078
-      - youtube阿伟科技+29
-      - youtube阿伟科技+25
-      - 油管：最网最强白嫖 2
-      - youtube阿伟科技+24
-      - youtube阿伟科技+28
-      - youtube阿伟科技+11
-      - youtube阿伟科技+5
-      - youtube阿伟科技+8
-      - youtube阿伟科技+23
-      - CN_104 TG@peekfun |43.50Mb
-      - LT_765
-      - CN_107 TG@peekfun |11.50Mb
-      - youtube阿伟科技+18
-      - youtube阿伟科技+16
-      - youtube阿伟科技+10
-      - "[免流]香港 B"
-      - _US_美国
-      - 日本_0531001
-      - 美国_0531042
+      - _CN_中国
+      - vpnpool-Tokyo-DMIT-nf
+      - 新加坡-tg频道：@bpjzx2 9
+      - 新加坡-tg频道：@bpjzx2 8
+      - vpnpool-香港HKT-dip
+      - vpnpool-Tokyo-DMIT-nf 2
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-香港HKT-dip 2
+      - 香港HGC|直连|1x
+      - 香港HKT|直连
+      - 台湾 - tg频道:@ripaojiedian
+      - 【极速】台湾 1x 加速专线 V1
+      - 【极速】新加坡 1x 加速专线 V1
+      - "[沪日]新加坡"
       - _油管：全网最强白嫖
-      - Lv1.V*19 扬港BGP-香港
-      - Lv1.V15 东莞联通-日本
-      - Lv1.V63 广州移动-日本
-      - 香港-网飞_1.8#191@1910G__okgg.xyz
-      - 香港-网飞_0.9#55@1162G__okgg.xyz
-      - Lv1.V39 上海移动-日本
-      - Lv1.V43 沪日BGP-香港
-      - Lv1.V37 上海移动-香港
-      - Lv1.V17 东莞联通-新加坡
-      - Lv1.V*13 东莞联通-香港
-      - Lv1.V*45 沪日BGP-日本
-      - Lv1.V05 湘日BGP-新加坡
-      - Lv1.V21 扬港BGP-日本
-      - Lv1.V41 上海移动-新加坡
-      - Lv1.V*65 广州移动-新加坡
-      - Lv1.V*03 湘日BGP-日本
-      - 美国【YouTube-由零开始】
-      - Lv1.V24 扬港BGP-韩国
-      - Lv1.V14 东莞联通-台湾
-      - Lv1.V62 广州移动-台湾
-      - Lv1.V38 上海移动-台湾
-      - 7day
-      - 香港-网飞_0.9#55@957G__okgg.xyz
-      - Lv1.V44 沪日BGP-台湾
-      - 香港-网飞_0.2#193@1680G__okgg.xyz
-      - v2ray 日本(联通) [Netflix]
-      - 香港-网飞_1.9#193@1910G__okgg.xyz
+      - "[沪日]台湾1"
+      - 新加坡
+      - lindoe日本—中转
+      - 香港HGC-中转|1x
+      - EXTM3U-香港Azure
+      - _油管：全网最强白嫖 2
+      - "[负载均衡]韩国1"
+      - EXTM3U-香港Azure 2
+      - 【极速】香港 1x 加速专线 V1
+      - _油管：全网最强白嫖 3
+      - 【极速】日本 1x 加速专线 V1
+      - 甲骨文-韩国🇰🇷春川-Tr
+      - _油管：全网最强白嫖 4
+      - v2cross.com
+      - _油管：全网最强白嫖 5
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - 45.14.107.44-46955
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - hpkr907
+      - HK 008
+      - 台湾01|三网优化|解锁流媒体|1x
+      - 日本01|三网优化|1x
+      - 香港HKT01|优选原生IP|1x
+      - 韩国|解锁流媒体|1x
+      - SERVER VN 04
+      - HK 008 2
+      - JP 1635
+      - 香港(TG频道:@kxswa)
+      - 日本原生IP|解锁流媒体|1x
+      - 东京|解锁流媒体|1x
+      - 日本优选原生IP01|解锁流媒体|1x
+      - 台湾02|三网优化|解锁流媒体|1x
+      - Scould台湾01|解锁流媒体|1x
+      - 原生日本.东京 4G带宽 流媒体解锁 可淘宝 1.5
+      - 台湾04|优选原生IP|1x
+      - 新加坡|三网优化|1x
+      - 原生新加坡 4G带宽 流媒体解锁 可淘宝 X1.5
+      - Korea-2
+      - 日本02|三网优化|1x
+      - 马来西亚01|优选原生IP|1x
+      - 日本03|三网优化|1x
+      - Korea-1
+      - 日本 NTT 01
+      - Singapore 01
+      - 日本优选原生IP02|解锁流媒体|1x
+      - lindoe日本|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -580,624 +372,380 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - EXTM3U-SG-Nerocloud-nf
-      - EXTM3U-台中Hinet-dip
-      - Relay__10.86Mb |38.83Mb
-      - vpnpool-香港HKT-dip
-      - 香港-tg频道：@bpjzx2 9
-      - 新加坡-tg频道：@bpjzx2 2
-      - EXTM3U-Tokyo-DMIT-nf
-      - vpnpool-香港Nerocloud-nf
-      - 台湾-tg频道：@bpjzx2 4
-      - 美国-中继-07
-      - "[CT/CM]香港 14"
-      - 香港-tg频道：@bpjzx2 5
-      - vpnpool-Tokyo-DMIT-nf
-      - EXTM3U-香港DMIT-nf
-      - vpnhat-香港DMIT-nf
-      - 中国_0525372
-      - 新加坡-tg频道：@bpjzx2 4
-      - vpnpool-香港HKT-dip 2
-      - 新加坡-tg频道：@bpjzx2 3
-      - EXTM3U-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2
-      - 香港-tg频道：@bpjzx2 11
-      - 中国_05291052
-      - 新加坡-tg频道：@bpjzx2 5
-      - 香港-tg频道：@bpjzx2 16
       - vpnpool-台中Hinet-dip
-      - vpnhat-SG-Nerocloud-nf
-      - vpnpool-Tokyo-DMIT-nf 2
-      - EXTM3U-香港HKT-dip
+      - 中国_05311124
+      - 中国(TG频道:@kxswa)
       - vpnpool-SG-Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 7
-      - vpnpool-SG-Nerocloud-nf 3
-      - 新加坡-tg频道：@bpjzx2 8
-      - 美国 优化-5
-      - 美国 优化-8
-      - vpnpool-SG-Nerocloud-nf 4
-      - vpnhat-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 10
-      - 香港-tg频道：@bpjzx2 6
-      - 美国 优化-9
-      - 香港-tg频道：@bpjzx2 15
-      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道：@bpjzx2 16
       - Relay__ 9.18Mb |44.40Mb
-      - 新加坡-tg频道：@bpjzx2 9
-      - Relay__10.86Mb |38.83Mb 2
+      - vpnpool-香港Nerocloud-nf
+      - 中国(TG频道:@kxswa) 2
+      - 新加坡-tg频道：@bpjzx2 10
       - 香港-tg频道：@bpjzx2 12
-      - TG频道@iosfulishare美国 优化-10
-      - Relay__ 9.18Mb |44.40Mb 2
-      - vpnpool-香港Nerocloud-nf 2
-      - vpnpool-香港HKT-dip 3
-      - vpnpool-香港HGC-dip
-      - vpnhat-香港HKT-dip
-      - 美国 优化-7
-      - vpnpool-SG-Nerocloud-nf 5
-      - 台湾-tg频道：@bpjzx2 3
-      - "[CT/CM]香港 15"
-      - vpnpool-Chuncheon-Oracle-nf 2
-      - 美国 优化-6
-      - 台湾-tg频道：@bpjzx2 2
-      - 香港-tg频道：@bpjzx2 8
-      - EXTM3U-LAX-DMIT-nf
-      - vpnhat-LAX-DMIT-nf
-      - vpnpool-SG-Nerocloud-nf 6
       - vpnpool-LAX-DMIT-nf
-      - 香港-tg频道：@bpjzx2 7
-      - vpnpool-LAX-DMIT-nf 2
-      - vpnpool-Tokyo-DMIT-nf 3
-      - vpnpool-Tokyo-DMIT-nf 4
-      - 香港 05
-      - 香港 02
-      - HINET/AZHK
-      - 香港HGC
-      - 香港-网飞_0.5#297@662G__okgg.xyz
-      - 香港-网飞_0.5#297@662G__okgg.xyz 2
-      - 香港-网飞_0.5#297@662G__okgg.xyz 3
-      - 香港-网飞_1.4#69@211G__okgg.xyz
-      - 香港-网飞_1.3#245@263G__okgg.xyz
-      - 香港-网飞_1.4#244@222G__okgg.xyz
-      - 香港
-      - _油管：全网最强白嫖 313
-      - 油管：最网最强白嫖
-      - 香港 03
-      - 香港 04
-      - 香港 01
-      - 香港HGC/AZHK
-      - BGP-01-香港-多地优化
-      - 中国_05311078
-      - youtube阿伟科技+29
-      - youtube阿伟科技+25
-      - 油管：最网最强白嫖 2
-      - youtube阿伟科技+24
-      - youtube阿伟科技+28
-      - youtube阿伟科技+11
-      - youtube阿伟科技+5
-      - youtube阿伟科技+8
-      - youtube阿伟科技+23
-      - CN_104 TG@peekfun |43.50Mb
-      - LT_765
-      - CN_107 TG@peekfun |11.50Mb
-      - youtube阿伟科技+18
-      - youtube阿伟科技+16
-      - youtube阿伟科技+10
-      - "[免流]香港 B"
-      - _US_美国
-      - 日本_0531001
-      - 美国_0531042
+      - _CN_中国
+      - vpnpool-Tokyo-DMIT-nf
+      - 新加坡-tg频道：@bpjzx2 9
+      - 新加坡-tg频道：@bpjzx2 8
+      - vpnpool-香港HKT-dip
+      - vpnpool-Tokyo-DMIT-nf 2
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-香港HKT-dip 2
+      - 香港HGC|直连|1x
+      - 香港HKT|直连
+      - 台湾 - tg频道:@ripaojiedian
+      - 【极速】台湾 1x 加速专线 V1
+      - 【极速】新加坡 1x 加速专线 V1
+      - "[沪日]新加坡"
       - _油管：全网最强白嫖
-      - Lv1.V*19 扬港BGP-香港
-      - Lv1.V15 东莞联通-日本
-      - Lv1.V63 广州移动-日本
-      - 香港-网飞_1.8#191@1910G__okgg.xyz
-      - 香港-网飞_0.9#55@1162G__okgg.xyz
-      - Lv1.V39 上海移动-日本
-      - Lv1.V43 沪日BGP-香港
-      - Lv1.V37 上海移动-香港
-      - Lv1.V17 东莞联通-新加坡
-      - Lv1.V*13 东莞联通-香港
-      - Lv1.V*45 沪日BGP-日本
-      - Lv1.V05 湘日BGP-新加坡
-      - Lv1.V21 扬港BGP-日本
-      - Lv1.V41 上海移动-新加坡
-      - Lv1.V*65 广州移动-新加坡
-      - Lv1.V*03 湘日BGP-日本
-      - 美国【YouTube-由零开始】
-      - Lv1.V24 扬港BGP-韩国
-      - Lv1.V14 东莞联通-台湾
-      - Lv1.V62 广州移动-台湾
-      - Lv1.V38 上海移动-台湾
-      - 7day
-      - 香港-网飞_0.9#55@957G__okgg.xyz
-      - Lv1.V44 沪日BGP-台湾
-      - 香港-网飞_0.2#193@1680G__okgg.xyz
-      - v2ray 日本(联通) [Netflix]
-      - 香港-网飞_1.9#193@1910G__okgg.xyz
+      - "[沪日]台湾1"
+      - 新加坡
+      - lindoe日本—中转
+      - 香港HGC-中转|1x
+      - EXTM3U-香港Azure
+      - _油管：全网最强白嫖 2
+      - "[负载均衡]韩国1"
+      - EXTM3U-香港Azure 2
+      - 【极速】香港 1x 加速专线 V1
+      - _油管：全网最强白嫖 3
+      - 【极速】日本 1x 加速专线 V1
+      - 甲骨文-韩国🇰🇷春川-Tr
+      - _油管：全网最强白嫖 4
+      - v2cross.com
+      - _油管：全网最强白嫖 5
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - 45.14.107.44-46955
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - hpkr907
+      - HK 008
+      - 台湾01|三网优化|解锁流媒体|1x
+      - 日本01|三网优化|1x
+      - 香港HKT01|优选原生IP|1x
+      - 韩国|解锁流媒体|1x
+      - SERVER VN 04
+      - HK 008 2
+      - JP 1635
+      - 香港(TG频道:@kxswa)
+      - 日本原生IP|解锁流媒体|1x
+      - 东京|解锁流媒体|1x
+      - 日本优选原生IP01|解锁流媒体|1x
+      - 台湾02|三网优化|解锁流媒体|1x
+      - Scould台湾01|解锁流媒体|1x
+      - 原生日本.东京 4G带宽 流媒体解锁 可淘宝 1.5
+      - 台湾04|优选原生IP|1x
+      - 新加坡|三网优化|1x
+      - 原生新加坡 4G带宽 流媒体解锁 可淘宝 X1.5
+      - Korea-2
+      - 日本02|三网优化|1x
+      - 马来西亚01|优选原生IP|1x
+      - 日本03|三网优化|1x
+      - Korea-1
+      - 日本 NTT 01
+      - Singapore 01
+      - 日本优选原生IP02|解锁流媒体|1x
+      - lindoe日本|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - EXTM3U-台中Hinet-dip
-      - vpnpool-香港HKT-dip
-      - 香港-tg频道：@bpjzx2 9
-      - vpnpool-香港Nerocloud-nf
-      - 台湾-tg频道：@bpjzx2 4
-      - "[CT/CM]香港 14"
-      - 香港-tg频道：@bpjzx2 5
-      - EXTM3U-香港DMIT-nf
-      - vpnhat-香港DMIT-nf
-      - vpnpool-香港HKT-dip 2
-      - 香港-tg频道：@bpjzx2 11
-      - 香港-tg频道：@bpjzx2 16
       - vpnpool-台中Hinet-dip
-      - EXTM3U-香港HKT-dip
-      - 香港-tg频道：@bpjzx2 6
-      - 香港-tg频道：@bpjzx2 15
+      - 香港-tg频道：@bpjzx2 16
+      - vpnpool-香港Nerocloud-nf
       - 香港-tg频道：@bpjzx2 12
-      - vpnpool-香港Nerocloud-nf 2
-      - vpnpool-香港HKT-dip 3
-      - vpnpool-香港HGC-dip
-      - vpnhat-香港HKT-dip
-      - 台湾-tg频道：@bpjzx2 3
-      - "[CT/CM]香港 15"
-      - 台湾-tg频道：@bpjzx2 2
-      - 香港-tg频道：@bpjzx2 8
-      - 香港-tg频道：@bpjzx2 7
-      - 香港 05
-      - 香港 02
-      - 香港HGC
-      - 香港-网飞_0.5#297@662G__okgg.xyz
-      - 香港-网飞_0.5#297@662G__okgg.xyz 2
-      - 香港-网飞_0.5#297@662G__okgg.xyz 3
-      - 香港-网飞_1.4#69@211G__okgg.xyz
-      - 香港-网飞_1.3#245@263G__okgg.xyz
-      - 香港-网飞_1.4#244@222G__okgg.xyz
-      - 香港
-      - 香港 03
-      - 香港 04
-      - 香港 01
-      - 香港HGC/AZHK
-      - BGP-01-香港-多地优化
-      - "[免流]香港 B"
-      - Lv1.V*19 扬港BGP-香港
-      - 香港-网飞_1.8#191@1910G__okgg.xyz
-      - 香港-网飞_0.9#55@1162G__okgg.xyz
-      - Lv1.V43 沪日BGP-香港
-      - Lv1.V37 上海移动-香港
-      - Lv1.V*13 东莞联通-香港
-      - Lv1.V21 扬港BGP-日本
-      - Lv1.V24 扬港BGP-韩国
-      - Lv1.V14 东莞联通-台湾
-      - Lv1.V62 广州移动-台湾
-      - Lv1.V38 上海移动-台湾
-      - 香港-网飞_0.9#55@957G__okgg.xyz
-      - Lv1.V44 沪日BGP-台湾
-      - 香港-网飞_0.2#193@1680G__okgg.xyz
-      - 香港-网飞_1.9#193@1910G__okgg.xyz
+      - vpnpool-香港HKT-dip
+      - vpnpool-香港HKT-dip 2
+      - 香港HGC|直连|1x
+      - 香港HKT|直连
+      - 台湾 - tg频道:@ripaojiedian
+      - 【极速】台湾 1x 加速专线 V1
+      - "[沪日]台湾1"
+      - 香港HGC-中转|1x
+      - EXTM3U-香港Azure
+      - EXTM3U-香港Azure 2
+      - 【极速】香港 1x 加速专线 V1
+      - 台湾01|三网优化|解锁流媒体|1x
+      - 香港HKT01|优选原生IP|1x
+      - 香港(TG频道:@kxswa)
+      - 台湾02|三网优化|解锁流媒体|1x
+      - Scould台湾01|解锁流媒体|1x
+      - 台湾04|优选原生IP|1x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - EXTM3U-SG-Nerocloud-nf
-      - EXTM3U-台中Hinet-dip
-      - Relay__10.86Mb |38.83Mb
-      - vpnpool-香港HKT-dip
-      - 香港-tg频道：@bpjzx2 9
-      - 新加坡-tg频道：@bpjzx2 2
-      - EXTM3U-Tokyo-DMIT-nf
-      - vpnpool-香港Nerocloud-nf
-      - 台湾-tg频道：@bpjzx2 4
-      - 美国-中继-07
-      - "[CT/CM]香港 14"
-      - 香港-tg频道：@bpjzx2 5
-      - vpnpool-Tokyo-DMIT-nf
-      - EXTM3U-香港DMIT-nf
-      - vpnhat-香港DMIT-nf
-      - 中国_0525372
-      - 新加坡-tg频道：@bpjzx2 4
-      - vpnpool-香港HKT-dip 2
-      - 新加坡-tg频道：@bpjzx2 3
-      - EXTM3U-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2
-      - 香港-tg频道：@bpjzx2 11
-      - 中国_05291052
-      - 新加坡-tg频道：@bpjzx2 5
-      - 香港-tg频道：@bpjzx2 16
       - vpnpool-台中Hinet-dip
-      - vpnhat-SG-Nerocloud-nf
-      - vpnpool-Tokyo-DMIT-nf 2
-      - EXTM3U-香港HKT-dip
+      - 中国_05311124
+      - 中国(TG频道:@kxswa)
       - vpnpool-SG-Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 7
-      - vpnpool-SG-Nerocloud-nf 3
-      - 新加坡-tg频道：@bpjzx2 8
-      - 美国 优化-5
-      - 美国 优化-8
-      - vpnpool-SG-Nerocloud-nf 4
-      - vpnhat-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 10
-      - 香港-tg频道：@bpjzx2 6
-      - 美国 优化-9
-      - 香港-tg频道：@bpjzx2 15
-      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道：@bpjzx2 16
       - Relay__ 9.18Mb |44.40Mb
-      - 新加坡-tg频道：@bpjzx2 9
-      - Relay__10.86Mb |38.83Mb 2
+      - vpnpool-香港Nerocloud-nf
+      - 中国(TG频道:@kxswa) 2
+      - 新加坡-tg频道：@bpjzx2 10
       - 香港-tg频道：@bpjzx2 12
-      - TG频道@iosfulishare美国 优化-10
-      - Relay__ 9.18Mb |44.40Mb 2
-      - vpnpool-香港Nerocloud-nf 2
-      - vpnpool-香港HKT-dip 3
-      - vpnpool-香港HGC-dip
-      - vpnhat-香港HKT-dip
-      - 美国 优化-7
-      - vpnpool-SG-Nerocloud-nf 5
-      - 台湾-tg频道：@bpjzx2 3
-      - "[CT/CM]香港 15"
-      - vpnpool-Chuncheon-Oracle-nf 2
-      - 美国 优化-6
-      - 台湾-tg频道：@bpjzx2 2
-      - 香港-tg频道：@bpjzx2 8
-      - EXTM3U-LAX-DMIT-nf
-      - vpnhat-LAX-DMIT-nf
-      - vpnpool-SG-Nerocloud-nf 6
       - vpnpool-LAX-DMIT-nf
-      - 香港-tg频道：@bpjzx2 7
-      - vpnpool-LAX-DMIT-nf 2
-      - vpnpool-Tokyo-DMIT-nf 3
-      - vpnpool-Tokyo-DMIT-nf 4
-      - 香港 05
-      - 香港 02
-      - HINET/AZHK
-      - 香港HGC
-      - 香港-网飞_0.5#297@662G__okgg.xyz
-      - 香港-网飞_0.5#297@662G__okgg.xyz 2
-      - 香港-网飞_0.5#297@662G__okgg.xyz 3
-      - 香港-网飞_1.4#69@211G__okgg.xyz
-      - 香港-网飞_1.3#245@263G__okgg.xyz
-      - 香港-网飞_1.4#244@222G__okgg.xyz
-      - 香港
-      - _油管：全网最强白嫖 313
-      - 油管：最网最强白嫖
-      - 香港 03
-      - 香港 04
-      - 香港 01
-      - 香港HGC/AZHK
-      - BGP-01-香港-多地优化
-      - 中国_05311078
-      - youtube阿伟科技+29
-      - youtube阿伟科技+25
-      - 油管：最网最强白嫖 2
-      - youtube阿伟科技+24
-      - youtube阿伟科技+28
-      - youtube阿伟科技+11
-      - youtube阿伟科技+5
-      - youtube阿伟科技+8
-      - youtube阿伟科技+23
-      - CN_104 TG@peekfun |43.50Mb
-      - LT_765
-      - CN_107 TG@peekfun |11.50Mb
-      - youtube阿伟科技+18
-      - youtube阿伟科技+16
-      - youtube阿伟科技+10
-      - "[免流]香港 B"
-      - _US_美国
-      - 日本_0531001
-      - 美国_0531042
+      - _CN_中国
+      - vpnpool-Tokyo-DMIT-nf
+      - 新加坡-tg频道：@bpjzx2 9
+      - 新加坡-tg频道：@bpjzx2 8
+      - vpnpool-香港HKT-dip
+      - vpnpool-Tokyo-DMIT-nf 2
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-香港HKT-dip 2
+      - 香港HGC|直连|1x
+      - 香港HKT|直连
+      - 台湾 - tg频道:@ripaojiedian
+      - 【极速】台湾 1x 加速专线 V1
+      - 【极速】新加坡 1x 加速专线 V1
+      - "[沪日]新加坡"
       - _油管：全网最强白嫖
-      - Lv1.V*19 扬港BGP-香港
-      - Lv1.V15 东莞联通-日本
-      - Lv1.V63 广州移动-日本
-      - 香港-网飞_1.8#191@1910G__okgg.xyz
-      - 香港-网飞_0.9#55@1162G__okgg.xyz
-      - Lv1.V39 上海移动-日本
-      - Lv1.V43 沪日BGP-香港
-      - Lv1.V37 上海移动-香港
-      - Lv1.V17 东莞联通-新加坡
-      - Lv1.V*13 东莞联通-香港
-      - Lv1.V*45 沪日BGP-日本
-      - Lv1.V05 湘日BGP-新加坡
-      - Lv1.V21 扬港BGP-日本
-      - Lv1.V41 上海移动-新加坡
-      - Lv1.V*65 广州移动-新加坡
-      - Lv1.V*03 湘日BGP-日本
-      - 美国【YouTube-由零开始】
-      - Lv1.V24 扬港BGP-韩国
-      - Lv1.V14 东莞联通-台湾
-      - Lv1.V62 广州移动-台湾
-      - Lv1.V38 上海移动-台湾
-      - 7day
-      - 香港-网飞_0.9#55@957G__okgg.xyz
-      - Lv1.V44 沪日BGP-台湾
-      - 香港-网飞_0.2#193@1680G__okgg.xyz
-      - v2ray 日本(联通) [Netflix]
-      - 香港-网飞_1.9#193@1910G__okgg.xyz
+      - "[沪日]台湾1"
+      - 新加坡
+      - lindoe日本—中转
+      - 香港HGC-中转|1x
+      - EXTM3U-香港Azure
+      - _油管：全网最强白嫖 2
+      - "[负载均衡]韩国1"
+      - EXTM3U-香港Azure 2
+      - 【极速】香港 1x 加速专线 V1
+      - _油管：全网最强白嫖 3
+      - 【极速】日本 1x 加速专线 V1
+      - 甲骨文-韩国🇰🇷春川-Tr
+      - _油管：全网最强白嫖 4
+      - v2cross.com
+      - _油管：全网最强白嫖 5
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - 45.14.107.44-46955
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - hpkr907
+      - HK 008
+      - 台湾01|三网优化|解锁流媒体|1x
+      - 日本01|三网优化|1x
+      - 香港HKT01|优选原生IP|1x
+      - 韩国|解锁流媒体|1x
+      - SERVER VN 04
+      - HK 008 2
+      - JP 1635
+      - 香港(TG频道:@kxswa)
+      - 日本原生IP|解锁流媒体|1x
+      - 东京|解锁流媒体|1x
+      - 日本优选原生IP01|解锁流媒体|1x
+      - 台湾02|三网优化|解锁流媒体|1x
+      - Scould台湾01|解锁流媒体|1x
+      - 原生日本.东京 4G带宽 流媒体解锁 可淘宝 1.5
+      - 台湾04|优选原生IP|1x
+      - 新加坡|三网优化|1x
+      - 原生新加坡 4G带宽 流媒体解锁 可淘宝 X1.5
+      - Korea-2
+      - 日本02|三网优化|1x
+      - 马来西亚01|优选原生IP|1x
+      - 日本03|三网优化|1x
+      - Korea-1
+      - 日本 NTT 01
+      - Singapore 01
+      - 日本优选原生IP02|解锁流媒体|1x
+      - lindoe日本|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - EXTM3U-SG-Nerocloud-nf
-      - EXTM3U-台中Hinet-dip
-      - Relay__10.86Mb |38.83Mb
-      - vpnpool-香港HKT-dip
-      - 香港-tg频道：@bpjzx2 9
-      - 新加坡-tg频道：@bpjzx2 2
-      - EXTM3U-Tokyo-DMIT-nf
-      - vpnpool-香港Nerocloud-nf
-      - 台湾-tg频道：@bpjzx2 4
-      - 美国-中继-07
-      - "[CT/CM]香港 14"
-      - 香港-tg频道：@bpjzx2 5
-      - vpnpool-Tokyo-DMIT-nf
-      - EXTM3U-香港DMIT-nf
-      - vpnhat-香港DMIT-nf
-      - 中国_0525372
-      - 新加坡-tg频道：@bpjzx2 4
-      - vpnpool-香港HKT-dip 2
-      - 新加坡-tg频道：@bpjzx2 3
-      - EXTM3U-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2
-      - 香港-tg频道：@bpjzx2 11
-      - 中国_05291052
-      - 新加坡-tg频道：@bpjzx2 5
-      - 香港-tg频道：@bpjzx2 16
       - vpnpool-台中Hinet-dip
-      - vpnhat-SG-Nerocloud-nf
-      - vpnpool-Tokyo-DMIT-nf 2
-      - EXTM3U-香港HKT-dip
+      - 中国_05311124
+      - 中国(TG频道:@kxswa)
       - vpnpool-SG-Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 7
-      - vpnpool-SG-Nerocloud-nf 3
-      - 新加坡-tg频道：@bpjzx2 8
-      - 美国 优化-5
-      - 美国 优化-8
-      - vpnpool-SG-Nerocloud-nf 4
-      - vpnhat-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 10
-      - 香港-tg频道：@bpjzx2 6
-      - 美国 优化-9
-      - 香港-tg频道：@bpjzx2 15
-      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道：@bpjzx2 16
       - Relay__ 9.18Mb |44.40Mb
-      - 新加坡-tg频道：@bpjzx2 9
-      - Relay__10.86Mb |38.83Mb 2
+      - vpnpool-香港Nerocloud-nf
+      - 中国(TG频道:@kxswa) 2
+      - 新加坡-tg频道：@bpjzx2 10
       - 香港-tg频道：@bpjzx2 12
-      - TG频道@iosfulishare美国 优化-10
-      - Relay__ 9.18Mb |44.40Mb 2
-      - vpnpool-香港Nerocloud-nf 2
-      - vpnpool-香港HKT-dip 3
-      - vpnpool-香港HGC-dip
-      - vpnhat-香港HKT-dip
-      - 美国 优化-7
-      - vpnpool-SG-Nerocloud-nf 5
-      - 台湾-tg频道：@bpjzx2 3
-      - "[CT/CM]香港 15"
-      - vpnpool-Chuncheon-Oracle-nf 2
-      - 美国 优化-6
-      - 台湾-tg频道：@bpjzx2 2
-      - 香港-tg频道：@bpjzx2 8
-      - EXTM3U-LAX-DMIT-nf
-      - vpnhat-LAX-DMIT-nf
-      - vpnpool-SG-Nerocloud-nf 6
       - vpnpool-LAX-DMIT-nf
-      - 香港-tg频道：@bpjzx2 7
-      - vpnpool-LAX-DMIT-nf 2
-      - vpnpool-Tokyo-DMIT-nf 3
-      - vpnpool-Tokyo-DMIT-nf 4
-      - 香港 05
-      - 香港 02
-      - HINET/AZHK
-      - 香港HGC
-      - 香港-网飞_0.5#297@662G__okgg.xyz
-      - 香港-网飞_0.5#297@662G__okgg.xyz 2
-      - 香港-网飞_0.5#297@662G__okgg.xyz 3
-      - 香港-网飞_1.4#69@211G__okgg.xyz
-      - 香港-网飞_1.3#245@263G__okgg.xyz
-      - 香港-网飞_1.4#244@222G__okgg.xyz
-      - 香港
-      - _油管：全网最强白嫖 313
-      - 油管：最网最强白嫖
-      - 香港 03
-      - 香港 04
-      - 香港 01
-      - 香港HGC/AZHK
-      - BGP-01-香港-多地优化
-      - 中国_05311078
-      - youtube阿伟科技+29
-      - youtube阿伟科技+25
-      - 油管：最网最强白嫖 2
-      - youtube阿伟科技+24
-      - youtube阿伟科技+28
-      - youtube阿伟科技+11
-      - youtube阿伟科技+5
-      - youtube阿伟科技+8
-      - youtube阿伟科技+23
-      - CN_104 TG@peekfun |43.50Mb
-      - LT_765
-      - CN_107 TG@peekfun |11.50Mb
-      - youtube阿伟科技+18
-      - youtube阿伟科技+16
-      - youtube阿伟科技+10
-      - "[免流]香港 B"
-      - _US_美国
-      - 日本_0531001
-      - 美国_0531042
+      - _CN_中国
+      - vpnpool-Tokyo-DMIT-nf
+      - 新加坡-tg频道：@bpjzx2 9
+      - 新加坡-tg频道：@bpjzx2 8
+      - vpnpool-香港HKT-dip
+      - vpnpool-Tokyo-DMIT-nf 2
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-香港HKT-dip 2
+      - 香港HGC|直连|1x
+      - 香港HKT|直连
+      - 台湾 - tg频道:@ripaojiedian
+      - 【极速】台湾 1x 加速专线 V1
+      - 【极速】新加坡 1x 加速专线 V1
+      - "[沪日]新加坡"
       - _油管：全网最强白嫖
-      - Lv1.V*19 扬港BGP-香港
-      - Lv1.V15 东莞联通-日本
-      - Lv1.V63 广州移动-日本
-      - 香港-网飞_1.8#191@1910G__okgg.xyz
-      - 香港-网飞_0.9#55@1162G__okgg.xyz
-      - Lv1.V39 上海移动-日本
-      - Lv1.V43 沪日BGP-香港
-      - Lv1.V37 上海移动-香港
-      - Lv1.V17 东莞联通-新加坡
-      - Lv1.V*13 东莞联通-香港
-      - Lv1.V*45 沪日BGP-日本
-      - Lv1.V05 湘日BGP-新加坡
-      - Lv1.V21 扬港BGP-日本
-      - Lv1.V41 上海移动-新加坡
-      - Lv1.V*65 广州移动-新加坡
-      - Lv1.V*03 湘日BGP-日本
-      - 美国【YouTube-由零开始】
-      - Lv1.V24 扬港BGP-韩国
-      - Lv1.V14 东莞联通-台湾
-      - Lv1.V62 广州移动-台湾
-      - Lv1.V38 上海移动-台湾
-      - 7day
-      - 香港-网飞_0.9#55@957G__okgg.xyz
-      - Lv1.V44 沪日BGP-台湾
-      - 香港-网飞_0.2#193@1680G__okgg.xyz
-      - v2ray 日本(联通) [Netflix]
-      - 香港-网飞_1.9#193@1910G__okgg.xyz
+      - "[沪日]台湾1"
+      - 新加坡
+      - lindoe日本—中转
+      - 香港HGC-中转|1x
+      - EXTM3U-香港Azure
+      - _油管：全网最强白嫖 2
+      - "[负载均衡]韩国1"
+      - EXTM3U-香港Azure 2
+      - 【极速】香港 1x 加速专线 V1
+      - _油管：全网最强白嫖 3
+      - 【极速】日本 1x 加速专线 V1
+      - 甲骨文-韩国🇰🇷春川-Tr
+      - _油管：全网最强白嫖 4
+      - v2cross.com
+      - _油管：全网最强白嫖 5
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - 45.14.107.44-46955
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - hpkr907
+      - HK 008
+      - 台湾01|三网优化|解锁流媒体|1x
+      - 日本01|三网优化|1x
+      - 香港HKT01|优选原生IP|1x
+      - 韩国|解锁流媒体|1x
+      - SERVER VN 04
+      - HK 008 2
+      - JP 1635
+      - 香港(TG频道:@kxswa)
+      - 日本原生IP|解锁流媒体|1x
+      - 东京|解锁流媒体|1x
+      - 日本优选原生IP01|解锁流媒体|1x
+      - 台湾02|三网优化|解锁流媒体|1x
+      - Scould台湾01|解锁流媒体|1x
+      - 原生日本.东京 4G带宽 流媒体解锁 可淘宝 1.5
+      - 台湾04|优选原生IP|1x
+      - 新加坡|三网优化|1x
+      - 原生新加坡 4G带宽 流媒体解锁 可淘宝 X1.5
+      - Korea-2
+      - 日本02|三网优化|1x
+      - 马来西亚01|优选原生IP|1x
+      - 日本03|三网优化|1x
+      - Korea-1
+      - 日本 NTT 01
+      - Singapore 01
+      - 日本优选原生IP02|解锁流媒体|1x
+      - lindoe日本|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - EXTM3U-SG-Nerocloud-nf
-      - EXTM3U-台中Hinet-dip
-      - Relay__10.86Mb |38.83Mb
-      - vpnpool-香港HKT-dip
-      - 香港-tg频道：@bpjzx2 9
-      - 新加坡-tg频道：@bpjzx2 2
-      - EXTM3U-Tokyo-DMIT-nf
-      - vpnpool-香港Nerocloud-nf
-      - 台湾-tg频道：@bpjzx2 4
-      - 美国-中继-07
-      - "[CT/CM]香港 14"
-      - 香港-tg频道：@bpjzx2 5
-      - vpnpool-Tokyo-DMIT-nf
-      - EXTM3U-香港DMIT-nf
-      - vpnhat-香港DMIT-nf
-      - 中国_0525372
-      - 新加坡-tg频道：@bpjzx2 4
-      - vpnpool-香港HKT-dip 2
-      - 新加坡-tg频道：@bpjzx2 3
-      - EXTM3U-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2
-      - 香港-tg频道：@bpjzx2 11
-      - 中国_05291052
-      - 新加坡-tg频道：@bpjzx2 5
-      - 香港-tg频道：@bpjzx2 16
       - vpnpool-台中Hinet-dip
-      - vpnhat-SG-Nerocloud-nf
-      - vpnpool-Tokyo-DMIT-nf 2
-      - EXTM3U-香港HKT-dip
+      - 中国_05311124
+      - 中国(TG频道:@kxswa)
       - vpnpool-SG-Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 7
-      - vpnpool-SG-Nerocloud-nf 3
-      - 新加坡-tg频道：@bpjzx2 8
-      - 美国 优化-5
-      - 美国 优化-8
-      - vpnpool-SG-Nerocloud-nf 4
-      - vpnhat-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 10
-      - 香港-tg频道：@bpjzx2 6
-      - 美国 优化-9
-      - 香港-tg频道：@bpjzx2 15
-      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道：@bpjzx2 16
       - Relay__ 9.18Mb |44.40Mb
-      - 新加坡-tg频道：@bpjzx2 9
-      - Relay__10.86Mb |38.83Mb 2
+      - vpnpool-香港Nerocloud-nf
+      - 中国(TG频道:@kxswa) 2
+      - 新加坡-tg频道：@bpjzx2 10
       - 香港-tg频道：@bpjzx2 12
-      - TG频道@iosfulishare美国 优化-10
-      - Relay__ 9.18Mb |44.40Mb 2
-      - vpnpool-香港Nerocloud-nf 2
-      - vpnpool-香港HKT-dip 3
-      - vpnpool-香港HGC-dip
-      - vpnhat-香港HKT-dip
-      - 美国 优化-7
-      - vpnpool-SG-Nerocloud-nf 5
-      - 台湾-tg频道：@bpjzx2 3
-      - "[CT/CM]香港 15"
-      - vpnpool-Chuncheon-Oracle-nf 2
-      - 美国 优化-6
-      - 台湾-tg频道：@bpjzx2 2
-      - 香港-tg频道：@bpjzx2 8
-      - EXTM3U-LAX-DMIT-nf
-      - vpnhat-LAX-DMIT-nf
-      - vpnpool-SG-Nerocloud-nf 6
       - vpnpool-LAX-DMIT-nf
-      - 香港-tg频道：@bpjzx2 7
-      - vpnpool-LAX-DMIT-nf 2
-      - vpnpool-Tokyo-DMIT-nf 3
-      - vpnpool-Tokyo-DMIT-nf 4
-      - 香港 05
-      - 香港 02
-      - HINET/AZHK
-      - 香港HGC
-      - 香港-网飞_0.5#297@662G__okgg.xyz
-      - 香港-网飞_0.5#297@662G__okgg.xyz 2
-      - 香港-网飞_0.5#297@662G__okgg.xyz 3
-      - 香港-网飞_1.4#69@211G__okgg.xyz
-      - 香港-网飞_1.3#245@263G__okgg.xyz
-      - 香港-网飞_1.4#244@222G__okgg.xyz
-      - 香港
-      - _油管：全网最强白嫖 313
-      - 油管：最网最强白嫖
-      - 香港 03
-      - 香港 04
-      - 香港 01
-      - 香港HGC/AZHK
-      - BGP-01-香港-多地优化
-      - 中国_05311078
-      - youtube阿伟科技+29
-      - youtube阿伟科技+25
-      - 油管：最网最强白嫖 2
-      - youtube阿伟科技+24
-      - youtube阿伟科技+28
-      - youtube阿伟科技+11
-      - youtube阿伟科技+5
-      - youtube阿伟科技+8
-      - youtube阿伟科技+23
-      - CN_104 TG@peekfun |43.50Mb
-      - LT_765
-      - CN_107 TG@peekfun |11.50Mb
-      - youtube阿伟科技+18
-      - youtube阿伟科技+16
-      - youtube阿伟科技+10
-      - "[免流]香港 B"
-      - _US_美国
-      - 日本_0531001
-      - 美国_0531042
+      - _CN_中国
+      - vpnpool-Tokyo-DMIT-nf
+      - 新加坡-tg频道：@bpjzx2 9
+      - 新加坡-tg频道：@bpjzx2 8
+      - vpnpool-香港HKT-dip
+      - vpnpool-Tokyo-DMIT-nf 2
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-香港HKT-dip 2
+      - 香港HGC|直连|1x
+      - 香港HKT|直连
+      - 台湾 - tg频道:@ripaojiedian
+      - 【极速】台湾 1x 加速专线 V1
+      - 【极速】新加坡 1x 加速专线 V1
+      - "[沪日]新加坡"
       - _油管：全网最强白嫖
-      - Lv1.V*19 扬港BGP-香港
-      - Lv1.V15 东莞联通-日本
-      - Lv1.V63 广州移动-日本
-      - 香港-网飞_1.8#191@1910G__okgg.xyz
-      - 香港-网飞_0.9#55@1162G__okgg.xyz
-      - Lv1.V39 上海移动-日本
-      - Lv1.V43 沪日BGP-香港
-      - Lv1.V37 上海移动-香港
-      - Lv1.V17 东莞联通-新加坡
-      - Lv1.V*13 东莞联通-香港
-      - Lv1.V*45 沪日BGP-日本
-      - Lv1.V05 湘日BGP-新加坡
-      - Lv1.V21 扬港BGP-日本
-      - Lv1.V41 上海移动-新加坡
-      - Lv1.V*65 广州移动-新加坡
-      - Lv1.V*03 湘日BGP-日本
-      - 美国【YouTube-由零开始】
-      - Lv1.V24 扬港BGP-韩国
-      - Lv1.V14 东莞联通-台湾
-      - Lv1.V62 广州移动-台湾
-      - Lv1.V38 上海移动-台湾
-      - 7day
-      - 香港-网飞_0.9#55@957G__okgg.xyz
-      - Lv1.V44 沪日BGP-台湾
-      - 香港-网飞_0.2#193@1680G__okgg.xyz
-      - v2ray 日本(联通) [Netflix]
-      - 香港-网飞_1.9#193@1910G__okgg.xyz
+      - "[沪日]台湾1"
+      - 新加坡
+      - lindoe日本—中转
+      - 香港HGC-中转|1x
+      - EXTM3U-香港Azure
+      - _油管：全网最强白嫖 2
+      - "[负载均衡]韩国1"
+      - EXTM3U-香港Azure 2
+      - 【极速】香港 1x 加速专线 V1
+      - _油管：全网最强白嫖 3
+      - 【极速】日本 1x 加速专线 V1
+      - 甲骨文-韩国🇰🇷春川-Tr
+      - _油管：全网最强白嫖 4
+      - v2cross.com
+      - _油管：全网最强白嫖 5
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - 45.14.107.44-46955
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - hpkr907
+      - HK 008
+      - 台湾01|三网优化|解锁流媒体|1x
+      - 日本01|三网优化|1x
+      - 香港HKT01|优选原生IP|1x
+      - 韩国|解锁流媒体|1x
+      - SERVER VN 04
+      - HK 008 2
+      - JP 1635
+      - 香港(TG频道:@kxswa)
+      - 日本原生IP|解锁流媒体|1x
+      - 东京|解锁流媒体|1x
+      - 日本优选原生IP01|解锁流媒体|1x
+      - 台湾02|三网优化|解锁流媒体|1x
+      - Scould台湾01|解锁流媒体|1x
+      - 原生日本.东京 4G带宽 流媒体解锁 可淘宝 1.5
+      - 台湾04|优选原生IP|1x
+      - 新加坡|三网优化|1x
+      - 原生新加坡 4G带宽 流媒体解锁 可淘宝 X1.5
+      - Korea-2
+      - 日本02|三网优化|1x
+      - 马来西亚01|优选原生IP|1x
+      - 日本03|三网优化|1x
+      - Korea-1
+      - 日本 NTT 01
+      - Singapore 01
+      - 日本优选原生IP02|解锁流媒体|1x
+      - lindoe日本|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1213,141 +761,89 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - EXTM3U-SG-Nerocloud-nf
-      - EXTM3U-台中Hinet-dip
-      - Relay__10.86Mb |38.83Mb
-      - vpnpool-香港HKT-dip
-      - 香港-tg频道：@bpjzx2 9
-      - 新加坡-tg频道：@bpjzx2 2
-      - EXTM3U-Tokyo-DMIT-nf
-      - vpnpool-香港Nerocloud-nf
-      - 台湾-tg频道：@bpjzx2 4
-      - 美国-中继-07
-      - "[CT/CM]香港 14"
-      - 香港-tg频道：@bpjzx2 5
-      - vpnpool-Tokyo-DMIT-nf
-      - EXTM3U-香港DMIT-nf
-      - vpnhat-香港DMIT-nf
-      - 中国_0525372
-      - 新加坡-tg频道：@bpjzx2 4
-      - vpnpool-香港HKT-dip 2
-      - 新加坡-tg频道：@bpjzx2 3
-      - EXTM3U-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2
-      - 香港-tg频道：@bpjzx2 11
-      - 中国_05291052
-      - 新加坡-tg频道：@bpjzx2 5
-      - 香港-tg频道：@bpjzx2 16
       - vpnpool-台中Hinet-dip
-      - vpnhat-SG-Nerocloud-nf
-      - vpnpool-Tokyo-DMIT-nf 2
-      - EXTM3U-香港HKT-dip
+      - 中国_05311124
+      - 中国(TG频道:@kxswa)
       - vpnpool-SG-Nerocloud-nf
-      - vpnpool-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 7
-      - vpnpool-SG-Nerocloud-nf 3
-      - 新加坡-tg频道：@bpjzx2 8
-      - 美国 优化-5
-      - 美国 优化-8
-      - vpnpool-SG-Nerocloud-nf 4
-      - vpnhat-SG-Nerocloud-nf 2
-      - 新加坡-tg频道：@bpjzx2 10
-      - 香港-tg频道：@bpjzx2 6
-      - 美国 优化-9
-      - 香港-tg频道：@bpjzx2 15
-      - vpnpool-Chuncheon-Oracle-nf
+      - 香港-tg频道：@bpjzx2 16
       - Relay__ 9.18Mb |44.40Mb
-      - 新加坡-tg频道：@bpjzx2 9
-      - Relay__10.86Mb |38.83Mb 2
+      - vpnpool-香港Nerocloud-nf
+      - 中国(TG频道:@kxswa) 2
+      - 新加坡-tg频道：@bpjzx2 10
       - 香港-tg频道：@bpjzx2 12
-      - TG频道@iosfulishare美国 优化-10
-      - Relay__ 9.18Mb |44.40Mb 2
-      - vpnpool-香港Nerocloud-nf 2
-      - vpnpool-香港HKT-dip 3
-      - vpnpool-香港HGC-dip
-      - vpnhat-香港HKT-dip
-      - 美国 优化-7
-      - vpnpool-SG-Nerocloud-nf 5
-      - 台湾-tg频道：@bpjzx2 3
-      - "[CT/CM]香港 15"
-      - vpnpool-Chuncheon-Oracle-nf 2
-      - 美国 优化-6
-      - 台湾-tg频道：@bpjzx2 2
-      - 香港-tg频道：@bpjzx2 8
-      - EXTM3U-LAX-DMIT-nf
-      - vpnhat-LAX-DMIT-nf
-      - vpnpool-SG-Nerocloud-nf 6
       - vpnpool-LAX-DMIT-nf
-      - 香港-tg频道：@bpjzx2 7
-      - vpnpool-LAX-DMIT-nf 2
-      - vpnpool-Tokyo-DMIT-nf 3
-      - vpnpool-Tokyo-DMIT-nf 4
-      - 香港 05
-      - 香港 02
-      - HINET/AZHK
-      - 香港HGC
-      - 香港-网飞_0.5#297@662G__okgg.xyz
-      - 香港-网飞_0.5#297@662G__okgg.xyz 2
-      - 香港-网飞_0.5#297@662G__okgg.xyz 3
-      - 香港-网飞_1.4#69@211G__okgg.xyz
-      - 香港-网飞_1.3#245@263G__okgg.xyz
-      - 香港-网飞_1.4#244@222G__okgg.xyz
-      - 香港
-      - _油管：全网最强白嫖 313
-      - 油管：最网最强白嫖
-      - 香港 03
-      - 香港 04
-      - 香港 01
-      - 香港HGC/AZHK
-      - BGP-01-香港-多地优化
-      - 中国_05311078
-      - youtube阿伟科技+29
-      - youtube阿伟科技+25
-      - 油管：最网最强白嫖 2
-      - youtube阿伟科技+24
-      - youtube阿伟科技+28
-      - youtube阿伟科技+11
-      - youtube阿伟科技+5
-      - youtube阿伟科技+8
-      - youtube阿伟科技+23
-      - CN_104 TG@peekfun |43.50Mb
-      - LT_765
-      - CN_107 TG@peekfun |11.50Mb
-      - youtube阿伟科技+18
-      - youtube阿伟科技+16
-      - youtube阿伟科技+10
-      - "[免流]香港 B"
-      - _US_美国
-      - 日本_0531001
-      - 美国_0531042
+      - _CN_中国
+      - vpnpool-Tokyo-DMIT-nf
+      - 新加坡-tg频道：@bpjzx2 9
+      - 新加坡-tg频道：@bpjzx2 8
+      - vpnpool-香港HKT-dip
+      - vpnpool-Tokyo-DMIT-nf 2
+      - _CN_中国->🇯🇵_JP_日本
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
+      - vpnpool-Novosibirsk-Baxet-nf
+      - vpnpool-香港HKT-dip 2
+      - 香港HGC|直连|1x
+      - 香港HKT|直连
+      - 台湾 - tg频道:@ripaojiedian
+      - 【极速】台湾 1x 加速专线 V1
+      - 【极速】新加坡 1x 加速专线 V1
+      - "[沪日]新加坡"
       - _油管：全网最强白嫖
-      - Lv1.V*19 扬港BGP-香港
-      - Lv1.V15 东莞联通-日本
-      - Lv1.V63 广州移动-日本
-      - 香港-网飞_1.8#191@1910G__okgg.xyz
-      - 香港-网飞_0.9#55@1162G__okgg.xyz
-      - Lv1.V39 上海移动-日本
-      - Lv1.V43 沪日BGP-香港
-      - Lv1.V37 上海移动-香港
-      - Lv1.V17 东莞联通-新加坡
-      - Lv1.V*13 东莞联通-香港
-      - Lv1.V*45 沪日BGP-日本
-      - Lv1.V05 湘日BGP-新加坡
-      - Lv1.V21 扬港BGP-日本
-      - Lv1.V41 上海移动-新加坡
-      - Lv1.V*65 广州移动-新加坡
-      - Lv1.V*03 湘日BGP-日本
-      - 美国【YouTube-由零开始】
-      - Lv1.V24 扬港BGP-韩国
-      - Lv1.V14 东莞联通-台湾
-      - Lv1.V62 广州移动-台湾
-      - Lv1.V38 上海移动-台湾
-      - 7day
-      - 香港-网飞_0.9#55@957G__okgg.xyz
-      - Lv1.V44 沪日BGP-台湾
-      - 香港-网飞_0.2#193@1680G__okgg.xyz
-      - v2ray 日本(联通) [Netflix]
-      - 香港-网飞_1.9#193@1910G__okgg.xyz
+      - "[沪日]台湾1"
+      - 新加坡
+      - lindoe日本—中转
+      - 香港HGC-中转|1x
+      - EXTM3U-香港Azure
+      - _油管：全网最强白嫖 2
+      - "[负载均衡]韩国1"
+      - EXTM3U-香港Azure 2
+      - 【极速】香港 1x 加速专线 V1
+      - _油管：全网最强白嫖 3
+      - 【极速】日本 1x 加速专线 V1
+      - 甲骨文-韩国🇰🇷春川-Tr
+      - _油管：全网最强白嫖 4
+      - v2cross.com
+      - _油管：全网最强白嫖 5
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - 45.14.107.44-46955
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - hpkr907
+      - HK 008
+      - 台湾01|三网优化|解锁流媒体|1x
+      - 日本01|三网优化|1x
+      - 香港HKT01|优选原生IP|1x
+      - 韩国|解锁流媒体|1x
+      - SERVER VN 04
+      - HK 008 2
+      - JP 1635
+      - 香港(TG频道:@kxswa)
+      - 日本原生IP|解锁流媒体|1x
+      - 东京|解锁流媒体|1x
+      - 日本优选原生IP01|解锁流媒体|1x
+      - 台湾02|三网优化|解锁流媒体|1x
+      - Scould台湾01|解锁流媒体|1x
+      - 原生日本.东京 4G带宽 流媒体解锁 可淘宝 1.5
+      - 台湾04|优选原生IP|1x
+      - 新加坡|三网优化|1x
+      - 原生新加坡 4G带宽 流媒体解锁 可淘宝 X1.5
+      - Korea-2
+      - 日本02|三网优化|1x
+      - 马来西亚01|优选原生IP|1x
+      - 日本03|三网优化|1x
+      - Korea-1
+      - 日本 NTT 01
+      - Singapore 01
+      - 日本优选原生IP02|解锁流媒体|1x
+      - lindoe日本|三网优化|1x
+      - 印度|三网优化|注册游戏|1x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
