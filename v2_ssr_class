@@ -1030,12 +1030,12 @@ proxy-groups:
       - 🇯🇵 日区
       - 🇭🇰 港区
       - 🇩🇪 德区
-      - cn 台湾区
+      - 🇨🇳 台湾区
       - SSR 区
 
   - name: ♻️ 自动选择
     type: url-test
-    url: https://www.google.com/gen_204
+    url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - SZCM-HK-3[ran-out](https)
@@ -1328,9 +1328,10 @@ proxy-groups:
       - VIP-Singapore 03 | Media
  
   - name: 🇺🇸 美区
-    type: load-balance
-    url: https://www.google.com/gen_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 180
+    tolerance: 50
     proxies:
       - CTVIP-US-3[ran-out](https)
       - CU-US-3[ran-out](https)
@@ -1356,9 +1357,10 @@ proxy-groups:
       - 🇺🇸 HTTPS | 美国 | 20
       - 🇺🇸 HTTPS | 美国 | 21
   - name: 🇩🇪 德区
-    type: load-balance
-    url: https://www.google.com/gen_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 180
+    tolerance: 50
     proxies:
       - CTVIP-DE-3[ran-out](https)
       - CU-DE-3[ran-out](https)
@@ -1384,9 +1386,10 @@ proxy-groups:
       - 🇩🇪 HTTPS | 德国 | 20
       - 🇩🇪 HTTPS | 德国 | 21
   - name: 🇯🇵 日区
-    type: load-balance
-    url: https://www.google.com/gen_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 180
+    tolerance: 50
     proxies:
       - SZCM-JP-3[ran-out](https)
       - CTVIP-JP-3[ran-out](https)
@@ -1415,9 +1418,10 @@ proxy-groups:
       - 🇯🇵 HTTPS | 日本 | 21
 
   - name: 🇭🇰 港区
-    type: load-balance
-    url: https://www.google.com/gen_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 180
+    tolerance: 50
     proxies:
       - SZCM-HK-3[ran-out](https)
       - CTVIP-HK-3[ran-out](https)
@@ -1444,10 +1448,11 @@ proxy-groups:
       - 🇭🇰 HTTPS | 香港 | 20
       - 🇭🇰 HTTPS | 香港 | 21
 
-  - name: cn 台湾区
-    type: load-balance
-    url: https://www.google.com/gen_204
+  - name: 🇨🇳 台湾区
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 180
+    tolerance: 50
     proxies:
       - 🇨🇳 HTTPS | 台湾 | 1
       - 🇨🇳 HTTPS | 台湾 | 2
@@ -1479,9 +1484,10 @@ proxy-groups:
       - 🇨🇳 HTTPS | 台湾 | 21
 
   - name: SSR 区
-    type: load-balance
-    url: https://www.google.com/gen_204
+    type: url-test
+    url: http://www.gstatic.com/generate_204
     interval: 180
+    tolerance: 50
     proxies:
       - VIP-Hong Kong 01 | Media
       - Hong Kong 03
