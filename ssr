@@ -5,503 +5,303 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中国-法国 IPLC C02, server: fr02.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-印度 班加罗尔 एयरटेल IPLC C03, server: in03.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-印度 班加罗尔 एयरटेल IPLC C09, server: in09.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 C 07 1Gbps HBO TVB, server: sg07.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 環球全域電訊 C03, server: hgc03.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-印度 班加罗尔 एयरटेल IPLC C07, server: in07.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港ssr-tg频道:@ripaojiedian, server: ca01.mellanox.info, port: 2498, type: ssr, cipher: rc4-md5, password: 0xcriY, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK8 C 04 1Gbps HBO TVB, server: sg14.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-印度 班加罗尔 एयरटेल IPLC C08, server: in08.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-英国伦敦 IPLC BBC C01, server: uk01.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-印度 班加罗尔 एयरटेल IPLC C05, server: in05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 C 01 1Gbps HBO TVB, server: sg01.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 试用/续费 接入, server: test01.alderlake.gay, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-加拿大 IPLC C03, server: ca03.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_08, server: 120.232.190.86, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: vpnpool-Tokyo-Linode, server: 36.138.176.120, port: 48608, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _油管：全网最强白嫖, server: 58.247.140.151, port: 11424, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: _油管：全网最强白嫖 2, server: 120.232.190.86, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_33, server: 58.247.140.151, port: 11428, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: _油管：全网最强白嫖 3, server: 120.232.190.86, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: _油管：全网最强白嫖 4, server: 116.129.254.212, port: 48620, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: _油管：全网最强白嫖 5, server: 120.233.185.189, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: 中国-tg频道:@bpjzx2, server: 116.129.254.212, port: 48619, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: MTQ2NmYxMDYyLm1pY3Jvc29mdC5jb20, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_14, server: 120.232.190.86, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: _油管：全网最强白嫖 6, server: 120.232.190.86, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: vpnhat-香港HGC-dip, server: 116.129.254.212, port: 48620, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港SSR-tg频道:@ripaojiedian, server: 116.129.254.212, port: 48619, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: 1466f1062.microsoft.com, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_29, server: 120.232.190.86, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: TG:yzcloud-新加坡-Nerocloud-nf_1_2, server: 58.247.140.151, port: 11422, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_07, server: 120.233.185.189, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: TG:yzcloud-新加坡-Nerocloud-nf_2_2, server: 58.247.140.151, port: 11429, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==, udp: true}
+  - {name: _油管：全网最强白嫖 7, server: 58.247.140.151, port: 11422, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: _油管：全网最强白嫖 8, server: 120.232.190.86, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: TG:yzcloud-新加坡-Nerocloud-nf_4, server: 120.232.190.86, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==, udp: true}
+  - {name: _油管：全网最强白嫖 9, server: 120.233.185.189, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_21, server: 58.247.140.151, port: 11421, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_37, server: 120.233.185.189, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: vpnhat-SG-Nerocloud-nf, server: 120.232.190.86, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-SG-Nerocloud-nf 2, server: 120.233.185.189, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Relay_🇨🇳CN-🇸🇬SG_27, server: 120.233.185.189, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: vpnhat-SG-Nerocloud-nf 3, server: 120.233.185.189, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _油管：全网最强白嫖 10, server: 58.247.140.151, port: 11421, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: vpnpool-香港HGC-dip, server: 36.138.176.120, port: 48620, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_12, server: 120.232.190.86, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: vpnhat-Tokyo-OWL-dip, server: 116.129.254.212, port: 48606, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_18, server: 120.232.190.86, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: CN 1211, server: 36.138.176.120, port: 48620, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: TVRRMk5tWXhNRFl5TG0xcFkzSnZjMjltZEM1amIyMA==, udp: true}
+  - {name: TG:yzcloud-香港HGC-dip_3, server: 120.233.185.189, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_17, server: 120.233.185.189, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: _油管：全网最强白嫖 11, server: 120.232.190.86, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: TG:yzcloud-新加坡-Nerocloud-nf_5, server: 120.232.190.86, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==, udp: true}
+  - {name: Relay_🇨🇳CN-🇸🇬SG_04, server: 120.233.185.189, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_16, server: 120.232.190.86, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: Relay_🇨🇳CN-🇷🇴RO_44, server: 116.129.254.212, port: 48607, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
+  - {name: vpnhat-Tokyo-OWL-dip 2, server: 116.129.254.212, port: 48607, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _油管：全网最强白嫖 12, server: 120.232.190.86, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: vpnhat-Zelenograd-Baxet-dip, server: 116.129.254.212, port: 48601, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_13, server: 58.247.140.151, port: 11423, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: _油管：全网最强白嫖 13, server: 36.138.176.120, port: 48601, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: TG:yzcloud-日本-OWL-dip_1_2, server: 36.138.176.120, port: 48607, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==, udp: true}
+  - {name: _油管：全网最强白嫖 14, server: 36.138.176.120, port: 48602, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: _油管：全网最强白嫖 15, server: 58.247.140.151, port: 11428, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2, server: 116.129.254.212, port: 48609, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_42, server: 120.233.185.189, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: TG:yzcloud-新加坡-Tencent-nf_1, server: 120.233.185.189, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==, udp: true}
+  - {name: vpnhat-Santa Clarita-MULTA, server: 116.129.254.212, port: 48616, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _油管：全网最强白嫖 16, server: 116.129.254.212, port: 48616, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: Relay_🇨🇳CN-🏁ZZ_06, server: 58.247.140.151, port: 11427, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
   - {name: 日本SSR-tg频道:@ripaojiedian, server: 116.129.254.212, port: 48608, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: 1466f1062.microsoft.com, udp: true}
-  - {name: 韩国 京畿道板桥 原生游戏解锁 C 04, server: krgame04.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 環球全域電訊 C05, server: hgc05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 C 08 1Gbps HBO TVB, server: sg08.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 韩国 京畿道板桥 原生游戏解锁 C 05, server: krgame05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 C 04 1Gbps HBO TVB, server: sg04.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-英国伦敦 IPLC BBC C05, server: uk05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-印度 班加罗尔 एयरटेल IPLC C06, server: in06.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01, server: pvcc01.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 環球全域電訊 C04, server: hgc04.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-英国伦敦 IPLC BBC C06, server: uk06.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-印度 班加罗尔 एयरटेल IPLC C04, server: in04.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 日本 ソフトバンク C02 500Mbps 1x Netflix, server: jpsb02.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-日本 沪日IEPL传输 Equinix-TY8 C01 Netflix, server: jp01.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-韩国 IEPL（三）A 1Gbps, server: kr01.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-日本 多协议标签交换虚拟专用网（三） C 1000Mbps, server: hr03.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾桃园 IPLC 台湾固网 C05 Netflix 动画疯, server: twct05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 日本 ソフトバンク C07 500Mbps 1x Netflix, server: jpsb07.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾彰化 IEPL HiNet固接 C03 Netflix 动画疯, server: tw03.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾彰化 IEPL HiNet固接 C05 Netflix 动画疯, server: tw05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾 VPDN 嘉义游戏专线 C05 Netflix 动画疯, server: twgame05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾桃园 IPLC 台湾固网 C06 Netflix 动画疯, server: twct06.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾桃园 IPLC 台湾固网 C03 Netflix 动画疯, server: twct03.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾桃园 IPLC 台湾固网 C04 Netflix 动画疯, server: twct04.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾彰化 IEPL HiNet固接 C04 Netflix 动画疯, server: tw04.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-日本 多协议标签交换虚拟专用网（三） F 1000Mbps, server: hr06.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 日本 ソフトバンク C10 500Mbps 1x Netflix, server: jpsb10.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾桃园 IPLC 台湾固网 C11 Netflix 动画疯, server: twct11.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-日本 多协议标签交换虚拟专用网（三） E 1000Mbps, server: hr05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾 VPDN 嘉义游戏专线 C04 Netflix 动画疯, server: twgame04.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾桃园 IPLC 台湾固网 C08 Netflix 动画疯, server: twct08.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾桃园 IPLC 台湾固网 C10 Netflix 动画疯, server: twct10.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾 VPDN 嘉义游戏专线 C06 Netflix 动画疯, server: twgame06.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾桃园 IPLC 台湾固网 C02 Netflix 动画疯, server: twct02.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾彰化 IEPL HiNet固接 C06 Netflix 动画疯, server: tw06.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾桃园 IPLC 台湾固网 C07 Netflix 动画疯, server: twct07.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾彰化 IEPL HiNet固接 C09 Netflix 动画疯, server: tw09.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 日本 ソフトバンク C05 500Mbps 1x Netflix, server: jpsb05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-台湾彰化 IEPL HiNet固接 C10 Netflix 动画疯, server: tw10.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 名氣通電訊 C08, server: hkhe08.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 C 01, server: kr06.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 C 04, server: kr09.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-印度 班加罗尔 एयरटेल IPLC C02, server: in02.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 C 02, server: kr07.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 環球全域電訊 C06, server: hgc06.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 C 03, server: kr08.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 名氣通電訊 C01, server: hkhe01.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 名氣通電訊 C09, server: hkhe09.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 環球全域電訊 C08, server: hgc08.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 韩国 京畿道板桥 原生游戏解锁 C 03, server: krgame03.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 環球全域電訊 C01, server: hgc01.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 韩国 전라북도 전주시 商宽 C 05, server: kr10.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-印度 班加罗尔 एयरटेल IPLC C01, server: in01.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 名氣通電訊 C03, server: hkhe03.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 名氣通電訊 C04, server: hkhe04.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 環球全域電訊 C07, server: hgc07.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-加拿大 IPLC C04, server: ca04.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 名氣通電訊 C06, server: hkhe06.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 環球全域電訊 C10, server: hgc10.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 韩国 京畿道板桥 原生游戏解锁 C 09, server: krgame09.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-加拿大 IPLC C02, server: ca02.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 韩国 京畿道板桥 原生游戏解锁 C 08, server: krgame08.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港ssr-tg频道:@ripaojiedian 2, server: ca01.mellanox.info, port: 2498, type: ssr, cipher: rc4-md5, password: 0xcriY, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB, server: sg05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 環球全域電訊 C09, server: hgc09.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB, server: sg09.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 名氣通電訊 C02, server: hkhe02.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 C 10 1Gbps HBO TVB, server: sg10.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB, server: sg19.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 名氣通電訊 C07, server: hkhe07.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 韩国 京畿道板桥 原生游戏解锁 C 02, server: krgame02.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-韩国 IEPL（三）E 1Gbps, server: kr05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK8 C 05 1Gbps HBO TVB, server: sg15.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-澳大利亚 IPLC 悉尼 C03, server: au03.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB, server: sg20.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 香港 油尖旺御金·国峯 環球全域電訊 C02, server: hgc02.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-加拿大 IPLC C05, server: ca05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 C 02 1Gbps HBO TVB, server: sg02.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-加拿大 IPLC C01, server: ca01.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-韩国 IEPL（三）C 1Gbps, server: kr03.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-韩国 IEPL（三）D 1Gbps, server: kr04.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB, server: sg17.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 C 06 1Gbps HBO TVB, server: sg06.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 韩国 京畿道板桥 原生游戏解锁 C 07, server: krgame07.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-法国 IPLC C04, server: fr04.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-澳大利亚 IPLC 悉尼 C04, server: au04.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-澳大利亚 IPLC 悉尼 C01, server: au01.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 韩国 京畿道板桥 原生游戏解锁 C 01, server: krgame01.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-澳大利亚 IPLC 悉尼 C05, server: au05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-爱尔兰 IPLC C04, server: ir04.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-爱尔兰 IPLC C05, server: ir05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-法国 IPLC C03, server: fr03.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK8 C 01 1Gbps HBO TVB, server: sg11.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-爱尔兰 IPLC C01, server: ir01.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-韩国 IEPL（三）B 1Gbps, server: kr02.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK8 C 02 1Gbps HBO TVB, server: sg12.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-爱尔兰 IPLC C02, server: ir02.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-英国伦敦 IPLC BBC C02, server: uk02.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-法国 IPLC C01, server: fr01.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB, server: sg18.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IPLC Equinix HK2 C 03 1Gbps HBO TVB, server: sg03.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB, server: sg16.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-法国 IPLC C05, server: fr05.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-英国伦敦 IPLC BBC C03, server: uk03.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-爱尔兰 IPLC C03, server: ir03.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
-  - {name: 中国-英国伦敦 IPLC BBC C04, server: uk04.mellanox.info, port: 18813, type: ssr, cipher: rc4-md5, password: ipt1x9, protocol: origin, obfs: http_simple, protocol-param: t.me/vpnpool, obfs-param: t.me.vpnhat, udp: true}
+  - {name: 香港SSR-tg频道:@ripaojiedian 2, server: 36.138.176.120, port: 48620, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: 1466f1062.microsoft.com, udp: true}
+  - {name: vpnpool-Tokyo-OWL-dip, server: 36.138.176.120, port: 48607, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_46, server: 116.129.254.212, port: 48614, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
+  - {name: vpnhat-LAX-DediPath, server: 116.129.254.212, port: 48613, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_30, server: 120.233.185.189, port: 35247, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: vpnhat-Singapore-Contabo-dip, server: 116.129.254.212, port: 48609, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: t.me/vpnhat, udp: true}
+  - {name: CN 312, server: 116.129.254.212, port: 48615, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
+  - {name: 洛杉矶-tg频道:@bpjzx2, server: 36.138.176.120, port: 48613, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
+  - {name: Relay_🇨🇳CN-🇦🇺AU_08, server: 120.232.190.86, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: Relay_🇨🇳CN-🇦🇺AU_15, server: 120.232.190.86, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_36, server: 120.232.190.86, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
+  - {name: _油管：全网最强白嫖 17, server: 116.129.254.212, port: 48610, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: vpnpool-Santa Clarita-MULTA, server: 36.138.176.120, port: 48616, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: t.me/vpnhat, udp: true}
+  - {name: _油管：全网最强白嫖 18, server: 116.129.254.212, port: 48608, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: _油管：全网最强白嫖 19, server: 116.129.254.212, port: 48607, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-法国 IPLC C02
-      - 中国-印度 班加罗尔 एयरटेल IPLC C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-香港 IPLC Equinix HK2 C 07 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - 香港ssr-tg频道:@ripaojiedian
-      - 中国-香港 IEPL Equinix HK8 C 04 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C08
-      - 中国-英国伦敦 IPLC BBC C01
-      - 中国-印度 班加罗尔 एयरटेल IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 01 1Gbps HBO TVB
-      - 试用/续费 接入
-      - 中国-加拿大 IPLC C03
+      - Relay_🇨🇳CN-🇺🇸US_08
+      - vpnpool-Tokyo-Linode
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - Relay_🇨🇳CN-🇹🇼TW_33
+      - _油管：全网最强白嫖 3
+      - _油管：全网最强白嫖 4
+      - _油管：全网最强白嫖 5
+      - 中国-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - _油管：全网最强白嫖 6
+      - vpnhat-香港HGC-dip
+      - 香港SSR-tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇹🇼TW_29
+      - TG:yzcloud-新加坡-Nerocloud-nf_1_2
+      - Relay_🇨🇳CN-🇭🇰HK_07
+      - TG:yzcloud-新加坡-Nerocloud-nf_2_2
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - TG:yzcloud-新加坡-Nerocloud-nf_4
+      - _油管：全网最强白嫖 9
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - Relay_🇨🇳CN-🇺🇸US_37
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - Relay_🇨🇳CN-🇸🇬SG_27
+      - vpnhat-SG-Nerocloud-nf 3
+      - _油管：全网最强白嫖 10
+      - vpnpool-香港HGC-dip
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - vpnhat-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - CN 1211
+      - TG:yzcloud-香港HGC-dip_3
+      - Relay_🇨🇳CN-🇭🇰HK_17
+      - _油管：全网最强白嫖 11
+      - TG:yzcloud-新加坡-Nerocloud-nf_5
+      - Relay_🇨🇳CN-🇸🇬SG_04
+      - Relay_🇨🇳CN-🇺🇸US_16
+      - Relay_🇨🇳CN-🇷🇴RO_44
+      - vpnhat-Tokyo-OWL-dip 2
+      - _油管：全网最强白嫖 12
+      - vpnhat-Zelenograd-Baxet-dip
+      - Relay_🇨🇳CN-🇺🇸US_13
+      - _油管：全网最强白嫖 13
+      - TG:yzcloud-日本-OWL-dip_1_2
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - 新加坡-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇹🇼TW_42
+      - TG:yzcloud-新加坡-Tencent-nf_1
+      - vpnhat-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 16
+      - Relay_🇨🇳CN-🏁ZZ_06
       - 日本SSR-tg频道:@ripaojiedian
-      - 韩国 京畿道板桥 原生游戏解锁 C 04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C05
-      - 中国-香港 IPLC Equinix HK2 C 08 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 05
-      - 中国-香港 IPLC Equinix HK2 C 04 1Gbps HBO TVB
-      - 中国-英国伦敦 IPLC BBC C05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C06
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 香港 油尖旺御金·国峯 環球全域電訊 C04
-      - 中国-英国伦敦 IPLC BBC C06
-      - 中国-印度 班加罗尔 एयरटेल IPLC C04
-      - 日本 ソフトバンク C02 500Mbps 1x Netflix
-      - 中国-日本 沪日IEPL传输 Equinix-TY8 C01 Netflix
-      - 中国-韩国 IEPL（三）A 1Gbps
-      - 中国-日本 多协议标签交换虚拟专用网（三） C 1000Mbps
-      - 中国-台湾桃园 IPLC 台湾固网 C05 Netflix 动画疯
-      - 日本 ソフトバンク C07 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C03 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C05 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C05 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C03 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C04 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C04 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） F 1000Mbps
-      - 日本 ソフトバンク C10 500Mbps 1x Netflix
-      - 中国-台湾桃园 IPLC 台湾固网 C11 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） E 1000Mbps
-      - 中国-台湾 VPDN 嘉义游戏专线 C04 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C08 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C10 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C02 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C07 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C09 Netflix 动画疯
-      - 日本 ソフトバンク C05 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C10 Netflix 动画疯
-      - 香港 油尖旺御金·国峯 名氣通電訊 C08
-      - 韩国 전라북도 전주시 商宽 C 01
-      - 韩国 전라북도 전주시 商宽 C 04
-      - 中国-印度 班加罗尔 एयरटेल IPLC C02
-      - 韩国 전라북도 전주시 商宽 C 02
-      - 香港 油尖旺御金·国峯 環球全域電訊 C06
-      - 韩国 전라북도 전주시 商宽 C 03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C09
-      - 香港 油尖旺御金·国峯 環球全域電訊 C08
-      - 韩国 京畿道板桥 原生游戏解锁 C 03
-      - 香港 油尖旺御金·国峯 環球全域電訊 C01
-      - 韩国 전라북도 전주시 商宽 C 05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C07
-      - 中国-加拿大 IPLC C04
-      - 香港 油尖旺御金·国峯 名氣通電訊 C06
-      - 香港 油尖旺御金·国峯 環球全域電訊 C10
-      - 韩国 京畿道板桥 原生游戏解锁 C 09
-      - 中国-加拿大 IPLC C02
-      - 韩国 京畿道板桥 原生游戏解锁 C 08
-      - 香港ssr-tg频道:@ripaojiedian 2
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C09
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C02
-      - 中国-香港 IPLC Equinix HK2 C 10 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C07
-      - 韩国 京畿道板桥 原生游戏解锁 C 02
-      - 中国-韩国 IEPL（三）E 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 05 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C03
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C02
-      - 中国-加拿大 IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 02 1Gbps HBO TVB
-      - 中国-加拿大 IPLC C01
-      - 中国-韩国 IEPL（三）C 1Gbps
-      - 中国-韩国 IEPL（三）D 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 06 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 07
-      - 中国-法国 IPLC C04
-      - 中国-澳大利亚 IPLC 悉尼 C04
-      - 中国-澳大利亚 IPLC 悉尼 C01
-      - 韩国 京畿道板桥 原生游戏解锁 C 01
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-爱尔兰 IPLC C04
-      - 中国-爱尔兰 IPLC C05
-      - 中国-法国 IPLC C03
-      - 中国-香港 IEPL Equinix HK8 C 01 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C01
-      - 中国-韩国 IEPL（三）B 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 02 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
-      - 中国-英国伦敦 IPLC BBC C02
-      - 中国-法国 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 03 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - 中国-法国 IPLC C05
-      - 中国-英国伦敦 IPLC BBC C03
-      - 中国-爱尔兰 IPLC C03
-      - 中国-英国伦敦 IPLC BBC C04
+      - 香港SSR-tg频道:@ripaojiedian 2
+      - vpnpool-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇺🇸US_46
+      - vpnhat-LAX-DediPath
+      - Relay_🇨🇳CN-🇺🇸US_30
+      - vpnhat-Singapore-Contabo-dip
+      - CN 312
+      - 洛杉矶-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇦🇺AU_08
+      - Relay_🇨🇳CN-🇦🇺AU_15
+      - Relay_🇨🇳CN-🇺🇸US_36
+      - _油管：全网最强白嫖 17
+      - vpnpool-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 18
+      - _油管：全网最强白嫖 19
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中国-法国 IPLC C02
-      - 中国-印度 班加罗尔 एयरटेल IPLC C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-香港 IPLC Equinix HK2 C 07 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - 香港ssr-tg频道:@ripaojiedian
-      - 中国-香港 IEPL Equinix HK8 C 04 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C08
-      - 中国-英国伦敦 IPLC BBC C01
-      - 中国-印度 班加罗尔 एयरटेल IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 01 1Gbps HBO TVB
-      - 试用/续费 接入
-      - 中国-加拿大 IPLC C03
+      - Relay_🇨🇳CN-🇺🇸US_08
+      - vpnpool-Tokyo-Linode
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - Relay_🇨🇳CN-🇹🇼TW_33
+      - _油管：全网最强白嫖 3
+      - _油管：全网最强白嫖 4
+      - _油管：全网最强白嫖 5
+      - 中国-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - _油管：全网最强白嫖 6
+      - vpnhat-香港HGC-dip
+      - 香港SSR-tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇹🇼TW_29
+      - TG:yzcloud-新加坡-Nerocloud-nf_1_2
+      - Relay_🇨🇳CN-🇭🇰HK_07
+      - TG:yzcloud-新加坡-Nerocloud-nf_2_2
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - TG:yzcloud-新加坡-Nerocloud-nf_4
+      - _油管：全网最强白嫖 9
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - Relay_🇨🇳CN-🇺🇸US_37
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - Relay_🇨🇳CN-🇸🇬SG_27
+      - vpnhat-SG-Nerocloud-nf 3
+      - _油管：全网最强白嫖 10
+      - vpnpool-香港HGC-dip
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - vpnhat-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - CN 1211
+      - TG:yzcloud-香港HGC-dip_3
+      - Relay_🇨🇳CN-🇭🇰HK_17
+      - _油管：全网最强白嫖 11
+      - TG:yzcloud-新加坡-Nerocloud-nf_5
+      - Relay_🇨🇳CN-🇸🇬SG_04
+      - Relay_🇨🇳CN-🇺🇸US_16
+      - Relay_🇨🇳CN-🇷🇴RO_44
+      - vpnhat-Tokyo-OWL-dip 2
+      - _油管：全网最强白嫖 12
+      - vpnhat-Zelenograd-Baxet-dip
+      - Relay_🇨🇳CN-🇺🇸US_13
+      - _油管：全网最强白嫖 13
+      - TG:yzcloud-日本-OWL-dip_1_2
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - 新加坡-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇹🇼TW_42
+      - TG:yzcloud-新加坡-Tencent-nf_1
+      - vpnhat-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 16
+      - Relay_🇨🇳CN-🏁ZZ_06
       - 日本SSR-tg频道:@ripaojiedian
-      - 韩国 京畿道板桥 原生游戏解锁 C 04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C05
-      - 中国-香港 IPLC Equinix HK2 C 08 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 05
-      - 中国-香港 IPLC Equinix HK2 C 04 1Gbps HBO TVB
-      - 中国-英国伦敦 IPLC BBC C05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C06
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 香港 油尖旺御金·国峯 環球全域電訊 C04
-      - 中国-英国伦敦 IPLC BBC C06
-      - 中国-印度 班加罗尔 एयरटेल IPLC C04
-      - 日本 ソフトバンク C02 500Mbps 1x Netflix
-      - 中国-日本 沪日IEPL传输 Equinix-TY8 C01 Netflix
-      - 中国-韩国 IEPL（三）A 1Gbps
-      - 中国-日本 多协议标签交换虚拟专用网（三） C 1000Mbps
-      - 中国-台湾桃园 IPLC 台湾固网 C05 Netflix 动画疯
-      - 日本 ソフトバンク C07 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C03 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C05 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C05 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C03 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C04 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C04 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） F 1000Mbps
-      - 日本 ソフトバンク C10 500Mbps 1x Netflix
-      - 中国-台湾桃园 IPLC 台湾固网 C11 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） E 1000Mbps
-      - 中国-台湾 VPDN 嘉义游戏专线 C04 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C08 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C10 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C02 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C07 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C09 Netflix 动画疯
-      - 日本 ソフトバンク C05 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C10 Netflix 动画疯
-      - 香港 油尖旺御金·国峯 名氣通電訊 C08
-      - 韩国 전라북도 전주시 商宽 C 01
-      - 韩国 전라북도 전주시 商宽 C 04
-      - 中国-印度 班加罗尔 एयरटेल IPLC C02
-      - 韩国 전라북도 전주시 商宽 C 02
-      - 香港 油尖旺御金·国峯 環球全域電訊 C06
-      - 韩国 전라북도 전주시 商宽 C 03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C09
-      - 香港 油尖旺御金·国峯 環球全域電訊 C08
-      - 韩国 京畿道板桥 原生游戏解锁 C 03
-      - 香港 油尖旺御金·国峯 環球全域電訊 C01
-      - 韩国 전라북도 전주시 商宽 C 05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C07
-      - 中国-加拿大 IPLC C04
-      - 香港 油尖旺御金·国峯 名氣通電訊 C06
-      - 香港 油尖旺御金·国峯 環球全域電訊 C10
-      - 韩国 京畿道板桥 原生游戏解锁 C 09
-      - 中国-加拿大 IPLC C02
-      - 韩国 京畿道板桥 原生游戏解锁 C 08
-      - 香港ssr-tg频道:@ripaojiedian 2
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C09
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C02
-      - 中国-香港 IPLC Equinix HK2 C 10 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C07
-      - 韩国 京畿道板桥 原生游戏解锁 C 02
-      - 中国-韩国 IEPL（三）E 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 05 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C03
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C02
-      - 中国-加拿大 IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 02 1Gbps HBO TVB
-      - 中国-加拿大 IPLC C01
-      - 中国-韩国 IEPL（三）C 1Gbps
-      - 中国-韩国 IEPL（三）D 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 06 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 07
-      - 中国-法国 IPLC C04
-      - 中国-澳大利亚 IPLC 悉尼 C04
-      - 中国-澳大利亚 IPLC 悉尼 C01
-      - 韩国 京畿道板桥 原生游戏解锁 C 01
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-爱尔兰 IPLC C04
-      - 中国-爱尔兰 IPLC C05
-      - 中国-法国 IPLC C03
-      - 中国-香港 IEPL Equinix HK8 C 01 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C01
-      - 中国-韩国 IEPL（三）B 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 02 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
-      - 中国-英国伦敦 IPLC BBC C02
-      - 中国-法国 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 03 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - 中国-法国 IPLC C05
-      - 中国-英国伦敦 IPLC BBC C03
-      - 中国-爱尔兰 IPLC C03
-      - 中国-英国伦敦 IPLC BBC C04
+      - 香港SSR-tg频道:@ripaojiedian 2
+      - vpnpool-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇺🇸US_46
+      - vpnhat-LAX-DediPath
+      - Relay_🇨🇳CN-🇺🇸US_30
+      - vpnhat-Singapore-Contabo-dip
+      - CN 312
+      - 洛杉矶-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇦🇺AU_08
+      - Relay_🇨🇳CN-🇦🇺AU_15
+      - Relay_🇨🇳CN-🇺🇸US_36
+      - _油管：全网最强白嫖 17
+      - vpnpool-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 18
+      - _油管：全网最强白嫖 19
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-法国 IPLC C02
-      - 中国-印度 班加罗尔 एयरटेल IPLC C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-香港 IPLC Equinix HK2 C 07 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - 香港ssr-tg频道:@ripaojiedian
-      - 中国-香港 IEPL Equinix HK8 C 04 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C08
-      - 中国-英国伦敦 IPLC BBC C01
-      - 中国-印度 班加罗尔 एयरटेल IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 01 1Gbps HBO TVB
-      - 试用/续费 接入
-      - 中国-加拿大 IPLC C03
+      - Relay_🇨🇳CN-🇺🇸US_08
+      - vpnpool-Tokyo-Linode
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - Relay_🇨🇳CN-🇹🇼TW_33
+      - _油管：全网最强白嫖 3
+      - _油管：全网最强白嫖 4
+      - _油管：全网最强白嫖 5
+      - 中国-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - _油管：全网最强白嫖 6
+      - vpnhat-香港HGC-dip
+      - 香港SSR-tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇹🇼TW_29
+      - TG:yzcloud-新加坡-Nerocloud-nf_1_2
+      - Relay_🇨🇳CN-🇭🇰HK_07
+      - TG:yzcloud-新加坡-Nerocloud-nf_2_2
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - TG:yzcloud-新加坡-Nerocloud-nf_4
+      - _油管：全网最强白嫖 9
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - Relay_🇨🇳CN-🇺🇸US_37
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - Relay_🇨🇳CN-🇸🇬SG_27
+      - vpnhat-SG-Nerocloud-nf 3
+      - _油管：全网最强白嫖 10
+      - vpnpool-香港HGC-dip
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - vpnhat-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - CN 1211
+      - TG:yzcloud-香港HGC-dip_3
+      - Relay_🇨🇳CN-🇭🇰HK_17
+      - _油管：全网最强白嫖 11
+      - TG:yzcloud-新加坡-Nerocloud-nf_5
+      - Relay_🇨🇳CN-🇸🇬SG_04
+      - Relay_🇨🇳CN-🇺🇸US_16
+      - Relay_🇨🇳CN-🇷🇴RO_44
+      - vpnhat-Tokyo-OWL-dip 2
+      - _油管：全网最强白嫖 12
+      - vpnhat-Zelenograd-Baxet-dip
+      - Relay_🇨🇳CN-🇺🇸US_13
+      - _油管：全网最强白嫖 13
+      - TG:yzcloud-日本-OWL-dip_1_2
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - 新加坡-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇹🇼TW_42
+      - TG:yzcloud-新加坡-Tencent-nf_1
+      - vpnhat-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 16
+      - Relay_🇨🇳CN-🏁ZZ_06
       - 日本SSR-tg频道:@ripaojiedian
-      - 韩国 京畿道板桥 原生游戏解锁 C 04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C05
-      - 中国-香港 IPLC Equinix HK2 C 08 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 05
-      - 中国-香港 IPLC Equinix HK2 C 04 1Gbps HBO TVB
-      - 中国-英国伦敦 IPLC BBC C05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C06
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 香港 油尖旺御金·国峯 環球全域電訊 C04
-      - 中国-英国伦敦 IPLC BBC C06
-      - 中国-印度 班加罗尔 एयरटेल IPLC C04
-      - 日本 ソフトバンク C02 500Mbps 1x Netflix
-      - 中国-日本 沪日IEPL传输 Equinix-TY8 C01 Netflix
-      - 中国-韩国 IEPL（三）A 1Gbps
-      - 中国-日本 多协议标签交换虚拟专用网（三） C 1000Mbps
-      - 中国-台湾桃园 IPLC 台湾固网 C05 Netflix 动画疯
-      - 日本 ソフトバンク C07 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C03 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C05 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C05 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C03 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C04 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C04 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） F 1000Mbps
-      - 日本 ソフトバンク C10 500Mbps 1x Netflix
-      - 中国-台湾桃园 IPLC 台湾固网 C11 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） E 1000Mbps
-      - 中国-台湾 VPDN 嘉义游戏专线 C04 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C08 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C10 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C02 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C07 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C09 Netflix 动画疯
-      - 日本 ソフトバンク C05 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C10 Netflix 动画疯
-      - 香港 油尖旺御金·国峯 名氣通電訊 C08
-      - 韩国 전라북도 전주시 商宽 C 01
-      - 韩国 전라북도 전주시 商宽 C 04
-      - 中国-印度 班加罗尔 एयरटेल IPLC C02
-      - 韩国 전라북도 전주시 商宽 C 02
-      - 香港 油尖旺御金·国峯 環球全域電訊 C06
-      - 韩国 전라북도 전주시 商宽 C 03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C09
-      - 香港 油尖旺御金·国峯 環球全域電訊 C08
-      - 韩国 京畿道板桥 原生游戏解锁 C 03
-      - 香港 油尖旺御金·国峯 環球全域電訊 C01
-      - 韩国 전라북도 전주시 商宽 C 05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C07
-      - 中国-加拿大 IPLC C04
-      - 香港 油尖旺御金·国峯 名氣通電訊 C06
-      - 香港 油尖旺御金·国峯 環球全域電訊 C10
-      - 韩国 京畿道板桥 原生游戏解锁 C 09
-      - 中国-加拿大 IPLC C02
-      - 韩国 京畿道板桥 原生游戏解锁 C 08
-      - 香港ssr-tg频道:@ripaojiedian 2
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C09
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C02
-      - 中国-香港 IPLC Equinix HK2 C 10 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C07
-      - 韩国 京畿道板桥 原生游戏解锁 C 02
-      - 中国-韩国 IEPL（三）E 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 05 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C03
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C02
-      - 中国-加拿大 IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 02 1Gbps HBO TVB
-      - 中国-加拿大 IPLC C01
-      - 中国-韩国 IEPL（三）C 1Gbps
-      - 中国-韩国 IEPL（三）D 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 06 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 07
-      - 中国-法国 IPLC C04
-      - 中国-澳大利亚 IPLC 悉尼 C04
-      - 中国-澳大利亚 IPLC 悉尼 C01
-      - 韩国 京畿道板桥 原生游戏解锁 C 01
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-爱尔兰 IPLC C04
-      - 中国-爱尔兰 IPLC C05
-      - 中国-法国 IPLC C03
-      - 中国-香港 IEPL Equinix HK8 C 01 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C01
-      - 中国-韩国 IEPL（三）B 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 02 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
-      - 中国-英国伦敦 IPLC BBC C02
-      - 中国-法国 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 03 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - 中国-法国 IPLC C05
-      - 中国-英国伦敦 IPLC BBC C03
-      - 中国-爱尔兰 IPLC C03
-      - 中国-英国伦敦 IPLC BBC C04
+      - 香港SSR-tg频道:@ripaojiedian 2
+      - vpnpool-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇺🇸US_46
+      - vpnhat-LAX-DediPath
+      - Relay_🇨🇳CN-🇺🇸US_30
+      - vpnhat-Singapore-Contabo-dip
+      - CN 312
+      - 洛杉矶-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇦🇺AU_08
+      - Relay_🇨🇳CN-🇦🇺AU_15
+      - Relay_🇨🇳CN-🇺🇸US_36
+      - _油管：全网最强白嫖 17
+      - vpnpool-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 18
+      - _油管：全网最强白嫖 19
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -520,564 +320,312 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-法国 IPLC C02
-      - 中国-印度 班加罗尔 एयरटेल IPLC C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-香港 IPLC Equinix HK2 C 07 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - 香港ssr-tg频道:@ripaojiedian
-      - 中国-香港 IEPL Equinix HK8 C 04 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C08
-      - 中国-英国伦敦 IPLC BBC C01
-      - 中国-印度 班加罗尔 एयरटेल IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 01 1Gbps HBO TVB
-      - 试用/续费 接入
-      - 中国-加拿大 IPLC C03
+      - Relay_🇨🇳CN-🇺🇸US_08
+      - vpnpool-Tokyo-Linode
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - Relay_🇨🇳CN-🇹🇼TW_33
+      - _油管：全网最强白嫖 3
+      - _油管：全网最强白嫖 4
+      - _油管：全网最强白嫖 5
+      - 中国-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - _油管：全网最强白嫖 6
+      - vpnhat-香港HGC-dip
+      - 香港SSR-tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇹🇼TW_29
+      - TG:yzcloud-新加坡-Nerocloud-nf_1_2
+      - Relay_🇨🇳CN-🇭🇰HK_07
+      - TG:yzcloud-新加坡-Nerocloud-nf_2_2
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - TG:yzcloud-新加坡-Nerocloud-nf_4
+      - _油管：全网最强白嫖 9
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - Relay_🇨🇳CN-🇺🇸US_37
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - Relay_🇨🇳CN-🇸🇬SG_27
+      - vpnhat-SG-Nerocloud-nf 3
+      - _油管：全网最强白嫖 10
+      - vpnpool-香港HGC-dip
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - vpnhat-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - CN 1211
+      - TG:yzcloud-香港HGC-dip_3
+      - Relay_🇨🇳CN-🇭🇰HK_17
+      - _油管：全网最强白嫖 11
+      - TG:yzcloud-新加坡-Nerocloud-nf_5
+      - Relay_🇨🇳CN-🇸🇬SG_04
+      - Relay_🇨🇳CN-🇺🇸US_16
+      - Relay_🇨🇳CN-🇷🇴RO_44
+      - vpnhat-Tokyo-OWL-dip 2
+      - _油管：全网最强白嫖 12
+      - vpnhat-Zelenograd-Baxet-dip
+      - Relay_🇨🇳CN-🇺🇸US_13
+      - _油管：全网最强白嫖 13
+      - TG:yzcloud-日本-OWL-dip_1_2
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - 新加坡-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇹🇼TW_42
+      - TG:yzcloud-新加坡-Tencent-nf_1
+      - vpnhat-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 16
+      - Relay_🇨🇳CN-🏁ZZ_06
       - 日本SSR-tg频道:@ripaojiedian
-      - 韩国 京畿道板桥 原生游戏解锁 C 04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C05
-      - 中国-香港 IPLC Equinix HK2 C 08 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 05
-      - 中国-香港 IPLC Equinix HK2 C 04 1Gbps HBO TVB
-      - 中国-英国伦敦 IPLC BBC C05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C06
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 香港 油尖旺御金·国峯 環球全域電訊 C04
-      - 中国-英国伦敦 IPLC BBC C06
-      - 中国-印度 班加罗尔 एयरटेल IPLC C04
-      - 日本 ソフトバンク C02 500Mbps 1x Netflix
-      - 中国-日本 沪日IEPL传输 Equinix-TY8 C01 Netflix
-      - 中国-韩国 IEPL（三）A 1Gbps
-      - 中国-日本 多协议标签交换虚拟专用网（三） C 1000Mbps
-      - 中国-台湾桃园 IPLC 台湾固网 C05 Netflix 动画疯
-      - 日本 ソフトバンク C07 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C03 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C05 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C05 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C03 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C04 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C04 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） F 1000Mbps
-      - 日本 ソフトバンク C10 500Mbps 1x Netflix
-      - 中国-台湾桃园 IPLC 台湾固网 C11 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） E 1000Mbps
-      - 中国-台湾 VPDN 嘉义游戏专线 C04 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C08 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C10 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C02 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C07 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C09 Netflix 动画疯
-      - 日本 ソフトバンク C05 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C10 Netflix 动画疯
-      - 香港 油尖旺御金·国峯 名氣通電訊 C08
-      - 韩国 전라북도 전주시 商宽 C 01
-      - 韩国 전라북도 전주시 商宽 C 04
-      - 中国-印度 班加罗尔 एयरटेल IPLC C02
-      - 韩国 전라북도 전주시 商宽 C 02
-      - 香港 油尖旺御金·国峯 環球全域電訊 C06
-      - 韩国 전라북도 전주시 商宽 C 03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C09
-      - 香港 油尖旺御金·国峯 環球全域電訊 C08
-      - 韩国 京畿道板桥 原生游戏解锁 C 03
-      - 香港 油尖旺御金·国峯 環球全域電訊 C01
-      - 韩国 전라북도 전주시 商宽 C 05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C07
-      - 中国-加拿大 IPLC C04
-      - 香港 油尖旺御金·国峯 名氣通電訊 C06
-      - 香港 油尖旺御金·国峯 環球全域電訊 C10
-      - 韩国 京畿道板桥 原生游戏解锁 C 09
-      - 中国-加拿大 IPLC C02
-      - 韩国 京畿道板桥 原生游戏解锁 C 08
-      - 香港ssr-tg频道:@ripaojiedian 2
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C09
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C02
-      - 中国-香港 IPLC Equinix HK2 C 10 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C07
-      - 韩国 京畿道板桥 原生游戏解锁 C 02
-      - 中国-韩国 IEPL（三）E 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 05 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C03
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C02
-      - 中国-加拿大 IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 02 1Gbps HBO TVB
-      - 中国-加拿大 IPLC C01
-      - 中国-韩国 IEPL（三）C 1Gbps
-      - 中国-韩国 IEPL（三）D 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 06 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 07
-      - 中国-法国 IPLC C04
-      - 中国-澳大利亚 IPLC 悉尼 C04
-      - 中国-澳大利亚 IPLC 悉尼 C01
-      - 韩国 京畿道板桥 原生游戏解锁 C 01
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-爱尔兰 IPLC C04
-      - 中国-爱尔兰 IPLC C05
-      - 中国-法国 IPLC C03
-      - 中国-香港 IEPL Equinix HK8 C 01 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C01
-      - 中国-韩国 IEPL（三）B 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 02 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
-      - 中国-英国伦敦 IPLC BBC C02
-      - 中国-法国 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 03 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - 中国-法国 IPLC C05
-      - 中国-英国伦敦 IPLC BBC C03
-      - 中国-爱尔兰 IPLC C03
-      - 中国-英国伦敦 IPLC BBC C04
+      - 香港SSR-tg频道:@ripaojiedian 2
+      - vpnpool-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇺🇸US_46
+      - vpnhat-LAX-DediPath
+      - Relay_🇨🇳CN-🇺🇸US_30
+      - vpnhat-Singapore-Contabo-dip
+      - CN 312
+      - 洛杉矶-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇦🇺AU_08
+      - Relay_🇨🇳CN-🇦🇺AU_15
+      - Relay_🇨🇳CN-🇺🇸US_36
+      - _油管：全网最强白嫖 17
+      - vpnpool-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 18
+      - _油管：全网最强白嫖 19
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 中国-香港 IPLC Equinix HK2 C 07 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C03
-      - 香港ssr-tg频道:@ripaojiedian
-      - 中国-香港 IEPL Equinix HK8 C 04 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 01 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C05
-      - 中国-香港 IPLC Equinix HK2 C 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 04 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C04
-      - 中国-台湾桃园 IPLC 台湾固网 C05 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C03 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C05 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C05 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C03 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C04 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C04 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C11 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C04 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C08 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C10 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C02 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C07 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C09 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C10 Netflix 动画疯
-      - 香港 油尖旺御金·国峯 名氣通電訊 C08
-      - 香港 油尖旺御金·国峯 環球全域電訊 C06
-      - 香港 油尖旺御金·国峯 名氣通電訊 C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C09
-      - 香港 油尖旺御金·国峯 環球全域電訊 C08
-      - 香港 油尖旺御金·国峯 環球全域電訊 C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C07
-      - 香港 油尖旺御金·国峯 名氣通電訊 C06
-      - 香港 油尖旺御金·国峯 環球全域電訊 C10
-      - 香港ssr-tg频道:@ripaojiedian 2
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C09
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C02
-      - 中国-香港 IPLC Equinix HK2 C 10 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C07
-      - 中国-香港 IEPL Equinix HK8 C 05 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C02
-      - 中国-香港 IPLC Equinix HK2 C 02 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 06 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 01 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 02 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 03 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
+      - vpnhat-香港HGC-dip
+      - 香港SSR-tg频道:@ripaojiedian
+      - vpnpool-香港HGC-dip
+      - TG:yzcloud-香港HGC-dip_3
+      - 香港SSR-tg频道:@ripaojiedian 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国-法国 IPLC C02
-      - 中国-印度 班加罗尔 एयरटेल IPLC C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-香港 IPLC Equinix HK2 C 07 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - 香港ssr-tg频道:@ripaojiedian
-      - 中国-香港 IEPL Equinix HK8 C 04 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C08
-      - 中国-英国伦敦 IPLC BBC C01
-      - 中国-印度 班加罗尔 एयरटेल IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 01 1Gbps HBO TVB
-      - 试用/续费 接入
-      - 中国-加拿大 IPLC C03
+      - Relay_🇨🇳CN-🇺🇸US_08
+      - vpnpool-Tokyo-Linode
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - Relay_🇨🇳CN-🇹🇼TW_33
+      - _油管：全网最强白嫖 3
+      - _油管：全网最强白嫖 4
+      - _油管：全网最强白嫖 5
+      - 中国-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - _油管：全网最强白嫖 6
+      - vpnhat-香港HGC-dip
+      - 香港SSR-tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇹🇼TW_29
+      - TG:yzcloud-新加坡-Nerocloud-nf_1_2
+      - Relay_🇨🇳CN-🇭🇰HK_07
+      - TG:yzcloud-新加坡-Nerocloud-nf_2_2
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - TG:yzcloud-新加坡-Nerocloud-nf_4
+      - _油管：全网最强白嫖 9
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - Relay_🇨🇳CN-🇺🇸US_37
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - Relay_🇨🇳CN-🇸🇬SG_27
+      - vpnhat-SG-Nerocloud-nf 3
+      - _油管：全网最强白嫖 10
+      - vpnpool-香港HGC-dip
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - vpnhat-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - CN 1211
+      - TG:yzcloud-香港HGC-dip_3
+      - Relay_🇨🇳CN-🇭🇰HK_17
+      - _油管：全网最强白嫖 11
+      - TG:yzcloud-新加坡-Nerocloud-nf_5
+      - Relay_🇨🇳CN-🇸🇬SG_04
+      - Relay_🇨🇳CN-🇺🇸US_16
+      - Relay_🇨🇳CN-🇷🇴RO_44
+      - vpnhat-Tokyo-OWL-dip 2
+      - _油管：全网最强白嫖 12
+      - vpnhat-Zelenograd-Baxet-dip
+      - Relay_🇨🇳CN-🇺🇸US_13
+      - _油管：全网最强白嫖 13
+      - TG:yzcloud-日本-OWL-dip_1_2
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - 新加坡-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇹🇼TW_42
+      - TG:yzcloud-新加坡-Tencent-nf_1
+      - vpnhat-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 16
+      - Relay_🇨🇳CN-🏁ZZ_06
       - 日本SSR-tg频道:@ripaojiedian
-      - 韩国 京畿道板桥 原生游戏解锁 C 04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C05
-      - 中国-香港 IPLC Equinix HK2 C 08 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 05
-      - 中国-香港 IPLC Equinix HK2 C 04 1Gbps HBO TVB
-      - 中国-英国伦敦 IPLC BBC C05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C06
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 香港 油尖旺御金·国峯 環球全域電訊 C04
-      - 中国-英国伦敦 IPLC BBC C06
-      - 中国-印度 班加罗尔 एयरटेल IPLC C04
-      - 日本 ソフトバンク C02 500Mbps 1x Netflix
-      - 中国-日本 沪日IEPL传输 Equinix-TY8 C01 Netflix
-      - 中国-韩国 IEPL（三）A 1Gbps
-      - 中国-日本 多协议标签交换虚拟专用网（三） C 1000Mbps
-      - 中国-台湾桃园 IPLC 台湾固网 C05 Netflix 动画疯
-      - 日本 ソフトバンク C07 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C03 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C05 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C05 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C03 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C04 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C04 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） F 1000Mbps
-      - 日本 ソフトバンク C10 500Mbps 1x Netflix
-      - 中国-台湾桃园 IPLC 台湾固网 C11 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） E 1000Mbps
-      - 中国-台湾 VPDN 嘉义游戏专线 C04 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C08 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C10 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C02 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C07 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C09 Netflix 动画疯
-      - 日本 ソフトバンク C05 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C10 Netflix 动画疯
-      - 香港 油尖旺御金·国峯 名氣通電訊 C08
-      - 韩国 전라북도 전주시 商宽 C 01
-      - 韩国 전라북도 전주시 商宽 C 04
-      - 中国-印度 班加罗尔 एयरटेल IPLC C02
-      - 韩国 전라북도 전주시 商宽 C 02
-      - 香港 油尖旺御金·国峯 環球全域電訊 C06
-      - 韩国 전라북도 전주시 商宽 C 03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C09
-      - 香港 油尖旺御金·国峯 環球全域電訊 C08
-      - 韩国 京畿道板桥 原生游戏解锁 C 03
-      - 香港 油尖旺御金·国峯 環球全域電訊 C01
-      - 韩国 전라북도 전주시 商宽 C 05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C07
-      - 中国-加拿大 IPLC C04
-      - 香港 油尖旺御金·国峯 名氣通電訊 C06
-      - 香港 油尖旺御金·国峯 環球全域電訊 C10
-      - 韩国 京畿道板桥 原生游戏解锁 C 09
-      - 中国-加拿大 IPLC C02
-      - 韩国 京畿道板桥 原生游戏解锁 C 08
-      - 香港ssr-tg频道:@ripaojiedian 2
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C09
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C02
-      - 中国-香港 IPLC Equinix HK2 C 10 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C07
-      - 韩国 京畿道板桥 原生游戏解锁 C 02
-      - 中国-韩国 IEPL（三）E 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 05 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C03
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C02
-      - 中国-加拿大 IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 02 1Gbps HBO TVB
-      - 中国-加拿大 IPLC C01
-      - 中国-韩国 IEPL（三）C 1Gbps
-      - 中国-韩国 IEPL（三）D 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 06 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 07
-      - 中国-法国 IPLC C04
-      - 中国-澳大利亚 IPLC 悉尼 C04
-      - 中国-澳大利亚 IPLC 悉尼 C01
-      - 韩国 京畿道板桥 原生游戏解锁 C 01
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-爱尔兰 IPLC C04
-      - 中国-爱尔兰 IPLC C05
-      - 中国-法国 IPLC C03
-      - 中国-香港 IEPL Equinix HK8 C 01 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C01
-      - 中国-韩国 IEPL（三）B 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 02 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
-      - 中国-英国伦敦 IPLC BBC C02
-      - 中国-法国 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 03 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - 中国-法国 IPLC C05
-      - 中国-英国伦敦 IPLC BBC C03
-      - 中国-爱尔兰 IPLC C03
-      - 中国-英国伦敦 IPLC BBC C04
+      - 香港SSR-tg频道:@ripaojiedian 2
+      - vpnpool-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇺🇸US_46
+      - vpnhat-LAX-DediPath
+      - Relay_🇨🇳CN-🇺🇸US_30
+      - vpnhat-Singapore-Contabo-dip
+      - CN 312
+      - 洛杉矶-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇦🇺AU_08
+      - Relay_🇨🇳CN-🇦🇺AU_15
+      - Relay_🇨🇳CN-🇺🇸US_36
+      - _油管：全网最强白嫖 17
+      - vpnpool-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 18
+      - _油管：全网最强白嫖 19
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国-法国 IPLC C02
-      - 中国-印度 班加罗尔 एयरटेल IPLC C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-香港 IPLC Equinix HK2 C 07 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - 香港ssr-tg频道:@ripaojiedian
-      - 中国-香港 IEPL Equinix HK8 C 04 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C08
-      - 中国-英国伦敦 IPLC BBC C01
-      - 中国-印度 班加罗尔 एयरटेल IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 01 1Gbps HBO TVB
-      - 试用/续费 接入
-      - 中国-加拿大 IPLC C03
+      - Relay_🇨🇳CN-🇺🇸US_08
+      - vpnpool-Tokyo-Linode
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - Relay_🇨🇳CN-🇹🇼TW_33
+      - _油管：全网最强白嫖 3
+      - _油管：全网最强白嫖 4
+      - _油管：全网最强白嫖 5
+      - 中国-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - _油管：全网最强白嫖 6
+      - vpnhat-香港HGC-dip
+      - 香港SSR-tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇹🇼TW_29
+      - TG:yzcloud-新加坡-Nerocloud-nf_1_2
+      - Relay_🇨🇳CN-🇭🇰HK_07
+      - TG:yzcloud-新加坡-Nerocloud-nf_2_2
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - TG:yzcloud-新加坡-Nerocloud-nf_4
+      - _油管：全网最强白嫖 9
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - Relay_🇨🇳CN-🇺🇸US_37
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - Relay_🇨🇳CN-🇸🇬SG_27
+      - vpnhat-SG-Nerocloud-nf 3
+      - _油管：全网最强白嫖 10
+      - vpnpool-香港HGC-dip
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - vpnhat-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - CN 1211
+      - TG:yzcloud-香港HGC-dip_3
+      - Relay_🇨🇳CN-🇭🇰HK_17
+      - _油管：全网最强白嫖 11
+      - TG:yzcloud-新加坡-Nerocloud-nf_5
+      - Relay_🇨🇳CN-🇸🇬SG_04
+      - Relay_🇨🇳CN-🇺🇸US_16
+      - Relay_🇨🇳CN-🇷🇴RO_44
+      - vpnhat-Tokyo-OWL-dip 2
+      - _油管：全网最强白嫖 12
+      - vpnhat-Zelenograd-Baxet-dip
+      - Relay_🇨🇳CN-🇺🇸US_13
+      - _油管：全网最强白嫖 13
+      - TG:yzcloud-日本-OWL-dip_1_2
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - 新加坡-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇹🇼TW_42
+      - TG:yzcloud-新加坡-Tencent-nf_1
+      - vpnhat-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 16
+      - Relay_🇨🇳CN-🏁ZZ_06
       - 日本SSR-tg频道:@ripaojiedian
-      - 韩国 京畿道板桥 原生游戏解锁 C 04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C05
-      - 中国-香港 IPLC Equinix HK2 C 08 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 05
-      - 中国-香港 IPLC Equinix HK2 C 04 1Gbps HBO TVB
-      - 中国-英国伦敦 IPLC BBC C05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C06
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 香港 油尖旺御金·国峯 環球全域電訊 C04
-      - 中国-英国伦敦 IPLC BBC C06
-      - 中国-印度 班加罗尔 एयरटेल IPLC C04
-      - 日本 ソフトバンク C02 500Mbps 1x Netflix
-      - 中国-日本 沪日IEPL传输 Equinix-TY8 C01 Netflix
-      - 中国-韩国 IEPL（三）A 1Gbps
-      - 中国-日本 多协议标签交换虚拟专用网（三） C 1000Mbps
-      - 中国-台湾桃园 IPLC 台湾固网 C05 Netflix 动画疯
-      - 日本 ソフトバンク C07 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C03 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C05 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C05 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C03 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C04 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C04 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） F 1000Mbps
-      - 日本 ソフトバンク C10 500Mbps 1x Netflix
-      - 中国-台湾桃园 IPLC 台湾固网 C11 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） E 1000Mbps
-      - 中国-台湾 VPDN 嘉义游戏专线 C04 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C08 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C10 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C02 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C07 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C09 Netflix 动画疯
-      - 日本 ソフトバンク C05 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C10 Netflix 动画疯
-      - 香港 油尖旺御金·国峯 名氣通電訊 C08
-      - 韩国 전라북도 전주시 商宽 C 01
-      - 韩国 전라북도 전주시 商宽 C 04
-      - 中国-印度 班加罗尔 एयरटेल IPLC C02
-      - 韩国 전라북도 전주시 商宽 C 02
-      - 香港 油尖旺御金·国峯 環球全域電訊 C06
-      - 韩国 전라북도 전주시 商宽 C 03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C09
-      - 香港 油尖旺御金·国峯 環球全域電訊 C08
-      - 韩国 京畿道板桥 原生游戏解锁 C 03
-      - 香港 油尖旺御金·国峯 環球全域電訊 C01
-      - 韩国 전라북도 전주시 商宽 C 05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C07
-      - 中国-加拿大 IPLC C04
-      - 香港 油尖旺御金·国峯 名氣通電訊 C06
-      - 香港 油尖旺御金·国峯 環球全域電訊 C10
-      - 韩国 京畿道板桥 原生游戏解锁 C 09
-      - 中国-加拿大 IPLC C02
-      - 韩国 京畿道板桥 原生游戏解锁 C 08
-      - 香港ssr-tg频道:@ripaojiedian 2
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C09
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C02
-      - 中国-香港 IPLC Equinix HK2 C 10 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C07
-      - 韩国 京畿道板桥 原生游戏解锁 C 02
-      - 中国-韩国 IEPL（三）E 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 05 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C03
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C02
-      - 中国-加拿大 IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 02 1Gbps HBO TVB
-      - 中国-加拿大 IPLC C01
-      - 中国-韩国 IEPL（三）C 1Gbps
-      - 中国-韩国 IEPL（三）D 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 06 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 07
-      - 中国-法国 IPLC C04
-      - 中国-澳大利亚 IPLC 悉尼 C04
-      - 中国-澳大利亚 IPLC 悉尼 C01
-      - 韩国 京畿道板桥 原生游戏解锁 C 01
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-爱尔兰 IPLC C04
-      - 中国-爱尔兰 IPLC C05
-      - 中国-法国 IPLC C03
-      - 中国-香港 IEPL Equinix HK8 C 01 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C01
-      - 中国-韩国 IEPL（三）B 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 02 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
-      - 中国-英国伦敦 IPLC BBC C02
-      - 中国-法国 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 03 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - 中国-法国 IPLC C05
-      - 中国-英国伦敦 IPLC BBC C03
-      - 中国-爱尔兰 IPLC C03
-      - 中国-英国伦敦 IPLC BBC C04
+      - 香港SSR-tg频道:@ripaojiedian 2
+      - vpnpool-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇺🇸US_46
+      - vpnhat-LAX-DediPath
+      - Relay_🇨🇳CN-🇺🇸US_30
+      - vpnhat-Singapore-Contabo-dip
+      - CN 312
+      - 洛杉矶-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇦🇺AU_08
+      - Relay_🇨🇳CN-🇦🇺AU_15
+      - Relay_🇨🇳CN-🇺🇸US_36
+      - _油管：全网最强白嫖 17
+      - vpnpool-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 18
+      - _油管：全网最强白嫖 19
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国-法国 IPLC C02
-      - 中国-印度 班加罗尔 एयरटेल IPLC C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-香港 IPLC Equinix HK2 C 07 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - 香港ssr-tg频道:@ripaojiedian
-      - 中国-香港 IEPL Equinix HK8 C 04 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C08
-      - 中国-英国伦敦 IPLC BBC C01
-      - 中国-印度 班加罗尔 एयरटेल IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 01 1Gbps HBO TVB
-      - 试用/续费 接入
-      - 中国-加拿大 IPLC C03
+      - Relay_🇨🇳CN-🇺🇸US_08
+      - vpnpool-Tokyo-Linode
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - Relay_🇨🇳CN-🇹🇼TW_33
+      - _油管：全网最强白嫖 3
+      - _油管：全网最强白嫖 4
+      - _油管：全网最强白嫖 5
+      - 中国-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - _油管：全网最强白嫖 6
+      - vpnhat-香港HGC-dip
+      - 香港SSR-tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇹🇼TW_29
+      - TG:yzcloud-新加坡-Nerocloud-nf_1_2
+      - Relay_🇨🇳CN-🇭🇰HK_07
+      - TG:yzcloud-新加坡-Nerocloud-nf_2_2
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - TG:yzcloud-新加坡-Nerocloud-nf_4
+      - _油管：全网最强白嫖 9
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - Relay_🇨🇳CN-🇺🇸US_37
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - Relay_🇨🇳CN-🇸🇬SG_27
+      - vpnhat-SG-Nerocloud-nf 3
+      - _油管：全网最强白嫖 10
+      - vpnpool-香港HGC-dip
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - vpnhat-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - CN 1211
+      - TG:yzcloud-香港HGC-dip_3
+      - Relay_🇨🇳CN-🇭🇰HK_17
+      - _油管：全网最强白嫖 11
+      - TG:yzcloud-新加坡-Nerocloud-nf_5
+      - Relay_🇨🇳CN-🇸🇬SG_04
+      - Relay_🇨🇳CN-🇺🇸US_16
+      - Relay_🇨🇳CN-🇷🇴RO_44
+      - vpnhat-Tokyo-OWL-dip 2
+      - _油管：全网最强白嫖 12
+      - vpnhat-Zelenograd-Baxet-dip
+      - Relay_🇨🇳CN-🇺🇸US_13
+      - _油管：全网最强白嫖 13
+      - TG:yzcloud-日本-OWL-dip_1_2
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - 新加坡-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇹🇼TW_42
+      - TG:yzcloud-新加坡-Tencent-nf_1
+      - vpnhat-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 16
+      - Relay_🇨🇳CN-🏁ZZ_06
       - 日本SSR-tg频道:@ripaojiedian
-      - 韩国 京畿道板桥 原生游戏解锁 C 04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C05
-      - 中国-香港 IPLC Equinix HK2 C 08 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 05
-      - 中国-香港 IPLC Equinix HK2 C 04 1Gbps HBO TVB
-      - 中国-英国伦敦 IPLC BBC C05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C06
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 香港 油尖旺御金·国峯 環球全域電訊 C04
-      - 中国-英国伦敦 IPLC BBC C06
-      - 中国-印度 班加罗尔 एयरटेल IPLC C04
-      - 日本 ソフトバンク C02 500Mbps 1x Netflix
-      - 中国-日本 沪日IEPL传输 Equinix-TY8 C01 Netflix
-      - 中国-韩国 IEPL（三）A 1Gbps
-      - 中国-日本 多协议标签交换虚拟专用网（三） C 1000Mbps
-      - 中国-台湾桃园 IPLC 台湾固网 C05 Netflix 动画疯
-      - 日本 ソフトバンク C07 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C03 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C05 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C05 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C03 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C04 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C04 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） F 1000Mbps
-      - 日本 ソフトバンク C10 500Mbps 1x Netflix
-      - 中国-台湾桃园 IPLC 台湾固网 C11 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） E 1000Mbps
-      - 中国-台湾 VPDN 嘉义游戏专线 C04 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C08 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C10 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C02 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C07 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C09 Netflix 动画疯
-      - 日本 ソフトバンク C05 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C10 Netflix 动画疯
-      - 香港 油尖旺御金·国峯 名氣通電訊 C08
-      - 韩国 전라북도 전주시 商宽 C 01
-      - 韩国 전라북도 전주시 商宽 C 04
-      - 中国-印度 班加罗尔 एयरटेल IPLC C02
-      - 韩国 전라북도 전주시 商宽 C 02
-      - 香港 油尖旺御金·国峯 環球全域電訊 C06
-      - 韩国 전라북도 전주시 商宽 C 03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C09
-      - 香港 油尖旺御金·国峯 環球全域電訊 C08
-      - 韩国 京畿道板桥 原生游戏解锁 C 03
-      - 香港 油尖旺御金·国峯 環球全域電訊 C01
-      - 韩国 전라북도 전주시 商宽 C 05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C07
-      - 中国-加拿大 IPLC C04
-      - 香港 油尖旺御金·国峯 名氣通電訊 C06
-      - 香港 油尖旺御金·国峯 環球全域電訊 C10
-      - 韩国 京畿道板桥 原生游戏解锁 C 09
-      - 中国-加拿大 IPLC C02
-      - 韩国 京畿道板桥 原生游戏解锁 C 08
-      - 香港ssr-tg频道:@ripaojiedian 2
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C09
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C02
-      - 中国-香港 IPLC Equinix HK2 C 10 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C07
-      - 韩国 京畿道板桥 原生游戏解锁 C 02
-      - 中国-韩国 IEPL（三）E 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 05 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C03
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C02
-      - 中国-加拿大 IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 02 1Gbps HBO TVB
-      - 中国-加拿大 IPLC C01
-      - 中国-韩国 IEPL（三）C 1Gbps
-      - 中国-韩国 IEPL（三）D 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 06 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 07
-      - 中国-法国 IPLC C04
-      - 中国-澳大利亚 IPLC 悉尼 C04
-      - 中国-澳大利亚 IPLC 悉尼 C01
-      - 韩国 京畿道板桥 原生游戏解锁 C 01
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-爱尔兰 IPLC C04
-      - 中国-爱尔兰 IPLC C05
-      - 中国-法国 IPLC C03
-      - 中国-香港 IEPL Equinix HK8 C 01 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C01
-      - 中国-韩国 IEPL（三）B 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 02 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
-      - 中国-英国伦敦 IPLC BBC C02
-      - 中国-法国 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 03 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - 中国-法国 IPLC C05
-      - 中国-英国伦敦 IPLC BBC C03
-      - 中国-爱尔兰 IPLC C03
-      - 中国-英国伦敦 IPLC BBC C04
+      - 香港SSR-tg频道:@ripaojiedian 2
+      - vpnpool-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇺🇸US_46
+      - vpnhat-LAX-DediPath
+      - Relay_🇨🇳CN-🇺🇸US_30
+      - vpnhat-Singapore-Contabo-dip
+      - CN 312
+      - 洛杉矶-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇦🇺AU_08
+      - Relay_🇨🇳CN-🇦🇺AU_15
+      - Relay_🇨🇳CN-🇺🇸US_36
+      - _油管：全网最强白嫖 17
+      - vpnpool-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 18
+      - _油管：全网最强白嫖 19
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1093,126 +641,76 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国-法国 IPLC C02
-      - 中国-印度 班加罗尔 एयरटेल IPLC C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C09
-      - 中国-香港 IPLC Equinix HK2 C 07 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C03
-      - 中国-印度 班加罗尔 एयरटेल IPLC C07
-      - 香港ssr-tg频道:@ripaojiedian
-      - 中国-香港 IEPL Equinix HK8 C 04 1Gbps HBO TVB
-      - 中国-印度 班加罗尔 एयरटेल IPLC C08
-      - 中国-英国伦敦 IPLC BBC C01
-      - 中国-印度 班加罗尔 एयरटेल IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 01 1Gbps HBO TVB
-      - 试用/续费 接入
-      - 中国-加拿大 IPLC C03
+      - Relay_🇨🇳CN-🇺🇸US_08
+      - vpnpool-Tokyo-Linode
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - Relay_🇨🇳CN-🇹🇼TW_33
+      - _油管：全网最强白嫖 3
+      - _油管：全网最强白嫖 4
+      - _油管：全网最强白嫖 5
+      - 中国-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - _油管：全网最强白嫖 6
+      - vpnhat-香港HGC-dip
+      - 香港SSR-tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇹🇼TW_29
+      - TG:yzcloud-新加坡-Nerocloud-nf_1_2
+      - Relay_🇨🇳CN-🇭🇰HK_07
+      - TG:yzcloud-新加坡-Nerocloud-nf_2_2
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - TG:yzcloud-新加坡-Nerocloud-nf_4
+      - _油管：全网最强白嫖 9
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - Relay_🇨🇳CN-🇺🇸US_37
+      - vpnhat-SG-Nerocloud-nf
+      - vpnhat-SG-Nerocloud-nf 2
+      - Relay_🇨🇳CN-🇸🇬SG_27
+      - vpnhat-SG-Nerocloud-nf 3
+      - _油管：全网最强白嫖 10
+      - vpnpool-香港HGC-dip
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - vpnhat-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - CN 1211
+      - TG:yzcloud-香港HGC-dip_3
+      - Relay_🇨🇳CN-🇭🇰HK_17
+      - _油管：全网最强白嫖 11
+      - TG:yzcloud-新加坡-Nerocloud-nf_5
+      - Relay_🇨🇳CN-🇸🇬SG_04
+      - Relay_🇨🇳CN-🇺🇸US_16
+      - Relay_🇨🇳CN-🇷🇴RO_44
+      - vpnhat-Tokyo-OWL-dip 2
+      - _油管：全网最强白嫖 12
+      - vpnhat-Zelenograd-Baxet-dip
+      - Relay_🇨🇳CN-🇺🇸US_13
+      - _油管：全网最强白嫖 13
+      - TG:yzcloud-日本-OWL-dip_1_2
+      - _油管：全网最强白嫖 14
+      - _油管：全网最强白嫖 15
+      - 新加坡-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇹🇼TW_42
+      - TG:yzcloud-新加坡-Tencent-nf_1
+      - vpnhat-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 16
+      - Relay_🇨🇳CN-🏁ZZ_06
       - 日本SSR-tg频道:@ripaojiedian
-      - 韩国 京畿道板桥 原生游戏解锁 C 04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C05
-      - 中国-香港 IPLC Equinix HK2 C 08 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 05
-      - 中国-香港 IPLC Equinix HK2 C 04 1Gbps HBO TVB
-      - 中国-英国伦敦 IPLC BBC C05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C06
-      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC C01
-      - 香港 油尖旺御金·国峯 環球全域電訊 C04
-      - 中国-英国伦敦 IPLC BBC C06
-      - 中国-印度 班加罗尔 एयरटेल IPLC C04
-      - 日本 ソフトバンク C02 500Mbps 1x Netflix
-      - 中国-日本 沪日IEPL传输 Equinix-TY8 C01 Netflix
-      - 中国-韩国 IEPL（三）A 1Gbps
-      - 中国-日本 多协议标签交换虚拟专用网（三） C 1000Mbps
-      - 中国-台湾桃园 IPLC 台湾固网 C05 Netflix 动画疯
-      - 日本 ソフトバンク C07 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C03 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C05 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C05 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C03 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C04 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C04 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） F 1000Mbps
-      - 日本 ソフトバンク C10 500Mbps 1x Netflix
-      - 中国-台湾桃园 IPLC 台湾固网 C11 Netflix 动画疯
-      - 中国-日本 多协议标签交换虚拟专用网（三） E 1000Mbps
-      - 中国-台湾 VPDN 嘉义游戏专线 C04 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C08 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C10 Netflix 动画疯
-      - 中国-台湾 VPDN 嘉义游戏专线 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C02 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C06 Netflix 动画疯
-      - 中国-台湾桃园 IPLC 台湾固网 C07 Netflix 动画疯
-      - 中国-台湾彰化 IEPL HiNet固接 C09 Netflix 动画疯
-      - 日本 ソフトバンク C05 500Mbps 1x Netflix
-      - 中国-台湾彰化 IEPL HiNet固接 C10 Netflix 动画疯
-      - 香港 油尖旺御金·国峯 名氣通電訊 C08
-      - 韩国 전라북도 전주시 商宽 C 01
-      - 韩国 전라북도 전주시 商宽 C 04
-      - 中国-印度 班加罗尔 एयरटेल IPLC C02
-      - 韩国 전라북도 전주시 商宽 C 02
-      - 香港 油尖旺御金·国峯 環球全域電訊 C06
-      - 韩国 전라북도 전주시 商宽 C 03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C09
-      - 香港 油尖旺御金·国峯 環球全域電訊 C08
-      - 韩国 京畿道板桥 原生游戏解锁 C 03
-      - 香港 油尖旺御金·国峯 環球全域電訊 C01
-      - 韩国 전라북도 전주시 商宽 C 05
-      - 中国-印度 班加罗尔 एयरटेल IPLC C01
-      - 香港 油尖旺御金·国峯 名氣通電訊 C03
-      - 香港 油尖旺御金·国峯 名氣通電訊 C04
-      - 香港 油尖旺御金·国峯 環球全域電訊 C07
-      - 中国-加拿大 IPLC C04
-      - 香港 油尖旺御金·国峯 名氣通電訊 C06
-      - 香港 油尖旺御金·国峯 環球全域電訊 C10
-      - 韩国 京畿道板桥 原生游戏解锁 C 09
-      - 中国-加拿大 IPLC C02
-      - 韩国 京畿道板桥 原生游戏解锁 C 08
-      - 香港ssr-tg频道:@ripaojiedian 2
-      - 中国-香港 IPLC Equinix HK2 C 05 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C09
-      - 中国-香港 IPLC Equinix HK2 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C02
-      - 中国-香港 IPLC Equinix HK2 C 10 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 09 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 名氣通電訊 C07
-      - 韩国 京畿道板桥 原生游戏解锁 C 02
-      - 中国-韩国 IEPL（三）E 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 05 1Gbps HBO TVB
-      - 中国-澳大利亚 IPLC 悉尼 C03
-      - 中国-香港 IEPL Equinix HK8 C 10 1Gbps HBO TVB
-      - 香港 油尖旺御金·国峯 環球全域電訊 C02
-      - 中国-加拿大 IPLC C05
-      - 中国-香港 IPLC Equinix HK2 C 02 1Gbps HBO TVB
-      - 中国-加拿大 IPLC C01
-      - 中国-韩国 IEPL（三）C 1Gbps
-      - 中国-韩国 IEPL（三）D 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 07 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 06 1Gbps HBO TVB
-      - 韩国 京畿道板桥 原生游戏解锁 C 07
-      - 中国-法国 IPLC C04
-      - 中国-澳大利亚 IPLC 悉尼 C04
-      - 中国-澳大利亚 IPLC 悉尼 C01
-      - 韩国 京畿道板桥 原生游戏解锁 C 01
-      - 中国-澳大利亚 IPLC 悉尼 C05
-      - 中国-爱尔兰 IPLC C04
-      - 中国-爱尔兰 IPLC C05
-      - 中国-法国 IPLC C03
-      - 中国-香港 IEPL Equinix HK8 C 01 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C01
-      - 中国-韩国 IEPL（三）B 1Gbps
-      - 中国-香港 IEPL Equinix HK8 C 02 1Gbps HBO TVB
-      - 中国-爱尔兰 IPLC C02
-      - 中国-英国伦敦 IPLC BBC C02
-      - 中国-法国 IPLC C01
-      - 中国-香港 IEPL Equinix HK8 C 08 1Gbps HBO TVB
-      - 中国-香港 IPLC Equinix HK2 C 03 1Gbps HBO TVB
-      - 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - 中国-法国 IPLC C05
-      - 中国-英国伦敦 IPLC BBC C03
-      - 中国-爱尔兰 IPLC C03
-      - 中国-英国伦敦 IPLC BBC C04
+      - 香港SSR-tg频道:@ripaojiedian 2
+      - vpnpool-Tokyo-OWL-dip
+      - Relay_🇨🇳CN-🇺🇸US_46
+      - vpnhat-LAX-DediPath
+      - Relay_🇨🇳CN-🇺🇸US_30
+      - vpnhat-Singapore-Contabo-dip
+      - CN 312
+      - 洛杉矶-tg频道:@bpjzx2
+      - Relay_🇨🇳CN-🇦🇺AU_08
+      - Relay_🇨🇳CN-🇦🇺AU_15
+      - Relay_🇨🇳CN-🇺🇸US_36
+      - _油管：全网最强白嫖 17
+      - vpnpool-Santa Clarita-MULTA
+      - _油管：全网最强白嫖 18
+      - _油管：全网最强白嫖 19
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -10169,6 +9667,8 @@ rules:
  - DOMAIN-SUFFIX,hypeapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hypersnap.net,🛑 全球拦截
  - DOMAIN-SUFFIX,iconworkshop.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,idmchina.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,imazingchina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imindmap.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,jihehuaban.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,keyshot.cc,🛑 全球拦截
@@ -10238,6 +9738,8 @@ rules:
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+ - DOMAIN,radio.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,tv.applemusic.com,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
@@ -10282,6 +9784,7 @@ rules:
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
  - DOMAIN,linear.tv.apple.com,🌍 国外媒体
  - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,uts-api.itunes.apple.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
@@ -10368,6 +9871,7 @@ rules:
  - IP-CIDR,203.74.95.153/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,210.71.227.200/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.71.227.202/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
@@ -10468,15 +9972,14 @@ rules:
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,b23.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
  - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,bilibili.tv,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
  - DOMAIN-SUFFIX,bilivideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
- - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
- - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
+ - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
+ - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
  - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
  - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
  - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
@@ -10494,6 +9997,7 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
@@ -10507,11 +10011,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.20.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.56.0/22,📲 电报信息,no-resolve
- - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,91.105.192.0/23,📲 电报信息,no-resolve
  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,185.76.151.0/24,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
  - DOMAIN,payments-jp.amazon.com,🔰 节点选择
@@ -10520,16 +10027,36 @@ rules:
  - DOMAIN,a248.e.akamai.net,🔰 节点选择
  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
  - DOMAIN,testflight.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
+ - DOMAIN,clubhouse.pubnubapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,aex.com,🔰 节点选择
  - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
  - DOMAIN-SUFFIX,binance.com,🔰 节点选择
+ - DOMAIN-SUFFIX,binance.us,🔰 节点选择
  - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
  - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bithumb.com,🔰 节点选择
  - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bitstamp.net,🔰 节点选择
+ - DOMAIN-SUFFIX,bittrex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bybit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinbase.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coincheck.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coingecko.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinmarketcap.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinone.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,ftx.com,🔰 节点选择
  - DOMAIN-SUFFIX,gate.io,🔰 节点选择
+ - DOMAIN-SUFFIX,gemini.com,🔰 节点选择
  - DOMAIN-SUFFIX,huobi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,korbit.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,kraken.com,🔰 节点选择
+ - DOMAIN-SUFFIX,kucoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,liquid.com,🔰 节点选择
  - DOMAIN-SUFFIX,okex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,poloniex.com,🔰 节点选择
  - DOMAIN-SUFFIX,uniswap.org,🔰 节点选择
  - DOMAIN-SUFFIX,zb.com,🔰 节点选择
  - DOMAIN-SUFFIX,discord.com,🔰 节点选择
@@ -10562,6 +10089,7 @@ rules:
  - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
  - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
  - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
+ - DOMAIN-SUFFIX,gvt1.com,🔰 节点选择
  - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
  - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
@@ -10612,11 +10140,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.20.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,95.161.64.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,91.105.192.0/23,🔰 节点选择,no-resolve
  - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,185.76.151.0/24,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,🔰 节点选择,no-resolve
  - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
  - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
  - DOMAIN-SUFFIX,t.co,🔰 节点选择
@@ -10685,7 +10216,6 @@ rules:
  - DOMAIN-SUFFIX,ck101.com,🔰 节点选择
  - DOMAIN-SUFFIX,clarionproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🔰 节点选择
- - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,clyp.it,🔰 节点选择
  - DOMAIN-SUFFIX,cna.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,comparitech.com,🔰 节点选择
@@ -10779,7 +10309,6 @@ rules:
  - DOMAIN-SUFFIX,jiji.com,🔰 节点选择
  - DOMAIN-SUFFIX,jinx.com,🔰 节点选择
  - DOMAIN-SUFFIX,jkforum.net,🔰 节点选择
- - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
  - DOMAIN-SUFFIX,joinmastodon.org,🔰 节点选择
  - DOMAIN-SUFFIX,justmysocks.net,🔰 节点选择
  - DOMAIN-SUFFIX,justpaste.it,🔰 节点选择
@@ -10805,6 +10334,7 @@ rules:
  - DOMAIN-SUFFIX,marc.info,🔰 节点选择
  - DOMAIN-SUFFIX,matters.news,🔰 节点选择
  - DOMAIN-SUFFIX,maying.co,🔰 节点选择
+ - DOMAIN-SUFFIX,medibang.com,🔰 节点选择
  - DOMAIN-SUFFIX,medium.com,🔰 节点选择
  - DOMAIN-SUFFIX,mega.nz,🔰 节点选择
  - DOMAIN-SUFFIX,mergersandinquisitions.com,🔰 节点选择
@@ -10894,6 +10424,7 @@ rules:
  - DOMAIN-SUFFIX,streamable.com,🔰 节点选择
  - DOMAIN-SUFFIX,streema.com,🔰 节点选择
  - DOMAIN-SUFFIX,substack.com,🔰 节点选择
+ - DOMAIN-SUFFIX,substack.com,🔰 节点选择
  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
@@ -10909,6 +10440,7 @@ rules:
  - DOMAIN-SUFFIX,tiny.cc,🔰 节点选择
  - DOMAIN-SUFFIX,tinyurl.com,🔰 节点选择
  - DOMAIN-SUFFIX,torproject.org,🔰 节点选择
+ - DOMAIN-SUFFIX,tradingview.com,🔰 节点选择
  - DOMAIN-SUFFIX,tumblr.com,🔰 节点选择
  - DOMAIN-SUFFIX,turbobit.net,🔰 节点选择
  - DOMAIN-SUFFIX,tutanota.com,🔰 节点选择
@@ -11025,20 +10557,33 @@ rules:
  - DOMAIN-SUFFIX,twitter.jp,🔰 节点选择
  - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
  - DOMAIN,books.itunes.apple.com,🔰 节点选择
- - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
- - DOMAIN,beta.music.apple.com,🔰 节点选择
- - DOMAIN,tv.apple.com,🔰 节点选择
- - DOMAIN,apps.apple.com,🔰 节点选择
- - DOMAIN,itunes.apple.com,🔰 节点选择
  - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,beta.music.apple.com,🔰 节点选择
  - DOMAIN,lookup-api.apple.com,🔰 节点选择
+ - DOMAIN,apps.apple.com,🔰 节点选择
+ - DOMAIN,books.apple.com,🔰 节点选择
+ - DOMAIN,itunes.apple.com,🔰 节点选择
+ - DOMAIN,tv.apple.com,🔰 节点选择
+ - DOMAIN,amp-api.podcasts.apple.com,🔰 节点选择
+ - DOMAIN,bookkeeper.itunes.apple.com,🔰 节点选择
+ - DOMAIN,gateway.icloud.com,🔰 节点选择
+ - DOMAIN-SUFFIX,apple.news,🔰 节点选择
+ - DOMAIN,news-assets.apple.com,🔰 节点选择
+ - DOMAIN,news-client.apple.com,🔰 节点选择
+ - DOMAIN,news-client-search.apple.com,🔰 节点选择
+ - DOMAIN,news-edge.apple.com,🔰 节点选择
+ - DOMAIN,news-events.apple.com,🔰 节点选择
+ - DOMAIN,apple.comscoreresearch.com,🔰 节点选择
  - DOMAIN-SUFFIX,go.dev,🔰 节点选择
  - DOMAIN-SUFFIX,golang.org,🔰 节点选择
+ - DOMAIN-SUFFIX,aicoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,aimoon.com,🔰 节点选择
  - DOMAIN-SUFFIX,bing.com,🔰 节点选择
  - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
  - DOMAIN-SUFFIX,dubox.com,🔰 节点选择
  - DOMAIN-SUFFIX,duboxcdn.com,🔰 节点选择
  - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,linkedin.com,🔰 节点选择
  - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
  - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
@@ -11046,12 +10591,10 @@ rules:
  - DOMAIN,developer.apple.com,🔰 节点选择
  - DOMAIN,www.icloud.com,🔰 节点选择
  - DOMAIN,ocsp.apple.com,🔰 节点选择
- - DOMAIN,xp.apple.com,🔰 节点选择
  - DOMAIN,cacerts.digicert.com,🔰 节点选择
  - DOMAIN,crl3.digicert.com,🔰 节点选择
  - DOMAIN,crl4.digicert.com,🔰 节点选择
  - DOMAIN,ocsp.digicert.com,🔰 节点选择
- - DOMAIN-SUFFIX,cloudcone.com.cn,🔰 节点选择
  - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
  - DOMAIN-SUFFIX,metapix.net,🔰 节点选择
  - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
@@ -11207,19 +10750,11 @@ rules:
  - DOMAIN-SUFFIX,qqmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,servicewechat.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tencent-cloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent-cloud.net,🎯 全球直连
  - DOMAIN-SUFFIX,tenpay.com,🎯 全球直连
  - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
  - DOMAIN,file-igamecj.akamaized.net,🎯 全球直连
- - IP-CIDR,101.32.104.4/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.41/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.56/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.118.25/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.16/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.53/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.209/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.3.47/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.107.244/32,🎯 全球直连,no-resolve
  - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,ccgslb.com,🎯 全球直连
@@ -11299,6 +10834,7 @@ rules:
  - DOMAIN-SUFFIX,chinaso.com,🎯 全球直连
  - DOMAIN-SUFFIX,chuimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,chunyu.mobi,🎯 全球直连
+ - DOMAIN-SUFFIX,cibntv.net,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,coolapk.com,🎯 全球直连
@@ -11343,8 +10879,6 @@ rules:
  - DOMAIN-SUFFIX,keepcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,kkmh.com,🎯 全球直连
  - DOMAIN-SUFFIX,lanzous.com,🎯 全球直连
- - DOMAIN-SUFFIX,licdn.com,🎯 全球直连
- - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
  - DOMAIN-SUFFIX,luojilab.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyan.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyun.tv,🎯 全球直连
@@ -11367,6 +10901,7 @@ rules:
  - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
  - DOMAIN-SUFFIX,scomper.me,🎯 全球直连
+ - DOMAIN-SUFFIX,shouqianba.com,🎯 全球直连
  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
  - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
