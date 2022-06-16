@@ -31,6 +31,17 @@ proxies:
   - {name: "Lv3 香港 05 [3.0]", server: debian10.updatensv3.com, port: 8010, type: ss, cipher: chacha20-ietf-poly1305, password: 68ece1cafb98b06aa7a3edfefdf91de4, plugin: obfs, plugin-opts: {mode: http, host: 197ad1e536cf.microsoft.com}, udp: true}
   - {name: "Lv3 香港 08 [2.0]", server: centos7.websitesv3.com, port: 8763, type: ss, cipher: aes-128-gcm, password: 3e5d82b03956c907373cd5615e46704c, plugin: obfs, plugin-opts: {mode: http, host: 197ad1e536cf.microsoft.com}, udp: true}
   - {name: Az香港12, server: hk12.ningmengshui.xyz, port: 80, type: vmess, uuid: 8f4832f7-a51b-4049-9060-0422c3223e76, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk12.ningmengshui.xyz}, udp: true}
+  - {name: CN+1+|+openit.ml, server: cdn1.myuuusss.com, port: 20007, type: ss, cipher: aes-128-gcm, password: dbdc16e3-1f61-41bb-99a6-5f29d8b86f82, udp: true}
+  - {name: 新加坡|04|OC香港AZ中转, server: azhk1.170809.xyz, port: 25393, type: trojan, password: 47bcec9c-86f2-4478-bc7f-cef7de71adca, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本|01|LIN香港AZ中转, server: azhk2.170809.xyz, port: 64293, type: trojan, password: 47bcec9c-86f2-4478-bc7f-cef7de71adca, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本|04|OC香港AZ中转, server: azhk2.170809.xyz, port: 32145, type: trojan, password: 47bcec9c-86f2-4478-bc7f-cef7de71adca, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|22AZ中转, server: azhk2.170809.xyz, port: 23693, type: trojan, password: 47bcec9c-86f2-4478-bc7f-cef7de71adca, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|17香港AZ中转, server: azhk2.170809.xyz, port: 62277, type: trojan, password: 47bcec9c-86f2-4478-bc7f-cef7de71adca, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|23AZ中转, server: azhk2.170809.xyz, port: 29197, type: trojan, password: 47bcec9c-86f2-4478-bc7f-cef7de71adca, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|08奈飞香港AZ中转, server: azhk2.170809.xyz, port: 57557, type: trojan, password: 47bcec9c-86f2-4478-bc7f-cef7de71adca, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|07奈飞AZ三线中转, server: azhk2.170809.xyz, port: 48146, type: trojan, password: 47bcec9c-86f2-4478-bc7f-cef7de71adca, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|13|香港AZ中转, server: azhk2.170809.xyz, port: 36730, type: trojan, password: 47bcec9c-86f2-4478-bc7f-cef7de71adca, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|13香港AZ中转, server: azhk2.170809.xyz, port: 33932, type: trojan, password: 47bcec9c-86f2-4478-bc7f-cef7de71adca, sni: azhk2.170809.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -63,6 +74,17 @@ proxy-groups:
       - Lv3 香港 05 [3.0]
       - Lv3 香港 08 [2.0]
       - Az香港12
+      - CN+1+|+openit.ml
+      - 新加坡|04|OC香港AZ中转
+      - 日本|01|LIN香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 香港|17香港AZ中转
+      - 香港|23AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 香港|13|香港AZ中转
+      - 香港|13香港AZ中转
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -94,6 +116,17 @@ proxy-groups:
       - Lv3 香港 05 [3.0]
       - Lv3 香港 08 [2.0]
       - Az香港12
+      - CN+1+|+openit.ml
+      - 新加坡|04|OC香港AZ中转
+      - 日本|01|LIN香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 香港|17香港AZ中转
+      - 香港|23AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 香港|13|香港AZ中转
+      - 香港|13香港AZ中转
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -126,6 +159,17 @@ proxy-groups:
       - Lv3 香港 05 [3.0]
       - Lv3 香港 08 [2.0]
       - Az香港12
+      - CN+1+|+openit.ml
+      - 新加坡|04|OC香港AZ中转
+      - 日本|01|LIN香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 香港|17香港AZ中转
+      - 香港|23AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 香港|13|香港AZ中转
+      - 香港|13香港AZ中转
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -170,6 +214,17 @@ proxy-groups:
       - Lv3 香港 05 [3.0]
       - Lv3 香港 08 [2.0]
       - Az香港12
+      - CN+1+|+openit.ml
+      - 新加坡|04|OC香港AZ中转
+      - 日本|01|LIN香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 香港|17香港AZ中转
+      - 香港|23AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 香港|13|香港AZ中转
+      - 香港|13香港AZ中转
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -193,6 +248,16 @@ proxy-groups:
       - Lv3 香港 05 [3.0]
       - Lv3 香港 08 [2.0]
       - Az香港12
+      - 新加坡|04|OC香港AZ中转
+      - 日本|01|LIN香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 香港|17香港AZ中转
+      - 香港|23AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 香港|13|香港AZ中转
+      - 香港|13香港AZ中转
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -225,6 +290,17 @@ proxy-groups:
       - Lv3 香港 05 [3.0]
       - Lv3 香港 08 [2.0]
       - Az香港12
+      - CN+1+|+openit.ml
+      - 新加坡|04|OC香港AZ中转
+      - 日本|01|LIN香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 香港|17香港AZ中转
+      - 香港|23AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 香港|13|香港AZ中转
+      - 香港|13香港AZ中转
   - name: 📲 电报信息
     type: select
     proxies:
@@ -256,6 +332,17 @@ proxy-groups:
       - Lv3 香港 05 [3.0]
       - Lv3 香港 08 [2.0]
       - Az香港12
+      - CN+1+|+openit.ml
+      - 新加坡|04|OC香港AZ中转
+      - 日本|01|LIN香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 香港|17香港AZ中转
+      - 香港|23AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 香港|13|香港AZ中转
+      - 香港|13香港AZ中转
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -288,6 +375,17 @@ proxy-groups:
       - Lv3 香港 05 [3.0]
       - Lv3 香港 08 [2.0]
       - Az香港12
+      - CN+1+|+openit.ml
+      - 新加坡|04|OC香港AZ中转
+      - 日本|01|LIN香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 香港|17香港AZ中转
+      - 香港|23AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 香港|13|香港AZ中转
+      - 香港|13香港AZ中转
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -329,6 +427,17 @@ proxy-groups:
       - Lv3 香港 05 [3.0]
       - Lv3 香港 08 [2.0]
       - Az香港12
+      - CN+1+|+openit.ml
+      - 新加坡|04|OC香港AZ中转
+      - 日本|01|LIN香港AZ中转
+      - 日本|04|OC香港AZ中转
+      - 香港|22AZ中转
+      - 香港|17香港AZ中转
+      - 香港|23AZ中转
+      - 香港|08奈飞香港AZ中转
+      - 香港|07奈飞AZ三线中转
+      - 香港|13|香港AZ中转
+      - 香港|13香港AZ中转
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
