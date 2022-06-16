@@ -5,6 +5,13 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 台湾Hinet-广移 | 解锁流媒体, server: gzyd1.xxcv.cc, port: 30010, type: trojan, password: 2cee2f05-9351-4a6d-9f80-ff859a54a0b3, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: 香港CMHK | 广州移动 | 2x, server: gzyd1.xxcv.cc, port: 30160, type: trojan, password: 2cee2f05-9351-4a6d-9f80-ff859a54a0b3, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: "KR,", server: 54.151.255.98, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "HK,", server: 18.141.173.152, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "SG,", server: 13.213.29.29, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "JP,", server: 13.213.60.138, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "JP, 2", server: 52.221.185.109, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 48618 @WangCai_1, server: 116.129.254.212, port: 48618, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
   - {name: HK, server: 218.255.64.93, port: 512, type: ss, cipher: aes-256-gcm, password: RYGiyW, plugin: obfs, plugin-opts: {mode: http, host: 86ab63124.p6.myspeedmeter.net.prod.hosts.ooklaserver.net}, udp: true}
   - {name: "Lv3 台湾 04 [2.0]", server: centos8.expirationv3.com, port: 8745, type: ss, cipher: aes-128-gcm, password: 9c072decffd326dfe7976480e8792404, plugin: obfs, plugin-opts: {mode: http, host: 197ad1e536cf.microsoft.com}, udp: true}
@@ -30,6 +37,13 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 台湾Hinet-广移 | 解锁流媒体
+      - 香港CMHK | 广州移动 | 2x
+      - KR,
+      - HK,
+      - SG,
+      - JP,
+      - JP, 2
       - 48618 @WangCai_1
       - HK
       - Lv3 台湾 04 [2.0]
@@ -54,6 +68,13 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 台湾Hinet-广移 | 解锁流媒体
+      - 香港CMHK | 广州移动 | 2x
+      - KR,
+      - HK,
+      - SG,
+      - JP,
+      - JP, 2
       - 48618 @WangCai_1
       - HK
       - Lv3 台湾 04 [2.0]
@@ -79,6 +100,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 台湾Hinet-广移 | 解锁流媒体
+      - 香港CMHK | 广州移动 | 2x
+      - KR,
+      - HK,
+      - SG,
+      - JP,
+      - JP, 2
       - 48618 @WangCai_1
       - HK
       - Lv3 台湾 04 [2.0]
@@ -116,6 +144,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 台湾Hinet-广移 | 解锁流媒体
+      - 香港CMHK | 广州移动 | 2x
+      - KR,
+      - HK,
+      - SG,
+      - JP,
+      - JP, 2
       - 48618 @WangCai_1
       - HK
       - Lv3 台湾 04 [2.0]
@@ -139,6 +174,8 @@ proxy-groups:
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾Hinet-广移 | 解锁流媒体
+      - 香港CMHK | 广州移动 | 2x
       - Lv3 台湾 04 [2.0]
       - Lv1 香港 03 [1.5]
       - Lv1 香港 02 [1.5]
@@ -162,6 +199,13 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 台湾Hinet-广移 | 解锁流媒体
+      - 香港CMHK | 广州移动 | 2x
+      - KR,
+      - HK,
+      - SG,
+      - JP,
+      - JP, 2
       - 48618 @WangCai_1
       - HK
       - Lv3 台湾 04 [2.0]
@@ -186,6 +230,13 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 台湾Hinet-广移 | 解锁流媒体
+      - 香港CMHK | 广州移动 | 2x
+      - KR,
+      - HK,
+      - SG,
+      - JP,
+      - JP, 2
       - 48618 @WangCai_1
       - HK
       - Lv3 台湾 04 [2.0]
@@ -211,6 +262,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 台湾Hinet-广移 | 解锁流媒体
+      - 香港CMHK | 广州移动 | 2x
+      - KR,
+      - HK,
+      - SG,
+      - JP,
+      - JP, 2
       - 48618 @WangCai_1
       - HK
       - Lv3 台湾 04 [2.0]
@@ -245,6 +303,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 台湾Hinet-广移 | 解锁流媒体
+      - 香港CMHK | 广州移动 | 2x
+      - KR,
+      - HK,
+      - SG,
+      - JP,
+      - JP, 2
       - 48618 @WangCai_1
       - HK
       - Lv3 台湾 04 [2.0]
