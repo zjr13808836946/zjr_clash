@@ -5,275 +5,215 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 10｜openit.ml, server: yqy36322.cdn-china.net, port: 36322, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: CN 11｜openit.ml, server: yqy36324.cdn-china.net, port: 36324, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: SG 9｜openit.ml, server: t.sin3.skyinternet.vip, port: 443, type: trojan, password: 08335c73-dfdc-4d0f-ae12-cf10acbae55a, sni: t.sin3.skyinternet.vip, skip-cert-verify: true, udp: true}
-  - {name: US 29｜openit.ml, server: t.jap5.skyinternet.vip, port: 443, type: trojan, password: 08335c73-dfdc-4d0f-ae12-cf10acbae55a, sni: t.jap5.skyinternet.vip, skip-cert-verify: true, udp: true}
-  - {name: US 30｜openit.ml, server: t.jap8.skyinternet.vip, port: 443, type: trojan, password: 08335c73-dfdc-4d0f-ae12-cf10acbae55a, sni: t.jap8.skyinternet.vip, skip-cert-verify: true, udp: true}
-  - {name: US 31｜openit.ml, server: t.jap6.skyinternet.vip, port: 443, type: trojan, password: 08335c73-dfdc-4d0f-ae12-cf10acbae55a, sni: t.jap6.skyinternet.vip, skip-cert-verify: true, udp: true}
-  - {name: US 32｜openit.ml, server: t.jap7.skyinternet.vip, port: 443, type: trojan, password: 08335c73-dfdc-4d0f-ae12-cf10acbae55a, sni: t.jap7.skyinternet.vip, skip-cert-verify: true, udp: true}
-  - {name: US 33｜openit.ml, server: t.hkg6.skyinternet.vip, port: 443, type: trojan, password: 08335c73-dfdc-4d0f-ae12-cf10acbae55a, sni: t.hkg6.skyinternet.vip, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国, server: yqy31128.cdn-china.net, port: 31128, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾, server: yqy17122.cdn-china.net, port: 17122, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾 2, server: yqy33225.cdn-china.net, port: 33225, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: <公益>香港直连1, server: 20.239.54.52, port: 5555, type: ss, cipher: chacha20-ietf-poly1305, password: b43310f9-4e19-4099-92a7-95ac22519229, udp: true}
+  - {name: Az香港9, server: hk9.ningmengshui.xyz, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dm.toutiao.com}, udp: true}
+  - {name: 新加坡3, server: awssg1.crunode.top, port: 443, type: trojan, password: 802d087a-8add-46a9-b08e-986d80b2cfee, sni: awssg1.crunode.top, skip-cert-verify: true, udp: true}
+  - {name: CN 36｜openit.ml, server: cngzcm.duraker.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 10270:VnpTZrMOIdr_ECt, obfs-param: "", udp: true}
+  - {name: vpnhat-香港EDCL-dip, server: 183.232.141.117, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 10270:VnpTZrMOIdr_ECt, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnhat-香港HKT-dip, server: 183.232.141.109, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 10270:VnpTZrMOIdr_ECt, obfs-param: t.me/vpnhat, udp: true}
+  - {name: <公益>香港直连6, server: 20.239.49.181, port: 5555, type: ss, cipher: chacha20-ietf-poly1305, password: b43310f9-4e19-4099-92a7-95ac22519229, udp: true}
+  - {name: hpkr705, server: 52.231.64.159, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: hphk827, server: 20.187.83.74, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
   - {name: <公益>香港直连8, server: 20.239.60.249, port: 10008, type: ss, cipher: chacha20-ietf-poly1305, password: b43310f9-4e19-4099-92a7-95ac22519229, udp: true}
-  - {name: <公益>香港直连10, server: 20.239.58.244, port: 7777, type: ss, cipher: chacha20-ietf-poly1305, password: b43310f9-4e19-4099-92a7-95ac22519229, udp: true}
-  - {name: <公益>香港直连11, server: 23.100.88.185, port: 11114, type: ss, cipher: chacha20-ietf-poly1305, password: b43310f9-4e19-4099-92a7-95ac22519229, udp: true}
-  - {name: <公益>香港直连14, server: 20.239.59.229, port: 10014, type: ss, cipher: chacha20-ietf-poly1305, password: b43310f9-4e19-4099-92a7-95ac22519229, udp: true}
   - {name: <公益>香港直连15, server: 20.205.44.2, port: 10015, type: ss, cipher: chacha20-ietf-poly1305, password: b43310f9-4e19-4099-92a7-95ac22519229, udp: true}
   - {name: <公益>香港直连17, server: 20.239.60.226, port: 10017, type: ss, cipher: chacha20-ietf-poly1305, password: b43310f9-4e19-4099-92a7-95ac22519229, udp: true}
-  - {name: 台湾|01奈飞香港AZ中转, server: azhk1.170809.xyz, port: 48525, type: trojan, password: 271cb32a-6321-4a6e-894a-bb9db2ac9f21, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡|03|OC奈飞香港AZ中转, server: azhk3.170809.xyz, port: 31138, type: trojan, password: 271cb32a-6321-4a6e-894a-bb9db2ac9f21, sni: azhk3.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡|01|LIN香港AZ中转, server: azhk3.170809.xyz, port: 11115, type: trojan, password: 271cb32a-6321-4a6e-894a-bb9db2ac9f21, sni: azhk3.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡|02|DO香港AZ中转, server: azhk3.170809.xyz, port: 53212, type: trojan, password: 271cb32a-6321-4a6e-894a-bb9db2ac9f21, sni: azhk3.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|01AZ直连, server: hkmax01.170809.xyz, port: 45356, type: trojan, password: 271cb32a-6321-4a6e-894a-bb9db2ac9f21, sni: hkmax01.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|17AZ中转, server: azhk1.170809.xyz, port: 53410, type: trojan, password: 271cb32a-6321-4a6e-894a-bb9db2ac9f21, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|03香港AZ中转, server: azhk1.170809.xyz, port: 58290, type: trojan, password: 271cb32a-6321-4a6e-894a-bb9db2ac9f21, sni: azhk1.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|21AZ中转, server: azhk3.170809.xyz, port: 63393, type: trojan, password: 271cb32a-6321-4a6e-894a-bb9db2ac9f21, sni: azhk3.170809.xyz, skip-cert-verify: true, udp: true}
-  - {name: JCBB_香港07【vip1】, server: gkdcm.myjcbbcn.top, port: 25896, type: vmess, uuid: ba9086ab-9ee2-4299-af91-7c0b836472c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gkdcm.myjcbbcn.top}, udp: true}
-  - {name: JCBB_香港11【vip3】, server: gkdcm.myjcbbcn.top, port: 25892, type: vmess, uuid: ba9086ab-9ee2-4299-af91-7c0b836472c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gkdcm.myjcbbcn.top}, udp: true}
-  - {name: "G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72027", server: yqy72027.cdn-china.net, port: 52027, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: "F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72028", server: yqy72028.cdn-china.net, port: 52028, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: B.SG.CN2GIA⇠集群⇠华东.BGP:RC18121, server: yqy18121.cdn-china.net, port: 18121, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: "E.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72026", server: yqy72026.cdn-china.net, port: 52026, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: "F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC945", server: yqy945.cdn-china.net, port: 50945, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: D.TW⇠CN2GIA专线⇠华东.BGP:RC17123, server: yqy17123.cdn-china.net, port: 17123, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: "G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2112", server: yqy2112.cdn-china.net, port: 42112, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: "F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC938", server: yqy938.cdn-china.net, port: 50938, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: B.TW⇠CN2GIA专线⇠华东.BGP:RC17121, server: yqy17121.cdn-china.net, port: 17121, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: E.TW.彰化⇠HiNet:RC32227, server: yqy32227.cdn-china.net, port: 32227, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: I.TW.高雄.龍抬頭⇠HiNet:RC33127, server: yqy33127.cdn-china.net, port: 33127, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: "H.[3x]HK.HKT⇠BGP:RC36323", server: yqy36323.cdn-china.net, port: 36323, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: "E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312123", server: yqy3312123.cdn-china.net, port: 12123, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: "G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2111", server: yqy2111.cdn-china.net, port: 42111, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: E.SG.CN2GIA⇠集群⇠华东.BGP:RC18124, server: yqy18124.cdn-china.net, port: 18124, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: "F.SG[1.5x].CN2GIA⇠集群⇠华东.BGP:RC18125", server: yqy18125.cdn-china.net, port: 18125, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: E.TW⇠CN2GIA专线⇠华东.BGP:RC17124, server: yqy17124.cdn-china.net, port: 17124, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: F.HK.HKT⇠BGP:RC36321, server: yqy36321.cdn-china.net, port: 36321, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: F.TW.高雄.龍抬頭⇠HiNet:RC33225, server: yqy33225.cdn-china.net, port: 33225, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: "I.[6x].HK.HKT⇠BGP:RC36224", server: yqy36224.cdn-china.net, port: 36224, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: F.TW.彰化⇠HiNet:RC32228, server: yqy32228.cdn-china.net, port: 32228, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: "E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312121", server: yqy3312121.cdn-china.net, port: 12121, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: I.TW.高雄.龍抬頭⇠HiNet:RC33128, server: yqy33128.cdn-china.net, port: 33128, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: "I.[6x]TW.台北⇠HiNet:RC31128", server: yqy31128.cdn-china.net, port: 31128, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: E.TW.高雄.龍抬頭⇠HiNet:RC33224, server: yqy33224.cdn-china.net, port: 33224, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: C.TW⇠CN2GIA专线⇠华东.BGP:RC17122, server: yqy17122.cdn-china.net, port: 17122, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: 中国_0620465, server: yqy31128.cdn-china.net, port: 31128, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: 中国_0620456, server: yqy33225.cdn-china.net, port: 33225, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
-  - {name: "KR,", server: 54.151.255.98, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "SG,", server: 13.213.29.29, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "HK,", server: 18.141.173.152, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: TW-BGP-HiNit-观影推荐线路, server: cdn2.myuuusss.com, port: 20011, type: ss, cipher: aes-128-gcm, password: 8bc68e0d-3c27-4ecd-8672-4824cb7eab2b, udp: true}
-  - {name: "JP,", server: 52.221.185.109, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: Az香港12, server: hk12.ningmengshui.xyz, port: 80, type: vmess, uuid: 8f4832f7-a51b-4049-9060-0422c3223e76, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk12.ningmengshui.xyz}, udp: true}
+  - {name: <公益>香港直连18, server: 20.239.58.34, port: 10018, type: ss, cipher: chacha20-ietf-poly1305, password: b43310f9-4e19-4099-92a7-95ac22519229, udp: true}
+  - {name: <公益>香港直连12, server: 168.63.215.114, port: 11115, type: ss, cipher: chacha20-ietf-poly1305, password: b43310f9-4e19-4099-92a7-95ac22519229, udp: true}
+  - {name: 台湾-广州移动负载均衡(中转)+|+解锁流媒体, server: gzyd1.xxcv.cc, port: 20160, type: trojan, password: 25c723db-3393-4608-a97d-90c4ba3688cb, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: 香港+|+Trojan+|+A+|+0.8x+|+黃金+|+港區流媒體解鎖+|, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: 77de43cc-9443-31d6-bc3d-6bf60186594d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港++|+Trojan+|+B+|+0.8x+|+黃金+|+港區流媒體解鎖+|, server: azhj001.xiba1.xyz, port: 20719, type: trojan, password: 77de43cc-9443-31d6-bc3d-6bf60186594d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港+|+Trojan+|+C+|+0.8x+|+黃金+|+港區流媒體解鎖+|, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: 77de43cc-9443-31d6-bc3d-6bf60186594d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港+|+Trojan+|+D+|+0.8x+|+黃金+|+港區流媒體解鎖+|, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 77de43cc-9443-31d6-bc3d-6bf60186594d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港+|+Trojan+|+E+|+0.8x+|+黃金+|+港區流媒體解鎖+|, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: 77de43cc-9443-31d6-bc3d-6bf60186594d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港+|+Trojan+|+F+|+0.8x+|+黃金+|+港區流媒體解鎖+|, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: 77de43cc-9443-31d6-bc3d-6bf60186594d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港+|+Trojan+|+G+|+0.8x+|+黃金+|+港區流媒體解鎖+|, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: 77de43cc-9443-31d6-bc3d-6bf60186594d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港+|+Trojan+|+H+|+0.8x+|+黃金+|+港區流媒體解鎖+|, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: 77de43cc-9443-31d6-bc3d-6bf60186594d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港+|+Trojan+|+I+|+0.8x+|+黃金+|+港區流媒體解鎖+|, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 77de43cc-9443-31d6-bc3d-6bf60186594d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港+|+Trojan+|+J+|+0.8x+|+黃金+|+港區流媒體解鎖+|, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 77de43cc-9443-31d6-bc3d-6bf60186594d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港CMHK | 2x, server: cmhk1.linhun11.xyz, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, sni: cmhk1.linhun11.xyz, skip-cert-verify: true, udp: true}
+  - {name: 越南-4号, server: 103.173.255.234, port: 28000, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, skip-cert-verify: true, udp: true}
+  - {name: 越南-3号, server: 103.173.255.228, port: 28000, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, skip-cert-verify: true, udp: true}
+  - {name: 越南-1号, server: 103.173.255.21, port: 28000, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, skip-cert-verify: true, udp: true}
+  - {name: 越南-2号, server: 103.173.255.127, port: 28000, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, skip-cert-verify: true, udp: true}
+  - {name: 越南-4号 2, server: 103.173.255.234, port: 28443, type: trojan, password: f788c9d5-2100-4378-b3b2-5e7ed9de9150, skip-cert-verify: true, udp: true}
+  - {name: 越南-3号 2, server: 103.173.255.228, port: 28443, type: trojan, password: f788c9d5-2100-4378-b3b2-5e7ed9de9150, skip-cert-verify: true, udp: true}
+  - {name: 越南-1号 2, server: 103.173.255.21, port: 28443, type: trojan, password: 25c723db-3393-4608-a97d-90c4ba3688cb, skip-cert-verify: true, udp: true}
+  - {name: 越南-2号 2, server: 103.173.255.127, port: 28443, type: trojan, password: 25c723db-3393-4608-a97d-90c4ba3688cb, skip-cert-verify: true, udp: true}
+  - {name: 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体, server: gzyd1.xxcv.cc, port: 30040, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: Oracle新加坡-广移, server: gzyd1.xxcv.cc, port: 30110, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
   - {name: Alien, server: 133.167.106.55, port: 33115, type: vmess, uuid: 3a610ada-a699-4d6e-8140-7629febc6e51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美國 A01, server: ygzyd.sub-nthu.com, port: 35000, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, sni: ygzyd.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡A  | 2x, server: zou.zz8.shop, port: 43445, type: trojan, password: 50aa04dd-9a10-4b25-8bbf-643c16020002, sni: zou.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: 日本高速-优化, server: transfer3.gzfxd.xyz, port: 51059, type: vmess, uuid: 802d087a-8add-46a9-b08e-986d80b2cfee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: transfer3.gzfxd.xyz}, udp: true}
+  - {name: 新加坡高速-隧道, server: cn.gysz1.986888.xyz, port: 63789, type: vmess, uuid: 802d087a-8add-46a9-b08e-986d80b2cfee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cn.gysz1.986888.xyz}, udp: true}
+  - {name: Az香港6, server: hk6.ningmengshui.xyz, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk6.ningmengshui.xyz}, udp: true}
+  - {name: Az香港4, server: hk4.ningmengshui.xyz, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk4.ningmengshui.xyz}, udp: true}
+  - {name: TW 3｜openit.ml, server: 60.249.3.229, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: <公益>香港直连2, server: 168.63.136.127, port: 5555, type: ss, cipher: chacha20-ietf-poly1305, password: b43310f9-4e19-4099-92a7-95ac22519229, udp: true}
+  - {name: <公益>香港直连10, server: 20.239.58.244, port: 7777, type: ss, cipher: chacha20-ietf-poly1305, password: b43310f9-4e19-4099-92a7-95ac22519229, udp: true}
+  - {name: <公益>香港直连11, server: 23.100.88.185, port: 11114, type: ss, cipher: chacha20-ietf-poly1305, password: b43310f9-4e19-4099-92a7-95ac22519229, udp: true}
+  - {name: Az香港12, server: hk12.ningmengshui.xyz, port: 80, type: vmess, uuid: 0c220535-7e29-42c8-b247-c08aaf8ebc73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk12.ningmengshui.xyz}, udp: true}
+  - {name: 台湾-广州移动负载均衡 | 解锁流媒体, server: gzyd1.xxcv.cc, port: 30170, type: trojan, password: 2fbaab98-e654-44db-90c1-995f234793af, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 10｜openit.ml
-      - CN 11｜openit.ml
-      - SG 9｜openit.ml
-      - US 29｜openit.ml
-      - US 30｜openit.ml
-      - US 31｜openit.ml
-      - US 32｜openit.ml
-      - US 33｜openit.ml
-      - _CN_中国
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - <公益>香港直连1
+      - Az香港9
+      - 新加坡3
+      - CN 36｜openit.ml
+      - vpnhat-香港EDCL-dip
+      - vpnhat-香港HKT-dip
+      - <公益>香港直连6
+      - hpkr705
+      - hphk827
       - <公益>香港直连8
-      - <公益>香港直连10
-      - <公益>香港直连11
-      - <公益>香港直连14
       - <公益>香港直连15
       - <公益>香港直连17
-      - 台湾|01奈飞香港AZ中转
-      - 新加坡|03|OC奈飞香港AZ中转
-      - 新加坡|01|LIN香港AZ中转
-      - 新加坡|02|DO香港AZ中转
-      - 香港|01AZ直连
-      - 香港|17AZ中转
-      - 香港|03香港AZ中转
-      - 香港|21AZ中转
-      - JCBB_香港07【vip1】
-      - JCBB_香港11【vip3】
-      - G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72027
-      - F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72028
-      - B.SG.CN2GIA⇠集群⇠华东.BGP:RC18121
-      - E.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72026
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC945
-      - D.TW⇠CN2GIA专线⇠华东.BGP:RC17123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2112
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC938
-      - B.TW⇠CN2GIA专线⇠华东.BGP:RC17121
-      - E.TW.彰化⇠HiNet:RC32227
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33127
-      - H.[3x]HK.HKT⇠BGP:RC36323
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2111
-      - E.SG.CN2GIA⇠集群⇠华东.BGP:RC18124
-      - F.SG[1.5x].CN2GIA⇠集群⇠华东.BGP:RC18125
-      - E.TW⇠CN2GIA专线⇠华东.BGP:RC17124
-      - F.HK.HKT⇠BGP:RC36321
-      - F.TW.高雄.龍抬頭⇠HiNet:RC33225
-      - I.[6x].HK.HKT⇠BGP:RC36224
-      - F.TW.彰化⇠HiNet:RC32228
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312121
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33128
-      - I.[6x]TW.台北⇠HiNet:RC31128
-      - E.TW.高雄.龍抬頭⇠HiNet:RC33224
-      - C.TW⇠CN2GIA专线⇠华东.BGP:RC17122
-      - 中国_0620465
-      - 中国_0620456
-      - KR,
-      - SG,
-      - HK,
-      - TW-BGP-HiNit-观影推荐线路
-      - JP,
-      - Az香港12
+      - <公益>香港直连18
+      - <公益>香港直连12
+      - 台湾-广州移动负载均衡(中转)+|+解锁流媒体
+      - 香港+|+Trojan+|+A+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港++|+Trojan+|+B+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+C+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+D+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+E+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+F+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+G+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+H+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+I+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+J+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港CMHK | 2x
+      - 越南-4号
+      - 越南-3号
+      - 越南-1号
+      - 越南-2号
+      - 越南-4号 2
+      - 越南-3号 2
+      - 越南-1号 2
+      - 越南-2号 2
+      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
+      - Oracle新加坡-广移
       - Alien
+      - 美國 A01
+      - 新加坡A  | 2x
+      - 日本高速-优化
+      - 新加坡高速-隧道
+      - Az香港6
+      - Az香港4
+      - TW 3｜openit.ml
+      - <公益>香港直连2
+      - <公益>香港直连10
+      - <公益>香港直连11
+      - Az香港12
+      - 台湾-广州移动负载均衡 | 解锁流媒体
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 10｜openit.ml
-      - CN 11｜openit.ml
-      - SG 9｜openit.ml
-      - US 29｜openit.ml
-      - US 30｜openit.ml
-      - US 31｜openit.ml
-      - US 32｜openit.ml
-      - US 33｜openit.ml
-      - _CN_中国
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - <公益>香港直连1
+      - Az香港9
+      - 新加坡3
+      - CN 36｜openit.ml
+      - vpnhat-香港EDCL-dip
+      - vpnhat-香港HKT-dip
+      - <公益>香港直连6
+      - hpkr705
+      - hphk827
       - <公益>香港直连8
-      - <公益>香港直连10
-      - <公益>香港直连11
-      - <公益>香港直连14
       - <公益>香港直连15
       - <公益>香港直连17
-      - 台湾|01奈飞香港AZ中转
-      - 新加坡|03|OC奈飞香港AZ中转
-      - 新加坡|01|LIN香港AZ中转
-      - 新加坡|02|DO香港AZ中转
-      - 香港|01AZ直连
-      - 香港|17AZ中转
-      - 香港|03香港AZ中转
-      - 香港|21AZ中转
-      - JCBB_香港07【vip1】
-      - JCBB_香港11【vip3】
-      - G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72027
-      - F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72028
-      - B.SG.CN2GIA⇠集群⇠华东.BGP:RC18121
-      - E.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72026
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC945
-      - D.TW⇠CN2GIA专线⇠华东.BGP:RC17123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2112
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC938
-      - B.TW⇠CN2GIA专线⇠华东.BGP:RC17121
-      - E.TW.彰化⇠HiNet:RC32227
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33127
-      - H.[3x]HK.HKT⇠BGP:RC36323
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2111
-      - E.SG.CN2GIA⇠集群⇠华东.BGP:RC18124
-      - F.SG[1.5x].CN2GIA⇠集群⇠华东.BGP:RC18125
-      - E.TW⇠CN2GIA专线⇠华东.BGP:RC17124
-      - F.HK.HKT⇠BGP:RC36321
-      - F.TW.高雄.龍抬頭⇠HiNet:RC33225
-      - I.[6x].HK.HKT⇠BGP:RC36224
-      - F.TW.彰化⇠HiNet:RC32228
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312121
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33128
-      - I.[6x]TW.台北⇠HiNet:RC31128
-      - E.TW.高雄.龍抬頭⇠HiNet:RC33224
-      - C.TW⇠CN2GIA专线⇠华东.BGP:RC17122
-      - 中国_0620465
-      - 中国_0620456
-      - KR,
-      - SG,
-      - HK,
-      - TW-BGP-HiNit-观影推荐线路
-      - JP,
-      - Az香港12
+      - <公益>香港直连18
+      - <公益>香港直连12
+      - 台湾-广州移动负载均衡(中转)+|+解锁流媒体
+      - 香港+|+Trojan+|+A+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港++|+Trojan+|+B+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+C+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+D+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+E+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+F+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+G+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+H+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+I+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+J+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港CMHK | 2x
+      - 越南-4号
+      - 越南-3号
+      - 越南-1号
+      - 越南-2号
+      - 越南-4号 2
+      - 越南-3号 2
+      - 越南-1号 2
+      - 越南-2号 2
+      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
+      - Oracle新加坡-广移
       - Alien
+      - 美國 A01
+      - 新加坡A  | 2x
+      - 日本高速-优化
+      - 新加坡高速-隧道
+      - Az香港6
+      - Az香港4
+      - TW 3｜openit.ml
+      - <公益>香港直连2
+      - <公益>香港直连10
+      - <公益>香港直连11
+      - Az香港12
+      - 台湾-广州移动负载均衡 | 解锁流媒体
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 10｜openit.ml
-      - CN 11｜openit.ml
-      - SG 9｜openit.ml
-      - US 29｜openit.ml
-      - US 30｜openit.ml
-      - US 31｜openit.ml
-      - US 32｜openit.ml
-      - US 33｜openit.ml
-      - _CN_中国
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - <公益>香港直连1
+      - Az香港9
+      - 新加坡3
+      - CN 36｜openit.ml
+      - vpnhat-香港EDCL-dip
+      - vpnhat-香港HKT-dip
+      - <公益>香港直连6
+      - hpkr705
+      - hphk827
       - <公益>香港直连8
-      - <公益>香港直连10
-      - <公益>香港直连11
-      - <公益>香港直连14
       - <公益>香港直连15
       - <公益>香港直连17
-      - 台湾|01奈飞香港AZ中转
-      - 新加坡|03|OC奈飞香港AZ中转
-      - 新加坡|01|LIN香港AZ中转
-      - 新加坡|02|DO香港AZ中转
-      - 香港|01AZ直连
-      - 香港|17AZ中转
-      - 香港|03香港AZ中转
-      - 香港|21AZ中转
-      - JCBB_香港07【vip1】
-      - JCBB_香港11【vip3】
-      - G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72027
-      - F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72028
-      - B.SG.CN2GIA⇠集群⇠华东.BGP:RC18121
-      - E.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72026
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC945
-      - D.TW⇠CN2GIA专线⇠华东.BGP:RC17123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2112
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC938
-      - B.TW⇠CN2GIA专线⇠华东.BGP:RC17121
-      - E.TW.彰化⇠HiNet:RC32227
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33127
-      - H.[3x]HK.HKT⇠BGP:RC36323
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2111
-      - E.SG.CN2GIA⇠集群⇠华东.BGP:RC18124
-      - F.SG[1.5x].CN2GIA⇠集群⇠华东.BGP:RC18125
-      - E.TW⇠CN2GIA专线⇠华东.BGP:RC17124
-      - F.HK.HKT⇠BGP:RC36321
-      - F.TW.高雄.龍抬頭⇠HiNet:RC33225
-      - I.[6x].HK.HKT⇠BGP:RC36224
-      - F.TW.彰化⇠HiNet:RC32228
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312121
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33128
-      - I.[6x]TW.台北⇠HiNet:RC31128
-      - E.TW.高雄.龍抬頭⇠HiNet:RC33224
-      - C.TW⇠CN2GIA专线⇠华东.BGP:RC17122
-      - 中国_0620465
-      - 中国_0620456
-      - KR,
-      - SG,
-      - HK,
-      - TW-BGP-HiNit-观影推荐线路
-      - JP,
-      - Az香港12
+      - <公益>香港直连18
+      - <公益>香港直连12
+      - 台湾-广州移动负载均衡(中转)+|+解锁流媒体
+      - 香港+|+Trojan+|+A+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港++|+Trojan+|+B+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+C+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+D+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+E+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+F+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+G+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+H+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+I+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+J+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港CMHK | 2x
+      - 越南-4号
+      - 越南-3号
+      - 越南-1号
+      - 越南-2号
+      - 越南-4号 2
+      - 越南-3号 2
+      - 越南-1号 2
+      - 越南-2号 2
+      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
+      - Oracle新加坡-广移
       - Alien
+      - 美國 A01
+      - 新加坡A  | 2x
+      - 日本高速-优化
+      - 新加坡高速-隧道
+      - Az香港6
+      - Az香港4
+      - TW 3｜openit.ml
+      - <公益>香港直连2
+      - <公益>香港直连10
+      - <公益>香港直连11
+      - Az香港12
+      - 台湾-广州移动负载均衡 | 解锁流媒体
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -292,308 +232,248 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 10｜openit.ml
-      - CN 11｜openit.ml
-      - SG 9｜openit.ml
-      - US 29｜openit.ml
-      - US 30｜openit.ml
-      - US 31｜openit.ml
-      - US 32｜openit.ml
-      - US 33｜openit.ml
-      - _CN_中国
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - <公益>香港直连1
+      - Az香港9
+      - 新加坡3
+      - CN 36｜openit.ml
+      - vpnhat-香港EDCL-dip
+      - vpnhat-香港HKT-dip
+      - <公益>香港直连6
+      - hpkr705
+      - hphk827
       - <公益>香港直连8
-      - <公益>香港直连10
-      - <公益>香港直连11
-      - <公益>香港直连14
       - <公益>香港直连15
       - <公益>香港直连17
-      - 台湾|01奈飞香港AZ中转
-      - 新加坡|03|OC奈飞香港AZ中转
-      - 新加坡|01|LIN香港AZ中转
-      - 新加坡|02|DO香港AZ中转
-      - 香港|01AZ直连
-      - 香港|17AZ中转
-      - 香港|03香港AZ中转
-      - 香港|21AZ中转
-      - JCBB_香港07【vip1】
-      - JCBB_香港11【vip3】
-      - G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72027
-      - F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72028
-      - B.SG.CN2GIA⇠集群⇠华东.BGP:RC18121
-      - E.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72026
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC945
-      - D.TW⇠CN2GIA专线⇠华东.BGP:RC17123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2112
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC938
-      - B.TW⇠CN2GIA专线⇠华东.BGP:RC17121
-      - E.TW.彰化⇠HiNet:RC32227
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33127
-      - H.[3x]HK.HKT⇠BGP:RC36323
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2111
-      - E.SG.CN2GIA⇠集群⇠华东.BGP:RC18124
-      - F.SG[1.5x].CN2GIA⇠集群⇠华东.BGP:RC18125
-      - E.TW⇠CN2GIA专线⇠华东.BGP:RC17124
-      - F.HK.HKT⇠BGP:RC36321
-      - F.TW.高雄.龍抬頭⇠HiNet:RC33225
-      - I.[6x].HK.HKT⇠BGP:RC36224
-      - F.TW.彰化⇠HiNet:RC32228
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312121
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33128
-      - I.[6x]TW.台北⇠HiNet:RC31128
-      - E.TW.高雄.龍抬頭⇠HiNet:RC33224
-      - C.TW⇠CN2GIA专线⇠华东.BGP:RC17122
-      - 中国_0620465
-      - 中国_0620456
-      - KR,
-      - SG,
-      - HK,
-      - TW-BGP-HiNit-观影推荐线路
-      - JP,
-      - Az香港12
+      - <公益>香港直连18
+      - <公益>香港直连12
+      - 台湾-广州移动负载均衡(中转)+|+解锁流媒体
+      - 香港+|+Trojan+|+A+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港++|+Trojan+|+B+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+C+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+D+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+E+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+F+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+G+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+H+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+I+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+J+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港CMHK | 2x
+      - 越南-4号
+      - 越南-3号
+      - 越南-1号
+      - 越南-2号
+      - 越南-4号 2
+      - 越南-3号 2
+      - 越南-1号 2
+      - 越南-2号 2
+      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
+      - Oracle新加坡-广移
       - Alien
+      - 美國 A01
+      - 新加坡A  | 2x
+      - 日本高速-优化
+      - 新加坡高速-隧道
+      - Az香港6
+      - Az香港4
+      - TW 3｜openit.ml
+      - <公益>香港直连2
+      - <公益>香港直连10
+      - <公益>香港直连11
+      - Az香港12
+      - 台湾-广州移动负载均衡 | 解锁流媒体
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - <公益>香港直连1
+      - Az香港9
+      - vpnhat-香港EDCL-dip
+      - vpnhat-香港HKT-dip
+      - <公益>香港直连6
+      - hphk827
       - <公益>香港直连8
-      - <公益>香港直连10
-      - <公益>香港直连11
-      - <公益>香港直连14
       - <公益>香港直连15
       - <公益>香港直连17
-      - 台湾|01奈飞香港AZ中转
-      - 新加坡|03|OC奈飞香港AZ中转
-      - 新加坡|01|LIN香港AZ中转
-      - 新加坡|02|DO香港AZ中转
-      - 香港|01AZ直连
-      - 香港|17AZ中转
-      - 香港|03香港AZ中转
-      - 香港|21AZ中转
-      - JCBB_香港07【vip1】
-      - JCBB_香港11【vip3】
-      - G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72027
-      - F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72028
-      - E.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72026
-      - E.TW.彰化⇠HiNet:RC32227
-      - H.[3x]HK.HKT⇠BGP:RC36323
-      - F.HK.HKT⇠BGP:RC36321
-      - I.[6x].HK.HKT⇠BGP:RC36224
-      - F.TW.彰化⇠HiNet:RC32228
-      - I.[6x]TW.台北⇠HiNet:RC31128
+      - <公益>香港直连18
+      - <公益>香港直连12
+      - 台湾-广州移动负载均衡(中转)+|+解锁流媒体
+      - 香港+|+Trojan+|+A+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港++|+Trojan+|+B+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+C+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+D+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+E+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+F+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+G+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+H+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+I+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+J+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港CMHK | 2x
+      - Az香港6
+      - Az香港4
+      - <公益>香港直连2
+      - <公益>香港直连10
+      - <公益>香港直连11
       - Az香港12
+      - 台湾-广州移动负载均衡 | 解锁流媒体
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 10｜openit.ml
-      - CN 11｜openit.ml
-      - SG 9｜openit.ml
-      - US 29｜openit.ml
-      - US 30｜openit.ml
-      - US 31｜openit.ml
-      - US 32｜openit.ml
-      - US 33｜openit.ml
-      - _CN_中国
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - <公益>香港直连1
+      - Az香港9
+      - 新加坡3
+      - CN 36｜openit.ml
+      - vpnhat-香港EDCL-dip
+      - vpnhat-香港HKT-dip
+      - <公益>香港直连6
+      - hpkr705
+      - hphk827
       - <公益>香港直连8
-      - <公益>香港直连10
-      - <公益>香港直连11
-      - <公益>香港直连14
       - <公益>香港直连15
       - <公益>香港直连17
-      - 台湾|01奈飞香港AZ中转
-      - 新加坡|03|OC奈飞香港AZ中转
-      - 新加坡|01|LIN香港AZ中转
-      - 新加坡|02|DO香港AZ中转
-      - 香港|01AZ直连
-      - 香港|17AZ中转
-      - 香港|03香港AZ中转
-      - 香港|21AZ中转
-      - JCBB_香港07【vip1】
-      - JCBB_香港11【vip3】
-      - G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72027
-      - F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72028
-      - B.SG.CN2GIA⇠集群⇠华东.BGP:RC18121
-      - E.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72026
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC945
-      - D.TW⇠CN2GIA专线⇠华东.BGP:RC17123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2112
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC938
-      - B.TW⇠CN2GIA专线⇠华东.BGP:RC17121
-      - E.TW.彰化⇠HiNet:RC32227
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33127
-      - H.[3x]HK.HKT⇠BGP:RC36323
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2111
-      - E.SG.CN2GIA⇠集群⇠华东.BGP:RC18124
-      - F.SG[1.5x].CN2GIA⇠集群⇠华东.BGP:RC18125
-      - E.TW⇠CN2GIA专线⇠华东.BGP:RC17124
-      - F.HK.HKT⇠BGP:RC36321
-      - F.TW.高雄.龍抬頭⇠HiNet:RC33225
-      - I.[6x].HK.HKT⇠BGP:RC36224
-      - F.TW.彰化⇠HiNet:RC32228
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312121
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33128
-      - I.[6x]TW.台北⇠HiNet:RC31128
-      - E.TW.高雄.龍抬頭⇠HiNet:RC33224
-      - C.TW⇠CN2GIA专线⇠华东.BGP:RC17122
-      - 中国_0620465
-      - 中国_0620456
-      - KR,
-      - SG,
-      - HK,
-      - TW-BGP-HiNit-观影推荐线路
-      - JP,
-      - Az香港12
+      - <公益>香港直连18
+      - <公益>香港直连12
+      - 台湾-广州移动负载均衡(中转)+|+解锁流媒体
+      - 香港+|+Trojan+|+A+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港++|+Trojan+|+B+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+C+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+D+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+E+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+F+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+G+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+H+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+I+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+J+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港CMHK | 2x
+      - 越南-4号
+      - 越南-3号
+      - 越南-1号
+      - 越南-2号
+      - 越南-4号 2
+      - 越南-3号 2
+      - 越南-1号 2
+      - 越南-2号 2
+      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
+      - Oracle新加坡-广移
       - Alien
+      - 美國 A01
+      - 新加坡A  | 2x
+      - 日本高速-优化
+      - 新加坡高速-隧道
+      - Az香港6
+      - Az香港4
+      - TW 3｜openit.ml
+      - <公益>香港直连2
+      - <公益>香港直连10
+      - <公益>香港直连11
+      - Az香港12
+      - 台湾-广州移动负载均衡 | 解锁流媒体
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 10｜openit.ml
-      - CN 11｜openit.ml
-      - SG 9｜openit.ml
-      - US 29｜openit.ml
-      - US 30｜openit.ml
-      - US 31｜openit.ml
-      - US 32｜openit.ml
-      - US 33｜openit.ml
-      - _CN_中国
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - <公益>香港直连1
+      - Az香港9
+      - 新加坡3
+      - CN 36｜openit.ml
+      - vpnhat-香港EDCL-dip
+      - vpnhat-香港HKT-dip
+      - <公益>香港直连6
+      - hpkr705
+      - hphk827
       - <公益>香港直连8
-      - <公益>香港直连10
-      - <公益>香港直连11
-      - <公益>香港直连14
       - <公益>香港直连15
       - <公益>香港直连17
-      - 台湾|01奈飞香港AZ中转
-      - 新加坡|03|OC奈飞香港AZ中转
-      - 新加坡|01|LIN香港AZ中转
-      - 新加坡|02|DO香港AZ中转
-      - 香港|01AZ直连
-      - 香港|17AZ中转
-      - 香港|03香港AZ中转
-      - 香港|21AZ中转
-      - JCBB_香港07【vip1】
-      - JCBB_香港11【vip3】
-      - G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72027
-      - F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72028
-      - B.SG.CN2GIA⇠集群⇠华东.BGP:RC18121
-      - E.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72026
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC945
-      - D.TW⇠CN2GIA专线⇠华东.BGP:RC17123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2112
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC938
-      - B.TW⇠CN2GIA专线⇠华东.BGP:RC17121
-      - E.TW.彰化⇠HiNet:RC32227
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33127
-      - H.[3x]HK.HKT⇠BGP:RC36323
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2111
-      - E.SG.CN2GIA⇠集群⇠华东.BGP:RC18124
-      - F.SG[1.5x].CN2GIA⇠集群⇠华东.BGP:RC18125
-      - E.TW⇠CN2GIA专线⇠华东.BGP:RC17124
-      - F.HK.HKT⇠BGP:RC36321
-      - F.TW.高雄.龍抬頭⇠HiNet:RC33225
-      - I.[6x].HK.HKT⇠BGP:RC36224
-      - F.TW.彰化⇠HiNet:RC32228
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312121
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33128
-      - I.[6x]TW.台北⇠HiNet:RC31128
-      - E.TW.高雄.龍抬頭⇠HiNet:RC33224
-      - C.TW⇠CN2GIA专线⇠华东.BGP:RC17122
-      - 中国_0620465
-      - 中国_0620456
-      - KR,
-      - SG,
-      - HK,
-      - TW-BGP-HiNit-观影推荐线路
-      - JP,
-      - Az香港12
+      - <公益>香港直连18
+      - <公益>香港直连12
+      - 台湾-广州移动负载均衡(中转)+|+解锁流媒体
+      - 香港+|+Trojan+|+A+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港++|+Trojan+|+B+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+C+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+D+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+E+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+F+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+G+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+H+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+I+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+J+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港CMHK | 2x
+      - 越南-4号
+      - 越南-3号
+      - 越南-1号
+      - 越南-2号
+      - 越南-4号 2
+      - 越南-3号 2
+      - 越南-1号 2
+      - 越南-2号 2
+      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
+      - Oracle新加坡-广移
       - Alien
+      - 美國 A01
+      - 新加坡A  | 2x
+      - 日本高速-优化
+      - 新加坡高速-隧道
+      - Az香港6
+      - Az香港4
+      - TW 3｜openit.ml
+      - <公益>香港直连2
+      - <公益>香港直连10
+      - <公益>香港直连11
+      - Az香港12
+      - 台湾-广州移动负载均衡 | 解锁流媒体
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 10｜openit.ml
-      - CN 11｜openit.ml
-      - SG 9｜openit.ml
-      - US 29｜openit.ml
-      - US 30｜openit.ml
-      - US 31｜openit.ml
-      - US 32｜openit.ml
-      - US 33｜openit.ml
-      - _CN_中国
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - <公益>香港直连1
+      - Az香港9
+      - 新加坡3
+      - CN 36｜openit.ml
+      - vpnhat-香港EDCL-dip
+      - vpnhat-香港HKT-dip
+      - <公益>香港直连6
+      - hpkr705
+      - hphk827
       - <公益>香港直连8
-      - <公益>香港直连10
-      - <公益>香港直连11
-      - <公益>香港直连14
       - <公益>香港直连15
       - <公益>香港直连17
-      - 台湾|01奈飞香港AZ中转
-      - 新加坡|03|OC奈飞香港AZ中转
-      - 新加坡|01|LIN香港AZ中转
-      - 新加坡|02|DO香港AZ中转
-      - 香港|01AZ直连
-      - 香港|17AZ中转
-      - 香港|03香港AZ中转
-      - 香港|21AZ中转
-      - JCBB_香港07【vip1】
-      - JCBB_香港11【vip3】
-      - G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72027
-      - F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72028
-      - B.SG.CN2GIA⇠集群⇠华东.BGP:RC18121
-      - E.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72026
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC945
-      - D.TW⇠CN2GIA专线⇠华东.BGP:RC17123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2112
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC938
-      - B.TW⇠CN2GIA专线⇠华东.BGP:RC17121
-      - E.TW.彰化⇠HiNet:RC32227
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33127
-      - H.[3x]HK.HKT⇠BGP:RC36323
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2111
-      - E.SG.CN2GIA⇠集群⇠华东.BGP:RC18124
-      - F.SG[1.5x].CN2GIA⇠集群⇠华东.BGP:RC18125
-      - E.TW⇠CN2GIA专线⇠华东.BGP:RC17124
-      - F.HK.HKT⇠BGP:RC36321
-      - F.TW.高雄.龍抬頭⇠HiNet:RC33225
-      - I.[6x].HK.HKT⇠BGP:RC36224
-      - F.TW.彰化⇠HiNet:RC32228
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312121
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33128
-      - I.[6x]TW.台北⇠HiNet:RC31128
-      - E.TW.高雄.龍抬頭⇠HiNet:RC33224
-      - C.TW⇠CN2GIA专线⇠华东.BGP:RC17122
-      - 中国_0620465
-      - 中国_0620456
-      - KR,
-      - SG,
-      - HK,
-      - TW-BGP-HiNit-观影推荐线路
-      - JP,
-      - Az香港12
+      - <公益>香港直连18
+      - <公益>香港直连12
+      - 台湾-广州移动负载均衡(中转)+|+解锁流媒体
+      - 香港+|+Trojan+|+A+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港++|+Trojan+|+B+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+C+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+D+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+E+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+F+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+G+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+H+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+I+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+J+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港CMHK | 2x
+      - 越南-4号
+      - 越南-3号
+      - 越南-1号
+      - 越南-2号
+      - 越南-4号 2
+      - 越南-3号 2
+      - 越南-1号 2
+      - 越南-2号 2
+      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
+      - Oracle新加坡-广移
       - Alien
+      - 美國 A01
+      - 新加坡A  | 2x
+      - 日本高速-优化
+      - 新加坡高速-隧道
+      - Az香港6
+      - Az香港4
+      - TW 3｜openit.ml
+      - <公益>香港直连2
+      - <公益>香港直连10
+      - <公益>香港直连11
+      - Az香港12
+      - 台湾-广州移动负载均衡 | 解锁流媒体
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -609,69 +489,54 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 10｜openit.ml
-      - CN 11｜openit.ml
-      - SG 9｜openit.ml
-      - US 29｜openit.ml
-      - US 30｜openit.ml
-      - US 31｜openit.ml
-      - US 32｜openit.ml
-      - US 33｜openit.ml
-      - _CN_中国
-      - _CN_中国->🇹🇼_TW_台湾
-      - _CN_中国->🇹🇼_TW_台湾 2
-      - <公益>香港直连1
+      - Az香港9
+      - 新加坡3
+      - CN 36｜openit.ml
+      - vpnhat-香港EDCL-dip
+      - vpnhat-香港HKT-dip
+      - <公益>香港直连6
+      - hpkr705
+      - hphk827
       - <公益>香港直连8
-      - <公益>香港直连10
-      - <公益>香港直连11
-      - <公益>香港直连14
       - <公益>香港直连15
       - <公益>香港直连17
-      - 台湾|01奈飞香港AZ中转
-      - 新加坡|03|OC奈飞香港AZ中转
-      - 新加坡|01|LIN香港AZ中转
-      - 新加坡|02|DO香港AZ中转
-      - 香港|01AZ直连
-      - 香港|17AZ中转
-      - 香港|03香港AZ中转
-      - 香港|21AZ中转
-      - JCBB_香港07【vip1】
-      - JCBB_香港11【vip3】
-      - G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72027
-      - F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72028
-      - B.SG.CN2GIA⇠集群⇠华东.BGP:RC18121
-      - E.[限時1x]試行奈飛保證專線HK⇠廣港.IPLC:IR72026
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC945
-      - D.TW⇠CN2GIA专线⇠华东.BGP:RC17123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2112
-      - F.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC938
-      - B.TW⇠CN2GIA专线⇠华东.BGP:RC17121
-      - E.TW.彰化⇠HiNet:RC32227
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33127
-      - H.[3x]HK.HKT⇠BGP:RC36323
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312123
-      - G.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC2111
-      - E.SG.CN2GIA⇠集群⇠华东.BGP:RC18124
-      - F.SG[1.5x].CN2GIA⇠集群⇠华东.BGP:RC18125
-      - E.TW⇠CN2GIA专线⇠华东.BGP:RC17124
-      - F.HK.HKT⇠BGP:RC36321
-      - F.TW.高雄.龍抬頭⇠HiNet:RC33225
-      - I.[6x].HK.HKT⇠BGP:RC36224
-      - F.TW.彰化⇠HiNet:RC32228
-      - E.[限時1x]試行奈飛保證專線TW.HINET.IPLC:RC3312121
-      - I.TW.高雄.龍抬頭⇠HiNet:RC33128
-      - I.[6x]TW.台北⇠HiNet:RC31128
-      - E.TW.高雄.龍抬頭⇠HiNet:RC33224
-      - C.TW⇠CN2GIA专线⇠华东.BGP:RC17122
-      - 中国_0620465
-      - 中国_0620456
-      - KR,
-      - SG,
-      - HK,
-      - TW-BGP-HiNit-观影推荐线路
-      - JP,
-      - Az香港12
+      - <公益>香港直连18
+      - <公益>香港直连12
+      - 台湾-广州移动负载均衡(中转)+|+解锁流媒体
+      - 香港+|+Trojan+|+A+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港++|+Trojan+|+B+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+C+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+D+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+E+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+F+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+G+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+H+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+I+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港+|+Trojan+|+J+|+0.8x+|+黃金+|+港區流媒體解鎖+|
+      - 香港CMHK | 2x
+      - 越南-4号
+      - 越南-3号
+      - 越南-1号
+      - 越南-2号
+      - 越南-4号 2
+      - 越南-3号 2
+      - 越南-1号 2
+      - 越南-2号 2
+      - 新加坡G-Core-广移四线负载均衡(中转) | 解锁流媒体
+      - Oracle新加坡-广移
       - Alien
+      - 美國 A01
+      - 新加坡A  | 2x
+      - 日本高速-优化
+      - 新加坡高速-隧道
+      - Az香港6
+      - Az香港4
+      - TW 3｜openit.ml
+      - <公益>香港直连2
+      - <公益>香港直连10
+      - <公益>香港直连11
+      - Az香港12
+      - 台湾-广州移动负载均衡 | 解锁流媒体
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
