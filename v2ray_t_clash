@@ -1002,30 +1002,32 @@ proxies:
     password: 26bae9b023
     tls: true
     skip-cert-verify: true
-  - {name: 80-广东1号, server: 59.34.148.109, port: 80, type: vmess, uuid: 9e4a7268-4c66-49d9-b6fb-59e33c8c7c59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 59.34.148.109}, udp: true}
+  - {name: vpnpool-香港Nathosts, server: 116.205.174.15, port: 7002, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: vpnhat.t.me, udp: true}
+  - {name: vpnpool-香港Nathosts 2, server: 116.205.232.201, port: 7001, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: vpnhat.t.me, udp: true}
+  - {name: vpnhat-香港Kirino, server: 120.233.29.211, port: 6005, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: vpnhat.t.me, udp: true}
+  - {name: vpnhat-香港Kirino 2, server: 120.233.29.214, port: 6009, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: vpnhat.t.me, udp: true}
+  - {name: vpnhat-香港MYTEK, server: 120.233.29.213, port: 6001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: vpnhat.t.me, udp: true}
+  - {name: vpnhat-香港Kirino 3, server: 120.233.29.212, port: 6018, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: vpnhat.t.me, udp: true}
+  - {name: vpnhat-香港Kirino 4, server: 120.233.7.232, port: 2111, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: vpnhat.t.me, udp: true}
+  - {name: vpnhat-香港, server: 120.233.7.233, port: 2106, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: vpnhat.t.me, udp: true}
+  - {name: vpnhat-香港HKT-dip, server: 120.233.29.214, port: 6007, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 138565:9630., obfs-param: vpnhat.t.me, udp: true}
+  - {name: 台湾3-600M带宽-解锁流媒体, server: tw.suntory.lol, port: 38513, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: tw.suntory.lol, skip-cert-verify: true, udp: true}
+  - {name: 台湾2-600M带宽-解锁流媒体, server: tw.suntory.lol, port: 38512, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: tw.suntory.lol, skip-cert-verify: true, udp: true}
+  - {name: 香港-东京V2, server: 20.239.179.251, port: 50045, type: vmess, uuid: 9b61ff46-4c61-4b31-801a-f870d7a1de53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.239.179.251}, udp: true}
+  - {name: 120.233.25.136:54902, server: 120.233.25.136, port: 54902, type: ss, cipher: chacha20-ietf-poly1305, password: F77EbseT9YJkL, udp: true}
   - {name: 台北Sky-dip, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 185.184.223.35:2684, server: 185.184.223.35, port: 2684, type: ss, cipher: chacha20-ietf-poly1305, password: YMOUwasvcIPlM, udp: true}
+  - {name: 免费-日本4, server: jp04-vm0.entry.rwesdhytjuftyhdafsdgfrh.club, port: 449, type: vmess, uuid: b8facaa9-eea4-33e5-a6d0-a255ba4c4332, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bf419d5f59f7d0.windowsupdate.com}, udp: true}
   - {name: 台湾, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 台湾Hinet-广移2 | 解锁流媒体, server: gzyd2.52147.top, port: 30010, type: trojan, password: 2778263c-486d-4af8-9ba4-25fc536b5bac, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
   - {name: 台北Sky-dip 2, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 巴西, server: a.br.hideu.tw, port: 10629, type: ssr, cipher: dummy, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
-  - {name: 西班牙, server: a.es.hideu.tw, port: 10629, type: ssr, cipher: dummy, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
-  - {name: 印度, server: a.in.hideu.tw, port: 10629, type: ssr, cipher: dummy, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
-  - {name: 韩国, server: a.kr.hideu.tw, port: 10629, type: ssr, cipher: dummy, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
-  - {name: 俄罗斯, server: a.rus.hideu.tw, port: 10629, type: ssr, cipher: dummy, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
-  - {name: 泰国, server: a.th.hideu.tw, port: 10629, type: ssr, cipher: dummy, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
-  - {name: 台湾-A (Netflix), server: a.tw.hideu.tw, port: 10629, type: ssr, cipher: dummy, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
-  - {name: 南非, server: a.za.hideu.tw, port: 10629, type: ssr, cipher: dummy, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
-  - {name: 台湾-B (Netflix), server: b.tw.hideu.tw, port: 10629, type: ssr, cipher: dummy, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: 258433:lUoukm, obfs-param: "", udp: true}
+  - {name: TW1(IEPL)+-+负载均衡专线, server: ftp.cn.debian.cdnet.in, port: 8020, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
+  - {name: 80-广东1号, server: 59.34.148.109, port: 80, type: vmess, uuid: 9e4a7268-4c66-49d9-b6fb-59e33c8c7c59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 59.34.148.109}, udp: true}
   - {name: 台湾Hinet ～广州移动(中转) | 解锁流媒体, server: gzyd1.52147.top, port: 20020, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
   - {name: CN_131, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_128, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_130, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN_127, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_132, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: 台湾Hinet | 解锁流媒体, server: hinet.52147.top, port: 28443, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
-  - {name: +aws, server: 18.166.57.61, port: 30020, type: ss, cipher: aes-128-gcm, password: !<str> 240085006670070890409720, plugin: obfs, plugin-opts: {mode: tls, host: "TIB2ehlN1U.download.windowsupdate.com,ajax.microsoft.com,449bff3663.douyincdn.com"}, udp: true}
-  - {name: KR-AZ, server: 20.249.98.246, port: 51622, type: vmess, uuid: 67e4ebb9-25f8-4c75-a377-179a335bd0c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 台湾Hinet-广州移动 | 解锁流媒体, server: gzyd1.52147.top, port: 30010, type: trojan, password: 2778263c-486d-4af8-9ba4-25fc536b5bac, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 台湾Hinet-广移2 | 解锁流媒体, server: gzyd2.52147.top, port: 30010, type: trojan, password: 2778263c-486d-4af8-9ba4-25fc536b5bac, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
   - {name: 台湾Hinet | 解锁流媒体 2, server: hinet.52147.top, port: 28000, type: trojan, password: 2778263c-486d-4af8-9ba4-25fc536b5bac, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
@@ -1169,32 +1171,33 @@ proxy-groups:
       - 🇨🇳 HTTPS | 台湾 | 19
       - 🇨🇳 HTTPS | 台湾 | 20
       - 🇨🇳 HTTPS | 台湾 | 21
-      - 80-广东1号
+      - vpnpool-香港Nathosts
+      - vpnpool-香港Nathosts 2
+      - vpnhat-香港Kirino
+      - vpnhat-香港Kirino 2
+      - vpnhat-香港MYTEK
+      - vpnhat-香港Kirino 3
+      - vpnhat-香港Kirino 4
+      - vpnhat-香港
+      - vpnhat-香港HKT-dip
+      - 台湾3-600M带宽-解锁流媒体
+      - 台湾2-600M带宽-解锁流媒体
+      - 香港-东京V2
+      - 120.233.25.136:54902
       - 台北Sky-dip
+      - 185.184.223.35:2684
+      - 免费-日本4
       - 台湾
+      - 台湾Hinet-广移2 | 解锁流媒体
       - 台北Sky-dip 2
-      - 巴西
-      - 西班牙
-      - 印度
-      - 韩国
-      - 俄罗斯
-      - 泰国
-      - 台湾-A (Netflix)
-      - 南非
-      - 台湾-B (Netflix)
+      - TW1(IEPL)+-+负载均衡专线
+      - 80-广东1号
       - 台湾Hinet ～广州移动(中转) | 解锁流媒体
       - CN_131
-      - CN_128
-      - CN_130
       - CN_127
-      - CN_132
       - 台湾Hinet | 解锁流媒体
-      - +aws
-      - KR-AZ
       - 台湾Hinet-广州移动 | 解锁流媒体
-      - 台湾Hinet-广移2 | 解锁流媒体
       - 台湾Hinet | 解锁流媒体 2
-      - 台湾Hinet-广州移动 | 解锁流媒体
  
   - name: 🖐 手动选择
     type: select
@@ -1323,30 +1326,32 @@ proxy-groups:
       - 🇨🇳 HTTPS | 台湾 | 19
       - 🇨🇳 HTTPS | 台湾 | 20
       - 🇨🇳 HTTPS | 台湾 | 21
-      - 80-广东1号
+      - vpnpool-香港Nathosts
+      - vpnpool-香港Nathosts 2
+      - vpnhat-香港Kirino
+      - vpnhat-香港Kirino 2
+      - vpnhat-香港MYTEK
+      - vpnhat-香港Kirino 3
+      - vpnhat-香港Kirino 4
+      - vpnhat-香港
+      - vpnhat-香港HKT-dip
+      - 台湾3-600M带宽-解锁流媒体
+      - 台湾2-600M带宽-解锁流媒体
+      - 香港-东京V2
+      - 120.233.25.136:54902
       - 台北Sky-dip
+      - 185.184.223.35:2684
+      - 免费-日本4
       - 台湾
+      - 台湾Hinet-广移2 | 解锁流媒体
       - 台北Sky-dip 2
-      - 巴西
-      - 西班牙
-      - 印度
-      - 韩国
-      - 俄罗斯
-      - 泰国
-      - 台湾-A (Netflix)
-      - 南非
-      - 台湾-B (Netflix)
+      - TW1(IEPL)+-+负载均衡专线
+      - 80-广东1号
       - 台湾Hinet ～广州移动(中转) | 解锁流媒体
       - CN_131
-      - CN_128
-      - CN_130
       - CN_127
-      - CN_132
       - 台湾Hinet | 解锁流媒体
-      - +aws
-      - KR-AZ
       - 台湾Hinet-广州移动 | 解锁流媒体
-      - 台湾Hinet-广移2 | 解锁流媒体
       - 台湾Hinet | 解锁流媒体 2
 
   - name: 🇺🇸 美区
@@ -1511,30 +1516,32 @@ proxy-groups:
     interval: 180
     tolerance: 50
     proxies:
-      - 80-广东1号
+      - vpnpool-香港Nathosts
+      - vpnpool-香港Nathosts 2
+      - vpnhat-香港Kirino
+      - vpnhat-香港Kirino 2
+      - vpnhat-香港MYTEK
+      - vpnhat-香港Kirino 3
+      - vpnhat-香港Kirino 4
+      - vpnhat-香港
+      - vpnhat-香港HKT-dip
+      - 台湾3-600M带宽-解锁流媒体
+      - 台湾2-600M带宽-解锁流媒体
+      - 香港-东京V2
+      - 120.233.25.136:54902
       - 台北Sky-dip
+      - 185.184.223.35:2684
+      - 免费-日本4
       - 台湾
+      - 台湾Hinet-广移2 | 解锁流媒体
       - 台北Sky-dip 2
-      - 巴西
-      - 西班牙
-      - 印度
-      - 韩国
-      - 俄罗斯
-      - 泰国
-      - 台湾-A (Netflix)
-      - 南非
-      - 台湾-B (Netflix)
+      - TW1(IEPL)+-+负载均衡专线
+      - 80-广东1号
       - 台湾Hinet ～广州移动(中转) | 解锁流媒体
       - CN_131
-      - CN_128
-      - CN_130
       - CN_127
-      - CN_132
       - 台湾Hinet | 解锁流媒体
-      - +aws
-      - KR-AZ
       - 台湾Hinet-广州移动 | 解锁流媒体
-      - 台湾Hinet-广移2 | 解锁流媒体
       - 台湾Hinet | 解锁流媒体 2
  
   - name: 🎯 全球直连
