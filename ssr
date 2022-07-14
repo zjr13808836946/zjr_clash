@@ -5,247 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 台湾Sky | 解锁流媒体, server: 103.186.187.52, port: 28443, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, skip-cert-verify: true, udp: true}
+  - {name: JP-2-S, server: oej82oa01ouia7.cooc.icu, port: 19980, type: ss, cipher: chacha20-ietf-poly1305, password: 76ad6675-616b-4227-9eff-22bbfdb4bfe7, udp: true}
+  - {name: "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】", server: cm.spacez.cloud, port: 30000, type: trojan, password: 3b2b3a82-fd51-4dad-a0d3-2985544b786e, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
   - {name: 台北Sky-dip, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 台北Sky-dip 2, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
   - {name: 台湾, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _CN_中国->🇹🇼_TW_台湾, server: 120.233.151.171, port: 8020, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
-  - {name: 120.233.25.136:54902, server: 120.233.25.136, port: 54902, type: ss, cipher: chacha20-ietf-poly1305, password: F77EbseT9YJkL, udp: true}
-  - {name: HK1(IEPL)+-+负载均衡专线, server: ftp.cn.debian.cdnet.in, port: 8010, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
-  - {name: TW1(IEPL)+-+负载均衡专线, server: ftp.cn.debian.cdnet.in, port: 8020, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
-  - {name: 香港01+|+广港, server: gz.bgp2.zf.edu.ge, port: 49401, type: ss, cipher: chacha20-ietf-poly1305, password: d6ea6b6e-b007-4191-8588-85ae2a191d9c, udp: true}
-  - {name: 台湾Hinet ～广州移动(中转) | 解锁流媒体, server: gzyd1.52147.top, port: 20020, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 台北Sky-dip 2, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: HK-1, server: qqf5vrvygt1rhl.cooc.icu, port: 443, type: vmess, uuid: 76ad6675-616b-4227-9eff-22bbfdb4bfe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: qqf5vrvygt1rhl.cooc.icu}, udp: true}
   - {name: 台湾Hinet | 解锁流媒体, server: hinet.52147.top, port: 28443, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 【N】日本 VIP 8 - Nerocloud, server: jp13.boom.party, port: 39300, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【N】日本 VIP 4 - Nerocloud, server: jp9.boom.party, port: 38000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【M】香港 VIP X - Leaseweb, server: n115.boom.party, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【M】香港 VIP Z - Leaseweb, server: n117.boom.party, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【F】香港  VIP 4 - Nearoute, server: n63.boom.party, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【M】香港  VIP H - Leaseweb, server: n67.boom.party, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【M】香港  VIP I - Nearoute, server: n74.boom.party, port: 26000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【F】香港  VIP 8 - Nearoute, server: n77.boom.party, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【M】香港 VIP K - Nearoute, server: n93.boom.party, port: 28000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【I】日本 VIP A - Azure, server: nf10.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【I】日本 VIP 6 - Azure, server: nf6.boom.party, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【J】香港 VIP 1 - Netflix, server: nj1.boom.party, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【J】香港 VIP 2 - Netflix, server: nj2.boom.party, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【J】香港 VIP 3 - Netflix, server: nj3.boom.party, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【J】香港 VIP 4 - Netflix, server: nj4.boom.party, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【J】香港 VIP 7 - Netflix, server: nj7.boom.party, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【J】香港 VIP 8 - Netflix, server: nj8.boom.party, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【J】香港 VIP 9 - Netflix, server: nj9.boom.party, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【J】香港 VIP A - Netflix, server: nja.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【J】香港 VIP E - Netflix, server: nje.boom.party, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【K】香港 普通 3 - Nearoute, server: nk3.boom.party, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【K】香港 普通 4 - Nearoute, server: nk4.boom.party, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【K】香港 普通 5 - Nearoute, server: nk5.boom.party, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【K】香港 普通 6 - Nearoute, server: nk6.boom.party, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【K】香港 普通 7 - Nearoute, server: nk7.boom.party, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【M】香港 VIP 1 - Netflix, server: nm1.boom.party, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【M】香港 VIP 2 - Netflix, server: nm2.boom.party, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【M】香港 VIP 3 - Netflix, server: nm3.boom.party, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【M】香港 VIP 4 - Netflix, server: nm4.boom.party, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【M】香港 VIP A - Leaseweb, server: nma.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【M】香港 VIP B - Leaseweb, server: nmb.boom.party, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【N】日本 VIP B - Leaseweb, server: nn2.boom.party, port: 41000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【N】日本 VIP E - Leaseweb, server: nn5.boom.party, port: 44000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【F】香港 VIP 1 - Nearoute, server: ntemp25.boom.party, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【O】香港 VIP 5 - Leaseweb, server: opt10.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【O】香港 VIP 8 - Leaseweb, server: opt13.boom.party, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【O】香港 VIP 9 - Leaseweb, server: opt14.boom.party, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【O】香港 普通 10 - Leaseweb, server: opt20.boom.party, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【O】香港 VIP 12 - Leaseweb, server: opt22.boom.party, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【O】香港 VIP 13 - Leaseweb, server: opt23.boom.party, port: 33000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【O】香港 VIP 15 - Leaseweb, server: opt25.boom.party, port: 35000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 【O】香港 VIP 3 - Leaseweb, server: opt8.boom.party, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 84476:TISm0W, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: HK-1, server: qqf5vrvygt1rhl.cooc.icu, port: 443, type: vmess, uuid: d1bae698-4c75-485f-a1ac-2a7b2a0fa6ad, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: qqf5vrvygt1rhl.cooc.icu}, udp: true}
-  - {name: HK-1-S, server: qqf5vrvygt1rhl.cooc.icu, port: 27882, type: ss, cipher: chacha20-ietf-poly1305, password: d1bae698-4c75-485f-a1ac-2a7b2a0fa6ad, udp: true}
-  - {name: HK-2, server: w94ggs34xfrsoo.cooc.icu, port: 443, type: vmess, uuid: d1bae698-4c75-485f-a1ac-2a7b2a0fa6ad, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: w94ggs34xfrsoo.cooc.icu}, udp: true}
-  - {name: HK-2-S, server: w94ggs34xfrsoo.cooc.icu, port: 11180, type: ss, cipher: chacha20-ietf-poly1305, password: 76ad6675-616b-4227-9eff-22bbfdb4bfe7, udp: true}
+  - {name: "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】", server: cu.spacez.cloud, port: 30001, type: trojan, password: 3b2b3a82-fd51-4dad-a0d3-2985544b786e, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: 台湾Sky-广移2负载均衡(中转) | 解锁流媒体, server: gzyd2.52147.top, port: 20140, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: JP-2, server: oej82oa01ouia7.cooc.icu, port: 443, type: vmess, uuid: 76ad6675-616b-4227-9eff-22bbfdb4bfe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: oej82oa01ouia7.cooc.icu}, udp: true}
+  - {name: 香港2|tg频道:@ripaojiedian, server: 73hk01.ok365.cyou, port: 443, type: trojan, password: 7ec57bc9-5cd5-4adf-a640-369458d7b27e, sni: 73hk01.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|tg频道:@ripaojiedian, server: 626sg05.ok365.cyou, port: 80, type: trojan, password: 7ec57bc9-5cd5-4adf-a640-369458d7b27e, sni: 626sg05.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: 台湾-tg频道:@bpjzx2-65, server: 60.249.3.229, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2", server: cu.spacez.cloud, port: 30001, type: trojan, password: 739fbd36-1779-405e-99d4-c49e4dfaa10e, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: 台湾Sky-广移负载均衡(中转) | 解锁流媒体, server: gzyd1.52147.top, port: 20140, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 日本(youtube阿伟科技), server: c71s4.jamjams3.net, port: 10922, type: vmess, uuid: 633aa237-6edc-4f81-861c-e0667d97f45d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 台湾Sky | 解锁流媒体
+      - JP-2-S
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾
-      - _CN_中国->🇹🇼_TW_台湾
-      - 120.233.25.136:54902
-      - HK1(IEPL)+-+负载均衡专线
-      - TW1(IEPL)+-+负载均衡专线
-      - 香港01+|+广港
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 【N】日本 VIP 8 - Nerocloud
-      - 【N】日本 VIP 4 - Nerocloud
-      - 【M】香港 VIP X - Leaseweb
-      - 【M】香港 VIP Z - Leaseweb
-      - 【F】香港  VIP 4 - Nearoute
-      - 【M】香港  VIP H - Leaseweb
-      - 【M】香港  VIP I - Nearoute
-      - 【F】香港  VIP 8 - Nearoute
-      - 【M】香港 VIP K - Nearoute
-      - 【I】日本 VIP A - Azure
-      - 【I】日本 VIP 6 - Azure
-      - 【J】香港 VIP 1 - Netflix
-      - 【J】香港 VIP 2 - Netflix
-      - 【J】香港 VIP 3 - Netflix
-      - 【J】香港 VIP 4 - Netflix
-      - 【J】香港 VIP 7 - Netflix
-      - 【J】香港 VIP 8 - Netflix
-      - 【J】香港 VIP 9 - Netflix
-      - 【J】香港 VIP A - Netflix
-      - 【J】香港 VIP E - Netflix
-      - 【K】香港 普通 3 - Nearoute
-      - 【K】香港 普通 4 - Nearoute
-      - 【K】香港 普通 5 - Nearoute
-      - 【K】香港 普通 6 - Nearoute
-      - 【K】香港 普通 7 - Nearoute
-      - 【M】香港 VIP 1 - Netflix
-      - 【M】香港 VIP 2 - Netflix
-      - 【M】香港 VIP 3 - Netflix
-      - 【M】香港 VIP 4 - Netflix
-      - 【M】香港 VIP A - Leaseweb
-      - 【M】香港 VIP B - Leaseweb
-      - 【N】日本 VIP B - Leaseweb
-      - 【N】日本 VIP E - Leaseweb
-      - 【F】香港 VIP 1 - Nearoute
-      - 【O】香港 VIP 5 - Leaseweb
-      - 【O】香港 VIP 8 - Leaseweb
-      - 【O】香港 VIP 9 - Leaseweb
-      - 【O】香港 普通 10 - Leaseweb
-      - 【O】香港 VIP 12 - Leaseweb
-      - 【O】香港 VIP 13 - Leaseweb
-      - 【O】香港 VIP 15 - Leaseweb
-      - 【O】香港 VIP 3 - Leaseweb
+      - 台北Sky-dip 2
       - HK-1
-      - HK-1-S
-      - HK-2
-      - HK-2-S
+      - 台湾Hinet | 解锁流媒体
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 台湾Sky-广移2负载均衡(中转) | 解锁流媒体
+      - JP-2
+      - 香港2|tg频道:@ripaojiedian
+      - 新加坡|tg频道:@ripaojiedian
+      - 台湾-tg频道:@bpjzx2-65
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
+      - 台湾Sky-广移负载均衡(中转) | 解锁流媒体
+      - 日本(youtube阿伟科技)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 台湾Sky | 解锁流媒体
+      - JP-2-S
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾
-      - _CN_中国->🇹🇼_TW_台湾
-      - 120.233.25.136:54902
-      - HK1(IEPL)+-+负载均衡专线
-      - TW1(IEPL)+-+负载均衡专线
-      - 香港01+|+广港
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 【N】日本 VIP 8 - Nerocloud
-      - 【N】日本 VIP 4 - Nerocloud
-      - 【M】香港 VIP X - Leaseweb
-      - 【M】香港 VIP Z - Leaseweb
-      - 【F】香港  VIP 4 - Nearoute
-      - 【M】香港  VIP H - Leaseweb
-      - 【M】香港  VIP I - Nearoute
-      - 【F】香港  VIP 8 - Nearoute
-      - 【M】香港 VIP K - Nearoute
-      - 【I】日本 VIP A - Azure
-      - 【I】日本 VIP 6 - Azure
-      - 【J】香港 VIP 1 - Netflix
-      - 【J】香港 VIP 2 - Netflix
-      - 【J】香港 VIP 3 - Netflix
-      - 【J】香港 VIP 4 - Netflix
-      - 【J】香港 VIP 7 - Netflix
-      - 【J】香港 VIP 8 - Netflix
-      - 【J】香港 VIP 9 - Netflix
-      - 【J】香港 VIP A - Netflix
-      - 【J】香港 VIP E - Netflix
-      - 【K】香港 普通 3 - Nearoute
-      - 【K】香港 普通 4 - Nearoute
-      - 【K】香港 普通 5 - Nearoute
-      - 【K】香港 普通 6 - Nearoute
-      - 【K】香港 普通 7 - Nearoute
-      - 【M】香港 VIP 1 - Netflix
-      - 【M】香港 VIP 2 - Netflix
-      - 【M】香港 VIP 3 - Netflix
-      - 【M】香港 VIP 4 - Netflix
-      - 【M】香港 VIP A - Leaseweb
-      - 【M】香港 VIP B - Leaseweb
-      - 【N】日本 VIP B - Leaseweb
-      - 【N】日本 VIP E - Leaseweb
-      - 【F】香港 VIP 1 - Nearoute
-      - 【O】香港 VIP 5 - Leaseweb
-      - 【O】香港 VIP 8 - Leaseweb
-      - 【O】香港 VIP 9 - Leaseweb
-      - 【O】香港 普通 10 - Leaseweb
-      - 【O】香港 VIP 12 - Leaseweb
-      - 【O】香港 VIP 13 - Leaseweb
-      - 【O】香港 VIP 15 - Leaseweb
-      - 【O】香港 VIP 3 - Leaseweb
+      - 台北Sky-dip 2
       - HK-1
-      - HK-1-S
-      - HK-2
-      - HK-2-S
+      - 台湾Hinet | 解锁流媒体
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 台湾Sky-广移2负载均衡(中转) | 解锁流媒体
+      - JP-2
+      - 香港2|tg频道:@ripaojiedian
+      - 新加坡|tg频道:@ripaojiedian
+      - 台湾-tg频道:@bpjzx2-65
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
+      - 台湾Sky-广移负载均衡(中转) | 解锁流媒体
+      - 日本(youtube阿伟科技)
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 台湾Sky | 解锁流媒体
+      - JP-2-S
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾
-      - _CN_中国->🇹🇼_TW_台湾
-      - 120.233.25.136:54902
-      - HK1(IEPL)+-+负载均衡专线
-      - TW1(IEPL)+-+负载均衡专线
-      - 香港01+|+广港
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 【N】日本 VIP 8 - Nerocloud
-      - 【N】日本 VIP 4 - Nerocloud
-      - 【M】香港 VIP X - Leaseweb
-      - 【M】香港 VIP Z - Leaseweb
-      - 【F】香港  VIP 4 - Nearoute
-      - 【M】香港  VIP H - Leaseweb
-      - 【M】香港  VIP I - Nearoute
-      - 【F】香港  VIP 8 - Nearoute
-      - 【M】香港 VIP K - Nearoute
-      - 【I】日本 VIP A - Azure
-      - 【I】日本 VIP 6 - Azure
-      - 【J】香港 VIP 1 - Netflix
-      - 【J】香港 VIP 2 - Netflix
-      - 【J】香港 VIP 3 - Netflix
-      - 【J】香港 VIP 4 - Netflix
-      - 【J】香港 VIP 7 - Netflix
-      - 【J】香港 VIP 8 - Netflix
-      - 【J】香港 VIP 9 - Netflix
-      - 【J】香港 VIP A - Netflix
-      - 【J】香港 VIP E - Netflix
-      - 【K】香港 普通 3 - Nearoute
-      - 【K】香港 普通 4 - Nearoute
-      - 【K】香港 普通 5 - Nearoute
-      - 【K】香港 普通 6 - Nearoute
-      - 【K】香港 普通 7 - Nearoute
-      - 【M】香港 VIP 1 - Netflix
-      - 【M】香港 VIP 2 - Netflix
-      - 【M】香港 VIP 3 - Netflix
-      - 【M】香港 VIP 4 - Netflix
-      - 【M】香港 VIP A - Leaseweb
-      - 【M】香港 VIP B - Leaseweb
-      - 【N】日本 VIP B - Leaseweb
-      - 【N】日本 VIP E - Leaseweb
-      - 【F】香港 VIP 1 - Nearoute
-      - 【O】香港 VIP 5 - Leaseweb
-      - 【O】香港 VIP 8 - Leaseweb
-      - 【O】香港 VIP 9 - Leaseweb
-      - 【O】香港 普通 10 - Leaseweb
-      - 【O】香港 VIP 12 - Leaseweb
-      - 【O】香港 VIP 13 - Leaseweb
-      - 【O】香港 VIP 15 - Leaseweb
-      - 【O】香港 VIP 3 - Leaseweb
+      - 台北Sky-dip 2
       - HK-1
-      - HK-1-S
-      - HK-2
-      - HK-2-S
+      - 台湾Hinet | 解锁流媒体
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 台湾Sky-广移2负载均衡(中转) | 解锁流媒体
+      - JP-2
+      - 香港2|tg频道:@ripaojiedian
+      - 新加坡|tg频道:@ripaojiedian
+      - 台湾-tg频道:@bpjzx2-65
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
+      - 台湾Sky-广移负载均衡(中转) | 解锁流媒体
+      - 日本(youtube阿伟科技)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -264,294 +108,107 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 台湾Sky | 解锁流媒体
+      - JP-2-S
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾
-      - _CN_中国->🇹🇼_TW_台湾
-      - 120.233.25.136:54902
-      - HK1(IEPL)+-+负载均衡专线
-      - TW1(IEPL)+-+负载均衡专线
-      - 香港01+|+广港
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 【N】日本 VIP 8 - Nerocloud
-      - 【N】日本 VIP 4 - Nerocloud
-      - 【M】香港 VIP X - Leaseweb
-      - 【M】香港 VIP Z - Leaseweb
-      - 【F】香港  VIP 4 - Nearoute
-      - 【M】香港  VIP H - Leaseweb
-      - 【M】香港  VIP I - Nearoute
-      - 【F】香港  VIP 8 - Nearoute
-      - 【M】香港 VIP K - Nearoute
-      - 【I】日本 VIP A - Azure
-      - 【I】日本 VIP 6 - Azure
-      - 【J】香港 VIP 1 - Netflix
-      - 【J】香港 VIP 2 - Netflix
-      - 【J】香港 VIP 3 - Netflix
-      - 【J】香港 VIP 4 - Netflix
-      - 【J】香港 VIP 7 - Netflix
-      - 【J】香港 VIP 8 - Netflix
-      - 【J】香港 VIP 9 - Netflix
-      - 【J】香港 VIP A - Netflix
-      - 【J】香港 VIP E - Netflix
-      - 【K】香港 普通 3 - Nearoute
-      - 【K】香港 普通 4 - Nearoute
-      - 【K】香港 普通 5 - Nearoute
-      - 【K】香港 普通 6 - Nearoute
-      - 【K】香港 普通 7 - Nearoute
-      - 【M】香港 VIP 1 - Netflix
-      - 【M】香港 VIP 2 - Netflix
-      - 【M】香港 VIP 3 - Netflix
-      - 【M】香港 VIP 4 - Netflix
-      - 【M】香港 VIP A - Leaseweb
-      - 【M】香港 VIP B - Leaseweb
-      - 【N】日本 VIP B - Leaseweb
-      - 【N】日本 VIP E - Leaseweb
-      - 【F】香港 VIP 1 - Nearoute
-      - 【O】香港 VIP 5 - Leaseweb
-      - 【O】香港 VIP 8 - Leaseweb
-      - 【O】香港 VIP 9 - Leaseweb
-      - 【O】香港 普通 10 - Leaseweb
-      - 【O】香港 VIP 12 - Leaseweb
-      - 【O】香港 VIP 13 - Leaseweb
-      - 【O】香港 VIP 15 - Leaseweb
-      - 【O】香港 VIP 3 - Leaseweb
+      - 台北Sky-dip 2
       - HK-1
-      - HK-1-S
-      - HK-2
-      - HK-2-S
+      - 台湾Hinet | 解锁流媒体
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 台湾Sky-广移2负载均衡(中转) | 解锁流媒体
+      - JP-2
+      - 香港2|tg频道:@ripaojiedian
+      - 新加坡|tg频道:@ripaojiedian
+      - 台湾-tg频道:@bpjzx2-65
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
+      - 台湾Sky-广移负载均衡(中转) | 解锁流媒体
+      - 日本(youtube阿伟科技)
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾Sky | 解锁流媒体
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾
-      - _CN_中国->🇹🇼_TW_台湾
-      - 香港01+|+广港
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
+      - 台北Sky-dip 2
       - 台湾Hinet | 解锁流媒体
-      - 【M】香港 VIP X - Leaseweb
-      - 【M】香港 VIP Z - Leaseweb
-      - 【F】香港  VIP 4 - Nearoute
-      - 【M】香港  VIP H - Leaseweb
-      - 【M】香港  VIP I - Nearoute
-      - 【F】香港  VIP 8 - Nearoute
-      - 【M】香港 VIP K - Nearoute
-      - 【J】香港 VIP 1 - Netflix
-      - 【J】香港 VIP 2 - Netflix
-      - 【J】香港 VIP 3 - Netflix
-      - 【J】香港 VIP 4 - Netflix
-      - 【J】香港 VIP 7 - Netflix
-      - 【J】香港 VIP 8 - Netflix
-      - 【J】香港 VIP 9 - Netflix
-      - 【J】香港 VIP A - Netflix
-      - 【J】香港 VIP E - Netflix
-      - 【K】香港 普通 3 - Nearoute
-      - 【K】香港 普通 4 - Nearoute
-      - 【K】香港 普通 5 - Nearoute
-      - 【K】香港 普通 6 - Nearoute
-      - 【K】香港 普通 7 - Nearoute
-      - 【M】香港 VIP 1 - Netflix
-      - 【M】香港 VIP 2 - Netflix
-      - 【M】香港 VIP 3 - Netflix
-      - 【M】香港 VIP 4 - Netflix
-      - 【M】香港 VIP A - Leaseweb
-      - 【M】香港 VIP B - Leaseweb
-      - 【F】香港 VIP 1 - Nearoute
-      - 【O】香港 VIP 5 - Leaseweb
-      - 【O】香港 VIP 8 - Leaseweb
-      - 【O】香港 VIP 9 - Leaseweb
-      - 【O】香港 普通 10 - Leaseweb
-      - 【O】香港 VIP 12 - Leaseweb
-      - 【O】香港 VIP 13 - Leaseweb
-      - 【O】香港 VIP 15 - Leaseweb
-      - 【O】香港 VIP 3 - Leaseweb
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 台湾Sky-广移2负载均衡(中转) | 解锁流媒体
+      - 香港2|tg频道:@ripaojiedian
+      - 台湾-tg频道:@bpjzx2-65
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
+      - 台湾Sky-广移负载均衡(中转) | 解锁流媒体
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 台湾Sky | 解锁流媒体
+      - JP-2-S
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾
-      - _CN_中国->🇹🇼_TW_台湾
-      - 120.233.25.136:54902
-      - HK1(IEPL)+-+负载均衡专线
-      - TW1(IEPL)+-+负载均衡专线
-      - 香港01+|+广港
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 【N】日本 VIP 8 - Nerocloud
-      - 【N】日本 VIP 4 - Nerocloud
-      - 【M】香港 VIP X - Leaseweb
-      - 【M】香港 VIP Z - Leaseweb
-      - 【F】香港  VIP 4 - Nearoute
-      - 【M】香港  VIP H - Leaseweb
-      - 【M】香港  VIP I - Nearoute
-      - 【F】香港  VIP 8 - Nearoute
-      - 【M】香港 VIP K - Nearoute
-      - 【I】日本 VIP A - Azure
-      - 【I】日本 VIP 6 - Azure
-      - 【J】香港 VIP 1 - Netflix
-      - 【J】香港 VIP 2 - Netflix
-      - 【J】香港 VIP 3 - Netflix
-      - 【J】香港 VIP 4 - Netflix
-      - 【J】香港 VIP 7 - Netflix
-      - 【J】香港 VIP 8 - Netflix
-      - 【J】香港 VIP 9 - Netflix
-      - 【J】香港 VIP A - Netflix
-      - 【J】香港 VIP E - Netflix
-      - 【K】香港 普通 3 - Nearoute
-      - 【K】香港 普通 4 - Nearoute
-      - 【K】香港 普通 5 - Nearoute
-      - 【K】香港 普通 6 - Nearoute
-      - 【K】香港 普通 7 - Nearoute
-      - 【M】香港 VIP 1 - Netflix
-      - 【M】香港 VIP 2 - Netflix
-      - 【M】香港 VIP 3 - Netflix
-      - 【M】香港 VIP 4 - Netflix
-      - 【M】香港 VIP A - Leaseweb
-      - 【M】香港 VIP B - Leaseweb
-      - 【N】日本 VIP B - Leaseweb
-      - 【N】日本 VIP E - Leaseweb
-      - 【F】香港 VIP 1 - Nearoute
-      - 【O】香港 VIP 5 - Leaseweb
-      - 【O】香港 VIP 8 - Leaseweb
-      - 【O】香港 VIP 9 - Leaseweb
-      - 【O】香港 普通 10 - Leaseweb
-      - 【O】香港 VIP 12 - Leaseweb
-      - 【O】香港 VIP 13 - Leaseweb
-      - 【O】香港 VIP 15 - Leaseweb
-      - 【O】香港 VIP 3 - Leaseweb
+      - 台北Sky-dip 2
       - HK-1
-      - HK-1-S
-      - HK-2
-      - HK-2-S
+      - 台湾Hinet | 解锁流媒体
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 台湾Sky-广移2负载均衡(中转) | 解锁流媒体
+      - JP-2
+      - 香港2|tg频道:@ripaojiedian
+      - 新加坡|tg频道:@ripaojiedian
+      - 台湾-tg频道:@bpjzx2-65
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
+      - 台湾Sky-广移负载均衡(中转) | 解锁流媒体
+      - 日本(youtube阿伟科技)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 台湾Sky | 解锁流媒体
+      - JP-2-S
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾
-      - _CN_中国->🇹🇼_TW_台湾
-      - 120.233.25.136:54902
-      - HK1(IEPL)+-+负载均衡专线
-      - TW1(IEPL)+-+负载均衡专线
-      - 香港01+|+广港
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 【N】日本 VIP 8 - Nerocloud
-      - 【N】日本 VIP 4 - Nerocloud
-      - 【M】香港 VIP X - Leaseweb
-      - 【M】香港 VIP Z - Leaseweb
-      - 【F】香港  VIP 4 - Nearoute
-      - 【M】香港  VIP H - Leaseweb
-      - 【M】香港  VIP I - Nearoute
-      - 【F】香港  VIP 8 - Nearoute
-      - 【M】香港 VIP K - Nearoute
-      - 【I】日本 VIP A - Azure
-      - 【I】日本 VIP 6 - Azure
-      - 【J】香港 VIP 1 - Netflix
-      - 【J】香港 VIP 2 - Netflix
-      - 【J】香港 VIP 3 - Netflix
-      - 【J】香港 VIP 4 - Netflix
-      - 【J】香港 VIP 7 - Netflix
-      - 【J】香港 VIP 8 - Netflix
-      - 【J】香港 VIP 9 - Netflix
-      - 【J】香港 VIP A - Netflix
-      - 【J】香港 VIP E - Netflix
-      - 【K】香港 普通 3 - Nearoute
-      - 【K】香港 普通 4 - Nearoute
-      - 【K】香港 普通 5 - Nearoute
-      - 【K】香港 普通 6 - Nearoute
-      - 【K】香港 普通 7 - Nearoute
-      - 【M】香港 VIP 1 - Netflix
-      - 【M】香港 VIP 2 - Netflix
-      - 【M】香港 VIP 3 - Netflix
-      - 【M】香港 VIP 4 - Netflix
-      - 【M】香港 VIP A - Leaseweb
-      - 【M】香港 VIP B - Leaseweb
-      - 【N】日本 VIP B - Leaseweb
-      - 【N】日本 VIP E - Leaseweb
-      - 【F】香港 VIP 1 - Nearoute
-      - 【O】香港 VIP 5 - Leaseweb
-      - 【O】香港 VIP 8 - Leaseweb
-      - 【O】香港 VIP 9 - Leaseweb
-      - 【O】香港 普通 10 - Leaseweb
-      - 【O】香港 VIP 12 - Leaseweb
-      - 【O】香港 VIP 13 - Leaseweb
-      - 【O】香港 VIP 15 - Leaseweb
-      - 【O】香港 VIP 3 - Leaseweb
+      - 台北Sky-dip 2
       - HK-1
-      - HK-1-S
-      - HK-2
-      - HK-2-S
+      - 台湾Hinet | 解锁流媒体
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 台湾Sky-广移2负载均衡(中转) | 解锁流媒体
+      - JP-2
+      - 香港2|tg频道:@ripaojiedian
+      - 新加坡|tg频道:@ripaojiedian
+      - 台湾-tg频道:@bpjzx2-65
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
+      - 台湾Sky-广移负载均衡(中转) | 解锁流媒体
+      - 日本(youtube阿伟科技)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 台湾Sky | 解锁流媒体
+      - JP-2-S
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾
-      - _CN_中国->🇹🇼_TW_台湾
-      - 120.233.25.136:54902
-      - HK1(IEPL)+-+负载均衡专线
-      - TW1(IEPL)+-+负载均衡专线
-      - 香港01+|+广港
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 【N】日本 VIP 8 - Nerocloud
-      - 【N】日本 VIP 4 - Nerocloud
-      - 【M】香港 VIP X - Leaseweb
-      - 【M】香港 VIP Z - Leaseweb
-      - 【F】香港  VIP 4 - Nearoute
-      - 【M】香港  VIP H - Leaseweb
-      - 【M】香港  VIP I - Nearoute
-      - 【F】香港  VIP 8 - Nearoute
-      - 【M】香港 VIP K - Nearoute
-      - 【I】日本 VIP A - Azure
-      - 【I】日本 VIP 6 - Azure
-      - 【J】香港 VIP 1 - Netflix
-      - 【J】香港 VIP 2 - Netflix
-      - 【J】香港 VIP 3 - Netflix
-      - 【J】香港 VIP 4 - Netflix
-      - 【J】香港 VIP 7 - Netflix
-      - 【J】香港 VIP 8 - Netflix
-      - 【J】香港 VIP 9 - Netflix
-      - 【J】香港 VIP A - Netflix
-      - 【J】香港 VIP E - Netflix
-      - 【K】香港 普通 3 - Nearoute
-      - 【K】香港 普通 4 - Nearoute
-      - 【K】香港 普通 5 - Nearoute
-      - 【K】香港 普通 6 - Nearoute
-      - 【K】香港 普通 7 - Nearoute
-      - 【M】香港 VIP 1 - Netflix
-      - 【M】香港 VIP 2 - Netflix
-      - 【M】香港 VIP 3 - Netflix
-      - 【M】香港 VIP 4 - Netflix
-      - 【M】香港 VIP A - Leaseweb
-      - 【M】香港 VIP B - Leaseweb
-      - 【N】日本 VIP B - Leaseweb
-      - 【N】日本 VIP E - Leaseweb
-      - 【F】香港 VIP 1 - Nearoute
-      - 【O】香港 VIP 5 - Leaseweb
-      - 【O】香港 VIP 8 - Leaseweb
-      - 【O】香港 VIP 9 - Leaseweb
-      - 【O】香港 普通 10 - Leaseweb
-      - 【O】香港 VIP 12 - Leaseweb
-      - 【O】香港 VIP 13 - Leaseweb
-      - 【O】香港 VIP 15 - Leaseweb
-      - 【O】香港 VIP 3 - Leaseweb
+      - 台北Sky-dip 2
       - HK-1
-      - HK-1-S
-      - HK-2
-      - HK-2-S
+      - 台湾Hinet | 解锁流媒体
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 台湾Sky-广移2负载均衡(中转) | 解锁流媒体
+      - JP-2
+      - 香港2|tg频道:@ripaojiedian
+      - 新加坡|tg频道:@ripaojiedian
+      - 台湾-tg频道:@bpjzx2-65
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
+      - 台湾Sky-广移负载均衡(中转) | 解锁流媒体
+      - 日本(youtube阿伟科技)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -567,62 +224,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 台湾Sky | 解锁流媒体
+      - JP-2-S
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
       - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾
-      - _CN_中国->🇹🇼_TW_台湾
-      - 120.233.25.136:54902
-      - HK1(IEPL)+-+负载均衡专线
-      - TW1(IEPL)+-+负载均衡专线
-      - 香港01+|+广港
-      - 台湾Hinet ～广州移动(中转) | 解锁流媒体
-      - 台湾Hinet | 解锁流媒体
-      - 【N】日本 VIP 8 - Nerocloud
-      - 【N】日本 VIP 4 - Nerocloud
-      - 【M】香港 VIP X - Leaseweb
-      - 【M】香港 VIP Z - Leaseweb
-      - 【F】香港  VIP 4 - Nearoute
-      - 【M】香港  VIP H - Leaseweb
-      - 【M】香港  VIP I - Nearoute
-      - 【F】香港  VIP 8 - Nearoute
-      - 【M】香港 VIP K - Nearoute
-      - 【I】日本 VIP A - Azure
-      - 【I】日本 VIP 6 - Azure
-      - 【J】香港 VIP 1 - Netflix
-      - 【J】香港 VIP 2 - Netflix
-      - 【J】香港 VIP 3 - Netflix
-      - 【J】香港 VIP 4 - Netflix
-      - 【J】香港 VIP 7 - Netflix
-      - 【J】香港 VIP 8 - Netflix
-      - 【J】香港 VIP 9 - Netflix
-      - 【J】香港 VIP A - Netflix
-      - 【J】香港 VIP E - Netflix
-      - 【K】香港 普通 3 - Nearoute
-      - 【K】香港 普通 4 - Nearoute
-      - 【K】香港 普通 5 - Nearoute
-      - 【K】香港 普通 6 - Nearoute
-      - 【K】香港 普通 7 - Nearoute
-      - 【M】香港 VIP 1 - Netflix
-      - 【M】香港 VIP 2 - Netflix
-      - 【M】香港 VIP 3 - Netflix
-      - 【M】香港 VIP 4 - Netflix
-      - 【M】香港 VIP A - Leaseweb
-      - 【M】香港 VIP B - Leaseweb
-      - 【N】日本 VIP B - Leaseweb
-      - 【N】日本 VIP E - Leaseweb
-      - 【F】香港 VIP 1 - Nearoute
-      - 【O】香港 VIP 5 - Leaseweb
-      - 【O】香港 VIP 8 - Leaseweb
-      - 【O】香港 VIP 9 - Leaseweb
-      - 【O】香港 普通 10 - Leaseweb
-      - 【O】香港 VIP 12 - Leaseweb
-      - 【O】香港 VIP 13 - Leaseweb
-      - 【O】香港 VIP 15 - Leaseweb
-      - 【O】香港 VIP 3 - Leaseweb
+      - 台北Sky-dip 2
       - HK-1
-      - HK-1-S
-      - HK-2
-      - HK-2-S
+      - 台湾Hinet | 解锁流媒体
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 台湾Sky-广移2负载均衡(中转) | 解锁流媒体
+      - JP-2
+      - 香港2|tg频道:@ripaojiedian
+      - 新加坡|tg频道:@ripaojiedian
+      - 台湾-tg频道:@bpjzx2-65
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】 2"
+      - 台湾Sky-广移负载均衡(中转) | 解锁流媒体
+      - 日本(youtube阿伟科技)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
