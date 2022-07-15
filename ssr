@@ -5,95 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】", server: cm.spacez.cloud, port: 30000, type: trojan, password: 186e3062-3fb9-4b30-b24d-50e23baeaee5, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】", server: cu.spacez.cloud, port: 30001, type: trojan, password: 166767ca-9502-4c68-8801-1e0eab83a7e9, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: 香港+01【2+LB】, server: aaa-666.txwd.xyz, port: 30014, type: ss, cipher: aes-128-gcm, password: iDV6HShfNIiF5vvP, udp: true}
+  - {name: 香港w, server: 46e170d4-e48d-4210-9df1-78214c561d83.rfsconfig.xyz, port: 25369, type: trojan, password: e88f82d2-9816-4f6b-a29c-632904bbfec0, sni: 46e170d4-e48d-4210-9df1-78214c561d83.rfsconfig.xyz, skip-cert-verify: true, udp: true}
   - {name: 台北Sky-dip, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
   - {name: 台北Sky-dip 2, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 台湾, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: HK-4-S, server: cj3ugw6e8qj6rp.cooc.icu, port: 10080, type: ss, cipher: chacha20-ietf-poly1305, password: dda88987-7eff-49d2-8092-121332d3c049, udp: true}
-  - {name: "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】", server: cu.spacez.cloud, port: 30001, type: trojan, password: 166767ca-9502-4c68-8801-1e0eab83a7e9, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: HK-1-S, server: qqf5vrvygt1rhl.cooc.icu, port: 27882, type: ss, cipher: chacha20-ietf-poly1305, password: 104e1bd5-47b3-4c28-bac4-3e59272c7fbf, udp: true}
-  - {name: 香港w, server: 46e170d4-e48d-4210-9df1-78214c561d83.rfsconfig.xyz, port: 25369, type: trojan, password: e88f82d2-9816-4f6b-a29c-632904bbfec0, sni: 46e170d4-e48d-4210-9df1-78214c561d83.rfsconfig.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇭🇰_HK_香港, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[BGP]新加坡3", server: azhk.r.optage.moe, port: 45008, type: trojan, password: 657d11f1-344f-4c8a-b27d-0aeeba4554c9, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: "[BGP]新加坡2", server: azhk.r.optage.moe, port: 45007, type: trojan, password: 657d11f1-344f-4c8a-b27d-0aeeba4554c9, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: "[BGP]菲律宾马尼拉", server: azhk.r.optage.moe, port: 45002, type: trojan, password: 657d11f1-344f-4c8a-b27d-0aeeba4554c9, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: US_4 TG@SCINV, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK-1, server: qqf5vrvygt1rhl.cooc.icu, port: 443, type: vmess, uuid: 2ab577d2-a221-4004-952e-20e31e4cba6f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: qqf5vrvygt1rhl.cooc.icu}, udp: true}
+  - {name: HK-4-S, server: cj3ugw6e8qj6rp.cooc.icu, port: 10080, type: ss, cipher: chacha20-ietf-poly1305, password: 430b96cb-65b6-4145-a2d6-3b0cf3c6f0f6, udp: true}
   - {name: US_3 TG@SCINV, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】", server: cm.spacez.cloud, port: 30000, type: trojan, password: 186e3062-3fb9-4b30-b24d-50e23baeaee5, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: HK-2, server: w94ggs34xfrsoo.cooc.icu, port: 443, type: vmess, uuid: 430b96cb-65b6-4145-a2d6-3b0cf3c6f0f6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: w94ggs34xfrsoo.cooc.icu}, udp: true}
-  - {name: HK-2-S, server: w94ggs34xfrsoo.cooc.icu, port: 11180, type: ss, cipher: chacha20-ietf-poly1305, password: c41133f7-02e0-48c9-8ed3-562fed56c018, udp: true}
-  - {name: 香港+01【2+LB】, server: aaa-666.txwd.xyz, port: 30014, type: ss, cipher: aes-128-gcm, password: LZrAnX5Kw8INnkZl, udp: true}
-  - {name: HK-2 2, server: w94ggs34xfrsoo.cooc.icu, port: 443, type: vmess, uuid: 430b96cb-65b6-4145-a2d6-3b0cf3c6f0f6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: w94ggs34xfrsoo.cooc.icu}, udp: true}
+  - {name: US_4 TG@SCINV, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: _US_美国->🇭🇰_HK_香港, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_34 TG@SCINV, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡优化|tg频道:@ripaojiedian, server: 626sg05.ok365.cyou, port: 80, type: trojan, password: 2c0ca3c5-56c0-40e5-88a5-2545df022088, sni: 626sg05.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: 欢迎使用Welink345 请定期更新订阅, server: tw.n.optage.moe, port: 44608, type: trojan, password: 657d11f1-344f-4c8a-b27d-0aeeba4554c9, sni: tw.n.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: 台湾, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 香港+01【2+LB】 2, server: aaa-666.txwd.xyz, port: 30014, type: ss, cipher: aes-128-gcm, password: LZrAnX5Kw8INnkZl, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 香港+01【2+LB】
+      - 香港w
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - 台湾
+      - HK-1
       - HK-4-S
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - HK-1-S
-      - 香港w
-      - _US_美国->🇭🇰_HK_香港
-      - "[BGP]新加坡3"
-      - "[BGP]新加坡2"
-      - "[BGP]菲律宾马尼拉"
-      - US_4 TG@SCINV
       - US_3 TG@SCINV
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - HK-2
-      - HK-2-S
-      - 香港+01【2+LB】
-      - HK-2 2
+      - US_4 TG@SCINV
+      - _US_美国->🇭🇰_HK_香港
+      - US_34 TG@SCINV
+      - 新加坡优化|tg频道:@ripaojiedian
+      - 欢迎使用Welink345 请定期更新订阅
+      - 台湾
+      - 香港+01【2+LB】 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 香港+01【2+LB】
+      - 香港w
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - 台湾
+      - HK-1
       - HK-4-S
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - HK-1-S
-      - 香港w
-      - _US_美国->🇭🇰_HK_香港
-      - "[BGP]新加坡3"
-      - "[BGP]新加坡2"
-      - "[BGP]菲律宾马尼拉"
-      - US_4 TG@SCINV
       - US_3 TG@SCINV
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - HK-2
-      - HK-2-S
-      - 香港+01【2+LB】
-      - HK-2 2
+      - US_4 TG@SCINV
+      - _US_美国->🇭🇰_HK_香港
+      - US_34 TG@SCINV
+      - 新加坡优化|tg频道:@ripaojiedian
+      - 欢迎使用Welink345 请定期更新订阅
+      - 台湾
+      - 香港+01【2+LB】 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 香港+01【2+LB】
+      - 香港w
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - 台湾
+      - HK-1
       - HK-4-S
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - HK-1-S
-      - 香港w
-      - _US_美国->🇭🇰_HK_香港
-      - "[BGP]新加坡3"
-      - "[BGP]新加坡2"
-      - "[BGP]菲律宾马尼拉"
-      - US_4 TG@SCINV
       - US_3 TG@SCINV
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - HK-2
-      - HK-2-S
-      - 香港+01【2+LB】
-      - HK-2 2
+      - US_4 TG@SCINV
+      - _US_美国->🇭🇰_HK_香港
+      - US_34 TG@SCINV
+      - 新加坡优化|tg频道:@ripaojiedian
+      - 欢迎使用Welink345 请定期更新订阅
+      - 台湾
+      - 香港+01【2+LB】 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -112,107 +104,100 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 香港+01【2+LB】
+      - 香港w
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - 台湾
+      - HK-1
       - HK-4-S
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - HK-1-S
-      - 香港w
-      - _US_美国->🇭🇰_HK_香港
-      - "[BGP]新加坡3"
-      - "[BGP]新加坡2"
-      - "[BGP]菲律宾马尼拉"
-      - US_4 TG@SCINV
       - US_3 TG@SCINV
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - HK-2
-      - HK-2-S
-      - 香港+01【2+LB】
-      - HK-2 2
+      - US_4 TG@SCINV
+      - _US_美国->🇭🇰_HK_香港
+      - US_34 TG@SCINV
+      - 新加坡优化|tg频道:@ripaojiedian
+      - 欢迎使用Welink345 请定期更新订阅
+      - 台湾
+      - 香港+01【2+LB】 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 香港+01【2+LB】
+      - 香港w
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - 台湾
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - 香港w
       - _US_美国->🇭🇰_HK_香港
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - 香港+01【2+LB】
+      - 台湾
+      - 香港+01【2+LB】 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 香港+01【2+LB】
+      - 香港w
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - 台湾
+      - HK-1
       - HK-4-S
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - HK-1-S
-      - 香港w
-      - _US_美国->🇭🇰_HK_香港
-      - "[BGP]新加坡3"
-      - "[BGP]新加坡2"
-      - "[BGP]菲律宾马尼拉"
-      - US_4 TG@SCINV
       - US_3 TG@SCINV
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - HK-2
-      - HK-2-S
-      - 香港+01【2+LB】
-      - HK-2 2
+      - US_4 TG@SCINV
+      - _US_美国->🇭🇰_HK_香港
+      - US_34 TG@SCINV
+      - 新加坡优化|tg频道:@ripaojiedian
+      - 欢迎使用Welink345 请定期更新订阅
+      - 台湾
+      - 香港+01【2+LB】 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 香港+01【2+LB】
+      - 香港w
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - 台湾
+      - HK-1
       - HK-4-S
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - HK-1-S
-      - 香港w
-      - _US_美国->🇭🇰_HK_香港
-      - "[BGP]新加坡3"
-      - "[BGP]新加坡2"
-      - "[BGP]菲律宾马尼拉"
-      - US_4 TG@SCINV
       - US_3 TG@SCINV
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - HK-2
-      - HK-2-S
-      - 香港+01【2+LB】
-      - HK-2 2
+      - US_4 TG@SCINV
+      - _US_美国->🇭🇰_HK_香港
+      - US_34 TG@SCINV
+      - 新加坡优化|tg频道:@ripaojiedian
+      - 欢迎使用Welink345 请定期更新订阅
+      - 台湾
+      - 香港+01【2+LB】 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 香港+01【2+LB】
+      - 香港w
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - 台湾
+      - HK-1
       - HK-4-S
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - HK-1-S
-      - 香港w
-      - _US_美国->🇭🇰_HK_香港
-      - "[BGP]新加坡3"
-      - "[BGP]新加坡2"
-      - "[BGP]菲律宾马尼拉"
-      - US_4 TG@SCINV
       - US_3 TG@SCINV
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - HK-2
-      - HK-2-S
-      - 香港+01【2+LB】
-      - HK-2 2
+      - US_4 TG@SCINV
+      - _US_美国->🇭🇰_HK_香港
+      - US_34 TG@SCINV
+      - 新加坡优化|tg频道:@ripaojiedian
+      - 欢迎使用Welink345 请定期更新订阅
+      - 台湾
+      - 香港+01【2+LB】 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -228,24 +213,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
+      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
+      - 香港+01【2+LB】
+      - 香港w
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - 台湾
+      - HK-1
       - HK-4-S
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - HK-1-S
-      - 香港w
-      - _US_美国->🇭🇰_HK_香港
-      - "[BGP]新加坡3"
-      - "[BGP]新加坡2"
-      - "[BGP]菲律宾马尼拉"
-      - US_4 TG@SCINV
       - US_3 TG@SCINV
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - HK-2
-      - HK-2-S
-      - 香港+01【2+LB】
-      - HK-2 2
+      - US_4 TG@SCINV
+      - _US_美国->🇭🇰_HK_香港
+      - US_34 TG@SCINV
+      - 新加坡优化|tg频道:@ripaojiedian
+      - 欢迎使用Welink345 请定期更新订阅
+      - 台湾
+      - 香港+01【2+LB】 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
