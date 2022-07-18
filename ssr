@@ -5,87 +5,127 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】", server: cm.spacez.cloud, port: 30000, type: trojan, password: 186e3062-3fb9-4b30-b24d-50e23baeaee5, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】", server: cu.spacez.cloud, port: 30001, type: trojan, password: 166767ca-9502-4c68-8801-1e0eab83a7e9, sni: cu.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: 香港+01【2+LB】, server: aaa-666.txwd.xyz, port: 30014, type: ss, cipher: aes-128-gcm, password: iDV6HShfNIiF5vvP, udp: true}
-  - {name: 香港w, server: 46e170d4-e48d-4210-9df1-78214c561d83.rfsconfig.xyz, port: 25369, type: trojan, password: e88f82d2-9816-4f6b-a29c-632904bbfec0, sni: 46e170d4-e48d-4210-9df1-78214c561d83.rfsconfig.xyz, skip-cert-verify: true, udp: true}
+  - {name: "*国内中转*TW|广州移动-台北_0005", server: z0005.security-cloudfront-cdn.com, port: 48819, type: ssr, cipher: aes-256-cfb, password: gGT5KNjAXTpB5zck, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
+  - {name: 【推荐】IPLC专线广州-香港_12, server: z00012.security-cloudfront-cdn.com, port: 48819, type: ssr, cipher: aes-256-cfb, password: gGT5KNjAXTpB5zck, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
+  - {name: "*国内中转*SG|广州移动-新加坡_0001", server: z0001.security-cloudfront-cdn.com, port: 48819, type: ssr, cipher: aes-256-cfb, password: gGT5KNjAXTpB5zck, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
+  - {name: 香港(youtube阿伟科技) 4, server: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, port: 443, type: trojan, password: trojan-daozhu-uallen-qbit-azure-hk, sni: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, skip-cert-verify: true, udp: true}
+  - {name: SG, server: simpang.freetrade.link, port: 443, type: trojan, password: XEyN0OZ28xxCDO7C83DeAa3YcSjYKTgFA5n9IRpFwuB3qSz4aZClSapy3eRl6D, sni: simpang.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: +aw, server: 54.251.139.71, port: 30020, type: ss, cipher: aes-128-gcm, password: !<str> 240085006670070890409720, plugin: obfs, plugin-opts: {mode: tls, host: "TIB2ehlN1U.download.windowsupdate.com,ajax.microsoft.com,449bff3663.douyincdn.com"}, udp: true}
+  - {name: CN+65+|+Airproxies, server: 211.99.114.119, port: 19023, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: CN+23+|+Airproxies, server: 211.99.114.119, port: 18826, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: CN+26+|+Airproxies, server: 211.99.114.119, port: 18836, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: CN+60+|+Airproxies, server: 211.99.114.119, port: 19006, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: CN+69+|+Airproxies, server: 211.99.114.119, port: 19036, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: CN+68+|+Airproxies, server: 211.99.114.119, port: 19033, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: CN+59+|+Airproxies, server: 211.99.114.119, port: 19003, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: CN+70+|+Airproxies, server: 211.99.114.119, port: 19039, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: CN+67+|+Airproxies, server: 211.99.114.119, port: 19029, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: CN+61+|+Airproxies, server: 211.99.114.119, port: 19009, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: CN+62+|+Airproxies, server: 211.99.114.119, port: 19013, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: CN+9+|+Airproxies, server: 211.99.114.119, port: 15029, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: CN+8+|+Airproxies, server: 211.99.114.119, port: 15026, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: CN+7+|+Airproxies, server: 211.99.114.119, port: 15023, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: lv1 台湾TFN1 直连, server: 211.23.149.95, port: 25634, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, skip-cert-verify: true, udp: true}
+  - {name: CN+38+|+Airproxies, server: 180.101.133.118, port: 17033, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
+  - {name: CN+29+|+Airproxies, server: 180.101.133.118, port: 17003, type: ss, cipher: aes-128-gcm, password: QNuk5b31eHqulFzdQ7IBV, udp: true}
   - {name: 台北Sky-dip, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
   - {name: 台北Sky-dip 2, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: HK-1, server: qqf5vrvygt1rhl.cooc.icu, port: 443, type: vmess, uuid: 2ab577d2-a221-4004-952e-20e31e4cba6f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: qqf5vrvygt1rhl.cooc.icu}, udp: true}
-  - {name: HK-4-S, server: cj3ugw6e8qj6rp.cooc.icu, port: 10080, type: ss, cipher: chacha20-ietf-poly1305, password: 430b96cb-65b6-4145-a2d6-3b0cf3c6f0f6, udp: true}
-  - {name: US_3 TG@SCINV, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_4 TG@SCINV, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇭🇰_HK_香港, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_34 TG@SCINV, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡优化|tg频道:@ripaojiedian, server: 626sg05.ok365.cyou, port: 80, type: trojan, password: 2c0ca3c5-56c0-40e5-88a5-2545df022088, sni: 626sg05.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: 欢迎使用Welink345 请定期更新订阅, server: tw.n.optage.moe, port: 44608, type: trojan, password: 657d11f1-344f-4c8a-b27d-0aeeba4554c9, sni: tw.n.optage.moe, skip-cert-verify: true, udp: true}
   - {name: 台湾, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 香港+01【2+LB】 2, server: aaa-666.txwd.xyz, port: 30014, type: ss, cipher: aes-128-gcm, password: LZrAnX5Kw8INnkZl, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - 香港+01【2+LB】
-      - 香港w
+      - "*国内中转*TW|广州移动-台北_0005"
+      - 【推荐】IPLC专线广州-香港_12
+      - "*国内中转*SG|广州移动-新加坡_0001"
+      - 香港(youtube阿伟科技) 4
+      - SG
+      - +aw
+      - CN+65+|+Airproxies
+      - CN+23+|+Airproxies
+      - CN+26+|+Airproxies
+      - CN+60+|+Airproxies
+      - CN+69+|+Airproxies
+      - CN+68+|+Airproxies
+      - CN+59+|+Airproxies
+      - CN+70+|+Airproxies
+      - CN+67+|+Airproxies
+      - CN+61+|+Airproxies
+      - CN+62+|+Airproxies
+      - CN+9+|+Airproxies
+      - CN+8+|+Airproxies
+      - CN+7+|+Airproxies
+      - lv1 台湾TFN1 直连
+      - CN+38+|+Airproxies
+      - CN+29+|+Airproxies
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - HK-1
-      - HK-4-S
-      - US_3 TG@SCINV
-      - US_4 TG@SCINV
-      - _US_美国->🇭🇰_HK_香港
-      - US_34 TG@SCINV
-      - 新加坡优化|tg频道:@ripaojiedian
-      - 欢迎使用Welink345 请定期更新订阅
       - 台湾
-      - 香港+01【2+LB】 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - 香港+01【2+LB】
-      - 香港w
+      - "*国内中转*TW|广州移动-台北_0005"
+      - 【推荐】IPLC专线广州-香港_12
+      - "*国内中转*SG|广州移动-新加坡_0001"
+      - 香港(youtube阿伟科技) 4
+      - SG
+      - +aw
+      - CN+65+|+Airproxies
+      - CN+23+|+Airproxies
+      - CN+26+|+Airproxies
+      - CN+60+|+Airproxies
+      - CN+69+|+Airproxies
+      - CN+68+|+Airproxies
+      - CN+59+|+Airproxies
+      - CN+70+|+Airproxies
+      - CN+67+|+Airproxies
+      - CN+61+|+Airproxies
+      - CN+62+|+Airproxies
+      - CN+9+|+Airproxies
+      - CN+8+|+Airproxies
+      - CN+7+|+Airproxies
+      - lv1 台湾TFN1 直连
+      - CN+38+|+Airproxies
+      - CN+29+|+Airproxies
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - HK-1
-      - HK-4-S
-      - US_3 TG@SCINV
-      - US_4 TG@SCINV
-      - _US_美国->🇭🇰_HK_香港
-      - US_34 TG@SCINV
-      - 新加坡优化|tg频道:@ripaojiedian
-      - 欢迎使用Welink345 请定期更新订阅
       - 台湾
-      - 香港+01【2+LB】 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - 香港+01【2+LB】
-      - 香港w
+      - "*国内中转*TW|广州移动-台北_0005"
+      - 【推荐】IPLC专线广州-香港_12
+      - "*国内中转*SG|广州移动-新加坡_0001"
+      - 香港(youtube阿伟科技) 4
+      - SG
+      - +aw
+      - CN+65+|+Airproxies
+      - CN+23+|+Airproxies
+      - CN+26+|+Airproxies
+      - CN+60+|+Airproxies
+      - CN+69+|+Airproxies
+      - CN+68+|+Airproxies
+      - CN+59+|+Airproxies
+      - CN+70+|+Airproxies
+      - CN+67+|+Airproxies
+      - CN+61+|+Airproxies
+      - CN+62+|+Airproxies
+      - CN+9+|+Airproxies
+      - CN+8+|+Airproxies
+      - CN+7+|+Airproxies
+      - lv1 台湾TFN1 直连
+      - CN+38+|+Airproxies
+      - CN+29+|+Airproxies
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - HK-1
-      - HK-4-S
-      - US_3 TG@SCINV
-      - US_4 TG@SCINV
-      - _US_美国->🇭🇰_HK_香港
-      - US_34 TG@SCINV
-      - 新加坡优化|tg频道:@ripaojiedian
-      - 欢迎使用Welink345 请定期更新订阅
       - 台湾
-      - 香港+01【2+LB】 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -104,100 +144,138 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - 香港+01【2+LB】
-      - 香港w
+      - "*国内中转*TW|广州移动-台北_0005"
+      - 【推荐】IPLC专线广州-香港_12
+      - "*国内中转*SG|广州移动-新加坡_0001"
+      - 香港(youtube阿伟科技) 4
+      - SG
+      - +aw
+      - CN+65+|+Airproxies
+      - CN+23+|+Airproxies
+      - CN+26+|+Airproxies
+      - CN+60+|+Airproxies
+      - CN+69+|+Airproxies
+      - CN+68+|+Airproxies
+      - CN+59+|+Airproxies
+      - CN+70+|+Airproxies
+      - CN+67+|+Airproxies
+      - CN+61+|+Airproxies
+      - CN+62+|+Airproxies
+      - CN+9+|+Airproxies
+      - CN+8+|+Airproxies
+      - CN+7+|+Airproxies
+      - lv1 台湾TFN1 直连
+      - CN+38+|+Airproxies
+      - CN+29+|+Airproxies
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - HK-1
-      - HK-4-S
-      - US_3 TG@SCINV
-      - US_4 TG@SCINV
-      - _US_美国->🇭🇰_HK_香港
-      - US_34 TG@SCINV
-      - 新加坡优化|tg频道:@ripaojiedian
-      - 欢迎使用Welink345 请定期更新订阅
       - 台湾
-      - 香港+01【2+LB】 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - 香港+01【2+LB】
-      - 香港w
+      - "*国内中转*TW|广州移动-台北_0005"
+      - 【推荐】IPLC专线广州-香港_12
+      - 香港(youtube阿伟科技) 4
+      - lv1 台湾TFN1 直连
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - _US_美国->🇭🇰_HK_香港
       - 台湾
-      - 香港+01【2+LB】 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - 香港+01【2+LB】
-      - 香港w
+      - "*国内中转*TW|广州移动-台北_0005"
+      - 【推荐】IPLC专线广州-香港_12
+      - "*国内中转*SG|广州移动-新加坡_0001"
+      - 香港(youtube阿伟科技) 4
+      - SG
+      - +aw
+      - CN+65+|+Airproxies
+      - CN+23+|+Airproxies
+      - CN+26+|+Airproxies
+      - CN+60+|+Airproxies
+      - CN+69+|+Airproxies
+      - CN+68+|+Airproxies
+      - CN+59+|+Airproxies
+      - CN+70+|+Airproxies
+      - CN+67+|+Airproxies
+      - CN+61+|+Airproxies
+      - CN+62+|+Airproxies
+      - CN+9+|+Airproxies
+      - CN+8+|+Airproxies
+      - CN+7+|+Airproxies
+      - lv1 台湾TFN1 直连
+      - CN+38+|+Airproxies
+      - CN+29+|+Airproxies
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - HK-1
-      - HK-4-S
-      - US_3 TG@SCINV
-      - US_4 TG@SCINV
-      - _US_美国->🇭🇰_HK_香港
-      - US_34 TG@SCINV
-      - 新加坡优化|tg频道:@ripaojiedian
-      - 欢迎使用Welink345 请定期更新订阅
       - 台湾
-      - 香港+01【2+LB】 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - 香港+01【2+LB】
-      - 香港w
+      - "*国内中转*TW|广州移动-台北_0005"
+      - 【推荐】IPLC专线广州-香港_12
+      - "*国内中转*SG|广州移动-新加坡_0001"
+      - 香港(youtube阿伟科技) 4
+      - SG
+      - +aw
+      - CN+65+|+Airproxies
+      - CN+23+|+Airproxies
+      - CN+26+|+Airproxies
+      - CN+60+|+Airproxies
+      - CN+69+|+Airproxies
+      - CN+68+|+Airproxies
+      - CN+59+|+Airproxies
+      - CN+70+|+Airproxies
+      - CN+67+|+Airproxies
+      - CN+61+|+Airproxies
+      - CN+62+|+Airproxies
+      - CN+9+|+Airproxies
+      - CN+8+|+Airproxies
+      - CN+7+|+Airproxies
+      - lv1 台湾TFN1 直连
+      - CN+38+|+Airproxies
+      - CN+29+|+Airproxies
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - HK-1
-      - HK-4-S
-      - US_3 TG@SCINV
-      - US_4 TG@SCINV
-      - _US_美国->🇭🇰_HK_香港
-      - US_34 TG@SCINV
-      - 新加坡优化|tg频道:@ripaojiedian
-      - 欢迎使用Welink345 请定期更新订阅
       - 台湾
-      - 香港+01【2+LB】 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - 香港+01【2+LB】
-      - 香港w
+      - "*国内中转*TW|广州移动-台北_0005"
+      - 【推荐】IPLC专线广州-香港_12
+      - "*国内中转*SG|广州移动-新加坡_0001"
+      - 香港(youtube阿伟科技) 4
+      - SG
+      - +aw
+      - CN+65+|+Airproxies
+      - CN+23+|+Airproxies
+      - CN+26+|+Airproxies
+      - CN+60+|+Airproxies
+      - CN+69+|+Airproxies
+      - CN+68+|+Airproxies
+      - CN+59+|+Airproxies
+      - CN+70+|+Airproxies
+      - CN+67+|+Airproxies
+      - CN+61+|+Airproxies
+      - CN+62+|+Airproxies
+      - CN+9+|+Airproxies
+      - CN+8+|+Airproxies
+      - CN+7+|+Airproxies
+      - lv1 台湾TFN1 直连
+      - CN+38+|+Airproxies
+      - CN+29+|+Airproxies
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - HK-1
-      - HK-4-S
-      - US_3 TG@SCINV
-      - US_4 TG@SCINV
-      - _US_美国->🇭🇰_HK_香港
-      - US_34 TG@SCINV
-      - 新加坡优化|tg频道:@ripaojiedian
-      - 欢迎使用Welink345 请定期更新订阅
       - 台湾
-      - 香港+01【2+LB】 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -213,22 +291,32 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Trojan]01香港-HongKong-1.0x-HGC【和記黃埔】"
-      - "[Trojan]05香港-HongKong-1.0x-HKBN【香港寬頻】"
-      - 香港+01【2+LB】
-      - 香港w
+      - "*国内中转*TW|广州移动-台北_0005"
+      - 【推荐】IPLC专线广州-香港_12
+      - "*国内中转*SG|广州移动-新加坡_0001"
+      - 香港(youtube阿伟科技) 4
+      - SG
+      - +aw
+      - CN+65+|+Airproxies
+      - CN+23+|+Airproxies
+      - CN+26+|+Airproxies
+      - CN+60+|+Airproxies
+      - CN+69+|+Airproxies
+      - CN+68+|+Airproxies
+      - CN+59+|+Airproxies
+      - CN+70+|+Airproxies
+      - CN+67+|+Airproxies
+      - CN+61+|+Airproxies
+      - CN+62+|+Airproxies
+      - CN+9+|+Airproxies
+      - CN+8+|+Airproxies
+      - CN+7+|+Airproxies
+      - lv1 台湾TFN1 直连
+      - CN+38+|+Airproxies
+      - CN+29+|+Airproxies
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - HK-1
-      - HK-4-S
-      - US_3 TG@SCINV
-      - US_4 TG@SCINV
-      - _US_美国->🇭🇰_HK_香港
-      - US_34 TG@SCINV
-      - 新加坡优化|tg频道:@ripaojiedian
-      - 欢迎使用Welink345 请定期更新订阅
       - 台湾
-      - 香港+01【2+LB】 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
