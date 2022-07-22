@@ -125,9 +125,15 @@ proxies:
   - {name: 台湾, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
   - {name: 台北Sky-dip, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
   - {name: 台北Sky-dip 2, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: v2cross.com - 美国Microsoft数据中心 2, server: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, port: 443, type: trojan, password: trojan-daozhu-uallen-qbit-azure-hk, sni: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, skip-cert-verify: true, udp: true}
-  - {name: VIP香港2BGP×2, server: hk.hoot.cf, port: 31321, type: ss, cipher: chacha20-ietf-poly1305, password: 252e5d17-b05f-413a-9630-9d48384834e0, udp: true}
-  - {name: VIP香港BGP×2, server: hk.hoot.cf, port: 9822, type: ss, cipher: chacha20-ietf-poly1305, password: 252e5d17-b05f-413a-9630-9d48384834e0, udp: true}
+  - {name: HK-1, server: qqf5vrvygt1rhl.cooc.icu, port: 443, type: vmess, uuid: 5b31cab0-c5b9-4c35-94d4-17ff511bd147, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: qqf5vrvygt1rhl.cooc.icu}, udp: true}
+  - {name: HK-4-S, server: cj3ugw6e8qj6rp.cooc.icu, port: 10080, type: ss, cipher: chacha20-ietf-poly1305, password: 56c767b2-5df0-4744-9709-0b51c49560d6, udp: true}
+  - {name: HK-5-S, server: ngnb0cig3icga2.cooc.icu, port: 11181, type: ss, cipher: chacha20-ietf-poly1305, password: 8930f13c-e4e5-48e1-aef3-50e1f80fd2ae, udp: true}
+  - {name: HK-3-S, server: wpf99u67jnkw2h.cooc.icu, port: 11280, type: ss, cipher: chacha20-ietf-poly1305, password: 6c13e41b-b8e6-414c-988c-9d1522400649, udp: true}
+  - {name: HK-1-S, server: qqf5vrvygt1rhl.cooc.icu, port: 27882, type: ss, cipher: chacha20-ietf-poly1305, password: f87c44eb-989c-405c-97f3-52aa74c0d75e, udp: true}
+  - {name: HK-1-华东, server: ahfoy9uocwbakc.cooc.icu, port: 45067, type: ss, cipher: chacha20-ietf-poly1305, password: 6c13e41b-b8e6-414c-988c-9d1522400649, udp: true}
+  - {name: HK-3-华东, server: hk2smy9uocwbakc.cooc.icu, port: 46067, type: ss, cipher: chacha20-ietf-poly1305, password: 5bf422d6-6208-42b3-9468-ede58829d6db, udp: true}
+  - {name: HK-4-华南, server: hk4sm1qlsidj6.cooc.icu, port: 48003, type: ss, cipher: chacha20-ietf-poly1305, password: aa9ae9eb-8f8b-4c39-b083-9e14273e815a, udp: true}
+  - {name: JP-1-华中, server: 97kftghlsi7uj.cooc.icu, port: 55058, type: ss, cipher: chacha20-ietf-poly1305, password: f87c44eb-989c-405c-97f3-52aa74c0d75e, udp: true}
 
 proxy-groups:
   - name: 🚀 节点选择
@@ -264,9 +270,15 @@ proxy-groups:
       - 台湾
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - v2cross.com - 美国Microsoft数据中心 2
-      - VIP香港2BGP×2
-      - VIP香港BGP×2
+      - HK-1
+      - HK-4-S
+      - HK-5-S
+      - HK-3-S
+      - HK-1-S
+      - HK-1-华东
+      - HK-3-华东
+      - HK-4-华南
+      - JP-1-华中
  
   - name: 🖐 手动选择
     type: select
@@ -387,9 +399,15 @@ proxy-groups:
       - 台湾
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - v2cross.com - 美国Microsoft数据中心 2
-      - VIP香港2BGP×2
-      - VIP香港BGP×2
+      - HK-1
+      - HK-4-S
+      - HK-5-S
+      - HK-3-S
+      - HK-1-S
+      - HK-1-华东
+      - HK-3-华东
+      - HK-4-华南
+      - JP-1-华中
  
   - name: 🇺🇸 美区
     type: url-test
@@ -568,9 +586,15 @@ proxy-groups:
       - 台湾
       - 台北Sky-dip
       - 台北Sky-dip 2
-      - v2cross.com - 美国Microsoft数据中心 2
-      - VIP香港2BGP×2
-      - VIP香港BGP×2
+      - HK-1
+      - HK-4-S
+      - HK-5-S
+      - HK-3-S
+      - HK-1-S
+      - HK-1-华东
+      - HK-3-华东
+      - HK-4-华南
+      - JP-1-华中
   - name: 🎯 全球直连
     type: select
     proxies:
