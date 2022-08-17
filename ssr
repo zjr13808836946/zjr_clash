@@ -5,155 +5,131 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TG频道https://t.me/iosfulishare  HK 01 原生, server: hk32.swty.buzz, port: 10885, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk32.swty.buzz}, udp: true}
-  - {name: V1 JP 01, server: hk16.swty.buzz, port: 10982, type: vmess, uuid: 77e0d357-eafe-46f5-831a-6e32b2a1ab21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk16.swty.buzz}, udp: true}
-  - {name: V1 JP 02, server: hk17.swty.buzz, port: 10982, type: vmess, uuid: 77e0d357-eafe-46f5-831a-6e32b2a1ab21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk17.swty.buzz}, udp: true}
-  - {name: V1 JP 03, server: hk18.swty.buzz, port: 10982, type: vmess, uuid: 77e0d357-eafe-46f5-831a-6e32b2a1ab21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk18.swty.buzz}, udp: true}
-  - {name: TG频道https://t.me/iosfulishare  JP 04, server: hk19.swty.buzz, port: 10982, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk19.swty.buzz}, udp: true}
-  - {name: TG频道https://t.me/iosfulishare  JP 05, server: hk20.swty.buzz, port: 10982, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk20.swty.buzz}, udp: true}
-  - {name: TG频道https://t.me/iosfulishare  HK 01, server: hk01.swty.buzz, port: 12155, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk01.swty.buzz}, udp: true}
-  - {name: TG频道https://t.me/iosfulishare  HK 02, server: hk02.swty.buzz, port: 12155, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk02.swty.buzz}, udp: true}
-  - {name: V1 HK 03, server: hk03.swty.buzz, port: 12155, type: vmess, uuid: 77e0d357-eafe-46f5-831a-6e32b2a1ab21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk03.swty.buzz}, udp: true}
-  - {name: TG频道https://t.me/iosfulishare  HK 04, server: hk04.swty.buzz, port: 12155, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk04.swty.buzz}, udp: true}
-  - {name: V1 HK 05, server: hk05.swty.buzz, port: 12155, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk05.swty.buzz}, udp: true}
-  - {name: V1 HK 06, server: hk06.swty.buzz, port: 12155, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk06.swty.buzz}, udp: true}
-  - {name: V1 HK 07, server: hk07.swty.buzz, port: 12155, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk07.swty.buzz}, udp: true}
-  - {name: TG频道https://t.me/iosfulishare  HK 09, server: hk09.swty.buzz, port: 12155, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk09.swty.buzz}, udp: true}
-  - {name: TG频道https://t.me/iosfulishare  HK 10, server: hk10.swty.buzz, port: 12155, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk10.swty.buzz}, udp: true}
-  - {name: V1 HK 11, server: hk11.swty.buzz, port: 12155, type: vmess, uuid: 77e0d357-eafe-46f5-831a-6e32b2a1ab21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk11.swty.buzz}, udp: true}
-  - {name: TG频道https://t.me/iosfulishare  HK 12, server: hk12.swty.buzz, port: 12155, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk12.swty.buzz}, udp: true}
-  - {name: V1 HK 13, server: hk13.swty.buzz, port: 12155, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk13.swty.buzz}, udp: true}
-  - {name: TG频道https://t.me/iosfulishare  HK 14, server: hk14.swty.buzz, port: 12155, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk14.swty.buzz}, udp: true}
-  - {name: V1 HK 15, server: hk15.swty.buzz, port: 12155, type: vmess, uuid: 77e0d357-eafe-46f5-831a-6e32b2a1ab21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk15.swty.buzz}, udp: true}
-  - {name: TG频道https://t.me/iosfulishare  SG 02 NF, server: hk38.swty.buzz, port: 12304, type: vmess, uuid: 49c591cc-53b3-4ac9-970b-d4c9e79f48f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk38.swty.buzz}, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港1 - 1x, server: x-mm.speedabc.xyz, port: 37111, type: trojan, password: 624a4b62-496c-4ef8-a33b-61b1c25584d6, sni: x-mm.speedabc.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港HKT-dip, server: 43.248.116.201, port: 32000, type: trojan, password: b03ef3ba-dc0b-4f69-aeea-76d337e46f99, skip-cert-verify: true, udp: true}
-  - {name: 香港Datacamp, server: 43.248.116.201, port: 32443, type: trojan, password: b03ef3ba-dc0b-4f69-aeea-76d337e46f99, skip-cert-verify: true, udp: true}
-  - {name: SG_白嫖_1, server: sg1.keai.shop, port: 6633, type: trojan, password: 69cfb0b1-c2cb-4fea-843d-664ab8197801, sni: sg1.keai.shop, skip-cert-verify: true, udp: true}
-  - {name: 2.00|youtube阿伟科技+31, server: dx15.jicojs.com, port: 443, type: ss, cipher: aes-256-gcm, password: 46c027d028b4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx15.jicojs.com, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: YouTube：全网最强白嫖, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 韶关移动-香港HKT-dip, server: 183.232.141.109, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 韶关移动-香港HKT-dip 2, server: 183.232.141.117, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港-tg频道:@bpjzx2-64, server: 183.232.141.109, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: "", udp: true}
+  - {name: 香港-tg频道:@bpjzx2-69, server: 168.70.92.12, port: 443, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: "", udp: true}
+  - {name: 香港HKT, server: 168.70.92.12, port: 443, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港-tg频道:@bpjzx2-43, server: 183.232.141.117, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: "", udp: true}
+  - {name: 韶关移动-香港HKT-dip 3, server: 183.232.141.109, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 韶关移动-香港HKT-dip 4, server: 183.232.141.117, port: 559, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港-tg频道:@bpjzx2-63, server: 183.232.141.109, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: "", udp: true}
+  - {name: 韶关移动-香港HKT-dip 5, server: 183.232.141.109, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港-tg频道:@bpjzx2-60, server: 183.232.141.117, port: 559, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: "", udp: true}
+  - {name: 香港-tg频道:@bpjzx2-59, server: 183.232.141.117, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: "", udp: true}
+  - {name: "[SCP]新加坡AWS", server: 54.151.182.118, port: 11451, type: trojan, password: ibAzZH7755, skip-cert-verify: true, udp: true}
+  - {name: CN_@v2cross.com01, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: TW TPE H TR, server: tw-tpe-h-tr.cdn.savoy.click, port: 10089, type: trojan, password: kFyvvCcvMXQKFcJZWuxcdTZOFummlVbf, sni: tw-tpe-h-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
+  - {name: _YouTube：全网最强白嫖, server: fn600mliness015.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 696744f948f3, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness015.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 鍙版咕娌圭-闃夸紵绉戞妧12, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 娌圭-闃夸紵绉戞妧7, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: _YouTube：全网最强白嫖 2, server: fn600mliness010.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ee3dfbbe3dca, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness010.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: _YouTube：全网最强白嫖 3, server: fn600mliness013.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1b584982dbdc, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness013.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
   - {name: 台湾, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 台北Sky-dip, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 台北Sky-dip 2, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
   - {name: 台湾02, server: dx15.jicojs.com, port: 443, type: ss, cipher: aes-256-gcm, password: 46c027d028b4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx15.jicojs.com, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 台湾02 2, server: dx15.jicojs.com, port: 443, type: ss, cipher: aes-256-gcm, password: 46c027d028b4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx15.jicojs.com, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 台北Sky-dip, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 中国香港(youtube阿伟科技) 9, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _YouTube：全网最强白嫖 4, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _YouTube：全网最强白嫖_2, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _YouTube：全网最强白嫖_3, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道https://t.me/iosfulishare  HK 01 原生
-      - V1 JP 01
-      - V1 JP 02
-      - V1 JP 03
-      - TG频道https://t.me/iosfulishare  JP 04
-      - TG频道https://t.me/iosfulishare  JP 05
-      - TG频道https://t.me/iosfulishare  HK 01
-      - TG频道https://t.me/iosfulishare  HK 02
-      - V1 HK 03
-      - TG频道https://t.me/iosfulishare  HK 04
-      - V1 HK 05
-      - V1 HK 06
-      - V1 HK 07
-      - TG频道https://t.me/iosfulishare  HK 09
-      - TG频道https://t.me/iosfulishare  HK 10
-      - V1 HK 11
-      - TG频道https://t.me/iosfulishare  HK 12
-      - V1 HK 13
-      - TG频道https://t.me/iosfulishare  HK 14
-      - V1 HK 15
-      - TG频道https://t.me/iosfulishare  SG 02 NF
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港1 - 1x
-      - 香港HKT-dip
-      - 香港Datacamp
-      - SG_白嫖_1
-      - 2.00|youtube阿伟科技+31
-      - YouTube：全网最强白嫖
+      - 韶关移动-香港HKT-dip
+      - 韶关移动-香港HKT-dip 2
+      - 香港-tg频道:@bpjzx2-64
+      - 香港-tg频道:@bpjzx2-69
+      - 香港HKT
+      - 香港-tg频道:@bpjzx2-43
+      - 韶关移动-香港HKT-dip 3
+      - 韶关移动-香港HKT-dip 4
+      - 香港-tg频道:@bpjzx2-63
+      - 韶关移动-香港HKT-dip 5
+      - 香港-tg频道:@bpjzx2-60
+      - 香港-tg频道:@bpjzx2-59
+      - "[SCP]新加坡AWS"
+      - CN_@v2cross.com01
+      - TW TPE H TR
+      - _YouTube：全网最强白嫖
+      - 鍙版咕娌圭-闃夸紵绉戞妧12
+      - 娌圭-闃夸紵绉戞妧7
+      - _YouTube：全网最强白嫖 2
+      - _YouTube：全网最强白嫖 3
       - 台湾
-      - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾02
-      - 台湾02 2
+      - 台北Sky-dip
+      - 中国香港(youtube阿伟科技) 9
+      - _YouTube：全网最强白嫖 4
+      - _YouTube：全网最强白嫖_2
+      - _YouTube：全网最强白嫖_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TG频道https://t.me/iosfulishare  HK 01 原生
-      - V1 JP 01
-      - V1 JP 02
-      - V1 JP 03
-      - TG频道https://t.me/iosfulishare  JP 04
-      - TG频道https://t.me/iosfulishare  JP 05
-      - TG频道https://t.me/iosfulishare  HK 01
-      - TG频道https://t.me/iosfulishare  HK 02
-      - V1 HK 03
-      - TG频道https://t.me/iosfulishare  HK 04
-      - V1 HK 05
-      - V1 HK 06
-      - V1 HK 07
-      - TG频道https://t.me/iosfulishare  HK 09
-      - TG频道https://t.me/iosfulishare  HK 10
-      - V1 HK 11
-      - TG频道https://t.me/iosfulishare  HK 12
-      - V1 HK 13
-      - TG频道https://t.me/iosfulishare  HK 14
-      - V1 HK 15
-      - TG频道https://t.me/iosfulishare  SG 02 NF
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港1 - 1x
-      - 香港HKT-dip
-      - 香港Datacamp
-      - SG_白嫖_1
-      - 2.00|youtube阿伟科技+31
-      - YouTube：全网最强白嫖
+      - 韶关移动-香港HKT-dip
+      - 韶关移动-香港HKT-dip 2
+      - 香港-tg频道:@bpjzx2-64
+      - 香港-tg频道:@bpjzx2-69
+      - 香港HKT
+      - 香港-tg频道:@bpjzx2-43
+      - 韶关移动-香港HKT-dip 3
+      - 韶关移动-香港HKT-dip 4
+      - 香港-tg频道:@bpjzx2-63
+      - 韶关移动-香港HKT-dip 5
+      - 香港-tg频道:@bpjzx2-60
+      - 香港-tg频道:@bpjzx2-59
+      - "[SCP]新加坡AWS"
+      - CN_@v2cross.com01
+      - TW TPE H TR
+      - _YouTube：全网最强白嫖
+      - 鍙版咕娌圭-闃夸紵绉戞妧12
+      - 娌圭-闃夸紵绉戞妧7
+      - _YouTube：全网最强白嫖 2
+      - _YouTube：全网最强白嫖 3
       - 台湾
-      - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾02
-      - 台湾02 2
+      - 台北Sky-dip
+      - 中国香港(youtube阿伟科技) 9
+      - _YouTube：全网最强白嫖 4
+      - _YouTube：全网最强白嫖_2
+      - _YouTube：全网最强白嫖_3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道https://t.me/iosfulishare  HK 01 原生
-      - V1 JP 01
-      - V1 JP 02
-      - V1 JP 03
-      - TG频道https://t.me/iosfulishare  JP 04
-      - TG频道https://t.me/iosfulishare  JP 05
-      - TG频道https://t.me/iosfulishare  HK 01
-      - TG频道https://t.me/iosfulishare  HK 02
-      - V1 HK 03
-      - TG频道https://t.me/iosfulishare  HK 04
-      - V1 HK 05
-      - V1 HK 06
-      - V1 HK 07
-      - TG频道https://t.me/iosfulishare  HK 09
-      - TG频道https://t.me/iosfulishare  HK 10
-      - V1 HK 11
-      - TG频道https://t.me/iosfulishare  HK 12
-      - V1 HK 13
-      - TG频道https://t.me/iosfulishare  HK 14
-      - V1 HK 15
-      - TG频道https://t.me/iosfulishare  SG 02 NF
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港1 - 1x
-      - 香港HKT-dip
-      - 香港Datacamp
-      - SG_白嫖_1
-      - 2.00|youtube阿伟科技+31
-      - YouTube：全网最强白嫖
+      - 韶关移动-香港HKT-dip
+      - 韶关移动-香港HKT-dip 2
+      - 香港-tg频道:@bpjzx2-64
+      - 香港-tg频道:@bpjzx2-69
+      - 香港HKT
+      - 香港-tg频道:@bpjzx2-43
+      - 韶关移动-香港HKT-dip 3
+      - 韶关移动-香港HKT-dip 4
+      - 香港-tg频道:@bpjzx2-63
+      - 韶关移动-香港HKT-dip 5
+      - 香港-tg频道:@bpjzx2-60
+      - 香港-tg频道:@bpjzx2-59
+      - "[SCP]新加坡AWS"
+      - CN_@v2cross.com01
+      - TW TPE H TR
+      - _YouTube：全网最强白嫖
+      - 鍙版咕娌圭-闃夸紵绉戞妧12
+      - 娌圭-闃夸紵绉戞妧7
+      - _YouTube：全网最强白嫖 2
+      - _YouTube：全网最强白嫖 3
       - 台湾
-      - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾02
-      - 台湾02 2
+      - 台北Sky-dip
+      - 中国香港(youtube阿伟科技) 9
+      - _YouTube：全网最强白嫖 4
+      - _YouTube：全网最强白嫖_2
+      - _YouTube：全网最强白嫖_3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -172,168 +148,151 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道https://t.me/iosfulishare  HK 01 原生
-      - V1 JP 01
-      - V1 JP 02
-      - V1 JP 03
-      - TG频道https://t.me/iosfulishare  JP 04
-      - TG频道https://t.me/iosfulishare  JP 05
-      - TG频道https://t.me/iosfulishare  HK 01
-      - TG频道https://t.me/iosfulishare  HK 02
-      - V1 HK 03
-      - TG频道https://t.me/iosfulishare  HK 04
-      - V1 HK 05
-      - V1 HK 06
-      - V1 HK 07
-      - TG频道https://t.me/iosfulishare  HK 09
-      - TG频道https://t.me/iosfulishare  HK 10
-      - V1 HK 11
-      - TG频道https://t.me/iosfulishare  HK 12
-      - V1 HK 13
-      - TG频道https://t.me/iosfulishare  HK 14
-      - V1 HK 15
-      - TG频道https://t.me/iosfulishare  SG 02 NF
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港1 - 1x
-      - 香港HKT-dip
-      - 香港Datacamp
-      - SG_白嫖_1
-      - 2.00|youtube阿伟科技+31
-      - YouTube：全网最强白嫖
+      - 韶关移动-香港HKT-dip
+      - 韶关移动-香港HKT-dip 2
+      - 香港-tg频道:@bpjzx2-64
+      - 香港-tg频道:@bpjzx2-69
+      - 香港HKT
+      - 香港-tg频道:@bpjzx2-43
+      - 韶关移动-香港HKT-dip 3
+      - 韶关移动-香港HKT-dip 4
+      - 香港-tg频道:@bpjzx2-63
+      - 韶关移动-香港HKT-dip 5
+      - 香港-tg频道:@bpjzx2-60
+      - 香港-tg频道:@bpjzx2-59
+      - "[SCP]新加坡AWS"
+      - CN_@v2cross.com01
+      - TW TPE H TR
+      - _YouTube：全网最强白嫖
+      - 鍙版咕娌圭-闃夸紵绉戞妧12
+      - 娌圭-闃夸紵绉戞妧7
+      - _YouTube：全网最强白嫖 2
+      - _YouTube：全网最强白嫖 3
       - 台湾
-      - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾02
-      - 台湾02 2
+      - 台北Sky-dip
+      - 中国香港(youtube阿伟科技) 9
+      - _YouTube：全网最强白嫖 4
+      - _YouTube：全网最强白嫖_2
+      - _YouTube：全网最强白嫖_3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港1 - 1x
-      - 香港HKT-dip
-      - 香港Datacamp
+      - 韶关移动-香港HKT-dip
+      - 韶关移动-香港HKT-dip 2
+      - 香港-tg频道:@bpjzx2-64
+      - 香港-tg频道:@bpjzx2-69
+      - 香港HKT
+      - 香港-tg频道:@bpjzx2-43
+      - 韶关移动-香港HKT-dip 3
+      - 韶关移动-香港HKT-dip 4
+      - 香港-tg频道:@bpjzx2-63
+      - 韶关移动-香港HKT-dip 5
+      - 香港-tg频道:@bpjzx2-60
+      - 香港-tg频道:@bpjzx2-59
       - 台湾
-      - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾02
-      - 台湾02 2
+      - 台北Sky-dip
+      - 中国香港(youtube阿伟科技) 9
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TG频道https://t.me/iosfulishare  HK 01 原生
-      - V1 JP 01
-      - V1 JP 02
-      - V1 JP 03
-      - TG频道https://t.me/iosfulishare  JP 04
-      - TG频道https://t.me/iosfulishare  JP 05
-      - TG频道https://t.me/iosfulishare  HK 01
-      - TG频道https://t.me/iosfulishare  HK 02
-      - V1 HK 03
-      - TG频道https://t.me/iosfulishare  HK 04
-      - V1 HK 05
-      - V1 HK 06
-      - V1 HK 07
-      - TG频道https://t.me/iosfulishare  HK 09
-      - TG频道https://t.me/iosfulishare  HK 10
-      - V1 HK 11
-      - TG频道https://t.me/iosfulishare  HK 12
-      - V1 HK 13
-      - TG频道https://t.me/iosfulishare  HK 14
-      - V1 HK 15
-      - TG频道https://t.me/iosfulishare  SG 02 NF
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港1 - 1x
-      - 香港HKT-dip
-      - 香港Datacamp
-      - SG_白嫖_1
-      - 2.00|youtube阿伟科技+31
-      - YouTube：全网最强白嫖
+      - 韶关移动-香港HKT-dip
+      - 韶关移动-香港HKT-dip 2
+      - 香港-tg频道:@bpjzx2-64
+      - 香港-tg频道:@bpjzx2-69
+      - 香港HKT
+      - 香港-tg频道:@bpjzx2-43
+      - 韶关移动-香港HKT-dip 3
+      - 韶关移动-香港HKT-dip 4
+      - 香港-tg频道:@bpjzx2-63
+      - 韶关移动-香港HKT-dip 5
+      - 香港-tg频道:@bpjzx2-60
+      - 香港-tg频道:@bpjzx2-59
+      - "[SCP]新加坡AWS"
+      - CN_@v2cross.com01
+      - TW TPE H TR
+      - _YouTube：全网最强白嫖
+      - 鍙版咕娌圭-闃夸紵绉戞妧12
+      - 娌圭-闃夸紵绉戞妧7
+      - _YouTube：全网最强白嫖 2
+      - _YouTube：全网最强白嫖 3
       - 台湾
-      - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾02
-      - 台湾02 2
+      - 台北Sky-dip
+      - 中国香港(youtube阿伟科技) 9
+      - _YouTube：全网最强白嫖 4
+      - _YouTube：全网最强白嫖_2
+      - _YouTube：全网最强白嫖_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TG频道https://t.me/iosfulishare  HK 01 原生
-      - V1 JP 01
-      - V1 JP 02
-      - V1 JP 03
-      - TG频道https://t.me/iosfulishare  JP 04
-      - TG频道https://t.me/iosfulishare  JP 05
-      - TG频道https://t.me/iosfulishare  HK 01
-      - TG频道https://t.me/iosfulishare  HK 02
-      - V1 HK 03
-      - TG频道https://t.me/iosfulishare  HK 04
-      - V1 HK 05
-      - V1 HK 06
-      - V1 HK 07
-      - TG频道https://t.me/iosfulishare  HK 09
-      - TG频道https://t.me/iosfulishare  HK 10
-      - V1 HK 11
-      - TG频道https://t.me/iosfulishare  HK 12
-      - V1 HK 13
-      - TG频道https://t.me/iosfulishare  HK 14
-      - V1 HK 15
-      - TG频道https://t.me/iosfulishare  SG 02 NF
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港1 - 1x
-      - 香港HKT-dip
-      - 香港Datacamp
-      - SG_白嫖_1
-      - 2.00|youtube阿伟科技+31
-      - YouTube：全网最强白嫖
+      - 韶关移动-香港HKT-dip
+      - 韶关移动-香港HKT-dip 2
+      - 香港-tg频道:@bpjzx2-64
+      - 香港-tg频道:@bpjzx2-69
+      - 香港HKT
+      - 香港-tg频道:@bpjzx2-43
+      - 韶关移动-香港HKT-dip 3
+      - 韶关移动-香港HKT-dip 4
+      - 香港-tg频道:@bpjzx2-63
+      - 韶关移动-香港HKT-dip 5
+      - 香港-tg频道:@bpjzx2-60
+      - 香港-tg频道:@bpjzx2-59
+      - "[SCP]新加坡AWS"
+      - CN_@v2cross.com01
+      - TW TPE H TR
+      - _YouTube：全网最强白嫖
+      - 鍙版咕娌圭-闃夸紵绉戞妧12
+      - 娌圭-闃夸紵绉戞妧7
+      - _YouTube：全网最强白嫖 2
+      - _YouTube：全网最强白嫖 3
       - 台湾
-      - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾02
-      - 台湾02 2
+      - 台北Sky-dip
+      - 中国香港(youtube阿伟科技) 9
+      - _YouTube：全网最强白嫖 4
+      - _YouTube：全网最强白嫖_2
+      - _YouTube：全网最强白嫖_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG频道https://t.me/iosfulishare  HK 01 原生
-      - V1 JP 01
-      - V1 JP 02
-      - V1 JP 03
-      - TG频道https://t.me/iosfulishare  JP 04
-      - TG频道https://t.me/iosfulishare  JP 05
-      - TG频道https://t.me/iosfulishare  HK 01
-      - TG频道https://t.me/iosfulishare  HK 02
-      - V1 HK 03
-      - TG频道https://t.me/iosfulishare  HK 04
-      - V1 HK 05
-      - V1 HK 06
-      - V1 HK 07
-      - TG频道https://t.me/iosfulishare  HK 09
-      - TG频道https://t.me/iosfulishare  HK 10
-      - V1 HK 11
-      - TG频道https://t.me/iosfulishare  HK 12
-      - V1 HK 13
-      - TG频道https://t.me/iosfulishare  HK 14
-      - V1 HK 15
-      - TG频道https://t.me/iosfulishare  SG 02 NF
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港1 - 1x
-      - 香港HKT-dip
-      - 香港Datacamp
-      - SG_白嫖_1
-      - 2.00|youtube阿伟科技+31
-      - YouTube：全网最强白嫖
+      - 韶关移动-香港HKT-dip
+      - 韶关移动-香港HKT-dip 2
+      - 香港-tg频道:@bpjzx2-64
+      - 香港-tg频道:@bpjzx2-69
+      - 香港HKT
+      - 香港-tg频道:@bpjzx2-43
+      - 韶关移动-香港HKT-dip 3
+      - 韶关移动-香港HKT-dip 4
+      - 香港-tg频道:@bpjzx2-63
+      - 韶关移动-香港HKT-dip 5
+      - 香港-tg频道:@bpjzx2-60
+      - 香港-tg频道:@bpjzx2-59
+      - "[SCP]新加坡AWS"
+      - CN_@v2cross.com01
+      - TW TPE H TR
+      - _YouTube：全网最强白嫖
+      - 鍙版咕娌圭-闃夸紵绉戞妧12
+      - 娌圭-闃夸紵绉戞妧7
+      - _YouTube：全网最强白嫖 2
+      - _YouTube：全网最强白嫖 3
       - 台湾
-      - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾02
-      - 台湾02 2
+      - 台北Sky-dip
+      - 中国香港(youtube阿伟科技) 9
+      - _YouTube：全网最强白嫖 4
+      - _YouTube：全网最强白嫖_2
+      - _YouTube：全网最强白嫖_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -349,39 +308,33 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG频道https://t.me/iosfulishare  HK 01 原生
-      - V1 JP 01
-      - V1 JP 02
-      - V1 JP 03
-      - TG频道https://t.me/iosfulishare  JP 04
-      - TG频道https://t.me/iosfulishare  JP 05
-      - TG频道https://t.me/iosfulishare  HK 01
-      - TG频道https://t.me/iosfulishare  HK 02
-      - V1 HK 03
-      - TG频道https://t.me/iosfulishare  HK 04
-      - V1 HK 05
-      - V1 HK 06
-      - V1 HK 07
-      - TG频道https://t.me/iosfulishare  HK 09
-      - TG频道https://t.me/iosfulishare  HK 10
-      - V1 HK 11
-      - TG频道https://t.me/iosfulishare  HK 12
-      - V1 HK 13
-      - TG频道https://t.me/iosfulishare  HK 14
-      - V1 HK 15
-      - TG频道https://t.me/iosfulishare  SG 02 NF
-      - _CN_中国->🇭🇰_HK_香港
-      - 香港1 - 1x
-      - 香港HKT-dip
-      - 香港Datacamp
-      - SG_白嫖_1
-      - 2.00|youtube阿伟科技+31
-      - YouTube：全网最强白嫖
+      - 韶关移动-香港HKT-dip
+      - 韶关移动-香港HKT-dip 2
+      - 香港-tg频道:@bpjzx2-64
+      - 香港-tg频道:@bpjzx2-69
+      - 香港HKT
+      - 香港-tg频道:@bpjzx2-43
+      - 韶关移动-香港HKT-dip 3
+      - 韶关移动-香港HKT-dip 4
+      - 香港-tg频道:@bpjzx2-63
+      - 韶关移动-香港HKT-dip 5
+      - 香港-tg频道:@bpjzx2-60
+      - 香港-tg频道:@bpjzx2-59
+      - "[SCP]新加坡AWS"
+      - CN_@v2cross.com01
+      - TW TPE H TR
+      - _YouTube：全网最强白嫖
+      - 鍙版咕娌圭-闃夸紵绉戞妧12
+      - 娌圭-闃夸紵绉戞妧7
+      - _YouTube：全网最强白嫖 2
+      - _YouTube：全网最强白嫖 3
       - 台湾
-      - 台北Sky-dip
-      - 台北Sky-dip 2
       - 台湾02
-      - 台湾02 2
+      - 台北Sky-dip
+      - 中国香港(youtube阿伟科技) 9
+      - _YouTube：全网最强白嫖 4
+      - _YouTube：全网最强白嫖_2
+      - _YouTube：全网最强白嫖_3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
