@@ -5,491 +5,143 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Fremont-Linode@vpnhat, server: 120.233.7.232, port: 874, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Tokyo-Choopa@vpnhat, server: 120.233.7.232, port: 1097, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Moscow-Baxet@vpnhat, server: 120.233.7.232, port: 1104, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Makati-IPVG-dip@vpnhat, server: 120.233.7.232, port: 1105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Sao Paulo-Ipxo@vpnhat, server: 120.233.7.232, port: 1107, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 台中Hinet-dip@vpnhat, server: 120.233.7.232, port: 1114, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 台中Hinet-dip@vpnhat 2, server: 120.233.7.232, port: 1115, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 台中Hinet-dip@vpnhat 3, server: 120.233.7.232, port: 1116, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 台北TFN-dip@vpnhat, server: 120.233.7.232, port: 1111, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 彰化Hinet-dip@vpnhat, server: 120.233.7.232, port: 1112, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 台中Hinet-dip@vpnhat 4, server: 120.233.7.232, port: 1113, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat, server: 120.233.7.232, port: 1154, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 2, server: 120.233.7.232, port: 1155, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 3, server: 120.233.7.232, port: 1156, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 4, server: 120.233.7.232, port: 1157, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Fremont-Linode@vpnhat 2, server: 120.233.7.232, port: 1158, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Fremont-Linode@vpnhat 3, server: 120.233.7.232, port: 1159, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 5, server: 120.233.7.232, port: 1150, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 6, server: 120.233.7.232, port: 1151, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 7, server: 120.233.7.232, port: 1152, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 8, server: 120.233.7.232, port: 1153, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: London-Kamatera-dip@vpnhat, server: 120.233.7.232, port: 1606, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: London-Linode@vpnhat, server: 120.233.7.232, port: 1601, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: London-Linode@vpnhat 2, server: 120.233.7.232, port: 1602, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Amsterdam-Mythic@vpnhat, server: 120.233.7.232, port: 1700, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Singapore-Choopa@vpnhat, server: 120.233.7.232, port: 2002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Singapore-Choopa@vpnhat 2, server: 120.233.7.232, port: 2003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Singapore-Choopa@vpnhat 3, server: 120.233.7.232, port: 2202, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Singapore-Choopa@vpnhat 4, server: 120.233.7.232, port: 2203, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat, server: 120.233.7.232, port: 2104, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 2, server: 120.233.7.232, port: 2105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 3, server: 120.233.7.232, port: 2106, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港DMIT-dip@vpnhat, server: 120.233.7.232, port: 2107, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 4, server: 120.233.7.232, port: 2109, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 5, server: 120.233.7.232, port: 2101, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 6, server: 120.233.7.232, port: 2102, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 7, server: 120.233.7.232, port: 2103, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 8, server: 120.233.7.232, port: 2110, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港Kirino@vpnhat, server: 120.233.7.232, port: 2111, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港Kirino@vpnhat 2, server: 120.233.7.232, port: 2112, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Seoul-Choopa@vpnhat, server: 120.233.7.232, port: 2302, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Seoul-Choopa@vpnhat 2, server: 120.233.7.232, port: 2303, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Frankfurt-Choopa@vpnhat, server: 120.233.7.232, port: 2401, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Frankfurt-Choopa@vpnhat 2, server: 120.233.7.232, port: 2402, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Frankfurt-Choopa@vpnhat 3, server: 120.233.7.232, port: 2403, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Tokyo-Choopa@vpnhat 2, server: 120.233.7.232, port: 2604, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Tokyo-Choopa@vpnhat 3, server: 120.233.7.232, port: 2605, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Tokyo-Choopa@vpnhat 4, server: 120.233.7.232, port: 2601, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Tokyo-Choopa@vpnhat 5, server: 120.233.7.232, port: 2602, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Tokyo-Choopa@vpnhat 6, server: 120.233.7.232, port: 2603, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Seoul-Choopa@vpnhat 3, server: 120.233.7.232, port: 2506, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Seoul-Choopa@vpnhat 4, server: 120.233.7.232, port: 2507, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Maharashtra-Cloudflare@vpnhat, server: 120.233.7.232, port: 2701, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Maharashtra-Cloudflare@vpnhat 2, server: 120.233.7.232, port: 2702, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Fremont-Linode@vpnhat 4, server: 120.233.7.233, port: 874, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Tokyo-Choopa@vpnhat 7, server: 120.233.7.233, port: 1097, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Moscow-Baxet@vpnhat 2, server: 120.233.7.233, port: 1104, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Makati-IPVG-dip@vpnhat 2, server: 120.233.7.233, port: 1105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Sao Paulo-Ipxo@vpnhat 2, server: 120.233.7.233, port: 1107, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Toronto-Linode@vpnhat, server: 120.233.7.233, port: 1103, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 台中Hinet-dip@vpnhat 5, server: 120.233.7.233, port: 1114, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 台中Hinet-dip@vpnhat 6, server: 120.233.7.233, port: 1116, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 彰化Hinet-dip@vpnhat 2, server: 120.233.7.233, port: 1112, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 台中Hinet-dip@vpnhat 7, server: 120.233.7.233, port: 1113, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 9, server: 120.233.7.233, port: 1154, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 10, server: 120.233.7.233, port: 1155, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 11, server: 120.233.7.233, port: 1156, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 12, server: 120.233.7.233, port: 1157, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Fremont-Linode@vpnhat 5, server: 120.233.7.233, port: 1158, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Fremont-Linode@vpnhat 6, server: 120.233.7.233, port: 1159, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 13, server: 120.233.7.233, port: 1150, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 14, server: 120.233.7.233, port: 1151, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 15, server: 120.233.7.233, port: 1152, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: LAX-VMHaus@vpnhat 16, server: 120.233.7.233, port: 1153, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: London-Kamatera-dip@vpnhat 2, server: 120.233.7.233, port: 1604, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: London-Kamatera-dip@vpnhat 3, server: 120.233.7.233, port: 1605, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: London-Kamatera-dip@vpnhat 4, server: 120.233.7.233, port: 1606, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: London-Linode@vpnhat 3, server: 120.233.7.233, port: 1601, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: London-Linode@vpnhat 4, server: 120.233.7.233, port: 1602, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: London-Linode@vpnhat 5, server: 120.233.7.233, port: 1603, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Amsterdam-Mythic@vpnhat 2, server: 120.233.7.233, port: 1700, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Singapore-Choopa@vpnhat 5, server: 120.233.7.233, port: 2002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Singapore-Choopa@vpnhat 6, server: 120.233.7.233, port: 2003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Singapore-Choopa@vpnhat 7, server: 120.233.7.233, port: 2201, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Singapore-Choopa@vpnhat 8, server: 120.233.7.233, port: 2202, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Singapore-Choopa@vpnhat 9, server: 120.233.7.233, port: 2203, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 9, server: 120.233.7.233, port: 2104, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 10, server: 120.233.7.233, port: 2105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 11, server: 120.233.7.233, port: 2106, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港DMIT-dip@vpnhat 2, server: 120.233.7.233, port: 2107, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 12, server: 120.233.7.233, port: 2109, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 13, server: 120.233.7.233, port: 2101, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 14, server: 120.233.7.233, port: 2102, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 15, server: 120.233.7.233, port: 2103, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港EDCL@vpnhat 16, server: 120.233.7.233, port: 2110, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港Kirino@vpnhat 3, server: 120.233.7.233, port: 2111, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 香港Kirino@vpnhat 4, server: 120.233.7.233, port: 2112, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Seoul-Choopa@vpnhat 5, server: 120.233.7.233, port: 2301, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Seoul-Choopa@vpnhat 6, server: 120.233.7.233, port: 2302, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Seoul-Choopa@vpnhat 7, server: 120.233.7.233, port: 2303, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Frankfurt-Choopa@vpnhat 4, server: 120.233.7.233, port: 2401, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Frankfurt-Choopa@vpnhat 5, server: 120.233.7.233, port: 2402, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Frankfurt-Choopa@vpnhat 6, server: 120.233.7.233, port: 2403, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Tokyo-Choopa@vpnhat 8, server: 120.233.7.233, port: 2604, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Tokyo-Choopa@vpnhat 9, server: 120.233.7.233, port: 2605, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Tokyo-Choopa@vpnhat 10, server: 120.233.7.233, port: 2601, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Tokyo-Choopa@vpnhat 11, server: 120.233.7.233, port: 2602, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Tokyo-Choopa@vpnhat 12, server: 120.233.7.233, port: 2603, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Seoul-Choopa@vpnhat 8, server: 120.233.7.233, port: 2506, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Seoul-Choopa@vpnhat 9, server: 120.233.7.233, port: 2507, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Maharashtra-Cloudflare@vpnhat 3, server: 120.233.7.233, port: 2701, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Maharashtra-Cloudflare@vpnhat 4, server: 120.233.7.233, port: 2702, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: London-Kamatera-dip@vpnhat 5, server: 120.233.7.232, port: 1605, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: London-Linode@vpnhat 6, server: 120.233.7.232, port: 1603, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Singapore-Choopa@vpnhat 10, server: 120.233.7.232, port: 2201, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Seoul-Choopa@vpnhat 10, server: 120.233.7.232, port: 2301, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 台中Hinet-dip@vpnhat 8, server: 120.233.7.233, port: 1115, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 172181:66666, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "TG频道:@kxswa|Lv3+香港+07+[2.0]", server: debian10.updatensv3.com, port: 8765, type: ss, cipher: aes-128-gcm, password: 24ffe5a4c321e0b926dc335a91c2d78a, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: "TG频道:@kxswa|Lv3+台湾+02+[3.0]", server: centos8.expirationv3.com, port: 8753, type: ss, cipher: aes-128-gcm, password: aa740e1ee906513a782b1838aa88c88d, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: 台湾-SS/SSR-02-Taiwan02, server: 120.240.47.74, port: 5711, type: ss, cipher: rc4-md5, password: 5otzk5bmlo6, plugin: obfs, plugin-opts: {mode: http, host: 84fbd78736.microsoft.com}, udp: true}
+  - {name: YouTube:全网最强白嫖, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 台湾-tg频道:@bpjzx2-9, server: 120.240.47.74, port: 5711, type: ss, cipher: rc4-md5, password: 5otzk5bmlo6, plugin: obfs, plugin-opts: {mode: http, host: 84fbd78736.microsoft.com}, udp: true}
+  - {name: 台湾-SS/SSR-04-Taiwan04, server: 120.240.47.74, port: 5713, type: ss, cipher: rc4-md5, password: 5otzk5bmlo6, plugin: obfs, plugin-opts: {mode: http, host: 84fbd78736.microsoft.com}, udp: true}
+  - {name: Cow+Vagina_1, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 台湾, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 台湾-tg频道:@bpjzx2-11, server: 120.240.47.74, port: 5714, type: ss, cipher: rc4-md5, password: 5otzk5bmlo6, plugin: obfs, plugin-opts: {mode: http, host: 84fbd78736.microsoft.com}, udp: true}
+  - {name: 台湾-SS/SSR-06-Taiwan06, server: 120.240.47.74, port: 5715, type: ss, cipher: rc4-md5, password: 5otzk5bmlo6, plugin: obfs, plugin-opts: {mode: http, host: 84fbd78736.microsoft.com}, udp: true}
+  - {name: 台湾-tg频道:@bpjzx2-8, server: 120.240.47.74, port: 5710, type: ss, cipher: rc4-md5, password: 5otzk5bmlo6, plugin: obfs, plugin-opts: {mode: http, host: 84fbd78736.microsoft.com}, udp: true}
+  - {name: TG频道:@kxswa|Lv3+日本+02+IPLC, server: dsdfg.updatensv3.com, port: 8736, type: ss, cipher: aes-256-gcm, password: d5b5c8e566d63ce4d91092a16d65ef5f, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: "+Singapore+02+[Lv1]", server: 120.197.129.50, port: 41530, type: ss, cipher: aes-128-gcm, password: 05fcde25-f70c-4fb7-8172-6d5bf54ff76f, udp: true}
+  - {name: 日本-SS/SSR-04-Japan04, server: 120.240.47.74, port: 3713, type: ss, cipher: rc4-md5, password: 5otzk5bmlo6, plugin: obfs, plugin-opts: {mode: http, host: 84fbd78736.microsoft.com}, udp: true}
+  - {name: "+Singapore+03+[Lv1]", server: 120.197.129.50, port: 60662, type: ss, cipher: aes-128-gcm, password: 05fcde25-f70c-4fb7-8172-6d5bf54ff76f, udp: true}
+  - {name: 台湾-SS/SSR-03-Taiwan03, server: 120.240.47.74, port: 5712, type: ss, cipher: rc4-md5, password: 5otzk5bmlo6, plugin: obfs, plugin-opts: {mode: http, host: 84fbd78736.microsoft.com}, udp: true}
+  - {name: 新加坡-tg频道:@bpjzx2-4, server: 120.240.47.74, port: 6713, type: ss, cipher: rc4-md5, password: 5otzk5bmlo6, plugin: obfs, plugin-opts: {mode: http, host: d36ac64477.microsoft.com}, udp: true}
+  - {name: 台湾 2, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 台北Sky-dip, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: +台湾02, server: dx15.jicojs.com, port: 443, type: ss, cipher: aes-256-gcm, password: 46c027d028b4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx15.jicojs.com, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: _YouTube：全网最强白嫖, server: fndx600mtwline010tr.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: d0760c7c21f8, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndx600mtwline010tr.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: _YouTube：全网最强白嫖 2, server: fn600mliness013.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1b584982dbdc, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness013.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 台湾02, server: dx15.jicojs.com, port: 443, type: ss, cipher: aes-256-gcm, password: 46c027d028b4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx15.jicojs.com, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: AA1新加坡 IPLC 支持NF VIP2 网址:vvdnn.com, server: abzj1.fdhsujj.xyz, port: 23548, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: dbe96286652.microsoft.com, udp: true}
+  - {name: AA4新加坡IPLC 支持NF VIP2 网址:vvdnn.com, server: aahk4.fdhsujj.xyz, port: 23551, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: dbe96286652.microsoft.com, udp: true}
+  - {name: AA6日本2 IPLC VIP2 网址:vvdnn.com, server: aajp7.fdhsujj.xyz, port: 2, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: dbe96286652.microsoft.com, udp: true}
+  - {name: AA新加坡1 IPLC  支持NF VIP2 网址:vvdnn.com, server: asg1.fdhsujj.xyz, port: 41, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: dbe96286652.microsoft.com, udp: true}
+  - {name: AA新加坡2 IPLC  支持NF VIP2 网址:vvdnn.com, server: asg2.fdhsujj.xyz, port: 11196, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: dbe96286652.microsoft.com, udp: true}
+  - {name: AA新加坡5 IPLC 支持NF VIP2 网址:vvdnn.com, server: aasg3.fdhsujj.xyz, port: 11198, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: dbe96286652.microsoft.com, udp: true}
+  - {name: AA新加坡4 IPLC  支持NF VIP2 网址:vvdnn.com, server: aasg3.fdhsujj.xyz, port: 11197, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: dbe96286652.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Fremont-Linode@vpnhat
-      - Tokyo-Choopa@vpnhat
-      - Moscow-Baxet@vpnhat
-      - Makati-IPVG-dip@vpnhat
-      - Sao Paulo-Ipxo@vpnhat
-      - 台中Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 3
-      - 台北TFN-dip@vpnhat
-      - 彰化Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 4
-      - LAX-VMHaus@vpnhat
-      - LAX-VMHaus@vpnhat 2
-      - LAX-VMHaus@vpnhat 3
-      - LAX-VMHaus@vpnhat 4
-      - Fremont-Linode@vpnhat 2
-      - Fremont-Linode@vpnhat 3
-      - LAX-VMHaus@vpnhat 5
-      - LAX-VMHaus@vpnhat 6
-      - LAX-VMHaus@vpnhat 7
-      - LAX-VMHaus@vpnhat 8
-      - London-Kamatera-dip@vpnhat
-      - London-Linode@vpnhat
-      - London-Linode@vpnhat 2
-      - Amsterdam-Mythic@vpnhat
-      - Singapore-Choopa@vpnhat
-      - Singapore-Choopa@vpnhat 2
-      - Singapore-Choopa@vpnhat 3
-      - Singapore-Choopa@vpnhat 4
-      - 香港EDCL@vpnhat
-      - 香港EDCL@vpnhat 2
-      - 香港EDCL@vpnhat 3
-      - 香港DMIT-dip@vpnhat
-      - 香港EDCL@vpnhat 4
-      - 香港EDCL@vpnhat 5
-      - 香港EDCL@vpnhat 6
-      - 香港EDCL@vpnhat 7
-      - 香港EDCL@vpnhat 8
-      - 香港Kirino@vpnhat
-      - 香港Kirino@vpnhat 2
-      - Seoul-Choopa@vpnhat
-      - Seoul-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat
-      - Frankfurt-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 2
-      - Tokyo-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 4
-      - Tokyo-Choopa@vpnhat 5
-      - Tokyo-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 3
-      - Seoul-Choopa@vpnhat 4
-      - Maharashtra-Cloudflare@vpnhat
-      - Maharashtra-Cloudflare@vpnhat 2
-      - Fremont-Linode@vpnhat 4
-      - Tokyo-Choopa@vpnhat 7
-      - Moscow-Baxet@vpnhat 2
-      - Makati-IPVG-dip@vpnhat 2
-      - Sao Paulo-Ipxo@vpnhat 2
-      - Toronto-Linode@vpnhat
-      - 台中Hinet-dip@vpnhat 5
-      - 台中Hinet-dip@vpnhat 6
-      - 彰化Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 7
-      - LAX-VMHaus@vpnhat 9
-      - LAX-VMHaus@vpnhat 10
-      - LAX-VMHaus@vpnhat 11
-      - LAX-VMHaus@vpnhat 12
-      - Fremont-Linode@vpnhat 5
-      - Fremont-Linode@vpnhat 6
-      - LAX-VMHaus@vpnhat 13
-      - LAX-VMHaus@vpnhat 14
-      - LAX-VMHaus@vpnhat 15
-      - LAX-VMHaus@vpnhat 16
-      - London-Kamatera-dip@vpnhat 2
-      - London-Kamatera-dip@vpnhat 3
-      - London-Kamatera-dip@vpnhat 4
-      - London-Linode@vpnhat 3
-      - London-Linode@vpnhat 4
-      - London-Linode@vpnhat 5
-      - Amsterdam-Mythic@vpnhat 2
-      - Singapore-Choopa@vpnhat 5
-      - Singapore-Choopa@vpnhat 6
-      - Singapore-Choopa@vpnhat 7
-      - Singapore-Choopa@vpnhat 8
-      - Singapore-Choopa@vpnhat 9
-      - 香港EDCL@vpnhat 9
-      - 香港EDCL@vpnhat 10
-      - 香港EDCL@vpnhat 11
-      - 香港DMIT-dip@vpnhat 2
-      - 香港EDCL@vpnhat 12
-      - 香港EDCL@vpnhat 13
-      - 香港EDCL@vpnhat 14
-      - 香港EDCL@vpnhat 15
-      - 香港EDCL@vpnhat 16
-      - 香港Kirino@vpnhat 3
-      - 香港Kirino@vpnhat 4
-      - Seoul-Choopa@vpnhat 5
-      - Seoul-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 7
-      - Frankfurt-Choopa@vpnhat 4
-      - Frankfurt-Choopa@vpnhat 5
-      - Frankfurt-Choopa@vpnhat 6
-      - Tokyo-Choopa@vpnhat 8
-      - Tokyo-Choopa@vpnhat 9
-      - Tokyo-Choopa@vpnhat 10
-      - Tokyo-Choopa@vpnhat 11
-      - Tokyo-Choopa@vpnhat 12
-      - Seoul-Choopa@vpnhat 8
-      - Seoul-Choopa@vpnhat 9
-      - Maharashtra-Cloudflare@vpnhat 3
-      - Maharashtra-Cloudflare@vpnhat 4
-      - London-Kamatera-dip@vpnhat 5
-      - London-Linode@vpnhat 6
-      - Singapore-Choopa@vpnhat 10
-      - Seoul-Choopa@vpnhat 10
-      - 台中Hinet-dip@vpnhat 8
+      - TG频道:@kxswa|Lv3+香港+07+[2.0]
+      - TG频道:@kxswa|Lv3+台湾+02+[3.0]
+      - 台湾-SS/SSR-02-Taiwan02
+      - YouTube:全网最强白嫖
+      - 台湾-tg频道:@bpjzx2-9
+      - 台湾-SS/SSR-04-Taiwan04
+      - Cow+Vagina_1
+      - 台湾
+      - 台湾-tg频道:@bpjzx2-11
+      - 台湾-SS/SSR-06-Taiwan06
+      - 台湾-tg频道:@bpjzx2-8
+      - TG频道:@kxswa|Lv3+日本+02+IPLC
+      - +Singapore+02+[Lv1]
+      - 日本-SS/SSR-04-Japan04
+      - +Singapore+03+[Lv1]
+      - 台湾-SS/SSR-03-Taiwan03
+      - 新加坡-tg频道:@bpjzx2-4
+      - 台湾 2
+      - 台北Sky-dip
+      - +台湾02
+      - _YouTube：全网最强白嫖
+      - _YouTube：全网最强白嫖 2
+      - 台湾02
+      - AA1新加坡 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA4新加坡IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA6日本2 IPLC VIP2 网址:vvdnn.com
+      - AA新加坡1 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡2 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡5 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA新加坡4 IPLC  支持NF VIP2 网址:vvdnn.com
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Fremont-Linode@vpnhat
-      - Tokyo-Choopa@vpnhat
-      - Moscow-Baxet@vpnhat
-      - Makati-IPVG-dip@vpnhat
-      - Sao Paulo-Ipxo@vpnhat
-      - 台中Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 3
-      - 台北TFN-dip@vpnhat
-      - 彰化Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 4
-      - LAX-VMHaus@vpnhat
-      - LAX-VMHaus@vpnhat 2
-      - LAX-VMHaus@vpnhat 3
-      - LAX-VMHaus@vpnhat 4
-      - Fremont-Linode@vpnhat 2
-      - Fremont-Linode@vpnhat 3
-      - LAX-VMHaus@vpnhat 5
-      - LAX-VMHaus@vpnhat 6
-      - LAX-VMHaus@vpnhat 7
-      - LAX-VMHaus@vpnhat 8
-      - London-Kamatera-dip@vpnhat
-      - London-Linode@vpnhat
-      - London-Linode@vpnhat 2
-      - Amsterdam-Mythic@vpnhat
-      - Singapore-Choopa@vpnhat
-      - Singapore-Choopa@vpnhat 2
-      - Singapore-Choopa@vpnhat 3
-      - Singapore-Choopa@vpnhat 4
-      - 香港EDCL@vpnhat
-      - 香港EDCL@vpnhat 2
-      - 香港EDCL@vpnhat 3
-      - 香港DMIT-dip@vpnhat
-      - 香港EDCL@vpnhat 4
-      - 香港EDCL@vpnhat 5
-      - 香港EDCL@vpnhat 6
-      - 香港EDCL@vpnhat 7
-      - 香港EDCL@vpnhat 8
-      - 香港Kirino@vpnhat
-      - 香港Kirino@vpnhat 2
-      - Seoul-Choopa@vpnhat
-      - Seoul-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat
-      - Frankfurt-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 2
-      - Tokyo-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 4
-      - Tokyo-Choopa@vpnhat 5
-      - Tokyo-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 3
-      - Seoul-Choopa@vpnhat 4
-      - Maharashtra-Cloudflare@vpnhat
-      - Maharashtra-Cloudflare@vpnhat 2
-      - Fremont-Linode@vpnhat 4
-      - Tokyo-Choopa@vpnhat 7
-      - Moscow-Baxet@vpnhat 2
-      - Makati-IPVG-dip@vpnhat 2
-      - Sao Paulo-Ipxo@vpnhat 2
-      - Toronto-Linode@vpnhat
-      - 台中Hinet-dip@vpnhat 5
-      - 台中Hinet-dip@vpnhat 6
-      - 彰化Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 7
-      - LAX-VMHaus@vpnhat 9
-      - LAX-VMHaus@vpnhat 10
-      - LAX-VMHaus@vpnhat 11
-      - LAX-VMHaus@vpnhat 12
-      - Fremont-Linode@vpnhat 5
-      - Fremont-Linode@vpnhat 6
-      - LAX-VMHaus@vpnhat 13
-      - LAX-VMHaus@vpnhat 14
-      - LAX-VMHaus@vpnhat 15
-      - LAX-VMHaus@vpnhat 16
-      - London-Kamatera-dip@vpnhat 2
-      - London-Kamatera-dip@vpnhat 3
-      - London-Kamatera-dip@vpnhat 4
-      - London-Linode@vpnhat 3
-      - London-Linode@vpnhat 4
-      - London-Linode@vpnhat 5
-      - Amsterdam-Mythic@vpnhat 2
-      - Singapore-Choopa@vpnhat 5
-      - Singapore-Choopa@vpnhat 6
-      - Singapore-Choopa@vpnhat 7
-      - Singapore-Choopa@vpnhat 8
-      - Singapore-Choopa@vpnhat 9
-      - 香港EDCL@vpnhat 9
-      - 香港EDCL@vpnhat 10
-      - 香港EDCL@vpnhat 11
-      - 香港DMIT-dip@vpnhat 2
-      - 香港EDCL@vpnhat 12
-      - 香港EDCL@vpnhat 13
-      - 香港EDCL@vpnhat 14
-      - 香港EDCL@vpnhat 15
-      - 香港EDCL@vpnhat 16
-      - 香港Kirino@vpnhat 3
-      - 香港Kirino@vpnhat 4
-      - Seoul-Choopa@vpnhat 5
-      - Seoul-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 7
-      - Frankfurt-Choopa@vpnhat 4
-      - Frankfurt-Choopa@vpnhat 5
-      - Frankfurt-Choopa@vpnhat 6
-      - Tokyo-Choopa@vpnhat 8
-      - Tokyo-Choopa@vpnhat 9
-      - Tokyo-Choopa@vpnhat 10
-      - Tokyo-Choopa@vpnhat 11
-      - Tokyo-Choopa@vpnhat 12
-      - Seoul-Choopa@vpnhat 8
-      - Seoul-Choopa@vpnhat 9
-      - Maharashtra-Cloudflare@vpnhat 3
-      - Maharashtra-Cloudflare@vpnhat 4
-      - London-Kamatera-dip@vpnhat 5
-      - London-Linode@vpnhat 6
-      - Singapore-Choopa@vpnhat 10
-      - Seoul-Choopa@vpnhat 10
-      - 台中Hinet-dip@vpnhat 8
+      - TG频道:@kxswa|Lv3+香港+07+[2.0]
+      - TG频道:@kxswa|Lv3+台湾+02+[3.0]
+      - 台湾-SS/SSR-02-Taiwan02
+      - YouTube:全网最强白嫖
+      - 台湾-tg频道:@bpjzx2-9
+      - 台湾-SS/SSR-04-Taiwan04
+      - Cow+Vagina_1
+      - 台湾
+      - 台湾-tg频道:@bpjzx2-11
+      - 台湾-SS/SSR-06-Taiwan06
+      - 台湾-tg频道:@bpjzx2-8
+      - TG频道:@kxswa|Lv3+日本+02+IPLC
+      - +Singapore+02+[Lv1]
+      - 日本-SS/SSR-04-Japan04
+      - +Singapore+03+[Lv1]
+      - 台湾-SS/SSR-03-Taiwan03
+      - 新加坡-tg频道:@bpjzx2-4
+      - 台湾 2
+      - 台北Sky-dip
+      - +台湾02
+      - _YouTube：全网最强白嫖
+      - _YouTube：全网最强白嫖 2
+      - 台湾02
+      - AA1新加坡 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA4新加坡IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA6日本2 IPLC VIP2 网址:vvdnn.com
+      - AA新加坡1 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡2 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡5 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA新加坡4 IPLC  支持NF VIP2 网址:vvdnn.com
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Fremont-Linode@vpnhat
-      - Tokyo-Choopa@vpnhat
-      - Moscow-Baxet@vpnhat
-      - Makati-IPVG-dip@vpnhat
-      - Sao Paulo-Ipxo@vpnhat
-      - 台中Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 3
-      - 台北TFN-dip@vpnhat
-      - 彰化Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 4
-      - LAX-VMHaus@vpnhat
-      - LAX-VMHaus@vpnhat 2
-      - LAX-VMHaus@vpnhat 3
-      - LAX-VMHaus@vpnhat 4
-      - Fremont-Linode@vpnhat 2
-      - Fremont-Linode@vpnhat 3
-      - LAX-VMHaus@vpnhat 5
-      - LAX-VMHaus@vpnhat 6
-      - LAX-VMHaus@vpnhat 7
-      - LAX-VMHaus@vpnhat 8
-      - London-Kamatera-dip@vpnhat
-      - London-Linode@vpnhat
-      - London-Linode@vpnhat 2
-      - Amsterdam-Mythic@vpnhat
-      - Singapore-Choopa@vpnhat
-      - Singapore-Choopa@vpnhat 2
-      - Singapore-Choopa@vpnhat 3
-      - Singapore-Choopa@vpnhat 4
-      - 香港EDCL@vpnhat
-      - 香港EDCL@vpnhat 2
-      - 香港EDCL@vpnhat 3
-      - 香港DMIT-dip@vpnhat
-      - 香港EDCL@vpnhat 4
-      - 香港EDCL@vpnhat 5
-      - 香港EDCL@vpnhat 6
-      - 香港EDCL@vpnhat 7
-      - 香港EDCL@vpnhat 8
-      - 香港Kirino@vpnhat
-      - 香港Kirino@vpnhat 2
-      - Seoul-Choopa@vpnhat
-      - Seoul-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat
-      - Frankfurt-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 2
-      - Tokyo-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 4
-      - Tokyo-Choopa@vpnhat 5
-      - Tokyo-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 3
-      - Seoul-Choopa@vpnhat 4
-      - Maharashtra-Cloudflare@vpnhat
-      - Maharashtra-Cloudflare@vpnhat 2
-      - Fremont-Linode@vpnhat 4
-      - Tokyo-Choopa@vpnhat 7
-      - Moscow-Baxet@vpnhat 2
-      - Makati-IPVG-dip@vpnhat 2
-      - Sao Paulo-Ipxo@vpnhat 2
-      - Toronto-Linode@vpnhat
-      - 台中Hinet-dip@vpnhat 5
-      - 台中Hinet-dip@vpnhat 6
-      - 彰化Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 7
-      - LAX-VMHaus@vpnhat 9
-      - LAX-VMHaus@vpnhat 10
-      - LAX-VMHaus@vpnhat 11
-      - LAX-VMHaus@vpnhat 12
-      - Fremont-Linode@vpnhat 5
-      - Fremont-Linode@vpnhat 6
-      - LAX-VMHaus@vpnhat 13
-      - LAX-VMHaus@vpnhat 14
-      - LAX-VMHaus@vpnhat 15
-      - LAX-VMHaus@vpnhat 16
-      - London-Kamatera-dip@vpnhat 2
-      - London-Kamatera-dip@vpnhat 3
-      - London-Kamatera-dip@vpnhat 4
-      - London-Linode@vpnhat 3
-      - London-Linode@vpnhat 4
-      - London-Linode@vpnhat 5
-      - Amsterdam-Mythic@vpnhat 2
-      - Singapore-Choopa@vpnhat 5
-      - Singapore-Choopa@vpnhat 6
-      - Singapore-Choopa@vpnhat 7
-      - Singapore-Choopa@vpnhat 8
-      - Singapore-Choopa@vpnhat 9
-      - 香港EDCL@vpnhat 9
-      - 香港EDCL@vpnhat 10
-      - 香港EDCL@vpnhat 11
-      - 香港DMIT-dip@vpnhat 2
-      - 香港EDCL@vpnhat 12
-      - 香港EDCL@vpnhat 13
-      - 香港EDCL@vpnhat 14
-      - 香港EDCL@vpnhat 15
-      - 香港EDCL@vpnhat 16
-      - 香港Kirino@vpnhat 3
-      - 香港Kirino@vpnhat 4
-      - Seoul-Choopa@vpnhat 5
-      - Seoul-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 7
-      - Frankfurt-Choopa@vpnhat 4
-      - Frankfurt-Choopa@vpnhat 5
-      - Frankfurt-Choopa@vpnhat 6
-      - Tokyo-Choopa@vpnhat 8
-      - Tokyo-Choopa@vpnhat 9
-      - Tokyo-Choopa@vpnhat 10
-      - Tokyo-Choopa@vpnhat 11
-      - Tokyo-Choopa@vpnhat 12
-      - Seoul-Choopa@vpnhat 8
-      - Seoul-Choopa@vpnhat 9
-      - Maharashtra-Cloudflare@vpnhat 3
-      - Maharashtra-Cloudflare@vpnhat 4
-      - London-Kamatera-dip@vpnhat 5
-      - London-Linode@vpnhat 6
-      - Singapore-Choopa@vpnhat 10
-      - Seoul-Choopa@vpnhat 10
-      - 台中Hinet-dip@vpnhat 8
+      - TG频道:@kxswa|Lv3+香港+07+[2.0]
+      - TG频道:@kxswa|Lv3+台湾+02+[3.0]
+      - 台湾-SS/SSR-02-Taiwan02
+      - YouTube:全网最强白嫖
+      - 台湾-tg频道:@bpjzx2-9
+      - 台湾-SS/SSR-04-Taiwan04
+      - Cow+Vagina_1
+      - 台湾
+      - 台湾-tg频道:@bpjzx2-11
+      - 台湾-SS/SSR-06-Taiwan06
+      - 台湾-tg频道:@bpjzx2-8
+      - TG频道:@kxswa|Lv3+日本+02+IPLC
+      - +Singapore+02+[Lv1]
+      - 日本-SS/SSR-04-Japan04
+      - +Singapore+03+[Lv1]
+      - 台湾-SS/SSR-03-Taiwan03
+      - 新加坡-tg频道:@bpjzx2-4
+      - 台湾 2
+      - 台北Sky-dip
+      - +台湾02
+      - _YouTube：全网最强白嫖
+      - _YouTube：全网最强白嫖 2
+      - 台湾02
+      - AA1新加坡 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA4新加坡IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA6日本2 IPLC VIP2 网址:vvdnn.com
+      - AA新加坡1 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡2 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡5 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA新加坡4 IPLC  支持NF VIP2 网址:vvdnn.com
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -508,528 +160,161 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Fremont-Linode@vpnhat
-      - Tokyo-Choopa@vpnhat
-      - Moscow-Baxet@vpnhat
-      - Makati-IPVG-dip@vpnhat
-      - Sao Paulo-Ipxo@vpnhat
-      - 台中Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 3
-      - 台北TFN-dip@vpnhat
-      - 彰化Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 4
-      - LAX-VMHaus@vpnhat
-      - LAX-VMHaus@vpnhat 2
-      - LAX-VMHaus@vpnhat 3
-      - LAX-VMHaus@vpnhat 4
-      - Fremont-Linode@vpnhat 2
-      - Fremont-Linode@vpnhat 3
-      - LAX-VMHaus@vpnhat 5
-      - LAX-VMHaus@vpnhat 6
-      - LAX-VMHaus@vpnhat 7
-      - LAX-VMHaus@vpnhat 8
-      - London-Kamatera-dip@vpnhat
-      - London-Linode@vpnhat
-      - London-Linode@vpnhat 2
-      - Amsterdam-Mythic@vpnhat
-      - Singapore-Choopa@vpnhat
-      - Singapore-Choopa@vpnhat 2
-      - Singapore-Choopa@vpnhat 3
-      - Singapore-Choopa@vpnhat 4
-      - 香港EDCL@vpnhat
-      - 香港EDCL@vpnhat 2
-      - 香港EDCL@vpnhat 3
-      - 香港DMIT-dip@vpnhat
-      - 香港EDCL@vpnhat 4
-      - 香港EDCL@vpnhat 5
-      - 香港EDCL@vpnhat 6
-      - 香港EDCL@vpnhat 7
-      - 香港EDCL@vpnhat 8
-      - 香港Kirino@vpnhat
-      - 香港Kirino@vpnhat 2
-      - Seoul-Choopa@vpnhat
-      - Seoul-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat
-      - Frankfurt-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 2
-      - Tokyo-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 4
-      - Tokyo-Choopa@vpnhat 5
-      - Tokyo-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 3
-      - Seoul-Choopa@vpnhat 4
-      - Maharashtra-Cloudflare@vpnhat
-      - Maharashtra-Cloudflare@vpnhat 2
-      - Fremont-Linode@vpnhat 4
-      - Tokyo-Choopa@vpnhat 7
-      - Moscow-Baxet@vpnhat 2
-      - Makati-IPVG-dip@vpnhat 2
-      - Sao Paulo-Ipxo@vpnhat 2
-      - Toronto-Linode@vpnhat
-      - 台中Hinet-dip@vpnhat 5
-      - 台中Hinet-dip@vpnhat 6
-      - 彰化Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 7
-      - LAX-VMHaus@vpnhat 9
-      - LAX-VMHaus@vpnhat 10
-      - LAX-VMHaus@vpnhat 11
-      - LAX-VMHaus@vpnhat 12
-      - Fremont-Linode@vpnhat 5
-      - Fremont-Linode@vpnhat 6
-      - LAX-VMHaus@vpnhat 13
-      - LAX-VMHaus@vpnhat 14
-      - LAX-VMHaus@vpnhat 15
-      - LAX-VMHaus@vpnhat 16
-      - London-Kamatera-dip@vpnhat 2
-      - London-Kamatera-dip@vpnhat 3
-      - London-Kamatera-dip@vpnhat 4
-      - London-Linode@vpnhat 3
-      - London-Linode@vpnhat 4
-      - London-Linode@vpnhat 5
-      - Amsterdam-Mythic@vpnhat 2
-      - Singapore-Choopa@vpnhat 5
-      - Singapore-Choopa@vpnhat 6
-      - Singapore-Choopa@vpnhat 7
-      - Singapore-Choopa@vpnhat 8
-      - Singapore-Choopa@vpnhat 9
-      - 香港EDCL@vpnhat 9
-      - 香港EDCL@vpnhat 10
-      - 香港EDCL@vpnhat 11
-      - 香港DMIT-dip@vpnhat 2
-      - 香港EDCL@vpnhat 12
-      - 香港EDCL@vpnhat 13
-      - 香港EDCL@vpnhat 14
-      - 香港EDCL@vpnhat 15
-      - 香港EDCL@vpnhat 16
-      - 香港Kirino@vpnhat 3
-      - 香港Kirino@vpnhat 4
-      - Seoul-Choopa@vpnhat 5
-      - Seoul-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 7
-      - Frankfurt-Choopa@vpnhat 4
-      - Frankfurt-Choopa@vpnhat 5
-      - Frankfurt-Choopa@vpnhat 6
-      - Tokyo-Choopa@vpnhat 8
-      - Tokyo-Choopa@vpnhat 9
-      - Tokyo-Choopa@vpnhat 10
-      - Tokyo-Choopa@vpnhat 11
-      - Tokyo-Choopa@vpnhat 12
-      - Seoul-Choopa@vpnhat 8
-      - Seoul-Choopa@vpnhat 9
-      - Maharashtra-Cloudflare@vpnhat 3
-      - Maharashtra-Cloudflare@vpnhat 4
-      - London-Kamatera-dip@vpnhat 5
-      - London-Linode@vpnhat 6
-      - Singapore-Choopa@vpnhat 10
-      - Seoul-Choopa@vpnhat 10
-      - 台中Hinet-dip@vpnhat 8
+      - TG频道:@kxswa|Lv3+香港+07+[2.0]
+      - TG频道:@kxswa|Lv3+台湾+02+[3.0]
+      - 台湾-SS/SSR-02-Taiwan02
+      - YouTube:全网最强白嫖
+      - 台湾-tg频道:@bpjzx2-9
+      - 台湾-SS/SSR-04-Taiwan04
+      - Cow+Vagina_1
+      - 台湾
+      - 台湾-tg频道:@bpjzx2-11
+      - 台湾-SS/SSR-06-Taiwan06
+      - 台湾-tg频道:@bpjzx2-8
+      - TG频道:@kxswa|Lv3+日本+02+IPLC
+      - +Singapore+02+[Lv1]
+      - 日本-SS/SSR-04-Japan04
+      - +Singapore+03+[Lv1]
+      - 台湾-SS/SSR-03-Taiwan03
+      - 新加坡-tg频道:@bpjzx2-4
+      - 台湾 2
+      - 台北Sky-dip
+      - +台湾02
+      - _YouTube：全网最强白嫖
+      - _YouTube：全网最强白嫖 2
+      - 台湾02
+      - AA1新加坡 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA4新加坡IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA6日本2 IPLC VIP2 网址:vvdnn.com
+      - AA新加坡1 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡2 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡5 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA新加坡4 IPLC  支持NF VIP2 网址:vvdnn.com
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台中Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 3
-      - 台北TFN-dip@vpnhat
-      - 彰化Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 4
-      - 香港EDCL@vpnhat
-      - 香港EDCL@vpnhat 2
-      - 香港EDCL@vpnhat 3
-      - 香港DMIT-dip@vpnhat
-      - 香港EDCL@vpnhat 4
-      - 香港EDCL@vpnhat 5
-      - 香港EDCL@vpnhat 6
-      - 香港EDCL@vpnhat 7
-      - 香港EDCL@vpnhat 8
-      - 香港Kirino@vpnhat
-      - 香港Kirino@vpnhat 2
-      - 台中Hinet-dip@vpnhat 5
-      - 台中Hinet-dip@vpnhat 6
-      - 彰化Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 7
-      - 香港EDCL@vpnhat 9
-      - 香港EDCL@vpnhat 10
-      - 香港EDCL@vpnhat 11
-      - 香港DMIT-dip@vpnhat 2
-      - 香港EDCL@vpnhat 12
-      - 香港EDCL@vpnhat 13
-      - 香港EDCL@vpnhat 14
-      - 香港EDCL@vpnhat 15
-      - 香港EDCL@vpnhat 16
-      - 香港Kirino@vpnhat 3
-      - 香港Kirino@vpnhat 4
-      - 台中Hinet-dip@vpnhat 8
+      - TG频道:@kxswa|Lv3+香港+07+[2.0]
+      - TG频道:@kxswa|Lv3+台湾+02+[3.0]
+      - 台湾-SS/SSR-02-Taiwan02
+      - 台湾-tg频道:@bpjzx2-9
+      - 台湾-SS/SSR-04-Taiwan04
+      - 台湾
+      - 台湾-tg频道:@bpjzx2-11
+      - 台湾-SS/SSR-06-Taiwan06
+      - 台湾-tg频道:@bpjzx2-8
+      - 台湾-SS/SSR-03-Taiwan03
+      - 台湾 2
+      - 台北Sky-dip
+      - +台湾02
+      - 台湾02
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Fremont-Linode@vpnhat
-      - Tokyo-Choopa@vpnhat
-      - Moscow-Baxet@vpnhat
-      - Makati-IPVG-dip@vpnhat
-      - Sao Paulo-Ipxo@vpnhat
-      - 台中Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 3
-      - 台北TFN-dip@vpnhat
-      - 彰化Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 4
-      - LAX-VMHaus@vpnhat
-      - LAX-VMHaus@vpnhat 2
-      - LAX-VMHaus@vpnhat 3
-      - LAX-VMHaus@vpnhat 4
-      - Fremont-Linode@vpnhat 2
-      - Fremont-Linode@vpnhat 3
-      - LAX-VMHaus@vpnhat 5
-      - LAX-VMHaus@vpnhat 6
-      - LAX-VMHaus@vpnhat 7
-      - LAX-VMHaus@vpnhat 8
-      - London-Kamatera-dip@vpnhat
-      - London-Linode@vpnhat
-      - London-Linode@vpnhat 2
-      - Amsterdam-Mythic@vpnhat
-      - Singapore-Choopa@vpnhat
-      - Singapore-Choopa@vpnhat 2
-      - Singapore-Choopa@vpnhat 3
-      - Singapore-Choopa@vpnhat 4
-      - 香港EDCL@vpnhat
-      - 香港EDCL@vpnhat 2
-      - 香港EDCL@vpnhat 3
-      - 香港DMIT-dip@vpnhat
-      - 香港EDCL@vpnhat 4
-      - 香港EDCL@vpnhat 5
-      - 香港EDCL@vpnhat 6
-      - 香港EDCL@vpnhat 7
-      - 香港EDCL@vpnhat 8
-      - 香港Kirino@vpnhat
-      - 香港Kirino@vpnhat 2
-      - Seoul-Choopa@vpnhat
-      - Seoul-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat
-      - Frankfurt-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 2
-      - Tokyo-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 4
-      - Tokyo-Choopa@vpnhat 5
-      - Tokyo-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 3
-      - Seoul-Choopa@vpnhat 4
-      - Maharashtra-Cloudflare@vpnhat
-      - Maharashtra-Cloudflare@vpnhat 2
-      - Fremont-Linode@vpnhat 4
-      - Tokyo-Choopa@vpnhat 7
-      - Moscow-Baxet@vpnhat 2
-      - Makati-IPVG-dip@vpnhat 2
-      - Sao Paulo-Ipxo@vpnhat 2
-      - Toronto-Linode@vpnhat
-      - 台中Hinet-dip@vpnhat 5
-      - 台中Hinet-dip@vpnhat 6
-      - 彰化Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 7
-      - LAX-VMHaus@vpnhat 9
-      - LAX-VMHaus@vpnhat 10
-      - LAX-VMHaus@vpnhat 11
-      - LAX-VMHaus@vpnhat 12
-      - Fremont-Linode@vpnhat 5
-      - Fremont-Linode@vpnhat 6
-      - LAX-VMHaus@vpnhat 13
-      - LAX-VMHaus@vpnhat 14
-      - LAX-VMHaus@vpnhat 15
-      - LAX-VMHaus@vpnhat 16
-      - London-Kamatera-dip@vpnhat 2
-      - London-Kamatera-dip@vpnhat 3
-      - London-Kamatera-dip@vpnhat 4
-      - London-Linode@vpnhat 3
-      - London-Linode@vpnhat 4
-      - London-Linode@vpnhat 5
-      - Amsterdam-Mythic@vpnhat 2
-      - Singapore-Choopa@vpnhat 5
-      - Singapore-Choopa@vpnhat 6
-      - Singapore-Choopa@vpnhat 7
-      - Singapore-Choopa@vpnhat 8
-      - Singapore-Choopa@vpnhat 9
-      - 香港EDCL@vpnhat 9
-      - 香港EDCL@vpnhat 10
-      - 香港EDCL@vpnhat 11
-      - 香港DMIT-dip@vpnhat 2
-      - 香港EDCL@vpnhat 12
-      - 香港EDCL@vpnhat 13
-      - 香港EDCL@vpnhat 14
-      - 香港EDCL@vpnhat 15
-      - 香港EDCL@vpnhat 16
-      - 香港Kirino@vpnhat 3
-      - 香港Kirino@vpnhat 4
-      - Seoul-Choopa@vpnhat 5
-      - Seoul-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 7
-      - Frankfurt-Choopa@vpnhat 4
-      - Frankfurt-Choopa@vpnhat 5
-      - Frankfurt-Choopa@vpnhat 6
-      - Tokyo-Choopa@vpnhat 8
-      - Tokyo-Choopa@vpnhat 9
-      - Tokyo-Choopa@vpnhat 10
-      - Tokyo-Choopa@vpnhat 11
-      - Tokyo-Choopa@vpnhat 12
-      - Seoul-Choopa@vpnhat 8
-      - Seoul-Choopa@vpnhat 9
-      - Maharashtra-Cloudflare@vpnhat 3
-      - Maharashtra-Cloudflare@vpnhat 4
-      - London-Kamatera-dip@vpnhat 5
-      - London-Linode@vpnhat 6
-      - Singapore-Choopa@vpnhat 10
-      - Seoul-Choopa@vpnhat 10
-      - 台中Hinet-dip@vpnhat 8
+      - TG频道:@kxswa|Lv3+香港+07+[2.0]
+      - TG频道:@kxswa|Lv3+台湾+02+[3.0]
+      - 台湾-SS/SSR-02-Taiwan02
+      - YouTube:全网最强白嫖
+      - 台湾-tg频道:@bpjzx2-9
+      - 台湾-SS/SSR-04-Taiwan04
+      - Cow+Vagina_1
+      - 台湾
+      - 台湾-tg频道:@bpjzx2-11
+      - 台湾-SS/SSR-06-Taiwan06
+      - 台湾-tg频道:@bpjzx2-8
+      - TG频道:@kxswa|Lv3+日本+02+IPLC
+      - +Singapore+02+[Lv1]
+      - 日本-SS/SSR-04-Japan04
+      - +Singapore+03+[Lv1]
+      - 台湾-SS/SSR-03-Taiwan03
+      - 新加坡-tg频道:@bpjzx2-4
+      - 台湾 2
+      - 台北Sky-dip
+      - +台湾02
+      - _YouTube：全网最强白嫖
+      - _YouTube：全网最强白嫖 2
+      - 台湾02
+      - AA1新加坡 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA4新加坡IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA6日本2 IPLC VIP2 网址:vvdnn.com
+      - AA新加坡1 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡2 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡5 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA新加坡4 IPLC  支持NF VIP2 网址:vvdnn.com
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Fremont-Linode@vpnhat
-      - Tokyo-Choopa@vpnhat
-      - Moscow-Baxet@vpnhat
-      - Makati-IPVG-dip@vpnhat
-      - Sao Paulo-Ipxo@vpnhat
-      - 台中Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 3
-      - 台北TFN-dip@vpnhat
-      - 彰化Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 4
-      - LAX-VMHaus@vpnhat
-      - LAX-VMHaus@vpnhat 2
-      - LAX-VMHaus@vpnhat 3
-      - LAX-VMHaus@vpnhat 4
-      - Fremont-Linode@vpnhat 2
-      - Fremont-Linode@vpnhat 3
-      - LAX-VMHaus@vpnhat 5
-      - LAX-VMHaus@vpnhat 6
-      - LAX-VMHaus@vpnhat 7
-      - LAX-VMHaus@vpnhat 8
-      - London-Kamatera-dip@vpnhat
-      - London-Linode@vpnhat
-      - London-Linode@vpnhat 2
-      - Amsterdam-Mythic@vpnhat
-      - Singapore-Choopa@vpnhat
-      - Singapore-Choopa@vpnhat 2
-      - Singapore-Choopa@vpnhat 3
-      - Singapore-Choopa@vpnhat 4
-      - 香港EDCL@vpnhat
-      - 香港EDCL@vpnhat 2
-      - 香港EDCL@vpnhat 3
-      - 香港DMIT-dip@vpnhat
-      - 香港EDCL@vpnhat 4
-      - 香港EDCL@vpnhat 5
-      - 香港EDCL@vpnhat 6
-      - 香港EDCL@vpnhat 7
-      - 香港EDCL@vpnhat 8
-      - 香港Kirino@vpnhat
-      - 香港Kirino@vpnhat 2
-      - Seoul-Choopa@vpnhat
-      - Seoul-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat
-      - Frankfurt-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 2
-      - Tokyo-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 4
-      - Tokyo-Choopa@vpnhat 5
-      - Tokyo-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 3
-      - Seoul-Choopa@vpnhat 4
-      - Maharashtra-Cloudflare@vpnhat
-      - Maharashtra-Cloudflare@vpnhat 2
-      - Fremont-Linode@vpnhat 4
-      - Tokyo-Choopa@vpnhat 7
-      - Moscow-Baxet@vpnhat 2
-      - Makati-IPVG-dip@vpnhat 2
-      - Sao Paulo-Ipxo@vpnhat 2
-      - Toronto-Linode@vpnhat
-      - 台中Hinet-dip@vpnhat 5
-      - 台中Hinet-dip@vpnhat 6
-      - 彰化Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 7
-      - LAX-VMHaus@vpnhat 9
-      - LAX-VMHaus@vpnhat 10
-      - LAX-VMHaus@vpnhat 11
-      - LAX-VMHaus@vpnhat 12
-      - Fremont-Linode@vpnhat 5
-      - Fremont-Linode@vpnhat 6
-      - LAX-VMHaus@vpnhat 13
-      - LAX-VMHaus@vpnhat 14
-      - LAX-VMHaus@vpnhat 15
-      - LAX-VMHaus@vpnhat 16
-      - London-Kamatera-dip@vpnhat 2
-      - London-Kamatera-dip@vpnhat 3
-      - London-Kamatera-dip@vpnhat 4
-      - London-Linode@vpnhat 3
-      - London-Linode@vpnhat 4
-      - London-Linode@vpnhat 5
-      - Amsterdam-Mythic@vpnhat 2
-      - Singapore-Choopa@vpnhat 5
-      - Singapore-Choopa@vpnhat 6
-      - Singapore-Choopa@vpnhat 7
-      - Singapore-Choopa@vpnhat 8
-      - Singapore-Choopa@vpnhat 9
-      - 香港EDCL@vpnhat 9
-      - 香港EDCL@vpnhat 10
-      - 香港EDCL@vpnhat 11
-      - 香港DMIT-dip@vpnhat 2
-      - 香港EDCL@vpnhat 12
-      - 香港EDCL@vpnhat 13
-      - 香港EDCL@vpnhat 14
-      - 香港EDCL@vpnhat 15
-      - 香港EDCL@vpnhat 16
-      - 香港Kirino@vpnhat 3
-      - 香港Kirino@vpnhat 4
-      - Seoul-Choopa@vpnhat 5
-      - Seoul-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 7
-      - Frankfurt-Choopa@vpnhat 4
-      - Frankfurt-Choopa@vpnhat 5
-      - Frankfurt-Choopa@vpnhat 6
-      - Tokyo-Choopa@vpnhat 8
-      - Tokyo-Choopa@vpnhat 9
-      - Tokyo-Choopa@vpnhat 10
-      - Tokyo-Choopa@vpnhat 11
-      - Tokyo-Choopa@vpnhat 12
-      - Seoul-Choopa@vpnhat 8
-      - Seoul-Choopa@vpnhat 9
-      - Maharashtra-Cloudflare@vpnhat 3
-      - Maharashtra-Cloudflare@vpnhat 4
-      - London-Kamatera-dip@vpnhat 5
-      - London-Linode@vpnhat 6
-      - Singapore-Choopa@vpnhat 10
-      - Seoul-Choopa@vpnhat 10
-      - 台中Hinet-dip@vpnhat 8
+      - TG频道:@kxswa|Lv3+香港+07+[2.0]
+      - TG频道:@kxswa|Lv3+台湾+02+[3.0]
+      - 台湾-SS/SSR-02-Taiwan02
+      - YouTube:全网最强白嫖
+      - 台湾-tg频道:@bpjzx2-9
+      - 台湾-SS/SSR-04-Taiwan04
+      - Cow+Vagina_1
+      - 台湾
+      - 台湾-tg频道:@bpjzx2-11
+      - 台湾-SS/SSR-06-Taiwan06
+      - 台湾-tg频道:@bpjzx2-8
+      - TG频道:@kxswa|Lv3+日本+02+IPLC
+      - +Singapore+02+[Lv1]
+      - 日本-SS/SSR-04-Japan04
+      - +Singapore+03+[Lv1]
+      - 台湾-SS/SSR-03-Taiwan03
+      - 新加坡-tg频道:@bpjzx2-4
+      - 台湾 2
+      - 台北Sky-dip
+      - +台湾02
+      - _YouTube：全网最强白嫖
+      - _YouTube：全网最强白嫖 2
+      - 台湾02
+      - AA1新加坡 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA4新加坡IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA6日本2 IPLC VIP2 网址:vvdnn.com
+      - AA新加坡1 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡2 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡5 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA新加坡4 IPLC  支持NF VIP2 网址:vvdnn.com
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Fremont-Linode@vpnhat
-      - Tokyo-Choopa@vpnhat
-      - Moscow-Baxet@vpnhat
-      - Makati-IPVG-dip@vpnhat
-      - Sao Paulo-Ipxo@vpnhat
-      - 台中Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 3
-      - 台北TFN-dip@vpnhat
-      - 彰化Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 4
-      - LAX-VMHaus@vpnhat
-      - LAX-VMHaus@vpnhat 2
-      - LAX-VMHaus@vpnhat 3
-      - LAX-VMHaus@vpnhat 4
-      - Fremont-Linode@vpnhat 2
-      - Fremont-Linode@vpnhat 3
-      - LAX-VMHaus@vpnhat 5
-      - LAX-VMHaus@vpnhat 6
-      - LAX-VMHaus@vpnhat 7
-      - LAX-VMHaus@vpnhat 8
-      - London-Kamatera-dip@vpnhat
-      - London-Linode@vpnhat
-      - London-Linode@vpnhat 2
-      - Amsterdam-Mythic@vpnhat
-      - Singapore-Choopa@vpnhat
-      - Singapore-Choopa@vpnhat 2
-      - Singapore-Choopa@vpnhat 3
-      - Singapore-Choopa@vpnhat 4
-      - 香港EDCL@vpnhat
-      - 香港EDCL@vpnhat 2
-      - 香港EDCL@vpnhat 3
-      - 香港DMIT-dip@vpnhat
-      - 香港EDCL@vpnhat 4
-      - 香港EDCL@vpnhat 5
-      - 香港EDCL@vpnhat 6
-      - 香港EDCL@vpnhat 7
-      - 香港EDCL@vpnhat 8
-      - 香港Kirino@vpnhat
-      - 香港Kirino@vpnhat 2
-      - Seoul-Choopa@vpnhat
-      - Seoul-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat
-      - Frankfurt-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 2
-      - Tokyo-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 4
-      - Tokyo-Choopa@vpnhat 5
-      - Tokyo-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 3
-      - Seoul-Choopa@vpnhat 4
-      - Maharashtra-Cloudflare@vpnhat
-      - Maharashtra-Cloudflare@vpnhat 2
-      - Fremont-Linode@vpnhat 4
-      - Tokyo-Choopa@vpnhat 7
-      - Moscow-Baxet@vpnhat 2
-      - Makati-IPVG-dip@vpnhat 2
-      - Sao Paulo-Ipxo@vpnhat 2
-      - Toronto-Linode@vpnhat
-      - 台中Hinet-dip@vpnhat 5
-      - 台中Hinet-dip@vpnhat 6
-      - 彰化Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 7
-      - LAX-VMHaus@vpnhat 9
-      - LAX-VMHaus@vpnhat 10
-      - LAX-VMHaus@vpnhat 11
-      - LAX-VMHaus@vpnhat 12
-      - Fremont-Linode@vpnhat 5
-      - Fremont-Linode@vpnhat 6
-      - LAX-VMHaus@vpnhat 13
-      - LAX-VMHaus@vpnhat 14
-      - LAX-VMHaus@vpnhat 15
-      - LAX-VMHaus@vpnhat 16
-      - London-Kamatera-dip@vpnhat 2
-      - London-Kamatera-dip@vpnhat 3
-      - London-Kamatera-dip@vpnhat 4
-      - London-Linode@vpnhat 3
-      - London-Linode@vpnhat 4
-      - London-Linode@vpnhat 5
-      - Amsterdam-Mythic@vpnhat 2
-      - Singapore-Choopa@vpnhat 5
-      - Singapore-Choopa@vpnhat 6
-      - Singapore-Choopa@vpnhat 7
-      - Singapore-Choopa@vpnhat 8
-      - Singapore-Choopa@vpnhat 9
-      - 香港EDCL@vpnhat 9
-      - 香港EDCL@vpnhat 10
-      - 香港EDCL@vpnhat 11
-      - 香港DMIT-dip@vpnhat 2
-      - 香港EDCL@vpnhat 12
-      - 香港EDCL@vpnhat 13
-      - 香港EDCL@vpnhat 14
-      - 香港EDCL@vpnhat 15
-      - 香港EDCL@vpnhat 16
-      - 香港Kirino@vpnhat 3
-      - 香港Kirino@vpnhat 4
-      - Seoul-Choopa@vpnhat 5
-      - Seoul-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 7
-      - Frankfurt-Choopa@vpnhat 4
-      - Frankfurt-Choopa@vpnhat 5
-      - Frankfurt-Choopa@vpnhat 6
-      - Tokyo-Choopa@vpnhat 8
-      - Tokyo-Choopa@vpnhat 9
-      - Tokyo-Choopa@vpnhat 10
-      - Tokyo-Choopa@vpnhat 11
-      - Tokyo-Choopa@vpnhat 12
-      - Seoul-Choopa@vpnhat 8
-      - Seoul-Choopa@vpnhat 9
-      - Maharashtra-Cloudflare@vpnhat 3
-      - Maharashtra-Cloudflare@vpnhat 4
-      - London-Kamatera-dip@vpnhat 5
-      - London-Linode@vpnhat 6
-      - Singapore-Choopa@vpnhat 10
-      - Seoul-Choopa@vpnhat 10
-      - 台中Hinet-dip@vpnhat 8
+      - TG频道:@kxswa|Lv3+香港+07+[2.0]
+      - TG频道:@kxswa|Lv3+台湾+02+[3.0]
+      - 台湾-SS/SSR-02-Taiwan02
+      - YouTube:全网最强白嫖
+      - 台湾-tg频道:@bpjzx2-9
+      - 台湾-SS/SSR-04-Taiwan04
+      - Cow+Vagina_1
+      - 台湾
+      - 台湾-tg频道:@bpjzx2-11
+      - 台湾-SS/SSR-06-Taiwan06
+      - 台湾-tg频道:@bpjzx2-8
+      - TG频道:@kxswa|Lv3+日本+02+IPLC
+      - +Singapore+02+[Lv1]
+      - 日本-SS/SSR-04-Japan04
+      - +Singapore+03+[Lv1]
+      - 台湾-SS/SSR-03-Taiwan03
+      - 新加坡-tg频道:@bpjzx2-4
+      - 台湾 2
+      - 台北Sky-dip
+      - +台湾02
+      - _YouTube：全网最强白嫖
+      - _YouTube：全网最强白嫖 2
+      - 台湾02
+      - AA1新加坡 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA4新加坡IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA6日本2 IPLC VIP2 网址:vvdnn.com
+      - AA新加坡1 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡2 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡5 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA新加坡4 IPLC  支持NF VIP2 网址:vvdnn.com
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1045,123 +330,36 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Fremont-Linode@vpnhat
-      - Tokyo-Choopa@vpnhat
-      - Moscow-Baxet@vpnhat
-      - Makati-IPVG-dip@vpnhat
-      - Sao Paulo-Ipxo@vpnhat
-      - 台中Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 3
-      - 台北TFN-dip@vpnhat
-      - 彰化Hinet-dip@vpnhat
-      - 台中Hinet-dip@vpnhat 4
-      - LAX-VMHaus@vpnhat
-      - LAX-VMHaus@vpnhat 2
-      - LAX-VMHaus@vpnhat 3
-      - LAX-VMHaus@vpnhat 4
-      - Fremont-Linode@vpnhat 2
-      - Fremont-Linode@vpnhat 3
-      - LAX-VMHaus@vpnhat 5
-      - LAX-VMHaus@vpnhat 6
-      - LAX-VMHaus@vpnhat 7
-      - LAX-VMHaus@vpnhat 8
-      - London-Kamatera-dip@vpnhat
-      - London-Linode@vpnhat
-      - London-Linode@vpnhat 2
-      - Amsterdam-Mythic@vpnhat
-      - Singapore-Choopa@vpnhat
-      - Singapore-Choopa@vpnhat 2
-      - Singapore-Choopa@vpnhat 3
-      - Singapore-Choopa@vpnhat 4
-      - 香港EDCL@vpnhat
-      - 香港EDCL@vpnhat 2
-      - 香港EDCL@vpnhat 3
-      - 香港DMIT-dip@vpnhat
-      - 香港EDCL@vpnhat 4
-      - 香港EDCL@vpnhat 5
-      - 香港EDCL@vpnhat 6
-      - 香港EDCL@vpnhat 7
-      - 香港EDCL@vpnhat 8
-      - 香港Kirino@vpnhat
-      - 香港Kirino@vpnhat 2
-      - Seoul-Choopa@vpnhat
-      - Seoul-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat
-      - Frankfurt-Choopa@vpnhat 2
-      - Frankfurt-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 2
-      - Tokyo-Choopa@vpnhat 3
-      - Tokyo-Choopa@vpnhat 4
-      - Tokyo-Choopa@vpnhat 5
-      - Tokyo-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 3
-      - Seoul-Choopa@vpnhat 4
-      - Maharashtra-Cloudflare@vpnhat
-      - Maharashtra-Cloudflare@vpnhat 2
-      - Fremont-Linode@vpnhat 4
-      - Tokyo-Choopa@vpnhat 7
-      - Moscow-Baxet@vpnhat 2
-      - Makati-IPVG-dip@vpnhat 2
-      - Sao Paulo-Ipxo@vpnhat 2
-      - Toronto-Linode@vpnhat
-      - 台中Hinet-dip@vpnhat 5
-      - 台中Hinet-dip@vpnhat 6
-      - 彰化Hinet-dip@vpnhat 2
-      - 台中Hinet-dip@vpnhat 7
-      - LAX-VMHaus@vpnhat 9
-      - LAX-VMHaus@vpnhat 10
-      - LAX-VMHaus@vpnhat 11
-      - LAX-VMHaus@vpnhat 12
-      - Fremont-Linode@vpnhat 5
-      - Fremont-Linode@vpnhat 6
-      - LAX-VMHaus@vpnhat 13
-      - LAX-VMHaus@vpnhat 14
-      - LAX-VMHaus@vpnhat 15
-      - LAX-VMHaus@vpnhat 16
-      - London-Kamatera-dip@vpnhat 2
-      - London-Kamatera-dip@vpnhat 3
-      - London-Kamatera-dip@vpnhat 4
-      - London-Linode@vpnhat 3
-      - London-Linode@vpnhat 4
-      - London-Linode@vpnhat 5
-      - Amsterdam-Mythic@vpnhat 2
-      - Singapore-Choopa@vpnhat 5
-      - Singapore-Choopa@vpnhat 6
-      - Singapore-Choopa@vpnhat 7
-      - Singapore-Choopa@vpnhat 8
-      - Singapore-Choopa@vpnhat 9
-      - 香港EDCL@vpnhat 9
-      - 香港EDCL@vpnhat 10
-      - 香港EDCL@vpnhat 11
-      - 香港DMIT-dip@vpnhat 2
-      - 香港EDCL@vpnhat 12
-      - 香港EDCL@vpnhat 13
-      - 香港EDCL@vpnhat 14
-      - 香港EDCL@vpnhat 15
-      - 香港EDCL@vpnhat 16
-      - 香港Kirino@vpnhat 3
-      - 香港Kirino@vpnhat 4
-      - Seoul-Choopa@vpnhat 5
-      - Seoul-Choopa@vpnhat 6
-      - Seoul-Choopa@vpnhat 7
-      - Frankfurt-Choopa@vpnhat 4
-      - Frankfurt-Choopa@vpnhat 5
-      - Frankfurt-Choopa@vpnhat 6
-      - Tokyo-Choopa@vpnhat 8
-      - Tokyo-Choopa@vpnhat 9
-      - Tokyo-Choopa@vpnhat 10
-      - Tokyo-Choopa@vpnhat 11
-      - Tokyo-Choopa@vpnhat 12
-      - Seoul-Choopa@vpnhat 8
-      - Seoul-Choopa@vpnhat 9
-      - Maharashtra-Cloudflare@vpnhat 3
-      - Maharashtra-Cloudflare@vpnhat 4
-      - London-Kamatera-dip@vpnhat 5
-      - London-Linode@vpnhat 6
-      - Singapore-Choopa@vpnhat 10
-      - Seoul-Choopa@vpnhat 10
-      - 台中Hinet-dip@vpnhat 8
+      - TG频道:@kxswa|Lv3+香港+07+[2.0]
+      - TG频道:@kxswa|Lv3+台湾+02+[3.0]
+      - 台湾-SS/SSR-02-Taiwan02
+      - YouTube:全网最强白嫖
+      - 台湾-tg频道:@bpjzx2-9
+      - 台湾-SS/SSR-04-Taiwan04
+      - Cow+Vagina_1
+      - 台湾
+      - 台湾-tg频道:@bpjzx2-11
+      - 台湾-SS/SSR-06-Taiwan06
+      - 台湾-tg频道:@bpjzx2-8
+      - TG频道:@kxswa|Lv3+日本+02+IPLC
+      - +Singapore+02+[Lv1]
+      - 日本-SS/SSR-04-Japan04
+      - +Singapore+03+[Lv1]
+      - 台湾-SS/SSR-03-Taiwan03
+      - 新加坡-tg频道:@bpjzx2-4
+      - 台湾 2
+      - 台北Sky-dip
+      - +台湾02
+      - _YouTube：全网最强白嫖
+      - _YouTube：全网最强白嫖 2
+      - 台湾02
+      - AA1新加坡 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA4新加坡IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA6日本2 IPLC VIP2 网址:vvdnn.com
+      - AA新加坡1 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡2 IPLC  支持NF VIP2 网址:vvdnn.com
+      - AA新加坡5 IPLC 支持NF VIP2 网址:vvdnn.com
+      - AA新加坡4 IPLC  支持NF VIP2 网址:vvdnn.com
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
