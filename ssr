@@ -1,119 +1,98 @@
-port: 7890
-socks-port: 7891
+mixed-port: 7890
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: :9090
+external-controller: 0.0.0.0:9090
 proxies:
-  - {name: 台湾, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: Cow+Vagina_1, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 台湾 2, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 台北Sky-dip, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: YouTube:全网最强白嫖, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twd1000tw001.fengchiline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: +台湾02, server: dx15.jicojs.com, port: 443, type: ss, cipher: aes-256-gcm, password: 46c027d028b4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx15.jicojs.com, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 台湾02, server: dx15.jicojs.com, port: 443, type: ss, cipher: aes-256-gcm, password: 46c027d028b4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx15.jicojs.com, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 不限速千兆-tw1115, server: fn600mlines008.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fc568c325d09, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 油管-aweikeji, server: fn600mlines008.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fc568c325d09, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 油管-阿伟科技+17, server: fn600mlines020.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5dac918f6134, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines020.fnline.info, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 油管-aweikeji 2, server: fn600mliness010.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ee3dfbbe3dca, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness010.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: TW+1+|+@Airproxies, server: fn600mliness013.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1b584982dbdc, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness013.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 不限速千兆-tw247, server: fn600mliness017.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _YouTube：全网最强白嫖, server: fn600mliness017.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _YouTube：全网最强白嫖 2, server: fndx600mtwline010tr.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: d0760c7c21f8, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndx600mtwline010tr.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: "[vmess]🇨🇳[CN]s1.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)", server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[vmess]🇨🇳[CN]s2.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)", server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: -中国-_-358, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 油管-阿伟科技+12, server: fn600mliness017.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 华北, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港|23|奈飞广港移动隧道2x, server: gy2.zfnode.org, port: 12356, type: trojan, password: 42bdcc51-61aa-43f6-84bf-71dca806b32c, sni: gy2.zfnode.org, skip-cert-verify: true, udp: true}
-  - {name: 台湾|04奈飞香港中转, server: sz.gilsfe.cn, port: 11233, type: trojan, password: 42bdcc51-61aa-43f6-84bf-71dca806b32c, sni: sz.gilsfe.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港|17广港联通隧道2x, server: sz.gilsfe.cn, port: 23468, type: trojan, password: 42bdcc51-61aa-43f6-84bf-71dca806b32c, sni: sz.gilsfe.cn, skip-cert-verify: true, udp: true}
+  - {"type":"http","name":"YouTube梦歌_16","server":"h3816tw.strongpipe.live","port":20443,"username":"dcf12c7e7d","password":"26bae9b023","tls":true,"skip-cert-verify":true,"udp":true}
+  - {"type":"http","name":"YouTube梦歌_17","server":"h3816tw.strongpipe.live","port":20444,"username":"dcf12c7e7d","password":"26bae9b023","tls":true,"skip-cert-verify":true,"udp":true}
+  - {"type":"http","name":"YouTube梦歌_18","server":"h3816tw.strongpipe.live","port":20445,"username":"dcf12c7e7d","password":"26bae9b023","tls":true,"skip-cert-verify":true,"udp":true}
+  - {"type":"http","name":"YouTube梦歌_19","server":"h3816tw.strongpipe.live","port":20446,"username":"dcf12c7e7d","password":"26bae9b023","tls":true,"skip-cert-verify":true,"udp":true}
+  - {"type":"http","name":"YouTube梦歌_20","server":"h3816tw.strongpipe.live","port":20447,"username":"dcf12c7e7d","password":"26bae9b023","tls":true,"skip-cert-verify":true,"udp":true}
+  - {"type":"http","name":"YouTube梦歌_21","server":"h3816tw.strongpipe.live","port":20448,"username":"dcf12c7e7d","password":"26bae9b023","tls":true,"skip-cert-verify":true,"udp":true}
+  - {"type":"http","name":"YouTube梦歌_22","server":"h3816tw.strongpipe.live","port":20449,"username":"dcf12c7e7d","password":"26bae9b023","tls":true,"skip-cert-verify":true,"udp":true}
+  - {name: DE 7, server: ty1-2.nigirocloud.com, port: 443, type: trojan, password: 4V4kxVXmcg5Yn2DqF2, sni: ty1-2.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: IT 8, server: cmlinec1.langtg.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2634:vFr9Fx23xZR(1), obfs-param: "", udp: true}
+  - {name: CN 14, server: specialcunicom.jjrlrn.com, port: 20520, type: ssr, cipher: chacha20-ietf, password: download.microso, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 10638:CznkVG, obfs-param: 7cd8910638.download.microsoft.com, udp: true}
+  - {name: HK 16, server: 103.103.245.125, port: 50350, type: trojan, password: 006bca8c-4e1f-44e0-9399-1cd4ff480a40, skip-cert-verify: true, udp: true}
+  - {name: KR 23, server: jk.jkk.mkitty.top, port: 443, type: trojan, password: 71354f48-e8c8-4c4c-a967-47d7ac5e953c, sni: jk.jkk.mkitty.top, skip-cert-verify: true, udp: true}
+  - {name: CN 24, server: moblev3.mipglxi.cn, port: 6612, type: ss, cipher: aes-128-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: CN 25, server: moblev3.mipglxi.cn, port: 6610, type: ss, cipher: aes-128-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: SG 27, server: simpang.freetrade.link, port: 443, type: trojan, password: XEyN0OZ28xxCDO7C83DeAa3YcSjYKTgFA5n9IRpFwuB3qSz4aZClSapy3eRl6D, sni: simpang.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: SG 29, server: mei.usdeth.top, port: 443, type: trojan, password: 71354f48-e8c8-4c4c-a967-47d7ac5e953c, sni: mei.usdeth.top, skip-cert-verify: true, udp: true}
+  - {name: CN 30, server: moblev3.mipglxi.cn, port: 6614, type: ss, cipher: aes-128-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: SG 32, server: 93hk02.tfzhc.top, port: 443, type: trojan, password: d09d2305-24db-43c4-b309-0e1d2737329f, sni: 93hk02.tfzhc.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾
-      - Cow+Vagina_1
-      - 台湾 2
-      - 台北Sky-dip
-      - YouTube:全网最强白嫖
-      - +台湾02
-      - 台湾02
-      - 不限速千兆-tw1115
-      - 油管-aweikeji
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "[vmess]🇨🇳[CN]s1.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - "[vmess]🇨🇳[CN]s2.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - -中国-_-358
-      - 油管-阿伟科技+12
-      - 华北
-      - 香港|23|奈飞广港移动隧道2x
-      - 台湾|04奈飞香港中转
-      - 香港|17广港联通隧道2x
+      - YouTube梦歌_16
+      - YouTube梦歌_17
+      - YouTube梦歌_18
+      - YouTube梦歌_19
+      - YouTube梦歌_20
+      - YouTube梦歌_21
+      - YouTube梦歌_22
+      - DE 7
+      - IT 8
+      - CN 14
+      - HK 16
+      - KR 23
+      - CN 24
+      - CN 25
+      - SG 27
+      - SG 29
+      - CN 30
+      - SG 32
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 台湾
-      - Cow+Vagina_1
-      - 台湾 2
-      - 台北Sky-dip
-      - YouTube:全网最强白嫖
-      - +台湾02
-      - 台湾02
-      - 不限速千兆-tw1115
-      - 油管-aweikeji
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "[vmess]🇨🇳[CN]s1.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - "[vmess]🇨🇳[CN]s2.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - -中国-_-358
-      - 油管-阿伟科技+12
-      - 华北
-      - 香港|23|奈飞广港移动隧道2x
-      - 台湾|04奈飞香港中转
-      - 香港|17广港联通隧道2x
+      - YouTube梦歌_16
+      - YouTube梦歌_17
+      - YouTube梦歌_18
+      - YouTube梦歌_19
+      - YouTube梦歌_20
+      - YouTube梦歌_21
+      - YouTube梦歌_22
+      - DE 7
+      - IT 8
+      - CN 14
+      - HK 16
+      - KR 23
+      - CN 24
+      - CN 25
+      - SG 27
+      - SG 29
+      - CN 30
+      - SG 32
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾
-      - Cow+Vagina_1
-      - 台湾 2
-      - 台北Sky-dip
-      - YouTube:全网最强白嫖
-      - +台湾02
-      - 台湾02
-      - 不限速千兆-tw1115
-      - 油管-aweikeji
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "[vmess]🇨🇳[CN]s1.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - "[vmess]🇨🇳[CN]s2.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - -中国-_-358
-      - 油管-阿伟科技+12
-      - 华北
-      - 香港|23|奈飞广港移动隧道2x
-      - 台湾|04奈飞香港中转
-      - 香港|17广港联通隧道2x
+      - YouTube梦歌_16
+      - YouTube梦歌_17
+      - YouTube梦歌_18
+      - YouTube梦歌_19
+      - YouTube梦歌_20
+      - YouTube梦歌_21
+      - YouTube梦歌_22
+      - DE 7
+      - IT 8
+      - CN 14
+      - HK 16
+      - KR 23
+      - CN 24
+      - CN 25
+      - SG 27
+      - SG 29
+      - CN 30
+      - SG 32
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -132,129 +111,99 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾
-      - Cow+Vagina_1
-      - 台湾 2
-      - 台北Sky-dip
-      - YouTube:全网最强白嫖
-      - +台湾02
-      - 台湾02
-      - 不限速千兆-tw1115
-      - 油管-aweikeji
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "[vmess]🇨🇳[CN]s1.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - "[vmess]🇨🇳[CN]s2.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - -中国-_-358
-      - 油管-阿伟科技+12
-      - 华北
-      - 香港|23|奈飞广港移动隧道2x
-      - 台湾|04奈飞香港中转
-      - 香港|17广港联通隧道2x
+      - YouTube梦歌_16
+      - YouTube梦歌_17
+      - YouTube梦歌_18
+      - YouTube梦歌_19
+      - YouTube梦歌_20
+      - YouTube梦歌_21
+      - YouTube梦歌_22
+      - DE 7
+      - IT 8
+      - CN 14
+      - HK 16
+      - KR 23
+      - CN 24
+      - CN 25
+      - SG 27
+      - SG 29
+      - CN 30
+      - SG 32
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾
-      - 台湾 2
-      - 台北Sky-dip
-      - +台湾02
-      - 台湾02
-      - 不限速千兆-tw1115
-      - 不限速千兆-tw247
-      - 香港|23|奈飞广港移动隧道2x
-      - 台湾|04奈飞香港中转
-      - 香港|17广港联通隧道2x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台湾
-      - Cow+Vagina_1
-      - 台湾 2
-      - 台北Sky-dip
-      - YouTube:全网最强白嫖
-      - +台湾02
-      - 台湾02
-      - 不限速千兆-tw1115
-      - 油管-aweikeji
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "[vmess]🇨🇳[CN]s1.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - "[vmess]🇨🇳[CN]s2.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - -中国-_-358
-      - 油管-阿伟科技+12
-      - 华北
-      - 香港|23|奈飞广港移动隧道2x
-      - 台湾|04奈飞香港中转
-      - 香港|17广港联通隧道2x
+      - YouTube梦歌_16
+      - YouTube梦歌_17
+      - YouTube梦歌_18
+      - YouTube梦歌_19
+      - YouTube梦歌_20
+      - YouTube梦歌_21
+      - YouTube梦歌_22
+      - DE 7
+      - IT 8
+      - CN 14
+      - HK 16
+      - KR 23
+      - CN 24
+      - CN 25
+      - SG 27
+      - SG 29
+      - CN 30
+      - SG 32
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 台湾
-      - Cow+Vagina_1
-      - 台湾 2
-      - 台北Sky-dip
-      - YouTube:全网最强白嫖
-      - +台湾02
-      - 台湾02
-      - 不限速千兆-tw1115
-      - 油管-aweikeji
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "[vmess]🇨🇳[CN]s1.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - "[vmess]🇨🇳[CN]s2.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - -中国-_-358
-      - 油管-阿伟科技+12
-      - 华北
-      - 香港|23|奈飞广港移动隧道2x
-      - 台湾|04奈飞香港中转
-      - 香港|17广港联通隧道2x
+      - YouTube梦歌_16
+      - YouTube梦歌_17
+      - YouTube梦歌_18
+      - YouTube梦歌_19
+      - YouTube梦歌_20
+      - YouTube梦歌_21
+      - YouTube梦歌_22
+      - DE 7
+      - IT 8
+      - CN 14
+      - HK 16
+      - KR 23
+      - CN 24
+      - CN 25
+      - SG 27
+      - SG 29
+      - CN 30
+      - SG 32
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾
-      - Cow+Vagina_1
-      - 台湾 2
-      - 台北Sky-dip
-      - YouTube:全网最强白嫖
-      - +台湾02
-      - 台湾02
-      - 不限速千兆-tw1115
-      - 油管-aweikeji
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "[vmess]🇨🇳[CN]s1.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - "[vmess]🇨🇳[CN]s2.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - -中国-_-358
-      - 油管-阿伟科技+12
-      - 华北
-      - 香港|23|奈飞广港移动隧道2x
-      - 台湾|04奈飞香港中转
-      - 香港|17广港联通隧道2x
+      - YouTube梦歌_16
+      - YouTube梦歌_17
+      - YouTube梦歌_18
+      - YouTube梦歌_19
+      - YouTube梦歌_20
+      - YouTube梦歌_21
+      - YouTube梦歌_22
+      - DE 7
+      - IT 8
+      - CN 14
+      - HK 16
+      - KR 23
+      - CN 24
+      - CN 25
+      - SG 27
+      - SG 29
+      - CN 30
+      - SG 32
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -270,29 +219,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾
-      - Cow+Vagina_1
-      - 台湾 2
-      - 台北Sky-dip
-      - YouTube:全网最强白嫖
-      - +台湾02
-      - 台湾02
-      - 不限速千兆-tw1115
-      - 油管-aweikeji
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - "[vmess]🇨🇳[CN]s1.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - "[vmess]🇨🇳[CN]s2.mine.com.cn:4433(77a286f4-0a0b-4ef7-aaef-a4fff60872e9)"
-      - -中国-_-358
-      - 油管-阿伟科技+12
-      - 华北
-      - 香港|23|奈飞广港移动隧道2x
-      - 台湾|04奈飞香港中转
-      - 香港|17广港联通隧道2x
+      - YouTube梦歌_16
+      - YouTube梦歌_17
+      - YouTube梦歌_18
+      - YouTube梦歌_19
+      - YouTube梦歌_20
+      - YouTube梦歌_21
+      - YouTube梦歌_22
+      - DE 7
+      - IT 8
+      - CN 14
+      - HK 16
+      - KR 23
+      - CN 24
+      - CN 25
+      - SG 27
+      - SG 29
+      - CN 30
+      - SG 32
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
