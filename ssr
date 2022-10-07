@@ -5,175 +5,123 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP+14+TG:@nodpai+(Beta), server: fn600mliness010.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ee3dfbbe3dca, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness010.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: JP+24+TG:@nodpai+(Beta), server: fn600mlines008.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fc568c325d09, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 新加坡 B/01 x1.0, server: 117.164.185.220, port: 61001, type: trojan, password: ec3d404b-e7de-44d7-a646-c6b52bdb148c, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0🇨🇳33, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0🇨🇳41, server: 121.41.86.94, port: 1, type: vmess, uuid: 3781e552-2d72-40e4-dc1f-f06e10c8c1fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0|中国_3, server: 121.41.86.94, port: 5674, type: vmess, uuid: 79ce0633-5bc1-44ab-a47c-119916f2901d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 121.41.86.94}, udp: true}
-  - {name: TG@hkaa0|中国_8, server: 14.29.124.174, port: 11019, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: TG频道https://t.me/iosfulishare 香港 IEPL/02 x3.0, server: 117.164.185.222, port: 21002, type: trojan, password: ded86ba8-2e5d-4794-8b35-b967e59497bf, skip-cert-verify: true, udp: true}
-  - {name: "️PapaLaozi\n139", server: fn600mlines008.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fc568c325d09, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 欢迎加入https://t.me/go2sharing 174, server: 175.178.163.153, port: 443, type: vmess, uuid: a0beed23-9e05-49c9-85f7-bdcf360a3a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: TG@hkaa0🇨🇳33 2, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0🇨🇳33 3, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国-tg频道:@bpjzx2-6, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【YouTube-由零開始】 2, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 油管-aweikeji, server: fn600mlines008.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fc568c325d09, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 中国【YouTube-由零開始】, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国【YouTube-由零開始】 3, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0|中国_2, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 不限速千兆-tw2110, server: fn600mliness019.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 61f301daaf4e, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness019.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: +台湾02, server: dx15.jicojs.com, port: 443, type: ss, cipher: aes-256-gcm, password: 46c027d028b4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx15.jicojs.com, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 台湾02, server: dx15.jicojs.com, port: 443, type: ss, cipher: aes-256-gcm, password: 46c027d028b4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx15.jicojs.com, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 油管-阿伟科技+17, server: fn600mlines020.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5dac918f6134, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines020.fnline.info, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 油管-aweikeji 2, server: fn600mliness010.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ee3dfbbe3dca, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness010.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: TW+1+|+@Airproxies, server: fn600mliness013.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1b584982dbdc, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness013.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 不限速千兆-tw247, server: fn600mliness017.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _YouTube：全网最强白嫖, server: fn600mliness017.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _YouTube：全网最强白嫖 2, server: fndx600mtwline010tr.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: d0760c7c21f8, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndx600mtwline010tr.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 油管-阿伟科技+12, server: fn600mliness017.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _YouTube：全网最强白嫖 3, server: fndx600mtwline010tr.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: d0760c7c21f8, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndx600mtwline010tr.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: "台湾+🛩️PapaLaozi\n38", server: fn600mliness010.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ee3dfbbe3dca, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness010.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: TW+27+TG:@nodpai+(Beta), server: fn600mliness013.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1b584982dbdc, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness013.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: TW+21+TG:@nodpai+(Beta), server: fn600mlines020.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5dac918f6134, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines020.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: TW+38+TG:@nodpai+(Beta), server: fndx600mtwline010tr.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: d0760c7c21f8, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndx600mtwline010tr.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: TW+23+TG:@nodpai+(Beta), server: fn600mliness016.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: bd04a7b470fb, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness016.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: TW+22+TG:@nodpai+(Beta), server: fn600mlines021.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0ac84efef442, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines021.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _Cow+Vagina_35, server: dx15.jicojs.com, port: 443, type: ss, cipher: aes-256-gcm, password: 46c027d028b4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx15.jicojs.com, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 不限速千兆-tw2317, server: fn600mliness018.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 55011c8548ff, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness018.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _CN_中国, server: 43.155.114.162, port: 34716, type: vmess, uuid: a8d3fceb-d4c3-4fa3-a7b3-8410e57c95d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.155.114.162]}}, udp: true}
+  - {name: 日本|内网专线|東京LLC, server: 111.45.22.151, port: 9031, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JCBB_香港03【vip1】, server: 43.248.134.180, port: 25898, type: vmess, uuid: 9b30435b-b9d2-4a9c-98f0-696a0173bf13, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 43.248.134.180}, udp: true}
+  - {name: 香港|原生解锁|BGPHK, server: 111.45.22.151, port: 9004, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "长沙联通转日本NTT5[倍率:0.8]", server: 116.129.253.160, port: 29535, type: ss, cipher: chacha20-ietf, password: 0McTBy, udp: true}
+  - {name: "湖南联通转日本NTT5[倍率:0.8]", server: 116.129.254.12, port: 65522, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 7e25619025.dm.files.1drv.com}, udp: true}
+  - {name: "湖南联通转香港HKT3[M][倍率:0.9]", server: 116.129.254.12, port: 65526, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 7e25619025.dm.files.1drv.com}, udp: true}
+  - {name: "深港专线2[Trojan][倍率:2.5]", server: 211.99.96.118, port: 65501, type: trojan, password: 7243c2bd-5576-3c2d-aea0-594ff03522a0, skip-cert-verify: true, udp: true}
+  - {name: "广东移动转香港NTT[Trojan][倍率:0.8]", server: 120.241.126.83, port: 65215, type: trojan, password: 7243c2bd-5576-3c2d-aea0-594ff03522a0, skip-cert-verify: true, udp: true}
+  - {name: "深港专线转香港HGC2[M][Trojan][倍率:2.5]", server: 211.99.96.117, port: 65303, type: trojan, password: 7243c2bd-5576-3c2d-aea0-594ff03522a0, skip-cert-verify: true, udp: true}
+  - {name: "深港专线转香港BGP3[M][Trojan][倍率:2.5]", server: 211.99.96.117, port: 65301, type: trojan, password: 7243c2bd-5576-3c2d-aea0-594ff03522a0, skip-cert-verify: true, udp: true}
+  - {name: Vip1丨51-台湾丨Trojan丨NETFLIX丨Disney+, server: scloud51.jafiyun.world, port: 22051, type: trojan, password: 98cb42ef-a463-32dd-a751-6029c2936127, sni: scloud51.jafiyun.world, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|03|LIN三网优化, server: 59.36.167.231, port: 49862, type: trojan, password: 8808214e-ee22-4f3f-9935-17064ea61994, skip-cert-verify: true, udp: true}
+  - {name: Vip1丨30-台湾丨Trojan丨NETFLIX丨Disney+, server: scloud30.jafiyun.world, port: 22030, type: trojan, password: 98cb42ef-a463-32dd-a751-6029c2936127, sni: scloud30.jafiyun.world, skip-cert-verify: true, udp: true}
+  - {name: "深港专线6[Trojan][倍率:2.5]", server: 211.99.96.117, port: 65022, type: trojan, password: 7243c2bd-5576-3c2d-aea0-594ff03522a0, skip-cert-verify: true, udp: true}
+  - {name: "深港专线转香港BGP8[M][Trojan][倍率:2.5]", server: 211.99.96.117, port: 65110, type: trojan, password: 7243c2bd-5576-3c2d-aea0-594ff03522a0, skip-cert-verify: true, udp: true}
+  - {name: "广东移动转香港NTT3[Trojan][倍率:0.8]", server: 120.241.126.83, port: 65211, type: trojan, password: 7243c2bd-5576-3c2d-aea0-594ff03522a0, skip-cert-verify: true, udp: true}
+  - {name: "广东移动转香港BGP[M][Trojan][倍率:0.9]", server: 120.241.126.83, port: 65207, type: trojan, password: 7243c2bd-5576-3c2d-aea0-594ff03522a0, skip-cert-verify: true, udp: true}
+  - {name: "深港专线转香港BGP4[M][Trojan][倍率:2.5]", server: 211.99.96.117, port: 65300, type: trojan, password: 7243c2bd-5576-3c2d-aea0-594ff03522a0, skip-cert-verify: true, udp: true}
+  - {name: "广州移动转香港NTT2[Trojan][倍率:0.8]", server: 120.241.126.83, port: 65201, type: trojan, password: 7243c2bd-5576-3c2d-aea0-594ff03522a0, skip-cert-verify: true, udp: true}
+  - {name: "深港专线[Trojan][倍率:2.5]", server: 211.99.96.117, port: 65522, type: trojan, password: 7243c2bd-5576-3c2d-aea0-594ff03522a0, skip-cert-verify: true, udp: true}
+  - {name: "深港专线3[Trojan][倍率:2.5]", server: 211.99.96.117, port: 65523, type: trojan, password: 7243c2bd-5576-3c2d-aea0-594ff03522a0, skip-cert-verify: true, udp: true}
+  - {name: "深港专线7[Trojan][倍率:2.5]", server: 211.99.96.117, port: 65025, type: trojan, password: 7243c2bd-5576-3c2d-aea0-594ff03522a0, skip-cert-verify: true, udp: true}
+  - {name: A新加坡7 VIP1 网址:vvdnn.com, server: v2hk6.fdhsujj.xyz, port: 23546, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: dbe96286652.microsoft.com, udp: true}
+  - {name: A香港4 VIP1 网址:vvdnn.com, server: HK2.fdhsujj.xyz, port: 11390, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: dbe96286652.microsoft.com, udp: true}
+  - {name: A新加坡3 VIP1 新网址:vvdnn.com, server: 3hk.fdhsujj.xyz, port: 23543, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: dbe96286652.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP+14+TG:@nodpai+(Beta)
-      - JP+24+TG:@nodpai+(Beta)
-      - 新加坡 B/01 x1.0
-      - TG@hkaa0🇨🇳33
-      - TG@hkaa0🇨🇳41
-      - TG@hkaa0|中国_3
-      - TG@hkaa0|中国_8
-      - TG频道https://t.me/iosfulishare 香港 IEPL/02 x3.0
-      - "️PapaLaozi\n139"
-      - 欢迎加入https://t.me/go2sharing 174
-      - TG@hkaa0🇨🇳33 2
-      - TG@hkaa0🇨🇳33 3
-      - 中国-tg频道:@bpjzx2-6
-      - 中国【YouTube-由零開始】 2
-      - 油管-aweikeji
-      - 中国【YouTube-由零開始】
-      - 中国【YouTube-由零開始】 3
-      - TG@hkaa0|中国_2
-      - 不限速千兆-tw2110
-      - +台湾02
-      - 台湾02
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - 油管-阿伟科技+12
-      - _YouTube：全网最强白嫖 3
-      - "台湾+🛩️PapaLaozi\n38"
-      - TW+27+TG:@nodpai+(Beta)
-      - TW+21+TG:@nodpai+(Beta)
-      - TW+38+TG:@nodpai+(Beta)
-      - TW+23+TG:@nodpai+(Beta)
-      - TW+22+TG:@nodpai+(Beta)
-      - _Cow+Vagina_35
-      - 不限速千兆-tw2317
-      - _CN_中国
+      - 日本|内网专线|東京LLC
+      - JCBB_香港03【vip1】
+      - 香港|原生解锁|BGPHK
+      - 长沙联通转日本NTT5[倍率:0.8]
+      - 湖南联通转日本NTT5[倍率:0.8]
+      - 湖南联通转香港HKT3[M][倍率:0.9]
+      - 深港专线2[Trojan][倍率:2.5]
+      - 广东移动转香港NTT[Trojan][倍率:0.8]
+      - 深港专线转香港HGC2[M][Trojan][倍率:2.5]
+      - 深港专线转香港BGP3[M][Trojan][倍率:2.5]
+      - Vip1丨51-台湾丨Trojan丨NETFLIX丨Disney+
+      - 新加坡|03|LIN三网优化
+      - Vip1丨30-台湾丨Trojan丨NETFLIX丨Disney+
+      - 深港专线6[Trojan][倍率:2.5]
+      - 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 广东移动转香港NTT3[Trojan][倍率:0.8]
+      - 广东移动转香港BGP[M][Trojan][倍率:0.9]
+      - 深港专线转香港BGP4[M][Trojan][倍率:2.5]
+      - 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - 深港专线[Trojan][倍率:2.5]
+      - 深港专线3[Trojan][倍率:2.5]
+      - 深港专线7[Trojan][倍率:2.5]
+      - A新加坡7 VIP1 网址:vvdnn.com
+      - A香港4 VIP1 网址:vvdnn.com
+      - A新加坡3 VIP1 新网址:vvdnn.com
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP+14+TG:@nodpai+(Beta)
-      - JP+24+TG:@nodpai+(Beta)
-      - 新加坡 B/01 x1.0
-      - TG@hkaa0🇨🇳33
-      - TG@hkaa0🇨🇳41
-      - TG@hkaa0|中国_3
-      - TG@hkaa0|中国_8
-      - TG频道https://t.me/iosfulishare 香港 IEPL/02 x3.0
-      - "️PapaLaozi\n139"
-      - 欢迎加入https://t.me/go2sharing 174
-      - TG@hkaa0🇨🇳33 2
-      - TG@hkaa0🇨🇳33 3
-      - 中国-tg频道:@bpjzx2-6
-      - 中国【YouTube-由零開始】 2
-      - 油管-aweikeji
-      - 中国【YouTube-由零開始】
-      - 中国【YouTube-由零開始】 3
-      - TG@hkaa0|中国_2
-      - 不限速千兆-tw2110
-      - +台湾02
-      - 台湾02
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - 油管-阿伟科技+12
-      - _YouTube：全网最强白嫖 3
-      - "台湾+🛩️PapaLaozi\n38"
-      - TW+27+TG:@nodpai+(Beta)
-      - TW+21+TG:@nodpai+(Beta)
-      - TW+38+TG:@nodpai+(Beta)
-      - TW+23+TG:@nodpai+(Beta)
-      - TW+22+TG:@nodpai+(Beta)
-      - _Cow+Vagina_35
-      - 不限速千兆-tw2317
-      - _CN_中国
+      - 日本|内网专线|東京LLC
+      - JCBB_香港03【vip1】
+      - 香港|原生解锁|BGPHK
+      - 长沙联通转日本NTT5[倍率:0.8]
+      - 湖南联通转日本NTT5[倍率:0.8]
+      - 湖南联通转香港HKT3[M][倍率:0.9]
+      - 深港专线2[Trojan][倍率:2.5]
+      - 广东移动转香港NTT[Trojan][倍率:0.8]
+      - 深港专线转香港HGC2[M][Trojan][倍率:2.5]
+      - 深港专线转香港BGP3[M][Trojan][倍率:2.5]
+      - Vip1丨51-台湾丨Trojan丨NETFLIX丨Disney+
+      - 新加坡|03|LIN三网优化
+      - Vip1丨30-台湾丨Trojan丨NETFLIX丨Disney+
+      - 深港专线6[Trojan][倍率:2.5]
+      - 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 广东移动转香港NTT3[Trojan][倍率:0.8]
+      - 广东移动转香港BGP[M][Trojan][倍率:0.9]
+      - 深港专线转香港BGP4[M][Trojan][倍率:2.5]
+      - 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - 深港专线[Trojan][倍率:2.5]
+      - 深港专线3[Trojan][倍率:2.5]
+      - 深港专线7[Trojan][倍率:2.5]
+      - A新加坡7 VIP1 网址:vvdnn.com
+      - A香港4 VIP1 网址:vvdnn.com
+      - A新加坡3 VIP1 新网址:vvdnn.com
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP+14+TG:@nodpai+(Beta)
-      - JP+24+TG:@nodpai+(Beta)
-      - 新加坡 B/01 x1.0
-      - TG@hkaa0🇨🇳33
-      - TG@hkaa0🇨🇳41
-      - TG@hkaa0|中国_3
-      - TG@hkaa0|中国_8
-      - TG频道https://t.me/iosfulishare 香港 IEPL/02 x3.0
-      - "️PapaLaozi\n139"
-      - 欢迎加入https://t.me/go2sharing 174
-      - TG@hkaa0🇨🇳33 2
-      - TG@hkaa0🇨🇳33 3
-      - 中国-tg频道:@bpjzx2-6
-      - 中国【YouTube-由零開始】 2
-      - 油管-aweikeji
-      - 中国【YouTube-由零開始】
-      - 中国【YouTube-由零開始】 3
-      - TG@hkaa0|中国_2
-      - 不限速千兆-tw2110
-      - +台湾02
-      - 台湾02
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - 油管-阿伟科技+12
-      - _YouTube：全网最强白嫖 3
-      - "台湾+🛩️PapaLaozi\n38"
-      - TW+27+TG:@nodpai+(Beta)
-      - TW+21+TG:@nodpai+(Beta)
-      - TW+38+TG:@nodpai+(Beta)
-      - TW+23+TG:@nodpai+(Beta)
-      - TW+22+TG:@nodpai+(Beta)
-      - _Cow+Vagina_35
-      - 不限速千兆-tw2317
-      - _CN_中国
+      - 日本|内网专线|東京LLC
+      - JCBB_香港03【vip1】
+      - 香港|原生解锁|BGPHK
+      - 长沙联通转日本NTT5[倍率:0.8]
+      - 湖南联通转日本NTT5[倍率:0.8]
+      - 湖南联通转香港HKT3[M][倍率:0.9]
+      - 深港专线2[Trojan][倍率:2.5]
+      - 广东移动转香港NTT[Trojan][倍率:0.8]
+      - 深港专线转香港HGC2[M][Trojan][倍率:2.5]
+      - 深港专线转香港BGP3[M][Trojan][倍率:2.5]
+      - Vip1丨51-台湾丨Trojan丨NETFLIX丨Disney+
+      - 新加坡|03|LIN三网优化
+      - Vip1丨30-台湾丨Trojan丨NETFLIX丨Disney+
+      - 深港专线6[Trojan][倍率:2.5]
+      - 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 广东移动转香港NTT3[Trojan][倍率:0.8]
+      - 广东移动转香港BGP[M][Trojan][倍率:0.9]
+      - 深港专线转香港BGP4[M][Trojan][倍率:2.5]
+      - 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - 深港专线[Trojan][倍率:2.5]
+      - 深港专线3[Trojan][倍率:2.5]
+      - 深港专线7[Trojan][倍率:2.5]
+      - A新加坡7 VIP1 网址:vvdnn.com
+      - A香港4 VIP1 网址:vvdnn.com
+      - A新加坡3 VIP1 新网址:vvdnn.com
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -192,193 +140,146 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP+14+TG:@nodpai+(Beta)
-      - JP+24+TG:@nodpai+(Beta)
-      - 新加坡 B/01 x1.0
-      - TG@hkaa0🇨🇳33
-      - TG@hkaa0🇨🇳41
-      - TG@hkaa0|中国_3
-      - TG@hkaa0|中国_8
-      - TG频道https://t.me/iosfulishare 香港 IEPL/02 x3.0
-      - "️PapaLaozi\n139"
-      - 欢迎加入https://t.me/go2sharing 174
-      - TG@hkaa0🇨🇳33 2
-      - TG@hkaa0🇨🇳33 3
-      - 中国-tg频道:@bpjzx2-6
-      - 中国【YouTube-由零開始】 2
-      - 油管-aweikeji
-      - 中国【YouTube-由零開始】
-      - 中国【YouTube-由零開始】 3
-      - TG@hkaa0|中国_2
-      - 不限速千兆-tw2110
-      - +台湾02
-      - 台湾02
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - 油管-阿伟科技+12
-      - _YouTube：全网最强白嫖 3
-      - "台湾+🛩️PapaLaozi\n38"
-      - TW+27+TG:@nodpai+(Beta)
-      - TW+21+TG:@nodpai+(Beta)
-      - TW+38+TG:@nodpai+(Beta)
-      - TW+23+TG:@nodpai+(Beta)
-      - TW+22+TG:@nodpai+(Beta)
-      - _Cow+Vagina_35
-      - 不限速千兆-tw2317
-      - _CN_中国
+      - 日本|内网专线|東京LLC
+      - JCBB_香港03【vip1】
+      - 香港|原生解锁|BGPHK
+      - 长沙联通转日本NTT5[倍率:0.8]
+      - 湖南联通转日本NTT5[倍率:0.8]
+      - 湖南联通转香港HKT3[M][倍率:0.9]
+      - 深港专线2[Trojan][倍率:2.5]
+      - 广东移动转香港NTT[Trojan][倍率:0.8]
+      - 深港专线转香港HGC2[M][Trojan][倍率:2.5]
+      - 深港专线转香港BGP3[M][Trojan][倍率:2.5]
+      - Vip1丨51-台湾丨Trojan丨NETFLIX丨Disney+
+      - 新加坡|03|LIN三网优化
+      - Vip1丨30-台湾丨Trojan丨NETFLIX丨Disney+
+      - 深港专线6[Trojan][倍率:2.5]
+      - 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 广东移动转香港NTT3[Trojan][倍率:0.8]
+      - 广东移动转香港BGP[M][Trojan][倍率:0.9]
+      - 深港专线转香港BGP4[M][Trojan][倍率:2.5]
+      - 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - 深港专线[Trojan][倍率:2.5]
+      - 深港专线3[Trojan][倍率:2.5]
+      - 深港专线7[Trojan][倍率:2.5]
+      - A新加坡7 VIP1 网址:vvdnn.com
+      - A香港4 VIP1 网址:vvdnn.com
+      - A新加坡3 VIP1 新网址:vvdnn.com
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - TG@hkaa0🇨🇳33
-      - TG@hkaa0🇨🇳41
-      - TG@hkaa0|中国_3
-      - TG@hkaa0|中国_8
-      - TG频道https://t.me/iosfulishare 香港 IEPL/02 x3.0
-      - TG@hkaa0🇨🇳33 2
-      - TG@hkaa0🇨🇳33 3
-      - TG@hkaa0|中国_2
-      - 不限速千兆-tw2110
-      - +台湾02
-      - 台湾02
-      - 不限速千兆-tw247
-      - "台湾+🛩️PapaLaozi\n38"
-      - 不限速千兆-tw2317
+      - JCBB_香港03【vip1】
+      - 香港|原生解锁|BGPHK
+      - 湖南联通转香港HKT3[M][倍率:0.9]
+      - 深港专线2[Trojan][倍率:2.5]
+      - 广东移动转香港NTT[Trojan][倍率:0.8]
+      - 深港专线转香港HGC2[M][Trojan][倍率:2.5]
+      - 深港专线转香港BGP3[M][Trojan][倍率:2.5]
+      - Vip1丨51-台湾丨Trojan丨NETFLIX丨Disney+
+      - Vip1丨30-台湾丨Trojan丨NETFLIX丨Disney+
+      - 深港专线6[Trojan][倍率:2.5]
+      - 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 广东移动转香港NTT3[Trojan][倍率:0.8]
+      - 广东移动转香港BGP[M][Trojan][倍率:0.9]
+      - 深港专线转香港BGP4[M][Trojan][倍率:2.5]
+      - 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - 深港专线[Trojan][倍率:2.5]
+      - 深港专线3[Trojan][倍率:2.5]
+      - 深港专线7[Trojan][倍率:2.5]
+      - A香港4 VIP1 网址:vvdnn.com
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP+14+TG:@nodpai+(Beta)
-      - JP+24+TG:@nodpai+(Beta)
-      - 新加坡 B/01 x1.0
-      - TG@hkaa0🇨🇳33
-      - TG@hkaa0🇨🇳41
-      - TG@hkaa0|中国_3
-      - TG@hkaa0|中国_8
-      - TG频道https://t.me/iosfulishare 香港 IEPL/02 x3.0
-      - "️PapaLaozi\n139"
-      - 欢迎加入https://t.me/go2sharing 174
-      - TG@hkaa0🇨🇳33 2
-      - TG@hkaa0🇨🇳33 3
-      - 中国-tg频道:@bpjzx2-6
-      - 中国【YouTube-由零開始】 2
-      - 油管-aweikeji
-      - 中国【YouTube-由零開始】
-      - 中国【YouTube-由零開始】 3
-      - TG@hkaa0|中国_2
-      - 不限速千兆-tw2110
-      - +台湾02
-      - 台湾02
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - 油管-阿伟科技+12
-      - _YouTube：全网最强白嫖 3
-      - "台湾+🛩️PapaLaozi\n38"
-      - TW+27+TG:@nodpai+(Beta)
-      - TW+21+TG:@nodpai+(Beta)
-      - TW+38+TG:@nodpai+(Beta)
-      - TW+23+TG:@nodpai+(Beta)
-      - TW+22+TG:@nodpai+(Beta)
-      - _Cow+Vagina_35
-      - 不限速千兆-tw2317
-      - _CN_中国
+      - 日本|内网专线|東京LLC
+      - JCBB_香港03【vip1】
+      - 香港|原生解锁|BGPHK
+      - 长沙联通转日本NTT5[倍率:0.8]
+      - 湖南联通转日本NTT5[倍率:0.8]
+      - 湖南联通转香港HKT3[M][倍率:0.9]
+      - 深港专线2[Trojan][倍率:2.5]
+      - 广东移动转香港NTT[Trojan][倍率:0.8]
+      - 深港专线转香港HGC2[M][Trojan][倍率:2.5]
+      - 深港专线转香港BGP3[M][Trojan][倍率:2.5]
+      - Vip1丨51-台湾丨Trojan丨NETFLIX丨Disney+
+      - 新加坡|03|LIN三网优化
+      - Vip1丨30-台湾丨Trojan丨NETFLIX丨Disney+
+      - 深港专线6[Trojan][倍率:2.5]
+      - 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 广东移动转香港NTT3[Trojan][倍率:0.8]
+      - 广东移动转香港BGP[M][Trojan][倍率:0.9]
+      - 深港专线转香港BGP4[M][Trojan][倍率:2.5]
+      - 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - 深港专线[Trojan][倍率:2.5]
+      - 深港专线3[Trojan][倍率:2.5]
+      - 深港专线7[Trojan][倍率:2.5]
+      - A新加坡7 VIP1 网址:vvdnn.com
+      - A香港4 VIP1 网址:vvdnn.com
+      - A新加坡3 VIP1 新网址:vvdnn.com
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP+14+TG:@nodpai+(Beta)
-      - JP+24+TG:@nodpai+(Beta)
-      - 新加坡 B/01 x1.0
-      - TG@hkaa0🇨🇳33
-      - TG@hkaa0🇨🇳41
-      - TG@hkaa0|中国_3
-      - TG@hkaa0|中国_8
-      - TG频道https://t.me/iosfulishare 香港 IEPL/02 x3.0
-      - "️PapaLaozi\n139"
-      - 欢迎加入https://t.me/go2sharing 174
-      - TG@hkaa0🇨🇳33 2
-      - TG@hkaa0🇨🇳33 3
-      - 中国-tg频道:@bpjzx2-6
-      - 中国【YouTube-由零開始】 2
-      - 油管-aweikeji
-      - 中国【YouTube-由零開始】
-      - 中国【YouTube-由零開始】 3
-      - TG@hkaa0|中国_2
-      - 不限速千兆-tw2110
-      - +台湾02
-      - 台湾02
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - 油管-阿伟科技+12
-      - _YouTube：全网最强白嫖 3
-      - "台湾+🛩️PapaLaozi\n38"
-      - TW+27+TG:@nodpai+(Beta)
-      - TW+21+TG:@nodpai+(Beta)
-      - TW+38+TG:@nodpai+(Beta)
-      - TW+23+TG:@nodpai+(Beta)
-      - TW+22+TG:@nodpai+(Beta)
-      - _Cow+Vagina_35
-      - 不限速千兆-tw2317
-      - _CN_中国
+      - 日本|内网专线|東京LLC
+      - JCBB_香港03【vip1】
+      - 香港|原生解锁|BGPHK
+      - 长沙联通转日本NTT5[倍率:0.8]
+      - 湖南联通转日本NTT5[倍率:0.8]
+      - 湖南联通转香港HKT3[M][倍率:0.9]
+      - 深港专线2[Trojan][倍率:2.5]
+      - 广东移动转香港NTT[Trojan][倍率:0.8]
+      - 深港专线转香港HGC2[M][Trojan][倍率:2.5]
+      - 深港专线转香港BGP3[M][Trojan][倍率:2.5]
+      - Vip1丨51-台湾丨Trojan丨NETFLIX丨Disney+
+      - 新加坡|03|LIN三网优化
+      - Vip1丨30-台湾丨Trojan丨NETFLIX丨Disney+
+      - 深港专线6[Trojan][倍率:2.5]
+      - 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 广东移动转香港NTT3[Trojan][倍率:0.8]
+      - 广东移动转香港BGP[M][Trojan][倍率:0.9]
+      - 深港专线转香港BGP4[M][Trojan][倍率:2.5]
+      - 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - 深港专线[Trojan][倍率:2.5]
+      - 深港专线3[Trojan][倍率:2.5]
+      - 深港专线7[Trojan][倍率:2.5]
+      - A新加坡7 VIP1 网址:vvdnn.com
+      - A香港4 VIP1 网址:vvdnn.com
+      - A新加坡3 VIP1 新网址:vvdnn.com
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP+14+TG:@nodpai+(Beta)
-      - JP+24+TG:@nodpai+(Beta)
-      - 新加坡 B/01 x1.0
-      - TG@hkaa0🇨🇳33
-      - TG@hkaa0🇨🇳41
-      - TG@hkaa0|中国_3
-      - TG@hkaa0|中国_8
-      - TG频道https://t.me/iosfulishare 香港 IEPL/02 x3.0
-      - "️PapaLaozi\n139"
-      - 欢迎加入https://t.me/go2sharing 174
-      - TG@hkaa0🇨🇳33 2
-      - TG@hkaa0🇨🇳33 3
-      - 中国-tg频道:@bpjzx2-6
-      - 中国【YouTube-由零開始】 2
-      - 油管-aweikeji
-      - 中国【YouTube-由零開始】
-      - 中国【YouTube-由零開始】 3
-      - TG@hkaa0|中国_2
-      - 不限速千兆-tw2110
-      - +台湾02
-      - 台湾02
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - 油管-阿伟科技+12
-      - _YouTube：全网最强白嫖 3
-      - "台湾+🛩️PapaLaozi\n38"
-      - TW+27+TG:@nodpai+(Beta)
-      - TW+21+TG:@nodpai+(Beta)
-      - TW+38+TG:@nodpai+(Beta)
-      - TW+23+TG:@nodpai+(Beta)
-      - TW+22+TG:@nodpai+(Beta)
-      - _Cow+Vagina_35
-      - 不限速千兆-tw2317
-      - _CN_中国
+      - 日本|内网专线|東京LLC
+      - JCBB_香港03【vip1】
+      - 香港|原生解锁|BGPHK
+      - 长沙联通转日本NTT5[倍率:0.8]
+      - 湖南联通转日本NTT5[倍率:0.8]
+      - 湖南联通转香港HKT3[M][倍率:0.9]
+      - 深港专线2[Trojan][倍率:2.5]
+      - 广东移动转香港NTT[Trojan][倍率:0.8]
+      - 深港专线转香港HGC2[M][Trojan][倍率:2.5]
+      - 深港专线转香港BGP3[M][Trojan][倍率:2.5]
+      - Vip1丨51-台湾丨Trojan丨NETFLIX丨Disney+
+      - 新加坡|03|LIN三网优化
+      - Vip1丨30-台湾丨Trojan丨NETFLIX丨Disney+
+      - 深港专线6[Trojan][倍率:2.5]
+      - 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 广东移动转香港NTT3[Trojan][倍率:0.8]
+      - 广东移动转香港BGP[M][Trojan][倍率:0.9]
+      - 深港专线转香港BGP4[M][Trojan][倍率:2.5]
+      - 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - 深港专线[Trojan][倍率:2.5]
+      - 深港专线3[Trojan][倍率:2.5]
+      - 深港专线7[Trojan][倍率:2.5]
+      - A新加坡7 VIP1 网址:vvdnn.com
+      - A香港4 VIP1 网址:vvdnn.com
+      - A新加坡3 VIP1 新网址:vvdnn.com
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -394,44 +295,31 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP+14+TG:@nodpai+(Beta)
-      - JP+24+TG:@nodpai+(Beta)
-      - 新加坡 B/01 x1.0
-      - TG@hkaa0🇨🇳33
-      - TG@hkaa0🇨🇳41
-      - TG@hkaa0|中国_3
-      - TG@hkaa0|中国_8
-      - TG频道https://t.me/iosfulishare 香港 IEPL/02 x3.0
-      - "️PapaLaozi\n139"
-      - 欢迎加入https://t.me/go2sharing 174
-      - TG@hkaa0🇨🇳33 2
-      - TG@hkaa0🇨🇳33 3
-      - 中国-tg频道:@bpjzx2-6
-      - 中国【YouTube-由零開始】 2
-      - 油管-aweikeji
-      - 中国【YouTube-由零開始】
-      - 中国【YouTube-由零開始】 3
-      - TG@hkaa0|中国_2
-      - 不限速千兆-tw2110
-      - +台湾02
-      - 台湾02
-      - 油管-阿伟科技+17
-      - 油管-aweikeji 2
-      - TW+1+|+@Airproxies
-      - 不限速千兆-tw247
-      - _YouTube：全网最强白嫖
-      - _YouTube：全网最强白嫖 2
-      - 油管-阿伟科技+12
-      - _YouTube：全网最强白嫖 3
-      - "台湾+🛩️PapaLaozi\n38"
-      - TW+27+TG:@nodpai+(Beta)
-      - TW+21+TG:@nodpai+(Beta)
-      - TW+38+TG:@nodpai+(Beta)
-      - TW+23+TG:@nodpai+(Beta)
-      - TW+22+TG:@nodpai+(Beta)
-      - _Cow+Vagina_35
-      - 不限速千兆-tw2317
-      - _CN_中国
+      - 日本|内网专线|東京LLC
+      - JCBB_香港03【vip1】
+      - 香港|原生解锁|BGPHK
+      - 长沙联通转日本NTT5[倍率:0.8]
+      - 湖南联通转日本NTT5[倍率:0.8]
+      - 湖南联通转香港HKT3[M][倍率:0.9]
+      - 深港专线2[Trojan][倍率:2.5]
+      - 广东移动转香港NTT[Trojan][倍率:0.8]
+      - 深港专线转香港HGC2[M][Trojan][倍率:2.5]
+      - 深港专线转香港BGP3[M][Trojan][倍率:2.5]
+      - Vip1丨51-台湾丨Trojan丨NETFLIX丨Disney+
+      - 新加坡|03|LIN三网优化
+      - Vip1丨30-台湾丨Trojan丨NETFLIX丨Disney+
+      - 深港专线6[Trojan][倍率:2.5]
+      - 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 广东移动转香港NTT3[Trojan][倍率:0.8]
+      - 广东移动转香港BGP[M][Trojan][倍率:0.9]
+      - 深港专线转香港BGP4[M][Trojan][倍率:2.5]
+      - 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - 深港专线[Trojan][倍率:2.5]
+      - 深港专线3[Trojan][倍率:2.5]
+      - 深港专线7[Trojan][倍率:2.5]
+      - A新加坡7 VIP1 网址:vvdnn.com
+      - A香港4 VIP1 网址:vvdnn.com
+      - A新加坡3 VIP1 新网址:vvdnn.com
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -9388,8 +9276,6 @@ rules:
  - DOMAIN-SUFFIX,hypeapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hypersnap.net,🛑 全球拦截
  - DOMAIN-SUFFIX,iconworkshop.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,idmchina.net,🛑 全球拦截
- - DOMAIN-SUFFIX,imazingchina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imindmap.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,jihehuaban.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,keyshot.cc,🛑 全球拦截
@@ -9459,8 +9345,6 @@ rules:
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
- - DOMAIN,radio.itunes.apple.com,🌍 国外媒体
- - DOMAIN,tv.applemusic.com,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
@@ -9505,7 +9389,6 @@ rules:
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
  - DOMAIN,linear.tv.apple.com,🌍 国外媒体
  - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
- - DOMAIN,uts-api.itunes.apple.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
@@ -9592,7 +9475,6 @@ rules:
  - IP-CIDR,203.74.95.153/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
- - IP-CIDR,210.71.227.200/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.71.227.202/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
@@ -9693,14 +9575,15 @@ rules:
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,b23.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
- - DOMAIN-SUFFIX,bilibili.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
  - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,biligame.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,biligame.net,🌏 国内媒体
  - DOMAIN-SUFFIX,bilivideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
- - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
- - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
  - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
  - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
  - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
@@ -9718,7 +9601,6 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
- - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
@@ -9732,14 +9614,11 @@ rules:
  - IP-CIDR,91.108.16.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.20.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.56.0/22,📲 电报信息,no-resolve
- - IP-CIDR,91.105.192.0/23,📲 电报信息,no-resolve
+ - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
- - IP-CIDR,185.76.151.0/24,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
- - IP-CIDR6,2001:b28:f23c::/48,📲 电报信息,no-resolve
- - IP-CIDR6,2a0a:f280::/32,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
  - DOMAIN,payments-jp.amazon.com,🔰 节点选择
@@ -9748,36 +9627,16 @@ rules:
  - DOMAIN,a248.e.akamai.net,🔰 节点选择
  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
  - DOMAIN,testflight.apple.com,🔰 节点选择
- - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
- - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
- - DOMAIN,clubhouse.pubnubapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,aex.com,🔰 节点选择
  - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
  - DOMAIN-SUFFIX,binance.com,🔰 节点选择
- - DOMAIN-SUFFIX,binance.us,🔰 节点选择
  - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
  - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
- - DOMAIN-SUFFIX,bithumb.com,🔰 节点选择
  - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
- - DOMAIN-SUFFIX,bitstamp.net,🔰 节点选择
- - DOMAIN-SUFFIX,bittrex.com,🔰 节点选择
- - DOMAIN-SUFFIX,bybit.com,🔰 节点选择
- - DOMAIN-SUFFIX,coinbase.com,🔰 节点选择
- - DOMAIN-SUFFIX,coincheck.com,🔰 节点选择
- - DOMAIN-SUFFIX,coingecko.com,🔰 节点选择
- - DOMAIN-SUFFIX,coinmarketcap.com,🔰 节点选择
- - DOMAIN-SUFFIX,coinone.co.kr,🔰 节点选择
- - DOMAIN-SUFFIX,ftx.com,🔰 节点选择
  - DOMAIN-SUFFIX,gate.io,🔰 节点选择
- - DOMAIN-SUFFIX,gemini.com,🔰 节点选择
  - DOMAIN-SUFFIX,huobi.com,🔰 节点选择
- - DOMAIN-SUFFIX,korbit.co.kr,🔰 节点选择
- - DOMAIN-SUFFIX,kraken.com,🔰 节点选择
- - DOMAIN-SUFFIX,kucoin.com,🔰 节点选择
- - DOMAIN-SUFFIX,liquid.com,🔰 节点选择
  - DOMAIN-SUFFIX,okex.com,🔰 节点选择
- - DOMAIN-SUFFIX,poloniex.com,🔰 节点选择
  - DOMAIN-SUFFIX,uniswap.org,🔰 节点选择
  - DOMAIN-SUFFIX,zb.com,🔰 节点选择
  - DOMAIN-SUFFIX,discord.com,🔰 节点选择
@@ -9810,7 +9669,6 @@ rules:
  - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
  - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
  - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
- - DOMAIN-SUFFIX,gvt1.com,🔰 节点选择
  - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
  - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
@@ -9861,14 +9719,11 @@ rules:
  - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.20.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,91.105.192.0/23,🔰 节点选择,no-resolve
+ - IP-CIDR,95.161.64.0/20,🔰 节点选择,no-resolve
  - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
- - IP-CIDR,185.76.151.0/24,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
- - IP-CIDR6,2001:b28:f23c::/48,🔰 节点选择,no-resolve
- - IP-CIDR6,2a0a:f280::/32,🔰 节点选择,no-resolve
  - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
  - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
  - DOMAIN-SUFFIX,t.co,🔰 节点选择
@@ -9937,6 +9792,7 @@ rules:
  - DOMAIN-SUFFIX,ck101.com,🔰 节点选择
  - DOMAIN-SUFFIX,clarionproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🔰 节点选择
+ - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,clyp.it,🔰 节点选择
  - DOMAIN-SUFFIX,cna.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,comparitech.com,🔰 节点选择
@@ -10030,6 +9886,7 @@ rules:
  - DOMAIN-SUFFIX,jiji.com,🔰 节点选择
  - DOMAIN-SUFFIX,jinx.com,🔰 节点选择
  - DOMAIN-SUFFIX,jkforum.net,🔰 节点选择
+ - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
  - DOMAIN-SUFFIX,joinmastodon.org,🔰 节点选择
  - DOMAIN-SUFFIX,justmysocks.net,🔰 节点选择
  - DOMAIN-SUFFIX,justpaste.it,🔰 节点选择
@@ -10055,7 +9912,6 @@ rules:
  - DOMAIN-SUFFIX,marc.info,🔰 节点选择
  - DOMAIN-SUFFIX,matters.news,🔰 节点选择
  - DOMAIN-SUFFIX,maying.co,🔰 节点选择
- - DOMAIN-SUFFIX,medibang.com,🔰 节点选择
  - DOMAIN-SUFFIX,medium.com,🔰 节点选择
  - DOMAIN-SUFFIX,mega.nz,🔰 节点选择
  - DOMAIN-SUFFIX,mergersandinquisitions.com,🔰 节点选择
@@ -10145,7 +10001,6 @@ rules:
  - DOMAIN-SUFFIX,streamable.com,🔰 节点选择
  - DOMAIN-SUFFIX,streema.com,🔰 节点选择
  - DOMAIN-SUFFIX,substack.com,🔰 节点选择
- - DOMAIN-SUFFIX,substack.com,🔰 节点选择
  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
@@ -10161,7 +10016,6 @@ rules:
  - DOMAIN-SUFFIX,tiny.cc,🔰 节点选择
  - DOMAIN-SUFFIX,tinyurl.com,🔰 节点选择
  - DOMAIN-SUFFIX,torproject.org,🔰 节点选择
- - DOMAIN-SUFFIX,tradingview.com,🔰 节点选择
  - DOMAIN-SUFFIX,tumblr.com,🔰 节点选择
  - DOMAIN-SUFFIX,turbobit.net,🔰 节点选择
  - DOMAIN-SUFFIX,tutanota.com,🔰 节点选择
@@ -10278,33 +10132,20 @@ rules:
  - DOMAIN-SUFFIX,twitter.jp,🔰 节点选择
  - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
  - DOMAIN,books.itunes.apple.com,🔰 节点选择
- - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
  - DOMAIN,beta.music.apple.com,🔰 节点选择
- - DOMAIN,lookup-api.apple.com,🔰 节点选择
- - DOMAIN,apps.apple.com,🔰 节点选择
- - DOMAIN,books.apple.com,🔰 节点选择
- - DOMAIN,itunes.apple.com,🔰 节点选择
  - DOMAIN,tv.apple.com,🔰 节点选择
- - DOMAIN,amp-api.podcasts.apple.com,🔰 节点选择
- - DOMAIN,bookkeeper.itunes.apple.com,🔰 节点选择
- - DOMAIN,gateway.icloud.com,🔰 节点选择
- - DOMAIN-SUFFIX,apple.news,🔰 节点选择
- - DOMAIN,news-assets.apple.com,🔰 节点选择
- - DOMAIN,news-client.apple.com,🔰 节点选择
- - DOMAIN,news-client-search.apple.com,🔰 节点选择
- - DOMAIN,news-edge.apple.com,🔰 节点选择
- - DOMAIN,news-events.apple.com,🔰 节点选择
- - DOMAIN,apple.comscoreresearch.com,🔰 节点选择
+ - DOMAIN,apps.apple.com,🔰 节点选择
+ - DOMAIN,itunes.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,lookup-api.apple.com,🔰 节点选择
  - DOMAIN-SUFFIX,go.dev,🔰 节点选择
  - DOMAIN-SUFFIX,golang.org,🔰 节点选择
- - DOMAIN-SUFFIX,aicoin.com,🔰 节点选择
- - DOMAIN-SUFFIX,aimoon.com,🔰 节点选择
  - DOMAIN-SUFFIX,bing.com,🔰 节点选择
  - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
  - DOMAIN-SUFFIX,dubox.com,🔰 节点选择
  - DOMAIN-SUFFIX,duboxcdn.com,🔰 节点选择
  - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
- - DOMAIN-SUFFIX,linkedin.com,🔰 节点选择
  - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
  - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
@@ -10312,10 +10153,12 @@ rules:
  - DOMAIN,developer.apple.com,🔰 节点选择
  - DOMAIN,www.icloud.com,🔰 节点选择
  - DOMAIN,ocsp.apple.com,🔰 节点选择
+ - DOMAIN,xp.apple.com,🔰 节点选择
  - DOMAIN,cacerts.digicert.com,🔰 节点选择
  - DOMAIN,crl3.digicert.com,🔰 节点选择
  - DOMAIN,crl4.digicert.com,🔰 节点选择
  - DOMAIN,ocsp.digicert.com,🔰 节点选择
+ - DOMAIN-SUFFIX,cloudcone.com.cn,🔰 节点选择
  - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
  - DOMAIN-SUFFIX,metapix.net,🔰 节点选择
  - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
@@ -10471,11 +10314,19 @@ rules:
  - DOMAIN-SUFFIX,qqmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,servicewechat.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent.com,🎯 全球直连
- - DOMAIN-SUFFIX,tencent-cloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent-cloud.net,🎯 全球直连
  - DOMAIN-SUFFIX,tenpay.com,🎯 全球直连
  - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
  - DOMAIN,file-igamecj.akamaized.net,🎯 全球直连
+ - IP-CIDR,101.32.104.4/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.104.41/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.104.56/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.118.25/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.16/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.53/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.209/32,🎯 全球直连,no-resolve
+ - IP-CIDR,129.226.3.47/32,🎯 全球直连,no-resolve
+ - IP-CIDR,129.226.107.244/32,🎯 全球直连,no-resolve
  - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,ccgslb.com,🎯 全球直连
@@ -10555,7 +10406,6 @@ rules:
  - DOMAIN-SUFFIX,chinaso.com,🎯 全球直连
  - DOMAIN-SUFFIX,chuimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,chunyu.mobi,🎯 全球直连
- - DOMAIN-SUFFIX,cibntv.net,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,coolapk.com,🎯 全球直连
@@ -10600,6 +10450,8 @@ rules:
  - DOMAIN-SUFFIX,keepcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,kkmh.com,🎯 全球直连
  - DOMAIN-SUFFIX,lanzous.com,🎯 全球直连
+ - DOMAIN-SUFFIX,licdn.com,🎯 全球直连
+ - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
  - DOMAIN-SUFFIX,luojilab.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyan.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyun.tv,🎯 全球直连
@@ -10622,7 +10474,6 @@ rules:
  - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
  - DOMAIN-SUFFIX,scomper.me,🎯 全球直连
- - DOMAIN-SUFFIX,shouqianba.com,🎯 全球直连
  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
  - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
