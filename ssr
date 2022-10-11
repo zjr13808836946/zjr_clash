@@ -5,127 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Large 香港05 - allmedia | MIEPL | 倍率:1.8, server: mysql.accessconnect.cc, port: 6005, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 252753:pphJWO, obfs-param: b403a252753.www.gov.hk, udp: true}
-  - {name: Large 香港10 - nf | IEPL | 倍率:1.6, server: mysql.accessconnect.cc, port: 6010, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 252753:pphJWO, obfs-param: b403a252753.www.gov.hk, udp: true}
-  - {name: Large 香港09 - nf | IEPL | 倍率:1.6, server: mysql.accessconnect.cc, port: 6009, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 252753:pphJWO, obfs-param: b403a252753.www.gov.hk, udp: true}
-  - {name: Large 香港04 - allmedia | MIEPL | 倍率:1.8, server: mysql.accessconnect.cc, port: 6004, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 252753:pphJWO, obfs-param: b403a252753.www.gov.hk, udp: true}
-  - {name: Large 香港03 - allmedia | MIEPL | 倍率:1.8, server: mysql.accessconnect.cc, port: 6003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 252753:pphJWO, obfs-param: b403a252753.www.gov.hk, udp: true}
-  - {name: Large 香港07 - nf | MIEPL | 倍率:1.8, server: mysql.accessconnect.cc, port: 6007, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 252753:pphJWO, obfs-param: b403a252753.www.gov.hk, udp: true}
-  - {name: Large 香港01 - allmedia | MIEPL | 倍率:1.8, server: mysql.accessconnect.cc, port: 6001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 252753:pphJWO, obfs-param: b403a252753.www.gov.hk, udp: true}
-  - {name: Large 新加坡09 - all | IEPL | 倍率:1.5, server: mysql.accessconnect.cc, port: 3209, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 252753:pphJWO, obfs-param: b403a252753.www.gov.hk, udp: true}
-  - {name: Large 新加坡11 - all | IEPL | 倍率:1.5, server: mysql.accessconnect.cc, port: 3211, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 252753:pphJWO, obfs-param: b403a252753.www.gov.hk, udp: true}
-  - {name: Large 新加坡12 - all | IEPL | 倍率:1.5, server: mysql.accessconnect.cc, port: 3212, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 252753:pphJWO, obfs-param: b403a252753.www.gov.hk, udp: true}
   - {name: 不限速千兆-tw616, server: fn600mliness010.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ee3dfbbe3dca, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness010.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
   - {name: 华南1, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: SMART-日本-1, server: smart.2022.2024.mlinuu.top, port: 11001, type: vmess, uuid: 0136f633-8f20-3e15-9853-226fb53ec965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: SMART-新加坡-1, server: smart.2022.2024.mlinuu.top, port: 11004, type: vmess, uuid: 0136f633-8f20-3e15-9853-226fb53ec965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 巴基斯坦+003, server: fn600mlines021.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0ac84efef442, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines021.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
   - {name: TG@hkaa0|中国, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 不限速千兆-tw32, server: fn600mliness013.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1b584982dbdc, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness013.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: TG@hkaa0|中国_4, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 华北, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: IEPL-01-香港-专线, server: zebra2.2022.2025.mlinuu.top, port: 888, type: vmess, uuid: 0136f633-8f20-3e15-9853-226fb53ec965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: SMART-印度-1, server: smart.2022.2024.mlinuu.top, port: 11010, type: vmess, uuid: 0136f633-8f20-3e15-9853-226fb53ec965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0|中国 2, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0|中国_5, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0|台湾, server: fn600mlines021.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0ac84efef442, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines021.fnline.info, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: Large 日本03 - allmedia | IEPL | 倍率:1.5, server: mysql.accessconnect.cc, port: 6303, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 252753:pphJWO, obfs-param: b403a252753.www.gov.hk, udp: true}
-  - {name: TG@hkaa0|台湾 2, server: fn600mliness018.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 55011c8548ff, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness018.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 巴基斯坦+002, server: fn600mliness017.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: TG@hkaa0|中国 2, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港10 - nf | IEPL | 倍率:1.6
-      - Large 香港09 - nf | IEPL | 倍率:1.6
-      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港07 - nf | MIEPL | 倍率:1.8
-      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - Large 新加坡09 - all | IEPL | 倍率:1.5
-      - Large 新加坡11 - all | IEPL | 倍率:1.5
-      - Large 新加坡12 - all | IEPL | 倍率:1.5
       - 不限速千兆-tw616
       - 华南1
       - SMART-日本-1
       - SMART-新加坡-1
-      - 巴基斯坦+003
       - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - TG@hkaa0|中国_4
-      - 华北
       - IEPL-01-香港-专线
       - SMART-印度-1
+      - 巴基斯坦+002
       - TG@hkaa0|中国 2
-      - TG@hkaa0|中国_5
-      - TG@hkaa0|台湾
-      - Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - TG@hkaa0|台湾 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港10 - nf | IEPL | 倍率:1.6
-      - Large 香港09 - nf | IEPL | 倍率:1.6
-      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港07 - nf | MIEPL | 倍率:1.8
-      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - Large 新加坡09 - all | IEPL | 倍率:1.5
-      - Large 新加坡11 - all | IEPL | 倍率:1.5
-      - Large 新加坡12 - all | IEPL | 倍率:1.5
       - 不限速千兆-tw616
       - 华南1
       - SMART-日本-1
       - SMART-新加坡-1
-      - 巴基斯坦+003
       - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - TG@hkaa0|中国_4
-      - 华北
       - IEPL-01-香港-专线
       - SMART-印度-1
+      - 巴基斯坦+002
       - TG@hkaa0|中国 2
-      - TG@hkaa0|中国_5
-      - TG@hkaa0|台湾
-      - Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - TG@hkaa0|台湾 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港10 - nf | IEPL | 倍率:1.6
-      - Large 香港09 - nf | IEPL | 倍率:1.6
-      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港07 - nf | MIEPL | 倍率:1.8
-      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - Large 新加坡09 - all | IEPL | 倍率:1.5
-      - Large 新加坡11 - all | IEPL | 倍率:1.5
-      - Large 新加坡12 - all | IEPL | 倍率:1.5
       - 不限速千兆-tw616
       - 华南1
       - SMART-日本-1
       - SMART-新加坡-1
-      - 巴基斯坦+003
       - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - TG@hkaa0|中国_4
-      - 华北
       - IEPL-01-香港-专线
       - SMART-印度-1
+      - 巴基斯坦+002
       - TG@hkaa0|中国 2
-      - TG@hkaa0|中国_5
-      - TG@hkaa0|台湾
-      - Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - TG@hkaa0|台湾 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -144,147 +80,72 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港10 - nf | IEPL | 倍率:1.6
-      - Large 香港09 - nf | IEPL | 倍率:1.6
-      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港07 - nf | MIEPL | 倍率:1.8
-      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - Large 新加坡09 - all | IEPL | 倍率:1.5
-      - Large 新加坡11 - all | IEPL | 倍率:1.5
-      - Large 新加坡12 - all | IEPL | 倍率:1.5
       - 不限速千兆-tw616
       - 华南1
       - SMART-日本-1
       - SMART-新加坡-1
-      - 巴基斯坦+003
       - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - TG@hkaa0|中国_4
-      - 华北
       - IEPL-01-香港-专线
       - SMART-印度-1
+      - 巴基斯坦+002
       - TG@hkaa0|中国 2
-      - TG@hkaa0|中国_5
-      - TG@hkaa0|台湾
-      - Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - TG@hkaa0|台湾 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港10 - nf | IEPL | 倍率:1.6
-      - Large 香港09 - nf | IEPL | 倍率:1.6
-      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港07 - nf | MIEPL | 倍率:1.8
-      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
       - 不限速千兆-tw616
       - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - TG@hkaa0|中国_4
       - IEPL-01-香港-专线
       - TG@hkaa0|中国 2
-      - TG@hkaa0|中国_5
-      - TG@hkaa0|台湾
-      - TG@hkaa0|台湾 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港10 - nf | IEPL | 倍率:1.6
-      - Large 香港09 - nf | IEPL | 倍率:1.6
-      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港07 - nf | MIEPL | 倍率:1.8
-      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - Large 新加坡09 - all | IEPL | 倍率:1.5
-      - Large 新加坡11 - all | IEPL | 倍率:1.5
-      - Large 新加坡12 - all | IEPL | 倍率:1.5
       - 不限速千兆-tw616
       - 华南1
       - SMART-日本-1
       - SMART-新加坡-1
-      - 巴基斯坦+003
       - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - TG@hkaa0|中国_4
-      - 华北
       - IEPL-01-香港-专线
       - SMART-印度-1
+      - 巴基斯坦+002
       - TG@hkaa0|中国 2
-      - TG@hkaa0|中国_5
-      - TG@hkaa0|台湾
-      - Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - TG@hkaa0|台湾 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港10 - nf | IEPL | 倍率:1.6
-      - Large 香港09 - nf | IEPL | 倍率:1.6
-      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港07 - nf | MIEPL | 倍率:1.8
-      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - Large 新加坡09 - all | IEPL | 倍率:1.5
-      - Large 新加坡11 - all | IEPL | 倍率:1.5
-      - Large 新加坡12 - all | IEPL | 倍率:1.5
       - 不限速千兆-tw616
       - 华南1
       - SMART-日本-1
       - SMART-新加坡-1
-      - 巴基斯坦+003
       - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - TG@hkaa0|中国_4
-      - 华北
       - IEPL-01-香港-专线
       - SMART-印度-1
+      - 巴基斯坦+002
       - TG@hkaa0|中国 2
-      - TG@hkaa0|中国_5
-      - TG@hkaa0|台湾
-      - Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - TG@hkaa0|台湾 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港10 - nf | IEPL | 倍率:1.6
-      - Large 香港09 - nf | IEPL | 倍率:1.6
-      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港07 - nf | MIEPL | 倍率:1.8
-      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - Large 新加坡09 - all | IEPL | 倍率:1.5
-      - Large 新加坡11 - all | IEPL | 倍率:1.5
-      - Large 新加坡12 - all | IEPL | 倍率:1.5
       - 不限速千兆-tw616
       - 华南1
       - SMART-日本-1
       - SMART-新加坡-1
-      - 巴基斯坦+003
       - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - TG@hkaa0|中国_4
-      - 华北
       - IEPL-01-香港-专线
       - SMART-印度-1
+      - 巴基斯坦+002
       - TG@hkaa0|中国 2
-      - TG@hkaa0|中国_5
-      - TG@hkaa0|台湾
-      - Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - TG@hkaa0|台湾 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -300,32 +161,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港10 - nf | IEPL | 倍率:1.6
-      - Large 香港09 - nf | IEPL | 倍率:1.6
-      - Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - Large 香港07 - nf | MIEPL | 倍率:1.8
-      - Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - Large 新加坡09 - all | IEPL | 倍率:1.5
-      - Large 新加坡11 - all | IEPL | 倍率:1.5
-      - Large 新加坡12 - all | IEPL | 倍率:1.5
       - 不限速千兆-tw616
       - 华南1
       - SMART-日本-1
       - SMART-新加坡-1
-      - 巴基斯坦+003
       - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - TG@hkaa0|中国_4
-      - 华北
       - IEPL-01-香港-专线
       - SMART-印度-1
+      - 巴基斯坦+002
       - TG@hkaa0|中国 2
-      - TG@hkaa0|中国_5
-      - TG@hkaa0|台湾
-      - Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - TG@hkaa0|台湾 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
