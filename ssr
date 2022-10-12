@@ -6,15 +6,8 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 不限速千兆-tw616, server: fn600mliness010.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ee3dfbbe3dca, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness010.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 华南1, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SMART-日本-1, server: smart.2022.2024.mlinuu.top, port: 11001, type: vmess, uuid: 0136f633-8f20-3e15-9853-226fb53ec965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SMART-新加坡-1, server: smart.2022.2024.mlinuu.top, port: 11004, type: vmess, uuid: 0136f633-8f20-3e15-9853-226fb53ec965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TG@hkaa0|中国, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 不限速千兆-tw32, server: fn600mliness013.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1b584982dbdc, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness013.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: IEPL-01-香港-专线, server: zebra2.2022.2025.mlinuu.top, port: 888, type: vmess, uuid: 0136f633-8f20-3e15-9853-226fb53ec965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SMART-印度-1, server: smart.2022.2024.mlinuu.top, port: 11010, type: vmess, uuid: 0136f633-8f20-3e15-9853-226fb53ec965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 巴基斯坦+002, server: fn600mliness017.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: TG@hkaa0|中国 2, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -22,30 +15,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 不限速千兆-tw616
-      - 华南1
-      - SMART-日本-1
-      - SMART-新加坡-1
-      - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - IEPL-01-香港-专线
-      - SMART-印度-1
       - 巴基斯坦+002
-      - TG@hkaa0|中国 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 不限速千兆-tw616
-      - 华南1
-      - SMART-日本-1
-      - SMART-新加坡-1
-      - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - IEPL-01-香港-专线
-      - SMART-印度-1
       - 巴基斯坦+002
-      - TG@hkaa0|中国 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -53,15 +32,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 不限速千兆-tw616
-      - 华南1
-      - SMART-日本-1
-      - SMART-新加坡-1
-      - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - IEPL-01-香港-专线
-      - SMART-印度-1
       - 巴基斯坦+002
-      - TG@hkaa0|中国 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -81,24 +53,14 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 不限速千兆-tw616
-      - 华南1
-      - SMART-日本-1
-      - SMART-新加坡-1
-      - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - IEPL-01-香港-专线
-      - SMART-印度-1
       - 巴基斯坦+002
-      - TG@hkaa0|中国 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 不限速千兆-tw616
-      - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - IEPL-01-香港-专线
-      - TG@hkaa0|中国 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -106,30 +68,16 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 不限速千兆-tw616
-      - 华南1
-      - SMART-日本-1
-      - SMART-新加坡-1
-      - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - IEPL-01-香港-专线
-      - SMART-印度-1
       - 巴基斯坦+002
-      - TG@hkaa0|中国 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 不限速千兆-tw616
-      - 华南1
-      - SMART-日本-1
-      - SMART-新加坡-1
-      - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - IEPL-01-香港-专线
-      - SMART-印度-1
       - 巴基斯坦+002
-      - TG@hkaa0|中国 2
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -137,15 +85,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 不限速千兆-tw616
-      - 华南1
-      - SMART-日本-1
-      - SMART-新加坡-1
-      - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - IEPL-01-香港-专线
-      - SMART-印度-1
       - 巴基斯坦+002
-      - TG@hkaa0|中国 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -162,15 +103,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 不限速千兆-tw616
-      - 华南1
-      - SMART-日本-1
-      - SMART-新加坡-1
-      - TG@hkaa0|中国
       - 不限速千兆-tw32
-      - IEPL-01-香港-专线
-      - SMART-印度-1
       - 巴基斯坦+002
-      - TG@hkaa0|中国 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
