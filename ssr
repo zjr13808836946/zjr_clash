@@ -1,17 +1,31 @@
-mixed-port: 7890
+port: 7890
+socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 彰化Hinet@vpnhat, server: 120.195.181.100, port: 15559, type: ss, cipher: chacha20-ietf, password: NaikoCloud, plugin: obfs, plugin-opts: {mode: http, host: cba7f8424.microsoft.com}, udp: true}
-  - {name: 油管阿伟科技, server: gzyd.120.817777.xyz, port: 41110, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:QqLoaY, obfs-param: WkRVM05UZ3lNalkyTXk1dGFXTnliM052Wm5RdVkyOXQ, udp: true}
-  - {name: 【推荐】IEPL专线-香港一_01, server: z00001.security-cloudfront-cdn.com, port: 33338, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive", udp: true}
-  - {name: 油管阿伟科技_4, server: gzyd.120.817777.xyz, port: 41110, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:QqLoaY, obfs-param: V2tSVk0wNVVaM2xOYWxreVRYazFkR0ZYVG5saU0wNTJXbTVSZFZreU9YUQ, udp: true}
-  - {name: 油管阿伟科技 3, server: hnlt.817777.xyz, port: 41113, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:QqLoaY, obfs-param: WkRVM05UZ3lNalkyTXk1dGFXTnliM052Wm5RdVkyOXQ, udp: true}
-  - {name: 香港07-HK07, server: zx01.endhigh.xyz, port: 2406, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 56850:leiE1009k, obfs-param: 5313156850.microsoft.com, udp: true}
-  - {name: 台湾 TW 01, server: dajbxtw.naikonode.top, port: 15501, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 8424:kRAIYeOq6lmewI6p, obfs-param: cba7f8424.microsoft.com, udp: true}
-  - {name: 台湾04-TW 04, server: cm01.newcome.xyz, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 56850:leiE1009k, obfs-param: 5313156850.microsoft.com, udp: true}
+  - {name: 中国 │🛩️@GridCente 7, server: 221.181.185.118, port: 13325, type: trojan, password: M0041901, skip-cert-verify: true, udp: true}
+  - {name: 中国 │🛩️@GridCente 11, server: 119.23.45.18, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 │🛩️@GridCente 12, server: 47.94.85.209, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 │🛩️@GridCente 13, server: 120.55.63.83, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 │🛩️@GridCente 14, server: 106.75.154.24, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, skip-cert-verify: true, udp: true}
+  - {name: 中国 │🛩️@GridCente 15, server: 106.75.173.173, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: 中国 │🛩️@GridCente 16, server: 106.75.154.24, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: 中国 │🛩️@GridCente 21, server: s4.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国 │🛩️@GridCente 23, server: 116.129.254.29, port: 3383, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: 台湾 │🛩️@GridCente 24, server: 211.72.35.152, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: 台湾 │🛩️@GridCente 26, server: 211.72.35.158, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: 台湾 │🛩️@GridCente 27, server: 211.72.35.157, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: 台湾 │🛩️@GridCente 28, server: 211.72.35.154, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: 台湾 │🛩️@GridCente 29, server: 211.72.35.155, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: 中国 │🛩️@GridCente 32, server: 183.245.146.17, port: 18911, type: ss, cipher: chacha20-ietf-poly1305, password: e45d8453-ebf1-45b3-a686-e979c06b0954, udp: true}
+  - {name: 中国 │🛩️@GridCente 33, server: 183.245.146.17, port: 18941, type: ss, cipher: chacha20-ietf-poly1305, password: e45d8453-ebf1-45b3-a686-e979c06b0954, udp: true}
+  - {name: 美国 │🛩️@GridCente 34, server: 20.247.87.246, port: 50000, type: trojan, password: e45d8453-ebf1-45b3-a686-e979c06b0954, skip-cert-verify: true, udp: true}
+  - {name: 日本 │🛩️@GridCente 39, server: 52.140.196.251, port: 50000, type: trojan, password: e45d8453-ebf1-45b3-a686-e979c06b0954, skip-cert-verify: true, udp: true}
+  - {name: 日本 │🛩️@GridCente 42, server: 52.140.192.138, port: 50000, type: trojan, password: e45d8453-ebf1-45b3-a686-e979c06b0954, skip-cert-verify: true, udp: true}
+  - {name: 台湾 │🛩️@GridCente 95, server: 211.72.35.153, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: 台湾 │🛩️@GridCente 96, server: 211.72.35.156, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
   - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS, sni: reooec.freetrade.link, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本JP|tg频道:@ripaojiedian, server: 45.64.22.55, port: 443, type: trojan, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS, sni: reooec.freetrade.link, skip-cert-verify: false}
 proxy-groups:
@@ -20,14 +34,27 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 彰化Hinet@vpnhat
-      - 油管阿伟科技
-      - 【推荐】IEPL专线-香港一_01
-      - 油管阿伟科技_4
-      - 油管阿伟科技 3
-      - 香港07-HK07
-      - 台湾 TW 01
-      - 台湾04-TW 04
+      - 中国 │🛩️@GridCente 7
+      - 中国 │🛩️@GridCente 11
+      - 中国 │🛩️@GridCente 12
+      - 中国 │🛩️@GridCente 13
+      - 中国 │🛩️@GridCente 14
+      - 中国 │🛩️@GridCente 15
+      - 中国 │🛩️@GridCente 16
+      - 中国 │🛩️@GridCente 21
+      - 中国 │🛩️@GridCente 23
+      - 台湾 │🛩️@GridCente 24
+      - 台湾 │🛩️@GridCente 26
+      - 台湾 │🛩️@GridCente 27
+      - 台湾 │🛩️@GridCente 28
+      - 台湾 │🛩️@GridCente 29
+      - 中国 │🛩️@GridCente 32
+      - 中国 │🛩️@GridCente 33
+      - 美国 │🛩️@GridCente 34
+      - 日本 │🛩️@GridCente 39
+      - 日本 │🛩️@GridCente 42
+      - 台湾 │🛩️@GridCente 95
+      - 台湾 │🛩️@GridCente 96
       - MO 1 → openitsub.com
       - 🇯🇵 日本JP|tg频道:@ripaojiedian
   - name: ♻️ 自动选择
@@ -36,14 +63,27 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 彰化Hinet@vpnhat
-      - 油管阿伟科技
-      - 【推荐】IEPL专线-香港一_01
-      - 油管阿伟科技_4
-      - 油管阿伟科技 3
-      - 香港07-HK07
-      - 台湾 TW 01
-      - 台湾04-TW 04
+      - 中国 │🛩️@GridCente 7
+      - 中国 │🛩️@GridCente 11
+      - 中国 │🛩️@GridCente 12
+      - 中国 │🛩️@GridCente 13
+      - 中国 │🛩️@GridCente 14
+      - 中国 │🛩️@GridCente 15
+      - 中国 │🛩️@GridCente 16
+      - 中国 │🛩️@GridCente 21
+      - 中国 │🛩️@GridCente 23
+      - 台湾 │🛩️@GridCente 24
+      - 台湾 │🛩️@GridCente 26
+      - 台湾 │🛩️@GridCente 27
+      - 台湾 │🛩️@GridCente 28
+      - 台湾 │🛩️@GridCente 29
+      - 中国 │🛩️@GridCente 32
+      - 中国 │🛩️@GridCente 33
+      - 美国 │🛩️@GridCente 34
+      - 日本 │🛩️@GridCente 39
+      - 日本 │🛩️@GridCente 42
+      - 台湾 │🛩️@GridCente 95
+      - 台湾 │🛩️@GridCente 96
       - MO 1 → openitsub.com
       - 🇯🇵 日本JP|tg频道:@ripaojiedian
   - name: 🌍 国外媒体
@@ -52,14 +92,27 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 彰化Hinet@vpnhat
-      - 油管阿伟科技
-      - 【推荐】IEPL专线-香港一_01
-      - 油管阿伟科技_4
-      - 油管阿伟科技 3
-      - 香港07-HK07
-      - 台湾 TW 01
-      - 台湾04-TW 04
+      - 中国 │🛩️@GridCente 7
+      - 中国 │🛩️@GridCente 11
+      - 中国 │🛩️@GridCente 12
+      - 中国 │🛩️@GridCente 13
+      - 中国 │🛩️@GridCente 14
+      - 中国 │🛩️@GridCente 15
+      - 中国 │🛩️@GridCente 16
+      - 中国 │🛩️@GridCente 21
+      - 中国 │🛩️@GridCente 23
+      - 台湾 │🛩️@GridCente 24
+      - 台湾 │🛩️@GridCente 26
+      - 台湾 │🛩️@GridCente 27
+      - 台湾 │🛩️@GridCente 28
+      - 台湾 │🛩️@GridCente 29
+      - 中国 │🛩️@GridCente 32
+      - 中国 │🛩️@GridCente 33
+      - 美国 │🛩️@GridCente 34
+      - 日本 │🛩️@GridCente 39
+      - 日本 │🛩️@GridCente 42
+      - 台湾 │🛩️@GridCente 95
+      - 台湾 │🛩️@GridCente 96
       - MO 1 → openitsub.com
       - 🇯🇵 日本JP|tg频道:@ripaojiedian
   - name: 📲 电报信息
@@ -67,14 +120,27 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 彰化Hinet@vpnhat
-      - 油管阿伟科技
-      - 【推荐】IEPL专线-香港一_01
-      - 油管阿伟科技_4
-      - 油管阿伟科技 3
-      - 香港07-HK07
-      - 台湾 TW 01
-      - 台湾04-TW 04
+      - 中国 │🛩️@GridCente 7
+      - 中国 │🛩️@GridCente 11
+      - 中国 │🛩️@GridCente 12
+      - 中国 │🛩️@GridCente 13
+      - 中国 │🛩️@GridCente 14
+      - 中国 │🛩️@GridCente 15
+      - 中国 │🛩️@GridCente 16
+      - 中国 │🛩️@GridCente 21
+      - 中国 │🛩️@GridCente 23
+      - 台湾 │🛩️@GridCente 24
+      - 台湾 │🛩️@GridCente 26
+      - 台湾 │🛩️@GridCente 27
+      - 台湾 │🛩️@GridCente 28
+      - 台湾 │🛩️@GridCente 29
+      - 中国 │🛩️@GridCente 32
+      - 中国 │🛩️@GridCente 33
+      - 美国 │🛩️@GridCente 34
+      - 日本 │🛩️@GridCente 39
+      - 日本 │🛩️@GridCente 42
+      - 台湾 │🛩️@GridCente 95
+      - 台湾 │🛩️@GridCente 96
       - MO 1 → openitsub.com
       - 🇯🇵 日本JP|tg频道:@ripaojiedian
   - name: Ⓜ️ 微软服务
@@ -82,14 +148,27 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 彰化Hinet@vpnhat
-      - 油管阿伟科技
-      - 【推荐】IEPL专线-香港一_01
-      - 油管阿伟科技_4
-      - 油管阿伟科技 3
-      - 香港07-HK07
-      - 台湾 TW 01
-      - 台湾04-TW 04
+      - 中国 │🛩️@GridCente 7
+      - 中国 │🛩️@GridCente 11
+      - 中国 │🛩️@GridCente 12
+      - 中国 │🛩️@GridCente 13
+      - 中国 │🛩️@GridCente 14
+      - 中国 │🛩️@GridCente 15
+      - 中国 │🛩️@GridCente 16
+      - 中国 │🛩️@GridCente 21
+      - 中国 │🛩️@GridCente 23
+      - 台湾 │🛩️@GridCente 24
+      - 台湾 │🛩️@GridCente 26
+      - 台湾 │🛩️@GridCente 27
+      - 台湾 │🛩️@GridCente 28
+      - 台湾 │🛩️@GridCente 29
+      - 中国 │🛩️@GridCente 32
+      - 中国 │🛩️@GridCente 33
+      - 美国 │🛩️@GridCente 34
+      - 日本 │🛩️@GridCente 39
+      - 日本 │🛩️@GridCente 42
+      - 台湾 │🛩️@GridCente 95
+      - 台湾 │🛩️@GridCente 96
       - MO 1 → openitsub.com
       - 🇯🇵 日本JP|tg频道:@ripaojiedian
   - name: 🍎 苹果服务
@@ -97,14 +176,27 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 彰化Hinet@vpnhat
-      - 油管阿伟科技
-      - 【推荐】IEPL专线-香港一_01
-      - 油管阿伟科技_4
-      - 油管阿伟科技 3
-      - 香港07-HK07
-      - 台湾 TW 01
-      - 台湾04-TW 04
+      - 中国 │🛩️@GridCente 7
+      - 中国 │🛩️@GridCente 11
+      - 中国 │🛩️@GridCente 12
+      - 中国 │🛩️@GridCente 13
+      - 中国 │🛩️@GridCente 14
+      - 中国 │🛩️@GridCente 15
+      - 中国 │🛩️@GridCente 16
+      - 中国 │🛩️@GridCente 21
+      - 中国 │🛩️@GridCente 23
+      - 台湾 │🛩️@GridCente 24
+      - 台湾 │🛩️@GridCente 26
+      - 台湾 │🛩️@GridCente 27
+      - 台湾 │🛩️@GridCente 28
+      - 台湾 │🛩️@GridCente 29
+      - 中国 │🛩️@GridCente 32
+      - 中国 │🛩️@GridCente 33
+      - 美国 │🛩️@GridCente 34
+      - 日本 │🛩️@GridCente 39
+      - 日本 │🛩️@GridCente 42
+      - 台湾 │🛩️@GridCente 95
+      - 台湾 │🛩️@GridCente 96
       - MO 1 → openitsub.com
       - 🇯🇵 日本JP|tg频道:@ripaojiedian
   - name: 📢 谷歌FCM
@@ -113,14 +205,27 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 彰化Hinet@vpnhat
-      - 油管阿伟科技
-      - 【推荐】IEPL专线-香港一_01
-      - 油管阿伟科技_4
-      - 油管阿伟科技 3
-      - 香港07-HK07
-      - 台湾 TW 01
-      - 台湾04-TW 04
+      - 中国 │🛩️@GridCente 7
+      - 中国 │🛩️@GridCente 11
+      - 中国 │🛩️@GridCente 12
+      - 中国 │🛩️@GridCente 13
+      - 中国 │🛩️@GridCente 14
+      - 中国 │🛩️@GridCente 15
+      - 中国 │🛩️@GridCente 16
+      - 中国 │🛩️@GridCente 21
+      - 中国 │🛩️@GridCente 23
+      - 台湾 │🛩️@GridCente 24
+      - 台湾 │🛩️@GridCente 26
+      - 台湾 │🛩️@GridCente 27
+      - 台湾 │🛩️@GridCente 28
+      - 台湾 │🛩️@GridCente 29
+      - 中国 │🛩️@GridCente 32
+      - 中国 │🛩️@GridCente 33
+      - 美国 │🛩️@GridCente 34
+      - 日本 │🛩️@GridCente 39
+      - 日本 │🛩️@GridCente 42
+      - 台湾 │🛩️@GridCente 95
+      - 台湾 │🛩️@GridCente 96
       - MO 1 → openitsub.com
       - 🇯🇵 日本JP|tg频道:@ripaojiedian
   - name: 🎯 全球直连
@@ -145,14 +250,27 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 彰化Hinet@vpnhat
-      - 油管阿伟科技
-      - 【推荐】IEPL专线-香港一_01
-      - 油管阿伟科技_4
-      - 油管阿伟科技 3
-      - 香港07-HK07
-      - 台湾 TW 01
-      - 台湾04-TW 04
+      - 中国 │🛩️@GridCente 7
+      - 中国 │🛩️@GridCente 11
+      - 中国 │🛩️@GridCente 12
+      - 中国 │🛩️@GridCente 13
+      - 中国 │🛩️@GridCente 14
+      - 中国 │🛩️@GridCente 15
+      - 中国 │🛩️@GridCente 16
+      - 中国 │🛩️@GridCente 21
+      - 中国 │🛩️@GridCente 23
+      - 台湾 │🛩️@GridCente 24
+      - 台湾 │🛩️@GridCente 26
+      - 台湾 │🛩️@GridCente 27
+      - 台湾 │🛩️@GridCente 28
+      - 台湾 │🛩️@GridCente 29
+      - 中国 │🛩️@GridCente 32
+      - 中国 │🛩️@GridCente 33
+      - 美国 │🛩️@GridCente 34
+      - 日本 │🛩️@GridCente 39
+      - 日本 │🛩️@GridCente 42
+      - 台湾 │🛩️@GridCente 95
+      - 台湾 │🛩️@GridCente 96
       - MO 1 → openitsub.com
       - 🇯🇵 日本JP|tg频道:@ripaojiedian
 rules:
