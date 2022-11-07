@@ -21,17 +21,8 @@ proxies:
   - {name: _CN_中国 14, server: bs1.jymzffbquawl.com, port: 3501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 201817:qr7kq3wbfe, obfs-param: 5494e201817.microsoft.com, udp: true}
   - {name: _CN_中国 15, server: pr1.jymzffbquawl.com, port: 3504, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 201817:qr7kq3wbfe, obfs-param: 5494e201817.microsoft.com, udp: true}
   - {name: _CN_中国 16, server: pr2.jymzffbquawl.com, port: 3502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 201817:qr7kq3wbfe, obfs-param: 5494e201817.microsoft.com, udp: true}
-  - {name: "[v1] 美国・05", server: yd-02.paofunlink.com, port: 1084, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 61245:yj9cb7gwjwp, obfs-param: e61b761245.microsoft.com, udp: true}
-  - {name: "[v3] 新加坡・04", server: yd-03.paofunlink.com, port: 1098, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 61245:yj9cb7gwjwp, obfs-param: e61b761245.microsoft.com, udp: true}
-  - {name: "[v1] 新加坡・04", server: yd-02.paofunlink.com, port: 1093, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 61245:yj9cb7gwjwp, obfs-param: e61b761245.microsoft.com, udp: true}
   - {name: _CN_中国 17, server: oss-cn-shanghai.westdatacloud.xyz, port: 20048, type: trojan, password: 30030B00-A596-87B4-965A-511CD7E05351, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
   - {name: Linodeii, server: jp.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}, udp: true}
-  - {name: 香港01, server: v1r.centaur.network, port: 16806, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: 香港02, server: v1r.centaur.network, port: 16804, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: 香港03, server: v1r.centaur.network, port: 16805, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: 香港04, server: v1r.centaur.network, port: 16801, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: 香港05, server: v1r.centaur.network, port: 16803, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: 香港06, server: v1r.centaur.network, port: 16802, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -54,17 +45,8 @@ proxy-groups:
       - _CN_中国 14
       - _CN_中国 15
       - _CN_中国 16
-      - "[v1] 美国・05"
-      - "[v3] 新加坡・04"
-      - "[v1] 新加坡・04"
       - _CN_中国 17
       - Linodeii
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -86,17 +68,8 @@ proxy-groups:
       - _CN_中国 14
       - _CN_中国 15
       - _CN_中国 16
-      - "[v1] 美国・05"
-      - "[v3] 新加坡・04"
-      - "[v1] 新加坡・04"
       - _CN_中国 17
       - Linodeii
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -119,17 +92,8 @@ proxy-groups:
       - _CN_中国 14
       - _CN_中国 15
       - _CN_中国 16
-      - "[v1] 美国・05"
-      - "[v3] 新加坡・04"
-      - "[v1] 新加坡・04"
       - _CN_中国 17
       - Linodeii
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -164,27 +128,12 @@ proxy-groups:
       - _CN_中国 14
       - _CN_中国 15
       - _CN_中国 16
-      - "[v1] 美国・05"
-      - "[v3] 新加坡・04"
-      - "[v1] 新加坡・04"
       - _CN_中国 17
       - Linodeii
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -207,17 +156,8 @@ proxy-groups:
       - _CN_中国 14
       - _CN_中国 15
       - _CN_中国 16
-      - "[v1] 美国・05"
-      - "[v3] 新加坡・04"
-      - "[v1] 新加坡・04"
       - _CN_中国 17
       - Linodeii
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
   - name: 📲 电报信息
     type: select
     proxies:
@@ -239,17 +179,8 @@ proxy-groups:
       - _CN_中国 14
       - _CN_中国 15
       - _CN_中国 16
-      - "[v1] 美国・05"
-      - "[v3] 新加坡・04"
-      - "[v1] 新加坡・04"
       - _CN_中国 17
       - Linodeii
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -272,17 +203,8 @@ proxy-groups:
       - _CN_中国 14
       - _CN_中国 15
       - _CN_中国 16
-      - "[v1] 美国・05"
-      - "[v3] 新加坡・04"
-      - "[v1] 新加坡・04"
       - _CN_中国 17
       - Linodeii
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -314,17 +236,8 @@ proxy-groups:
       - _CN_中国 14
       - _CN_中国 15
       - _CN_中国 16
-      - "[v1] 美国・05"
-      - "[v3] 新加坡・04"
-      - "[v1] 新加坡・04"
       - _CN_中国 17
       - Linodeii
-      - 香港01
-      - 香港02
-      - 香港03
-      - 香港04
-      - 香港05
-      - 香港06
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
