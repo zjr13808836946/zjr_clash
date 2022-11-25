@@ -372,7 +372,7 @@ proxy-groups:
     use:
       - OpenitNode
       - PaimonNode
-
+      - linran125
   - name: 🖐 手动选择
     type: select
     proxies:
@@ -420,6 +420,7 @@ proxy-groups:
     use:
       - OpenitNode
       - PaimonNode
+      - linran125
 
   - name: 🇺🇸 美区
     type: url-test
@@ -466,6 +467,8 @@ proxy-groups:
       - IPLC-EU-DE-2[ran-out](ss)
       - IPLC-EU-UK-2[ran-out](ss)
       - IPLC-EU-DE-2[ran-out](https)
+    use:
+      - linran125
 
   - name: SSR 区
     type: url-test
@@ -541,6 +544,16 @@ proxy-providers:
       enable: true
       interval: 300
       url: http://www.gstatic.com/generate_204
+  linran125:
+    type: http
+    url: "https://raw.githubusercontent.com/linran125/clash125/main/config.yaml"
+    path: linran125/clash125/blob/main/config.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 180
+      url: http://www.gstatic.com/generate_204
+
 rule-providers:
   reject:
     type: http
