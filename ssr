@@ -163,20 +163,36 @@ proxies:
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2
-  - {name: Hong Kong | 06, server: cos-ap-guangzhou.westdatacloud.top, port: 20006, type: trojan, password: F5AFF76C-8C28-878F-3A1A-241A467736F5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Taiwan | 02, server: cos-ap-guangzhou.westdatacloud.top, port: 20012, type: trojan, password: FDD7BFCC-4176-4C39-6CA8-0DCCD72B72B5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Taiwan | 03, server: cos-ap-guangzhou.westdatacloud.top, port: 20013, type: trojan, password: F5AFF76C-8C28-878F-3A1A-241A467736F5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: "Lv3 新加坡 06 [2.0]", server: moblev3-sg.mipglxi.cn, port: 6614, type: ss, cipher: aes-128-gcm, password: 4663645d-e401-4e86-bb96-f2ab1992465d, udp: true}
-  - {name: "Lv3 新加坡 01 [2.0]", server: moblev3-sg.mipglxi.cn, port: 6609, type: ss, cipher: aes-128-gcm, password: 4663645d-e401-4e86-bb96-f2ab1992465d, udp: true}
-  - {name: "Traffic: 9.34 GB | 200 GB", server: cos-ap-guangzhou.westdatacloud.top, port: 20001, type: trojan, password: FDD7BFCC-4176-4C39-6CA8-0DCCD72B72B5, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: JP+日本(youtube阿伟科技), server: p1.bxy-fun2.com, port: 23101, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
-  - {name: KR+韩国(youtube阿伟科技), server: n3.nufsx.top, port: 24100, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技) 16, server: dosg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技) 17, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}, udp: true}
-  - {name: HK 香港(youtube阿伟科技), server: 1cnrelay.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31583:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: HK 香港(youtube阿伟科技) 3, server: cnhkall.debugex.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31583:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: youtube阿伟科技 5, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31583:SVIPTIZ8, obfs-param: Vmtaa2QxUXlTbGRqU0ZKV1ZrVTFUMVpyVmxkTlZteHpXa2hPYUdKVk5UQlVNV2gzWVZVeGMySXpaRlZTZWtaUVdrY3hTMVZu, udp: true}
-  - {name: youtube阿伟科技 11, server: hnlt.817777.xyz, port: 11011, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: ZDYyYzQyMjY2My5taWNyb3NvZnQuY29t, udp: true}
+  - {name: h036368.waihuizhibiaowang.com:11243, server: h036368.waihuizhibiaowang.com, port: 11243, type: http, username: 16d3e1c5f1, password: 8286412be9, tls: true, skip-cert-verify: true, udp: true}
+  - {name: h036368.waihuizhibiaowang.com:11543, server: h036368.waihuizhibiaowang.com, port: 11543, type: http, username: 16d3e1c5f1, password: 8286412be9, tls: true, skip-cert-verify: true, udp: true}
+  - {name: h036368.waihuizhibiaowang.com:11743, server: h036368.waihuizhibiaowang.com, port: 11743, type: http, username: 16d3e1c5f1, password: 8286412be9, tls: true, skip-cert-verify: true, udp: true}
+  - {name: h217022.waihuizhibiaowang.com:11743, server: h217022.waihuizhibiaowang.com, port: 11743, type: http, username: 16d3e1c5f1, password: 8286412be9, tls: true, skip-cert-verify: true, udp: true}
+  - {name: h649960.waihuizhibiaowang.com:11543, server: h649960.waihuizhibiaowang.com, port: 11543, type: http, username: 16d3e1c5f1, password: 8286412be9, tls: true, skip-cert-verify: true, udp: true}
+  - {name: h745768.waihuizhibiaowang.com:11243, server: h745768.waihuizhibiaowang.com, port: 11243, type: http, username: 16d3e1c5f1, password: 8286412be9, tls: true, skip-cert-verify: true, udp: true}
+  - {name: h745768.waihuizhibiaowang.com:11343, server: h745768.waihuizhibiaowang.com, port: 11343, type: http, username: 16d3e1c5f1, password: 8286412be9, tls: true, skip-cert-verify: true, udp: true}
+  - {name: h745768.waihuizhibiaowang.com:11443, server: h745768.waihuizhibiaowang.com, port: 11443, type: http, username: 16d3e1c5f1, password: 8286412be9, tls: true, skip-cert-verify: true, udp: true}
+  - {name: h745768.waihuizhibiaowang.com:11543, server: h745768.waihuizhibiaowang.com, port: 11543, type: http, username: 16d3e1c5f1, password: 8286412be9, tls: true, skip-cert-verify: true, udp: true}
+  - {name: shadowsocks, server: 116.162.120.44, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 2, server: 116.162.120.43, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 3, server: 116.162.120.43, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 4, server: 116.162.120.25, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 5, server: 116.162.120.31, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 6, server: 116.162.120.60, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 7, server: 116.162.120.24, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 8, server: 116.162.120.27, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 9, server: 116.162.120.24, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 10, server: 116.162.120.50, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 11, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 12, server: 116.162.120.31, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 13, server: 116.162.120.29, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 14, server: 116.162.120.34, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 15, server: 116.162.120.38, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 16, server: 116.162.120.38, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 17, server: 116.162.120.60, port: 559, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 18, server: 125.94.215.234, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 19, server: 119.237.195.230, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 20, server: 116.162.120.33, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
+  - {name: shadowsocks 21, server: 116.162.120.49, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: "", udp: true}
 
 proxy-groups:
   - name: 🚀 节点选择
@@ -206,20 +222,36 @@ proxy-groups:
       - IPLC-EU-DE-2[ran-out](https)
       - IEPL-AP-JP-1[ran-out](https)
       - IPLC-EU-UK-2[ran-out](ss)
-      - Hong Kong | 06
-      - Taiwan | 02
-      - Taiwan | 03
-      - Lv3 新加坡 06 [2.0]
-      - Lv3 新加坡 01 [2.0]
-      - "Traffic: 9.34 GB | 200 GB"
-      - JP+日本(youtube阿伟科技)
-      - KR+韩国(youtube阿伟科技)
-      - SG 新加坡(youtube阿伟科技) 16
-      - SG 新加坡(youtube阿伟科技) 17
-      - HK 香港(youtube阿伟科技)
-      - HK 香港(youtube阿伟科技) 3
-      - youtube阿伟科技 5
-      - youtube阿伟科技 11
+      - h036368.waihuizhibiaowang.com:11243
+      - h036368.waihuizhibiaowang.com:11543
+      - h036368.waihuizhibiaowang.com:11743
+      - h217022.waihuizhibiaowang.com:11743
+      - h649960.waihuizhibiaowang.com:11543
+      - h745768.waihuizhibiaowang.com:11243
+      - h745768.waihuizhibiaowang.com:11343
+      - h745768.waihuizhibiaowang.com:11443
+      - h745768.waihuizhibiaowang.com:11543
+      - shadowsocks
+      - shadowsocks 2
+      - shadowsocks 3
+      - shadowsocks 4
+      - shadowsocks 5
+      - shadowsocks 6
+      - shadowsocks 7
+      - shadowsocks 8
+      - shadowsocks 9
+      - shadowsocks 10
+      - shadowsocks 11
+      - shadowsocks 12
+      - shadowsocks 13
+      - shadowsocks 14
+      - shadowsocks 15
+      - shadowsocks 16
+      - shadowsocks 17
+      - shadowsocks 18
+      - shadowsocks 19
+      - shadowsocks 20
+      - shadowsocks 21
 
   - name: 🖐 手动选择
     type: select
@@ -235,20 +267,36 @@ proxy-groups:
       - IPLC-EU-DE-2[ran-out](https)
       - IEPL-AP-JP-1[ran-out](https)
       - IPLC-EU-UK-2[ran-out](ss)
-      - Hong Kong | 06
-      - Taiwan | 02
-      - Taiwan | 03
-      - Lv3 新加坡 06 [2.0]
-      - Lv3 新加坡 01 [2.0]
-      - "Traffic: 9.34 GB | 200 GB"
-      - JP+日本(youtube阿伟科技)
-      - KR+韩国(youtube阿伟科技)
-      - SG 新加坡(youtube阿伟科技) 16
-      - SG 新加坡(youtube阿伟科技) 17
-      - HK 香港(youtube阿伟科技)
-      - HK 香港(youtube阿伟科技) 3
-      - youtube阿伟科技 5
-      - youtube阿伟科技 11
+      - h036368.waihuizhibiaowang.com:11243
+      - h036368.waihuizhibiaowang.com:11543
+      - h036368.waihuizhibiaowang.com:11743
+      - h217022.waihuizhibiaowang.com:11743
+      - h649960.waihuizhibiaowang.com:11543
+      - h745768.waihuizhibiaowang.com:11243
+      - h745768.waihuizhibiaowang.com:11343
+      - h745768.waihuizhibiaowang.com:11443
+      - h745768.waihuizhibiaowang.com:11543
+      - shadowsocks
+      - shadowsocks 2
+      - shadowsocks 3
+      - shadowsocks 4
+      - shadowsocks 5
+      - shadowsocks 6
+      - shadowsocks 7
+      - shadowsocks 8
+      - shadowsocks 9
+      - shadowsocks 10
+      - shadowsocks 11
+      - shadowsocks 12
+      - shadowsocks 13
+      - shadowsocks 14
+      - shadowsocks 15
+      - shadowsocks 16
+      - shadowsocks 17
+      - shadowsocks 18
+      - shadowsocks 19
+      - shadowsocks 20
+      - shadowsocks 21
 
   - name: 🇺🇸 美区
     type: url-test
@@ -295,6 +343,15 @@ proxy-groups:
       - IPLC-EU-DE-2[ran-out](ss)
       - IPLC-EU-UK-2[ran-out](ss)
       - IPLC-EU-DE-2[ran-out](https)
+      - h036368.waihuizhibiaowang.com:11243
+      - h036368.waihuizhibiaowang.com:11543
+      - h036368.waihuizhibiaowang.com:11743
+      - h217022.waihuizhibiaowang.com:11743
+      - h649960.waihuizhibiaowang.com:11543
+      - h745768.waihuizhibiaowang.com:11243
+      - h745768.waihuizhibiaowang.com:11343
+      - h745768.waihuizhibiaowang.com:11443
+      - h745768.waihuizhibiaowang.com:11543
 
   - name: SSR 区
     type: url-test
@@ -302,20 +359,27 @@ proxy-groups:
     interval: 180
     tolerance: 50
     proxies:
-      - Hong Kong | 06
-      - Taiwan | 02
-      - Taiwan | 03
-      - Lv3 新加坡 06 [2.0]
-      - Lv3 新加坡 01 [2.0]
-      - "Traffic: 9.34 GB | 200 GB"
-      - JP+日本(youtube阿伟科技)
-      - KR+韩国(youtube阿伟科技)
-      - SG 新加坡(youtube阿伟科技) 16
-      - SG 新加坡(youtube阿伟科技) 17
-      - HK 香港(youtube阿伟科技)
-      - HK 香港(youtube阿伟科技) 3
-      - youtube阿伟科技 5
-      - youtube阿伟科技 11
+      - shadowsocks
+      - shadowsocks 2
+      - shadowsocks 3
+      - shadowsocks 4
+      - shadowsocks 5
+      - shadowsocks 6
+      - shadowsocks 7
+      - shadowsocks 8
+      - shadowsocks 9
+      - shadowsocks 10
+      - shadowsocks 11
+      - shadowsocks 12
+      - shadowsocks 13
+      - shadowsocks 14
+      - shadowsocks 15
+      - shadowsocks 16
+      - shadowsocks 17
+      - shadowsocks 18
+      - shadowsocks 19
+      - shadowsocks 20
+      - shadowsocks 21
 
   - name: 🎯 全球直连
     type: select
