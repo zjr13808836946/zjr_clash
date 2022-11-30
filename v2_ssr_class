@@ -178,7 +178,7 @@ proxy-providers:
   domestic:
     type: http
     path: '/domestic.txt'
-    url: 'https://api.faststream.top/5bC8546b77yB5L2g6Kej5oiR5a+G5bmy5Zib77yf/download/domestic?target=Clash'
+    url: 'https://api.faststream.top/5bC8546b77yB5L2g6Kej5oiR5a+G5bmy5Zib77yf/download/domestic?target=Clash&list=true&udp=true'
     interval: 300
     health-check:
       enable: true
@@ -188,7 +188,7 @@ proxy-providers:
   overseas:
     type: http
     path: '/overseas.txt'
-    url: 'https://api.faststream.top/5bC8546b77yB5L2g6Kej5oiR5a+G5bmy5Zib77yf/download/overseas?target=Clash'
+    url: 'https://api.faststream.top/5bC8546b77yB5L2g6Kej5oiR5a+G5bmy5Zib77yf/download/overseas?target=Clash&list=true&udp=true'
     interval: 300
     health-check:
       enable: true
@@ -196,7 +196,7 @@ proxy-providers:
       interval: 300
   linran125:
     type: http
-    url: "https://raw.githubusercontent.com/linran125/clash125/main/config.yaml"
+    url: "https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/linran125/clash125/main/config.yaml&list=true&udp=true"
     path: linran125/clash125/blob/main/config.yaml
     interval: 300
     health-check:
