@@ -179,7 +179,7 @@ proxy-providers:
     type: http
     path: '/domestic.txt'
     url: 'https://api.faststream.top/5bC8546b77yB5L2g6Kej5oiR5a+G5bmy5Zib77yf/download/domestic?target=Clash&list=true&udp=true'
-    interval: 300
+    interval: 3600
     health-check:
       enable: true
       url: 'http://www.gstatic.com/generate_204'
@@ -189,7 +189,7 @@ proxy-providers:
     type: http
     path: '/overseas.txt'
     url: 'https://api.faststream.top/5bC8546b77yB5L2g6Kej5oiR5a+G5bmy5Zib77yf/download/overseas?target=Clash&list=true&udp=true'
-    interval: 300
+    interval: 3600
     health-check:
       enable: true
       url: 'http://www.gstatic.com/generate_204'
@@ -197,8 +197,18 @@ proxy-providers:
   linran125:
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/linran125/clash125/main/config.yaml&list=true&udp=true"
-    path: linran125/clash125/blob/main/config.yaml
-    interval: 300
+    path: "/linran125.txt"
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 180
+      url: http://www.gstatic.com/generate_204
+
+  provider_nodes:
+    type: http
+    url: "https://raw.githubusercontent.com/zjr13808836946/zjr_clash/main/provider_nodes"
+    path: "/provider_nodes.txt"
+    interval: 36000
     health-check:
       enable: true
       interval: 180
@@ -246,7 +256,7 @@ proxy-groups:
       - domestic
       - overseas
       - linran125
-
+      - provider_nodes
   - name: 🖐 手动选择
     type: select
     proxies:
@@ -275,6 +285,7 @@ proxy-groups:
       - domestic
       - overseas
       - linran125
+      - provider_nodes
 
   - name: 🇺🇸 美区
     type: url-test
@@ -342,6 +353,7 @@ proxy-groups:
       - domestic
       - overseas
       - linran125
+      - provider_nodes
 
   - name: 🎯 全球直连
     type: select
