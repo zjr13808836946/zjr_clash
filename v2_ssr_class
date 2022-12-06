@@ -85,8 +85,8 @@ proxy-providers:
  #国内节点
   domestic:
     type: http
-    path: '/aweikeji.txt'
-    url: 'https://agit.ai/213321sad/youtube-aweikeji/raw/branch/master/125cl'
+    path: "/aweikeji.txt"
+    url: "https://api.v1.mk/sub?target=clash&url=https://agit.ai/213321sad/youtube-aweikeji/raw/branch/master/125cl&list=true&udp=true"
     interval: 3600
     health-check:
       enable: true
@@ -95,8 +95,8 @@ proxy-providers:
  #国外节点
   overseas:
     type: http
-    path: '/subcloud.txt'
-    url: 'https://api.subcloud.xyz/sub?target=clash&url=https%3A%2F%2Fpastebin.com%2Fraw%2FGxR5pELe&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=false&tfo=false&scv=true&fdn=true&sort=true&udp=true&new_name=true'
+    path: "/subcloud.txt"
+    url: "https://api.subcloud.xyz/sub?target=clash&url=https%3A%2F%2Fpastebin.com%2Fraw%2FGxR5pELe&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=false&tfo=false&scv=true&fdn=true&sort=true&udp=true&new_name=true&list=true&udp=true"
     interval: 3600
     health-check:
       enable: true
@@ -104,7 +104,7 @@ proxy-providers:
       interval: 300
   linran125:
     type: http
-    url: "https://pre.paimon.gq/clash.yaml"
+    url: "https://api.v1.mk/sub?target=clash&url=https://pre.paimon.gq/clash.yaml&list=true&udp=true"
     path: "/PAIMON.txt"
     interval: 3600
     health-check:
