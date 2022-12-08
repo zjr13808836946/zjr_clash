@@ -186,6 +186,15 @@ proxies:
   - {name: 「SCP」JP-CF-NTT, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: jp.sharecentre.online}}, udp: true}
   - {name: 「SCP」HK-CF-Gcore, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: hk.sharecentre.online}}, udp: true}
   - {name: 「SCP」SG-CF-OVH, server: stock.hostmonit.com, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-ovh.sharecentre.online}}, udp: true}
+  - {name: 🇸🇬 「SCP」SG-移动优化, server: cf-yd-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sg-ovh.sharecentre.online, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-ovh.sharecentre.online}}}
+  - {name: 🇸🇬 「SCP」SG-电信优化, server: cf-dx-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sg-ovh.sharecentre.online, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-ovh.sharecentre.online}}}
+  - {name: 🇸🇬 「SCP」SG-联通优化, server: cf-lt-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sg-ovh.sharecentre.online, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-ovh.sharecentre.online}}}
+  - {name: 🇯🇵 「SCP」JP-移动优化, server: cf-yd-dns.sharecentre.online, port: 443, type: vmess, uuid: 58182631-64eb-4972-8695-191024015e6d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp.sharecentre.online, network: ws, ws-opts: {path: /shirker, headers: {Host: jp.sharecentre.online}}}
+  - {name: 🇯🇵 「SCP」JP-电信优化, server: cf-dx-dns.sharecentre.online, port: 443, type: vmess, uuid: 58182631-64eb-4972-8695-191024015e6d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp.sharecentre.online, network: ws, ws-opts: {path: /shirker, headers: {Host: jp.sharecentre.online}}}
+  - {name: 🇯🇵 「SCP」JP-联通优化, server: cf-lt-dns.sharecentre.online, port: 443, type: vmess, uuid: 58182631-64eb-4972-8695-191024015e6d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp.sharecentre.online, network: ws, ws-opts: {path: /shirker, headers: {Host: jp.sharecentre.online}}}
+  - {name: 🇭🇰 「SCP」HK-移动优化, server: cf-yd-dns.sharecentre.online, port: 443, type: vmess, uuid: 58182631-64eb-4972-8695-191024015e6d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk.sharecentre.online, network: ws, ws-opts: {path: /shirker, headers: {Host: hk.sharecentre.online}}}
+  - {name: 🇭🇰 「SCP」HK-电信优化, server: cf-dx-dns.sharecentre.online, port: 443, type: vmess, uuid: 58182631-64eb-4972-8695-191024015e6d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk.sharecentre.online, network: ws, ws-opts: {path: /shirker, headers: {Host: hk.sharecentre.online}}}
+  - {name: 🇭🇰 「SCP」HK-联通优化, server: cf-lt-dns.sharecentre.online, port: 443, type: vmess, uuid: 58182631-64eb-4972-8695-191024015e6d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk.sharecentre.online, network: ws, ws-opts: {path: /shirker, headers: {Host: hk.sharecentre.online}}}
 
 proxy-groups:
   - name: 🚀 节点选择
@@ -220,6 +229,15 @@ proxy-groups:
       - 「SCP」JP-CF-NTT
       - 「SCP」HK-CF-Gcore
       - 「SCP」SG-CF-OVH
+      - 🇸🇬 「SCP」SG-移动优化
+      - 🇸🇬 「SCP」SG-电信优化
+      - 🇸🇬 「SCP」SG-联通优化
+      - 🇯🇵 「SCP」JP-移动优化
+      - 🇯🇵 「SCP」JP-电信优化
+      - 🇯🇵 「SCP」JP-联通优化
+      - 🇭🇰 「SCP」HK-移动优化
+      - 🇭🇰 「SCP」HK-电信优化
+      - 🇭🇰 「SCP」HK-联通优化
 
   - name: 🖐 手动选择
     type: select
@@ -240,6 +258,15 @@ proxy-groups:
       - 「SCP」JP-CF-NTT
       - 「SCP」HK-CF-Gcore
       - 「SCP」SG-CF-OVH
+      - 🇸🇬 「SCP」SG-移动优化
+      - 🇸🇬 「SCP」SG-电信优化
+      - 🇸🇬 「SCP」SG-联通优化
+      - 🇯🇵 「SCP」JP-移动优化
+      - 🇯🇵 「SCP」JP-电信优化
+      - 🇯🇵 「SCP」JP-联通优化
+      - 🇭🇰 「SCP」HK-移动优化
+      - 🇭🇰 「SCP」HK-电信优化
+      - 🇭🇰 「SCP」HK-联通优化
 
   - name: 🇺🇸 美区
     type: url-test
@@ -250,6 +277,15 @@ proxy-groups:
       - 「SCP」JP-CF-NTT
       - 「SCP」HK-CF-Gcore
       - 「SCP」SG-CF-OVH
+      - 🇸🇬 「SCP」SG-移动优化
+      - 🇸🇬 「SCP」SG-电信优化
+      - 🇸🇬 「SCP」SG-联通优化
+      - 🇯🇵 「SCP」JP-移动优化
+      - 🇯🇵 「SCP」JP-电信优化
+      - 🇯🇵 「SCP」JP-联通优化
+      - 🇭🇰 「SCP」HK-移动优化
+      - 🇭🇰 「SCP」HK-电信优化
+      - 🇭🇰 「SCP」HK-联通优化
 
   - name: 🇯🇵 日区
     type: url-test
@@ -260,6 +296,15 @@ proxy-groups:
       - 「SCP」JP-CF-NTT
       - 「SCP」HK-CF-Gcore
       - 「SCP」SG-CF-OVH
+      - 🇸🇬 「SCP」SG-移动优化
+      - 🇸🇬 「SCP」SG-电信优化
+      - 🇸🇬 「SCP」SG-联通优化
+      - 🇯🇵 「SCP」JP-移动优化
+      - 🇯🇵 「SCP」JP-电信优化
+      - 🇯🇵 「SCP」JP-联通优化
+      - 🇭🇰 「SCP」HK-移动优化
+      - 🇭🇰 「SCP」HK-电信优化
+      - 🇭🇰 「SCP」HK-联通优化
 
   - name: 🇭🇰 港区
     type: url-test
@@ -270,6 +315,15 @@ proxy-groups:
       - 「SCP」JP-CF-NTT
       - 「SCP」HK-CF-Gcore
       - 「SCP」SG-CF-OVH
+      - 🇸🇬 「SCP」SG-移动优化
+      - 🇸🇬 「SCP」SG-电信优化
+      - 🇸🇬 「SCP」SG-联通优化
+      - 🇯🇵 「SCP」JP-移动优化
+      - 🇯🇵 「SCP」JP-电信优化
+      - 🇯🇵 「SCP」JP-联通优化
+      - 🇭🇰 「SCP」HK-移动优化
+      - 🇭🇰 「SCP」HK-电信优化
+      - 🇭🇰 「SCP」HK-联通优化
 
   - name: cn 台湾区
     type: url-test
@@ -280,6 +334,15 @@ proxy-groups:
       - 「SCP」JP-CF-NTT
       - 「SCP」HK-CF-Gcore
       - 「SCP」SG-CF-OVH
+      - 🇸🇬 「SCP」SG-移动优化
+      - 🇸🇬 「SCP」SG-电信优化
+      - 🇸🇬 「SCP」SG-联通优化
+      - 🇯🇵 「SCP」JP-移动优化
+      - 🇯🇵 「SCP」JP-电信优化
+      - 🇯🇵 「SCP」JP-联通优化
+      - 🇭🇰 「SCP」HK-移动优化
+      - 🇭🇰 「SCP」HK-电信优化
+      - 🇭🇰 「SCP」HK-联通优化
 
   - name: ca 中国区
     type: url-test
@@ -290,6 +353,15 @@ proxy-groups:
       - 「SCP」JP-CF-NTT
       - 「SCP」HK-CF-Gcore
       - 「SCP」SG-CF-OVH
+      - 🇸🇬 「SCP」SG-移动优化
+      - 🇸🇬 「SCP」SG-电信优化
+      - 🇸🇬 「SCP」SG-联通优化
+      - 🇯🇵 「SCP」JP-移动优化
+      - 🇯🇵 「SCP」JP-电信优化
+      - 🇯🇵 「SCP」JP-联通优化
+      - 🇭🇰 「SCP」HK-移动优化
+      - 🇭🇰 「SCP」HK-电信优化
+      - 🇭🇰 「SCP」HK-联通优化
 
   - name: SSR 区
     type: url-test
@@ -300,6 +372,15 @@ proxy-groups:
       - 「SCP」JP-CF-NTT
       - 「SCP」HK-CF-Gcore
       - 「SCP」SG-CF-OVH
+      - 🇸🇬 「SCP」SG-移动优化
+      - 🇸🇬 「SCP」SG-电信优化
+      - 🇸🇬 「SCP」SG-联通优化
+      - 🇯🇵 「SCP」JP-移动优化
+      - 🇯🇵 「SCP」JP-电信优化
+      - 🇯🇵 「SCP」JP-联通优化
+      - 🇭🇰 「SCP」HK-移动优化
+      - 🇭🇰 「SCP」HK-电信优化
+      - 🇭🇰 「SCP」HK-联通优化
 
   - name: 🎯 全球直连
     type: select
